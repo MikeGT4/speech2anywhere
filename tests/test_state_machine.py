@@ -1,0 +1,320 @@
+import asyncio
+import numpy as np
+import pytest
+from kira.app import KiraApp, State
+from kira.config import Config
+from kira.recorder import Recorder, DeviceUnavailable
+
+
+def test_initial_state_is_idle():
+    app = KiraApp.for_test()
+    assert app.state == State.IDLE
+
+
+def test_press_moves_to_recording():
+    app = KiraApp.for_test()
+    app.on_hotkey_press()
+    assert app.state == State.RECORDING
+
+
+def test_short_release_aborts_to_idle():
+    app = KiraApp.for_test()
+    app.on_hotkey_press()
+    app.on_hotkey_release(duration_ms=100)
+    assert app.state == State.IDLE
+
+
+def test_long_release_runs_pipeline_and_ends_idle():
+    app = KiraApp.for_test()
+    app.on_hotkey_press()
+    app.on_hotkey_release(duration_ms=500)
+    assert app.state == State.IDLE
+    assert app._injector.last == "stub"
+
+
+def test_double_press_while_active_is_ignored():
+    app = KiraApp.for_test()
+    app.on_hotkey_press()
+    assert app.state == State.RECORDING
+    app.on_hotkey_press()
+    assert app.state == State.RECORDING
+
+
+def test_release_without_press_is_ignored():
+    app = KiraApp.for_test()
+    app.on_hotkey_release(duration_ms=500)
+    assert app.state == State.IDLE
+
+
+def test_release_with_stopped_loop_resets_to_idle():
+    app = KiraApp.for_test()
+    loop = asyncio.new_event_loop()
+    app.set_loop(loop)
+    assert not loop.is_running()
+    app.on_hotkey_press()
+    app.on_hotkey_release(duration_ms=500)
+    assert app.state == State.IDLE
+    loop.close()
+
+
+class _EmptyStyler:
+    def __init__(self, cfg): self.cfg = cfg
+    async def polish(self, text, mode): return ""
+
+
+class _RecordingInjector:
+    def __init__(self): self.last = "<unset>"
+    def inject(self, text): self.last = text
+
+
+def test_empty_polish_does_not_inject():
+    cfg = Config()
+    injector = _RecordingInjector()
+    app = KiraApp(
+        config=cfg,
+        recorder=Recorder(),
+        transcriber=KiraApp.for_test()._transcriber,
+        styler=_EmptyStyler(cfg),
+        injector=injector,
+    )
+    app.on_hotkey_press()
+    app.on_hotkey_release(duration_ms=500)
+    assert app.state == State.IDLE
+    assert injector.last == "<unset>"
+
+
+class _BrokenRecorder(Recorder):
+    def __init__(self):
+        super().__init__()
+        self.start_calls = 0
+
+    def start(self):
+        self.start_calls += 1
+        raise DeviceUnavailable(
+            "audio.input_device='USB Headset' not available right now"
+        )
+
+
+def test_hotkey_press_with_unavailable_device_sets_error_state():
+    cfg = Config()
+    injector = _RecordingInjector()
+    broken = _BrokenRecorder()
+    app = KiraApp(
+        config=cfg,
+        recorder=broken,
+        transcriber=KiraApp.for_test()._transcriber,
+        styler=KiraApp.for_test()._styler,
+        injector=injector,
+    )
+    app.on_hotkey_press()
+    assert app.state == State.ERROR
+    assert broken.start_calls == 1
+    assert injector.last == "<unset>"
+
+
+def test_hotkey_release_after_device_error_is_ignored():
+    cfg = Config()
+    injector = _RecordingInjector()
+    app = KiraApp(
+        config=cfg,
+        recorder=_BrokenRecorder(),
+        transcriber=KiraApp.for_test()._transcriber,
+        styler=KiraApp.for_test()._styler,
+        injector=injector,
+    )
+    app.on_hotkey_press()
+    assert app.state == State.ERROR
+    app.on_hotkey_release(duration_ms=500)
+    assert app.state == State.ERROR
+    assert injector.last == "<unset>"
+
+
+def test_hotkey_press_ignored_while_in_error_state():
+    cfg = Config()
+    broken = _BrokenRecorder()
+    app = KiraApp(
+        config=cfg,
+        recorder=broken,
+        transcriber=KiraApp.for_test()._transcriber,
+        styler=KiraApp.for_test()._styler,
+        injector=_RecordingInjector(),
+    )
+    app.on_hotkey_press()
+    assert broken.start_calls == 1
+    assert app.state == State.ERROR
+    app.on_hotkey_press()
+    assert broken.start_calls == 1
+
+
+class _EditAwareStyler:
+    def __init__(self, cfg):
+        self.cfg = cfg
+        self.polish_calls = []
+        self.edit_calls = []
+
+    async def polish(self, text, mode):
+        self.polish_calls.append((text, mode))
+        return text
+
+    async def edit_command(self, selection, command):
+        self.edit_calls.append((selection, command))
+        return f"[edited]:{selection}"
+
+
+def test_edit_press_no_selection_flashes_error(monkeypatch):
+    monkeypatch.setattr("kira.app.read_selection", lambda: None)
+    app = KiraApp.for_test()
+    app.on_edit_press()
+    assert app.state == State.ERROR
+    assert app._edit_mode is False
+    assert app._captured_selection is None
+
+
+def test_edit_press_clipboard_error_flashes_error(monkeypatch):
+    from kira.edit_command import ClipboardUnavailable
+
+    def raising(*args, **kwargs):
+        raise ClipboardUnavailable("simulierter Clipboard-Block")
+
+    monkeypatch.setattr("kira.app.read_selection", raising)
+    app = KiraApp.for_test()
+    app.on_edit_press()
+    assert app.state == State.ERROR
+    assert app._edit_mode is False
+    assert app._captured_selection is None
+
+
+def test_edit_press_with_selection_enters_recording_with_flags(monkeypatch):
+    monkeypatch.setattr("kira.app.read_selection", lambda: "selected text")
+    app = KiraApp.for_test()
+    app.on_edit_press()
+    assert app.state == State.RECORDING
+    assert app._edit_mode is True
+    assert app._captured_selection == "selected text"
+
+
+def test_edit_pipeline_calls_edit_command_not_polish(monkeypatch):
+    monkeypatch.setattr("kira.app.read_selection", lambda: "hi leute")
+    cfg = Config()
+    styler = _EditAwareStyler(cfg)
+    injector = _RecordingInjector()
+    app = KiraApp(
+        config=cfg,
+        recorder=Recorder(),
+        transcriber=KiraApp.for_test()._transcriber,
+        styler=styler,
+        injector=injector,
+    )
+    app.on_edit_press()
+    assert app.state == State.RECORDING
+    app.on_hotkey_release(duration_ms=500)
+    assert app.state == State.IDLE
+    assert len(styler.edit_calls) == 1
+    assert styler.edit_calls[0] == ("hi leute", "stub")
+    assert len(styler.polish_calls) == 0
+    assert injector.last == "[edited]:hi leute"
+
+
+def test_normal_f8_pipeline_still_calls_polish(monkeypatch):
+    cfg = Config()
+    styler = _EditAwareStyler(cfg)
+    injector = _RecordingInjector()
+    app = KiraApp(
+        config=cfg,
+        recorder=Recorder(),
+        transcriber=KiraApp.for_test()._transcriber,
+        styler=styler,
+        injector=injector,
+    )
+    app.on_hotkey_press()
+    app.on_hotkey_release(duration_ms=500)
+    assert len(styler.polish_calls) == 1
+    assert len(styler.edit_calls) == 0
+
+
+def test_edit_flags_reset_after_pipeline(monkeypatch):
+    monkeypatch.setattr("kira.app.read_selection", lambda: "selection")
+    app = KiraApp.for_test()
+    app.on_edit_press()
+    app.on_hotkey_release(duration_ms=500)
+    assert app._edit_mode is False
+    assert app._captured_selection is None
+
+
+def test_edit_flags_reset_after_short_press(monkeypatch):
+    monkeypatch.setattr("kira.app.read_selection", lambda: "selection")
+    app = KiraApp.for_test()
+    app.on_edit_press()
+    app.on_hotkey_release(duration_ms=50)
+    assert app.state == State.IDLE
+    assert app._edit_mode is False
+    assert app._captured_selection is None
+
+
+def _app_with_observer(**kwargs):
+    seen: list[tuple] = []
+    holder: dict = {}
+
+    def observe(state):
+        a = holder["app"]
+        seen.append((state, a.last_transcript, a.last_polished, a.last_error))
+
+    base = KiraApp.for_test()
+    app = KiraApp(
+        config=base._config,
+        recorder=kwargs.get("recorder", base._recorder),
+        transcriber=base._transcriber,
+        styler=kwargs.get("styler", base._styler),
+        injector=base._injector,
+        on_state_change=observe,
+    )
+    holder["app"] = app
+    return app, seen
+
+
+def test_texts_are_set_before_styling_and_injecting_are_reported():
+    app, seen = _app_with_observer()
+    app.on_hotkey_press()
+    app.on_hotkey_release(duration_ms=500)
+    by_state = {s: rest for s, *rest in seen}
+    assert by_state[State.STYLING][0] == "stub"
+    assert by_state[State.INJECTING][:2] == ["stub", "stub"]
+
+
+def test_next_press_clears_texts_and_reason():
+    app, seen = _app_with_observer()
+    app.on_hotkey_press()
+    app.on_hotkey_release(duration_ms=500)
+    app.last_error = "alt|alt"
+    app.on_hotkey_press()
+    state, transcript, polished, error = seen[-1]
+    assert state == State.RECORDING
+    assert (transcript, polished, error) == ("", "", "")
+
+
+def test_device_error_reports_a_reason():
+    app, seen = _app_with_observer(recorder=_BrokenRecorder())
+    app.on_hotkey_press()
+    state, *_, error = seen[-1]
+    assert state == State.ERROR
+    assert error.startswith("Mikrofon nicht gefunden.")
+
+
+def test_pipeline_failure_reports_a_reason():
+    class _FailingStyler:
+        async def polish(self, text, mode, glossary=None):
+            raise RuntimeError("boom")
+
+    app, seen = _app_with_observer(styler=_FailingStyler())
+    app.on_hotkey_press()
+    app.on_hotkey_release(duration_ms=500)
+    errors = [e for s, _, _, e in seen if s == State.ERROR]
+    assert errors == ["Verarbeitung fehlgeschlagen.|Details im Log."]
+
+
+def test_edit_press_without_selection_reports_a_reason(monkeypatch):
+    monkeypatch.setattr("kira.app.read_selection", lambda: None)
+    app = KiraApp.for_test()
+    app.on_edit_press()
+    assert app.state == State.ERROR
+    assert app.last_error.startswith("Nichts markiert.")

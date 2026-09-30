@@ -1,0 +1,86 @@
+[project]
+name = "kira"
+version = "0.5.0"
+description = "Voice-to-text app for macOS and Windows 11"
+requires-python = ">=3.12"
+dependencies = [
+  "sounddevice>=0.5.0",
+  "numpy>=2.0",
+  "ollama>=0.4",
+  "pyperclip>=1.9",
+  "pydantic>=2.0",
+  "pyyaml>=6.0",
+  "packaging>=24.0",
+]
+
+[project.optional-dependencies]
+mac = [
+  "mlx-whisper>=0.4.0",
+  "pynput>=1.7",
+  "rumps>=0.4",
+  "pyobjc-framework-Cocoa>=11.0",
+  "pyobjc-framework-Quartz>=11.0",
+  "pyobjc-framework-ApplicationServices>=11.0",
+]
+windows = [
+  "faster-whisper>=1.1",
+  "pystray>=0.19",
+  "Pillow>=12.3.0",
+  "PyQt6>=6.7",
+  "keyboard>=0.13",
+  "pywin32>=306",
+  "psutil>=5.9",
+  "platformdirs>=4.0",
+  "nvidia-cudnn-cu12>=9.0",
+  "nvidia-cublas-cu12>=12.0",
+  "huggingface_hub>=0.20",
+]
+dev = [
+  "pytest>=8.0",
+  "pytest-asyncio>=0.24",
+  "pytest-qt>=4.4",
+  "pytest-mock>=3.12",
+  "py2app>=0.28; sys_platform == 'darwin'",
+  "soundfile>=0.12",
+]
+
+[tool.pytest.ini_options]
+markers = [
+  "integration: slow integration test, needs model download",
+  "windows_only: test requires Windows platform",
+  "mac_only: test requires macOS platform",
+]
+
+[project.scripts]
+kira-once = "kira.cli:main"
+
+[project.gui-scripts]
+kira = "kira.main:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["kira"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"assets/icon-branded.ico" = "kira/_assets/icon-branded.ico"
+"assets/icon.ico" = "kira/_assets/icon.ico"
+"assets/digitalroots-logo.png" = "kira/_assets/digitalroots-logo.png"
+"assets/kira-splash.png" = "kira/_assets/kira-splash.png"
+"assets/wordlist-de.txt" = "kira/_assets/wordlist-de.txt"
+"assets/fonts/IBMPlexMono-Regular.ttf" = "kira/_assets/fonts/IBMPlexMono-Regular.ttf"
+"assets/fonts/IBMPlexMono-Medium.ttf" = "kira/_assets/fonts/IBMPlexMono-Medium.ttf"
+"assets/fonts/IBMPlexMono-SemiBold.ttf" = "kira/_assets/fonts/IBMPlexMono-SemiBold.ttf"
+"assets/fonts/OFL-IBMPlexMono.txt" = "kira/_assets/fonts/OFL-IBMPlexMono.txt"
+"assets/fonts/Baloo2-SemiBold.ttf" = "kira/_assets/fonts/Baloo2-SemiBold.ttf"
+"assets/fonts/Baloo2-Bold.ttf" = "kira/_assets/fonts/Baloo2-Bold.ttf"
+"assets/fonts/Baloo2-ExtraBold.ttf" = "kira/_assets/fonts/Baloo2-ExtraBold.ttf"
+"assets/fonts/OFL-Baloo2.txt" = "kira/_assets/fonts/OFL-Baloo2.txt"
+"assets/brand/speech2anywhere-wortmarke-dunkel.svg" = "kira/_assets/brand/speech2anywhere-wortmarke-dunkel.svg"
+"assets/brand/speech2anywhere-wortmarke-hell.svg" = "kira/_assets/brand/speech2anywhere-wortmarke-hell.svg"
+"assets/brand/speech2anywhere-logo-plappern-256.png" = "kira/_assets/brand/speech2anywhere-logo-plappern-256.png"
+"assets/ui/chevron-down.svg" = "kira/_assets/ui/chevron-down.svg"
+"assets/ui/check.svg" = "kira/_assets/ui/check.svg"
+"prompts" = "kira/_prompts"

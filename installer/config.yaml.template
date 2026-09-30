@@ -1,0 +1,30 @@
+# Speech2Anywhere config. Written once by the installer, updates leave it alone.
+# Every key is optional; missing keys use the built-in defaults.
+
+audio:
+  # Software gain on the raw microphone signal, 1 to 200.
+  input_gain: 1.8
+  # Part of a microphone name to pin the input device, null = system default.
+  input_device: null
+
+whisper:
+  # Local CTranslate2 model placed by the installer.
+  model: C:/Users/${USERNAME}/models/faster-whisper-large-v3
+  language: de
+  # Voice activity threshold, 0 to 1. Push-to-talk needs little filtering.
+  vad_threshold: 0.15
+  condition_on_previous_text: false
+  # Words Whisper should recognise reliably.
+  initial_prompt: "Whisper, Ollama, GitHub, Python, Linux, Windows."
+
+styler:
+  # Ollama model for the cleanup step; gemma4:e4b needs less VRAM.
+  model: gemma4:12b
+  # Seconds to wait for the cleanup before falling back to the raw text.
+  timeout_seconds: 30.0
+  fallback_to_raw: true
+
+# Learning from corrections: on/off, folders with chat histories to learn from.
+learning:
+  enabled: true
+  sources: []
