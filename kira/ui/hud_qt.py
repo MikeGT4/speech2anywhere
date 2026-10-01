@@ -153,6 +153,7 @@ class PopupHUD(QWidget):
             self._style.error(t, message or "Details im Log.", self._frame)
         elif phase == "idle":
             style.abort(t)
+        self._paint_t = t
         if self._style.visible:
             self._start()
         else:

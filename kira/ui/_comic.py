@@ -352,17 +352,32 @@ class DarkHeader(QWidget):
 
 
 class DotBackground(QWidget):
+    GRID = 14
+    _tiles: dict[float, QPixmap] = {}
+
+    @classmethod
+    def _tile(cls, ratio: float) -> QPixmap:
+        tile = cls._tiles.get(ratio)
+        if tile is None:
+            tile = QPixmap(round(cls.GRID * ratio), round(cls.GRID * ratio))
+            tile.setDevicePixelRatio(ratio)
+            tile.fill(QColor(CREAM))
+            p = QPainter(tile)
+            p.setRenderHint(QPainter.RenderHint.Antialiasing)
+            p.setPen(Qt.PenStyle.NoPen)
+            dot = QColor(INK)
+            dot.setAlphaF(0.035)
+            p.setBrush(dot)
+            p.drawEllipse(QPointF(cls.GRID / 2, cls.GRID / 2), 0.9, 0.9)
+            p.end()
+            cls._tiles[ratio] = tile
+        return tile
+
     def paintEvent(self, event) -> None:  # noqa: N802
+        area = event.rect()
         p = QPainter(self)
-        p.fillRect(self.rect(), QColor(CREAM))
-        p.setRenderHint(QPainter.RenderHint.Antialiasing)
-        p.setPen(Qt.PenStyle.NoPen)
-        dot = QColor(INK)
-        dot.setAlphaF(0.035)
-        p.setBrush(dot)
-        for y in range(7, self.height(), 14):
-            for x in range(7, self.width(), 14):
-                p.drawEllipse(QPointF(x, y), 0.9, 0.9)
+        p.drawTiledPixmap(QRectF(area), self._tile(self.devicePixelRatioF()),
+                          QPointF(area.x() % self.GRID, area.y() % self.GRID))
 
 
 class BubbleTab(QAbstractButton):

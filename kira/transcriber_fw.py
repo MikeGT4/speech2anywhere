@@ -77,11 +77,16 @@ def _normalized(text: str) -> str:
 
 _NORMALIZED_HALLUCINATIONS = frozenset(_normalized(entry) for entry in _KNOWN_HALLUCINATIONS)
 
+SILENCE_PEAK = 0.05
+CONFIDENT_SPEECH_NO_SPEECH_PROB = 0.1
 
-def _is_hallucination(text: str) -> bool:
+
+def _is_hallucination(text: str, peak: float = 0.0, no_speech: float = 1.0) -> bool:
     if not text:
         return False
-    return _normalized(text) in _NORMALIZED_HALLUCINATIONS
+    if _normalized(text) not in _NORMALIZED_HALLUCINATIONS:
+        return False
+    return peak < SILENCE_PEAK or no_speech > CONFIDENT_SPEECH_NO_SPEECH_PROB
 
 
 def _log_replacement(found: str, replacement: str) -> None:
@@ -219,7 +224,9 @@ class Transcriber:
             logprobs = [getattr(s, "avg_logprob", None) for s in seg_list]
             logprobs = [lp for lp in logprobs if lp is not None]
             min_logprob = min(logprobs) if logprobs else None
-            if _is_hallucination(text):
+            peak = float(np.max(np.abs(audio)))
+            no_speech = max((getattr(s, "no_speech_prob", 1.0) for s in seg_list), default=1.0)
+            if _is_hallucination(text, peak=peak, no_speech=no_speech):
                 log.warning(
                     "Whisper hallucination filter caught %r, pipeline "
                     "will abort before polish",

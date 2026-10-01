@@ -524,3 +524,26 @@ def test_hud_window_asks_windows_for_no_border(qtbot, tmp_path, monkeypatch):
     qtbot.addWidget(hud)
     QWidget.show(hud)
     assert asked == {2: 1, 33: 1, 34: 0xFFFFFFFE}
+
+
+@pytest.mark.parametrize("key", ["comic", "phosphor"])
+def test_first_paint_after_press_never_shows_negative_time(qtbot, tmp_path, key):
+    from kira.ui.hud_qt import PopupHUD
+    cfg = tmp_path / "config.yaml"
+    _write_cfg(cfg, key)
+    hud = PopupHUD(config_path=cfg, state_dir=tmp_path)
+    qtbot.addWidget(hud)
+    hud._paint_t -= 30.0
+    hud._on_phase("rec", "")
+    assert hud._style.elapsed(hud._paint_t) >= 0
+    hud._on_phase("idle", "")
+
+
+def test_thought_cloud_is_built_once_per_size(qapp):
+    from PyQt6.QtCore import QRectF
+    from kira.ui.hud import comic
+    comic._cloud_at.cache_clear()
+    first = comic._cloud(QRectF(94, 3, 158, 56))
+    second = comic._cloud(QRectF(94, 3, 158, 56))
+    assert first == second
+    assert comic._cloud_at.cache_info().misses == 1

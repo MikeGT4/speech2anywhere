@@ -141,3 +141,28 @@ def test_build_icon_bypasses_cache():
     b = _build_icon(State.IDLE)
     assert a is not b
     assert _center_pixel(a) == _center_pixel(b)
+
+
+def test_tray_icon_loads_each_image_only_once(monkeypatch):
+    from kira.ui import tray_win
+    loads = []
+    original = tray_win._PystrayWin32Icon._assert_icon_handle
+
+    def counting(self):
+        loads.append(self.icon)
+        original(self)
+
+    monkeypatch.setattr(tray_win._PystrayWin32Icon, "_assert_icon_handle", counting)
+    idle = tray_win._load_or_generate_icon(tray_win.State.IDLE)
+    talking = tray_win._load_or_generate_icon(tray_win.State.RECORDING)
+    icon = tray_win._KiraPystrayIcon("probe", icon=idle)
+    handles = []
+    for image in (idle, talking, idle, talking, idle):
+        icon._icon = image
+        icon._release_icon()
+        icon._assert_icon_handle()
+        handles.append(icon._icon_handle)
+    assert len(loads) == 2
+    assert handles[0] == handles[2] == handles[4]
+    assert handles[1] == handles[3]
+    assert handles[0] != handles[1]

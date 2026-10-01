@@ -225,3 +225,39 @@ def test_edit_feature_is_named_like_on_the_website(dialog):
     from PyQt6.QtWidgets import QLabel
     texte = [w.text() for w in dialog.findChildren(QLabel)]
     assert "Bearbeiten" in texte and "Bearbeiten-Taste" in texte
+
+
+def _reference_dot_grid(width, height):
+    from PyQt6.QtCore import QPointF
+    from PyQt6.QtGui import QColor, QImage, QPainter
+    from kira.ui import _comic
+    image = QImage(width, height, QImage.Format.Format_ARGB32_Premultiplied)
+    p = QPainter(image)
+    p.fillRect(0, 0, width, height, QColor(_comic.CREAM))
+    p.setRenderHint(QPainter.RenderHint.Antialiasing)
+    p.setPen(Qt.PenStyle.NoPen)
+    dot = QColor(_comic.INK)
+    dot.setAlphaF(0.035)
+    p.setBrush(dot)
+    for y in range(7, height, 14):
+        for x in range(7, width, 14):
+            p.drawEllipse(QPointF(x, y), 0.9, 0.9)
+    p.end()
+    return image
+
+
+def test_dot_background_draws_the_same_grid_from_a_cached_tile(qtbot):
+    from PyQt6.QtGui import QImage
+    from kira.ui import _comic
+    widget = _comic.DotBackground()
+    qtbot.addWidget(widget)
+    widget.resize(97, 61)
+    drawn = widget.grab().toImage().convertToFormat(QImage.Format.Format_ARGB32_Premultiplied)
+    reference = _reference_dot_grid(97, 61)
+    worst = max(
+        abs(a - b)
+        for y in range(61) for x in range(97)
+        for a, b in zip(drawn.pixelColor(x, y).getRgb(), reference.pixelColor(x, y).getRgb())
+    )
+    assert worst <= 1
+    assert _comic.DotBackground._tile(1.0) is _comic.DotBackground._tile(1.0)

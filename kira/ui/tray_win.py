@@ -28,7 +28,10 @@ _WM_GETTEXTLENGTH = 0x000E
 
 
 class _KiraPystrayIcon(_PystrayWin32Icon):
+    ICON_HANDLE_LIMIT = 16
+
     def __init__(self, *args, **kwargs):
+        self._icon_handles: dict[int, tuple[Image.Image, int]] = {}
         super().__init__(*args, **kwargs)
 
         def _passthrough(msg):
@@ -39,13 +42,31 @@ class _KiraPystrayIcon(_PystrayWin32Icon):
         for msg in (_WM_SETTEXT, _WM_GETTEXT, _WM_GETTEXTLENGTH):
             self._message_handlers[msg] = _passthrough(msg)
 
-    on_context_menu: Callable[[], None] | None = None
+    on_context_menu: Callable[[], bool] | None = None
+
+    def _assert_icon_handle(self):
+        if self._icon_handle:
+            return
+        image = self.icon
+        cached = self._icon_handles.get(id(image))
+        if cached is not None and cached[0] is image:
+            self._icon_handle = cached[1]
+            return
+        super()._assert_icon_handle()
+        if len(self._icon_handles) < self.ICON_HANDLE_LIMIT:
+            self._icon_handles[id(image)] = (image, self._icon_handle)
+
+    def _release_icon(self):
+        handle = self._icon_handle
+        if handle and all(handle != cached for _image, cached in self._icon_handles.values()):
+            _ps_win32.DestroyIcon(handle)
+        self._icon_handle = None
 
     def _on_notify(self, wparam, lparam):
         if lparam == _ps_win32.WM_RBUTTONUP and self.on_context_menu is not None:
             _ps_win32.SetForegroundWindow(self._hwnd)
-            self.on_context_menu()
-            return
+            if self.on_context_menu():
+                return
         super()._on_notify(wparam, lparam)
 
     def _register_class(self):
@@ -120,6 +141,7 @@ def _overlay_dot(img: Image.Image, rgba: tuple[int, int, int, int]) -> None:
 
 
 PLAPPER_INTERVAL_S = 0.25
+CONTEXT_MENU_WAIT_S = 0.3
 _PLAPPER_LOGO = "speech2anywhere-logo-plappern-256.png"
 
 
@@ -289,8 +311,16 @@ class KiraTray:
             separated = False
         return menu
 
-    def _request_context_menu(self) -> None:
+    def _request_context_menu(self) -> bool:
+        if self._qt_marshal is None:
+            return False
+        responsive = threading.Event()
+        self._qt_marshal.run_on_main_thread(responsive.set)
+        if not responsive.wait(CONTEXT_MENU_WAIT_S):
+            log.info("Tray-Menü: Qt-Hauptthread belegt, zeige das Windows-Menü")
+            return False
         self._marshal_to_qt(self._show_context_menu, "tray menu")
+        return True
 
     def _show_context_menu(self) -> None:
         from PyQt6.QtCore import QPoint

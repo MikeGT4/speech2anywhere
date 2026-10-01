@@ -2,10 +2,8 @@ from __future__ import annotations
 import logging
 import subprocess
 
-from PIL import Image
-from PIL.ImageQt import ImageQt
 from PyQt6.QtCore import Qt, QObject, QThread, pyqtSignal
-from PyQt6.QtGui import QIcon, QPixmap
+from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import (
     QButtonGroup, QComboBox, QDialog, QDoubleSpinBox, QHBoxLayout, QLabel, QLineEdit, QMessageBox,
     QProgressDialog, QPushButton, QSpinBox, QStackedWidget, QVBoxLayout, QWidget,
@@ -36,27 +34,6 @@ _UNCENSORED_MODEL = "huihui_ai/Qwen3.6-abliterated:27b"
 _LANGUAGES = (("auto", "Automatisch erkennen"), ("de", "Deutsch"), ("en", "Englisch"))
 
 _GAIN_SLIDER_MAX = 50
-
-
-def _load_branded_pixmap(size: int) -> QPixmap | None:
-    src = _ASSETS / "icon-branded.ico"
-    if not src.exists():
-        return None
-    try:
-        img = Image.open(src)
-        ico = getattr(img, "ico", None)
-        if ico is not None:
-            sizes = sorted(ico.sizes(), key=lambda s: s[0] * s[1])
-            if sizes:
-                img.size = sizes[-1]  # type: ignore[misc]
-                img.load()
-        img = img.convert("RGBA").resize(
-            (size, size), Image.Resampling.LANCZOS,
-        )
-        return QPixmap.fromImage(ImageQt(img))
-    except Exception:
-        log.exception("failed to load icon-branded.ico for header")
-        return None
 
 
 def _ollama_client():
@@ -203,7 +180,6 @@ class SettingsDialog(QDialog):
             self.setWindowIcon(QIcon(str(icon_path)))
         self.setModal(True)
         apply_light_theme(self)
-        self.setStyleSheet(comic.dialog_qss())
         self.setMinimumWidth(840)
 
         self._cfg = load_config()
@@ -213,8 +189,7 @@ class SettingsDialog(QDialog):
         self._gpu_thread: QThread | None = None
         self._gpu_worker: _GpuCheckWorker | None = None
         self._open_learned_words = open_learned_words
-        self._titlebar_done = False
-        self._mascot = _load_branded_pixmap(32)
+        self._mascot = comic.mascot_pixmap(32)
 
         self._pages = QStackedWidget()
         root = QVBoxLayout(self)
@@ -235,13 +210,6 @@ class SettingsDialog(QDialog):
         self._tabs[0].setChecked(True)
         self._pages.setCurrentIndex(0)
 
-    def showEvent(self, event) -> None:  # noqa: N802
-        super().showEvent(event)
-        if not self._titlebar_done:
-            comic.dark_titlebar(self)
-            self._titlebar_done = True
-
-
     def _build_header(self) -> QWidget:
         header = comic.DarkHeader()
         lay = QVBoxLayout(header)
@@ -251,7 +219,7 @@ class SettingsDialog(QDialog):
         top = QHBoxLayout()
         top.setSpacing(16)
         logo = QLabel()
-        pix = _load_branded_pixmap(64)
+        pix = comic.mascot_pixmap(64)
         if pix is not None:
             logo.setPixmap(pix)
         top.addWidget(logo)
@@ -275,21 +243,13 @@ class SettingsDialog(QDialog):
         return header
 
     def _build_footer(self) -> QHBoxLayout:
-        row = QHBoxLayout()
-        row.setSpacing(12)
-        note = QLabel("Fast alles wirkt nach einem kurzen Neustart.")
-        note.setObjectName("comicNote")
-        row.addWidget(note)
-        row.addStretch()
         cancel = QPushButton("Abbrechen")
         cancel.clicked.connect(self.reject)
-        row.addWidget(cancel)
         save = QPushButton("Speichern")
         save.setObjectName("comicPrimary")
         save.setDefault(True)
         save.clicked.connect(self._save)
-        row.addWidget(save)
-        return row
+        return comic.footer_row("Fast alles wirkt nach einem kurzen Neustart.", cancel, save)
 
     def _card(self, title: str) -> comic.ComicCard:
         return comic.ComicCard(title, self._mascot)

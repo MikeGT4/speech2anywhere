@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.1 (01.10.2026)
+
+- Ein kurzes „Danke“ oder „Vielen Dank“ bleibt erhalten, wenn es deutlich gesprochen wurde; verworfen wird es nur bei Stille oder Geräusch
+- Das Tray-Menü öffnet sofort, auch wenn die App gerade beschäftigt ist
+- Das Tray-Symbol schreibt während der Aufnahme keine temporären Dateien mehr
+- Die Aufnahme-Anzeige zeichnet sparsamer
+
 ## 0.5.0 (30.09.2026)
 
 - Neuer Name Speech2Anywhere, neues Logo, alle Fenster im Comic-Stil

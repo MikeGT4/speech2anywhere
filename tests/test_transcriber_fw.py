@@ -552,3 +552,54 @@ def test_broken_lexicon_falls_back_to_config(monkeypatch, fake_config, caplog):
 def test_hallucination_match_ignores_apostrophes_and_punctuation(text, expected):
     from kira.transcriber_fw import _is_hallucination
     assert _is_hallucination(text) is expected
+
+
+def _transcribe_single_segment(monkeypatch, fake_config, text, no_speech_prob, peak):
+    from kira.transcriber_fw import Transcriber
+
+    class FakeInfo:
+        language = "de"
+
+    class FakeSegment:
+        def __init__(self):
+            self.text = text
+            self.no_speech_prob = no_speech_prob
+            self.avg_logprob = -0.3
+
+    class FakeWhisperModel:
+        def __init__(self, *a, **kw): pass
+        def transcribe(self, audio, **kw):
+            return iter([FakeSegment()]), FakeInfo()
+
+    monkeypatch.setattr("kira.transcriber_fw.WhisperModel", FakeWhisperModel)
+    audio = np.zeros(16000, dtype=np.float32)
+    audio[8000] = peak
+    return Transcriber(fake_config).transcribe(audio)
+
+
+def test_spoken_thanks_with_confident_speech_is_kept(monkeypatch, fake_config):
+    result = _transcribe_single_segment(monkeypatch, fake_config, "Danke!", 0.02, 0.6)
+    assert result.text == "Danke!"
+
+
+def test_thanks_on_silence_is_dropped_even_when_whisper_is_sure(monkeypatch, fake_config):
+    result = _transcribe_single_segment(monkeypatch, fake_config, "Danke.", 0.02, 0.0002)
+    assert result.text == ""
+
+
+def test_thanks_with_unsure_speech_is_dropped(monkeypatch, fake_config):
+    result = _transcribe_single_segment(monkeypatch, fake_config, "Vielen Dank.", 0.38, 0.3)
+    assert result.text == ""
+
+
+@pytest.mark.parametrize(("peak", "no_speech", "expected"), [
+    (0.0001, 0.25, True),
+    (0.0001, 0.01, True),
+    (0.30, 0.38, True),
+    (0.60, 0.02, False),
+    (0.94, 0.10, False),
+    (0.94, 0.11, True),
+])
+def test_hallucination_needs_silence_or_unsure_speech(peak, no_speech, expected):
+    from kira.transcriber_fw import _is_hallucination
+    assert _is_hallucination("Vielen Dank.", peak=peak, no_speech=no_speech) is expected

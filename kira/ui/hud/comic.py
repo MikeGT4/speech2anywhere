@@ -1,6 +1,7 @@
 # © 2026 Mike Pollow, Digitalroots. Alle Rechte vorbehalten.
 from __future__ import annotations
 
+import functools
 import math
 from dataclasses import dataclass
 
@@ -192,6 +193,12 @@ def _check(p: QPainter, x: float, y: float, s: float) -> None:
 
 
 def _cloud(r: QRectF) -> QPainterPath:
+    return QPainterPath(_cloud_at(r.x(), r.y(), r.width(), r.height()))
+
+
+@functools.lru_cache(maxsize=8)
+def _cloud_at(x: float, y: float, width: float, height: float) -> QPainterPath:
+    r = QRectF(x, y, width, height)
     path = QPainterPath()
     path.addRoundedRect(r.adjusted(5, 5, -5, -5), 12, 12)
     n = max(3, int(r.width() / 24))
