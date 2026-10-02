@@ -84,8 +84,6 @@ class PopupHUD(QWidget):
         self._sig.texts.connect(self._on_texts)
         self._sig.push_samples.connect(self._on_push_samples)
 
-        self._border_off = False
-
         self._timer = QTimer(self)
         self._timer.setTimerType(Qt.TimerType.PreciseTimer)
         self._timer.setInterval(FRAME_MS)
@@ -261,9 +259,7 @@ class PopupHUD(QWidget):
 
     def showEvent(self, event) -> None:  # noqa: N802
         super().showEvent(event)
-        if not self._border_off:
-            self._border_off = True
-            comic.without_window_border(self)
+        comic.without_window_border(self)
 
     def paintEvent(self, _event) -> None:
         style = self._style

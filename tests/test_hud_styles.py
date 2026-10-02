@@ -526,6 +526,27 @@ def test_hud_window_asks_windows_for_no_border(qtbot, tmp_path, monkeypatch):
     assert asked == {2: 1, 33: 1, 34: 0xFFFFFFFE}
 
 
+def test_hud_window_asks_for_no_border_on_every_show(qtbot, tmp_path, monkeypatch):
+    import ctypes
+    from PyQt6.QtWidgets import QWidget
+    from kira.ui import hud_qt
+    asked = []
+
+    def fake(hwnd, attribute, data, size):
+        asked.append((attribute.value, data._obj.value))
+        return 0
+
+    monkeypatch.setattr(ctypes.windll.dwmapi, "DwmSetWindowAttribute", fake, raising=False)
+    cfg = tmp_path / "config.yaml"
+    _write_cfg(cfg, "comic")
+    hud = hud_qt.PopupHUD(config_path=cfg, state_dir=tmp_path)
+    qtbot.addWidget(hud)
+    for _ in range(3):
+        QWidget.show(hud)
+        QWidget.hide(hud)
+    assert asked == [(2, 1), (33, 1), (34, 0xFFFFFFFE)] * 3
+
+
 @pytest.mark.parametrize("key", ["comic", "phosphor"])
 def test_first_paint_after_press_never_shows_negative_time(qtbot, tmp_path, key):
     from kira.ui.hud_qt import PopupHUD
@@ -547,3 +568,91 @@ def test_thought_cloud_is_built_once_per_size(qapp):
     second = comic._cloud(QRectF(94, 3, 158, 56))
     assert first == second
     assert comic._cloud_at.cache_info().misses == 1
+
+
+def _think_cycle(d: Driver, recognize: float, polish: float = 0.0, scene: str | None = None) -> None:
+    d.press()
+    if scene is not None:
+        d.style.polish_scene = scene
+    d.run(0.6)
+    d.style.release(d.t, d.f)
+    d.run(recognize, amp=0.0)
+    if polish:
+        d.f.polishing = True
+        d.f.polish_t = d.t
+        d.run(polish, amp=0.0)
+
+
+def _count_color(img: QImage, box: tuple[float, float, float, float], rgb: tuple[int, int, int],
+                 px: float, tol: int = 12) -> int:
+    ptr = img.constBits()
+    ptr.setsize(img.sizeInBytes())
+    arr = np.frombuffer(ptr, np.uint8).reshape(img.height(), img.bytesPerLine() // 4, 4)
+    x, y, w, h = (round(v * px) for v in box)
+    part = arr[y:y + h, x:x + w].astype(int)
+    hit = ((abs(part[..., 2] - rgb[0]) <= tol) & (abs(part[..., 1] - rgb[1]) <= tol)
+           & (abs(part[..., 0] - rgb[2]) <= tol) & (part[..., 3] > 200))
+    return int(hit.sum())
+
+
+def test_comic_polish_scene_is_iron_or_gears_by_chance(qapp):
+    import random
+    d = Driver("comic")
+    d.style._rng = random.Random(7)
+    seen = set()
+    for _ in range(24):
+        d.press()
+        seen.add(d.style.polish_scene)
+        d.style.abort(d.t)
+        d.run(0.2, amp=0.0)
+    assert seen == {"buegeln", "zahnraeder"}
+
+
+def test_comic_recognition_shows_the_washing_drum(qapp):
+    d = Driver("comic", reduced=True)
+    _think_cycle(d, 0.8)
+    assert _count_color(d.render(), (99, 9, 44, 44), (227, 244, 251), d.f.px) > 300
+
+
+def test_comic_washing_turns_into_spin_cycle_after_three_seconds(qapp):
+    d = Driver("comic")
+    _think_cycle(d, 1.0)
+    assert d.style.caption(d.t, d.f) == "Wäsche läuft…"
+    d.run(2.2, amp=0.0)
+    assert d.style.caption(d.t, d.f) == "Schleudergang…"
+
+
+@pytest.mark.parametrize("scene, box", [("buegeln", (100, 22, 146, 32)), ("zahnraeder", (100, 14, 36, 34))])
+def test_comic_polish_shows_iron_or_gears_in_yellow(qapp, scene, box):
+    d = Driver("comic", reduced=True)
+    _think_cycle(d, 0.5, 0.5, scene)
+    assert _count_color(d.render(), box, (255, 196, 0), d.f.px) > 80
+
+
+def test_comic_sweats_only_after_six_seconds(qapp):
+    d = Driver("comic")
+    _think_cycle(d, 5.5)
+    assert not d.style.sweating(d.t)
+    d.run(0.7, amp=0.0)
+    assert d.style.sweating(d.t)
+
+
+@pytest.mark.parametrize("scene", ["buegeln", "zahnraeder"])
+@pytest.mark.parametrize("reduced", [False, True])
+def test_comic_long_wait_keeps_drawing(qapp, scene, reduced):
+    d = Driver("comic", reduced=reduced)
+    _think_cycle(d, 7.0, 7.0, scene)
+    assert d.style.visible
+    assert _ink(d.render()) > 2000
+
+
+@pytest.mark.parametrize("scene", [None, "buegeln", "zahnraeder"])
+def test_comic_thinking_moves_unless_reduced(qapp, scene):
+    for reduced in (False, True):
+        d = Driver("comic", reduced=reduced)
+        _think_cycle(d, 1.0, 0.4 if scene else 0.0, scene)
+        first = d.render()
+        d.t += 0.2
+        second = d.render()
+        x, y, w, h = (round(v * d.f.px) for v in (94, 3, 158, 56))
+        assert (first.copy(x, y, w, h) != second.copy(x, y, w, h)) is not reduced
