@@ -7,6 +7,10 @@ def test_tuning_env_disables_llama_server_prompt_cache():
     assert oe.TUNING_ENV["LLAMA_ARG_CACHE_RAM"] == "0"
 
 
+def test_tuning_env_raises_cuda_jit_cache_to_its_maximum():
+    assert oe.TUNING_ENV["CUDA_CACHE_MAXSIZE"] == str(4 * 1024 ** 3)
+
+
 def test_pending_changes_empty_env_needs_all():
     assert oe.pending_changes({}) == oe.TUNING_ENV
 

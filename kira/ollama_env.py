@@ -10,6 +10,7 @@ TUNING_ENV: dict[str, str] = {
     "OLLAMA_FLASH_ATTENTION": "1",
     "OLLAMA_KV_CACHE_TYPE": "q8_0",
     "LLAMA_ARG_CACHE_RAM": "0",
+    "CUDA_CACHE_MAXSIZE": "4294967296",
 }
 
 _USER_ENV_SUBKEY = "Environment"
@@ -82,7 +83,7 @@ def apply_tuning_env() -> list[str]:
 
     if written:
         log.info(
-            "Ollama-VRAM-Tuning gesetzt (%s), greift nach Ollama-Neustart oder Reboot",
+            "Umgebungsvariablen gesetzt (%s), wirksam nach Neustart von Ollama und Speech2Anywhere oder Windows",
             ", ".join(written),
         )
     return written
