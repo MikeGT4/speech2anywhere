@@ -573,7 +573,7 @@ def test_thought_cloud_is_built_once_per_size(qapp):
 def _think_cycle(d: Driver, recognize: float, polish: float = 0.0, scene: str | None = None) -> None:
     d.press()
     if scene is not None:
-        d.style.polish_scene = scene
+        d.style.scene = scene
     d.run(0.6)
     d.style.release(d.t, d.f)
     d.run(recognize, amp=0.0)
@@ -595,37 +595,66 @@ def _count_color(img: QImage, box: tuple[float, float, float, float], rgb: tuple
     return int(hit.sum())
 
 
-def test_comic_polish_scene_is_iron_or_gears_by_chance(qapp):
+def test_comic_scene_is_chosen_by_chance_per_dictation(qapp):
     import random
+    from kira.ui.hud import comic
     d = Driver("comic")
     d.style._rng = random.Random(7)
     seen = set()
     for _ in range(24):
         d.press()
-        seen.add(d.style.polish_scene)
+        seen.add(d.style.scene)
         d.style.abort(d.t)
         d.run(0.2, amp=0.0)
-    assert seen == {"buegeln", "zahnraeder"}
+    assert seen == set(comic.SCENES) == {"waesche", "buegeln", "zahnraeder"}
 
 
-def test_comic_recognition_shows_the_washing_drum(qapp):
+@pytest.mark.parametrize("scene", ["waesche", "buegeln", "zahnraeder"])
+def test_comic_scene_stays_when_polish_begins(qapp, scene):
+    d = Driver("comic")
+    _think_cycle(d, 0.8, scene=scene)
+    before = d.style.scene_at(d.t, d.f)[0]
+    d.f.polishing = True
+    d.f.polish_t = d.t
+    d.run(0.3, amp=0.0)
+    assert before == d.style.scene_at(d.t, d.f)[0] == scene
+
+
+def test_comic_scene_changes_only_every_five_seconds(qapp):
+    d = Driver("comic")
+    _think_cycle(d, 4.9, scene="buegeln")
+    assert d.style.scene_at(d.t, d.f)[0] == "buegeln"
+    d.run(0.2, amp=0.0)
+    assert d.style.scene_at(d.t, d.f)[0] == "zahnraeder"
+    d.run(5.0, amp=0.0)
+    assert d.style.scene_at(d.t, d.f)[0] == "waesche"
+
+
+def test_comic_scene_never_changes_with_animations_off(qapp):
     d = Driver("comic", reduced=True)
-    _think_cycle(d, 0.8)
+    _think_cycle(d, 11.0, scene="buegeln")
+    assert d.style.scene_at(d.t, d.f)[0] == "buegeln"
+
+
+def test_comic_shows_the_washing_drum(qapp):
+    d = Driver("comic", reduced=True)
+    _think_cycle(d, 0.8, scene="waesche")
     assert _count_color(d.render(), (99, 9, 44, 44), (227, 244, 251), d.f.px) > 300
 
 
 def test_comic_washing_turns_into_spin_cycle_after_three_seconds(qapp):
     d = Driver("comic")
-    _think_cycle(d, 1.0)
+    _think_cycle(d, 1.0, scene="waesche")
     assert d.style.caption(d.t, d.f) == "Wäsche läuft…"
     d.run(2.2, amp=0.0)
     assert d.style.caption(d.t, d.f) == "Schleudergang…"
 
 
 @pytest.mark.parametrize("scene, box", [("buegeln", (100, 22, 146, 32)), ("zahnraeder", (100, 14, 36, 34))])
-def test_comic_polish_shows_iron_or_gears_in_yellow(qapp, scene, box):
+@pytest.mark.parametrize("polish", [0.0, 0.5])
+def test_comic_shows_iron_or_gears_in_yellow(qapp, scene, box, polish):
     d = Driver("comic", reduced=True)
-    _think_cycle(d, 0.5, 0.5, scene)
+    _think_cycle(d, 0.5, polish, scene)
     assert _count_color(d.render(), box, (255, 196, 0), d.f.px) > 80
 
 
@@ -637,7 +666,7 @@ def test_comic_sweats_only_after_six_seconds(qapp):
     assert d.style.sweating(d.t)
 
 
-@pytest.mark.parametrize("scene", ["buegeln", "zahnraeder"])
+@pytest.mark.parametrize("scene", ["waesche", "buegeln", "zahnraeder"])
 @pytest.mark.parametrize("reduced", [False, True])
 def test_comic_long_wait_keeps_drawing(qapp, scene, reduced):
     d = Driver("comic", reduced=reduced)
@@ -646,11 +675,12 @@ def test_comic_long_wait_keeps_drawing(qapp, scene, reduced):
     assert _ink(d.render()) > 2000
 
 
-@pytest.mark.parametrize("scene", [None, "buegeln", "zahnraeder"])
-def test_comic_thinking_moves_unless_reduced(qapp, scene):
+@pytest.mark.parametrize("scene", ["waesche", "buegeln", "zahnraeder"])
+@pytest.mark.parametrize("polish", [0.0, 0.4])
+def test_comic_thinking_moves_unless_reduced(qapp, scene, polish):
     for reduced in (False, True):
         d = Driver("comic", reduced=reduced)
-        _think_cycle(d, 1.0, 0.4 if scene else 0.0, scene)
+        _think_cycle(d, 1.0, polish, scene)
         first = d.render()
         d.t += 0.2
         second = d.render()

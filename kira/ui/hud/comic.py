@@ -44,7 +44,8 @@ DRUM_WORDS = (("bla", 8.5, 8), ("bla", 9.5, 8), ("blubb", 6.0, 7))
 SPIN_AFTER_S = 3.0
 SMOKE_AFTER_S = 3.0
 SWEAT_AFTER_S = 6.0
-POLISH_SCENES = ("buegeln", "zahnraeder")
+SCENES = ("waesche", "buegeln", "zahnraeder")
+SCENE_S = 5.0
 IRON_PASS_S = 1.5
 IRON_SCALE = 1.1
 IRON_LEFT, IRON_RIGHT = 108.0, 236.0
@@ -450,19 +451,25 @@ class Comic(HudStyle):
         self._next_spawn = 0.0
         self._lv = 0.0
         self._rng = random.Random()
-        self.polish_scene = POLISH_SCENES[0]
+        self.scene = SCENES[0]
 
     def on_press(self, t: float, f: Frame) -> None:
         self._words = []
         self._count = 0
         self._next_spawn = t
         self._lv = 0.0
-        self.polish_scene = self._rng.choice(POLISH_SCENES)
+        self.scene = self._rng.choice(SCENES)
+
+    def scene_at(self, t: float, f: Frame) -> tuple[str, float]:
+        step = 0 if f.reduced else max(0, int((t - self.rel_t) // SCENE_S))
+        start = SCENES.index(self.scene)
+        return SCENES[(start + step) % len(SCENES)], self.rel_t + step * SCENE_S
 
     def caption(self, t: float, f: Frame) -> str:
-        if f.polishing:
-            return "gleich fertig" if self.polish_scene == "zahnraeder" else ""
-        return "Schleudergang…" if t - self.rel_t >= SPIN_AFTER_S else "Wäsche läuft…"
+        key, t0 = self.scene_at(t, f)
+        if key == "waesche":
+            return "Schleudergang…" if t - t0 >= SPIN_AFTER_S else "Wäsche läuft…"
+        return "gleich fertig" if key == "zahnraeder" else ""
 
     def sweating(self, t: float) -> bool:
         return self.mode == "proc" and t - self.rel_t >= SWEAT_AFTER_S
@@ -525,46 +532,46 @@ class Comic(HudStyle):
         _text(p, 166, 48, "ZU NAH!", comic.baloo(800, 22), INK, "center")
 
     def _think(self, p: QPainter, t: float, f: Frame) -> None:
-        wait = t - self.rel_t
-        if not f.polishing:
-            self._washing(p, t, f, 0.0 if f.reduced else wait)
-        elif self.polish_scene == "zahnraeder":
-            self._gears_scene(p, t, f)
+        key, t0 = self.scene_at(t, f)
+        title = "Politur" if f.polishing else "Erkennen"
+        if key == "waesche":
+            self._washing(p, t, f, t - t0, title)
+        elif key == "zahnraeder":
+            self._gears_scene(p, t, f, t - t0, title)
         else:
-            self._ironing(p, t, f)
+            self._ironing(p, f, t - t0, title)
         if self.sweating(t):
-            _sweat(p, 0.3 if f.reduced else wait - SWEAT_AFTER_S)
+            _sweat(p, 0.3 if f.reduced else t - self.rel_t - SWEAT_AFTER_S)
 
-    def _washing(self, p: QPainter, t: float, f: Frame, age: float) -> None:
-        spin = t - self.rel_t >= SPIN_AFTER_S
+    def _washing(self, p: QPainter, t: float, f: Frame, elapsed: float, title: str) -> None:
+        spin = elapsed >= SPIN_AFTER_S
+        age = 0.0 if f.reduced else elapsed
         _mascot_looking(p, _circling_look(age, 0.7 if spin else 1.4), "o" if spin else "line")
         _trail(p)
         _ink_shape(p, _cloud(CLOUD), WHITE, 2.2)
         _drum(p, age, spin, f.reduced)
-        _text(p, 150, 31, "Erkennen", comic.baloo(800, 15), INK)
+        _text(p, 150, 31, title, comic.baloo(800, 15), INK)
         _text(p, 150, 47, self.caption(t, f), comic.baloo(600, 11), LABEL)
 
-    def _gears_scene(self, p: QPainter, t: float, f: Frame) -> None:
-        ph = t - f.polish_t
-        hot = ph >= SMOKE_AFTER_S
+    def _gears_scene(self, p: QPainter, t: float, f: Frame, elapsed: float, title: str) -> None:
+        hot = elapsed >= SMOKE_AFTER_S
         _mascot(p, "think")
         _trail(p)
         _ink_shape(p, _cloud(CLOUD), WHITE, 2.2)
-        _gears(p, 115, 31, 0.0 if f.reduced else ph * 2 * math.pi * 0.55 * (1.9 if hot else 1.0))
+        _gears(p, 115, 31, 0.0 if f.reduced else elapsed * 2 * math.pi * 0.55 * (1.9 if hot else 1.0))
         if hot and not f.reduced:
             for j in range(3):
-                age = ((ph - SMOKE_AFTER_S) * 0.9 + j / 3) % 1.0
+                age = ((elapsed - SMOKE_AFTER_S) * 0.9 + j / 3) % 1.0
                 _puff(p, 111 + j * 4 + age * 3, 19 - age * 12, 2.0 + age * 3.5, 1.0 - prog(age, 0.45, 0.55), SMOKE)
-        _text(p, 137, 31, "Politur", comic.baloo(800, 15), INK)
+        _text(p, 137, 31, title, comic.baloo(800, 15), INK)
         _dots(p, 225, 26, 0.0 if f.reduced else t)
         _text(p, 137, 47, self.caption(t, f), comic.baloo(600, 11), LABEL)
 
-    def _ironing(self, p: QPainter, t: float, f: Frame) -> None:
-        ph = t - f.polish_t
+    def _ironing(self, p: QPainter, f: Frame, elapsed: float, title: str) -> None:
         if f.reduced:
             ix, direction, passes = IRON_RIGHT, 1, 1
         else:
-            (ix, direction), passes = _iron_pass(ph), int(ph // IRON_PASS_S)
+            (ix, direction), passes = _iron_pass(elapsed), int(elapsed // IRON_PASS_S)
         look = round((-12 + 24 * (ix - IRON_LEFT) / (IRON_RIGHT - IRON_LEFT)) / 3) * 3
         _mascot_looking(p, (look, 14), "smile")
         _trail(p)
@@ -572,17 +579,17 @@ class Comic(HudStyle):
         _text_line(p, ix, direction, passes)
         if not f.reduced:
             for j in range(4):
-                age = (ph + j * 0.3) % 1.2
-                born_x = _iron_pass(max(0.0, ph - age))[0]
+                age = (elapsed + j * 0.3) % 1.2
+                born_x = _iron_pass(max(0.0, elapsed - age))[0]
                 _puff(p, born_x + 8 * direction, 31 - age * 12, 2.4 + age * 3.0,
                       (1.0 - prog(age, 0.5, 0.7)) * 0.95, WHITE)
-            if ph > 0.2:
+            if elapsed > 0.2:
                 for j in range(2):
-                    cyc = (ph * 1.3 + j * 0.5) % 1.0
+                    cyc = (elapsed * 1.3 + j * 0.5) % 1.0
                     sx = ix - direction * (14 + j * 22)
                     if IRON_LEFT <= sx <= IRON_RIGHT:
                         _sparkle(p, sx, LINE_Y - 9 - j * 3, 3.6 * math.sin(cyc * math.pi))
-        _text(p, 110, 23, "Politur", comic.baloo(800, 15), INK)
+        _text(p, 110, 23, title, comic.baloo(800, 15), INK)
         _iron(p, ix, LINE_Y - 3.5, direction)
 
     def _zack(self, p: QPainter, t: float, f: Frame) -> None:
