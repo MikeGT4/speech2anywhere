@@ -182,6 +182,13 @@ def test_hud_defaults_are_comic_at_150_percent(tmp_path):
     assert cfg.ui.hud_scale == 1.5
 
 
+def test_live_words_are_on_by_default_and_can_be_switched_off(tmp_path):
+    assert load_config(tmp_path / "missing.yaml").ui.hud_live_words is True
+    yaml_file = tmp_path / "config.yaml"
+    yaml_file.write_text("ui:\n  hud_live_words: false\n", encoding="utf-8")
+    assert load_config(yaml_file).ui.hud_live_words is False
+
+
 def test_explicit_phosphor_stays_phosphor(tmp_path):
     yaml_file = tmp_path / "config.yaml"
     yaml_file.write_text("ui:\n  hud_style: phosphor\n", encoding="utf-8")

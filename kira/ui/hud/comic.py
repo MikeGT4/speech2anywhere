@@ -4,14 +4,15 @@ from __future__ import annotations
 import functools
 import math
 import random
-from dataclasses import dataclass
+from collections import deque
+from dataclasses import dataclass, field
 
 from PyQt6.QtCore import QPointF, QRectF, Qt
 from PyQt6.QtGui import QColor, QFont, QFontMetricsF, QPainter, QPainterPath, QPen, QPolygonF
 from PyQt6.QtSvg import QSvgRenderer
 
 from kira.ui import _comic as comic
-from kira.ui.hud.base import EASE_IN_OUT, EASE_OUT, Frame, HudStyle, clamp, prog
+from kira.ui.hud.base import EASE_IN_OUT, EASE_OUT, W, Frame, HudStyle, clamp, prog
 
 INK = QColor(comic.INK)
 YELLOW = QColor(comic.YELLOW)
@@ -23,6 +24,9 @@ STEEL = QColor("#EDEDED")
 GLASS = QColor("#E3F4FB")
 SWEAT = QColor("#CDEFFF")
 SMOKE = QColor("#E6E6E6")
+THOUGHT = QColor(comic.TINT)
+ALARM = QColor(comic.RED)
+WORD_COLORS = (QColor(comic.YELLOW_HOVER), QColor("#FFB020"), QColor("#FFA24D"))
 SHADOW = 3.0
 _ROUND = (Qt.PenStyle.SolidLine, Qt.PenCapStyle.RoundCap, Qt.PenJoinStyle.RoundJoin)
 
@@ -35,6 +39,8 @@ SPAWN_S = 0.34
 LIFE_S = 1.0
 FLIGHT_S = 0.45
 DONE_S = 0.7
+MAX_WORD_W = 84.0
+MIN_WORD_PX = 8
 
 CLOUD = QRectF(94, 3, 158, 56)
 TRAIL = ((76, 30, 3.0), (85, 22, 4.2))
@@ -59,6 +65,8 @@ class _Word:
     born: float
     size: float
     lane: int
+    width: float = 0.0
+    fill: QColor = field(default_factory=lambda: QColor(YELLOW))
 
 
 _BUBBLE = ("M 256 70 C 382 70 456 146 456 248 C 456 350 382 420 262 420 C 236 420 212 417 190 410 "
@@ -199,7 +207,7 @@ def error_lines(first: str, second: str) -> list[tuple[str, bool]]:
 
 
 def _sfx(p: QPainter, x: float, y: float, s: str, px: float, angle: float, width: float = 3.2,
-         shadow: float = 1.6) -> None:
+         shadow: float = 1.6, fill: QColor = YELLOW) -> None:
     path = QPainterPath()
     path.addText(0, 0, comic.baloo(800, max(1, round(px))), s)
     box = path.boundingRect()
@@ -212,7 +220,7 @@ def _sfx(p: QPainter, x: float, y: float, s: str, px: float, angle: float, width
     p.drawPath(path.translated(shadow, shadow))
     p.drawPath(path)
     p.setPen(Qt.PenStyle.NoPen)
-    p.setBrush(YELLOW)
+    p.setBrush(fill)
     p.drawPath(path)
     p.restore()
 
@@ -229,7 +237,28 @@ def _trail(p: QPainter) -> None:
     for x, y, radius in TRAIL:
         dot = QPainterPath()
         dot.addEllipse(QPointF(x, y), radius, radius)
-        _ink_shape(p, dot, WHITE, 1.8, 1.5)
+        _ink_shape(p, dot, THOUGHT, 1.8, 1.5)
+
+
+def _word_width(text: str, px: float) -> float:
+    path = QPainterPath()
+    path.addText(0, 0, comic.baloo(800, max(1, round(px))), text)
+    return path.boundingRect().width()
+
+
+def _fitted_word(text: str, size: float) -> tuple[str, float, float]:
+    width = _word_width(text, size)
+    if width <= MAX_WORD_W:
+        return text, size, width
+    px = max(MIN_WORD_PX, math.floor(round(size) * MAX_WORD_W / width))
+    width = _word_width(text, px)
+    while width > MAX_WORD_W and px > MIN_WORD_PX:
+        px -= 1
+        width = _word_width(text, px)
+    while width > MAX_WORD_W and len(text.rstrip("…")) > 1:
+        text = text.rstrip("…")[:-1] + "…"
+        width = _word_width(text, px)
+    return text, float(px), width
 
 
 def _puff(p: QPainter, x: float, y: float, radius: float, alpha: float, fill: QColor) -> None:
@@ -443,6 +472,7 @@ def _timer(p: QPainter, x: float, y: float, s: str) -> None:
 
 class Comic(HudStyle):
     key = "comic"
+    live_words = True
 
     def __init__(self) -> None:
         super().__init__()
@@ -452,13 +482,21 @@ class Comic(HudStyle):
         self._lv = 0.0
         self._rng = random.Random()
         self.scene = SCENES[0]
+        self._queue: deque[str] = deque(maxlen=4)
+        self._spoken = 0
 
     def on_press(self, t: float, f: Frame) -> None:
         self._words = []
         self._count = 0
         self._next_spawn = t
         self._lv = 0.0
+        self._queue.clear()
+        self._spoken = 0
         self.scene = self._rng.choice(SCENES)
+
+    def feed_words(self, t: float, words: list[str]) -> None:
+        if self.mode == "rec":
+            self._queue.extend(w for w in words if w)
 
     def scene_at(self, t: float, f: Frame) -> tuple[str, float]:
         step = 0 if f.reduced else max(0, int((t - self.rel_t) // SCENE_S))
@@ -486,7 +524,14 @@ class Comic(HudStyle):
         speaking = self.mode == "rec" and not an.clip and not an.silent and an.level > SPAWN_LEVEL
         if speaking and t >= self._next_spawn:
             lane = self._count % len(LANES)
-            self._words.append(_Word(WORDS[lane], t, 11 + 13 * an.level, lane))
+            if self._queue:
+                text = self._queue.popleft()
+                fill = WORD_COLORS[self._spoken % len(WORD_COLORS)]
+                self._spoken += 1
+            else:
+                text, fill = WORDS[lane], YELLOW
+            text, size, width = _fitted_word(text, 11 + 13 * an.level)
+            self._words.append(_Word(text, t, size, lane, width, QColor(fill)))
             self._count += 1
             self._next_spawn = t + SPAWN_S
 
@@ -510,6 +555,7 @@ class Comic(HudStyle):
         _mascot(p, "talk", self._lv)
         for word in self._words:
             tx, ty, angle = LANES[word.lane]
+            tx = min(max(tx, TILE.right() + 2 + word.width / 2), W - 2 - word.width / 2)
             if f.reduced:
                 x, y, scale, alpha = tx, ty, 1.0, 1.0
             else:
@@ -521,14 +567,14 @@ class Comic(HudStyle):
                 alpha = 1.0 - prog(age, LIFE_S * 0.7, LIFE_S * 0.3)
             p.save()
             p.setOpacity(p.opacity() * alpha)
-            _sfx(p, x, y, word.text, word.size * scale, angle)
+            _sfx(p, x, y, word.text, word.size * scale, angle, fill=word.fill)
             p.restore()
         elapsed = self.elapsed(t)
         _timer(p, 252, 3, f"{int(elapsed // 60)}:{int(elapsed % 60):02d}")
 
     def _shout(self, p: QPainter) -> None:
         _mascot(p, "shout")
-        _ink_shape(p, _burst(166, 40, 90, 36, 16, 0.74), YELLOW)
+        _ink_shape(p, _burst(166, 40, 90, 36, 16, 0.74), ALARM)
         _text(p, 166, 48, "ZU NAH!", comic.baloo(800, 22), INK, "center")
 
     def _think(self, p: QPainter, t: float, f: Frame) -> None:
@@ -548,7 +594,7 @@ class Comic(HudStyle):
         age = 0.0 if f.reduced else elapsed
         _mascot_looking(p, _circling_look(age, 0.7 if spin else 1.4), "o" if spin else "line")
         _trail(p)
-        _ink_shape(p, _cloud(CLOUD), WHITE, 2.2)
+        _ink_shape(p, _cloud(CLOUD), THOUGHT, 2.2)
         _drum(p, age, spin, f.reduced)
         _text(p, 150, 31, title, comic.baloo(800, 15), INK)
         _text(p, 150, 47, self.caption(t, f), comic.baloo(600, 11), LABEL)
@@ -557,7 +603,7 @@ class Comic(HudStyle):
         hot = elapsed >= SMOKE_AFTER_S
         _mascot(p, "think")
         _trail(p)
-        _ink_shape(p, _cloud(CLOUD), WHITE, 2.2)
+        _ink_shape(p, _cloud(CLOUD), THOUGHT, 2.2)
         _gears(p, 115, 31, 0.0 if f.reduced else elapsed * 2 * math.pi * 0.55 * (1.9 if hot else 1.0))
         if hot and not f.reduced:
             for j in range(3):
@@ -575,7 +621,7 @@ class Comic(HudStyle):
         look = round((-12 + 24 * (ix - IRON_LEFT) / (IRON_RIGHT - IRON_LEFT)) / 3) * 3
         _mascot_looking(p, (look, 14), "smile")
         _trail(p)
-        _ink_shape(p, _cloud(CLOUD), WHITE, 2.2)
+        _ink_shape(p, _cloud(CLOUD), THOUGHT, 2.2)
         _text_line(p, ix, direction, passes)
         if not f.reduced:
             for j in range(4):

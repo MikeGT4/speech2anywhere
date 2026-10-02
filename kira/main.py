@@ -346,6 +346,12 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
 
 
     popup = PopupHUD() if cfg.ui.popup else None
+    live_words = None
+    if popup is not None:
+        from kira.live_words import LiveWords
+        live_words = LiveWords(
+            transcriber.transcribe_partial, popup.push_words, wanted=lambda: popup.wants_live_words,
+        )
 
     def _on_tray_quit() -> None:
         if loop.is_running():
@@ -415,8 +421,12 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
             log.exception("Tray-Zustand %s nicht gesetzt; Anzeige läuft weiter", s)
         if popup is None:
             return
+        if live_words is not None and s != State.RECORDING:
+            live_words.stop()
         if s == State.RECORDING:
             popup.set_phase("rec")
+            if live_words is not None:
+                live_words.start()
         elif s == State.TRANSCRIBING:
             popup.set_phase("trans")
         elif s == State.STYLING:
@@ -437,7 +447,12 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
     )
 
     if popup is not None:
-        recorder.set_samples_callback(lambda arr: popup.push_samples(arr))
+        def _samples(arr) -> None:
+            popup.push_samples(arr)
+            if live_words is not None:
+                live_words.push(arr)
+
+        recorder.set_samples_callback(_samples)
 
     loop = asyncio.new_event_loop()
     threading.Thread(

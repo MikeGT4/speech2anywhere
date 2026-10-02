@@ -1,6 +1,6 @@
 [project]
 name = "kira"
-version = "0.5.2"
+version = "0.5.3"
 description = "Voice-to-text app for macOS and Windows 11"
 requires-python = ">=3.12"
 dependencies = [

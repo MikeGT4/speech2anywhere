@@ -258,6 +258,7 @@ class HudStyle:
     key = ""
     ERROR_MAX_S = 5.0
     shows_errors = True
+    live_words = False
 
     def __init__(self) -> None:
         self.mode = "hidden"
@@ -308,6 +309,7 @@ class HudStyle:
             self.fade_t = t
 
     def on_press(self, t: float, f: Frame) -> None: ...
+    def feed_words(self, t: float, words: list[str]) -> None: ...
     def on_clear(self, f: Frame) -> None:
         pass
     def on_release(self, t: float, f: Frame) -> None: ...

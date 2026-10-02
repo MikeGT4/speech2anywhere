@@ -79,6 +79,17 @@ _NORMALIZED_HALLUCINATIONS = frozenset(_normalized(entry) for entry in _KNOWN_HA
 
 SILENCE_PEAK = 0.05
 CONFIDENT_SPEECH_NO_SPEECH_PROB = 0.1
+PARTIAL_NO_SPEECH_PROB = 0.5
+
+_PARTIAL = threading.local()
+
+
+class _QuietPartial(logging.Filter):
+    def filter(self, record: logging.LogRecord) -> bool:
+        return not getattr(_PARTIAL, "active", False)
+
+
+logging.getLogger("faster_whisper").addFilter(_QuietPartial())
 
 
 def _is_hallucination(text: str, peak: float = 0.0, no_speech: float = 1.0) -> bool:
@@ -250,6 +261,32 @@ class Transcriber:
         except Exception as exc:
             log.exception("faster-whisper transcription failed: %s", exc)
             raise
+
+    def transcribe_partial(self, audio: np.ndarray) -> str:
+        if audio.size == 0:
+            return ""
+        model = self._ensure_model()
+        lang = self._config.whisper.language
+        _PARTIAL.active = True
+        try:
+            segments, _info = model.transcribe(
+                audio.astype(np.float32, copy=False),
+                language=None if lang == "auto" else lang,
+                beam_size=1,
+                vad_filter=False,
+                condition_on_previous_text=False,
+                without_timestamps=True,
+                temperature=0.0,
+            )
+            seg_list = list(segments)
+        finally:
+            _PARTIAL.active = False
+        no_speech = max((getattr(s, "no_speech_prob", 1.0) for s in seg_list), default=1.0)
+        text = " ".join(s.text.strip() for s in seg_list).strip()
+        peak = float(np.max(np.abs(audio)))
+        if no_speech > PARTIAL_NO_SPEECH_PROB or _is_hallucination(text, peak=peak, no_speech=no_speech):
+            return ""
+        return text
 
     def transcribe_file(self, path: str) -> TranscriptionResult:
         model = self._ensure_model()

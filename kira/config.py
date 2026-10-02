@@ -62,6 +62,7 @@ class UIConfig(BaseModel):
     sound_feedback: bool = False
     hud_style: str = DEFAULT_HUD_STYLE
     hud_scale: float = 1.5
+    hud_live_words: bool = True
 
     @field_validator("hud_style", mode="before")
     @classmethod

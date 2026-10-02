@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.3 (02.10.2026)
+
+- Beim Sprechen fliegen in der Comic-Anzeige Fetzen der erkannten Wörter aus dem Mund, in warmen Gelb- und Orangetönen; bis die ersten Wörter da sind, kommt „bla, bla, blubb!“. Abschaltbar in den Einstellungen unter „Anzeige“, Schalter „Wortfetzen“
+- Die Denkwolke beim Erkennen und bei der Politur ist hellgelb statt weiß
+- „ZU NAH!“ steht auf rotem Grund
+
 ## 0.5.2 (02.10.2026)
 
 - Neue Denk-Animation in der Comic-Anzeige: je Diktat Waschtrommel, Bügeleisen oder Zahnräder; bei langem Warten wechselt die Szene frühestens nach 5 Sekunden, ab 6 Sekunden schwitzt das Maskottchen

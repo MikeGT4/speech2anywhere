@@ -41,6 +41,7 @@ def test_tabs_follow_the_six_pages(dialog, qtbot):
 @pytest.mark.parametrize("name", [
     "_gain", "_device", "_language", "_learning_enabled", "_styler_model", "_fast_mode",
     "_styler_timeout", "_hotkey", "_edit_enabled", "_edit_hotkey", "_restore_ms", "_hud_style",
+    "_hud_live_words",
 ])
 def test_every_setting_sits_on_a_page(dialog, name):
     assert dialog._pages.isAncestorOf(getattr(dialog, name))
@@ -120,6 +121,15 @@ def test_display_style_alone_needs_no_restart(dialog, monkeypatch):
     dialog._hud_style.setCurrentIndex(dialog._hud_style.findData("klartext"))
     text = _message_after_save(dialog, monkeypatch)
     assert "nach dem Neustart" not in text
+    assert "ab dem nächsten Diktat" in text
+
+
+def test_live_words_switch_is_on_by_default_and_saves_without_restart(dialog, monkeypatch, tmp_path):
+    assert dialog._hud_live_words.isChecked()
+    _message_after_save(dialog, monkeypatch)
+    dialog._hud_live_words.setChecked(False)
+    text = _message_after_save(dialog, monkeypatch)
+    assert "hud_live_words: false" in (tmp_path / "config.yaml").read_text(encoding="utf-8")
     assert "ab dem nächsten Diktat" in text
 
 

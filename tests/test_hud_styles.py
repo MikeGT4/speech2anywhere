@@ -686,3 +686,107 @@ def test_comic_thinking_moves_unless_reduced(qapp, scene, polish):
         second = d.render()
         x, y, w, h = (round(v * d.f.px) for v in (94, 3, 158, 56))
         assert (first.copy(x, y, w, h) != second.copy(x, y, w, h)) is not reduced
+
+
+def test_comic_starts_with_bla_then_shows_spoken_fragments(qapp):
+    from kira.ui.hud import comic
+    d = Driver("comic")
+    d.press()
+    d.run(0.5)
+    assert d.style._words and {w.text for w in d.style._words} <= set(comic.WORDS)
+    d.style.feed_words(d.t, ["Politur", "morgen"])
+    d.run(0.8)
+    assert {"Politur", "morgen"} <= {w.text for w in d.style._words}
+
+
+def test_comic_falls_back_to_bla_when_no_new_words_arrive(qapp):
+    from kira.ui.hud import comic
+    d = Driver("comic")
+    d.press()
+    d.style.feed_words(d.t, ["Hallo"])
+    d.run(1.6)
+    assert any(w.text in comic.WORDS for w in d.style._words)
+
+
+def test_comic_shrinks_long_fragments_to_fit_the_lane(qapp):
+    from kira.ui.hud import comic
+    d = Driver("comic")
+    d.press()
+    d.style.feed_words(d.t, ["Donaudampfschifffahrt"])
+    d.run(0.5)
+    word = next(w for w in d.style._words if w.text.startswith("Donau"))
+    assert word.width <= comic.MAX_WORD_W + 0.5
+
+
+def test_comic_drops_words_fed_before_the_recording(qapp):
+    d = Driver("comic")
+    d.style.feed_words(d.t, ["Hallo"])
+    d.press()
+    d.run(0.8)
+    assert all(w.text != "Hallo" for w in d.style._words)
+
+
+def test_comic_thought_cloud_is_the_warm_brand_tint(qapp):
+    d = Driver("comic", reduced=True)
+    _think_cycle(d, 0.8, scene="zahnraeder")
+    assert _count_color(d.render(), (180, 10, 60, 40), (0xFF, 0xF3, 0xC7), d.f.px, tol=4) > 300
+
+
+def test_comic_spoken_fragments_get_warm_colors_and_bla_stays_yellow(qapp):
+    from kira.ui.hud import comic
+    d = Driver("comic")
+    d.press()
+    d.run(0.4)
+    d.style.feed_words(d.t, ["eins", "zwei", "drei"])
+    seen = {}
+    for _ in range(120):
+        d.run(DT)
+        for w in d.style._words:
+            seen[(w.text, w.born)] = w
+    spoken = [w for w in seen.values() if w.text in ("eins", "zwei", "drei")]
+    filler = [w for w in seen.values() if w.text in comic.WORDS]
+    assert len(spoken) == 3
+    warm = {c.name() for c in comic.WORD_COLORS}
+    assert all(w.fill.name() in warm for w in spoken)
+    assert len({w.fill.name() for w in spoken}) == 3
+    assert all(w.fill.name() == comic.YELLOW.name() for w in filler)
+
+
+def test_host_passes_spoken_words_to_the_comic(qtbot, tmp_path):
+    from kira.ui.hud_qt import PopupHUD
+    cfg = tmp_path / "config.yaml"
+    _write_cfg(cfg, "comic")
+    hud = PopupHUD(config_path=cfg, state_dir=tmp_path)
+    qtbot.addWidget(hud)
+    assert hud.wants_live_words
+    hud.set_phase("rec")
+    hud.push_words(["Hallo"])
+    qtbot.waitUntil(lambda: "Hallo" in hud._style._queue, timeout=1000)
+    hud.set_phase("idle")
+
+
+def test_only_the_comic_wants_live_words(qtbot, tmp_path):
+    from kira.ui.hud_qt import PopupHUD
+    cfg = tmp_path / "config.yaml"
+    _write_cfg(cfg, "phosphor")
+    hud = PopupHUD(config_path=cfg, state_dir=tmp_path)
+    qtbot.addWidget(hud)
+    assert not hud.wants_live_words
+    hud.push_words(["Hallo"])
+
+
+def test_comic_too_close_burst_is_red(qapp):
+    d = Driver("comic")
+    d.press()
+    d.run(0.4, amp=3.0)
+    assert d.style.status(d.f, d.an)[0] == "ZU NAH"
+    assert _count_color(d.render(), (80, 6, 172, 68), (0xE5, 0x48, 0x4D), d.f.px, tol=6) > 1500
+
+
+def test_live_words_switch_off_keeps_the_comic_quiet(qtbot, tmp_path):
+    from kira.ui.hud_qt import PopupHUD
+    cfg = tmp_path / "config.yaml"
+    cfg.write_text("ui:\n  hud_style: comic\n  hud_live_words: false\n", encoding="utf-8")
+    hud = PopupHUD(config_path=cfg, state_dir=tmp_path)
+    qtbot.addWidget(hud)
+    assert not hud.wants_live_words

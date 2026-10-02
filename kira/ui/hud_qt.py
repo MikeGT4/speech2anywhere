@@ -46,6 +46,7 @@ class _HudSignals(QObject):
     phase = pyqtSignal(str, str)
     texts = pyqtSignal(object, object)
     push_samples = pyqtSignal(object)
+    words = pyqtSignal(object)
 
 
 class PopupHUD(QWidget):
@@ -65,6 +66,7 @@ class PopupHUD(QWidget):
         self._cfg_mtime: float | None = None
         self._style_key = DEFAULT_HUD_STYLE
         self._scale = 1.5
+        self._live_words_on = True
         self._style = create_style(DEFAULT_HUD_STYLE)
         self.setFixedSize(round(W * self._scale), round(H * self._scale))
         self._reload_config(force=True)
@@ -83,6 +85,7 @@ class PopupHUD(QWidget):
         self._sig.phase.connect(self._on_phase)
         self._sig.texts.connect(self._on_texts)
         self._sig.push_samples.connect(self._on_push_samples)
+        self._sig.words.connect(self._on_words)
 
         self._timer = QTimer(self)
         self._timer.setTimerType(Qt.TimerType.PreciseTimer)
@@ -97,6 +100,13 @@ class PopupHUD(QWidget):
 
     def push_samples(self, samples) -> None:
         self._sig.push_samples.emit(samples)
+
+    def push_words(self, words) -> None:
+        self._sig.words.emit(list(words))
+
+    @property
+    def wants_live_words(self) -> bool:
+        return self._live_words_on and bool(getattr(self._style, "live_words", False))
 
     def show(self, status: str = "Recording…") -> None:
         self.set_phase("rec")
@@ -120,6 +130,12 @@ class PopupHUD(QWidget):
             self._tap.push(samples)
         except Exception:
             log.exception("push_samples failed")
+
+    def _on_words(self, words) -> None:
+        try:
+            self._style.feed_words(time.monotonic(), list(words))
+        except Exception:
+            log.exception("push_words failed")
 
     def _on_texts(self, raw, polished) -> None:
         if raw is not None:
@@ -214,6 +230,7 @@ class PopupHUD(QWidget):
             log.exception("config.yaml nicht lesbar, Anzeige bleibt bei %s", self._style_key)
             return
         self._cfg_mtime = mtime
+        self._live_words_on = ui.hud_live_words
         if ui.hud_style != self._style_key:
             log.info("Aufnahme-Anzeige: Stil %s → %s", self._style_key, ui.hud_style)
             self._style_key = ui.hud_style

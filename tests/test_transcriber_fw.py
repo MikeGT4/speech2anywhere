@@ -603,3 +603,83 @@ def test_thanks_with_unsure_speech_is_dropped(monkeypatch, fake_config):
 def test_hallucination_needs_silence_or_unsure_speech(peak, no_speech, expected):
     from kira.transcriber_fw import _is_hallucination
     assert _is_hallucination("Vielen Dank.", peak=peak, no_speech=no_speech) is expected
+
+
+class _PartialSegment:
+    def __init__(self, text, no_speech=0.05):
+        self.text = text
+        self.no_speech_prob = no_speech
+
+
+def _partial_model(monkeypatch, segments, calls):
+    class FakeInfo:
+        language = "de"
+
+    class FakeWhisperModel:
+        def __init__(self, *a, **kw):
+            pass
+
+        def transcribe(self, audio, **kw):
+            calls.append(kw)
+            return iter(segments), FakeInfo()
+
+    monkeypatch.setattr("kira.transcriber_fw.WhisperModel", FakeWhisperModel)
+
+
+def test_partial_uses_fast_settings_and_returns_text(monkeypatch, fake_config):
+    from kira.transcriber_fw import Transcriber
+    calls = []
+    _partial_model(monkeypatch, [_PartialSegment(" Hallo "), _PartialSegment("Welt")], calls)
+    t = Transcriber(fake_config)
+    assert t.transcribe_partial(np.full(16000, 0.3, dtype=np.float32)) == "Hallo Welt"
+    kw = calls[0]
+    assert kw["beam_size"] == 1
+    assert kw["condition_on_previous_text"] is False
+    assert kw["without_timestamps"] is True
+    assert kw.get("initial_prompt") is None
+
+
+@pytest.mark.parametrize("segments", [
+    [_PartialSegment("Hallo", no_speech=0.8)],
+    [_PartialSegment("Vielen Dank.", no_speech=0.3)],
+    [],
+])
+def test_partial_drops_silence_and_hallucinations(monkeypatch, fake_config, segments):
+    from kira.transcriber_fw import Transcriber
+    _partial_model(monkeypatch, segments, [])
+    t = Transcriber(fake_config)
+    assert t.transcribe_partial(np.full(16000, 0.3, dtype=np.float32)) == ""
+
+
+def test_partial_with_empty_audio_skips_the_model(monkeypatch, fake_config):
+    from kira.transcriber_fw import Transcriber
+    calls = []
+    _partial_model(monkeypatch, [_PartialSegment("Hallo")], calls)
+    t = Transcriber(fake_config)
+    assert t.transcribe_partial(np.zeros(0, dtype=np.float32)) == ""
+    assert calls == []
+
+
+def test_partial_runs_keep_the_log_quiet_but_final_runs_still_log(monkeypatch, fake_config, caplog):
+    import logging
+    from kira.transcriber_fw import Transcriber
+
+    class FakeInfo:
+        language = "de"
+
+    class FakeWhisperModel:
+        def __init__(self, *a, **kw):
+            pass
+
+        def transcribe(self, audio, **kw):
+            logging.getLogger("faster_whisper").info("Processing audio with duration %.1f", audio.size / 16000)
+            return iter([_PartialSegment("Hallo")]), FakeInfo()
+
+    monkeypatch.setattr("kira.transcriber_fw.WhisperModel", FakeWhisperModel)
+    t = Transcriber(fake_config)
+    audio = np.full(16000, 0.3, dtype=np.float32)
+    with caplog.at_level(logging.INFO, logger="faster_whisper"):
+        t.transcribe_partial(audio)
+        assert not [r for r in caplog.records if r.name == "faster_whisper"]
+        t.transcribe(audio)
+        assert [r for r in caplog.records if r.name == "faster_whisper"]

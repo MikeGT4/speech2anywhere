@@ -508,6 +508,13 @@ class SettingsDialog(QDialog):
             "gehalten wird."
         )
         card.add_row("Stil", "So sieht die Anzeige beim Diktieren aus.", self._hud_style)
+        self._hud_live_words = comic.ToggleSwitch()
+        self._hud_live_words.setChecked(self._cfg.ui.hud_live_words)
+        self._hud_live_words.setToolTip(
+            "Im Stil „Comic (Bla-Bla)“ fliegen beim Sprechen Fetzen der erkannten Wörter.\n"
+            "Sie sind am Bildschirm zu sehen, auch bei einer Bildschirmfreigabe."
+        )
+        card.add_row("Wortfetzen", "Fetzen deiner Wörter beim Sprechen.", self._hud_live_words)
         hint = comic.HintBubble([
             "Wirkt schon beim nächsten Diktat. Die Größe stellst du in der Rohconfig ein (ui.hud_scale).",
         ])
@@ -735,6 +742,7 @@ class SettingsDialog(QDialog):
             "hotkey.combo": combo,
             "hotkey.edit_combo": edit_hotkey_value,
             "ui.hud_style": self._hud_style.currentData(),
+            "ui.hud_live_words": self._hud_live_words.isChecked(),
         }
 
         self._cfg_path.parent.mkdir(parents=True, exist_ok=True)
