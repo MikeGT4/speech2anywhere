@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.2 (02.10.2026)
+
+- Neue Denk-Animation in der Comic-Anzeige: je Diktat Waschtrommel, Bügeleisen oder Zahnräder; bei langem Warten wechselt die Szene frühestens nach 5 Sekunden, ab 6 Sekunden schwitzt das Maskottchen
+- Um die Aufnahme-Anzeige liegt ab dem zweiten Diktat kein Fensterrand mehr
+- Der Zwischenspeicher des Grafiktreibers (`CUDA_CACHE_MAXSIZE`) wird auf 4 GB gesetzt, damit das erste Diktat nach dem Hochfahren schneller ist
+
 ## 0.5.1 (01.10.2026)
 
 - Ein kurzes „Danke“ oder „Vielen Dank“ bleibt erhalten, wenn es deutlich gesprochen wurde; verworfen wird es nur bei Stille oder Geräusch
