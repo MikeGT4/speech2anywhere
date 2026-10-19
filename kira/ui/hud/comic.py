@@ -24,6 +24,8 @@ STEEL = QColor("#EDEDED")
 GLASS = QColor("#E3F4FB")
 SWEAT = QColor("#CDEFFF")
 SMOKE = QColor("#E6E6E6")
+DULL = QColor("#EFE9DA")
+SHEEN = QColor("#FFE88A")
 THOUGHT = QColor(comic.TINT)
 ALARM = QColor(comic.RED)
 WORD_COLORS = (QColor(comic.YELLOW_HOVER), QColor("#FFB020"), QColor("#FFA24D"))
@@ -53,10 +55,15 @@ SWEAT_AFTER_S = 6.0
 SCENES = ("waesche", "buegeln", "zahnraeder")
 SCENE_S = 5.0
 IRON_PASS_S = 1.5
-IRON_SCALE = 1.1
-IRON_LEFT, IRON_RIGHT = 108.0, 236.0
-LINE_Y = 49.0
-TEXT_DASHES = ((108, 126), (131, 141), (146, 170), (175, 189), (194, 214), (219, 236))
+IRON_LEFT, IRON_RIGHT = 114.0, 232.0
+LINE_Y = 49.5
+SHEET = QRectF(105.0, 39.0, 138.0, 13.0)
+SHEET_TEXT = "Bla bla blubb, bla bla!"
+SHEET_PX = 8
+WRINKLE_START = 2.6
+WRINKLE_DECAY = 0.42
+CREASES = ((110, 41, 116, 49), (131, 51, 134, 42), (149, 40, 154, 50), (172, 51, 175, 41),
+           (194, 40, 199, 49), (216, 51, 219, 42), (233, 41, 238, 50))
 
 
 @dataclass
@@ -380,42 +387,128 @@ def _iron_pass(ph: float) -> tuple[float, int]:
     return IRON_RIGHT - (IRON_RIGHT - IRON_LEFT) * u, -1
 
 
-def _text_line(p: QPainter, ix: float, direction: int, passes: int) -> None:
-    before = 4.5 * 0.42 ** passes
-    after = before * 0.42
-    p.setPen(QPen(INK, 3.0, *_ROUND))
+def _faded(color: QColor, alpha: float) -> QColor:
+    faded = QColor(color)
+    faded.setAlphaF(clamp(alpha, 0.0, 1.0))
+    return faded
+
+
+def _wrinkle(x: float, amp: float) -> float:
+    return amp * (math.sin(x * 0.52) * 0.65 + math.sin(x * 1.37 + 0.8) * 0.35)
+
+
+def _wrinkle_amps(passes: int) -> tuple[float, float]:
+    before = WRINKLE_START * WRINKLE_DECAY ** passes
+    return before, before * WRINKLE_DECAY
+
+
+def _ironed(x: float, ix: float, direction: int) -> bool:
+    return x <= ix if direction > 0 else x >= ix
+
+
+def _sheet_outline(ix: float, direction: int, before: float, after: float) -> QPainterPath:
+    left, right, top, bottom = SHEET.left(), SHEET.right(), SHEET.top(), SHEET.bottom()
+    steps = int((right - left) / 3)
+    xs = [left + (right - left) * s / steps for s in range(steps + 1)]
+    path = QPainterPath()
+    for i, x in enumerate(xs):
+        amp = after if _ironed(x, ix, direction) else before
+        y = top + _wrinkle(x, amp)
+        if i == 0:
+            path.moveTo(x, y)
+        else:
+            path.lineTo(x, y)
+    for x in reversed(xs):
+        amp = after if _ironed(x, ix, direction) else before
+        path.lineTo(x, bottom + _wrinkle(x + 9.0, amp) * 0.6)
+    path.closeSubpath()
+    return path
+
+
+def _sheet(p: QPainter, ix: float, direction: int, passes: int, sheen: bool) -> None:
+    before, after = _wrinkle_amps(passes)
+    outline = _sheet_outline(ix, direction, before, after)
+    if direction > 0:
+        flat = QRectF(SHEET.left() - 4.0, SHEET.top() - 8.0, ix - SHEET.left() + 4.0, SHEET.height() + 16.0)
+    else:
+        flat = QRectF(ix, SHEET.top() - 8.0, SHEET.right() + 4.0 - ix, SHEET.height() + 16.0)
+    p.setPen(Qt.PenStyle.NoPen)
+    p.setBrush(INK)
+    p.drawPath(outline.translated(2.0, 2.0))
+    p.setBrush(DULL)
+    p.drawPath(outline)
+    p.save()
+    p.setClipRect(flat)
+    p.setBrush(WHITE)
+    p.drawPath(outline)
+    p.restore()
+    if sheen:
+        x0, x1 = sorted((ix - direction * 27.0, ix - direction * 7.0))
+        x0, x1 = max(x0, SHEET.left() + 2.0), min(x1, SHEET.right() - 2.0)
+        if x1 - x0 >= 2.0:
+            p.setBrush(_faded(SHEEN, 0.6))
+            p.drawRoundedRect(QRectF(x0, SHEET.top() + 2.5, x1 - x0, SHEET.height() - 5.0), 3.0, 3.0)
     p.setBrush(Qt.BrushStyle.NoBrush)
-    for x0, x1 in TEXT_DASHES:
-        steps = max(2, (x1 - x0) // 2)
-        path = QPainterPath()
-        for s in range(steps + 1):
-            x = x0 + (x1 - x0) * s / steps
-            ironed = x <= ix if direction > 0 else x >= ix
-            y = LINE_Y + (after if ironed else before) * (math.sin(x * 0.95) * 0.7 + math.sin(x * 2.3 + 1.0) * 0.3)
-            if s == 0:
-                path.moveTo(x, y)
-            else:
-                path.lineTo(x, y)
-        p.drawPath(path)
+    p.setPen(QPen(INK, 1.6, *_ROUND))
+    p.drawPath(outline)
+    for x0, y0, x1, y1 in CREASES:
+        amp = after if _ironed((x0 + x1) / 2, ix, direction) else before
+        strength = amp / WRINKLE_START
+        if strength < 0.08:
+            continue
+        p.setPen(QPen(_faded(INK, 0.55 * strength), 0.9, *_ROUND))
+        p.drawLine(QPointF(x0, y0 + _wrinkle(x0, amp)), QPointF(x1, y1 + _wrinkle(x1, amp)))
+    font = comic.baloo(800, SHEET_PX)
+    metrics = QFontMetricsF(font)
+    p.setFont(font)
+    x = SHEET.left() + 7.0
+    for ch in SHEET_TEXT:
+        flat_here = _ironed(x, ix, direction)
+        amp = after if flat_here else before
+        slope = (_wrinkle(x + 1.5, amp) - _wrinkle(x - 1.5, amp)) / 3.0
+        p.save()
+        p.translate(x, LINE_Y + _wrinkle(x, amp))
+        p.rotate(math.degrees(math.atan(slope)) * 0.7)
+        p.setPen(INK if flat_here else _faded(INK, 0.78))
+        p.drawText(QPointF(0.0, 0.0), ch)
+        p.restore()
+        x += metrics.horizontalAdvance(ch)
 
 
 def _iron(p: QPainter, x: float, sole_y: float, direction: int) -> None:
     p.save()
     p.translate(x, sole_y)
-    p.scale(direction * IRON_SCALE, IRON_SCALE)
-    body = QPainterPath(QPointF(-11, 0))
-    body.lineTo(11, 0)
-    body.cubicTo(QPointF(6, -4), QPointF(2, -9), QPointF(-6, -10))
-    body.cubicTo(QPointF(-10, -10), QPointF(-11, -6), QPointF(-11, 0))
+    p.scale(direction, 1.0)
+    sole = QPainterPath(QPointF(-15.0, 0.0))
+    sole.lineTo(12.0, 0.0)
+    sole.lineTo(17.0, -2.3)
+    sole.lineTo(12.0, -4.6)
+    sole.lineTo(-15.0, -4.6)
+    sole.closeSubpath()
+    _ink_shape(p, sole, STEEL, 1.6, 1.4)
+    body = QPainterPath(QPointF(-13.0, -4.6))
+    body.lineTo(10.0, -4.6)
+    body.cubicTo(QPointF(13.5, -5.5), QPointF(12.0, -11.0), QPointF(7.0, -12.5))
+    body.lineTo(-9.0, -13.5)
+    body.cubicTo(QPointF(-12.5, -13.5), QPointF(-13.5, -9.0), QPointF(-13.0, -4.6))
     body.closeSubpath()
     _ink_shape(p, body, YELLOW, 1.8, 1.4)
-    handle = QPainterPath(QPointF(-7, -10))
-    handle.cubicTo(QPointF(-7, -16), QPointF(2, -16), QPointF(2, -9))
-    p.setPen(QPen(INK, 1.8, *_ROUND))
+    handle = QPainterPath(QPointF(-8.0, -13.0))
+    handle.cubicTo(QPointF(-8.0, -20.0), QPointF(5.0, -20.0), QPointF(5.0, -12.5))
+    p.setPen(QPen(INK, 2.2, *_ROUND))
     p.setBrush(Qt.BrushStyle.NoBrush)
     p.drawPath(handle)
-    p.setPen(QPen(INK, 2.2, *_ROUND))
-    p.drawLine(QPointF(-11, 0.6), QPointF(11, 0.6))
+    p.save()
+    p.setOpacity(p.opacity() * 0.55)
+    p.setPen(Qt.PenStyle.NoPen)
+    p.setBrush(WHITE)
+    p.drawEllipse(QPointF(-4.0, -9.5), 4.5, 1.6)
+    p.restore()
+    p.setPen(Qt.PenStyle.NoPen)
+    p.setBrush(INK)
+    p.drawEllipse(QPointF(6.5, -8.5), 1.3, 1.3)
+    p.setPen(QPen(INK, 2.0, *_ROUND))
+    p.drawLine(QPointF(-15.0, 0.4), QPointF(16.0, 0.4))
     p.restore()
 
 
@@ -622,21 +715,21 @@ class Comic(HudStyle):
         _mascot_looking(p, (look, 14), "smile")
         _trail(p)
         _ink_shape(p, _cloud(CLOUD), THOUGHT, 2.2)
-        _text_line(p, ix, direction, passes)
+        _sheet(p, ix, direction, passes, not f.reduced)
         if not f.reduced:
             for j in range(4):
                 age = (elapsed + j * 0.3) % 1.2
-                born_x = _iron_pass(max(0.0, elapsed - age))[0]
-                _puff(p, born_x + 8 * direction, 31 - age * 12, 2.4 + age * 3.0,
+                born_x, born_dir = _iron_pass(max(0.0, elapsed - age))
+                _puff(p, born_x + 19.0 * born_dir, 40.0 - age * 14.0, 2.2 + age * 3.0,
                       (1.0 - prog(age, 0.5, 0.7)) * 0.95, WHITE)
             if elapsed > 0.2:
                 for j in range(2):
                     cyc = (elapsed * 1.3 + j * 0.5) % 1.0
-                    sx = ix - direction * (14 + j * 22)
-                    if IRON_LEFT <= sx <= IRON_RIGHT:
-                        _sparkle(p, sx, LINE_Y - 9 - j * 3, 3.6 * math.sin(cyc * math.pi))
+                    sx = ix - direction * (22 + j * 24)
+                    if IRON_LEFT - 6 <= sx <= IRON_RIGHT + 6:
+                        _sparkle(p, sx, SHEET.top() - 4 - j * 3, 3.4 * math.sin(cyc * math.pi))
         _text(p, 110, 23, title, comic.baloo(800, 15), INK)
-        _iron(p, ix, LINE_Y - 3.5, direction)
+        _iron(p, ix, LINE_Y - 5.0, direction)
 
     def _zack(self, p: QPainter, t: float, f: Frame) -> None:
         p.setOpacity(p.opacity() * (1.0 - prog(t, self.end_t + DONE_S - 0.2, 0.2)))

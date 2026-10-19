@@ -1,6 +1,6 @@
 [project]
 name = "kira"
-version = "0.5.3"
+version = "0.5.4"
 description = "Voice-to-text app for macOS and Windows 11"
 requires-python = ">=3.12"
 dependencies = [
@@ -78,6 +78,10 @@ packages = ["kira"]
 "assets/fonts/Baloo2-Bold.ttf" = "kira/_assets/fonts/Baloo2-Bold.ttf"
 "assets/fonts/Baloo2-ExtraBold.ttf" = "kira/_assets/fonts/Baloo2-ExtraBold.ttf"
 "assets/fonts/OFL-Baloo2.txt" = "kira/_assets/fonts/OFL-Baloo2.txt"
+"assets/fonts/Bangers-Regular.ttf" = "kira/_assets/fonts/Bangers-Regular.ttf"
+"assets/fonts/OFL-Bangers.txt" = "kira/_assets/fonts/OFL-Bangers.txt"
+"assets/fonts/MangaGothicJP.ttf" = "kira/_assets/fonts/MangaGothicJP.ttf"
+"assets/fonts/OFL-MangaGothicJP.txt" = "kira/_assets/fonts/OFL-MangaGothicJP.txt"
 "assets/brand/speech2anywhere-wortmarke-dunkel.svg" = "kira/_assets/brand/speech2anywhere-wortmarke-dunkel.svg"
 "assets/brand/speech2anywhere-wortmarke-hell.svg" = "kira/_assets/brand/speech2anywhere-wortmarke-hell.svg"
 "assets/brand/speech2anywhere-logo-plappern-256.png" = "kira/_assets/brand/speech2anywhere-logo-plappern-256.png"

@@ -511,7 +511,7 @@ class SettingsDialog(QDialog):
         self._hud_live_words = comic.ToggleSwitch()
         self._hud_live_words.setChecked(self._cfg.ui.hud_live_words)
         self._hud_live_words.setToolTip(
-            "Im Stil „Comic (Bla-Bla)“ fliegen beim Sprechen Fetzen der erkannten Wörter.\n"
+            "In den Stilen „Comic (Bla-Bla)“ und „Manga“ erscheinen beim Sprechen Fetzen der erkannten Wörter.\n"
             "Sie sind am Bildschirm zu sehen, auch bei einer Bildschirmfreigabe."
         )
         card.add_row("Wortfetzen", "Fetzen deiner Wörter beim Sprechen.", self._hud_live_words)

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.4 (19.10.2026)
+
+- Neuer Anzeige-Stil „Manga“: weiße Comic-Tafel mit Fokuslinien und Rasterpunkten; ein kleiner Kung-Fu-Kämpfer schlägt die erkannten Wörter als Lettering ins Bild, sitzt beim Erkennen und bei der Politur im Lotussitz, springt beim „ZACK!“ und geht bei einem Fehler k.o. Wählbar in den Einstellungen unter „Anzeige“
+- Die Bügel-Szene der Comic-Anzeige zeigt einen zerknitterten Zettel mit Text, der Bahn für Bahn glatt und weiß wird; das Bügeleisen hat eine Stahlsohle und dampft
+- Zwei Schriften für die Manga-Anzeige liegen bei (Bangers und eine Katakana-Teilmenge der Dela Gothic One, beide OFL-Lizenz)
+
 ## 0.5.3 (02.10.2026)
 
 - Beim Sprechen fliegen in der Comic-Anzeige Fetzen der erkannten Wörter aus dem Mund, in warmen Gelb- und Orangetönen; bis die ersten Wörter da sind, kommt „bla, bla, blubb!“. Abschaltbar in den Einstellungen unter „Anzeige“, Schalter „Wortfetzen“

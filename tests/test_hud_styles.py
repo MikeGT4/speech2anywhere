@@ -790,3 +790,100 @@ def test_live_words_switch_off_keeps_the_comic_quiet(qtbot, tmp_path):
     hud = PopupHUD(config_path=cfg, state_dir=tmp_path)
     qtbot.addWidget(hud)
     assert not hud.wants_live_words
+
+
+def test_manga_fonts_load(qapp):
+    from kira.ui.hud import manga
+    manga._families.clear()
+    families = manga.load_fonts()
+    assert families == {"sfx": "Bangers", "jp": "Manga Gothic JP"}
+
+
+def test_manga_shows_spoken_fragments_as_capital_lettering(qapp):
+    from kira.ui.hud import manga
+    d = Driver("manga")
+    d.press()
+    d.run(0.5)
+    assert d.style._words and {w.text for w in d.style._words} <= set(manga.WORDS)
+    d.style.feed_words(d.t, ["Politur", "morgen"])
+    d.run(0.8)
+    assert {"POLITUR", "MORGEN"} <= {w.text for w in d.style._words}
+
+
+def test_manga_keeps_lettering_inside_the_panel(qapp):
+    from kira.ui.hud import manga
+    text, size, width = manga._fitted_word("Donaudampfschifffahrtsgesellschaft", 25.0)
+    assert width <= manga.MAX_WORD_W
+    assert text.endswith("…") or size < 25.0
+
+
+def test_manga_reduced_motion_keeps_the_panel_still(qapp):
+    d = Driver("manga", reduced=True)
+    d.press()
+    d.run(1.0, amp=0.0)
+    first = d.render()
+    d.t += 0.2
+    second = d.render()
+    x, y, w, h = (round(v * d.f.px) for v in (4, 4, 250, 72))
+    assert first.copy(x, y, w, h) == second.copy(x, y, w, h)
+
+
+def test_manga_moves_unless_reduced(qapp):
+    for reduced in (False, True):
+        d = Driver("manga", reduced=reduced)
+        _think_cycle(d, 1.0)
+        first = d.render()
+        d.t += 0.2
+        second = d.render()
+        x, y, w, h = (round(v * d.f.px) for v in (80, 4, 150, 72))
+        assert (first.copy(x, y, w, h) != second.copy(x, y, w, h)) is not reduced
+
+
+def test_comic_iron_flattens_the_sheet_pass_by_pass(qapp):
+    from kira.ui.hud import comic
+    heights = []
+    for passes in range(4):
+        before, after = comic._wrinkle_amps(passes)
+        heights.append(comic._sheet_outline(comic.IRON_RIGHT, 1, before, after).boundingRect().height())
+    assert heights[0] > heights[1] > heights[2] > heights[3]
+    assert heights[0] - heights[3] > 2.0
+
+
+def test_comic_ironed_side_is_white_and_the_rest_still_dull(qapp):
+    d = Driver("comic")
+    _think_cycle(d, 0.75, scene="buegeln")
+    img = d.render()
+    white, dull = (255, 255, 255), (239, 233, 218)
+    left, right = (108, 41, 36, 9), (190, 41, 46, 9)
+    assert _count_color(img, left, white, d.f.px) > _count_color(img, left, dull, d.f.px)
+    assert _count_color(img, right, dull, d.f.px) > _count_color(img, right, white, d.f.px)
+
+
+def test_fighter_keyframes_draw_and_blend(qapp):
+    from PyQt6.QtCore import QRectF
+    from kira.ui.hud import fighter
+    for name, pose in fighter.KEYFRAMES.items():
+        img = QImage(120, 120, QImage.Format.Format_ARGB32_Premultiplied)
+        img.fill(Qt.GlobalColor.transparent)
+        p = QPainter(img)
+        fighter.draw(p, QRectF(4, 4, 112, 112), pose, 0.5, 1.0)
+        p.end()
+        assert _ink(img) > 1500, name
+    half = fighter.STANCE.blend(fighter.PUNCH, 0.5)
+    assert half.arm_f[4] == (fighter.STANCE.arm_f[4] + fighter.PUNCH.arm_f[4]) / 2
+    assert fighter.clip_pose("punch", 0.0) == fighter.STANCE
+    assert fighter.clip_pose("punch", fighter.duration("punch") + 1.0) == fighter.STANCE
+    assert fighter.clip_pose("punch", 0.16).arm_f == fighter.PUNCH.arm_f
+    assert fighter.clip_pose("victory", 5.0).lift < 0
+
+
+def test_manga_strikes_when_a_word_spawns_and_settles_back(qapp):
+    from kira.ui.hud import fighter
+    d = Driver("manga")
+    d.press()
+    d.run(0.4)
+    assert d.style._words and d.style._clip in fighter.STRIKES
+    peak = d.style.pose(d.style._clip_t0 + 0.16, d.f)
+    assert peak.arm_f[4] > fighter.STANCE.arm_f[4] or peak.leg_f[4] > fighter.STANCE.leg_f[4]
+    assert not d.style.striking(d.style._clip_t0 + fighter.duration(d.style._clip) + 0.01)
+    assert d.style.pose(d.style._clip_t0 + 0.16, Frame(reduced=True)) == fighter.STANCE
