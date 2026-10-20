@@ -53,6 +53,12 @@ SPIN_AFTER_S = 3.0
 SMOKE_AFTER_S = 3.0
 SWEAT_AFTER_S = 6.0
 SCENES = ("waesche", "buegeln", "zahnraeder")
+CLOCKS = ("wecker", "zeitring", "sanduhr")
+CLOCK_PX = 12
+TICK_S = 0.16
+RING_S = 0.7
+SPARKLE_S = 0.6
+FLIP_S = 0.45
 SCENE_S = 5.0
 IRON_PASS_S = 1.5
 IRON_LEFT, IRON_RIGHT = 114.0, 232.0
@@ -213,10 +219,16 @@ def error_lines(first: str, second: str) -> list[tuple[str, bool]]:
     return [(line, True) for line in head] + [(line, False) for line in tail]
 
 
+def _lettering(text: str, px: float) -> QPainterPath:
+    path = QPainterPath()
+    path.addText(0, 0, comic.baloo(800, max(1, round(px))), text)
+    path.setFillRule(Qt.FillRule.WindingFill)
+    return path
+
+
 def _sfx(p: QPainter, x: float, y: float, s: str, px: float, angle: float, width: float = 3.2,
          shadow: float = 1.6, fill: QColor = YELLOW) -> None:
-    path = QPainterPath()
-    path.addText(0, 0, comic.baloo(800, max(1, round(px))), s)
+    path = _lettering(s, px)
     box = path.boundingRect()
     path.translate(-box.center().x(), -box.center().y())
     p.save()
@@ -552,15 +564,173 @@ def _label_bubble(p: QPainter, body: QRectF, fill: QColor) -> None:
     _ink_shape(p, path.united(tail).simplified(), fill, 2.2)
 
 
-def _timer(p: QPainter, x: float, y: float, s: str) -> None:
-    font = comic.baloo(700, 10)
-    w = QFontMetricsF(font).horizontalAdvance(s) + 22
+def clock_label(elapsed: float) -> str:
+    return f"{int(elapsed // 60)}:{int(elapsed % 60):02d}"
+
+
+def _tick(elapsed: float, reduced: bool) -> float:
+    whole = math.floor(elapsed)
+    if reduced:
+        return float(whole)
+    k = clamp((elapsed - whole) / TICK_S, 0.0, 1.0)
+    return whole - 1 + (1 - (1 - k) ** 3) + 0.22 * math.sin(k * math.pi) * (1 - k)
+
+
+def _circle(cx: float, cy: float, r: float) -> QPainterPath:
+    path = QPainterPath()
+    path.addEllipse(QPointF(cx, cy), r, r)
+    return path
+
+
+def _clock_digits(p: QPainter, right: float, cy: float, elapsed: float) -> None:
+    path = _lettering(clock_label(elapsed), CLOCK_PX)
+    box = path.boundingRect()
+    path.translate(right - box.right(), cy - box.center().y())
+    p.setPen(QPen(INK, 2.6, *_ROUND))
+    p.setBrush(INK)
+    p.drawPath(path.translated(1.2, 1.2))
+    p.drawPath(path)
+    p.setPen(Qt.PenStyle.NoPen)
+    p.setBrush(WHITE)
+    p.drawPath(path)
+
+
+def _hand(p: QPainter, cx: float, cy: float, angle: float, length: float, color: QColor, width: float,
+          tail: float = 0.0) -> None:
+    dx, dy = math.sin(angle), -math.cos(angle)
+    p.setPen(QPen(color, width, *_ROUND))
+    p.drawLine(QPointF(cx - dx * tail, cy - dy * tail), QPointF(cx + dx * length, cy + dy * length))
+
+
+def _alarm_clock(p: QPainter, elapsed: float, reduced: bool) -> None:
+    cx, cy, r = 243.0, 15.0, 7.4
+    since = elapsed % 60
+    ring = not reduced and elapsed >= 60 and since < RING_S
+    frac = elapsed - math.floor(elapsed)
+    wobble = 0.0
+    if ring:
+        wobble = 11.0 * math.sin(since * math.tau * 9)
+    elif not reduced:
+        wobble = 6.0 * math.sin(frac * math.tau * 3) * math.exp(-frac * 9)
+    p.save()
+    p.translate(cx, cy + r)
+    p.rotate(wobble)
+    p.translate(-cx, -(cy + r))
+    p.setPen(QPen(INK, 1.8, *_ROUND))
+    p.drawLine(QPointF(cx - 4.2, cy + 5.6), QPointF(cx - 5.8, cy + 8.6))
+    p.drawLine(QPointF(cx + 4.2, cy + 5.6), QPointF(cx + 5.8, cy + 8.6))
+    for side in (-1, 1):
+        a = math.radians(side * 42)
+        bx, by = cx + math.sin(a) * (r + 1.2), cy - math.cos(a) * (r + 1.2)
+        bell = QPainterPath()
+        bell.moveTo(bx - 3.4 * math.cos(a), by - 3.4 * math.sin(a))
+        bell.arcTo(QRectF(bx - 3.4, by - 3.4, 6.8, 6.8), -math.degrees(a), 180)
+        bell.closeSubpath()
+        _ink_shape(p, bell, YELLOW, 1.4, 1.2)
+    p.setPen(QPen(INK, 1.4, *_ROUND))
+    p.drawLine(QPointF(cx, cy - r - 1.0), QPointF(cx, cy - r - 2.6))
+    _ink_shape(p, _circle(cx, cy, r), YELLOW, 1.9, 1.8)
+    p.setBrush(WHITE)
+    p.setPen(QPen(INK, 0.9))
+    p.drawEllipse(QPointF(cx, cy), r - 2.2, r - 2.2)
+    _hand(p, cx, cy, math.tau * ((elapsed / 60) % 12) / 12, 2.6, INK, 1.4)
+    _hand(p, cx, cy, math.tau * (_tick(elapsed, reduced) % 60) / 60, 4.4, REC, 1.0)
     p.setPen(Qt.PenStyle.NoPen)
     p.setBrush(INK)
-    p.drawRoundedRect(QRectF(x - w, y, w, 16), 8, 8)
-    p.setBrush(REC)
-    p.drawEllipse(QPointF(x - w + 9, y + 8), 3.2, 3.2)
-    _text(p, x - w + 16, y + 11.8, s, font, WHITE)
+    p.drawEllipse(QPointF(cx, cy), 0.9, 0.9)
+    p.restore()
+    if ring:
+        k = since / RING_S
+        p.save()
+        p.setOpacity(p.opacity() * (1.0 - prog(k, 0.7, 0.3)))
+        _sfx(p, cx - 30, cy + 15, "RING!", 8 + 2 * EASE_OUT(min(1.0, k * 3)), -8, 2.2, 1.0)
+        p.restore()
+    _clock_digits(p, cx - r - 6.0, cy, elapsed)
+
+
+def _pie_clock(p: QPainter, elapsed: float, reduced: bool) -> None:
+    cx, cy, r = 243.0, 14.0, 8.6
+    p.setPen(Qt.PenStyle.NoPen)
+    p.setBrush(INK)
+    p.drawRoundedRect(QRectF(cx - 2.2, cy - r - 3.6, 4.4, 3.4), 1.0, 1.0)
+    _ink_shape(p, _circle(cx, cy, r), WHITE, 2.0, 2.0)
+    u = ((math.floor(elapsed) if reduced else elapsed) % 60) / 60
+    inner = r - 1.6
+    if u > 0:
+        wedge = QPainterPath(QPointF(cx, cy))
+        wedge.arcTo(QRectF(cx - inner, cy - inner, inner * 2, inner * 2), 90, -360 * u)
+        wedge.closeSubpath()
+        p.setPen(Qt.PenStyle.NoPen)
+        p.setBrush(YELLOW)
+        p.drawPath(wedge)
+    _hand(p, cx, cy, 0.0, r - 1.4, INK, 1.3)
+    _hand(p, cx, cy, math.tau * u, r - 1.4, INK, 1.3)
+    p.setPen(Qt.PenStyle.NoPen)
+    p.setBrush(INK)
+    p.drawEllipse(QPointF(cx, cy), 1.2, 1.2)
+    if not reduced and elapsed >= 60 and elapsed % 60 < SPARKLE_S:
+        glow = math.sin((elapsed % 60) / SPARKLE_S * math.pi)
+        _sparkle(p, cx + 8.5, cy - 8.5, 4.2 * glow)
+        _sparkle(p, cx - 9.0, cy - 6.0, 2.8 * glow)
+    _clock_digits(p, cx - r - 4.0, cy + 0.4, elapsed)
+
+
+def _hourglass_shape(hw: float, top: float, neck: float) -> QPainterPath:
+    glass = QPainterPath(QPointF(-hw, top))
+    glass.lineTo(hw, top)
+    glass.cubicTo(QPointF(hw, top + 4.5), QPointF(neck + 0.4, -1.6), QPointF(neck, 0))
+    glass.cubicTo(QPointF(neck + 0.4, 1.6), QPointF(hw, -top - 4.5), QPointF(hw, -top))
+    glass.lineTo(-hw, -top)
+    glass.cubicTo(QPointF(-hw, -top - 4.5), QPointF(-neck - 0.4, 1.6), QPointF(-neck, 0))
+    glass.cubicTo(QPointF(-neck - 0.4, -1.6), QPointF(-hw, top + 4.5), QPointF(-hw, top))
+    glass.closeSubpath()
+    return glass
+
+
+def _hourglass(p: QPainter, elapsed: float, reduced: bool) -> None:
+    cx, cy, hw, top = 244.0, 13.4, 5.2, -8.2
+    minute = math.floor(elapsed / 60)
+    within = elapsed - minute * 60
+    flipping = not reduced and minute > 0 and within < FLIP_S
+    u = 1.0 if flipping else clamp((math.floor(elapsed) if reduced else elapsed) % 60 / 60, 0.0, 1.0)
+    p.save()
+    p.translate(cx, cy)
+    if flipping:
+        p.rotate(180 * EASE_IN_OUT(within / FLIP_S))
+    glass = _hourglass_shape(hw, top, 1.0)
+    _ink_shape(p, glass, GLASS, 1.5, 1.5)
+    p.save()
+    p.setClipPath(glass)
+    p.setPen(Qt.PenStyle.NoPen)
+    p.setBrush(YELLOW)
+    level = top + 1.4 + 6.6 * u
+    p.drawRect(QRectF(-hw, level, hw * 2, -level))
+    pile = 6.8 * u
+    mound = QPainterPath(QPointF(-hw, -top))
+    mound.lineTo(-hw, -top - pile * 0.45)
+    mound.quadTo(QPointF(0, -top - pile * 1.25), QPointF(hw, -top - pile * 0.45))
+    mound.lineTo(hw, -top)
+    mound.closeSubpath()
+    p.drawPath(mound)
+    if u < 1.0:
+        p.setPen(QPen(YELLOW.darker(115), 0.9))
+        p.drawLine(QPointF(0, 0), QPointF(0, -top - pile))
+        if not reduced:
+            p.setPen(Qt.PenStyle.NoPen)
+            p.setBrush(INK)
+            for j in range(3):
+                gy = ((elapsed * 9 + j / 3) % 1.0) * (-top - pile)
+                p.drawEllipse(QPointF(0, gy), 0.45, 0.45)
+    p.restore()
+    p.setPen(Qt.PenStyle.NoPen)
+    p.setBrush(INK)
+    p.drawRoundedRect(QRectF(-hw - 1.6, top - 2.2, hw * 2 + 3.2, 2.4), 1.0, 1.0)
+    p.drawRoundedRect(QRectF(-hw - 1.6, -top - 0.2, hw * 2 + 3.2, 2.4), 1.0, 1.0)
+    p.restore()
+    _clock_digits(p, cx - 9.5, cy + 0.6, elapsed)
+
+
+CLOCK_PAINTERS = {"wecker": _alarm_clock, "zeitring": _pie_clock, "sanduhr": _hourglass}
 
 
 class Comic(HudStyle):
@@ -575,6 +745,7 @@ class Comic(HudStyle):
         self._lv = 0.0
         self._rng = random.Random()
         self.scene = SCENES[0]
+        self.clock = CLOCKS[0]
         self._queue: deque[str] = deque(maxlen=4)
         self._spoken = 0
 
@@ -586,6 +757,7 @@ class Comic(HudStyle):
         self._queue.clear()
         self._spoken = 0
         self.scene = self._rng.choice(SCENES)
+        self.clock = self._rng.choice(CLOCKS)
 
     def feed_words(self, t: float, words: list[str]) -> None:
         if self.mode == "rec":
@@ -662,8 +834,7 @@ class Comic(HudStyle):
             p.setOpacity(p.opacity() * alpha)
             _sfx(p, x, y, word.text, word.size * scale, angle, fill=word.fill)
             p.restore()
-        elapsed = self.elapsed(t)
-        _timer(p, 252, 3, f"{int(elapsed // 60)}:{int(elapsed % 60):02d}")
+        CLOCK_PAINTERS.get(self.clock, _alarm_clock)(p, self.elapsed(t), f.reduced)
 
     def _shout(self, p: QPainter) -> None:
         _mascot(p, "shout")

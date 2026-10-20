@@ -124,9 +124,14 @@ Tray-Menü steht „Update auf … installieren…“. Abschaltbar in der Rohcon
 <code>updates.check_on_start</code>, den Takt ändert
 <code>updates.check_interval_hours</code>.</p>
 <p>Manuell: Tray → <b>„Updates suchen..."</b> oder Einstellungen → Reiter „Über“ →
-Update-Button. Speech2Anywhere prüft GitHub Releases, lädt das Multi-Asset-Bundle
-(Stub + Splits), verifiziert SHA256-Hashes (falls im Release vorhanden),
-und startet den Setup-Wizard. Speech2Anywhere beendet sich dafür kurz.</p>
+Update-Button. Hat sich seit deiner Version nur das Programm geändert, lädt
+Speech2Anywhere nur das Programmpaket (gut 1 MB), prüft dessen Prüfsumme, spielt es
+nach einem kurzen Beenden ein und startet von selbst neu. Sonst lädt es das ganze
+Paket (Stub + Splits), verifiziert die SHA256-Hashes und startet den Setup-Wizard.</p>
+<p>Jedes Release ist mit einer bestimmten Ollama-Version und bestimmten Fassungen der
+Politur-Modelle gemessen. Ist dein Ollama älter als das geprüfte oder nutzt du eines der
+gemessenen Modelle in einer anderen Fassung, meldet Speech2Anywhere das einmal im Tray; unter
+<b>„Ollama-Empfehlung ansehen…“</b> aktualisierst du das Windows-Ollama und das Modell per Knopf.</p>
 
 <h3>8. Tray &amp; Status</h3>
 <p>Das Tray-Symbol zeigt immer das Logo:</p>

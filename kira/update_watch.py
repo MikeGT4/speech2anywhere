@@ -61,7 +61,12 @@ class UpdateWatch:
         return remote
 
 
-def run_periodically(watch: UpdateWatch, interval_s: float, stop: threading.Event) -> None:
+def run_periodically(watch, interval_s: float, stop: threading.Event, first_s: float | None = None) -> None:
+    if first_s is not None and not stop.wait(first_s):
+        try:
+            watch.run_once()
+        except Exception:
+            log.exception("Erste Prüfung fehlgeschlagen; nächster Versuch im nächsten Takt")
     while not stop.wait(interval_s):
         try:
             watch.run_once()
@@ -70,22 +75,25 @@ def run_periodically(watch: UpdateWatch, interval_s: float, stop: threading.Even
 
 
 def start_watch(
-    watch: UpdateWatch,
+    watch,
     *,
     enabled: bool,
     interval_h: float,
     stop: threading.Event | None = None,
+    first_s: float | None = None,
+    name: str = "kira-update-watch",
+    label: str = "Update-Prüfung",
 ) -> threading.Thread | None:
     if not enabled or interval_h <= 0:
-        log.info("Wiederholte Update-Prüfung aus (check_on_start=%s, Intervall %.1f h)",
-                 enabled, interval_h)
+        log.info("Wiederholte %s aus (check_on_start=%s, Intervall %.1f h)",
+                 label, enabled, interval_h)
         return None
     thread = threading.Thread(
         target=run_periodically,
-        args=(watch, interval_h * 3600.0, stop or threading.Event()),
+        args=(watch, interval_h * 3600.0, stop or threading.Event(), first_s),
         daemon=True,
-        name="kira-update-watch",
+        name=name,
     )
     thread.start()
-    log.info("Update-Prüfung alle %.1f h aktiv", interval_h)
+    log.info("%s alle %.1f h aktiv", label, interval_h)
     return thread

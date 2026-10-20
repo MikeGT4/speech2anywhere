@@ -221,6 +221,15 @@ def _load_or_generate_icon(state: State) -> Image.Image:
     return icon
 
 
+def free_transcript_path(src: Path) -> Path:
+    out = src.with_suffix(".txt")
+    number = 2
+    while out.exists():
+        out = src.with_name(f"{src.stem} ({number}).txt")
+        number += 1
+    return out
+
+
 class KiraTray:
     def __init__(
         self,
@@ -243,6 +252,7 @@ class KiraTray:
         self._transcribe_worker = None
         self._transcribe_progress = None
         self._update_available: str | None = None
+        self._ollama_advice: list = []
         self._icon_lock = threading.Lock()
         self._plapper_stop: threading.Event | None = None
 
@@ -261,6 +271,10 @@ class KiraTray:
                     f"Update auf v{self._update_available} installieren…",
                     self._check_for_updates,
                 ),
+            )
+        if self._ollama_advice:
+            items.append(
+                pystray.MenuItem("Ollama-Empfehlung ansehen…", self._open_ollama_advice),
             )
         items.append(
             pystray.MenuItem(
@@ -521,7 +535,7 @@ class KiraTray:
                             "oder die Spracherkennung hat nichts verstanden."
                         )
                         return
-                    out = Path(self._src).with_suffix(".txt")
+                    out = free_transcript_path(Path(self._src))
                     out.write_text(result.text, encoding="utf-8")
                     self.done.emit(str(out), result.language)
                 except Exception as exc:
@@ -544,6 +558,13 @@ class KiraTray:
 
         progress.canceled.connect(on_cancelled)
 
+        def _close_progress() -> None:
+            try:
+                progress.canceled.disconnect(on_cancelled)
+            except (TypeError, RuntimeError):
+                pass
+            progress.close()
+
         def _teardown() -> None:
             thread.quit()
             thread.wait()
@@ -552,7 +573,7 @@ class KiraTray:
             self._transcribe_progress = None
 
         def on_done(out_path: str, language: str) -> None:
-            progress.close()
+            _close_progress()
             _teardown()
             if cancelled["val"]:
                 return
@@ -563,7 +584,7 @@ class KiraTray:
             )
 
         def on_failed(message: str) -> None:
-            progress.close()
+            _close_progress()
             _teardown()
             if cancelled["val"]:
                 return
@@ -613,6 +634,49 @@ class KiraTray:
             f"Speech2Anywhere v{version} ist verfügbar. Installieren im "
             f"Tray-Menü: „Update auf v{version} installieren…“.",
         )
+
+    def set_ollama_advice(self, advice) -> None:
+        advice = list(advice)
+        if advice == self._ollama_advice:
+            return
+        self._ollama_advice = advice
+        if self._icon is not None:
+            self._icon.menu = self._build_menu()
+
+    def notify_ollama_advice(self, advice) -> None:
+        if advice.kind == "ollama":
+            text = (
+                f"Speech2Anywhere ist mit Ollama {advice.tested} geprüft, installiert ist "
+                f"{advice.installed}. Tray-Menü: „Ollama-Empfehlung ansehen…“."
+            )
+        else:
+            text = (
+                f"Das Politur-Modell {advice.model} liegt in einer anderen Fassung vor als der "
+                "geprüften. Tray-Menü: „Ollama-Empfehlung ansehen…“."
+            )
+        self.notify("Speech2Anywhere: Empfehlung zu Ollama", text)
+
+    def _open_ollama_advice(self, _icon, _item) -> None:
+        self._marshal_to_qt(self._show_ollama_advice, "ollama advice")
+
+    def _show_ollama_advice(self) -> None:
+        from kira import __version__
+        from kira._update_marker import mark_advice_declined
+        from kira.ui.ollama_advice_dialog import OllamaAdviceDialog
+
+        advice = list(self._ollama_advice)
+        if not advice:
+            return
+
+        def handled(key: str) -> None:
+            self.set_ollama_advice([a for a in self._ollama_advice if a.key != key])
+
+        def declined(key: str) -> None:
+            mark_advice_declined(key)
+            handled(key)
+
+        dlg = OllamaAdviceDialog(advice, on_declined=declined, app_version=__version__, on_handled=handled)
+        getattr(dlg, "exec")()
 
     @staticmethod
     def _run_update_flow_marshalled(quit_callback) -> None:

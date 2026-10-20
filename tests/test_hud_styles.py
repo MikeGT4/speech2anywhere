@@ -887,3 +887,63 @@ def test_manga_strikes_when_a_word_spawns_and_settles_back(qapp):
     assert peak.arm_f[4] > fighter.STANCE.arm_f[4] or peak.leg_f[4] > fighter.STANCE.leg_f[4]
     assert not d.style.striking(d.style._clip_t0 + fighter.duration(d.style._clip) + 0.01)
     assert d.style.pose(d.style._clip_t0 + 0.16, Frame(reduced=True)) == fighter.STANCE
+
+
+def test_comic_picks_one_of_three_clocks_per_dictation(qapp):
+    import random
+    from kira.ui.hud import comic
+    d = Driver("comic")
+    d.style._rng = random.Random(11)
+    seen = set()
+    for _ in range(24):
+        d.press()
+        seen.add(d.style.clock)
+        d.style.abort(d.t)
+        d.run(0.2, amp=0.0)
+    assert seen == set(comic.CLOCKS) == {"wecker", "zeitring", "sanduhr"}
+
+
+def _corner_ink(img: QImage, px: float) -> int:
+    ptr = img.constBits()
+    ptr.setsize(img.sizeInBytes())
+    arr = np.frombuffer(ptr, np.uint8).reshape(img.height(), img.bytesPerLine() // 4, 4)
+    return int((arr[0:round(28 * px), round(205 * px):round(258 * px), 3] > 0).sum())
+
+
+@pytest.mark.parametrize("clock", ["wecker", "zeitring", "sanduhr"])
+@pytest.mark.parametrize("reduced", [False, True])
+@pytest.mark.parametrize("shift", [0.0, 59.8, 60.2, 125.4])
+def test_every_clock_draws_in_the_corner_also_at_the_full_minute(qapp, clock, reduced, shift):
+    d = Driver("comic", reduced=reduced)
+    d.press()
+    d.style.clock = clock
+    d.style.t0 -= shift
+    d.run(0.4)
+    assert d.style.mode == "rec"
+    assert _corner_ink(d.render(), d.f.px) > 400
+
+
+def test_clock_label_counts_minutes_and_seconds():
+    from kira.ui.hud.comic import clock_label
+    assert clock_label(0.4) == "0:00"
+    assert clock_label(17.9) == "0:17"
+    assert clock_label(65.4) == "1:05"
+
+
+def test_comic_lettering_fills_the_l_completely(qapp):
+    from PyQt6.QtGui import QColor
+    from kira.ui.hud import comic
+    img = QImage(200, 200, QImage.Format.Format_ARGB32_Premultiplied)
+    img.fill(Qt.GlobalColor.transparent)
+    p = QPainter(img)
+    comic._sfx(p, 100, 100, "l", 120, 0, shadow=0, fill=QColor("#FFC400"))
+    p.end()
+    runs, inside = 0, False
+    for y in range(img.height()):
+        color = img.pixelColor(100, y)
+        yellow = color.alpha() == 255 and color.red() > 200 and color.green() > 150
+        if yellow and not inside:
+            runs += 1
+        inside = yellow
+    assert runs == 1
+    assert comic._lettering("l", 120).fillRule() == Qt.FillRule.WindingFill

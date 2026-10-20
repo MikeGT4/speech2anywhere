@@ -22,6 +22,7 @@ from kira.config import default_config_path, effective_hotkey, load_config
 from kira.hotkey_win import SUPPORTED_COMBOS
 from kira.config_writer import update_scalars
 from kira.ui.hud import STYLE_LABELS
+from kira.ui.hud_preview import HudPreview
 
 log = logging.getLogger(__name__)
 from kira._resources import assets_dir as _assets_dir  # noqa: E402
@@ -507,13 +508,24 @@ class SettingsDialog(QDialog):
             "Wie die Anzeige am Mauszeiger aussieht, solange die Diktat-Taste\n"
             "gehalten wird."
         )
-        card.add_row("Stil", "So sieht die Anzeige beim Diktieren aus.", self._hud_style)
+        self._hud_preview = HudPreview(
+            self._hud_style.currentData(), live_words=self._cfg.ui.hud_live_words, scale=self._cfg.ui.hud_scale,
+        )
+        self._hud_style.currentIndexChanged.connect(
+            lambda _index: self._hud_preview.set_style(self._hud_style.currentData())
+        )
+        style_box = QVBoxLayout()
+        style_box.setSpacing(12)
+        style_box.addWidget(self._hud_style)
+        style_box.addWidget(self._hud_preview)
+        card.add_row("Stil", "So sieht die Anzeige beim Diktieren aus.", style_box)
         self._hud_live_words = comic.ToggleSwitch()
         self._hud_live_words.setChecked(self._cfg.ui.hud_live_words)
         self._hud_live_words.setToolTip(
             "In den Stilen „Comic (Bla-Bla)“ und „Manga“ erscheinen beim Sprechen Fetzen der erkannten Wörter.\n"
             "Sie sind am Bildschirm zu sehen, auch bei einer Bildschirmfreigabe."
         )
+        self._hud_live_words.toggled.connect(self._hud_preview.set_live_words)
         card.add_row("Wortfetzen", "Fetzen deiner Wörter beim Sprechen.", self._hud_live_words)
         hint = comic.HintBubble([
             "Wirkt schon beim nächsten Diktat. Die Größe stellst du in der Rohconfig ein (ui.hud_scale).",
@@ -905,7 +917,7 @@ class SettingsDialog(QDialog):
 
         worker.progress.connect(on_progress)
         worker.finished.connect(on_finished)
-        progress.canceled.connect(worker.cancel)
+        progress.canceled.connect(lambda: worker.cancel())
         thread.start()
         self._pull_thread = thread
         self._pull_worker = worker

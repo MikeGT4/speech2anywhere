@@ -271,3 +271,71 @@ def test_dot_background_draws_the_same_grid_from_a_cached_tile(qtbot):
     )
     assert worst <= 1
     assert _comic.DotBackground._tile(1.0) is _comic.DotBackground._tile(1.0)
+
+
+def test_preview_sits_under_the_style_choice_on_the_display_page(dialog):
+    page = dialog._pages.widget(dialog._PAGE_TITLES.index("Anzeige"))
+    assert page.isAncestorOf(dialog._hud_preview)
+    assert dialog._hud_preview.driver.key == dialog._hud_style.currentData()
+
+
+def test_style_choice_and_word_switch_drive_the_preview(dialog):
+    dialog._hud_style.setCurrentIndex(dialog._hud_style.findData("phosphor"))
+    assert dialog._hud_preview.driver.key == "phosphor"
+    assert dialog._hud_preview.driver.style.key == "phosphor"
+    dialog._hud_live_words.setChecked(False)
+    assert dialog._hud_preview.driver.live_words is False
+    dialog._hud_live_words.setChecked(True)
+    assert dialog._hud_preview.driver.live_words is True
+
+
+def test_preview_runs_only_on_its_own_page(dialog, qtbot):
+    dialog.show()
+    qtbot.waitExposed(dialog)
+    assert not dialog._hud_preview.running
+    dialog._tabs[dialog._PAGE_TITLES.index("Anzeige")].click()
+    assert dialog._hud_preview.running
+    dialog._tabs[0].click()
+    assert not dialog._hud_preview.running
+
+
+def test_display_page_with_preview_stays_shorter_than_polish(dialog):
+    heights = {title: dialog._pages.widget(i).sizeHint().height() for i, title in enumerate(dialog._PAGE_TITLES)}
+    assert heights["Anzeige"] < heights["Politur"]
+    assert max(heights, key=heights.get) == "Politur"
+
+
+def test_cancel_reaches_a_running_model_pull_in_the_settings(dialog, qtbot, monkeypatch):
+    import time
+
+    from PyQt6.QtCore import QObject, pyqtSignal
+    from PyQt6.QtWidgets import QProgressDialog
+
+    import kira.ui.settings_dialog as sd
+
+    seen = []
+
+    class _SlowPull(QObject):
+        progress = pyqtSignal(str, 'qint64', 'qint64')
+        finished = pyqtSignal(bool, str)
+
+        def __init__(self, model):
+            super().__init__()
+            self._cancelled = False
+
+        def cancel(self):
+            self._cancelled = True
+
+        def run(self):
+            t0 = time.monotonic()
+            while not self._cancelled and time.monotonic() - t0 < 3:
+                time.sleep(0.02)
+            seen.append(self._cancelled)
+            self.finished.emit(False, "Abgebrochen.")
+
+    monkeypatch.setattr(sd, "_PullWorker", _SlowPull)
+    monkeypatch.setattr(sd, "light_critical", lambda *a, **k: None)
+    dialog._start_model_pull("gemma4:e4b", "Test")
+    dialog.findChild(QProgressDialog).canceled.emit()
+    qtbot.waitUntil(lambda: bool(seen), timeout=5000)
+    assert seen == [True]

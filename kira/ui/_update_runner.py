@@ -2,6 +2,7 @@ from __future__ import annotations
 import logging
 import os
 import subprocess
+import threading
 from pathlib import Path
 from typing import Callable
 
@@ -10,7 +11,7 @@ from PyQt6.QtWidgets import (
     QMessageBox, QProgressDialog, QWidget,
 )
 
-from kira import __version__, UPDATE_REPO
+from kira import __version__, UPDATE_REPO, app_update
 from kira.ui._dialog_style import (
     apply_light_theme,
     light_critical,
@@ -132,6 +133,86 @@ class _UpdateWorker(QObject):
             self.failed.emit(f"Unerwarteter Fehler: {exc}")
 
 
+def _offer_patch(
+    parent: QWidget | None,
+    result: UpdateCheckResult,
+    on_quit_request: Callable[[], None] | None,
+) -> tuple[bool | None, str]:
+    root = app_update.install_root()
+    if root is None or result.app_asset is None:
+        return None, ""
+    busy = QProgressDialog("Prüfe, ob ein kleines Programm-Update reicht...", "Abbrechen", 0, 0, parent)
+    busy.setWindowTitle("Speech2Anywhere: Update")
+    busy.setWindowModality(Qt.WindowModality.ApplicationModal)
+    busy.setMinimumDuration(0)
+    apply_light_theme(busy)
+    busy.show()
+    box: dict[str, app_update.PatchCheck] = {}
+    asset, target = result.app_asset, _bundle_dir() / f"v{result.remote_version}"
+
+    def work() -> None:
+        try:
+            box["check"] = app_update.check_patch(asset, target, root=root)
+        except Exception as exc:
+            log.exception("Prüfung des Programm-Updates fehlgeschlagen")
+            box["check"] = app_update.PatchCheck(None, [f"Die Prüfung ist fehlgeschlagen ({exc})."])
+
+    from PyQt6.QtCore import QCoreApplication, QEventLoop
+    checker = threading.Thread(target=work, daemon=True, name="kira-patch-check")
+    checker.start()
+    while checker.is_alive() and not busy.wasCanceled():
+        QCoreApplication.processEvents(QEventLoop.ProcessEventsFlag.AllEvents, 50)
+        checker.join(0.02)
+    cancelled = busy.wasCanceled()
+    busy.close()
+    if cancelled:
+        log.info("Prüfung des Programm-Updates abgebrochen")
+        return False, ""
+    check = box["check"]
+    if not check.ready:
+        log.info("Programm-Update reicht nicht: %s", "; ".join(check.reasons))
+        first = check.reasons[0] if check.reasons else "unbekannter Grund"
+        return None, f"Ein kleines Programm-Update reicht diesmal nicht: {first}"
+
+    size_mb = f"{result.app_asset.size / (1024 * 1024):.1f}".replace(".", ",")
+    msg = QMessageBox(parent)
+    msg.setWindowTitle("Speech2Anywhere: Update verfügbar")
+    msg.setIcon(QMessageBox.Icon.Question)
+    msg.setText(
+        f"Version v{result.remote_version} ist verfügbar.\n\n"
+        f"Du nutzt v{__version__}."
+    )
+    msg.setInformativeText(
+        f"Programm-Update: {size_mb} MB statt des ganzen Pakets. Bibliotheken und Modelle "
+        "bleiben, wie sie sind.\n"
+        f"Quelle: github.com/{UPDATE_REPO}, Prüfsumme bestanden.\n\n"
+        "Speech2Anywhere beendet sich dafür kurz und startet von selbst neu. Jetzt aktualisieren?"
+    )
+    msg.setStandardButtons(
+        QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
+    )
+    msg.setDefaultButton(QMessageBox.StandardButton.Yes)
+    apply_light_theme(msg)
+    if msg.exec() != QMessageBox.StandardButton.Yes:
+        return False, ""
+    try:
+        app_update.launch_patch(check.wheel, result.remote_version, sha256=asset.sha256, root=root)
+    except Exception as exc:
+        log.exception("Programm-Update ließ sich nicht starten")
+        light_critical(parent, "Speech2Anywhere", f"Das Programm-Update ließ sich nicht starten: {exc}")
+        return False, ""
+    if on_quit_request is not None:
+        log.info("Speech2Anywhere wird für das Programm-Update beendet")
+        on_quit_request()
+    else:
+        light_information(
+            parent, "Speech2Anywhere",
+            "Beende Speech2Anywhere über das Tray-Symbol. Danach wird das Update eingespielt, "
+            "und Speech2Anywhere startet von selbst neu.",
+        )
+    return True, ""
+
+
 def _launch_setup_detached(setup_path: str) -> None:
     DETACHED = 0x00000008 | 0x00000200
     subprocess.Popen(  # noqa: S603 - list-args, kein shell-Parsing
@@ -220,6 +301,10 @@ def _run_update_flow(
         )
         return False
 
+    handed_over, patch_note = _offer_patch(parent, result, on_quit_request)
+    if handed_over is not None:
+        return handed_over
+
     bundle_count = len(result.bundle_assets)
     total_size_mb = sum(a.size for a in result.bundle_assets) / (1024 * 1024)
     msg = QMessageBox(parent)
@@ -230,7 +315,8 @@ def _run_update_flow(
         f"Du nutzt v{__version__}."
     )
     msg.setInformativeText(
-        f"Bundle: {bundle_count} Dateien (~{total_size_mb:.0f} MB).\n"
+        (f"{patch_note}\n\n" if patch_note else "")
+        + f"Bundle: {bundle_count} Dateien (~{total_size_mb:.0f} MB).\n"
         f"Quelle: github.com/{UPDATE_REPO}\n\n"
         "Jetzt herunterladen und installieren?"
     )
@@ -276,6 +362,16 @@ def _run_update_flow(
             + (f" / {total / (1024 * 1024):.1f} MB" if total > 0 else "")
         )
 
+    def cancel_download() -> None:
+        worker.cancel()
+
+    def close_progress() -> None:
+        try:
+            progress.canceled.disconnect(cancel_download)
+        except (TypeError, RuntimeError):
+            pass
+        progress.close()
+
     def on_succeeded(setup_path: str, hash_verified: bool) -> None:
         try:
             _on_succeeded(setup_path, hash_verified)
@@ -284,7 +380,7 @@ def _run_update_flow(
 
     def _on_succeeded(setup_path: str, hash_verified: bool) -> None:
         progress.setValue(100)
-        progress.close()
+        close_progress()
         thread.quit()
         thread.wait()
         if worker._cancelled:
@@ -340,7 +436,7 @@ def _run_update_flow(
 
     def on_failed(message: str) -> None:
         try:
-            progress.close()
+            close_progress()
             thread.quit()
             thread.wait()
             light_critical(parent, "Speech2Anywhere", message)
@@ -351,7 +447,7 @@ def _run_update_flow(
     worker.progress.connect(on_progress)
     worker.succeeded.connect(on_succeeded)
     worker.failed.connect(on_failed)
-    progress.canceled.connect(lambda: worker.cancel())
+    progress.canceled.connect(cancel_download)
     thread.start()
 
     _anchor = (thread, worker, progress)

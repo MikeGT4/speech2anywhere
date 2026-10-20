@@ -65,3 +65,38 @@ def test_finished_thread_does_not_block_new_transcription(tray, monkeypatch):
 
     assert opened, "File-Dialog muss aufgehen"
     assert not infos, "kein Blockier-Hinweis"
+
+
+def test_finished_transcription_reports_the_file(tray, monkeypatch, qapp, tmp_path):
+    import time
+    from types import SimpleNamespace
+
+    from PyQt6.QtCore import QCoreApplication
+    from PyQt6.QtWidgets import QFileDialog
+
+    audio = tmp_path / "aufnahme.wav"
+    audio.write_bytes(b"")
+    infos = []
+    monkeypatch.setattr("kira.ui._dialog_style.light_information", lambda *a, **k: infos.append(a[2]))
+    monkeypatch.setattr(QFileDialog, "getOpenFileName", staticmethod(lambda *a, **k: (str(audio), "")))
+    transcriber = MagicMock()
+    transcriber.transcribe_file.return_value = SimpleNamespace(text="Hallo Welt", language="de")
+
+    tray._show_transcribe_file_dialog(transcriber=transcriber)
+    deadline = time.monotonic() + 5
+    while not infos and time.monotonic() < deadline:
+        QCoreApplication.processEvents()
+        time.sleep(0.01)
+    assert infos and infos[0].startswith("Fertig.")
+    assert (tmp_path / "aufnahme.txt").read_text(encoding="utf-8") == "Hallo Welt"
+
+
+def test_transcript_never_overwrites_an_existing_text_file(tmp_path):
+    from pathlib import Path as _Path
+    from kira.ui.tray_win import free_transcript_path
+    src = tmp_path / "Vortrag.mp4"
+    assert free_transcript_path(src) == tmp_path / "Vortrag.txt"
+    (tmp_path / "Vortrag.txt").write_text("Notizen", encoding="utf-8")
+    assert free_transcript_path(src) == tmp_path / "Vortrag (2).txt"
+    (tmp_path / "Vortrag (2).txt").write_text("x", encoding="utf-8")
+    assert free_transcript_path(_Path(src)) == tmp_path / "Vortrag (3).txt"

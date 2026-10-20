@@ -311,3 +311,77 @@ def test_verify_sha256sums_tolerates_utf8_bom_and_crlf(tmp_path):
     ok, errors = verify_sha256sums(sums_path, tmp_path)
     assert ok is True
     assert errors == []
+
+
+def _with_wheel(release, name="kira-0.2.0-py3-none-any.whl", digest="sha256:" + "ab" * 32):
+    asset = {"name": name, "browser_download_url": f"https://example.com/{name}", "size": 1_450_342}
+    if digest is not None:
+        asset["digest"] = digest
+    release["assets"].append(asset)
+    return release
+
+
+def _check(release):
+    with patch("kira.updater.urllib.request.urlopen") as mock_open:
+        mock_open.return_value.__enter__.return_value = _mock_response(release)
+        return check_for_update(local_version="0.1.0", repo="x/y")
+
+
+def test_check_finds_the_program_package_with_its_digest(fake_bundle_release):
+    result = _check(_with_wheel(fake_bundle_release))
+    assert result.app_asset == ReleaseAsset(
+        name="kira-0.2.0-py3-none-any.whl", url="https://example.com/kira-0.2.0-py3-none-any.whl",
+        size=1_450_342, sha256="ab" * 32,
+    )
+    assert [a.name for a in result.bundle_assets][0] == "Kira-Setup-v0.2.0.exe"
+    assert all(not a.name.endswith(".whl") for a in result.bundle_assets)
+
+
+@pytest.mark.parametrize("name,digest", [
+    ("kira-0.2.0-py3-none-any.whl", None),
+    ("kira-0.2.0-py3-none-any.whl", "md5:abc"),
+    ("kira-0.2.0-py3-none-any.whl", "sha256:xyz"),
+    ("kira-0.1.9-py3-none-any.whl", "sha256:" + "ab" * 32),
+    ("kira-0.2.0-cp312-cp312-win_amd64.whl", "sha256:" + "ab" * 32),
+    ("evil-0.2.0-py3-none-any.whl", "sha256:" + "ab" * 32),
+])
+def test_program_package_needs_matching_version_and_sha256_digest(fake_bundle_release, name, digest):
+    assert _check(_with_wheel(fake_bundle_release, name, digest)).app_asset is None
+
+
+def test_release_without_program_package_keeps_working(fake_bundle_release):
+    result = _check(fake_bundle_release)
+    assert result.status == "newer"
+    assert result.app_asset is None
+
+
+def test_matches_sha256(tmp_path):
+    f = tmp_path / "x.whl"
+    f.write_bytes(b"paket")
+    good = hashlib.sha256(b"paket").hexdigest()
+    assert updater_matches(f, good)
+    assert updater_matches(f, good.upper())
+    assert not updater_matches(f, "00" * 32)
+    assert not updater_matches(f, "")
+
+
+def updater_matches(path, digest):
+    from kira.updater import matches_sha256
+    return matches_sha256(path, digest)
+
+
+def test_download_asset_reports_progress(tmp_path):
+    seen = []
+    with patch("kira.updater.urllib.request.urlopen") as mock_open:
+        mock_open.return_value.__enter__.return_value = _Download(b"x" * 10)
+        download_asset("https://example.com/a", tmp_path / "a", on_bytes=lambda d, t: seen.append((d, t)))
+    assert seen[-1] == (10, 10)
+
+
+def test_asset_names_with_trailing_newline_are_ignored(fake_bundle_release):
+    release = _with_wheel(fake_bundle_release, name="kira-0.2.0-py3-none-any.whl\n")
+    release["assets"].append({"name": "Kira-Setup-v0.2.0.exe\n", "browser_download_url": "https://example.com/x",
+                              "size": 1})
+    result = _check(release)
+    assert result.app_asset is None
+    assert result.asset_name == "Kira-Setup-v0.2.0.exe"

@@ -74,14 +74,14 @@ Source: "{#BuildDir}\..\installer\embedded\OllamaSetup.exe"; DestDir: "{app}\ins
 
 Source: "{#BuildDir}\..\assets\icon-branded.ico"; DestDir: "{app}\assets"; Flags: ignoreversion
 Source: "{#BuildDir}\..\installer\config.yaml.template"; DestDir: "{tmp}"; Flags: deleteafterinstall
+Source: "{#BuildDir}\constraints.txt"; DestDir: "{tmp}"; Flags: deleteafterinstall
 
 [Dirs]
 Name: "{app}\tools"
 Name: "{userappdata}\Kira"
 
 [InstallDelete]
-Type: filesandordirs; Name: "{app}\python\Lib\site-packages\kira"
-Type: filesandordirs; Name: "{app}\python\Lib\site-packages\kira-*"
+Type: filesandordirs; Name: "{app}\python"; Check: IsOwnPython
 Type: filesandordirs; Name: "{app}\venv"
 Type: filesandordirs; Name: "{app}\app\assets"
 Type: filesandordirs; Name: "{app}\app\installer"
@@ -107,7 +107,7 @@ Name: "{userstartup}\Speech2Anywhere"; Filename: "{app}\python\Scripts\kira.exe"
 
 [Run]
 Filename: "{app}\python\python.exe"; \
-    Parameters: "-m pip install --no-index --no-build-isolation --find-links ""{tmp}\kira-wheels"" --no-warn-script-location ""kira[windows]"""; \
+    Parameters: "-m pip install --no-index --no-build-isolation --find-links ""{tmp}\kira-wheels"" --constraint ""{tmp}\constraints.txt"" --no-warn-script-location ""kira[windows]"""; \
     StatusMsg: "Installiere Speech2Anywhere-Python-Pakete..."; \
     Flags: waituntilterminated
 
@@ -130,6 +130,54 @@ end;
 function NeedsOllama: Boolean;
 begin
   Result := not FileExists(ExpandConstant('{localappdata}\Programs\Ollama\ollama.exe'));
+end;
+
+function IsOwnPython: Boolean;
+begin
+  Result := FileExists(ExpandConstant('{app}\python\Scripts\kira.exe'));
+end;
+
+function OwnProcesses(const Prefix: String; Stop: Boolean): Integer;
+var
+  Locator, Service, Processes, Process: Variant;
+  I: Integer;
+  ExePath: String;
+begin
+  Result := 0;
+  Locator := CreateOleObject('WbemScripting.SWbemLocator');
+  Service := Locator.ConnectServer('.', 'root\CIMV2');
+  Processes := Service.ExecQuery('SELECT ProcessId, ExecutablePath FROM Win32_Process');
+  for I := 0 to Processes.Count - 1 do begin
+    Process := Processes.ItemIndex(I);
+    if not VarIsNull(Process.ExecutablePath) then begin
+      ExePath := Process.ExecutablePath;
+      if Pos(Prefix, Lowercase(ExePath)) = 1 then begin
+        Result := Result + 1;
+        if Stop then
+          Process.Terminate();
+      end;
+    end;
+  end;
+end;
+
+function PrepareToInstall(var NeedsRestart: Boolean): String;
+var
+  Prefix: String;
+begin
+  Result := '';
+  if not IsOwnPython then
+    Exit;
+  Prefix := Lowercase(ExpandConstant('{app}\python\'));
+  try
+    if OwnProcesses(Prefix, True) > 0 then begin
+      Log('Laufende Speech2Anywhere-Prozesse beendet');
+      Sleep(1500);
+      if OwnProcesses(Prefix, False) > 0 then
+        Result := 'Speech2Anywhere läuft noch. Bitte im Tray beenden und das Setup erneut starten.';
+    end;
+  except
+    Log('Prozesse von Speech2Anywhere nicht prüfbar: ' + GetExceptionMessage);
+  end;
 end;
 
 procedure WriteConfigIfMissing();

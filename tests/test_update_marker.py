@@ -103,3 +103,25 @@ def test_kira_appdata_dir_rejects_appdata_outside_userprofile(tmp_path, monkeypa
 
 def test_environment_error_is_oserror_subclass():
     assert issubclass(EnvironmentError, OSError)
+
+
+def test_advice_marker_keeps_several_keys(tmp_path, monkeypatch):
+    from kira._update_marker import ADVICE_DECLINED_MARKER_NAME, is_advice_declined, mark_advice_declined
+    kira_dir = _pin_appdata(tmp_path, monkeypatch)
+    assert not is_advice_declined("ollama||0.40.5")
+    mark_advice_declined("ollama||0.40.5")
+    mark_advice_declined("model|gemma4:e4b|c6eb")
+    mark_advice_declined("ollama||0.40.5")
+    assert is_advice_declined("ollama||0.40.5")
+    assert is_advice_declined("model|gemma4:e4b|c6eb")
+    assert not is_advice_declined("ollama||0.41.0")
+    lines = (kira_dir / ADVICE_DECLINED_MARKER_NAME).read_text(encoding="utf-8").splitlines()
+    assert lines == ["ollama||0.40.5", "model|gemma4:e4b|c6eb"]
+
+
+def test_notified_marker_is_separate_from_declined(tmp_path, monkeypatch):
+    from kira._update_marker import is_advice_declined, is_advice_notified, mark_advice_notified
+    _pin_appdata(tmp_path, monkeypatch)
+    mark_advice_notified("ollama||0.40.5")
+    assert is_advice_notified("ollama||0.40.5")
+    assert not is_advice_declined("ollama||0.40.5")

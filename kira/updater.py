@@ -24,6 +24,8 @@ _DOWNLOAD_CHUNK = 64 * 1024
 _VALID_ASSET_NAME = re.compile(
     r"^Kira-Setup-v\d+(?:\.\d+){1,3}(?:-\d+\.bin|\.exe)$"
 )
+_APP_WHEEL_NAME = re.compile(r"^kira-(\d+(?:\.\d+){1,3})-py3-none-any\.whl$")
+_DIGEST = re.compile(r"^sha256:([0-9a-f]{64})$")
 
 
 @dataclass(frozen=True)
@@ -31,6 +33,7 @@ class ReleaseAsset:
     name: str
     url: str
     size: int = 0
+    sha256: str = ""
 
 
 @dataclass(frozen=True)
@@ -42,18 +45,32 @@ class UpdateCheckResult:
     bundle_assets: list[ReleaseAsset] = field(default_factory=list)
     sha256sums_url: str | None = None
     error: str | None = None
+    app_asset: ReleaseAsset | None = None
 
 
 def _is_setup_stub(name: str) -> bool:
-    if not _VALID_ASSET_NAME.match(name):
+    if not _VALID_ASSET_NAME.fullmatch(name):
         return False
     return name.endswith(_SETUP_SUFFIX)
 
 
 def _is_setup_split(name: str) -> bool:
-    if not _VALID_ASSET_NAME.match(name):
+    if not _VALID_ASSET_NAME.fullmatch(name):
         return False
     return name.endswith(".bin")
+
+
+def _app_wheel(name: str, tag: str, url: str, size: int, digest: str) -> ReleaseAsset | None:
+    match = _APP_WHEEL_NAME.fullmatch(name)
+    found = _DIGEST.fullmatch((digest or "").strip().lower())
+    if match is None or found is None:
+        return None
+    try:
+        if parse_version(match.group(1)) != parse_version(tag):
+            return None
+    except InvalidVersion:
+        return None
+    return ReleaseAsset(name=name, url=url, size=size, sha256=found.group(1))
 
 
 def check_for_update(local_version: str, repo: str) -> UpdateCheckResult:
@@ -86,6 +103,7 @@ def check_for_update(local_version: str, repo: str) -> UpdateCheckResult:
     stub: ReleaseAsset | None = None
     splits: list[ReleaseAsset] = []
     sha_url: str | None = None
+    app: ReleaseAsset | None = None
     for asset in data.get("assets", []):
         name = asset.get("name", "") or ""
         url_ = asset.get("browser_download_url")
@@ -98,6 +116,8 @@ def check_for_update(local_version: str, repo: str) -> UpdateCheckResult:
             splits.append(ReleaseAsset(name=name, url=url_, size=size))
         elif name == _SHA256SUMS_NAME:
             sha_url = url_
+        else:
+            app = _app_wheel(name, tag, url_, size, str(asset.get("digest") or "")) or app
 
     if stub is None:
         return UpdateCheckResult(status="no_asset", remote_version=tag)
@@ -111,6 +131,7 @@ def check_for_update(local_version: str, repo: str) -> UpdateCheckResult:
         asset_name=stub.name,
         bundle_assets=bundle,
         sha256sums_url=sha_url,
+        app_asset=app,
     )
 
 
@@ -134,10 +155,16 @@ def _fetch(url: str, target: Path, on_bytes: Callable[[int, int], None] | None =
         )
 
 
-def download_asset(url: str, target: Path) -> Path:
+def download_asset(
+    url: str, target: Path, on_bytes: Callable[[int, int], None] | None = None,
+) -> Path:
     target.parent.mkdir(parents=True, exist_ok=True)
-    _fetch(url, target)
+    _fetch(url, target, on_bytes)
     return target
+
+
+def matches_sha256(path: Path, expected: str) -> bool:
+    return bool(expected) and _file_sha256(path) == expected.strip().lower()
 
 
 def download_bundle(
@@ -148,7 +175,7 @@ def download_bundle(
     target_dir.mkdir(parents=True, exist_ok=True)
     paths: list[Path] = []
     for asset in assets:
-        if not _VALID_ASSET_NAME.match(asset.name):
+        if not _VALID_ASSET_NAME.fullmatch(asset.name):
             raise ValueError(
                 f"asset name nicht whitelist-konform: {asset.name!r}"
             )

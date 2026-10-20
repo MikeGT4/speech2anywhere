@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.5.5 (20.10.2026)
+
+- Kleine Updates: Hat sich seit deiner Version nur das Programm geändert, lädt Speech2Anywhere statt des ganzen Pakets (rund 3 GB) nur das Programmpaket (gut 1 MB), prüft die Prüfsumme, spielt es ein und startet von selbst neu. Das greift ab dem ersten Update nach 0.5.5
+- Empfehlung zu Ollama: Jedes Release nennt die Ollama-Version und die Fassungen der Politur-Modelle, mit denen es gemessen ist. Ist dein Ollama älter als das geprüfte oder nutzt du eines der gemessenen Modelle in einer anderen Fassung, meldet Speech2Anywhere das einmal im Tray. Das Windows-Ollama und das Modell aktualisierst du dort per Knopf, nie automatisch
+- Das Setup bringt Ollama 0.40.5 mit (vorher 0.32.15). Ein schon installiertes Ollama bleibt unangetastet; die Empfehlung aktualisiert es auf Knopfdruck mit genau diesem Setup, ohne neuen Download
+- Einstellungen, Reiter „Anzeige“: Eine bewegte Vorschau spielt ein Diktat im gewählten Stil ab, mit Aufnahme, Erkennen, Politur und „Zack!“
+- Comic-Anzeige: Oben rechts läuft je Diktat ein Wecker, ein Zeitring oder eine Sanduhr mit
+- Comic-Anzeige: In den fliegenden Wörtern steht wieder ein „l“, vorher sah „bla“ wie „b!a“ aus
+- Das Update aus der App startet das Setup wieder. Seit 0.4.1 endete es nach dem Download mit „Abgebrochen.“; für den Schritt auf 0.5.5 bitte das Setup einmal von Hand starten. Wer das Update in der App schon versucht hat, findet das geladene Setup unter `%LOCALAPPDATA%\Kira\update\v0.5.5`. Speech2Anywhere vorher im Tray beenden, sonst beendet das Setup es selbst
+- Das Setup spielt das eingebettete Python bei jedem Update frisch ein, mit genau den Bibliotheksfassungen des Release
+- „Datei transkribieren“ meldet wieder, wo das Transkript liegt, und überschreibt keine vorhandene Textdatei mehr; „Abbrechen“ beim Laden eines Modells wirkt wieder
+
 ## 0.5.4 (19.10.2026)
 
 - Neuer Anzeige-Stil „Manga“: weiße Comic-Tafel mit Fokuslinien und Rasterpunkten; ein kleiner Kung-Fu-Kämpfer schlägt die erkannten Wörter als Lettering ins Bild, sitzt beim Erkennen und bei der Politur im Lotussitz, springt beim „ZACK!“ und geht bei einem Fehler k.o. Wählbar in den Einstellungen unter „Anzeige“

@@ -76,6 +76,15 @@ if ($pyproject -notmatch 'version\s*=\s*"([^"]+)"') {
 $Version = $Matches[1]
 Write-Host "Version: $Version"
 
+& git -c safe.directory='*' -C $RepoRoot diff --quiet $SourceBranch -- kira prompts assets installer pyproject.toml README.md LICENSE
+if ($LASTEXITCODE -ne 0) {
+    throw "The working tree differs from $SourceBranch. Commit and bring $SourceBranch to the same state before building."
+}
+$untracked = & git -c safe.directory='*' -C $RepoRoot ls-files --others --exclude-standard -- kira prompts assets installer
+if ($untracked) {
+    throw "Untracked files would end up in the wheel: $($untracked -join ', ')"
+}
+
 $isccCmd = Get-Command iscc.exe -ErrorAction SilentlyContinue
 if ($isccCmd) {
     $iscc = $isccCmd.Source
@@ -182,42 +191,48 @@ Write-Host "  built: $($kiraWheels[0].Name)"
 }
 
 Write-Host ""
+Write-Host "==> 3c/7 kira/release.json"
+& "$pyDir\python.exe" (Join-Path $RepoRoot "scripts\release_info.py") check --wheels $wheelDir
+if ($LASTEXITCODE -ne 0) {
+    throw "kira/release.json does not match this build. Run: $pyDir\python.exe scripts\release_info.py write --wheels $wheelDir --ollama-setup <OllamaSetup.exe> --model <polish model> --model <fast model>, then rebuild."
+}
+$release = Get-Content (Join-Path $RepoRoot "kira\release.json") -Raw -Encoding UTF8 | ConvertFrom-Json
+
+Write-Host ""
 Write-Host "==> 4/7 OllamaSetup.exe"
+$OllamaVersion = $release.ollama.version
+$OllamaSha = $release.ollama.sha256.ToLower()
+$OllamaUrl = $release.ollama.url
+$OllamaCache = Join-Path $CacheDir "OllamaSetup-$OllamaVersion.exe"
 $OllamaSetupPath = Join-Path $RepoRoot "installer\embedded\OllamaSetup.exe"
-$OllamaUrl = "https://ollama.com/download/OllamaSetup.exe"
-$NeedsPull = $true
-if (Test-Path $OllamaSetupPath) {
-    $existingSize = (Get-Item $OllamaSetupPath).Length
-    $age = (Get-Date) - (Get-Item $OllamaSetupPath).LastWriteTime
-    if ($existingSize -gt 1.0GB -and $age.TotalDays -lt 30) {
-        $NeedsPull = $false
-        Write-Host "  cached ($([math]::Round($age.TotalDays,1)) days old, $([math]::Round($existingSize/1MB,1)) MB)"
-    } elseif ($existingSize -lt 1.5GB) {
-        Write-Host "  cached file too small ($([math]::Round($existingSize/1MB,1)) MB) -- re-pulling"
-    }
+$cachedOk = (Test-Path $OllamaCache) -and ((Get-FileHash -Algorithm SHA256 $OllamaCache).Hash.ToLower() -eq $OllamaSha)
+if (-not $cachedOk) {
+    Write-Host "  pulling $OllamaUrl..."
+    & curl.exe -L --fail --retry 3 --retry-delay 5 -o $OllamaCache $OllamaUrl
+    if ($LASTEXITCODE -ne 0) { throw "Failed to download OllamaSetup $OllamaVersion" }
 }
-if ($NeedsPull) {
-    Write-Host "  pulling fresh from $OllamaUrl..."
-    New-Item -ItemType Directory -Force -Path (Split-Path $OllamaSetupPath) | Out-Null
-    & curl.exe -L --fail --retry 3 --retry-delay 5 --continue-at - -o $OllamaSetupPath $OllamaUrl
-    if ($LASTEXITCODE -ne 0) { throw "Failed to download OllamaSetup.exe" }
+$actual = (Get-FileHash -Algorithm SHA256 $OllamaCache).Hash.ToLower()
+if ($actual -ne $OllamaSha) {
+    throw "OllamaSetup $OllamaVersion sha256 mismatch`n  expected (kira/release.json): $OllamaSha`n  actual:   $actual"
 }
-$OllamaSetupSize = (Get-Item $OllamaSetupPath).Length
+Write-Host "  sha256 OK (OllamaSetup $OllamaVersion, pinned in kira/release.json)"
+$OllamaSetupSize = (Get-Item $OllamaCache).Length
 Write-Host "  size: $([math]::Round($OllamaSetupSize/1MB, 1)) MB"
 if ($OllamaSetupSize -lt 100MB -or $OllamaSetupSize -gt 3GB) {
     throw "OllamaSetup.exe size sanity-check failed: $OllamaSetupSize bytes (expected 100 MB to 3 GB)"
 }
 
-$sig = Get-AuthenticodeSignature $OllamaSetupPath
+$sig = Get-AuthenticodeSignature $OllamaCache
 if ($sig.Status -ne "Valid") {
     throw "OllamaSetup.exe Authenticode-Signature is invalid: $($sig.Status)"
 }
 $signerSubject = $sig.SignerCertificate.Subject
-if ($signerSubject -notlike "*Ollama*" -and $signerSubject -notlike "*Meta Platforms*") {
+if ($signerSubject -notlike "CN=Ollama Inc., O=Ollama Inc.,*") {
     throw "OllamaSetup.exe is signed by unexpected subject: $signerSubject"
 }
 Write-Host "  authenticode: $($sig.Status), signer: $signerSubject"
-Verify-Or-Pin -File $OllamaSetupPath -Filename "OllamaSetup.exe"
+New-Item -ItemType Directory -Force -Path (Split-Path $OllamaSetupPath) | Out-Null
+Copy-Item $OllamaCache $OllamaSetupPath -Force
 
 Write-Host ""
 Write-Host "==> 5/7 rcedit"
@@ -229,6 +244,18 @@ if (-not (Test-Path $rcedit)) {
 }
 Verify-Or-Pin -File $rcedit -Filename "rcedit-x64.exe"
 Copy-Item $rcedit $BuildDir
+
+$constraints = ($release.requires.PSObject.Properties | ForEach-Object { "$($_.Name)==$($_.Value)" }) -join "`n"
+[System.IO.File]::WriteAllText((Join-Path $BuildDir "constraints.txt"), $constraints + "`n", (New-Object System.Text.UTF8Encoding($false)))
+Write-Host "  constraints.txt: $($release.requires.PSObject.Properties.Name.Count) pins"
+
+Get-ChildItem $pyDir -Recurse -Directory -Filter "__pycache__" | Remove-Item -Recurse -Force
+Get-ChildItem (Join-Path $pyDir "Scripts") -Filter "*.exe" -ErrorAction SilentlyContinue | Remove-Item -Force
+$leaks = Get-ChildItem $pyDir -Recurse -File | Select-String -SimpleMatch -Pattern @($BuildDir, $BuildDir.Replace('\', '/')) -List
+if ($leaks) {
+    throw "Build path found in the embedded Python: $(($leaks | Select-Object -First 5 | ForEach-Object { $_.Path }) -join ', ')"
+}
+Write-Host "  embedded Python free of build paths"
 
 Write-Host ""
 Write-Host "==> 6/7 ISCC compile"
@@ -252,6 +279,11 @@ $sumsText = ($sumLines -join "`n") + "`n"
 [System.IO.File]::WriteAllText($sumsFile, $sumsText, (New-Object System.Text.UTF8Encoding($false)))
 $sumLines | ForEach-Object { Write-Host "  $_" }
 Write-Host "Wrote $sumsFile"
+$appWheel = Join-Path $OutputDir $kiraWheels[0].Name
+Copy-Item $kiraWheels[0].FullName $appWheel -Force
+$appHash = (Get-FileHash -Algorithm SHA256 $appWheel).Hash.ToLower()
+Write-Host "Program package, own release asset, not listed in SHA256SUMS.txt:"
+Write-Host "  $appHash  $($kiraWheels[0].Name)"
 
 Write-Host ""
 Write-Host "==> done"
@@ -270,6 +302,8 @@ if ($splits) {
 }
 Write-Host ""
 Write-Host "Next steps:"
-Write-Host "  gh release create v$Version $OutputDir\Kira-Setup-v$Version.exe \"
-Write-Host "    $OutputDir\SHA256SUMS.txt \"
+Write-Host "  gh release create v$Version --repo MikeGT4/speech2anywhere --target <full SHA of the public commit> \"
+Write-Host "    $OutputDir\Kira-Setup-v$Version.exe \"
+Write-Host "    $OutputDir\Kira-Setup-v$Version-*.bin $OutputDir\SHA256SUMS.txt \"
+Write-Host "    $appWheel \"
 Write-Host "    --title 'Kira v$Version' --notes 'Release notes...'"

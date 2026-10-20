@@ -7,6 +7,8 @@ from pathlib import Path
 log = logging.getLogger(__name__)
 
 UPDATE_DECLINED_MARKER_NAME = ".update-declined"
+ADVICE_DECLINED_MARKER_NAME = ".ollama-advice-declined"
+ADVICE_NOTIFIED_MARKER_NAME = ".ollama-advice-notified"
 
 
 def _kira_appdata_dir() -> Path:
@@ -51,3 +53,50 @@ def mark_update_declined(version: str) -> None:
         log.info("Update v%s vom Nutzer abgelehnt, Marker gesetzt", version)
     except OSError as exc:
         log.warning("update-declined marker konnte nicht geschrieben werden: %s", exc)
+
+
+def _marker_keys(name: str) -> set[str]:
+    marker = _kira_appdata_dir() / name
+    if not marker.exists():
+        return set()
+    return {line.strip() for line in marker.read_text(encoding="utf-8").splitlines() if line.strip()}
+
+
+def _add_marker_key(name: str, key: str) -> None:
+    if key.strip() in _marker_keys(name):
+        return
+    kira_dir = _kira_appdata_dir()
+    kira_dir.mkdir(parents=True, exist_ok=True)
+    with (kira_dir / name).open("a", encoding="utf-8") as fh:
+        fh.write(key.strip() + "\n")
+
+
+def is_advice_declined(key: str) -> bool:
+    try:
+        return key.strip() in _marker_keys(ADVICE_DECLINED_MARKER_NAME)
+    except OSError as exc:
+        log.warning("Ollama-Empfehlung: Marker nicht lesbar: %s", exc)
+        return False
+
+
+def mark_advice_declined(key: str) -> None:
+    try:
+        _add_marker_key(ADVICE_DECLINED_MARKER_NAME, key)
+        log.info("Ollama-Empfehlung %s abgelehnt, Marker gesetzt", key)
+    except OSError as exc:
+        log.warning("Ollama-Empfehlung: Marker nicht schreibbar: %s", exc)
+
+
+def is_advice_notified(key: str) -> bool:
+    try:
+        return key.strip() in _marker_keys(ADVICE_NOTIFIED_MARKER_NAME)
+    except OSError as exc:
+        log.warning("Ollama-Empfehlung: Marker nicht lesbar: %s", exc)
+        return False
+
+
+def mark_advice_notified(key: str) -> None:
+    try:
+        _add_marker_key(ADVICE_NOTIFIED_MARKER_NAME, key)
+    except OSError as exc:
+        log.warning("Ollama-Empfehlung: Marker nicht schreibbar: %s", exc)

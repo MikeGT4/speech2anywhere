@@ -299,7 +299,7 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
     from kira._wsl_warmup import kick_wsl_distro
     kick_wsl_distro()
 
-    from PyQt6.QtCore import QTimer
+    from PyQt6.QtCore import Qt, QTimer
     from PyQt6.QtGui import QIcon
     from PyQt6.QtWidgets import QApplication
 
@@ -341,7 +341,9 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
     from kira.ui.welcome_dialog import WelcomeDialog, is_first_run
     if is_first_run():
         log.info("First run detected, showing welcome dialog")
-        run_modal = getattr(WelcomeDialog(), "exec")
+        welcome = WelcomeDialog()
+        welcome.setWindowFlag(Qt.WindowType.WindowStaysOnTopHint, True)
+        run_modal = getattr(welcome, "exec")
         run_modal()
 
 
@@ -590,6 +592,31 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
         enabled=cfg.updates.check_on_start,
         interval_h=cfg.updates.check_interval_hours,
     )
+
+    if cfg.styler.provider == "ollama":
+        from kira._update_marker import is_advice_declined, is_advice_notified, mark_advice_notified
+        from kira.ollama_advice import AdviceWatch, check as _advice_check
+        from kira.release_info import load_installed
+
+        def _advice_now():
+            styler_cfg = load_config().styler
+            return _advice_check(styler_cfg.fast_model if styler_cfg.fast_mode else styler_cfg.model, load_installed())
+
+        start_watch(
+            AdviceWatch(
+                check=_advice_now,
+                is_declined=is_advice_declined,
+                set_advice=tray.set_ollama_advice,
+                notify=tray.notify_ollama_advice,
+                is_notified=is_advice_notified,
+                mark_notified=mark_advice_notified,
+            ),
+            enabled=cfg.updates.check_on_start,
+            interval_h=cfg.updates.check_interval_hours,
+            first_s=90.0,
+            name="kira-ollama-advice",
+            label="Ollama-Prüfung",
+        )
 
     _qt_main = getattr(qt_app, "exec")
     _qt_main()

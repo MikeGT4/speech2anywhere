@@ -162,3 +162,81 @@ def test_notify_update_names_the_version(tray):
     title, message = tray.notify.call_args.args
     assert "Update" in title
     assert "v0.4.2" in message and "installieren" in message
+
+
+def _advice(kind="ollama"):
+    from kira.ollama_advice import Advice
+    if kind == "ollama":
+        return Advice("ollama", "0.35.0", "0.40.5")
+    return Advice("model", "aa" * 32, "bb" * 32, model="gemma4:26b-a4b-it-qat")
+
+
+def test_ollama_advice_adds_a_menu_entry_after_the_update(tray):
+    labels = [str(item.text) for item in tray._build_menu().items]
+    assert "Ollama-Empfehlung ansehen…" not in labels
+    tray.set_update_available("0.5.5")
+    tray.set_ollama_advice([_advice()])
+    labels = [str(item.text) for item in tray._build_menu().items]
+    assert labels.index("Update auf v0.5.5 installieren…") < labels.index("Ollama-Empfehlung ansehen…")
+    assert labels.index("Ollama-Empfehlung ansehen…") < labels.index("Einstellungen…")
+    tray.set_ollama_advice([])
+    assert "Ollama-Empfehlung ansehen…" not in [str(item.text) for item in tray._build_menu().items]
+
+
+def test_ollama_advice_notification_names_both_versions(tray):
+    tray.notify = MagicMock()
+    tray.notify_ollama_advice(_advice())
+    title, message = tray.notify.call_args.args
+    assert "Ollama" in title
+    assert "0.40.5" in message and "0.35.0" in message
+    tray.notify_ollama_advice(_advice("model"))
+    assert "gemma4:26b-a4b-it-qat" in tray.notify.call_args.args[1]
+
+
+def test_ollama_advice_entry_opens_the_dialog_and_decline_clears_it(tray, monkeypatch):
+    import kira._update_marker as marker
+    import kira.ui.ollama_advice_dialog as dialog_mod
+
+    marked = []
+    monkeypatch.setattr(marker, "mark_advice_declined", marked.append)
+    opened = {}
+
+    class _Dialog:
+        def __init__(self, advice, on_declined, app_version, on_handled):
+            opened["advice"] = advice
+            opened["version"] = app_version
+            opened["handled"] = on_handled
+            self._on_declined = on_declined
+
+        def exec(self):
+            self._on_declined(opened["advice"][0].key)
+
+    monkeypatch.setattr(dialog_mod, "OllamaAdviceDialog", _Dialog)
+    tray.set_ollama_advice([_advice()])
+    tray._marshal_to_qt = lambda func, label: func()
+    entry = next(i for i in tray._build_menu().items if "Ollama-Empfehlung" in str(i.text))
+    entry(None)
+    assert opened["advice"] == [_advice()]
+    assert marked == ["ollama||0.40.5"]
+    assert tray._ollama_advice == []
+
+
+def test_started_ollama_update_only_clears_the_menu_for_this_session(tray, monkeypatch):
+    import kira._update_marker as marker
+    import kira.ui.ollama_advice_dialog as dialog_mod
+
+    marked = []
+    monkeypatch.setattr(marker, "mark_advice_declined", marked.append)
+
+    class _Dialog:
+        def __init__(self, advice, on_declined, app_version, on_handled):
+            self._advice, self._handled = advice, on_handled
+
+        def exec(self):
+            self._handled(self._advice[0].key)
+
+    monkeypatch.setattr(dialog_mod, "OllamaAdviceDialog", _Dialog)
+    tray.set_ollama_advice([_advice()])
+    tray._show_ollama_advice()
+    assert tray._ollama_advice == []
+    assert marked == []
