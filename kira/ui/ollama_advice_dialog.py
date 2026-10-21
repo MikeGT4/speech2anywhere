@@ -12,10 +12,12 @@ from PyQt6.QtCore import QObject, Qt, QThread, pyqtSignal
 from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QDialog, QHBoxLayout, QLabel, QMessageBox, QProgressDialog, QPushButton
 
+from kira import progress as prog
 from kira._resources import assets_dir
 from kira.ollama_advice import ELSEWHERE, PORT, REMOTE, Advice, windows_ollama_dir
 from kira.ui import _comic as comic
 from kira.ui._dialog_style import apply_light_theme, light_critical, light_information
+from kira.ui._progress_view import ProgressView
 from kira.updater import download_asset, matches_sha256
 
 log = logging.getLogger(__name__)
@@ -24,6 +26,7 @@ SIGNER_PARTS = ("CN=Ollama Inc.", "O=Ollama Inc.")
 DETACHED = 0x00000008 | 0x00000200
 CREATE_NO_WINDOW = 0x08000000
 OLLAMA_PROCESSES = frozenset({"ollama app.exe", "ollama.exe", "llama-server.exe", "ollama_llama_server.exe"})
+CHECKING = "Prüfsumme und Signatur werden geprüft …"
 
 _orphans: list[tuple[QThread, QObject]] = []
 
@@ -168,6 +171,7 @@ class _SetupWorker(QObject):
         self._target = target
         self._bundled = bundled
         self._cancelled = False
+        self._throttle = prog.Throttle()
 
     def cancel(self) -> None:
         self._cancelled = True
@@ -175,20 +179,22 @@ class _SetupWorker(QObject):
     def _on_bytes(self, done: int, total: int) -> None:
         if self._cancelled:
             raise _Cancelled()
-        self.progress.emit(done, total)
+        if self._throttle.due(force=0 < total <= done):
+            self.progress.emit(done, total)
 
     def run(self) -> None:
         a = self._advice
         try:
-            self.phase.emit("Prüfe Prüfsumme und Signatur...")
+            self.phase.emit(CHECKING)
             if self._bundled is not None and _matches(self._bundled, a):
                 target = self._bundled
                 log.info("Ollama-Setup %s liegt bei Speech2Anywhere: %s", a.tested, target)
             else:
                 target = self._target
                 if not _matches(target, a):
-                    self.phase.emit(f"Lade das Ollama-Setup {a.tested}...")
+                    self.phase.emit(prog.STARTING)
                     download_asset(a.url, target, on_bytes=self._on_bytes)
+                    self.phase.emit(CHECKING)
                 if not matches_sha256(target, a.sha256):
                     target.unlink(missing_ok=True)
                     self.finished.emit(False, "Die Prüfsumme des Ollama-Setups passt nicht. Es wird nicht gestartet.")
@@ -218,7 +224,8 @@ _ELSEWHERE_TEXT = {
 }
 
 
-def _close_quietly(progress: QProgressDialog, cancel: Callable[[], None]) -> None:
+def _close_quietly(progress: QProgressDialog, cancel: Callable[[], None], view: ProgressView) -> None:
+    view.stop()
     try:
         progress.canceled.disconnect(cancel)
     except (TypeError, RuntimeError):
@@ -319,18 +326,18 @@ class OllamaAdviceDialog(QDialog):
         apply_light_theme(box)
         return box.exec() == QMessageBox.StandardButton.Yes
 
-    def _progress(self, text: str) -> QProgressDialog:
-        progress = QProgressDialog(text, "Abbrechen", 0, 0, self)
+    def _progress(self, head: str, text: str) -> tuple[QProgressDialog, ProgressView]:
+        progress = QProgressDialog(f"{head}{text}", "Abbrechen", 0, 0, self)
         progress.setWindowTitle("Speech2Anywhere: Ollama")
         progress.setWindowModality(Qt.WindowModality.WindowModal)
         progress.setMinimumDuration(0)
-        progress.setAutoClose(False)
         apply_light_theme(progress)
+        view = ProgressView(progress, progress.setLabelText, head, parent=progress)
         progress.show()
-        return progress
+        return progress, view
 
     def _update_ollama(self, advice: Advice) -> None:
-        size_gb = f"{advice.size / 1024**3:.1f}".replace(".", ",") if advice.size else "?"
+        size_gb = f"{advice.size / prog.GB:.1f}".replace(".", ",") if advice.size else "?"
         if not advice.url or not advice.sha256:
             light_critical(self, "Speech2Anywhere", "Für dieses Ollama-Setup fehlt die geprüfte Prüfsumme.")
             return
@@ -342,20 +349,11 @@ class OllamaAdviceDialog(QDialog):
             "als Rohtext.",
         ):
             return
-        progress = self._progress(f"Lade das Ollama-Setup {advice.tested}...")
+        progress, view = self._progress(f"Ollama-Setup {advice.tested}\n", CHECKING)
         thread = QThread()
         worker = _SetupWorker(advice, setup_dir(advice.tested) / "OllamaSetup.exe", bundled_setup())
         worker.moveToThread(thread)
         thread.started.connect(worker.run)
-
-        def on_progress(done: int, total: int) -> None:
-            if total > 0:
-                progress.setMaximum(1000)
-                progress.setValue(round(max(0, min(done, total)) / total * 1000))
-                progress.setLabelText(
-                    f"Lade das Ollama-Setup {advice.tested}\n"
-                    f"{done / 1024**2:.0f} / {total / 1024**2:.0f} MB"
-                )
 
         state = {"cancelled": False}
 
@@ -364,7 +362,7 @@ class OllamaAdviceDialog(QDialog):
             worker.cancel()
 
         def on_finished(ok: bool, message: str) -> None:
-            _close_quietly(progress, cancel)
+            _close_quietly(progress, cancel, view)
             thread.quit()
             thread.wait()
             if self._cancel is cancel:
@@ -392,15 +390,15 @@ class OllamaAdviceDialog(QDialog):
             )
             self.accept()
 
-        worker.progress.connect(on_progress)
-        worker.phase.connect(progress.setLabelText)
+        worker.progress.connect(view.amount)
+        worker.phase.connect(view.busy)
         worker.finished.connect(on_finished)
         progress.canceled.connect(cancel)
         self._thread, self._worker, self._cancel = thread, worker, cancel
         thread.start()
 
     def _update_model(self, advice: Advice) -> None:
-        from kira.ui.settings_dialog import _PullWorker, _progress_scale
+        from kira.ui.settings_dialog import _PullWorker
 
         if not self._confirm(
             f"{advice.model} neu laden?",
@@ -408,18 +406,19 @@ class OllamaAdviceDialog(QDialog):
             "Modell einige Gigabyte sein.",
         ):
             return
-        progress = self._progress(f"Lade {advice.model}...")
+        progress, view = self._progress(f"Lade {advice.model}\n", prog.STARTING)
         thread = QThread()
         worker = _PullWorker(advice.model)
         worker.moveToThread(thread)
         thread.started.connect(worker.run)
+        seen = {"bytes": False}
 
         def on_progress(status: str, completed: int, total: int) -> None:
-            if total > 0:
-                maximum, value = _progress_scale(completed, total)
-                progress.setMaximum(maximum)
-                progress.setValue(value)
-            progress.setLabelText(status or f"Lade {advice.model}...")
+            if total > 0 and not prog.final_status(status):
+                seen["bytes"] = True
+                view.amount(completed, total)
+            else:
+                view.busy(prog.pull_phase(status, seen["bytes"]))
 
         state = {"cancelled": False}
 
@@ -428,7 +427,7 @@ class OllamaAdviceDialog(QDialog):
             worker.cancel()
 
         def on_finished(ok: bool, message: str) -> None:
-            _close_quietly(progress, cancel)
+            _close_quietly(progress, cancel, view)
             thread.quit()
             thread.wait()
             if self._cancel is cancel:

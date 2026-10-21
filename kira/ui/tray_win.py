@@ -20,6 +20,8 @@ log = logging.getLogger(__name__)
 _KIRA_TRAY_CLASS = "KiraDigitalrootsTrayIcon"
 _KIRA_TRAY_TITLE = "Speech2Anywhere"
 MENU_HEADER = "Speech2Anywhere"
+LOADING = "Spracherkennung wird geladen …"
+READING = "Datei wird gelesen …"
 
 
 _WM_SETTEXT = 0x000C
@@ -484,11 +486,13 @@ class KiraTray:
         from PyQt6.QtWidgets import (
             QFileDialog, QProgressDialog,
         )
+        from kira import progress as prog
         from kira.ui._dialog_style import (
             apply_light_theme,
             light_critical,
             light_information,
         )
+        from kira.ui._progress_view import ProgressView
 
         if self._transcribe_thread is not None and self._transcribe_thread.isRunning():
             light_information(
@@ -508,27 +512,48 @@ class KiraTray:
             return
         log.info("File-Transcription requested: %s", path)
 
+        head = f"Transkribiere {Path(path).name}\n"
         progress = QProgressDialog(
-            f"Transkribiere {Path(path).name}…",
+            f"{head}{prog.PREPARING}",
             "Abbrechen", 0, 0, None,
         )
         progress.setWindowTitle("Speech2Anywhere: Datei transkribieren")
         progress.setWindowModality(Qt.WindowModality.ApplicationModal)
         progress.setMinimumDuration(0)
         apply_light_theme(progress)
+        view = ProgressView(
+            progress, progress.setLabelText, head,
+            amount=prog.time_text, with_rate=False, total_only=None, stall=None, parent=progress,
+        )
         progress.show()
+        cancelled = {"val": False}
 
         class _Worker(QObject):
             done = pyqtSignal(str, str)
             failed = pyqtSignal(str)
+            phase = pyqtSignal(str)
+            progress = pyqtSignal(float, float)
 
             def __init__(self, src_path: str):
                 super().__init__()
                 self._src = src_path
+                self._throttle = prog.Throttle()
+
+            def _report(self, done: float, total: float) -> None:
+                if total <= 0:
+                    self.phase.emit(READING)
+                elif self._throttle.due(force=done >= total):
+                    self.progress.emit(done, total)
 
             def run(self) -> None:
                 try:
-                    result = transcriber.transcribe_file(self._src)
+                    if not getattr(transcriber, "model_loaded", True):
+                        self.phase.emit(LOADING)
+                    result = transcriber.transcribe_file(
+                        self._src, on_progress=self._report, cancelled=lambda: cancelled["val"],
+                    )
+                    if cancelled["val"]:
+                        raise prog.Cancelled(self._src)
                     if not result.text:
                         self.failed.emit(
                             "Das Transkript ist leer. Entweder ist die Datei still, "
@@ -538,6 +563,8 @@ class KiraTray:
                     out = free_transcript_path(Path(self._src))
                     out.write_text(result.text, encoding="utf-8")
                     self.done.emit(str(out), result.language)
+                except prog.Cancelled:
+                    self.failed.emit("")
                 except Exception as exc:
                     log.exception("file-transcription worker crashed")
                     self.failed.emit(f"Fehler: {exc}")
@@ -546,19 +573,17 @@ class KiraTray:
         worker = _Worker(path)
         worker.moveToThread(thread)
         thread.started.connect(worker.run)
-
-        cancelled = {"val": False}
+        worker.phase.connect(view.busy)
+        worker.progress.connect(view.amount)
 
         def on_cancelled() -> None:
             cancelled["val"] = True
-            log.info(
-                "File-Transcription abgebrochen (Worker laeuft im "
-                "Hintergrund aus, Ergebnis wird verworfen)"
-            )
+            log.info("File-Transcription abgebrochen, Worker hält beim nächsten Abschnitt an")
 
         progress.canceled.connect(on_cancelled)
 
         def _close_progress() -> None:
+            view.stop()
             try:
                 progress.canceled.disconnect(on_cancelled)
             except (TypeError, RuntimeError):
@@ -575,8 +600,6 @@ class KiraTray:
         def on_done(out_path: str, language: str) -> None:
             _close_progress()
             _teardown()
-            if cancelled["val"]:
-                return
             light_information(
                 None, "Speech2Anywhere",
                 f"Fertig.\n\nTranskript gespeichert unter:\n{out_path}\n\n"

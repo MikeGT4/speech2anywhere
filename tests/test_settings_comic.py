@@ -289,6 +289,13 @@ def test_style_choice_and_word_switch_drive_the_preview(dialog):
     assert dialog._hud_preview.driver.live_words is True
 
 
+def test_word_switch_tooltip_names_exactly_the_styles_with_fragments(dialog):
+    from kira.ui.hud import STYLE_LABELS, create_style
+    tip = dialog._hud_live_words.toolTip()
+    for key, label in STYLE_LABELS.items():
+        assert (f"„{label.split(' (')[0]}" in tip) is create_style(key).live_words, key
+
+
 def test_preview_runs_only_on_its_own_page(dialog, qtbot):
     dialog.show()
     qtbot.waitExposed(dialog)
@@ -339,3 +346,58 @@ def test_cancel_reaches_a_running_model_pull_in_the_settings(dialog, qtbot, monk
     dialog.findChild(QProgressDialog).canceled.emit()
     qtbot.waitUntil(lambda: bool(seen), timeout=5000)
     assert seen == [True]
+
+
+@pytest.mark.parametrize("checked", [0, 18_000_000_000])
+def test_model_pull_window_stays_through_the_check_and_names_it(dialog, qtbot, monkeypatch, checked):
+    import threading
+
+    from PyQt6.QtCore import QObject, pyqtSignal
+    from PyQt6.QtWidgets import QProgressDialog
+
+    import kira.ui.settings_dialog as sd
+
+    labels = []
+    original = QProgressDialog.setLabelText
+
+    def record(self, text):
+        labels.append(text)
+        original(self, text)
+
+    monkeypatch.setattr(QProgressDialog, "setLabelText", record)
+    gate = threading.Event()
+    total = 18_000_000_000
+
+    class _Pull(QObject):
+        progress = pyqtSignal(str, 'qint64', 'qint64')
+        finished = pyqtSignal(bool, str)
+
+        def __init__(self, model):
+            super().__init__()
+            self._cancelled = False
+
+        def cancel(self):
+            self._cancelled = True
+            gate.set()
+
+        def run(self):
+            self.progress.emit("pulling manifest", 0, 0)
+            self.progress.emit("pulling 2dd70431afed", 3_600_000_000, total)
+            self.progress.emit("pulling 2dd70431afed", total, total)
+            self.progress.emit("verifying sha256 digest", checked, checked)
+            gate.wait(5)
+            self.finished.emit(False, "Abgebrochen.")
+
+    monkeypatch.setattr(sd, "_PullWorker", _Pull)
+    monkeypatch.setattr(sd, "light_critical", lambda *a, **k: None)
+    dialog._start_model_pull("gemma4:26b-a4b-it-qat", "Test")
+    progress = dialog.findChild(QProgressDialog)
+    head = "Lade gemma4:26b-a4b-it-qat\n"
+    qtbot.waitUntil(lambda: labels[-1:] == [f"{head}Prüfsumme wird geprüft …"], timeout=5000)
+    assert f"{head}3,6 von 18,0 GB · 20 % · startet …" in labels
+    assert f"{head}wird abgeschlossen …" in labels
+    assert not any("pulling" in text for text in labels)
+    assert progress.isVisible()
+    assert (progress.minimum(), progress.maximum()) == (0, 0)
+    progress.canceled.emit()
+    qtbot.waitUntil(lambda: not progress.isVisible(), timeout=5000)

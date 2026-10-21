@@ -375,3 +375,96 @@ def test_bundled_setup_only_counts_for_a_managed_install(tmp_path, monkeypatch):
     assert dlg_mod.bundled_setup() == shipped
     monkeypatch.setattr(app_update, "install_root", lambda: None)
     assert dlg_mod.bundled_setup() is None
+
+
+def test_setup_worker_names_the_check_after_the_download(tmp_path, monkeypatch):
+    from kira import progress as prog
+    monkeypatch.setattr(dlg_mod, "download_asset", _fake_download())
+    monkeypatch.setattr(dlg_mod, "signature_ok", lambda path: True)
+    events = []
+    worker = dlg_mod._SetupWorker(_ollama(), tmp_path / "OllamaSetup.exe")
+    worker.phase.connect(lambda text: events.append(("phase", text)))
+    worker.progress.connect(lambda done, total: events.append(("bytes", done, total)))
+    worker.finished.connect(lambda ok, msg: events.append(("finished", ok)))
+    worker.run()
+    assert events == [
+        ("phase", dlg_mod.CHECKING),
+        ("phase", prog.STARTING),
+        ("bytes", len(DATA), len(DATA)),
+        ("phase", dlg_mod.CHECKING),
+        ("finished", True),
+    ]
+
+
+def _record_labels(monkeypatch):
+    from PyQt6.QtWidgets import QProgressDialog
+    labels = []
+    original = QProgressDialog.setLabelText
+
+    def record(self, text):
+        labels.append(text)
+        original(self, text)
+
+    monkeypatch.setattr(QProgressDialog, "setLabelText", record)
+    return labels
+
+
+def test_check_after_the_download_keeps_a_running_bar(qtbot, tmp_path, monkeypatch, quiet):
+    import threading
+    from PyQt6.QtWidgets import QProgressDialog
+    from kira import progress as prog
+    monkeypatch.setenv("LOCALAPPDATA", str(tmp_path))
+    gate = threading.Event()
+    monkeypatch.setattr(dlg_mod, "bundled_setup", lambda: None)
+    monkeypatch.setattr(dlg_mod, "download_asset", _fake_download())
+    monkeypatch.setattr(dlg_mod, "signature_ok", lambda path: gate.wait(5) and False)
+    labels = _record_labels(monkeypatch)
+    d = OllamaAdviceDialog([_ollama()], on_declined=lambda k: None)
+    qtbot.addWidget(d)
+    d.buttons["ollama"].click()
+    progress = d.findChild(QProgressDialog)
+    head = "Ollama-Setup 0.40.5\n"
+    qtbot.waitUntil(lambda: f"{head}{prog.FINISHING}" in labels and labels[-1] == f"{head}{dlg_mod.CHECKING}",
+                    timeout=5000)
+    assert progress.isVisible()
+    assert (progress.minimum(), progress.maximum()) == (0, 0)
+    gate.set()
+    qtbot.waitUntil(lambda: d._thread is None or not d._thread.isRunning(), timeout=5000)
+
+
+@pytest.mark.parametrize("checked", [0, 16_000_000_000])
+def test_model_pull_label_speaks_german_and_runs_the_bar_while_checking(qtbot, monkeypatch, quiet, checked):
+    import threading
+    import kira.ui.settings_dialog as sd
+    from PyQt6.QtWidgets import QProgressDialog
+    gate = threading.Event()
+
+    class _Pull(QObject):
+        progress = pyqtSignal(str, 'qint64', 'qint64')
+        finished = pyqtSignal(bool, str)
+
+        def __init__(self, model):
+            super().__init__()
+
+        def cancel(self):
+            gate.set()
+
+        def run(self):
+            self.progress.emit("pulling 2dd70431afed", 4_000_000_000, 16_000_000_000)
+            self.progress.emit("verifying sha256 digest", checked, checked)
+            gate.wait(5)
+            self.finished.emit(False, "Abgebrochen.")
+
+    monkeypatch.setattr(sd, "_PullWorker", _Pull)
+    labels = _record_labels(monkeypatch)
+    d = OllamaAdviceDialog([_model()], on_declined=lambda k: None)
+    qtbot.addWidget(d)
+    d.buttons["model"].click()
+    progress = d.findChild(QProgressDialog)
+    head = "Lade gemma4:26b-a4b-it-qat\n"
+    qtbot.waitUntil(lambda: labels[-1:] == [f"{head}Prüfsumme wird geprüft …"], timeout=5000)
+    assert f"{head}4,0 von 16,0 GB · 25 % · startet …" in labels
+    assert progress.isVisible()
+    assert (progress.minimum(), progress.maximum()) == (0, 0)
+    progress.canceled.emit()
+    qtbot.waitUntil(lambda: d._thread is None or not d._thread.isRunning(), timeout=5000)

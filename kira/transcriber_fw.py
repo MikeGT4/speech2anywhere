@@ -27,6 +27,7 @@ import numpy as np
 from faster_whisper import WhisperModel
 from kira.config import Config
 from kira import replacements
+from kira.progress import Cancelled
 from kira.lexicon import build_initial_prompt
 
 log = logging.getLogger(__name__)
@@ -122,6 +123,10 @@ class Transcriber:
         self._lexicon = None
         self._prompt_cache: tuple[int | None, str | None] = (None, None)
         self._lexicon_errors: set[str] = set()
+
+    @property
+    def model_loaded(self) -> bool:
+        return self._model is not None
 
     def _ensure_model(self) -> WhisperModel:
         with self._model_lock:
@@ -288,12 +293,14 @@ class Transcriber:
             return ""
         return text
 
-    def transcribe_file(self, path: str) -> TranscriptionResult:
+    def transcribe_file(self, path: str, on_progress=None, cancelled=None) -> TranscriptionResult:
         model = self._ensure_model()
         wcfg = self._config.whisper
         lang = wcfg.language
         log.info("Transcribing file: %s (lang=%s)", path, lang)
         try:
+            if on_progress is not None:
+                on_progress(0.0, 0.0)
             segments, info = model.transcribe(
                 str(path),
                 language=None if lang == "auto" else lang,
@@ -303,9 +310,16 @@ class Transcriber:
                 condition_on_previous_text=wcfg.condition_on_previous_text,
                 initial_prompt=self._initial_prompt(model),
             )
+            duration = float(getattr(info, "duration", 0.0) or 0.0)
+            if on_progress is not None:
+                on_progress(0.0, duration)
             kept_segments = []
             dropped = 0
             for seg in segments:
+                if cancelled is not None and cancelled():
+                    raise Cancelled(path)
+                if on_progress is not None:
+                    on_progress(float(getattr(seg, "end", 0.0) or 0.0), duration)
                 seg_text = seg.text.strip()
                 if _is_hallucination(seg_text):
                     dropped += 1
@@ -333,6 +347,9 @@ class Transcriber:
                 len(kept_segments), len(text), info.language,
             )
             return TranscriptionResult(text=text, language=info.language)
+        except Cancelled:
+            log.info("File transcription cancelled: %s", path)
+            raise
         except Exception:
             log.exception("File transcription failed: %s", path)
             raise

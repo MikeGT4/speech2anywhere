@@ -16,8 +16,9 @@ from kira.ui._dialog_style import (
     light_information,
     light_warning,
 )
+from kira.ui._progress_view import ProgressView
 
-from kira import __version__, UPDATE_REPO
+from kira import __version__, UPDATE_REPO, ollama_pull, progress as prog
 from kira.config import default_config_path, effective_hotkey, load_config
 from kira.hotkey_win import SUPPORTED_COMBOS
 from kira.config_writer import update_scalars
@@ -72,16 +73,6 @@ def _ollama_model_installed(model: str) -> bool:
 _orphan_pull_threads: list = []
 
 
-_PROGRESS_SCALE = 1000
-
-
-def _progress_scale(completed: int, total: int) -> tuple[int, int]:
-    if total <= 0:
-        return (0, 0)
-    safe = max(0, min(completed, total))
-    return (_PROGRESS_SCALE, round(safe / total * _PROGRESS_SCALE))
-
-
 class _PullWorker(QObject):
     progress = pyqtSignal(str, 'qint64', 'qint64')
     finished = pyqtSignal(bool, str)
@@ -90,42 +81,28 @@ class _PullWorker(QObject):
         super().__init__()
         self._model = model_name
         self._cancelled = False
+        self._download = ollama_pull.ModelPull(model_name)
 
     def cancel(self) -> None:
         self._cancelled = True
+        self._download.cancel()
 
     def run(self) -> None:
         try:
-            import ollama
+            pulled = self._download.run(self.progress.emit)
         except Exception as e:
-            self.finished.emit(False, f"ollama-Library nicht verfügbar: {e}")
-            return
-        try:
-            for event in _ollama_client().pull(self._model, stream=True):
-                if self._cancelled:
-                    self.finished.emit(False, "Abgebrochen.")
-                    return
-                status = getattr(event, "status", None) or (
-                    event.get("status", "") if isinstance(event, dict) else ""
-                )
-                completed = (
-                    getattr(event, "completed", None)
-                    or (event.get("completed", 0) if isinstance(event, dict) else 0)
-                    or 0
-                )
-                total = (
-                    getattr(event, "total", None)
-                    or (event.get("total", 0) if isinstance(event, dict) else 0)
-                    or 0
-                )
-                self.progress.emit(str(status), int(completed), int(total))
             if self._cancelled:
                 self.finished.emit(False, "Abgebrochen.")
                 return
-            self.finished.emit(True, f"{self._model} ist auf dem aktuellen Stand.")
-        except Exception as e:
             log.exception("ollama.pull failed")
-            self.finished.emit(False, f"Das Modell-Update hat nicht geklappt: {e}")
+            self.finished.emit(
+                False, ollama_pull.missing_text(self._model, e) or f"Das Modell-Update hat nicht geklappt: {e}",
+            )
+            return
+        if not pulled or self._cancelled:
+            self.finished.emit(False, "Abgebrochen.")
+            return
+        self.finished.emit(True, f"{self._model} ist auf dem aktuellen Stand.")
 
 
 class _GpuCheckWorker(QObject):
@@ -522,8 +499,8 @@ class SettingsDialog(QDialog):
         self._hud_live_words = comic.ToggleSwitch()
         self._hud_live_words.setChecked(self._cfg.ui.hud_live_words)
         self._hud_live_words.setToolTip(
-            "In den Stilen „Comic (Bla-Bla)“ und „Manga“ erscheinen beim Sprechen Fetzen der erkannten Wörter.\n"
-            "Sie sind am Bildschirm zu sehen, auch bei einer Bildschirmfreigabe."
+            "In den Stilen „Comic (Bla-Bla)“, „Manga“, „Halloween“ und „Weihnachten“ erscheinen beim Sprechen\n"
+            "Fetzen der erkannten Wörter. Sie sind am Bildschirm zu sehen, auch bei einer Bildschirmfreigabe."
         )
         self._hud_live_words.toggled.connect(self._hud_preview.set_live_words)
         card.add_row("Wortfetzen", "Fetzen deiner Wörter beim Sprechen.", self._hud_live_words)
@@ -872,35 +849,30 @@ class SettingsDialog(QDialog):
         on_done=None,
     ) -> None:
         progress = QProgressDialog(
-            f"Lade {model_name}…", "Abbrechen", 0, 0, self,
+            f"Lade {model_name}\n{prog.STARTING}", "Abbrechen", 0, 0, self,
         )
         progress.setWindowModality(Qt.WindowModality.WindowModal)
         progress.setWindowTitle(window_title)
         progress.setMinimumDuration(0)
         apply_light_theme(progress)
+        view = ProgressView(progress, progress.setLabelText, f"Lade {model_name}\n", parent=progress)
         progress.show()
 
         thread = QThread(self)
         worker = _PullWorker(model_name)
         worker.moveToThread(thread)
         thread.started.connect(worker.run)
+        seen = {"bytes": False}
 
         def on_progress(status: str, completed: int, total: int) -> None:
-            if total > 0:
-                safe_completed = max(0, min(completed, total))
-                maximum, value = _progress_scale(completed, total)
-                progress.setMaximum(maximum)
-                progress.setValue(value)
-                pct = (safe_completed / total) * 100
-                mb_done = safe_completed / (1024 * 1024)
-                mb_total = total / (1024 * 1024)
-                progress.setLabelText(
-                    f"{status}\n{mb_done:.1f} / {mb_total:.1f} MB ({pct:.0f}%)"
-                )
+            if total > 0 and not prog.final_status(status):
+                seen["bytes"] = True
+                view.amount(completed, total)
             else:
-                progress.setLabelText(status or f"Lade {model_name}…")
+                view.busy(prog.pull_phase(status, seen["bytes"]))
 
         def on_finished(success: bool, message: str) -> None:
+            view.stop()
             progress.close()
             thread.quit()
             thread.wait()

@@ -683,3 +683,50 @@ def test_partial_runs_keep_the_log_quiet_but_final_runs_still_log(monkeypatch, f
         assert not [r for r in caplog.records if r.name == "faster_whisper"]
         t.transcribe(audio)
         assert [r for r in caplog.records if r.name == "faster_whisper"]
+
+
+def _segment_model(ends):
+    class FakeInfo:
+        language = "de"
+        duration = 120.0
+
+    class FakeSegment:
+        def __init__(self, end):
+            self.text = f"Satz {end:.0f}"
+            self.end = end
+
+    class FakeWhisperModel:
+        def __init__(self, *a, **kw): pass
+
+        def transcribe(self, audio, **kw):
+            return iter([FakeSegment(end) for end in ends]), FakeInfo()
+
+    return FakeWhisperModel
+
+
+def test_transcribe_file_reports_progress_by_audio_time(monkeypatch, fake_config):
+    from kira.transcriber_fw import Transcriber
+
+    monkeypatch.setattr("kira.transcriber_fw.WhisperModel", _segment_model([30.0, 60.0, 90.0]))
+    t = Transcriber(fake_config)
+    assert not t.model_loaded
+    seen = []
+    result = t.transcribe_file("/tmp/a.wav", on_progress=lambda done, total: seen.append((done, total)))
+    assert t.model_loaded
+    assert seen == [(0.0, 0.0), (0.0, 120.0), (30.0, 120.0), (60.0, 120.0), (90.0, 120.0)]
+    assert result.text == "Satz 30 Satz 60 Satz 90"
+
+
+def test_transcribe_file_stops_between_segments_when_cancelled(monkeypatch, fake_config, caplog):
+    from kira.progress import Cancelled
+    from kira.transcriber_fw import Transcriber
+
+    monkeypatch.setattr("kira.transcriber_fw.WhisperModel", _segment_model([30.0, 60.0, 90.0]))
+    t = Transcriber(fake_config)
+    seen = []
+    with caplog.at_level("INFO"), pytest.raises(Cancelled):
+        t.transcribe_file("/tmp/a.wav", on_progress=lambda done, total: seen.append(done),
+                          cancelled=lambda: len(seen) >= 3)
+    assert seen == [0.0, 0.0, 30.0]
+    assert "File transcription cancelled" in caplog.text
+    assert "File transcription failed" not in caplog.text

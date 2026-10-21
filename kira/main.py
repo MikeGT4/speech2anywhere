@@ -341,9 +341,9 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
     from kira.ui.welcome_dialog import WelcomeDialog, is_first_run
     if is_first_run():
         log.info("First run detected, showing welcome dialog")
-        welcome = WelcomeDialog()
-        welcome.setWindowFlag(Qt.WindowType.WindowStaysOnTopHint, True)
-        run_modal = getattr(welcome, "exec")
+        welcome_dialog = WelcomeDialog()
+        welcome_dialog.setWindowFlag(Qt.WindowType.WindowStaysOnTopHint, True)
+        run_modal = getattr(welcome_dialog, "exec")
         run_modal()
 
 

@@ -445,3 +445,92 @@ def test_a_crashing_package_check_falls_back_to_the_full_package(monkeypatch, qa
     runner.run_update_flow(None, on_quit_request=lambda: None)
     assert calls["launch"] == []
     assert "Die Prüfung ist fehlgeschlagen (kaputt)" in calls["texts"][0]
+
+
+def test_update_worker_sums_all_bundle_files(qapp):
+    import time
+    from pathlib import Path
+
+    from kira.updater import ReleaseAsset, UpdateCheckResult
+
+    sizes = [2_154_496, 2_145_386_496, 961_254_400]
+    names = ["Kira-Setup-v9.9.9.exe", "Kira-Setup-v9.9.9-1.bin", "Kira-Setup-v9.9.9-2.bin"]
+    result = UpdateCheckResult(
+        status="newer", remote_version="9.9.9",
+        bundle_assets=[ReleaseAsset(name=n, url="https://example.invalid/" + n, size=s) for n, s in zip(names, sizes)],
+    )
+    worker = runner._UpdateWorker(result, Path("unbenutzt"))
+    seen = []
+    worker.progress.connect(lambda done, total: seen.append((done, total)))
+    total = sum(sizes)
+    worker._on_bytes(names[0], sizes[0], sizes[0])
+    worker._on_bytes(names[1], 1_000_000_000, sizes[1])
+    time.sleep(0.25)
+    worker._on_bytes(names[1], 1_500_000_000, sizes[1])
+    worker._on_bytes(names[1], sizes[1], sizes[1])
+    worker._on_bytes(names[2], sizes[2], sizes[2])
+    assert seen[0] == (sizes[0], total)
+    assert (sizes[0] + 1_500_000_000, total) in seen
+    assert seen[-1] == (total, total)
+    assert all(size == total for _, size in seen)
+
+
+def test_update_window_shows_bytes_then_runs_the_bar_while_checking(monkeypatch, qapp, tmp_path):
+    import threading
+    import time
+
+    from PyQt6.QtCore import QCoreApplication, QObject, pyqtSignal
+    from PyQt6.QtWidgets import QProgressDialog
+
+    from kira import progress as prog
+
+    _boxes, _launched, critical = _newer_flow(monkeypatch, tmp_path)
+    labels = []
+    original = QProgressDialog.setLabelText
+
+    def record(self, text):
+        labels.append(text)
+        original(self, text)
+
+    monkeypatch.setattr(QProgressDialog, "setLabelText", record)
+    gate = threading.Event()
+
+    class _Worker(QObject):
+        progress = pyqtSignal('qint64', 'qint64')
+        phase = pyqtSignal(str)
+        succeeded = pyqtSignal(str, bool)
+        failed = pyqtSignal(str)
+
+        def __init__(self, result, target_dir):
+            super().__init__()
+            self._cancelled = False
+
+        def cancel(self):
+            self._cancelled = True
+            gate.set()
+
+        def run(self):
+            self.phase.emit(prog.STARTING)
+            self.progress.emit(1_234_567_890, 3_109_000_000)
+            self.progress.emit(3_109_000_000, 3_109_000_000)
+            self.phase.emit(runner.CHECKING)
+            gate.wait(5)
+            self.failed.emit("Abgebrochen.")
+
+    monkeypatch.setattr(runner, "_UpdateWorker", _Worker)
+    runner.run_update_flow(None)
+    _thread, _worker, progress = runner._anchor
+    head = "Lade Update v9.9.9\n"
+    deadline = time.monotonic() + 5
+    while labels[-1:] != [f"{head}{runner.CHECKING}"] and time.monotonic() < deadline:
+        QCoreApplication.processEvents()
+        time.sleep(0.01)
+    assert labels[-1] == f"{head}{runner.CHECKING}"
+    assert f"{head}1,2 von 3,1 GB · 39 % · startet …" in labels
+    assert f"{head}{prog.FINISHING}" in labels
+    assert progress.isVisible()
+    assert (progress.minimum(), progress.maximum()) == (0, 0)
+    gate.set()
+    _wait_until_released()
+    assert runner._flow_active is False
+    assert critical == ["Abgebrochen."]

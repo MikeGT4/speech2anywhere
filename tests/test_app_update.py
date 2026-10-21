@@ -306,6 +306,9 @@ class _Reg:
 
 
 def test_uninstall_entry_follows_the_new_version(tmp_path):
+    import sys as _sys
+    if _sys.platform != "win32":
+        pytest.skip("Windows-Pfade")
     reg = _Reg({"HKCU": str(tmp_path) + "\\"})
     assert helper.update_uninstall_entry("0.5.5", tmp_path, lambda t: None, reg=reg)
     assert reg.written == {("HKCU", "DisplayVersion"): "0.5.5", ("HKCU", "DisplayName"): "Speech2Anywhere 0.5.5"}

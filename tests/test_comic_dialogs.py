@@ -242,6 +242,24 @@ def test_welcome_accept_writes_marker_only_in_welcome_mode(qtbot, tmp_path, monk
     assert marker.exists()
 
 
+def test_welcome_shows_the_news_only_in_welcome_mode(qtbot):
+    from PyQt6.QtWidgets import QTextBrowser
+
+    import kira.ui.welcome_dialog as welcome
+    from kira import __version__
+    from kira.ui.hud import STYLE_LABELS
+    dialog = welcome.WelcomeDialog(as_help=False)
+    qtbot.addWidget(dialog)
+    text = dialog.findChild(QTextBrowser).toPlainText()
+    assert f"Neu in v{__version__}" in text
+    for name in (STYLE_LABELS["halloween"], STYLE_LABELS["weihnachten"], "„Wortfetzen“", "„Anzeige“", "Restzeit",
+                 "„Datei transkribieren“"):
+        assert name in text
+    helper = welcome.WelcomeDialog(as_help=True)
+    qtbot.addWidget(helper)
+    assert "Neu in v" not in helper.findChild(QTextBrowser).toPlainText()
+
+
 def test_gpu_scan_animates_only_between_start_and_finish(qtbot):
     from kira.ui._gpu_scan_dialog import GpuScanDialog
     dialog = GpuScanDialog()

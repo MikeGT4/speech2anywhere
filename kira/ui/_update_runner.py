@@ -11,13 +11,14 @@ from PyQt6.QtWidgets import (
     QMessageBox, QProgressDialog, QWidget,
 )
 
-from kira import __version__, UPDATE_REPO, app_update
+from kira import __version__, UPDATE_REPO, app_update, progress as prog
 from kira.ui._dialog_style import (
     apply_light_theme,
     light_critical,
     light_information,
     light_warning,
 )
+from kira.ui._progress_view import ProgressView
 from kira.updater import (
     UpdateCheckResult,
     check_for_update,
@@ -27,6 +28,8 @@ from kira.updater import (
 )
 
 log = logging.getLogger(__name__)
+
+CHECKING = "Prüfsummen werden geprüft …"
 
 
 def _bundle_dir() -> Path:
@@ -39,7 +42,7 @@ class _Cancelled(Exception):
 
 
 class _UpdateWorker(QObject):
-    progress = pyqtSignal(str, int, int)
+    progress = pyqtSignal('qint64', 'qint64')
     phase = pyqtSignal(str)
     succeeded = pyqtSignal(str, bool)
     failed = pyqtSignal(str)
@@ -49,6 +52,9 @@ class _UpdateWorker(QObject):
         self._result = result
         self._target_dir = target_dir
         self._cancelled = False
+        self._done: dict[str, int] = {}
+        self._sizes = {a.name: a.size for a in result.bundle_assets if a.size > 0}
+        self._throttle = prog.Throttle()
 
     def cancel(self) -> None:
         self._cancelled = True
@@ -56,7 +62,12 @@ class _UpdateWorker(QObject):
     def _on_bytes(self, name: str, done: int, total: int) -> None:
         if self._cancelled:
             raise _Cancelled()
-        self.progress.emit(name, done, total)
+        self._done[name] = done
+        if total > 0:
+            self._sizes[name] = max(self._sizes.get(name, 0), total)
+        all_done, all_total = sum(self._done.values()), sum(self._sizes.values())
+        if self._throttle.due(force=0 < all_total <= all_done):
+            self.progress.emit(all_done, all_total)
 
     def run(self) -> None:
         try:
@@ -66,9 +77,7 @@ class _UpdateWorker(QObject):
                     "Update-Bundle leer - Release hat keine Setup-Files."
                 )
                 return
-            self.phase.emit(
-                f"Lade {len(r.bundle_assets)} Bundle-Dateien..."
-            )
+            self.phase.emit(prog.STARTING)
             try:
                 paths = download_bundle(
                     r.bundle_assets,
@@ -94,7 +103,7 @@ class _UpdateWorker(QObject):
 
             hash_verified = False
             if r.sha256sums_url:
-                self.phase.emit("Verifiziere SHA256-Hashes...")
+                self.phase.emit(CHECKING)
                 sums_path = self._target_dir / "SHA256SUMS.txt"
                 try:
                     download_asset(r.sha256sums_url, sums_path)
@@ -330,14 +339,15 @@ def _run_update_flow(
         return False
 
     target = _bundle_dir() / f"v{result.remote_version}"
+    head = f"Lade Update v{result.remote_version}\n"
     progress = QProgressDialog(
-        "Lade Update-Bundle...", "Abbrechen", 0, 100, parent,
+        f"{head}{prog.STARTING}", "Abbrechen", 0, 0, parent,
     )
     progress.setWindowTitle(f"Speech2Anywhere: Update v{result.remote_version}")
     progress.setWindowModality(Qt.WindowModality.ApplicationModal)
-    progress.setAutoClose(False)
     progress.setMinimumDuration(0)
     apply_light_theme(progress)
+    view = ProgressView(progress, progress.setLabelText, head, parent=progress)
     progress.show()
 
     thread = QThread()
@@ -345,27 +355,11 @@ def _run_update_flow(
     worker.moveToThread(thread)
     thread.started.connect(worker.run)
 
-    state = {"current_asset": ""}
-
-    def on_phase(label: str) -> None:
-        progress.setLabelText(label)
-
-    def on_progress(name: str, done: int, total: int) -> None:
-        if name != state["current_asset"]:
-            state["current_asset"] = name
-        done_mb = done / (1024 * 1024)
-        if total > 0:
-            pct = int((done / total) * 100)
-            progress.setValue(min(pct, 99))
-        progress.setLabelText(
-            f"Lade {name}\n{done_mb:.1f} MB"
-            + (f" / {total / (1024 * 1024):.1f} MB" if total > 0 else "")
-        )
-
     def cancel_download() -> None:
         worker.cancel()
 
     def close_progress() -> None:
+        view.stop()
         try:
             progress.canceled.disconnect(cancel_download)
         except (TypeError, RuntimeError):
@@ -379,7 +373,6 @@ def _run_update_flow(
             _flow_finished()
 
     def _on_succeeded(setup_path: str, hash_verified: bool) -> None:
-        progress.setValue(100)
         close_progress()
         thread.quit()
         thread.wait()
@@ -443,8 +436,8 @@ def _run_update_flow(
         finally:
             _flow_finished()
 
-    worker.phase.connect(on_phase)
-    worker.progress.connect(on_progress)
+    worker.phase.connect(view.busy)
+    worker.progress.connect(view.amount)
     worker.succeeded.connect(on_succeeded)
     worker.failed.connect(on_failed)
     progress.canceled.connect(cancel_download)

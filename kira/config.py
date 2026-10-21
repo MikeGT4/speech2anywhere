@@ -53,7 +53,8 @@ class InjectorConfig(BaseModel):
     restore_clipboard_after_ms: int = 500
 
 
-HUD_STYLES = ("comic", "manga", "phosphor", "gun_barrel", "zielerfassung", "stimmabdruck", "klartext", "klassisch")
+HUD_STYLES = ("comic", "manga", "halloween", "weihnachten", "phosphor", "gun_barrel", "zielerfassung", "stimmabdruck",
+              "klartext", "klassisch")
 DEFAULT_HUD_STYLE = "comic"
 
 

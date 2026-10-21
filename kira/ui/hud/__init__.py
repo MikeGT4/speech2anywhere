@@ -6,6 +6,8 @@ from kira.config import DEFAULT_HUD_STYLE, HUD_STYLES
 STYLE_LABELS: dict[str, str] = {
     "comic": "Comic (Bla-Bla)",
     "manga": "Manga (Shōnen)",
+    "halloween": "Halloween (Hexenhut)",
+    "weihnachten": "Weihnachten (Winternacht)",
     "phosphor": "Phosphor (Oszilloskop)",
     "gun_barrel": "Gun Barrel",
     "zielerfassung": "Zielerfassung",
@@ -17,6 +19,8 @@ STYLE_LABELS: dict[str, str] = {
 _MODULES = {
     "comic": ("kira.ui.hud.comic", "Comic"),
     "manga": ("kira.ui.hud.manga", "Manga"),
+    "halloween": ("kira.ui.hud.halloween", "Halloween"),
+    "weihnachten": ("kira.ui.hud.weihnachten", "Weihnachten"),
     "phosphor": ("kira.ui.hud.phosphor", "Phosphor"),
     "gun_barrel": ("kira.ui.hud.gun_barrel", "GunBarrel"),
     "zielerfassung": ("kira.ui.hud.zielerfassung", "Zielerfassung"),

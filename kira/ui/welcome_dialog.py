@@ -43,6 +43,21 @@ def mark_welcomed() -> None:
     _WELCOME_MARKER.write_text(__version__, encoding="utf-8")
 
 
+_NEWS_HTML = """
+<h3>Neu in v{version}</h3>
+<ul>
+  <li>Zwei Anzeige-Stile für die Saison: <b>Halloween (Hexenhut)</b> mit Hexenhut, leuchtendem
+    Kürbis, Hexenkessel, Besen und Kürbisschnitzen und <b>Weihnachten (Winternacht)</b> mit
+    Nikolausmütze, Schneefall, Schlitten, Lichterbogen und Plätzchen. Du wählst sie in den
+    Einstellungen im Reiter „Anzeige“.</li>
+  <li>Wie bei Comic und Manga fliegen auch dort beim Sprechen Fetzen deiner Wörter; der Schalter
+    „Wortfetzen“ im selben Reiter gilt für alle vier.</li>
+  <li>Ladeanzeigen mit Prozent, Größe, Tempo und Restzeit: beim Laden der Modelle, beim Download des
+    Ollama-Setups und beim Voll-Update. „Datei transkribieren“ zeigt den Fortschritt nach Audiozeit.</li>
+</ul>
+"""
+
+
 _GUIDE_HTML = """
 <p>Speech2Anywhere ist dein lokaler Sprache-zu-Text-Helfer. Alles läuft auf deinem PC:
 keine Cloud, keine Telemetrie. Whisper transkribiert, ein Sprachmodell (Ollama)
@@ -200,7 +215,7 @@ class WelcomeDialog(QDialog):
         guide.setLineWrapMode(QTextBrowser.LineWrapMode.FixedPixelWidth)
         guide.setLineWrapColumnOrWidth(_GUIDE_WIDTH)
         guide.document().setDefaultStyleSheet(_guide_css())
-        guide.setHtml(_GUIDE_HTML)
+        guide.setHtml(_GUIDE_HTML if as_help else _NEWS_HTML.format(version=__version__) + _GUIDE_HTML)
         card.add_note(guide)
         body.addWidget(card, 1)
 

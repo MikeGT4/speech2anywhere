@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.6 (22.10.2026)
+
+- Zwei neue Anzeige-Stile für die Saison, wählbar in den Einstellungen unter „Anzeige“: „Halloween (Hexenhut)“ mit Hexenhut, leuchtendem Kürbis im Hintergrund, Hexenkessel, Besen, Kürbisschnitzen und einem Mond als Uhr; „Weihnachten (Winternacht)“ mit Nikolausmütze und Bart in einer verschneiten Winternacht, Schlitten, Lichterbogen, Plätzchen und einem Adventskranz als Uhr
+- Die Wortfetzen fliegen auch in beiden neuen Stilen; der Schalter „Wortfetzen“ gilt für Comic, Manga, Halloween und Weihnachten
+- Ladeanzeigen beim Laden der Modelle (Ersteinrichtung, Einstellungen, Ollama-Empfehlung), beim Download des Ollama-Setups und beim Voll-Update: Prozent, „x,x von y,y GB“, Tempo und Restzeit; solange noch keine Bytes messbar sind (Whisper über Xet), Größe und Laufzeit mit laufendem Balken
+- „Datei transkribieren“ zeigt, ob gerade die Spracherkennung geladen oder die Datei gelesen wird, danach den Fortschritt nach Audiozeit mit Restzeit; „Abbrechen“ hält beim nächsten Abschnitt an
+- Die Willkommensseite nach einem Update nennt oben, was neu ist
+- Von 0.5.5 aus lädt das Update in der App nur das Programmpaket (rund 1,4 MB) statt des ganzen Pakets
+
 ## 0.5.5 (20.10.2026)
 
 - Kleine Updates: Hat sich seit deiner Version nur das Programm geändert, lädt Speech2Anywhere statt des ganzen Pakets (rund 3 GB) nur das Programmpaket (gut 1 MB), prüft die Prüfsumme, spielt es ein und startet von selbst neu. Das greift ab dem ersten Update nach 0.5.5
