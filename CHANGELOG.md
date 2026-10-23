@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.8 (23.10.2026)
+
+- Menü am Tray-Symbol: Steht die Maus über einem Punkt, wird sein rundes Symbol hell und hebt sich von der gelben Pille ab; der unterste Punkt „Beenden“ bleibt dabei im Rahmen
+- Von 0.5.5, 0.5.6 und 0.5.7 aus lädt das Update in der App nur das Programmpaket (rund 1,5 MB)
+
 ## 0.5.7 (23.10.2026)
 
 - Das Menü am Tray-Symbol im verspielten Comic-Stil: vor jedem Punkt ein rundes gelbes Symbol, der gewählte Punkt als gelbe Pille, oben eine Statuskarte mit dem Gesicht der Sprechblase, cremefarbene Fläche mit runden Ecken und gepunktete Trenner

@@ -46,11 +46,11 @@ def mark_welcomed() -> None:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Das Menü am Tray-Symbol im Comic-Stil: vor jedem Punkt ein rundes gelbes Symbol, der gewählte
-    Punkt als gelbe Pille und oben eine Statuskarte mit dem Gesicht der Sprechblase.</li>
-  <li>Seit 0.5.6 dabei: die Saison-Stile <b>Halloween (Hexenhut)</b> und <b>Weihnachten (Winternacht)</b>
-    im Reiter „Anzeige“, auch mit „Wortfetzen“, dazu Ladeanzeigen mit Restzeit und der Fortschritt in
-    „Datei transkribieren“.</li>
+  <li>Im Menü am Tray-Symbol wird das runde Symbol hell, sobald die Maus über einem Punkt steht, und hebt
+    sich von der gelben Pille ab; „Beenden“ bleibt dabei im Rahmen.</li>
+  <li>Seit 0.5.7 dabei: das Menü im Comic-Stil mit Symbolen und Statuskarte. Seit 0.5.6: die Saison-Stile
+    <b>Halloween (Hexenhut)</b> und <b>Weihnachten (Winternacht)</b> im Reiter „Anzeige“, auch mit „Wortfetzen“,
+    dazu Ladeanzeigen mit Restzeit und der Fortschritt in „Datei transkribieren“.</li>
 </ul>
 """
 

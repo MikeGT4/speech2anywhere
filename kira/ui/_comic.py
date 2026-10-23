@@ -898,8 +898,7 @@ def _menu_glyph(p: QPainter, kind: str) -> None:
         line((18.6, 6.2), (16.4, 8.6), (19.4, 9.6))
 
 
-@functools.lru_cache(maxsize=32)
-def menu_icon(kind: str, size: int = MENU_ICON) -> QIcon:
+def _menu_icon_pixmap(kind: str, size: int, fill: str) -> QPixmap:
     scale = 3
     pix = QPixmap(size * scale, size * scale)
     pix.fill(Qt.GlobalColor.transparent)
@@ -907,12 +906,22 @@ def menu_icon(kind: str, size: int = MENU_ICON) -> QIcon:
     p.setRenderHint(QPainter.RenderHint.Antialiasing)
     p.scale(size * scale / 24, size * scale / 24)
     p.setPen(QPen(QColor(INK), 1.6))
-    p.setBrush(QColor(YELLOW))
+    p.setBrush(QColor(fill))
     p.drawEllipse(QRectF(0.8, 0.8, 22.4, 22.4))
     _menu_glyph(p, kind)
     p.end()
     pix.setDevicePixelRatio(scale)
-    return QIcon(pix)
+    return pix
+
+
+@functools.lru_cache(maxsize=32)
+def menu_icon(kind: str, size: int = MENU_ICON) -> QIcon:
+    icon = QIcon()
+    icon.addPixmap(_menu_icon_pixmap(kind, size, YELLOW), QIcon.Mode.Normal)
+    hovered = _menu_icon_pixmap(kind, size, CREAM)
+    icon.addPixmap(hovered, QIcon.Mode.Active)
+    icon.addPixmap(hovered, QIcon.Mode.Selected)
+    return icon
 
 
 class _MenuStyle(QProxyStyle):
@@ -951,6 +960,7 @@ class ComicMenu(QMenu):
             QMenu::icon {{ padding-left: 14px; }}
             QMenu::separator {{ height: 0px; border-top: 3px dotted {DOTS}; margin: 7px 18px; }}
         """)
+        self.setContentsMargins(0, 0, s, 3 + s)
 
     def paintEvent(self, event) -> None:  # noqa: N802
         p = QPainter(self)

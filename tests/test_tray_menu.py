@@ -73,6 +73,53 @@ def test_menu_icons_are_round_and_28_px(qtbot):
         assert not pix.isNull() and pix.width() >= 28
 
 
+def _near(color, hex_rgb, tolerance=10):
+    from PyQt6.QtGui import QColor
+    want = QColor(hex_rgb)
+    return all(abs(a - b) <= tolerance for a, b in ((color.red(), want.red()), (color.green(), want.green()),
+                                                    (color.blue(), want.blue())))
+
+
+def test_menu_icon_disc_turns_cream_when_hovered(qtbot):
+    import kira.ui._comic as comic
+    from PyQt6.QtCore import QSize
+    from PyQt6.QtGui import QIcon
+    for kind in ("gear", "clock", "wand", "book", "document", "file", "info", "power", "retry"):
+        icon = comic.menu_icon(kind)
+        normal = icon.pixmap(QSize(28, 28), QIcon.Mode.Normal).toImage()
+        hovered = icon.pixmap(QSize(28, 28), QIcon.Mode.Active).toImage()
+        x, y = round(normal.width() * 3.6 / 24), normal.height() // 2
+        assert _near(normal.pixelColor(x, y), comic.YELLOW), kind
+        assert _near(hovered.pixelColor(x, y), comic.CREAM), kind
+
+
+def test_hovered_last_entry_shows_a_cream_disc_and_stays_inside_the_frame(qtbot):
+    import kira.ui._comic as comic
+    from kira.ui.tray_win import KiraTray
+    tray = KiraTray(on_quit=lambda: None, learning=FakeLearning())
+    menu = tray._comic_menu()
+    qtbot.addWidget(menu)
+    menu.ensurePolished()
+    menu.resize(menu.sizeHint())
+    quit_action = next(a for a in menu.actions() if a.text() == "Beenden")
+    calm = menu.grab().toImage()
+    menu.setActiveAction(quit_action)
+    hot = menu.grab().toImage()
+    scale = hot.width() / menu.width()
+    rect = menu.actionGeometry(quit_action)
+    frame = comic.ComicMenu.SHADOW + 3
+    assert rect.bottom() <= menu.height() - frame, (rect, menu.height())
+    assert rect.right() - 8 <= menu.width() - frame, (rect, menu.width())
+    cy = round(rect.center().y() * scale)
+    pill = round((rect.right() - 30) * scale)
+    assert _near(hot.pixelColor(pill, cy), comic.YELLOW), "Pille beim Hover"
+    assert _near(calm.pixelColor(pill, cy), comic.CREAM, 6), "ohne Hover keine Pille"
+    xs = range(round((rect.left() + 12) * scale), round((rect.left() + 70) * scale))
+    disc = next((x for x in xs if _near(hot.pixelColor(x, cy), comic.CREAM, 6)), None)
+    assert disc is not None, "kein heller Symbolkreis beim Hover"
+    assert _near(calm.pixelColor(disc, cy), comic.YELLOW), "ohne Hover ist der Kreis gelb"
+
+
 def test_comic_menu_entry_runs_the_tray_action(qtbot, monkeypatch):
     from kira.ui.tray_win import KiraTray
     opened = []
