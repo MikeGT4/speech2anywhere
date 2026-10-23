@@ -252,6 +252,7 @@ def test_welcome_shows_the_news_only_in_welcome_mode(qtbot):
     qtbot.addWidget(dialog)
     text = dialog.findChild(QTextBrowser).toPlainText()
     assert f"Neu in v{__version__}" in text
+    assert "Menü am Tray-Symbol" in text
     for name in (STYLE_LABELS["halloween"], STYLE_LABELS["weihnachten"], "„Wortfetzen“", "„Anzeige“", "Restzeit",
                  "„Datei transkribieren“"):
         assert name in text

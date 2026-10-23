@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import ctypes
+import functools
 import logging
 import sys
 
@@ -9,11 +10,11 @@ from PIL import Image
 from PIL.ImageQt import ImageQt
 from PyQt6.QtCore import QEasingCurve, QEvent, QObject, QPointF, QRectF, QSize, Qt, QUrl, QVariantAnimation
 from PyQt6.QtGui import (
-    QColor, QDesktopServices, QFont, QFontDatabase, QFontMetrics, QPainter, QPainterPath, QPen, QPixmap, QPolygonF,
+    QColor, QDesktopServices, QFont, QFontDatabase, QFontMetrics, QIcon, QPainter, QPainterPath, QPen, QPixmap, QPolygonF,
 )
 from PyQt6.QtSvg import QSvgRenderer
 from PyQt6.QtWidgets import (
-    QAbstractButton, QButtonGroup, QComboBox, QHBoxLayout, QLabel, QMenu, QSizePolicy, QSlider,
+    QAbstractButton, QButtonGroup, QComboBox, QHBoxLayout, QLabel, QMenu, QProxyStyle, QSizePolicy, QSlider, QStyle,
     QStyledItemDelegate, QVBoxLayout, QWidget, QWidgetAction,
 )
 
@@ -814,8 +815,116 @@ def footer_row(left: str | QWidget | None, *buttons: QWidget) -> QHBoxLayout:
     return row
 
 
+MENU_ICON = 28
+DOTS = "#DED4BA"
+
+
+def _menu_glyph(p: QPainter, kind: str) -> None:
+    import math
+    ink = QColor(INK)
+    pen = QPen(ink, 2.1)
+    pen.setCapStyle(Qt.PenCapStyle.RoundCap)
+    pen.setJoinStyle(Qt.PenJoinStyle.RoundJoin)
+
+    def line(*pts):
+        p.setPen(pen)
+        p.setBrush(Qt.BrushStyle.NoBrush)
+        p.drawPolyline(QPolygonF([QPointF(x, y) for x, y in pts]))
+
+    def shape(path: QPainterPath):
+        p.setPen(pen)
+        p.setBrush(QColor("#FFFFFF"))
+        p.drawPath(path)
+
+    def arc(cx, cy, r, start, end):
+        steps = 48
+        line(*[(cx + r * math.cos(math.radians(start + (end - start) * i / steps)),
+                cy + r * math.sin(math.radians(start + (end - start) * i / steps))) for i in range(steps + 1)])
+
+    if kind == "gear":
+        for i in range(8):
+            a = i * math.pi / 4
+            line((12 + 4.6 * math.cos(a), 12 + 4.6 * math.sin(a)), (12 + 6.6 * math.cos(a), 12 + 6.6 * math.sin(a)))
+        ring = QPainterPath()
+        ring.addEllipse(QRectF(7.6, 7.6, 8.8, 8.8))
+        shape(ring)
+        p.setPen(Qt.PenStyle.NoPen)
+        p.setBrush(ink)
+        p.drawEllipse(QRectF(10.6, 10.6, 2.8, 2.8))
+    elif kind == "clock":
+        face = QPainterPath()
+        face.addEllipse(QRectF(5.8, 5.8, 12.4, 12.4))
+        shape(face)
+        line((12, 8.6), (12, 12), (14.6, 13.6))
+    elif kind == "wand":
+        line((7, 17), (14.2, 9.8))
+        line((16.6, 5.2), (16.6, 10))
+        line((14.2, 7.6), (19, 7.6))
+    elif kind == "book":
+        for pts in (((6, 8), (11.4, 9.2), (11.4, 17.2), (6, 16)), ((18, 8), (12.6, 9.2), (12.6, 17.2), (18, 16))):
+            page = QPainterPath()
+            page.addPolygon(QPolygonF([QPointF(x, y) for x, y in pts]))
+            page.closeSubpath()
+            shape(page)
+    elif kind in ("document", "file"):
+        sheet = QPainterPath()
+        sheet.addRoundedRect(QRectF(7.4, 5.8, 9.2, 12.4), 1.6, 1.6)
+        shape(sheet)
+        if kind == "document":
+            for y in (9.6, 12.2, 14.8):
+                line((9.8, y), (14.2, y))
+        else:
+            for x, h in ((9.9, 2.4), (12, 5.0), (14.1, 3.2)):
+                line((x, 12 - h / 2), (x, 12 + h / 2))
+    elif kind == "info":
+        bubble = QPainterPath()
+        bubble.addEllipse(QRectF(6, 5.4, 12, 12))
+        shape(bubble)
+        tail = QPainterPath()
+        tail.addPolygon(QPolygonF([QPointF(8.9, 16.2), QPointF(7.6, 19.2), QPointF(11.4, 17.3)]))
+        p.setPen(Qt.PenStyle.NoPen)
+        p.setBrush(QColor("#FFFFFF"))
+        p.drawPath(tail)
+        line((8.9, 16.2), (7.6, 19.2), (11.4, 17.3))
+        line((12, 10.8), (12, 14))
+        p.setPen(Qt.PenStyle.NoPen)
+        p.setBrush(ink)
+        p.drawEllipse(QRectF(10.9, 7.4, 2.2, 2.2))
+    elif kind == "power":
+        arc(12, 12.6, 5.6, -55, 235)
+        line((12, 5.4), (12, 11.4))
+    elif kind == "retry":
+        arc(12, 12, 5.6, 20, 320)
+        line((18.6, 6.2), (16.4, 8.6), (19.4, 9.6))
+
+
+@functools.lru_cache(maxsize=32)
+def menu_icon(kind: str, size: int = MENU_ICON) -> QIcon:
+    scale = 3
+    pix = QPixmap(size * scale, size * scale)
+    pix.fill(Qt.GlobalColor.transparent)
+    p = QPainter(pix)
+    p.setRenderHint(QPainter.RenderHint.Antialiasing)
+    p.scale(size * scale / 24, size * scale / 24)
+    p.setPen(QPen(QColor(INK), 1.6))
+    p.setBrush(QColor(YELLOW))
+    p.drawEllipse(QRectF(0.8, 0.8, 22.4, 22.4))
+    _menu_glyph(p, kind)
+    p.end()
+    pix.setDevicePixelRatio(scale)
+    return QIcon(pix)
+
+
+class _MenuStyle(QProxyStyle):
+    def pixelMetric(self, metric, option=None, widget=None) -> int:  # noqa: N802
+        if metric == QStyle.PixelMetric.PM_SmallIconSize:
+            return MENU_ICON
+        return super().pixelMetric(metric, option, widget)
+
+
 class ComicMenu(QMenu):
-    SHADOW = 5
+    SHADOW = 6
+    RADIUS = 22
 
     def __init__(self, parent: QWidget | None = None) -> None:
         super().__init__(parent)
@@ -824,34 +933,87 @@ class ComicMenu(QMenu):
         )
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         border_off_on_show(self)
+        self._menu_style = _MenuStyle()
+        self.setStyle(self._menu_style)
         fam = load_fonts()
         s = self.SHADOW
         self.setStyleSheet(f"""
-            QMenu {{ background: transparent; border: none; padding: 3px {3 + s}px {7 + s}px 3px; }}
+            QMenu {{ background: transparent; border: none; padding: 3px {3 + s}px {6 + s}px 3px; }}
             QMenu::item {{
-                color: {INK}; padding: 7px 24px 7px 14px; margin: 1px 6px; border-radius: 10px;
+                color: {INK}; padding: 6px 28px 6px 12px; margin: 1px 8px; border-radius: 20px;
+                border: 2px solid transparent;
                 font-family: "{fam[700]}"; font-size: 15px; font-weight: 700;
             }}
-            QMenu::item:selected {{ background: {YELLOW}; }}
+            QMenu::item:selected {{ background: {YELLOW}; border: 2px solid {INK}; }}
             QMenu::item:disabled {{
                 color: {LABEL}; font-family: "Segoe UI"; font-size: 13px; font-weight: 400;
             }}
-            QMenu::separator {{ height: 2px; background: {TRACK}; margin: 5px 16px; }}
+            QMenu::icon {{ padding-left: 14px; }}
+            QMenu::separator {{ height: 0px; border-top: 3px dotted {DOTS}; margin: 7px 18px; }}
         """)
 
     def paintEvent(self, event) -> None:  # noqa: N802
         p = QPainter(self)
         p.setRenderHint(QPainter.RenderHint.Antialiasing)
         s = self.SHADOW
+        r = self.RADIUS
         body = QRectF(1.5, 1.5, self.width() - s - 3, self.height() - s - 3)
         p.setPen(Qt.PenStyle.NoPen)
         p.setBrush(QColor(INK))
-        p.drawRoundedRect(body.translated(s, s), 16, 16)
-        p.setBrush(QColor("#FFFFFF"))
+        p.drawRoundedRect(body.translated(s, s), r, r)
+        p.setBrush(QColor(CREAM))
         p.setPen(QPen(QColor(INK), 3))
-        p.drawRoundedRect(body, 16, 16)
+        p.drawRoundedRect(body, r, r)
         p.end()
         super().paintEvent(event)
+
+
+class _MenuStatus(QWidget):
+    def __init__(self, text: str, ready: bool) -> None:
+        super().__init__()
+        self._text = text
+        self._ready = ready
+        self._mascot = mascot_pixmap(22 * 3) if ready else None
+        if self._mascot is not None:
+            self._mascot.setDevicePixelRatio(3)
+        self.setAccessibleName(text)
+        self.setMinimumHeight(52)
+        font = QFont("Segoe UI")
+        font.setPixelSize(13)
+        if ready:
+            font.setWeight(QFont.Weight.DemiBold)
+        self._font = font
+        self.setMinimumWidth(QFontMetrics(font).horizontalAdvance(text) + 10 + 2 + 12 + 22 + 8 + 12 + 2 + 10)
+
+    def paintEvent(self, event) -> None:  # noqa: N802
+        p = QPainter(self)
+        p.setRenderHint(QPainter.RenderHint.Antialiasing)
+        card = QRectF(10, 6, self.width() - 20, self.height() - 12)
+        p.setPen(Qt.PenStyle.NoPen)
+        p.setBrush(QColor(INK))
+        p.drawRoundedRect(card.adjusted(0, 0, 0, 2), 16, 16)
+        p.setBrush(QColor("#FFFFFF"))
+        p.drawRoundedRect(card.adjusted(2, 2, -2, -2), 14, 14)
+        x = card.left() + 14
+        mid = card.top() + card.height() / 2
+        if self._mascot is not None:
+            p.drawPixmap(QPointF(x, mid - 11), self._mascot)
+        else:
+            p.setBrush(QColor(LABEL))
+            p.drawEllipse(QPointF(x + 11, mid), 5, 5)
+        p.setFont(self._font)
+        p.setPen(QColor(INK if self._ready else LABEL))
+        room = card.width() - 58
+        text = QFontMetrics(self._font).elidedText(self._text, Qt.TextElideMode.ElideRight, int(room))
+        p.drawText(QRectF(x + 30, card.top() + 2, room, card.height() - 4),
+                   Qt.AlignmentFlag.AlignVCenter | Qt.AlignmentFlag.AlignLeft, text)
+
+
+def menu_status(parent: QWidget, text: str, ready: bool) -> QWidgetAction:
+    action = QWidgetAction(parent)
+    action.setDefaultWidget(_MenuStatus(text, ready))
+    action.setEnabled(False)
+    return action
 
 
 class _MenuHeader(QWidget):
@@ -861,7 +1023,7 @@ class _MenuHeader(QWidget):
         p = QPainter(self)
         p.setRenderHint(QPainter.RenderHint.Antialiasing)
         rect = QRectF(self.rect())
-        p.fillPath(_rounded_path(rect, 13, 13, 0, 0), QColor(INK))
+        p.fillPath(_rounded_path(rect, ComicMenu.RADIUS - 3, ComicMenu.RADIUS - 3, 0, 0), QColor(INK))
         p.fillRect(QRectF(0, rect.height() - self.LINE, rect.width(), self.LINE), QColor(YELLOW))
 
 
@@ -869,13 +1031,14 @@ def menu_header(parent: QWidget) -> QWidgetAction:
     head = _MenuHeader()
     lay = QHBoxLayout(head)
     lay.setContentsMargins(14, 10, 16, 10 + _MenuHeader.LINE)
-    lay.setSpacing(10)
+    lay.setSpacing(11)
     logo = QLabel()
-    pix = mascot_pixmap(36)
+    pix = mascot_pixmap(44 * 3)
     if pix is not None:
+        pix.setDevicePixelRatio(3)
         logo.setPixmap(pix)
     lay.addWidget(logo)
-    lay.addWidget(Wordmark("dunkel", 28), 0, Qt.AlignmentFlag.AlignVCenter)
+    lay.addWidget(Wordmark("dunkel", 30), 0, Qt.AlignmentFlag.AlignVCenter)
     lay.addStretch()
     holder = QWidget()
     outer = QVBoxLayout(holder)

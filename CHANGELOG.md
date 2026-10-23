@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.7 (23.10.2026)
+
+- Das Menü am Tray-Symbol im verspielten Comic-Stil: vor jedem Punkt ein rundes gelbes Symbol, der gewählte Punkt als gelbe Pille, oben eine Statuskarte mit dem Gesicht der Sprechblase, cremefarbene Fläche mit runden Ecken und gepunktete Trenner
+- Von 0.5.5 und 0.5.6 aus lädt das Update in der App nur das Programmpaket (rund 1,5 MB)
+
 ## 0.5.6 (22.10.2026)
 
 - Zwei neue Anzeige-Stile für die Saison, wählbar in den Einstellungen unter „Anzeige“: „Halloween (Hexenhut)“ mit Hexenhut, leuchtendem Kürbis im Hintergrund, Hexenkessel, Besen, Kürbisschnitzen und einem Mond als Uhr; „Weihnachten (Winternacht)“ mit Nikolausmütze und Bart in einer verschneiten Winternacht, Schlitten, Lichterbogen, Plätzchen und einem Adventskranz als Uhr

@@ -46,14 +46,11 @@ def mark_welcomed() -> None:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Zwei Anzeige-Stile für die Saison: <b>Halloween (Hexenhut)</b> mit Hexenhut, leuchtendem
-    Kürbis, Hexenkessel, Besen und Kürbisschnitzen und <b>Weihnachten (Winternacht)</b> mit
-    Nikolausmütze, Schneefall, Schlitten, Lichterbogen und Plätzchen. Du wählst sie in den
-    Einstellungen im Reiter „Anzeige“.</li>
-  <li>Wie bei Comic und Manga fliegen auch dort beim Sprechen Fetzen deiner Wörter; der Schalter
-    „Wortfetzen“ im selben Reiter gilt für alle vier.</li>
-  <li>Ladeanzeigen mit Prozent, Größe, Tempo und Restzeit: beim Laden der Modelle, beim Download des
-    Ollama-Setups und beim Voll-Update. „Datei transkribieren“ zeigt den Fortschritt nach Audiozeit.</li>
+  <li>Das Menü am Tray-Symbol im Comic-Stil: vor jedem Punkt ein rundes gelbes Symbol, der gewählte
+    Punkt als gelbe Pille und oben eine Statuskarte mit dem Gesicht der Sprechblase.</li>
+  <li>Seit 0.5.6 dabei: die Saison-Stile <b>Halloween (Hexenhut)</b> und <b>Weihnachten (Winternacht)</b>
+    im Reiter „Anzeige“, auch mit „Wortfetzen“, dazu Ladeanzeigen mit Restzeit und der Fortschritt in
+    „Datei transkribieren“.</li>
 </ul>
 """
 

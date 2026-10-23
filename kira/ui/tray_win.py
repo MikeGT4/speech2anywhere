@@ -29,6 +29,26 @@ _WM_GETTEXT = 0x000D
 _WM_GETTEXTLENGTH = 0x000E
 
 
+
+_MENU_ICONS = {
+    "Einstellungen…": "gear",
+    "Datei transkribieren…": "file",
+    "Anleitung…": "book",
+    "Protokoll öffnen…": "document",
+    "Updates suchen…": "retry",
+    "Ollama-Empfehlung ansehen…": "info",
+    "Über Speech2Anywhere": "info",
+    "Beenden": "power",
+}
+
+
+def _menu_icon_kind(text: str) -> str:
+    if text.startswith("Update auf v"):
+        return "retry"
+    if text.startswith("Gelernte Wörter"):
+        return "wand"
+    return _MENU_ICONS.get(text, "")
+
 class _KiraPystrayIcon(_PystrayWin32Icon):
     ICON_HANDLE_LIMIT = 16
 
@@ -318,9 +338,10 @@ class KiraTray:
             if item.text == MENU_HEADER or not item.visible:
                 continue
             if not item.enabled:
-                menu.addAction(f"●  {item.text}").setEnabled(False)
+                menu.addAction(comic.menu_status(menu, item.text, ready=item.text == "Bereit"))
             else:
                 action = menu.addAction(item.text)
+                action.setIcon(comic.menu_icon(_menu_icon_kind(item.text)))
                 action.triggered.connect(lambda _checked=False, entry=item: entry(self._icon))
                 if item.default:
                     menu.setDefaultAction(action)

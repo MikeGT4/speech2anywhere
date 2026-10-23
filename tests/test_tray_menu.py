@@ -36,12 +36,41 @@ def test_comic_menu_follows_the_approved_draft(qtbot):
     menu = tray._comic_menu()
     qtbot.addWidget(menu)
     assert isinstance(menu.actions()[0], QWidgetAction), "oben der Kopf mit Logo und Wortmarke"
+    status = menu.actions()[1]
+    assert isinstance(status, QWidgetAction), "darunter die Statuskarte"
+    assert status.defaultWidget()._text == "Bereit"
+    assert status.defaultWidget()._mascot is not None
+    assert not status.isEnabled()
     assert _entries(menu) == [
-        "●  Bereit", "Update auf v0.5.0 installieren…", "Einstellungen…", "Gelernte Wörter (3 neu)…",
+        "Update auf v0.5.0 installieren…", "Einstellungen…", "Gelernte Wörter (3 neu)…",
         "Anleitung…", "Protokoll öffnen…", "Updates suchen…", "Über Speech2Anywhere", "Beenden",
     ]
-    status = next(a for a in menu.actions() if a.text() == "●  Bereit")
-    assert not status.isEnabled()
+    for action in menu.actions():
+        if not action.isSeparator() and not isinstance(action, QWidgetAction):
+            assert not action.icon().isNull(), f"Symbol fehlt: {action.text()}"
+
+
+def test_comic_menu_shows_other_states_without_the_face(qtbot):
+    from kira.ui.tray_win import KiraTray
+    from kira.app import State
+    tray = KiraTray(on_quit=lambda: None)
+    tray.update_state(State.RECORDING)
+    menu = tray._comic_menu()
+    qtbot.addWidget(menu)
+    card = menu.actions()[1].defaultWidget()
+    assert card._text == "Aufnahme läuft…"
+    assert card._mascot is None
+
+
+def test_menu_icons_are_round_and_28_px(qtbot):
+    import kira.ui._comic as comic
+    from PyQt6.QtWidgets import QStyle
+    menu = comic.ComicMenu()
+    qtbot.addWidget(menu)
+    assert menu.style().pixelMetric(QStyle.PixelMetric.PM_SmallIconSize) == 28
+    for kind in ("gear", "clock", "wand", "book", "document", "file", "info", "power", "retry"):
+        pix = comic.menu_icon(kind).pixmap(28, 28)
+        assert not pix.isNull() and pix.width() >= 28
 
 
 def test_comic_menu_entry_runs_the_tray_action(qtbot, monkeypatch):
