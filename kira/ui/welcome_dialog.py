@@ -46,9 +46,10 @@ def mark_welcomed() -> None:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Im Menü am Tray-Symbol wird das runde Symbol hell, sobald die Maus über einem Punkt steht, und hebt
-    sich von der gelben Pille ab; „Beenden“ bleibt dabei im Rahmen.</li>
-  <li>Seit 0.5.7 dabei: das Menü im Comic-Stil mit Symbolen und Statuskarte. Seit 0.5.6: die Saison-Stile
+  <li>Im Stil Comic bügelt das Bügeleisen beim Polieren deine eigenen Worte glatt: Sind die „Wortfetzen“ an,
+    liegen die ersten Wörter deines Diktats auf dem Bogen statt „Bla bla blubb“.</li>
+  <li>Seit 0.5.8 dabei: Im Menü am Tray-Symbol wird das runde Symbol hell, sobald die Maus über einem Punkt
+    steht. Seit 0.5.7: das Menü im Comic-Stil mit Symbolen und Statuskarte. Seit 0.5.6: die Saison-Stile
     <b>Halloween (Hexenhut)</b> und <b>Weihnachten (Winternacht)</b> im Reiter „Anzeige“, auch mit „Wortfetzen“,
     dazu Ladeanzeigen mit Restzeit und der Fortschritt in „Datei transkribieren“.</li>
 </ul>

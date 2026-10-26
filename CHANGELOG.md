@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.9 (26.10.2026)
+
+- Anzeige im Stil Comic: Sind die „Wortfetzen“ an, liegen beim Polieren die ersten Wörter deines Diktats auf dem Bogen unter dem Bügeleisen statt „Bla bla blubb, bla bla!“
+- Von 0.5.5 bis 0.5.8 aus lädt das Update in der App nur das Programmpaket (rund 1,5 MB)
+
 ## 0.5.8 (23.10.2026)
 
 - Menü am Tray-Symbol: Steht die Maus über einem Punkt, wird sein rundes Symbol hell und hebt sich von der gelben Pille ab; der unterste Punkt „Beenden“ bleibt dabei im Rahmen

@@ -66,6 +66,8 @@ LINE_Y = 49.5
 SHEET = QRectF(105.0, 39.0, 138.0, 13.0)
 SHEET_TEXT = "Bla bla blubb, bla bla!"
 SHEET_PX = 8
+SHEET_WORDS = 12
+SHEET_GAP = "  "
 WRINKLE_START = 2.6
 WRINKLE_DECAY = 0.42
 CREASES = ((110, 41, 116, 49), (131, 51, 134, 42), (149, 40, 154, 50), (172, 51, 175, 41),
@@ -437,7 +439,30 @@ def _sheet_outline(ix: float, direction: int, before: float, after: float) -> QP
     return path
 
 
-def _sheet(p: QPainter, ix: float, direction: int, passes: int, sheen: bool) -> None:
+def _sheet_width(text: str, metrics: QFontMetricsF) -> float:
+    return sum(metrics.horizontalAdvance(ch) for ch in text)
+
+
+def _sheet_line(words: list[str]) -> str:
+    if not words:
+        return SHEET_TEXT
+    metrics = QFontMetricsF(comic.baloo(800, SHEET_PX))
+    room = SHEET.width() - 14.0
+    line = SHEET_GAP.join(words)
+    if _sheet_width(line, metrics) <= room:
+        return line
+    shown = ""
+    for word in words:
+        trial = f"{shown}{SHEET_GAP}{word}" if shown else word
+        if _sheet_width(trial + SHEET_GAP + "…", metrics) > room:
+            break
+        shown = trial
+    if not shown:
+        return SHEET_TEXT
+    return shown if shown.endswith("…") else shown + SHEET_GAP + "…"
+
+
+def _sheet(p: QPainter, ix: float, direction: int, passes: int, sheen: bool, text: str = SHEET_TEXT) -> None:
     before, after = _wrinkle_amps(passes)
     outline = _sheet_outline(ix, direction, before, after)
     if direction > 0:
@@ -474,7 +499,7 @@ def _sheet(p: QPainter, ix: float, direction: int, passes: int, sheen: bool) -> 
     metrics = QFontMetricsF(font)
     p.setFont(font)
     x = SHEET.left() + 7.0
-    for ch in SHEET_TEXT:
+    for ch in text:
         flat_here = _ironed(x, ix, direction)
         amp = after if flat_here else before
         slope = (_wrinkle(x + 1.5, amp) - _wrinkle(x - 1.5, amp)) / 3.0
@@ -748,6 +773,8 @@ class Comic(HudStyle):
         self.clock = CLOCKS[0]
         self._queue: deque[str] = deque(maxlen=4)
         self._spoken = 0
+        self._heard: list[str] = []
+        self._sheet_cache = (0, SHEET_TEXT)
 
     def on_press(self, t: float, f: Frame) -> None:
         self._words = []
@@ -756,12 +783,23 @@ class Comic(HudStyle):
         self._lv = 0.0
         self._queue.clear()
         self._spoken = 0
+        self._heard = []
+        self._sheet_cache = (0, SHEET_TEXT)
         self.scene = self._rng.choice(SCENES)
         self.clock = self._rng.choice(CLOCKS)
 
     def feed_words(self, t: float, words: list[str]) -> None:
         if self.mode == "rec":
-            self._queue.extend(w for w in words if w)
+            fresh = [w for w in words if w]
+            self._queue.extend(fresh)
+            self._heard.extend(fresh[:max(0, SHEET_WORDS - len(self._heard))])
+
+    def sheet_text(self) -> str:
+        if not self._heard:
+            return SHEET_TEXT
+        if self._sheet_cache[0] != len(self._heard):
+            self._sheet_cache = (len(self._heard), _sheet_line(self._heard))
+        return self._sheet_cache[1]
 
     def scene_at(self, t: float, f: Frame) -> tuple[str, float]:
         step = 0 if f.reduced else max(0, int((t - self.rel_t) // SCENE_S))
@@ -886,7 +924,7 @@ class Comic(HudStyle):
         _mascot_looking(p, (look, 14), "smile")
         _trail(p)
         _ink_shape(p, _cloud(CLOUD), THOUGHT, 2.2)
-        _sheet(p, ix, direction, passes, not f.reduced)
+        _sheet(p, ix, direction, passes, not f.reduced, self.sheet_text())
         if not f.reduced:
             for j in range(4):
                 age = (elapsed + j * 0.3) % 1.2

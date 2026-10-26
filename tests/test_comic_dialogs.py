@@ -253,7 +253,7 @@ def test_welcome_shows_the_news_only_in_welcome_mode(qtbot):
     text = dialog.findChild(QTextBrowser).toPlainText()
     assert f"Neu in v{__version__}" in text
     assert "Menü am Tray-Symbol" in text
-    assert "„Beenden“ bleibt dabei im Rahmen" in text
+    assert "bügelt das Bügeleisen beim Polieren deine eigenen Worte glatt" in text
     for name in (STYLE_LABELS["halloween"], STYLE_LABELS["weihnachten"], "„Wortfetzen“", "„Anzeige“", "Restzeit",
                  "„Datei transkribieren“"):
         assert name in text

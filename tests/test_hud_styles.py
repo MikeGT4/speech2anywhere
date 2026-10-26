@@ -947,3 +947,79 @@ def test_comic_lettering_fills_the_l_completely(qapp):
         inside = yellow
     assert runs == 1
     assert comic._lettering("l", 120).fillRule() == Qt.FillRule.WindingFill
+
+
+def test_comic_irons_bla_bla_when_no_fragments_came(qapp):
+    from kira.ui.hud import comic
+    d = Driver("comic")
+    _think_cycle(d, 0.8, scene="buegeln")
+    assert d.style.sheet_text() == comic.SHEET_TEXT
+
+
+def test_comic_irons_the_fragments_spoken_while_recording(qapp):
+    d = Driver("comic")
+    d.press()
+    d.style.scene = "buegeln"
+    d.style.feed_words(d.t, ["Kannst", "du"])
+    d.run(0.3)
+    d.style.feed_words(d.t, ["", "mir", "die"])
+    d.style.release(d.t, d.f)
+    d.style.feed_words(d.t, ["später"])
+    d.run(0.8, amp=0.0)
+    assert d.style.sheet_text() == "Kannst  du  mir  die"
+
+
+def test_comic_sheet_line_ends_with_ellipsis_and_stays_on_the_sheet(qapp):
+    from PyQt6.QtGui import QFontMetricsF
+
+    from kira.ui import _comic
+    from kira.ui.hud import comic
+    words = ["Äh", "kannst", "du", "mir", "die", "Unterlag…", "bis", "Freitag", "schicken"]
+    metrics = QFontMetricsF(_comic.baloo(800, comic.SHEET_PX))
+    room = comic.SHEET.width() - 14.0
+    line = comic._sheet_line(words)
+    shown = line.removesuffix(comic.SHEET_GAP + "…").split(comic.SHEET_GAP)
+    assert line.endswith("…") and "… …" not in line and shown == words[:len(shown)]
+    assert comic._sheet_width(line, metrics) <= room
+    one_more = comic.SHEET_GAP.join(words[:len(shown) + 1]) + comic.SHEET_GAP + "…"
+    assert comic._sheet_width(one_more, metrics) > room
+    assert comic._sheet_line(["Hallo", "Welt"]) == "Hallo  Welt"
+    assert comic._sheet_line(["Donaudam…"] + ["Wort"] * 30).endswith("…")
+    cut = comic._sheet_line(["eins", "zwei", "drei", "Unterlag…"] + ["Wort"] * 30)
+    assert cut.count("…") == 1
+
+
+def test_comic_keeps_only_the_first_words_for_the_sheet(qapp):
+    from kira.ui.hud import comic
+    d = Driver("comic")
+    d.press()
+    d.style.feed_words(d.t, [f"w{k}" for k in range(comic.SHEET_WORDS + 5)])
+    assert d.style._heard == [f"w{k}" for k in range(comic.SHEET_WORDS)]
+
+
+def test_comic_new_dictation_forgets_the_old_fragments(qapp):
+    from kira.ui.hud import comic
+    d = Driver("comic")
+    d.press()
+    d.style.feed_words(d.t, ["Hallo"])
+    d.style.abort(d.t)
+    d.run(0.2, amp=0.0)
+    d.press()
+    assert d.style.sheet_text() == comic.SHEET_TEXT
+
+
+def test_comic_ironing_paints_the_fragments_instead_of_bla_bla(qapp):
+    from kira.ui.hud import comic
+    sheets = []
+    for words in ([], ["Kannst", "du", "mir", "die"]):
+        d = Driver("comic", reduced=True)
+        d.press()
+        d.style.scene = "buegeln"
+        d.style.feed_words(d.t, words)
+        d.run(0.4)
+        d.style.release(d.t, d.f)
+        d.run(0.6, amp=0.0)
+        x, y, w, h = (round(v * d.f.px) for v in (comic.SHEET.left(), comic.SHEET.top(), comic.SHEET.width(),
+                                                  comic.SHEET.height()))
+        sheets.append(d.render().copy(x, y, w, h))
+    assert sheets[0] != sheets[1]
