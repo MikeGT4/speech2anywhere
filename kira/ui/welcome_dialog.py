@@ -46,9 +46,11 @@ def mark_welcomed() -> None:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Im Stil Comic bügelt das Bügeleisen beim Polieren deine eigenen Worte glatt: Sind die „Wortfetzen“ an,
-    liegen die ersten Wörter deines Diktats auf dem Bogen statt „Bla bla blubb“.</li>
-  <li>Seit 0.5.8 dabei: Im Menü am Tray-Symbol wird das runde Symbol hell, sobald die Maus über einem Punkt
+  <li>Sicherer beim Update: Die App prüft die Verbindung zu GitHub gegen ihre eigene Zertifikatsliste und
+    vertraut der Wurzel „emSign ECC Root CA - G3“ nicht mehr, unter der eMudhra Zwischenzertifikate mit
+    erratbaren Schlüsseln ausgegeben hat.</li>
+  <li>Seit 0.5.9 dabei: Im Stil Comic bügelt das Bügeleisen beim Polieren deine eigenen Worte glatt. Seit 0.5.8:
+    Im Menü am Tray-Symbol wird das runde Symbol hell, sobald die Maus über einem Punkt
     steht. Seit 0.5.7: das Menü im Comic-Stil mit Symbolen und Statuskarte. Seit 0.5.6: die Saison-Stile
     <b>Halloween (Hexenhut)</b> und <b>Weihnachten (Winternacht)</b> im Reiter „Anzeige“, auch mit „Wortfetzen“,
     dazu Ladeanzeigen mit Restzeit und der Fortschritt in „Datei transkribieren“.</li>

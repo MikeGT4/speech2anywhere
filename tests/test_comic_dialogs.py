@@ -254,6 +254,7 @@ def test_welcome_shows_the_news_only_in_welcome_mode(qtbot):
     assert f"Neu in v{__version__}" in text
     assert "Menü am Tray-Symbol" in text
     assert "bügelt das Bügeleisen beim Polieren deine eigenen Worte glatt" in text
+    assert "vertraut der Wurzel „emSign ECC Root CA - G3“ nicht mehr" in text
     for name in (STYLE_LABELS["halloween"], STYLE_LABELS["weihnachten"], "„Wortfetzen“", "„Anzeige“", "Restzeit",
                  "„Datei transkribieren“"):
         assert name in text

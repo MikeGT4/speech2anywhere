@@ -986,7 +986,7 @@ def test_comic_sheet_line_ends_with_ellipsis_and_stays_on_the_sheet(qapp):
     assert comic._sheet_line(["Hallo", "Welt"]) == "Hallo  Welt"
     assert comic._sheet_line(["Donaudam…"] + ["Wort"] * 30).endswith("…")
     cut = comic._sheet_line(["eins", "zwei", "drei", "Unterlag…"] + ["Wort"] * 30)
-    assert cut.count("…") == 1
+    assert cut.endswith("…") and "…" + comic.SHEET_GAP + "…" not in cut
 
 
 def test_comic_keeps_only_the_first_words_for_the_sheet(qapp):

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.10 (27.10.2026)
+
+- Sicherheit beim Update: Die App prüft die Verbindung zu GitHub gegen ihre eigene Zertifikatsliste statt gegen die von Windows und vertraut der Wurzel „emSign ECC Root CA - G3“ nicht mehr, unter der eMudhra Zwischenzertifikate mit erratbaren Schlüsseln ausgegeben hat
+- Von 0.5.5 bis 0.5.9 aus lädt das Update in der App nur das Programmpaket (rund 1,5 MB)
+
 ## 0.5.9 (26.10.2026)
 
 - Anzeige im Stil Comic: Sind die „Wortfetzen“ an, liegen beim Polieren die ersten Wörter deines Diktats auf dem Bogen unter dem Bügeleisen statt „Bla bla blubb, bla bla!“

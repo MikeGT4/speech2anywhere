@@ -134,7 +134,7 @@ def test_cancel_button_stops_the_download_and_releases_the_flag(monkeypatch, qap
     )
     monkeypatch.setattr(runner, "check_for_update", lambda **kw: result)
     monkeypatch.setattr(runner, "_bundle_dir", lambda: tmp_path)
-    monkeypatch.setattr(updater.urllib.request, "urlopen", lambda url, timeout: _Endless())
+    monkeypatch.setattr(updater.urllib.request, "urlopen", lambda url, timeout, context=None: _Endless())
 
     class _YesBox(QMessageBox):
         pass
@@ -222,7 +222,7 @@ def test_cancel_while_the_network_hangs_says_cancelled(monkeypatch, qapp, tmp_pa
         def __exit__(self, *exc):
             return False
 
-    monkeypatch.setattr(updater.urllib.request, "urlopen", lambda url, timeout: _Hanging())
+    monkeypatch.setattr(updater.urllib.request, "urlopen", lambda url, timeout, context=None: _Hanging())
     runner.run_update_flow(None)
     _thread, _worker, progress = runner._anchor
     time.sleep(0.1)
@@ -243,7 +243,7 @@ def test_cancel_after_the_worker_finished_shows_no_ready_dialog(monkeypatch, qap
     class _Tiny(io.BytesIO):
         headers = {"Content-Length": "1"}
 
-    monkeypatch.setattr(updater.urllib.request, "urlopen", lambda url, timeout: _Tiny(b"x"))
+    monkeypatch.setattr(updater.urllib.request, "urlopen", lambda url, timeout, context=None: _Tiny(b"x"))
     import time
 
     runner.run_update_flow(None)

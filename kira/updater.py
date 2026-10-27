@@ -11,6 +11,8 @@ from typing import Callable, Literal
 
 from packaging.version import InvalidVersion, parse as parse_version
 
+from kira import tls
+
 log = logging.getLogger(__name__)
 
 UpdateStatus = Literal["newer", "current", "local_newer", "no_asset", "failed"]
@@ -81,7 +83,7 @@ def check_for_update(local_version: str, repo: str) -> UpdateCheckResult:
     }
     try:
         request = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(request, timeout=_TIMEOUT_SECONDS) as response:
+        with urllib.request.urlopen(request, timeout=_TIMEOUT_SECONDS, context=tls.context()) as response:
             data = json.load(response)
     except (urllib.error.URLError, ConnectionError, TimeoutError, json.JSONDecodeError) as exc:
         log.warning("update check failed: %s", exc)
@@ -136,7 +138,7 @@ def check_for_update(local_version: str, repo: str) -> UpdateCheckResult:
 
 
 def _fetch(url: str, target: Path, on_bytes: Callable[[int, int], None] | None = None) -> None:
-    with urllib.request.urlopen(url, timeout=_DOWNLOAD_TIMEOUT_SECONDS) as response:  # noqa: S310 - https-URL aus der GitHub-API
+    with urllib.request.urlopen(url, timeout=_DOWNLOAD_TIMEOUT_SECONDS, context=tls.context()) as response:  # noqa: S310 - https-URL aus der GitHub-API
         total = int(response.headers.get("Content-Length") or -1)
         done = 0
         with open(target, "wb") as out:

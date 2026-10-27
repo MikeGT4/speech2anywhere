@@ -6,6 +6,7 @@ from unittest.mock import patch
 
 import pytest
 
+from kira import tls
 from kira.updater import (
     ReleaseAsset,
     UpdateCheckResult,
@@ -124,6 +125,20 @@ def test_download_asset_writes_to_target_path(tmp_path):
     assert mock_open.call_args.kwargs["timeout"] > 0
 
 
+def test_check_verifies_tls_with_the_hardened_context(fake_release):
+    with patch("kira.updater.urllib.request.urlopen") as mock_open:
+        mock_open.return_value.__enter__.return_value = _mock_response(fake_release)
+        check_for_update(local_version="0.1.0", repo="x/y")
+    assert mock_open.call_args.kwargs.get("context") is tls.context()
+
+
+def test_download_verifies_tls_with_the_hardened_context(tmp_path):
+    with patch("kira.updater.urllib.request.urlopen",
+               return_value=_Download(b"setup")) as mock_open:
+        download_asset("https://example.com/Kira-Setup-v0.2.0.exe", tmp_path / "x.exe")
+    assert mock_open.call_args.kwargs.get("context") is tls.context()
+
+
 def test_download_raises_when_body_is_shorter_than_announced(tmp_path):
     import urllib.error
     with patch("kira.updater.urllib.request.urlopen",
@@ -218,7 +233,7 @@ def test_download_bundle_writes_all_files_with_original_names(tmp_path):
     ]
     fake_bytes = {a.name: f"fake-{a.name}".encode() for a in assets}
 
-    def fake_open(url, timeout):
+    def fake_open(url, timeout, context=None):
         name = next(a.name for a in assets if a.url == url)
         return _Download(fake_bytes[name])
 
