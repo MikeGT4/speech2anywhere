@@ -4,6 +4,8 @@ import yaml
 
 
 def _format_scalar(value: Any) -> str:
+    if isinstance(value, (list, tuple)):
+        return yaml.safe_dump(list(value), default_flow_style=True).strip()
     text = yaml.safe_dump(value, default_flow_style=False).strip()
     if text.endswith("..."):
         text = text[:-3].strip()
@@ -22,6 +24,7 @@ def update_scalars(yaml_text: str, updates: dict[str, Any]) -> str:
     out_lines: list[str] = []
     current_section: str | None = None
     section_indent: int | None = None
+    replaced_indent: int | None = None
 
     for raw_line in yaml_text.splitlines(keepends=True):
         line = raw_line.rstrip("\n")
@@ -31,6 +34,11 @@ def update_scalars(yaml_text: str, updates: dict[str, Any]) -> str:
         if not stripped or stripped.startswith("#"):
             out_lines.append(raw_line)
             continue
+
+        if replaced_indent is not None:
+            if leading > replaced_indent or (leading == replaced_indent and stripped.startswith("-")):
+                continue
+            replaced_indent = None
 
         if leading == 0 and ":" in stripped:
             name = stripped.split(":", 1)[0].strip()
@@ -55,6 +63,7 @@ def update_scalars(yaml_text: str, updates: dict[str, Any]) -> str:
                 tail = "\n" if raw_line.endswith("\n") else ""
                 out_lines.append(f"{indent}{key_name}: {formatted}{tail}")
                 found.add(f"{current_section}.{key_name}")
+                replaced_indent = leading
                 continue
 
         if leading == 0:
@@ -151,12 +160,24 @@ def _insert_into_sections(
         insert_at = end
         while insert_at > start + 1 and out_lines[insert_at - 1].strip() == "":
             insert_at -= 1
+        if not out_lines[insert_at - 1].endswith("\n"):
+            out_lines[insert_at - 1] += "\n"
+        indent = _section_indent(out_lines, start, end)
         new_lines: list[str] = []
         for key, value in sections_to_insert[section].items():
-            new_lines.append(f"  {key}: {_format_scalar(value)}\n")
+            new_lines.append(f"{indent}{key}: {_format_scalar(value)}\n")
         inserts.append((insert_at, new_lines))
 
     inserts.sort(key=lambda t: t[0], reverse=True)
     for idx, lines_to_add in inserts:
         out_lines = out_lines[:idx] + lines_to_add + out_lines[idx:]
     return out_lines
+
+
+def _section_indent(lines: list[str], start: int, end: int) -> str:
+    for raw in lines[start + 1:end]:
+        line = raw.rstrip("\n")
+        stripped = line.lstrip()
+        if stripped and not stripped.startswith("#") and len(line) > len(stripped):
+            return line[: len(line) - len(stripped)]
+    return "  "

@@ -1,6 +1,6 @@
 [project]
 name = "kira"
-version = "0.5.10"
+version = "0.5.11"
 description = "Voice-to-text app for macOS and Windows 11"
 requires-python = ">=3.12"
 dependencies = [
@@ -87,4 +87,5 @@ packages = ["kira"]
 "assets/brand/speech2anywhere-logo-plappern-256.png" = "kira/_assets/brand/speech2anywhere-logo-plappern-256.png"
 "assets/ui/chevron-down.svg" = "kira/_assets/ui/chevron-down.svg"
 "assets/ui/check.svg" = "kira/_assets/ui/check.svg"
+"assets/sounds" = "kira/_assets/sounds"
 "prompts" = "kira/_prompts"

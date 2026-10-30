@@ -56,14 +56,29 @@ class InjectorConfig(BaseModel):
 HUD_STYLES = ("comic", "manga", "halloween", "weihnachten", "phosphor", "gun_barrel", "zielerfassung", "stimmabdruck",
               "klartext", "klassisch")
 DEFAULT_HUD_STYLE = "comic"
+SOUND_EVENTS = ("start", "stopp", "fertig", "fehler")
+DEFAULT_SOUND_EVENTS = ("stopp", "fertig", "fehler")
 
 
 class UIConfig(BaseModel):
     popup: bool = True
     sound_feedback: bool = False
+    sound_events: list[str] = Field(default_factory=lambda: list(DEFAULT_SOUND_EVENTS))
     hud_style: str = DEFAULT_HUD_STYLE
     hud_scale: float = 1.5
     hud_live_words: bool = True
+
+    @field_validator("sound_events", mode="before")
+    @classmethod
+    def _known_sound_events(cls, value: object) -> list[str]:
+        if not isinstance(value, (list, tuple)):
+            return list(DEFAULT_SOUND_EVENTS)
+        known: list[str] = []
+        for item in value:
+            key = str(item or "").strip().lower()
+            if key in SOUND_EVENTS and key not in known:
+                known.append(key)
+        return known
 
     @field_validator("hud_style", mode="before")
     @classmethod

@@ -29,8 +29,9 @@ Speech2Anywhere is a push-to-talk voice-to-text app that runs entirely on your o
 - **Edit by voice on F9.** Select text, hold F9, say what to change.
 - **German and English**, detected automatically per dictation.
 - **Uncensored option.** The settings dialog offers an abliterated Qwen model as cleanup model. It is not tuned to refuse or lecture; it only cleans up what you said.
-- **Audio and text stay on your PC.** Speech2Anywhere talks to Ollama on `127.0.0.1`. It goes online only for the update check against the GitHub Releases API (at start, every six hours by default, on request; the automatic checks can be switched off), for updates (searching for one also fetches the program package of about 1 MB; the full setup and the tested Ollama setup from the Ollama releases on GitHub only load after you confirm), and for loading models from Hugging Face and the Ollama registry. The bundled Ollama app checks for its own updates.
+- **Audio and text stay on your PC.** Speech2Anywhere talks to Ollama on `127.0.0.1`. It goes online only for the update check against the GitHub Releases API (at start, every six hours by default, on request; the automatic checks can be switched off), for updates (searching for one also fetches the program package of about 2.6 MB; the full setup and the tested Ollama setup from the Ollama releases on GitHub only load after you confirm), and for loading models from Hugging Face and the Ollama registry. The bundled Ollama app checks for its own updates.
 - **Live indicator at the cursor, ten styles.** The default is a comic speech bubble with a chattering mascot: while you speak, fragments of your recognized words fly out of its mouth (a switch in the settings turns them off), and while it thinks, a washing drum, an iron or turning gears keep it busy; two seasonal versions dress the mascot up for Halloween (witch's hat, a glowing pumpkin, cauldron, broom and pumpkin carving) and for Christmas (Santa's hat and beard on a snowy night stage, sleigh, candle arch and cookies); a manga panel with focus lines and slammed-in lettering, a phosphor oscilloscope, Gun Barrel, target lock, voiceprint, terminal and the classic look can be picked in the settings. While you speak it warns about clipping (too close) and a dead microphone (no signal). The mascot in the tray icon chatters while recording, an orange-red dot marks errors.
+- **Sounds if you want them.** A short sound when you release the key, when the text arrives and when something goes wrong, matching the indicator style: a marimba in the comic style, a cackling witch on errors at Halloween, Santa's "Ho, ho, ho" at Christmas. Off by default, switched on in the Sound tab of the settings, also one by one for each moment.
 - **Survives a missing microphone.** If the configured input device is not connected at start, Speech2Anywhere comes up anyway; pressing F8 turns the tray icon yellow for 3 seconds instead of crashing.
 - **Crash diagnostics.** `faulthandler`, threading exception hook, Qt message handler and a 60 second heartbeat all flow into `speech2anywhere.log`.
 
@@ -51,7 +52,7 @@ Download everything from the [latest release](https://github.com/MikeGT4/speech2
 4. On first start a second wizard downloads the models (Whisper large-v3 from Hugging Face, `gemma4:12b` via Ollama). One time only; dictation works offline afterwards.
 5. Speech2Anywhere starts in the tray with a yellow framed logo. **Hold F8, speak, release.**
 
-Later updates run from the tray menu. If only the program changed since your version, Speech2Anywhere loads just the program package (about 1 MB), checks its SHA-256 and restarts itself; otherwise it loads the full setup.
+Later updates run from the tray menu. If only the program changed since your version, Speech2Anywhere loads just the program package (about 2.6 MB), checks its SHA-256 and restarts itself; otherwise it loads the full setup.
 
 ### Installation (Deutsch)
 

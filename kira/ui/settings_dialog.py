@@ -19,9 +19,10 @@ from kira.ui._dialog_style import (
 from kira.ui._progress_view import ProgressView
 
 from kira import __version__, UPDATE_REPO, ollama_pull, progress as prog
-from kira.config import default_config_path, effective_hotkey, load_config
+from kira.config import SOUND_EVENTS, default_config_path, effective_hotkey, load_config
 from kira.hotkey_win import SUPPORTED_COMBOS
 from kira.config_writer import update_scalars
+from kira.sounds import SoundPlayer
 from kira.ui.hud import STYLE_LABELS
 from kira.ui.hud_preview import HudPreview
 
@@ -36,6 +37,13 @@ _UNCENSORED_MODEL = "huihui_ai/Qwen3.6-abliterated:27b"
 _LANGUAGES = (("auto", "Automatisch erkennen"), ("de", "Deutsch"), ("en", "Englisch"))
 
 _GAIN_SLIDER_MAX = 50
+
+_SOUND_ROWS = (
+    ("start", "Beim Drücken", "Die Aufnahme beginnt."),
+    ("stopp", "Beim Loslassen", "Die Aufnahme endet."),
+    ("fertig", "Text ist da", "Der Text ist eingefügt."),
+    ("fehler", "Bei Fehlern", "Etwas ging schief."),
+)
 
 
 def _ollama_client():
@@ -148,7 +156,7 @@ hotkey:
 
 
 class SettingsDialog(QDialog):
-    _PAGE_TITLES = ("Mikrofon", "Politur", "Tasten", "Anzeige", "Lernen", "Über")
+    _PAGE_TITLES = ("Mikrofon", "Politur", "Tasten", "Anzeige", "Sound", "Lernen", "Über")
 
     def __init__(self, open_learned_words=None) -> None:
         super().__init__()
@@ -183,7 +191,7 @@ class SettingsDialog(QDialog):
         root.addWidget(body, 1)
 
         for build in (self._page_mikrofon, self._page_politur, self._page_tasten,
-                      self._page_anzeige, self._page_lernen, self._page_ueber):
+                      self._page_anzeige, self._page_sound, self._page_lernen, self._page_ueber):
             self._pages.addWidget(build())
         self._tabs[0].setChecked(True)
         self._pages.setCurrentIndex(0)
@@ -509,6 +517,47 @@ class SettingsDialog(QDialog):
         ])
         return self._page(card, hint)
 
+    def _page_sound(self) -> QWidget:
+        card = self._card("Sound")
+        self._sound_player = SoundPlayer(config_path=self._cfg_path)
+        self._sound_feedback = comic.ToggleSwitch()
+        self._sound_feedback.setChecked(self._cfg.ui.sound_feedback)
+        self._sound_feedback.setToolTip(
+            "Kurze Töne beim Diktat, der Klang passt zum gewählten Stil.\n"
+            "Darunter wählst du, bei welchen Momenten ein Ton kommt."
+        )
+        card.add_row("Töne", "Kurze Töne passend zum Stil.", self._sound_feedback)
+        self._sound_events: dict[str, comic.ToggleSwitch] = {}
+        self._sound_previews: dict[str, QPushButton] = {}
+        for event, label, description in _SOUND_ROWS:
+            switch = comic.ToggleSwitch()
+            switch.setChecked(event in self._cfg.ui.sound_events)
+            if event == "start":
+                switch.setToolTip("Über Lautsprecher kann dieser Ton mit aufgenommen werden, mit Kopfhörer nicht.")
+            preview = QPushButton("Anhören")
+            preview.setToolTip("Spielt diesen Ton im Stil aus dem Reiter Anzeige.")
+            preview.clicked.connect(
+                lambda _checked=False, moment=event: self._sound_player.play(self._hud_style.currentData(), moment)
+            )
+            row = QHBoxLayout()
+            row.setSpacing(12)
+            row.addWidget(switch)
+            row.addWidget(preview)
+            row.addStretch()
+            card.add_row(label, description, row)
+            self._sound_events[event] = switch
+            self._sound_previews[event] = preview
+        self._sound_feedback.toggled.connect(self._enable_sound_events)
+        self._enable_sound_events(self._sound_feedback.isChecked())
+        hint = comic.HintBubble([
+            "Der Klang passt zum Stil im Reiter Anzeige und wirkt schon beim nächsten Diktat.",
+        ])
+        return self._page(card, hint)
+
+    def _enable_sound_events(self, enabled: bool) -> None:
+        for switch in self._sound_events.values():
+            switch.setEnabled(enabled)
+
     def _page_lernen(self) -> QWidget:
         card = self._card("Lernen")
         self._learning_enabled = comic.ToggleSwitch()
@@ -732,6 +781,8 @@ class SettingsDialog(QDialog):
             "hotkey.edit_combo": edit_hotkey_value,
             "ui.hud_style": self._hud_style.currentData(),
             "ui.hud_live_words": self._hud_live_words.isChecked(),
+            "ui.sound_feedback": self._sound_feedback.isChecked(),
+            "ui.sound_events": [event for event in SOUND_EVENTS if self._sound_events[event].isChecked()],
         }
 
         self._cfg_path.parent.mkdir(parents=True, exist_ok=True)

@@ -28,9 +28,9 @@ def dialog(qtbot, tmp_path, monkeypatch):
     return dlg
 
 
-def test_tabs_follow_the_six_pages(dialog, qtbot):
-    assert [t.text() for t in dialog._tabs] == ["Mikrofon", "Politur", "Tasten", "Anzeige", "Lernen", "Über"]
-    assert dialog._pages.count() == 6
+def test_tabs_follow_the_seven_pages(dialog, qtbot):
+    assert [t.text() for t in dialog._tabs] == ["Mikrofon", "Politur", "Tasten", "Anzeige", "Sound", "Lernen", "Über"]
+    assert dialog._pages.count() == 7
     for index, tab in enumerate(dialog._tabs):
         qtbot.mouseClick(tab, Qt.MouseButton.LeftButton)
         assert dialog._pages.currentIndex() == index
@@ -41,7 +41,7 @@ def test_tabs_follow_the_six_pages(dialog, qtbot):
 @pytest.mark.parametrize("name", [
     "_gain", "_device", "_language", "_learning_enabled", "_styler_model", "_fast_mode",
     "_styler_timeout", "_hotkey", "_edit_enabled", "_edit_hotkey", "_restore_ms", "_hud_style",
-    "_hud_live_words",
+    "_hud_live_words", "_sound_feedback",
 ])
 def test_every_setting_sits_on_a_page(dialog, name):
     assert dialog._pages.isAncestorOf(getattr(dialog, name))
@@ -102,7 +102,7 @@ def test_wordmark_svg_loads(qtbot):
 def test_about_page_shows_the_digitalroots_logo_not_the_word(dialog):
     from PyQt6.QtWidgets import QLabel
     import kira.ui._comic as comic
-    bubble = dialog._pages.widget(5).findChild(comic.HintBubble)
+    bubble = dialog._pages.widget(dialog._PAGE_TITLES.index("Über")).findChild(comic.HintBubble)
     labels = bubble.findChildren(QLabel)
     assert not any("Digitalroots" in label.text() for label in labels)
     assert any(label.pixmap() is not None and not label.pixmap().isNull() for label in labels)
@@ -131,6 +131,75 @@ def test_live_words_switch_is_on_by_default_and_saves_without_restart(dialog, mo
     text = _message_after_save(dialog, monkeypatch)
     assert "hud_live_words: false" in (tmp_path / "config.yaml").read_text(encoding="utf-8")
     assert "ab dem nächsten Diktat" in text
+
+
+def test_sound_switch_is_off_by_default_and_saves_without_restart(dialog, monkeypatch, tmp_path):
+    assert not dialog._sound_feedback.isChecked()
+    _message_after_save(dialog, monkeypatch)
+    dialog._sound_feedback.setChecked(True)
+    text = _message_after_save(dialog, monkeypatch)
+    assert "sound_feedback: true" in (tmp_path / "config.yaml").read_text(encoding="utf-8")
+    assert "ab dem nächsten Diktat" in text
+
+
+def test_sound_switches_and_previews_have_their_own_page(dialog):
+    sound = dialog._pages.widget(dialog._PAGE_TITLES.index("Sound"))
+    display = dialog._pages.widget(dialog._PAGE_TITLES.index("Anzeige"))
+    assert list(dialog._sound_events) == ["start", "stopp", "fertig", "fehler"]
+    assert list(dialog._sound_previews) == ["start", "stopp", "fertig", "fehler"]
+    widgets = [dialog._sound_feedback, *dialog._sound_events.values(), *dialog._sound_previews.values()]
+    for widget in widgets:
+        assert sound.isAncestorOf(widget)
+        assert not display.isAncestorOf(widget)
+
+
+def test_moment_switches_start_from_the_config_and_save_as_list(dialog, monkeypatch, tmp_path):
+    assert [event for event, switch in dialog._sound_events.items() if switch.isChecked()] == ["stopp", "fertig", "fehler"]
+    _message_after_save(dialog, monkeypatch)
+    dialog._sound_feedback.setChecked(True)
+    dialog._sound_events["start"].setChecked(True)
+    dialog._sound_events["stopp"].setChecked(False)
+    text = _message_after_save(dialog, monkeypatch)
+    import yaml
+    ui = yaml.safe_load((tmp_path / "config.yaml").read_text(encoding="utf-8"))["ui"]
+    assert ui["sound_events"] == ["start", "fertig", "fehler"]
+    assert ui["sound_feedback"] is True
+    assert "ab dem nächsten Diktat" in text
+
+
+def test_start_switch_warns_about_loudspeakers(dialog):
+    assert "Lautsprecher" in dialog._sound_events["start"].toolTip()
+
+
+def test_guide_names_the_sound_tab():
+    from kira.ui.welcome_dialog import _GUIDE_HTML
+    assert "Anzeige,\nSound, Lernen und Über" in _GUIDE_HTML
+
+
+def test_moment_switches_follow_the_main_switch_but_previews_stay_usable(dialog):
+    assert not dialog._sound_feedback.isChecked()
+    assert not any(switch.isEnabled() for switch in dialog._sound_events.values())
+    assert all(button.isEnabled() for button in dialog._sound_previews.values())
+    dialog._sound_feedback.setChecked(True)
+    assert all(switch.isEnabled() for switch in dialog._sound_events.values())
+
+
+def test_each_preview_plays_its_own_moment(dialog, qtbot, monkeypatch):
+    played = []
+    monkeypatch.setattr(dialog._sound_player, "_play", played.append)
+    monkeypatch.setattr(dialog._sound_player, "_choose", lambda paths: paths[-1])
+    dialog._hud_style.setCurrentIndex(dialog._hud_style.findData("weihnachten"))
+    for event in ("start", "fehler"):
+        qtbot.mouseClick(dialog._sound_previews[event], Qt.MouseButton.LeftButton)
+    assert [(p.parent.name, p.name) for p in played] == [("weihnachten", "start.wav"), ("weihnachten", "fehler-3.wav")]
+
+
+def test_sound_preview_plays_the_style_picked_in_the_dialog(dialog, qtbot, monkeypatch):
+    played = []
+    monkeypatch.setattr(dialog._sound_player, "_play", played.append)
+    dialog._hud_style.setCurrentIndex(dialog._hud_style.findData("manga"))
+    qtbot.mouseClick(dialog._sound_previews["fertig"], Qt.MouseButton.LeftButton)
+    assert [(p.parent.name, p.stem) for p in played] == [("manga", "fertig")]
 
 
 def test_other_settings_still_ask_for_restart_via_beenden(dialog, monkeypatch):

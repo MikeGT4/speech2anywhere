@@ -189,6 +189,18 @@ def test_live_words_are_on_by_default_and_can_be_switched_off(tmp_path):
     assert load_config(yaml_file).ui.hud_live_words is False
 
 
+def test_sounds_are_off_by_default_and_skip_the_start(tmp_path):
+    ui = load_config(tmp_path / "missing.yaml").ui
+    assert ui.sound_feedback is False
+    assert ui.sound_events == ["stopp", "fertig", "fehler"]
+
+
+def test_unknown_and_repeated_sound_events_are_dropped(tmp_path):
+    yaml_file = tmp_path / "config.yaml"
+    yaml_file.write_text("ui:\n  sound_events: [start, piep, fertig, start]\n", encoding="utf-8")
+    assert load_config(yaml_file).ui.sound_events == ["start", "fertig"]
+
+
 def test_explicit_phosphor_stays_phosphor(tmp_path):
     yaml_file = tmp_path / "config.yaml"
     yaml_file.write_text("ui:\n  hud_style: phosphor\n", encoding="utf-8")

@@ -1,5 +1,6 @@
 from __future__ import annotations
 import pytest
+import yaml
 
 from kira.config_writer import update_scalars
 
@@ -141,3 +142,44 @@ def test_learning_switch_is_appended_to_old_config():
     from kira.config_writer import update_scalars
     out = update_scalars("audio:\n  input_gain: 1.8\n", {"learning.enabled": False})
     assert "learning:\n  enabled: false\n" in out
+
+
+def test_list_value_is_written_in_flow_style_and_reads_back():
+    out = update_scalars("ui:\n  hud_style: comic\n", {"ui.sound_events": ["start", "fertig"]})
+    assert "sound_events: [start, fertig]" in out
+    assert yaml.safe_load(out)["ui"] == {"hud_style": "comic", "sound_events": ["start", "fertig"]}
+
+
+def test_existing_flow_list_is_replaced_in_place():
+    out = update_scalars("ui:\n  sound_events: [stopp, fertig]\n  hud_style: comic\n", {"ui.sound_events": []})
+    assert out == "ui:\n  sound_events: []\n  hud_style: comic\n"
+
+
+def test_block_list_is_replaced_without_leftover_items():
+    text = "ui:\n  sound_events:\n  - stopp\n  - fertig\n  hud_style: comic\n"
+    out = update_scalars(text, {"ui.sound_events": ["fehler"]})
+    assert yaml.safe_load(out)["ui"] == {"sound_events": ["fehler"], "hud_style": "comic"}
+
+
+def test_indented_block_list_is_replaced_without_leftover_items():
+    text = "ui:\n  sound_events:\n    - stopp\n    - fertig\nstyler:\n  model: x\n"
+    out = update_scalars(text, {"ui.sound_events": ["start"]})
+    assert yaml.safe_load(out) == {"ui": {"sound_events": ["start"]}, "styler": {"model": "x"}}
+
+
+def test_keys_go_on_their_own_line_when_the_file_lacks_a_final_newline():
+    out = update_scalars("ui:\n  hud_style: halloween\n  hud_live_words: true",
+                         {"ui.sound_feedback": False, "ui.sound_events": ["stopp"]})
+    assert yaml.safe_load(out)["ui"] == {"hud_style": "halloween", "hud_live_words": True,
+                                         "sound_feedback": False, "sound_events": ["stopp"]}
+
+
+def test_keys_after_a_final_comment_without_newline_stay_outside_the_comment():
+    out = update_scalars("ui:\n  hud_style: comic\n# Ende", {"ui.sound_events": ["fehler"]})
+    assert yaml.safe_load(out)["ui"] == {"hud_style": "comic", "sound_events": ["fehler"]}
+
+
+def test_inserted_keys_follow_the_indent_of_their_section():
+    out = update_scalars("ui:\n    hud_style: comic\nstyler:\n    model: x\n", {"ui.sound_events": ["fehler"]})
+    assert "    sound_events: [fehler]\n" in out
+    assert yaml.safe_load(out) == {"ui": {"hud_style": "comic", "sound_events": ["fehler"]}, "styler": {"model": "x"}}

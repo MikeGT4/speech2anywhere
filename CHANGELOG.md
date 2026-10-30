@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.11 (30.10.2026)
+
+- Töne beim Diktat: ein kurzer Ton beim Loslassen der Taste, wenn der Text da ist, und bei Fehlern, passend zum Stil der Anzeige (der Weihnachtsmann lacht „Ho, ho, ho“, im Stil Comic klingt eine Marimba); ein- und ausschalten im Reiter „Sound“ der Einstellungen, auch einzeln für Drücken, Loslassen, fertigen Text und Fehler, dort auch zum Anhören; voreingestellt aus
+- Von 0.5.5 bis 0.5.10 aus lädt das Update in der App nur das Programmpaket
+
 ## 0.5.10 (27.10.2026)
 
 - Sicherheit beim Update: Die App prüft die Verbindung zu GitHub gegen ihre eigene Zertifikatsliste statt gegen die von Windows und vertraut der Wurzel „emSign ECC Root CA - G3“ nicht mehr, unter der eMudhra Zwischenzertifikate mit erratbaren Schlüsseln ausgegeben hat

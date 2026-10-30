@@ -416,11 +416,18 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
     else:
         tray = KiraMenubar(on_quit=_on_tray_quit)
 
+    sounds = None
+    if sys.platform == "win32":
+        from kira.sounds import SoundPlayer
+        sounds = SoundPlayer()
+
     def handle_state(s: State) -> None:
         try:
             tray.update_state(s)
         except Exception:
             log.exception("Tray-Zustand %s nicht gesetzt; Anzeige läuft weiter", s)
+        if sounds is not None:
+            sounds.on_state(s)
         if popup is None:
             return
         if live_words is not None and s != State.RECORDING:

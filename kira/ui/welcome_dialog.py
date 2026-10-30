@@ -46,10 +46,10 @@ def mark_welcomed() -> None:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Sicherer beim Update: Die App prüft die Verbindung zu GitHub gegen ihre eigene Zertifikatsliste und
-    vertraut der Wurzel „emSign ECC Root CA - G3“ nicht mehr, unter der eMudhra Zwischenzertifikate mit
-    erratbaren Schlüsseln ausgegeben hat.</li>
-  <li>Seit 0.5.9 dabei: Im Stil Comic bügelt das Bügeleisen beim Polieren deine eigenen Worte glatt. Seit 0.5.8:
+  <li>Töne beim Diktat: ein kurzer Ton, wenn du die Taste loslässt, wenn der Text da ist und wenn etwas
+    schiefgeht, passend zum Stil der Anzeige. Ein- und ausschalten im Reiter <b>Sound</b> der Einstellungen,
+    auch einzeln je Moment und jeweils zum Anhören. Voreingestellt sind die Töne aus.</li>
+  <li>Seit 0.5.10 dabei: Das Update prüft die Verbindung zu GitHub gegen eine eigene Zertifikatsliste. Seit 0.5.9: Im Stil Comic bügelt das Bügeleisen beim Polieren deine eigenen Worte glatt. Seit 0.5.8:
     Im Menü am Tray-Symbol wird das runde Symbol hell, sobald die Maus über einem Punkt
     steht. Seit 0.5.7: das Menü im Comic-Stil mit Symbolen und Statuskarte. Seit 0.5.6: die Saison-Stile
     <b>Halloween (Hexenhut)</b> und <b>Weihnachten (Winternacht)</b> im Reiter „Anzeige“, auch mit „Wortfetzen“,
@@ -158,7 +158,7 @@ gemessenen Modelle in einer anderen Fassung, meldet Speech2Anywhere das einmal i
 
 <h3>Konfiguration</h3>
 <p>Tray → <b>„Einstellungen…“</b>: Reiter Mikrofon, Politur, Tasten, Anzeige,
-Lernen und Über. Seltene Felder (Ersetzungen, Modi, Initial-Prompt) über
+Sound, Lernen und Über. Seltene Felder (Ersetzungen, Modi, Initial-Prompt) über
 „Rohconfig öffnen…“.</p>
 
 <h3>Logs</h3>
