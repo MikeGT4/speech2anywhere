@@ -26,10 +26,11 @@ from kira.updater import (
     download_bundle,
     verify_sha256sums,
 )
+from kira.texte import N_, tr
 
 log = logging.getLogger(__name__)
 
-CHECKING = "Prüfsummen werden geprüft …"
+CHECKING = N_("Prüfsummen werden geprüft …")
 
 
 def _bundle_dir() -> Path:
@@ -74,10 +75,10 @@ class _UpdateWorker(QObject):
             r = self._result
             if not r.bundle_assets:
                 self.failed.emit(
-                    "Update-Bundle leer - Release hat keine Setup-Files."
+                    tr("Update-Bundle leer - Release hat keine Setup-Files.")
                 )
                 return
-            self.phase.emit(prog.STARTING)
+            self.phase.emit(tr(prog.STARTING))
             try:
                 paths = download_bundle(
                     r.bundle_assets,
@@ -86,19 +87,19 @@ class _UpdateWorker(QObject):
                 )
             except _Cancelled:
                 log.info("Update-Download abgebrochen")
-                self.failed.emit("Abgebrochen.")
+                self.failed.emit(tr("Abgebrochen."))
                 return
             except Exception as exc:
                 if self._cancelled:
                     log.info("Update-Download abgebrochen (%s)", exc)
-                    self.failed.emit("Abgebrochen.")
+                    self.failed.emit(tr("Abgebrochen."))
                     return
                 log.exception("download_bundle failed")
-                self.failed.emit(f"Download fehlgeschlagen: {exc}")
+                self.failed.emit(tr("Download fehlgeschlagen: {}").format(exc))
                 return
 
             if self._cancelled:
-                self.failed.emit("Abgebrochen.")
+                self.failed.emit(tr("Abgebrochen."))
                 return
 
             hash_verified = False
@@ -109,23 +110,23 @@ class _UpdateWorker(QObject):
                     download_asset(r.sha256sums_url, sums_path)
                 except Exception as exc:
                     if self._cancelled:
-                        self.failed.emit("Abgebrochen.")
+                        self.failed.emit(tr("Abgebrochen."))
                         return
                     log.exception("SHA256SUMS download failed")
                     self.failed.emit(
-                        f"SHA256SUMS konnte nicht geladen werden: {exc}"
+                        tr("SHA256SUMS konnte nicht geladen werden: {}").format(exc)
                     )
                     return
                 ok, errors = verify_sha256sums(sums_path, self._target_dir)
                 if self._cancelled:
-                    self.failed.emit("Abgebrochen.")
+                    self.failed.emit(tr("Abgebrochen."))
                     return
                 if not ok:
                     log.warning("SHA256 mismatch: %s", errors)
                     self.failed.emit(
-                        "Hash-Verifikation fehlgeschlagen:\n\n"
+                        tr("Hash-Verifikation fehlgeschlagen:\n\n")
                         + "\n".join(errors[:5])
-                        + "\n\nDie heruntergeladenen Dateien werden NICHT gestartet."
+                        + tr("\n\nDie heruntergeladenen Dateien werden NICHT gestartet.")
                     )
                     return
                 hash_verified = True
@@ -139,7 +140,7 @@ class _UpdateWorker(QObject):
             self.succeeded.emit(str(self._target_dir / stub_name), hash_verified)
         except Exception as exc:
             log.exception("update worker crashed")
-            self.failed.emit(f"Unerwarteter Fehler: {exc}")
+            self.failed.emit(tr("Unerwarteter Fehler: {}").format(exc))
 
 
 def _offer_patch(
@@ -150,7 +151,7 @@ def _offer_patch(
     root = app_update.install_root()
     if root is None or result.app_asset is None:
         return None, ""
-    busy = QProgressDialog("Prüfe, ob ein kleines Programm-Update reicht...", "Abbrechen", 0, 0, parent)
+    busy = QProgressDialog(tr("Prüfe, ob ein kleines Programm-Update reicht..."), tr("Abbrechen"), 0, 0, parent)
     busy.setWindowTitle("Speech2Anywhere: Update")
     busy.setWindowModality(Qt.WindowModality.ApplicationModal)
     busy.setMinimumDuration(0)
@@ -164,7 +165,7 @@ def _offer_patch(
             box["check"] = app_update.check_patch(asset, target, root=root)
         except Exception as exc:
             log.exception("Prüfung des Programm-Updates fehlgeschlagen")
-            box["check"] = app_update.PatchCheck(None, [f"Die Prüfung ist fehlgeschlagen ({exc})."])
+            box["check"] = app_update.PatchCheck(None, [tr("Die Prüfung ist fehlgeschlagen ({}).").format(exc)])
 
     from PyQt6.QtCore import QCoreApplication, QEventLoop
     checker = threading.Thread(target=work, daemon=True, name="kira-patch-check")
@@ -180,22 +181,27 @@ def _offer_patch(
     check = box["check"]
     if not check.ready:
         log.info("Programm-Update reicht nicht: %s", "; ".join(check.reasons))
-        first = check.reasons[0] if check.reasons else "unbekannter Grund"
-        return None, f"Ein kleines Programm-Update reicht diesmal nicht: {first}"
+        first = check.reasons[0] if check.reasons else tr("unbekannter Grund")
+        return None, tr("Ein kleines Programm-Update reicht diesmal nicht: {}").format(first)
 
-    size_mb = f"{result.app_asset.size / (1024 * 1024):.1f}".replace(".", ",")
+    package_size = prog.total_text(result.app_asset.size)
     msg = QMessageBox(parent)
-    msg.setWindowTitle("Speech2Anywhere: Update verfügbar")
+    msg.setWindowTitle(tr("Speech2Anywhere: Update verfügbar"))
     msg.setIcon(QMessageBox.Icon.Question)
     msg.setText(
-        f"Version v{result.remote_version} ist verfügbar.\n\n"
-        f"Du nutzt v{__version__}."
+        tr(
+            "Version v{} ist verfügbar.\n"
+            "\n"
+            "Du nutzt v{}."
+        ).format(result.remote_version, __version__)
     )
     msg.setInformativeText(
-        f"Programm-Update: {size_mb} MB statt des ganzen Pakets. Bibliotheken und Modelle "
-        "bleiben, wie sie sind.\n"
-        f"Quelle: github.com/{UPDATE_REPO}, Prüfsumme bestanden.\n\n"
-        "Speech2Anywhere beendet sich dafür kurz und startet von selbst neu. Jetzt aktualisieren?"
+        tr(
+            "Programm-Update: {} statt des ganzen Pakets. Bibliotheken und Modelle bleiben, wie sie sind.\n"
+            "Quelle: github.com/{}, Prüfsumme bestanden.\n"
+            "\n"
+            "Speech2Anywhere beendet sich dafür kurz und startet von selbst neu. Jetzt aktualisieren?"
+        ).format(package_size, UPDATE_REPO)
     )
     msg.setStandardButtons(
         QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
@@ -208,7 +214,7 @@ def _offer_patch(
         app_update.launch_patch(check.wheel, result.remote_version, sha256=asset.sha256, root=root)
     except Exception as exc:
         log.exception("Programm-Update ließ sich nicht starten")
-        light_critical(parent, "Speech2Anywhere", f"Das Programm-Update ließ sich nicht starten: {exc}")
+        light_critical(parent, "Speech2Anywhere", tr("Das Programm-Update ließ sich nicht starten: {}").format(exc))
         return False, ""
     if on_quit_request is not None:
         log.info("Speech2Anywhere wird für das Programm-Update beendet")
@@ -216,8 +222,10 @@ def _offer_patch(
     else:
         light_information(
             parent, "Speech2Anywhere",
-            "Beende Speech2Anywhere über das Tray-Symbol. Danach wird das Update eingespielt, "
-            "und Speech2Anywhere startet von selbst neu.",
+            tr(
+                "Beende Speech2Anywhere über das Tray-Symbol. Danach wird das Update eingespielt, "
+                "und Speech2Anywhere startet von selbst neu."
+            ),
         )
     return True, ""
 
@@ -246,7 +254,7 @@ def run_update_flow(
     global _flow_active
     if _flow_active:
         log.info("Update-Flow läuft bereits, zweiter Start ignoriert")
-        light_information(parent, "Speech2Anywhere", "Ein Update läuft bereits.")
+        light_information(parent, "Speech2Anywhere", tr("Ein Update läuft bereits."))
         return
     _flow_active = True
     handed_over = False
@@ -271,42 +279,64 @@ def _run_update_flow(
     log.info("Update-Flow gestartet, lokale Version=%s", __version__)
 
     busy = QProgressDialog(
-        "Suche nach Updates...", "Abbrechen", 0, 0, parent,
+        tr("Suche nach Updates..."), tr("Abbrechen"), 0, 0, parent,
     )
-    busy.setWindowTitle("Speech2Anywhere: Update-Suche")
+    busy.setWindowTitle(tr("Speech2Anywhere: Update-Suche"))
     busy.setWindowModality(Qt.WindowModality.ApplicationModal)
     busy.setMinimumDuration(0)
     apply_light_theme(busy)
     busy.show()
-    from PyQt6.QtCore import QCoreApplication
-    QCoreApplication.processEvents()
-    result = check_for_update(local_version=__version__, repo=UPDATE_REPO)
+    box: dict[str, UpdateCheckResult] = {}
+
+    def search() -> None:
+        try:
+            box["result"] = check_for_update(local_version=__version__, repo=UPDATE_REPO)
+        except Exception as exc:
+            log.exception("Update-Suche fehlgeschlagen")
+            box["result"] = UpdateCheckResult(status="failed", error=str(exc))
+
+    from PyQt6.QtCore import QCoreApplication, QEventLoop
+    searcher = threading.Thread(target=search, daemon=True, name="kira-update-search")
+    searcher.start()
+    while searcher.is_alive() and not busy.wasCanceled():
+        QCoreApplication.processEvents(QEventLoop.ProcessEventsFlag.AllEvents, 50)
+        searcher.join(0.02)
+    cancelled = busy.wasCanceled()
     busy.close()
+    if cancelled:
+        log.info("Update-Suche abgebrochen")
+        return False
+    result = box["result"]
 
     if result.status == "failed":
         light_critical(
             parent, "Speech2Anywhere",
-            f"Update-Suche fehlgeschlagen.\n\n{result.error or 'Unbekannter Fehler'}",
+            tr(
+                "Update-Suche fehlgeschlagen.\n"
+                "\n"
+                "{}"
+            ).format(result.error or tr('Unbekannter Fehler')),
         )
         return False
     if result.status == "current":
         light_information(
             parent, "Speech2Anywhere",
-            f"Speech2Anywhere ist aktuell (v{__version__}).",
+            tr("Speech2Anywhere ist aktuell (v{}).").format(__version__),
         )
         return False
     if result.status == "local_newer":
         light_information(
             parent, "Speech2Anywhere",
-            f"Du nutzt schon eine neuere Version (hier v{__version__}, "
-            f"veröffentlicht v{result.remote_version}). Wahrscheinlich eine Entwicklerfassung.",
+            tr(
+                "Du nutzt schon eine neuere Version (hier v{}, veröffentlicht v{}). Wahrscheinlich eine "
+                "Entwicklerfassung."
+            ).format(__version__, result.remote_version),
         )
         return False
     if result.status == "no_asset":
         light_warning(
             parent, "Speech2Anywhere",
-            f"Release v{result.remote_version} gefunden, aber kein "
-            "Installationspaket dabei. Probier es bitte später noch einmal.",
+            tr("Release v{} gefunden, aber kein Installationspaket dabei. Probier es bitte später noch einmal.").format(result.remote_version),
         )
         return False
 
@@ -315,19 +345,25 @@ def _run_update_flow(
         return handed_over
 
     bundle_count = len(result.bundle_assets)
-    total_size_mb = sum(a.size for a in result.bundle_assets) / (1024 * 1024)
+    bundle_size = prog.total_text(sum(a.size for a in result.bundle_assets))
     msg = QMessageBox(parent)
-    msg.setWindowTitle("Speech2Anywhere: Update verfügbar")
+    msg.setWindowTitle(tr("Speech2Anywhere: Update verfügbar"))
     msg.setIcon(QMessageBox.Icon.Question)
     msg.setText(
-        f"Version v{result.remote_version} ist verfügbar.\n\n"
-        f"Du nutzt v{__version__}."
+        tr(
+            "Version v{} ist verfügbar.\n"
+            "\n"
+            "Du nutzt v{}."
+        ).format(result.remote_version, __version__)
     )
     msg.setInformativeText(
         (f"{patch_note}\n\n" if patch_note else "")
-        + f"Bundle: {bundle_count} Dateien (~{total_size_mb:.0f} MB).\n"
-        f"Quelle: github.com/{UPDATE_REPO}\n\n"
-        "Jetzt herunterladen und installieren?"
+        + tr(
+            "Bundle: {} Dateien (~{}).\n"
+            "Quelle: github.com/{}\n"
+            "\n"
+            "Jetzt herunterladen und installieren?"
+        ).format(bundle_count, bundle_size, UPDATE_REPO)
     )
     msg.setStandardButtons(
         QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
@@ -339,9 +375,9 @@ def _run_update_flow(
         return False
 
     target = _bundle_dir() / f"v{result.remote_version}"
-    head = f"Lade Update v{result.remote_version}\n"
+    head = tr("Lade Update v{}\n").format(result.remote_version)
     progress = QProgressDialog(
-        f"{head}{prog.STARTING}", "Abbrechen", 0, 0, parent,
+        f"{head}{tr(prog.STARTING)}", tr("Abbrechen"), 0, 0, parent,
     )
     progress.setWindowTitle(f"Speech2Anywhere: Update v{result.remote_version}")
     progress.setWindowModality(Qt.WindowModality.ApplicationModal)
@@ -377,24 +413,30 @@ def _run_update_flow(
         thread.quit()
         thread.wait()
         if worker._cancelled:
-            light_critical(parent, "Speech2Anywhere", "Abgebrochen.")
+            light_critical(parent, "Speech2Anywhere", tr("Abgebrochen."))
             return
 
         verify_msg = (
-            "SHA256-Verifikation: bestanden.\n"
+            tr("SHA256-Verifikation: bestanden.\n")
             if hash_verified
-            else "Achtung: Release hatte keine SHA256SUMS-Datei. Hash-"
-            "Verifikation übersprungen - du lädst auf eigene Verantwortung.\n"
+            else tr(
+                "Achtung: Release hatte keine SHA256SUMS-Datei. Hash-"
+                "Verifikation übersprungen - du lädst auf eigene Verantwortung.\n"
+            )
         )
         confirm = QMessageBox(parent)
-        confirm.setWindowTitle("Speech2Anywhere: Update bereit")
+        confirm.setWindowTitle(tr("Speech2Anywhere: Update bereit"))
         confirm.setIcon(QMessageBox.Icon.Information)
-        confirm.setText("Update-Bundle wurde geladen.")
+        confirm.setText(tr("Update-Bundle wurde geladen."))
         confirm.setInformativeText(
             verify_msg
-            + f"\nSetup: {setup_path}\n\n"
-            "Jetzt Setup starten? Speech2Anywhere wird beendet damit Setup das "
-            "Programmverzeichnis aktualisieren kann."
+            + tr(
+                "\n"
+                "Setup: {}\n"
+                "\n"
+                "Jetzt Setup starten? Speech2Anywhere wird beendet damit Setup das Programmverzeichnis "
+                "aktualisieren kann."
+            ).format(setup_path)
         )
         confirm.setStandardButtons(
             QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
@@ -411,8 +453,11 @@ def _run_update_flow(
             log.exception("Setup-Launch failed")
             light_critical(
                 parent, "Speech2Anywhere",
-                f"Setup konnte nicht gestartet werden: {exc}\n\n"
-                f"Manuell ausfuehren: {setup_path}",
+                tr(
+                    "Setup konnte nicht gestartet werden: {}\n"
+                    "\n"
+                    "Manuell ausführen: {}"
+                ).format(exc, setup_path),
             )
             return
 
@@ -422,9 +467,11 @@ def _run_update_flow(
         else:
             light_information(
                 parent, "Speech2Anywhere",
-                "Setup läuft. Bitte beende Speech2Anywhere über das Tray-Icon "
-                "(rechtsklick -> Quit Speech2Anywhere), damit Setup die Aktualisierung "
-                "abschließen kann.",
+                tr(
+                    "Setup läuft. Bitte beende Speech2Anywhere über das Tray-Icon "
+                    "(rechtsklick -> Quit Speech2Anywhere), damit Setup die Aktualisierung "
+                    "abschließen kann."
+                ),
             )
 
     def on_failed(message: str) -> None:

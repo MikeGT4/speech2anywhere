@@ -242,26 +242,41 @@ def test_welcome_accept_writes_marker_only_in_welcome_mode(qtbot, tmp_path, monk
     assert marker.exists()
 
 
-def test_welcome_shows_the_news_only_in_welcome_mode(qtbot):
+def test_welcome_shows_the_news_only_in_welcome_mode(qtbot, tmp_path, monkeypatch):
     from PyQt6.QtWidgets import QTextBrowser
 
     import kira.ui.welcome_dialog as welcome
     from kira import __version__
-    from kira.ui.hud import STYLE_LABELS
+    marker = tmp_path / "Kira" / ".welcomed"
+    marker.parent.mkdir(parents=True)
+    marker.write_text("0.0.1", encoding="utf-8")
+    monkeypatch.setattr(welcome, "_WELCOME_MARKER", marker)
     dialog = welcome.WelcomeDialog(as_help=False)
     qtbot.addWidget(dialog)
     text = dialog.findChild(QTextBrowser).toPlainText()
     assert f"Neu in v{__version__}" in text
-    assert "Menü am Tray-Symbol" in text
-    assert "bügelt das Bügeleisen beim Polieren deine eigenen Worte glatt" in text
-    assert "Ein- und ausschalten im Reiter Sound der Einstellungen" in text
-    assert "gegen eine eigene Zertifikatsliste" in text
-    for name in (STYLE_LABELS["halloween"], STYLE_LABELS["weihnachten"], "„Wortfetzen“", "„Anzeige“", "Restzeit",
-                 "„Datei transkribieren“"):
-        assert name in text
+    assert "Versprecher" in text
+    assert "Umschalten statt Halten im Reiter Tasten" in text
+    assert "Töne beim Diktat im Reiter Sound" in text
+    assert "„Datei transkribieren“" in text
+    assert dialog.cb_dont_show.text() == f"Bei diesem Update (v{__version__}) nicht erneut zeigen"
     helper = welcome.WelcomeDialog(as_help=True)
     qtbot.addWidget(helper)
     assert "Neu in v" not in helper.findChild(QTextBrowser).toPlainText()
+
+
+def test_first_install_shows_only_the_guide(qtbot, tmp_path, monkeypatch):
+    from PyQt6.QtWidgets import QTextBrowser
+
+    import kira.ui.welcome_dialog as welcome
+    monkeypatch.setattr(welcome, "_WELCOME_MARKER", tmp_path / "Kira" / ".welcomed")
+    assert welcome.is_first_run()
+    dialog = welcome.WelcomeDialog(as_help=False)
+    qtbot.addWidget(dialog)
+    text = dialog.findChild(QTextBrowser).toPlainText()
+    assert "Neu in v" not in text
+    assert "Diktieren (Push-to-Talk)" in text
+    assert dialog.cb_dont_show.text() == "Nicht erneut zeigen"
 
 
 def test_gpu_scan_animates_only_between_start_and_finish(qtbot):
@@ -355,3 +370,20 @@ def test_about_fits_small_screens(qtbot, monkeypatch):
     dialog = about.AboutDialog()
     qtbot.addWidget(dialog)
     assert dialog.minimumSizeHint().height() <= 690
+
+
+def test_news_tell_what_this_version_brings():
+    import kira.ui.welcome_dialog as wd
+    for word in ("Versprecher", "Zwischenablage", "Umschalten", ".srt", "neu"):
+        assert word in wd._NEWS_HTML, word
+    for word in ("Slips of the tongue", "clipboard", "Toggle", ".srt", "restarts"):
+        assert word in wd._NEWS_HTML_EN, word
+    assert wd._NEWS_HTML.count("<li>") == wd._NEWS_HTML_EN.count("<li>") == 7
+
+
+def test_version_is_the_same_in_both_places():
+    import re
+    from pathlib import Path
+    from kira import __version__
+    text = (Path(__file__).resolve().parent.parent / "pyproject.toml").read_text(encoding="utf-8")
+    assert re.search(r'^version = "([^"]+)"', text, re.M).group(1) == __version__ == "0.6.0"

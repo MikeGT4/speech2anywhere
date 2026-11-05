@@ -171,3 +171,42 @@ def test_right_click_falls_back_to_the_native_menu_when_qt_is_busy(monkeypatch):
     icon.on_context_menu = lambda: False
     icon._on_notify(0, win32.WM_RBUTTONUP)
     assert native == [win32.WM_RBUTTONUP]
+
+
+def test_restart_starts_the_successor_and_then_quits(monkeypatch):
+    from kira import restart
+    from kira.ui.tray_win import KiraTray
+    order = []
+    monkeypatch.setattr(restart, "start_successor", lambda: order.append("start") or True)
+    tray = KiraTray(on_quit=lambda: order.append("quit"))
+    assert tray._restart_app() is True
+    assert order == ["start", "quit"]
+
+
+def test_restart_that_cannot_start_keeps_the_app_running(monkeypatch):
+    from kira import restart
+    from kira.ui.tray_win import KiraTray
+    order = []
+    monkeypatch.setattr(restart, "start_successor", lambda: False)
+    tray = KiraTray(on_quit=lambda: order.append("quit"))
+    assert tray._restart_app() is False
+    assert order == []
+
+
+@pytest.mark.parametrize("learning", [None, FakeLearning()])
+def test_settings_get_the_restart_path(monkeypatch, learning):
+    import kira.ui.settings_dialog as sd
+    from kira.ui.tray_win import KiraTray
+    seen = {}
+
+    class FakeDialog:
+        def __init__(self, **kwargs):
+            seen.update(kwargs)
+
+        def exec(self):
+            return 0
+
+    monkeypatch.setattr(sd, "SettingsDialog", FakeDialog)
+    tray = KiraTray(on_quit=lambda: None, learning=learning)
+    tray._show_settings_dialog()
+    assert seen["request_restart"] == tray._restart_app

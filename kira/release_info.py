@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Callable
 
 from packaging.version import InvalidVersion, Version
+from kira.texte import tr
 
 log = logging.getLogger(__name__)
 
@@ -102,22 +103,22 @@ def patch_blockers(
 ) -> list[str]:
     reasons: list[str] = []
     if installed is None or not installed.installer:
-        reasons.append("Diese Installation stammt aus einer Fassung ohne Angaben zu ihrer Grundlage.")
+        reasons.append(tr("Diese Installation stammt aus einer Fassung ohne Angaben zu ihrer Grundlage."))
     elif installed.installer != new.installer:
-        reasons.append("Das Setup selbst hat sich geändert.")
+        reasons.append(tr("Das Setup selbst hat sich geändert."))
     current_python = python_version or platform.python_version()
     if not new.python or new.python != current_python:
-        reasons.append(f"Python {new.python or '?'} statt {current_python}.")
+        reasons.append(tr("Python {} statt {}.").format(new.python or '?', current_python))
     if not new.requires:
-        reasons.append("Das neue Paket nennt keine Bibliotheken.")
+        reasons.append(tr("Das neue Paket nennt keine Bibliotheken."))
     for name, want in sorted(new.requires.items()):
         try:
             have = version_of(name)
         except metadata.PackageNotFoundError:
-            reasons.append(f"{name} {want} ist neu.")
+            reasons.append(tr("{} {} ist neu.").format(name, want))
             continue
         if not _same_version(have, want):
-            reasons.append(f"{name} {have} wird zu {want}.")
+            reasons.append(tr("{} {} wird zu {}.").format(name, have, want))
     return reasons
 
 

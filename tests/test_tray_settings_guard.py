@@ -31,7 +31,7 @@ def test_second_click_during_open_does_not_stack(tray, monkeypatch):
     created = []
 
     class _FakeDialog:
-        def __init__(self):
+        def __init__(self, **_kwargs):
             created.append(self)
             self.raised = 0
             self.activated = 0

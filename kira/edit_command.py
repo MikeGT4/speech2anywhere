@@ -3,6 +3,7 @@ import logging
 import time
 import keyboard
 import pyperclip
+from kira import clipboard_win
 
 log = logging.getLogger(__name__)
 
@@ -16,7 +17,7 @@ _CTRL_C_SETTLE_MS = 100
 
 def read_selection() -> str | None:
     try:
-        saved = pyperclip.paste()
+        saved = clipboard_win.save()
     except Exception as exc:
         raise ClipboardUnavailable(
             f"Clipboard-Lesen vor Strg+C fehlgeschlagen: {exc}"
@@ -33,7 +34,7 @@ def read_selection() -> str | None:
         keyboard.send("ctrl+c")
     except Exception as exc:
         try:
-            pyperclip.copy(saved)
+            clipboard_win.put_back(saved)
         except Exception:
             pass
         raise ClipboardUnavailable(
@@ -46,7 +47,7 @@ def read_selection() -> str | None:
         result = pyperclip.paste()
     except Exception as exc:
         try:
-            pyperclip.copy(saved)
+            clipboard_win.put_back(saved)
         except Exception:
             pass
         raise ClipboardUnavailable(
@@ -54,7 +55,7 @@ def read_selection() -> str | None:
         ) from exc
 
     try:
-        pyperclip.copy(saved)
+        clipboard_win.put_back(saved)
     except Exception:
         log.warning("clipboard restore after selection-capture failed")
 

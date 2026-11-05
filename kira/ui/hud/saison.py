@@ -14,6 +14,7 @@ from PyQt6.QtSvg import QSvgRenderer
 from kira.ui import _comic as comic
 from kira.ui.hud import comic as cm
 from kira.ui.hud.base import EASE_OUT, W, Frame, HudStyle, clamp, hash2, prog
+from kira.texte import N_, tr
 
 INK = cm.INK
 YELLOW = cm.YELLOW
@@ -146,9 +147,10 @@ class Saison(HudStyle):
     CLOCKS: tuple[str, ...] = ("",)
     LANES = cm.LANES
     WORDS = cm.WORDS
+    PLACE: str | None = None
     WORD_FILLS = cm.WORD_COLORS
-    ZACK_WORD = "Zack!"
-    SILENCE = ("Kein Signal", "Das Mikrofon liefert Stille.")
+    ZACK_WORD = N_("Zack!")
+    SILENCE = (N_("Kein Signal"), N_("Das Mikrofon liefert Stille."))
 
     def __init__(self) -> None:
         super().__init__()
@@ -204,7 +206,7 @@ class Saison(HudStyle):
                 fill = self.WORD_FILLS[self._spoken % len(self.WORD_FILLS)]
                 self._spoken += 1
             else:
-                word_text, fill = self.WORDS[lane], YELLOW
+                word_text, fill = tr(self.WORDS[lane], self.PLACE), YELLOW
             word_text, size, width = cm._fitted_word(word_text, 11 + 13 * an.level)
             self._words.append(Word(word_text, t, size, lane, width, QColor(fill)))
             self._count += 1
@@ -264,7 +266,7 @@ class Saison(HudStyle):
             if an.clip:
                 self.shout(p, t, f)
             elif an.silent:
-                self.hint(p, t, f, "think", self.SILENCE[0], self.SILENCE[1])
+                self.hint(p, t, f, "think", tr(self.SILENCE[0]), tr(self.SILENCE[1]))
             else:
                 self.talk(p, t, f)
         elif self.mode == "proc":
@@ -273,7 +275,7 @@ class Saison(HudStyle):
             self.zack(p, t, f)
         elif self.mode == "error":
             first, second = self.message_lines()
-            self.hint(p, t, f, "sad", first or "Fehler", second)
+            self.hint(p, t, f, "sad", first or tr("Fehler"), second)
 
     def talk(self, p: QPainter, t: float, f: Frame) -> None:
         self.figure(p, self.pose("talk", t, f, self._lv))
@@ -298,11 +300,11 @@ class Saison(HudStyle):
     def shout(self, p: QPainter, t: float, f: Frame) -> None:
         self.figure(p, self.pose("shout", t, f, 1.0))
         cm._ink_shape(p, cm._burst(166, 40, 90, 36, 16, 0.74), ALARM)
-        cm._text(p, 166, 48, "ZU NAH!", comic.baloo(800, 22), INK, "center")
+        cm._text(p, 166, 48, tr("ZU NAH!"), comic.baloo(800, 22), INK, "center")
 
     def think(self, p: QPainter, t: float, f: Frame) -> None:
         key, t0 = self.scene_at(t, f)
-        self.paint_scene(p, key, t, f, t - t0, "Politur" if f.polishing else "Erkennen")
+        self.paint_scene(p, key, t, f, t - t0, tr("Politur") if f.polishing else tr("Erkennen"))
         if self.sweating(t):
             p.save()
             p.translate(SWEAT_SHIFT, 0.0)
@@ -318,13 +320,14 @@ class Saison(HudStyle):
         p.translate(162, 40)
         p.scale(pop, pop)
         cm._ink_shape(p, cm._burst(0, 0, 88, 36, 12, 0.7), YELLOW)
-        px = zack_px(self.ZACK_WORD)
+        word = tr(self.ZACK_WORD)
+        px = zack_px(word)
         font = comic.baloo(800, px)
-        width = QFontMetricsF(font).horizontalAdvance(self.ZACK_WORD)
+        width = QFontMetricsF(font).horizontalAdvance(word)
         check = 13 * px / ZACK_PX
         start = -(width + check + 7) / 2
         cm._check(p, start, -check * 0.62, check)
-        cm._text(p, start + check + 7, px * 0.36, self.ZACK_WORD, font, INK)
+        cm._text(p, start + check + 7, px * 0.36, word, font, INK)
         p.restore()
         self.zack_decor(p, t, f, 1.0 if f.reduced else prog(t, self.end_t, DONE_S))
         p.restore()

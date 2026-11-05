@@ -1,15 +1,18 @@
 from __future__ import annotations
 import hashlib
+import http.client
 import json
 import logging
+import os
 import re
+import shutil
 import urllib.error
 import urllib.request
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Callable, Literal
 
-from packaging.version import InvalidVersion, parse as parse_version
+from packaging.version import InvalidVersion, Version, parse as parse_version
 
 from kira import tls
 
@@ -28,6 +31,8 @@ _VALID_ASSET_NAME = re.compile(
 )
 _APP_WHEEL_NAME = re.compile(r"^kira-(\d+(?:\.\d+){1,3})-py3-none-any\.whl$")
 _DIGEST = re.compile(r"^sha256:([0-9a-f]{64})$")
+_UPDATE_DIR_NAME = re.compile(r"^v(\d+(?:\.\d+){1,3})$")
+_SMALL_UPDATE_TRACES = frozenset({"apply_update.py", "apply_update.log", "vorher"})
 
 
 @dataclass(frozen=True)
@@ -85,7 +90,7 @@ def check_for_update(local_version: str, repo: str) -> UpdateCheckResult:
         request = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(request, timeout=_TIMEOUT_SECONDS, context=tls.context()) as response:
             data = json.load(response)
-    except (urllib.error.URLError, ConnectionError, TimeoutError, json.JSONDecodeError) as exc:
+    except (OSError, http.client.HTTPException, ValueError) as exc:
         log.warning("update check failed: %s", exc)
         return UpdateCheckResult(status="failed", error=str(exc))
 
@@ -233,11 +238,62 @@ def verify_sha256sums(
         actual = _file_sha256(target)
         if actual != expected_hash:
             errors.append(
-                f"hash mismatch fuer {filename}: "
+                f"hash mismatch für {filename}: "
                 f"erwartet {expected_hash[:12]}…, ist {actual[:12]}…"
             )
 
     return (len(errors) == 0), errors
+
+
+def _holds_setup_without_small_update(folder: str) -> bool:
+    with os.scandir(folder) as found:
+        entries = list(found)
+    if any(entry.name in _SMALL_UPDATE_TRACES for entry in entries):
+        return False
+    return any(_VALID_ASSET_NAME.fullmatch(entry.name) and entry.is_file(follow_symlinks=False) for entry in entries)
+
+
+def _is_installed_full_update_dir(entry: os.DirEntry, running: Version) -> bool:
+    match = _UPDATE_DIR_NAME.fullmatch(entry.name)
+    if match is None or entry.is_symlink() or entry.is_junction() or not entry.is_dir(follow_symlinks=False):
+        return False
+    return parse_version(match.group(1)) <= running and _holds_setup_without_small_update(entry.path)
+
+
+def _remove_tree(path: Path) -> bool:
+    failures: list[str] = []
+
+    def note_failure(function, failed, exc) -> None:
+        log.warning("Update-Ordner: %s ließ sich nicht löschen: %s", failed, exc)
+        failures.append(str(failed))
+
+    shutil.rmtree(path, onexc=note_failure)
+    return not failures
+
+
+def remove_installed_full_update_dirs(base: Path, running_version: str) -> list[Path]:
+    try:
+        running = parse_version(running_version)
+        if base.is_symlink() or base.is_junction() or not base.is_dir():
+            return []
+        with os.scandir(base) as found:
+            entries = list(found)
+    except (InvalidVersion, OSError) as exc:
+        log.warning("Update-Ordner %s nicht geprüft: %s", base, exc)
+        return []
+    removed: list[Path] = []
+    for entry in entries:
+        path = Path(entry.path)
+        try:
+            if not _is_installed_full_update_dir(entry, running):
+                continue
+        except OSError as exc:
+            log.warning("Update-Ordner %s nicht geprüft: %s", path, exc)
+            continue
+        if _remove_tree(path):
+            log.info("Update-Ordner %s entfernt", path)
+            removed.append(path)
+    return removed
 
 
 def _file_sha256(path: Path) -> str:

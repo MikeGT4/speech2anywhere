@@ -9,6 +9,7 @@ from typing import Callable
 import numpy as np
 from kira.config import Config
 from kira.recorder import Recorder, DeviceUnavailable, SAMPLE_RATE
+from kira.texte import tr
 
 if sys.platform == "win32":
     from kira.transcriber_fw import TranscriptionResult
@@ -26,6 +27,9 @@ else:
 
 log = logging.getLogger(__name__)
 
+MAX_TOGGLE_RECORDING_S = 180.0
+LANGUAGE_HINT_MIN_PROBABILITY = 0.9
+
 
 class State(Enum):
     IDLE = auto()
@@ -34,6 +38,14 @@ class State(Enum):
     STYLING = auto()
     INJECTING = auto()
     ERROR = auto()
+
+
+def _language_is_certain(transcription) -> bool:
+    language = getattr(transcription, "language", "")
+    if not language or language == "de":
+        return False
+    probability = getattr(transcription, "language_probability", None)
+    return probability is not None and probability >= LANGUAGE_HINT_MIN_PROBABILITY
 
 
 class KiraApp:
@@ -59,6 +71,7 @@ class KiraApp:
         self._loop: asyncio.AbstractEventLoop | None = None
         self._edit_mode: bool = False
         self._captured_selection: str | None = None
+        self._toggle_generation = 0
         self.last_transcript: str = ""
         self.last_polished: str = ""
         self.last_error: str = ""
@@ -100,7 +113,7 @@ class KiraApp:
         except DeviceUnavailable as e:
             log.warning("Hotkey press but input device unavailable: %s", e)
             self._press_time = None
-            self.last_error = "Mikrofon nicht gefunden.|Gerät prüfen, dann erneut drücken."
+            self.last_error = tr("Mikrofon nicht gefunden.|Gerät prüfen, dann erneut drücken.")
             self._set_state(State.ERROR)
             threading.Timer(
                 3.0, lambda: self._set_state(State.IDLE)
@@ -116,11 +129,11 @@ class KiraApp:
             selection = read_selection()
         except ClipboardUnavailable as exc:
             log.warning("Edit hotkey aborted (clipboard unavailable): %s", exc)
-            self._flash_error_briefly("Zwischenablage nicht erreichbar.|Gleich noch einmal versuchen.")
+            self._flash_error_briefly(tr("Zwischenablage nicht erreichbar.|Gleich noch einmal versuchen."))
             return
         if selection is None:
             log.info("Edit hotkey pressed without selection, flashing ERROR")
-            self._flash_error_briefly("Nichts markiert.|Erst Text markieren, dann erneut.")
+            self._flash_error_briefly(tr("Nichts markiert.|Erst Text markieren, dann erneut."))
             return
         self._captured_selection = selection
         self._edit_mode = True
@@ -128,6 +141,35 @@ class KiraApp:
         if self._state != State.RECORDING:
             self._edit_mode = False
             self._captured_selection = None
+
+    def on_hotkey_toggle(self) -> None:
+        if self._state == State.RECORDING:
+            self.on_hotkey_release()
+            return
+        self.on_hotkey_press()
+        self._arm_auto_stop()
+
+    def on_edit_toggle(self) -> None:
+        if self._state == State.RECORDING:
+            self.on_hotkey_release()
+            return
+        self.on_edit_press()
+        self._arm_auto_stop()
+
+    def _arm_auto_stop(self) -> None:
+        if self._state != State.RECORDING:
+            return
+        self._toggle_generation += 1
+        generation = self._toggle_generation
+        timer = threading.Timer(MAX_TOGGLE_RECORDING_S, lambda: self._auto_stop(generation))
+        timer.daemon = True
+        timer.start()
+
+    def _auto_stop(self, generation: int) -> None:
+        if generation != self._toggle_generation or self._state != State.RECORDING:
+            return
+        log.info("Umschalt-Aufnahme nach %d s von selbst beendet", int(MAX_TOGGLE_RECORDING_S))
+        self.on_hotkey_release()
 
     def _flash_error_briefly(self, reason: str = "") -> None:
         if self._state != State.IDLE:
@@ -195,6 +237,8 @@ class KiraApp:
                 mode = detect_mode(self._config)
                 glossary = self._glossary_for(transcription.text)
                 extra = {"glossary": glossary} if glossary else {}
+                if _language_is_certain(transcription):
+                    extra["language"] = transcription.language
                 polished = await self._styler.polish(
                     transcription.text, mode=mode, **extra,
                 )
@@ -212,7 +256,7 @@ class KiraApp:
                 self._record_dictation(mode, transcription, polished, audio)
         except Exception:
             log.exception("pipeline failed")
-            self.last_error = "Verarbeitung fehlgeschlagen.|Details im Log."
+            self.last_error = tr("Verarbeitung fehlgeschlagen.|Details im Log.")
             self._set_state(State.ERROR)
         finally:
             self._edit_mode = False
@@ -253,7 +297,7 @@ class _StubTranscriber:
 
 class _StubStyler:
     def __init__(self, cfg): self.cfg = cfg
-    async def polish(self, text, mode, glossary=None): return text
+    async def polish(self, text, mode, glossary=None, language=None): return text
 
 
 class _StubInjector:

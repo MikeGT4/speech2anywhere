@@ -194,6 +194,8 @@ def _learn_from(
     times: list[datetime], lexicon: Lexicon, words: frozenset[str],
     counter: dict[str, int], result: RunResult,
 ) -> None:
+    if record.language not in (None, "de"):
+        return
     counter["dictations"] += 1
     if record.mode == "terminal":
         counter["terminal"] += 1

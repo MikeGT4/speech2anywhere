@@ -16,7 +16,7 @@ Speech2Anywhere is a push-to-talk voice-to-text app that runs entirely on your o
 
 | | Windows 11 (this repository) | macOS (separate build, not in this repository) |
 |---|---|---|
-| Hotkey | hold **F8**, **F9** for AI edit commands | hold **fn** (Globe key) |
+| Hotkey | hold **F8** or tap it in toggle mode, **F9** for AI edit commands | hold **fn** (Globe key) |
 | Speech to text | faster-whisper, `large-v3` on CUDA | mlx-whisper, `whisper-large-v3-turbo` on the Apple GPU |
 | Text cleanup | Ollama, `gemma4:12b`, uncensored model optional | Ollama, `huihui_ai/qwen3-abliterated:8b` (uncensored) |
 | Hardware | NVIDIA GPU with 12 GB VRAM or more | Apple Silicon (M1 or newer), 16 GB unified memory |
@@ -24,10 +24,13 @@ Speech2Anywhere is a push-to-talk voice-to-text app that runs entirely on your o
 
 ## What it does
 
-- **Push to talk.** Hold F8, speak, release. A 250 ms pre-roll buffer catches the first word even if you start speaking before the keyboard hook fires.
+- **Push to talk.** Hold F8, speak, release. A 250 ms pre-roll buffer catches the first word even if you start speaking before the keyboard hook fires. Prefer tapping? Toggle mode in the settings starts with one press and stops with the next; a forgotten recording ends after three minutes.
 - **Context-aware cleanup.** Speech2Anywhere detects the active app (Mail, Slack, Terminal, VS Code, Cursor, Obsidian and more) and rewrites in the right register. The model stays warm for 24 hours, so the first F8 after boot has the same latency as the hundredth.
 - **Edit by voice on F9.** Select text, hold F9, say what to change.
-- **German and English**, detected automatically per dictation.
+- **Slips of the tongue are fixed.** "On Tuesday, no, on Friday" becomes "on Friday" in mail, chat and plain text; terminal and code stay literal.
+- **Your language stays your language.** Choose German, English, French, Italian, Dutch, Polish, Portuguese or Spanish in the settings, or let Whisper detect the language per dictation; the cleanup answers in the language you spoke. The installer sets German. The interface comes in German and English.
+- **Your clipboard survives.** Images, files and formatted text are back in the clipboard after the dictation, and anything you copy in the meantime stays.
+- **Files become text and subtitles.** The tray menu transcribes audio and video files into a text file and an `.srt` with timestamps.
 - **Uncensored option.** The settings dialog offers an abliterated Qwen model as cleanup model. It is not tuned to refuse or lecture; it only cleans up what you said.
 - **Audio and text stay on your PC.** Speech2Anywhere talks to Ollama on `127.0.0.1`. It goes online only for the update check against the GitHub Releases API (at start, every six hours by default, on request; the automatic checks can be switched off), for updates (searching for one also fetches the program package of about 2.6 MB; the full setup and the tested Ollama setup from the Ollama releases on GitHub only load after you confirm), and for loading models from Hugging Face and the Ollama registry. The bundled Ollama app checks for its own updates.
 - **Live indicator at the cursor, ten styles.** The default is a comic speech bubble with a chattering mascot: while you speak, fragments of your recognized words fly out of its mouth (a switch in the settings turns them off), and while it thinks, a washing drum, an iron or turning gears keep it busy; two seasonal versions dress the mascot up for Halloween (witch's hat, a glowing pumpkin, cauldron, broom and pumpkin carving) and for Christmas (Santa's hat and beard on a snowy night stage, sleigh, candle arch and cookies); a manga panel with focus lines and slammed-in lettering, a phosphor oscilloscope, Gun Barrel, target lock, voiceprint, terminal and the classic look can be picked in the settings. While you speak it warns about clipping (too close) and a dead microphone (no signal). The mascot in the tray icon chatters while recording, an orange-red dot marks errors.
@@ -76,7 +79,7 @@ ollama pull gemma4:12b
 
 ## Configuration
 
-`%APPDATA%\Kira\config.yaml`. Tray, "Einstellungen" opens a form for the common settings: microphone gain and device, language, cleanup model, hotkey.
+`%APPDATA%\Kira\config.yaml`. Tray, "Settings" ("Einstellungen" in the German interface) opens a form for the common settings: microphone gain and device, dictation and interface language, cleanup model, hotkey and toggle mode. If a change needs a restart, the dialog offers one right after saving.
 
 `audio.input_device` is a substring match: `'USB Microphone'` matches `Mikrofon (2- USB Microphone)`. If the configured device is not enumerated, Speech2Anywhere logs a `WARNING kira.recorder` line listing every input device it did see.
 
@@ -84,11 +87,11 @@ ollama pull gemma4:12b
 
 ### Fast mode
 
-Settings, cleanup model: the checkbox **fast mode** switches to `gemma4:e4b`. Use it when the 12B model keeps sliding into CPU offload (`ollama ps` shows a `49/51 CPU/GPU` split). The small model is pulled once when you enable it. Standard cleanup (punctuation, fillers) stays practically identical, F9 edit commands get noticeably weaker. Off by default.
+Settings, cleanup model: the checkbox **fast mode** switches to `gemma4:e4b`. Use it when the 12B model keeps sliding into CPU offload (`ollama ps` shows a `49/51 CPU/GPU` split). The small model is pulled once when you enable it. Standard cleanup (punctuation, fillers) stays practically identical, F9 edit commands get noticeably weaker, and slips of the tongue are resolved less reliably. Off by default.
 
 ### Learning from corrections
 
-Since v0.4.0 Speech2Anywhere keeps a local dictation history (`%LOCALAPPDATA%\Kira\history`, deleted after three months) and compares it every 30 minutes with the messages you actually sent. If you fixed a misrecognised word before sending, Speech2Anywhere records the pair. A pair seen in two dictations applies on its own; single cases wait under tray, **Gelernte Wörter**, until you accept them. Rejected pairs are never learned again.
+Since v0.4.0 Speech2Anywhere keeps a local dictation history (`%LOCALAPPDATA%\Kira\history`, deleted after three months) and compares it every 30 minutes with the messages you actually sent. If you fixed a misrecognised word before sending, Speech2Anywhere records the pair. A pair seen in two dictations applies on its own; single cases wait under tray, **Learned Words** (**Gelernte Wörter**), until you accept them. Rejected pairs are never learned again. Only German dictations are learned from.
 
 The messages come from JSONL chat histories in the folders listed under `learning.sources` (one message per line, sent messages marked `"type": "user"`). Without sources Speech2Anywhere only writes the history; `learning.enabled: false` turns both off. Everything stays on your machine.
 
@@ -105,7 +108,7 @@ Learned pairs go three ways: unusual words join Whisper's vocabulary prompt, mis
 | Cleanup never runs, `speech2anywhere.log` shows `Styler failed (Failed to connect to Ollama)` while Ollama is up | Check `OLLAMA_HOST` in your user environment. `0.0.0.0:11434` lets other machines reach Ollama but is no valid target for a client. Since v0.4.0 Speech2Anywhere connects to `127.0.0.1` in that case and shows a tray notice after three failed attempts in a row. |
 | Cleanup takes 5 to 15 seconds instead of staying near-instant | `ollama ps` shows the model as `100% CPU`. Known Ollama-on-Windows issue: the GPU discovery probe can time out at model load. Fix: disable hardware-accelerated GPU scheduling under Settings, System, Display, Graphics, add a Windows Defender exclusion for the Ollama processes (`ollama.exe`, `ollama app.exe`, `ollama_llama_server.exe`), update Ollama, reboot. |
 | The "cleanup on CPU" toast names WSL or Docker as port owner | Since v0.3.3 Speech2Anywhere checks who holds port 11434. If `wslrelay.exe` or a Docker process holds it, an Ollama from WSL2 or a container answers and the Windows Ollama never gets the port. Stop the foreign Ollama or move it to another port (Docker Compose: `"127.0.0.1:11435:11434"`); the Windows tray app retries the bind and takes over. |
-| Text lands in the wrong window | The foreground window at release time is the target. Do not Alt+Tab while recording. |
+| Text lands in the wrong window | The foreground window at release time (in toggle mode: at the second press) is the target. Do not Alt+Tab while recording. |
 | An admin-elevated app does not react to F8 | The keyboard hook cannot see events in elevated windows unless Speech2Anywhere itself runs elevated. Known trade-off. |
 
 ## License

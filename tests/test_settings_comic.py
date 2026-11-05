@@ -470,3 +470,189 @@ def test_model_pull_window_stays_through_the_check_and_names_it(dialog, qtbot, m
     assert (progress.minimum(), progress.maximum()) == (0, 0)
     progress.canceled.emit()
     qtbot.waitUntil(lambda: not progress.isVisible(), timeout=5000)
+
+
+def test_language_choice_offers_the_measured_languages(dialog):
+    codes = [dialog._language.itemData(i) for i in range(dialog._language.count())]
+    assert codes == ["auto", "de", "en", "fr", "it", "nl", "pl", "pt", "es"]
+
+
+def test_hand_set_language_is_shown_and_kept_when_saving(qtbot, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    cfg = Config()
+    cfg.whisper.language = "sv"
+    monkeypatch.setattr(sd, "load_config", lambda: cfg)
+    monkeypatch.setattr(sd, "default_config_path", lambda: tmp_path / "config.yaml")
+    monkeypatch.setattr(sd.SettingsDialog, "_query_input_devices", lambda self: [(3, "USB Microphone")])
+    monkeypatch.setattr(sd, "light_information", lambda *a, **k: None)
+    monkeypatch.setattr(sd, "light_warning", lambda *a, **k: None)
+    dlg = sd.SettingsDialog()
+    qtbot.addWidget(dlg)
+    assert dlg._language.currentData() == "sv"
+    assert dlg._language.currentText() == "Andere (sv)"
+    dlg._save()
+    assert "language: sv" in (tmp_path / "config.yaml").read_text(encoding="utf-8")
+
+
+def test_toggle_switch_sits_on_a_page_and_starts_off(dialog):
+    assert dialog._pages.isAncestorOf(dialog._toggle_mode)
+    assert not dialog._toggle_mode.isChecked()
+
+
+def test_toggle_mode_is_saved_and_asks_for_a_restart(dialog, monkeypatch, tmp_path):
+    _message_after_save(dialog, monkeypatch)
+    dialog._toggle_mode.setChecked(True)
+    text = _message_after_save(dialog, monkeypatch)
+    assert "mode: toggle" in (tmp_path / "config.yaml").read_text(encoding="utf-8")
+    assert "Neustart" in text
+
+
+def test_microphone_hint_follows_the_key_mode(qtbot, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    cfg = Config()
+    cfg.hotkey.mode = "toggle"
+    monkeypatch.setattr(sd, "load_config", lambda: cfg)
+    monkeypatch.setattr(sd, "default_config_path", lambda: tmp_path / "config.yaml")
+    monkeypatch.setattr(sd.SettingsDialog, "_query_input_devices", lambda self: [(3, "USB Microphone")])
+    dlg = sd.SettingsDialog()
+    qtbot.addWidget(dlg)
+    from PyQt6.QtWidgets import QLabel
+    texts = " ".join(label.text() for label in dlg.findChildren(QLabel))
+    assert "gedrückt und sprich" not in texts
+    assert "sprich und drück noch einmal" in texts
+    assert dlg._toggle_mode.isChecked()
+
+
+def test_interface_language_sits_on_a_page_and_starts_on_auto(dialog):
+    assert dialog._pages.isAncestorOf(dialog._ui_language)
+    assert dialog._ui_language.currentData() == "auto"
+    assert [dialog._ui_language.itemData(i) for i in range(dialog._ui_language.count())] == ["auto", "de", "en"]
+
+
+def test_interface_language_is_saved_and_asks_for_a_restart(dialog, monkeypatch, tmp_path):
+    _message_after_save(dialog, monkeypatch)
+    dialog._ui_language.setCurrentIndex(dialog._ui_language.findData("en"))
+    text = _message_after_save(dialog, monkeypatch)
+    assert "language: en" in (tmp_path / "config.yaml").read_text(encoding="utf-8")
+    assert "Neustart" in text
+
+
+def test_unchanged_interface_language_is_not_written(dialog, monkeypatch, tmp_path):
+    _message_after_save(dialog, monkeypatch)
+    written = (tmp_path / "config.yaml").read_text(encoding="utf-8")
+    assert "ui:" not in written or "language: auto" not in written.split("ui:")[-1]
+
+
+@pytest.fixture
+def restartable(qtbot, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    monkeypatch.setattr(sd, "load_config", lambda: Config())
+    monkeypatch.setattr(sd, "default_config_path", lambda: tmp_path / "config.yaml")
+    monkeypatch.setattr(sd.SettingsDialog, "_query_input_devices", lambda self: [(3, "USB Microphone")])
+    seen = {"info": [], "warning": [], "asked": 0, "restarts": 0, "answer": False, "restart_ok": True}
+    monkeypatch.setattr(sd, "light_information", lambda _parent, _title, text: seen["info"].append(text))
+    monkeypatch.setattr(sd, "light_warning", lambda _parent, _title, text: seen["warning"].append(text))
+
+    def ask(_parent):
+        seen["asked"] += 1
+        return seen["answer"]
+
+    def restart():
+        seen["restarts"] += 1
+        return seen["restart_ok"]
+
+    monkeypatch.setattr(sd, "_ask_restart", ask)
+    dlg = sd.SettingsDialog(request_restart=restart)
+    qtbot.addWidget(dlg)
+    dlg._save()
+    seen.update(info=[], warning=[], asked=0, restarts=0, answer=True)
+    return dlg, seen
+
+
+def test_restart_is_offered_when_a_setting_needs_it(restartable):
+    dlg, seen = restartable
+    dlg._gain.setValue(2.4)
+    dlg._save()
+    assert seen["asked"] == 1
+    assert seen["restarts"] == 1
+    assert seen["info"] == []
+    assert seen["warning"] == []
+
+
+def test_later_leaves_the_app_running(restartable):
+    dlg, seen = restartable
+    seen["answer"] = False
+    dlg._gain.setValue(2.4)
+    dlg._save()
+    assert seen["asked"] == 1
+    assert seen["restarts"] == 0
+    assert seen["warning"] == []
+
+
+def test_no_restart_question_when_the_change_works_right_away(restartable):
+    dlg, seen = restartable
+    dlg._hud_style.setCurrentIndex(dlg._hud_style.findData("klartext"))
+    dlg._save()
+    assert seen["asked"] == 0
+    assert "ab dem nächsten Diktat" in seen["info"][-1]
+
+
+def test_failed_restart_says_how_to_do_it_by_hand(restartable):
+    dlg, seen = restartable
+    seen["restart_ok"] = False
+    dlg._gain.setValue(2.4)
+    dlg._save()
+    assert seen["restarts"] == 1
+    assert "Beenden" in seen["warning"][-1]
+
+
+def test_restart_question_has_two_plain_buttons(qtbot):
+    import kira.ui.settings_dialog as sd
+    box = sd._restart_question(None)
+    qtbot.addWidget(box)
+    assert {button.text() for button in box.buttons()} == {"Jetzt neu starten", "Später"}
+    assert box.defaultButton().text() == "Jetzt neu starten"
+    assert "Neustart" in box.text() + box.informativeText()
+
+
+def test_restart_question_keeps_each_thought_on_its_own_line(qtbot):
+    from PyQt6.QtWidgets import QLabel
+    import kira.ui.settings_dialog as sd
+    box = sd._restart_question(None)
+    qtbot.addWidget(box)
+    box.show()
+    qtbot.waitExposed(box)
+    label = box.findChild(QLabel, "qt_msgbox_informativelabel")
+    lines = label.text().splitlines()
+    assert len(lines) == 2
+    assert label.width() >= max(label.fontMetrics().horizontalAdvance(line) for line in lines)
+
+
+def _keys_page_texts(qtbot, tmp_path, monkeypatch, mode):
+    import kira.ui.settings_dialog as sd
+    from PyQt6.QtWidgets import QLabel, QWidget
+    cfg = Config()
+    cfg.hotkey.mode = mode
+    monkeypatch.setattr(sd, "load_config", lambda: cfg)
+    monkeypatch.setattr(sd, "default_config_path", lambda: tmp_path / "config.yaml")
+    monkeypatch.setattr(sd.SettingsDialog, "_query_input_devices", lambda self: [(3, "USB Microphone")])
+    dlg = sd.SettingsDialog()
+    qtbot.addWidget(dlg)
+    labels = [label.text() for label in dlg.findChildren(QLabel)]
+    tips = [widget.toolTip() for widget in dlg.findChildren(QWidget)]
+    return " ".join(labels + tips)
+
+
+def test_keys_page_describes_holding_in_hold_mode(qtbot, tmp_path, monkeypatch):
+    texts = _keys_page_texts(qtbot, tmp_path, monkeypatch, "hold")
+    assert "Gedrückt halten und sprechen." in texts
+    assert "Halten, sagen, was anders werden soll." in texts
+
+
+def test_keys_page_describes_pressing_twice_in_toggle_mode(qtbot, tmp_path, monkeypatch):
+    texts = _keys_page_texts(qtbot, tmp_path, monkeypatch, "toggle")
+    assert "Gedrückt halten und sprechen." not in texts
+    assert "Halten, sagen, was anders werden soll." not in texts
+    assert "die Bearbeiten-Taste halten" not in texts
+    assert "Einmal drücken, sprechen, noch einmal drücken." in texts
+    assert "Drücken, sagen, was anders werden soll, noch einmal drücken." in texts

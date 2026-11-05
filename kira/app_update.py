@@ -12,6 +12,7 @@ from pathlib import Path
 
 from kira import __version__, release_info
 from kira.updater import ReleaseAsset, download_asset, matches_sha256
+from kira.texte import tr
 
 log = logging.getLogger(__name__)
 
@@ -49,23 +50,23 @@ def check_patch(
     installed: release_info.ReleaseInfo | None = None,
 ) -> PatchCheck:
     if root is None:
-        return PatchCheck(None, ["Diese Fassung wird nicht über das Setup verwaltet."])
+        return PatchCheck(None, [tr("Diese Fassung wird nicht über das Setup verwaltet.")])
     wheel = target_dir / asset.name
     part = target_dir / f"{asset.name}.{os.getpid()}.{time.monotonic_ns()}.part"
     try:
         fetch(asset.url, part)
         if not matches_sha256(part, asset.sha256):
             log.warning("Programm-Update: Prüfsumme von %s passt nicht", asset.name)
-            return PatchCheck(None, ["Die Prüfsumme des Programmpakets passt nicht."])
+            return PatchCheck(None, [tr("Die Prüfsumme des Programmpakets passt nicht.")])
         os.replace(part, wheel)
     except Exception as exc:
         log.warning("Programm-Update: Download fehlgeschlagen: %s", exc)
-        return PatchCheck(None, [f"Das Programmpaket ließ sich nicht laden ({exc})."])
+        return PatchCheck(None, [tr("Das Programmpaket ließ sich nicht laden ({}).").format(exc)])
     finally:
         part.unlink(missing_ok=True)
     new = release_info.read_from_wheel(wheel)
     if new is None:
-        return PatchCheck(None, ["Das Programmpaket nennt seine Grundlage nicht."])
+        return PatchCheck(None, [tr("Das Programmpaket nennt seine Grundlage nicht.")])
     base = installed if installed is not None else release_info.load_installed()
     return PatchCheck(wheel, release_info.patch_blockers(new, base))
 

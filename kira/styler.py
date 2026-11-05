@@ -6,19 +6,29 @@ import time
 from pathlib import Path
 from typing import Callable
 import ollama
-from kira.config import Config, ModeConfig
+from kira.config import LANGUAGE_NAMES, Config, ModeConfig
+from kira.ollama_env import describe_tuning_env, read_tuning_env, vram_tuning_set
 from kira.ollama_host import client_host
+from kira.texte import N_, tr
 
 log = logging.getLogger(__name__)
 
 SLOW_POLISH_THRESHOLD_SEC = 3.0
 SLOW_POLISH_TRIGGER_COUNT = 3
 FORCE_FAST_DURATION_SEC = 5 * 60
+FORCE_FAST_KEEP_ALIVE = f"{FORCE_FAST_DURATION_SEC}s"
+PLACEMENT_CHECK_TIMEOUT_SEC = 2.0
 
 CONNECTION_FAIL_TRIGGER_COUNT = 3
 
 
 GPU_RESIDENCY_FULL_RATIO = 0.95
+
+_TUNING_NOTICE = {
+    True: N_(" (VRAM-Tuning ist gesetzt, greift nach dem Neustart)"),
+    False: N_(" (VRAM-Tuning fehlt, Details im Protokoll)"),
+    None: "",
+}
 
 from kira._resources import prompts_dir as _prompts_dir
 PROMPT_DIR = _prompts_dir()
@@ -42,11 +52,35 @@ GLOSSARY_INSTRUCTION = (
 )
 
 
-def _template_with_glossary(template: str, glossary: list[str] | None) -> str:
-    if not glossary:
-        return template
-    block = GLOSSARY_INSTRUCTION.format(terms=", ".join(glossary))
-    block = block.replace("{", "{{").replace("}", "}}")
+LANGUAGE_RULE = (
+    "Sprache: Gib den Text in genau der Sprache zurück, in der der Input steht. "
+    "Übersetze nie, auch nicht ins Deutsche. Ist der Input nicht deutsch, gelten "
+    "alle Regeln sinngemäß in seiner Sprache, auch für die dort üblichen Füllwörter."
+)
+LANGUAGE_RULE_EXEMPT = frozenset({"translate_en"})
+LANGUAGE_HINT = "Der Input steht auf {name}. Antworte auf {name}, nicht auf Deutsch."
+LANGUAGE_HINT_BY_CODE = (
+    "Der Input steht in der Sprache mit dem Kürzel „{code}“. "
+    "Antworte in dieser Sprache, nicht auf Deutsch."
+)
+LANGUAGE_HINT_MODES = frozenset({"email", "email_formal"})
+
+SELF_CORRECTION_RULE = (
+    "Selbstkorrektur (einzige Ausnahme von der Regel, den Inhalt exakt beizubehalten): "
+    "Nimmt der Sprecher mitten im Satz eine eben gemachte Angabe "
+    "zurück und ersetzt sie sofort durch eine andere derselben Art, bleibt nur die "
+    "neue Angabe stehen; das Signalwort und die alte Angabe entfallen. Muster: "
+    "„um neun, nein, um elf“ wird „um elf“. Signalwörter sind etwa „nein“, „nee“, "
+    "„ach Quatsch“, „ich meine“, „Korrektur“, „Moment“, „no wait“, „scratch that“, "
+    "„I mean“, „actually“, „sorry“. Steht ein solches Wort am Satzanfang oder leitet "
+    "es eine Aussage, Meinung oder Erklärung ein („Nein, danke.“, „Ich meine, wir "
+    "sollten warten.“, „Actually, it works.“), ist es Inhalt und bleibt unverändert "
+    "stehen. Im Zweifel nichts streichen."
+)
+SELF_CORRECTION_MODES = frozenset({"plain", "chat", "email", "email_formal"})
+
+
+def _insert_before_input(template: str, block: str) -> str:
     marker = "\nInput:"
     idx = template.find(marker)
     if idx == -1:
@@ -54,11 +88,44 @@ def _template_with_glossary(template: str, glossary: list[str] | None) -> str:
     return template[:idx] + "\n" + block + "\n" + template[idx:]
 
 
+def _language_hint(language: str | None) -> str | None:
+    if not language or language == "de":
+        return None
+    name = LANGUAGE_NAMES.get(language)
+    hint = LANGUAGE_HINT.format(name=name) if name else LANGUAGE_HINT_BY_CODE.format(code=language)
+    return hint.replace("{", "{{").replace("}", "}}")
+
+
+def _template_with_rules(template: str, mode: str, language: str | None = None) -> str:
+    if mode in SELF_CORRECTION_MODES:
+        template = _insert_before_input(template, SELF_CORRECTION_RULE)
+    if mode in LANGUAGE_RULE_EXEMPT:
+        return template
+    template = _insert_before_input(template, LANGUAGE_RULE)
+    hint = _language_hint(language) if mode in LANGUAGE_HINT_MODES else None
+    return _insert_before_input(template, hint) if hint else template
+
+
+def _template_with_glossary(template: str, glossary: list[str] | None) -> str:
+    if not glossary:
+        return template
+    block = GLOSSARY_INSTRUCTION.format(terms=", ".join(glossary))
+    block = block.replace("{", "{{").replace("}", "}}")
+    return _insert_before_input(template, block)
+
+
 _THINKING_MODEL_RE = re.compile(r"qwen3|gemma[-_ ]?[4-9]", re.IGNORECASE)
 
 
 def _thinking_kwargs(model: str) -> dict:
     return {"think": False} if _THINKING_MODEL_RE.search(model) else {}
+
+
+def _loaded_entries(resp, model: str):
+    names = {model} if ":" in model else {model, f"{model}:latest"}
+    for entry in getattr(resp, "models", None) or []:
+        if not names.isdisjoint({getattr(entry, "model", None), getattr(entry, "name", None)}):
+            yield entry
 
 
 class Styler:
@@ -131,19 +198,44 @@ class Styler:
         self._force_fast_until = None
         return False
 
+    def _keep_alive_for(self, model: str) -> str:
+        if self._is_force_fast_active() and model == self._config.styler.fast_model:
+            return FORCE_FAST_KEEP_ALIVE
+        return self._config.styler.keep_alive
+
     def _activate_force_fast(self) -> None:
         self._force_fast_until = time.monotonic() + FORCE_FAST_DURATION_SEC
         log.warning(
-            "Polish-Latenz über Schwelle (%d in Folge > %.1fs), switche "
-            "temporaer auf fast_model=%s fuer %d s. Pruefe `ollama ps` und "
-            "GPU-Auslastung (Polish-Modell duerfte auf CPU geladen sein).",
+            "Politur über Schwelle (%d in Folge > %.1f s; Ladezeit abgezogen, "
+            "soweit Ollama sie meldet; Zeitüberschreitungen zählen voll), "
+            "schalte vorübergehend auf fast_model=%s für %d s um. Prüfe "
+            "`ollama ps` und die GPU-Auslastung "
+            "(Politur-Modell liegt vermutlich auf CPU oder die Grafikkarte "
+            "ist ausgelastet).",
             SLOW_POLISH_TRIGGER_COUNT,
             SLOW_POLISH_THRESHOLD_SEC,
             self._config.styler.fast_model,
             FORCE_FAST_DURATION_SEC,
         )
 
-    def _observe_polish_duration(self, duration: float) -> None:
+    async def _fully_in_vram(self, model: str) -> bool:
+        try:
+            resp = await asyncio.wait_for(
+                self._client.ps(), timeout=PLACEMENT_CHECK_TIMEOUT_SEC,
+            )
+        except Exception as exc:
+            log.warning(
+                "Belegungsprüfung vor dem Umschalten nicht möglich (%r), "
+                "schalte wie bisher um",
+                exc,
+            )
+            return False
+        entry = next(_loaded_entries(resp, model), None)
+        if entry is None or entry.size is None or entry.size_vram is None:
+            return False
+        return int(entry.size) > 0 and int(entry.size_vram) >= int(entry.size)
+
+    async def _observe_polish_duration(self, duration: float) -> None:
         if duration <= SLOW_POLISH_THRESHOLD_SEC:
             self._slow_polish_count = 0
             return
@@ -153,6 +245,15 @@ class Styler:
             or self._is_force_fast_active()
         ):
             return
+        self._slow_polish_count = 0
+        model = self._resolve_model(None)
+        if await self._fully_in_vram(model):
+            log.info(
+                "Politur langsam, %s liegt aber ganz im Grafikspeicher: kein "
+                "Umschalten, vermutlich fremde Last auf der Grafikkarte",
+                model,
+            )
+            return
         if not self._config.styler.fast_mode:
             self._activate_force_fast()
         if self._on_slow_polish_detected is not None:
@@ -160,11 +261,10 @@ class Styler:
                 self._on_slow_polish_detected()
             except Exception:
                 log.exception("on_slow_polish_detected callback raised")
-        self._slow_polish_count = 0
 
     async def warmup(self) -> None:
         model = self._resolve_model(None)
-        keep_alive = self._config.styler.keep_alive
+        keep_alive = self._keep_alive_for(model)
         try:
             await asyncio.wait_for(
                 self._client.chat(
@@ -207,9 +307,6 @@ class Styler:
 
     async def verify_gpu_placement(self) -> str | None:
         model = self._resolve_model(None)
-        wanted = {model}
-        if ":" not in model:
-            wanted.add(f"{model}:latest")
         try:
             resp = await self._client.ps()
         except Exception as exc:
@@ -218,14 +315,13 @@ class Styler:
                 "fehlgeschlagen (%s)", exc,
             )
             return None
-        for m in getattr(resp, "models", None) or []:
-            if wanted.isdisjoint({getattr(m, "model", None), getattr(m, "name", None)}):
-                continue
+        for m in _loaded_entries(resp, model):
             size = m.size
             vram = m.size_vram
             if size is None or vram is None or int(size) <= 0:
                 return None
             if int(size) > 0 and int(vram) == 0:
+                tuning = read_tuning_env()
                 log.warning(
                     "Polish-Modell %s liegt KOMPLETT auf CPU (size=%.1f GB, "
                     "size_vram=0). Polish ist dadurch ~5-10x langsamer. "
@@ -235,19 +331,18 @@ class Styler:
                     "Modell in den VRAM. Bleibt es auf CPU: Programme schließen, "
                     "die Grafikspeicher belegen, oder ein kleineres Modell "
                     "wählen; kein Downgrade, die gemma4-Modelle brauchen "
-                    "Ollama ab 0.30. Achtung: Haelt ein WSL-/"
+                    "Ollama ab 0.30. Achtung: Hält ein WSL-/"
                     "Docker-Ollama den Port 11434, gilt stattdessen die "
-                    "Port-Diagnose-Zeile direkt nach dieser (Windows).",
-                    model, int(size) / 1e9,
+                    "Port-Diagnose-Zeile direkt nach dieser (Windows). "
+                    "Benutzervariablen in HKCU\\Environment: %s.",
+                    model, int(size) / 1e9, describe_tuning_env(tuning),
                 )
                 if self._on_cpu_fallback_detected is not None:
                     msg = (
-                        f"Polish-Modell {model} läuft auf CPU statt GPU, "
-                        f"stark verlangsamt. Ollama neu starten (Speech2Anywhere hat das "
-                        f"VRAM-Tuning gesetzt, es greift nach dem Neustart). "
-                        f"Hilft das nicht: Programme schließen, die "
-                        f"Grafikspeicher belegen, oder ein kleineres Modell "
-                        f"wählen."
+                        tr(
+                            "Politur-Modell {} läuft auf CPU statt GPU, stark verlangsamt. Ollama neu starten{}. Hilft das "
+                            "nicht: Programme schließen, die Grafikspeicher belegen, oder ein kleineres Modell wählen."
+                        ).format(model, tr(_TUNING_NOTICE[vram_tuning_set(tuning)]))
                     )
                     try:
                         self._on_cpu_fallback_detected(msg)
@@ -262,16 +357,17 @@ class Styler:
                     "(%.1f/%.1f GB auf GPU). Der CPU-Anteil bremst jede "
                     "Token-Generation. Abhilfe wie beim CPU-Fallback: "
                     "Ollama neu starten (VRAM-Tuning greift), VRAM-Fresser "
-                    "schließen oder kleineres Modell wählen.",
+                    "schließen oder kleineres Modell wählen. "
+                    "Benutzervariablen in HKCU\\Environment: %s.",
                     model, int(vram) / 1e9, int(size) / 1e9,
+                    describe_tuning_env(read_tuning_env()),
                 )
                 if self._on_cpu_fallback_detected is not None:
                     msg = (
-                        f"Polish-Modell {model} liegt nur teilweise im VRAM "
-                        f"({int(vram) / 1e9:.1f}/{int(size) / 1e9:.1f} GB), "
-                        f"Polish deutlich verlangsamt. Ollama neu starten; "
-                        f"bleibt der Split, VRAM freiräumen oder kleineres "
-                        f"Modell nutzen."
+                        tr(
+                            "Politur-Modell {} liegt nur teilweise im VRAM ({:.1f}/{:.1f} GB), Politur deutlich verlangsamt. "
+                            "Ollama neu starten; bleibt der Split, VRAM freiräumen oder kleineres Modell nutzen."
+                        ).format(model, int(vram) / 1e9, int(size) / 1e9)
                     )
                     try:
                         self._on_cpu_fallback_detected(msg)
@@ -287,10 +383,13 @@ class Styler:
             return "gpu"
         return None
 
-    async def polish(self, text: str, mode: str, glossary: list[str] | None = None) -> str:
+    async def polish(
+        self, text: str, mode: str, glossary: list[str] | None = None, language: str | None = None,
+    ) -> str:
         if not text.strip():
             return text
-        prompt = _template_with_glossary(load_prompt(mode), glossary).format(text=text)
+        template = _template_with_rules(load_prompt(mode), mode, language)
+        prompt = _template_with_glossary(template, glossary).format(text=text)
         mode_cfg = self._config.styler.modes.get(mode, ModeConfig())
         model = self._resolve_model(mode)
         timeout = mode_cfg.timeout_seconds or self._config.styler.timeout_seconds
@@ -298,6 +397,7 @@ class Styler:
             mode_cfg.temperature if mode_cfg.temperature is not None else 0.2
         )
         start = time.monotonic()
+        load_seconds = 0.0
         try:
             response = await asyncio.wait_for(
                 self._client.chat(
@@ -306,11 +406,12 @@ class Styler:
                     options={
                         "temperature": temperature,
                     },
-                    keep_alive=self._config.styler.keep_alive,
+                    keep_alive=self._keep_alive_for(model),
                     **_thinking_kwargs(model),
                 ),
                 timeout=timeout,
             )
+            load_seconds = (response.get("load_duration") or 0) / 1e9
             polished = response["message"]["content"].strip()
             self._note_connection_result(False)
             if not polished:
@@ -344,7 +445,15 @@ class Styler:
                 return text
             raise
         finally:
-            self._observe_polish_duration(time.monotonic() - start)
+            elapsed = time.monotonic() - start
+            counted = max(0.0, elapsed - load_seconds)
+            if load_seconds and elapsed > SLOW_POLISH_THRESHOLD_SEC:
+                log.info(
+                    "Politur dauerte %.1f s, davon %.1f s Laden von %s; "
+                    "für die Langsam-Erkennung zählen %.1f s",
+                    elapsed, load_seconds, model, counted,
+                )
+            await self._observe_polish_duration(counted)
 
     async def edit_command(self, selection: str, command: str) -> str:
         if not selection.strip() or not command.strip():
@@ -365,7 +474,7 @@ class Styler:
                     options={
                         "temperature": temperature,
                     },
-                    keep_alive=self._config.styler.keep_alive,
+                    keep_alive=self._keep_alive_for(model),
                     **_thinking_kwargs(model),
                 ),
                 timeout=timeout,

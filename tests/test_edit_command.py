@@ -26,6 +26,7 @@ def mock_clipboard(monkeypatch):
     monkeypatch.setattr(edit_command.pyperclip, "copy", fake_copy)
     monkeypatch.setattr(edit_command.keyboard, "send", fake_send)
     monkeypatch.setattr(edit_command.time, "sleep", lambda _s: None)
+    monkeypatch.setattr(edit_command.clipboard_win, "snapshot", lambda: None)
     return state
 
 
@@ -59,6 +60,7 @@ def test_read_selection_raises_on_pyperclip_initial_paste_failure(monkeypatch):
     def fail(*_a, **_kw):
         raise RuntimeError("clipboard not available")
     monkeypatch.setattr(edit_command.pyperclip, "paste", fail)
+    monkeypatch.setattr(edit_command.clipboard_win, "snapshot", lambda: None)
     with pytest.raises(ClipboardUnavailable, match="Clipboard-Lesen vor"):
         read_selection()
 
@@ -82,7 +84,21 @@ def test_read_selection_raises_on_keyboard_send_failure(monkeypatch):
     monkeypatch.setattr(edit_command.pyperclip, "copy", fake_copy)
     monkeypatch.setattr(edit_command.keyboard, "send", fail_send)
     monkeypatch.setattr(edit_command.time, "sleep", lambda _s: None)
+    monkeypatch.setattr(edit_command.clipboard_win, "snapshot", lambda: None)
 
     with pytest.raises(ClipboardUnavailable, match="keyboard.send"):
         read_selection()
     assert state["current"] == "user-original"
+
+
+def test_read_selection_puts_the_full_snapshot_back(mock_clipboard, monkeypatch):
+    snap = [(8, b"DIB")]
+    restored = []
+    monkeypatch.setattr(edit_command.clipboard_win, "snapshot", lambda: snap)
+    monkeypatch.setattr(
+        edit_command.clipboard_win, "restore", lambda entries: restored.append(entries) or True,
+    )
+    mock_clipboard["selection_to_capture"] = "markiert"
+
+    assert read_selection() == "markiert"
+    assert restored == [snap]

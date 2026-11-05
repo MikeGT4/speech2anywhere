@@ -13,6 +13,7 @@ from kira.ui.hud.base import EASE_IN_OUT, EASE_OUT, Frame, clamp, prog
 from kira.ui.hud.saison import (
     INK, LABEL, ROUND, SMOKE, STEEL, WHITE, YELLOW, Pose, Saison, ellipse, faded, glow, polygon, text,
 )
+from kira.texte import N_, tr
 
 HAT = QColor("#3B2A5C")
 HAT_LIGHT = QColor("#5E4A8C")
@@ -53,9 +54,9 @@ BOIL_AFTER_S = 3.0
 FOAM = tuple((-11.0 + k * 4.4, -10.4 - (k % 2) * 1.2, 2.6 + (k % 3) * 0.5) for k in range(6))
 DRIPS = ((-12.0, 7.0), (1.5, 9.5), (11.0, 6.0))
 LINE_Y = cm.LINE_Y
-LINE_TEXT = "Bla bla blubb, bla bla!"
-CRUMBS = (("äh", 117.0, 43.5, -18.0), ("ähm", 140.0, 54.5, 12.0), ("öh", 163.0, 43.0, 20.0),
-          ("hm", 186.0, 55.0, -10.0), ("äh", 206.0, 43.5, 8.0), ("ähm", 224.0, 54.0, -15.0))
+LINE_TEXT = N_("Bla bla blubb, bla bla!")
+CRUMBS = ((N_("äh"), 117.0, 43.5, -18.0), (N_("ähm"), 140.0, 54.5, 12.0), (N_("öh"), 163.0, 43.0, 20.0),
+          ("hm", 186.0, 55.0, -10.0), (N_("äh"), 206.0, 43.5, 8.0), (N_("ähm"), 224.0, 54.0, -15.0))
 BROOM_PASS_S = 1.6
 BROOM_CYCLE_S = 2.1
 BROOM_LEFT, BROOM_RIGHT = 110.0, 232.0
@@ -394,7 +395,7 @@ def _cauldron(p: QPainter, cx: float, cy: float, age: float, boil: bool, reduced
             k = prog(cyc, 0.7, 0.3)
             p.save()
             p.setOpacity(p.opacity() * (1.0 - k))
-            cm._sfx(p, bx + 3, BLUBB_Y, "blubb" if j == 0 else "bla", 6.5 + k * 1.5, -10 + j * 8, 1.2, 0.8)
+            cm._sfx(p, bx + 3, BLUBB_Y, tr("blubb", "halloween") if j == 0 else tr("bla"), 6.5 + k * 1.5, -10 + j * 8, 1.2, 0.8)
             p.restore()
     if boil and not reduced:
         for j in range(3):
@@ -444,13 +445,14 @@ def _sweep(p: QPainter, elapsed: float, reduced: bool) -> None:
         bx = BROOM_RIGHT - (BROOM_RIGHT - BROOM_LEFT) * EASE_IN_OUT((ph - BROOM_PASS_S) / (BROOM_CYCLE_S - BROOM_PASS_S))
     p.setFont(comic.baloo(800, 8))
     p.setPen(INK)
-    p.drawText(QPointF(112.0, LINE_Y + 2.5), LINE_TEXT)
+    p.drawText(QPointF(112.0, LINE_Y + 2.5), tr(LINE_TEXT))
     small = comic.baloo(700, 8)
     metrics = QFontMetricsF(small)
     pile = 0
     pushed = 0
     returning = not sweeping and ph > BROOM_CYCLE_S - 0.35
     for word, x0, y0, angle in CRUMBS:
+        word = tr(word)
         gone = reduced or not sweeping
         x, y, a, alpha = x0, y0, angle, 1.0
         if sweeping and bx + 7.0 > x0:
@@ -514,7 +516,7 @@ def _moon_clock(p: QPainter, elapsed: float, reduced: bool) -> None:
         _bat(p, cx - 6 - k * 34, cy + 10 - math.sin(k * math.pi) * 8, 1.0, math.sin(since * 30))
         p.save()
         p.setOpacity(p.opacity() * (1.0 - prog(k, 0.6, 0.4)))
-        cm._sfx(p, cx - 26, cy + 14, "UHU!", 8 + 2 * EASE_OUT(min(1.0, k * 3)), -8, 2.2, 1.0)
+        cm._sfx(p, cx - 26, cy + 14, tr("UHU!"), 8 + 2 * EASE_OUT(min(1.0, k * 3)), -8, 2.2, 1.0)
         p.restore()
     cm._clock_digits(p, cx - r - 4.5, cy + 0.4, elapsed)
 
@@ -524,10 +526,11 @@ class Halloween(Saison):
     SCENES = ("kessel", "besen", "kuerbis")
     CLOCKS = ("mond",)
     LANES = ((96.0, 50.0, -12.0), cm.LANES[1], cm.LANES[2])
-    WORDS = ("bla", "buh!", "blubb!")
+    WORDS = (N_("bla"), N_("buh!"), N_("blubb!"))
+    PLACE = "halloween"
     WORD_FILLS = (QColor(comic.YELLOW_HOVER), QColor("#FFB020"), QColor("#FF9A3D"))
-    ZACK_WORD = "Hokuspokus!"
-    SILENCE = ("Kein Signal", "Totenstille im Mikrofon.")
+    ZACK_WORD = N_("Hokuspokus!")
+    SILENCE = (N_("Kein Signal"), N_("Totenstille im Mikrofon."))
 
     def accessory(self, p: QPainter, pose: Pose) -> None:
         dx = dy = fx = fy = 0.0
@@ -575,9 +578,9 @@ class Halloween(Saison):
 
     def caption(self, key: str, elapsed: float) -> str:
         if key == "kessel":
-            return "kocht über!" if elapsed >= BOIL_AFTER_S else "es brodelt …"
+            return tr("kocht über!") if elapsed >= BOIL_AFTER_S else tr("es brodelt …")
         if key == "kuerbis":
-            return "leuchtet!" if elapsed >= CARVE_LIGHT_S else "wird geschnitzt …"
+            return tr("leuchtet!") if elapsed >= CARVE_LIGHT_S else tr("wird geschnitzt …")
         return ""
 
     def paint_scene(self, p: QPainter, key: str, t: float, f: Frame, elapsed: float, title: str) -> None:

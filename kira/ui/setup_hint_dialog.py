@@ -7,6 +7,7 @@ from kira.ui import _comic as comic
 from kira.ui._dialog_style import apply_light_theme
 
 from kira._resources import assets_dir as _assets_dir  # noqa: E402
+from kira.texte import tr
 _ASSETS = _assets_dir()
 
 
@@ -30,26 +31,28 @@ class SetupHintDialog(QDialog):
         self.user_clicked_open_mic_settings = False
         body = comic.dialog_frame(self, "Setup")
 
-        card = comic.ComicCard("Noch etwas Setup", comic.mascot_pixmap(32))
+        card = comic.ComicCard(tr("Noch etwas Setup"), comic.mascot_pixmap(32))
         if not mic_ok:
-            card.add_row("Mikrofon-Zugriff fehlt", "", _explain(
-                "Speech2Anywhere braucht Zugriff aufs Mikrofon, um deine Stimme aufzunehmen."
+            card.add_row(tr("Mikrofon-Zugriff fehlt"), "", _explain(
+                tr("Speech2Anywhere braucht Zugriff aufs Mikrofon, um deine Stimme aufzunehmen.")
             ))
         if not ollama_ok:
-            card.add_row("Ollama nicht erreichbar", "", _explain(
-                "Unter http://localhost:11434 antwortet kein Ollama. Bitte stelle sicher, dass Ollama läuft. "
-                "Ohne Ollama fügt Speech2Anywhere den unpolierten Whisper-Text ein."
+            card.add_row(tr("Ollama nicht erreichbar"), "", _explain(
+                tr(
+                    "Unter http://localhost:11434 antwortet kein Ollama. Bitte stelle sicher, dass Ollama läuft. "
+                    "Ohne Ollama fügt Speech2Anywhere den unpolierten Whisper-Text ein."
+                )
             ))
         body.addWidget(card)
         body.addStretch()
 
         buttons: list[QPushButton] = []
         if not mic_ok:
-            mic_btn = QPushButton("Mikrofon-Einstellungen öffnen")
+            mic_btn = QPushButton(tr("Mikrofon-Einstellungen öffnen"))
             mic_btn.setObjectName("comicPrimary")
             mic_btn.clicked.connect(self._on_mic_clicked)
             buttons.append(mic_btn)
-        close_btn = QPushButton("Schließen")
+        close_btn = QPushButton(tr("Schließen"))
         if mic_ok:
             close_btn.setObjectName("comicPrimary")
         close_btn.clicked.connect(self.accept)

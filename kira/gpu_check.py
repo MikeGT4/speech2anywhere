@@ -6,6 +6,7 @@ import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Literal
+from kira.texte import tr
 
 log = logging.getLogger(__name__)
 
@@ -174,24 +175,30 @@ def assess(whisper_model: str, polish_model: str) -> VramAssessment:
             total_required_gb=total,
             headroom_gb=0.0,
             message=(
-                "Keine NVIDIA-GPU erkannt.\n\n"
-                "Speech2Anywhere ist für NVIDIA-Grafikkarten mit CUDA gebaut. "
-                f"Geschätzter Bedarf: rund {total:.1f} GB Grafikspeicher "
-                f"({whisper_model} + {polish_model}).\n\n"
-                "Nur mit dem Prozessor wäre die Spracherkennung etwa zehnmal langsamer "
-                "und das Sprachmodell kaum nutzbar. Grafik von AMD oder Intel wird "
-                "nicht unterstützt (nvidia-smi nicht gefunden)."
+                tr(
+                    "Keine NVIDIA-GPU erkannt.\n"
+                    "\n"
+                    "Speech2Anywhere ist für NVIDIA-Grafikkarten mit CUDA gebaut. Geschätzter Bedarf: rund {:.1f} GB "
+                    "Grafikspeicher ({} + {}).\n"
+                    "\n"
+                    "Nur mit dem Prozessor wäre die Spracherkennung etwa zehnmal langsamer und das Sprachmodell kaum "
+                    "nutzbar. Grafik von AMD oder Intel wird nicht unterstützt (nvidia-smi nicht gefunden)."
+                ).format(total, whisper_model, polish_model)
             ),
         )
 
     headroom = round(gpu.vram_gb - total, 1)
     common = (
-        f"GPU: {gpu.name}\n"
-        f"Grafikspeicher: {gpu.vram_gb:.1f} GB\n\n"
-        f"Spracherkennung ({whisper_model}): ~{w_vram:.1f} GB\n"
-        f"Sprachmodell ({polish_model}): ~{p_vram:.1f} GB\n"
-        f"Summe: ~{total:.1f} GB\n"
-        f"Reserve: {headroom:+.1f} GB\n\n"
+        tr(
+            "GPU: {}\n"
+            "Grafikspeicher: {:.1f} GB\n"
+            "\n"
+            "Spracherkennung ({}): ~{:.1f} GB\n"
+            "Sprachmodell ({}): ~{:.1f} GB\n"
+            "Summe: ~{:.1f} GB\n"
+            "Reserve: {:+.1f} GB\n"
+            "\n"
+        ).format(gpu.name, gpu.vram_gb, whisper_model, w_vram, polish_model, p_vram, total, headroom)
     )
 
     if headroom >= 2.0:
@@ -200,8 +207,8 @@ def assess(whisper_model: str, polish_model: str) -> VramAssessment:
             whisper_model=whisper_model, whisper_vram_gb=w_vram,
             polish_model=polish_model, polish_vram_gb=p_vram,
             total_required_gb=total, headroom_gb=headroom,
-            message="Das passt mit Komfort: Deine Grafikkarte hat genug Speicher.\n\n" + common + (
-                "Genug Reserve für Desktop, Browser und leichte Last auf der Grafikkarte nebenher."
+            message=tr("Das passt mit Komfort: Deine Grafikkarte hat genug Speicher.\n\n") + common + (
+                tr("Genug Reserve für Desktop, Browser und leichte Last auf der Grafikkarte nebenher.")
             ),
         )
     if headroom >= 0.5:
@@ -210,11 +217,13 @@ def assess(whisper_model: str, polish_model: str) -> VramAssessment:
             whisper_model=whisper_model, whisper_vram_gb=w_vram,
             polish_model=polish_model, polish_vram_gb=p_vram,
             total_required_gb=total, headroom_gb=headroom,
-            message="Knapp, aber es geht.\n\n" + common + (
-                "Es klappt, solange nichts anderes die Grafikkarte stark belastet "
-                "(Spiele, viele Browserfenster mit Grafikbeschleunigung, Bildgeneratoren). "
-                "Beim Kaltstart kann der Speicher ausgehen.\n\n"
-                "Empfehlung: ein kleineres Sprachmodell wählen."
+            message=tr("Knapp, aber es geht.\n\n") + common + (
+                tr(
+                    "Es klappt, solange nichts anderes die Grafikkarte stark belastet "
+                    "(Spiele, viele Browserfenster mit Grafikbeschleunigung, Bildgeneratoren). "
+                    "Beim Kaltstart kann der Speicher ausgehen.\n\n"
+                    "Empfehlung: ein kleineres Sprachmodell wählen."
+                )
             ),
         )
     suggestion = _suggest_smaller_polish(polish_model)
@@ -223,9 +232,10 @@ def assess(whisper_model: str, polish_model: str) -> VramAssessment:
         whisper_model=whisper_model, whisper_vram_gb=w_vram,
         polish_model=polish_model, polish_vram_gb=p_vram,
         total_required_gb=total, headroom_gb=headroom,
-        message="Nicht genug Grafikspeicher.\n\n" + common + (
-            f"Empfehlung: Sprachmodell wechseln auf '{suggestion}' "
-            f"(~{estimate_polish_vram(suggestion):.1f} GB statt ~{p_vram:.1f} GB). "
-            f"Die Spracherkennung ({whisper_model}) kann bleiben."
+        message=tr("Nicht genug Grafikspeicher.\n\n") + common + (
+            tr(
+                "Empfehlung: Sprachmodell wechseln auf '{}' (~{:.1f} GB statt ~{:.1f} GB). Die Spracherkennung "
+                "({}) kann bleiben."
+            ).format(suggestion, estimate_polish_vram(suggestion), p_vram, whisper_model)
         ),
     )

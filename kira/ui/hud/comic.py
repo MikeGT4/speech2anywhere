@@ -13,6 +13,8 @@ from PyQt6.QtSvg import QSvgRenderer
 
 from kira.ui import _comic as comic
 from kira.ui.hud.base import EASE_IN_OUT, EASE_OUT, W, Frame, HudStyle, clamp, prog
+from kira.texte import tr
+from kira.texte import N_
 
 INK = QColor(comic.INK)
 YELLOW = QColor(comic.YELLOW)
@@ -35,7 +37,7 @@ _ROUND = (Qt.PenStyle.SolidLine, Qt.PenCapStyle.RoundCap, Qt.PenJoinStyle.RoundJ
 TILE = QRectF(2, 8, 66, 66)
 MOUTH = QPointF(64, 50)
 LANES = ((90.0, 56.0, -12.0), (132.0, 30.0, 7.0), (200.0, 54.0, -6.0))
-WORDS = ("bla", "bla", "blubb!")
+WORDS = (N_("bla"), N_("bla"), N_("blubb!"))
 SPAWN_LEVEL = 0.3
 SPAWN_S = 0.34
 LIFE_S = 1.0
@@ -48,7 +50,7 @@ CLOUD = QRectF(94, 3, 158, 56)
 TRAIL = ((76, 30, 3.0), (85, 22, 4.2))
 DRUM = QPointF(121, 31)
 DRUM_SCALE = 0.9
-DRUM_WORDS = (("bla", 8.5, 8), ("bla", 9.5, 8), ("blubb", 6.0, 7))
+DRUM_WORDS = ((N_("bla"), 8.5, 8), (N_("bla"), 9.5, 8), (N_("blubb"), 6.0, 7))
 SPIN_AFTER_S = 3.0
 SMOKE_AFTER_S = 3.0
 SWEAT_AFTER_S = 6.0
@@ -64,7 +66,7 @@ IRON_PASS_S = 1.5
 IRON_LEFT, IRON_RIGHT = 114.0, 232.0
 LINE_Y = 49.5
 SHEET = QRectF(105.0, 39.0, 138.0, 13.0)
-SHEET_TEXT = "Bla bla blubb, bla bla!"
+SHEET_TEXT = N_("Bla bla blubb, bla bla!")
 SHEET_PX = 8
 SHEET_WORDS = 12
 SHEET_GAP = "  "
@@ -353,7 +355,7 @@ def _drum(p: QPainter, age: float, spin: bool, reduced: bool) -> None:
     for j, (word, radius, px) in enumerate(DRUM_WORDS):
         a = age * speed + j * 2.1
         fall = 0.0 if spin else max(0.0, math.sin(a)) * 3.5
-        _sfx(p, math.cos(a) * radius, math.sin(a) * radius + fall, word, px, math.degrees(a) * 0.6 + j * 40,
+        _sfx(p, math.cos(a) * radius, math.sin(a) * radius + fall, tr(word), px, math.degrees(a) * 0.6 + j * 40,
              1.3, 0.9)
     p.setPen(QPen(INK, 0.9))
     p.setBrush(WHITE)
@@ -445,7 +447,7 @@ def _sheet_width(text: str, metrics: QFontMetricsF) -> float:
 
 def _sheet_line(words: list[str]) -> str:
     if not words:
-        return SHEET_TEXT
+        return tr(SHEET_TEXT)
     metrics = QFontMetricsF(comic.baloo(800, SHEET_PX))
     room = SHEET.width() - 14.0
     line = SHEET_GAP.join(words)
@@ -458,11 +460,12 @@ def _sheet_line(words: list[str]) -> str:
             break
         shown = trial
     if not shown:
-        return SHEET_TEXT
+        return tr(SHEET_TEXT)
     return shown if shown.endswith("…") else shown + SHEET_GAP + "…"
 
 
-def _sheet(p: QPainter, ix: float, direction: int, passes: int, sheen: bool, text: str = SHEET_TEXT) -> None:
+def _sheet(p: QPainter, ix: float, direction: int, passes: int, sheen: bool, text: str | None = None) -> None:
+    text = tr(SHEET_TEXT) if text is None else text
     before, after = _wrinkle_amps(passes)
     outline = _sheet_outline(ix, direction, before, after)
     if direction > 0:
@@ -774,7 +777,7 @@ class Comic(HudStyle):
         self._queue: deque[str] = deque(maxlen=4)
         self._spoken = 0
         self._heard: list[str] = []
-        self._sheet_cache = (0, SHEET_TEXT)
+        self._sheet_cache = (0, tr(SHEET_TEXT))
 
     def on_press(self, t: float, f: Frame) -> None:
         self._words = []
@@ -784,7 +787,7 @@ class Comic(HudStyle):
         self._queue.clear()
         self._spoken = 0
         self._heard = []
-        self._sheet_cache = (0, SHEET_TEXT)
+        self._sheet_cache = (0, tr(SHEET_TEXT))
         self.scene = self._rng.choice(SCENES)
         self.clock = self._rng.choice(CLOCKS)
 
@@ -796,7 +799,7 @@ class Comic(HudStyle):
 
     def sheet_text(self) -> str:
         if not self._heard:
-            return SHEET_TEXT
+            return tr(SHEET_TEXT)
         if self._sheet_cache[0] != len(self._heard):
             self._sheet_cache = (len(self._heard), _sheet_line(self._heard))
         return self._sheet_cache[1]
@@ -809,8 +812,8 @@ class Comic(HudStyle):
     def caption(self, t: float, f: Frame) -> str:
         key, t0 = self.scene_at(t, f)
         if key == "waesche":
-            return "Schleudergang…" if t - t0 >= SPIN_AFTER_S else "Wäsche läuft…"
-        return "gleich fertig" if key == "zahnraeder" else ""
+            return tr("Schleudergang…") if t - t0 >= SPIN_AFTER_S else tr("Wäsche läuft…")
+        return tr("gleich fertig") if key == "zahnraeder" else ""
 
     def sweating(self, t: float) -> bool:
         return self.mode == "proc" and t - self.rel_t >= SWEAT_AFTER_S
@@ -832,7 +835,7 @@ class Comic(HudStyle):
                 fill = WORD_COLORS[self._spoken % len(WORD_COLORS)]
                 self._spoken += 1
             else:
-                text, fill = WORDS[lane], YELLOW
+                text, fill = tr(WORDS[lane]), YELLOW
             text, size, width = _fitted_word(text, 11 + 13 * an.level)
             self._words.append(_Word(text, t, size, lane, width, QColor(fill)))
             self._count += 1
@@ -843,7 +846,7 @@ class Comic(HudStyle):
             if an.clip:
                 self._shout(p)
             elif an.silent:
-                self._hint(p, "think", "Kein Signal", "Das Mikrofon liefert Stille.")
+                self._hint(p, "think", tr("Kein Signal"), tr("Das Mikrofon liefert Stille."))
             else:
                 self._talk(p, t, f)
         elif self.mode == "proc":
@@ -852,7 +855,7 @@ class Comic(HudStyle):
             self._zack(p, t, f)
         elif self.mode == "error":
             first, second = self.message_lines()
-            self._hint(p, "sad", first or "Fehler", second)
+            self._hint(p, "sad", first or tr("Fehler"), second)
 
     def _talk(self, p: QPainter, t: float, f: Frame) -> None:
         _mascot(p, "talk", self._lv)
@@ -877,11 +880,11 @@ class Comic(HudStyle):
     def _shout(self, p: QPainter) -> None:
         _mascot(p, "shout")
         _ink_shape(p, _burst(166, 40, 90, 36, 16, 0.74), ALARM)
-        _text(p, 166, 48, "ZU NAH!", comic.baloo(800, 22), INK, "center")
+        _text(p, 166, 48, tr("ZU NAH!"), comic.baloo(800, 22), INK, "center")
 
     def _think(self, p: QPainter, t: float, f: Frame) -> None:
         key, t0 = self.scene_at(t, f)
-        title = "Politur" if f.polishing else "Erkennen"
+        title = tr("Politur") if f.polishing else tr("Erkennen")
         if key == "waesche":
             self._washing(p, t, f, t - t0, title)
         elif key == "zahnraeder":
@@ -949,10 +952,10 @@ class Comic(HudStyle):
         p.scale(pop, pop)
         _ink_shape(p, _burst(0, 0, 88, 36, 12, 0.7), YELLOW)
         font = comic.baloo(800, 21)
-        width = QFontMetricsF(font).horizontalAdvance("Zack!")
+        width = QFontMetricsF(font).horizontalAdvance(tr("Zack!"))
         start = -(width + 20) / 2
         _check(p, start, -8, 13)
-        _text(p, start + 20, 21 * 0.36, "Zack!", font, INK)
+        _text(p, start + 20, 21 * 0.36, tr("Zack!"), font, INK)
         p.restore()
 
     def _hint(self, p: QPainter, face: str, first: str, second: str) -> None:

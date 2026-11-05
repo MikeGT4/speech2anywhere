@@ -15,6 +15,8 @@ from kira.ui import _comic as comic
 from kira.ui.hud import comic as cm
 from kira.ui.hud import fighter
 from kira.ui.hud.base import EASE_OUT, H, W, Frame, HudStyle, clamp, hash2, prog
+from kira.texte import tr
+from kira.texte import N_
 
 INK = QColor(comic.INK)
 PAPER = QColor("#FFFFFF")
@@ -37,7 +39,7 @@ LINE_OUTER = 240.0
 TONE_STEP = 4.6
 TONE_FROM_X = 138.0
 LANES = ((108.0, 55.0, -7.0), (158.0, 29.0, 4.0), (214.0, 53.0, -5.0))
-WORDS = ("HA!", "HU!", "KIAI!")
+WORDS = ("HA!", N_("HU!"), "KIAI!")
 SPAWN_LEVEL = 0.3
 SPAWN_S = 0.34
 SHAKE_PX = 1.2
@@ -440,7 +442,7 @@ class Manga(HudStyle):
                 text = self._queue.popleft().upper()
                 fill = WORD_FILLS[self._count % len(WORD_FILLS)]
             else:
-                text, fill = WORDS[lane], YELLOW
+                text, fill = tr(WORDS[lane]), YELLOW
             text, size, width = _fitted_word(text, 12 + 12 * an.level)
             self._words.append(_Word(text, t, size, lane, strike_origin(self._clip), width, QColor(fill)))
             self._count += 1
@@ -499,8 +501,8 @@ class Manga(HudStyle):
             shake = SHAKE_PX * math.sin(2 * math.pi * 14.0 * t) if age >= fighter.duration("block") else 0.0
             _figure(p, fighter.clip_pose("block", age), 0.0, t, shake)
         cm._ink_shape(p, cm._burst(CENTER.x() - 4.0, CENTER.y(), 76.0, 33.0, 16, 0.74), ALARM)
-        _lettering(p, CENTER.x() - 4.0, CENTER.y() + 1.0, "ZU NAH!", 22, -3.0, INK, outline=2.0, shadow=0.0, edge=PAPER)
-        _strip(p, "ZU NAH", "ギャー")
+        _lettering(p, CENTER.x() - 4.0, CENTER.y() + 1.0, tr("ZU NAH!"), 22, -3.0, INK, outline=2.0, shadow=0.0, edge=PAPER)
+        _strip(p, tr("ZU NAH", "manga-streifen"), "ギャー")
 
     def _silence(self, p: QPainter, t: float, f: Frame) -> None:
         _panel(p)
@@ -515,8 +517,8 @@ class Manga(HudStyle):
                 pose = fighter.wobble(pose, t, 5.0, 0.55)
             _figure(p, pose, 0.0, t)
         _lettering(p, 70.0, 11.0, "?", 15, 12.0, INK, outline=2.0, shadow=0.0, edge=PAPER)
-        _caption(p, "Kein Signal", "Das Mikrofon liefert Stille.")
-        _strip(p, "STILLE", "シーン")
+        _caption(p, tr("Kein Signal"), tr("Das Mikrofon liefert Stille."))
+        _strip(p, tr("STILLE"), "シーン")
 
     def _think(self, p: QPainter, t: float, f: Frame) -> None:
         _panel(p)
@@ -527,10 +529,10 @@ class Manga(HudStyle):
         _aura(p, FOCUS.x(), FOCUS.y() + 8.0, 40.0, 0.8)
         _figure(p, fighter.MEDITATE if f.reduced else fighter.idle("meditate", t), 0.0, t, 0.0, bob)
         _swirl(p, CENTER.x(), CENTER.y(), t, f.reduced)
-        title = "POLITUR" if f.polishing else "ERKENNEN"
+        title = tr("POLITUR") if f.polishing else tr("ERKENNEN")
         _lettering(p, CENTER.x(), CENTER.y() + 1.0, title, 18, 0.0, PAPER, outline=2.6, shadow=1.6)
         cm._dots(p, CENTER.x(), CENTER.y() + 23.0, 0.0 if f.reduced else t)
-        _strip(p, "DENKT", "ウーン")
+        _strip(p, tr("DENKT"), "ウーン")
         if self.sweating(t):
             age = 0.3 if f.reduced else t - self.rel_t - SWEAT_AFTER_S
             for j in range(2):
@@ -551,10 +553,10 @@ class Manga(HudStyle):
         p.scale(0.6 + 0.4 * pop, 0.6 + 0.4 * pop)
         cm._ink_shape(p, cm._burst(0, 0, 80.0, 33.0, 12, 0.7), YELLOW)
         font = sfx_font(24)
-        width = QFontMetricsF(font).horizontalAdvance("ZACK!")
+        width = QFontMetricsF(font).horizontalAdvance(tr("ZACK!"))
         start = -(width + 20) / 2
         cm._check(p, start, -9.0, 14.0)
-        cm._text(p, start + 20.0, 24 * 0.36, "ZACK!", font, INK)
+        cm._text(p, start + 20.0, 24 * 0.36, tr("ZACK!"), font, INK)
         p.restore()
         stamp = 1.0 if f.reduced else EASE_OUT(prog(t, self.end_t + 0.1, 0.3))
         font_jp = jp_font(12)
@@ -575,5 +577,5 @@ class Manga(HudStyle):
                 pose = fighter.wobble(pose, t, 4.0, 0.9)
             _figure(p, pose, 0.0, t)
         first, second = self.message_lines()
-        _caption(p, first or "Fehler", second)
-        _strip(p, "FEHLER", "ガーン")
+        _caption(p, first or tr("Fehler"), second)
+        _strip(p, tr("FEHLER"), "ガーン")

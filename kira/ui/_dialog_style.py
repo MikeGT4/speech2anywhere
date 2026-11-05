@@ -1,11 +1,12 @@
 from PyQt6.QtGui import QColor, QPalette
 from PyQt6.QtWidgets import QDialog, QLabel, QMessageBox, QWidget
 
+from kira.texte import N_, tr
 from kira.ui import _comic as comic
 
 _GERMAN_BUTTONS = (
-    (QMessageBox.StandardButton.Yes, "Yes", "Ja"),
-    (QMessageBox.StandardButton.No, "No", "Nein"),
+    (QMessageBox.StandardButton.Yes, "Yes", N_("Ja")),
+    (QMessageBox.StandardButton.No, "No", N_("Nein")),
 )
 _SYMBOL_SIZE = 56
 
@@ -54,7 +55,7 @@ def _comic_message(box: QMessageBox) -> None:
     for standard, english, german in _GERMAN_BUTTONS:
         button = box.button(standard)
         if button is not None and button.text().replace("&", "") == english:
-            button.setText(german)
+            button.setText(tr(german))
     default = box.defaultButton()
     if default is not None:
         default.setObjectName("comicPrimary")

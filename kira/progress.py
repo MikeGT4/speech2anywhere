@@ -5,10 +5,11 @@ import threading
 import time
 from collections import deque
 from typing import Callable
+from kira.texte import N_, decimal_mark, tr
 
-STARTING = "startet …"
-PREPARING = "wird vorbereitet …"
-FINISHING = "wird abgeschlossen …"
+STARTING = N_("startet …")
+PREPARING = N_("wird vorbereitet …")
+FINISHING = N_("wird abgeschlossen …")
 SCALE = 1000
 RESUME_SHARE = 0.25
 KB = 1000
@@ -17,10 +18,10 @@ GB = 1000 ** 3
 
 PULL_PHASES = {
     "pulling manifest": STARTING,
-    "verifying sha256 digest": "Prüfsumme wird geprüft …",
-    "writing manifest": "Modell wird eingetragen …",
-    "removing any unused layers": "wird aufgeräumt …",
-    "removing unused layers": "wird aufgeräumt …",
+    "verifying sha256 digest": N_("Prüfsumme wird geprüft …"),
+    "writing manifest": N_("Modell wird eingetragen …"),
+    "removing any unused layers": N_("wird aufgeräumt …"),
+    "removing unused layers": N_("wird aufgeräumt …"),
 }
 SUCCESS = "success"
 FINAL_STATUSES = frozenset({"verifying sha256 digest", "writing manifest", SUCCESS})
@@ -47,7 +48,7 @@ def percent(done: float, total: float) -> int:
 
 
 def _number(value: float, digits: int) -> str:
-    return f"{value:.{digits}f}".replace(".", ",")
+    return f"{value:.{digits}f}".replace(".", decimal_mark())
 
 
 def _unit(total: float) -> tuple[int, str, int]:
@@ -61,7 +62,7 @@ def _unit(total: float) -> tuple[int, str, int]:
 def size_text(done: float, total: float) -> str:
     unit, name, digits = _unit(total)
     shown = max(0.0, min(float(done), float(total)))
-    return f"{_number(shown / unit, digits)} von {_number(total / unit, digits)} {name}"
+    return tr("{} von {} {}").format(_number(shown / unit, digits), _number(total / unit, digits), name)
 
 
 def total_text(total: float) -> str:
@@ -79,11 +80,11 @@ def clock_text(seconds: float) -> str:
 
 
 def time_text(done: float, total: float) -> str:
-    return f"{clock_text(min(done, total))} von {clock_text(total)}"
+    return tr("{} von {}").format(clock_text(min(done, total)), clock_text(total))
 
 
 def running_text(seconds: float) -> str:
-    return f"läuft seit {clock_text(seconds)}"
+    return tr("läuft seit {}").format(clock_text(seconds))
 
 
 def rate_text(per_second: float) -> str:
@@ -95,13 +96,13 @@ def rate_text(per_second: float) -> str:
 
 def eta_text(seconds: float) -> str:
     if seconds < 60:
-        return "noch unter einer Minute"
+        return tr("noch unter einer Minute")
     minutes = round(seconds / 60)
     if minutes == 1:
-        return "noch etwa 1 Minute"
+        return tr("noch etwa 1 Minute")
     if minutes < 100:
-        return f"noch etwa {minutes} Minuten"
-    return f"noch etwa {round(seconds / 3600)} Stunden"
+        return tr("noch etwa {} Minuten").format(minutes)
+    return tr("noch etwa {} Stunden").format(round(seconds / 3600))
 
 
 class RateMeter:
@@ -195,7 +196,7 @@ def describe(
     parts = [amount(done, total), f"{percent(done, total)} %"]
     rate = meter.rate()
     if rate is None:
-        parts.append(STARTING if meter.starting() else running_text(meter.elapsed()))
+        parts.append(tr(STARTING) if meter.starting() else running_text(meter.elapsed()))
         return " · ".join(parts)
     if with_rate:
         parts.append(rate_text(rate))
@@ -282,15 +283,42 @@ def byte_progress_class(report: Callable[[int, int], None]):
         def __init__(self, *args, **kwargs) -> None:
             self._counts = kwargs.get("unit") == "B"
             self._done = 0.0
+            self._size = 0
+            self._attempts: dict[int, list] = {}
             kwargs.pop("name", None)
             kwargs["disable"] = True
             super().__init__(*args, **kwargs)
+
+        @property
+        def total(self):
+            return self._size
+
+        @total.setter
+        def total(self, value) -> None:
+            with lock:
+                added = (value or 0) - (self._size or 0)
+                if self._counts and added > 0:
+                    thread = threading.get_ident()
+                    attempt = self._attempts.get(thread)
+                    if attempt is not None and attempt[0] == added and attempt[1] < added:
+                        attempt[2] = True
+                        return
+                    self._attempts[thread] = [added, 0, False]
+                self._size = value
 
         def update(self, n=1):
             if not self._counts or not n:
                 return None
             with lock:
-                self._done += n
+                attempt = self._attempts.get(threading.get_ident())
+                if attempt is not None and attempt[2]:
+                    self._done += n - attempt[1]
+                    attempt[1] = n
+                    attempt[2] = False
+                else:
+                    self._done += n
+                    if attempt is not None:
+                        attempt[1] += n
                 done = self._done
             report(int(done), int(self.total or 0))
             return None

@@ -30,6 +30,7 @@ from kira.ui.hud.base import (
     text_width,
 )
 from kira.ui.hud.signal import level_of
+from kira.texte import tr
 
 CELLS, CELL_W = 33, 7.0
 X0 = 12.0
@@ -62,6 +63,10 @@ def changed_words(raw: str, polished: str) -> list[bool]:
             for j in range(j1, j2):
                 flags[j] = False
     return flags
+
+
+def character_count(count: int) -> str:
+    return tr("1 ZEICHEN") if count == 1 else tr("{} ZEICHEN").format(count)
 
 
 class Klartext(HudStyle):
@@ -135,7 +140,7 @@ class Klartext(HudStyle):
             check_mark(p, X0 + 12 + text_width(head, target) + 6, 8, 9, PATINA)
         small = mono(11, 400, 0.2)
         if self.mode == "done":
-            draw_text(p, 248, 16, f"{len(f.polished_text)} ZEICHEN", small, qc(LINE, 0.55), "right")
+            draw_text(p, 248, 16, character_count(len(f.polished_text)), small, qc(LINE, 0.55), "right")
         else:
             draw_text(p, 248, 16, fmt_time(self.elapsed(t)), small,
                       qc(LINE, 0.66 if self.mode == "rec" else 0.4), "right")
@@ -155,9 +160,9 @@ class Klartext(HudStyle):
                 p.fillRect(QRectF(x, 46 - h, 5, h), col)
             tag = mono(9.5, 500, 0.8)
             if an.silent:
-                draw_text(p, X0, 65, "KEIN SIGNAL · MIKRO PRÜFEN", tag, qc(AMBER, 0.9))
+                draw_text(p, X0, 65, tr("KEIN SIGNAL · MIKRO PRÜFEN"), tag, qc(AMBER, 0.9))
             else:
-                draw_text(p, X0, 65, "KANAL 08 · NUR FÜR M", tag, qc(LINE, 0.4))
+                draw_text(p, X0, 65, tr("KANAL 08 · NUR FÜR M"), tag, qc(LINE, 0.4))
         elif self.mode == "proc":
             frame = 0 if reduced else int(t * 15)
             if not f.polishing or not f.raw_text:

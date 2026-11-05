@@ -8,6 +8,7 @@ from PyQt6.QtCore import QObject, QTimer
 from PyQt6.QtWidgets import QProgressDialog
 
 from kira import progress as prog
+from kira.texte import tr
 
 
 class ProgressView(QObject):
@@ -50,7 +51,7 @@ class ProgressView(QObject):
         self._turn += 1
         self._timer.stop()
         self._bar.setRange(0, 0)
-        self._show(text)
+        self._show(tr(text))
 
     def amount(self, done: float, total: float) -> None:
         if self._dead():
@@ -104,7 +105,7 @@ class ProgressView(QObject):
         if self._done >= self._total:
             self._timer.stop()
             self._bar.setRange(0, 0)
-            self._show(prog.FINISHING)
+            self._show(tr(prog.FINISHING))
             return
         waiting = self._total_only is not None and prog.unmeasured(self._done, self._total, self._meter)
         if waiting or self._meter.stalled():

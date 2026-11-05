@@ -70,3 +70,16 @@ def test_read_records_accepts_record_without_offset(tmp_path):
     since = datetime(2026, 8, 31, 0, 0, tzinfo=timezone.utc)
     records = [r.text for r in read_records(tmp_path, since)]
     assert records == ["Text"]
+
+
+def test_language_is_stored_and_read_back(tmp_path):
+    HistoryWriter(tmp_path).append(HistoryRecord(
+        ts="2026-11-05T10:00:00+01:00", app=None, mode="plain", raw="hi", text="Hi", language="en",
+    ))
+    assert [r.language for r in read_records(tmp_path)] == ["en"]
+
+
+def test_old_lines_without_language_still_load(tmp_path):
+    line = {"ts": "2026-09-22T20:15:33+02:00", "app": None, "mode": "plain", "raw": "hallo", "text": "Hallo"}
+    (tmp_path / "2026-09.jsonl").write_text(json.dumps(line) + "\n", encoding="utf-8")
+    assert [r.language for r in read_records(tmp_path)] == [None]

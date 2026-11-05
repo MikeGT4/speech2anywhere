@@ -244,3 +244,45 @@ def test_config_template_names_neither_old_product_nor_developer():
     text = template.read_text(encoding="utf-8")
     assert "kira" not in text.lower()
     assert re.findall(r"C:/Users/([^/]+)/", text) == ["${USERNAME}"]
+
+
+def test_whisper_language_accepts_any_short_code():
+    from kira.config import WhisperConfig
+    assert WhisperConfig(language="fr").language == "fr"
+
+
+def test_whisper_language_is_trimmed_and_lowered():
+    from kira.config import WhisperConfig
+    assert WhisperConfig(language=" NL ").language == "nl"
+
+
+@pytest.mark.parametrize("value", ["deutsch", "", None, 7, "d", "de-DE"])
+def test_whisper_language_falls_back_to_auto(value):
+    from kira.config import WhisperConfig
+    assert WhisperConfig(language=value).language == "auto"
+
+
+def test_hotkey_mode_defaults_to_hold():
+    assert Config().hotkey.mode == "hold"
+
+
+def test_hotkey_mode_toggle_loads_from_yaml(tmp_path):
+    yaml_file = tmp_path / "config.yaml"
+    yaml_file.write_text("hotkey:\n  mode: toggle\n", encoding="utf-8")
+    assert load_config(yaml_file).hotkey.mode == "toggle"
+
+
+@pytest.mark.parametrize("value", ["", None, "press", 3])
+def test_unknown_hotkey_mode_falls_back_to_hold(value):
+    from kira.config import HotkeyConfig
+    assert HotkeyConfig(mode=value).mode == "hold"
+
+
+def test_interface_language_defaults_to_auto():
+    assert Config().ui.language == "auto"
+
+
+@pytest.mark.parametrize("value, expected", [("de", "de"), ("EN", "en"), ("fr", "auto"), (None, "auto"), ("", "auto")])
+def test_interface_language_knows_only_auto_german_and_english(value, expected):
+    from kira.config import UIConfig
+    assert UIConfig(language=value).language == expected

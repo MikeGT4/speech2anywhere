@@ -1,12 +1,18 @@
 import asyncio
+import logging
+import re
+import time
 from unittest.mock import AsyncMock, MagicMock
 import pytest
-from ollama import ProcessResponse
+from ollama import ChatResponse, Message, ProcessResponse
+import kira.styler as styler_module
 from kira.config import Config, ModeConfig
+from kira.ollama_env import TUNING_ENV
 from kira.styler import (
     Styler,
     load_prompt,
     _thinking_kwargs,
+    FORCE_FAST_DURATION_SEC,
     SLOW_POLISH_THRESHOLD_SEC,
     SLOW_POLISH_TRIGGER_COUNT,
 )
@@ -17,6 +23,28 @@ def _ps(model_name, size, size_vram, *, name=None):
         model=model_name, name=name if name is not None else model_name,
         size=size, size_vram=size_vram,
     )])
+
+
+@pytest.fixture(autouse=True)
+def _user_environment_not_read(monkeypatch):
+    monkeypatch.setattr(styler_module, "read_tuning_env", lambda: None, raising=False)
+
+
+@pytest.fixture(autouse=True)
+def _no_real_ollama(monkeypatch):
+    def offline_client(*_args, **_kwargs):
+        client = MagicMock()
+        client.ps = AsyncMock(side_effect=ConnectionError("kein Ollama im Test"))
+        client.chat = AsyncMock(side_effect=ConnectionError("kein Ollama im Test"))
+        return client
+
+    monkeypatch.setattr(styler_module.ollama, "AsyncClient", offline_client)
+
+
+def _recording(observed: list):
+    async def record(duration: float) -> None:
+        observed.append(duration)
+    return record
 
 
 @pytest.mark.asyncio
@@ -310,65 +338,71 @@ async def test_edit_command_uses_fast_model_when_fast_mode_enabled():
     assert fake_client.chat.call_args.kwargs["model"] == "gemma3:4b"
 
 
-def test_observe_fast_polish_does_not_increment_counter():
+@pytest.mark.asyncio
+async def test_observe_fast_polish_does_not_increment_counter():
     cfg = Config()
     styler = Styler(cfg)
-    styler._observe_polish_duration(0.5)
+    await styler._observe_polish_duration(0.5)
     assert styler._slow_polish_count == 0
     assert styler._force_fast_until is None
 
 
-def test_observe_slow_polish_increments_counter_but_does_not_trigger():
+@pytest.mark.asyncio
+async def test_observe_slow_polish_increments_counter_but_does_not_trigger():
     cfg = Config()
     styler = Styler(cfg)
-    styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
+    await styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
     assert styler._slow_polish_count == 1
     assert styler._force_fast_until is None
 
 
-def test_observe_three_slow_polishes_in_a_row_triggers_force_fast():
+@pytest.mark.asyncio
+async def test_observe_three_slow_polishes_in_a_row_triggers_force_fast():
     cfg = Config()
     callback = MagicMock()
     styler = Styler(cfg, on_slow_polish_detected=callback)
     for _ in range(SLOW_POLISH_TRIGGER_COUNT):
-        styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
+        await styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
     assert styler._force_fast_until is not None
     callback.assert_called_once()
     assert styler._slow_polish_count == 0
 
 
-def test_observe_fast_polish_resets_counter():
+@pytest.mark.asyncio
+async def test_observe_fast_polish_resets_counter():
     cfg = Config()
     callback = MagicMock()
     styler = Styler(cfg, on_slow_polish_detected=callback)
-    styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
-    styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
-    styler._observe_polish_duration(0.5)
-    styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
+    await styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
+    await styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
+    await styler._observe_polish_duration(0.5)
+    await styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
     assert styler._slow_polish_count == 1
     assert styler._force_fast_until is None
     callback.assert_not_called()
 
 
-def test_observe_force_fast_active_blocks_re_notification():
+@pytest.mark.asyncio
+async def test_observe_force_fast_active_blocks_re_notification():
     cfg = Config()
     callback = MagicMock()
     styler = Styler(cfg, on_slow_polish_detected=callback)
     for _ in range(SLOW_POLISH_TRIGGER_COUNT):
-        styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
+        await styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
     assert callback.call_count == 1
     for _ in range(SLOW_POLISH_TRIGGER_COUNT * 2):
-        styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
+        await styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
     assert callback.call_count == 1
 
 
-def test_observe_does_not_switch_when_fast_mode_already_user_enabled():
+@pytest.mark.asyncio
+async def test_observe_does_not_switch_when_fast_mode_already_user_enabled():
     cfg = Config()
     cfg.styler.fast_mode = True
     callback = MagicMock()
     styler = Styler(cfg, on_slow_polish_detected=callback)
     for _ in range(SLOW_POLISH_TRIGGER_COUNT):
-        styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
+        await styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
     callback.assert_called_once()
     assert styler._force_fast_until is None
 
@@ -407,12 +441,13 @@ def test_resolve_model_per_mode_override_beats_force_fast():
     assert styler._resolve_model("translate_en") == "qwen3:8b"
 
 
-def test_callback_exception_does_not_break_observe():
+@pytest.mark.asyncio
+async def test_callback_exception_does_not_break_observe():
     cfg = Config()
     callback = MagicMock(side_effect=RuntimeError("tray dead"))
     styler = Styler(cfg, on_slow_polish_detected=callback)
     for _ in range(SLOW_POLISH_TRIGGER_COUNT):
-        styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
+        await styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
     assert styler._slow_polish_count == 0
     assert styler._force_fast_until is not None
 
@@ -425,10 +460,7 @@ async def test_polish_observes_duration_via_finally(monkeypatch):
     fake_client.chat = AsyncMock(return_value={"message": {"content": "ok"}})
     styler._client = fake_client
     observed = []
-    monkeypatch.setattr(
-        styler, "_observe_polish_duration",
-        lambda d: observed.append(d),
-    )
+    monkeypatch.setattr(styler, "_observe_polish_duration", _recording(observed))
     await styler.polish("hi", mode="plain")
     assert len(observed) == 1
     assert observed[0] >= 0.0
@@ -880,15 +912,64 @@ async def test_timeout_resets_connection_counter():
     assert calls == []
 
 
-@pytest.mark.asyncio
-async def test_polish_without_glossary_sends_unchanged_prompt():
+async def _sent_prompt(mode: str, glossary: list[str] | None = None, language: str | None = None) -> str:
     styler = Styler(Config())
     fake_client = MagicMock()
     fake_client.chat = AsyncMock(return_value={"message": {"content": "Hallo Welt."}})
     styler._client = fake_client
-    await styler.polish("hallo welt", mode="plain")
-    sent = fake_client.chat.call_args.kwargs["messages"][0]["content"]
-    assert sent == load_prompt("plain").format(text="hallo welt")
+    await styler.polish("hallo welt", mode=mode, glossary=glossary, language=language)
+    return fake_client.chat.call_args.kwargs["messages"][0]["content"]
+
+
+@pytest.mark.asyncio
+async def test_polish_without_glossary_sends_no_glossary_block():
+    sent = await _sent_prompt("plain")
+    assert "Möglicherweise gemeinte Begriffe" not in sent
+    assert "hallo welt" in sent
+    assert sent.rstrip().endswith("Output:")
+
+
+@pytest.mark.asyncio
+async def test_translation_prompt_goes_out_unchanged():
+    sent = await _sent_prompt("translate_en")
+    assert sent == load_prompt("translate_en").format(text="hallo welt")
+
+
+@pytest.mark.asyncio
+async def test_every_polish_mode_but_translation_carries_the_language_rule():
+    from kira.styler import LANGUAGE_RULE, VALID_MODES
+    for mode in VALID_MODES:
+        sent = await _sent_prompt(mode)
+        assert (LANGUAGE_RULE in sent) == (mode != "translate_en"), mode
+
+
+@pytest.mark.asyncio
+async def test_self_correction_rule_only_in_prose_modes():
+    from kira.styler import SELF_CORRECTION_RULE, VALID_MODES
+    for mode in VALID_MODES:
+        sent = await _sent_prompt(mode)
+        assert (SELF_CORRECTION_RULE in sent) == (mode in {"plain", "chat", "email", "email_formal"}), mode
+
+
+@pytest.mark.asyncio
+async def test_rules_stand_between_the_prompt_and_the_input():
+    from kira.styler import LANGUAGE_RULE, SELF_CORRECTION_RULE
+    sent = await _sent_prompt("plain")
+    assert sent.index(SELF_CORRECTION_RULE) < sent.index(LANGUAGE_RULE) < sent.index("\nInput:")
+    assert sent.rstrip().endswith("Output:")
+
+
+@pytest.mark.asyncio
+async def test_glossary_block_follows_the_rules():
+    from kira.styler import LANGUAGE_RULE
+    sent = await _sent_prompt("plain", glossary=["LAN"])
+    assert sent.index(LANGUAGE_RULE) < sent.index("Möglicherweise gemeinte Begriffe: LAN.") < sent.index("\nInput:")
+
+
+def test_rules_carry_no_format_braces():
+    from kira.styler import LANGUAGE_RULE, SELF_CORRECTION_RULE
+    assert "{" not in LANGUAGE_RULE + SELF_CORRECTION_RULE
+    assert "}" not in LANGUAGE_RULE + SELF_CORRECTION_RULE
 
 
 @pytest.mark.asyncio
@@ -910,3 +991,360 @@ def test_glossary_block_is_prepended_without_input_line_and_braces_survive():
     out = _template_with_glossary("Nur {text}", ["A{B}"]).format(text="x")
     assert out.startswith("Möglicherweise gemeinte Begriffe: A{B}.")
     assert out.endswith("Nur x")
+
+
+class _FakeClock:
+    def __init__(self) -> None:
+        self.now = 1000.0
+
+    def monotonic(self) -> float:
+        return self.now
+
+
+def _chat_answering_after(clock: _FakeClock, seconds: float, load_duration: int | None = None):
+    async def chat(**_kwargs):
+        clock.now += seconds
+        return ChatResponse(
+            message=Message(role="assistant", content="Hallo Welt."),
+            load_duration=load_duration,
+        )
+    return chat
+
+
+@pytest.mark.asyncio
+async def test_polish_counts_wall_time_minus_model_load_time(monkeypatch):
+    clock = _FakeClock()
+    monkeypatch.setattr(styler_module, "time", clock)
+    styler = Styler(Config())
+    styler._client = MagicMock()
+    styler._client.chat = _chat_answering_after(clock, 12.0, load_duration=11_500_000_000)
+    observed = []
+    monkeypatch.setattr(styler, "_observe_polish_duration", _recording(observed))
+
+    await styler.polish("hallo welt", mode="plain")
+
+    assert observed == [pytest.approx(0.5)]
+
+
+@pytest.mark.asyncio
+async def test_polish_without_load_time_counts_full_wall_time(monkeypatch):
+    clock = _FakeClock()
+    monkeypatch.setattr(styler_module, "time", clock)
+    styler = Styler(Config())
+    styler._client = MagicMock()
+    styler._client.chat = _chat_answering_after(clock, 12.0)
+    observed = []
+    monkeypatch.setattr(styler, "_observe_polish_duration", _recording(observed))
+
+    await styler.polish("hallo welt", mode="plain")
+
+    assert observed == [pytest.approx(12.0)]
+
+
+@pytest.mark.asyncio
+async def test_model_load_wait_does_not_switch_to_fast_model(monkeypatch):
+    clock = _FakeClock()
+    monkeypatch.setattr(styler_module, "time", clock)
+    callback = MagicMock()
+    styler = Styler(Config(), on_slow_polish_detected=callback)
+    styler._client = MagicMock()
+    styler._client.chat = _chat_answering_after(clock, 13.5, load_duration=12_900_000_000)
+
+    for _ in range(SLOW_POLISH_TRIGGER_COUNT):
+        assert await styler.polish("hallo welt", mode="plain") == "Hallo Welt."
+
+    callback.assert_not_called()
+    assert styler._force_fast_until is None
+
+
+@pytest.mark.asyncio
+async def test_slow_computation_after_model_load_still_switches(monkeypatch):
+    clock = _FakeClock()
+    monkeypatch.setattr(styler_module, "time", clock)
+    callback = MagicMock()
+    styler = Styler(Config(), on_slow_polish_detected=callback)
+    styler._client = MagicMock()
+    styler._client.chat = _chat_answering_after(clock, 13.5, load_duration=500_000_000)
+    styler._client.ps = AsyncMock(return_value=_ps("gemma2:2b", size=RESIDENT_SIZE, size_vram=0))
+
+    for _ in range(SLOW_POLISH_TRIGGER_COUNT):
+        await styler.polish("hallo welt", mode="plain")
+
+    callback.assert_called_once()
+    assert styler._force_fast_until is not None
+
+
+@pytest.mark.asyncio
+async def test_polish_timeouts_still_count_as_slow(monkeypatch):
+    clock = _FakeClock()
+    monkeypatch.setattr(styler_module, "time", clock)
+    callback = MagicMock()
+    styler = Styler(Config(), on_slow_polish_detected=callback)
+
+    async def chat_runs_into_limit(**_kwargs):
+        clock.now += 26.0
+        raise asyncio.TimeoutError()
+
+    styler._client = MagicMock()
+    styler._client.chat = chat_runs_into_limit
+    styler._client.ps = AsyncMock(return_value=_ps("gemma2:2b", size=RESIDENT_SIZE, size_vram=0))
+
+    for _ in range(SLOW_POLISH_TRIGGER_COUNT):
+        assert await styler.polish("hallo welt", mode="plain") == "hallo welt"
+
+    callback.assert_called_once()
+
+
+@pytest.mark.asyncio
+async def test_slow_polish_log_names_model_load_share(monkeypatch, caplog):
+    clock = _FakeClock()
+    monkeypatch.setattr(styler_module, "time", clock)
+    styler = Styler(Config())
+    styler._client = MagicMock()
+    styler._client.chat = _chat_answering_after(clock, 13.5, load_duration=12_900_000_000)
+    caplog.set_level(logging.INFO, logger="kira.styler")
+
+    await styler.polish("hallo welt", mode="plain")
+
+    assert "13.5 s, davon 12.9 s Laden" in caplog.text
+
+
+@pytest.mark.asyncio
+async def test_fast_model_switch_log_says_what_counts(caplog):
+    caplog.set_level(logging.WARNING, logger="kira.styler")
+    styler = Styler(Config())
+
+    for _ in range(SLOW_POLISH_TRIGGER_COUNT):
+        await styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 1.0)
+
+    assert "Ladezeit abgezogen, soweit Ollama sie meldet" in caplog.text
+    assert "Zeitüberschreitungen zählen voll" in caplog.text
+
+
+async def _cpu_notice(monkeypatch, caplog, tuning, model="gemma3:12b"):
+    monkeypatch.setattr(styler_module, "read_tuning_env", lambda: tuning, raising=False)
+    cfg = Config()
+    cfg.styler.model = model
+    callback = MagicMock()
+    styler = Styler(cfg, on_cpu_fallback_detected=callback)
+    styler._client = MagicMock()
+    styler._client.ps = AsyncMock(return_value=_ps(model, size=15_837_303_929, size_vram=0))
+    caplog.set_level(logging.WARNING, logger="kira.styler")
+    assert await styler.verify_gpu_placement() == "cpu"
+    return callback.call_args.args[0]
+
+
+async def _partial_notice(monkeypatch, caplog, tuning):
+    monkeypatch.setattr(styler_module, "read_tuning_env", lambda: tuning, raising=False)
+    cfg = Config()
+    cfg.styler.model = "gemma3:12b"
+    callback = MagicMock()
+    styler = Styler(cfg, on_cpu_fallback_detected=callback)
+    styler._client = MagicMock()
+    styler._client.ps = AsyncMock(
+        return_value=_ps("gemma3:12b", size=12_000_000_000, size_vram=6_000_000_000)
+    )
+    caplog.set_level(logging.WARNING, logger="kira.styler")
+    assert await styler.verify_gpu_placement() == "partial"
+    return callback.call_args.args[0]
+
+
+@pytest.mark.asyncio
+async def test_cpu_warning_lists_tuning_values_from_user_environment(monkeypatch, caplog):
+    notice = await _cpu_notice(monkeypatch, caplog, dict(TUNING_ENV))
+
+    for name, value in TUNING_ENV.items():
+        assert f"{name}={value}" in caplog.text
+    assert "VRAM-Tuning ist gesetzt" in notice
+
+
+@pytest.mark.asyncio
+async def test_cpu_notice_says_when_tuning_is_missing(monkeypatch, caplog):
+    notice = await _cpu_notice(monkeypatch, caplog, {"LLAMA_ARG_CACHE_RAM": "0"})
+
+    assert "OLLAMA_FLASH_ATTENTION fehlt" in caplog.text
+    assert "OLLAMA_KV_CACHE_TYPE fehlt" in caplog.text
+    assert "VRAM-Tuning fehlt" in notice
+    assert "gesetzt" not in notice
+
+
+@pytest.mark.asyncio
+async def test_cpu_notice_makes_no_tuning_claim_when_registry_unreadable(monkeypatch, caplog):
+    notice = await _cpu_notice(monkeypatch, caplog, None)
+
+    assert "nicht lesbar" in caplog.text
+    assert "VRAM-Tuning" not in notice
+
+
+@pytest.mark.asyncio
+async def test_cpu_notice_fits_windows_balloon_with_installed_model(monkeypatch, caplog):
+    for tuning in (dict(TUNING_ENV), {}, None):
+        notice = await _cpu_notice(monkeypatch, caplog, tuning, model="gemma4:26b-a4b-it-qat")
+        assert len(notice) <= 255, (len(notice), notice)
+
+
+@pytest.mark.asyncio
+async def test_partial_offload_warning_lists_tuning_values(monkeypatch, caplog):
+    await _partial_notice(monkeypatch, caplog, dict(TUNING_ENV))
+
+    for name, value in TUNING_ENV.items():
+        assert f"{name}={value}" in caplog.text
+
+
+@pytest.mark.asyncio
+async def test_placement_notices_say_politur(monkeypatch, caplog):
+    notices = [
+        await _cpu_notice(monkeypatch, caplog, dict(TUNING_ENV)),
+        await _partial_notice(monkeypatch, caplog, dict(TUNING_ENV)),
+    ]
+
+    for notice in notices:
+        assert "Politur-Modell" in notice
+        assert "Polish" not in notice
+
+
+RESIDENT_SIZE = 15_837_303_929
+
+
+async def _three_slow_polishes(monkeypatch, ps):
+    clock = _FakeClock()
+    monkeypatch.setattr(styler_module, "time", clock)
+    callback = MagicMock()
+    styler = Styler(Config(), on_slow_polish_detected=callback)
+    styler._client = MagicMock()
+    styler._client.chat = _chat_answering_after(clock, 13.5, load_duration=500_000_000)
+    styler._client.ps = ps
+    for _ in range(SLOW_POLISH_TRIGGER_COUNT):
+        await styler.polish("hallo welt", mode="plain")
+    return styler, callback
+
+
+@pytest.mark.asyncio
+async def test_slow_polish_does_not_switch_when_model_lies_fully_in_vram(monkeypatch, caplog):
+    caplog.set_level(logging.INFO, logger="kira.styler")
+    ps = AsyncMock(return_value=_ps("gemma2:2b", size=RESIDENT_SIZE, size_vram=RESIDENT_SIZE))
+
+    styler, callback = await _three_slow_polishes(monkeypatch, ps)
+
+    callback.assert_not_called()
+    assert styler._force_fast_until is None
+    assert styler._slow_polish_count == 0
+    assert "ganz im Grafikspeicher" in caplog.text
+
+
+@pytest.mark.asyncio
+async def test_slow_polish_switches_when_model_is_not_fully_in_vram(monkeypatch):
+    for answer in (
+        _ps("gemma2:2b", size=RESIDENT_SIZE, size_vram=0),
+        _ps("gemma2:2b", size=RESIDENT_SIZE, size_vram=RESIDENT_SIZE - 1),
+        _ps("gemma4:e4b", size=RESIDENT_SIZE, size_vram=RESIDENT_SIZE),
+    ):
+        styler, callback = await _three_slow_polishes(monkeypatch, AsyncMock(return_value=answer))
+
+        callback.assert_called_once()
+        assert styler._force_fast_until is not None
+
+
+@pytest.mark.asyncio
+async def test_slow_polish_switches_when_placement_check_fails(monkeypatch):
+    ps = AsyncMock(side_effect=ConnectionError("ps nicht erreichbar"))
+
+    styler, callback = await _three_slow_polishes(monkeypatch, ps)
+
+    callback.assert_called_once()
+    assert styler._force_fast_until is not None
+
+
+@pytest.mark.asyncio
+async def test_placement_check_before_switch_waits_only_briefly(monkeypatch):
+    monkeypatch.setattr(styler_module, "PLACEMENT_CHECK_TIMEOUT_SEC", 0.05, raising=False)
+
+    async def ps_hangs():
+        await asyncio.sleep(30)
+
+    started = time.perf_counter()
+    styler, callback = await _three_slow_polishes(monkeypatch, ps_hangs)
+
+    assert time.perf_counter() - started < 5
+    callback.assert_called_once()
+
+
+@pytest.mark.asyncio
+async def test_fast_model_is_loaded_only_briefly_while_switched():
+    cfg = Config()
+    cfg.styler.model = "gemma4:26b-a4b-it-qat"
+    cfg.styler.fast_model = "gemma4:e4b"
+    styler = Styler(cfg)
+    styler._client = MagicMock()
+    styler._client.chat = AsyncMock(return_value={"message": {"content": "Hallo Welt."}})
+    styler._activate_force_fast()
+
+    await styler.polish("hallo welt", mode="plain")
+    await styler.edit_command(selection="text", command="cmd")
+
+    calls = styler._client.chat.call_args_list
+    assert [call.kwargs["model"] for call in calls] == ["gemma4:e4b", "gemma4:e4b"]
+    keep_alives = [call.kwargs["keep_alive"] for call in calls]
+    assert cfg.styler.keep_alive not in keep_alives
+    assert set(keep_alives) == {styler_module.FORCE_FAST_KEEP_ALIVE}
+
+
+def test_short_keep_alive_has_a_unit_and_spans_the_switch_window():
+    value = styler_module.FORCE_FAST_KEEP_ALIVE
+    assert re.fullmatch(r"\d+[smh]", value)
+    assert int(value[:-1]) * {"s": 1, "m": 60, "h": 3600}[value[-1]] == FORCE_FAST_DURATION_SEC
+
+
+@pytest.mark.asyncio
+async def test_other_models_keep_configured_keep_alive_while_switched():
+    cfg = Config()
+    cfg.styler.fast_model = "gemma4:e4b"
+    cfg.styler.modes["translate_en"] = ModeConfig(model="qwen3:8b")
+    styler = Styler(cfg)
+    styler._client = MagicMock()
+    styler._client.chat = AsyncMock(return_value={"message": {"content": "Hello world."}})
+    styler._activate_force_fast()
+
+    await styler.polish("hallo welt", mode="translate_en")
+
+    assert styler._client.chat.call_args.kwargs["keep_alive"] == cfg.styler.keep_alive
+
+
+@pytest.mark.asyncio
+async def test_foreign_language_is_named_after_the_language_rule():
+    from kira.styler import LANGUAGE_RULE
+    sent = await _sent_prompt("email", language="nl")
+    assert sent.index(LANGUAGE_RULE) < sent.index("Niederländisch") < sent.index("\nInput:")
+
+
+@pytest.mark.asyncio
+async def test_german_and_unknown_language_add_no_language_line():
+    for language in (None, "", "de"):
+        sent = await _sent_prompt("email", language=language)
+        assert "Der Input steht" not in sent, language
+
+
+@pytest.mark.asyncio
+async def test_language_without_a_name_is_given_by_its_code():
+    sent = await _sent_prompt("email", language="sv")
+    assert "„sv“" in sent
+
+
+@pytest.mark.asyncio
+async def test_language_line_is_limited_to_the_mail_modes():
+    for mode in ("plain", "chat", "terminal", "clean", "code"):
+        assert "Niederländisch" not in await _sent_prompt(mode, language="nl"), mode
+    for mode in ("email", "email_formal"):
+        assert "Niederländisch" in await _sent_prompt(mode, language="nl"), mode
+
+
+@pytest.mark.asyncio
+async def test_language_line_tells_the_model_to_answer_in_that_language():
+    sent = await _sent_prompt("email", language="nl")
+    assert "Der Input steht auf Niederländisch. Antworte auf Niederländisch, nicht auf Deutsch." in sent
+
+
+@pytest.mark.asyncio
+async def test_translation_mode_gets_no_language_line():
+    sent = await _sent_prompt("translate_en", language="nl")
+    assert sent == load_prompt("translate_en").format(text="hallo welt")

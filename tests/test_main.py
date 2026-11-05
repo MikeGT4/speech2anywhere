@@ -63,3 +63,82 @@ def test_unsupported_hotkey_falls_back_to_f8():
     assert combo == "f8" and erzeugt == ["f8"] and isinstance(listener, Lauscher)
     listener, combo = main._dictation_listener(Lauscher, "f9", lambda: None, lambda: None)
     assert combo == "f9"
+
+
+def test_start_removes_installed_update_dirs_in_the_background(tmp_path, monkeypatch):
+    from kira import main
+    from kira.ui import _update_runner
+    monkeypatch.setattr(_update_runner, "_bundle_dir", lambda: tmp_path)
+    for name in ("v0.0.1", "v99.0.0"):
+        (tmp_path / name).mkdir()
+        (tmp_path / name / f"Kira-Setup-{name}.exe").write_bytes(b"setup")
+    thread = main._start_update_cleanup()
+    thread.join(10)
+    assert thread.name == "kira-update-cleanup"
+    assert not (tmp_path / "v0.0.1").exists()
+    assert (tmp_path / "v99.0.0").is_dir()
+
+
+def _fake_app():
+    import types
+    calls = []
+    return types.SimpleNamespace(
+        calls=calls,
+        on_hotkey_press=lambda: calls.append("press"),
+        on_hotkey_release=lambda: calls.append("release"),
+        on_edit_press=lambda: calls.append("edit"),
+        on_hotkey_toggle=lambda: calls.append("toggle"),
+        on_edit_toggle=lambda: calls.append("edit-toggle"),
+    )
+
+
+def test_hold_mode_wires_press_and_release():
+    from kira import main
+    app = _fake_app()
+    press, edit_press, release = main._hotkey_callbacks(app, "hold")
+    press()
+    edit_press()
+    release()
+    assert app.calls == ["press", "edit", "release"]
+
+
+def test_toggle_mode_wires_the_toggles_and_ignores_the_key_release():
+    from kira import main
+    app = _fake_app()
+    press, edit_press, release = main._hotkey_callbacks(app, "toggle")
+    press()
+    edit_press()
+    release()
+    assert app.calls == ["toggle", "edit-toggle"]
+
+
+def test_start_sets_the_interface_language_from_the_config():
+    from kira import main, texte
+    from kira.config import Config
+    cfg = Config()
+    cfg.ui.language = "en"
+    try:
+        main._apply_language(cfg)
+        assert texte.language() == "en"
+    finally:
+        texte.set_language("de")
+
+
+def test_restarted_instance_waits_before_the_single_instance_check(monkeypatch):
+    import sys
+    import pytest
+    if sys.platform != "win32":
+        pytest.skip("windows-only")
+    import ctypes
+    from kira import main, restart
+    from kira.config import Config
+    order = []
+    for name in ("_configure_logging", "_enable_crash_diagnostics", "_start_heartbeat"):
+        monkeypatch.setattr(main, name, lambda: None)
+    monkeypatch.setattr(main, "load_config", lambda: Config())
+    monkeypatch.setattr(main, "_apply_language", lambda cfg: None)
+    monkeypatch.setattr(restart, "wait_for_predecessor", lambda: order.append("warten") or True)
+    monkeypatch.setattr(main, "_acquire_windows_single_instance_lock", lambda: order.append("sperre"))
+    monkeypatch.setattr(ctypes.windll.user32, "MessageBoxW", lambda *a: order.append("meldung") or 0)
+    main.run()
+    assert order == ["warten", "sperre", "meldung"]

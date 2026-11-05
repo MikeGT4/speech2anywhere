@@ -1,5 +1,6 @@
 from __future__ import annotations
 import html
+import json
 import logging
 import os
 import shutil
@@ -12,7 +13,6 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-from huggingface_hub import snapshot_download
 from PyQt6.QtCore import QSize, Qt, QThread, pyqtSignal
 from PyQt6.QtGui import QColor, QFont, QPainter, QPixmap
 from PyQt6.QtWidgets import (
@@ -30,6 +30,7 @@ from kira.firstrun import mark_first_run_complete
 from kira.ui import _comic as comic
 from kira.ui._dialog_style import apply_light_theme
 from kira.ui._progress_view import ProgressView
+from kira.texte import tr
 
 log = logging.getLogger(__name__)
 
@@ -49,6 +50,8 @@ WHISPER_ALLOWED_FILES: tuple[str, ...] = (
     "*.txt",
 )
 
+WHISPER_FETCH_MODULE = "kira._whisper_fetch"
+
 def _resolve_ollama_wait_seconds() -> int:
     raw = os.environ.get("KIRA_OLLAMA_INSTALL_WAIT_SECONDS", "60")
     try:
@@ -67,6 +70,43 @@ _OLLAMA_API_WAIT_SECONDS = _resolve_ollama_wait_seconds()
 _CREATE_NO_WINDOW = 0x08000000 if sys.platform == "win32" else 0
 
 OLLAMA_SETUP_SWITCHES = ("/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART")
+
+
+def _taskkill_exe() -> str:
+    root = os.environ.get("SystemRoot") or r"C:\Windows"
+    return str(Path(root) / "System32" / "taskkill.exe")
+
+
+def stop_process_tree(proc: subprocess.Popen) -> None:
+    try:
+        subprocess.run(  # noqa: S603
+            [_taskkill_exe(), "/T", "/F", "/PID", str(proc.pid)],
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            creationflags=_CREATE_NO_WINDOW,
+            timeout=10,
+            check=True,
+        )
+    except (OSError, subprocess.SubprocessError) as exc:
+        log.warning("Ollama-Setup ließ sich nicht samt Unterprozessen beenden: %s", exc)
+        try:
+            proc.kill()
+        except OSError as kill_exc:
+            log.warning("Ollama-Setup ließ sich nicht beenden: %s", kill_exc)
+
+
+def launch_fetch(repo_id: str, target_dir: Path) -> subprocess.Popen:
+    return subprocess.Popen(  # noqa: S603
+        [sys.executable, "-P", "-m", WHISPER_FETCH_MODULE, repo_id, str(target_dir), *WHISPER_ALLOWED_FILES],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.DEVNULL,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        creationflags=_CREATE_NO_WINDOW,
+    )
 
 
 def find_ollama_exe() -> Path | None:
@@ -123,23 +163,45 @@ class WhisperDownloadWorker(QThread):
         self._target_dir = Path(target_dir)
         self._repo_id = repo_id
         self._cancelled = threading.Event()
-        self._throttle = prog.Throttle()
+        self._proc: subprocess.Popen | None = None
 
     def cancel(self) -> None:
         self._cancelled.set()
+        self._stop_fetch()
 
-    def _report(self, done: int, total: int) -> None:
-        if self._cancelled.is_set():
-            raise prog.Cancelled()
-        if total > 0 and self._throttle.due(force=done >= total):
-            self.progress.emit(done, total)
+    def _stop_fetch(self) -> None:
+        proc = self._proc
+        if proc is not None and proc.poll() is None:
+            try:
+                proc.kill()
+            except OSError as exc:
+                log.warning("Whisper-Download ließ sich nicht beenden: %s", exc)
+
+    def _follow(self, proc: subprocess.Popen) -> tuple[str | None, dict | None]:
+        local_path = None
+        failure = None
+        for line in proc.stdout:
+            try:
+                message = json.loads(line)
+            except ValueError:
+                log.debug("Whisper-Download meldet: %s", line.rstrip())
+                continue
+            if not isinstance(message, dict):
+                continue
+            if "done" in message:
+                self.progress.emit(int(message["done"]), int(message["total"]))
+            elif "path" in message:
+                local_path = str(message["path"])
+            elif "error" in message:
+                failure = message
+        return local_path, failure
 
     def run(self) -> None:
         log.info("Whisper-Download startet: repo=%s target=%s",
                  self._repo_id, self._target_dir)
         if self._cancelled.is_set():
             return
-        self.status.emit(f"Lade Whisper-Modell ({self._repo_id})...")
+        self.status.emit(tr("Lade Whisper-Modell ({})...").format(self._repo_id))
         try:
             self._target_dir.mkdir(parents=True, exist_ok=True)
         except OSError as exc:
@@ -147,33 +209,45 @@ class WhisperDownloadWorker(QThread):
             if self._cancelled.is_set():
                 return
             self.error.emit(
-                f"Whisper-Verzeichnis konnte nicht angelegt werden: "
-                f"{type(exc).__name__}: {exc}"
+                tr("Whisper-Verzeichnis konnte nicht angelegt werden: {}: {}").format(type(exc).__name__, exc)
             )
             return
 
         try:
-            local_path = snapshot_download(
-                repo_id=self._repo_id,
-                local_dir=str(self._target_dir),
-                allow_patterns=list(WHISPER_ALLOWED_FILES),
-                tqdm_class=prog.byte_progress_class(self._report),
-            )
-        except prog.Cancelled:
-            log.info("Whisper-Download abgebrochen")
-            return
-        except Exception as exc:
+            self._proc = launch_fetch(self._repo_id, self._target_dir)
+        except OSError as exc:
+            log.exception("Whisper-Download ließ sich nicht starten")
             if self._cancelled.is_set():
-                log.info("Whisper-Download abgebrochen (%s)", type(exc).__name__)
                 return
-            log.exception("Whisper-Download fehlgeschlagen")
-            self.error.emit(f"Whisper-Download fehlgeschlagen: {type(exc).__name__}: {exc}")
+            self.error.emit(tr("Whisper-Download fehlgeschlagen: {}: {}").format(type(exc).__name__, exc))
             return
 
         if self._cancelled.is_set():
+            self._stop_fetch()
+        try:
+            local_path, failure = self._follow(self._proc)
+            returncode = self._proc.wait()
+        except OSError as exc:
+            log.exception("Whisper-Download: Verbindung zum Ladeprozess verloren")
+            local_path, failure, returncode = None, {"error": f"{type(exc).__name__}: {exc}"}, None
+        finally:
+            self._proc = None
+
+        if self._cancelled.is_set():
+            log.info("Whisper-Download abgebrochen")
             return
+        if local_path is None:
+            if failure is not None:
+                log.error("Whisper-Download fehlgeschlagen: %s\n%s", failure.get("error"), failure.get("trace", ""))
+                self.error.emit(tr("Whisper-Download fehlgeschlagen: {}").format(failure.get('error')))
+            else:
+                log.error("Whisper-Download endete mit Exit-Code %s ohne Ergebnis", returncode)
+                self.error.emit(tr("Whisper-Download fehlgeschlagen: Exit-Code {}.").format(returncode))
+            return
+        if returncode != 0:
+            log.warning("Whisper-Ladeprozess endete nach dem Download mit Exit-Code %s", returncode)
         log.info("Whisper-Download fertig: %s", local_path)
-        self.status.emit("Whisper-Modell bereit.")
+        self.status.emit(tr("Whisper-Modell bereit."))
         self.finished.emit(Path(local_path))
 
 
@@ -195,27 +269,24 @@ class OllamaSetupWorker(QThread):
     def _stop_setup(self) -> None:
         proc = self._proc
         if proc is not None and proc.poll() is None:
-            try:
-                proc.terminate()
-            except OSError as exc:
-                log.warning("OllamaSetupWorker.cancel proc.terminate failed: %s", exc)
+            stop_process_tree(proc)
 
     def run(self) -> None:
         if self._cancelled.is_set():
             return
         if is_ollama_installed() and is_ollama_reachable():
             log.info("Ollama bereits installiert + erreichbar -> skip install")
-            self.status.emit("bereits installiert")
+            self.status.emit(tr("bereits installiert"))
             self.finished.emit()
             return
 
         if not self._installer_path.exists():
-            msg = f"Ollama-Installer nicht gefunden: {self._installer_path}"
+            msg = tr("Ollama-Installer nicht gefunden: {}").format(self._installer_path)
             log.error(msg)
             self.error.emit(msg)
             return
 
-        self.status.emit("wird installiert …")
+        self.status.emit(tr("wird installiert …"))
         log.info("Starting Ollama installer: %s", self._installer_path)
         try:
             self._proc = subprocess.Popen(  # noqa: S603 - list-args, kein shell-Parsing
@@ -226,7 +297,7 @@ class OllamaSetupWorker(QThread):
                 creationflags=_CREATE_NO_WINDOW,
             )
         except OSError as exc:
-            self.error.emit(f"Ollama-Installer-Start fehlgeschlagen: {exc}")
+            self.error.emit(tr("Ollama-Installer-Start fehlgeschlagen: {}").format(exc))
             return
 
         if self._cancelled.is_set():
@@ -234,11 +305,11 @@ class OllamaSetupWorker(QThread):
         try:
             returncode = self._proc.wait(timeout=300)
         except subprocess.TimeoutExpired:
-            self._proc.kill()
-            self.error.emit("Ollama-Installer Timeout (>300 s).")
+            stop_process_tree(self._proc)
+            self.error.emit(tr("Ollama-Installer Timeout (>300 s)."))
             return
         except OSError as exc:
-            self.error.emit(f"Warten auf den Ollama-Installer fehlgeschlagen: {exc}")
+            self.error.emit(tr("Warten auf den Ollama-Installer fehlgeschlagen: {}").format(exc))
             return
         finally:
             self._proc = None
@@ -248,24 +319,26 @@ class OllamaSetupWorker(QThread):
             return
 
         if returncode != 0:
-            self.error.emit(f"Ollama-Installer Exit-Code {returncode}.")
+            self.error.emit(tr("Ollama-Installer Exit-Code {}.").format(returncode))
             return
 
-        self.status.emit("wartet auf den Ollama-Dienst …")
+        self.status.emit(tr("wartet auf den Ollama-Dienst …"))
         for tick in range(_OLLAMA_API_WAIT_SECONDS):
             if self._cancelled.is_set():
                 log.info("OllamaSetupWorker cancelled im Wait-Loop bei %ds", tick)
                 return
             if is_ollama_reachable(timeout=2.0):
                 log.info("Ollama-Service erreichbar nach %ds", tick)
-                self.status.emit("bereit")
+                self.status.emit(tr("bereit"))
                 self.finished.emit()
                 return
             time.sleep(1)
 
         self.error.emit(
-            f"Ollama ist nach {_OLLAMA_API_WAIT_SECONDS} s noch nicht bereit. "
-            "Starte den Rechner bitte neu und führe den Assistenten noch einmal aus."
+            tr(
+                "Ollama ist nach {} s noch nicht bereit. Starte den Rechner bitte neu und führe den Assistenten "
+                "noch einmal aus."
+            ).format(_OLLAMA_API_WAIT_SECONDS)
         )
 
 
@@ -302,7 +375,7 @@ class GemmaPullWorker(QThread):
     def run(self) -> None:
         if self._cancelled.is_set():
             return
-        self.status.emit("Bestand wird geprüft …")
+        self.status.emit(tr("Bestand wird geprüft …"))
         try:
             list_result = subprocess.run(  # noqa: S603 - list-args
                 self._ollama_argv("list"),
@@ -315,8 +388,10 @@ class GemmaPullWorker(QThread):
         except (subprocess.CalledProcessError, subprocess.TimeoutExpired,
                 FileNotFoundError, OSError) as exc:
             self.error.emit(
-                f"`ollama list` fehlgeschlagen: {type(exc).__name__}: {exc}\n"
-                "Ollama-Service evtl. nicht aktiv."
+                tr(
+                    "`ollama list` fehlgeschlagen: {}: {}\n"
+                    "Ollama-Service evtl. nicht aktiv."
+                ).format(type(exc).__name__, exc)
             )
             return
 
@@ -325,11 +400,11 @@ class GemmaPullWorker(QThread):
 
         if _has_model_tag(list_result.stdout, self._model_tag):
             log.info("Gemma %s bereits installiert -> skip pull", self._model_tag)
-            self.status.emit("bereits installiert")
+            self.status.emit(tr("bereits installiert"))
             self.finished.emit()
             return
 
-        self.status.emit(prog.STARTING)
+        self.status.emit(tr(prog.STARTING))
         log.info("Starting ollama pull %s", self._model_tag)
         try:
             pulled = self._download.run(self.progress.emit)
@@ -341,7 +416,7 @@ class GemmaPullWorker(QThread):
             detail = str(exc) if isinstance(exc, ollama_pull.PullFailed) else f"{type(exc).__name__}: {exc}"
             self.error.emit(
                 ollama_pull.missing_text(self._model_tag, exc)
-                or f"`ollama pull {self._model_tag}` fehlgeschlagen: {detail}"
+                or tr("`ollama pull {}` fehlgeschlagen: {}").format(self._model_tag, detail)
             )
             return
 
@@ -350,26 +425,28 @@ class GemmaPullWorker(QThread):
             return
 
         log.info("Gemma %s installiert", self._model_tag)
-        self.status.emit("bereit")
+        self.status.emit(tr("bereit"))
         self.finished.emit()
 
 
 class WelcomePage(QWizardPage):
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
-        self.setTitle("Willkommen bei Speech2Anywhere")
+        self.setTitle(tr("Willkommen bei Speech2Anywhere"))
         self.setSubTitle(
-            "Diktieren mit Politur, gleich startklar."
+            tr("Diktieren mit Politur, gleich startklar.")
         )
 
         layout = QVBoxLayout(self)
 
         intro = QLabel(
-            "Speech2Anywhere braucht beim ersten Start zwei Modelle:\n\n"
-            "  - Whisper (Spracherkennung, ~3 GB)\n"
-            "  - Gemma (Text-Polish, ~8 GB)\n\n"
-            "Zusammen ca. 11 GB Download. Internet erforderlich, einmalig.\n\n"
-            "Klicke auf »Weiter«, um fortzufahren."
+            tr(
+                "Speech2Anywhere braucht beim ersten Start zwei Modelle:\n\n"
+                "  - Whisper (Spracherkennung, ~3 GB)\n"
+                "  - Gemma (Text-Polish, ~8 GB)\n\n"
+                "Zusammen ca. 11 GB Download. Internet erforderlich, einmalig.\n\n"
+                "Klicke auf »Weiter«, um fortzufahren."
+            )
         )
         intro.setWordWrap(True)
         layout.addWidget(intro)
@@ -379,8 +456,8 @@ class WelcomePage(QWizardPage):
 class DownloadPage(QWizardPage):
     def __init__(self, whisper_target: Path, ollama_installer: Path, parent=None) -> None:
         super().__init__(parent)
-        self.setTitle("Modelle werden installiert")
-        self.setSubTitle("Bitte warten. Nach einem Abbruch lädt der nächste Start nur, was noch fehlt.")
+        self.setTitle(tr("Modelle werden installiert"))
+        self.setSubTitle(tr("Bitte warten. Nach einem Abbruch lädt der nächste Start nur, was noch fehlt."))
         self.setCommitPage(True)
 
         self._whisper_target = whisper_target
@@ -407,21 +484,21 @@ class DownloadPage(QWizardPage):
         outer.addWidget(self._whisper_status)
         outer.addWidget(self._whisper_bar)
         self._whisper_view = ProgressView(self._whisper_bar, self._whisper_status.setText, "Whisper: ", parent=self)
-        self._whisper_view.idle("wartet …")
+        self._whisper_view.idle(tr("wartet …"))
 
         self._ollama_status = QLabel()
         self._ollama_bar = QProgressBar()
         outer.addWidget(self._ollama_status)
         outer.addWidget(self._ollama_bar)
         self._ollama_view = ProgressView(self._ollama_bar, self._ollama_status.setText, "Ollama: ", parent=self)
-        self._ollama_view.idle("wartet …")
+        self._ollama_view.idle(tr("wartet …"))
 
         self._gemma_status = QLabel()
         self._gemma_bar = QProgressBar()
         outer.addWidget(self._gemma_status)
         outer.addWidget(self._gemma_bar)
         self._gemma_view = ProgressView(self._gemma_bar, self._gemma_status.setText, "Gemma: ", parent=self)
-        self._gemma_view.idle("wartet auf Ollama …")
+        self._gemma_view.idle(tr("wartet auf Ollama …"))
 
         log_label = QLabel("Log:")
         log_label.setFont(QFont())
@@ -442,10 +519,10 @@ class DownloadPage(QWizardPage):
         self._gemma_bytes = False
         self._gemma_phase = ""
         self._failed.clear()
-        self._append_log("Starte Downloads...")
+        self._append_log(tr("Starte Downloads..."))
         self._whisper_view.busy(prog.STARTING)
         self._ollama_view.busy(prog.STARTING)
-        self._gemma_view.idle("wartet auf Ollama …")
+        self._gemma_view.idle(tr("wartet auf Ollama …"))
 
         self._whisper_worker = WhisperDownloadWorker(
             target_dir=self._whisper_target,
@@ -473,15 +550,15 @@ class DownloadPage(QWizardPage):
             self._whisper_view.amount(done, total)
 
     def _on_whisper_finished(self, path: Path) -> None:
-        self._whisper_view.finish(f"fertig ({path.name})")
+        self._whisper_view.finish(tr("fertig ({})").format(path.name))
         self._whisper_done = True
         self._append_log(f"[Whisper] OK -> {path}")
         self.completeChanged.emit()
 
     def _on_whisper_error(self, msg: str) -> None:
         self._failed.add("whisper")
-        self._whisper_view.idle("FEHLER")
-        self._append_log(f"[Whisper FEHLER] {msg}", error=True)
+        self._whisper_view.idle(tr("FEHLER"))
+        self._append_log(tr("[Whisper FEHLER] {}").format(msg), error=True)
         self._abort_pipeline()
 
     def _on_ollama_status(self, msg: str) -> None:
@@ -490,7 +567,7 @@ class DownloadPage(QWizardPage):
         self._append_log(f"[Ollama] {msg}")
 
     def _on_ollama_finished(self) -> None:
-        self._ollama_view.finish("fertig")
+        self._ollama_view.finish(tr("fertig"))
         self._ollama_done = True
         self._append_log("[Ollama] OK")
         self.completeChanged.emit()
@@ -498,15 +575,15 @@ class DownloadPage(QWizardPage):
 
     def _on_ollama_error(self, msg: str) -> None:
         self._failed.add("ollama")
-        self._ollama_view.idle("FEHLER")
-        self._append_log(f"[Ollama FEHLER] {msg}", error=True)
+        self._ollama_view.idle(tr("FEHLER"))
+        self._append_log(tr("[Ollama FEHLER] {}").format(msg), error=True)
         self._abort_pipeline()
 
     def _start_gemma(self) -> None:
         if self._pipeline_aborted:
             log.info("Gemma-Start übersprungen, Einrichtung abgebrochen")
-            self._gemma_view.idle("abgebrochen")
-            self._append_log("[Gemma] Pipeline abgebrochen, kein Pull")
+            self._gemma_view.idle(tr("abgebrochen"))
+            self._append_log(tr("[Gemma] Pipeline abgebrochen, kein Pull"))
             return
         self._gemma_view.busy(prog.STARTING)
         ollama_exe = find_ollama_exe()
@@ -541,15 +618,15 @@ class DownloadPage(QWizardPage):
             self._append_log(f"[Gemma] {phase}")
 
     def _on_gemma_finished(self) -> None:
-        self._gemma_view.finish("fertig")
+        self._gemma_view.finish(tr("fertig"))
         self._gemma_done = True
         self._append_log("[Gemma] OK")
         self.completeChanged.emit()
 
     def _on_gemma_error(self, msg: str) -> None:
         self._failed.add("gemma")
-        self._gemma_view.idle("FEHLER")
-        self._append_log(f"[Gemma FEHLER] {msg}", error=True)
+        self._gemma_view.idle(tr("FEHLER"))
+        self._append_log(tr("[Gemma FEHLER] {}").format(msg), error=True)
         self._abort_pipeline()
 
     def _append_log(self, msg: str, error: bool = False) -> None:
@@ -565,7 +642,7 @@ class DownloadPage(QWizardPage):
                 return
             self._pipeline_aborted = True
         log.warning("Pipeline aborted, stoppe alle Worker")
-        self._append_log("[Pipeline] abgebrochen, laufende Worker werden gestoppt", error=True)
+        self._append_log(tr("[Pipeline] abgebrochen, laufende Worker werden gestoppt"), error=True)
         self._stop_all_workers()
         self._mark_aborted()
 
@@ -576,7 +653,7 @@ class DownloadPage(QWizardPage):
             ("gemma", self._gemma_view, self._gemma_done),
         ):
             if not done and name not in self._failed:
-                view.idle("abgebrochen")
+                view.idle(tr("abgebrochen"))
 
     def cleanupPage(self) -> None:
         self._pipeline_aborted = True
@@ -604,19 +681,21 @@ class DownloadPage(QWizardPage):
 class FinishedPage(QWizardPage):
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
-        self.setTitle("Setup abgeschlossen")
-        self.setSubTitle("Speech2Anywhere ist bereit.")
+        self.setTitle(tr("Setup abgeschlossen"))
+        self.setSubTitle(tr("Speech2Anywhere ist bereit."))
 
         layout = QVBoxLayout(self)
         hints = QLabel(
-            "So funktioniert's:\n\n"
-            "  - F8 gedrückt halten -> sprechen -> loslassen.\n"
-            "    Dein Text erscheint am Cursor.\n\n"
-            "  - F9 markieren + halten -> Sprach-Befehl auf den\n"
-            "    markierten Text (z.B. 'mach den Text formeller').\n\n"
-            "  - Tray-Icon (rechts unten) -> Einstellungen,\n"
-            "    Anleitung, Updates.\n\n"
-            "Klicke auf »Fertigstellen«, um Speech2Anywhere zu starten."
+            tr(
+                "So funktioniert's:\n\n"
+                "  - F8 gedrückt halten -> sprechen -> loslassen.\n"
+                "    Dein Text erscheint am Cursor.\n\n"
+                "  - F9 markieren + halten -> Sprach-Befehl auf den\n"
+                "    markierten Text (z.B. 'mach den Text formeller').\n\n"
+                "  - Tray-Icon (rechts unten) -> Einstellungen,\n"
+                "    Anleitung, Updates.\n\n"
+                "Klicke auf »Fertigstellen«, um Speech2Anywhere zu starten."
+            )
         )
         hints.setWordWrap(True)
         layout.addWidget(hints)
@@ -650,11 +729,11 @@ class SetupWizard(QWizard):
 
     def _comic_look(self) -> None:
         for button, text in (
-            (QWizard.WizardButton.NextButton, "Weiter"),
-            (QWizard.WizardButton.BackButton, "Zurück"),
-            (QWizard.WizardButton.CancelButton, "Abbrechen"),
-            (QWizard.WizardButton.FinishButton, "Fertigstellen"),
-            (QWizard.WizardButton.CommitButton, "Weiter"),
+            (QWizard.WizardButton.NextButton, tr("Weiter")),
+            (QWizard.WizardButton.BackButton, tr("Zurück")),
+            (QWizard.WizardButton.CancelButton, tr("Abbrechen")),
+            (QWizard.WizardButton.FinishButton, tr("Fertigstellen")),
+            (QWizard.WizardButton.CommitButton, tr("Weiter")),
         ):
             self.setButtonText(button, text)
         for button in (QWizard.WizardButton.NextButton, QWizard.WizardButton.CommitButton,
@@ -705,11 +784,15 @@ class SetupWizard(QWizard):
             log.exception("mark_first_run_complete failed in accept()")
             QMessageBox.warning(
                 self,
-                "Setup-Marker nicht gespeichert",
-                "Speech2Anywhere konnte den Setup-Marker nicht schreiben.\n\n"
-                "Beim nächsten Start kann der Assistent erneut erscheinen "
-                "(die Modelle sind schon da, es wird nichts neu geladen).\n\n"
-                "Pfad: %APPDATA%\\Kira\\\n"
-                f"Fehler: {type(exc).__name__}: {exc}"
+                tr("Setup-Marker nicht gespeichert"),
+                tr(
+                    "Speech2Anywhere konnte den Setup-Marker nicht schreiben.\n"
+                    "\n"
+                    "Beim nächsten Start kann der Assistent erneut erscheinen (die Modelle sind schon da, es wird "
+                    "nichts neu geladen).\n"
+                    "\n"
+                    "Pfad: %APPDATA%\\Kira\\\n"
+                    "Fehler: {}: {}"
+                ).format(type(exc).__name__, exc)
             )
         super().accept()

@@ -23,6 +23,7 @@ class HistoryRecord:
     text: str
     avg_logprob: float | None = None
     duration_s: float | None = None
+    language: str | None = None
 
     @property
     def time(self) -> datetime:

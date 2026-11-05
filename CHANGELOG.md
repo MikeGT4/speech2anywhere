@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.6.0 (05.11.2026)
+
+- Versprecher: Wer sich im Satz verbessert („am Dienstag, nein, am Freitag“), bekommt nur das Richtige; gilt in Mail, Chat und Fließtext, nicht im Terminal
+- Die Politur antwortet in der Sprache des Diktats; im Reiter „Mikrofon“ wählbar sind Deutsch, Englisch, Französisch, Italienisch, Niederländisch, Polnisch, Portugiesisch, Spanisch oder die Erkennung
+- Die Zwischenablage übersteht das Diktat: Bild, Dateien und formatierter Text liegen danach wieder darin
+- Umschalten statt Halten (Reiter „Tasten“): einmal drücken, sprechen, noch einmal drücken
+- „Datei transkribieren“ schreibt zusätzlich eine Untertiteldatei (`.srt`) mit Zeitmarken
+- Die Oberfläche gibt es auch auf Englisch (Reiter „Mikrofon“, Zeile „Oberfläche“)
+- Nach dem Speichern von Einstellungen bietet der Dialog „Jetzt neu starten“ an
+- Von 0.5.5 bis 0.5.11 aus lädt das Update in der App nur das Programmpaket
+
 ## 0.5.11 (30.10.2026)
 
 - Töne beim Diktat: ein kurzer Ton beim Loslassen der Taste, wenn der Text da ist, und bei Fehlern, passend zum Stil der Anzeige (der Weihnachtsmann lacht „Ho, ho, ho“, im Stil Comic klingt eine Marimba); ein- und ausschalten im Reiter „Sound“ der Einstellungen, auch einzeln für Drücken, Loslassen, fertigen Text und Fehler, dort auch zum Anhören; voreingestellt aus

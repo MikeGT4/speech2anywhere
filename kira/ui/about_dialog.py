@@ -10,6 +10,7 @@ from kira import UPDATE_REPO, __version__
 from kira.config import effective_hotkey
 from kira.ui import _comic as comic
 from kira.ui._dialog_style import apply_light_theme
+from kira.texte import tr
 
 log = logging.getLogger(__name__)
 from kira._resources import assets_dir as _assets_dir  # noqa: E402
@@ -36,42 +37,43 @@ def _value(text: str) -> QLabel:
 class AboutDialog(QDialog):
     def __init__(self) -> None:
         super().__init__()
-        self.setWindowTitle("Über Speech2Anywhere")
+        self.setWindowTitle(tr("Über Speech2Anywhere"))
         icon_path = _ASSETS / "icon-branded.ico"
         if icon_path.exists():
             self.setWindowIcon(QIcon(str(icon_path)))
         self.setModal(True)
         self.setMinimumWidth(760)
         apply_light_theme(self)
-        body = comic.dialog_frame(self, "Über")
+        body = comic.dialog_frame(self, tr("Über"))
 
         cfg = _safe_load_config()
         whisper_model_name = Path(cfg.whisper.model).name or cfg.whisper.model
         mic_label = (
             str(cfg.audio.input_device)
             if cfg.audio.input_device is not None
-            else "Windows-Standard"
+            else tr("Windows-Standard")
         )
         body.setSpacing(12)
         card = comic.ComicCard(f"Version {__version__}", comic.mascot_pixmap(32), row_padding=5)
-        card.add_row("Spracherkennung", "", _value(f"faster-whisper · {whisper_model_name}"))
-        card.add_row("Politur", "", _value(f"{cfg.styler.model} ({cfg.styler.provider})"))
-        card.add_row("Taste", "", _value(f"{effective_hotkey(cfg.hotkey.combo).upper()} halten"))
-        card.add_row("Mikrofon", "", _value(mic_label))
+        card.add_row(tr("Spracherkennung"), "", _value(f"faster-whisper · {whisper_model_name}"))
+        card.add_row(tr("Politur"), "", _value(f"{cfg.styler.model} ({cfg.styler.provider})"))
+        key_use = tr("{} drücken, noch einmal zum Beenden") if cfg.hotkey.mode == "toggle" else tr("{} halten")
+        card.add_row(tr("Taste"), "", _value(key_use.format(effective_hotkey(cfg.hotkey.combo).upper())))
+        card.add_row(tr("Mikrofon"), "", _value(mic_label))
         source = _value(
             f"<a href='https://github.com/{UPDATE_REPO}' style='color: {comic.INK};'>"
             f"github.com/{UPDATE_REPO}</a>"
         )
         source.setOpenExternalLinks(True)
         source.setTextInteractionFlags(Qt.TextInteractionFlag.TextBrowserInteraction)
-        card.add_row("Quelle", "", source)
+        card.add_row(tr("Quelle"), "", source)
         body.addWidget(card)
         body.addWidget(comic.HintBubble([
-            "Speech2Anywhere von", comic.brand_logo(20), "· © 2026 Mike Pollow, Personal-Use-Lizenz",
+            tr("Speech2Anywhere von"), comic.brand_logo(20), tr("· © 2026 Mike Pollow, Personal-Use-Lizenz"),
         ]))
         body.addStretch()
 
-        close_btn = QPushButton("Schließen")
+        close_btn = QPushButton(tr("Schließen"))
         close_btn.setObjectName("comicPrimary")
         close_btn.setDefault(True)
         close_btn.clicked.connect(self.accept)

@@ -6,6 +6,7 @@ from PyQt6.QtGui import QColor, QPainter, QPainterPath, QPen
 from PyQt6.QtWidgets import QDialog, QVBoxLayout, QWidget
 
 from kira.ui import _comic as comic
+from kira.texte import tr
 
 _PANEL_W, _PANEL_H = 340, 150
 _SHADOW = 5
@@ -43,7 +44,7 @@ class _ScanWidget(QWidget):
 
         p.setPen(QColor(comic.INK))
         p.setFont(comic.baloo(700, 17))
-        p.drawText(QRectF(0, 18, card.width(), 26), Qt.AlignmentFlag.AlignHCenter, "GPU wird geprüft…")
+        p.drawText(QRectF(0, 18, card.width(), 26), Qt.AlignmentFlag.AlignHCenter, tr("GPU wird geprüft…"))
 
         left, width = 34.0, card.width() - 68
         cy, amp = 94.0, 20.0

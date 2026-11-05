@@ -10,6 +10,7 @@ from typing import Callable
 
 from kira import progress as prog
 from kira.ollama_host import client_host
+from kira.texte import N_, tr
 
 log = logging.getLogger(__name__)
 
@@ -19,7 +20,7 @@ MAX_MANIFEST_BYTES = 1_000_000
 REGISTRY = "registry.ollama.ai"
 MANIFEST_TYPE = "application/vnd.docker.distribution.manifest.v2+json"
 UNKNOWN_MODEL = "manifest: file does not exist"
-INCOMPLETE = "Ollama hat den Download ohne Abschluss beendet."
+INCOMPLETE = N_("Ollama hat den Download ohne Abschluss beendet.")
 _NAME_PART = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{0,127}")
 
 
@@ -66,7 +67,7 @@ def registry_size(model: str, timeout: float = MANIFEST_TIMEOUT_S) -> int:
 
 def missing_text(model: str, exc: BaseException) -> str | None:
     if UNKNOWN_MODEL in str(exc):
-        return f"Modell {model} gibt es bei Ollama nicht."
+        return tr("Modell {} gibt es bei Ollama nicht.").format(model)
     return None
 
 
@@ -162,5 +163,5 @@ class ModelPull:
         if self.cancelled:
             return False
         if not succeeded:
-            raise PullFailed(INCOMPLETE)
+            raise PullFailed(tr(INCOMPLETE))
         return True

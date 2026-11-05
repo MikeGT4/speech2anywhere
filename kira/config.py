@@ -1,6 +1,7 @@
 from __future__ import annotations
 import math
 import os
+import re
 import sys
 from pathlib import Path
 from typing import Literal
@@ -14,6 +15,12 @@ class HotkeyConfig(BaseModel):
     combo: str = "fn"
     min_duration_ms: int = 300
     edit_combo: str | None = "f9"
+    mode: str = "hold"
+
+    @field_validator("mode", mode="before")
+    @classmethod
+    def _known_mode(cls, value: object) -> str:
+        return "toggle" if str(value or "").strip().lower() == "toggle" else "hold"
 
 
 class AudioConfig(BaseModel):
@@ -21,13 +28,31 @@ class AudioConfig(BaseModel):
     input_device: int | str | None = None
 
 
+LANGUAGE_NAMES = {
+    "de": "Deutsch",
+    "en": "Englisch",
+    "fr": "Französisch",
+    "it": "Italienisch",
+    "nl": "Niederländisch",
+    "pl": "Polnisch",
+    "pt": "Portugiesisch",
+    "es": "Spanisch",
+}
+
+
 class WhisperConfig(BaseModel):
     model: str = "mlx-community/whisper-large-v3-turbo"
-    language: Literal["auto", "de", "en"] = "auto"
+    language: str = "auto"
     vad_threshold: float = 0.35
     condition_on_previous_text: bool = False
     initial_prompt: str | None = None
     replacements: dict[str, str] = Field(default_factory=dict)
+
+    @field_validator("language", mode="before")
+    @classmethod
+    def _known_language(cls, value: object) -> str:
+        key = str(value or "").strip().lower()
+        return key if key == "auto" or re.fullmatch(r"[a-z]{2,3}", key) else "auto"
 
 
 class ModeConfig(BaseModel):
@@ -49,7 +74,7 @@ class StylerConfig(BaseModel):
 
 
 class InjectorConfig(BaseModel):
-    strategy: Literal["clipboard", "keystrokes"] = "clipboard"
+    strategy: Literal["auto", "clipboard", "keystrokes"] = "clipboard"
     restore_clipboard_after_ms: int = 500
 
 
@@ -67,6 +92,13 @@ class UIConfig(BaseModel):
     hud_style: str = DEFAULT_HUD_STYLE
     hud_scale: float = 1.5
     hud_live_words: bool = True
+    language: str = "auto"
+
+    @field_validator("language", mode="before")
+    @classmethod
+    def _known_interface_language(cls, value: object) -> str:
+        key = str(value or "").strip().lower()
+        return key if key in ("de", "en") else "auto"
 
     @field_validator("sound_events", mode="before")
     @classmethod

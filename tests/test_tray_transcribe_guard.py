@@ -269,3 +269,62 @@ def test_a_transcript_written_despite_a_late_cancel_is_reported(tray, monkeypatc
     assert (tmp_path / "spaet.txt").read_text(encoding="utf-8") == "Hallo"
     assert len(shown) == 1 and shown[0].startswith("Fertig.")
     assert str(tmp_path / "spaet.txt") in shown[0]
+
+
+def test_srt_text_numbers_the_blocks_and_formats_the_times():
+    from kira.ui.tray_win import srt_text
+    assert srt_text([(0.0, 2.5, "Hallo Welt."), (62.25, 3723.004, "Zweiter Satz.")]) == (
+        "1\n00:00:00,000 --> 00:00:02,500\nHallo Welt.\n\n"
+        "2\n00:01:02,250 --> 01:02:03,004\nZweiter Satz.\n"
+    )
+
+
+def test_transcript_name_also_avoids_an_existing_subtitle_file(tmp_path):
+    from kira.ui.tray_win import free_transcript_path
+    src = tmp_path / "Film.mp4"
+    (tmp_path / "Film.srt").write_text("fremde Untertitel", encoding="utf-8")
+    assert free_transcript_path(src) == tmp_path / "Film (2).txt"
+
+
+def _finished_transcription(tray, monkeypatch, tmp_path, result):
+    import time
+    from types import SimpleNamespace
+
+    from PyQt6.QtCore import QCoreApplication
+    from PyQt6.QtWidgets import QFileDialog
+
+    audio = tmp_path / "vortrag.wav"
+    audio.write_bytes(b"")
+    shown = []
+    monkeypatch.setattr("kira.ui._dialog_style.light_information", lambda *a, **k: shown.append(a[2]))
+    monkeypatch.setattr("kira.ui._dialog_style.light_critical", lambda *a, **k: shown.append(a[2]))
+    monkeypatch.setattr(QFileDialog, "getOpenFileName", staticmethod(lambda *a, **k: (str(audio), "")))
+    transcriber = SimpleNamespace(
+        model_loaded=True, transcribe_file=lambda path, on_progress=None, cancelled=None: result,
+    )
+    tray._show_transcribe_file_dialog(transcriber)
+    deadline = time.monotonic() + 5
+    while tray._transcribe_thread is not None and time.monotonic() < deadline:
+        QCoreApplication.processEvents()
+        time.sleep(0.01)
+    return shown
+
+
+def test_file_transcription_writes_subtitles_next_to_the_text(tray, monkeypatch, qapp, tmp_path):
+    from types import SimpleNamespace
+    result = SimpleNamespace(text="Hallo Welt.", language="de", segments=[(0.0, 1.5, "Hallo Welt.")])
+    shown = _finished_transcription(tray, monkeypatch, tmp_path, result)
+    assert (tmp_path / "vortrag.txt").read_text(encoding="utf-8") == "Hallo Welt."
+    assert (tmp_path / "vortrag.srt").read_text(encoding="utf-8") == (
+        "1\n00:00:00,000 --> 00:00:01,500\nHallo Welt.\n"
+    )
+    assert len(shown) == 1
+    assert str(tmp_path / "vortrag.srt") in shown[0]
+
+
+def test_file_transcription_without_segments_writes_only_the_text(tray, monkeypatch, qapp, tmp_path):
+    from types import SimpleNamespace
+    shown = _finished_transcription(tray, monkeypatch, tmp_path, SimpleNamespace(text="Hallo", language="de"))
+    assert (tmp_path / "vortrag.txt").exists()
+    assert not (tmp_path / "vortrag.srt").exists()
+    assert "Untertitel" not in shown[0]

@@ -390,3 +390,27 @@ def test_parse_log_dictations_reads_old_and_new_logger_names(tmp_path):
     new.write_text("2026-09-29 11:00:00,123 INFO speech2anywhere.app: Polish out (mode=plain, 4 chars): 'welt'\n",
                    encoding="utf-8")
     assert [record.text for record, _ in parse_log_dictations([old, new])] == ["hallo", "welt"]
+
+
+def _history_in(directory, when, text, language):
+    HistoryWriter(directory).append(HistoryRecord(
+        ts=when.isoformat(timespec="seconds"), app=None, mode="terminal", raw=text, text=text,
+        language=language,
+    ))
+
+
+def test_dictation_in_another_language_teaches_nothing(tmp_path):
+    hist, src, lex, state = _setup(tmp_path)
+    _history_in(hist, T0, "wir deployen heute auf kuh bernetes", "en")
+    _sent(src, T0 + timedelta(minutes=2), "Wir deployen heute auf Kubernetes")
+    r = _run(T0 + timedelta(minutes=30), hist, src, lex, state)
+    assert (r.matched, r.corrected, r.pairs) == (0, 0, 0)
+    assert lex.pending() == []
+
+
+def test_german_dictation_with_language_field_still_teaches(tmp_path):
+    hist, src, lex, state = _setup(tmp_path)
+    _history_in(hist, T0, "wir deployen heute auf kuh bernetes", "de")
+    _sent(src, T0 + timedelta(minutes=2), "Wir deployen heute auf Kubernetes")
+    r = _run(T0 + timedelta(minutes=30), hist, src, lex, state)
+    assert (r.matched, r.corrected, r.pairs) == (1, 1, 1)

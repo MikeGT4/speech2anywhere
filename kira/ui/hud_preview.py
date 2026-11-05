@@ -16,11 +16,12 @@ from kira.ui.hud import create_style
 from kira.ui.hud.base import H, W, Frame, load_fonts
 from kira.ui.hud.signal import SAMPLE_RATE, SignalAnalysis, SignalTap
 from kira.ui.hud_qt import CURSOR_GAP_X, CURSOR_GAP_Y, FRAME_MS, animations_off
+from kira.texte import N_, tr
 
 log = logging.getLogger(__name__)
 
-RAW_TEXT = "Äh, kannst du mir die Unterlagen bis Freitag schicken"
-POLISHED_TEXT = "Kannst du mir die Unterlagen bis Freitag schicken?"
+RAW_TEXT = N_("Äh, kannst du mir die Unterlagen bis Freitag schicken")
+POLISHED_TEXT = N_("Kannst du mir die Unterlagen bis Freitag schicken?")
 RELEASE_S = 3.4
 POLISH_S = 5.2
 DONE_S = 7.0
@@ -53,7 +54,7 @@ def voice_block(start: int, count: int, rng: np.random.Generator) -> np.ndarray:
 
 
 def spoken_words(seconds: float) -> list[str]:
-    words = RAW_TEXT.split()
+    words = tr(RAW_TEXT).split()
     count = max(1, min(len(words), round(len(words) * seconds / RELEASE_S)))
     return fragments(" ".join(words[:count]))
 
@@ -171,11 +172,11 @@ class PreviewDriver:
         elif kind == "trans":
             style.release(t, f)
         elif kind == "polish":
-            f.raw_text = RAW_TEXT
+            f.raw_text = tr(RAW_TEXT)
             f.polishing = True
             f.polish_t = t
         elif kind == "done":
-            f.polished_text = POLISHED_TEXT
+            f.polished_text = tr(POLISHED_TEXT)
             style.done(t, f)
         elif kind == "idle":
             style.abort(t)
@@ -201,9 +202,9 @@ class HudPreview(QWidget):
         self.setMinimumWidth(self._size.width())
         self.setFixedHeight(self._size.height())
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
-        self.setAccessibleName("Vorschau der Anzeige")
-        self.setAccessibleDescription("Spielt ein Diktat im gewählten Stil ab: Aufnahme, Erkennen, Politur, fertig.")
-        self.setToolTip("So läuft die Anzeige beim Diktieren ab: Aufnahme, Erkennen, Politur, fertig.")
+        self.setAccessibleName(tr("Vorschau der Anzeige"))
+        self.setAccessibleDescription(tr("Spielt ein Diktat im gewählten Stil ab: Aufnahme, Erkennen, Politur, fertig."))
+        self.setToolTip(tr("So läuft die Anzeige beim Diktieren ab: Aufnahme, Erkennen, Politur, fertig."))
         self._timer = QTimer(self)
         self._timer.setTimerType(Qt.TimerType.PreciseTimer)
         self._timer.setInterval(FRAME_MS)

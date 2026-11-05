@@ -17,6 +17,7 @@ from PyQt6.QtGui import (
 )
 
 from kira._resources import assets_dir
+from kira.texte import decimal_mark, tr
 
 log = logging.getLogger(__name__)
 
@@ -136,7 +137,7 @@ def fmt_time(seconds: float) -> str:
     rest = s - m * 60
     whole = int(rest)
     tenth = int((rest - whole) * 10)
-    return f"{m:02d}:{whole:02d},{tenth}"
+    return f"{m:02d}:{whole:02d}{decimal_mark()}{tenth}"
 
 
 def fmt_db(db: float) -> str:
@@ -144,8 +145,8 @@ def fmt_db(db: float) -> str:
         return "−∞ dBFS"
     v = min(0.0, db)
     if v > -0.05:
-        return "0,0 dBFS"
-    return "−" + f"{abs(v):.1f}".replace(".", ",") + " dBFS"
+        return f"0{decimal_mark()}0 dBFS"
+    return "−" + f"{abs(v):.1f}".replace(".", decimal_mark()) + " dBFS"
 
 
 _FONT_FILES = {400: "IBMPlexMono-Regular.ttf", 500: "IBMPlexMono-Medium.ttf", 600: "IBMPlexMono-SemiBold.ttf"}
@@ -347,16 +348,16 @@ class HudStyle:
     def status(self, f: Frame, an) -> tuple[str, tuple, bool]:
         if self.mode == "rec":
             if an.silent:
-                return "KEIN SIGNAL", AMBER, False
+                return tr("KEIN SIGNAL"), AMBER, False
             if an.clip:
-                return "ZU NAH", RED, False
-            return "AUFNAHME", LINE, False
+                return tr("ZU NAH"), RED, False
+            return tr("AUFNAHME"), LINE, False
         if self.mode == "proc":
-            return ("POLITUR", LINE, True) if f.polishing else ("ENTSCHLÜSSELUNG", LINE, True)
+            return (tr("POLITUR"), LINE, True) if f.polishing else (tr("ENTSCHLÜSSELUNG"), LINE, True)
         if self.mode == "done":
-            return "ÜBERGABE", LINE, False
+            return tr("ÜBERGABE"), LINE, False
         if self.mode == "error":
-            return "FEHLER", RED, False
+            return tr("FEHLER"), RED, False
         return "", LINE, False
 
     def status_text(self, t: float, f: Frame, an) -> tuple[str, str, tuple]:

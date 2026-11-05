@@ -13,6 +13,7 @@ from pystray._util import win32 as _ps_win32
 from pystray._win32 import Icon as _PystrayWin32Icon, _dispatcher
 from kira import LOG_NAME
 from kira.app import State
+from kira.texte import N_, tr
 
 log = logging.getLogger(__name__)
 
@@ -20,8 +21,8 @@ log = logging.getLogger(__name__)
 _KIRA_TRAY_CLASS = "KiraDigitalrootsTrayIcon"
 _KIRA_TRAY_TITLE = "Speech2Anywhere"
 MENU_HEADER = "Speech2Anywhere"
-LOADING = "Spracherkennung wird geladen …"
-READING = "Datei wird gelesen …"
+LOADING = N_("Spracherkennung wird geladen …")
+READING = N_("Datei wird gelesen …")
 
 
 _WM_SETTEXT = 0x000C
@@ -43,11 +44,11 @@ _MENU_ICONS = {
 
 
 def _menu_icon_kind(text: str) -> str:
-    if text.startswith("Update auf v"):
+    if text.startswith(tr("Update auf v{} installieren…").split("{}")[0]):
         return "retry"
-    if text.startswith("Gelernte Wörter"):
+    if text.startswith(tr("Gelernte Wörter")):
         return "wand"
-    return _MENU_ICONS.get(text, "")
+    return {tr(label): kind for label, kind in _MENU_ICONS.items()}.get(text, "")
 
 class _KiraPystrayIcon(_PystrayWin32Icon):
     ICON_HANDLE_LIMIT = 16
@@ -246,10 +247,26 @@ def _load_or_generate_icon(state: State) -> Image.Image:
 def free_transcript_path(src: Path) -> Path:
     out = src.with_suffix(".txt")
     number = 2
-    while out.exists():
+    while out.exists() or out.with_suffix(".srt").exists():
         out = src.with_name(f"{src.stem} ({number}).txt")
         number += 1
     return out
+
+
+def _srt_time(seconds: float) -> str:
+    total_ms = int(round(seconds * 1000))
+    hours, rest = divmod(total_ms, 3_600_000)
+    minutes, rest = divmod(rest, 60_000)
+    secs, millis = divmod(rest, 1000)
+    return f"{hours:02d}:{minutes:02d}:{secs:02d},{millis:03d}"
+
+
+def srt_text(segments) -> str:
+    blocks = [
+        f"{number}\n{_srt_time(start)} --> {_srt_time(end)}\n{text}\n"
+        for number, (start, end, text) in enumerate(segments, 1)
+    ]
+    return "\n".join(blocks)
 
 
 class KiraTray:
@@ -264,7 +281,7 @@ class KiraTray:
         self._qt_marshal = qt_marshal
         self._transcriber = transcriber
         self._state = State.IDLE
-        self._status_label = "Bereit"
+        self._status_label = tr("Bereit")
         self._context_menu = None
         self._icon: pystray.Icon | None = None
         self._settings_dlg = None
@@ -290,17 +307,17 @@ class KiraTray:
         if self._update_available:
             items.append(
                 pystray.MenuItem(
-                    f"Update auf v{self._update_available} installieren…",
+                    tr("Update auf v{} installieren…").format(self._update_available),
                     self._check_for_updates,
                 ),
             )
         if self._ollama_advice:
             items.append(
-                pystray.MenuItem("Ollama-Empfehlung ansehen…", self._open_ollama_advice),
+                pystray.MenuItem(tr("Ollama-Empfehlung ansehen…"), self._open_ollama_advice),
             )
         items.append(
             pystray.MenuItem(
-                "Einstellungen…", self._open_settings, default=True,
+                tr("Einstellungen…"), self._open_settings, default=True,
             ),
         )
         if self._learning is not None:
@@ -310,17 +327,17 @@ class KiraTray:
         if self._transcriber is not None:
             items.append(
                 pystray.MenuItem(
-                    "Datei transkribieren…", self._open_transcribe_file,
+                    tr("Datei transkribieren…"), self._open_transcribe_file,
                 ),
             )
         items.extend([
             pystray.Menu.SEPARATOR,
-            pystray.MenuItem("Anleitung…", self._open_help),
-            pystray.MenuItem("Protokoll öffnen…", self._open_log),
-            pystray.MenuItem("Updates suchen…", self._check_for_updates),
+            pystray.MenuItem(tr("Anleitung…"), self._open_help),
+            pystray.MenuItem(tr("Protokoll öffnen…"), self._open_log),
+            pystray.MenuItem(tr("Updates suchen…"), self._check_for_updates),
             pystray.Menu.SEPARATOR,
-            pystray.MenuItem("Über Speech2Anywhere", self._about),
-            pystray.MenuItem("Beenden", self._quit),
+            pystray.MenuItem(tr("Über Speech2Anywhere"), self._about),
+            pystray.MenuItem(tr("Beenden"), self._quit),
         ])
         return pystray.Menu(*items)
 
@@ -338,7 +355,7 @@ class KiraTray:
             if item.text == MENU_HEADER or not item.visible:
                 continue
             if not item.enabled:
-                menu.addAction(comic.menu_status(menu, item.text, ready=item.text == "Bereit"))
+                menu.addAction(comic.menu_status(menu, item.text, ready=item.text == tr("Bereit")))
             else:
                 action = menu.addAction(item.text)
                 action.setIcon(comic.menu_icon(_menu_icon_kind(item.text)))
@@ -381,13 +398,13 @@ class KiraTray:
     def update_state(self, state: State) -> None:
         self._state = state
         self._status_label = {
-            State.IDLE: "Bereit",
-            State.RECORDING: "Aufnahme läuft…",
-            State.TRANSCRIBING: "Transkribiere…",
-            State.STYLING: "Poliere…",
-            State.INJECTING: "Füge ein…",
-            State.ERROR: "Fehler, siehe Protokoll",
-        }.get(state, "Unbekannt")
+            State.IDLE: tr("Bereit"),
+            State.RECORDING: tr("Aufnahme läuft…"),
+            State.TRANSCRIBING: tr("Transkribiere…"),
+            State.STYLING: tr("Poliere…"),
+            State.INJECTING: tr("Füge ein…"),
+            State.ERROR: tr("Fehler, siehe Protokoll"),
+        }.get(state, tr("Unbekannt"))
         with self._icon_lock:
             if self._plapper_stop is not None:
                 self._plapper_stop.set()
@@ -423,9 +440,11 @@ class KiraTray:
             return
         from kira.ui.settings_dialog import SettingsDialog
         if self._learning is not None:
-            dlg = SettingsDialog(open_learned_words=self._show_learned_words_dialog)
+            dlg = SettingsDialog(
+                open_learned_words=self._show_learned_words_dialog, request_restart=self._restart_app,
+            )
         else:
-            dlg = SettingsDialog()
+            dlg = SettingsDialog(request_restart=self._restart_app)
         self._settings_dlg = dlg
         try:
             getattr(dlg, "exec")()
@@ -438,7 +457,7 @@ class KiraTray:
         except Exception:
             log.exception("Lernen: Zähler fürs Tray-Menü nicht lesbar")
             pending = 0
-        return f"Gelernte Wörter ({pending} neu)…" if pending else "Gelernte Wörter…"
+        return tr("Gelernte Wörter ({} neu)…").format(pending) if pending else tr("Gelernte Wörter…")
 
     def _open_learned_words(self, _icon, _item) -> None:
         self._marshal_to_qt(self._show_learned_words_dialog, "learned words dialog")
@@ -480,8 +499,12 @@ class KiraTray:
         from kira.ui._dialog_style import light_warning
         light_warning(
             None, "Speech2Anywhere",
-            f"Notepad konnte nicht gestartet werden: {exc_msg}\n\n"
-            f"Datei manuell öffnen:\n{file_path}",
+            tr(
+                "Notepad konnte nicht gestartet werden: {}\n"
+                "\n"
+                "Datei manuell öffnen:\n"
+                "{}"
+            ).format(exc_msg, file_path),
         )
 
     def _open_help(self, _icon, _item) -> None:
@@ -518,27 +541,29 @@ class KiraTray:
         if self._transcribe_thread is not None and self._transcribe_thread.isRunning():
             light_information(
                 None, "Speech2Anywhere",
-                "Es läuft bereits eine Datei-Transkription. Bitte warten, "
-                "bis sie abgeschlossen ist.",
+                tr(
+                    "Es läuft bereits eine Datei-Transkription. Bitte warten, "
+                    "bis sie abgeschlossen ist."
+                ),
             )
             return
 
         path, _filter = QFileDialog.getOpenFileName(
             None,
-            "Audio- oder Videodatei zum Transkribieren auswählen",
+            tr("Audio- oder Videodatei zum Transkribieren auswählen"),
             "",
-            "Medien (*.wav *.mp3 *.m4a *.flac *.ogg *.opus *.mp4 *.mov *.mkv *.webm);;Alle Dateien (*.*)",
+            tr("Medien (*.wav *.mp3 *.m4a *.flac *.ogg *.opus *.mp4 *.mov *.mkv *.webm);;Alle Dateien (*.*)"),
         )
         if not path:
             return
         log.info("File-Transcription requested: %s", path)
 
-        head = f"Transkribiere {Path(path).name}\n"
+        head = tr("Transkribiere {}\n").format(Path(path).name)
         progress = QProgressDialog(
-            f"{head}{prog.PREPARING}",
-            "Abbrechen", 0, 0, None,
+            f"{head}{tr(prog.PREPARING)}",
+            tr("Abbrechen"), 0, 0, None,
         )
-        progress.setWindowTitle("Speech2Anywhere: Datei transkribieren")
+        progress.setWindowTitle(tr("Speech2Anywhere: Datei transkribieren"))
         progress.setWindowModality(Qt.WindowModality.ApplicationModal)
         progress.setMinimumDuration(0)
         apply_light_theme(progress)
@@ -577,18 +602,23 @@ class KiraTray:
                         raise prog.Cancelled(self._src)
                     if not result.text:
                         self.failed.emit(
-                            "Das Transkript ist leer. Entweder ist die Datei still, "
-                            "oder die Spracherkennung hat nichts verstanden."
+                            tr(
+                                "Das Transkript ist leer. Entweder ist die Datei still, "
+                                "oder die Spracherkennung hat nichts verstanden."
+                            )
                         )
                         return
                     out = free_transcript_path(Path(self._src))
                     out.write_text(result.text, encoding="utf-8")
+                    segments = getattr(result, "segments", None)
+                    if segments:
+                        out.with_suffix(".srt").write_text(srt_text(segments), encoding="utf-8")
                     self.done.emit(str(out), result.language)
                 except prog.Cancelled:
                     self.failed.emit("")
                 except Exception as exc:
                     log.exception("file-transcription worker crashed")
-                    self.failed.emit(f"Fehler: {exc}")
+                    self.failed.emit(tr("Fehler: {}").format(exc))
 
         thread = QThread()
         worker = _Worker(path)
@@ -621,10 +651,23 @@ class KiraTray:
         def on_done(out_path: str, language: str) -> None:
             _close_progress()
             _teardown()
+            subtitles = Path(out_path).with_suffix(".srt")
+            extra = tr(
+                "\n"
+                "\n"
+                "Untertitel mit Zeitmarken:\n"
+                "{}"
+            ).format(subtitles) if subtitles.exists() else ""
             light_information(
                 None, "Speech2Anywhere",
-                f"Fertig.\n\nTranskript gespeichert unter:\n{out_path}\n\n"
-                f"Erkannte Sprache: {language}",
+                tr(
+                    "Fertig.\n"
+                    "\n"
+                    "Transkript gespeichert unter:\n"
+                    "{}{}\n"
+                    "\n"
+                    "Erkannte Sprache: {}"
+                ).format(out_path, extra, language),
             )
 
         def on_failed(message: str) -> None:
@@ -674,9 +717,8 @@ class KiraTray:
 
     def notify_update(self, version: str) -> None:
         self.notify(
-            "Speech2Anywhere: Update verfügbar",
-            f"Speech2Anywhere v{version} ist verfügbar. Installieren im "
-            f"Tray-Menü: „Update auf v{version} installieren…“.",
+            tr("Speech2Anywhere: Update verfügbar"),
+            tr("Speech2Anywhere v{} ist verfügbar. Installieren im Tray-Menü: „Update auf v{} installieren…“.").format(version, version),
         )
 
     def set_ollama_advice(self, advice) -> None:
@@ -690,15 +732,19 @@ class KiraTray:
     def notify_ollama_advice(self, advice) -> None:
         if advice.kind == "ollama":
             text = (
-                f"Speech2Anywhere ist mit Ollama {advice.tested} geprüft, installiert ist "
-                f"{advice.installed}. Tray-Menü: „Ollama-Empfehlung ansehen…“."
+                tr(
+                    "Speech2Anywhere ist mit Ollama {} geprüft, installiert ist {}. Tray-Menü: „Ollama-Empfehlung "
+                    "ansehen…“."
+                ).format(advice.tested, advice.installed)
             )
         else:
             text = (
-                f"Das Politur-Modell {advice.model} liegt in einer anderen Fassung vor als der "
-                "geprüften. Tray-Menü: „Ollama-Empfehlung ansehen…“."
+                tr(
+                    "Das Politur-Modell {} liegt in einer anderen Fassung vor als der geprüften. Tray-Menü: "
+                    "„Ollama-Empfehlung ansehen…“."
+                ).format(advice.model)
             )
-        self.notify("Speech2Anywhere: Empfehlung zu Ollama", text)
+        self.notify(tr("Speech2Anywhere: Empfehlung zu Ollama"), text)
 
     def _open_ollama_advice(self, _icon, _item) -> None:
         self._marshal_to_qt(self._show_ollama_advice, "ollama advice")
@@ -738,12 +784,15 @@ class KiraTray:
             return
 
         msg = QMessageBox(None)
-        msg.setWindowTitle("Speech2Anywhere: Update verfügbar")
+        msg.setWindowTitle(tr("Speech2Anywhere: Update verfügbar"))
         msg.setIcon(QMessageBox.Icon.Question)
-        msg.setText(f"Eine neue Version ist verfügbar: v{remote_version}.")
+        msg.setText(tr("Eine neue Version ist verfügbar: v{}.").format(remote_version))
         msg.setInformativeText(
-            f"Du verwendest v{__version__}.\n\n"
-            "Jetzt herunterladen und installieren?"
+            tr(
+                "Du verwendest v{}.\n"
+                "\n"
+                "Jetzt herunterladen und installieren?"
+            ).format(__version__)
         )
         msg.setStandardButtons(
             QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
@@ -759,6 +808,13 @@ class KiraTray:
             log.info("Start-Update-Check: Nutzer hat v%s abgelehnt", remote_version)
             if on_declined is not None:
                 on_declined(remote_version)
+
+    def _restart_app(self) -> bool:
+        from kira import restart
+        if not restart.start_successor():
+            return False
+        self._quit(None, None)
+        return True
 
     def _quit(self, _icon, _item) -> None:
         try:

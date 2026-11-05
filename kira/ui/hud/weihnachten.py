@@ -14,6 +14,7 @@ from kira.ui.hud.saison import (
     CLOUD, HINT_BODY, INK, LABEL, ROUND, STEEL, TINT, WHITE, YELLOW, Pose, Saison, ellipse, faded, glow, polygon,
     sparkle, text, unit,
 )
+from kira.texte import N_, tr
 
 SANTA = QColor("#C9252C")
 SANTA_DARK = QColor("#9E1B21")
@@ -557,10 +558,10 @@ class Weihnachten(Saison):
     key = "weihnachten"
     SCENES = ("schlitten", "schwibbogen", "plaetzchen")
     CLOCKS = ("kranz",)
-    WORDS = ("bla", "ho!", "hoho!")
+    WORDS = (N_("bla"), "ho!", N_("hoho!"))
     WORD_FILLS = (QColor(comic.YELLOW_HOVER), QColor("#FFFFFF"), QColor("#FFD9A0"))
-    ZACK_WORD = "Bescherung!"
-    SILENCE = ("Kein Signal", "Stille Nacht im Mikrofon.")
+    ZACK_WORD = N_("Bescherung!")
+    SILENCE = (N_("Kein Signal"), N_("Stille Nacht im Mikrofon."))
 
     def svg_under(self, kind: str) -> str:
         return BEARD
@@ -623,9 +624,9 @@ class Weihnachten(Saison):
 
     def caption(self, key: str, elapsed: float) -> str:
         if key == "schwibbogen":
-            return "leuchtet!" if elapsed >= ARCH_CANDLES * CANDLE_STEP_S else "Lichter an …"
+            return tr("leuchtet!") if elapsed >= ARCH_CANDLES * CANDLE_STEP_S else tr("Lichter an …")
         if key == "plaetzchen":
-            return "duftet!" if elapsed >= OVEN_DONE_S else "im Ofen …"
+            return tr("duftet!") if elapsed >= OVEN_DONE_S else tr("im Ofen …")
         return ""
 
     def paint_scene(self, p: QPainter, key: str, t: float, f: Frame, elapsed: float, title: str) -> None:

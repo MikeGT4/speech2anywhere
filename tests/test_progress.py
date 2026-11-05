@@ -293,6 +293,137 @@ def test_byte_progress_raises_to_cancel_a_download():
         bar.update(10)
 
 
+def _hub_like_attempt(bar, size, initial=0):
+    bar.total += size
+    bar.refresh()
+    if initial:
+        bar.update(initial)
+
+
+def _snapshot_bar(seen):
+    cls = prog.byte_progress_class(lambda done, total: seen.append((done, total)))
+    return cls(desc="Downloading (incomplete total...)", total=0, initial=0, unit="B", unit_scale=True)
+
+
+def test_byte_progress_counts_a_resumed_file_once():
+    seen = []
+    bar = _snapshot_bar(seen)
+    _hub_like_attempt(bar, 1_000)
+    bar.update(300)
+    bar.update(300)
+    _hub_like_attempt(bar, 1_000, initial=600)
+    bar.update(400)
+    assert seen[-1] == (1_000, 1_000)
+    assert all(done <= total for done, total in seen)
+
+
+def test_byte_progress_counts_a_file_from_zero_when_the_server_sends_it_again():
+    seen = []
+    bar = _snapshot_bar(seen)
+    _hub_like_attempt(bar, 1_000)
+    bar.update(300)
+    _hub_like_attempt(bar, 1_000)
+    for _ in range(4):
+        bar.update(250)
+    assert seen[-1] == (1_000, 1_000)
+    assert [done for done, _ in seen[-4:]] == [250, 500, 750, 1_000]
+
+
+def test_byte_progress_keeps_two_files_of_the_same_size_apart():
+    from tqdm.contrib.concurrent import thread_map
+
+    seen = []
+    lock = threading.Lock()
+
+    def report(done, total):
+        with lock:
+            seen.append((done, total))
+
+    cls = prog.byte_progress_class(report)
+    bar = cls(desc="Downloading (incomplete total...)", total=0, initial=0, unit="B", unit_scale=True)
+
+    def fetch(resumes):
+        _hub_like_attempt(bar, 1_000)
+        bar.update(400)
+        if resumes:
+            _hub_like_attempt(bar, 1_000, initial=400)
+        bar.update(600)
+
+    thread_map(fetch, [True, False], desc="Fetching 2 files", tqdm_class=cls)
+    assert seen[-1] == (2_000, 2_000)
+
+
+@pytest.mark.parametrize("answer", [206, 200])
+def test_byte_progress_counts_a_file_once_after_the_hub_resumes_it(monkeypatch, tmp_path, answer):
+    import contextlib
+
+    import httpx
+    from huggingface_hub import file_download
+
+    content = bytes(range(256)) * 40
+    seen = []
+    parent = _snapshot_bar(seen)
+
+    class Aggregated:
+        def __init__(self, *args, **kwargs):
+            total = kwargs.pop("total", None)
+            if total is not None:
+                parent.total += total
+                parent.refresh()
+            initial = kwargs.pop("initial", 0)
+            if initial:
+                parent.update(initial)
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *exc_info):
+            return False
+
+        def update(self, n=1):
+            parent.update(n)
+
+    class Response:
+        def __init__(self, start, fail_after):
+            self.status_code = answer if start else 200
+            first = start if self.status_code == 206 else 0
+            self.headers = {"Content-Length": str(len(content) - first)}
+            if self.status_code == 206:
+                self.headers["Content-Range"] = f"bytes {first}-{len(content) - 1}/{len(content)}"
+            self._first = first
+            self._fail_after = fail_after
+
+        def iter_bytes(self, chunk_size=None):
+            sent = 0
+            for offset in range(self._first, len(content), 1024):
+                if self._fail_after is not None and sent >= self._fail_after:
+                    raise httpx.ReadTimeout("Verbindung unterbrochen")
+                piece = content[offset:offset + 1024]
+                sent += len(piece)
+                yield piece
+
+    starts = []
+
+    @contextlib.contextmanager
+    def stream(method, url, headers=None, **kwargs):
+        start = int(headers["Range"].split("=")[1].split("-")[0]) if headers and "Range" in headers else 0
+        starts.append(start)
+        yield Response(start, 4096 if len(starts) == 1 else None)
+
+    monkeypatch.setattr(file_download, "http_stream_backoff", stream)
+    monkeypatch.setattr(file_download, "hf_raise_for_status", lambda response: None)
+    monkeypatch.setattr(file_download.time, "sleep", lambda seconds: None)
+    with open(tmp_path / "model.bin.incomplete", "wb") as temp_file:
+        file_download.http_get(
+            "https://example.invalid/model.bin", temp_file, expected_size=len(content), tqdm_class=Aggregated,
+        )
+
+    assert starts == [0, 4096]
+    assert (tmp_path / "model.bin.incomplete").read_bytes() == content
+    assert seen[-1] == (len(content), len(content))
+    assert all(done <= total for done, total in seen)
+
+
 def test_total_text_names_only_the_size():
     assert prog.total_text(3_090_835_702) == "3,1 GB"
     assert prog.total_text(48_000_000) == "48,0 MB"

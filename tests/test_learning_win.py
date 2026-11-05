@@ -185,3 +185,11 @@ def test_create_reads_old_and_new_log_files(tmp_path, monkeypatch):
     assert [p.name for p in svc._log_paths] == [
         "kira.log.1", "kira.log", "speech2anywhere.log.1", "speech2anywhere.log",
     ]
+
+
+def test_after_inject_stores_the_detected_language(tmp_path):
+    svc = _service(tmp_path, Clock(T0))
+    result = TranscriptionResult(text="We deploy", language="en")
+    svc.after_inject(mode="plain", transcription=result, text="We deploy", duration_s=1.0)
+    line = json.loads((tmp_path / "history" / "2026-09.jsonl").read_text(encoding="utf-8"))
+    assert line["language"] == "en"

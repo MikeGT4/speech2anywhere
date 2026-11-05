@@ -105,6 +105,7 @@ class LearningService:
             text=text,
             avg_logprob=getattr(transcription, "avg_logprob", None),
             duration_s=round(duration_s, 2),
+            language=getattr(transcription, "language", None) or None,
         ))
 
     def run_once(self) -> None:

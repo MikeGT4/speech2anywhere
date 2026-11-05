@@ -318,3 +318,127 @@ def test_edit_press_without_selection_reports_a_reason(monkeypatch):
     app.on_edit_press()
     assert app.state == State.ERROR
     assert app.last_error.startswith("Nichts markiert.")
+
+
+class _FakeTimer:
+    created: list = []
+
+    def __init__(self, interval, function):
+        self.interval = interval
+        self.function = function
+        self.daemon = False
+        self.started = False
+        _FakeTimer.created.append(self)
+
+    def start(self):
+        self.started = True
+
+
+@pytest.fixture
+def timers(monkeypatch):
+    _FakeTimer.created = []
+    monkeypatch.setattr("kira.app.threading.Timer", _FakeTimer)
+    return _FakeTimer.created
+
+
+class _QuietRecorder:
+    def start(self):
+        return None
+
+    def stop(self):
+        return np.ones(16000, dtype=np.float32)
+
+
+class _EditingStyler:
+    async def polish(self, text, mode, glossary=None, language=None):
+        return text
+
+    async def edit_command(self, selection, command):
+        return selection.upper()
+
+
+def _toggle_app(recorder=None):
+    from kira.app import _StubInjector, _StubTranscriber
+    return KiraApp(
+        config=Config(), recorder=recorder or _QuietRecorder(), transcriber=_StubTranscriber(),
+        styler=_EditingStyler(), injector=_StubInjector(),
+    )
+
+
+def test_toggle_starts_a_recording_when_idle(timers):
+    app = _toggle_app()
+    app.on_hotkey_toggle()
+    assert app.state == State.RECORDING
+
+
+def test_second_toggle_ends_the_recording_and_runs_the_pipeline(timers):
+    app = _toggle_app()
+    app.on_hotkey_toggle()
+    app._press_time -= 1.0
+    app.on_hotkey_toggle()
+    assert app.state == State.IDLE
+    assert app._injector.last == "stub"
+
+
+def test_quick_second_toggle_discards_the_recording(timers):
+    app = _toggle_app()
+    app.on_hotkey_toggle()
+    app.on_hotkey_toggle()
+    assert app.state == State.IDLE
+    assert app._injector.last is None
+
+
+def test_edit_toggle_takes_the_selection_and_stops_on_the_second_press(timers, monkeypatch):
+    monkeypatch.setattr("kira.app.read_selection", lambda: "markiert")
+    app = _toggle_app()
+    app.on_edit_toggle()
+    assert app.state == State.RECORDING
+    assert app._edit_mode
+    app._press_time -= 1.0
+    app.on_edit_toggle()
+    assert app.state == State.IDLE
+    assert app._injector.last == "MARKIERT"
+
+
+def test_toggle_arms_a_timer_that_ends_a_forgotten_recording(timers):
+    from kira.app import MAX_TOGGLE_RECORDING_S
+    app = _toggle_app()
+    app.on_hotkey_toggle()
+    assert [(t.interval, t.daemon, t.started) for t in timers] == [(MAX_TOGGLE_RECORDING_S, True, True)]
+    app._press_time -= 1.0
+    timers[0].function()
+    assert app.state == State.IDLE
+    assert app._injector.last == "stub"
+
+
+def test_timer_of_an_earlier_recording_leaves_the_next_one_running(timers):
+    app = _toggle_app()
+    app.on_hotkey_toggle()
+    app.on_hotkey_toggle()
+    app.on_hotkey_toggle()
+    assert app.state == State.RECORDING
+    timers[0].function()
+    assert app.state == State.RECORDING
+
+
+def test_timer_after_a_finished_recording_does_nothing(timers):
+    app = _toggle_app()
+    app.on_hotkey_toggle()
+    app.on_hotkey_toggle()
+    timers[0].function()
+    assert app.state == State.IDLE
+    assert app._injector.last is None
+
+
+def test_holding_the_key_arms_no_timer(timers):
+    app = _toggle_app()
+    app.on_hotkey_press()
+    assert timers == []
+
+
+def test_toggle_without_microphone_arms_no_timer(timers):
+    app = _toggle_app(_BrokenRecorder())
+    app.on_hotkey_toggle()
+    assert app.state == State.ERROR
+    from kira.app import MAX_TOGGLE_RECORDING_S
+    assert [t for t in timers if t.interval == MAX_TOGGLE_RECORDING_S] == []

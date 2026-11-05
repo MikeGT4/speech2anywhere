@@ -4,6 +4,7 @@ import logging
 import ntpath
 import sys
 from dataclasses import dataclass
+from kira.texte import tr
 
 log = logging.getLogger(__name__)
 
@@ -35,44 +36,44 @@ class PortDiagnosis:
 
     @property
     def hint(self) -> str:
-        exe = ntpath.basename(self.image) if self.image else "unbekannter Prozess"
+        exe = ntpath.basename(self.image) if self.image else tr("unbekannter Prozess")
         if self.kind == "wsl":
             return (
-                f"{exe} (PID {self.pid}) hält Port {self.port}. Der antwortende "
-                f"Ollama läuft in WSL2 (systemd-Service oder Docker-Container), "
-                f"NICHT der Windows-Ollama. Neustarts der Windows-App und das "
-                f"VRAM-Tuning von Speech2Anywhere bewirken dort nichts. Abhilfe: den Ollama in WSL "
-                f"stoppen oder auf einen anderen Port legen (Docker-Compose z. B. "
-                f"127.0.0.1:11435:11434), dann übernimmt der Windows-Ollama."
+                tr(
+                    "{} (PID {}) hält Port {}. Der antwortende Ollama läuft in WSL2 (systemd-Service oder "
+                    "Docker-Container), NICHT der Windows-Ollama. Neustarts der Windows-App und das VRAM-Tuning von "
+                    "Speech2Anywhere bewirken dort nichts. Abhilfe: den Ollama in WSL stoppen oder auf einen anderen "
+                    "Port legen (Docker-Compose z. B. 127.0.0.1:11435:11434), dann übernimmt der Windows-Ollama."
+                ).format(exe, self.pid, self.port)
             )
         if self.kind == "docker":
             return (
-                f"{exe} (PID {self.pid}) hält Port {self.port}. Ein Docker-"
-                f"Container stellt hier seinen eigenen Ollama bereit. Container "
-                f"stoppen oder sein Port-Mapping ändern, dann übernimmt der "
-                f"Windows-Ollama den Port."
+                tr(
+                    "{} (PID {}) hält Port {}. Ein Docker-Container stellt hier seinen eigenen Ollama bereit. "
+                    "Container stoppen oder sein Port-Mapping ändern, dann übernimmt der Windows-Ollama den Port."
+                ).format(exe, self.pid, self.port)
             )
         if self.kind == "win-ollama":
             return (
-                f"Der Windows-Ollama ({exe}, PID {self.pid}) hält Port "
-                f"{self.port}. Ollama über das Tray-Icon beenden und neu "
-                f"starten, dann greift das VRAM-Tuning (Flash-Attention und "
-                f"q8-KV-Cache) beim nächsten Serverstart."
+                tr(
+                    "Der Windows-Ollama ({}, PID {}) hält Port {}. Ollama über das Tray-Icon beenden und neu "
+                    "starten, dann greift das VRAM-Tuning (Flash-Attention und q8-KV-Cache) beim nächsten "
+                    "Serverstart."
+                ).format(exe, self.pid, self.port)
             )
         if self.kind == "none":
             return (
-                f"Kein Prozess lauscht auf Port {self.port}. Ollama läuft "
-                f"gerade nicht (oder wurde soeben beendet)."
+                tr("Kein Prozess lauscht auf Port {}. Ollama läuft gerade nicht (oder wurde soeben beendet).").format(self.port)
             )
         if self.kind == "other":
             return (
-                f"{exe} (PID {self.pid}) hält Port {self.port}, das ist kein "
-                f"Ollama-Prozess. Prüfen, welcher Dienst hier lauscht; solange "
-                f"er den Port hält, kommt der Windows-Ollama nicht zum Zug."
+                tr(
+                    "{} (PID {}) hält Port {}, das ist kein Ollama-Prozess. Prüfen, welcher Dienst hier lauscht; "
+                    "solange er den Port hält, kommt der Windows-Ollama nicht zum Zug."
+                ).format(exe, self.pid, self.port)
             )
         return (
-            f"Port {self.port} ist belegt (PID {self.pid}), aber der Prozess "
-            f"liess sich nicht identifizieren."
+            tr("Port {} ist belegt (PID {}), aber der Prozess ließ sich nicht identifizieren.").format(self.port, self.pid)
         )
 
 

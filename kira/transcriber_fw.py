@@ -39,6 +39,8 @@ class TranscriptionResult:
     language: str
     raw_text: str = ""
     avg_logprob: float | None = None
+    segments: list[tuple[float, float, str]] | None = None
+    language_probability: float | None = None
 
 
 _MLX_PREFIX = "mlx-community/whisper-"
@@ -202,6 +204,16 @@ class Transcriber:
             self._lexicon_failed(exc)
             return manual
 
+    def _language_arg(self, model) -> str | None:
+        lang = self._config.whisper.language
+        if lang == "auto":
+            return None
+        supported = getattr(model, "supported_languages", None)
+        if supported and lang not in supported:
+            log.warning("Sprache %r kennt das Modell nicht, es gilt die automatische Erkennung", lang)
+            return None
+        return lang
+
     def transcribe(self, audio: np.ndarray) -> TranscriptionResult:
         if audio.size == 0:
             return TranscriptionResult(text="", language="")
@@ -209,11 +221,10 @@ class Transcriber:
             audio = audio.astype(np.float32)
         model = self._ensure_model()
         wcfg = self._config.whisper
-        lang = wcfg.language
         try:
             segments, info = model.transcribe(
                 audio,
-                language=None if lang == "auto" else lang,
+                language=self._language_arg(model),
                 beam_size=5,
                 vad_filter=False,
                 condition_on_previous_text=wcfg.condition_on_previous_text,
@@ -262,6 +273,7 @@ class Transcriber:
             return TranscriptionResult(
                 text=text, language=info.language,
                 raw_text=raw_text, avg_logprob=min_logprob,
+                language_probability=getattr(info, "language_probability", None),
             )
         except Exception as exc:
             log.exception("faster-whisper transcription failed: %s", exc)
@@ -271,12 +283,11 @@ class Transcriber:
         if audio.size == 0:
             return ""
         model = self._ensure_model()
-        lang = self._config.whisper.language
         _PARTIAL.active = True
         try:
             segments, _info = model.transcribe(
                 audio.astype(np.float32, copy=False),
-                language=None if lang == "auto" else lang,
+                language=self._language_arg(model),
                 beam_size=1,
                 vad_filter=False,
                 condition_on_previous_text=False,
@@ -303,7 +314,7 @@ class Transcriber:
                 on_progress(0.0, 0.0)
             segments, info = model.transcribe(
                 str(path),
-                language=None if lang == "auto" else lang,
+                language=self._language_arg(model),
                 beam_size=5,
                 vad_filter=True,
                 vad_parameters={"threshold": wcfg.vad_threshold},
@@ -314,6 +325,7 @@ class Transcriber:
             if on_progress is not None:
                 on_progress(0.0, duration)
             kept_segments = []
+            timed: list[tuple[float, float, str]] = []
             dropped = 0
             for seg in segments:
                 if cancelled is not None and cancelled():
@@ -330,6 +342,9 @@ class Transcriber:
                     continue
                 if seg_text:
                     kept_segments.append(seg_text)
+                    timed.append((
+                        float(getattr(seg, "start", 0.0) or 0.0), float(getattr(seg, "end", 0.0) or 0.0), seg_text,
+                    ))
             text = " ".join(kept_segments).strip()
             if dropped:
                 log.info("File-mode: %d Segmente als Halluzination gefiltert", dropped)
@@ -342,11 +357,12 @@ class Transcriber:
                         len(text), len(fixed),
                     )
                     text = fixed
+                timed = [(start, end, replacements.apply(part, mapping)) for start, end, part in timed]
             log.info(
                 "File transcribed: %d kept seg(s), %d chars, lang=%s",
                 len(kept_segments), len(text), info.language,
             )
-            return TranscriptionResult(text=text, language=info.language)
+            return TranscriptionResult(text=text, language=info.language, segments=timed)
         except Cancelled:
             log.info("File transcription cancelled: %s", path)
             raise

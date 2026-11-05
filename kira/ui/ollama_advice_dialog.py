@@ -19,6 +19,7 @@ from kira.ui import _comic as comic
 from kira.ui._dialog_style import apply_light_theme, light_critical, light_information
 from kira.ui._progress_view import ProgressView
 from kira.updater import download_asset, matches_sha256
+from kira.texte import N_, decimal_mark, tr
 
 log = logging.getLogger(__name__)
 
@@ -26,7 +27,7 @@ SIGNER_PARTS = ("CN=Ollama Inc.", "O=Ollama Inc.")
 DETACHED = 0x00000008 | 0x00000200
 CREATE_NO_WINDOW = 0x08000000
 OLLAMA_PROCESSES = frozenset({"ollama app.exe", "ollama.exe", "llama-server.exe", "ollama_llama_server.exe"})
-CHECKING = "Prüfsumme und Signatur werden geprüft …"
+CHECKING = N_("Prüfsumme und Signatur werden geprüft …")
 
 _orphans: list[tuple[QThread, QObject]] = []
 
@@ -192,35 +193,37 @@ class _SetupWorker(QObject):
             else:
                 target = self._target
                 if not _matches(target, a):
-                    self.phase.emit(prog.STARTING)
+                    self.phase.emit(tr(prog.STARTING))
                     download_asset(a.url, target, on_bytes=self._on_bytes)
                     self.phase.emit(CHECKING)
                 if not matches_sha256(target, a.sha256):
                     target.unlink(missing_ok=True)
-                    self.finished.emit(False, "Die Prüfsumme des Ollama-Setups passt nicht. Es wird nicht gestartet.")
+                    self.finished.emit(False, tr("Die Prüfsumme des Ollama-Setups passt nicht. Es wird nicht gestartet."))
                     return
             if not signature_ok(target):
-                self.finished.emit(False, "Die Signatur des Ollama-Setups ist nicht gültig. Es wird nicht gestartet.")
+                self.finished.emit(False, tr("Die Signatur des Ollama-Setups ist nicht gültig. Es wird nicht gestartet."))
                 return
             if self._cancelled:
-                self.finished.emit(False, "Abgebrochen.")
+                self.finished.emit(False, tr("Abgebrochen."))
                 return
             self.finished.emit(True, str(target))
         except _Cancelled:
-            self.finished.emit(False, "Abgebrochen.")
+            self.finished.emit(False, tr("Abgebrochen."))
         except Exception as exc:
             if self._cancelled:
-                self.finished.emit(False, "Abgebrochen.")
+                self.finished.emit(False, tr("Abgebrochen."))
                 return
             log.exception("Ollama-Setup: Download fehlgeschlagen")
-            self.finished.emit(False, f"Das Ollama-Setup ließ sich nicht laden: {exc}")
+            self.finished.emit(False, tr("Das Ollama-Setup ließ sich nicht laden: {}").format(exc))
 
 
 _ELSEWHERE_TEXT = {
-    PORT: "Am Ollama-Port antwortet ein anderes Ollama als das installierte Windows-Programm, etwa in WSL "
-          "oder Docker. Bitte dort aktualisieren.",
-    REMOTE: "Ollama läuft auf einem anderen Rechner. Bitte dort aktualisieren.",
-    ELSEWHERE: "Ollama läuft hier nicht als Windows-Programm im Standardordner. Bitte von Hand aktualisieren.",
+    PORT: N_(
+        "Am Ollama-Port antwortet ein anderes Ollama als das installierte Windows-Programm, etwa in WSL "
+        "oder Docker. Bitte dort aktualisieren."
+    ),
+    REMOTE: N_("Ollama läuft auf einem anderen Rechner. Bitte dort aktualisieren."),
+    ELSEWHERE: N_("Ollama läuft hier nicht als Windows-Programm im Standardordner. Bitte von Hand aktualisieren."),
 }
 
 
@@ -258,7 +261,7 @@ class OllamaAdviceDialog(QDialog):
         on_handled: Callable[[str], None] | None = None,
     ) -> None:
         super().__init__(parent)
-        self.setWindowTitle("Speech2Anywhere: Empfehlung zu Ollama")
+        self.setWindowTitle(tr("Speech2Anywhere: Empfehlung zu Ollama"))
         icon_path = assets_dir() / "icon-branded.ico"
         if icon_path.exists():
             self.setWindowIcon(QIcon(str(icon_path)))
@@ -273,38 +276,40 @@ class OllamaAdviceDialog(QDialog):
         self._cancel: Callable[[], None] | None = None
         self.buttons: dict[str, QPushButton] = {}
         body = comic.dialog_frame(self, "Ollama")
-        card = comic.ComicCard("Geprüfte Fassung", comic.mascot_pixmap(32))
-        release = f"Speech2Anywhere {app_version}" if app_version else "Diese Fassung von Speech2Anywhere"
+        card = comic.ComicCard(tr("Geprüfte Fassung"), comic.mascot_pixmap(32))
+        release = f"Speech2Anywhere {app_version}" if app_version else tr("Diese Fassung von Speech2Anywhere")
         for item in self._advice:
             if item.kind == "ollama":
-                sub = f"Installiert {item.installed}, geprüft {item.tested}."
+                sub = tr("Installiert {}, geprüft {}.").format(item.installed, item.tested)
                 if item.local:
-                    button = QPushButton("Aktualisieren…")
+                    button = QPushButton(tr("Aktualisieren…"))
                     button.setToolTip(
-                        f"Nimmt das mitgelieferte Ollama-Setup {item.tested} oder lädt es von github.com/ollama/ollama,\n"
-                        "prüft Prüfsumme und Signatur und startet es. Ollama wird dafür kurz beendet."
+                        tr(
+                            "Nimmt das mitgelieferte Ollama-Setup {} oder lädt es von github.com/ollama/ollama,\n"
+                            "prüft Prüfsumme und Signatur und startet es. Ollama wird dafür kurz beendet."
+                        ).format(item.tested)
                     )
                     button.clicked.connect(lambda _c=False, a=item: self._update_ollama(a))
                     self.buttons["ollama"] = button
                     card.add_row("Ollama", sub, _left(button))
                 else:
-                    card.add_row("Ollama", sub, _value(_ELSEWHERE_TEXT.get(item.where, _ELSEWHERE_TEXT[REMOTE])))
+                    card.add_row("Ollama", sub, _value(tr(_ELSEWHERE_TEXT.get(item.where, _ELSEWHERE_TEXT[REMOTE]))))
             elif item.kind == "model":
-                button = QPushButton("Aktualisieren…")
-                button.setToolTip(f"Lädt {item.model} per ollama pull neu.")
+                button = QPushButton(tr("Aktualisieren…"))
+                button.setToolTip(tr("Lädt {} per ollama pull neu.").format(item.model))
                 button.clicked.connect(lambda _c=False, a=item: self._update_model(a))
                 self.buttons["model"] = button
-                card.add_row("Politur-Modell", item.model, _left(button))
-        note = _value(f"{release} ist mit diesen Fassungen gemessen. Gemeldet wird nur, was geprüft ist.")
+                card.add_row(tr("Politur-Modell"), item.model, _left(button))
+        note = _value(tr("{} ist mit diesen Fassungen gemessen. Gemeldet wird nur, was geprüft ist.").format(release))
         note.setContentsMargins(0, 8, 0, 6)
         card.add_note(note)
         body.addWidget(card)
         body.addStretch()
-        later = QPushButton("Nicht mehr erinnern")
+        later = QPushButton(tr("Nicht mehr erinnern"))
         later.setObjectName("comicLink")
         later.clicked.connect(self._decline)
         self.buttons["decline"] = later
-        close = QPushButton("Schließen")
+        close = QPushButton(tr("Schließen"))
         close.setObjectName("comicPrimary")
         close.setDefault(True)
         close.clicked.connect(self.accept)
@@ -327,7 +332,7 @@ class OllamaAdviceDialog(QDialog):
         return box.exec() == QMessageBox.StandardButton.Yes
 
     def _progress(self, head: str, text: str) -> tuple[QProgressDialog, ProgressView]:
-        progress = QProgressDialog(f"{head}{text}", "Abbrechen", 0, 0, self)
+        progress = QProgressDialog(f"{head}{text}", tr("Abbrechen"), 0, 0, self)
         progress.setWindowTitle("Speech2Anywhere: Ollama")
         progress.setWindowModality(Qt.WindowModality.WindowModal)
         progress.setMinimumDuration(0)
@@ -337,19 +342,21 @@ class OllamaAdviceDialog(QDialog):
         return progress, view
 
     def _update_ollama(self, advice: Advice) -> None:
-        size_gb = f"{advice.size / prog.GB:.1f}".replace(".", ",") if advice.size else "?"
+        size_gb = f"{advice.size / prog.GB:.1f}".replace(".", decimal_mark()) if advice.size else "?"
         if not advice.url or not advice.sha256:
-            light_critical(self, "Speech2Anywhere", "Für dieses Ollama-Setup fehlt die geprüfte Prüfsumme.")
+            light_critical(self, "Speech2Anywhere", tr("Für dieses Ollama-Setup fehlt die geprüfte Prüfsumme."))
             return
         if not self._confirm(
-            f"Ollama auf {advice.tested} aktualisieren?",
-            "Speech2Anywhere nimmt das mitgelieferte Setup, wenn es genau diese Fassung ist, sonst lädt es "
-            f"das Setup von github.com/ollama/ollama (rund {size_gb} GB). Es prüft Prüfsumme und Signatur "
-            "und startet das Setup. Ollama wird dafür beendet; eine laufende Politur bricht ab und kommt "
-            "als Rohtext.",
+            tr("Ollama auf {} aktualisieren?").format(advice.tested),
+            tr(
+                "Speech2Anywhere nimmt das mitgelieferte Setup, wenn es genau diese Fassung ist, sonst lädt es "
+                "das Setup von github.com/ollama/ollama (rund {} GB). Es prüft Prüfsumme und Signatur und "
+                "startet das Setup. Ollama wird dafür beendet; eine laufende Politur bricht ab und kommt als "
+                "Rohtext."
+            ).format(size_gb),
         ):
             return
-        progress, view = self._progress(f"Ollama-Setup {advice.tested}\n", CHECKING)
+        progress, view = self._progress(f"Ollama-Setup {advice.tested}\n", tr(CHECKING))
         thread = QThread()
         worker = _SetupWorker(advice, setup_dir(advice.tested) / "OllamaSetup.exe", bundled_setup())
         worker.moveToThread(thread)
@@ -367,7 +374,7 @@ class OllamaAdviceDialog(QDialog):
             thread.wait()
             if self._cancel is cancel:
                 self._cancel = None
-            if state["cancelled"] or message == "Abgebrochen.":
+            if state["cancelled"] or message == tr("Abgebrochen."):
                 log.info("Ollama-Update abgebrochen")
                 return
             if not ok:
@@ -380,13 +387,17 @@ class OllamaAdviceDialog(QDialog):
             except Exception as exc:
                 log.exception("Ollama-Setup ließ sich nicht starten")
                 start_ollama_app(folder)
-                light_critical(self, "Speech2Anywhere", f"Das Ollama-Setup ließ sich nicht starten: {exc}\n\n{message}")
+                light_critical(self, "Speech2Anywhere", tr(
+                    "Das Ollama-Setup ließ sich nicht starten: {}\n"
+                    "\n"
+                    "{}"
+                ).format(exc, message))
                 return
             log.info("Ollama-Setup %s gestartet: %s", advice.tested, message)
             self._on_handled(advice.key)
             light_information(
                 self, "Speech2Anywhere",
-                "Das Ollama-Setup läuft. Danach startet Ollama von selbst, und Speech2Anywhere poliert wieder.",
+                tr("Das Ollama-Setup läuft. Danach startet Ollama von selbst, und Speech2Anywhere poliert wieder."),
             )
             self.accept()
 
@@ -401,12 +412,14 @@ class OllamaAdviceDialog(QDialog):
         from kira.ui.settings_dialog import _PullWorker
 
         if not self._confirm(
-            f"{advice.model} neu laden?",
-            "Speech2Anywhere lädt das Modell per ollama pull aus der Ollama-Bibliothek. Das kann je nach "
-            "Modell einige Gigabyte sein.",
+            tr("{} neu laden?").format(advice.model),
+            tr(
+                "Speech2Anywhere lädt das Modell per ollama pull aus der Ollama-Bibliothek. Das kann je nach "
+                "Modell einige Gigabyte sein."
+            ),
         ):
             return
-        progress, view = self._progress(f"Lade {advice.model}\n", prog.STARTING)
+        progress, view = self._progress(tr("Lade {}\n").format(advice.model), tr(prog.STARTING))
         thread = QThread()
         worker = _PullWorker(advice.model)
         worker.moveToThread(thread)
@@ -432,14 +445,14 @@ class OllamaAdviceDialog(QDialog):
             thread.wait()
             if self._cancel is cancel:
                 self._cancel = None
-            if state["cancelled"] or message == "Abgebrochen.":
+            if state["cancelled"] or message == tr("Abgebrochen."):
                 log.info("Modell-Update abgebrochen")
                 return
             if not ok:
                 light_critical(self, "Speech2Anywhere", message)
                 return
             self._on_declined(advice.key)
-            light_information(self, "Speech2Anywhere", f"{advice.model} ist neu geladen.")
+            light_information(self, "Speech2Anywhere", tr("{} ist neu geladen.").format(advice.model))
             self.accept()
 
         worker.progress.connect(on_progress)

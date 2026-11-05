@@ -2,18 +2,19 @@
 from __future__ import annotations
 
 from kira.config import DEFAULT_HUD_STYLE, HUD_STYLES
+from kira.texte import N_
 
 STYLE_LABELS: dict[str, str] = {
-    "comic": "Comic (Bla-Bla)",
+    "comic": N_("Comic (Bla-Bla)"),
     "manga": "Manga (Shōnen)",
-    "halloween": "Halloween (Hexenhut)",
-    "weihnachten": "Weihnachten (Winternacht)",
-    "phosphor": "Phosphor (Oszilloskop)",
+    "halloween": N_("Halloween (Hexenhut)"),
+    "weihnachten": N_("Weihnachten (Winternacht)"),
+    "phosphor": N_("Phosphor (Oszilloskop)"),
     "gun_barrel": "Gun Barrel",
-    "zielerfassung": "Zielerfassung",
-    "stimmabdruck": "Stimmabdruck (Spektrogramm)",
-    "klartext": "Klartext (Terminal)",
-    "klassisch": "Klassisch (bis v0.4.0)",
+    "zielerfassung": N_("Zielerfassung"),
+    "stimmabdruck": N_("Stimmabdruck (Spektrogramm)"),
+    "klartext": N_("Klartext (Terminal)"),
+    "klassisch": N_("Klassisch (bis v0.4.0)"),
 }
 
 _MODULES = {

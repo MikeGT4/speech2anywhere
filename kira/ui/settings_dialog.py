@@ -19,30 +19,31 @@ from kira.ui._dialog_style import (
 from kira.ui._progress_view import ProgressView
 
 from kira import __version__, UPDATE_REPO, ollama_pull, progress as prog
-from kira.config import SOUND_EVENTS, default_config_path, effective_hotkey, load_config
+from kira.config import LANGUAGE_NAMES, SOUND_EVENTS, default_config_path, effective_hotkey, load_config
 from kira.hotkey_win import SUPPORTED_COMBOS
 from kira.config_writer import update_scalars
 from kira.sounds import SoundPlayer
 from kira.ui.hud import STYLE_LABELS
 from kira.ui.hud_preview import HudPreview
+from kira.texte import N_, tr
 
 log = logging.getLogger(__name__)
 from kira._resources import assets_dir as _assets_dir  # noqa: E402
 _ASSETS = _assets_dir()
 
-_DEVICE_DEFAULT_LABEL = "Windows-Standard (automatisch)"
+_DEVICE_DEFAULT_LABEL = N_("Windows-Standard (automatisch)")
 
 _UNCENSORED_MODEL = "huihui_ai/Qwen3.6-abliterated:27b"
 
-_LANGUAGES = (("auto", "Automatisch erkennen"), ("de", "Deutsch"), ("en", "Englisch"))
+_LANGUAGES = (("auto", N_("Automatisch erkennen")), *LANGUAGE_NAMES.items())
 
 _GAIN_SLIDER_MAX = 50
 
 _SOUND_ROWS = (
-    ("start", "Beim Drücken", "Die Aufnahme beginnt."),
-    ("stopp", "Beim Loslassen", "Die Aufnahme endet."),
-    ("fertig", "Text ist da", "Der Text ist eingefügt."),
-    ("fehler", "Bei Fehlern", "Etwas ging schief."),
+    ("start", N_("Beim Drücken"), N_("Die Aufnahme beginnt.")),
+    ("stopp", N_("Beim Loslassen"), N_("Die Aufnahme endet.")),
+    ("fertig", N_("Text ist da"), N_("Der Text ist eingefügt.")),
+    ("fehler", N_("Bei Fehlern"), N_("Etwas ging schief.")),
 )
 
 
@@ -100,17 +101,17 @@ class _PullWorker(QObject):
             pulled = self._download.run(self.progress.emit)
         except Exception as e:
             if self._cancelled:
-                self.finished.emit(False, "Abgebrochen.")
+                self.finished.emit(False, tr("Abgebrochen."))
                 return
             log.exception("ollama.pull failed")
             self.finished.emit(
-                False, ollama_pull.missing_text(self._model, e) or f"Das Modell-Update hat nicht geklappt: {e}",
+                False, ollama_pull.missing_text(self._model, e) or tr("Das Modell-Update hat nicht geklappt: {}").format(e),
             )
             return
         if not pulled or self._cancelled:
-            self.finished.emit(False, "Abgebrochen.")
+            self.finished.emit(False, tr("Abgebrochen."))
             return
-        self.finished.emit(True, f"{self._model} ist auf dem aktuellen Stand.")
+        self.finished.emit(True, tr("{} ist auf dem aktuellen Stand.").format(self._model))
 
 
 class _GpuCheckWorker(QObject):
@@ -155,12 +156,38 @@ hotkey:
 """
 
 
-class SettingsDialog(QDialog):
-    _PAGE_TITLES = ("Mikrofon", "Politur", "Tasten", "Anzeige", "Sound", "Lernen", "Über")
+def _restart_question(parent: QWidget | None) -> QMessageBox:
+    box = QMessageBox(parent)
+    box.setIcon(QMessageBox.Icon.Question)
+    box.setWindowTitle("Speech2Anywhere")
+    box.setText(
+        tr("Gespeichert!\n\n")
+        + tr("Das wirkt nach einem kurzen Neustart.\nSoll Speech2Anywhere jetzt neu starten?")
+    )
+    now = box.addButton(tr("Jetzt neu starten"), QMessageBox.ButtonRole.AcceptRole)
+    box.addButton(tr("Später"), QMessageBox.ButtonRole.RejectRole)
+    box.setDefaultButton(now)
+    apply_light_theme(box)
+    detail = box.findChild(QLabel, "qt_msgbox_informativelabel")
+    if detail is not None:
+        detail.ensurePolished()
+        metrics = detail.fontMetrics()
+        detail.setMinimumWidth(max(metrics.horizontalAdvance(line) for line in detail.text().splitlines()) + 2)
+    return box
 
-    def __init__(self, open_learned_words=None) -> None:
+
+def _ask_restart(parent: QWidget | None) -> bool:
+    box = _restart_question(parent)
+    box.exec()
+    return box.buttonRole(box.clickedButton()) == QMessageBox.ButtonRole.AcceptRole
+
+
+class SettingsDialog(QDialog):
+    _PAGE_TITLES = (N_("Mikrofon"), N_("Politur"), N_("Tasten"), N_("Anzeige"), "Sound", N_("Lernen"), N_("Über"))
+
+    def __init__(self, open_learned_words=None, request_restart=None) -> None:
         super().__init__()
-        self.setWindowTitle("Speech2Anywhere: Einstellungen")
+        self.setWindowTitle(tr("Speech2Anywhere: Einstellungen"))
         icon_path = _ASSETS / "icon-branded.ico"
         if icon_path.exists():
             self.setWindowIcon(QIcon(str(icon_path)))
@@ -175,6 +202,7 @@ class SettingsDialog(QDialog):
         self._gpu_thread: QThread | None = None
         self._gpu_worker: _GpuCheckWorker | None = None
         self._open_learned_words = open_learned_words
+        self._request_restart = request_restart
         self._mascot = comic.mascot_pixmap(32)
 
         self._pages = QStackedWidget()
@@ -219,7 +247,7 @@ class SettingsDialog(QDialog):
         self._tab_group.setExclusive(True)
         self._tabs: list[comic.BubbleTab] = []
         for index, title in enumerate(self._PAGE_TITLES):
-            tab = comic.BubbleTab(title)
+            tab = comic.BubbleTab(tr(title))
             self._tab_group.addButton(tab, index)
             tabs.addWidget(tab, 0, Qt.AlignmentFlag.AlignBottom)
             self._tabs.append(tab)
@@ -229,13 +257,13 @@ class SettingsDialog(QDialog):
         return header
 
     def _build_footer(self) -> QHBoxLayout:
-        cancel = QPushButton("Abbrechen")
+        cancel = QPushButton(tr("Abbrechen"))
         cancel.clicked.connect(self.reject)
-        save = QPushButton("Speichern")
+        save = QPushButton(tr("Speichern"))
         save.setObjectName("comicPrimary")
         save.setDefault(True)
         save.clicked.connect(self._save)
-        return comic.footer_row("Fast alles wirkt nach einem kurzen Neustart.", cancel, save)
+        return comic.footer_row(tr("Fast alles wirkt nach einem kurzen Neustart."), cancel, save)
 
     def _card(self, title: str) -> comic.ComicCard:
         return comic.ComicCard(title, self._mascot)
@@ -264,7 +292,7 @@ class SettingsDialog(QDialog):
         return row
 
     def _page_mikrofon(self) -> QWidget:
-        card = self._card("Mikrofon")
+        card = self._card(tr("Mikrofon"))
 
         mic_box = QVBoxLayout()
         mic_box.setSpacing(6)
@@ -276,17 +304,21 @@ class SettingsDialog(QDialog):
         )
         self._device.setMinimumContentsLength(16)
         self._device.setToolTip(
-            "Mikrofon-Auswahl. Gespeichert wird der Name (Substring-Match),\n"
-            "auch nach USB-Neustecken wird derselbe Eintrag wiedererkannt,\n"
-            "selbst wenn der PortAudio-Index sich ändert.\n"
-            "'Windows-Standard' lässt Windows entscheiden und kann durch\n"
-            "Noise-Cancel-Filter (ASUS, Nahimic) laufen, die Whisper stören."
+            tr(
+                "Mikrofon-Auswahl. Gespeichert wird der Name (Substring-Match),\n"
+                "auch nach USB-Neustecken wird derselbe Eintrag wiedererkannt,\n"
+                "selbst wenn der PortAudio-Index sich ändert.\n"
+                "'Windows-Standard' lässt Windows entscheiden und kann durch\n"
+                "Noise-Cancel-Filter (ASUS, Nahimic) laufen, die Whisper stören."
+            )
         )
         mic_row.addWidget(self._device, 1)
-        refresh_btn = QPushButton("Aktualisieren")
+        refresh_btn = QPushButton(tr("Aktualisieren"))
         refresh_btn.setToolTip(
-            "Geräte neu abfragen, wenn ein Mikrofon eingesteckt wurde,\n"
-            "während dieses Fenster offen ist."
+            tr(
+                "Geräte neu abfragen, wenn ein Mikrofon eingesteckt wurde,\n"
+                "während dieses Fenster offen ist."
+            )
         )
         refresh_btn.clicked.connect(self._refresh_devices)
         mic_row.addWidget(refresh_btn)
@@ -297,7 +329,7 @@ class SettingsDialog(QDialog):
         self._device_hint.setVisible(False)
         mic_box.addWidget(self._device_hint)
         self._populate_device_combo(self._cfg.audio.input_device)
-        card.add_row("Eingabegerät", "Dieses Mikrofon hört zu.", mic_box)
+        card.add_row(tr("Eingabegerät"), tr("Dieses Mikrofon hört zu."), mic_box)
 
         gain_row = QHBoxLayout()
         gain_row.setSpacing(14)
@@ -312,9 +344,11 @@ class SettingsDialog(QDialog):
         self._gain.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self._gain.setFixedWidth(76)
         self._gain.setToolTip(
-            "Software-Verstärkung auf das rohe Mikrofonsignal.\n"
-            "Zielbereich: peak 0,3 bis 0,9, rms 0,05 bis 0,15 (siehe Protokoll).\n"
-            "Der Regler reicht bis 5,0, das Zahlenfeld bis 200."
+            tr(
+                "Software-Verstärkung auf das rohe Mikrofonsignal.\n"
+                "Zielbereich: peak 0,3 bis 0,9, rms 0,05 bis 0,15 (siehe Protokoll).\n"
+                "Der Regler reicht bis 5,0, das Zahlenfeld bis 200."
+            )
         )
         self._gain.valueChanged.connect(self._gain_to_slider)
         self._gain_slider.valueChanged.connect(self._slider_to_gain)
@@ -322,23 +356,40 @@ class SettingsDialog(QDialog):
         self._gain_to_slider(self._gain.value())
         gain_row.addWidget(self._gain_slider, 1)
         gain_row.addWidget(self._gain)
-        card.add_row("Verstärkung", "Bei leiser Stimme höher stellen.", gain_row)
+        card.add_row(tr("Verstärkung"), tr("Bei leiser Stimme höher stellen."), gain_row)
 
         self._language = comic.style_combo(QComboBox())
         for code, label in _LANGUAGES:
-            self._language.addItem(label, userData=code)
-        self._language.setCurrentIndex(max(0, self._language.findData(self._cfg.whisper.language)))
+            self._language.addItem(tr(label), userData=code)
+        if self._language.findData(self._cfg.whisper.language) < 0:
+            self._language.addItem(tr("Andere ({})").format(self._cfg.whisper.language), userData=self._cfg.whisper.language)
+        self._language.setCurrentIndex(self._language.findData(self._cfg.whisper.language))
         self._language.setToolTip(
-            "Automatisch: Whisper erkennt die Sprache je Aufnahme.\n"
-            "Fest eingestellt ist die Erkennung bei einsprachigem Diktat etwas genauer."
+            tr(
+                "Automatisch: Whisper erkennt die Sprache je Aufnahme.\n"
+                "Fest eingestellt ist die Erkennung bei einsprachigem Diktat etwas genauer."
+            )
         )
-        card.add_row("Sprache", "Sprache, in der du diktierst.", self._language)
+        card.add_row(tr("Sprache"), tr("Sprache, in der du diktierst."), self._language)
+
+        self._ui_language = comic.style_combo(QComboBox())
+        for code, label in (("auto", tr("Wie Windows")), ("de", "Deutsch"), ("en", "English")):
+            self._ui_language.addItem(label, userData=code)
+        self._ui_language.setCurrentIndex(self._ui_language.findData(self._cfg.ui.language))
+        self._ui_language.setToolTip(
+            tr(
+                "Wie Windows: Deutsch auf einem deutschen Windows, sonst Englisch.\n"
+                "Wirkt nach einem kurzen Neustart."
+            )
+        )
+        card.add_row(tr("Oberfläche"), tr("Sprache der Menüs und Fenster."), self._ui_language)
 
         key = effective_hotkey(self._cfg.hotkey.combo).upper()
-        hint = comic.HintBubble(
-            ["Halte", comic.Keycap(key), "gedrückt und sprich, der Text erscheint am Cursor."],
-        )
-        return self._page(card, hint)
+        if self._cfg.hotkey.mode == "toggle":
+            words = [tr("Drück"), comic.Keycap(key), tr("zum Start, sprich und drück noch einmal. Der Text erscheint am Cursor.")]
+        else:
+            words = [tr("Halte"), comic.Keycap(key), tr("gedrückt und sprich, der Text erscheint am Cursor.")]
+        return self._page(card, comic.HintBubble(words))
 
     def _gain_to_slider(self, value: float) -> None:
         self._gain_slider.blockSignals(True)
@@ -349,37 +400,41 @@ class SettingsDialog(QDialog):
         self._gain.setValue(position / 10)
 
     def _page_politur(self) -> QWidget:
-        card = self._card("Politur")
+        card = self._card(tr("Politur"))
 
         model_row = QHBoxLayout()
         model_row.setSpacing(10)
         self._styler_model = QLineEdit()
         self._styler_model.setText(self._cfg.styler.model)
-        self._styler_model.setPlaceholderText("z. B. gemma4:12b, qwen3:8b")
+        self._styler_model.setPlaceholderText(tr("z. B. gemma4:12b, qwen3:8b"))
         model_row.addWidget(self._styler_model, 1)
-        update_btn = QPushButton("Aktualisieren")
+        update_btn = QPushButton(tr("Aktualisieren"))
         update_btn.setToolTip(
-            "Lädt das eingetragene Modell per ollama pull neu,\n"
-            "etwa wenn die Ollama-Bibliothek eine neue Fassung hat."
+            tr(
+                "Lädt das eingetragene Modell per ollama pull neu,\n"
+                "etwa wenn die Ollama-Bibliothek eine neue Fassung hat."
+            )
         )
         update_btn.clicked.connect(self._update_polish_model)
         model_row.addWidget(update_btn)
-        card.add_row("Modell", "Setzt Satzzeichen, schreibt groß und fegt die Ähms raus.", model_row)
+        card.add_row(tr("Modell"), tr("Setzt Satzzeichen, schreibt groß und fegt die Ähms raus."), model_row)
 
         self._fast_mode = comic.ToggleSwitch()
         self._fast_mode.setChecked(self._cfg.styler.fast_mode)
         self._fast_mode.setToolTip(
-            "Poliert mit dem schnellen Modell statt mit dem Qualitätsmodell.\n"
-            "Sinnvoll, wenn der Grafikspeicher knapp ist (Browser, Outlook, RDP\n"
-            "gleichzeitig offen); sonst rutscht das große Modell teils auf die CPU.\n\n"
-            "Satzzeichen, Großschreibung, Füllwörter: praktisch gleich.\n"
-            "Bearbeiten (F9) und lange Texte: etwas schwächer.\n\n"
-            "Beim ersten Einschalten wird das Modell bei Bedarf geladen (~3 GB).\n"
-            "Einträge in styler.modes haben weiter Vorrang."
+            tr(
+                "Poliert mit dem schnellen Modell statt mit dem Qualitätsmodell.\n"
+                "Sinnvoll, wenn der Grafikspeicher knapp ist (Browser, Outlook, RDP\n"
+                "gleichzeitig offen); sonst rutscht das große Modell teils auf die CPU.\n\n"
+                "Satzzeichen, Großschreibung, Füllwörter: praktisch gleich.\n"
+                "Bearbeiten (F9) und lange Texte: etwas schwächer.\n\n"
+                "Beim ersten Einschalten wird das Modell bei Bedarf geladen (~3 GB).\n"
+                "Einträge in styler.modes haben weiter Vorrang."
+            )
         )
         card.add_row(
-            "Schneller Modus",
-            f"{self._cfg.styler.fast_model}, spart Grafikspeicher.",
+            tr("Schneller Modus"),
+            tr("{}, spart Grafikspeicher.").format(self._cfg.styler.fast_model),
             self._fast_mode,
         )
 
@@ -392,19 +447,23 @@ class SettingsDialog(QDialog):
         self._styler_timeout.setFixedWidth(120)
         self._styler_timeout.setValue(self._cfg.styler.timeout_seconds)
         self._styler_timeout.setToolTip(
-            "Zeitlimit für die Politur. 30 s reichen für große Modelle beim\n"
-            "Kaltstart, 5 s für warm gehaltene kleine Modelle."
+            tr(
+                "Zeitlimit für die Politur. 30 s reichen für große Modelle beim\n"
+                "Kaltstart, 5 s für warm gehaltene kleine Modelle."
+            )
         )
-        card.add_row("Zeitlimit", "Dauert es länger, kommt der Text unpoliert.", self._styler_timeout)
+        card.add_row(tr("Zeitlimit"), tr("Dauert es länger, kommt der Text unpoliert."), self._styler_timeout)
 
         uncensored_row = QHBoxLayout()
         uncensored_row.setSpacing(12)
-        uncensored_btn = QPushButton("Laden…")
+        uncensored_btn = QPushButton(tr("Laden…"))
         uncensored_btn.setToolTip(
-            f"Lädt das unzensierte Modell ({_UNCENSORED_MODEL}, ~17 GB)\n"
-            "per ollama pull und trägt es als Qualitätsmodell ein. Vorher läuft\n"
-            "ein GPU-Check: das 27B-Modell braucht ~16 GB Grafikspeicher und\n"
-            "passt auf 16-GB-Karten nicht neben Whisper."
+            tr(
+                "Lädt das unzensierte Modell ({}, ~17 GB)\n"
+                "per ollama pull und trägt es als Qualitätsmodell ein. Vorher läuft\n"
+                "ein GPU-Check: das 27B-Modell braucht ~16 GB Grafikspeicher und\n"
+                "passt auf 16-GB-Karten nicht neben Whisper."
+            ).format(_UNCENSORED_MODEL)
         )
         uncensored_btn.clicked.connect(self._offer_uncensored_model)
         uncensored_row.addWidget(uncensored_btn)
@@ -414,10 +473,12 @@ class SettingsDialog(QDialog):
         badge.setAlignment(Qt.AlignmentFlag.AlignCenter)
         uncensored_row.addWidget(badge, 0, Qt.AlignmentFlag.AlignVCenter)
         uncensored_row.addStretch()
-        card.add_row("Unzensiert", "Ohne Inhaltsfilter, rund 17 GB.", uncensored_row)
+        card.add_row(tr("Unzensiert"), tr("Ohne Inhaltsfilter, rund 17 GB."), uncensored_row)
         warning = QLabel(
-            "Die Inhaltsfilter des Modells sind entfernt. Es lehnt keine "
-            "Eingaben ab und gibt ungefilterte Ausgaben zurück."
+            tr(
+                "Die Inhaltsfilter des Modells sind entfernt. Es lehnt keine "
+                "Eingaben ab und gibt ungefilterte Ausgaben zurück."
+            )
         )
         warning.setObjectName("comicWarn")
         warning.setWordWrap(True)
@@ -425,12 +486,12 @@ class SettingsDialog(QDialog):
         card.add_note(warning)
 
         hint = comic.HintBubble([
-            "Der schnelle Modus poliert fast gleich gut, nur das Bearbeiten und lange Texte werden etwas schwächer.",
+            tr("Der schnelle Modus poliert fast gleich gut, nur das Bearbeiten und lange Texte werden etwas schwächer."),
         ])
         return self._page(card, hint)
 
     def _page_tasten(self) -> QWidget:
-        card = self._card("Tasten")
+        card = comic.ComicCard(tr("Tasten"), self._mascot, row_padding=7)
 
         self._hotkey = QLineEdit()
         self._hotkey.setObjectName("comicKey")
@@ -438,18 +499,43 @@ class SettingsDialog(QDialog):
         self._hotkey.setFixedWidth(200)
         self._hotkey.setText(effective_hotkey(self._cfg.hotkey.combo))
         self._hotkey.setPlaceholderText("f8")
-        self._hotkey.setToolTip("Diktat-Taste: f8 oder f9. Wirkt nach einem kurzen Neustart.")
-        card.add_row("Diktat", "Gedrückt halten und sprechen.", self._hotkey)
+        self._hotkey.setToolTip(tr("Diktat-Taste: f8 oder f9. Wirkt nach einem kurzen Neustart."))
+        toggle = self._cfg.hotkey.mode == "toggle"
+        card.add_row(
+            tr("Diktat"),
+            tr("Einmal drücken, sprechen, noch einmal drücken.") if toggle else tr("Gedrückt halten und sprechen."),
+            self._hotkey,
+        )
+
+        self._toggle_mode = comic.ToggleSwitch()
+        self._toggle_mode.setChecked(toggle)
+        self._toggle_mode.setToolTip(
+            tr(
+                "Aus: Taste halten, sprechen, loslassen.\n"
+                "An: Taste einmal drücken, sprechen, noch einmal drücken.\n"
+                "Eine vergessene Aufnahme endet nach 3 Minuten von selbst.\n"
+                "Wirkt nach einem kurzen Neustart."
+            )
+        )
+        card.add_row(tr("Umschalten"), tr("Einmal drücken startet, noch einmal beendet."), self._toggle_mode)
 
         edit_enabled = self._cfg.hotkey.edit_combo is not None
         self._edit_enabled = comic.ToggleSwitch()
         self._edit_enabled.setChecked(edit_enabled)
         self._edit_enabled.setToolTip(
-            "Text in der App markieren, die Bearbeiten-Taste halten, einen Befehl\n"
-            "sprechen („mach das förmlich“, „übersetz ins Englische“), loslassen:\n"
-            "das Sprachmodell überarbeitet die Markierung. Wirkt nach einem kurzen Neustart."
+            tr(
+                "Text in der App markieren, die Bearbeiten-Taste drücken, einen Befehl\n"
+                "sprechen („mach das förmlich“, „übersetz ins Englische“), noch einmal drücken:\n"
+                "das Sprachmodell überarbeitet die Markierung. Wirkt nach einem kurzen Neustart."
+            )
+            if toggle else
+            tr(
+                "Text in der App markieren, die Bearbeiten-Taste halten, einen Befehl\n"
+                "sprechen („mach das förmlich“, „übersetz ins Englische“), loslassen:\n"
+                "das Sprachmodell überarbeitet die Markierung. Wirkt nach einem kurzen Neustart."
+            )
         )
-        card.add_row("Bearbeiten", "Markierten Text per Zuruf umschreiben.", self._edit_enabled)
+        card.add_row(tr("Bearbeiten"), tr("Markierten Text per Zuruf umschreiben."), self._edit_enabled)
 
         self._edit_hotkey = QLineEdit()
         self._edit_hotkey.setObjectName("comicKey")
@@ -458,9 +544,14 @@ class SettingsDialog(QDialog):
         self._edit_hotkey.setText(self._cfg.hotkey.edit_combo or "f9")
         self._edit_hotkey.setPlaceholderText("f9")
         self._edit_hotkey.setEnabled(edit_enabled)
-        self._edit_hotkey.setToolTip("Taste zum Bearbeiten: f8 oder f9 (Standard: f9).")
+        self._edit_hotkey.setToolTip(tr("Taste zum Bearbeiten: f8 oder f9 (Standard: f9)."))
         self._edit_enabled.toggled.connect(self._on_edit_toggle)
-        card.add_row("Bearbeiten-Taste", "Halten, sagen, was anders werden soll.", self._edit_hotkey)
+        card.add_row(
+            tr("Bearbeiten-Taste"),
+            tr("Drücken, sagen, was anders werden soll, noch einmal drücken.") if toggle
+            else tr("Halten, sagen, was anders werden soll."),
+            self._edit_hotkey,
+        )
 
         self._restore_ms = QSpinBox()
         self._restore_ms.setRange(100, 5000)
@@ -470,12 +561,14 @@ class SettingsDialog(QDialog):
         self._restore_ms.setFixedWidth(140)
         self._restore_ms.setValue(self._cfg.injector.restore_clipboard_after_ms)
         self._restore_ms.setToolTip(
-            "Mindestwartezeit, bevor die Zwischenablage wiederhergestellt wird.\n"
-            "Lange Diktate verlängern sie selbst (~2 ms je Zeichen ab 80 Zeichen)."
+            tr(
+                "Mindestwartezeit, bevor die Zwischenablage wiederhergestellt wird.\n"
+                "Lange Diktate verlängern sie selbst (~2 ms je Zeichen ab 80 Zeichen)."
+            )
         )
-        card.add_row("Zwischenablage", "So lange wartet sie, bevor ihr alter Inhalt zurückkommt.", self._restore_ms)
+        card.add_row(tr("Zwischenablage"), tr("So lange wartet sie, bevor ihr alter Inhalt zurückkommt."), self._restore_ms)
 
-        return self._page(card, comic.HintBubble(["Neue Tasten wirken nach einem kurzen Neustart."]))
+        return self._page(card, comic.HintBubble([tr("Neue Tasten wirken nach einem kurzen Neustart.")]))
 
     def _on_edit_toggle(self, checked: bool) -> None:
         self._edit_hotkey.setEnabled(checked)
@@ -483,15 +576,17 @@ class SettingsDialog(QDialog):
             self._edit_hotkey.setText("f9")
 
     def _page_anzeige(self) -> QWidget:
-        card = self._card("Aufnahme-Anzeige")
+        card = self._card(tr("Aufnahme-Anzeige"))
         self._hud_style = comic.style_combo(QComboBox())
         for key, label in STYLE_LABELS.items():
-            self._hud_style.addItem(label, userData=key)
+            self._hud_style.addItem(tr(label), userData=key)
         index = self._hud_style.findData(self._cfg.ui.hud_style)
         self._hud_style.setCurrentIndex(max(0, index))
         self._hud_style.setToolTip(
-            "Wie die Anzeige am Mauszeiger aussieht, solange die Diktat-Taste\n"
-            "gehalten wird."
+            tr(
+                "Wie die Anzeige am Mauszeiger aussieht, solange die Diktat-Taste\n"
+                "gehalten wird."
+            )
         )
         self._hud_preview = HudPreview(
             self._hud_style.currentData(), live_words=self._cfg.ui.hud_live_words, scale=self._cfg.ui.hud_scale,
@@ -503,17 +598,19 @@ class SettingsDialog(QDialog):
         style_box.setSpacing(12)
         style_box.addWidget(self._hud_style)
         style_box.addWidget(self._hud_preview)
-        card.add_row("Stil", "So sieht die Anzeige beim Diktieren aus.", style_box)
+        card.add_row(tr("Stil"), tr("So sieht die Anzeige beim Diktieren aus."), style_box)
         self._hud_live_words = comic.ToggleSwitch()
         self._hud_live_words.setChecked(self._cfg.ui.hud_live_words)
         self._hud_live_words.setToolTip(
-            "In den Stilen „Comic (Bla-Bla)“, „Manga“, „Halloween“ und „Weihnachten“ erscheinen beim Sprechen\n"
-            "Fetzen der erkannten Wörter. Sie sind am Bildschirm zu sehen, auch bei einer Bildschirmfreigabe."
+            tr(
+                "In den Stilen „Comic (Bla-Bla)“, „Manga“, „Halloween“ und „Weihnachten“ erscheinen beim Sprechen\n"
+                "Fetzen der erkannten Wörter. Sie sind am Bildschirm zu sehen, auch bei einer Bildschirmfreigabe."
+            )
         )
         self._hud_live_words.toggled.connect(self._hud_preview.set_live_words)
-        card.add_row("Wortfetzen", "Fetzen deiner Wörter beim Sprechen.", self._hud_live_words)
+        card.add_row(tr("Wortfetzen"), tr("Fetzen deiner Wörter beim Sprechen."), self._hud_live_words)
         hint = comic.HintBubble([
-            "Wirkt schon beim nächsten Diktat. Die Größe stellst du in der Rohconfig ein (ui.hud_scale).",
+            tr("Wirkt schon beim nächsten Diktat. Die Größe stellst du in der Rohconfig ein (ui.hud_scale)."),
         ])
         return self._page(card, hint)
 
@@ -523,19 +620,21 @@ class SettingsDialog(QDialog):
         self._sound_feedback = comic.ToggleSwitch()
         self._sound_feedback.setChecked(self._cfg.ui.sound_feedback)
         self._sound_feedback.setToolTip(
-            "Kurze Töne beim Diktat, der Klang passt zum gewählten Stil.\n"
-            "Darunter wählst du, bei welchen Momenten ein Ton kommt."
+            tr(
+                "Kurze Töne beim Diktat, der Klang passt zum gewählten Stil.\n"
+                "Darunter wählst du, bei welchen Momenten ein Ton kommt."
+            )
         )
-        card.add_row("Töne", "Kurze Töne passend zum Stil.", self._sound_feedback)
+        card.add_row(tr("Töne"), tr("Kurze Töne passend zum Stil."), self._sound_feedback)
         self._sound_events: dict[str, comic.ToggleSwitch] = {}
         self._sound_previews: dict[str, QPushButton] = {}
         for event, label, description in _SOUND_ROWS:
             switch = comic.ToggleSwitch()
             switch.setChecked(event in self._cfg.ui.sound_events)
             if event == "start":
-                switch.setToolTip("Über Lautsprecher kann dieser Ton mit aufgenommen werden, mit Kopfhörer nicht.")
-            preview = QPushButton("Anhören")
-            preview.setToolTip("Spielt diesen Ton im Stil aus dem Reiter Anzeige.")
+                switch.setToolTip(tr("Über Lautsprecher kann dieser Ton mit aufgenommen werden, mit Kopfhörer nicht."))
+            preview = QPushButton(tr("Anhören"))
+            preview.setToolTip(tr("Spielt diesen Ton im Stil aus dem Reiter Anzeige."))
             preview.clicked.connect(
                 lambda _checked=False, moment=event: self._sound_player.play(self._hud_style.currentData(), moment)
             )
@@ -544,13 +643,13 @@ class SettingsDialog(QDialog):
             row.addWidget(switch)
             row.addWidget(preview)
             row.addStretch()
-            card.add_row(label, description, row)
+            card.add_row(tr(label), tr(description), row)
             self._sound_events[event] = switch
             self._sound_previews[event] = preview
         self._sound_feedback.toggled.connect(self._enable_sound_events)
         self._enable_sound_events(self._sound_feedback.isChecked())
         hint = comic.HintBubble([
-            "Der Klang passt zum Stil im Reiter Anzeige und wirkt schon beim nächsten Diktat.",
+            tr("Der Klang passt zum Stil im Reiter Anzeige und wirkt schon beim nächsten Diktat."),
         ])
         return self._page(card, hint)
 
@@ -559,25 +658,25 @@ class SettingsDialog(QDialog):
             switch.setEnabled(enabled)
 
     def _page_lernen(self) -> QWidget:
-        card = self._card("Lernen")
+        card = self._card(tr("Lernen"))
         self._learning_enabled = comic.ToggleSwitch()
         self._learning_enabled.setChecked(self._cfg.learning.enabled)
         self._learning_enabled.setToolTip(
-            "Merkt sich Wörter, die du nach dem Diktieren korrigierst. Legt nach einem kurzen Neustart los."
+            tr("Merkt sich Wörter, die du nach dem Diktieren korrigierst. Legt nach einem kurzen Neustart los.")
         )
         card.add_row(
-            "Aus Korrekturen lernen",
-            "Merkt sich korrigierte Wörter.",
+            tr("Aus Korrekturen lernen"),
+            tr("Merkt sich korrigierte Wörter."),
             self._learning_enabled,
         )
         if self._open_learned_words is not None:
-            learned_button = QPushButton("Anzeigen…")
+            learned_button = QPushButton(tr("Anzeigen…"))
             learned_button.clicked.connect(self._open_learned_words)
-            card.add_row("Gelernte Wörter", "Liste ansehen und Einträge freigeben.", self._left(learned_button))
-        return self._page(card, comic.HintBubble(["Nach dem nächsten Neustart legt das Lernen los."]))
+            card.add_row(tr("Gelernte Wörter"), tr("Liste ansehen und Einträge freigeben."), self._left(learned_button))
+        return self._page(card, comic.HintBubble([tr("Nach dem nächsten Neustart legt das Lernen los.")]))
 
     def _page_ueber(self) -> QWidget:
-        card = self._card("Über")
+        card = self._card(tr("Über"))
         version = QLabel(f"v{__version__}")
         version.setObjectName("comicValue")
         card.add_row("Version", "", version)
@@ -587,38 +686,42 @@ class SettingsDialog(QDialog):
         )
         repo.setObjectName("comicValue")
         repo.setOpenExternalLinks(True)
-        card.add_row("Quelle", "", repo)
+        card.add_row(tr("Quelle"), "", repo)
 
         tools = QHBoxLayout()
         tools.setSpacing(10)
-        help_btn = QPushButton("Anleitung…")
-        help_btn.setToolTip("Bedienungsanleitung: Diktat, Bearbeiten, Datei-Transkription, Modi, Updates.")
+        help_btn = QPushButton(tr("Anleitung…"))
+        help_btn.setToolTip(tr("Bedienungsanleitung: Diktat, Bearbeiten, Datei-Transkription, Modi, Updates."))
         help_btn.clicked.connect(self._open_help_from_settings)
         tools.addWidget(help_btn)
-        gpu_btn = QPushButton("GPU prüfen")
+        gpu_btn = QPushButton(tr("GPU prüfen"))
         gpu_btn.setToolTip(
-            "Prüft, ob der Grafikspeicher für Whisper und das eingetragene\n"
-            "Politur-Modell reicht: Karte, Speicher, geschätzter Bedarf, Reserve."
+            tr(
+                "Prüft, ob der Grafikspeicher für Whisper und das eingetragene\n"
+                "Politur-Modell reicht: Karte, Speicher, geschätzter Bedarf, Reserve."
+            )
         )
         gpu_btn.clicked.connect(self._run_gpu_check)
         tools.addWidget(gpu_btn)
-        update_btn = QPushButton("Updates suchen…")
+        update_btn = QPushButton(tr("Updates suchen…"))
         update_btn.setToolTip(
-            f"Holt die neueste Version von github.com/{UPDATE_REPO}, prüft die\n"
-            "SHA256-Summen und startet das Setup. Speech2Anywhere beendet sich dafür kurz."
+            tr(
+                "Holt die neueste Version von github.com/{}, prüft die\n"
+                "SHA256-Summen und startet das Setup. Speech2Anywhere beendet sich dafür kurz."
+            ).format(UPDATE_REPO)
         )
         update_btn.clicked.connect(self._run_update_check)
         tools.addWidget(update_btn)
         tools.addStretch()
-        card.add_row("Werkzeuge", "Hilfe, Grafikspeicher, neue Version.", tools)
+        card.add_row(tr("Werkzeuge"), tr("Hilfe, Grafikspeicher, neue Version."), tools)
 
-        raw_btn = QPushButton("Rohconfig öffnen…")
-        raw_btn.setToolTip("Öffnet config.yaml im Editor, für Felder, die hier fehlen.")
+        raw_btn = QPushButton(tr("Rohconfig öffnen…"))
+        raw_btn.setToolTip(tr("Öffnet config.yaml im Editor, für Felder, die hier fehlen."))
         raw_btn.clicked.connect(self._open_raw)
-        card.add_row("Rohconfig", "Weitere Felder direkt in der config.yaml.", self._left(raw_btn))
+        card.add_row(tr("Rohconfig"), tr("Weitere Felder direkt in der config.yaml."), self._left(raw_btn))
 
         hint = comic.HintBubble([
-            "Speech2Anywhere von", comic.brand_logo(20), "· Einstellungen in %APPDATA%\\Kira\\config.yaml",
+            tr("Speech2Anywhere von"), comic.brand_logo(20), tr("· Einstellungen in %APPDATA%\\Kira\\config.yaml"),
         ])
         return self._page(card, hint)
 
@@ -681,7 +784,11 @@ class SettingsDialog(QDialog):
             thread.quit()
             thread.wait()
             light_critical(
-                self, title, f"Die GPU-Prüfung hat nicht geklappt:\n\n{message}",
+                self, title, tr(
+                    "Die GPU-Prüfung hat nicht geklappt:\n"
+                    "\n"
+                    "{}"
+                ).format(message),
             )
 
         worker.finished.connect(on_finished)
@@ -701,8 +808,12 @@ class SettingsDialog(QDialog):
             log.exception("notepad launch failed for %s", self._cfg_path)
             light_warning(
                 self, "Speech2Anywhere",
-                f"Der Editor wollte nicht starten ({exc}).\n\n"
-                f"Öffne die Datei bitte von Hand:\n{self._cfg_path}",
+                tr(
+                    "Der Editor wollte nicht starten ({}).\n"
+                    "\n"
+                    "Öffne die Datei bitte von Hand:\n"
+                    "{}"
+                ).format(exc, self._cfg_path),
             )
 
     def closeEvent(self, event) -> None:  # type: ignore[override]
@@ -739,7 +850,7 @@ class SettingsDialog(QDialog):
         if edit_enabled and not self._edit_hotkey.text().strip():
             light_warning(
                 self, "Speech2Anywhere",
-                "Trag noch eine Taste zum Bearbeiten ein oder schalte das Bearbeiten aus.",
+                tr("Trag noch eine Taste zum Bearbeiten ein oder schalte das Bearbeiten aus."),
             )
             return
         combo = self._hotkey.text().strip().lower()
@@ -747,13 +858,13 @@ class SettingsDialog(QDialog):
         if combo not in SUPPORTED_COMBOS or (edit_enabled and edit_combo not in SUPPORTED_COMBOS):
             light_warning(
                 self, "Speech2Anywhere",
-                "Unter Windows gehen als Tasten F8 und F9. Trag bitte eine davon ein.",
+                tr("Unter Windows gehen als Tasten F8 und F9. Trag bitte eine davon ein."),
             )
             return
         if edit_enabled and edit_combo == combo:
             light_warning(
                 self, "Speech2Anywhere",
-                "Diktat und Bearbeiten brauchen zwei verschiedene Tasten.",
+                tr("Diktat und Bearbeiten brauchen zwei verschiedene Tasten."),
             )
             return
         edit_hotkey_value = self._resolve_edit_combo(
@@ -785,6 +896,12 @@ class SettingsDialog(QDialog):
             "ui.sound_events": [event for event in SOUND_EVENTS if self._sound_events[event].isChecked()],
         }
 
+        key_mode = "toggle" if self._toggle_mode.isChecked() else "hold"
+        if key_mode != self._cfg.hotkey.mode:
+            updates["hotkey.mode"] = key_mode
+        if self._ui_language.currentData() != self._cfg.ui.language:
+            updates["ui.language"] = self._ui_language.currentData()
+
         self._cfg_path.parent.mkdir(parents=True, exist_ok=True)
         if not self._cfg_path.exists():
             self._cfg_path.write_text(_MINIMAL_CONFIG, encoding="utf-8")
@@ -794,26 +911,38 @@ class SettingsDialog(QDialog):
             updated = update_scalars(current, updates)
             self._cfg_path.write_text(updated, encoding="utf-8")
             needs_restart = update_scalars(
-                current, {key: value for key, value in updates.items() if not key.startswith("ui.")},
+                current,
+                {key: value for key, value in updates.items() if not key.startswith("ui.") or key == "ui.language"},
             ) != current
         except KeyError as e:
             light_warning(
                 self, "Speech2Anywhere",
-                f"Die config.yaml sieht anders aus als erwartet ({e}).\n\n"
-                "Öffne sie einmal über „Rohconfig öffnen…“ und schau, ob alle Abschnitte "
-                "da sind: audio, whisper, styler, injector, hotkey.",
+                tr(
+                    "Die config.yaml sieht anders aus als erwartet ({}).\n"
+                    "\n"
+                    "Öffne sie einmal über „Rohconfig öffnen…“ und schau, ob alle Abschnitte da sind: audio, "
+                    "whisper, styler, injector, hotkey."
+                ).format(e),
             )
             return
         except Exception as e:
             log.exception("settings save failed")
-            light_critical(self, "Speech2Anywhere", f"Speichern hat leider nicht geklappt: {e}")
+            light_critical(self, "Speech2Anywhere", tr("Speichern hat leider nicht geklappt: {}").format(e))
             return
 
+        if needs_restart and self._request_restart is not None:
+            if _ask_restart(self) and not self._request_restart():
+                light_warning(
+                    self, "Speech2Anywhere",
+                    tr("Der Neustart hat nicht geklappt.\nKlick im Tray-Menü auf „Beenden“ und starte Speech2Anywhere wieder."),
+                )
+            self.accept()
+            return
         if needs_restart:
-            detail = "Fast alles wirkt nach einem kurzen Neustart: im Tray-Menü auf Beenden und Speech2Anywhere wieder starten."
+            detail = tr("Fast alles wirkt nach einem kurzen Neustart: im Tray-Menü auf Beenden und Speech2Anywhere wieder starten.")
         else:
-            detail = "Das wirkt schon ab dem nächsten Diktat."
-        light_information(self, "Speech2Anywhere", "Gespeichert!\n\n" + detail)
+            detail = tr("Das wirkt schon ab dem nächsten Diktat.")
+        light_information(self, "Speech2Anywhere", tr("Gespeichert!\n\n") + detail)
         self.accept()
 
 
@@ -838,7 +967,7 @@ class SettingsDialog(QDialog):
         self._device.blockSignals(True)
         try:
             self._device.clear()
-            self._device.addItem(_DEVICE_DEFAULT_LABEL, userData=None)
+            self._device.addItem(tr(_DEVICE_DEFAULT_LABEL), userData=None)
             devices = self._query_input_devices()
             for _idx, name in devices:
                 self._device.addItem(name, userData=name)
@@ -850,9 +979,10 @@ class SettingsDialog(QDialog):
                     self._device_hint.setVisible(False)
                 else:
                     self._device_hint.setText(
-                        f"Dein Mikrofon „{initial_value}“ ist gerade nicht zu finden. "
-                        "Steckt es? Dann auf Aktualisieren klicken. Sonst nimmt "
-                        "Speech2Anywhere das Standardmikrofon von Windows."
+                        tr(
+                            "Dein Mikrofon „{}“ ist gerade nicht zu finden. Steckt es? Dann auf Aktualisieren klicken. Sonst "
+                            "nimmt Speech2Anywhere das Standardmikrofon von Windows."
+                        ).format(initial_value)
                     )
                     self._device_hint.setVisible(True)
             else:
@@ -888,9 +1018,9 @@ class SettingsDialog(QDialog):
     def _update_polish_model(self) -> None:
         model_name = self._styler_model.text().strip()
         if not model_name:
-            light_warning(self, "Speech2Anywhere", "Trag zuerst ein Modell für die Politur ein.")
+            light_warning(self, "Speech2Anywhere", tr("Trag zuerst ein Modell für die Politur ein."))
             return
-        self._start_model_pull(model_name, "Speech2Anywhere: Modell-Update")
+        self._start_model_pull(model_name, tr("Speech2Anywhere: Modell-Update"))
 
     def _start_model_pull(
         self,
@@ -900,13 +1030,16 @@ class SettingsDialog(QDialog):
         on_done=None,
     ) -> None:
         progress = QProgressDialog(
-            f"Lade {model_name}\n{prog.STARTING}", "Abbrechen", 0, 0, self,
+            tr(
+                "Lade {}\n"
+                "{}"
+            ).format(model_name, tr(prog.STARTING)), tr("Abbrechen"), 0, 0, self,
         )
         progress.setWindowModality(Qt.WindowModality.WindowModal)
         progress.setWindowTitle(window_title)
         progress.setMinimumDuration(0)
         apply_light_theme(progress)
-        view = ProgressView(progress, progress.setLabelText, f"Lade {model_name}\n", parent=progress)
+        view = ProgressView(progress, progress.setLabelText, tr("Lade {}\n").format(model_name), parent=progress)
         progress.show()
 
         thread = QThread(self)
@@ -933,7 +1066,7 @@ class SettingsDialog(QDialog):
                 else:
                     light_information(self, "Speech2Anywhere", message)
             else:
-                if message != "Abgebrochen.":
+                if message != tr("Abgebrochen."):
                     light_critical(self, "Speech2Anywhere", message)
             if on_done is not None:
                 on_done(success)
@@ -956,7 +1089,7 @@ class SettingsDialog(QDialog):
 
         self._start_model_pull(
             model_name,
-            "Speech2Anywhere: Modell wird geladen",
+            tr("Speech2Anywhere: Modell wird geladen"),
             on_done=on_pull_done,
         )
         loop.exec()
@@ -977,12 +1110,15 @@ class SettingsDialog(QDialog):
             )
             box = QMessageBox(self)
             box.setIcon(severity)
-            box.setWindowTitle("Speech2Anywhere: Unzensiertes Modell")
-            box.setText("Das unzensierte Modell ist für deine Grafikkarte zu groß. Trotzdem laden?")
+            box.setWindowTitle(tr("Speech2Anywhere: Unzensiertes Modell"))
+            box.setText(tr("Das unzensierte Modell ist für deine Grafikkarte zu groß. Trotzdem laden?"))
             box.setInformativeText(
-                f"Es braucht rund 16 GB Grafikspeicher ({_UNCENSORED_MODEL}). Reicht der nicht, "
-                "lagert Ollama Teile auf den Prozessor aus, und die Politur dauert mehrere Sekunden "
-                f"statt Sekundenbruchteilen.\n\n{result.message}"
+                tr(
+                    "Es braucht rund 16 GB Grafikspeicher ({}). Reicht der nicht, lagert Ollama Teile auf den "
+                    "Prozessor aus, und die Politur dauert mehrere Sekunden statt Sekundenbruchteilen.\n"
+                    "\n"
+                    "{}"
+                ).format(_UNCENSORED_MODEL, result.message)
             )
             box.setStandardButtons(
                 QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
@@ -990,10 +1126,10 @@ class SettingsDialog(QDialog):
             box.setDefaultButton(QMessageBox.StandardButton.No)
             yes = box.button(QMessageBox.StandardButton.Yes)
             if yes is not None:
-                yes.setText("Trotzdem laden")
+                yes.setText(tr("Trotzdem laden"))
             no = box.button(QMessageBox.StandardButton.No)
             if no is not None:
-                no.setText("Abbrechen")
+                no.setText(tr("Abbrechen"))
             apply_light_theme(box)
             if box.exec() != QMessageBox.StandardButton.Yes.value:
                 return
@@ -1004,23 +1140,27 @@ class SettingsDialog(QDialog):
 
         self._start_model_pull(
             _UNCENSORED_MODEL,
-            "Speech2Anywhere: Unzensiertes Modell",
+            tr("Speech2Anywhere: Unzensiertes Modell"),
             on_success=self._apply_uncensored_model,
         )
 
     def _apply_uncensored_model(self) -> None:
         self._styler_model.setText(_UNCENSORED_MODEL)
         message = (
-            "Das unzensierte Modell ist bereit und als "
-            f"Qualitätsmodell eingetragen ({_UNCENSORED_MODEL}).\n\n"
-            "Klick auf Speichern, dann ist es dabei."
+            tr(
+                "Das unzensierte Modell ist bereit und als Qualitätsmodell eingetragen ({}).\n"
+                "\n"
+                "Klick auf Speichern, dann ist es dabei."
+            ).format(_UNCENSORED_MODEL)
         )
         if self._fast_mode.isChecked():
             message += (
-                "\n\nAchtung: Der schnelle Modus ist an. Solange er "
-                "läuft, poliert Speech2Anywhere mit dem schnellen Modell "
-                f"({self._cfg.styler.fast_model}), und das unzensierte "
-                "Qualitätsmodell hat Pause. Schalte den schnellen Modus aus, "
-                "wenn das unzensierte Modell ran soll."
+                tr(
+                    "\n"
+                    "\n"
+                    "Achtung: Der schnelle Modus ist an. Solange er läuft, poliert Speech2Anywhere mit dem schnellen "
+                    "Modell ({}), und das unzensierte Qualitätsmodell hat Pause. Schalte den schnellen Modus aus, "
+                    "wenn das unzensierte Modell ran soll."
+                ).format(self._cfg.styler.fast_model)
             )
         light_information(self, "Speech2Anywhere", message)

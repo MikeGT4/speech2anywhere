@@ -1,4 +1,7 @@
 from __future__ import annotations
+import io
+import json
+import subprocess
 import sys
 import threading
 from pathlib import Path
@@ -20,6 +23,7 @@ from kira.setup_wizard import (
     _has_model_tag,
     is_ollama_installed,
     is_ollama_reachable,
+    launch_fetch,
 )
 
 
@@ -33,10 +37,53 @@ def _no_live_services(monkeypatch):
 
     monkeypatch.setattr("kira.ollama_pull.connect", refuse)
     monkeypatch.setattr("kira.ollama_pull.registry_size", refuse)
-    monkeypatch.setattr("kira.setup_wizard.snapshot_download", refuse)
+    monkeypatch.setattr("kira.setup_wizard.launch_fetch", refuse)
+    monkeypatch.setattr("kira._whisper_fetch.snapshot_download", refuse)
     monkeypatch.setattr("urllib.request.urlopen", refuse)
     yield
     assert reached == [], "Test erreicht einen echten Dienst"
+
+
+class _FakeFetch:
+    def __init__(self, messages=(), returncode=0):
+        self.stdout = io.StringIO("".join(json.dumps(message) + "\n" for message in messages))
+        self.returncode = returncode
+        self.killed = False
+
+    def poll(self):
+        return self.returncode
+
+    def wait(self, timeout=None):
+        return self.returncode
+
+    def kill(self):
+        self.killed = True
+
+
+class _HangingFetch:
+    def __init__(self):
+        self.reading = threading.Event()
+        self.ended = threading.Event()
+        self.stdout = self._lines()
+
+    def _lines(self):
+        yield json.dumps({"done": 1_000, "total": 3_000_000_000}) + "\n"
+        self.reading.set()
+        self.ended.wait(5)
+
+    def poll(self):
+        return 1 if self.ended.is_set() else None
+
+    def wait(self, timeout=None):
+        self.ended.wait(5)
+        return 1
+
+    def kill(self):
+        self.ended.set()
+
+
+def _fetch_with(mocker, fetch):
+    return mocker.patch("kira.setup_wizard.launch_fetch", return_value=fetch)
 
 
 class _FakeClient:
@@ -129,12 +176,9 @@ def test_is_ollama_reachable_false_on_urlerror(mocker):
     assert is_ollama_reachable(timeout=0.1) is False
 
 
-def test_whisper_worker_calls_snapshot_download_with_resume(qtbot, tmp_path, mocker):
+def test_whisper_worker_fetches_its_repo_into_the_target_in_a_child_process(qtbot, tmp_path, mocker):
     target = tmp_path / "whisper-model"
-    fake_download = mocker.patch(
-        "kira.setup_wizard.snapshot_download",
-        return_value=str(target),
-    )
+    launch = _fetch_with(mocker, _FakeFetch([{"path": str(target)}]))
     worker = WhisperDownloadWorker(target_dir=target)
 
     finished_payloads: list[Path] = []
@@ -142,37 +186,56 @@ def test_whisper_worker_calls_snapshot_download_with_resume(qtbot, tmp_path, moc
 
     worker.run()
 
-    fake_download.assert_called_once()
-    kwargs = fake_download.call_args.kwargs
-    assert kwargs["repo_id"] == DEFAULT_WHISPER_REPO
-    assert Path(kwargs["local_dir"]) == target
-
-    assert len(finished_payloads) == 1
-    assert finished_payloads[0] == target
+    launch.assert_called_once_with(DEFAULT_WHISPER_REPO, target)
+    assert finished_payloads == [target]
 
 
 def test_whisper_worker_emits_error_on_network_failure(qtbot, tmp_path, mocker):
     target = tmp_path / "whisper-model"
-    mocker.patch(
-        "kira.setup_wizard.snapshot_download",
-        side_effect=ConnectionError("DNS resolution failed"),
-    )
+    _fetch_with(mocker, _FakeFetch(
+        [{"error": "ConnectionError: DNS resolution failed", "trace": "Traceback"}], returncode=1,
+    ))
     worker = WhisperDownloadWorker(target_dir=target)
     errors: list[str] = []
+    finished: list[Path] = []
     worker.error.connect(lambda msg: errors.append(msg))
+    worker.finished.connect(finished.append)
 
     worker.run()
 
-    assert len(errors) == 1
-    assert "DNS resolution failed" in errors[0] or "ConnectionError" in errors[0]
+    assert errors == ["Whisper-Download fehlgeschlagen: ConnectionError: DNS resolution failed"]
+    assert finished == []
+
+
+def test_whisper_worker_takes_a_reported_path_as_done_when_the_child_ends_unclean(qtbot, tmp_path, mocker):
+    target = tmp_path / "whisper-model"
+    _fetch_with(mocker, _FakeFetch([{"path": str(target)}], returncode=1))
+    worker = WhisperDownloadWorker(target_dir=target)
+    errors: list[str] = []
+    finished: list[Path] = []
+    worker.error.connect(errors.append)
+    worker.finished.connect(finished.append)
+
+    worker.run()
+
+    assert finished == [target]
+    assert errors == []
+
+
+def test_whisper_worker_reports_a_child_that_ends_without_a_result(qtbot, tmp_path, mocker):
+    _fetch_with(mocker, _FakeFetch(returncode=3))
+    worker = WhisperDownloadWorker(target_dir=tmp_path / "whisper-model")
+    errors: list[str] = []
+    worker.error.connect(errors.append)
+
+    worker.run()
+
+    assert errors == ["Whisper-Download fehlgeschlagen: Exit-Code 3."]
 
 
 def test_whisper_worker_uses_custom_repo_id(qtbot, tmp_path, mocker):
     target = tmp_path / "whisper-model"
-    fake_download = mocker.patch(
-        "kira.setup_wizard.snapshot_download",
-        return_value=str(target),
-    )
+    launch = _fetch_with(mocker, _FakeFetch([{"path": str(target)}]))
     worker = WhisperDownloadWorker(
         target_dir=target,
         repo_id="Systran/faster-whisper-large-v3-turbo",
@@ -180,8 +243,23 @@ def test_whisper_worker_uses_custom_repo_id(qtbot, tmp_path, mocker):
 
     worker.run()
 
-    kwargs = fake_download.call_args.kwargs
-    assert kwargs["repo_id"] == "Systran/faster-whisper-large-v3-turbo"
+    launch.assert_called_once_with("Systran/faster-whisper-large-v3-turbo", target)
+
+
+def test_launch_fetch_starts_the_fetch_module_with_the_whitelist(tmp_path, mocker):
+    popen = mocker.patch("kira.setup_wizard.subprocess.Popen")
+    target = tmp_path / "whisper-model"
+
+    launch_fetch(DEFAULT_WHISPER_REPO, target)
+
+    command = popen.call_args.args[0]
+    assert command[:4] == [sys.executable, "-P", "-m", "kira._whisper_fetch"]
+    assert command[4:] == [DEFAULT_WHISPER_REPO, str(target), *WHISPER_ALLOWED_FILES]
+    kwargs = popen.call_args.kwargs
+    assert kwargs["stdin"] == subprocess.PIPE
+    assert kwargs["stdout"] == subprocess.PIPE
+    assert kwargs["stderr"] == subprocess.DEVNULL
+    assert kwargs["creationflags"] == 0x08000000
 
 
 def test_ollama_worker_skips_install_when_already_installed_and_reachable(
@@ -668,22 +746,12 @@ def test_setup_wizard_accept_does_not_swallow_keyboard_interrupt(qtbot, tmp_path
     fake_warn.assert_not_called()
 
 
-def test_whisper_worker_passes_allow_patterns_whitelist(qtbot, tmp_path, mocker):
-    target = tmp_path / "whisper-model"
-    fake_download = mocker.patch(
-        "kira.setup_wizard.snapshot_download",
-        return_value=str(target),
-    )
-    worker = WhisperDownloadWorker(target_dir=target)
+def test_whisper_fetch_gets_the_allow_patterns_whitelist(tmp_path, mocker):
+    popen = mocker.patch("kira.setup_wizard.subprocess.Popen")
 
-    worker.run()
+    launch_fetch(DEFAULT_WHISPER_REPO, tmp_path / "whisper-model")
 
-    fake_download.assert_called_once()
-    kwargs = fake_download.call_args.kwargs
-    assert "allow_patterns" in kwargs, \
-        "snapshot_download muss allow_patterns kriegen (defense gegen rogue files in repo)"
-    patterns = kwargs["allow_patterns"]
-    assert isinstance(patterns, list), "allow_patterns muss list sein"
+    patterns = popen.call_args.args[0][6:]
     assert len(patterns) > 0
     assert "model.bin" in patterns
     assert "config.json" in patterns
@@ -704,7 +772,7 @@ def test_whisper_allowed_files_constant_locked():
 
 def test_whisper_worker_emits_error_when_mkdir_fails(qtbot, tmp_path, mocker):
     target = tmp_path / "whisper-model"
-    fake_download = mocker.patch("kira.setup_wizard.snapshot_download")
+    fake_download = mocker.patch("kira.setup_wizard.launch_fetch")
     mocker.patch.object(
         Path,
         "mkdir",
@@ -902,18 +970,13 @@ def _bar_state(bar):
     return bar.minimum(), bar.maximum(), bar.value()
 
 
-def test_whisper_worker_reports_bytes_through_the_hub_progress(qtbot, tmp_path, mocker):
+def test_whisper_worker_passes_the_reported_bytes_on(qtbot, tmp_path, mocker):
     target = tmp_path / "whisper-model"
-
-    def fake_download(**kwargs):
-        bar = kwargs["tqdm_class"](desc="Downloading", total=0, initial=0, unit="B", unit_scale=True)
-        bar.total += 3_000
-        bar.refresh()
-        for _ in range(3):
-            bar.update(1_000)
-        return str(target)
-
-    mocker.patch("kira.setup_wizard.snapshot_download", side_effect=fake_download)
+    _fetch_with(mocker, _FakeFetch([
+        {"done": 0, "total": 3_000},
+        {"done": 3_000, "total": 3_000},
+        {"path": str(target)},
+    ]))
     worker = WhisperDownloadWorker(target_dir=target)
     seen: list[tuple[int, int]] = []
     finished: list[Path] = []
@@ -926,26 +989,43 @@ def test_whisper_worker_reports_bytes_through_the_hub_progress(qtbot, tmp_path, 
     assert finished == [target]
 
 
-def test_whisper_cancel_stops_the_download_without_an_error(qtbot, tmp_path, mocker):
+def test_whisper_cancel_ends_the_child_process_without_an_error(qtbot, tmp_path, mocker):
+    fetch = _HangingFetch()
+    _fetch_with(mocker, fetch)
     worker = WhisperDownloadWorker(target_dir=tmp_path / "whisper-model")
-
-    def fake_download(**kwargs):
-        bar = kwargs["tqdm_class"](total=0, unit="B")
-        bar.total += 10_000
-        bar.update(1_000)
-        worker.cancel()
-        bar.update(1_000)
-        raise AssertionError("Download lief nach dem Abbrechen weiter")
-
-    mocker.patch("kira.setup_wizard.snapshot_download", side_effect=fake_download)
     errors: list[str] = []
     finished: list[Path] = []
     worker.error.connect(errors.append)
     worker.finished.connect(finished.append)
+    thread = threading.Thread(target=worker.run, daemon=True)
+    thread.start()
+    assert fetch.reading.wait(2)
+
+    worker.cancel()
+    thread.join(2)
+
+    assert not thread.is_alive()
+    assert fetch.ended.is_set()
+    qtbot.wait(50)
+    assert errors == [] and finished == []
+
+
+def test_whisper_cancelled_while_the_child_starts_ends_it_right_away(qtbot, tmp_path, mocker):
+    fetch = _HangingFetch()
+    worker = WhisperDownloadWorker(target_dir=tmp_path / "whisper-model")
+
+    def start(*args):
+        worker.cancel()
+        return fetch
+
+    mocker.patch("kira.setup_wizard.launch_fetch", side_effect=start)
+    errors: list[str] = []
+    worker.error.connect(errors.append)
 
     worker.run()
 
-    assert errors == [] and finished == []
+    assert fetch.ended.is_set()
+    assert errors == []
 
 
 def test_ollama_worker_names_its_phases(qtbot, tmp_path, mocker):
@@ -1126,16 +1206,19 @@ def test_ollama_setup_runs_without_pipes_and_waits_for_the_process(qtbot, tmp_pa
     assert errors == [] and finished == [1]
 
 
-def test_ollama_setup_timeout_kills_the_setup_and_says_so(qtbot, tmp_path, mocker):
-    import subprocess
-
+def test_ollama_setup_timeout_ends_the_setup_with_its_child_processes(qtbot, tmp_path, mocker):
     proc = MagicMock()
+    proc.pid = 4242
     proc.wait.side_effect = subprocess.TimeoutExpired("OllamaSetup.exe", 300)
     worker, _popen, errors, finished = _setup_worker(tmp_path, mocker, proc)
+    run = mocker.patch("kira.setup_wizard.subprocess.run")
 
     worker.run()
 
-    proc.kill.assert_called_once()
+    command = run.call_args.args[0]
+    assert Path(command[0]).name.lower() == "taskkill.exe"
+    assert command[1:] == ["/T", "/F", "/PID", "4242"]
+    assert run.call_args.kwargs["creationflags"] == 0x08000000
     assert errors == ["Ollama-Installer Timeout (>300 s)."]
     assert finished == []
 
@@ -1151,20 +1234,20 @@ def test_ollama_setup_exit_code_is_reported_without_output_parts(qtbot, tmp_path
     assert finished == []
 
 
-def test_ollama_setup_cancel_stops_the_running_setup(qtbot, tmp_path, mocker):
+def test_ollama_setup_cancel_ends_the_setup_with_its_child_processes(qtbot, tmp_path, mocker):
     entered = threading.Event()
     stopped = threading.Event()
     proc = MagicMock()
+    proc.pid = 4242
     proc.poll.side_effect = lambda: 1 if stopped.is_set() else None
-    proc.terminate.side_effect = stopped.set
 
     def wait(timeout=None):
         entered.set()
         return 1 if stopped.wait(3) else 0
 
     proc.wait.side_effect = wait
-    proc.communicate.side_effect = lambda timeout=None: (wait(timeout), ("", ""))[1]
     worker, _popen, errors, finished = _setup_worker(tmp_path, mocker, proc)
+    run = mocker.patch("kira.setup_wizard.subprocess.run", side_effect=lambda *args, **kwargs: stopped.set())
     thread = threading.Thread(target=worker.run, daemon=True)
     thread.start()
     assert entered.wait(2)
@@ -1173,17 +1256,19 @@ def test_ollama_setup_cancel_stops_the_running_setup(qtbot, tmp_path, mocker):
     thread.join(2)
 
     assert not thread.is_alive()
-    proc.terminate.assert_called_once()
+    assert run.call_args.args[0][1:] == ["/T", "/F", "/PID", "4242"]
+    proc.terminate.assert_not_called()
     qtbot.wait(50)
     assert errors == [] and finished == []
 
 
 def test_ollama_setup_cancelled_while_it_starts_is_stopped_right_away(qtbot, tmp_path, mocker):
     proc = MagicMock()
+    proc.pid = 4242
     proc.poll.return_value = None
     proc.wait.return_value = 1
-    proc.communicate.return_value = ("", "")
     worker, popen, errors, finished = _setup_worker(tmp_path, mocker, proc)
+    run = mocker.patch("kira.setup_wizard.subprocess.run")
 
     def start(*args, **kwargs):
         worker.cancel()
@@ -1193,5 +1278,23 @@ def test_ollama_setup_cancelled_while_it_starts_is_stopped_right_away(qtbot, tmp
 
     worker.run()
 
-    proc.terminate.assert_called_once()
+    run.assert_called_once()
+    assert run.call_args.args[0][1:] == ["/T", "/F", "/PID", "4242"]
     assert errors == [] and finished == []
+
+
+@pytest.mark.parametrize("failure", [
+    OSError("taskkill fehlt"),
+    subprocess.CalledProcessError(128, "taskkill"),
+    subprocess.TimeoutExpired("taskkill", 10),
+])
+def test_stopping_the_setup_tree_falls_back_to_the_starter_when_taskkill_fails(mocker, failure):
+    from kira.setup_wizard import stop_process_tree
+
+    proc = MagicMock()
+    proc.pid = 4242
+    mocker.patch("kira.setup_wizard.subprocess.run", side_effect=failure)
+
+    stop_process_tree(proc)
+
+    proc.kill.assert_called_once()

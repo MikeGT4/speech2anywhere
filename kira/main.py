@@ -8,6 +8,7 @@ import sys
 import threading
 import time
 from pathlib import Path
+from kira.texte import tr
 
 if sys.platform == "darwin":
     from kira.hotkey import HotkeyListener
@@ -68,6 +69,22 @@ class _BrandFormatter(logging.Formatter):
             return super().format(record)
         finally:
             record.name = name
+
+
+def _apply_language(cfg) -> None:
+    from kira import texte
+    texte.set_language(texte.resolve_language(cfg.ui.language))
+    log.info("Sprache der Oberfläche: %s (Einstellung %s)", texte.language(), cfg.ui.language)
+
+
+def _ignore_release() -> None:
+    return None
+
+
+def _hotkey_callbacks(app, mode: str):
+    if mode == "toggle":
+        return app.on_hotkey_toggle, app.on_edit_toggle, _ignore_release
+    return app.on_hotkey_press, app.on_edit_press, app.on_hotkey_release
 
 
 def _dictation_listener(listener_cls, combo: str, on_press, on_release):
@@ -161,6 +178,23 @@ def _start_heartbeat() -> None:
             log.info("heartbeat: uptime=%ds", uptime)
 
     threading.Thread(target=_loop, daemon=True, name="kira-heartbeat").start()
+
+
+def _start_update_cleanup() -> threading.Thread | None:
+    try:
+        from kira import __version__
+        from kira.ui._update_runner import _bundle_dir
+        from kira.updater import remove_installed_full_update_dirs
+
+        thread = threading.Thread(
+            target=remove_installed_full_update_dirs, args=(_bundle_dir(), __version__),
+            daemon=True, name="kira-update-cleanup",
+        )
+        thread.start()
+        return thread
+    except Exception:
+        log.exception("Update-Ordner: Aufräumen ließ sich nicht starten")
+        return None
 
 
 def _run_mac(cfg, recorder, transcriber, styler, injector) -> None:
@@ -369,6 +403,7 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
         prune_history()
     except Exception:
         log.exception("Verlauf: Löschfrist konnte nicht laufen")
+    _start_update_cleanup()
     learning = None
     if cfg.learning.enabled:
         try:
@@ -390,9 +425,12 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
         )
         styler.set_on_slow_polish_detected(
             lambda: tray.notify(
-                "Speech2Anywhere: Polish auf CPU",
-                "Polish-Latenz hoch. Temporaer auf schnelles Modell "
-                "umgeschaltet. Pruefe Settings → GPU-Check.",
+                tr("Speech2Anywhere: Politur langsam"),
+                tr(
+                    "Die Politur rechnet ungewöhnlich lange. Vorübergehend auf das "
+                    "schnelle Modell umgeschaltet. Prüfen unter Einstellungen → "
+                    "Über → „GPU prüfen“."
+                ),
             )
         )
         def _notify_cpu_fallback(msg: str) -> None:
@@ -403,14 +441,16 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
                 msg = resolve_notice(msg, diag)
             except Exception:
                 log.exception("Ollama-Port-Diagnose fehlgeschlagen")
-            tray.notify("Speech2Anywhere: Polish auf CPU", msg)
+            tray.notify(tr("Speech2Anywhere: Politur auf CPU"), msg)
 
         styler.set_on_cpu_fallback_detected(_notify_cpu_fallback)
         styler.set_on_connection_lost(
             lambda: tray.notify(
-                "Speech2Anywhere: Politur nicht erreichbar",
-                "Ollama antwortet nicht. Bis auf Weiteres wird der "
-                "Rohtext eingefügt. Details im Log.",
+                tr("Speech2Anywhere: Politur nicht erreichbar"),
+                tr(
+                    "Ollama antwortet nicht. Bis auf Weiteres wird der "
+                    "Rohtext eingefügt. Details im Log."
+                ),
             )
         )
     else:
@@ -479,8 +519,9 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
     ).start()
 
     from kira.config import effective_hotkey
+    press, edit_press, release = _hotkey_callbacks(app, cfg.hotkey.mode)
     hotkey, combo = _dictation_listener(
-        HotkeyListener, effective_hotkey(cfg.hotkey.combo), app.on_hotkey_press, app.on_hotkey_release,
+        HotkeyListener, effective_hotkey(cfg.hotkey.combo), press, release,
     )
     hotkey.start()
 
@@ -489,8 +530,8 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
         try:
             edit_hotkey = HotkeyListener(
                 combo=cfg.hotkey.edit_combo,
-                on_press=app.on_edit_press,
-                on_release=app.on_hotkey_release,
+                on_press=edit_press,
+                on_release=release,
             )
             edit_hotkey.start()
             log.info(
@@ -635,27 +676,31 @@ def run() -> None:
     _start_heartbeat()
     cfg = load_config()
     log.info("Starting Speech2Anywhere (platform=%s)", sys.platform)
+    _apply_language(cfg)
 
     if sys.platform == "win32":
+        from kira import restart
+        restart.wait_for_predecessor()
         _instance_lock = _acquire_windows_single_instance_lock()
         if _instance_lock is None:
             log.warning("Another Speech2Anywhere instance is already running, exiting")
             import ctypes
             ctypes.windll.user32.MessageBoxW(
                 0,
-                "Speech2Anywhere läuft bereits (siehe Tray-Icon rechts unten).\n"
-                "Diese zweite Instanz wird beendet.",
+                tr(
+                    "Speech2Anywhere läuft bereits (siehe Tray-Icon rechts unten).\n"
+                    "Diese zweite Instanz wird beendet."
+                ),
                 "Speech2Anywhere",
                 0x40,
             )
             return
 
-    if cfg.styler.provider == "ollama":
-        try:
-            from kira.ollama_env import apply_tuning_env
-            apply_tuning_env()
-        except Exception:
-            log.exception("Ollama-VRAM-Tuning fehlgeschlagen; continuing")
+    try:
+        from kira.ollama_env import apply_tuning_env
+        apply_tuning_env(cfg.styler.provider)
+    except Exception:
+        log.exception("Ollama-VRAM-Tuning fehlgeschlagen; continuing")
 
     if sys.platform == "darwin":
         try:
@@ -679,7 +724,12 @@ def run() -> None:
         log.exception("recorder.prewarm failed; falling back to lazy stream-open")
     transcriber = Transcriber(cfg)
     styler = Styler(cfg)
-    injector = Injector(restore_after_ms=cfg.injector.restore_clipboard_after_ms)
+    if sys.platform == "win32":
+        injector = Injector(
+            restore_after_ms=cfg.injector.restore_clipboard_after_ms, strategy=cfg.injector.strategy,
+        )
+    else:
+        injector = Injector(restore_after_ms=cfg.injector.restore_clipboard_after_ms)
 
     if sys.platform == "darwin":
         _run_mac(cfg, recorder, transcriber, styler, injector)

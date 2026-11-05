@@ -1,7 +1,10 @@
 from __future__ import annotations
 import hashlib
+import http.client
 import io
 import json
+import logging
+import sys
 from unittest.mock import patch
 
 import pytest
@@ -83,6 +86,18 @@ def test_check_returns_failed_on_network_error():
         result = check_for_update(local_version="0.1.0", repo="x/y")
     assert result.status == "failed"
     assert "offline" in (result.error or "")
+
+
+@pytest.mark.parametrize("failure", [
+    http.client.IncompleteRead(b'{"tag_name": "v0.2', 512),
+    OSError("Verbindung getrennt"),
+])
+def test_check_returns_failed_when_the_answer_breaks_off(failure):
+    with patch("kira.updater.urllib.request.urlopen") as mock_open:
+        mock_open.return_value.__enter__.return_value.read.side_effect = failure
+        result = check_for_update(local_version="0.1.0", repo="x/y")
+    assert result.status == "failed"
+    assert result.error
 
 
 def test_check_strips_v_prefix_from_tag(fake_release):
@@ -400,3 +415,93 @@ def test_asset_names_with_trailing_newline_are_ignored(fake_bundle_release):
     result = _check(release)
     assert result.app_asset is None
     assert result.asset_name == "Kira-Setup-v0.2.0.exe"
+
+
+def _junction(target, link) -> None:
+    import _winapi
+    _winapi.CreateJunction(str(target), str(link))
+
+
+def test_cleanup_removes_update_dirs_up_to_the_running_version(tmp_path):
+    from kira.updater import remove_installed_full_update_dirs
+    for name in ("v0.5.9", "v0.5.10", "v0.5.11", "v0.6", "vneu", "notizen"):
+        (tmp_path / name).mkdir()
+        (tmp_path / name / "Kira-Setup-v0.5.9.exe").write_bytes(b"setup")
+    (tmp_path / "v0.5.9" / "Kira-Setup-v0.5.9-1.bin").write_bytes(b"teil")
+    (tmp_path / "v0.5.8").write_bytes(b"keine Mappe")
+    removed = remove_installed_full_update_dirs(tmp_path, "0.5.10")
+    assert sorted(path.name for path in removed) == ["v0.5.10", "v0.5.9"]
+    assert sorted(path.name for path in tmp_path.iterdir()) == ["notizen", "v0.5.11", "v0.5.8", "v0.6", "vneu"]
+
+
+def test_cleanup_without_a_clear_version_or_folder_removes_nothing(tmp_path):
+    from kira.updater import remove_installed_full_update_dirs
+    (tmp_path / "v0.0.1").mkdir()
+    (tmp_path / "v0.0.1" / "Kira-Setup-v0.0.1.exe").write_bytes(b"setup")
+    assert remove_installed_full_update_dirs(tmp_path, "entwicklung") == []
+    assert remove_installed_full_update_dirs(tmp_path / "fehlt", "0.5.10") == []
+    assert (tmp_path / "v0.0.1").is_dir()
+
+
+@pytest.mark.skipif(sys.platform != "win32", reason="Verzeichnisverbindungen gibt es nur unter Windows")
+def test_cleanup_never_follows_links(tmp_path):
+    from kira.updater import remove_installed_full_update_dirs
+    outside = tmp_path / "draussen"
+    outside.mkdir()
+    (outside / "wichtig.txt").write_text("bleibt", encoding="utf-8")
+    (outside / "Kira-Setup-v0.0.1.exe").write_bytes(b"setup")
+    base = tmp_path / "update"
+    base.mkdir()
+    _junction(outside, base / "v0.0.1")
+    (base / "v0.0.2").mkdir()
+    (base / "v0.0.2" / "Kira-Setup-v0.0.2.exe").write_bytes(b"setup")
+    _junction(outside, base / "v0.0.2" / "drin")
+    linked_base = tmp_path / "update-verbindung"
+    _junction(base, linked_base)
+    assert remove_installed_full_update_dirs(linked_base, "0.5.10") == []
+    assert (base / "v0.0.2").is_dir()
+    assert remove_installed_full_update_dirs(base, "0.5.10") == [base / "v0.0.2"]
+    assert (base / "v0.0.1").is_junction()
+    assert (outside / "wichtig.txt").read_text(encoding="utf-8") == "bleibt"
+    assert (outside / "Kira-Setup-v0.0.1.exe").is_file()
+
+
+@pytest.mark.skipif(sys.platform != "win32", reason="nur Windows sperrt geöffnete Dateien gegen das Löschen")
+def test_cleanup_logs_a_locked_file_and_goes_on(tmp_path, caplog):
+    from kira.updater import remove_installed_full_update_dirs
+    (tmp_path / "v0.0.1").mkdir()
+    (tmp_path / "v0.0.2").mkdir()
+    (tmp_path / "v0.0.2" / "Kira-Setup-v0.0.2.exe").write_bytes(b"setup")
+    locked = tmp_path / "v0.0.1" / "Kira-Setup-v0.0.1.exe"
+    locked.write_bytes(b"setup")
+    with caplog.at_level(logging.WARNING, logger="kira.updater"), locked.open("rb"):
+        removed = remove_installed_full_update_dirs(tmp_path, "0.5.10")
+    assert removed == [tmp_path / "v0.0.2"]
+    assert locked.exists()
+    assert "Kira-Setup-v0.0.1.exe" in caplog.text
+
+
+def test_cleanup_removes_only_full_update_dirs_and_keeps_small_updates(tmp_path):
+    from kira import app_update
+    from kira.updater import remove_installed_full_update_dirs
+    small = tmp_path / "v0.0.1"
+    (small / "vorher" / "site" / "kira").mkdir(parents=True)
+    (small / "kira-0.0.1-py3-none-any.whl").write_bytes(b"rad")
+    (small / app_update.HELPER_NAME).write_text("helfer", encoding="utf-8")
+    (small / app_update.LOG_NAME).write_text("fertig\n", encoding="utf-8")
+    declined = tmp_path / "v0.0.2"
+    declined.mkdir()
+    (declined / "kira-0.0.2-py3-none-any.whl").write_bytes(b"rad")
+    full = tmp_path / "v0.0.3"
+    full.mkdir()
+    for name in ("kira-0.0.3-py3-none-any.whl", "Kira-Setup-v0.0.3.exe", "Kira-Setup-v0.0.3-1.bin", "SHA256SUMS.txt"):
+        (full / name).write_bytes(b"x")
+    mixed = tmp_path / "v0.0.4"
+    (mixed / "vorher").mkdir(parents=True)
+    (mixed / "Kira-Setup-v0.0.4.exe").write_bytes(b"setup")
+    (mixed / app_update.LOG_NAME).write_text("fertig\n", encoding="utf-8")
+    removed = remove_installed_full_update_dirs(tmp_path, "0.5.10")
+    assert removed == [full]
+    assert sorted(path.name for path in tmp_path.iterdir()) == ["v0.0.1", "v0.0.2", "v0.0.4"]
+    assert (small / "vorher" / "site" / "kira").is_dir()
+    assert (small / app_update.LOG_NAME).read_text(encoding="utf-8") == "fertig\n"

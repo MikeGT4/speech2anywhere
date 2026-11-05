@@ -730,3 +730,129 @@ def test_transcribe_file_stops_between_segments_when_cancelled(monkeypatch, fake
     assert seen == [0.0, 0.0, 30.0]
     assert "File transcription cancelled" in caplog.text
     assert "File transcription failed" not in caplog.text
+
+
+def _language_seen_by_model(monkeypatch, fake_config, language, supported, call=None):
+    from kira.transcriber_fw import Transcriber
+    seen = {}
+
+    class FakeInfo:
+        language = "de"
+        duration = 1.0
+
+    class FakeWhisperModel:
+        def __init__(self, *a, **kw): pass
+        def transcribe(self, audio, **kw):
+            seen["language"] = kw.get("language", "SENTINEL")
+            return iter([]), FakeInfo()
+
+    if supported is not None:
+        FakeWhisperModel.supported_languages = supported
+    monkeypatch.setattr("kira.transcriber_fw.WhisperModel", FakeWhisperModel)
+    fake_config.whisper.language = language
+    transcriber = Transcriber(fake_config)
+    if call is None:
+        transcriber.transcribe(np.ones(1600, dtype=np.float32))
+    else:
+        call(transcriber)
+    return seen["language"]
+
+
+def test_language_the_model_knows_is_passed_on(monkeypatch, fake_config):
+    assert _language_seen_by_model(monkeypatch, fake_config, "fr", ["de", "en", "fr"]) == "fr"
+
+
+def test_language_the_model_lacks_falls_back_to_detection(monkeypatch, fake_config, caplog):
+    assert _language_seen_by_model(monkeypatch, fake_config, "xx", ["de", "en"]) is None
+    assert "xx" in caplog.text
+
+
+def test_language_is_passed_on_when_the_model_lists_none(monkeypatch, fake_config):
+    assert _language_seen_by_model(monkeypatch, fake_config, "fr", None) == "fr"
+
+
+def test_file_transcription_uses_the_same_language_fallback(monkeypatch, fake_config):
+    seen = _language_seen_by_model(
+        monkeypatch, fake_config, "xx", ["de", "en"], call=lambda t: t.transcribe_file("datei.wav"),
+    )
+    assert seen is None
+
+
+def test_live_words_use_the_same_language_fallback(monkeypatch, fake_config):
+    seen = _language_seen_by_model(
+        monkeypatch, fake_config, "xx", ["de", "en"],
+        call=lambda t: t.transcribe_partial(np.ones(1600, dtype=np.float32)),
+    )
+    assert seen is None
+
+
+def _file_result(monkeypatch, fake_config, segments):
+    from kira.transcriber_fw import Transcriber
+
+    class FakeInfo:
+        language = "de"
+        duration = 9.0
+
+    class FakeSegment:
+        def __init__(self, start, end, text):
+            self.start, self.end, self.text = start, end, text
+
+    class FakeWhisperModel:
+        def __init__(self, *a, **kw): pass
+        def transcribe(self, audio, **kw):
+            return iter([FakeSegment(*segment) for segment in segments]), FakeInfo()
+
+    monkeypatch.setattr("kira.transcriber_fw.WhisperModel", FakeWhisperModel)
+    return Transcriber(fake_config).transcribe_file("datei.wav")
+
+
+def test_file_transcription_keeps_start_end_and_text_of_each_segment(monkeypatch, fake_config):
+    result = _file_result(monkeypatch, fake_config, [(0.0, 2.5, " Hallo Welt."), (2.5, 5.0, " Zweiter Satz.")])
+    assert result.text == "Hallo Welt. Zweiter Satz."
+    assert result.segments == [(0.0, 2.5, "Hallo Welt."), (2.5, 5.0, "Zweiter Satz.")]
+
+
+def test_file_segments_leave_out_hallucinations_and_carry_replacements(monkeypatch, fake_config):
+    fake_config.whisper.replacements = {"kuh bernetes": "Kubernetes"}
+    result = _file_result(monkeypatch, fake_config, [
+        (0.0, 2.0, " Wir deployen auf kuh bernetes."), (2.0, 4.0, " Vielen Dank."), (4.0, 6.0, " Fertig."),
+    ])
+    assert result.segments == [(0.0, 2.0, "Wir deployen auf Kubernetes."), (4.0, 6.0, "Fertig.")]
+
+
+def test_dictation_result_carries_no_segments(monkeypatch, fake_config):
+    from kira.transcriber_fw import TranscriptionResult
+    assert TranscriptionResult(text="Hallo", language="de").segments is None
+
+
+def _dictation_result(monkeypatch, fake_config, info):
+    from kira.transcriber_fw import Transcriber
+
+    class FakeSegment:
+        text = " Hallo Welt."
+        no_speech_prob = 0.01
+        avg_logprob = -0.2
+
+    class FakeWhisperModel:
+        def __init__(self, *a, **kw): pass
+        def transcribe(self, audio, **kw):
+            return iter([FakeSegment()]), info
+
+    monkeypatch.setattr("kira.transcriber_fw.WhisperModel", FakeWhisperModel)
+    return Transcriber(fake_config).transcribe(np.ones(16000, dtype=np.float32))
+
+
+def test_dictation_result_carries_the_certainty_of_the_detected_language(monkeypatch, fake_config):
+    class Info:
+        language = "nl"
+        language_probability = 0.83
+
+    result = _dictation_result(monkeypatch, fake_config, Info())
+    assert (result.language, result.language_probability) == ("nl", 0.83)
+
+
+def test_dictation_result_without_a_certainty_says_so(monkeypatch, fake_config):
+    class Info:
+        language = "nl"
+
+    assert _dictation_result(monkeypatch, fake_config, Info()).language_probability is None

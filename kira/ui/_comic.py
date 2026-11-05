@@ -19,6 +19,7 @@ from PyQt6.QtWidgets import (
 )
 
 from kira._resources import assets_dir
+from kira.texte import tr
 
 log = logging.getLogger(__name__)
 
@@ -142,7 +143,7 @@ class _LogoLink(QLabel):
         self.setCursor(Qt.CursorShape.PointingHandCursor)
         self.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
         self.setToolTip("www.digitalroots.de")
-        self.setAccessibleName("digitalroots, Webseite öffnen")
+        self.setAccessibleName(tr("digitalroots, Webseite öffnen"))
 
     def mouseReleaseEvent(self, event) -> None:  # noqa: N802
         if event.button() == Qt.MouseButton.LeftButton and self.rect().contains(event.position().toPoint()):
@@ -612,6 +613,23 @@ def _row_controls(control) -> list[QWidget]:
     return found
 
 
+class _ToggleOnLabelClick(QObject):
+    def __init__(self, switch: QAbstractButton, parent: QObject) -> None:
+        super().__init__(parent)
+        self._switch = switch
+
+    def eventFilter(self, watched, event) -> bool:  # noqa: N802
+        if (
+            event.type() == QEvent.Type.MouseButtonRelease
+            and event.button() == Qt.MouseButton.LeftButton
+            and self._switch.isEnabled()
+            and watched.rect().contains(event.position().toPoint())
+        ):
+            self._switch.toggle()
+            return True
+        return False
+
+
 class ComicCard(QWidget):
     BORDER = 3
     SHADOW = 5
@@ -653,11 +671,18 @@ class ComicCard(QWidget):
         head.setFont(baloo(700, 17))
         head.setStyleSheet(f"color: {LABEL};")
         text.addWidget(head)
+        labels = [head]
         if sub:
             sub_label = QLabel(sub)
             sub_label.setObjectName("comicSub")
             sub_label.setWordWrap(True)
             text.addWidget(sub_label)
+            labels.append(sub_label)
+        if isinstance(control, ToggleSwitch):
+            clicker = _ToggleOnLabelClick(control, row)
+            for text_label in labels:
+                text_label.setCursor(Qt.CursorShape.PointingHandCursor)
+                text_label.installEventFilter(clicker)
         text.addStretch()
         holder = QWidget()
         holder.setFixedWidth(self.LABEL_W)

@@ -45,37 +45,37 @@ Version 0.1, 2026
 
 Copyright (c) 2026 Mike Pollow / Digitalroots
 
-Diese Software wurde fuer den persoenlichen Gebrauch entwickelt.
-Mit der Installation oder Nutzung erklaerst du dich mit folgenden
+Diese Software wurde für den persönlichen Gebrauch entwickelt.
+Mit der Installation oder Nutzung erklärst du dich mit folgenden
 Bedingungen einverstanden:
 
-1. Persoenliche Nutzung
+1. Persönliche Nutzung
    Die Software darf von dir und Personen deines unmittelbaren Umfelds
    genutzt werden. Eine Weitergabe an Dritte oder kommerzielle
    Verwertung bedarf der schriftlichen Zustimmung des Autors.
 
 2. Keine Garantie
-   Die Software wird "wie sie ist" zur Verfuegung gestellt, ohne
-   ausdrueckliche oder stillschweigende Gewaehrleistung. Der Autor
-   uebernimmt keine Haftung fuer Schaeden, die aus der Nutzung
+   Die Software wird "wie sie ist" zur Verfügung gestellt, ohne
+   ausdrückliche oder stillschweigende Gewährleistung. Der Autor
+   übernimmt keine Haftung für Schäden, die aus der Nutzung
    entstehen.
 
 3. Lokale Datenverarbeitung
-   Speech2Anywhere verarbeitet alle Sprach- und Textdaten ausschliesslich lokal
+   Speech2Anywhere verarbeitet alle Sprach- und Textdaten ausschließlich lokal
    auf deinem Computer. Sprach- und Textdaten werden nicht an Server des
-   Autors oder Dritter uebertragen. Mit dem Internet verbindet sich
-   Speech2Anywhere nur fuer die Update-Pruefung (GitHub Releases API) beim
-   Start, in festen Abstaenden (voreingestellt alle sechs Stunden) und auf
-   Anforderung, fuer das Herunterladen eines bestaetigten Updates und zum
+   Autors oder Dritter übertragen. Mit dem Internet verbindet sich
+   Speech2Anywhere nur für die Update-Prüfung (GitHub Releases API) beim
+   Start, in festen Abständen (voreingestellt alle sechs Stunden) und auf
+   Anforderung, für das Herunterladen eines bestätigten Updates und zum
    Laden von Spracherkennungs- und Sprachmodellen von Hugging Face und aus
-   der Ollama-Registry; die automatischen Update-Pruefungen sind in der
+   der Ollama-Registry; die automatischen Update-Prüfungen sind in der
    config.yaml abschaltbar (updates.check_on_start). Die mitinstallierte
-   Ollama-App prueft selbst auf eigene Updates.
+   Ollama-App prüft selbst auf eigene Updates.
 
 4. Drittsoftware
-   Die Installation enthaelt Komponenten unter eigenen Lizenzen
+   Die Installation enthält Komponenten unter eigenen Lizenzen
    (Python, faster-whisper, Ollama, Gemma, PyQt6, pystray u.a.).
-   Deren Lizenzbestimmungen gelten unveraendert weiter.
+   Deren Lizenzbestimmungen gelten unverändert weiter.
 
 Kontakt: Mike Pollow
 GitHub:  https://github.com/MikeGT4/speech2anywhere

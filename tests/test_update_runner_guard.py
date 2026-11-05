@@ -1,6 +1,7 @@
 # © 2026 Mike Pollow, Digitalroots. Alle Rechte vorbehalten.
 from __future__ import annotations
 
+import http.client
 import sys
 
 import pytest
@@ -100,6 +101,84 @@ def test_real_early_return_releases_the_flag(monkeypatch, qapp, _reset_flag):
     runner.run_update_flow(None)
     assert runner._flow_active is False
     assert any("aktuell" in text for text in _reset_flag)
+
+
+def test_update_search_runs_in_the_background_and_cancel_ends_it_at_once(monkeypatch, qapp, _reset_flag):
+    import threading
+    import time
+
+    from PyQt6.QtCore import QTimer
+    from PyQt6.QtWidgets import QProgressDialog
+
+    from kira.updater import UpdateCheckResult
+
+    gate = threading.Event()
+    seen_threads = []
+
+    def hanging_search(**kwargs):
+        seen_threads.append(threading.current_thread().name)
+        gate.wait(5)
+        return UpdateCheckResult(status="current", remote_version="0.4.1")
+
+    monkeypatch.setattr(runner, "check_for_update", hanging_search)
+    critical: list[str] = []
+    monkeypatch.setattr(runner, "light_critical", lambda parent, title, text: critical.append(text))
+
+    def press_cancel():
+        for widget in qapp.topLevelWidgets():
+            if isinstance(widget, QProgressDialog) and widget.isVisible():
+                widget.cancel()
+
+    QTimer.singleShot(200, press_cancel)
+    started = time.monotonic()
+    try:
+        runner.run_update_flow(None)
+        seconds = time.monotonic() - started
+    finally:
+        gate.set()
+    assert seen_threads == ["kira-update-search"]
+    assert seconds < 2
+    assert _reset_flag == [] and critical == []
+    assert runner._flow_active is False
+
+
+@pytest.mark.parametrize("failure", [
+    http.client.IncompleteRead(b'{"tag_name": "v9', 4096),
+    OSError("Verbindung getrennt"),
+    TimeoutError("The read operation timed out"),
+])
+def test_broken_answer_ends_in_the_search_error_message(monkeypatch, qapp, _reset_flag, failure):
+    import kira.updater as updater
+
+    class _BrokenAnswer:
+        def read(self, *args):
+            raise failure
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *exc):
+            return False
+
+    monkeypatch.setattr(updater.urllib.request, "urlopen", lambda request, timeout, context=None: _BrokenAnswer())
+    critical: list[str] = []
+    monkeypatch.setattr(runner, "light_critical", lambda parent, title, text: critical.append(text))
+    runner.run_update_flow(None)
+    assert len(critical) == 1
+    assert critical[0].startswith("Update-Suche fehlgeschlagen.")
+    assert runner._flow_active is False
+
+
+def test_crashing_search_ends_in_the_search_error_message(monkeypatch, qapp, _reset_flag):
+    def crash(**kwargs):
+        raise RuntimeError("kaputt")
+
+    monkeypatch.setattr(runner, "check_for_update", crash)
+    critical: list[str] = []
+    monkeypatch.setattr(runner, "light_critical", lambda parent, title, text: critical.append(text))
+    runner.run_update_flow(None)
+    assert critical == ["Update-Suche fehlgeschlagen.\n\nkaputt"]
+    assert runner._flow_active is False
 
 
 def test_cancel_button_stops_the_download_and_releases_the_flag(monkeypatch, qapp, tmp_path):
@@ -307,7 +386,7 @@ def test_small_program_update_is_offered_and_handed_to_the_helper(monkeypatch, q
     assert calls["launch"] == [(wheel, "9.9.9", tmp_path / "python", "ab" * 32)]
     assert quits == [True]
     assert len(calls["texts"]) == 1
-    assert "Programm-Update: 1,4 MB" in calls["texts"][0]
+    assert "Programm-Update: 1,5 MB" in calls["texts"][0]
     assert runner._flow_active is True
     runner._flow_finished()
 
@@ -335,7 +414,7 @@ def test_full_package_names_why_the_small_update_is_not_enough(monkeypatch, qapp
     assert calls["launch"] == []
     assert len(calls["texts"]) == 1
     assert "reicht diesmal nicht: numpy 2.3.0 wird zu 2.4.4." in calls["texts"][0]
-    assert "Bundle: 1 Dateien" in calls["texts"][0]
+    assert "Bundle: 1 Dateien (~3,2 GB)." in calls["texts"][0]
     assert runner._flow_active is False
 
 

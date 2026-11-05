@@ -17,6 +17,7 @@ from kira.ui.hud import create_style
 from kira.ui.hud.base import H, W, Frame, load_fonts
 from kira.ui.hud.klassisch import WAVE_COLOR  # noqa: F401  Markenfarbe, geprüft in test_brand_assets
 from kira.ui.hud.signal import SignalAnalysis, SignalTap
+from kira.texte import tr
 
 log = logging.getLogger(__name__)
 
@@ -164,7 +165,7 @@ class PopupHUD(QWidget):
         elif phase == "error":
             if not style.visible or style.leaving:
                 self._prepare(t)
-            self._style.error(t, message or "Details im Log.", self._frame)
+            self._style.error(t, message or tr("Details im Log."), self._frame)
         elif phase == "idle":
             style.abort(t)
         self._paint_t = t

@@ -10,6 +10,7 @@ from PyQt6.QtWidgets import QCheckBox, QDialog, QPushButton, QTextBrowser
 from kira import __version__
 from kira.ui import _comic as comic
 from kira.ui._dialog_style import apply_light_theme
+from kira.texte import language, tr
 
 log = logging.getLogger(__name__)
 from kira._resources import assets_dir as _assets_dir  # noqa: E402
@@ -43,17 +44,21 @@ def mark_welcomed() -> None:
     _WELCOME_MARKER.write_text(__version__, encoding="utf-8")
 
 
+def welcomed_before() -> bool:
+    return _WELCOME_MARKER.exists()
+
+
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Töne beim Diktat: ein kurzer Ton, wenn du die Taste loslässt, wenn der Text da ist und wenn etwas
-    schiefgeht, passend zum Stil der Anzeige. Ein- und ausschalten im Reiter <b>Sound</b> der Einstellungen,
-    auch einzeln je Moment und jeweils zum Anhören. Voreingestellt sind die Töne aus.</li>
-  <li>Seit 0.5.10 dabei: Das Update prüft die Verbindung zu GitHub gegen eine eigene Zertifikatsliste. Seit 0.5.9: Im Stil Comic bügelt das Bügeleisen beim Polieren deine eigenen Worte glatt. Seit 0.5.8:
-    Im Menü am Tray-Symbol wird das runde Symbol hell, sobald die Maus über einem Punkt
-    steht. Seit 0.5.7: das Menü im Comic-Stil mit Symbolen und Statuskarte. Seit 0.5.6: die Saison-Stile
-    <b>Halloween (Hexenhut)</b> und <b>Weihnachten (Winternacht)</b> im Reiter „Anzeige“, auch mit „Wortfetzen“,
-    dazu Ladeanzeigen mit Restzeit und der Fortschritt in „Datei transkribieren“.</li>
+  <li>Versprecher: „am Dienstag, nein, am Freitag“ wird zu „am Freitag“ (in Mail, Chat und Fließtext).</li>
+  <li>Die Politur antwortet in der Sprache deines Diktats. Im Reiter <b>Mikrofon</b> wählst du aus acht Sprachen
+    oder lässt sie erkennen; dort steht auch die Sprache der Oberfläche (Deutsch oder Englisch).</li>
+  <li>Bild, Dateien und formatierter Text in der Zwischenablage überstehen das Diktat.</li>
+  <li>Umschalten statt Halten im Reiter <b>Tasten</b>: einmal drücken, sprechen, noch einmal drücken.</li>
+  <li>„Datei transkribieren“ schreibt eine Untertiteldatei (<code>.srt</code>) mit.</li>
+  <li>Nach dem Speichern von Einstellungen startet Speech2Anywhere auf Knopfdruck selbst neu.</li>
+  <li>Seit 0.5.11 dabei: Töne beim Diktat im Reiter <b>Sound</b>.</li>
 </ul>
 """
 
@@ -71,6 +76,8 @@ poliert.</p>
 </ul>
 <p class="small">Mindestens ~300 ms halten, sonst wird
 die Aufnahme als Aus-Versehen-Tap gewertet.</p>
+<p>Lieber drücken statt halten? In den Einstellungen im Reiter „Tasten“ gibt es
+<b>Umschalten</b>: einmal drücken startet, noch einmal drücken beendet.</p>
 <p>Am Mauszeiger zeigt die Aufnahme-Anzeige Pegel und Zustand. Steht dort
 <b>ZU NAH</b>, etwas Abstand zum Mikrofon halten; bei <b>KEIN SIGNAL</b> liefert
 das Mikrofon Stille. Den Stil wählst du in den Einstellungen im Reiter
@@ -91,7 +98,8 @@ Ist nichts markiert, passiert nichts.</p>
 <p>Tray-Icon (rechts unten) → Rechtsklick → <b>„Datei transkribieren..."</b>.
 Audio (.wav, .mp3, .m4a, .flac, .ogg, .opus) oder Video
 (.mp4, .mov, .mkv, .webm) auswählen. Speech2Anywhere speichert die Transkription
-als <code>.txt</code> neben der Eingabedatei.</p>
+als <code>.txt</code> neben der Eingabedatei, dazu eine <code>.srt</code> mit Zeitmarken
+für Untertitel.</p>
 
 <h3>4. Modi &amp; Custom Dictionary</h3>
 <p>Speech2Anywhere erkennt automatisch in welcher App du tippst (Outlook → förmliche
@@ -122,7 +130,7 @@ merkt sich Speech2Anywhere das Paar. Taucht es in zwei Diktaten auf, greift es v
 selbst; Einzelfälle warten unter Tray → <b>„Gelernte Wörter…“</b> auf dein
 Häkchen. Was du dort verwirfst, lernt Speech2Anywhere nicht wieder. Die Nachrichten
 stammen aus Chat-Verläufen, deren Ordner in der Rohconfig unter
-<code>learning.sources</code> stehen. Alles bleibt lokal.</p>
+<code>learning.sources</code> stehen. Alles bleibt lokal. Gelernt wird aus deutschen Diktaten.</p>
 
 <h3>6. Unzensiertes Modell (optional)</h3>
 <p>Standardmäßig poliert Speech2Anywhere mit <code>gemma4:12b</code>. In den Einstellungen,
@@ -167,6 +175,141 @@ Bei nativen Crashes: <code>speech2anywhere-faulthandler.log</code> daneben.</p>
 """
 
 
+_NEWS_HTML_EN = """
+<h3>New in v{version}</h3>
+<ul>
+  <li>Slips of the tongue: “on Tuesday, no, on Friday” becomes “on Friday” (in mail, chat and plain text).</li>
+  <li>The clean-up answers in the language you dictated. On the <b>Microphone</b> tab you pick one of eight
+    languages or let it be detected; the interface language (German or English) is set there too.</li>
+  <li>Images, files and formatted text in the clipboard survive the dictation.</li>
+  <li>Toggle instead of hold on the <b>Keys</b> tab: press once, talk, press again.</li>
+  <li>“Transcribe File” also writes a subtitle file (<code>.srt</code>).</li>
+  <li>After saving settings, Speech2Anywhere restarts itself at the push of a button.</li>
+  <li>Since 0.5.11: sounds while dictating on the <b>Sound</b> tab.</li>
+</ul>
+"""
+
+
+_GUIDE_HTML_EN = """
+<p>Speech2Anywhere is your local speech-to-text helper. Everything runs on your PC:
+no cloud, no telemetry. Whisper transcribes, a language model (Ollama)
+cleans up.</p>
+
+<h3>1. Dictating (push to talk)</h3>
+<ul>
+  <li>Hold <b>F8</b> in any program.</li>
+  <li>Say what you want to type.</li>
+  <li>Let go of F8: the cleaned-up text appears right where your cursor is.</li>
+</ul>
+<p class="small">Hold for at least ~300 ms, otherwise the
+recording counts as an accidental tap.</p>
+<p>Rather press than hold? On the “Keys” tab of the settings there is
+<b>Toggle</b>: press once to start, press once more to stop.</p>
+<p>At the pointer, the recording indicator shows level and state. If it says
+<b>TOO CLOSE</b>, keep a little distance from the microphone; with <b>NO SIGNAL</b> the
+microphone delivers silence. You choose the style on the “Indicator” tab of the
+settings.</p>
+
+<h3>2. Editing (reworking selected text)</h3>
+<ul>
+  <li>Select text in any app.</li>
+  <li>Hold <b>F9</b> and say a command:
+    “make this formal” / “translate into German” /
+    “sum this up in 3 bullets”.</li>
+  <li>Let go of F9: the selection is replaced by the reworked text.</li>
+</ul>
+<p class="small">F9 uses Ctrl+C in the background.
+If nothing is selected, nothing happens.</p>
+
+<h3>3. Transcribing a file</h3>
+<p>Tray icon (bottom right) → right-click → <b>“Transcribe File…”</b>.
+Choose audio (.wav, .mp3, .m4a, .flac, .ogg, .opus) or video
+(.mp4, .mov, .mkv, .webm). Speech2Anywhere saves the transcript
+as <code>.txt</code> next to the input file, plus an <code>.srt</code> with timestamps
+for subtitles.</p>
+
+<h3>4. Modes &amp; custom dictionary</h3>
+<p>Speech2Anywhere detects which app you are typing in (Outlook → formal
+email, Slack → casual chat, VS Code → code) and cleans up differently for each
+program. Built-in modes:
+<code>email</code>, <code>chat</code>, <code>code</code>,
+<code>terminal</code>, <code>plain</code>, <code>clean</code>
+(filler filter only),
+<code>translate_en</code> (German→English),
+<code>email_formal</code> (formal business style).</p>
+<p>Proper names, brand names and technical terms are often transcribed wrongly
+(“what's app” instead of “WhatsApp”, “power point” instead of “PowerPoint”,
+“java skript” instead of “JavaScript”). Under Settings, “About” tab,
+“Open raw config…” you set a replacement list that corrects the recognized text
+before clean-up:</p>
+<pre>
+whisper:
+  replacements:
+    "what's app": "WhatsApp"
+    "power point": "PowerPoint"
+    "java skript": "JavaScript"
+</pre>
+<p>Only whole words are replaced; longer entries go first.</p>
+
+<h3>5. Learning from corrections</h3>
+<p>If you correct a misrecognized word before you send the text,
+Speech2Anywhere remembers the pair. If it shows up in two dictations, it applies by
+itself; single cases wait under Tray → <b>“Learned Words…”</b> for your
+approval. What you discard there, Speech2Anywhere doesn’t learn again. The messages
+come from chat histories whose folders are listed in the raw config under
+<code>learning.sources</code>. Everything stays local. Learning works for German dictations.</p>
+
+<h3>6. Uncensored model (optional)</h3>
+<p>By default Speech2Anywhere cleans up with <code>gemma4:12b</code>. On the “Clean-up” tab
+of the settings, the <b>“Download…”</b> button next to “Uncensored” optionally loads
+an abliterated model (Qwen3.6 27B, about 17 GB) whose content filters
+are removed (useful when the normal clean-up tones wording down
+or refuses it). Speech2Anywhere checks your video memory first.</p>
+
+<h3>7. Updates</h3>
+<p>At start, Speech2Anywhere automatically checks whether a newer version
+is on GitHub, and then asks. While Speech2Anywhere is running, it checks again every six
+hours; it then reports a new version once in the tray, and the top of the
+tray menu shows “Install update to …”. You can switch this off in the raw config via
+<code>updates.check_on_start</code>; the interval is set by
+<code>updates.check_interval_hours</code>.</p>
+<p>Manually: Tray → <b>“Check for updates…”</b> or Settings → “About” tab →
+update button. If only the program has changed since your version,
+Speech2Anywhere downloads just the program package (a good 1 MB), verifies its checksum, installs it
+after closing briefly and restarts by itself. Otherwise it downloads the whole
+package (stub + splits), verifies the SHA256 hashes and starts the setup wizard.</p>
+<p>Every release is measured with a specific Ollama version and specific versions of the
+clean-up models. If your Ollama is older than the tested one, or you use one of the
+measured models in a different version, Speech2Anywhere reports that once in the tray; under
+<b>“View Ollama recommendation…”</b> you update the Windows Ollama and the model with one button.</p>
+
+<h3>8. Tray &amp; status</h3>
+<p>The tray icon always shows the logo:</p>
+<ul>
+  <li><b>At rest</b>: ready, or Speech2Anywhere is transcribing and cleaning up</li>
+  <li><b>The mouth chatters</b>: recording</li>
+  <li><b>Orange-red dot</b>: error, see “Open Log…”</li>
+</ul>
+
+<h3>Configuration</h3>
+<p>Tray → <b>“Settings…”</b>: tabs Microphone, Clean-up, Keys, Indicator,
+Sound, Learning and About. Rare fields (replacements, modes, initial prompt) via
+“Open raw config…”.</p>
+
+<h3>Logs</h3>
+<p>Tray → <b>“Open Log…”</b>: <code>%LOCALAPPDATA%\\Kira\\speech2anywhere.log</code>.
+For native crashes: <code>speech2anywhere-faulthandler.log</code> next to it.</p>
+"""
+
+
+def _news_html() -> str:
+    return _NEWS_HTML_EN if language() == "en" else _NEWS_HTML
+
+
+def _guide_html() -> str:
+    return _GUIDE_HTML_EN if language() == "en" else _GUIDE_HTML
+
+
 _GUIDE_WIDTH = 550
 
 
@@ -189,11 +332,11 @@ class WelcomeDialog(QDialog):
         self._as_help = as_help
 
         if as_help:
-            self.setWindowTitle("Speech2Anywhere: Anleitung")
-            tab_text, card_title, cta_text = "Anleitung", "So funktioniert Speech2Anywhere", "Schließen"
+            self.setWindowTitle(tr("Speech2Anywhere: Anleitung"))
+            tab_text, card_title, cta_text = tr("Anleitung"), tr("So funktioniert Speech2Anywhere"), tr("Schließen")
         else:
-            self.setWindowTitle("Willkommen bei Speech2Anywhere")
-            tab_text, card_title, cta_text = "Willkommen", "Willkommen bei Speech2Anywhere", "Loslegen"
+            self.setWindowTitle(tr("Willkommen bei Speech2Anywhere"))
+            tab_text, card_title, cta_text = tr("Willkommen"), tr("Willkommen bei Speech2Anywhere"), tr("Loslegen")
 
         icon_path = _ASSETS / "icon-branded.ico"
         if icon_path.exists():
@@ -215,14 +358,15 @@ class WelcomeDialog(QDialog):
         guide.setLineWrapMode(QTextBrowser.LineWrapMode.FixedPixelWidth)
         guide.setLineWrapColumnOrWidth(_GUIDE_WIDTH)
         guide.document().setDefaultStyleSheet(_guide_css())
-        guide.setHtml(_GUIDE_HTML if as_help else _NEWS_HTML.format(version=__version__) + _GUIDE_HTML)
+        with_news = not as_help and welcomed_before()
+        guide.setHtml(_news_html().format(version=__version__) + _guide_html() if with_news else _guide_html())
         card.add_note(guide)
         body.addWidget(card, 1)
 
         left = None
         if not as_help:
             self.cb_dont_show = QCheckBox(
-                f"Bei diesem Update (v{__version__}) nicht erneut zeigen"
+                tr("Bei diesem Update (v{}) nicht erneut zeigen").format(__version__) if with_news else tr("Nicht erneut zeigen")
             )
             self.cb_dont_show.setChecked(True)
             left = self.cb_dont_show
