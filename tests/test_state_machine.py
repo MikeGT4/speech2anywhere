@@ -442,3 +442,49 @@ def test_toggle_without_microphone_arms_no_timer(timers):
     assert app.state == State.ERROR
     from kira.app import MAX_TOGGLE_RECORDING_S
     assert [t for t in timers if t.interval == MAX_TOGGLE_RECORDING_S] == []
+
+
+def _switched_off_app():
+    from kira.app import _StubInjector, _StubTranscriber
+    cfg = Config.model_validate({"styler": {"enabled": False}})
+    styler = _EditAwareStyler(cfg)
+    app = KiraApp(
+        config=cfg, recorder=_QuietRecorder(), transcriber=_StubTranscriber(),
+        styler=styler, injector=_StubInjector(),
+    )
+    return app, styler
+
+
+def test_polish_switched_off_injects_the_recognised_text():
+    app, styler = _switched_off_app()
+    app.on_hotkey_press()
+    app.on_hotkey_release(duration_ms=500)
+    assert app.state == State.IDLE
+    assert styler.polish_calls == []
+    assert app._injector.last == "stub"
+
+
+def test_polish_switched_off_still_edits_with_the_model(monkeypatch):
+    monkeypatch.setattr("kira.app.read_selection", lambda: "hi leute")
+    app, styler = _switched_off_app()
+    app.on_edit_press()
+    app.on_hotkey_release(duration_ms=500)
+    assert styler.edit_calls == [("hi leute", "stub")]
+    assert app._injector.last == "[edited]:hi leute"
+
+
+class _NoCudaTranscriber:
+    def transcribe(self, audio):
+        raise RuntimeError("CUDA failed with error no CUDA-capable device is detected")
+
+
+def test_missing_graphics_card_points_to_the_processor_switch(timers):
+    from kira.app import _StubInjector
+    app = KiraApp(
+        config=Config(), recorder=_QuietRecorder(), transcriber=_NoCudaTranscriber(),
+        styler=_EditingStyler(), injector=_StubInjector(),
+    )
+    app.on_hotkey_press()
+    app.on_hotkey_release(duration_ms=500)
+    assert app.state == State.ERROR
+    assert app.last_error == "Keine NVIDIA-Grafikkarte.|In den Einstellungen auf Prozessor stellen."

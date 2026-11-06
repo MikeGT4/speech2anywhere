@@ -7,7 +7,7 @@
 Speech2Anywhere is a push-to-talk voice-to-text app that runs entirely on your own machine. Whisper turns speech into text, a local language model fixes punctuation, fillers and register for the app you are typing into. No cloud, no account, no subscription.
 
 [![Latest release](https://img.shields.io/github/v/release/MikeGT4/speech2anywhere?label=release)](https://github.com/MikeGT4/speech2anywhere/releases/latest)
-![Windows 11 NVIDIA](https://img.shields.io/badge/Windows%2011-NVIDIA%20GPU-0078d4)
+![Windows 11, NVIDIA GPU or CPU](https://img.shields.io/badge/Windows%2011-NVIDIA%20GPU%20or%20CPU-0078d4)
 ![macOS Apple Silicon](https://img.shields.io/badge/macOS-Apple%20Silicon-black)
 ![100 percent local](https://img.shields.io/badge/100%25-local-2ea44f)
 ![Personal use license](https://img.shields.io/badge/license-personal%20use-lightgrey)
@@ -17,14 +17,16 @@ Speech2Anywhere is a push-to-talk voice-to-text app that runs entirely on your o
 | | Windows 11 (this repository) | macOS (separate build, not in this repository) |
 |---|---|---|
 | Hotkey | hold **F8** or tap it in toggle mode, **F9** for AI edit commands | hold **fn** (Globe key) |
-| Speech to text | faster-whisper, `large-v3` on CUDA | mlx-whisper, `whisper-large-v3-turbo` on the Apple GPU |
-| Text cleanup | Ollama, `gemma4:12b`, uncensored model optional | Ollama, `huihui_ai/qwen3-abliterated:8b` (uncensored) |
-| Hardware | NVIDIA GPU with 12 GB VRAM or more | Apple Silicon (M1 or newer), 16 GB unified memory |
+| Speech to text | faster-whisper, `large-v3` on CUDA or `small` on the processor | mlx-whisper, `whisper-large-v3-turbo` on the Apple GPU |
+| Text cleanup | Ollama, `gemma4:12b` or `gemma4:e4b` depending on video memory, uncensored model optional | Ollama, `huihui_ai/qwen3-abliterated:8b` (uncensored) |
+| Hardware | NVIDIA GPU with about 10 GB of free video memory (14 GB for `gemma4:12b`), or the processor | Apple Silicon (M1 or newer), 16 GB unified memory |
 | Install | installer on the [Releases page](https://github.com/MikeGT4/speech2anywhere/releases/latest) | not published here |
 
 ## What it does
 
 - **Push to talk.** Hold F8, speak, release. A 250 ms pre-roll buffer catches the first word even if you start speaking before the keyboard hook fires. Prefer tapping? Toggle mode in the settings starts with one press and stops with the next; a forgotten recording ends after three minutes.
+- **Graphics card or processor.** The first-run wizard measures graphics card, video memory, cores and RAM and recommends one of the two; switch any time under Settings, Microphone, "Run on". On the processor Speech2Anywhere uses Whisper `small` and `gemma4:e4b`. Measured on a desktop processor with 8 cores: about 0.8 s to recognise a short sentence and about 2.3 s for the cleanup, against 0.4 s and 0.15 s on the graphics card. Not tested on a PC without an NVIDIA driver.
+- **More models from Hugging Face.** The **Hugging Face…** button on the cleanup tab opens the GGUF model search. Enter a name like `hf.co/user/model:Q4_K_M` and saving pulls it through Ollama. Only the gemma4 models are tested.
 - **Context-aware cleanup.** Speech2Anywhere detects the active app (Mail, Slack, Terminal, VS Code, Cursor, Obsidian and more) and rewrites in the right register. The model stays warm for 24 hours, so the first F8 after boot has the same latency as the hundredth.
 - **Edit by voice on F9.** Select text, hold F9, say what to change.
 - **Slips of the tongue are fixed.** "On Tuesday, no, on Friday" becomes "on Friday" in mail, chat and plain text; terminal and code stay literal.
@@ -41,8 +43,8 @@ Speech2Anywhere is a push-to-talk voice-to-text app that runs entirely on your o
 ## Requirements
 
 - Windows 11 (Windows 10 should work, untested)
-- NVIDIA GPU with 12 GB VRAM or more (RTX 4080 or 5080 and up recommended)
-- 25 GB of free disk space: the installer is about 3.5 GB, the first-run wizard pulls roughly 10 GB of models into `%USERPROFILE%\models\` and `%USERPROFILE%\.ollama\`
+- An NVIDIA GPU with about 10 GB of free video memory, about 14 GB for `gemma4:12b`. Without one Speech2Anywhere runs on the processor, slower and with 12 GB of RAM or more
+- 25 GB of free disk space: the installer is about 3.5 GB, the first-run wizard pulls 10 to 13 GB of models into `%USERPROFILE%\models\` and `%USERPROFILE%\.ollama\`
 - A stable internet connection for the first start (one-time model download)
 
 ## Install (end users)
@@ -52,18 +54,18 @@ Download everything from the [latest release](https://github.com/MikeGT4/speech2
 1. Double-click `Kira-Setup-vX.Y.Z.exe`.
 2. If Windows Defender SmartScreen warns: "More info", then "Run anyway". Speech2Anywhere is not code-signed. Verify the download with `certutil -hashfile Kira-Setup-vX.Y.Z.exe SHA256` against `SHA256SUMS.txt` if you want to be sure.
 3. Click through the setup wizard.
-4. On first start a second wizard downloads the models (Whisper large-v3 from Hugging Face, `gemma4:12b` via Ollama). One time only; dictation works offline afterwards.
+4. On first start a second wizard measures your PC, recommends graphics card or processor and downloads the matching models (10 to 13 GB from Hugging Face and the Ollama registry). One time only; dictation works offline afterwards.
 5. Speech2Anywhere starts in the tray with a yellow framed logo. **Hold F8, speak, release.**
 
 Later updates run from the tray menu. If only the program changed since your version, Speech2Anywhere loads just the program package (about 2.6 MB), checks its SHA-256 and restarts itself; otherwise it loads the full setup.
 
 ### Installation (Deutsch)
 
-Alle Dateien der [neuesten Release](https://github.com/MikeGT4/speech2anywhere/releases/latest) in denselben Ordner laden: `Kira-Setup-vX.Y.Z.exe`, die `.bin`-Teile und `SHA256SUMS.txt`. Die `.bin`-Teile müssen neben der `.exe` liegen; die Datei `kira-X.Y.Z-py3-none-any.whl` ist das Programmpaket für Updates aus der App und für eine neue Installation nicht nötig. Doppelklick auf die `.exe`, bei der SmartScreen-Warnung „Weitere Informationen" und „Trotzdem ausführen" (Speech2Anywhere ist nicht signiert). Beim ersten Start lädt ein zweiter Assistent die Modelle, danach funktioniert das Diktieren ohne Internet. Speech2Anywhere erscheint in der Taskleiste: **F8 halten, sprechen, loslassen.**
+Alle Dateien der [neuesten Release](https://github.com/MikeGT4/speech2anywhere/releases/latest) in denselben Ordner laden: `Kira-Setup-vX.Y.Z.exe`, die `.bin`-Teile und `SHA256SUMS.txt`. Die `.bin`-Teile müssen neben der `.exe` liegen; die Datei `kira-X.Y.Z-py3-none-any.whl` ist das Programmpaket für Updates aus der App und für eine neue Installation nicht nötig. Doppelklick auf die `.exe`, bei der SmartScreen-Warnung „Weitere Informationen" und „Trotzdem ausführen" (Speech2Anywhere ist nicht signiert). Beim ersten Start misst ein zweiter Assistent deinen Rechner, empfiehlt Grafikkarte oder Prozessor und lädt die Modelle dazu, danach funktioniert das Diktieren ohne Internet. Speech2Anywhere erscheint in der Taskleiste: **F8 halten, sprechen, loslassen.**
 
 ## Install (developers)
 
-Requirements: Python 3.12 on Windows (`py -3.12 --version`), an NVIDIA driver with CUDA (`nvidia-smi` works), `uv` (`py -3.12 -m pip install uv`), [Ollama for Windows](https://ollama.com/download) (`winget install Ollama.Ollama`) and Git.
+Requirements: Python 3.12 on Windows (`py -3.12 --version`), for the graphics card mode an NVIDIA driver with CUDA (`nvidia-smi` works), `uv` (`py -3.12 -m pip install uv`), [Ollama for Windows](https://ollama.com/download) (`winget install Ollama.Ollama`) and Git.
 
 ```powershell
 git clone https://github.com/MikeGT4/speech2anywhere.git C:\Users\<user>\dev\kira
@@ -87,7 +89,7 @@ ollama pull gemma4:12b
 
 ### Fast mode
 
-Settings, cleanup model: the checkbox **fast mode** switches to `gemma4:e4b`. Use it when the 12B model keeps sliding into CPU offload (`ollama ps` shows a `49/51 CPU/GPU` split). The small model is pulled once when you enable it. Standard cleanup (punctuation, fillers) stays practically identical, F9 edit commands get noticeably weaker, and slips of the tongue are resolved less reliably. Off by default.
+Settings, cleanup model: the checkbox **fast mode** switches to `gemma4:e4b`. Use it when the 12B model keeps sliding into CPU offload (`ollama ps` shows a `49/51 CPU/GPU` split). The small model is pulled once when you enable it. Standard cleanup (punctuation, fillers) stays practically identical, F9 edit commands get noticeably weaker, and slips of the tongue are resolved less reliably. The first-run wizard switches it on when the free video memory is too small for the 12B model.
 
 ### Learning from corrections
 

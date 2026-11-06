@@ -153,7 +153,7 @@ if sys.platform == "win32":
     NAMES = frozenset({
         "Speech2Anywhere", "Sound", "Version", "Deutsch", "English", "Comic", "Manga (Shōnen)", "Halloween", "Phosphor",
         "Gun Barrel", "Log:", "Whisper: ", "Ollama: ", "Gemma: ", "Setup", "Speech2Anywhere Setup",
-        "Speech2Anywhere: Setup", "© 2026 Mike Pollow · Digitalroots", "USB Microphone", "Kubernetes", "Docker",
+        "Speech2Anywhere: Setup", "© 2026 Mike Pollow · Digitalroots", "© 2026 Mike Pollow", "Hugging Face…", "USB Microphone", "Kubernetes", "Docker",
         "kuh bernetes", "doku", "auf kuh bernetes", "mit doku", "f8", "f9",
     })
 
@@ -358,6 +358,25 @@ if sys.platform == "win32":
             assert welcome._GUIDE_HTML.count(tag) == welcome._GUIDE_HTML_EN.count(tag), tag
         assert welcome._NEWS_HTML.count("{version}") == welcome._NEWS_HTML_EN.count("{version}") == 1
 
+    def test_compute_help_shows_no_german_in_english(qtbot, english):
+        from PyQt6.QtWidgets import QTextBrowser
+        from kira.ui.compute_help_dialog import ComputeHelpDialog
+        dialog = ComputeHelpDialog()
+        qtbot.addWidget(dialog)
+        assert _german_left(_visible_texts(dialog)) == []
+        text = dialog.findChild(QTextBrowser).toPlainText()
+        assert "Processor (CPU)" in text
+        assert "Prozessor" not in text
+
+    def test_compute_help_stays_german_in_german(qtbot):
+        from kira.ui import compute_help_dialog
+        assert compute_help_dialog.help_html() is compute_help_dialog._HELP_HTML
+
+    def test_both_compute_helps_have_the_same_shape():
+        from kira.ui import compute_help_dialog as help_module
+        for tag in ("<h3>", "<li>", "<b>", "<br>"):
+            assert help_module._HELP_HTML.count(tag) == help_module._HELP_HTML_EN.count(tag), tag
+
     def test_about_shows_no_german_in_english(qtbot, english):
         from kira.ui.about_dialog import AboutDialog
         dialog = AboutDialog()
@@ -377,6 +396,18 @@ if sys.platform == "win32":
         wizard = SetupWizard(tmp_path / "whisper", tmp_path / "OllamaSetup.exe")
         qtbot.addWidget(wizard)
         assert _german_left(_visible_texts(wizard)) == []
+
+    def test_measure_page_shows_no_german_in_english(qtbot, english):
+        from kira.hardware import Measurement
+        from kira.setup_wizard import HardwarePage
+        for measured in (Measurement("NVIDIA GeForce RTX 4070", 12282, 700, 16, 8.0), Measurement(None, 0, 0, 8, 8.0)):
+            page = HardwarePage(measure=lambda measured=measured: measured)
+            page.MIN_SHOW_S = 0
+            qtbot.addWidget(page)
+            page.start_measuring()
+            qtbot.waitUntil(page.isComplete, timeout=5000)
+            assert _german_left(_visible_texts(page)) == []
+            assert "Recommendation:" in page._result.text()
 
     def test_learned_words_show_no_german_in_english(qtbot, tmp_path, english):
         from kira.ui.learned_words_dialog import LearnedWordsDialog

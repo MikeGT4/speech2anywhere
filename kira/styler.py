@@ -181,12 +181,21 @@ class Styler:
     def warmup_succeeded(self) -> bool:
         return self._warmup_succeeded
 
+    @property
+    def cpu_mode(self) -> bool:
+        return self._config.whisper.device == "cpu"
+
+    def _options(self, **options) -> dict:
+        if self.cpu_mode:
+            options["num_gpu"] = 0
+        return options
+
     def _resolve_model(self, mode: str | None = None) -> str:
         if mode is not None:
             mode_cfg = self._config.styler.modes.get(mode, ModeConfig())
             if mode_cfg.model:
                 return mode_cfg.model
-        if self._config.styler.fast_mode or self._is_force_fast_active():
+        if self.cpu_mode or self._config.styler.fast_mode or self._is_force_fast_active():
             return self._config.styler.fast_model
         return self._config.styler.model
 
@@ -236,6 +245,8 @@ class Styler:
         return int(entry.size) > 0 and int(entry.size_vram) >= int(entry.size)
 
     async def _observe_polish_duration(self, duration: float) -> None:
+        if self.cpu_mode:
+            return
         if duration <= SLOW_POLISH_THRESHOLD_SEC:
             self._slow_polish_count = 0
             return
@@ -270,10 +281,7 @@ class Styler:
                 self._client.chat(
                     model=model,
                     messages=[{"role": "user", "content": "ok"}],
-                    options={
-                        "temperature": 0.0,
-                        "num_predict": 1,
-                    },
+                    options=self._options(temperature=0.0, num_predict=1),
                     keep_alive=keep_alive,
                     **_thinking_kwargs(model),
                 ),
@@ -307,6 +315,9 @@ class Styler:
 
     async def verify_gpu_placement(self) -> str | None:
         model = self._resolve_model(None)
+        if self.cpu_mode:
+            log.info("Polish-Modell %s rechnet im Prozessor-Modus auf der CPU", model)
+            return "cpu"
         try:
             resp = await self._client.ps()
         except Exception as exc:
@@ -403,9 +414,7 @@ class Styler:
                 self._client.chat(
                     model=model,
                     messages=[{"role": "user", "content": prompt}],
-                    options={
-                        "temperature": temperature,
-                    },
+                    options=self._options(temperature=temperature),
                     keep_alive=self._keep_alive_for(model),
                     **_thinking_kwargs(model),
                 ),
@@ -471,9 +480,7 @@ class Styler:
                 self._client.chat(
                     model=model,
                     messages=[{"role": "user", "content": prompt}],
-                    options={
-                        "temperature": temperature,
-                    },
+                    options=self._options(temperature=temperature),
                     keep_alive=self._keep_alive_for(model),
                     **_thinking_kwargs(model),
                 ),

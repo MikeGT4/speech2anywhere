@@ -11,25 +11,30 @@ import threading
 import time
 import urllib.error
 import urllib.request
+from dataclasses import dataclass
 from pathlib import Path
 
-from PyQt6.QtCore import QSize, Qt, QThread, pyqtSignal
+from PyQt6.QtCore import QSize, Qt, QThread, QTimer, pyqtSignal
 from PyQt6.QtGui import QColor, QFont, QPainter, QPixmap
 from PyQt6.QtWidgets import (
+    QHBoxLayout,
     QLabel,
     QMessageBox,
     QProgressBar,
+    QPushButton,
+    QRadioButton,
     QTextEdit,
     QVBoxLayout,
     QWizard,
     QWizardPage,
 )
 
-from kira import ollama_pull, progress as prog
+from kira import hardware, ollama_pull, progress as prog
 from kira.firstrun import mark_first_run_complete
 from kira.ui import _comic as comic
 from kira.ui._dialog_style import apply_light_theme
 from kira.ui._progress_view import ProgressView
+from kira.ui.measure_animation import MeasureAnimation
 from kira.texte import tr
 
 log = logging.getLogger(__name__)
@@ -441,16 +446,191 @@ class WelcomePage(QWizardPage):
 
         intro = QLabel(
             tr(
-                "Speech2Anywhere braucht beim ersten Start zwei Modelle:\n\n"
-                "  - Whisper (Spracherkennung, ~3 GB)\n"
-                "  - Gemma (Text-Polish, ~8 GB)\n\n"
-                "Zusammen ca. 11 GB Download. Internet erforderlich, einmalig.\n\n"
+                "Speech2Anywhere misst zuerst deinen Rechner und lädt dann die passenden Modelle:\n\n"
+                "  - mit Grafikkarte: Whisper large-v3 (~3 GB) und gemma4:12b (~8 GB)\n"
+                "  - mit kleinerer Grafikkarte: Whisper large-v3 (~3 GB) und gemma4:e4b (~10 GB)\n"
+                "  - mit Prozessor: Whisper small (~0,5 GB) und gemma4:e4b (~10 GB)\n\n"
+                "Zusammen sind das rund 10 bis 13 GB.\n"
+                "Für das einmalige Einrichten ist das Internet erforderlich.\n\n"
                 "Klicke auf »Weiter«, um fortzufahren."
             )
         )
         intro.setWordWrap(True)
         layout.addWidget(intro)
         layout.addStretch(1)
+
+
+@dataclass(frozen=True)
+class SetupChoice:
+    device: str
+    fast_mode: bool
+
+    def whisper_repo(self) -> str:
+        return hardware.CPU_WHISPER_REPO if self.device == "cpu" else DEFAULT_WHISPER_REPO
+
+    def whisper_target(self, gpu_target: Path) -> Path:
+        return hardware.cpu_whisper_dir() if self.device == "cpu" else gpu_target
+
+    def polish_model(self) -> str:
+        return hardware.FAST_MODEL if self.device == "cpu" or self.fast_mode else DEFAULT_GEMMA_TAG
+
+
+class _MeasureWorker(QThread):
+    measured = pyqtSignal(object)
+
+    def __init__(self, measure, parent=None) -> None:
+        super().__init__(parent)
+        self._measure = measure
+
+    def run(self) -> None:
+        try:
+            result = self._measure()
+        except Exception:
+            log.exception("Messung des Rechners fehlgeschlagen")
+            result = hardware.Measurement(None, 0, 0, os.cpu_count() or 1, 0.0)
+        self.measured.emit(result)
+
+
+class HardwarePage(QWizardPage):
+    MIN_SHOW_S = 2.0
+
+    def __init__(self, measure=None, parent=None) -> None:
+        super().__init__(parent)
+        self.setTitle(tr("Dein Rechner"))
+        self.setSubTitle(tr("Speech2Anywhere misst deinen Rechner und empfiehlt Prozessor oder Grafikkarte."))
+        self._measure = measure or hardware.measure
+        self._worker: _MeasureWorker | None = None
+        self._measured: hardware.Measurement | None = None
+        self._recommendation: hardware.Recommendation | None = None
+        self._fixed: SetupChoice | None = None
+        self._began = 0.0
+
+        layout = QVBoxLayout(self)
+        hint = QLabel(
+            tr(
+                "Schließe für die Messung bitte Programme, die Prozessor oder Grafikkarte stark beanspruchen, "
+                "etwa Spiele oder Videoschnitt.\n"
+                "So passt die Empfehlung zu deinem Rechner."
+            )
+        )
+        hint.setWordWrap(True)
+        layout.addWidget(hint)
+        row = QHBoxLayout()
+        self._start = QPushButton(tr("Messung starten"))
+        self._start.setObjectName("comicPrimary")
+        self._start.clicked.connect(self.start_measuring)
+        row.addWidget(self._start)
+        row.addStretch(1)
+        layout.addLayout(row)
+        self._animation = MeasureAnimation(self)
+        layout.addWidget(self._animation)
+        self._result = QLabel("")
+        self._result.setWordWrap(True)
+        layout.addWidget(self._result)
+        self._gpu = QRadioButton(tr("Grafikkarte (GPU)"))
+        self._cpu = QRadioButton(tr("Prozessor (CPU)"))
+        choices = QHBoxLayout()
+        choices.setSpacing(24)
+        for button in (self._gpu, self._cpu):
+            button.setVisible(False)
+            choices.addWidget(button)
+        choices.addStretch(1)
+        layout.addLayout(choices)
+        layout.addStretch(1)
+
+    def isComplete(self) -> bool:  # noqa: N802 - Qt API
+        return self._measured is not None
+
+    def start_measuring(self) -> None:
+        self._start.setEnabled(False)
+        self._measured = None
+        self._fixed = None
+        self.completeChanged.emit()
+        self._result.setText("")
+        for button in (self._gpu, self._cpu):
+            button.setVisible(False)
+        self._animation.start()
+        self._began = time.monotonic()
+        self._worker = _MeasureWorker(self._measure, self)
+        self._worker.measured.connect(self._finish)
+        self._worker.start()
+
+    def _finish(self, measured: hardware.Measurement) -> None:
+        wait_ms = round(max(0.0, self.MIN_SHOW_S - (time.monotonic() - self._began)) * 1000)
+        QTimer.singleShot(wait_ms, lambda: self._show(measured))
+
+    def _show(self, measured: hardware.Measurement) -> None:
+        self._animation.stop()
+        self._measured = measured
+        recommendation = hardware.recommend(measured)
+        self._recommendation = recommendation
+        if measured.gpu_name is not None:
+            card = tr("Grafikkarte: {}, {} GB, davon frei {} GB").format(
+                measured.gpu_name, hardware._gb(measured.vram_total_mib), hardware._gb(measured.vram_free_mib)
+            )
+        else:
+            card = tr("Grafikkarte: keine NVIDIA-Karte gefunden")
+        if measured.ram_total_gb > 0:
+            machine = tr("Prozessor: {} logische Kerne, Arbeitsspeicher: {} GB").format(
+                measured.cpu_threads, f"{measured.ram_total_gb:.0f}"
+            )
+        else:
+            machine = tr("Prozessor: {} logische Kerne").format(measured.cpu_threads)
+        advice = tr("Empfehlung: Grafikkarte") if recommendation.device == "gpu" else tr("Empfehlung: Prozessor")
+        lines = [card, machine, advice, recommendation.reason]
+        self._result.setText("\n".join(lines))
+        self._gpu.setEnabled(measured.gpu_name is not None)
+        self._gpu.setChecked(recommendation.device == "gpu")
+        self._cpu.setChecked(recommendation.device == "cpu")
+        for button in (self._gpu, self._cpu):
+            button.setVisible(True)
+        self._start.setText(tr("Erneut messen"))
+        self._start.setEnabled(True)
+        self.completeChanged.emit()
+
+    def validatePage(self) -> bool:  # noqa: N802 - Qt API
+        self._fixed = self._current_choice()
+        return True
+
+    def stop_measuring(self) -> None:
+        if self._worker is not None and self._worker.isRunning():
+            self._worker.wait(15000)
+
+    def choice(self) -> SetupChoice:
+        return self._fixed or self._current_choice()
+
+    def _current_choice(self) -> SetupChoice:
+        if self._recommendation is None:
+            return SetupChoice("gpu", False)
+        if not self._gpu.isChecked():
+            return SetupChoice("cpu", False)
+        return SetupChoice("gpu", self._recommendation.fast_mode or self._recommendation.device == "cpu")
+
+
+def apply_setup_choice(cfg, choice: SetupChoice, path: Path | None = None, gpu_target: Path | None = None) -> bool:
+    from kira.config import default_config_path
+    from kira.config_writer import update_scalars
+    from kira.ui.settings_dialog import _MINIMAL_CONFIG
+    target = path or default_config_path()
+    updates = {"whisper.device": choice.device, "styler.fast_mode": choice.fast_mode}
+    if choice.device == "cpu":
+        updates["whisper.cpu_model"] = hardware.cpu_whisper_dir().as_posix()
+    else:
+        updates["styler.model"] = DEFAULT_GEMMA_TAG
+        if gpu_target is not None:
+            updates["whisper.model"] = Path(gpu_target).as_posix()
+    for key, value in updates.items():
+        section, name = key.split(".")
+        setattr(getattr(cfg, section), name, value)
+    log.info("Einrichtung: rechnet auf %s, schnelles Modell %s", choice.device, choice.fast_mode)
+    try:
+        current = target.read_text(encoding="utf-8") if target.exists() else _MINIMAL_CONFIG
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(update_scalars(current, updates), encoding="utf-8")
+    except Exception:
+        log.exception("Wahl der Einrichtung nicht gespeichert")
+        return False
+    return True
 
 
 class DownloadPage(QWizardPage):
@@ -512,6 +692,10 @@ class DownloadPage(QWizardPage):
     def isComplete(self) -> bool:  # noqa: N802 - Qt API
         return self._whisper_done and self._ollama_done and self._gemma_done
 
+    def _choice(self) -> SetupChoice:
+        getter = getattr(self.wizard(), "choice", None)
+        return getter() if callable(getter) else SetupChoice("gpu", False)
+
     def initializePage(self) -> None:
         with self._abort_lock:
             self._pipeline_aborted = False
@@ -524,8 +708,10 @@ class DownloadPage(QWizardPage):
         self._ollama_view.busy(prog.STARTING)
         self._gemma_view.idle(tr("wartet auf Ollama …"))
 
+        choice = self._choice()
         self._whisper_worker = WhisperDownloadWorker(
-            target_dir=self._whisper_target,
+            target_dir=choice.whisper_target(self._whisper_target),
+            repo_id=choice.whisper_repo(),
         )
         self._whisper_worker.status.connect(self._on_whisper_status)
         self._whisper_worker.progress.connect(self._on_whisper_progress)
@@ -588,7 +774,7 @@ class DownloadPage(QWizardPage):
         self._gemma_view.busy(prog.STARTING)
         ollama_exe = find_ollama_exe()
         self._gemma_worker = GemmaPullWorker(
-            model_tag=DEFAULT_GEMMA_TAG,
+            model_tag=self._choice().polish_model(),
             ollama_exe=ollama_exe,
         )
         self._gemma_worker.status.connect(self._on_gemma_status)
@@ -705,6 +891,23 @@ class FinishedPage(QWizardPage):
 _WIZARD_SIZE = QSize(720, 540)
 
 
+class _CreditHolder(QPushButton):
+    def __init__(self) -> None:
+        super().__init__()
+        self.setFlat(True)
+        self.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.setStyleSheet("QPushButton { border: none; background: transparent; padding: 0; margin: 0; }")
+        lay = QHBoxLayout(self)
+        lay.setContentsMargins(0, 0, 0, 0)
+        lay.addWidget(comic.credit_row())
+
+    def sizeHint(self) -> QSize:  # noqa: N802
+        return self.layout().sizeHint()
+
+    def minimumSizeHint(self) -> QSize:  # noqa: N802
+        return self.sizeHint()
+
+
 class SetupWizard(QWizard):
     def __init__(
         self,
@@ -723,8 +926,11 @@ class SetupWizard(QWizard):
         self.setFixedSize(_WIZARD_SIZE)
 
         self.addPage(WelcomePage(self))
+        self._hardware = HardwarePage(parent=self)
+        self.addPage(self._hardware)
         self.addPage(DownloadPage(whisper_target, ollama_installer, self))
         self.addPage(FinishedPage(self))
+        self._add_credit()
         self._comic_look()
 
     def _comic_look(self) -> None:
@@ -764,10 +970,26 @@ class SetupWizard(QWizard):
             )
         self.setStyleSheet(self.styleSheet())
 
+    def choice(self) -> SetupChoice:
+        return self._hardware.choice()
+
+    def _add_credit(self) -> None:
+        holder = _CreditHolder()
+        self.setOption(QWizard.WizardOption.HaveCustomButton1, True)
+        self.setButton(QWizard.WizardButton.CustomButton1, holder)
+        self.setButtonLayout([
+            QWizard.WizardButton.CustomButton1, QWizard.WizardButton.Stretch, QWizard.WizardButton.BackButton,
+            QWizard.WizardButton.NextButton, QWizard.WizardButton.CommitButton, QWizard.WizardButton.FinishButton,
+            QWizard.WizardButton.CancelButton,
+        ])
+
     def _cleanup_running_workers(self) -> None:
-        page = self.page(1)
-        if isinstance(page, DownloadPage):
-            page.cleanupPage()
+        for page_id in self.pageIds():
+            page = self.page(page_id)
+            if isinstance(page, DownloadPage):
+                page.cleanupPage()
+            elif isinstance(page, HardwarePage):
+                page.stop_measuring()
 
     def closeEvent(self, event) -> None:  # noqa: N802 - Qt override
         self._cleanup_running_workers()

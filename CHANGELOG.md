@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.6.1 (06.11.2026)
+
+- Ohne große Grafikkarte: „Rechnen auf“ im Reiter „Mikrofon“ stellt Erkennung und Politur auf den Prozessor (Whisper small und gemma4:e4b), mit Hilfeseite zu Downloads und gemessenen Zeiten
+- Die Ersteinrichtung misst Grafikkarte, Grafikspeicher, Kerne und Arbeitsspeicher, empfiehlt Prozessor oder Grafikkarte und lädt nur die Modelle dazu
+- Reiter „Politur“: Der Knopf „Hugging Face…“ führt zu weiteren Modellen; Speichern lädt ein neu eingetragenes Modell, bevor es gilt
+- Schrift, Knöpfe und Eingabefelder der Fenster zeichnen bei 100 % Skalierung glatt; das Tray-Menü zeigt den Zustand als Punkt (grün bereit, gelb bei der Arbeit, rot bei einem Fehler)
+- Die Prüfung des Grafikspeichers rechnet mit gemessenen Werten (Whisper large-v3 4,2 GB, gemma4:12b 8,6 GB, gemma4:e4b 4,5 GB)
+- Die Auswahl in der Ersteinrichtung ist im Windows-Dunkelmodus lesbar
+- Von 0.5.5 bis 0.6.0 aus lädt das Update in der App nur das Programmpaket
+
 ## 0.6.0 (05.11.2026)
 
 - Versprecher: Wer sich im Satz verbessert („am Dienstag, nein, am Freitag“), bekommt nur das Richtige; gilt in Mail, Chat und Fließtext, nicht im Terminal

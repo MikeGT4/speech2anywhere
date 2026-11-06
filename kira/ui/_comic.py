@@ -10,12 +10,13 @@ from PIL import Image
 from PIL.ImageQt import ImageQt
 from PyQt6.QtCore import QEasingCurve, QEvent, QObject, QPointF, QRectF, QSize, Qt, QUrl, QVariantAnimation
 from PyQt6.QtGui import (
-    QColor, QDesktopServices, QFont, QFontDatabase, QFontMetrics, QIcon, QPainter, QPainterPath, QPen, QPixmap, QPolygonF,
+    QColor, QDesktopServices, QFont, QFontDatabase, QFontMetrics, QFontMetricsF, QIcon, QPainter, QPainterPath, QPalette,
+    QPen, QPixmap, QPolygonF,
 )
 from PyQt6.QtSvg import QSvgRenderer
 from PyQt6.QtWidgets import (
-    QAbstractButton, QButtonGroup, QComboBox, QHBoxLayout, QLabel, QMenu, QProxyStyle, QSizePolicy, QSlider, QStyle,
-    QStyledItemDelegate, QVBoxLayout, QWidget, QWidgetAction,
+    QAbstractButton, QAbstractSpinBox, QApplication, QButtonGroup, QComboBox, QHBoxLayout, QLabel, QLineEdit, QMenu,
+    QProxyStyle, QPushButton, QSizePolicy, QSlider, QStyle, QStyledItemDelegate, QVBoxLayout, QWidget, QWidgetAction,
 )
 
 from kira._resources import assets_dir
@@ -160,6 +161,19 @@ class _LogoLink(QLabel):
         super().keyPressEvent(event)
 
 
+def credit_row() -> QWidget:
+    credit = QWidget()
+    row = QHBoxLayout(credit)
+    row.setContentsMargins(0, 0, 0, 0)
+    row.setSpacing(8)
+    note = QLabel("© 2026 Mike Pollow")
+    note.setObjectName("comicNote")
+    note.setStyleSheet(f"color: {LABEL}; font-family: 'Segoe UI'; font-size: 13px; font-weight: 400;")
+    row.addWidget(note)
+    row.addWidget(brand_logo(16))
+    return credit
+
+
 def brand_logo(height: int) -> QLabel:
     label = _LogoLink()
     try:
@@ -218,8 +232,8 @@ def dialog_qss() -> str:
     chevron = (assets_dir() / "ui" / "chevron-down.svg").as_posix()
     check = (assets_dir() / "ui" / "check.svg").as_posix()
     field = f"""
-        background: #FFFFFF; color: {INK};
-        border: 2px solid {INK}; border-bottom: 5px solid {INK}; border-radius: 12px;
+        background: transparent; color: {INK};
+        border: 2px solid transparent; border-bottom: 5px solid transparent; border-radius: 12px;
         padding: 0 14px; min-height: 36px;
         font-family: "Segoe UI"; font-size: 16px;
         selection-background-color: {YELLOW}; selection-color: {INK};
@@ -240,11 +254,8 @@ def dialog_qss() -> str:
             padding: 6px 8px; font-family: "Segoe UI"; font-size: 13px;
         }}
         QComboBox, QLineEdit, QAbstractSpinBox {{ {field} }}
-        QComboBox:hover, QLineEdit:hover, QAbstractSpinBox:hover {{ background: {HOVER}; }}
-        QComboBox:focus, QLineEdit:focus, QAbstractSpinBox:focus {{ background: #FFFDF2; border-color: {INK}; }}
-        QComboBox:disabled, QLineEdit:disabled, QAbstractSpinBox:disabled {{
-            color: #9A9486; border-color: #B8B2A4; background: #F4F0E4;
-        }}
+        QComboBox:hover, QLineEdit:hover, QAbstractSpinBox:hover {{ background: transparent; }}
+        QComboBox:disabled, QLineEdit:disabled, QAbstractSpinBox:disabled {{ color: #9A9486; }}
         QComboBox::drop-down {{
             subcontrol-origin: padding; subcontrol-position: center right; width: 34px; border: none;
         }}
@@ -260,9 +271,9 @@ def dialog_qss() -> str:
         QAbstractSpinBox::up-button, QAbstractSpinBox::down-button {{ width: 0; border: none; }}
         QLineEdit#comicKey {{ font-family: "{fam[800]}"; font-size: 17px; font-weight: 800; padding: 0 10px; }}
         QDoubleSpinBox#comicChip {{
-            background: {TINT}; border-radius: 14px; padding: 0 8px; font-size: 18px;
+            background: transparent; border-radius: 14px; padding: 0 8px; font-size: 18px;
         }}
-        QDoubleSpinBox#comicChip:hover {{ background: #FFEDAE; }}
+        QDoubleSpinBox#comicChip:hover {{ background: transparent; }}
         QPushButton {{
             background: #FFFFFF; color: {INK};
             border: 2px solid {INK}; border-bottom: 5px solid {INK}; border-radius: 12px;
@@ -288,6 +299,17 @@ def dialog_qss() -> str:
         }}
         QCheckBox::indicator:hover {{ background: {HOVER}; }}
         QCheckBox::indicator:checked {{ background: {YELLOW}; image: url("{check}"); }}
+        QRadioButton {{ color: {INK}; font-family: "Segoe UI"; font-size: 14px; spacing: 10px; }}
+        QRadioButton::indicator {{
+            width: 18px; height: 18px; border: 2px solid {INK}; border-radius: 11px; background: #FFFFFF;
+        }}
+        QRadioButton::indicator:hover {{ background: {HOVER}; }}
+        QRadioButton::indicator:checked {{
+            background: qradialgradient(cx: 0.5, cy: 0.5, radius: 0.5, fx: 0.5, fy: 0.5,
+                stop: 0 {INK}, stop: 0.4 {INK}, stop: 0.5 {YELLOW}, stop: 1 {YELLOW});
+        }}
+        QRadioButton:disabled {{ color: #9A9486; }}
+        QRadioButton::indicator:disabled {{ border-color: #B8B2A4; background: #F4F0E4; }}
         QProgressBar {{
             background: {TRACK}; border: 2px solid {INK}; border-radius: 8px;
             min-height: 12px; max-height: 12px; color: transparent;
@@ -344,6 +366,179 @@ def _rounded_path(rect: QRectF, tl: float, tr: float, br: float, bl: float) -> Q
     return path
 
 
+def text_path(
+    font: QFont, rect: QRectF, text: str, align: Qt.AlignmentFlag = Qt.AlignmentFlag.AlignCenter, dpr: float = 1.0,
+) -> QPainterPath:
+    metrics = QFontMetricsF(font)
+    height = metrics.ascent() + metrics.descent()
+    if align & Qt.AlignmentFlag.AlignTop:
+        top = rect.top()
+    elif align & Qt.AlignmentFlag.AlignBottom:
+        top = rect.bottom() - height
+    else:
+        top = rect.top() + (rect.height() - height) / 2
+    path = QPainterPath()
+    path.addText(QPointF(0, round((top + metrics.ascent()) * dpr) / dpr), font, text)
+    box = path.boundingRect()
+    if align & Qt.AlignmentFlag.AlignHCenter:
+        x = rect.left() + (rect.width() - box.width()) / 2 - box.left()
+    elif align & Qt.AlignmentFlag.AlignRight:
+        x = rect.right() - box.right()
+    else:
+        x = rect.left()
+    path.translate(x, 0)
+    return path
+
+
+def button_label(text: str) -> str:
+    return text.replace("&&", "\0").replace("&", "").replace("\0", "&")
+
+
+class InkLabel(QLabel):
+    def paintEvent(self, event) -> None:  # noqa: N802
+        p = QPainter(self)
+        p.setRenderHint(QPainter.RenderHint.Antialiasing)
+        group = QPalette.ColorGroup.Active if self.isEnabled() else QPalette.ColorGroup.Disabled
+        margin = self.margin()
+        rect = QRectF(self.contentsRect()).adjusted(margin, margin, -margin, -margin)
+        p.fillPath(
+            text_path(self.font(), rect, self.text(), self.alignment(), self.devicePixelRatioF()),
+            self.palette().color(group, self.foregroundRole()),
+        )
+        p.end()
+
+
+_INK_WINDOW = "comicInk"
+_INK_EVENTS = frozenset((QEvent.Type.Paint, QEvent.Type.FocusIn, QEvent.Type.FocusOut))
+_KEYBOARD_REASONS = (Qt.FocusReason.TabFocusReason, Qt.FocusReason.BacktabFocusReason)
+
+
+def _button_face(rect: QRectF, radius: float, bottom_ry: float) -> QPainterPath:
+    x0, y0, x1, y1, r = rect.left(), rect.top(), rect.right(), rect.bottom(), radius
+    path = QPainterPath()
+    path.moveTo(x0 + r, y0)
+    path.lineTo(x1 - r, y0)
+    path.arcTo(QRectF(x1 - 2 * r, y0, 2 * r, 2 * r), 90, -90)
+    path.lineTo(x1, y1 - bottom_ry)
+    path.arcTo(QRectF(x1 - 2 * r, y1 - 2 * bottom_ry, 2 * r, 2 * bottom_ry), 0, -90)
+    path.lineTo(x0 + r, y1)
+    path.arcTo(QRectF(x0, y1 - 2 * bottom_ry, 2 * r, 2 * bottom_ry), 270, -90)
+    path.lineTo(x0, y0 + r)
+    path.arcTo(QRectF(x0, y0, 2 * r, 2 * r), 180, -90)
+    path.closeSubpath()
+    return path
+
+
+def _button_face_color(button: QPushButton) -> str:
+    enabled = button.isEnabled()
+    hovered = enabled and button.underMouse()
+    if button.objectName() == "comicPrimary":
+        if not enabled:
+            return "#F4F0E4"
+        return YELLOW_HOVER if hovered else YELLOW
+    if enabled and button.hasFocus():
+        return "#FFFDF2"
+    return HOVER if hovered else "#FFFFFF"
+
+
+def paint_button(button: QPushButton) -> None:
+    enabled = button.isEnabled()
+    down = button.isDown()
+    bottom = 2.0 if down else 5.0
+    rect = QRectF(button.rect())
+    face = rect.adjusted(2, 2, -2, -bottom)
+    p = QPainter(button)
+    p.setRenderHint(QPainter.RenderHint.Antialiasing)
+    outline = QPainterPath()
+    outline.addRoundedRect(rect, 12, 12)
+    p.fillPath(outline, QColor(INK if enabled else "#B8B2A4"))
+    p.fillPath(_button_face(face, 10, 12 - bottom), QColor(_button_face_color(button)))
+    if button.hasFocus() and button.property("comicKeyFocus"):
+        p.setBrush(Qt.BrushStyle.NoBrush)
+        p.setPen(QPen(QColor(INK), 2, Qt.PenStyle.DashLine))
+        p.drawPath(_button_face(face.adjusted(3, 3, -3, -3), 7, 9 - bottom))
+    box = face.adjusted(16, 8 if down else 5, -16, -3)
+    p.fillPath(
+        text_path(button.font(), box, button_label(button.text()), dpr=button.devicePixelRatioF()),
+        QColor(INK if enabled else "#9A9486"),
+    )
+    p.end()
+
+
+def _field_face_color(field: QWidget) -> str:
+    hovered = field.isEnabled() and field.underMouse()
+    if field.objectName() == "comicChip":
+        return "#FFEDAE" if hovered else TINT
+    if not field.isEnabled():
+        return "#F4F0E4"
+    if field.hasFocus():
+        return "#FFFDF2"
+    return HOVER if hovered else "#FFFFFF"
+
+
+def paint_field(field: QWidget) -> None:
+    radius = 14.0 if field.objectName() == "comicChip" else 12.0
+    rect = QRectF(field.rect())
+    p = QPainter(field)
+    p.setRenderHint(QPainter.RenderHint.Antialiasing)
+    outline = QPainterPath()
+    outline.addRoundedRect(rect, radius, radius)
+    p.fillPath(outline, QColor(INK if field.isEnabled() else "#B8B2A4"))
+    p.fillPath(_button_face(rect.adjusted(2, 2, -2, -5), radius - 2, radius - 5), QColor(_field_face_color(field)))
+    p.end()
+
+
+_FIELD_TYPES = (QLineEdit, QComboBox, QAbstractSpinBox)
+
+
+def _paints_field(field: QWidget) -> bool:
+    return bool(field.window().property(_INK_WINDOW)) and not isinstance(
+        field.parentWidget(), (QComboBox, QAbstractSpinBox),
+    )
+
+
+def _paints_button(button: QPushButton) -> bool:
+    return (
+        bool(button.window().property(_INK_WINDOW))
+        and not button.isFlat()
+        and button.objectName() != "comicLink"
+        and button.icon().isNull()
+        and button.menu() is None
+        and not button.styleSheet()
+    )
+
+
+class _InkPainter(QObject):
+    def eventFilter(self, obj, event) -> bool:  # noqa: N802
+        kind = event.type()
+        if kind not in _INK_EVENTS:
+            return False
+        if type(obj) is not QPushButton:
+            if kind == QEvent.Type.Paint and isinstance(obj, _FIELD_TYPES) and _paints_field(obj):
+                paint_field(obj)
+            return False
+        if kind == QEvent.Type.Paint:
+            if _paints_button(obj):
+                paint_button(obj)
+                return True
+            return False
+        obj.setProperty(
+            "comicKeyFocus",
+            kind == QEvent.Type.FocusIn and event.reason() in _KEYBOARD_REASONS
+            and obj.window().testAttribute(Qt.WidgetAttribute.WA_KeyboardFocusChange),
+        )
+        return False
+
+
+def ink_buttons(window: QWidget) -> None:
+    window.setProperty(_INK_WINDOW, True)
+    app = QApplication.instance()
+    if app is not None and app.findChild(_InkPainter, "comicInkPainter") is None:
+        painter = _InkPainter(app)
+        painter.setObjectName("comicInkPainter")
+        app.installEventFilter(painter)
+
+
 class DarkHeader(QWidget):
     LINE = 4
 
@@ -393,12 +588,23 @@ class BubbleTab(QAbstractButton):
         self.setCheckable(True)
         self.setFont(baloo(700, 16))
         self.setCursor(Qt.CursorShape.PointingHandCursor)
-        self.setFocusPolicy(Qt.FocusPolicy.TabFocus)
+        self.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
         self.setAttribute(Qt.WidgetAttribute.WA_Hover)
+        self._keyboard_focus = False
 
     def sizeHint(self) -> QSize:  # noqa: N802
         width = QFontMetrics(self.font()).horizontalAdvance(self.text()) + 46
         return QSize(width, self.LIFT + self.PILL + self.TAIL)
+
+    def focusInEvent(self, event) -> None:  # noqa: N802
+        self._keyboard_focus = event.reason() in (
+            Qt.FocusReason.TabFocusReason, Qt.FocusReason.BacktabFocusReason,
+        ) and self.window().testAttribute(Qt.WidgetAttribute.WA_KeyboardFocusChange)
+        super().focusInEvent(event)
+
+    def focusOutEvent(self, event) -> None:  # noqa: N802
+        self._keyboard_focus = False
+        super().focusOutEvent(event)
 
     def paintEvent(self, event) -> None:  # noqa: N802
         p = QPainter(self)
@@ -433,13 +639,11 @@ class BubbleTab(QAbstractButton):
             p.setPen(QPen(border, 3))
             p.drawRoundedRect(pill.adjusted(1.5, 1.5, -1.5, -1.5), 19, 19)
             text_color = QColor("#FFFFFF")
-        if self.hasFocus():
+        if self.hasFocus() and self._keyboard_focus:
             p.setBrush(Qt.BrushStyle.NoBrush)
-            p.setPen(QPen(QColor(YELLOW), 2, Qt.PenStyle.DashLine))
+            p.setPen(QPen(QColor(INK if self.isChecked() else YELLOW), 2, Qt.PenStyle.DashLine))
             p.drawRoundedRect(pill.adjusted(4, 4, -4, -4), 15, 15)
-        p.setPen(text_color)
-        p.setFont(self.font())
-        p.drawText(pill.adjusted(0, 1, 0, 0), Qt.AlignmentFlag.AlignCenter, self.text())
+        p.fillPath(text_path(self.font(), pill.adjusted(0, 1, 0, 0), self.text(), dpr=self.devicePixelRatioF()), text_color)
 
 
 class ToggleSwitch(QAbstractButton):
@@ -648,7 +852,7 @@ class ComicCard(QWidget):
             icon = QLabel()
             icon.setPixmap(mascot)
             head.addWidget(icon)
-        title_label = QLabel(title)
+        title_label = InkLabel(title)
         title_label.setFont(baloo(800, 26))
         head.addWidget(title_label)
         head.addStretch()
@@ -667,7 +871,7 @@ class ComicCard(QWidget):
         lay.setSpacing(20)
         text = QVBoxLayout()
         text.setSpacing(2)
-        head = QLabel(label)
+        head = InkLabel(label)
         head.setFont(baloo(700, 17))
         head.setStyleSheet(f"color: {LABEL};")
         text.addWidget(head)
@@ -1003,22 +1207,35 @@ class ComicMenu(QMenu):
         super().paintEvent(event)
 
 
+def _snap(value: float, ratio: float) -> float:
+    return round(value * ratio) / ratio
+
+
+STATUS_DOT = {"ready": "#2FA84F", "busy": YELLOW, "problem": RED}
+
+
 class _MenuStatus(QWidget):
+    MASCOT = 22
+    TEXT_ROOM = 150
+
     def __init__(self, text: str, ready: bool) -> None:
         super().__init__()
         self._text = text
-        self._ready = ready
-        self._mascot = mascot_pixmap(22 * 3) if ready else None
-        if self._mascot is not None:
-            self._mascot.setDevicePixelRatio(3)
+        self.tone = "ready" if ready else "problem" if text.startswith(tr("Fehler")) else "busy"
+        self._mascots: dict[float, QPixmap | None] = {}
         self.setAccessibleName(text)
         self.setMinimumHeight(52)
-        font = QFont("Segoe UI")
-        font.setPixelSize(13)
-        if ready:
-            font.setWeight(QFont.Weight.DemiBold)
-        self._font = font
-        self.setMinimumWidth(QFontMetrics(font).horizontalAdvance(text) + 10 + 2 + 12 + 22 + 8 + 12 + 2 + 10)
+        self._font = baloo(800, 16)
+        advance = QFontMetricsF(self._font).horizontalAdvance(text)
+        self.setMinimumWidth(int(min(advance, self.TEXT_ROOM)) + 10 + 2 + 12 + 22 + 10 + 34 + 2 + 10)
+
+    def mascot(self, ratio: float) -> QPixmap | None:
+        if ratio not in self._mascots:
+            pix = mascot_pixmap(round(self.MASCOT * ratio))
+            if pix is not None:
+                pix.setDevicePixelRatio(ratio)
+            self._mascots[ratio] = pix
+        return self._mascots[ratio]
 
     def paintEvent(self, event) -> None:  # noqa: N802
         p = QPainter(self)
@@ -1031,17 +1248,22 @@ class _MenuStatus(QWidget):
         p.drawRoundedRect(card.adjusted(2, 2, -2, -2), 14, 14)
         x = card.left() + 14
         mid = card.top() + card.height() / 2
-        if self._mascot is not None:
-            p.drawPixmap(QPointF(x, mid - 11), self._mascot)
-        else:
-            p.setBrush(QColor(LABEL))
-            p.drawEllipse(QPointF(x + 11, mid), 5, 5)
-        p.setFont(self._font)
-        p.setPen(QColor(INK if self._ready else LABEL))
-        room = card.width() - 58
-        text = QFontMetrics(self._font).elidedText(self._text, Qt.TextElideMode.ElideRight, int(room))
-        p.drawText(QRectF(x + 30, card.top() + 2, room, card.height() - 4),
-                   Qt.AlignmentFlag.AlignVCenter | Qt.AlignmentFlag.AlignLeft, text)
+        ratio = self.devicePixelRatioF()
+        mascot = self.mascot(ratio)
+        if mascot is not None:
+            p.drawPixmap(QPointF(_snap(x, ratio), _snap(mid - self.MASCOT / 2, ratio)), mascot)
+        dot = QPointF(card.right() - 20, mid)
+        if self.tone == "ready":
+            p.setPen(QPen(QColor(47, 168, 79, 110), 2))
+            p.setBrush(Qt.BrushStyle.NoBrush)
+            p.drawEllipse(dot, 9.5, 9.5)
+        p.setPen(QPen(QColor(INK), 1.6))
+        p.setBrush(QColor(STATUS_DOT[self.tone]))
+        p.drawEllipse(dot, 5.5, 5.5)
+        room = QRectF(x + 32, card.top(), dot.x() - 16 - (x + 32), card.height())
+        text = QFontMetricsF(self._font).elidedText(self._text, Qt.TextElideMode.ElideRight, room.width())
+        p.fillPath(text_path(self._font, room, text, Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignVCenter, ratio),
+                   QColor(RED_TEXT if self.tone == "problem" else INK))
 
 
 def menu_status(parent: QWidget, text: str, ready: bool) -> QWidgetAction:

@@ -47,7 +47,10 @@ class AboutDialog(QDialog):
         body = comic.dialog_frame(self, tr("Über"))
 
         cfg = _safe_load_config()
-        whisper_model_name = Path(cfg.whisper.model).name or cfg.whisper.model
+        on_processor = cfg.whisper.device == "cpu"
+        whisper_spec = cfg.whisper.cpu_model if on_processor else cfg.whisper.model
+        whisper_model_name = Path(whisper_spec).name or whisper_spec
+        polish_model = cfg.styler.fast_model if on_processor or cfg.styler.fast_mode else cfg.styler.model
         mic_label = (
             str(cfg.audio.input_device)
             if cfg.audio.input_device is not None
@@ -55,8 +58,10 @@ class AboutDialog(QDialog):
         )
         body.setSpacing(12)
         card = comic.ComicCard(f"Version {__version__}", comic.mascot_pixmap(32), row_padding=5)
-        card.add_row(tr("Spracherkennung"), "", _value(f"faster-whisper · {whisper_model_name}"))
-        card.add_row(tr("Politur"), "", _value(f"{cfg.styler.model} ({cfg.styler.provider})"))
+        device_name = "CPU" if on_processor else "GPU"
+        card.add_row(tr("Spracherkennung"), "", _value(f"faster-whisper · {whisper_model_name} · {device_name}"))
+        polish_text = f"{polish_model} ({cfg.styler.provider})" if cfg.styler.enabled else tr("aus")
+        card.add_row(tr("Politur"), "", _value(polish_text))
         key_use = tr("{} drücken, noch einmal zum Beenden") if cfg.hotkey.mode == "toggle" else tr("{} halten")
         card.add_row(tr("Taste"), "", _value(key_use.format(effective_hotkey(cfg.hotkey.combo).upper())))
         card.add_row(tr("Mikrofon"), "", _value(mic_label))

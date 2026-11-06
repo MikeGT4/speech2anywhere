@@ -142,3 +142,13 @@ def test_restarted_instance_waits_before_the_single_instance_check(monkeypatch):
     monkeypatch.setattr(ctypes.windll.user32, "MessageBoxW", lambda *a: order.append("meldung") or 0)
     main.run()
     assert order == ["warten", "sperre", "meldung"]
+
+
+def test_polish_model_follows_fast_mode_and_processor_mode():
+    from kira.config import Config
+    from kira.main import _polish_model
+    base = {"styler": {"model": "gemma4:12b", "fast_model": "gemma4:e4b"}}
+    assert _polish_model(Config.model_validate(base)) == "gemma4:12b"
+    assert _polish_model(Config.model_validate({**base, "whisper": {"device": "cpu"}})) == "gemma4:e4b"
+    fast = {"styler": {**base["styler"], "fast_mode": True}}
+    assert _polish_model(Config.model_validate(fast)) == "gemma4:e4b"

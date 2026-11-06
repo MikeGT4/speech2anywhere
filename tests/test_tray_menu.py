@@ -39,7 +39,7 @@ def test_comic_menu_follows_the_approved_draft(qtbot):
     status = menu.actions()[1]
     assert isinstance(status, QWidgetAction), "darunter die Statuskarte"
     assert status.defaultWidget()._text == "Bereit"
-    assert status.defaultWidget()._mascot is not None
+    assert status.defaultWidget().mascot(1.0) is not None
     assert not status.isEnabled()
     assert _entries(menu) == [
         "Update auf v0.5.0 installieren…", "Einstellungen…", "Gelernte Wörter (3 neu)…",
@@ -50,16 +50,46 @@ def test_comic_menu_follows_the_approved_draft(qtbot):
             assert not action.icon().isNull(), f"Symbol fehlt: {action.text()}"
 
 
-def test_comic_menu_shows_other_states_without_the_face(qtbot):
+@pytest.mark.parametrize("state, text, tone", [
+    ("IDLE", "Bereit", "ready"),
+    ("RECORDING", "Aufnahme läuft…", "busy"),
+    ("STYLING", "Poliere…", "busy"),
+    ("ERROR", "Fehler, siehe Protokoll", "problem"),
+])
+def test_status_card_shows_the_state_as_a_coloured_dot(qtbot, state, text, tone):
+    from kira.ui import _comic as comic
     from kira.ui.tray_win import KiraTray
     from kira.app import State
     tray = KiraTray(on_quit=lambda: None)
-    tray.update_state(State.RECORDING)
+    tray.update_state(getattr(State, state))
     menu = tray._comic_menu()
     qtbot.addWidget(menu)
     card = menu.actions()[1].defaultWidget()
-    assert card._text == "Aufnahme läuft…"
-    assert card._mascot is None
+    assert card._text == text
+    assert card.tone == tone
+    assert card.mascot(1.0) is not None
+    assert comic.STATUS_DOT["ready"] == "#2FA84F"
+
+
+def test_long_status_text_does_not_widen_the_menu(qtbot):
+    from kira.ui import _comic as comic
+    short = comic._MenuStatus("Bereit", ready=True)
+    long = comic._MenuStatus("Fehler, " + "sehr " * 40 + "lang", ready=False)
+    qtbot.addWidget(short)
+    qtbot.addWidget(long)
+    assert long.tone == "problem"
+    assert long.minimumWidth() - short.minimumWidth() <= comic._MenuStatus.TEXT_ROOM
+
+
+@pytest.mark.parametrize("ratio", [1.0, 1.25, 1.5, 2.0])
+def test_status_face_is_made_for_the_screen_pixels(qtbot, ratio):
+    from kira.ui import _comic as comic
+    card = comic._MenuStatus("Bereit", ready=True)
+    qtbot.addWidget(card)
+    face = card.mascot(ratio)
+    assert face.devicePixelRatio() == ratio
+    assert face.width() == face.height() == round(22 * ratio)
+    assert card.mascot(ratio) is face
 
 
 def test_menu_icons_are_round_and_28_px(qtbot):

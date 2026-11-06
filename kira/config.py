@@ -40,6 +40,9 @@ LANGUAGE_NAMES = {
 }
 
 
+DEVICES = ("cpu", "gpu")
+
+
 class WhisperConfig(BaseModel):
     model: str = "mlx-community/whisper-large-v3-turbo"
     language: str = "auto"
@@ -47,12 +50,19 @@ class WhisperConfig(BaseModel):
     condition_on_previous_text: bool = False
     initial_prompt: str | None = None
     replacements: dict[str, str] = Field(default_factory=dict)
+    device: str = "gpu"
+    cpu_model: str = "small"
 
     @field_validator("language", mode="before")
     @classmethod
     def _known_language(cls, value: object) -> str:
         key = str(value or "").strip().lower()
         return key if key == "auto" or re.fullmatch(r"[a-z]{2,3}", key) else "auto"
+
+    @field_validator("device", mode="before")
+    @classmethod
+    def _known_device(cls, value: object) -> str:
+        return "cpu" if str(value or "").strip().lower() == "cpu" else "gpu"
 
 
 class ModeConfig(BaseModel):
@@ -70,6 +80,7 @@ class StylerConfig(BaseModel):
     warmup_on_start: bool = True
     fast_mode: bool = False
     fast_model: str = "gemma4:e4b"
+    enabled: bool = True
     modes: dict[str, ModeConfig] = Field(default_factory=dict)
 
 

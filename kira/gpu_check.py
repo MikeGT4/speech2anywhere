@@ -10,12 +10,19 @@ from kira.texte import tr
 
 log = logging.getLogger(__name__)
 
+WHISPER_GPU_MIB = 4315
+POLISH_GPU_MIB = {"gemma4:12b": (8763, 9448), "gemma4:e4b": (4650, 5132)}
+
+
+def _gib(mib: int) -> float:
+    return round(mib / 1024, 1)
+
 
 _WHISPER_VRAM_GB: dict[str, float] = {
     "large-v3-turbo": 1.6,
-    "large-v3": 3.0,
-    "large-v2": 3.0,
-    "large": 3.0,
+    "large-v3": _gib(WHISPER_GPU_MIB),
+    "large-v2": _gib(WHISPER_GPU_MIB),
+    "large": _gib(WHISPER_GPU_MIB),
     "medium": 1.0,
     "small": 0.5,
     "base": 0.3,
@@ -28,14 +35,14 @@ _OLLAMA_VRAM_GB: dict[str, float] = {
     "gemma3:27b": 16.0,
     "gemma2:27b": 16.0,
     "qwen3:14b": 8.5,
-    "gemma4:12b": 7.5,
+    "gemma4:12b": _gib(POLISH_GPU_MIB["gemma4:12b"][0]),
     "gemma3:12b": 7.0,
     "gemma2:9b": 5.5,
     "qwen3:8b": 5.0,
     "llama3.1:8b": 5.0,
     "llama3:8b": 5.0,
     "qwen3:4b": 2.5,
-    "gemma4:e4b": 3.0,
+    "gemma4:e4b": _gib(POLISH_GPU_MIB["gemma4:e4b"][0]),
     "gemma3:4b": 2.5,
     "llama3.2:3b": 2.0,
     "gemma2:2b": 1.5,
@@ -90,6 +97,7 @@ def detect_gpu() -> GpuInfo | None:
                 timeout=30.0,
                 check=True,
                 stdin=subprocess.DEVNULL,
+                creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
             )
             log.info("nvidia-smi OK via %s", executable)
             break
@@ -178,12 +186,11 @@ def assess(whisper_model: str, polish_model: str) -> VramAssessment:
                 tr(
                     "Keine NVIDIA-GPU erkannt.\n"
                     "\n"
-                    "Speech2Anywhere ist für NVIDIA-Grafikkarten mit CUDA gebaut. Geschätzter Bedarf: rund {:.1f} GB "
-                    "Grafikspeicher ({} + {}).\n"
+                    "Ohne NVIDIA-Karte rechnet Speech2Anywhere auf dem Prozessor:\n"
+                    "Einstellungen, Seite Mikrofon, „Rechnen auf“: Prozessor (CPU).\n"
                     "\n"
-                    "Nur mit dem Prozessor wäre die Spracherkennung etwa zehnmal langsamer und das Sprachmodell kaum "
-                    "nutzbar. Grafik von AMD oder Intel wird nicht unterstützt (nvidia-smi nicht gefunden)."
-                ).format(total, whisper_model, polish_model)
+                    "Grafik von AMD oder Intel nutzt Speech2Anywhere nicht (nvidia-smi nicht gefunden)."
+                )
             ),
         )
 

@@ -218,7 +218,35 @@ def test_hints_sound_friendly(dialog):
                     "Das Lernen beginnt nach dem Neustart", "Gilt ab dem nächsten Diktat, ohne Neustart",
                     "Satzzeichen, Großschreibung, Füllwörter.", "Danach wird der Rohtext eingefügt."):
         assert amtlich not in texte
-    assert "Fast alles wirkt nach einem kurzen Neustart." in texte
+
+
+def test_tab_marks_focus_only_after_keyboard_navigation(dialog):
+    from PyQt6.QtCore import QEvent
+    from PyQt6.QtGui import QFocusEvent
+    from PyQt6.QtWidgets import QApplication
+
+    def focus(kind, reason):
+        QApplication.sendEvent(tab, QFocusEvent(kind, reason))
+        return tab._keyboard_focus
+
+    tab = dialog._tabs[1]
+    assert tab.focusPolicy() == Qt.FocusPolicy.StrongFocus
+    assert not focus(QEvent.Type.FocusIn, Qt.FocusReason.TabFocusReason)
+    dialog.setAttribute(Qt.WidgetAttribute.WA_KeyboardFocusChange)
+    assert focus(QEvent.Type.FocusIn, Qt.FocusReason.TabFocusReason)
+    assert not focus(QEvent.Type.FocusOut, Qt.FocusReason.MouseFocusReason)
+    assert not focus(QEvent.Type.FocusIn, Qt.FocusReason.MouseFocusReason)
+
+
+def test_footer_shows_copyright_and_logo(dialog):
+    from PyQt6.QtWidgets import QLabel
+    notes = [label for label in dialog.findChildren(QLabel) if label.text() == "© 2026 Mike Pollow"]
+    assert len(notes) == 1
+    logos = [label for label in notes[0].parentWidget().findChildren(QLabel) if not label.pixmap().isNull()]
+    assert len(logos) == 1
+    assert "Fast alles wirkt nach einem kurzen Neustart." not in " ".join(
+        label.text() for label in dialog.findChildren(QLabel)
+    )
 
 
 def test_uncensored_model_message_has_real_umlauts(dialog, monkeypatch):
@@ -656,3 +684,229 @@ def test_keys_page_describes_pressing_twice_in_toggle_mode(qtbot, tmp_path, monk
     assert "die Bearbeiten-Taste halten" not in texts
     assert "Einmal drücken, sprechen, noch einmal drücken." in texts
     assert "Drücken, sagen, was anders werden soll, noch einmal drücken." in texts
+
+
+def _labels_of_first_page(dialog):
+    from PyQt6.QtWidgets import QLabel
+    return [label.text() for label in dialog._pages.widget(0).findChildren(QLabel) if label.text()]
+
+
+def _saved_text(tmp_path):
+    path = tmp_path / "config.yaml"
+    return path.read_text(encoding="utf-8") if path.exists() else ""
+
+
+def test_compute_switch_is_the_first_row_on_the_microphone_page(dialog):
+    assert _labels_of_first_page(dialog)[1] == "Rechnen auf"
+    assert [dialog._compute.itemData(i) for i in range(dialog._compute.count())] == ["cpu", "gpu"]
+    assert dialog._compute.currentData() == "gpu"
+
+
+def test_compute_help_button_opens_the_help_page(dialog, monkeypatch):
+    from PyQt6.QtWidgets import QPushButton
+    import kira.ui.compute_help_dialog as help_module
+    opened = []
+    monkeypatch.setattr(help_module.ComputeHelpDialog, "exec", lambda self: opened.append(self) or 0)
+    button = next(b for b in dialog.findChildren(QPushButton) if b.text() == "Was ist der Unterschied?")
+    button.click()
+    assert len(opened) == 1
+
+
+def test_processor_mode_locks_the_fast_mode(dialog):
+    dialog._compute.setCurrentIndex(dialog._compute.findData("cpu"))
+    assert not dialog._fast_mode.isEnabled()
+    dialog._compute.setCurrentIndex(dialog._compute.findData("gpu"))
+    assert dialog._fast_mode.isEnabled()
+
+
+def test_saving_processor_mode_writes_device_and_model(dialog, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    small = tmp_path / "faster-whisper-small"
+    small.mkdir()
+    (small / "model.bin").write_bytes(b"x")
+    monkeypatch.setattr(sd, "_CPU_WHISPER_DIR", small)
+    monkeypatch.setattr(sd, "_ollama_model_installed", lambda model: True)
+    dialog._compute.setCurrentIndex(dialog._compute.findData("cpu"))
+    dialog._save()
+    saved = _saved_text(tmp_path)
+    assert "device: cpu" in saved
+    assert f"cpu_model: {small.as_posix()}" in saved
+
+
+def test_missing_processor_model_is_downloaded_before_saving(dialog, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    target = tmp_path / "faster-whisper-small"
+    monkeypatch.setattr(sd, "_CPU_WHISPER_DIR", target)
+    monkeypatch.setattr(sd, "_ollama_model_installed", lambda model: True)
+    downloads = []
+    monkeypatch.setattr(dialog, "_whisper_download_blocking", lambda repo, where: downloads.append((repo, where)) or True)
+    dialog._compute.setCurrentIndex(dialog._compute.findData("cpu"))
+    dialog._save()
+    assert downloads == [("Systran/faster-whisper-small", target)]
+    assert "device: cpu" in _saved_text(tmp_path)
+
+
+def test_cancelled_download_saves_nothing(dialog, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    monkeypatch.setattr(sd, "_CPU_WHISPER_DIR", tmp_path / "faster-whisper-small")
+    monkeypatch.setattr(dialog, "_whisper_download_blocking", lambda repo, where: False)
+    dialog._compute.setCurrentIndex(dialog._compute.findData("cpu"))
+    dialog._save()
+    assert _saved_text(tmp_path) == ""
+
+
+def test_graphics_card_without_nvidia_saves_nothing_and_warns(qtbot, tmp_path, monkeypatch):
+    import kira.gpu_check as gpu_check
+    import kira.ui.settings_dialog as sd
+    monkeypatch.setattr(sd, "load_config", lambda: Config.model_validate({"whisper": {"device": "cpu"}}))
+    monkeypatch.setattr(sd, "default_config_path", lambda: tmp_path / "config.yaml")
+    monkeypatch.setattr(sd.SettingsDialog, "_query_input_devices", lambda self: [(3, "USB Microphone")])
+    warnings = []
+    monkeypatch.setattr(sd, "light_warning", lambda *args, **kwargs: warnings.append(args[2]))
+    monkeypatch.setattr(sd, "light_information", lambda *a, **k: None)
+    monkeypatch.setattr(gpu_check, "detect_gpu", lambda: None)
+    dlg = sd.SettingsDialog()
+    qtbot.addWidget(dlg)
+    dlg._compute.setCurrentIndex(dlg._compute.findData("gpu"))
+    dlg._save()
+    assert _saved_text(tmp_path) == ""
+    assert "Keine NVIDIA-Grafikkarte gefunden." in warnings[0]
+    assert dlg._compute.currentData() == "cpu"
+
+
+def test_unchanged_compute_settings_add_nothing(dialog, tmp_path):
+    dialog._save()
+    saved = _saved_text(tmp_path)
+    whisper = saved.split("whisper:")[1].split("styler:")[0]
+    assert "device:" not in whisper
+    assert "cpu_model:" not in whisper
+    assert "enabled:" not in saved.split("styler:")[1].split("injector:")[0]
+
+
+def test_polish_switch_is_saved(dialog, tmp_path):
+    dialog._polish_enabled.setChecked(False)
+    dialog._save()
+    assert "enabled: false" in _saved_text(tmp_path).split("styler:")[1]
+
+
+def test_only_absolute_paths_count_as_model_folders(tmp_path):
+    import kira.ui.settings_dialog as sd
+    assert sd._looks_like_path(str(tmp_path / "faster-whisper-small"))
+    assert not sd._looks_like_path("Systran/faster-whisper-large-v3")
+    assert not sd._looks_like_path("mlx-community/whisper-large-v3-turbo")
+    assert not sd._looks_like_path("small")
+
+
+def test_processor_switch_with_polish_off_still_loads_the_edit_model(dialog, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    small = tmp_path / "faster-whisper-small"
+    small.mkdir()
+    (small / "model.bin").write_bytes(b"x")
+    monkeypatch.setattr(sd, "_CPU_WHISPER_DIR", small)
+    monkeypatch.setattr(sd, "_ollama_model_installed", lambda model: False)
+    pulls = []
+    monkeypatch.setattr(dialog, "_pull_blocking", lambda model: pulls.append(model) or True)
+    monkeypatch.setattr(dialog, "_release_models", lambda old: None)
+    dialog._polish_enabled.setChecked(False)
+    dialog._compute.setCurrentIndex(dialog._compute.findData("cpu"))
+    dialog._save()
+    assert pulls == ["gemma4:e4b"]
+    assert "device: cpu" in _saved_text(tmp_path)
+
+
+def test_turning_polish_on_loads_a_missing_model(qtbot, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    monkeypatch.setattr(sd, "load_config", lambda: Config.model_validate(
+        {"styler": {"enabled": False, "model": "gemma4:12b"}}))
+    monkeypatch.setattr(sd, "default_config_path", lambda: tmp_path / "config.yaml")
+    monkeypatch.setattr(sd.SettingsDialog, "_query_input_devices", lambda self: [(3, "USB Microphone")])
+    monkeypatch.setattr(sd, "light_information", lambda *a, **k: None)
+    monkeypatch.setattr(sd, "_ollama_model_installed", lambda model: False)
+    dlg = sd.SettingsDialog()
+    qtbot.addWidget(dlg)
+    pulls = []
+    monkeypatch.setattr(dlg, "_pull_blocking", lambda model: pulls.append(model) or False)
+    dlg._polish_enabled.setChecked(True)
+    dlg._save()
+    assert pulls == ["gemma4:12b"]
+    assert _saved_text(tmp_path) == ""
+
+
+def test_hand_set_processor_model_name_is_kept(qtbot, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    monkeypatch.setattr(sd, "load_config", lambda: Config.model_validate({"whisper": {"cpu_model": "medium"}}))
+    monkeypatch.setattr(sd, "default_config_path", lambda: tmp_path / "config.yaml")
+    monkeypatch.setattr(sd.SettingsDialog, "_query_input_devices", lambda self: [(3, "USB Microphone")])
+    monkeypatch.setattr(sd, "light_information", lambda *a, **k: None)
+    monkeypatch.setattr(sd, "_ollama_model_installed", lambda model: True)
+    dlg = sd.SettingsDialog()
+    qtbot.addWidget(dlg)
+    downloads = []
+    monkeypatch.setattr(dlg, "_whisper_download_blocking", lambda repo, where: downloads.append(repo) or True)
+    monkeypatch.setattr(dlg, "_release_models", lambda old: None)
+    dlg._compute.setCurrentIndex(dlg._compute.findData("cpu"))
+    dlg._save()
+    assert downloads == []
+    saved = _saved_text(tmp_path)
+    assert "device: cpu" in saved
+    assert "cpu_model:" not in saved
+
+
+def test_switching_releases_the_models_of_the_old_mode(dialog, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    small = tmp_path / "faster-whisper-small"
+    small.mkdir()
+    (small / "model.bin").write_bytes(b"x")
+    monkeypatch.setattr(sd, "_CPU_WHISPER_DIR", small)
+    monkeypatch.setattr(sd, "_ollama_model_installed", lambda model: True)
+    released = []
+
+    class FakeClient:
+        def generate(self, model, keep_alive):
+            released.append((model, keep_alive))
+
+    monkeypatch.setattr(sd, "_ollama_client", lambda: FakeClient())
+    dialog._compute.setCurrentIndex(dialog._compute.findData("cpu"))
+    dialog._save()
+    assert sorted(released) == [("gemma2:2b", 0), ("gemma4:e4b", 0)]
+
+
+def test_processor_mode_locks_live_words_and_the_uncensored_model(dialog):
+    dialog._compute.setCurrentIndex(dialog._compute.findData("cpu"))
+    assert not dialog._hud_live_words.isEnabled()
+    assert not dialog._uncensored_btn.isEnabled()
+    dialog._compute.setCurrentIndex(dialog._compute.findData("gpu"))
+    assert dialog._hud_live_words.isEnabled()
+    assert dialog._uncensored_btn.isEnabled()
+
+
+def test_hugging_face_button_opens_the_gguf_search(dialog, monkeypatch):
+    from PyQt6.QtWidgets import QPushButton
+    import kira.ui.settings_dialog as sd
+    opened = []
+    monkeypatch.setattr(sd.comic, "_open_url", opened.append)
+    button = next(b for b in dialog.findChildren(QPushButton) if b.text() == "Hugging Face…")
+    button.click()
+    assert opened == ["https://huggingface.co/models?library=gguf&sort=trending"]
+    assert "hf.co/" in button.toolTip()
+
+
+def test_new_model_name_is_loaded_before_saving(dialog, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    monkeypatch.setattr(sd, "_ollama_model_installed", lambda model: False)
+    pulls = []
+    monkeypatch.setattr(dialog, "_pull_blocking", lambda model: pulls.append(model) or True)
+    name = "hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF:Q4_K_M"
+    dialog._styler_model.setText(name)
+    dialog._save()
+    assert pulls == [name]
+    assert f"model: {name}" in _saved_text(tmp_path)
+
+
+def test_failed_download_of_a_new_model_saves_nothing(dialog, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    monkeypatch.setattr(sd, "_ollama_model_installed", lambda model: False)
+    monkeypatch.setattr(dialog, "_pull_blocking", lambda model: False)
+    dialog._styler_model.setText("hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF:Q4_K_M")
+    dialog._save()
+    assert _saved_text(tmp_path) == ""

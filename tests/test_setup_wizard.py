@@ -530,7 +530,7 @@ def test_gemma_worker_emits_error_when_ollama_list_fails(qtbot, mocker):
     assert len(errors) == 1
 
 
-def test_setup_wizard_instantiates_with_three_pages(qtbot, tmp_path):
+def test_setup_wizard_instantiates_with_four_pages(qtbot, tmp_path):
     from kira.setup_wizard import SetupWizard
 
     whisper_target = tmp_path / "whisper"
@@ -543,7 +543,7 @@ def test_setup_wizard_instantiates_with_three_pages(qtbot, tmp_path):
     )
     qtbot.addWidget(wizard)
 
-    assert len(wizard.pageIds()) == 3
+    assert len(wizard.pageIds()) == 4
 
 
 def test_setup_wizard_accept_calls_mark_first_run_complete(qtbot, tmp_path, mocker):
@@ -580,7 +580,7 @@ def test_download_page_initially_not_complete(qtbot, tmp_path, mocker):
         ollama_installer=ollama_setup,
     )
     qtbot.addWidget(wizard)
-    download_page = wizard.page(1)
+    download_page = wizard.page(2)
     assert download_page.isComplete() is False
 
 
@@ -612,7 +612,7 @@ def test_cleanup_page_stops_running_workers(qtbot, tmp_path, mocker):
         ollama_installer=ollama_setup,
     )
     qtbot.addWidget(wizard)
-    download_page = wizard.page(1)
+    download_page = wizard.page(2)
 
     whisper = _make_running_mock_worker()
     ollama = _make_running_mock_worker()
@@ -655,7 +655,7 @@ def test_whisper_error_aborts_pipeline(qtbot, tmp_path, mocker):
         ollama_installer=ollama_setup,
     )
     qtbot.addWidget(wizard)
-    download_page = wizard.page(1)
+    download_page = wizard.page(2)
 
     download_page._on_whisper_error("DNS resolution failed")
 
@@ -681,7 +681,7 @@ def test_ollama_error_aborts_pipeline(qtbot, tmp_path, mocker):
         ollama_installer=ollama_setup,
     )
     qtbot.addWidget(wizard)
-    download_page = wizard.page(1)
+    download_page = wizard.page(2)
 
     download_page._on_ollama_error("Installer Exit-Code 1")
 
@@ -852,7 +852,7 @@ def test_abort_pipeline_idempotent_under_race(qtbot, tmp_path, mocker):
         ollama_installer=ollama_setup,
     )
     qtbot.addWidget(wizard)
-    download_page = wizard.page(1)
+    download_page = wizard.page(2)
 
     spy_stop = mocker.patch.object(download_page, "_stop_all_workers")
 
@@ -880,7 +880,7 @@ def test_close_event_cleans_up_running_workers(qtbot, tmp_path, mocker):
         ollama_installer=ollama_setup,
     )
     qtbot.addWidget(wizard)
-    download_page = wizard.page(1)
+    download_page = wizard.page(2)
 
     spy_cleanup = mocker.patch.object(download_page, "cleanupPage")
 
@@ -928,7 +928,7 @@ def test_append_log_escapes_html(qtbot, tmp_path, mocker):
         ollama_installer=ollama_setup,
     )
     qtbot.addWidget(wizard)
-    download_page = wizard.page(1)
+    download_page = wizard.page(2)
 
     download_page._append_log("<script>alert(1)</script>")
 
@@ -950,7 +950,7 @@ def test_log_buffer_capped_at_500_blocks(qtbot, tmp_path, mocker):
         ollama_installer=ollama_setup,
     )
     qtbot.addWidget(wizard)
-    download_page = wizard.page(1)
+    download_page = wizard.page(2)
 
     assert download_page._log.document().maximumBlockCount() == 500
 
@@ -963,7 +963,7 @@ def _page(qtbot, tmp_path, mocker):
     mocker.patch.object(DownloadPage, "initializePage", return_value=None)
     wizard = SetupWizard(whisper_target=tmp_path / "whisper", ollama_installer=ollama_setup)
     qtbot.addWidget(wizard)
-    return wizard, wizard.page(1)
+    return wizard, wizard.page(2)
 
 
 def _bar_state(bar):
@@ -1107,7 +1107,7 @@ def test_initialize_page_starts_fresh_after_going_back(qtbot, tmp_path, mocker):
     mocker.patch("kira.setup_wizard.OllamaSetupWorker")
     wizard = SetupWizard(whisper_target=tmp_path / "whisper", ollama_installer=ollama_setup)
     qtbot.addWidget(wizard)
-    page = wizard.page(1)
+    page = wizard.page(2)
     assert isinstance(page, DownloadPage)
     page._pipeline_aborted = True
     page._whisper_done = True
@@ -1160,7 +1160,7 @@ def test_going_back_and_on_measures_the_rows_anew(qtbot, tmp_path, mocker):
     mocker.patch("kira.setup_wizard.OllamaSetupWorker")
     wizard = SetupWizard(whisper_target=tmp_path / "whisper", ollama_installer=ollama_setup)
     qtbot.addWidget(wizard)
-    page = wizard.page(1)
+    page = wizard.page(2)
     assert isinstance(page, DownloadPage)
     page.initializePage()
     page._on_whisper_progress(1_200_000_000, 3_090_000_000)
@@ -1298,3 +1298,176 @@ def test_stopping_the_setup_tree_falls_back_to_the_starter_when_taskkill_fails(m
     stop_process_tree(proc)
 
     proc.kill.assert_called_once()
+
+
+def _measured(name="NVIDIA GeForce RTX 4070", total=12282, used=700, ram=32.0):
+    from kira.hardware import Measurement
+    return Measurement(gpu_name=name, vram_total_mib=total, vram_used_mib=used, cpu_threads=16, ram_total_gb=ram)
+
+
+def test_hardware_page_measures_and_preselects_the_recommendation(qtbot):
+    from kira.setup_wizard import HardwarePage, SetupChoice
+    page = HardwarePage(measure=lambda: _measured())
+    page.MIN_SHOW_S = 0
+    qtbot.addWidget(page)
+    assert not page.isComplete()
+    page.start_measuring()
+    qtbot.waitUntil(page.isComplete, timeout=5000)
+    assert page._gpu.isChecked()
+    assert page.choice() == SetupChoice("gpu", True)
+    assert "RTX 4070" in page._result.text()
+
+
+def test_hardware_page_without_nvidia_offers_only_the_processor(qtbot):
+    from kira.setup_wizard import HardwarePage, SetupChoice
+    page = HardwarePage(measure=lambda: _measured(name=None, total=0, used=0))
+    page.MIN_SHOW_S = 0
+    qtbot.addWidget(page)
+    page.start_measuring()
+    qtbot.waitUntil(page.isComplete, timeout=5000)
+    assert not page._gpu.isEnabled()
+    assert page._cpu.isChecked()
+    assert page.choice() == SetupChoice("cpu", False)
+
+
+def test_choosing_the_card_against_the_advice_takes_the_fast_model(qtbot):
+    from kira.setup_wizard import HardwarePage, SetupChoice
+    page = HardwarePage(measure=lambda: _measured(total=8188, used=600))
+    page.MIN_SHOW_S = 0
+    qtbot.addWidget(page)
+    page.start_measuring()
+    qtbot.waitUntil(page.isComplete, timeout=5000)
+    assert page._cpu.isChecked()
+    page._gpu.setChecked(True)
+    assert page.choice() == SetupChoice("gpu", True)
+
+
+def test_choice_names_the_models_to_download(tmp_path):
+    from kira.hardware import cpu_whisper_dir
+    from kira.setup_wizard import DEFAULT_GEMMA_TAG, DEFAULT_WHISPER_REPO, SetupChoice
+    cpu = SetupChoice("cpu", False)
+    assert (cpu.whisper_repo(), cpu.whisper_target(tmp_path), cpu.polish_model()) == (
+        "Systran/faster-whisper-small", cpu_whisper_dir(), "gemma4:e4b")
+    fast = SetupChoice("gpu", True)
+    assert (fast.whisper_repo(), fast.whisper_target(tmp_path), fast.polish_model()) == (DEFAULT_WHISPER_REPO, tmp_path, "gemma4:e4b")
+    assert SetupChoice("gpu", False).polish_model() == DEFAULT_GEMMA_TAG
+
+
+def test_wizard_measures_between_welcome_and_download(qtbot, tmp_path):
+    from kira.setup_wizard import DownloadPage, HardwarePage, SetupWizard, WelcomePage
+    wizard = SetupWizard(tmp_path / "whisper", tmp_path / "OllamaSetup.exe")
+    qtbot.addWidget(wizard)
+    kinds = [type(wizard.page(page_id)) for page_id in wizard.pageIds()]
+    assert kinds[:3] == [WelcomePage, HardwarePage, DownloadPage]
+
+
+def test_apply_setup_choice_writes_the_config_and_updates_the_running_one(tmp_path):
+    from kira.config import Config
+    from kira.hardware import cpu_whisper_dir
+    from kira.setup_wizard import SetupChoice, apply_setup_choice
+    path = tmp_path / "config.yaml"
+    path.write_text("whisper:\n  model: C:/m/faster-whisper-large-v3\n  language: auto\nstyler:\n  model: gemma4:12b\n", encoding="utf-8")
+    cfg = Config()
+    apply_setup_choice(cfg, SetupChoice("cpu", False), path)
+    saved = path.read_text(encoding="utf-8")
+    assert "device: cpu" in saved
+    assert f"cpu_model: {cpu_whisper_dir().as_posix()}" in saved
+    assert (cfg.whisper.device, cfg.whisper.cpu_model, cfg.styler.fast_mode) == ("cpu", cpu_whisper_dir().as_posix(), False)
+    apply_setup_choice(cfg, SetupChoice("gpu", True), path)
+    saved = path.read_text(encoding="utf-8")
+    assert "device: gpu" in saved
+    assert "fast_mode: true" in saved
+    assert (cfg.whisper.device, cfg.styler.fast_mode) == ("gpu", True)
+
+
+def test_measure_shows_the_animation_until_the_result(qtbot, monkeypatch):
+    from kira.setup_wizard import HardwarePage
+    monkeypatch.setattr(HardwarePage, "MIN_SHOW_S", 0.3)
+    page = HardwarePage(measure=lambda: _measured())
+    qtbot.addWidget(page)
+    assert not page._animation.running
+    page.start_measuring()
+    assert page._animation.running
+    qtbot.waitUntil(page.isComplete, timeout=5000)
+    assert not page._animation.running
+
+
+def test_wizard_shows_the_credit_bottom_left(qtbot, tmp_path):
+    from PyQt6.QtWidgets import QLabel, QWizard
+    from kira.setup_wizard import SetupWizard
+    wizard = SetupWizard(tmp_path / "whisper", tmp_path / "OllamaSetup.exe")
+    qtbot.addWidget(wizard)
+    holder = wizard.button(QWizard.WizardButton.CustomButton1)
+    assert [label.text() for label in holder.findChildren(QLabel) if label.text()] == ["© 2026 Mike Pollow"]
+    assert any(not label.pixmap().isNull() for label in holder.findChildren(QLabel))
+
+
+def test_measuring_again_locks_next_until_the_new_result(qtbot):
+    from kira.setup_wizard import HardwarePage
+    page = HardwarePage(measure=lambda: _measured())
+    page.MIN_SHOW_S = 0
+    qtbot.addWidget(page)
+    page.start_measuring()
+    qtbot.waitUntil(page.isComplete, timeout=5000)
+    page.start_measuring()
+    assert not page.isComplete()
+    qtbot.waitUntil(page.isComplete, timeout=5000)
+
+
+def test_choice_is_fixed_when_leaving_the_page(qtbot):
+    from kira.setup_wizard import HardwarePage, SetupChoice
+    page = HardwarePage(measure=lambda: _measured(total=32607, used=1500))
+    page.MIN_SHOW_S = 0
+    qtbot.addWidget(page)
+    page.start_measuring()
+    qtbot.waitUntil(page.isComplete, timeout=5000)
+    assert page.validatePage()
+    page._cpu.setChecked(True)
+    assert page.choice() == SetupChoice("gpu", False)
+
+
+def test_cancel_waits_for_a_running_measurement(qtbot, tmp_path):
+    import time
+    from kira.setup_wizard import SetupWizard
+    wizard = SetupWizard(tmp_path / "whisper", tmp_path / "OllamaSetup.exe")
+    qtbot.addWidget(wizard)
+    page = wizard._hardware
+
+    def slow():
+        time.sleep(0.6)
+        return _measured()
+
+    page._measure = slow
+    page.start_measuring()
+    assert page._worker.isRunning()
+    wizard.reject()
+    assert not page._worker.isRunning()
+
+
+def test_download_page_loads_the_models_of_the_fixed_choice(qtbot, tmp_path, mocker):
+    from kira.hardware import cpu_whisper_dir
+    from kira.setup_wizard import SetupChoice, SetupWizard
+    whisper = mocker.patch("kira.setup_wizard.WhisperDownloadWorker")
+    mocker.patch("kira.setup_wizard.OllamaSetupWorker")
+    gemma = mocker.patch("kira.setup_wizard.GemmaPullWorker")
+    wizard = SetupWizard(tmp_path / "whisper", tmp_path / "OllamaSetup.exe")
+    qtbot.addWidget(wizard)
+    wizard._hardware._fixed = SetupChoice("cpu", False)
+    page = wizard.page(2)
+    page.initializePage()
+    assert whisper.call_args.kwargs == {"target_dir": cpu_whisper_dir(), "repo_id": "Systran/faster-whisper-small"}
+    page._start_gemma()
+    assert gemma.call_args.kwargs["model_tag"] == "gemma4:e4b"
+
+
+def test_apply_setup_choice_creates_a_missing_config_and_names_the_card_models(tmp_path):
+    from kira.config import Config
+    from kira.setup_wizard import DEFAULT_GEMMA_TAG, SetupChoice, apply_setup_choice
+    path = tmp_path / "Kira" / "config.yaml"
+    cfg = Config()
+    target = tmp_path / "models" / "faster-whisper-large-v3"
+    assert apply_setup_choice(cfg, SetupChoice("gpu", False), path, gpu_target=target)
+    saved = path.read_text(encoding="utf-8")
+    assert f"model: {target.as_posix()}" in saved
+    assert f"model: {DEFAULT_GEMMA_TAG}" in saved
+    assert (cfg.whisper.model, cfg.styler.model, cfg.whisper.device) == (target.as_posix(), DEFAULT_GEMMA_TAG, "gpu")

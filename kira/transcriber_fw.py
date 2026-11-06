@@ -33,6 +33,10 @@ from kira.lexicon import build_initial_prompt
 log = logging.getLogger(__name__)
 
 
+def cpu_threads() -> int:
+    return max(1, min(8, (os.cpu_count() or 2) // 2))
+
+
 @dataclass
 class TranscriptionResult:
     text: str
@@ -133,20 +137,29 @@ class Transcriber:
     def _ensure_model(self) -> WhisperModel:
         with self._model_lock:
             if self._model is None:
-                log.info("Loading faster-whisper model %s on CUDA", self._model_name)
-                self._model = WhisperModel(
-                    self._model_name,
-                    device="cuda",
-                    compute_type="float16",
-                    download_root=str(Path.home() / ".cache" / "faster-whisper"),
-                )
+                download_root = str(Path.home() / ".cache" / "faster-whisper")
+                if self._config.whisper.device == "cpu":
+                    name = _translate_model_name(self._config.whisper.cpu_model)
+                    threads = cpu_threads()
+                    log.info("Loading faster-whisper model %s on CPU (%d threads, int8)", name, threads)
+                    self._model = WhisperModel(
+                        name, device="cpu", compute_type="int8", cpu_threads=threads, download_root=download_root,
+                    )
+                else:
+                    self._model_name = _translate_model_name(self._config.whisper.model)
+                    log.info("Loading faster-whisper model %s on CUDA", self._model_name)
+                    self._model = WhisperModel(
+                        self._model_name, device="cuda", compute_type="float16", download_root=download_root,
+                    )
             return self._model
 
     def warmup(self) -> None:
         try:
             self._ensure_model()
             log.info(
-                "Transcriber warmup complete (model=%s)", self._model_name,
+                "Transcriber warmup complete (model=%s, device=%s)",
+                self._config.whisper.cpu_model if self._config.whisper.device == "cpu" else self._model_name,
+                self._config.whisper.device,
             )
         except Exception:
             log.warning(

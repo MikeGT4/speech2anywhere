@@ -239,9 +239,12 @@ class KiraApp:
                 extra = {"glossary": glossary} if glossary else {}
                 if _language_is_certain(transcription):
                     extra["language"] = transcription.language
-                polished = await self._styler.polish(
-                    transcription.text, mode=mode, **extra,
-                )
+                if self._config.styler.enabled:
+                    polished = await self._styler.polish(
+                        transcription.text, mode=mode, **extra,
+                    )
+                else:
+                    polished = transcription.text
                 log.info(
                     "Polish out (mode=%s, %d chars): %r",
                     mode, len(polished), polished[:80],
@@ -254,9 +257,12 @@ class KiraApp:
             self._injector.inject(polished)
             if mode is not None:
                 self._record_dictation(mode, transcription, polished, audio)
-        except Exception:
+        except Exception as exc:
             log.exception("pipeline failed")
-            self.last_error = tr("Verarbeitung fehlgeschlagen.|Details im Log.")
+            if "cuda" in str(exc).lower() or "cublas" in str(exc).lower():
+                self.last_error = tr("Keine NVIDIA-Grafikkarte.|In den Einstellungen auf Prozessor stellen.")
+            else:
+                self.last_error = tr("Verarbeitung fehlgeschlagen.|Details im Log.")
             self._set_state(State.ERROR)
         finally:
             self._edit_mode = False

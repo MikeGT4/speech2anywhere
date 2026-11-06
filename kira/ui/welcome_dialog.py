@@ -51,14 +51,13 @@ def welcomed_before() -> bool:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Versprecher: „am Dienstag, nein, am Freitag“ wird zu „am Freitag“ (in Mail, Chat und Fließtext).</li>
-  <li>Die Politur antwortet in der Sprache deines Diktats. Im Reiter <b>Mikrofon</b> wählst du aus acht Sprachen
-    oder lässt sie erkennen; dort steht auch die Sprache der Oberfläche (Deutsch oder Englisch).</li>
-  <li>Bild, Dateien und formatierter Text in der Zwischenablage überstehen das Diktat.</li>
-  <li>Umschalten statt Halten im Reiter <b>Tasten</b>: einmal drücken, sprechen, noch einmal drücken.</li>
-  <li>„Datei transkribieren“ schreibt eine Untertiteldatei (<code>.srt</code>) mit.</li>
-  <li>Nach dem Speichern von Einstellungen startet Speech2Anywhere auf Knopfdruck selbst neu.</li>
-  <li>Seit 0.5.11 dabei: Töne beim Diktat im Reiter <b>Sound</b>.</li>
+  <li>Ohne große Grafikkarte: Im Reiter <b>Mikrofon</b> stellt <b>Rechnen auf</b> Erkennung und Politur auf den Prozessor.
+    Die Hilfeseite daneben zeigt Downloads und gemessene Zeiten.</li>
+  <li>Die Ersteinrichtung misst deinen Rechner und empfiehlt Prozessor oder Grafikkarte.</li>
+  <li>Reiter <b>Politur</b>: Der Knopf <b>Hugging Face…</b> führt zu weiteren Modellen. Geprüft sind nur die gemma4-Modelle.</li>
+  <li>Schrift, Knöpfe und Felder der Fenster sind bei 100 % Skalierung glatt.</li>
+  <li>Das Tray-Menü zeigt den Zustand als Punkt: grün bereit, gelb bei der Arbeit, rot bei einem Fehler.</li>
+  <li>Seit 0.6.0 dabei: Versprecher, acht Sprachen, Oberfläche auf Englisch.</li>
 </ul>
 """
 
@@ -133,8 +132,9 @@ stammen aus Chat-Verläufen, deren Ordner in der Rohconfig unter
 <code>learning.sources</code> stehen. Alles bleibt lokal. Gelernt wird aus deutschen Diktaten.</p>
 
 <h3>6. Unzensiertes Modell (optional)</h3>
-<p>Standardmäßig poliert Speech2Anywhere mit <code>gemma4:12b</code>. In den Einstellungen,
-Reiter „Politur“, lädt der Knopf <b>„Laden…“</b> bei „Unzensiert“ optional
+<p>Mit Grafikkarte poliert Speech2Anywhere mit <code>gemma4:12b</code>, auf kleineren Karten und auf dem
+Prozessor mit <code>gemma4:e4b</code>. Mit Grafikkarte lädt in den Einstellungen,
+Reiter „Politur“, der Knopf <b>„Laden…“</b> bei „Unzensiert“ optional
 ein abliteriertes Modell (Qwen3.6 27B, rund 17 GB), dessen Inhaltsfilter
 entfernt sind (nützlich, wenn die normale Politur Formulierungen abschwächt
 oder zurückweist). Speech2Anywhere prüft vorher deinen Grafikspeicher.</p>
@@ -148,7 +148,7 @@ Tray-Menü steht „Update auf … installieren…“. Abschaltbar in der Rohcon
 <code>updates.check_interval_hours</code>.</p>
 <p>Manuell: Tray → <b>„Updates suchen..."</b> oder Einstellungen → Reiter „Über“ →
 Update-Button. Hat sich seit deiner Version nur das Programm geändert, lädt
-Speech2Anywhere nur das Programmpaket (gut 1 MB), prüft dessen Prüfsumme, spielt es
+Speech2Anywhere nur das Programmpaket (knapp 3 MB), prüft dessen Prüfsumme, spielt es
 nach einem kurzen Beenden ein und startet von selbst neu. Sonst lädt es das ganze
 Paket (Stub + Splits), verifiziert die SHA256-Hashes und startet den Setup-Wizard.</p>
 <p>Jedes Release ist mit einer bestimmten Ollama-Version und bestimmten Fassungen der
@@ -164,6 +164,15 @@ gemessenen Modelle in einer anderen Fassung, meldet Speech2Anywhere das einmal i
   <li><b>Rotoranger Punkt</b>: Fehler, siehe „Protokoll öffnen…“</li>
 </ul>
 
+<h3>9. Prozessor oder Grafikkarte</h3>
+<p>Im Reiter „Mikrofon“ legt <b>Rechnen auf</b> fest, ob Erkennung und Politur auf dem Prozessor oder auf der NVIDIA-Grafikkarte laufen.<br>
+Die Hilfeseite daneben zeigt Downloads und gemessene Zeiten.<br>
+Bei der Ersteinrichtung misst Speech2Anywhere deinen Rechner und schlägt eins von beidem vor.<br>
+Umstellen kannst du jederzeit.</p>
+<p>Weitere Modelle für die Politur: Reiter „Politur“, Knopf <b>„Hugging Face…“</b>.<br>
+Den Namen so eintragen: <code>hf.co/Nutzer/Modell:Q4_K_M</code>, Speichern lädt das Modell.<br>
+Geprüft sind nur die gemma4-Modelle.</p>
+
 <h3>Konfiguration</h3>
 <p>Tray → <b>„Einstellungen…“</b>: Reiter Mikrofon, Politur, Tasten, Anzeige,
 Sound, Lernen und Über. Seltene Felder (Ersetzungen, Modi, Initial-Prompt) über
@@ -178,14 +187,13 @@ Bei nativen Crashes: <code>speech2anywhere-faulthandler.log</code> daneben.</p>
 _NEWS_HTML_EN = """
 <h3>New in v{version}</h3>
 <ul>
-  <li>Slips of the tongue: “on Tuesday, no, on Friday” becomes “on Friday” (in mail, chat and plain text).</li>
-  <li>The clean-up answers in the language you dictated. On the <b>Microphone</b> tab you pick one of eight
-    languages or let it be detected; the interface language (German or English) is set there too.</li>
-  <li>Images, files and formatted text in the clipboard survive the dictation.</li>
-  <li>Toggle instead of hold on the <b>Keys</b> tab: press once, talk, press again.</li>
-  <li>“Transcribe File” also writes a subtitle file (<code>.srt</code>).</li>
-  <li>After saving settings, Speech2Anywhere restarts itself at the push of a button.</li>
-  <li>Since 0.5.11: sounds while dictating on the <b>Sound</b> tab.</li>
+  <li>No big graphics card needed: on the <b>Microphone</b> tab, <b>Run on</b> moves recognition and clean-up to the processor.
+    Its help page shows downloads and measured times.</li>
+  <li>First-run setup now measures your PC and recommends processor or graphics card.</li>
+  <li><b>Clean-up</b> tab: the <b>Hugging Face…</b> button leads to more models. Only the gemma4 models are tested.</li>
+  <li>Text, buttons and fields in the windows are smooth at 100 % scaling.</li>
+  <li>In the tray menu a dot shows the state: green ready, yellow busy, red on an error.</li>
+  <li>Since 0.6.0: slips of the tongue, eight languages, interface in English.</li>
 </ul>
 """
 
@@ -260,8 +268,9 @@ come from chat histories whose folders are listed in the raw config under
 <code>learning.sources</code>. Everything stays local. Learning works for German dictations.</p>
 
 <h3>6. Uncensored model (optional)</h3>
-<p>By default Speech2Anywhere cleans up with <code>gemma4:12b</code>. On the “Clean-up” tab
-of the settings, the <b>“Download…”</b> button next to “Uncensored” optionally loads
+<p>With a graphics card Speech2Anywhere cleans up with <code>gemma4:12b</code>, on smaller cards and on the
+processor with <code>gemma4:e4b</code>. With a graphics card, the <b>“Download…”</b> button next to “Uncensored”
+on the “Clean-up” tab of the settings optionally loads
 an abliterated model (Qwen3.6 27B, about 17 GB) whose content filters
 are removed (useful when the normal clean-up tones wording down
 or refuses it). Speech2Anywhere checks your video memory first.</p>
@@ -275,7 +284,7 @@ tray menu shows “Install update to …”. You can switch this off in the raw 
 <code>updates.check_interval_hours</code>.</p>
 <p>Manually: Tray → <b>“Check for updates…”</b> or Settings → “About” tab →
 update button. If only the program has changed since your version,
-Speech2Anywhere downloads just the program package (a good 1 MB), verifies its checksum, installs it
+Speech2Anywhere downloads just the program package (just under 3 MB), verifies its checksum, installs it
 after closing briefly and restarts by itself. Otherwise it downloads the whole
 package (stub + splits), verifies the SHA256 hashes and starts the setup wizard.</p>
 <p>Every release is measured with a specific Ollama version and specific versions of the
@@ -290,6 +299,15 @@ measured models in a different version, Speech2Anywhere reports that once in the
   <li><b>The mouth chatters</b>: recording</li>
   <li><b>Orange-red dot</b>: error, see “Open Log…”</li>
 </ul>
+
+<h3>9. Processor or graphics card</h3>
+<p>On the “Microphone” tab, <b>Run on</b> decides whether recognition and clean-up run on the processor or on the NVIDIA graphics card.<br>
+The help page next to it shows downloads and measured times.<br>
+During the first-run setup Speech2Anywhere measures your PC and suggests one of the two.<br>
+You can switch at any time.</p>
+<p>More models for the clean-up: “Clean-up” tab, <b>“Hugging Face…”</b> button.<br>
+Enter the name like this: <code>hf.co/user/model:Q4_K_M</code>, saving downloads the model.<br>
+Only the gemma4 models are tested.</p>
 
 <h3>Configuration</h3>
 <p>Tray → <b>“Settings…”</b>: tabs Microphone, Clean-up, Keys, Indicator,

@@ -856,3 +856,57 @@ def test_dictation_result_without_a_certainty_says_so(monkeypatch, fake_config):
         language = "nl"
 
     assert _dictation_result(monkeypatch, fake_config, Info()).language_probability is None
+
+
+def _loaded_with(monkeypatch, whisper):
+    from kira.config import Config
+    from kira.transcriber_fw import Transcriber
+    seen = {}
+
+    class FakeWhisperModel:
+        def __init__(self, name, **kw):
+            seen.update(kw, name=name)
+
+    monkeypatch.setattr("kira.transcriber_fw.WhisperModel", FakeWhisperModel)
+    Transcriber(Config.model_validate({"whisper": whisper}))._ensure_model()
+    return seen
+
+
+def test_cpu_device_loads_the_processor_model_with_int8(monkeypatch):
+    from kira.transcriber_fw import cpu_threads
+    seen = _loaded_with(monkeypatch, {"model": "large-v3", "device": "cpu", "cpu_model": "C:/m/faster-whisper-small"})
+    assert seen["name"] == "C:/m/faster-whisper-small"
+    assert seen["device"] == "cpu"
+    assert seen["compute_type"] == "int8"
+    assert seen["cpu_threads"] == cpu_threads()
+
+
+def test_gpu_device_keeps_cuda_with_float16(monkeypatch):
+    seen = _loaded_with(monkeypatch, {"model": "large-v3", "cpu_model": "small"})
+    assert seen["name"] == "large-v3"
+    assert seen["device"] == "cuda"
+    assert seen["compute_type"] == "float16"
+
+
+@pytest.mark.parametrize("count, expected", [(16, 8), (32, 8), (8, 4), (4, 2), (1, 1), (None, 1)])
+def test_cpu_threads_uses_half_the_logical_cores_up_to_eight(monkeypatch, count, expected):
+    from kira import transcriber_fw
+    monkeypatch.setattr(transcriber_fw.os, "cpu_count", lambda: count)
+    assert transcriber_fw.cpu_threads() == expected
+
+
+def test_gpu_model_follows_a_changed_config(monkeypatch):
+    from kira.config import Config
+    from kira.transcriber_fw import Transcriber
+    seen = {}
+
+    class FakeWhisperModel:
+        def __init__(self, name, **kw):
+            seen["name"] = name
+
+    monkeypatch.setattr("kira.transcriber_fw.WhisperModel", FakeWhisperModel)
+    cfg = Config.model_validate({"whisper": {"model": "large-v3"}})
+    transcriber = Transcriber(cfg)
+    cfg.whisper.model = "C:/m/faster-whisper-large-v3"
+    transcriber._ensure_model()
+    assert seen["name"] == "C:/m/faster-whisper-large-v3"

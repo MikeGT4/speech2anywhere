@@ -66,6 +66,7 @@ def apply_light_theme(dialog: QDialog) -> None:
     if isinstance(dialog, QMessageBox):
         _comic_message(dialog)
     dialog.setStyleSheet(comic.dialog_qss())
+    comic.ink_buttons(dialog)
     comic.ink_titlebar_on_show(dialog)
 
 

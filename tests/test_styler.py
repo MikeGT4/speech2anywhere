@@ -1348,3 +1348,52 @@ async def test_language_line_tells_the_model_to_answer_in_that_language():
 async def test_translation_mode_gets_no_language_line():
     sent = await _sent_prompt("translate_en", language="nl")
     assert sent == load_prompt("translate_en").format(text="hallo welt")
+
+
+def _processor_styler(**styler_cfg):
+    cfg = Config.model_validate({"whisper": {"device": "cpu"}, "styler": {"model": "gemma4:12b", **styler_cfg}})
+    styler = Styler(cfg)
+    styler._client = MagicMock()
+    styler._client.chat = AsyncMock(return_value={"message": {"content": "Hallo Welt."}})
+    return styler
+
+
+def test_processor_mode_polishes_with_the_fast_model_unless_a_mode_names_one():
+    styler = _processor_styler(fast_model="gemma4:e4b", modes={"code": {"model": "qwen3:4b"}})
+    assert styler.cpu_mode
+    assert styler._resolve_model(None) == "gemma4:e4b"
+    assert styler._resolve_model("plain") == "gemma4:e4b"
+    assert styler._resolve_model("code") == "qwen3:4b"
+
+
+@pytest.mark.asyncio
+async def test_processor_mode_keeps_every_request_off_the_graphics_card():
+    styler = _processor_styler()
+    await styler.polish("hallo welt", mode="plain")
+    await styler.edit_command("Hallo", "mach das förmlich")
+    await styler.warmup()
+    assert [call.kwargs["options"].get("num_gpu") for call in styler._client.chat.call_args_list] == [0, 0, 0]
+
+
+@pytest.mark.asyncio
+async def test_graphics_mode_sends_no_num_gpu():
+    styler = Styler(Config())
+    styler._client = MagicMock()
+    styler._client.chat = AsyncMock(return_value={"message": {"content": "Hallo Welt."}})
+    await styler.polish("hallo welt", mode="plain")
+    assert "num_gpu" not in styler._client.chat.call_args.kwargs["options"]
+
+
+@pytest.mark.asyncio
+async def test_processor_mode_never_reports_slow_polish_or_cpu_fallback():
+    slow, fallback = MagicMock(), MagicMock()
+    styler = _processor_styler()
+    styler.set_on_slow_polish_detected(slow)
+    styler.set_on_cpu_fallback_detected(fallback)
+    for _ in range(SLOW_POLISH_TRIGGER_COUNT + 1):
+        await styler._observe_polish_duration(SLOW_POLISH_THRESHOLD_SEC + 5.0)
+    styler._client.ps = AsyncMock(return_value=_ps("gemma4:e4b", size=5_000_000_000, size_vram=0))
+    assert await styler.verify_gpu_placement() == "cpu"
+    slow.assert_not_called()
+    fallback.assert_not_called()
+    assert styler._force_fast_until is None

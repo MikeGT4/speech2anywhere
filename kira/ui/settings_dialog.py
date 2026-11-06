@@ -1,6 +1,7 @@
 from __future__ import annotations
 import logging
 import subprocess
+from pathlib import Path
 
 from PyQt6.QtCore import Qt, QObject, QThread, pyqtSignal
 from PyQt6.QtGui import QIcon
@@ -20,6 +21,7 @@ from kira.ui._progress_view import ProgressView
 
 from kira import __version__, UPDATE_REPO, ollama_pull, progress as prog
 from kira.config import LANGUAGE_NAMES, SOUND_EVENTS, default_config_path, effective_hotkey, load_config
+from kira.hardware import CPU_WHISPER_REPO, cpu_whisper_dir
 from kira.hotkey_win import SUPPORTED_COMBOS
 from kira.config_writer import update_scalars
 from kira.sounds import SoundPlayer
@@ -32,6 +34,17 @@ from kira._resources import assets_dir as _assets_dir  # noqa: E402
 _ASSETS = _assets_dir()
 
 _DEVICE_DEFAULT_LABEL = N_("Windows-Standard (automatisch)")
+_CPU_WHISPER_REPO = CPU_WHISPER_REPO
+HUGGING_FACE_GGUF_URL = "https://huggingface.co/models?library=gguf&sort=trending"
+_CPU_WHISPER_DIR = cpu_whisper_dir()
+
+
+def _looks_like_path(spec: str) -> bool:
+    return Path(spec).is_absolute()
+
+
+def _whisper_files_present(spec: str) -> bool:
+    return _looks_like_path(spec) and (Path(spec) / "model.bin").is_file()
 
 _UNCENSORED_MODEL = "huihui_ai/Qwen3.6-abliterated:27b"
 
@@ -221,6 +234,7 @@ class SettingsDialog(QDialog):
         for build in (self._page_mikrofon, self._page_politur, self._page_tasten,
                       self._page_anzeige, self._page_sound, self._page_lernen, self._page_ueber):
             self._pages.addWidget(build())
+        self._sync_compute_dependents()
         self._tabs[0].setChecked(True)
         self._pages.setCurrentIndex(0)
 
@@ -263,7 +277,11 @@ class SettingsDialog(QDialog):
         save.setObjectName("comicPrimary")
         save.setDefault(True)
         save.clicked.connect(self._save)
-        return comic.footer_row(tr("Fast alles wirkt nach einem kurzen Neustart."), cancel, save)
+        return comic.footer_row(self._credit(), cancel, save)
+
+    @staticmethod
+    def _credit() -> QWidget:
+        return comic.credit_row()
 
     def _card(self, title: str) -> comic.ComicCard:
         return comic.ComicCard(title, self._mascot)
@@ -293,6 +311,27 @@ class SettingsDialog(QDialog):
 
     def _page_mikrofon(self) -> QWidget:
         card = self._card(tr("Mikrofon"))
+
+        compute_row = QHBoxLayout()
+        compute_row.setSpacing(10)
+        self._compute = comic.style_combo(QComboBox())
+        self._compute.addItem(tr("Prozessor (CPU)"), userData="cpu")
+        self._compute.addItem(tr("Grafikkarte (GPU, NVIDIA)"), userData="gpu")
+        self._compute.setCurrentIndex(self._compute.findData(self._cfg.whisper.device))
+        self._compute.setToolTip(
+            tr(
+                "Prozessor: läuft auf jedem PC, braucht je Diktat etwas länger.\n"
+                "Grafikkarte: schneller, braucht eine NVIDIA-Karte.\n"
+                "Fehlende Modelle werden beim Speichern geladen.\n"
+                "Wirkt nach einem kurzen Neustart."
+            )
+        )
+        self._compute.currentIndexChanged.connect(lambda _index: self._sync_compute_dependents())
+        compute_row.addWidget(self._compute, 1)
+        compute_help = QPushButton(tr("Was ist der Unterschied?"))
+        compute_help.clicked.connect(self._open_compute_help)
+        compute_row.addWidget(compute_help)
+        card.add_row(tr("Rechnen auf"), tr("Prozessor oder Grafikkarte."), compute_row)
 
         mic_box = QVBoxLayout()
         mic_box.setSpacing(6)
@@ -402,11 +441,22 @@ class SettingsDialog(QDialog):
     def _page_politur(self) -> QWidget:
         card = self._card(tr("Politur"))
 
+        self._polish_enabled = comic.ToggleSwitch()
+        self._polish_enabled.setChecked(self._cfg.styler.enabled)
+        self._polish_enabled.setToolTip(
+            tr(
+                "An: das Sprachmodell setzt Satzzeichen und räumt den Text auf.\n"
+                "Aus: der erkannte Text kommt unverändert an, das geht schneller.\n"
+                "Bearbeiten (F9) nutzt das Modell in beiden Fällen."
+            )
+        )
+        card.add_row(tr("Politur"), tr("Aus: der erkannte Text kommt unverändert an."), self._polish_enabled)
+
         model_row = QHBoxLayout()
         model_row.setSpacing(10)
         self._styler_model = QLineEdit()
         self._styler_model.setText(self._cfg.styler.model)
-        self._styler_model.setPlaceholderText(tr("z. B. gemma4:12b, qwen3:8b"))
+        self._styler_model.setPlaceholderText(tr("z. B. gemma4:12b oder hf.co/Nutzer/Modell:Q4_K_M"))
         model_row.addWidget(self._styler_model, 1)
         update_btn = QPushButton(tr("Aktualisieren"))
         update_btn.setToolTip(
@@ -417,21 +467,31 @@ class SettingsDialog(QDialog):
         )
         update_btn.clicked.connect(self._update_polish_model)
         model_row.addWidget(update_btn)
+        hugging_face_btn = QPushButton("Hugging Face…")
+        hugging_face_btn.setToolTip(
+            tr(
+                "Öffnet die Suche nach GGUF-Modellen auf Hugging Face.\n"
+                "Den Namen so eintragen: hf.co/Nutzer/Modell:Q4_K_M\n"
+                "Speichern lädt das Modell.\n"
+                "Geprüft sind mit Speech2Anywhere nur die gemma4-Modelle."
+            )
+        )
+        hugging_face_btn.clicked.connect(lambda: comic._open_url(HUGGING_FACE_GGUF_URL))
+        model_row.addWidget(hugging_face_btn)
         card.add_row(tr("Modell"), tr("Setzt Satzzeichen, schreibt groß und fegt die Ähms raus."), model_row)
 
         self._fast_mode = comic.ToggleSwitch()
         self._fast_mode.setChecked(self._cfg.styler.fast_mode)
-        self._fast_mode.setToolTip(
-            tr(
-                "Poliert mit dem schnellen Modell statt mit dem Qualitätsmodell.\n"
-                "Sinnvoll, wenn der Grafikspeicher knapp ist (Browser, Outlook, RDP\n"
-                "gleichzeitig offen); sonst rutscht das große Modell teils auf die CPU.\n\n"
-                "Satzzeichen, Großschreibung, Füllwörter: praktisch gleich.\n"
-                "Bearbeiten (F9) und lange Texte: etwas schwächer.\n\n"
-                "Beim ersten Einschalten wird das Modell bei Bedarf geladen (~3 GB).\n"
-                "Einträge in styler.modes haben weiter Vorrang."
-            )
+        self._fast_mode_tip = tr(
+            "Poliert mit dem schnellen Modell statt mit dem Qualitätsmodell.\n"
+            "Sinnvoll, wenn der Grafikspeicher knapp ist (Browser, Outlook, RDP\n"
+            "gleichzeitig offen); sonst rutscht das große Modell teils auf die CPU.\n\n"
+            "Satzzeichen, Großschreibung, Füllwörter: praktisch gleich.\n"
+            "Bearbeiten (F9) und lange Texte: etwas schwächer.\n\n"
+            "Beim ersten Einschalten wird das Modell bei Bedarf geladen (~10 GB).\n"
+            "Einträge in styler.modes haben weiter Vorrang."
         )
+        self._fast_mode.setToolTip(self._fast_mode_tip)
         card.add_row(
             tr("Schneller Modus"),
             tr("{}, spart Grafikspeicher.").format(self._cfg.styler.fast_model),
@@ -457,14 +517,14 @@ class SettingsDialog(QDialog):
         uncensored_row = QHBoxLayout()
         uncensored_row.setSpacing(12)
         uncensored_btn = QPushButton(tr("Laden…"))
-        uncensored_btn.setToolTip(
-            tr(
-                "Lädt das unzensierte Modell ({}, ~17 GB)\n"
-                "per ollama pull und trägt es als Qualitätsmodell ein. Vorher läuft\n"
-                "ein GPU-Check: das 27B-Modell braucht ~16 GB Grafikspeicher und\n"
-                "passt auf 16-GB-Karten nicht neben Whisper."
-            ).format(_UNCENSORED_MODEL)
-        )
+        self._uncensored_btn = uncensored_btn
+        self._uncensored_tip = tr(
+            "Lädt das unzensierte Modell ({}, ~17 GB)\n"
+            "per ollama pull und trägt es als Qualitätsmodell ein. Vorher läuft\n"
+            "ein GPU-Check: das 27B-Modell braucht ~16 GB Grafikspeicher und\n"
+            "passt auf 16-GB-Karten nicht neben Whisper."
+        ).format(_UNCENSORED_MODEL)
+        uncensored_btn.setToolTip(self._uncensored_tip)
         uncensored_btn.clicked.connect(self._offer_uncensored_model)
         uncensored_row.addWidget(uncensored_btn)
         badge = QLabel("18+")
@@ -601,12 +661,11 @@ class SettingsDialog(QDialog):
         card.add_row(tr("Stil"), tr("So sieht die Anzeige beim Diktieren aus."), style_box)
         self._hud_live_words = comic.ToggleSwitch()
         self._hud_live_words.setChecked(self._cfg.ui.hud_live_words)
-        self._hud_live_words.setToolTip(
-            tr(
-                "In den Stilen „Comic (Bla-Bla)“, „Manga“, „Halloween“ und „Weihnachten“ erscheinen beim Sprechen\n"
-                "Fetzen der erkannten Wörter. Sie sind am Bildschirm zu sehen, auch bei einer Bildschirmfreigabe."
-            )
+        self._live_words_tip = tr(
+            "In den Stilen „Comic (Bla-Bla)“, „Manga“, „Halloween“ und „Weihnachten“ erscheinen beim Sprechen\n"
+            "Fetzen der erkannten Wörter. Sie sind am Bildschirm zu sehen, auch bei einer Bildschirmfreigabe."
         )
+        self._hud_live_words.setToolTip(self._live_words_tip)
         self._hud_live_words.toggled.connect(self._hud_preview.set_live_words)
         card.add_row(tr("Wortfetzen"), tr("Fetzen deiner Wörter beim Sprechen."), self._hud_live_words)
         hint = comic.HintBubble([
@@ -746,6 +805,24 @@ class SettingsDialog(QDialog):
 
         run_update_flow(parent=self, on_quit_request=request_quit)
 
+    def _open_compute_help(self) -> None:
+        from kira.ui.compute_help_dialog import ComputeHelpDialog
+        dlg = ComputeHelpDialog(self)
+        getattr(dlg, "exec")()
+
+    def _sync_compute_dependents(self) -> None:
+        if not hasattr(self, "_hud_live_words"):
+            return
+        on_processor = self._compute.currentData() == "cpu"
+        only_card = tr("Nur mit Grafikkarte.")
+        for widget in (self._fast_mode, self._uncensored_btn, self._hud_live_words):
+            widget.setEnabled(not on_processor)
+        self._fast_mode.setToolTip(
+            tr("Im Prozessor-Modus poliert immer das schnelle Modell.") if on_processor else self._fast_mode_tip
+        )
+        self._uncensored_btn.setToolTip(only_card if on_processor else self._uncensored_tip)
+        self._hud_live_words.setToolTip(only_card if on_processor else self._live_words_tip)
+
     def _open_help_from_settings(self) -> None:
         from kira.ui.welcome_dialog import WelcomeDialog
         dlg = WelcomeDialog(as_help=True)
@@ -879,6 +956,30 @@ class SettingsDialog(QDialog):
                     self._fast_mode.setChecked(False)
                     return
 
+        new_compute = self._compute.currentData()
+        polish_on = self._polish_enabled.isChecked()
+        needs_model = polish_on or edit_enabled
+        cpu_model = self._cfg.whisper.cpu_model
+        if new_compute != self._cfg.whisper.device:
+            if new_compute == "cpu":
+                prepared = self._prepare_processor(needs_model)
+                if prepared is None:
+                    return
+                cpu_model = prepared
+            elif not self._prepare_graphics_card(new_fast_mode, needs_model):
+                return
+        elif polish_on and not self._cfg.styler.enabled:
+            model = self._effective_polish_model(new_compute, new_fast_mode)
+            if not _ollama_model_installed(model) and not self._pull_blocking(model):
+                return
+        new_model = self._styler_model.text().strip()
+        if (
+            needs_model and new_compute == "gpu" and not new_fast_mode and new_model
+            and new_model != self._cfg.styler.model
+            and not _ollama_model_installed(new_model) and not self._pull_blocking(new_model)
+        ):
+            return
+
         updates = {
             "audio.input_gain": float(self._gain.value()),
             "audio.input_device": device_value,
@@ -901,6 +1002,12 @@ class SettingsDialog(QDialog):
             updates["hotkey.mode"] = key_mode
         if self._ui_language.currentData() != self._cfg.ui.language:
             updates["ui.language"] = self._ui_language.currentData()
+        if new_compute != self._cfg.whisper.device:
+            updates["whisper.device"] = new_compute
+        if cpu_model != self._cfg.whisper.cpu_model:
+            updates["whisper.cpu_model"] = cpu_model
+        if polish_on != self._cfg.styler.enabled:
+            updates["styler.enabled"] = polish_on
 
         self._cfg_path.parent.mkdir(parents=True, exist_ok=True)
         if not self._cfg_path.exists():
@@ -930,6 +1037,8 @@ class SettingsDialog(QDialog):
             light_critical(self, "Speech2Anywhere", tr("Speichern hat leider nicht geklappt: {}").format(e))
             return
 
+        if new_compute != self._cfg.whisper.device:
+            self._release_models(self._cfg.whisper.device)
         if needs_restart and self._request_restart is not None:
             if _ask_restart(self) and not self._request_restart():
                 light_warning(
@@ -1077,6 +1186,91 @@ class SettingsDialog(QDialog):
         thread.start()
         self._pull_thread = thread
         self._pull_worker = worker
+
+    def _effective_polish_model(self, device: str, fast_mode: bool) -> str:
+        if device == "cpu" or fast_mode:
+            return self._cfg.styler.fast_model
+        return self._styler_model.text().strip() or self._cfg.styler.model
+
+    def _prepare_processor(self, needs_model: bool) -> str | None:
+        spec = self._cfg.whisper.cpu_model
+        if not _whisper_files_present(spec) and (_looks_like_path(spec) or spec == "small"):
+            target = _CPU_WHISPER_DIR
+            if not (target / "model.bin").is_file() and not self._whisper_download_blocking(_CPU_WHISPER_REPO, target):
+                return None
+            spec = target.as_posix()
+        model = self._effective_polish_model("cpu", False)
+        if needs_model and not _ollama_model_installed(model) and not self._pull_blocking(model):
+            return None
+        return spec
+
+    def _prepare_graphics_card(self, fast_mode: bool, needs_model: bool) -> bool:
+        from kira.gpu_check import detect_gpu
+        from kira.setup_wizard import DEFAULT_WHISPER_REPO
+        if detect_gpu() is None:
+            self._compute.setCurrentIndex(self._compute.findData("cpu"))
+            light_warning(
+                self, "Speech2Anywhere",
+                tr("Keine NVIDIA-Grafikkarte gefunden.\n\nSpeech2Anywhere rechnet weiter auf dem Prozessor."),
+            )
+            return False
+        spec = self._cfg.whisper.model
+        if _looks_like_path(spec) and not _whisper_files_present(spec):
+            if not self._whisper_download_blocking(DEFAULT_WHISPER_REPO, Path(spec)):
+                return False
+        model = self._effective_polish_model("gpu", fast_mode)
+        if needs_model and not _ollama_model_installed(model) and not self._pull_blocking(model):
+            return False
+        return True
+
+    def _release_models(self, old_device: str) -> None:
+        names = {self._cfg.styler.fast_model}
+        if old_device == "gpu":
+            names.add(self._cfg.styler.model)
+        try:
+            client = _ollama_client()
+            for name in sorted(names):
+                client.generate(model=name, keep_alive=0)
+        except Exception:
+            log.info("Modelle nach dem Wechsel nicht entladen", exc_info=True)
+
+    def _whisper_download_blocking(self, repo_id: str, target: Path) -> bool:
+        from PyQt6.QtCore import QEventLoop
+        from kira.setup_wizard import WhisperDownloadWorker
+        label = tr("Lade das Whisper-Modell {}\n").format(repo_id)
+        progress = QProgressDialog(label + tr(prog.STARTING), tr("Abbrechen"), 0, 0, self)
+        progress.setWindowModality(Qt.WindowModality.WindowModal)
+        progress.setWindowTitle(tr("Speech2Anywhere: Modell wird geladen"))
+        progress.setMinimumDuration(0)
+        apply_light_theme(progress)
+        view = ProgressView(progress, progress.setLabelText, label, parent=progress)
+        progress.show()
+        worker = WhisperDownloadWorker(target, repo_id, self)
+        loop = QEventLoop()
+        state: dict = {"ok": False, "error": None}
+
+        def finished(_path) -> None:
+            state["ok"] = True
+            loop.quit()
+
+        def failed(message: str) -> None:
+            state["error"] = message
+            loop.quit()
+
+        worker.progress.connect(view.amount)
+        worker.finished.connect(finished)
+        worker.error.connect(failed)
+        progress.canceled.connect(loop.quit)
+        worker.start()
+        loop.exec()
+        if not state["ok"]:
+            worker.cancel()
+        worker.wait(10000)
+        view.stop()
+        progress.close()
+        if state["error"]:
+            light_critical(self, "Speech2Anywhere", state["error"])
+        return state["ok"]
 
     def _pull_blocking(self, model_name: str) -> bool:
         from PyQt6.QtCore import QEventLoop

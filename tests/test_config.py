@@ -286,3 +286,16 @@ def test_interface_language_defaults_to_auto():
 def test_interface_language_knows_only_auto_german_and_english(value, expected):
     from kira.config import UIConfig
     assert UIConfig(language=value).language == expected
+
+
+@pytest.mark.parametrize("value, expected", [("cpu", "cpu"), ("CPU", "cpu"), ("gpu", "gpu"), ("cuda", "gpu"), ("xyz", "gpu"), (None, "gpu")])
+def test_whisper_device_knows_cpu_and_gpu(value, expected):
+    from kira.config import WhisperConfig
+    assert WhisperConfig(device=value).device == expected
+
+
+def test_processor_mode_defaults():
+    cfg = Config()
+    assert cfg.whisper.device == "gpu"
+    assert cfg.whisper.cpu_model == "small"
+    assert cfg.styler.enabled is True

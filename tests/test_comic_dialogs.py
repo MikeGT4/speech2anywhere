@@ -256,9 +256,9 @@ def test_welcome_shows_the_news_only_in_welcome_mode(qtbot, tmp_path, monkeypatc
     text = dialog.findChild(QTextBrowser).toPlainText()
     assert f"Neu in v{__version__}" in text
     assert "Versprecher" in text
-    assert "Umschalten statt Halten im Reiter Tasten" in text
-    assert "Töne beim Diktat im Reiter Sound" in text
-    assert "„Datei transkribieren“" in text
+    assert "Rechnen auf" in text
+    assert "Hugging Face…" in text
+    assert "Seit 0.6.0 dabei" in text
     assert dialog.cb_dont_show.text() == f"Bei diesem Update (v{__version__}) nicht erneut zeigen"
     helper = welcome.WelcomeDialog(as_help=True)
     qtbot.addWidget(helper)
@@ -374,11 +374,11 @@ def test_about_fits_small_screens(qtbot, monkeypatch):
 
 def test_news_tell_what_this_version_brings():
     import kira.ui.welcome_dialog as wd
-    for word in ("Versprecher", "Zwischenablage", "Umschalten", ".srt", "neu"):
+    for word in ("Rechnen auf", "Prozessor", "Ersteinrichtung", "Hugging Face", "Punkt"):
         assert word in wd._NEWS_HTML, word
-    for word in ("Slips of the tongue", "clipboard", "Toggle", ".srt", "restarts"):
+    for word in ("Run on", "processor", "First-run", "Hugging Face", "dot"):
         assert word in wd._NEWS_HTML_EN, word
-    assert wd._NEWS_HTML.count("<li>") == wd._NEWS_HTML_EN.count("<li>") == 7
+    assert wd._NEWS_HTML.count("<li>") == wd._NEWS_HTML_EN.count("<li>") == 6
 
 
 def test_version_is_the_same_in_both_places():
@@ -386,4 +386,17 @@ def test_version_is_the_same_in_both_places():
     from pathlib import Path
     from kira import __version__
     text = (Path(__file__).resolve().parent.parent / "pyproject.toml").read_text(encoding="utf-8")
-    assert re.search(r'^version = "([^"]+)"', text, re.M).group(1) == __version__ == "0.6.0"
+    assert re.search(r'^version = "([^"]+)"', text, re.M).group(1) == __version__ == "0.6.1"
+
+
+def test_about_shows_the_models_of_the_processor_mode(qtbot, monkeypatch):
+    import kira.ui.about_dialog as about
+    cfg = Config.model_validate({"whisper": {"device": "cpu", "cpu_model": "C:/m/faster-whisper-small"},
+                                 "styler": {"model": "gemma4:12b", "fast_model": "gemma4:e4b"}})
+    monkeypatch.setattr(about, "_safe_load_config", lambda: cfg)
+    dialog = about.AboutDialog()
+    qtbot.addWidget(dialog)
+    texts = " ".join(_texts(dialog))
+    assert "faster-whisper-small" in texts
+    assert "gemma4:e4b" in texts
+    assert "gemma4:12b" not in texts

@@ -229,7 +229,7 @@ def _run_mac(cfg, recorder, transcriber, styler, injector) -> None:
     ).start()
     app.set_loop(loop)
 
-    if cfg.styler.provider == "ollama" and cfg.styler.warmup_on_start:
+    if cfg.styler.provider == "ollama" and cfg.styler.warmup_on_start and cfg.styler.enabled:
         asyncio.run_coroutine_threadsafe(styler.warmup(), loop)
 
     hotkey = HotkeyListener(
@@ -327,6 +327,12 @@ def _acquire_windows_single_instance_lock() -> object | None:
     return h
 
 
+def _polish_model(cfg) -> str:
+    if cfg.styler.fast_mode or cfg.whisper.device == "cpu":
+        return cfg.styler.fast_model
+    return cfg.styler.model
+
+
 def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
     _set_windows_app_identity()
 
@@ -358,6 +364,13 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
         if wizard_result != SetupWizard.DialogCode.Accepted:
             log.warning("First-run wizard aborted by user, exiting.")
             return
+        from kira.setup_wizard import apply_setup_choice
+        if not apply_setup_choice(cfg, wizard.choice(), gpu_target=whisper_target):
+            from kira.ui._dialog_style import light_warning
+            light_warning(
+                None, "Speech2Anywhere",
+                tr("Die Wahl aus der Einrichtung ließ sich nicht speichern.\nStell sie in den Einstellungen unter „Rechnen auf“ ein."),
+            )
 
     from kira.ui.splash import make_splash
     splash = make_splash()
@@ -383,7 +396,7 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
 
     popup = PopupHUD() if cfg.ui.popup else None
     live_words = None
-    if popup is not None:
+    if popup is not None and cfg.whisper.device != "cpu":
         from kira.live_words import LiveWords
         live_words = LiveWords(
             transcriber.transcribe_partial, popup.push_words, wanted=lambda: popup.wants_live_words,
@@ -510,7 +523,7 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
     ).start()
     app.set_loop(loop)
 
-    if cfg.styler.provider == "ollama" and cfg.styler.warmup_on_start:
+    if cfg.styler.provider == "ollama" and cfg.styler.warmup_on_start and cfg.styler.enabled:
         asyncio.run_coroutine_threadsafe(styler.warmup(), loop)
 
     threading.Thread(
@@ -564,10 +577,10 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
                     lambda: show_setup_hint_if_needed(mic_ok, ollama_ok)
                 )
             if ollama_ok:
-                if not ensure_ollama_model(cfg.styler.model):
+                if not ensure_ollama_model(_polish_model(cfg)):
                     log.warning(
                         "Ollama model %s not ready, polish will fall back to raw",
-                        cfg.styler.model,
+                        _polish_model(cfg),
                     )
                 return
             log.info(
@@ -577,14 +590,15 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
                 time.sleep(30)
                 if _ollama_reachable_once():
                     log.info("Ollama reachable on retry #%d", i + 1)
-                    if not ensure_ollama_model(cfg.styler.model):
+                    if not ensure_ollama_model(_polish_model(cfg)):
                         log.warning(
                             "Ollama model %s not ready, polish will fall back to raw",
-                            cfg.styler.model,
+                            _polish_model(cfg),
                         )
                     if (
                         cfg.styler.provider == "ollama"
                         and cfg.styler.warmup_on_start
+                        and cfg.styler.enabled
                         and not styler.warmup_succeeded
                     ):
                         log.info("Hole Styler-Warmup nach (Boot-Warmup scheiterte)")
@@ -647,8 +661,7 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
         from kira.release_info import load_installed
 
         def _advice_now():
-            styler_cfg = load_config().styler
-            return _advice_check(styler_cfg.fast_model if styler_cfg.fast_mode else styler_cfg.model, load_installed())
+            return _advice_check(_polish_model(load_config()), load_installed())
 
         start_watch(
             AdviceWatch(

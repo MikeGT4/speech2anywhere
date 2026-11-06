@@ -15,18 +15,18 @@ from kira.gpu_check import (
 
 @pytest.mark.parametrize("model,expected", [
     ("large-v3-turbo", 1.6),
-    ("large-v3", 3.0),
-    ("large-v2", 3.0),
+    ("large-v3", 4.2),
+    ("large-v2", 4.2),
     ("medium", 1.0),
     ("small", 0.5),
     ("base", 0.3),
     ("tiny", 0.1),
     ("mlx-community/whisper-large-v3-turbo", 1.6),
     ("whisper-medium", 1.0),
-    ("C:/Users/user/models/faster-whisper-large-v3", 3.0),
+    ("C:/Users/user/models/faster-whisper-large-v3", 4.2),
     ("C:\\Users\\user\\models\\faster-whisper-large-v3-turbo", 1.6),
     ("/home/user/.cache/faster-whisper/medium", 1.0),
-    ("faster-whisper-large-v3", 3.0),
+    ("faster-whisper-large-v3", 4.2),
 ])
 def test_estimate_whisper_vram_known_models(model, expected):
     assert estimate_whisper_vram(model) == expected
@@ -173,3 +173,19 @@ def test_messages_use_real_umlauts():
     for text in texte:
         for ersatz in ("Geschaetz", "waere", "unterstuetz", "wuerde", "\u2014"):
             assert ersatz not in text, ersatz
+
+
+def test_no_gpu_message_points_to_the_processor_mode(monkeypatch):
+    from kira import gpu_check
+    monkeypatch.setattr(gpu_check, "detect_gpu", lambda: None)
+    result = gpu_check.assess("large-v3", "gemma4:12b")
+    assert "Rechnen auf" in result.message
+    assert "kaum nutzbar" not in result.message
+
+
+def test_estimates_use_the_measured_video_memory():
+    from kira import gpu_check
+    assert gpu_check.estimate_whisper_vram("C:/models/faster-whisper-large-v3") == 4.2
+    assert gpu_check.estimate_polish_vram("gemma4:12b") == 8.6
+    assert gpu_check.estimate_polish_vram("gemma4:e4b") == 4.5
+    assert gpu_check.estimate_whisper_vram("large-v3-turbo") == 1.6
