@@ -7,6 +7,7 @@ import pytest
 if sys.platform != "win32":
     pytest.skip("windows-only tests (PyQt6)", allow_module_level=True)
 
+from PyQt6.QtCore import Qt
 from kira.lexicon import STATUS_REJECTED, Lexicon
 
 T0 = datetime(2026, 9, 22, 12, 0, tzinfo=timezone.utc)
@@ -107,3 +108,83 @@ def test_fits_1080p_at_125_percent(qtbot, tmp_path):
     dlg = LearnedWordsDialog(FakeService(_lexicon(tmp_path)))
     qtbot.addWidget(dlg)
     assert dlg.minimumSizeHint().height() <= 780
+
+
+def _many(tmp_path, pending=3):
+    lex = Lexicon(tmp_path / "learned.json")
+    for i in range(pending):
+        lex.observe(f"wort{i}", f"Wort{i}", kind="glossary", vocab=True,
+                    example=f"mit wort{i}", when=T0 + timedelta(minutes=i))
+    return lex
+
+
+@pytest.fixture
+def shown(qtbot):
+    from kira.ui.learned_words_dialog import LearnedWordsDialog
+    dialogs = []
+
+    def make(lexicon):
+        dlg = LearnedWordsDialog(FakeService(lexicon))
+        qtbot.addWidget(dlg)
+        dialogs.append(dlg)
+        dlg.show()
+        qtbot.waitExposed(dlg)
+        dlg.resize(dlg.width(), dlg.sizeHint().height())
+        return dlg
+
+    yield make
+    for dlg in dialogs:
+        dlg.close()
+
+
+def _click_row(qtbot, table, row):
+    rect = table.visualItemRect(table.item(row, 0))
+    qtbot.mouseClick(table.viewport(), Qt.MouseButton.LeftButton, pos=rect.center())
+
+
+def _selected(table):
+    return [index.row() for index in table.selectionModel().selectedRows()]
+
+
+def test_accept_click_works_without_picking_a_row_first(qtbot, tmp_path, shown):
+    dlg = shown(_many(tmp_path))
+    assert _selected(dlg.pending_table) == [0]
+    qtbot.mouseClick(dlg.accept_button, Qt.MouseButton.LeftButton)
+    assert dlg.pending_table.rowCount() == 2
+    assert [dlg.active_table.item(row, 1).text() for row in range(dlg.active_table.rowCount())] == ["Wort0"]
+
+
+def test_next_entry_is_selected_after_a_decision(qtbot, tmp_path, shown):
+    dlg = shown(_many(tmp_path))
+    _click_row(qtbot, dlg.pending_table, 1)
+    qtbot.mouseClick(dlg.reject_button, Qt.MouseButton.LeftButton)
+    assert _selected(dlg.pending_table) == [1]
+    assert dlg.pending_table.item(1, 1).text() == "Wort2"
+    qtbot.mouseClick(dlg.accept_button, Qt.MouseButton.LeftButton)
+    assert _selected(dlg.pending_table) == [0]
+    assert dlg.pending_table.item(0, 1).text() == "Wort0"
+
+
+def test_accepting_the_last_entry_disables_the_buttons(qtbot, tmp_path, shown):
+    dlg = shown(_many(tmp_path, pending=1))
+    qtbot.mouseClick(dlg.accept_button, Qt.MouseButton.LeftButton)
+    assert dlg.pending_table.rowCount() == 0
+    assert not dlg.accept_button.isEnabled()
+    assert not dlg.reject_button.isEnabled()
+
+
+def test_buttons_are_disabled_when_nothing_can_be_decided(qtbot, tmp_path, shown):
+    dlg = shown(Lexicon(tmp_path / "learned.json"))
+    assert not dlg.accept_button.isEnabled()
+    assert not dlg.reject_button.isEnabled()
+    assert not dlg.delete_button.isEnabled()
+
+
+def test_delete_needs_a_chosen_active_row(qtbot, tmp_path, shown):
+    dlg = shown(_lexicon(tmp_path))
+    assert not dlg.delete_button.isEnabled()
+    _click_row(qtbot, dlg.active_table, 0)
+    assert dlg.delete_button.isEnabled()
+    qtbot.mouseClick(dlg.delete_button, Qt.MouseButton.LeftButton)
+    assert dlg.active_table.rowCount() == 0
+    assert not dlg.delete_button.isEnabled()

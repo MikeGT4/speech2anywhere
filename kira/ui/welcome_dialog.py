@@ -51,9 +51,9 @@ def welcomed_before() -> bool:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Die Schrift ist in allen Fenstern glatt, ohne Farbsaum.</li>
-  <li>Das gilt für Hinweise, Untertitel, Eingabefelder, die Anleitung und die Menüs.</li>
-  <li>Knöpfe, Reiter, Titel und die Taste im gelben Hinweis zeichnen schärfer.</li>
+  <li>Steht eine neue Version bereit, zeigt das Tray-Symbol unten rechts eine grüne Zacke mit Pfeil.</li>
+  <li>Gelernte Wörter: Die erste wartende Zeile ist markiert, „Übernehmen“ und „Verwerfen“ wirken sofort und markieren die nächste.</li>
+  <li>Seit 0.6.2 dabei: glatte Schrift in allen Fenstern, ohne Farbsaum.</li>
   <li>Seit 0.6.1 dabei: Rechnen auf dem Prozessor, Messung in der Ersteinrichtung, Hugging Face, Statuspunkt im Tray-Menü.</li>
 </ul>
 """
@@ -159,6 +159,7 @@ gemessenen Modelle in einer anderen Fassung, meldet Speech2Anywhere das einmal i
   <li><b>Ruhig</b>: bereit, oder Speech2Anywhere transkribiert und poliert gerade</li>
   <li><b>Der Mund plappert</b>: Aufnahme läuft</li>
   <li><b>Rotoranger Punkt</b>: Fehler, siehe „Protokoll öffnen…“</li>
+  <li><b>Grüne Zacke mit Pfeil</b> unten rechts: Eine neue Version steht bereit, siehe „Update auf v… installieren…“</li>
 </ul>
 
 <h3>9. Prozessor oder Grafikkarte</h3>
@@ -184,9 +185,9 @@ Bei nativen Crashes: <code>speech2anywhere-faulthandler.log</code> daneben.</p>
 _NEWS_HTML_EN = """
 <h3>New in v{version}</h3>
 <ul>
-  <li>Text is smooth in every window, without colour fringes.</li>
-  <li>That covers hints, subtitles, input fields, the guide and the menus.</li>
-  <li>Buttons, tabs, titles and the key in the yellow hint draw sharper.</li>
+  <li>When a new version is ready, the tray icon shows a green burst with an arrow at the bottom right.</li>
+  <li>Learned Words: the first waiting row is selected, “Accept” and “Discard” act right away and select the next one.</li>
+  <li>Since 0.6.2: smooth text in every window, without colour fringes.</li>
   <li>Since 0.6.1: running on the processor, measuring in first-run setup, Hugging Face, status dot in the tray menu.</li>
 </ul>
 """
@@ -292,6 +293,7 @@ measured models in a different version, Speech2Anywhere reports that once in the
   <li><b>At rest</b>: ready, or Speech2Anywhere is transcribing and cleaning up</li>
   <li><b>The mouth chatters</b>: recording</li>
   <li><b>Orange-red dot</b>: error, see “Open Log…”</li>
+  <li><b>Green burst with an arrow</b> at the bottom right: a new version is ready, see “Install update to v…”</li>
 </ul>
 
 <h3>9. Processor or graphics card</h3>

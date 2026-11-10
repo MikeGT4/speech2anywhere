@@ -21,6 +21,7 @@ from PyQt6.QtWidgets import (
 
 from kira._resources import assets_dir
 from kira.texte import tr
+from kira.ui import update_badge
 
 log = logging.getLogger(__name__)
 
@@ -1124,6 +1125,10 @@ def _menu_glyph(p: QPainter, kind: str) -> None:
 
 def _menu_icon_pixmap(kind: str, size: int, fill: str) -> QPixmap:
     scale = 3
+    if kind == "update":
+        badge = QPixmap.fromImage(ImageQt(update_badge.solo(size * scale)))
+        badge.setDevicePixelRatio(scale)
+        return badge
     pix = QPixmap(size * scale, size * scale)
     pix.fill(Qt.GlobalColor.transparent)
     p = QPainter(pix)

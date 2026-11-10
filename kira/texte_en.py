@@ -288,6 +288,7 @@ EN: dict[str, str] = {
     "Speech2Anywhere: Politur langsam": "Speech2Anywhere: Clean-up slow",
     "Speech2Anywhere: Politur nicht erreichbar": "Speech2Anywhere: Clean-up unavailable",
     "Speech2Anywhere: Unzensiertes Modell": "Speech2Anywhere: Uncensored Model",
+    "Speech2Anywhere: Update auf v{} bereit": "Speech2Anywhere: Update to v{} ready",
     "Speech2Anywhere: Update bereit": "Speech2Anywhere: Update Ready",
     "Speech2Anywhere: Update verfügbar": "Speech2Anywhere: Update available",
     "Speech2Anywhere: Update-Suche": "Speech2Anywhere: Checking for Updates",

@@ -14,6 +14,7 @@ from pystray._win32 import Icon as _PystrayWin32Icon, _dispatcher
 from kira import LOG_NAME
 from kira.app import State
 from kira.texte import N_, tr
+from kira.ui import update_badge
 
 log = logging.getLogger(__name__)
 
@@ -45,7 +46,7 @@ _MENU_ICONS = {
 
 def _menu_icon_kind(text: str) -> str:
     if text.startswith(tr("Update auf v{} installieren…").split("{}")[0]):
-        return "retry"
+        return "update"
     if text.startswith(tr("Gelernte Wörter")):
         return "wand"
     return {tr(label): kind for label, kind in _MENU_ICONS.items()}.get(text, "")
@@ -163,6 +164,10 @@ def _overlay_dot(img: Image.Image, rgba: tuple[int, int, int, int]) -> None:
     d.ellipse((w - r*2, h - r*2, w, h), fill=rgba)
 
 
+def _overlay_update_badge(img: Image.Image) -> None:
+    img.alpha_composite(update_badge.corner(min(img.size)))
+
+
 PLAPPER_INTERVAL_S = 0.25
 CONTEXT_MENU_WAIT_S = 0.3
 _PLAPPER_LOGO = "speech2anywhere-logo-plappern-256.png"
@@ -183,7 +188,7 @@ def _make_rounded_square(
 _LOGO_CACHE: Image.Image | None = None
 _LOGO_CACHE_FAILED = False
 _PLAPPER_CACHE: Image.Image | None = None
-_ICON_CACHE: dict[State, Image.Image] = {}
+_ICON_CACHE: dict[tuple[State, bool], Image.Image] = {}
 
 
 def _get_logo() -> Image.Image | None:
@@ -214,7 +219,7 @@ def _get_plapper_logo() -> Image.Image | None:
     return _PLAPPER_CACHE
 
 
-def _build_icon(state: State) -> Image.Image:
+def _build_icon(state: State, update: bool = False) -> Image.Image:
     logo = _get_logo()
     if logo is not None:
         bg = logo.resize((ICON_SIZE, ICON_SIZE), Image.Resampling.LANCZOS)
@@ -230,17 +235,19 @@ def _build_icon(state: State) -> Image.Image:
         plapper = _get_plapper_logo() if logo is not None else None
         if plapper is not None:
             bg = plapper.resize((ICON_SIZE, ICON_SIZE), Image.Resampling.LANCZOS)
-    elif state == State.ERROR:
+    if state == State.ERROR:
         _overlay_dot(bg, (255, 80, 0, 255))
+    elif update:
+        _overlay_update_badge(bg)
     return bg
 
 
-def _load_or_generate_icon(state: State) -> Image.Image:
-    cached = _ICON_CACHE.get(state)
+def _load_or_generate_icon(state: State, update: bool = False) -> Image.Image:
+    cached = _ICON_CACHE.get((state, update))
     if cached is not None:
         return cached
-    icon = _build_icon(state)
-    _ICON_CACHE[state] = icon
+    icon = _build_icon(state, update)
+    _ICON_CACHE[(state, update)] = icon
     return icon
 
 
@@ -297,6 +304,14 @@ class KiraTray:
 
     def set_transcriber(self, transcriber) -> None:
         self._transcriber = transcriber
+
+    def _image_for(self, state: State) -> Image.Image:
+        return _load_or_generate_icon(state, bool(self._update_available))
+
+    def _tooltip(self) -> str:
+        if self._update_available:
+            return tr("Speech2Anywhere: Update auf v{} bereit").format(self._update_available)
+        return _KIRA_TRAY_TITLE
 
     def _build_menu(self) -> pystray.Menu:
         items = [
@@ -411,7 +426,7 @@ class KiraTray:
                 self._plapper_stop = None
             if self._icon is None:
                 return
-            self._icon.icon = _load_or_generate_icon(state)
+            self._icon.icon = self._image_for(state)
             self._icon.menu = self._build_menu()
             if state == State.RECORDING:
                 stop = threading.Event()
@@ -421,13 +436,13 @@ class KiraTray:
                 ).start()
 
     def _plapper(self, stop: threading.Event) -> None:
-        frames = (_load_or_generate_icon(State.IDLE), _load_or_generate_icon(State.RECORDING))
+        frames = (State.IDLE, State.RECORDING)
         i = 0
         while not stop.wait(PLAPPER_INTERVAL_S):
             with self._icon_lock:
                 if stop.is_set() or self._icon is None:
                     return
-                self._icon.icon = frames[i % 2]
+                self._icon.icon = self._image_for(frames[i % 2])
             i += 1
 
     def _open_settings(self, _icon, _item) -> None:
@@ -712,7 +727,11 @@ class KiraTray:
         if version == self._update_available:
             return
         self._update_available = version
-        if self._icon is not None:
+        with self._icon_lock:
+            if self._icon is None:
+                return
+            self._icon.icon = self._image_for(self._state)
+            self._icon.title = self._tooltip()
             self._icon.menu = self._build_menu()
 
     def notify_update(self, version: str) -> None:
@@ -825,14 +844,15 @@ class KiraTray:
             self._icon.stop()
 
     def run(self) -> None:
-        self._icon = _KiraPystrayIcon(
-            "kira",
-            icon=_load_or_generate_icon(State.IDLE),
-            title="Speech2Anywhere",
-            menu=self._build_menu(),
-        )
-        if self._qt_marshal is not None:
-            self._icon.on_context_menu = self._request_context_menu
+        with self._icon_lock:
+            self._icon = _KiraPystrayIcon(
+                "kira",
+                icon=self._image_for(State.IDLE),
+                title=self._tooltip(),
+                menu=self._build_menu(),
+            )
+            if self._qt_marshal is not None:
+                self._icon.on_context_menu = self._request_context_menu
         self._icon.run()
 
     def run_detached(self) -> threading.Thread:

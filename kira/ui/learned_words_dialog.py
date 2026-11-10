@@ -86,6 +86,8 @@ class LearnedWordsDialog(QDialog):
         self.accept_button.clicked.connect(lambda: self._decide(self.pending_table, "accept"))
         self.reject_button.clicked.connect(lambda: self._decide(self.pending_table, "reject"))
         self.delete_button.clicked.connect(lambda: self._decide(self.active_table, "reject"))
+        self.pending_table.itemSelectionChanged.connect(self._update_buttons)
+        self.active_table.itemSelectionChanged.connect(self._update_buttons)
         self.refresh()
         screen = self.screen()
         if screen is not None:
@@ -121,6 +123,7 @@ class LearnedWordsDialog(QDialog):
 
     @staticmethod
     def _fill(table: QTableWidget, entries: list[Entry]) -> None:
+        table.clearSelection()
         table.setRowCount(len(entries))
         for row, entry in enumerate(entries):
             values = (
@@ -135,8 +138,12 @@ class LearnedWordsDialog(QDialog):
 
     def refresh(self) -> None:
         lexicon = self._service.lexicon
+        pending_row = min(self._selected_rows(self.pending_table), default=0)
         self._fill(self.pending_table, lexicon.pending())
         self._fill(self.active_table, lexicon.active())
+        if self.pending_table.rowCount():
+            self.pending_table.selectRow(min(pending_row, self.pending_table.rowCount() - 1))
+        self._update_buttons()
         metrics = self._service.metrics()
         text = (
             tr(
@@ -147,6 +154,16 @@ class LearnedWordsDialog(QDialog):
         if not getattr(self._service, "has_sources", True):
             text += "\n" + tr(NO_SOURCES_HINT)
         self.metrics_label.setText(text)
+
+    @staticmethod
+    def _selected_rows(table: QTableWidget) -> list[int]:
+        return [index.row() for index in table.selectionModel().selectedRows()]
+
+    def _update_buttons(self) -> None:
+        has_pending = bool(self._selected_rows(self.pending_table))
+        self.accept_button.setEnabled(has_pending)
+        self.reject_button.setEnabled(has_pending)
+        self.delete_button.setEnabled(bool(self._selected_rows(self.active_table)))
 
     def _selected_keys(self, table: QTableWidget) -> list[tuple[str, str]]:
         keys: list[tuple[str, str]] = []

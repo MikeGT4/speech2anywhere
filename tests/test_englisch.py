@@ -424,13 +424,13 @@ if sys.platform == "win32":
         assert "Quit" in labels
         assert [label for label in labels if label in EN] == []
         assert _menu_icon_kind("Settings…") == "gear"
-        assert _menu_icon_kind("Install update to v0.6.0…") == "retry"
+        assert _menu_icon_kind("Install update to v0.6.0…") == "update"
         assert _menu_icon_kind("Learned Words (2 new)…") == "wand"
 
     def test_tray_menu_icons_keep_working_in_german():
         from kira.ui.tray_win import _menu_icon_kind
         assert _menu_icon_kind("Einstellungen…") == "gear"
-        assert _menu_icon_kind("Update auf v0.6.0 installieren…") == "retry"
+        assert _menu_icon_kind("Update auf v0.6.0 installieren…") == "update"
         assert _menu_icon_kind("Gelernte Wörter (2 neu)…") == "wand"
 
     def test_every_menu_entry_with_an_icon_has_an_english_name():

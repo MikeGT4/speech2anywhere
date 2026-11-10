@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.3 (10.11.2026)
+
+- Steht eine neue Version bereit, zeigt das Tray-Symbol unten rechts eine grüne Zacke mit Pfeil; der Tooltip nennt die Version
+- Gelernte Wörter: Die erste wartende Zeile ist beim Öffnen markiert, „Übernehmen“ und „Verwerfen“ wirken sofort und markieren die nächste Zeile; ohne Markierung sind die Knöpfe gesperrt, vorher blieb ein Klick ohne Markierung wirkungslos
+- Von 0.5.5 bis 0.6.2 aus lädt das Update in der App nur das Programmpaket
+
 ## 0.6.2 (10.11.2026)
 
 - Schrift ohne Farbsaum in allen Fenstern: Hinweise, Untertitel, Eingabefelder, Anleitung, Fußzeile und Menüs zeichnen in Graustufen, bei 100 % Skalierung glatt
