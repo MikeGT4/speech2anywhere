@@ -51,10 +51,10 @@ def welcomed_before() -> bool:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Steht eine neue Version bereit, zeigt das Tray-Symbol unten rechts eine grüne Zacke mit Pfeil.</li>
-  <li>Gelernte Wörter: Die erste wartende Zeile ist markiert, „Übernehmen“ und „Verwerfen“ wirken sofort und markieren die nächste.</li>
+  <li>Politur: Das Modell wählst du jetzt aus der Liste der in Ollama installierten Modelle, mit Größe.</li>
+  <li>Die geprüften gemma4-Modelle stehen oben; ein anderes Modell kannst du weiter eintippen.</li>
+  <li>Seit 0.6.3 dabei: grüne Zacke mit Pfeil am Tray-Symbol bei einer neuen Version, Gelernte Wörter repariert.</li>
   <li>Seit 0.6.2 dabei: glatte Schrift in allen Fenstern, ohne Farbsaum.</li>
-  <li>Seit 0.6.1 dabei: Rechnen auf dem Prozessor, Messung in der Ersteinrichtung, Hugging Face, Statuspunkt im Tray-Menü.</li>
 </ul>
 """
 
@@ -167,8 +167,9 @@ gemessenen Modelle in einer anderen Fassung, meldet Speech2Anywhere das einmal i
 Die Hilfeseite daneben zeigt Downloads und gemessene Zeiten.<br>
 Bei der Ersteinrichtung misst Speech2Anywhere deinen Rechner und schlägt eins von beidem vor.<br>
 Umstellen kannst du jederzeit.</p>
-<p>Weitere Modelle für die Politur: Reiter „Politur“, Knopf <b>„Hugging Face…“</b>.<br>
-Den Namen so eintragen: <code>hf.co/Nutzer/Modell:Q4_K_M</code>, Speichern lädt das Modell.<br>
+<p>Das Modell für die Politur wählst du im Reiter „Politur“ aus der Liste der in Ollama installierten Modelle, die geprüften stehen oben.<br>
+Weitere Modelle: Knopf <b>„Hugging Face…“</b>.<br>
+Den Namen so eintippen: <code>hf.co/Nutzer/Modell:Q4_K_M</code>, Speichern lädt das Modell.<br>
 Geprüft sind nur die gemma4-Modelle.</p>
 
 <h3>Konfiguration</h3>
@@ -185,10 +186,10 @@ Bei nativen Crashes: <code>speech2anywhere-faulthandler.log</code> daneben.</p>
 _NEWS_HTML_EN = """
 <h3>New in v{version}</h3>
 <ul>
-  <li>When a new version is ready, the tray icon shows a green burst with an arrow at the bottom right.</li>
-  <li>Learned Words: the first waiting row is selected, “Accept” and “Discard” act right away and select the next one.</li>
+  <li>Clean-up: pick the model from the list of models installed in Ollama, with their size.</li>
+  <li>The tested gemma4 models come first; you can still type another model.</li>
+  <li>Since 0.6.3: green burst with an arrow on the tray icon for a new version, Learned Words fixed.</li>
   <li>Since 0.6.2: smooth text in every window, without colour fringes.</li>
-  <li>Since 0.6.1: running on the processor, measuring in first-run setup, Hugging Face, status dot in the tray menu.</li>
 </ul>
 """
 
@@ -301,8 +302,9 @@ measured models in a different version, Speech2Anywhere reports that once in the
 The help page next to it shows downloads and measured times.<br>
 During the first-run setup Speech2Anywhere measures your PC and suggests one of the two.<br>
 You can switch at any time.</p>
-<p>More models for the clean-up: “Clean-up” tab, <b>“Hugging Face…”</b> button.<br>
-Enter the name like this: <code>hf.co/user/model:Q4_K_M</code>, saving downloads the model.<br>
+<p>Pick the clean-up model on the “Clean-up” tab from the list of models installed in Ollama; the tested ones come first.<br>
+More models: <b>“Hugging Face…”</b> button.<br>
+Type the name like this: <code>hf.co/user/model:Q4_K_M</code>, saving downloads the model.<br>
 Only the gemma4 models are tested.</p>
 
 <h3>Configuration</h3>

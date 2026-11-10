@@ -256,9 +256,9 @@ def test_welcome_shows_the_news_only_in_welcome_mode(qtbot, tmp_path, monkeypatc
     text = dialog.findChild(QTextBrowser).toPlainText()
     assert f"Neu in v{__version__}" in text
     assert "Farbsaum" in text
-    assert "Rechnen auf dem Prozessor" in text
+    assert "installierten Modelle" in text
     assert "Hugging Face" in text
-    assert "Seit 0.6.1 dabei" in text
+    assert "Seit 0.6.3 dabei" in text
     assert "grüne Zacke mit Pfeil" in text
     assert dialog.cb_dont_show.text() == f"Bei diesem Update (v{__version__}) nicht erneut zeigen"
     helper = welcome.WelcomeDialog(as_help=True)
@@ -375,9 +375,9 @@ def test_about_fits_small_screens(qtbot, monkeypatch):
 
 def test_news_tell_what_this_version_brings():
     import kira.ui.welcome_dialog as wd
-    for word in ("Tray-Symbol", "Gelernte Wörter", "Farbsaum", "Prozessor"):
+    for word in ("installierten Modelle", "eintippen", "Tray-Symbol", "Farbsaum"):
         assert word in wd._NEWS_HTML, word
-    for word in ("tray icon", "Learned Words", "fringes", "processor"):
+    for word in ("models installed in Ollama", "type another model", "tray icon", "fringes"):
         assert word in wd._NEWS_HTML_EN, word
     assert wd._NEWS_HTML.count("<li>") == wd._NEWS_HTML_EN.count("<li>") == 4
 
@@ -387,7 +387,7 @@ def test_version_is_the_same_in_both_places():
     from pathlib import Path
     from kira import __version__
     text = (Path(__file__).resolve().parent.parent / "pyproject.toml").read_text(encoding="utf-8")
-    assert re.search(r'^version = "([^"]+)"', text, re.M).group(1) == __version__ == "0.6.3"
+    assert re.search(r'^version = "([^"]+)"', text, re.M).group(1) == __version__ == "0.6.4"
 
 
 def test_about_shows_the_models_of_the_processor_mode(qtbot, monkeypatch):

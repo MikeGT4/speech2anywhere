@@ -1,6 +1,8 @@
 from __future__ import annotations
 import logging
+import re
 import subprocess
+import threading
 from pathlib import Path
 
 from PyQt6.QtCore import Qt, QObject, QThread, pyqtSignal
@@ -27,7 +29,8 @@ from kira.config_writer import update_scalars
 from kira.sounds import SoundPlayer
 from kira.ui.hud import STYLE_LABELS
 from kira.ui.hud_preview import HudPreview
-from kira.texte import N_, tr
+from kira.release_info import load_installed
+from kira.texte import N_, decimal_mark, tr
 
 log = logging.getLogger(__name__)
 from kira._resources import assets_dir as _assets_dir  # noqa: E402
@@ -90,6 +93,110 @@ def _ollama_model_installed(model: str) -> bool:
     except Exception:
         log.exception("ollama.list() failed during model-installed check")
         return False
+
+
+_CLOUD_MODEL = re.compile(r"(^|[:-])cloud$")
+_MODEL_LIST_MAX_W = 640
+
+
+def _ollama_models() -> list[tuple[str, int]]:
+    client = _ollama_client()
+    found: list[tuple[str, int]] = []
+    for entry in getattr(client.list(), "models", None) or []:
+        name = str(getattr(entry, "model", None) or getattr(entry, "name", None) or "")
+        if not name or _CLOUD_MODEL.search(name):
+            continue
+        try:
+            capabilities = getattr(client.show(name), "capabilities", None)
+        except Exception:
+            capabilities = None
+        if capabilities and "completion" not in capabilities:
+            continue
+        found.append((name, int(getattr(entry, "size", 0) or 0)))
+    return found
+
+
+def _tested_models() -> list[str]:
+    info = load_installed()
+    return list(info.models) if info is not None else []
+
+
+def _model_entries(models: list[tuple[str, int]], tested: list[str]) -> list[tuple[str, str]]:
+    rank = {name: index for index, name in enumerate(tested)}
+    entries = []
+    for name, size in sorted(models, key=lambda m: (rank.get(m[0], len(rank)), m[0].lower())):
+        parts = [name]
+        if size:
+            parts.append(f"{size / 1e9:.1f}".replace(".", decimal_mark()) + " GB")
+        if name in rank:
+            parts.append(tr("geprüft"))
+        entries.append((name, " · ".join(parts)))
+    return entries
+
+
+class _ModelListLoader(QObject):
+    loaded = pyqtSignal(list)
+
+    def start(self) -> None:
+        threading.Thread(target=self._run, name="kira-model-list", daemon=True).start()
+
+    def _run(self) -> None:
+        try:
+            models = _ollama_models()
+        except Exception:
+            log.info("Ollama-Modellliste nicht abrufbar", exc_info=True)
+            models = []
+        try:
+            self.loaded.emit(models)
+        except RuntimeError:
+            pass
+
+
+class _ModelCombo(QComboBox):
+    def __init__(self) -> None:
+        super().__init__()
+        comic.style_combo(self)
+        self.setEditable(True)
+        self.setInsertPolicy(QComboBox.InsertPolicy.NoInsert)
+        self.setCompleter(None)
+        self.view().setTextElideMode(Qt.TextElideMode.ElideMiddle)
+        self.currentIndexChanged.connect(self._show_name)
+        self.activated.connect(self._show_name)
+
+    def text(self) -> str:
+        return self.currentText()
+
+    def setText(self, text: str) -> None:  # noqa: N802
+        self.setEditText(text)
+        self.lineEdit().setCursorPosition(0)
+
+    def fill(self, entries: list[tuple[str, str]]) -> None:
+        line = self.lineEdit()
+        text = self.currentText()
+        typing = line.hasFocus()
+        cursor, start, length = line.cursorPosition(), line.selectionStart(), line.selectionLength()
+        self.blockSignals(True)
+        self.clear()
+        for name, label in entries:
+            self.addItem(label, name)
+        self.setCurrentIndex(self.findData(text))
+        self.blockSignals(False)
+        self.setEditText(text)
+        if not typing:
+            line.setCursorPosition(0)
+        elif length > 0:
+            line.setSelection(start, length)
+        else:
+            line.setCursorPosition(cursor)
+        view = self.view()
+        view.ensurePolished()
+        widest = max((view.fontMetrics().horizontalAdvance(label) for _, label in entries), default=0)
+        view.setMinimumWidth(min(widest + 64, _MODEL_LIST_MAX_W))
+
+    def _show_name(self, index: int) -> None:
+        name = self.itemData(index)
+        if name:
+            self.setText(name)
 
 
 _orphan_pull_threads: list = []
@@ -452,12 +559,24 @@ class SettingsDialog(QDialog):
         )
         card.add_row(tr("Politur"), tr("Aus: der erkannte Text kommt unverändert an."), self._polish_enabled)
 
-        model_row = QHBoxLayout()
-        model_row.setSpacing(10)
-        self._styler_model = QLineEdit()
+        model_row = QVBoxLayout()
+        model_row.setSpacing(8)
+        model_buttons = QHBoxLayout()
+        model_buttons.setSpacing(10)
+        self._styler_model = _ModelCombo()
         self._styler_model.setText(self._cfg.styler.model)
-        self._styler_model.setPlaceholderText(tr("z. B. gemma4:12b oder hf.co/Nutzer/Modell:Q4_K_M"))
-        model_row.addWidget(self._styler_model, 1)
+        self._styler_model.lineEdit().setPlaceholderText(tr("z. B. gemma4:12b oder hf.co/Nutzer/Modell:Q4_K_M"))
+        self._styler_model.setToolTip(
+            tr(
+                "Die Liste zeigt die Modelle, die in Ollama installiert sind.\n"
+                "Ein anderes Modell eintippen, Speichern lädt es."
+            )
+        )
+        model_row.addWidget(self._styler_model)
+        model_row.addLayout(model_buttons)
+        self._model_loader = _ModelListLoader(self)
+        self._model_loader.loaded.connect(self._fill_models)
+        self._model_loader.start()
         update_btn = QPushButton(tr("Aktualisieren"))
         update_btn.setToolTip(
             tr(
@@ -466,7 +585,7 @@ class SettingsDialog(QDialog):
             )
         )
         update_btn.clicked.connect(self._update_polish_model)
-        model_row.addWidget(update_btn)
+        model_buttons.addWidget(update_btn)
         hugging_face_btn = QPushButton("Hugging Face…")
         hugging_face_btn.setToolTip(
             tr(
@@ -477,7 +596,8 @@ class SettingsDialog(QDialog):
             )
         )
         hugging_face_btn.clicked.connect(lambda: comic._open_url(HUGGING_FACE_GGUF_URL))
-        model_row.addWidget(hugging_face_btn)
+        model_buttons.addWidget(hugging_face_btn)
+        model_buttons.addStretch(1)
         card.add_row(tr("Modell"), tr("Setzt Satzzeichen, schreibt groß und fegt die Ähms raus."), model_row)
 
         self._fast_mode = comic.ToggleSwitch()
@@ -1123,6 +1243,9 @@ class SettingsDialog(QDialog):
     def _refresh_devices(self) -> None:
         current = self._device.currentData()
         self._populate_device_combo(current)
+
+    def _fill_models(self, models: list) -> None:
+        self._styler_model.fill(_model_entries(models, _tested_models()))
 
     def _update_polish_model(self) -> None:
         model_name = self._styler_model.text().strip()

@@ -266,6 +266,7 @@ def dialog_qss() -> str:
         QComboBox::drop-down {{
             subcontrol-origin: padding; subcontrol-position: center right; width: 34px; border: none;
         }}
+        QComboBox QLineEdit {{ padding: 0; min-height: 0; border: none; background: transparent; }}
         QComboBox::down-arrow {{ image: url("{chevron}"); width: 18px; height: 18px; }}
         QComboBox QAbstractItemView {{
             background: #FFFFFF; color: {INK}; border: 2px solid {INK}; outline: 0; padding: 4px;

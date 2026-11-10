@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.4 (10.11.2026)
+
+- Einstellungen, Reiter Politur: Das Modell wählst du aus einer Liste der in Ollama installierten Modelle, mit Größe; die geprüften gemma4-Modelle stehen oben, Einbettungs- und Cloud-Modelle stehen nicht in der Liste. Eintippen geht weiter, Speichern lädt ein neues Modell
+- Von 0.5.5 bis 0.6.3 aus lädt das Update in der App nur das Programmpaket
+
 ## 0.6.3 (10.11.2026)
 
 - Steht eine neue Version bereit, zeigt das Tray-Symbol unten rechts eine grüne Zacke mit Pfeil; der Tooltip nennt die Version

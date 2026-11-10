@@ -23,6 +23,8 @@ def dialog(qtbot, tmp_path, monkeypatch):
     )
     monkeypatch.setattr(sd, "light_information", lambda *a, **k: None)
     monkeypatch.setattr(sd, "light_warning", lambda *a, **k: None)
+    monkeypatch.setattr(sd, "_ollama_models", lambda: [])
+    monkeypatch.setattr(sd._ModelListLoader, "start", lambda self: None)
     dlg = sd.SettingsDialog()
     qtbot.addWidget(dlg)
     return dlg
@@ -910,3 +912,103 @@ def test_failed_download_of_a_new_model_saves_nothing(dialog, tmp_path, monkeypa
     dialog._styler_model.setText("hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF:Q4_K_M")
     dialog._save()
     assert _saved_text(tmp_path) == ""
+
+
+INSTALLED = [
+    ("qwen3.8-heretic:latest", 17_627_968_479),
+    ("gemma4:e4b", 9_608_350_718),
+    ("gemma4:26b-a4b-it-qat", 15_634_199_946),
+]
+TESTED = ["gemma4:26b-a4b-it-qat", "gemma4:e4b"]
+
+
+def test_model_list_arrives_with_tested_models_first(qtbot, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    monkeypatch.setattr(sd, "load_config", lambda: Config())
+    monkeypatch.setattr(sd, "default_config_path", lambda: tmp_path / "config.yaml")
+    monkeypatch.setattr(sd.SettingsDialog, "_query_input_devices", lambda self: [(3, "USB Microphone")])
+    monkeypatch.setattr(sd, "_tested_models", lambda: TESTED)
+    monkeypatch.setattr(sd, "_ollama_models", lambda: INSTALLED)
+    dlg = sd.SettingsDialog()
+    qtbot.addWidget(dlg)
+    combo = dlg._styler_model
+    qtbot.waitUntil(lambda: combo.count() == 3)
+    assert [combo.itemData(i) for i in range(3)] == ["gemma4:26b-a4b-it-qat", "gemma4:e4b", "qwen3.8-heretic:latest"]
+    assert combo.itemText(0) == "gemma4:26b-a4b-it-qat · 15,6 GB · geprüft"
+    assert combo.itemText(2) == "qwen3.8-heretic:latest · 17,6 GB"
+    assert combo.text() == Config().styler.model
+
+
+def test_choosing_a_model_with_the_arrow_key_leaves_only_its_name_and_saves_it(dialog, qtbot, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    monkeypatch.setattr(sd, "_tested_models", lambda: TESTED)
+    monkeypatch.setattr(sd, "_ollama_model_installed", lambda model: True)
+    dialog._fill_models(INSTALLED)
+    combo = dialog._styler_model
+    for _ in range(3):
+        qtbot.keyClick(combo, Qt.Key.Key_Down)
+    assert combo.currentIndex() == 2
+    assert combo.text() == "qwen3.8-heretic:latest"
+    dialog._save()
+    assert "model: qwen3.8-heretic:latest" in _saved_text(tmp_path)
+
+
+def test_typed_model_name_stays_when_the_list_arrives(dialog):
+    name = "hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF:Q4_K_M"
+    dialog._styler_model.setText(name)
+    dialog._fill_models(INSTALLED)
+    assert dialog._styler_model.text() == name
+    assert dialog._styler_model.count() == 3
+
+
+def test_model_list_skips_embedding_and_cloud_models(monkeypatch):
+    from types import SimpleNamespace
+    import kira.ui.settings_dialog as sd
+    entries = [
+        SimpleNamespace(model="gemma4:e4b", size=9),
+        SimpleNamespace(model="nomic-embed-text:latest", size=1),
+        SimpleNamespace(model="gpt-oss:120b-cloud", size=0),
+        SimpleNamespace(model="ohne-angaben:1b", size=2),
+    ]
+    capabilities = {"gemma4:e4b": ["completion", "vision"], "nomic-embed-text:latest": ["embedding"]}
+
+    class Client:
+        def list(self):
+            return SimpleNamespace(models=entries)
+
+        def show(self, name):
+            if name not in capabilities:
+                raise RuntimeError(name)
+            return SimpleNamespace(capabilities=capabilities[name])
+
+    monkeypatch.setattr(sd, "_ollama_client", lambda: Client())
+    assert sd._ollama_models() == [("gemma4:e4b", 9), ("ohne-angaben:1b", 2)]
+
+
+def test_choosing_the_current_model_again_keeps_only_its_name(dialog):
+    combo = dialog._styler_model
+    dialog._fill_models(INSTALLED)
+    combo.setCurrentIndex(1)
+    combo.lineEdit().setText(combo.itemText(1))
+    combo.activated.emit(1)
+    assert combo.text() == "gemma4:e4b"
+
+
+def test_the_configured_model_is_marked_when_the_list_arrives(dialog, qtbot):
+    combo = dialog._styler_model
+    combo.setText("gemma4:e4b")
+    dialog._fill_models(INSTALLED)
+    assert combo.currentIndex() == combo.findData("gemma4:e4b")
+    assert combo.text() == "gemma4:e4b"
+    qtbot.keyClick(combo, Qt.Key.Key_Up)
+    assert combo.text() == combo.itemData(combo.currentIndex())
+
+
+def test_typing_keeps_its_cursor_when_the_list_arrives(dialog):
+    line = dialog._styler_model.lineEdit()
+    line.setText("llama3.2")
+    line.setCursorPosition(5)
+    line.hasFocus = lambda: True
+    dialog._fill_models(INSTALLED)
+    assert line.text() == "llama3.2"
+    assert line.cursorPosition() == 5
