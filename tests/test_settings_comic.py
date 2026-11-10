@@ -1012,3 +1012,28 @@ def test_typing_keeps_its_cursor_when_the_list_arrives(dialog):
     dialog._fill_models(INSTALLED)
     assert line.text() == "llama3.2"
     assert line.cursorPosition() == 5
+
+
+def test_model_choice_is_greyed_out_while_fast_mode_polishes(dialog):
+    dialog._compute.setCurrentIndex(dialog._compute.findData("gpu"))
+    dialog._fast_mode.setChecked(False)
+    assert dialog._styler_model.isEnabled()
+    assert dialog._model_note.isHidden()
+    dialog._fast_mode.setChecked(True)
+    assert not dialog._styler_model.isEnabled()
+    assert not dialog._update_model_btn.isEnabled()
+    fast = dialog._cfg.styler.fast_model
+    assert dialog._model_note.text() == f"Im schnellen Modus poliert {fast}.\nDie Auswahl gilt, sobald er aus ist."
+    assert not dialog._model_note.isHidden()
+    dialog._fast_mode.setChecked(False)
+    assert dialog._styler_model.isEnabled()
+    assert dialog._model_note.isHidden()
+
+
+def test_model_choice_is_greyed_out_on_the_processor(dialog):
+    dialog._fast_mode.setChecked(False)
+    dialog._compute.setCurrentIndex(dialog._compute.findData("cpu"))
+    assert not dialog._styler_model.isEnabled()
+    assert dialog._model_note.text() == f"Auf dem Prozessor poliert immer {dialog._cfg.styler.fast_model}."
+    dialog._compute.setCurrentIndex(dialog._compute.findData("gpu"))
+    assert dialog._styler_model.isEnabled()

@@ -585,6 +585,7 @@ class SettingsDialog(QDialog):
             )
         )
         update_btn.clicked.connect(self._update_polish_model)
+        self._update_model_btn = update_btn
         model_buttons.addWidget(update_btn)
         hugging_face_btn = QPushButton("Hugging Face…")
         hugging_face_btn.setToolTip(
@@ -598,6 +599,10 @@ class SettingsDialog(QDialog):
         hugging_face_btn.clicked.connect(lambda: comic._open_url(HUGGING_FACE_GGUF_URL))
         model_buttons.addWidget(hugging_face_btn)
         model_buttons.addStretch(1)
+        self._model_note = QLabel()
+        self._model_note.setObjectName("comicNote")
+        self._model_note.setWordWrap(True)
+        model_row.addWidget(self._model_note)
         card.add_row(tr("Modell"), tr("Setzt Satzzeichen, schreibt groß und fegt die Ähms raus."), model_row)
 
         self._fast_mode = comic.ToggleSwitch()
@@ -612,6 +617,8 @@ class SettingsDialog(QDialog):
             "Einträge in styler.modes haben weiter Vorrang."
         )
         self._fast_mode.setToolTip(self._fast_mode_tip)
+        self._fast_mode.toggled.connect(lambda _checked: self._sync_model_choice())
+        self._compute.currentIndexChanged.connect(lambda _index: self._sync_model_choice())
         card.add_row(
             tr("Schneller Modus"),
             tr("{}, spart Grafikspeicher.").format(self._cfg.styler.fast_model),
@@ -668,7 +675,21 @@ class SettingsDialog(QDialog):
         hint = comic.HintBubble([
             tr("Der schnelle Modus poliert fast gleich gut, nur das Bearbeiten und lange Texte werden etwas schwächer."),
         ])
+        self._sync_model_choice()
         return self._page(card, hint)
+
+    def _sync_model_choice(self) -> None:
+        fast_model = self._cfg.styler.fast_model
+        if self._compute.currentData() == "cpu":
+            note = tr("Auf dem Prozessor poliert immer {}.").format(fast_model)
+        elif self._fast_mode.isChecked():
+            note = tr("Im schnellen Modus poliert {}.\nDie Auswahl gilt, sobald er aus ist.").format(fast_model)
+        else:
+            note = ""
+        self._styler_model.setEnabled(not note)
+        self._update_model_btn.setEnabled(not note)
+        self._model_note.setText(note)
+        self._model_note.setVisible(bool(note))
 
     def _page_tasten(self) -> QWidget:
         card = comic.ComicCard(tr("Tasten"), self._mascot, row_padding=7)
