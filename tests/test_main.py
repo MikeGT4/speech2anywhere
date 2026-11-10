@@ -152,3 +152,16 @@ def test_polish_model_follows_fast_mode_and_processor_mode():
     assert _polish_model(Config.model_validate({**base, "whisper": {"device": "cpu"}})) == "gemma4:e4b"
     fast = {"styler": {**base["styler"], "fast_mode": True}}
     assert _polish_model(Config.model_validate(fast)) == "gemma4:e4b"
+
+
+def test_qt_arguments_pick_the_freetype_engine_on_windows(monkeypatch):
+    from kira import main
+    monkeypatch.setattr(main.sys, "platform", "win32")
+    monkeypatch.delenv("QT_QPA_PLATFORM", raising=False)
+    assert main.qt_arguments(["kira"]) == ["kira", "-platform", "windows:fontengine=freetype"]
+    assert main.qt_arguments(["kira", "-platform", "offscreen"]) == ["kira", "-platform", "offscreen"]
+    monkeypatch.setenv("QT_QPA_PLATFORM", "offscreen")
+    assert main.qt_arguments(["kira"]) == ["kira"]
+    monkeypatch.setattr(main.sys, "platform", "darwin")
+    monkeypatch.delenv("QT_QPA_PLATFORM", raising=False)
+    assert main.qt_arguments(["kira"]) == ["kira"]

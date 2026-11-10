@@ -56,6 +56,12 @@ def baloo(weight: int, px: int) -> QFont:
     font = QFont(load_fonts()[weight])
     font.setPixelSize(px)
     font.setWeight(_WEIGHTS[weight])
+    return smooth_font(font)
+
+
+def smooth_font(font: QFont) -> QFont:
+    font.setStyleStrategy(QFont.StyleStrategy.NoSubpixelAntialias)
+    font.setHintingPreference(QFont.HintingPreference.PreferVerticalHinting)
     return font
 
 
@@ -366,28 +372,11 @@ def _rounded_path(rect: QRectF, tl: float, tr: float, br: float, bl: float) -> Q
     return path
 
 
-def text_path(
-    font: QFont, rect: QRectF, text: str, align: Qt.AlignmentFlag = Qt.AlignmentFlag.AlignCenter, dpr: float = 1.0,
-) -> QPainterPath:
-    metrics = QFontMetricsF(font)
-    height = metrics.ascent() + metrics.descent()
-    if align & Qt.AlignmentFlag.AlignTop:
-        top = rect.top()
-    elif align & Qt.AlignmentFlag.AlignBottom:
-        top = rect.bottom() - height
-    else:
-        top = rect.top() + (rect.height() - height) / 2
-    path = QPainterPath()
-    path.addText(QPointF(0, round((top + metrics.ascent()) * dpr) / dpr), font, text)
-    box = path.boundingRect()
-    if align & Qt.AlignmentFlag.AlignHCenter:
-        x = rect.left() + (rect.width() - box.width()) / 2 - box.left()
-    elif align & Qt.AlignmentFlag.AlignRight:
-        x = rect.right() - box.right()
-    else:
-        x = rect.left()
-    path.translate(x, 0)
-    return path
+def draw_text(p: QPainter, rect: QRectF, text: str, font: QFont, color: QColor,
+              align: Qt.AlignmentFlag = Qt.AlignmentFlag.AlignCenter) -> None:
+    p.setFont(font)
+    p.setPen(color)
+    p.drawText(rect, int(align), text)
 
 
 def button_label(text: str) -> str:
@@ -397,14 +386,10 @@ def button_label(text: str) -> str:
 class InkLabel(QLabel):
     def paintEvent(self, event) -> None:  # noqa: N802
         p = QPainter(self)
-        p.setRenderHint(QPainter.RenderHint.Antialiasing)
         group = QPalette.ColorGroup.Active if self.isEnabled() else QPalette.ColorGroup.Disabled
         margin = self.margin()
         rect = QRectF(self.contentsRect()).adjusted(margin, margin, -margin, -margin)
-        p.fillPath(
-            text_path(self.font(), rect, self.text(), self.alignment(), self.devicePixelRatioF()),
-            self.palette().color(group, self.foregroundRole()),
-        )
+        draw_text(p, rect, self.text(), self.font(), self.palette().color(group, self.foregroundRole()), self.alignment())
         p.end()
 
 
@@ -458,10 +443,7 @@ def paint_button(button: QPushButton) -> None:
         p.setPen(QPen(QColor(INK), 2, Qt.PenStyle.DashLine))
         p.drawPath(_button_face(face.adjusted(3, 3, -3, -3), 7, 9 - bottom))
     box = face.adjusted(16, 8 if down else 5, -16, -3)
-    p.fillPath(
-        text_path(button.font(), box, button_label(button.text()), dpr=button.devicePixelRatioF()),
-        QColor(INK if enabled else "#9A9486"),
-    )
+    draw_text(p, box, button_label(button.text()), button.font(), QColor(INK if enabled else "#9A9486"))
     p.end()
 
 
@@ -643,7 +625,7 @@ class BubbleTab(QAbstractButton):
             p.setBrush(Qt.BrushStyle.NoBrush)
             p.setPen(QPen(QColor(INK if self.isChecked() else YELLOW), 2, Qt.PenStyle.DashLine))
             p.drawRoundedRect(pill.adjusted(4, 4, -4, -4), 15, 15)
-        p.fillPath(text_path(self.font(), pill.adjusted(0, 1, 0, 0), self.text(), dpr=self.devicePixelRatioF()), text_color)
+        draw_text(p, pill.adjusted(0, 1, 0, 0), self.text(), self.font(), text_color)
 
 
 class ToggleSwitch(QAbstractButton):
@@ -927,15 +909,28 @@ class ComicCard(QWidget):
 
 
 class Keycap(QLabel):
+    RADIUS = 8.0
+    BOTTOM = 5.0
+
     def __init__(self, text: str, parent: QWidget | None = None) -> None:
         super().__init__(text, parent)
         self.setFont(baloo(800, 15))
         self.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.setMinimumWidth(32)
-        self.setStyleSheet(
-            f"background: #FFFFFF; color: {INK}; border: 2px solid {INK}; border-bottom: 5px solid {INK};"
-            " border-radius: 8px; padding: 2px 8px 0 8px;"
-        )
+        self.setStyleSheet("background: transparent; border: none; padding: 0;")
+        self.setContentsMargins(10, 4, 10, int(self.BOTTOM))
+
+    def paintEvent(self, event) -> None:  # noqa: N802
+        p = QPainter(self)
+        p.setRenderHint(QPainter.RenderHint.Antialiasing)
+        rect = QRectF(self.rect())
+        outline = QPainterPath()
+        outline.addRoundedRect(rect, self.RADIUS, self.RADIUS)
+        p.fillPath(outline, QColor(INK))
+        face = rect.adjusted(2, 2, -2, -self.BOTTOM)
+        p.fillPath(_button_face(face, self.RADIUS - 2, self.RADIUS - self.BOTTOM), QColor("#FFFFFF"))
+        draw_text(p, rect.adjusted(10, 4, -10, -self.BOTTOM), self.text(), self.font(), QColor(INK))
+        p.end()
 
 
 class HintBubble(QWidget):
@@ -1262,8 +1257,8 @@ class _MenuStatus(QWidget):
         p.drawEllipse(dot, 5.5, 5.5)
         room = QRectF(x + 32, card.top(), dot.x() - 16 - (x + 32), card.height())
         text = QFontMetricsF(self._font).elidedText(self._text, Qt.TextElideMode.ElideRight, room.width())
-        p.fillPath(text_path(self._font, room, text, Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignVCenter, ratio),
-                   QColor(RED_TEXT if self.tone == "problem" else INK))
+        draw_text(p, room, text, self._font, QColor(RED_TEXT if self.tone == "problem" else INK),
+                  Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignVCenter)
 
 
 def menu_status(parent: QWidget, text: str, ready: bool) -> QWidgetAction:

@@ -18,9 +18,9 @@ SHADOW = 4
 
 
 def _ink_text(p: QPainter, x: float, y: float, text: str, font, color) -> None:
-    path = QPainterPath()
-    path.addText(QPointF(x, y), font, text)
-    p.fillPath(path, QColor(color))
+    p.setFont(font)
+    p.setPen(QColor(color))
+    p.drawText(QPointF(x, y), text)
 
 
 class MeasureAnimation(QWidget):

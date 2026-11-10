@@ -56,7 +56,7 @@ class AboutDialog(QDialog):
             if cfg.audio.input_device is not None
             else tr("Windows-Standard")
         )
-        body.setSpacing(12)
+        body.setSpacing(10)
         card = comic.ComicCard(f"Version {__version__}", comic.mascot_pixmap(32), row_padding=5)
         device_name = "CPU" if on_processor else "GPU"
         card.add_row(tr("Spracherkennung"), "", _value(f"faster-whisper · {whisper_model_name} · {device_name}"))

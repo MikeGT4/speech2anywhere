@@ -51,13 +51,10 @@ def welcomed_before() -> bool:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Ohne große Grafikkarte: Im Reiter <b>Mikrofon</b> stellt <b>Rechnen auf</b> Erkennung und Politur auf den Prozessor.
-    Die Hilfeseite daneben zeigt Downloads und gemessene Zeiten.</li>
-  <li>Die Ersteinrichtung misst deinen Rechner und empfiehlt Prozessor oder Grafikkarte.</li>
-  <li>Reiter <b>Politur</b>: Der Knopf <b>Hugging Face…</b> führt zu weiteren Modellen. Geprüft sind nur die gemma4-Modelle.</li>
-  <li>Schrift, Knöpfe und Felder der Fenster sind bei 100 % Skalierung glatt.</li>
-  <li>Das Tray-Menü zeigt den Zustand als Punkt: grün bereit, gelb bei der Arbeit, rot bei einem Fehler.</li>
-  <li>Seit 0.6.0 dabei: Versprecher, acht Sprachen, Oberfläche auf Englisch.</li>
+  <li>Die Schrift ist in allen Fenstern glatt, ohne Farbsaum.</li>
+  <li>Das gilt für Hinweise, Untertitel, Eingabefelder, die Anleitung und die Menüs.</li>
+  <li>Knöpfe, Reiter, Titel und die Taste im gelben Hinweis zeichnen schärfer.</li>
+  <li>Seit 0.6.1 dabei: Rechnen auf dem Prozessor, Messung in der Ersteinrichtung, Hugging Face, Statuspunkt im Tray-Menü.</li>
 </ul>
 """
 
@@ -187,13 +184,10 @@ Bei nativen Crashes: <code>speech2anywhere-faulthandler.log</code> daneben.</p>
 _NEWS_HTML_EN = """
 <h3>New in v{version}</h3>
 <ul>
-  <li>No big graphics card needed: on the <b>Microphone</b> tab, <b>Run on</b> moves recognition and clean-up to the processor.
-    Its help page shows downloads and measured times.</li>
-  <li>First-run setup now measures your PC and recommends processor or graphics card.</li>
-  <li><b>Clean-up</b> tab: the <b>Hugging Face…</b> button leads to more models. Only the gemma4 models are tested.</li>
-  <li>Text, buttons and fields in the windows are smooth at 100 % scaling.</li>
-  <li>In the tray menu a dot shows the state: green ready, yellow busy, red on an error.</li>
-  <li>Since 0.6.0: slips of the tongue, eight languages, interface in English.</li>
+  <li>Text is smooth in every window, without colour fringes.</li>
+  <li>That covers hints, subtitles, input fields, the guide and the menus.</li>
+  <li>Buttons, tabs, titles and the key in the yellow hint draw sharper.</li>
+  <li>Since 0.6.1: running on the processor, measuring in first-run setup, Hugging Face, status dot in the tray menu.</li>
 </ul>
 """
 
@@ -372,7 +366,7 @@ class WelcomeDialog(QDialog):
         guide.setOpenLinks(False)
         text_font = QFont("Segoe UI")
         text_font.setPixelSize(16)
-        guide.document().setDefaultFont(text_font)
+        guide.document().setDefaultFont(comic.smooth_font(text_font))
         guide.setLineWrapMode(QTextBrowser.LineWrapMode.FixedPixelWidth)
         guide.setLineWrapColumnOrWidth(_GUIDE_WIDTH)
         guide.document().setDefaultStyleSheet(_guide_css())

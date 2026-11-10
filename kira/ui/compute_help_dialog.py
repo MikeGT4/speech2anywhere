@@ -110,7 +110,7 @@ class ComputeHelpDialog(QDialog):
         text.setOpenLinks(False)
         font = QFont("Segoe UI")
         font.setPixelSize(16)
-        text.document().setDefaultFont(font)
+        text.document().setDefaultFont(comic.smooth_font(font))
         text.setLineWrapMode(QTextBrowser.LineWrapMode.FixedPixelWidth)
         text.setLineWrapColumnOrWidth(_GUIDE_WIDTH)
         text.document().setDefaultStyleSheet(_guide_css())

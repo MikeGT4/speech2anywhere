@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.2 (10.11.2026)
+
+- Schrift ohne Farbsaum in allen Fenstern: Hinweise, Untertitel, Eingabefelder, Anleitung, Fußzeile und Menüs zeichnen in Graustufen, bei 100 % Skalierung glatt
+- Knöpfe, Reiter und Titel zeichnen die Schrift schärfer; die Taste im gelben Hinweis (etwa F8) hat unten runde Ecken statt Stufen
+- Von 0.5.5 bis 0.6.1 aus lädt das Update in der App nur das Programmpaket
+
 ## 0.6.1 (06.11.2026)
 
 - Ohne große Grafikkarte: „Rechnen auf“ im Reiter „Mikrofon“ stellt Erkennung und Politur auf den Prozessor (Whisper small und gemma4:e4b), mit Hilfeseite zu Downloads und gemessenen Zeiten

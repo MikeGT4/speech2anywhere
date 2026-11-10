@@ -142,6 +142,12 @@ def _enable_crash_diagnostics() -> None:
     threading.excepthook = _thread_excepthook
 
 
+def qt_arguments(argv: list[str]) -> list[str]:
+    if sys.platform != "win32" or os.environ.get("QT_QPA_PLATFORM") or "-platform" in argv:
+        return list(argv)
+    return [*argv, "-platform", "windows:fontengine=freetype"]
+
+
 def _install_qt_message_handler() -> None:
     from PyQt6.QtCore import QtMsgType, qInstallMessageHandler
 
@@ -344,7 +350,9 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
     from PyQt6.QtWidgets import QApplication
 
     _install_qt_message_handler()
-    qt_app = QApplication.instance() or QApplication(sys.argv)
+    qt_app = QApplication.instance() or QApplication(qt_arguments(sys.argv))
+    from kira.ui import _comic
+    qt_app.setFont(_comic.smooth_font(qt_app.font()))
     qt_app.setQuitOnLastWindowClosed(False)
     if _ICON_PATH.exists():
         qt_app.setWindowIcon(QIcon(str(_ICON_PATH)))

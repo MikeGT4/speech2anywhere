@@ -1,6 +1,6 @@
 # © 2026 Mike Pollow, Digitalroots. Alle Rechte vorbehalten.
 from PyQt6.QtCore import QEvent, QRectF, Qt
-from PyQt6.QtGui import QFocusEvent
+from PyQt6.QtGui import QColor, QFocusEvent, QImage, QPainter
 from PyQt6.QtWidgets import QApplication, QDialog, QLabel, QLineEdit, QPushButton, QVBoxLayout
 
 from kira.ui import _comic as comic
@@ -72,11 +72,16 @@ def test_mnemonics_are_hidden_like_qt_does():
     assert comic.button_label("Ja && Nein") == "Ja & Nein"
 
 
-def test_text_path_sits_centred_in_its_box(qtbot):
-    rect = QRectF(10, 20, 200, 30)
-    box = comic.text_path(comic.baloo(700, 15), rect, "Speichern").boundingRect()
-    assert abs(box.center().x() - rect.center().x()) < 1.5
-    assert rect.contains(box)
+def test_draw_text_sits_centred_in_its_box(qtbot):
+    image = QImage(220, 60, QImage.Format.Format_RGB32)
+    image.fill(QColor("#FFFFFF"))
+    p = QPainter(image)
+    comic.draw_text(p, QRectF(10, 20, 200, 30), "Speichern", comic.baloo(700, 15), QColor(comic.INK))
+    p.end()
+    ink = [(x, y) for y in range(image.height()) for x in range(image.width()) if image.pixelColor(x, y).lightness() < 128]
+    xs, ys = [x for x, _ in ink], [y for _, y in ink]
+    assert abs((min(xs) + max(xs)) / 2 - 110) < 2
+    assert 20 <= min(ys) and max(ys) <= 50
 
 
 def test_keyboard_focus_is_told_apart_from_mouse_focus(qtbot):
