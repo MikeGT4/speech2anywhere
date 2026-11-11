@@ -2,7 +2,7 @@
 
 # Speech2Anywhere
 
-**Hold a key, speak, release. Polished text appears at the cursor.**
+**Hold a key, speak, release. Local AI turns it into polished text at the cursor.**
 
 Speech2Anywhere is a push-to-talk voice-to-text app that runs entirely on your own machine, on an NVIDIA graphics card or, without one, on the processor. Whisper turns speech into text, a local language model fixes punctuation, fillers and register for the app you are typing into. No cloud, no account, no subscription.
 
