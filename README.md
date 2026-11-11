@@ -4,7 +4,7 @@
 
 **Hold a key, speak, release. Polished text appears at the cursor.**
 
-Speech2Anywhere is a push-to-talk voice-to-text app that runs entirely on your own machine. Whisper turns speech into text, a local language model fixes punctuation, fillers and register for the app you are typing into. No cloud, no account, no subscription.
+Speech2Anywhere is a push-to-talk voice-to-text app that runs entirely on your own machine, on an NVIDIA graphics card or, without one, on the processor. Whisper turns speech into text, a local language model fixes punctuation, fillers and register for the app you are typing into. No cloud, no account, no subscription.
 
 [![Latest release](https://img.shields.io/github/v/release/MikeGT4/speech2anywhere?label=release)](https://github.com/MikeGT4/speech2anywhere/releases/latest)
 ![Windows 11, NVIDIA GPU or CPU](https://img.shields.io/badge/Windows%2011-NVIDIA%20GPU%20or%20CPU-0078d4)
@@ -22,7 +22,7 @@ Website with all features: [speech2anywhere.de](https://speech2anywhere.de/en/),
 |---|---|---|
 | Hotkey | hold **F8** or tap it in toggle mode, **F9** for AI edit commands | hold **fn** (Globe key) |
 | Speech to text | faster-whisper, `large-v3` on CUDA or `small` on the processor | Whisper `large-v3-turbo`, runs on the Mac |
-| Text cleanup | Ollama, `gemma4:12b` or `gemma4:e4b` depending on video memory, uncensored model optional | Qwen3 8B, runs on the Mac, no Ollama needed |
+| Text cleanup | Ollama, `gemma4:12b`, or `gemma4:e4b` with little video memory and on the processor, uncensored model optional | Qwen3 8B, runs on the Mac, no Ollama needed |
 | Hardware | NVIDIA GPU with about 10 GB of free video memory (14 GB for `gemma4:12b`), or the processor | Apple silicon, macOS 15 or later, about 6.3 GB of free disk space for the two models |
 | Install | installer on the [Releases page](https://github.com/MikeGT4/speech2anywhere/releases/latest) | coming soon to the Mac App Store, see the [website](https://speech2anywhere.de/en/) |
 
@@ -30,6 +30,7 @@ Website with all features: [speech2anywhere.de](https://speech2anywhere.de/en/),
 
 - **Push to talk.** Hold F8, speak, release. A 250 ms pre-roll buffer catches the first word even if you start speaking before the keyboard hook fires. Prefer tapping? Toggle mode in the settings starts with one press and stops with the next; a forgotten recording ends after three minutes.
 - **Graphics card or processor.** The first-run wizard measures graphics card, video memory, cores and RAM and recommends one of the two; switch any time under Settings, Microphone, "Run on". On the processor Speech2Anywhere uses Whisper `small` and `gemma4:e4b`. Measured on a desktop processor with 8 cores: about 0.8 s to recognise a short sentence and about 2.3 s for the cleanup, against 0.4 s and 0.15 s on the graphics card. Not tested on a PC without an NVIDIA driver.
+- **Pick the cleanup model from a list.** The cleanup tab lists the models installed in Ollama with their size, the tested gemma4 models first. Typing a name still works, and saving pulls a model that is not installed yet. In fast mode and on the processor the field is greyed out, and a line below says which model cleans up.
 - **More models from Hugging Face.** The **Hugging Face…** button on the cleanup tab opens the GGUF model search. Enter a name like `hf.co/user/model:Q4_K_M` and saving pulls it through Ollama. Only the gemma4 models are tested.
 - **Context-aware cleanup.** Speech2Anywhere detects the active app (Mail, Slack, Terminal, VS Code, Cursor, Obsidian and more) and rewrites in the right register. The model stays warm for 24 hours, so the first F8 after boot has the same latency as the hundredth.
 - **Edit by voice on F9.** Select text, hold F9, say what to change.
@@ -47,7 +48,7 @@ Website with all features: [speech2anywhere.de](https://speech2anywhere.de/en/),
 ## Requirements
 
 - Windows 11 (Windows 10 should work, untested)
-- An NVIDIA GPU with about 10 GB of free video memory, about 14 GB for `gemma4:12b`. Without one Speech2Anywhere runs on the processor, slower and with 12 GB of RAM or more
+- An NVIDIA GPU with about 10 GB of free video memory (about 14 GB for `gemma4:12b`), or no graphics card: then Speech2Anywhere runs on the processor. That is slower and works best with 12 GB of RAM or more
 - 25 GB of free disk space: the installer is about 3.5 GB, the first-run wizard pulls 10 to 13 GB of models into `%USERPROFILE%\models\` and `%USERPROFILE%\.ollama\`
 - A stable internet connection for the first start (one-time model download)
 
@@ -61,7 +62,7 @@ Download everything from the [latest release](https://github.com/MikeGT4/speech2
 4. On first start a second wizard measures your PC, recommends graphics card or processor and downloads the matching models (10 to 13 GB from Hugging Face and the Ollama registry). One time only; dictation works offline afterwards.
 5. Speech2Anywhere starts in the tray with a yellow framed logo. **Hold F8, speak, release.**
 
-Later updates run from the tray menu. If only the program changed since your version, Speech2Anywhere loads just the program package (about 2.6 MB), checks its SHA-256 and restarts itself; otherwise it loads the full setup.
+Later updates run from the tray menu. When a new version is out, the tray icon shows a green mark with an arrow; its tooltip gives the version. If only the program changed since your version, Speech2Anywhere loads just the program package (about 2.6 MB), checks its SHA-256 and restarts itself; otherwise it loads the full setup.
 
 ### Installation (Deutsch)
 
