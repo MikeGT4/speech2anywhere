@@ -12,15 +12,19 @@ Speech2Anywhere is a push-to-talk voice-to-text app that runs entirely on your o
 ![100 percent local](https://img.shields.io/badge/100%25-local-2ea44f)
 ![Personal use license](https://img.shields.io/badge/license-personal%20use-lightgrey)
 
+<p align="center"><a href="https://speech2anywhere.de/en/"><img src="assets/readme-demo.gif" alt="Demo: an email is dictated and lands polished at the cursor, a voice command makes it friendlier, then a prompt is dictated to a coding agent" width="880"></a></p>
+
+Website with all features: [speech2anywhere.de](https://speech2anywhere.de/en/), also in [German](https://speech2anywhere.de/).
+
 ## Two builds, one idea
 
-| | Windows 11 (this repository) | macOS (separate build, not in this repository) |
+| | Windows 11 (this repository) | macOS (Mac App Store, separate code base) |
 |---|---|---|
 | Hotkey | hold **F8** or tap it in toggle mode, **F9** for AI edit commands | hold **fn** (Globe key) |
-| Speech to text | faster-whisper, `large-v3` on CUDA or `small` on the processor | mlx-whisper, `whisper-large-v3-turbo` on the Apple GPU |
-| Text cleanup | Ollama, `gemma4:12b` or `gemma4:e4b` depending on video memory, uncensored model optional | Ollama, `huihui_ai/qwen3-abliterated:8b` (uncensored) |
-| Hardware | NVIDIA GPU with about 10 GB of free video memory (14 GB for `gemma4:12b`), or the processor | Apple Silicon (M1 or newer), 16 GB unified memory |
-| Install | installer on the [Releases page](https://github.com/MikeGT4/speech2anywhere/releases/latest) | not published here |
+| Speech to text | faster-whisper, `large-v3` on CUDA or `small` on the processor | Whisper `large-v3-turbo`, runs on the Mac |
+| Text cleanup | Ollama, `gemma4:12b` or `gemma4:e4b` depending on video memory, uncensored model optional | Qwen3 8B, runs on the Mac, no Ollama needed |
+| Hardware | NVIDIA GPU with about 10 GB of free video memory (14 GB for `gemma4:12b`), or the processor | Apple silicon, macOS 15 or later, about 6.3 GB of free disk space for the two models |
+| Install | installer on the [Releases page](https://github.com/MikeGT4/speech2anywhere/releases/latest) | coming soon to the Mac App Store, see the [website](https://speech2anywhere.de/en/) |
 
 ## What it does
 
