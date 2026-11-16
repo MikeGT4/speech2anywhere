@@ -124,4 +124,4 @@ Personal use. See [`LICENSE`](LICENSE) (English and German). Commercial use need
 
 The German word list `assets/wordlist-de.txt` is derived from [wordfreq](https://github.com/rspeer/wordfreq) data, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
-Made by [Digitalroots](https://www.digitalroots.de), Mike Pollow.
+Made by [Digitalroots](https://www.digitalroots.de/en/leistungen/assistenten/speech2anywhere/), Mike Pollow.
