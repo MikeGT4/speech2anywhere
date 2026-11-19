@@ -34,6 +34,8 @@
   Sprachen ohne kleingeschriebene Einzelwörter ab Zipf 4,0 und großgeschriebene ab Zipf 5,0. Die Häufigkeiten dienen nur als
   Filter und zur Wahl zwischen Schreibvarianten, kein Wort daraus ist übernommen. Deutsche Aliasse zusätzlich
   ohne Einzelwörter aus `assets/wordlist-de.txt`.
+- Ergänzung: gängige Fachbegriffe aus `scripts/fachbegriffe_ergaenzung.json` (eigene Liste) stehen am Anfang
+  ihrer Datei, soweit die Abfragen sie nicht liefern.
 - Ausgeschlossen: Instanzen von Q115305900 großes Sprachmodell, Q870780 Chatbot. Einzeln ausgeschlossen, weil ihre Bezeichnungen mit
   Produkt- oder Personennamen zusammenfallen: Q248542, Q1126839, Q1977520, Q25110971, Q94638515, Q134083964, Q136549314.
 

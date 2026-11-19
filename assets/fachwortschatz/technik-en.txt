@@ -1,3 +1,15 @@
+frequency
+electrical impedance
+power inverter
+hydraulics
+transmission
+gear
+ball bearing
+casting
+forging
+tensile strength
+yield strength
+polarization
 atom
 artificial intelligence
 computer science
@@ -2986,15 +2998,3 @@ Kelvin bridge
 Kepler orbit
 kibibit
 kiloton of TNT
-Landauer's principle
-lapse rate
-level staff
-linear variable differential transformer
-linear variable displacement transformer
-Load cell
-low voltage
-Mach-Zehnder interferometer
-magnetic bearing
-Mali
-mass diffusivity
-mebibit

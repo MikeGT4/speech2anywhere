@@ -1,3 +1,6 @@
+catalizzatore
+isomero
+isomeria
 idrogeno
 carbonio
 alluminio
@@ -4995,6 +4998,3 @@ tiano
 Tiapride
 tionamidi
 Tofisopam
-tolcapone
-Tolvaptan
-Tomatina

@@ -1,3 +1,14 @@
+Niereninsuffizienz
+Sonographie
+Echokardiographie
+Elektrokardiografie
+Elektrokardiographie
+Computertomografie
+Magnetresonanztomografie
+Migräne
+Demenz
+Anamnese
+Nephrolithiasis
 COVID-19
 AIDS
 Malaria
@@ -5987,14 +5998,3 @@ Caco-2
 Canalis adductorius
 Caplan-Syndrom
 Caput succedaneum
-Central-Core-Myopathie
-Chemobrain
-Chronisch thromboembolische pulmonale Hypertonie
-Cinchonismus
-collum chirurgicum humeri
-Costamer
-Coxarthrose
-Cronkhite-Canada-Syndrom
-Currarino-Syndrom
-Darmschleimhaut
-Dens invaginatus

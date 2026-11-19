@@ -1,3 +1,6 @@
+catalyseur
+isomère
+isomérie
 hydrogène
 aluminium
 hélium
@@ -4995,6 +4998,3 @@ triéthylènetétramine
 triméthylphosphine
 trioxyde de carbone
 triphénylène
-triphosgène
-trisulfure d'antimoine
-Tryptophol

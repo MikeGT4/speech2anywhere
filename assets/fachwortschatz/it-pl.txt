@@ -1,3 +1,5 @@
+zapora sieciowa
+szyfrowanie
 Linux
 system operacyjny
 HTML
@@ -2996,5 +2998,3 @@ TextMate
 Three.js
 TOPS-10
 Transformator wizyjny
-trwała struktura danych
-typowanie silne

@@ -1,3 +1,24 @@
+Kafka
+Grafana
+Elasticsearch
+Linux
+Python
+Java
+Ruby
+HTML
+CSS
+Domain Name System
+Virtual Private Network
+REST
+Virtualisierung
+Bash
+Firewall
+Router
+Datenbank
+Algorithmus
+Rekursion
+Verschlüsselung
+Malware
 Hypertext Markup Language
 Ubuntu
 Microsoft Windows
@@ -2977,24 +2998,3 @@ Spline-Interpolation
 Steam Controller
 Strukturmuster
 Suffixarray
-Symboltabelle
-Systemlautsprecher
-TACACS
-Tailwind CSS
-Texmaker
-Text Encoding Initiative
-Tiny Encryption Algorithm
-TinyMCE
-Titfortat-Strategie
-Tomasulo-Algorithmus
-TOML
-TOS
-Turbolinux
-Ultrix
-Unreal Engine 5
-Versionszweig
-VHS-C
-Vinyl Cache
-VMware ESX
-Vulnerability Scanner
-WavPack

@@ -67,6 +67,7 @@ DERIVED_PREFIX_SHARE = 0.75
 ASSETS_DIR = Path(__file__).resolve().parent.parent / "assets"
 OUTPUT_DIR = ASSETS_DIR / "fachwortschatz"
 KNOWN_GERMAN_WORDS_FILE = ASSETS_DIR / "wordlist-de.txt"
+SUPPLEMENT_FILE = Path(__file__).resolve().parent / "fachbegriffe_ergaenzung.json"
 SOURCE_NOTE = "QUELLEN.md"
 
 GERMAN_WORD = re.compile(r"[a-zäöüß]+")
@@ -1048,6 +1049,8 @@ def write_source_note(out_dir: Path, cache_dir: Path | None, retrieval_date: dat
         f" {german_number(CAPITALIZED_COMMON_ZIPF)}. Die Häufigkeiten dienen nur als",
         "  Filter und zur Wahl zwischen Schreibvarianten, kein Wort daraus ist übernommen. Deutsche Aliasse zusätzlich",
         "  ohne Einzelwörter aus `assets/wordlist-de.txt`.",
+        "- Ergänzung: gängige Fachbegriffe aus `scripts/fachbegriffe_ergaenzung.json` (eigene Liste) stehen am Anfang",
+        "  ihrer Datei, soweit die Abfragen sie nicht liefern.",
         f"- Ausgeschlossen: Instanzen von {excluded}. Einzeln ausgeschlossen, weil ihre Bezeichnungen mit",
         "  Produkt- oder Personennamen zusammenfallen: " + ", ".join(sorted(EXCLUDED_ITEMS, key=lambda e: int(e[1:]))) + ".",
         "",
@@ -1073,6 +1076,21 @@ def write_source_note(out_dir: Path, cache_dir: Path | None, retrieval_date: dat
     write_lines(out_dir / SOURCE_NOTE, lines)
 
 
+def apply_supplement(out_dir: Path) -> None:
+    supplement = json.loads(SUPPLEMENT_FILE.read_text(encoding="utf-8"))
+    for name, terms in supplement.items():
+        if name.startswith("_"):
+            continue
+        path = out_dir / f"{name}.txt"
+        if not path.exists():
+            continue
+        lines = [line for line in path.read_text(encoding="utf-8").splitlines() if line]
+        known = {line.casefold() for line in lines}
+        added = [term for term in terms if term.casefold() not in known]
+        merged = (added + lines)[: max(term_limit(name.rsplit("-", 1)[0]), len(added))]
+        path.write_text("".join(f"{line}\n" for line in merged), encoding="utf-8", newline="\n")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Fachwortschatz aus Wikidata erzeugen")
     parser.add_argument("--out-dir", type=Path, default=OUTPUT_DIR)
@@ -1087,6 +1105,7 @@ def main() -> int:
     word_lists = WordLists(frequencies, common_german_words(frequencies["de"]), load_known_german_words())
     for domain in args.domains:
         build_domain(domain, args.out_dir, args.cache_dir, word_lists)
+    apply_supplement(args.out_dir)
     write_source_note(args.out_dir, args.cache_dir, args.retrieval_date)
     return 0
 

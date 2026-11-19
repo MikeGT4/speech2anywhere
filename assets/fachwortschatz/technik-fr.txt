@@ -1,3 +1,5 @@
+couple
+fréquence
 atome
 intelligence artificielle
 élément chimique
@@ -2996,5 +2998,3 @@ pétabit
 pétamètre
 phase géométrique
 photo-évaporation
-photocathode
-Photovoltaïque intégré au bâti

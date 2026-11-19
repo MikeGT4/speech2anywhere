@@ -1,3 +1,6 @@
+katalysator
+isomeer
+isomerie
 waterstof
 koolstof
 aluminium
@@ -4995,6 +4998,3 @@ ammonium diuranate
 ammonium sulfamate
 Amorolfine
 anileridine
-aprobarbital
-Argatroban
-aromatische sulfonering

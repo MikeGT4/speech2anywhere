@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.7.2 (19.11.2026)
+
+- Fachlisten ergänzt: rund 300 gängige Fachbegriffe, die Wikidata nicht oder nur am Rand liefert, stehen jetzt fest in den Listen, etwa Strafgesetzbuch, Bundesgerichtshof, Abschreibung, Bilanz, Tilidin, Anamnese, Firewall
+- Von 0.5.5 bis 0.7.1 aus lädt das Update in der App nur das Programmpaket
+
 ## 0.7.1 (19.11.2026)
 
 - Fachwortschatz: Alltagswörter lösen jetzt in allen acht Sprachen keinen Vorschlag mehr aus, vorher nur im Deutschen

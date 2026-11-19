@@ -1,3 +1,4 @@
+moment obrotowy
 Internet
 atom
 barwa
@@ -2997,4 +2998,3 @@ indukcja nasycenia
 Intel MCS-48
 ISQ
 Jednostka enzymu
-Katoda wtórna

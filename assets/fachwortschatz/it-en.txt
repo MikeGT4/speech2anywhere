@@ -1,3 +1,12 @@
+Grafana
+Elasticsearch
+virtual private network
+virtualization
+Bash
+firewall
+database
+algorithm
+encryption
 Linux
 operating system
 HTML
@@ -2989,12 +2998,3 @@ Signal Protocol
 skew-Hermitian matrix
 SpiderMonkey
 Spyder
-SQL slammer
-SQLAlchemy
-star schema
-storage engine
-SyncML
-system console
-TECO
-template metaprogramming
-Temporal Key Integrity Protocol

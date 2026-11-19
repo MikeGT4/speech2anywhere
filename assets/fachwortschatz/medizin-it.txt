@@ -1,3 +1,5 @@
+infarto miocardico acuto
+ipertensione arteriosa
 orecchio
 COVID-19
 AIDS
@@ -5996,5 +5998,3 @@ vena surrenale
 vena vertebrale
 vene bronchiali
 Vene comitanti
-vene freniche inferiori
-vene surrenali

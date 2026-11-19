@@ -1,3 +1,6 @@
+katalizator
+izomeria
+izomer
 żelazo
 srebro
 wodór
@@ -4995,6 +4998,3 @@ Mepiramina
 metylokatynon
 metylomalonylo-CoA
 metyrapon
-mezlocylina
-mitomycyna C
-molibdopteryna

@@ -1,3 +1,7 @@
+binário
+transistor
+frequência
+impedância
 Átomo
 inteligência artificial
 ciência da computação
@@ -2994,7 +2998,3 @@ minuto-luz
 nocturlábio
 Nuvistor
 Operador de momento
-particionamento de disco
-potenciometria
-Processo planar
-Processo Urca

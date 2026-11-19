@@ -1,3 +1,4 @@
+pare-feu
 Linux
 système d'exploitation
 HTML
@@ -2997,4 +2998,3 @@ Text Encoding Initiative
 Tiny Encryption Algorithm
 TinyMCE
 touche de combinaison
-triche

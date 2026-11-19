@@ -1,3 +1,5 @@
+cortafuegos
+cifrado
 Linux
 sistema operativo
 HTML
@@ -2996,5 +2998,3 @@ SFML
 Sintetizador de software
 Sleipnir
 sobrecoste
-software de genealogía
-Steam Controller

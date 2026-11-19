@@ -1,3 +1,8 @@
+valoración
+oxidación
+catalizador
+isómero
+isomería
 hidrógeno
 aluminio
 helio
@@ -4993,8 +4998,3 @@ glucosa oxidasa
 Halazepam
 harmina
 HBPM
-hidrodesulfuración
-Hipoclorito de litio
-Icatibant
-imazalil
-iminio

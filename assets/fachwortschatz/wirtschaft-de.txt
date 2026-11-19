@@ -1,3 +1,36 @@
+Abschreibung
+Eigenkapital
+Umsatzsteuer
+Vorsteuer
+Mehrwertsteuer
+Gewerbesteuer
+Einkommensteuer
+Eigenkapitalrendite
+Cashflow
+Inflation
+Rezession
+Dividende
+Anleihe
+Leasing
+Skonto
+Break-even-Point
+Gewinnschwelle
+Controlling
+Kontenrahmen
+Inventur
+Insolvenz
+Konjunktur
+Wechselkurs
+Annuität
+Rechnungsabgrenzungsposten
+Firmenwert
+Geschäftswert
+Goodwill
+Bilanz
+Handelsbilanz
+Steuerbilanz
+Umsatzerlöse
+Lagebericht
 Bruttoinlandsprodukt
 Index der menschlichen Entwicklung
 Kryptogeld
@@ -2965,36 +2998,3 @@ Gesamtwirtschaftliche Ersparnis
 Gruppenfinanzierung
 Nationale Ersparnis
 Öffentliche Ersparnis
-öffentliche Schulden
-öffentliche Verschuldung
-Ponzi-Trick
-Private Ersparnis
-Schuldenstandsquote
-Schwarmfinanzierung
-Aktienoption
-Am Geld
-Aus dem Geld
-Basiseinkommen
-bedingtes Termingeschäft
-Bettelei
-Bürgereinkommen
-Bürgergehalt
-Bürgergeld
-Bürgergeldabgabe
-emanzipatorisches Grundeinkommen
-erwerbsloses Grundeinkommen
-Existenzgeld
-Finanzoption
-Im Geld
-integriertes Steuer-Transfer-System
-Kriegsentschädigung
-Kriegsentschädigungen
-Lebensgeld
-leistungsunabhängiges Grundeinkommen
-Physiocraten
-Physiokratische Schule
-Physiokratismus
-Reparationsfrage
-Reparationsleistung
-Reparationsverpflichtung
-Reparationszahlung

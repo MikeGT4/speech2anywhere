@@ -1,3 +1,8 @@
+oxidação
+catalisador
+isómero
+isômero
+isomeria
 hidrogénio
 hidrogênio
 oxigénio
@@ -4993,8 +4998,3 @@ Durvalumab
 Dyclonina
 Eletroforese bidimensional
 Eletrônica molecular
-enoxacino
-enrofloxacino
-Esterificação de Fischer-Speier
-etclorvinol
-éter de difenila polibromado

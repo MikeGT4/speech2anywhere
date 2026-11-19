@@ -1,3 +1,6 @@
+bilancio
+ammortamento
+patrimonio netto
 marxismo
 prodotto interno lordo
 inflazione

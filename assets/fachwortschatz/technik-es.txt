@@ -1,3 +1,7 @@
+par motor
+par de torsión
+condensador
+frecuencia
 átomo
 inteligencia artificial
 ciencias de la computación
@@ -2994,7 +2998,3 @@ Radiador
 Rastreador de estrellas
 Registered jack
 reloj de buceo
-REPL
-retropropulsión espacial eléctrica
-S-Box
-SCRAM

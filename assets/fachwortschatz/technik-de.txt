@@ -1,3 +1,20 @@
+Drehmoment
+Frequenz
+Kapazität
+Wirkungsgrad
+Hydraulik
+Getriebe
+Zahnrad
+Kugellager
+Bohren
+Gießen
+Schmieden
+Streckgrenze
+Resonanz
+Polarisation
+Photovoltaik
+Fotovoltaik
+Generator
 artifizielle Intelligenz
 künstliche Intelligenz
 chemisches Element
@@ -2981,20 +2998,3 @@ Planck-Strom
 Protein-Engineering
 Quecksilberdampfgleichrichter
 Quecksilberschalter
-Restwelligkeit
-Rollenkette
-ROM-Hacking
-Rotationsformen
-Rotationslaser
-Runway Visual Range
-Samsung Gear
-Schallleistung
-Schraubenfeder
-Selbstversenkung
-selektives Lasersintern
-Shannon
-Silvopasture
-Skalarkrümmung
-Slug
-Sockel AM4
-Sockel S1

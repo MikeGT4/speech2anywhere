@@ -1,3 +1,6 @@
+appendicitis
+alvleesklierontsteking
+coloscopie
 geneeskunde
 COVID-19
 aids
@@ -5995,6 +5998,3 @@ nierschade
 Pancreascarcinoom
 Pancreaskopcarcinoom
 tongblaar
-Auto-immuniteitsziekte
-Auto-immuun ziekte
-Auto-immuun ziekten

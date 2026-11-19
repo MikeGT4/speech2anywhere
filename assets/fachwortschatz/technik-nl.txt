@@ -1,3 +1,6 @@
+koppel
+draaimoment
+frequentie
 atoom
 kunstmatige intelligentie
 informatica
@@ -2995,6 +2998,3 @@ eotvos
 equal-loudness contour
 Equatorium
 Eulerschijf
-extinctiecoëfficiënt
-fasehoek
-foto-elektrische sensor

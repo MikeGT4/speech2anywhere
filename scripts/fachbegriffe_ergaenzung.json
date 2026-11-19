@@ -1,0 +1,415 @@
+{
+ "_copyright": "© 2026 Mike Pollow, Digitalroots. Alle Rechte vorbehalten.",
+ "medizin-de": [
+  "Niereninsuffizienz",
+  "Sonographie",
+  "Echokardiographie",
+  "Elektrokardiografie",
+  "Elektrokardiographie",
+  "Computertomografie",
+  "Magnetresonanztomografie",
+  "Migräne",
+  "Demenz",
+  "Anamnese",
+  "Nephrolithiasis"
+ ],
+ "medikamente-de": [
+  "Dabigatran",
+  "Metamizol",
+  "Tilidin"
+ ],
+ "jura-de": [
+  "Strafgesetzbuch",
+  "Sozialgesetzbuch",
+  "Bundesgerichtshof",
+  "Bundesverfassungsgericht",
+  "Oberlandesgericht",
+  "Landgericht",
+  "Amtsgericht",
+  "Verwaltungsgericht",
+  "Mahnbescheid",
+  "Vollstreckungsbescheid",
+  "Schadensersatz",
+  "Vorsatz",
+  "Mietvertrag",
+  "Arbeitsvertrag",
+  "Grundschuld",
+  "Betrug",
+  "Untreue",
+  "Körperverletzung",
+  "Urheberrecht",
+  "Datenschutz-Grundverordnung",
+  "Allgemeine Geschäftsbedingungen",
+  "Gewährleistung",
+  "Willenserklärung",
+  "Zwangsvollstreckung",
+  "Pfändung",
+  "Erbschein",
+  "Pflichtteil"
+ ],
+ "wirtschaft-de": [
+  "Abschreibung",
+  "Eigenkapital",
+  "Umsatzsteuer",
+  "Vorsteuer",
+  "Mehrwertsteuer",
+  "Gewerbesteuer",
+  "Einkommensteuer",
+  "Eigenkapitalrendite",
+  "Cashflow",
+  "Inflation",
+  "Rezession",
+  "Dividende",
+  "Anleihe",
+  "Leasing",
+  "Skonto",
+  "Break-even-Point",
+  "Gewinnschwelle",
+  "Controlling",
+  "Kontenrahmen",
+  "Inventur",
+  "Insolvenz",
+  "Konjunktur",
+  "Wechselkurs",
+  "Annuität",
+  "Rechnungsabgrenzungsposten",
+  "Firmenwert",
+  "Geschäftswert",
+  "Goodwill",
+  "Bilanz",
+  "Handelsbilanz",
+  "Steuerbilanz",
+  "Umsatzerlöse",
+  "Lagebericht"
+ ],
+ "technik-de": [
+  "Drehmoment",
+  "Frequenz",
+  "Kapazität",
+  "Wirkungsgrad",
+  "Hydraulik",
+  "Getriebe",
+  "Zahnrad",
+  "Kugellager",
+  "Bohren",
+  "Gießen",
+  "Schmieden",
+  "Streckgrenze",
+  "Resonanz",
+  "Polarisation",
+  "Photovoltaik",
+  "Fotovoltaik",
+  "Generator"
+ ],
+ "chemie-de": [
+  "Natronlauge",
+  "Chromatografie",
+  "Katalysator",
+  "Isomerie",
+  "Isomer",
+  "Enantiomer",
+  "Enantiomere",
+  "Stöchiometrie",
+  "Stoffmengenkonzentration",
+  "Molarität",
+  "Pufferlösung",
+  "Elektrophil",
+  "Nukleophil",
+  "Alkan",
+  "Alken",
+  "Alkin",
+  "Carbonsäure",
+  "Aldehyd",
+  "Keton",
+  "Amin",
+  "Amid",
+  "Atombindung",
+  "Ionenbindung"
+ ],
+ "it-de": [
+  "Kafka",
+  "Grafana",
+  "Elasticsearch",
+  "Linux",
+  "Python",
+  "Java",
+  "Ruby",
+  "HTML",
+  "CSS",
+  "Domain Name System",
+  "Virtual Private Network",
+  "REST",
+  "Virtualisierung",
+  "Bash",
+  "Firewall",
+  "Router",
+  "Datenbank",
+  "Algorithmus",
+  "Rekursion",
+  "Verschlüsselung",
+  "Malware"
+ ],
+ "medizin-en": [
+  "chronic kidney disease",
+  "diabetes mellitus",
+  "cardiac arrhythmia"
+ ],
+ "jura-en": [
+  "breach of contract",
+  "plaintiff",
+  "subpoena",
+  "arraignment",
+  "plea bargain",
+  "burden of proof",
+  "indemnity",
+  "arbitration",
+  "mediation",
+  "jurisdiction",
+  "appeal",
+  "magistrate",
+  "solicitor",
+  "barrister",
+  "testimony",
+  "fraud",
+  "larceny",
+  "manslaughter",
+  "libel",
+  "slander",
+  "copyright",
+  "trademark",
+  "patent",
+  "easement",
+  "foreclosure"
+ ],
+ "wirtschaft-en": [
+  "depreciation",
+  "accounts payable",
+  "accounts receivable",
+  "equity",
+  "revenue",
+  "earnings before interest and taxes",
+  "solvency",
+  "bond",
+  "inflation",
+  "recession",
+  "exchange rate",
+  "internal rate of return",
+  "break-even",
+  "goodwill",
+  "inventory",
+  "leasing",
+  "audit",
+  "mortgage",
+  "hedge fund",
+  "private equity"
+ ],
+ "technik-en": [
+  "frequency",
+  "electrical impedance",
+  "power inverter",
+  "hydraulics",
+  "transmission",
+  "gear",
+  "ball bearing",
+  "casting",
+  "forging",
+  "tensile strength",
+  "yield strength",
+  "polarization"
+ ],
+ "chemie-en": [
+  "catalyst",
+  "isomer",
+  "enantiomer",
+  "stoichiometry",
+  "molar concentration",
+  "molarity",
+  "buffer solution",
+  "electrophile",
+  "ether",
+  "aldehyde",
+  "amide",
+  "ionic bonding",
+  "oxidation state"
+ ],
+ "it-en": [
+  "Grafana",
+  "Elasticsearch",
+  "virtual private network",
+  "virtualization",
+  "Bash",
+  "firewall",
+  "database",
+  "algorithm",
+  "encryption"
+ ],
+ "medizin-it": [
+  "infarto miocardico acuto",
+  "ipertensione arteriosa"
+ ],
+ "medizin-nl": [
+  "appendicitis",
+  "alvleesklierontsteking",
+  "coloscopie"
+ ],
+ "medizin-pl": [
+  "częstoskurcz"
+ ],
+ "medizin-pt": [
+  "enfarte agudo do miocárdio",
+  "hipotireoidismo"
+ ],
+ "medizin-es": [
+  "hipertensión"
+ ],
+ "medikamente-es": [
+  "ramipril"
+ ],
+ "jura-fr": [
+  "Code civil",
+  "procuration",
+  "jurisprudence"
+ ],
+ "jura-it": [
+  "prescrizione",
+  "procura",
+  "truffa",
+  "giurisprudenza"
+ ],
+ "jura-nl": [
+  "Burgerlijk Wetboek",
+  "jurisprudentie"
+ ],
+ "jura-pl": [
+  "orzecznictwo"
+ ],
+ "jura-pt": [
+  "Código Civil",
+  "jurisprudência"
+ ],
+ "jura-es": [
+  "poder notarial",
+  "jurisprudencia"
+ ],
+ "wirtschaft-fr": [
+  "bilan",
+  "inflation",
+  "taxe sur la valeur ajoutée",
+  "obligation"
+ ],
+ "wirtschaft-it": [
+  "bilancio",
+  "ammortamento",
+  "patrimonio netto"
+ ],
+ "wirtschaft-nl": [
+  "balans",
+  "afschrijving",
+  "belasting over de toegevoegde waarde",
+  "btw"
+ ],
+ "wirtschaft-pl": [
+  "amortyzacja",
+  "podatek od towarów i usług",
+  "płynność finansowa"
+ ],
+ "wirtschaft-pt": [
+  "demonstração do resultado do exercício",
+  "demonstração de resultados",
+  "depreciação",
+  "inflação",
+  "imposto sobre o valor acrescentado",
+  "imposto sobre valor agregado"
+ ],
+ "wirtschaft-es": [
+  "cuenta de resultados",
+  "inflación",
+  "impuesto sobre el valor añadido"
+ ],
+ "technik-fr": [
+  "couple",
+  "fréquence"
+ ],
+ "technik-it": [
+  "coppia motrice",
+  "frequenza"
+ ],
+ "technik-nl": [
+  "koppel",
+  "draaimoment",
+  "frequentie"
+ ],
+ "technik-pl": [
+  "moment obrotowy"
+ ],
+ "technik-pt": [
+  "binário",
+  "transistor",
+  "frequência",
+  "impedância"
+ ],
+ "technik-es": [
+  "par motor",
+  "par de torsión",
+  "condensador",
+  "frecuencia"
+ ],
+ "chemie-fr": [
+  "catalyseur",
+  "isomère",
+  "isomérie"
+ ],
+ "chemie-it": [
+  "catalizzatore",
+  "isomero",
+  "isomeria"
+ ],
+ "chemie-nl": [
+  "katalysator",
+  "isomeer",
+  "isomerie"
+ ],
+ "chemie-pl": [
+  "katalizator",
+  "izomeria",
+  "izomer"
+ ],
+ "chemie-pt": [
+  "oxidação",
+  "catalisador",
+  "isómero",
+  "isômero",
+  "isomeria"
+ ],
+ "chemie-es": [
+  "valoración",
+  "oxidación",
+  "catalizador",
+  "isómero",
+  "isomería"
+ ],
+ "it-fr": [
+  "pare-feu"
+ ],
+ "it-it": [
+  "firewall",
+  "crittografia"
+ ],
+ "it-nl": [
+  "firewall",
+  "encryptie",
+  "versleuteling"
+ ],
+ "it-pl": [
+  "zapora sieciowa",
+  "szyfrowanie"
+ ],
+ "it-pt": [
+  "firewall",
+  "criptografia"
+ ],
+ "it-es": [
+  "cortafuegos",
+  "cifrado"
+ ]
+}

@@ -1,3 +1,23 @@
+depreciation
+accounts payable
+accounts receivable
+equity
+revenue
+earnings before interest and taxes
+solvency
+bond
+inflation
+recession
+exchange rate
+internal rate of return
+break-even
+goodwill
+inventory
+leasing
+audit
+mortgage
+hedge fund
+private equity
 capitalism
 Marxism
 gross domestic product
@@ -2978,23 +2998,3 @@ Livestock allowances
 loan repayment
 London Interbank Bid Rate
 Long Term Incentive
-Long term investment plan
-long term rental
-low-profit limited liability company
-Man'en-koban
-Mar-a-Lago Accord
-Maral
-market sector
-Market-Adjusted Performance Indicator
-marketing for educational institutions
-marketing of Halo 3
-masi.20
-Matrix scheme
-Meme marketing
-merchandise certificate
-merchant cash advance
-Mexican 20 pesos
-military cooperative
-Mineral tax
-moderate inflation
-money pump

@@ -1,3 +1,6 @@
+chronic kidney disease
+diabetes mellitus
+cardiac arrhythmia
 COVID-19
 AIDS
 HIV/AIDS
@@ -5995,6 +5998,3 @@ erythema ab igne
 Essure
 eukaryotic cell
 exchange transfusion
-exotropia
-external capsule
-fallopian tube cancer

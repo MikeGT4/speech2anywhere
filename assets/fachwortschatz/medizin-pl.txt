@@ -1,3 +1,4 @@
+częstoskurcz
 medycyna
 COVID-19
 zespół nabytego niedoboru odporności
@@ -5997,4 +5998,3 @@ trup
 atak migrenowy
 Czerwonka
 Czerwonka bakteryjna
-epizod migrenowy

@@ -1,3 +1,5 @@
+coppia motrice
+frequenza
 atomo
 intelligenza artificiale
 elettricità
@@ -2996,5 +2998,3 @@ verniero
 vettore di Burgers
 VU meter
 Würzburg
-zettametro
-5 nm

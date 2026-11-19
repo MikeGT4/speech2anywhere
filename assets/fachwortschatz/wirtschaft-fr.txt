@@ -1,3 +1,7 @@
+bilan
+inflation
+taxe sur la valeur ajoutée
+obligation
 capitalisme
 marxisme
 produit intérieur brut
@@ -2994,7 +2998,3 @@ Sous-jacent
 analyse des risques
 gestion des risques
 Livres Blancs
-management du risque
-externalisée
-impartition
-Actif à haut risque

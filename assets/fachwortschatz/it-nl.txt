@@ -1,3 +1,6 @@
+firewall
+encryptie
+versleuteling
 Linux
 besturingssysteem
 HyperText Markup Language
@@ -2995,6 +2998,3 @@ Glide
 Goanna
 grafische bibliotheek
 Graphite
-Hamlets
-Hashcash
-High Level Assembly

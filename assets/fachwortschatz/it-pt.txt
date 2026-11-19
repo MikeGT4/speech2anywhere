@@ -1,3 +1,5 @@
+firewall
+criptografia
 Linux
 sistema operacional
 sistema operativo
@@ -2996,5 +2998,3 @@ Unidade Jaz
 Unreal Engine 4
 vinculação de nomes
 Vite
-VMware Fusion
-WebSphere Application Server
