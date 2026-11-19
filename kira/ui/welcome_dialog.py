@@ -177,7 +177,7 @@ Geprüft sind nur die gemma4-Modelle.</p>
 Dann schreibt Speech2Anywhere deren Fachbegriffe öfter richtig. Begriffslisten gibt es für alle acht Sprachen, gemessen ist die Wirkung auf Deutsch und Englisch.<br>
 Die Politur erfährt das Fachgebiet und bekommt je Diktat bis zu fünf Fachbegriffe, die ähnlich klingen wie das Erkannte.<br>
 Aus „Ass Pirin“ wird so bei eingeschaltetem Gebiet „Medikamente“ „Aspirin“.<br>
-Das wirkt in normalem Text, Chat und Mail und nur mit eingeschalteter Politur; Terminal und Code bleiben wörtlich.</p>
+Das wirkt überall, wo du diktierst, auch im Terminal und im Code-Editor, und nur mit eingeschalteter Politur.</p>
 <p>Die Begriffe stammen aus Wikidata, ohne Anspruch auf Vollständigkeit.<br>
 Schalte nur ein, was du brauchst: Je mehr Gebiete, desto eher passt ein fremder Begriff.<br>
 Ohne Auswahl erkennt Speech2Anywhere wie bisher.<br>
@@ -323,7 +323,7 @@ Only the gemma4 models are tested.</p>
 Speech2Anywhere then gets their technical terms right more often. There are term lists for all eight languages; the effect is measured in German and English.<br>
 The clean-up is told the field and gets up to five technical terms per dictation that sound like what was recognized.<br>
 With “Medications” switched on, “ass pirin” becomes “aspirin”.<br>
-This works in plain text, chat and mail, and only with the clean-up switched on; terminal and code stay literal.</p>
+This works wherever you dictate, including the terminal and the code editor, and only with the clean-up switched on.</p>
 <p>The terms come from Wikidata and make no claim to be complete.<br>
 Only switch on what you need: the more fields, the more likely a term from another field fits.<br>
 With nothing selected, Speech2Anywhere recognizes speech as before.<br>

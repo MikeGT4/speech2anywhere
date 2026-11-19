@@ -48,8 +48,7 @@ def _language_is_certain(transcription) -> bool:
     probability = getattr(transcription, "language_probability", None)
     return probability is not None and probability >= LANGUAGE_HINT_MIN_PROBABILITY
 
-
-FACHWORTSCHATZ_MODES = frozenset({"plain", "chat", "email", "email_formal"})
+WOERTLICHE_MODES = frozenset({"terminal", "code"})
 
 
 class KiraApp:
@@ -246,7 +245,7 @@ class KiraApp:
                 extra = {"glossary": glossary} if glossary else {}
                 if _language_is_certain(transcription):
                     extra["language"] = transcription.language
-                if fach is not None and fach.kontext:
+                if fach is not None and fach.kontext and (glossary or mode not in WOERTLICHE_MODES):
                     extra["fachgebiete"] = fach.kontext
                 if self._config.styler.enabled:
                     polished = await self._styler.polish(
@@ -285,7 +284,7 @@ class KiraApp:
                 self._set_state(State.IDLE)
 
     def _fach_gilt(self, mode: str) -> bool:
-        return self._fachwortschatz is not None and self._config.styler.enabled and mode in FACHWORTSCHATZ_MODES
+        return self._fachwortschatz is not None and self._config.styler.enabled
 
     def _fach_sprache(self, transcription) -> str:
         language = getattr(transcription, "language", "")

@@ -234,9 +234,9 @@ def test_app_reicht_kontext_nur_mit_fachwortschatz_weiter(monkeypatch):
 
 @pytest.mark.parametrize("modus, erwartet", [
     ("plain", True), ("chat", True), ("email", True), ("email_formal", True),
-    ("terminal", False), ("code", False), ("clean", False), ("translate_en", False),
+    ("terminal", True), ("code", True), ("clean", True), ("translate_en", True),
 ])
-def test_fachwortschatz_nur_in_textmodi(monkeypatch, modus, erwartet):
+def test_fachwortschatz_wirkt_in_jedem_modus(monkeypatch, modus, erwartet):
     class Politur:
         def __init__(self):
             self.kwargs = []
@@ -293,3 +293,26 @@ def test_vorbereiten_baut_den_index(verzeichnis):
     fw = Fachwortschatz.laden(["medizin"], verzeichnis)
     fw.vorbereiten("auto")
     assert set(fw._index) == {"de", "en"}
+
+
+@pytest.mark.parametrize("modus, begriffe, erwartet", [
+    ("terminal", [], False), ("code", [], False), ("terminal", ["Kubernetes"], True), ("plain", [], True),
+])
+def test_befehle_ohne_treffer_bleiben_ohne_fachkontext(monkeypatch, modus, begriffe, erwartet):
+    class Politur:
+        def __init__(self):
+            self.kwargs = []
+
+        async def polish(self, text, mode, **kwargs):
+            self.kwargs.append(kwargs)
+            return text
+
+    class Fach(_Fach):
+        kontext = ["der IT"]
+
+    monkeypatch.setattr("kira.app.detect_mode", lambda cfg: modus)
+    politur = Politur()
+    app = KiraApp(config=Config(), recorder=Recorder(), transcriber=_StubTranscriber(),
+                  styler=politur, injector=_StubInjector(), fachwortschatz=Fach(begriffe))
+    asyncio.run(app._run_pipeline(np.ones(16000, dtype=np.float32)))
+    assert ("fachgebiete" in politur.kwargs[0]) is erwartet

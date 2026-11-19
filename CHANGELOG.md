@@ -7,6 +7,7 @@
 - Fachwortschatz: Je verhörtem Wort gehen nur noch die ähnlichsten Begriffe an die Politur; englische Verneinungen wie „shouldn't“ lösen keinen Vorschlag mehr aus
 - Anzeige-Stile Wirtschaft, Technik, IT und Medizin: Die Verzierung der Fehleranzeige liegt neben dem Text statt darunter; in Medizin schaut bei „Kein Signal“ kein Rest der EKG-Linie mehr hervor
 - Einstellungen speichern auch dann richtig, wenn ein Abschnitt der Konfiguration als `{}` geschrieben ist
+- Fachwortschatz wirkt jetzt überall, wo du diktierst, auch im Terminal und im Code-Editor (weiter nur mit eingeschalteter Politur)
 - Fachlisten neu gebaut: Fachsynonyme wie Myokardinfarkt, Pneumonie und Metoprolol stehen jetzt in den Listen, dazu Serversoftware wie Nginx; Medizin bis 6.000 Begriffe, Medikamente und Chemie bis 5.000; weniger Fachfremdes an der Spitze von Jura, Wirtschaft und Technik
 - Messung wiederholt: mit Fachgebiet 1 von 133 Fachbegriffen falsch, ohne 8; normale Diktate nicht schlechter
 - Von 0.5.5 bis 0.7.0 aus lädt das Update in der App nur das Programmpaket
