@@ -577,7 +577,7 @@ class BubbleTab(QAbstractButton):
         self._keyboard_focus = False
 
     def sizeHint(self) -> QSize:  # noqa: N802
-        width = QFontMetrics(self.font()).horizontalAdvance(self.text()) + 46
+        width = QFontMetrics(self.font()).horizontalAdvance(self.text()) + 38
         return QSize(width, self.LIFT + self.PILL + self.TAIL)
 
     def focusInEvent(self, event) -> None:  # noqa: N802

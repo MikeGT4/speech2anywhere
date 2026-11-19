@@ -1,50 +1,75 @@
 hidrogénio
 hidrogênio
 oxigénio
-oxigênio
-carbono
 alumínio
+hélio
+azoto
 nitrogênio
 enxofre
+lítio
+chumbo
 estanho
 ácido desoxirribonucleico
+sódio
 mercúrio
+cálcio
 berílio
+néon
+neônio
+zinco
 magnésio
 proteína
 silício
-petróleo
 potássio
+flúor
 fósforo
+urânio
+cloro
+boro
+árgon
 argônio
 titânio
-diamante
+cromo
+iodo
 arsénio
 arsênio
 cobalto
-manteiga
 platina
 Tabaco
 manganês
+níquel
 bioquímica
 crípton
 criptônio
+gálio
 vanádio
+bário
+bromo
 frâncio
 química orgânica
+radão
 radônio
 selénio
 selênio
+cádmio
 escândio
 estrôncio
 antimónio
 antimônio
+césio
 germânio
 rubídio
+xenón
 xenônio
 bismuto
+carboidrato
+glícidos
+hidrato de carbono
 tungsténio
 tungstênio
+volfrâmio
+irídio
+nióbio
 plutónio
 plutônio
 polónio
@@ -53,32 +78,49 @@ dióxido de carbono
 paládio
 molibdénio
 molibdênio
+ósmio
+háfnio
+ítrio
 tântalo
 telúrio
+astato
 tecnécio
+índio
+ródio
 ruténio
 rutênio
+tório
 zircónio
 zircônio
 actínio
 neptúnio
 netúnio
 lantânio
+rénio
+rênio
+tálio
 európio
 rutherfórdio
+cério
+hássio
+antibiótico
 samário
 seabórgio
 califórnio
+dúbnio
 einsténio
 einstênio
 lutécio
 amerício
+bóhrio
 gadolínio
 meitnério
 promécio
 protactínio
 vitamina
+cúrio
 disprósio
+férmio
 neodímio
 nobélio
 oganésson
@@ -86,56 +128,87 @@ oganessônio
 praseodímio
 berquélio
 darmstácio
+térbio
+érbio
 laurêncio
 mendelévio
 roentgénio
 roentgênio
+etanol
+hólmio
+hôlmio
 itérbio
 copernício
+niónio
+niônio
 moscóvio
 reação química
+túlio
 livermório
 fleróvio
-gasolina
+liga metálica
 tenessínio
 química inorgânica
 lipídio
+lípido
 ácido ribonucleico
 físico-química
+metano
 química analítica
+amônia
 amoníaco
+Penicilina
 aminoácido
-cocaína
 glicose
 mármore
 termómetro
 termômetro
 gás natural
+latão
 ácido acetilsalicílico
+ligação química
 Nicotina
 Azeite
+Óleo de oliva
 supernova
 Monóxido de carbono
+potencial de hidrogénio
+potencial hidrogeniónico
 Colesterol
+hidrocarboneto
+quark
+cera
+ozônio
+ozono
 Vitamina C
+âmbar
 Ópio
 paracetamol
 quartzo
+rubi
 ácido sulfúrico
-incêndio
+alcano
+amido
 Insulina
 calcário
 Clorofila
 heroína
+composto orgânico
 hemoglobina
+safira
 ligação covalente
+Ligações covalentes
 cafeína
+polímero
 Querosene
 Ácido nítrico
 ácido nucleico
 grafite
+Ácido acético
 ácido etanoico
 ácido clorídrico
+ácido hidroclorídrico
+alceno
 benzeno
 chá verde
 celulose
@@ -144,8 +217,10 @@ Gipsita
 morfina
 almofariz
 adrenalina
+Epinefrina
 bicarbonato de sódio
 Destilação
+Destilaria
 dopamina
 eletrólise
 Sacarose
@@ -154,31 +229,49 @@ Explosão
 espectroscopia
 ligação iônica
 Estado de oxidação
+fenol
+óxido
 oxirredução
 reação redox
 vitamin A
 vitamina A
 vitamina D
+alcino
+aldeído
+Catalisar
 catálise
 cristalografia
 hidróxido de sódio
+nucleótido
 amianto
 Asbesto
+eletronegatividade
 engenharia química
 LSD
+ureia
+ácido carboxílico
 cloreto de sódio
 Frutose
 Osmose
 Etano
+éter
 metanol
+Adenosina trifosfato
 Carbonato de cálcio
 dióxido de silício
+éster
+esteroide
+estrogénio
+estrogênio
 Evento de Tunguska
 geoquímica
 ibuprofeno
 Metanfetamina
+mica
 sildenafil
 trifosfato de adenosina
+Aminas
+Amino
 lactose
 partícula alfa
 ácido cítrico
@@ -186,41 +279,61 @@ asfalto
 eletroquímica
 Etileno
 ferro fundido
+halita
+halite
 nitroglicerina
 Tiamina
+trítio
 aço inoxidável
 Nitrato de potássio
 Olíbano
 Riboflavina
+Vitamina G
 acetileno
 azeite de dendê
+Azeite de palma
 caramelo
+composto inorgânico
 Dióxido de enxofre
+Óleo de palma
+peptídeo
+substância inorgânica
 Acetona
+Ácido fórmico
 ácido metanoico
+butano
 cânfora
 carbonato de sódio
+Cetona
 cromatografia
 glicerol
 glicina
+macromolécula
 ocitocina
+Oxitocina
 propano
 trinitrotolueno
 vitamina K
 ácido carbónico
 ácido carbônico
+Ácido sulfídrico
 Adenina
 ágar-ágar
 calcita
 cetamina
+Massa molar
 melatonina
 polissacarídeo
 sulfeto de hidrogénio
 sulfeto de hidrogênio
-borracha
+ácido gordo
+ácido graxo
+Fosfato
+grupo funcional
 ionização
 peróxido de hidrogénio
 peróxido de hidrogênio
+vitamin B9
 ácido fosfórico
 Ácido láctico
 ácido lático
@@ -228,6 +341,7 @@ alanina
 alotropia
 amoxicilina
 coríndon
+formaldeído
 glicogénio
 glicogênio
 hematita
@@ -237,22 +351,38 @@ metanal
 Policloreto de vinila
 serotonina
 vitamina E
+Ácido cianídrico
+Antioxidante
 cianeto de hidrogénio
 cianeto de hidrogênio
+Cianídrico
 citosina
+hidrato de cálcio
 hidrólise
 hidróxido de cálcio
+monossacarídeo
+Nitrato
+pirita
+pirite
 chimarrão
+Feromonas
+feromónio
+feromônio
 Grande Incêndio de Londres
 guanina
 L-glutamato monossódico
 maltose
 quitina
+alume
 cloreto de amónio
 cloreto de amônio
 glucagon
+melaço
 nitrato de amônio
 óxido de alumínio
+salinidade
+titulação
+toxina
 ácido bórico
 ácido oxálico
 água deuterada
@@ -260,53 +390,75 @@ nitrato de amônio
 água régia
 anfetamina
 célula de combustível
+Cianeto
 clorofórmio
 DDT
+energia interna
+espectrometria de massa
 Gás mostarda
 gelatina
 grafeno
 óxido de cálcio
 permanganato de potássio
+Pilha de combustível
 Polietileno
 Bórax
 cortisol
+energia de ionização
 ligação de hidrogénio
 ligação de hidrogênio
+Ligações de hidrogénio
 mecânica estatística
 óxido nitroso
+potencial de ionização
 química quântica
 Sarin
+timina
 ácido glutâmico
 Adsorção
 fotoquímica
+funil
+glúten
 incêndio de vegetação
 meteorização
 quinina
+Quinino
 Ribose
 tolueno
 Arginina
 caulinite
 Codeína
+complexo B
+Dietil éter
 dióxido de titânio
+dissacarídeo
 éter etílico
 fluorita
 hidróxido de potássio
 Propileno
 sulfato de cobre
+Vitamina b
+zircão
 acetilcolina
 ácido aspártico
 Assassinato de Sarajevo
+Atentado de sarajevo
 bilirrubina
 chá preto
 cloreto de potássio
 fentanil
+gás de petróleo liquefeito
 Gás Liquefeito de Petróleo
 histamina
 ligação metálica
+Naftaleno
 naftalina
 noradrenalina
 óleo de girassol
+sati
 transcrição
+Triacilglicerol
+Triglicerídeos
 Triptófano
 Valina
 ácido pantotênico
@@ -315,33 +467,53 @@ Valina
 biotina
 calcedónia
 calcedônia
+Carbonato
 carbonato de potássio
 cinética química
+cloreto
 hidrazina
 Lavagem das mãos
 Leucina
+monómero
+monômero
 nitrato de sódio
 óleo de coco
 Pentano
 poliestireno
+Uracila
 Uracilo
+Acetaldeído
+banha
 chá de bolhas
 colágeno
+etanal
 fenilalanina
 Glutamina
 Histidina
 Isoleucina
 prolina
+purina
+tanino
 termoquímica
 Tirosina
 Tyr
+amida
 anabolismo
 Espinela
+Espinélio
+fosfolípido
+hidróxido
 metadona
 Metionina
 Octano
+sais de hidróxido
+Sulfato
 amálgama
+amónio
+amônio
 anilina
+barita
+coque
 densímetro
 Desoxirribose
 Galactose
@@ -349,19 +521,25 @@ Hexano
 incêndio de Notre-Dame
 interferon
 olivina
+peróxido
+pressão de vapor
 Serina
+síntese de proteínas
 síntese proteica
 ácido benzoico
 aldosterona
+caroteno
 célula galvânica
 cloreto de hidrogénio
 cloreto de hidrogênio
 cristalização
+Dióxido de azoto
 dióxido de nitrogénio
 DL-asparagina
 DL-lisina
 isopreno
 L-Cysteina
+lisina
 nitrato de prata
 óxido de zinco
 progesterona
@@ -372,8 +550,10 @@ Treonina
 Ácido oleico
 adenosina
 âmbar cinza
+Âmbar gris
 aspartame
 azul de tornassol
+Barbitúrico
 bateria de íon lítio
 cloreto de cálcio
 dessalinização
@@ -385,12 +565,18 @@ nanotubo de carbono
 Óxido de magnésio
 parafina
 pirimidina
+Processo de haber
+Processo de Haber-Bosch
 Síntese de Haber-Bosch
 tetraciclina
+Tornassol
 vulcanização
 Ácido pícrico
 amilase
+Androgênica
+Andrógeno
 bateria recarregável
+composto heterocíclico
 diclofenaco
 estreptomicina
 Etilenoglicol
@@ -406,6 +592,7 @@ sertralina
 sulfato de amónio
 sulfato de bário
 ácido butanoico
+Ácido butírico
 ácido palmítico
 caseína
 eletroforese
@@ -414,38 +601,54 @@ Grande incêndio de Roma
 óxido nítrico
 reação exotérmica
 Silicone
+Tiol
 acetato de etila
 ácido esteárico
+Ácido graxo ômega-3
 Ácido perclórico
 ácido pirúvico
 ácido sulfuroso
 ácido tartárico
+Ácidos graxos ômega III
+CFC
 cianeto de potássio
+cianureto potássico
+clorofluorocarboneto
 Creatina
 doxiciclina
 fenolftaleína
 fluoxetina
 fosfina
 garrafa térmica
+gesso
 hormônio do crescimento
+indol
 metformina
 Óleo de gergelim
+ômega 3
 Óxido sulfúrico
 polimerização
 secador de cabelo
 semaglutida
+Somatotrofina
+Somatropina
 talidomida
 ununénnio
 vitamina B6
 ácido succínico
 anfíbola
 anfoterismo
+antocianina
 azitromicina
 calorímetro
 ChAdOx1 nCoV-19
+colina
+Composto alifático
 Efedrina
 Furano
 Gam-COVID-Vac
+glicoproteína
+hidrocarboneto alifático
 Hidroxicloroquina
 Incêndio do Reichstag
 lidocaína
@@ -460,18 +663,28 @@ tetracloreto de carbono
 ácido acrílico
 Ácido adípico
 ácido málico
+Adrenocorticotrófico
 Álcool isopropílico
+almíscar
 alprazolam
 astroquímica
 carbeto de cálcio
 carbeto de silício
+catião
+cátion
+cicloalcano
 cicloexano
+Corticotropina
 estricnina
 Hormônio adrenocorticotrófico
 Iodeto de potássio
+Nitrito
 óxido de nitrogênio
+pinça
 sulfato de magnésio
+acetato
 ácido gama-aminobutírico
+ARN de transferência
 ARN transportador
 canabidiol
 Cannabidiol
@@ -489,9 +702,14 @@ Goma-arábica
 Hormônio luteinizante
 lorazepam
 magnesita
+matcha
+mentol
 midazolam
+nucleosídeo
+pentose
 química ambiental
 Química dos polímeros
+rutilo
 salificação
 teobromina
 Trióxido de arsênio
@@ -499,15 +717,20 @@ tubo de ensaio
 ácido nitroso
 adenosina difosfato
 ampicilina
+anião
+ânion
 antraceno
 bicarbonato
 Bico de Bunsen
 Brometo de potássio
 Cadinho
+carbeto
 carbono-14
+carbureto
 cassiterita
 cassiterite
 clara do ovo
+decano
 dexametasona
 eritromicina
 estradiol
@@ -521,9 +744,11 @@ química computacional
 sorbitol
 tramadol
 ácido propanoico
+Ácido propiônico
 aflatoxina
 Benzaldeído
 bupropiom
+Bupropiona
 Calcitonina
 capsaicina
 carvão ativado
@@ -531,6 +756,10 @@ chá gelado
 clorato de potássio
 cumarina
 fosforescência
+Fosforescente
+haloalcano
+halogenetos de alquilo
+hidrocarboneto aromático
 hidróxido de alumínio
 imidazol
 inulina
@@ -539,11 +768,15 @@ Kevlar
 Licopeno
 naproxeno
 omeprazol
+oolong
+Óxido férrico
 Placa de Petri
 Politereftalato de etileno
 reação em cadeia
 Remdesivir
 sulfato ferroso
+terpeno
+tisana
 ácido malônico
 amitriptilina
 baquelite
@@ -554,27 +787,37 @@ criolita
 dissulfeto de carbono
 essência de terebintina
 fenilciclidina
+glicosídeo
 glutationa
 higroscopia
+Higroscópico
 Hormônio estimulante da tiroide
 mescalina
 óleo de rícino
 Prostaglandina
 saponina
 saponinas
+sulfeto
+Sulfureto
 Supernova de Kepler
+Terebintina
 Tetraidrocanabinol
 ácido fumárico
 ácido hialurónico
 ácido hialurônico
+ácido orgânico
 acroleína
 atentado de Oklahoma City
+béquer
 bisfenol A
+carotenoide
 centrífuga
 ciclopropano
 Dinucleótido de nicotinamida adenina
 Dinucleótido de nicotinamida-adenina
 DNA polimerase
+glicocorticoide
+hemo
 hidrogenação
 hormônio folículo-estimulante
 nitrito de sódio
@@ -584,7 +827,9 @@ ponto de fulgor
 precipitação
 Purificação de água
 química medicinal
+ricina
 Vaselina
+xileno
 Aciclovir
 agroquímica
 anidrido acético
@@ -596,30 +841,40 @@ chá branco
 cianogênio
 cloreto de bário
 cloreto de ferro
+Cloreto de metileno
+cloreto férrico
 diclorometano
 escopolamina
+gordura trans
 Haloperidol
+Hidreto
 hipoclorito de sódio
 limoneno
 Niacina
+Nitrila
 óleo de amendoim
 oseltamivir
 Osmose inversa
+pipeta
 Piridoxina
+pirrol
 Poliuretano
 RDX
 sulfato de cálcio
 taxa de reação
 trinitrocelulose
+Vitamina pp
 1-propanol
 acetato de sódio
 ácido araquidônico
 acrilamida
 Acrílico
+alpaca
 Azul da prússia
 Azul ultramarino
 biopolímero
 borracha natural
+bureta
 Catalase
 cetirizina
 Cianeto de sódio
@@ -631,6 +886,9 @@ Creatinina
 Cyclamate de sodium
 EDTA
 Endergónica
+esteróis
+esterol
+Fluoreto
 Fosforilação oxidativa
 hidróxido de amônio
 manteiga de cacau
@@ -646,6 +904,7 @@ reação endotérmica
 saponificação
 teste de arma nuclear
 teste nuclear
+testes nucleares
 tiroxina
 tripsina
 xilitol
@@ -654,14 +913,18 @@ xilitol
 Ácido hipocloroso
 Ácido linoleico
 acridina
+alcadieno
 Atentado de Lockerbie
 bissetriz
+brometo
 calorimetria
 carbamazepina
+catecolamina
 ciclobutano
 cloreto de magnésio
 clorobenzeno
 Destilação fracionada
+DNA polimerase RNA dependente
 Erlenmeyer
 filtração
 fogueira
@@ -698,6 +961,8 @@ carbonato de magnésio
 Carmim
 ciclopentano
 cloreto de lítio
+composto de coordenação
+Composto fenólico
 Dextrina
 dissociação
 Epóxi
@@ -706,6 +971,7 @@ fenobarbital
 Flunitrazepam
 fluoreto de sódio
 gabapentina
+gel de sílica
 guanidina
 Hinoquitiol
 iodeto de hidrogénio
@@ -714,8 +980,12 @@ Masala chai
 morte na fogueira
 n-heptano
 naloxona
+oligossacarídeo
 pentóxido de fósforo
 peptidase
+Potencial de membrana
+potencial elétrico de membrana
+propriedade química
 protease
 proveta
 química verde
@@ -727,9 +997,12 @@ zidovudina
 Ácido metilmalônico
 ácido trans-cinâmico
 amilose
+aminoglicosídeo
 anlodipino
+arsina
 butanol
 carnitina
+cefalosporina
 clindamicina
 Clorpromazina
 cortisona
@@ -737,21 +1010,28 @@ dextrometorfano
 dicromato de potássio
 digoxina
 gentamicina
+Giberelina
 gliconeogênese
 hexafluoreto de enxofre
 hidrónio
 hidrônio
+High Performance/Pressure Liquide Chromatography
+Ions hidrogênio
 isobutano
 lecitina
 metamizol
+Metil propano
 metilamina
 metotrexato
 montmorillonita
+nafta
 nitrato de chumbo
+Novichok
 pentobarbital
 perclorato de potássio
 pregabalina
 Quetiapina
+Silicato
 tiossulfato de sódio
 Acetonitrila
 ácido abscísico
@@ -760,6 +1040,8 @@ acrilonitrila
 água destilada
 Alaranjado de metila
 aromaticidade
+aromático
+breu
 cefalexina
 cementita
 cementite
@@ -775,8 +1057,10 @@ dióxido de manganês
 Earl Grey
 fulminato de mercúrio
 furfural
+glicolipídio
 Halogenação
 halotano
+hexose
 hidróxido de bário
 hidróxido de lítio
 hidróxido de magnésio
@@ -786,11 +1070,14 @@ iodeto de sódio
 iodofórmio
 isoniazida
 Lactulose
+Laranja de metilo
 meloxicam
 metilacetileno
 modafinil
 Neopreno
 Nicotinamida adenina dinucleótido fosfato
+Nitroderivado
+Óxido de nitrogénio
 pentóxido de dinitrogênio
 Petidina
 radioquímica
@@ -804,21 +1091,27 @@ abacavir
 Ácido ftálico
 ácido glicólico
 ácido hidrazoico
+Ácido láurico
 Ácido mirístico
 adenosina monofosfato
+Adenosina monofosfato cíclico
 Agente laranja
 Arabinose
+Azida de hidrogênio
 Betacaroteno
+bicarbonato de amónio
 bifenilpoliclorado
 buprenorfina
 Butanona
 carbeto de tungstênio
+carbonato ácido de amónio
 carbonato de amônio
 carboneto de tungsténio
 citalopram
 clorexidina
 clotrimazol
 colchicina
+composto aromático
 condensação
 fenitoína
 Fermentação alcoólica
@@ -827,6 +1120,7 @@ fluconazol
 Gliceraldeído
 gonadotrofina coriónica humana
 gonadotrofina coriônica humana
+Gonadotropina coriônica
 hidrogenocarbonato de amónio
 Hidroquinona
 liofilização
@@ -860,6 +1154,7 @@ acetato de vinila
 aço damasco
 Albendazol
 álcool benzílico
+antibiótico betalactâmico
 benzilpenicilina
 Brometo de lítio
 Buteno
@@ -881,6 +1176,7 @@ Glucosamina
 Grande incêndio de Chicago
 Incêndio na torre Grenfell
 Indometacina
+iodeto
 lamotrigina
 levodopa
 levofloxacina
@@ -891,6 +1187,7 @@ olanzapina
 ondansetrona
 paclitaxel
 perclorato
+Peróxido de acetona
 petroquímica
 Piperidina
 poder calorífico
@@ -899,13 +1196,17 @@ quinolina
 rifampicina
 rodonita
 rodonite
+solda
 sulfito de sódio
 tartrazina
 tautomeria
 tetraetilchumbo
 triperóxido de triacetona
+xantofila
+acetal
 acetilcoenzima a
 acetofenona
+Aldose
 alizarina
 alquilação
 Alúmen de potássio
@@ -913,6 +1214,8 @@ amido de milho
 Benzoato de sódio
 bifenilo
 canabinoide
+caulim
+cetano
 chá amarelo
 ciclo da ureia
 ciclofosfamida
@@ -920,16 +1223,19 @@ cimento Portland
 cloreto de acetila
 cloreto de etila
 clozapina
+cultura celular
 Dimetilformamida
 Dinucleótido de flavina adenina
 Dinucleótido de flavina-adenina
 dióxido de cloro
 elastômero
+Endocanabinóide
 eritritol
 evapotranspiração
 Feniletilamina
 fibrina
 Gusa
+haleto
 horneblenda
 ligação sigma
 losartan
@@ -940,12 +1246,14 @@ nitreto de boro
 oxalato de cálcio
 perovskita
 Policarbonato
+Porfirina
 procaína
 Processo Solvay
 prometazina
 propilenoglicol
 química supramolecular
 ranitidina
+sebo
 selenocisteína
 Splicing
 sucralose
@@ -973,29 +1281,42 @@ amiodarona
 Angiotensina
 benzidina
 benzimidazol
+brometo de metilo
 Brometo de prata
 bromometano
 catecol
 celecoxib
 Citrulina
 cloreto de cobalto
+Clorita
 clorite
+composto orgânico volátil
+compostos orgânicos voláteis
 cuproníquel
 dicromato de amônio
 dismutação
+Eletrófilo
+enol
 escitalopram
 Espironolactona
 Eugenol
 ferricianeto de potássio
 ferro forjado
 Ferrocianeto de potássio
+fossa séptica
+fossa sética
 Grelina
 guta-percha
+HAP
 Hidreto de lítio
+hidrocarbonetos aromáticos policíclicos
 hidrocodona
 hidroxilamina
 hipoclorito de cálcio
 incêndio florestal
+indicador de pH
+lactama
+lactona
 ligação covalente dativa
 luminol
 manitol
@@ -1004,6 +1325,7 @@ minoxidil
 N-dodecano
 neomicina
 nicotinamida
+Nucleófilo
 Óleo de milho
 óxido de mercúrio
 óxido de potássio
@@ -1012,9 +1334,12 @@ Papaverina
 Poliamida
 prednisolona
 Reação de Friedel-Crafts
+separação de misturas
 Silano
+Silvina
 silvita
 tempestade ígnea
+teoria do orbital molecular
 teoria dos orbitais moleculares
 Tiazol
 trazodona
@@ -1024,6 +1349,7 @@ acessulfame-k
 ácido caproico
 ácido gálico
 Ácido glicurônico
+ácido sulfônico
 Acrilonitrila butadieno estireno
 Artemisinina
 biogeoquímica
@@ -1039,13 +1365,13 @@ colecalciferol
 dissulfiram
 donepezila
 Dopagem eletrônica
+Energia de Helmholtz
+Energia livre de Helmholtz
 enovelamento de proteínas
 etanotiol
 ferroceno
 Fluoreto de alumínio
 Fosfeto de alumínio
-fossa séptica
-fossa sética
 frasco de laboratório
 geraniol
 gibbsita
@@ -1056,13 +1382,17 @@ Hidrato de cloral
 hidróxido de cobre
 Homocisteína
 iodopovidona
+lipopolissacarídeo
+macrólido
 metanotiol
 metil metacrilato
 mirtazapina
 Óxido de cromo
 perlite
 peróxido de benzoílo
+potencial químico
 Redução
+refino
 Resorcina
 sillimanite
 sinvastatina
@@ -1070,32 +1400,37 @@ SnCl2
 sulfeto de zinco
 tetracloreto de estanho
 tetróxido de chumbo
+timol
+Tioéter
 Trióxido de antimônio
+zwitterion
 acetato de celulose
 acetato de chumbo
 Ácido fulmínico
 assassinato de Benazir Bhutto
+azo-composto
 balão volumétrico
 benzocaína
 bisoprolol
+Butil-acetato
 Chá Darjeeling
 cloreto de benzila
 combustão humana espontânea
 dessecador
 detonação
 Dodecil sulfato de sódio
-eliminação
 ergocalciferol
+espectroscopia NMR
 esqualeno
 etambutol
 etanoato de butila
-extração
 fotólise
 Freon
 hidreto de sódio
 incineração
 isotretinoína
 Itraconazol
+Lauril sulfato de sódio
 ligação pi
 lisinopril
 Massacre no Kyoto Animation
@@ -1104,16 +1439,21 @@ Negro de carbono
 nitrofurantoína
 número de cetano
 óxido de lítio
+óxido de vanádio
 pentóxido de vanádio
 pirómetro
 pirômetro
+polifenol
 Púrpura tíria
+quinona
 Reação de Diels-Alder
 Reação de dupla troca
+ressonância magnética nuclear
 resveratrol
 ritonavir
 rituximab
 Secretina
+soman
 timidina
 tiocianato de potássio
 tirzepatida
@@ -1128,8 +1468,11 @@ acetato de potássio
 ácido fítico
 Ácido nicotínico
 Ácido tereftálico
+algina
+Alginato
 Alvaiade
 Amigdalina
+Análise PEST
 anatase
 aripiprazol
 azida de chumbo
@@ -1147,9 +1490,11 @@ clomipramina
 cloreto de cádmio
 creosoto
 Cromóforo
+cumeno
 difluoreto de oxigénio
 dimetilamina
 dióxido de zircónio
+epóxido
 ergosterol
 Etilacetileno
 favipiravir
@@ -1157,6 +1502,9 @@ glioxal
 hexafluoreto de urânio
 hidreto de antimônio
 Hormônio liberador de corticotrofina
+imina
+invar
+Isocianato
 isocianato de metila
 Levotiroxina
 Ligação de valência
@@ -1168,17 +1516,22 @@ neopentano
 Nistatina
 nitração
 nitrato de magnésio
+Nitreto
 Nitrificação
+Ômega 6
+Oxiácido
 óxido de manganês
 óxido de prata
 paroxetina
 piperazina
 Pirazina
 Pirrolisina
+poluentes orgânicos persistentes
 Propriedades coligativas
 Reação de Cannizzaro
 reação de decomposição
 reação química reversível
+sépia
 Solução de Fehling
 sulfato de chumbo
 tadalafila
@@ -1193,6 +1546,7 @@ Troca iônica
 venlafaxina
 Verde de Paris
 Verde-paris
+Zircônia
 acetato de cobre
 acetato de polivinila
 acetazolamida
@@ -1202,12 +1556,14 @@ Acetilacetona
 ácido cáprico
 Ácido docosa-hexaenoico
 ácido glutárico
+Ácido mineral
 Ácido oxaloacético
 alantoína
 Aluminato de sódio
 amantidina
 amicacina
 Anidrido ftálico
+anisol
 azida de sódio
 azul de bromotimol
 bissulfato de sódio
@@ -1215,27 +1571,36 @@ bissulfito de sódio
 bomba de vácuo
 bromoetano
 cadaverina
+carbocátion
 carbonato de cobre
 Carragenina
 Catinona
 ceftazidima
 cefuroxima
 cianamida
+cianato
 Cinamaldeído
 Cistina
+cloral
 cloreto de níquel
+cloreto de titânio
 cloropreno
 copolímero
 cromato de potássio
 decantação
 difluoreto de xenônio
 duloxetina
+Entalpia de formação
 entalpia padrão de formação
 esfingosina
 etanolamina
+etenol
+Fischer Tropsch
 Floculação
 flotação
 formamida
+Formato de metila
+Ftalato
 gás CS
 geosmina
 Gluconato
@@ -1256,20 +1621,26 @@ miconazol
 nitrato de ferro III
 nitrato de lítio
 nitrato férrico
+Óxido de boro
 pentacloreto de fósforo
 percloroetileno
 permetrina
 piracetam
 Prednisona
+Pró-fármaco
 processo de Fischer-Tropsch
 Pu-erh
+Quelante
 Quelato
 Quitosana
+síntese Fischer-Tropsch
 solução sólida
 Sorbato de potássio
 sulfeto de ferro
+superóxido
 Tebaína
 tetracloreto de titânio
+Tetracloroetileno
 tricloreto de nitrogénio
 tricloreto de nitrogênio
 trióxido de boro
@@ -1292,12 +1663,16 @@ Anodização
 atenolol
 atomoxetina
 azatioprina
+azida
 B Cas
 Betalactamase
 brometo de etídio
 budesonida
 butiraldeído
+Carbamato
+carbânion
 Carbazol
+cicloalceno
 cicloexanona
 cicloexeno
 ciclopropeno
@@ -1312,12 +1687,15 @@ dicromato de sódio
 dimetil-hidrazina assimétrica
 dimetilsulfureto
 doxorrubicina
+Eicosanoide
+equipamento de laboratório
 estearina
 etil amina
 fluoreto de lítio
 galvanização
 Hidromorfona
 Hipoxantina
+hormona esteroide
 Hormônio liberador de tireotrofina
 Imatinib
 iodeto de chumbo
@@ -1325,6 +1703,7 @@ iodometano
 Lanolina
 ligação glicosídica
 linezolida
+material de laboratório
 metassilicato de sódio
 metilprednisolona
 muscarina
@@ -1336,6 +1715,7 @@ orlistate
 osmorregulação
 Ouro nórdico
 oxazepam
+peltre
 perclorato de amônio
 piperina
 Pirazinamida
@@ -1347,6 +1727,7 @@ Reação de Grignard
 Refractómetro
 Refratômetro
 reserpina
+sal de lítio
 secagem de alimentos
 silicato de sódio
 sulfassalazina
@@ -1369,25 +1750,31 @@ acetato de cálcio
 acetato de metila
 acetato de metilo
 acetilação
+Acidez no solo
 Ácido cloroáurico
 ácido hipofosforoso
 Ácido palmitoleico
 Ácido trifluoroacético
 aço carbono
 alambique
+Amil-acetato
 apomorfina
 astaxantina
 aziridina
 azoto líquido
 benzo-a-pireno
 benzofurano
+Borano
 Borneol
 boroidreto de sódio
 Bradicinina
 brometo de cálcio
 caprolactama
+Carbenos
+carga perigosa
 carvedilol
 Castle Bravo
+cetoácido
 cimetidina
 clonidina
 Cloreto de berílio
@@ -1396,6 +1783,7 @@ cloreto de ouro
 cloreto de tionila
 clorodiazepóxido
 Cloxacilina
+composto cíclico
 Cotrimoxazol
 descarboxilação
 Dextrano
@@ -1414,12 +1802,17 @@ Eucaliptol
 famotidina
 fogueira de acampamento
 fósforo branco
+Fotossíntese CAM
+gás inerte
 HBrO3
 hematoxilina
 Hemocianina
 Hidróxido de berílio
 hidróxido de césio
 Infliximabe
+inibição enzimática
+Inibidor
+Inibidor enzimático
 Iodeto de lítio
 isoquinolina
 Lava-pés
@@ -1435,7 +1828,9 @@ mupirocina
 neostigmina
 nitrogênio líquido
 Operação Crossroads
+oxalato
 pentaeritritol
+Permanganato
 peróxido de bário
 pilha alcalina
 Pilha de Daniell
@@ -1459,10 +1854,13 @@ tracolimo
 Trastuzumabe
 triclosan
 trimetilamina
+triose
 valsartan
 Vidro de relógio
 Violeta de genciana
 Voo Air India 182
+Western blot
+Zimógeno
 ácido arsenioso
 ácido caprílico
 Ácido carbâmico
@@ -1475,6 +1873,7 @@ Voo Air India 182
 Ácido tiossulfúrico
 ácido tranexâmico
 ácido tricloroacético
+Adenil ciclase
 Adenilato ciclase
 Adrenocromo
 alcool alílico
@@ -1482,22 +1881,29 @@ alcool alílico
 Amarelo crepúsculo
 Amida de sódio
 aminossalicilato
+ampola
 anidrido maleico
 Azorrubina
 azul-cobalto
 Bateria de níquel-hidreto metálico
 BBIBP-CorV
 benzofenona
+bicarbonato de potássio
+biorreator
+borato
 Bromato de potássio
 bromazepam
 bupivacaína
 buspirona
 Caramelização
+Carmim de indigo
 célula eletroquímica
 cianocobalamina
 cloreto de cianogênio
 clorfeniramina
 clorodifluorometano
+copal
+cubeta
 Desidrogenação
 dióxido de estanho
 dióxido de urânio
@@ -1505,6 +1911,7 @@ dissulfeto de molibdénio
 dissulfeto de molibdênio
 epicloridrina
 escatol
+esfingolipídeos
 etinilestradiol
 ezetimiba
 fenotiazina
@@ -1513,6 +1920,7 @@ fluvoxamina
 fomepizol
 fosfato tricálcico
 glibenclamida
+gradação alcoólica
 hexametilenodiamina
 Hidrogenocarbonato de potássio
 hidróxido de rubídio
@@ -1525,19 +1933,28 @@ isoxazol
 levamisol
 Levonorgestrel
 ligação fosfodiéster
+manteiga de karité
 metilação do DNA
+molécula diatómica
+molécula diatômica
 mononucleótido de flavina
 mononucletídio de flavina
 moxifloxacina
+ori
 Óxido de cobalto
+Óxido de estanho IV
+Oxima
 paraquat
 Penten
 penteno
+PFAS
 pHmetro
+pilha electroquímica
 pilocarpina
 Pirrolidina
 Poliacetal
 Poliácido láctico
+potencial de aquecimento global
 praziquantel
 produção primária
 química de alimentos
@@ -1546,13 +1963,19 @@ ribavirina
 rimantadina
 salicilina
 salmeterol
-sesquissulfato de ferro
 stress oxidativo
 sulfato de manganês
+sulfato férrico
 sulfeto de prata
+sulfóxido
+teor alcoólico
 terbinafina
+terpenoide
 tersulfato de ferro
 Tetradecano
+Tetrose
+Tiocianato
+Tranexâmico
 Treose
 tretinoína
 trifluoreto de cloro
@@ -1560,6 +1983,7 @@ trióxido de fósforo
 verde malaquita
 zeaxantina
 2-Mercaptoetanol
+acaricida
 Ácido 4-aminossalicílico
 ácido alfacetoglutárico
 Ácido antranílico
@@ -1575,7 +1999,9 @@ zeaxantina
 Ácido tânico
 Ácido tríflico
 Aço para ferramentas
+alcanolamina
 Álcool cetílico
+Alfa-cetoglutarato
 Altrose
 Anetol
 ATPase
@@ -1587,6 +2013,7 @@ benzilamina
 berberina
 bevacizumab
 Bicarbonato de cálcio
+Bioquímica Inorgânica
 Bissulfato de potássio
 bromato de sódio
 bromofórmio
@@ -1594,6 +2021,9 @@ calcinação
 Calda bordalesa
 Cefixima
 cefotaxima
+Cetoglutarato
+cianoacrilato
+cianoacrilatos
 Ciclizina
 Ciclo-heptano
 ciclopentadieno
@@ -1602,8 +2032,10 @@ cloramina
 cloreto de chumbo
 clorito de sódio
 Combustível de jato
+composto alicíclico
 constante de equilíbrio
 corticosterona
+cresol
 cromato de sódio
 desidroepiandrosterona
 desloratadina
@@ -1611,6 +2043,7 @@ desmopressina
 Desomorfina
 desomorphine
 di-hidrotestosterona
+Diacilglicerol
 diborano
 Diclorodifluorometano
 dietilamina
@@ -1619,6 +2052,7 @@ Eritrose
 estrona
 Éter metil-terc-butílico
 etilenodiamina
+explosão atômica
 explosão nuclear
 farinha de milho
 flufenazina
@@ -1626,24 +2060,31 @@ fluoreto de magnésio
 Funil de Büchner
 funil separador
 gluconato de cálcio
+Goma de guar
 Goma guar
 guanosina monofosfato
+Heptose
 hidralazina
 Hidroxicarbamida
 hidróxido de zinco
 HMX
 Kitasato
 Lansoprazol
+leucotrieno
 ligas de alumínio
 malatião
 malation
 mefedrona
+metabolito secundário
 modificação pós-traducional
+modificação pós-translacional
 monofosfato cíclico de guanosina
+Montelucaste
 montelucaste sódico
 N-butil lítio
 Niclosamida
 nitreto de silício
+nucleoproteínas
 óxido de estrôncio
 paraldeído
 paromomicina
@@ -1651,6 +2092,7 @@ pentóxido de arsénio
 pentóxido de arsênio
 perclorato de sódio
 Pirazol
+Pirofosfato
 protonação
 psilocina
 química bioinorgânica
@@ -1704,6 +2146,7 @@ carvacol
 Celobiose
 centrifugação
 Ceramida
+cetena
 Citral
 citrato trissódico
 clorambucila
@@ -1712,11 +2155,13 @@ cloreto de fosforila
 cloreto de manganês
 cloreto de nitrosilo
 combustão espontânea
+composto organofosforado
 constante de dissociação
 Decocção
 Diacetileno
 difluoreto de criptônio
 dimenidrinato
+diol
 doxilamina
 eletroforese em gel
 Estanozolol
@@ -1725,16 +2170,23 @@ fenacetina
 Fenoximetilpenicilina
 fexofenadina
 fluoridreto de argônio
+Formato de etila
 formato de sódio
 fucsina
+furanose
 gasificação
 Gliceraldeído-3-fosfato
+glicosaminoglicano
 glutaraldeído
 Goma xantana
+hidrão
 hidreto de cálcio
+hídron
+Imida
 iodeto de alumínio
 iodeto de césio
 Ipratrópio
+Isocianeto
 Lactato desidrogenase
 lactitol
 liraglutida
@@ -1751,15 +2203,19 @@ nitreto de gálio
 nitreto de lítio
 nonanol
 óleo de algodão
+Oxalato de sódio
 oxalato dissódico
 Passivação
 Pilha de Leclanché
 Piridazina
 Policondensação
 polietilenoglicol
+poliol
+proteoglicano
 Psicose
 putrescina
 quimiosmose
+rutina
 Salicilato de metila
 sepiolita
 sepiolite
@@ -1775,6 +2231,7 @@ Vareniclina
 Vimblastina
 xilometazolina
 Yanar Dag
+ácido dicarboxílico
 Ácido dicloroacético
 Ácido elágico
 ácido indolacético
@@ -1784,8 +2241,12 @@ Yanar Dag
 Ácido xiquímico
 Água de Jamaica
 álcool polivinílico
+alcóxido
 aldrina
+amino açúcar
+anidrido de ácido carboxílico
 ANP
+anticolinérgico
 Aparelho de Kipp
 arsfenamina
 autoionização da água
@@ -1808,7 +2269,9 @@ Chá de cevada
 cinzas volantes
 cloreto de cromo
 cloropicrina
+Composto organossulfurado
 cosmoquímica
+cubano
 daunomicina
 decalina
 Deceno
@@ -1825,6 +2288,7 @@ flucloxacilina
 flumazenil
 fluorometano
 fosfatidilserina
+Fosfato de sódio
 fosfato monopotássico
 Fosfato tripotássico
 fosfato trissódico
@@ -1834,6 +2298,7 @@ glimepirida
 Grande incêndio de Esmirna
 hidrossulfeto de sódio
 hidróxido de cobalto
+hormônio peptídeo
 ibogaína
 imipramina
 imunoglobulina E
@@ -1844,6 +2309,7 @@ Lincomicina
 lisdexanfetamina
 lopinavir
 luva descartável
+máfico
 Mercaptopurina
 meropenem
 metabissulfito de potassio
@@ -1862,6 +2328,7 @@ nitrato de alumínio
 nitrazepam
 ofloxacina
 Óleo de cânhamo
+Oligonucleotídeos
 oxamicina
 Oxazol
 Óxido de cério
@@ -1903,21 +2370,27 @@ zopiclona
 ácido levulínico
 ácido mandélico
 Ácido periódico
+ácido siálico
 ácido sulfâmico
 AcONH4
 adalimumabe
 álcool furfurílico
+aleno
 Alfa-amanitina
+alnico
 aluminossilicato
 amobarbital
 Anisaldeído
 Associação amoxicilina/ácido clavulânico
 astateto de hidrogénio
 astateto de hidrogênio
+azol
 Beijoim
 benzoato de benzila
+Benzoato de metila
 benzoína
 Beta-alanina
+Betalactama
 bisacodil
 Bleomicina
 brometo de magnésio
@@ -1933,12 +2406,15 @@ Celulase
 Chá com hortelã
 ciclopenteno
 Citidina trifosfato
+citrato de potássio
 Citrato tripotássico
 clenbuterol
 clorato de bário
 Cloreto de benzalcônio
 cloreto de oxalila
 Colistina
+Composto de gás nobre
+composto iônico
 Condensação aldólica
 condensador
 cristobalita
@@ -1946,7 +2422,9 @@ deferoxamina
 Desastre do Hindenburg
 docetaxel
 emtricitabine
+enamina
 Eritrosina
+Espécie reactiva de oxigénio
 Etanercepte
 éter coroa
 etomidato
@@ -1959,13 +2437,17 @@ fisostigmina
 fitoquímica
 fluoreto de berílio
 flurazepam
+formiato
 Fotossíntese C4
+Gangliosídio
 gemcitabina
 griseofulvina
 guaiacol
 guaifenesina
+hemiacetal
 heptanol
 hidrossulfeto de amônio
+indeno
 iodato de sódio
 Iodobenzeno
 iodoetano
@@ -1973,6 +2455,7 @@ ioimbina
 isotiocianato de alila
 maprotilina
 Melfalana
+mesna
 metil benzoato
 metoxiflurano
 mifepristona
@@ -1980,6 +2463,7 @@ NH4OAc
 nimesulida
 nitrito de potássio
 Óleo de uva
+organossilício
 oricalco
 Óxido de níquel
 paliperidona
@@ -2002,10 +2486,12 @@ Salicilaldeído
 salvinorina A
 sotalol
 Soxhlet
+Succinilcolina
 sulfadiazina
 sulfametoxazol
 sulfato de cobalto
 sulfato de dimetilo
+Sulfona
 suxametônio
 tagatose
 Telmisartan
@@ -2048,21 +2534,27 @@ acetoacetato de etila
 ácido permangânico
 ácido sebácico
 Ácido selenoso
+Ácido urónico
+Ácidos graxos Ômega 9
 aço corten
 aconitato
+Aldol
 Alfa-amilase
 alilamina
 amilorida
 aminofilina
 amissulprida
+anato
 androstenediona
 Anidrase carbónica
+Anidrido perclórico
 Associação paracetamol/hidrocodona
 atazanavir
 banho-maria
 betaína
 Betanina
 BHA
+Brassinosteróides
 bromato
 bromocriptina
 bufotenina
@@ -2074,17 +2566,22 @@ ciclobutadieno
 ciclopentanona
 Citarabina
 citometria de fluxo
+clatrato
 clobazam
+Cloreto de acila
 cloreto de estrôncio
 cloreto de sulfurila
 cloroacetofenona
 Colinesterase
 colorau
 Condensação de Claisen
+Creatina fosfato
+Cromato
 cromato de chumbo
 dactinomicina
 dapagliflozina
 Denatônio
+dendrímeros
 Denosumabe
 diazinon
 dibenzoil
@@ -2097,6 +2594,7 @@ dióxido de telúrio
 dodecanol
 efavirenz
 endosulfan
+Enteógeno
 etenona
 fenetilina
 fenofibrato
@@ -2104,6 +2602,7 @@ Fenoxietanol
 Filgrastim
 Flash de hélio
 fluoroacetato de sódio
+Fluorocarbono
 fosfato de cálcio
 fosfato de di-hidroxiacetona
 fosfato dissódico
@@ -2122,6 +2621,7 @@ Hirudina
 ifosfamida
 imidaclopride
 iodeto de magnésio
+Iodometria
 irinotecano
 Kilonova
 Lapsang souchong
@@ -2133,9 +2633,13 @@ Manganato de potássio
 MDA
 meldonium
 Mercurocromo
+Metaloceno
 metil-hidrazina
 moclobemida
+molalidade
 Monel
+Mono metil hidrazina
+Monofosfato dissódico
 muscimol
 Nariz eletrônico
 nevirapina
@@ -2146,6 +2650,8 @@ nitrato de zinco
 nitreto de titânio
 nylon 6
 Octreotida
+Ômega 9
+organoclorado
 oxacilina
 oxandrolona
 Para-cimeno
@@ -2154,10 +2660,12 @@ penicilamina
 Pentacarbonil de ferro
 pentafluoreto de fósforo
 Perindopril
+peróxido orgânico
 persulfato de amônia
 piridostigmina
 Piridoxal fosfato
 policaprolactama
+Potencial de repouso
 Pregnenolona
 Processo Bayer
 prostaciclina
@@ -2167,8 +2675,10 @@ reação de transposição
 Reação de Wittig
 reação orgânica
 retinal
+RMP
 rofecoxib
 roxitromicina
+Sal de diazônio
 smelter
 Smiling Buddha
 sofosbuvir
@@ -2177,11 +2687,14 @@ Subsalicilato de bismuto
 sulfanilamida
 sulfato de condroitina
 sulfeto de magnésio
+sulfonato
 sulfureto de magnésio
 superliga
 Termómetro de Galileu
 tetrafluoreto de enxofre
 tetraidrotiofeno
+Tioéster
+tombac
 triamcinolona
 trióxido de molibdénio
 trompa de vácuo
@@ -2201,13 +2714,17 @@ acetato de benzila
 Ácido tiociânico
 ácido xênico
 açúcar invertido
+Açúcar redutor
 Adamsite
 Álcool fenetílico
 Alfa 1 antitripsina
 Aliina
 amálgama de prata
+Amálgama dental
+Análise térmica
 anastrozole
 androsterona
+Arseniato
 Azul brilhante FCF
 azul de timol
 Batalha de Washington
@@ -2227,11 +2744,13 @@ cetotifeno
 clofazimina
 clorazepato dipotássico
 Clortetraciclina
+composto binário
 Criptoxantina
 cromato de bário
 dabigatrana
 Decaborano
 desflurano
+Desoxinucleotídeo
 di-hidrogenofosfato de amônio
 Diazometano
 difosgênio
@@ -2253,9 +2772,11 @@ Fenilpropanolamina
 fipronil
 fluoreto de zinco
 Fogo controlado
+Fosfatidilcolina
 ftalimida
 Gama-butirolactona
 genisteína
+Haloclina
 hexaclorobenzeno
 hexafluoreto de platina
 hexafluoreto de tungsténio
@@ -2288,6 +2809,7 @@ olmesartan
 orto-fenantrolina
 oxetano
 Pancurônio
+parabenos
 peneira molecular
 persulfato de sódio
 pimozida
@@ -2313,10 +2835,12 @@ Rifaximina
 riluzol
 saquinavir
 sarcosina
+sorção
 Substituição nucleofílica unimolecular
 sulfato de estrôncio
 sulpirida
 telureto de cádmio
+tereré
 Tetrabromometano
 tetracaína
 tetrafluoretileno
@@ -2326,6 +2850,7 @@ tigeciclina
 Tiocianato de sódio
 trifenilfosfina
 Trifluoreto de bromo
+Trifosfato de sódio
 trioxidano
 tripolifosfato de sódio
 Tropicamida
@@ -2338,6 +2863,7 @@ acamprosato
 Acetato de isoamila
 ácido cacodílico
 Ácido dissulfúrico
+Ácido fosfônico
 Ácido kójico
 ácido nalidíxico
 Ácido picolínico
@@ -2362,6 +2888,7 @@ brometo de cianogênio
 carbamilfosfato
 carbeto de alumínio
 carbonato de cobalto
+Carbonilo metálico
 carbono-13
 carfentanilo
 Cariprazina
@@ -2372,6 +2899,8 @@ citisina
 Citronelal
 Clorotrifluorometano
 cloroxilenol
+Composto organolítio
+Contraceptivo oral
 cromato de cálcio
 Crotonaldeído
 Cutina
@@ -2382,6 +2911,7 @@ Destilação a vapor
 Di-hidrocodeína
 Dimetilanilina
 dioctilsulfossuccinato de sódio
+dissulfeto
 ditionito de sódio
 dobutamina
 Empagliflozina
@@ -2412,6 +2942,7 @@ Glicação
 guanfacina
 hexacloretano
 Hexanitrohexaazaisowurtzitano
+Hibridização fluorescente in situ
 Hidreto de berílio
 Hidroxialquilação
 Hidroxiprolina
@@ -2420,19 +2951,23 @@ IDV
 Incêndio da discoteca Colectiv
 Indinavir
 iodeto de amônio
+íon poliatômico
 Isoproterenol
 lanosterol
 levomepromazina
 Ligação delta
 Linagliptina
+luciferina
 menadiona
 minociclina
 mirceno
 Mitotano
 Modificação pós-transcricional
+molécula anfipática
 Monofosfato de uridina
 MPTP
 Narcotina
+nerol
 ninidrina
 Nitrato de cobalto
 Nitrato de cobalto II
@@ -2460,6 +2995,7 @@ Podofilotoxina
 Poliacrilonitrila
 Prata de lei
 procainamida
+processo químico
 propionato de sódio
 Química bio-orgânica
 raloxifeno
@@ -2561,6 +3097,7 @@ Dietilcarbamazina
 difluoreto de radônio
 Dimetilacetamida
 Dinitrotolueno
+Dipeptídeo
 dipiridamol
 droperidol
 Ecdisona
@@ -2568,6 +3105,7 @@ Eflornitina
 eletroforese capilar
 eletrólise da água
 enflurano
+ergina
 ertapeném
 espectinomicina
 espiramicina
@@ -2576,16 +3114,21 @@ Fenilacetileno
 fenilidrazina
 fermentação láctica
 Ferroína
+Flavina
 fluoreto de estrôncio
 Fluticasona
 Formato de potássio
 Fotossíntese artificial
+frutano
 gefitinibe
 gossipol
 Grupo lábil
 hesperidina
+Hidrazona
+Hidrofluorocarboneto
 Hidrólise alcalina
 hidroxiquinolina
+Íon oxônio
 isopropilamina
 isossorbida
 Leflunomida
@@ -2600,13 +3143,17 @@ naftifina
 Nitrato de mercúrio
 nitrato de níquel
 Nitreto de sódio
+Nitroamina
 norfloxacino
 O-Fenilenodiamina
+O-xileno
+organoboranos
+organofosforado
+organofosforados
 Ortoxileno
 óxido de césio
 Óxido de rubídio
 óxido de tecnécio
-Óxido de vanádio
 Oximorfona
 paraformaldeído
 pentabrometo de fósforo
@@ -2614,12 +3161,16 @@ pentaceno
 pentafluoreto de iodo
 Pentazocina
 pentoxifilina
+Perácido
 perborato de sódio
 periodato de sódio
+pirano
+polieno
 poliolefina
 pravastatina
 Processo Leblanc
 propanoato de metila
+propionato de metila
 quimiometria
 quinapril
 reação de acoplamento
@@ -2658,6 +3209,7 @@ Triclorossilano
 trimipramina
 Triose-fosfato isomerase
 Tromboxano
+trona
 umbeliferona
 Urobilinogênio
 VCl2
@@ -2670,6 +3222,7 @@ zuclopentixol
 acetato de glatirâmero
 Acetato de medroxiprogesterona
 ácido dimercaptossuccínico
+ácido fraco
 ácido homogentísico
 Ácido inosínico
 Ácido molibdico
@@ -2698,9 +3251,11 @@ betaxolol
 bicalutamida
 bismutato de sódio
 bissulfito de potássio
+bixina
 Brometo de ferro
 brometo de vecurônio
 butanoato de etila
+Butirato de etila
 Carbamato de etila
 Carboneto de titânio
 Caspofungina
@@ -2708,7 +3263,9 @@ Catalisador Ziegler-Natta
 Catálise heterogênea
 cefaclor
 Cefdinir
+Cerebrosídio
 cicloadição
+ciclodextrina
 ciclopentanol
 cilostazol
 citrato de cálcio
@@ -2731,6 +3288,7 @@ difluoreto de dioxigénio
 difluorometano
 difosfano
 Difosfato de uridina
+diterpeno
 entacapone
 Epirrubicina
 ergolina
@@ -2744,15 +3302,20 @@ Fator de crescimento nervoso
 félsico
 femtoquímica
 fenelzina
+Fenilpropanoide
 Ferrato de potássio
 ferro silicio
 ferrocianeto de sódio
 fingolimod
+Fitoalexina
+Fitoalexinas
 fixação do carbono
 Fluoreto de bismuto
 Fluoreto de sulfurilo
 Fondaparinux
 fosfato de amônio
+fosfeto
+fração volumétrica
 Frasco de Dewar
 furoato de diloxanida
 heptafluoreto de iodo
@@ -2766,8 +3329,11 @@ Insulina glargina
 Iodeto de berílio
 isobutiraldeído
 KHF2
+lâmina
 lixiviação
 luteolina
+M-xileno
+Macrociclo
 Malato desidrogenase
 maraviroc
 mebeverina
@@ -2799,6 +3365,7 @@ Oxepino
 Óxido de rutênio
 p-xileno
 pantenol
+Para-xileno
 pentacloreto de nióbio
 pentamidina
 Peptídeo natriurético cerebral
@@ -2810,6 +3377,7 @@ Pirofosfato de isopentenilo
 Poliacrilamida
 Poliadenilação
 Polibutadieno
+polinucleótido
 Preto de eriocromo T
 prilocaína
 Proclorperazina
@@ -2817,6 +3385,8 @@ produção de hidrogénio
 produção de hidrogênio
 propanoato de cálcio
 propanonitrila
+Propionato de cálcio
+Pseudo-halogênio
 raltegravir
 RbF
 Reação de Kolbe-Schmitt
@@ -2825,21 +3395,27 @@ reações exergônicas
 repaglinida
 Resina de troca iônica
 resiniferatoxina
+Retinoides
+Ribonucleotídeo
 Ropinirol
 sedoeptulose
 selenito de sódio
 Selenometionina
+Siloxano
 simetria molecular
 Síntese de Strecker
 Sorafenibe
 succinimida
 sulfato de césio
 sulfeto de lítio
+Sulfonilureia
 Supernova tipo II
 Superóxido de sódio
 Suutei tsai
 Tapentadol
 telureto de bismuto
+termogravimetria
+Tetrapirrol
 TiCl3
 tioacetamida
 Tolnaftato
@@ -2849,6 +3425,7 @@ Tropizetrona
 umbisséptio
 umbissétio
 valganciclovir
+Vaso de dewar
 xantona
 2-Hexanol
 2-pentanol
@@ -2871,11 +3448,13 @@ acetato de magnésio
 Ácido tioacético
 Ácido tioglicólico
 ácido undecilénico
+Acrilato
 acrilato de etila
 adiponitrila
 Agarose
 AgIO3
 aliscireno
+Amidina
 amoxapina
 Antimonium tartaricum
 Aptâmero
@@ -2886,6 +3465,7 @@ Asparaginase
 Assassinato de Rajiv Gandhi
 Atentado de Gaziantep
 Atracúrio
+Base de Schiff
 benzonidazol
 betacarbolina
 biofísica química
@@ -2918,15 +3498,18 @@ Cisteamina
 cloreto de n-butila
 cloreto de paládio
 cloreto de tiofosforila
+cloridrato
 CMC
 Cristalinidade
 cromoglicato
+Cumuleno
 DABCO
 danazol
 dasatinibe
 deltametrina
 Desastre de Kaprun
 desvenlafaxine
+diazo
 dibucaína
 dicumarol
 difenilmetanol
@@ -2944,6 +3527,8 @@ edoxaban
 edoxabano
 enfuvirtida
 esmolol
+Espectroscopia infravermelha próxima
+Espiro
 Estigmasterol
 ETE
 Etizolam
@@ -2954,13 +3539,20 @@ Fluoreto de polivinilideno
 fluvastatina
 Fórceps
 Formato de cálcio
+fosfatidiletanolamina
+Fosfatidilinositol
+frasco
 Fulvestranto
 fumarato de dimetila
+Furanocumarina
 Gliadina
 glipizida
 glucano
 Glucoronolactona
 grupo protetor
+haleto de ácido
+haleto de hidrogénio
+haleto de hidrogênio
 hexaclorofeno
 Hexafluoreto de selênio
 Hidantoína
@@ -2968,9 +3560,11 @@ Hidroximetilfurfural
 Higrina
 idarrubicina
 imiquimod
+Indicador
 Inositol trifosfato
 iodeto de cobalto
 Isatina
+isotiocianato
 l-homosserina
 lactato de cálcio
 lauriléter sulfato de sódio
@@ -2998,3 +3592,1409 @@ Nitreto de cálcio
 Nitreto de magnésio
 NMDA
 Ortobenzoquinona
+oxiânion
+Óxido de gálio
+penciclovir
+Pentanal
+Pentazol
+peróxido de metiletil cetona
+Pineno
+Pirfenidona
+pirrolizidina
+pitavastatina
+prontosil
+propilamina
+química clínica
+quinazolina
+radiólise
+Reação de Sandmeyer
+Reação de Wolff-Kischner
+reação endergônica
+reação pericíclica
+salicilato de fenila
+secobarbital
+Secuquinumab
+Senosídeo
+substituição nucleofílica aromática
+sulfato de cádmio
+sulfato de tálio
+sulfeto de estrôncio
+sulfolano
+suramina
+Telureto de sódio
+Teoria do campo cristalino
+tiamina pirofosfato
+TiCl2
+tioridazina
+tolterodina
+trandolapril
+tranilcipromina
+Triazina
+triazol
+Trietanolamina
+triexafenid
+trifluoperazina
+Tumbaga
+Vomitoxina
+Zeatina
+1-Metilciclopropeno
+2-Metoxietanol
+2-Pentanona
+2-Pirrolidona
+3-Metil-hexano
+4-Nitrofenol
+acebutolol
+acetato de ulipristal
+Acetileto de prata
+Ácido 4-hidroxibenzoico
+Ácido ditiônico
+Ácido domóico
+Ácido gentísico
+Ácido micofenólico
+Ácido N-acetilmurâmico
+ácido N-acetilneuramínico
+Ácido neuramínico
+Ácido oxalosuccínico
+ácido p-cumárico
+ácido paracumárico
+ácido pipemídico
+Ácido sacárico
+Ácido vanílico
+Afatinib
+Álcool coniferílico
+Aloxana
+Altretamina
+Amarelo sólido
+AMPA
+anacinra
+anfepramona
+Antigorite
+Antocianidina
+Antranilato de metila
+Atentado de Wall Street
+aureto de césio
+Awaruite
+Azepina
+Azobisisobutironitrila
+azul de bromofenol
+baricitinib
+Bateria de Fluxo
+Bateria de níquel-ferro
+Benzoxazol
+bertrandita
+Betulina
+bilastina
+bissulfato de amônio
+brometo de cobalto
+brometo de n-propila
+butironitrila
+butorfanol
+Café Cold Brew
+calcifediol
+Carbenicilina
+carga formal
+cariofileno
+Carmustina
+Catalisador de Wilkinson
+cefadroxil
+Ciclo de Born-Haber
+ciclopirox
+clemastina
+Clorato de amônio
+cloreto de cetilpiridínio
+cloreto de ruténio
+cloreto de rutênio
+Cloreto de trimetilsililo
+Cobaltinitrito de sódio
+cristaloquímica
+cromato de prata
+Cromonas
+Crotamiton
+CuHAsO3
+Dantrolene
+Deutereto de hidrogênio
+di-iodometano
+Diazina
+dicarbonato de dimetila
+diclorvós
+Dietanolamina
+Dolutegravir
+ecgonina
+econazol
+Efeito de Gibbs-Donnan
+emetina
+eplerenona
+Equilíbrio de Gibbs-Donnan
+erlotinibe
+escetamina
+Estercobilina
+Estereosseletividade
+estragol
+etilparabeno
+etodolaco
+exemestano
+extração líquido-líquido
+Fenazopiridina
+Fenoprofeno
+fentolamina
+FePO4
+ferredoxina
+flibanserin
+fluoreto de cádmio
+Fluoropolímero
+Flurbiprofeno
+ftalato de dietila
+Galato de epigalocatequina
+Gingerol
+Grande incêndio de Meireiki
+halogeneto de prata
+heptanal
+hexafluoraluminato de sódio
+Hexafluoreto de telúrio
+Hexafluoroplatinato de xenônio
+Hidroxiácido
+Hidroxipropilmetilcelulose
+ictiocola
+Indazol
+indoxil
+ingestão diária aceitável
+Interhalogênio
+Isocitrato desidrogenase
+Isoflavona
+Isomaltulose
+Ivabradina
+Kaempferol
+lignana
+loxapina
+M-Fenilenodiamina
+Magnetoquímica
+Manose 6-fosfato
+medazepam
+meio hipertónico
+melarsoprol
+Melittina
+metanogênese
+Metátese de olefina
+metilciclopentano
+Microfiltração
+milrinona
+Miraculina
+Monofosfato de timidina
+Monoglicerídeo
+Mononitrato de isossorbida
+Mostarda nitrogenada 2
+nabumetona
+Negro brilhante
+Neuropeptídeo Y
+Nifurtimox
+nitazoxanida
+nitrato de ureia
+Nivolumabe
+octopamina
+óleo de palmiste
+Oleuropeína
+Ortossilicato de tetraetila
+Osmirídio
+Oxicloreto de bismuto
+picloram
+pimecrolimus
+Piretrina
+pirofosfato de farnesilo
+Plutônio-238
+Polifosfato
+poliimida
+Polímero condutor
+Ponto de combustão
+porfobilinogénio
+potássio-40
+pralidoxima
+prasugrel
+promazina
+propionato de potássio
+prostaglandina e2
+púrpura de bromocresol
+ramelteon
+reação aldólica
+Reação de Heck
+Reação de Mitsunobu
+Reação de Reimer-Tiemann
+Reação de Williamson
+reelina
+ribose-5-fosfato
+Rizatriptana
+Rodoceno
+RuBP
+Ruptura heterolítica
+selenato de sódio
+seleneto de zinco
+sesquiterpeno
+sevelamer
+Síntese de Williamson
+sorbato de cálcio
+sucralfato
+sulindaco
+teixobactina
+tetrabromometacresolsulfonoftaleína
+tetraidrobiopterina
+ticagrelor
+torasemida
+Trialometano
+triantereno
+tricloreto de iodo
+trifluoreto de fósforo
+trimetazidina
+trimetilalumínio
+triterpeno
+tropinona
+tubocurarina
+vermelho de cresol
+vermelho de fenol
+Vermelho de metila
+xanteno
+YBaCuO
+Zaleplona
+Zamak
+1-butanotiol
+1-Propanotiol
+2-Etoxietanol
+3-quinuclidinil benzilato
+Abatacept
+abciximab
+Acetato de abiraterona
+Acetato de octila
+Ácido 1-naftalenoacético
+ácido alfa-hidróxido
+Ácido diaminopimélico
+ácido etacrínico
+ácido etidrónico
+Ácido fitânico
+ácido forte
+ácido ibandrônico
+Ácido sinapínico
+ácido siríngico
+Ácido úsnico
+aminofenazona
+Anammox
+arecolina
+Armodafinila
+Arsenieto
+ASASSN-15lh
+astemizol
+Atentado da Piazza Fontana
+Auramina O
+Azilsartan
+baloxavir marboxil
+Bálsamo do Canadá
+bancha
+Belimumab
+Benzatropina
+Betalaína
+Betassitosterol
+bifonazol
+Bifosfoglicerato
+bisabolol
+borracha vulcanizada
+Brodifacoum
+brometo de estrôncio
+Calcogeneto
+carbocisteína
+carbonação
+Carbonato de ferro
+Carbonilação
+Carteolol
+cefoperazona
+cefoxitina
+ceftibuteno
+cianeto de cobre
+cianidina
+cianoacrilato de metila
+Cianoidrinas
+ciclo-hexilamina
+Cicloepteno
+cinarizina
+Cladribina
+ClF5
+clofibrato
+cloreto de 4-toluenossulfonila
+cloreto de isopropila
+cloreto de n-propila
+clorobutanol
+composto não-estequiométrico
+corante azoico
+Cotinina
+crióstato
+crocina
+CTAB
+decanal
+deflagração
+Degradação de Edman
+Desastre de Texas City
+deuterão
+dêuteron
+Dexmedetomidina
+Dibenzazepina
+Dibenzodioxinas policloradas
+dibenzofurano
+Dicicloverina
+didanosina
+Dietilenotriamina
+Diglima
+dimetil polissiloxano
+Dimetilaminoetanol
+Dimetoxietano
+dióxido de molibdénio
+Disseleneto de carbono
+dissulfeto de difenila
+Dissulfeto de dimetila
+Dissulfeto de germânio
+enteroquinase
+eprosartan
+Éter etil-terc-butílico
+Fenil-lítio
+feniltiocarbamida
+feniramina
+Flavonol
+flecainida
+fluoreto de manganês
+fluoreto estanoso
+Flupentixol
+fosfato de alumínio
+fosfato de trifenila
+Fosfito de trimetilo
+Fotocromismo
+Fotoionização
+Fotossíntese C3
+Ftalato de dimetila
+Fuculose
+furazolidona
+glicano
+Glicirrizina
+Glicose 1-fosfato
+GM-CSF
+Granisetrona
+Halogenação de Hell-Volhard-Zelinsky
+hapticidade
+HCOONH4
+hexacloreto de tungsténio
+hexaclorobutadieno
+hexametilfosforamida
+HfCl4
+hidrocarboneto insaturado
+hidrogénio protonado molecular
+hidrogênio protonado molecular
+Hidrossulfeto de potássio
+hidróxido de gálio
+high-density polyethylene
+Hipofosfito de sódio
+Indacaterol
+indicana
+Indolina
+inosinato dissódico
+iodeto de níquel
+Isomaltose
+lactato de sódio
+ledipasvir
+leite de vaca
+Levana
+Levorphanol
+lincosamidas
+methylisothiazolinone
+Metilcelulose
+Metilcobalamina
+Moinho de bolas
+molibdato
+Monoaminas
+monoterpeno
+N-óxido de N-metilmorfolina
+N-óxido de trimetilamina
+Naftoquinona
+nak
+nedocromil
+Nepetalactona
+niquetamida
+nitrato de metila
+Nitreto de berílio
+Nucleosídeo trifosfato
+octanal
+Olaparib
+Óleo de eucalipto
+Organocatálise
+ortofenilfenol
+ortoformiato de trietila
+oxamida
+oxireno
+oxprenolol
+Palbociclib
+Palonossetrom
+Pemetrexede
+pentaborano
+péptido-C
+periodinano de dess-martin
+pinacolona
+pirofosfato de geranilo
+Plastoquinona
+Poliacetileno
+policaprolactona
+policetídeo
+polidimetilsiloxano
+Polihidroxialcanoatos
+Polimixina B
+Pramlintida
+probenecida
+Propanototiol
+Propiofenona
+Propionato de etila
+protamina
+protionamida
+pterina
+Quinurenina
+ranolazina
+Reação de Finkelstein
+Reação de Stille
+Rearranjo de Beckmann
+reforma a vapor
+Rifapentina
+Rocurónio
+Rodamina B
+sabineno
+Salicilamida
+Salicilato de benzila
+SDS-PAGE
+silicato de cálcio
+Síntese de Gabriel
+Sonoquímica
+sulbactam sódico
+Sulfato mercuroso
+sulfeto de estanho
+Sulforafano
+sunitinib
+Tartarato de sódio
+tazobactam
+Teicoplanina
+tenite
+tetrabenazina
+Tetrazina
+Tiocetona
+tiocianato de mercúrio
+tolbutamida
+tosilcloramida sódica
+Transposição de Beckmann
+Triacetina
+tribrometo de antimônio
+tribrometo de arsénico
+tribrometo de arsênico
+Trifosfato de desoxiadenosina
+trihidreto de boro
+Trióxido de telúrio
+triprolidina
+Turanose
+Ustecinumab
+verde malaquita g
+Voltâmetro de Hofmann
+zingerona
+zolmitriptano
+α-PVP
+2-Metil-heptano
+2-Nitroanilina
+4-Methylimidazole
+4-Nitroclorobenzeno
+Abemaciclib
+acetato de cromo
+Ácido 4-metoxibenzoico
+ácido desoxicólico
+ácido diatrizoico
+Ácido isonicotínico
+ácido itacônico
+Ácido pirolenhoso
+Ácido quinurênico
+Acoplamento de Ullmann
+agmatina
+álcool graxo
+Alfapeginterferona 2a
+alprostadil
+aminoácido ramificado
+Anabasina
+Anagrelida
+Analéptico
+Âncora GPI
+antimoneto de índio
+Apremilast
+Argininossuccinato
+Arsenito de potássio
+atentado ao USS Cole
+AuBr3
+avanafil
+azacitidina
+azadiractina
+azepano
+balança de torção
+basiliximab
+bateria de lítio-ar
+Besifloxacina
+beta-pineno
+betanecol
+Biguanida
+boldenona
+borato de trimetila
+Borazano
+bosentana
+Brimonidina
+brinzolamida
+bromato de cálcio
+brometo de fenilmagnésio
+carbamato de amônio
+Carbimazol
+catalisador de Adams
+cefamandol
+cefotetana
+cefradina
+Célula de combustível microbiana
+Cerâmica plástica
+Cerivastatina
+certolizumabe pegol
+Cetogénese
+chicle
+cianato de sódio
+cicutoxina
+citicolina
+citrato de magnésio
+citrato férrico amoniacal
+clometiazol
+cloreto de ródio
+Cloropentafluoroetano
+cobicistate
+coeficiente de temperatura
+condensador allihn
+Cristalização fracionada
+Crocetina
+cromato de césio
+cyclosarin
+Daclatasvir
+deferiprona
+delamanide
+delavirdina
+demeclociclina
+derivado halogenado
+desogestrel
+Dexcetoprofeno
+Dicarbonato de di-terc-butila
+Diclorossilano
+dietilditiocarbamato de sódio
+difisato de ferro
+Dimetilamilamina
+dimetildiclorossilano
+Dimetindeno
+Disopiramida
+dissolução
+ditranol
+Diuron
+Dorzolamida
+Eritrose-4-fosfato
+estrôncio-90
+Etilmorfina
+etonogestrel
+Fenazepam
+fenazina
+Fenilidroxilamina
+Ferro galvanizado
+Fibrinólise
+fibrinolítico
+físico-química orgânica
+Flavoproteína
+fluoreto de ferro
+fluoreto de irídio
+fluoreto de mercúrio
+fluoreto de níquel
+Fluoreto de tálio
+fluorodeoxiglicose
+Fluorodesoxiglicose
+flutamida
+focalização isoelétrica
+fotocatálise
+fresagem química
+Fulminato
+galvanizar
+Galvanoplastia
+gama-Valerolactona
+Glicopirrolato
+Glutamina sintase
+golimumabe
+gosserrelina
+gramicidina
+guaiazuleno
+guanilato dissódico
+heptan-2-ona
+hexacarbonila de molibdénio
+hexacarbonila de molibdênio
+hexetidina
+homatropina
+Huperzina A
+icaridina
+Implante Contraceptivo de Etonogestrel
+Incêndio de King's Cross
+Incêndio de Windscale
+inerte
+Insulina asparte
+Insulina lispro
+Insulina NPH
+Iodeto de manganês
+Ipilimumab
+iproniazida
+lacosamida
+Ligação quádrupla
+Litopone
+lormetazepam
+Manganato de sódio
+massa polímera
+Metil-n-butilcetona
+Metilciclopropano
+Metilfenobarbital
+miglitol
+Miltefosina
+moexipril
+molécula bicíclica
+molibdato de amônio
+monóxido de cloro
+morina
+motilina
+nafcilina
+Nalbufina
+nalmefeno
+nefazodona
+Nicardipina
+Nilotinibe
+nisoldipino
+nitreto de cromo
+nitreto de nióbio
+nitrosônio
+nizatidina
+nonanal
+número de neutrons
+Ocratoxina
+Octóxido de triurânio
+Oligopeptídeo
+Onasemnogene abeparvovec
+Onasemnogeno abeparvoveque
+orciprenalina
+ouabaína
+oxalato de amônio
+oxidação de Jones
+Óxido de amina
+Óxido de tungstênio
+oxigénio-18
+PbCl4
+pemolina
+pentafluoreto de vanádio
+peroximonossulfato de monopotássio
+pirazolona
+Piretroide
+poliacrilato de sódio
+Policristal
+polimerização radicalar
+polipeptídeo pancreático
+posaconazol
+Pró-opiomelanocortina
+Processo de contato
+propifenazona
+propionato de clobetasol
+Química bio-ortogonal
+Quinuclidina
+radiofármaco
+Reacção de Fenton
+rilpivirina
+Sal ácido
+Separação isotópica
+sesamol
+sideróforo
+SNR Vela
+sulfeto de manganês
+tacrina
+tecovirimat
+Teniposido
+tenoxicam
+Terazosina
+terc-butiltiol
+tereftalato de dimetila
+Teriparatida
+Termocromismo
+tetrizolina
+tiagabina
+ticarcilina
+ticlopidina
+Tiepino
+Tioacetal
+tiotepa
+tiotixeno
+trifluridina
+trioleína
+Trióxido de urânio
+trissacarídeo
+UCl3
+Ultracentriugadora
+urânio-233
+vemurafenibe
+veratrol
+Verbenona
+vg nervo agente
+vigabatrina
+Vilazodona
+vildagliptina
+Wedang Jahe
+zafirlucaste
+1-Hexacosanol
+2-metil-1-butanol
+2-Piridona
+3-Nitroanilina
+4-Aminobifenil
+4-dimetilaminopiridina
+4-Hidroxibenzaldeído
+5-Metilcitosina
+aceclofenaco
+acepromazina
+acetileto metálico
+Ácido 3-aminobenzoico
+Ácido alfa-aminobutírico
+Ácido de açúcar
+Ácido de Meldrum
+Ácido glicérico
+Ácido homovanílico
+ácido oleanólico
+Ácido oxolínico
+Ácido protocatecuico
+ácido quenodesoxicólico
+ácido risedrônico
+Aerozine 50
+agente bbc
+Álcool pinacolílico
+Álcool sinapílico
+alfa-metiltriptamina
+Alfa-Pineno
+Alfuzosina
+Alobarbital
+alossetrona
+Amineptina
+Amônio quaternário
+ânion hidrogénio
+ânion hidrogênio
+arsenato de sódio
+Ascaridol
+Asenapina
+auranofina
+azida de prata
+azlocilina
+Azul patenteado v
+Bastão de vidro
+bateria de lítio-enxofre
+bateria selada
+Benzilpenicilina procaína
+Benzisoxazol
+bezafibrato
+bimatoprosta
+Bisfenol S
+bromodiclorometano
+butanoato de pentila
+butoconazol
+butóxido de piperonila
+Canagliflozina
+caprolactona
+carbinoxamina
+Carbonato de dietila
+carbonato de lantânio octaidratado
+Carboneto de háfnio
+carbono acetilênico linear
+cascata bioquímica
+catenanos
+cefpiroma
+ceftarolina fosamila
+cetazolam
+Chá de coca
+chás pós-fermentados
+chavicol
+cicloheximida
+ciclopentolato
+Citrato trietílico
+cloreto de hidroxilamónio
+cloreto de irídio
+Cobamamida
+Complexo de Vaska
+Condensação de Dieckmann
+creosol
+Criptandos
+cromel
+Daidzeína
+Desmetilfenidato
+dexrazoxano
+Dibenzil cetona
+Dibenzoxazepina
+dicloroisocianurato de sódio
+didímio
+diflunisal
+Dihidrofolato redutase
+dihidropirano
+Diidropirano
+disulfeto de dialila
+Dolasetrona
+doxapram
+dulaglutida
+eculizumab
+elvitegravir
+enriquecimento de urânio
+Enzalutamida
+eribulina
+Erosão espacial
+esclareol
+Estifnato de chumbo
+Eszopiclona
+Etilefrina
+Etorfina
+etoxibenzeno
+Etoxiquina
+Femprocumona
+fenoterol
+flunarizina
+Fluocinolona acetonida
+fluoreto de cobre
+fluormetolona
+Fluoróforo
+Fogueira das vaidades
+forbol
+Fosfito de trietilo
+Fosfol
+Fosfoproteína
+Galactose-1-fosfato
+gás CR
+gatifloxacina
+Glicosinolato
+Gluconato de sódio
+Glutetimida
+guanetidina
+hexacarbonila de tungstênio
+hexafluorfosfato de lítio
+hidreto de tetracarbonilcobalto
+Hidroxilisina
+humuleno
+Ibrutinib
+imidazolidina
+Incêndio na boate Kiss
+Incêndios petrolíferos no Kuwait
+InCl3
+Insulina detemir
+ioexol
+Íon nitrônio
+IRST
+lactato de etila
+lapatinib
+linamarina
+lipogênese
+malondialdeído
+MAP quinase
+Melezitose
+menaquinona
+metavanadato de sódio
+Metazolamida
+Metil jasmonato
+Metilergometrina
+metileugenol
+Metilona
+metilpirrolidona
+Metohexital
+metoxipropano
+Microcistina
+Midodrina
+MnBr2
+Nanoputian
+naringina
+Nelarabina
+Neurotensina
+nitrato de cromo
+nitreto de vanádio
+nitrofurano
+Nonivamida
+Óleo de néroli
+Oligomicina
+orfenadrina
+ortovanadato de sódio
+Osimertinib
+Oxaprozina
+Oxepano
+oxibenzona
+Oxidação de Swern
+Óxido de gadolínio
+Óxido de irídio
+oxifluoreto de xenônio
+Paracloroanilina
+Pemirolast
+perclorato de césio
+permanganato de amônio
+permanganato de prata
+Philippine Airlines Flight 434
+picrato de amónio
+piperitona
+piritiona zíncica
+pirofosfato de sódio
+Pisseta
+Polissulfeto
+Polônio-210
+Prenol
+Propilexedrina
+Protoporfirina IX
+Purificação de proteínas
+química forense
+química matemática
+ranelato de estrôncio
+ranibizumabe
+Reação de Balz-Schiemann
+Reação de Chichibabin
+Reação de Henry
+Reação de Reformatsky
+Reação de Sonogashira
+rimonabanto
+Riociguat
+RMV
+Rodamina
+roflumilaste
+Rotigotina
+Rupatadina
+Sal de amônio quaternário
+Sal quaternário de amônio
+Sedoeptulose-7-fosfato
+Silodosina
+Simeprevir
+Sinefrina
+sítio de ligação
+substituição eletrofílica
+sugammadex
+sulfamida
+sulfato de dietilo
+sulfeto de dietila
+sulfureto de tungsténio
+tafone
+Tartarato de potássio
+TbCl3
+Telureto de zinco
+terfenilo
+terlipressina
+tetracloreto de selénio
+tetracloreto de selênio
+tetrametilestanho
+Tiazina
+tiazolidinediona
+Timulina
+Tipranavir
+tirosol
+titanato zirconato de chumbo
+toluidina
+Tragédia de Bradford
+Trembolona
+trientina
+Trifosgênio
+Trimetilfosfina
+Triptofol
+umbióctio
+Vermelho 2G
+vermelho neutro
+viloxazina
+Vorinostat
+WGSR
+zearalenona
+Ziconotida
+Zona morta
+2-Metiltetraidrofurano
+2-Pirona
+2C-I
+5-Hidroximetilcitosina
+acetato de fenila
+Acetilenodiol
+Ácido arsanílico
+Ácido asparagúsico
+Ácido de Mead
+ácido dipicolínico
+ácido esquárico
+ácido estífnico
+Ácido fosfomolíbdico
+ácido galactárico
+Ácido hidroxâmico
+ácido iotróxico
+Ácido isocianídrico
+Ácido laceroico
+ácido niflúmico
+Ácido ortocarbônico
+ácido pamidrônico
+ácido rosmarínico
+Ácido rosólico
+Ácido taurocólico
+Ácido triatriacontanoico
+acrilato de butila
+adefovir
+Adição oxidativa
+Aducanumab
+alfacalcidol
+Alglucosidase alfa
+alimemazina
+Alirocumab
+alprenolol
+amitraz
+androstano
+anfetamina substituída
+antimoniato de meglumina
+Atentado de Rangum
+Atezolizumabe
+Azodicarbonamida
+Azodicarboxilato de dietilo
+Bacteriocinas
+Bai Hao Yinzhen
+Basquetano
+Bateria de veículo elétrico
+Betrixabano
+bexaroteno
+Bioquímica clínica
+Bivalirudina
+BLEVE
+Bombardeio de Borodianka
+Bombicol
+Boreto
+brivaracetam
+brometo de níquel
+bromoacetato de etila
+bronfenaco
+butenafina
+butetal
+Camptotecina
+Canamicina A
+Canaquinumabe
+carbeto de cromo
+carbeto de lítio
+Cefiderocol
+ceftizoxima
+Cetrorelix
+Cevimelina
+chá mate
+Cicloartenol
+ciclobarbital
+Cinolazepam
+Cloreto de guanidina
+cloreto de metil-magnésio
+cloreto de tecnécio
+Cloreto de tereftaloila
+Clorofenol
+clorpropamida
+clorzoxazona
+composto sanduíche
+Crisoína
+Cromatografia líquida-espectrometria de massa
+CuN6
+CuP3
+D-alfa-tocoferol
+D-α-tocoferol
+daclizumab
+Darbepoetina alfa
+Deferasirox
+delta-valerolactona
+desonida
+Desoxicitidina trifosfato
+destilador
+di-hidroergotamina
+di-hidropiridina
+di-isopropilamina
+Difenilcloroarsina
+Diflubenzurão
+Difusão gasosa
+dilítio
+diosgenina
+diosmina
+Dióxido de xenônio
+ditionato de sódio
+Dolicol
+drospirenona
+Dupilumabe
+Eletrocromismo
+Eletrodiálise
+Eletrólise de Kolbe
+Epoxidação Assimétrica de Sharpless
+Eritorbato de sódio
+escopoletina
+esparfloxacino
+Esparteína
+Estercobilinogênio
+esteviol
+etenzamida
+Etilpentano
+Etinol
+Evolocumabe
+Febuxostate
+felbamato
+fenchona
+Fenfluramina
+Fenilacetaldeído
+Fenilpiperazina
+Fenitrotião
+Fenmetrazina
+fenoxibenzamina
+Flavona
+Fludiazepam
+flúor-18
+fluoreto de titânio
+Fluoximesterona
+fosfofrutoquinase 1
+Fosfolipase A2
+fósforo vermelho
+fosgênio de oxima
+frovatriptana
+frutooligossacarídeo
+Fulveno
+Gama-amanitina
+Gentuzumab ozogamicina
+Geopolimerização
+ginseng
+Glicose oxidase
+gramina
+halazepam
+harmina
+Hemocitômetro
+hexametafosfato de sódio
+Hidrodessulfurização
+hidrogenoftalato de potássio
+Hidroxiquinol
+hipotaurina
+icatibanto
+imazalil
+imínio
+inibidor da aromatase
+Inibidor da enzima aromatase
+Intramolecular
+Iodeto de acetila
+ionóforo
+Iridoide
+isocarboxazida
+josamicina
+Lactato ferroso
+Lactol
+Lemborexant
+Levosimendana
+Liga de Devarda
+Lítio ferro fosfato
+lomefloxacino
+Lorcasserina
+Lornoxicam
+m-cresol
+mazindol
+MCPA
+mepivacaína
+Micafungina Sódica
+Mircenol
+Monofosfato de deoxiuridina
+Mostarda nitrogenada
+moxonidina
+nateglinida
+Neo-hesperidina dc
+Nimetazepam
+Nintedanib
+Nitreto de prata
+nitroguanidina
+Nitrona
+nitrosobenzeno
+Nordazepam
+o-cresol
+octacosanol
+octeno
+Óleo de citronela
+Óleo essencial de pinho
+Olopatadina
+Operação Buster-Jangle
+Operação Castelo
+Operação Greenhouse
+Operação Ivy
+Operação Plumbbob
+Operação Ranger
+Orto-Cresol
+Ortoéster
+Óxido cacodilo
+Óxido de paládio
+Oxindol
+p-cresol
+Paclobutrazol
+Palmitato de ascorbilo
+panitumumabe
+paraxantina
+Pederneira
+pelargonidina
+Pentafluoroetano
+Pentilamina
+perfluorohexano
+Perrenato de sódio
+Pertuzumabe
+Pilha
+Pimavanserina
+PoCl2
+Pokhran-II
+Polianilina
+Polidocanol
+Polisorbato 80
+polisulfeto de fenileno
+Polivinil butiral
+Pontes de hidrogénio
+Pontes de hidrogênio
+propanoato de propila
+propilparabeno
+propionato de propila
+PuF3
+pulegona
+Quazepam
+Quinaldina
+Quinolizidina
+Rasburicase
+Reação nomeada
+reação nominal
+Rearranjo de Claisen
+resazurina
+retapamulina
+rotaxano
+Rubreno
+Rufinamida
+Rutinose
+Ruxolitinibe
+salsalato
+Sarilumab
+saxagliptina
+Semissíntese
+silanos
+silibinina
+siliceno
+Silumin
+Solvólise
+Sujeonggwa
+sulfato de dermatan
+Sulfito de magnésio
+Tapinarof
+Tautomerização
+tazaroteno
+tedizolida
+Teh tarik
+telureto de dimetilo
+telureto de prata
+Tenecteplase
+Termômetro infravermelho
+Tetrametrina
+Tiametoxam
+Tiaprida
+Tiazolidina
+Tieguanyin
+Tioacetona
+tioamida
+Tofisopam
+tolcapona
+Tolvaptano
+toxafeno
+Travoprost
+Treitol
+trieptanoina
+trietilenoglicol
+Trifenilamina
+Trifluralina
+trigonelina
+ubiquinol
+Umifenovir
+Uranilo
+vilanterol
+Vindesina
+1-Bromo-hexano
+1-Naftolftaleína
+2-Metilfurano
+3-careno
+3-MCPD
+4-Hexilresorcinol
+4-Pirona
+abrina
+absintina
+acemetacina
+acetamiprida
+acetato de uranilo
+acetoexamida
+Ácido 3-hidroxibenzoico
+Ácido aldônico
+Ácido beta-hidroxi-beta-metilbutírico
+Ácido fenâmico
+Ácido glicolnucleico
+Ácido hentriacontílico
+ácido sulfénico
+Ácido tetratriacontanoico
+acrivastina
+adipato de sódio
+adrafinila
+Ajmalina
+Álcool cumarílico
+aloxiprina
+alumel
+Amarelo de alizarina R
+amina aromática
+aminação
+Aminoglutetimida
+amorolfina
+anidulafungina
+Anileridina
+aprobarbital
+Argatrobana
+Associação piperacilina/tazobactama
+aurotiomalato de monossódio
+Avgas
+azul de metila
+azul de metilo
+balsamum peruvianum
+benperidol
+Benzazepina
+Benzfetamina
+Bepotastina
+Bibenzil
+bisseção
+bronfeniramina
+budesonida/formoterol
+Carbendazim
+carbeto de tântalo
+carborano
+Catalisador Grubbs
+Catalisadores de Grubbs
+cefapirina
+cefditoreno
+Centrífuga de gás
+Chaconina
+chromium picolinate
+cialotrina
+Ciclamato
+Ciclesonida
+Ciclo catalítico
+Ciclo enxofre-iodo
+Citrato de cafeína
+clorofila a
+clorquinaldol
+clotianidina
+Colesevelam
+composto acíclico
+cravo
+Cristalogénese
+delta-3-careno
+Desidroalogenação
+dexibuprofeno
+diacetona álcool
+diaminodinitroetileno
+diazodinitrofenol
+diclorofeno
+Diclorofenol-indofenol
+dienogeste
+difenilfosfina
+difenoxilato
+digoxigenina
+dihidrouracil
+Dimetoxianfetamina
+Dipropilenoglicol
+dissilicieto de molibdênio
+Diuranato de amônio
+doripeném
+Durvalumab
+Dyclonina
+Eletroforese bidimensional
+Eletrônica molecular
+enoxacino
+enrofloxacino
+Esterificação de Fischer-Speier
+etclorvinol
+éter de difenila polibromado

@@ -183,3 +183,23 @@ def test_inserted_keys_follow_the_indent_of_their_section():
     out = update_scalars("ui:\n    hud_style: comic\nstyler:\n    model: x\n", {"ui.sound_events": ["fehler"]})
     assert "    sound_events: [fehler]\n" in out
     assert yaml.safe_load(out) == {"ui": {"hud_style": "comic", "sound_events": ["fehler"]}, "styler": {"model": "x"}}
+
+
+@pytest.mark.parametrize("header", ["fachwortschatz: {}", "fachwortschatz: null", "fachwortschatz: ~", "fachwortschatz: {}  # leer"])
+def test_key_goes_into_a_section_written_inline_as_empty(header):
+    text = f"ui:\n  hud: true\n{header}\nlearning:\n  enabled: true\n"
+    out = update_scalars(text, {"fachwortschatz.gebiete": ["medizin", "it"]})
+    data = yaml.safe_load(out)
+    assert data["fachwortschatz"] == {"gebiete": ["medizin", "it"]}
+    assert data["ui"] == {"hud": True} and data["learning"] == {"enabled": True}
+
+
+def test_key_goes_into_a_section_written_as_flow_mapping_and_keeps_its_keys():
+    out = update_scalars("ui: {hud: true, sound_events: [done]}\n", {"ui.language": "en"})
+    assert yaml.safe_load(out) == {"ui": {"hud": True, "sound_events": ["done"], "language": "en"}}
+
+
+def test_key_inside_a_flow_mapping_is_replaced_not_doubled():
+    out = update_scalars("ui: {hud: true, language: de}\n", {"ui.language": "en"})
+    assert out.count("language") == 1
+    assert yaml.safe_load(out) == {"ui": {"hud": True, "language": "en"}}

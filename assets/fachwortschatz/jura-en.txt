@@ -1,8 +1,5 @@
-marriage
-political party
-copyright
+human rights
 prostitution
-business
 genocide
 ICJ
 International Court of Justice
@@ -13,15 +10,12 @@ ICC
 International Criminal Court
 international law
 Magna Carta
-contract
 public domain
-Inquisition
-torture
 women's rights
 criminal law
 war crime
+Marshall aid plan
 Marshall Plan
-Nuremberg trials
 ECHR
 ECtHR
 Supreme Court
@@ -40,7 +34,7 @@ administrative law
 homicide
 assassination
 juridical person
-cooperative
+juristic person
 defamation
 labor law
 kidnapping
@@ -51,41 +45,37 @@ CJEU
 CURIA
 organized crime
 state of emergency
-Spanish Inquisition
 canon law
 cybercrime
-foundation
 public law
 civil and political rights
 promissory note
-subsidiary company
 U.S. Bill of Rights
 US Bill of Rights
 mass murder
 natural person
 habeas corpus
-ICTY
-jurisdiction
 Ponzi scheme
 family law
 hate speech
 war reparations
 witch hunt
 civil union
+registered partnership
 presumption of innocence
 massacre
 private law
 drug trafficking
 extradition
 Holocaust denial
+illegal drug trade
 freedom of information
-private property
 sexual violence
+alibi
 hate crime
 blackmail
 competition law
 creditor
-ownership
 power of attorney
 right to education
 alimony
@@ -96,60 +86,63 @@ employment contract
 equality before the law
 European Union law
 ijtihad
+ius soli
 jus soli
 legal precedent
+precedent
 tax evasion
 trial by ordeal
 commercial law
 constitutional court
-evidence
 law of obligations
 private international law
-Supreme Court of India
-voluntary association
 CFR
 consumer protection
 extortion
 infanticide
 law of war
 Articles of Confederation
-Sanhedrin
 eminent domain
-Conciergerie
+expropriation
 cyberattack
 embezzlement
 force majeure
 negligence
 Pacta sunt servanda
 tax law
+tort
 court-martial
 criminal charge
 procedural law
 Statute of Westminster 1931
 perjury
 public interest
+scam
 source of law
 U.K. Supreme Court
 UK Supreme Court
 coercion
+Court of Justice
 European Court of Justice
 freedom of movement
+fundamental rights
 corporate law
 criminal procedure
-ICTR
-sole proprietorship
+millet
 statute of limitations
 Act of Settlement 1701
-complaint
 defendant
 freedom of association
 Patriot Act
+reproductive freedom
 reproductive rights
 right to food
 appellate court
+child prostitution
 designation of origin
 digital rights
 insurgency
+insurrection
 personal data
 precautionary principle
 prostitution of children
@@ -157,75 +150,72 @@ sanction
 usufruct
 capacity of exercise
 detention
+falsification
 forgery
 maritime law
 medical device
+parole
 right to be forgotten
 subsidiarity
 bride kidnapping
 international criminal law
 Nuremberg principles
-possession
 ACA
 Affordable Care Act
-assault
 civil procedure
+mutiny
+Obamacare
 PPACA
 property law
-Romneycare
 Societas Europaea
-consent
 contract of sale
-Federal Constitutional Court
+delict
 Indian Removal Act
 mandate
+remand
 white-collar crime
-Constitutional Council of France
 Digital Millennium Copyright Act
 DMCA
 human right to sanitation
 human right to water
 legal capacity
 space law
+cyberlaw
 due diligence
 General Court
 information technology law
-judgment
 legal system
-Revolutionary Tribunal
 show trial
 terrorist attack
 1965 Voting Rights Act
 arms trafficking
 beth din
 Catholic law
-Conseil d'État
-intention
 international court
 lèse-majesté
 linguistic rights
 miscarriage of justice
 misdemeanor
-property
 Voting Rights Act
 Black Legend
-Israeli Supreme Court
 ITLOS
+Leyenda Negra
 Magnitsky Act
 military law
 minority rights
 Sherman Antitrust Act
 Tokyo Tribunal
+Tokyo War Crimes Tribunal
 alien abduction
 constitutional review
 de minimis
 erga omnes
-Heliaia
+in absentia
+in absentia trial
 indictment
 informed consent
 injunction
 labor rights
-People's Court
 SLAPP
 Slavery Abolition Act 1833
 trial in absentia
@@ -233,19 +223,16 @@ usucaption
 diligence
 ex post facto law
 financial law
-High Court of Australia
 PLC
 presumption
 private limited company
-SPC
-Supreme People's Court
 aviation law
+felony
 food sovereignty
 Kansas-Nebraska Act
 letter of marque
 public order
 right to privacy
-Supreme Court of Canada
 territorial integrity
 uti possidetis
 Chinese Exclusion Act
@@ -255,32 +242,22 @@ ignorantia juris non excusat
 Indian Independence Act 1947
 jus gentium
 proportionality
-Roman Rota
-Supreme Court of Pakistan
-Supreme Federal Court
 unjust enrichment
 administrative court
-conspiracy
 criminal conspiracy
-declaration
 general average
+immunities
 legal immunity
 Parlements
-Reichskammergericht
 right to Internet access
 sodomy law
 stabbing
-Apostolic Penitentiary
 author's rights
-BGH
 bodily integrity
-Bundesgerichtshof
 Canada Act 1982
 cause of action
-Constitutional Court of Korea
 domicile
 due process
-guarantee
 heritance and succession law
 IACHR
 IACtHR
@@ -290,21 +267,16 @@ lex specialis
 obiter dictum
 res judicata
 Sarbanes-Oxley Act
-SCSL
-Supreme Court of Japan
+succession law
 targeted killing
 trial by combat
 U.S. court of appeals
-United States circuit court
-Apostolic Signatura
+United States circuit courts
 causation
 character assassination
-Civil Service Tribunal
-conviction
-Council of Ten
-Khmer Rouge Tribunal
 legal settlement
 medical law
+naskh
 nulla poena sine lege
 plausible deniability
 affidavit
@@ -312,8 +284,6 @@ burglary
 census suffrage
 class action
 Constitution Act 1867
-Constitutional Court of Russia
-Constitutional Court of Spain
 court of cassation
 drumhead court-martial
 estoppel
@@ -321,18 +291,16 @@ extra-judicial killing
 general manager
 Guano Islands Act
 legal hearing
+legal proceeding
+lien
 Loi constitutionnelle de 1867
 Mischling
 passive suffrage
 strict liability
-Supreme Court of Spain
 Civil solidarity pact
-Constitutional Court of Thailand
-Constitutional Court of Turkey
 Defense of Marriage Act
 dissenting opinion
 DOMA
-Federal Administrative Court
 foreign agent
 impunity
 indigenous rights
@@ -341,11 +309,11 @@ legal case
 Negotiorum gestio
 non-refoulement
 Parliament of Paris
+peregrina
+peregrines
 peregrini
 real property
 right of initiative
-Senate of Finland
-Supreme Court of Estonia
 United States district court
 animal trial
 bad faith
@@ -356,6 +324,7 @@ child abduction
 civitas
 corrections
 decriminalization of homosexuality
+Dodd-Frank
 Dodd-Frank Act
 election law
 FOIA
@@ -366,6 +335,7 @@ insubordination
 jury trial
 juvenile court
 LGBT rights in Austria
+Mala fides
 mitigating factor
 National Security Act
 negative campaigning
@@ -375,18 +345,11 @@ parliamentary sovereignty
 res nullius
 sexual rights
 Smoot-Hawley Tariff Act
-Star Chamber
-Supreme Court of Russia
 Taft-Hartley Act
 universal decriminalization of homosexuality
-verdict
 War Powers Resolution
 actus reus
-Aulic Council
 civil rights
-Constitutional Court of Italy
-Constitutional Court of Ukraine
-Constitutional Tribunal of Poland
 contract law
 counterclaim
 economic law
@@ -397,7 +360,6 @@ Landfrieden
 mens rea
 neglect
 Palestinian right of return
-Polish Constitutional Tribunal
 rent control
 restitution
 right to petition
@@ -414,12 +376,8 @@ trespass
 adjudication
 Ala kachuu
 arbitrary arrest and detention
-BAG
 Clausula rebus sic stantibus
 conservatorship
-Constitutional Court of Austria
-Council of the Indies
-default
 ecclesiastical court
 FATCA
 notarial instrument
@@ -427,18 +385,15 @@ police line-up
 preliminary injunction
 right of return
 suum cuique
-Swiss Federal Court
-Swiss Federal Tribunal
 turn state's evidence
 actio libera in causa
+aggravated
 aggravation
 Aktiengesellschaft
 ARRA
 construction law
 contraband
 copycat crime
-Court of First Instance
-Delhi High Court
 ecclesiastical law
 Emergen
 environmental effects of aviation
@@ -449,21 +404,16 @@ JCPC
 kadılık
 legitimacy
 patients' rights
-Pilate's court
 possession of stolen goods
 Recovery Act
 RICO
 RICO Act
-Rum Millet
-Russell Tribunal
 same-sex marriage in Argentina
 sequestration
 Statute of Rhuddlan
 Supreme Court of California
 UKPC
 youth rights
-agreement
-Allahabad High Court
 circumstantial evidence
 concurrent estate
 Embargo Act of 1807
@@ -474,8 +424,8 @@ Immigration Act of 1924
 impressment
 insurance contract
 IRMCT
-Islamic Revolutionary Court
-Judicial Yuan
+Johnson-Reed Act
+legal principle
 legal status
 Medieval Inquisition
 MICT
@@ -489,30 +439,26 @@ revolving door
 SDNY
 self-incrimination
 service contract
-Supreme Court of Norway
-Supreme Court of Sweden
 Supreme Court of Ukraine
 Agricultural Adjustment Act
 alienation
 American Service-Members' Protection Act
 animal law
 ASPA
+asylum
 at His Majesty's pleasure
 Belsen Trial
 best available technology
 complicity
-Constitutional Court of Hungary
 copyfraud
 Copyright Term Extension Act
 corpus delicti
-Council of Troubles
 CTEA
 discovery doctrine
 district court
 EFTA
 Endangered Species Act
 Epstein Files Transparency Act
-Federal Fiscal Court
 Foreign Agents Registration Act
 Human Rights Act 1998
 incitement
@@ -531,8 +477,6 @@ procuration
 reservation
 Scotland Act 1998
 Section 28
-Supreme Court of Cassation
-Supreme Court of Iceland
 Volstead Act
 ADA
 agricultural law
@@ -543,14 +487,9 @@ best interests
 CAATSA
 Catholic Emancipation Act 1829
 CHIPS and Science Act
-Constitutional Court of Belarus
-Constitutional Court of Indonesia
-Council of State
-credit institution
 criminal prosecution
 cultural rights
 Dawes Act
-element
 Espionage Act of 1917
 evasion
 extraordinary rendition
@@ -565,15 +504,13 @@ legal institution
 legislative procedure
 Local Government Act 1972
 market dominance
-National Court of Spain
-non-denominational
+opinio iuris
 opinio juris sive necessitatis
 presumption of guilt
 pro hac vice
 religion in Bahrain
 Royal Marriages Act 1772
 Same-sex marriage in Slovenia
-SCC
 state responsibility
 transgender rights
 Tydings-McDuffie Act
@@ -582,7 +519,7 @@ Uruguay Round Agreements Act
 9th Cir.
 actio Pauliana
 blasphemy law
-Bombay High Court
+Common scold
 communist crimes
 crime of passion
 criminal procedure law
@@ -591,11 +528,9 @@ D.C. Cir.
 D.C. Circuit
 DC Circuit
 direct effect
-discovery
 exception to copyright
 exemption
 family court
-Federal Social Court
 flotsam and jetsam
 fructus
 health law
@@ -608,55 +543,43 @@ judicial disqualification
 legal awareness
 Lex ferenda
 LGBTQ rights
-Madras High Court
 money counterfeiting
 moot court
+motive
 NCLB
 neonaticide
 Ninth Circuit
 property crime
 Pütchipü'ü
+raptio
 Real Audiencia
-Real Audiencia de Quito
-Reichsgericht
 same-sex marriage in Greece
-Special Tribunal for Lebanon
-Supreme Court of Denmark
-Supreme Court of Korea
-Supreme Court of Poland
+sanity
 Title IX
 trial court
 usurpation
+ziamet
 abandoned property
 accession
 actio popularis
-Afghan Supreme Court
 Antitrust Act of 1914
 argumentum a contrario
 bodily harm
-Calcutta High Court
 Clayton Antitrust Act
 Clean Air Act
-consideration
-Constitutional Court of Armenia
-Constitutional Court of Belgium
-Constitutional Court of Romania
-Constitutional Court of Slovakia
-Constitutional Court of Slovenia
 corporate crime
-Czech Constitutional Court
+crime of violence
+e contrario
 Fair Housing Act
 FD&C Act
 FFDCA
 freedom of education
 freedom of the seas
 fundamental rights in India
-Gacaca court
 garnishment
 genocidal intent
 Ghana Independence Act 1957
 guardianship
-Gujarat High Court
 hostage taking
 human dignity
 Imprimi potest
@@ -664,26 +587,26 @@ insurance law
 joinder
 Jus trium liberorum
 juvenile law
-Karnataka High Court
 Lèse-majesté in Thailand
 Local district court
-Mahkamah Agung Republik Indonesia
 mare clausum
 marriage law
 mislaid property
 Montagu-Chelmsford Reforms
 Morrill Act of 1862
+Morrill Land-Grant Acts
 National Industrial Recovery Act
 National Labor Relations Act
+nexum
 nuisance
 paternity
-Patna High Court
 permanent establishment
 PHIVOLCS
 Pikuach nefesh
 privacy law
 private prosecution
 probate
+quiet enjoyment
 religious freedom in Afghanistan
 religious freedom of Afghanistan
 right of conquest
@@ -693,21 +616,16 @@ Saudi Arabia religious freedom
 self-help
 Sexual Offences Act 1967
 South Africa Act 1909
-statutory corporation
-Superior Electoral Court
-Supreme Court of Argentina
-Supreme Court of Bangladesh
-Supreme Court of Thailand
-Supreme Iraqi Criminal Tribunal
 Titles Deprivation Act 1917
 transport law
-Turkish Council of State
+tutelage
 use of force
 violent crime
 Wagner Act
 Alien Registration Act
 American Rescue Plan
 American Rescue Plan Act
+Anti-Bribery Act
 assignee
 Assizes
 backbiting
@@ -715,10 +633,7 @@ Bank Charter Act 1844
 bankruptcy code
 Bribery Act 2010
 Charter Act of 1833
-Constitutional Court of Croatia
-Constitutional Court of Moldova
 Court of Appeal
-Court of Chancery
 Crown Court
 DDC
 disownment
@@ -750,6 +665,7 @@ Parliament Act 1911
 principle of conferral
 reasonable doubt
 rescission
+retroactive
 retroactivity
 right to know
 Saint Helena Act 1833
@@ -757,30 +673,19 @@ Same-sex marriage in Estonia
 Second Circuit
 sex crime
 Shanghaiing
+Smith Act
 Social Security Act
 sports law
 supremacy of EU law
-Supreme Court of Belarus
-Supreme Court of Chile
-Supreme Court of Croatia
-Supreme Court of Finland
-Supreme Court of Iran
-Supreme Court of Ireland
-Supreme Court of Nepal
 transferred intent
 voir dire
 abolition
-accused
 aircraft noise
 ancient Roman freedmen
 bonus pater familias
 circuit court
-Constitutional Court of Albania
-Constitutional Court of Lithuania
-Constitutional Court of Serbia
 Copyright Act of 1976
 corpus separatum
-defense
 Defense Production Act
 deliberate murder
 dishonesty
@@ -791,42 +696,33 @@ effective date
 Emergency Banking Act
 equitable remedy
 Ex factis jus oritur
-FCC
-Federal Criminal Court
 Foreign Corrupt Practices Act
-Gauhati High Court
 Gramm-Leach-Bliley Act
 high justice
 HKHRDA
 Iltizam
 Indian Reorganization Act
 Indigénat
-intervention
 intestacy
-Istanbul trials of 1919-1920
 Jones Act
+Jones Law
 King-in-Parliament
+Liberti
+Libertini
 Life Peerages Act 1958
 Lyon Court
 Mann Act
 North Korea religious freedom
 Oberlandesgericht
 PFDA
-Portuguese Constitutional Court
 Posse Comitatus Act
 prosecutorial discretion
 religious freedom in Turkey
 restitutio in integrum
-Saint Canice's Cathedral
 Seventh Circuit
-Sikkim High Court
 Sixth Circuit
 STCA
 STCAU
-Supreme Court of Azerbaijan
-Supreme Court of Hungary
-Supreme Court of Justice
-Supreme National Tribunal
 Third Circuit
 traditional Chinese law
 Turkey freedom of religion
@@ -834,29 +730,43 @@ Unified Patent Court
 UPC
 water rights
 Wiley Act
+5th Circuit
+actio
 Airline Deregulation Act
 alcohol law
 Armenia freedom of religion
 Bangkok Rules
 bona vacantia
 brocard
+CAFC
+Caribbean Court of Justice
 chain of custody
 Coinage Act of 1792
 Coinage Act of 1873
 competency
 Controlled Substances Act
 contumacy
+Court for International Trade
+Court of International Trade
 criminal negligence
 customs law
+D.C. Superior Court
+DC Superior Court
 Emergency Use Authorization
 English contract law
 extrajudicial punishment
+Federal Circuit
+fiduciary
+Fifth Circuit
+FISA court
+FISC
 illegal mining
 inchoate offense
 Indian Citizenship Act
 Iran freedom of religion
 Judiciary Act of 1789
 kamikakushi
+KSC & SPO
 limited jurisdiction
 Logan Act
 Malaysia Act 1963
@@ -879,6 +789,7 @@ privilegium fori
 Protected persons
 Reform Act 1867
 regional court
+religious freedom in Armenia
 religious freedom in Iran
 religious freedom in Malaysia
 religious freedom in Pakistan
@@ -892,6 +803,7 @@ social law
 squeeze-out
 standard of care
 summary judgment
+Tenth Circuit
 trustee
 UCMJ
 unenforced law
@@ -902,13 +814,12 @@ administrative offense
 admissible evidence
 allegation
 apology of terrorism
-article
-bankruptcy
 basic structure doctrine
 Bhutan freedom of religion
 Brady Act
 Brady Handgun Bill
 canonical territory
+clause
 CLDSA
 Clean Air Act 1956
 Clean Water Act
@@ -922,9 +833,11 @@ copyright transfer agreement
 Court of Honor
 criminal defence
 dissolution
-distinction
+Eighth Circuit
+Eleventh Circuit
 execution of court decision
 Fixed-term Parliaments Act 2011
+Fourth Circuit
 gender equality in Azerbaijan
 general counsel
 GENIUS Act
@@ -936,6 +849,7 @@ incitement to genocide
 Indian Councils Act 1892
 indignité nationale
 indirect intent
+International Military Tribunal
 Iraq Resolution
 Japan freedom of religion
 judicial restraint
@@ -946,8 +860,8 @@ magistrates' court
 Magnuson Act
 mater semper certa est
 misconduct
-mistake
 Mixed Courts of Egypt
+mund
 nasciturus
 Northern Ireland Act 1998
 objection
@@ -975,11 +889,11 @@ sweat of the brow
 Taiwan Travel Act
 TCJA
 Telecommunications Act of 1996
+Truth in Securities Act
 U.S. state supreme court
 unaccompanied minor
 uti possidetis juris
 vacatio legis
-Valais witch trials
 Violence Against Women Act
 void marriage
 Wilderness Act
@@ -987,14 +901,18 @@ work for hire
 acceptilatio
 acquiescence
 Admiralty court
+ağalık
 Alaska Statehood Act
 Albania freedom of religion
+amanat
+Anarchist Exclusion Act
 Antiquities Act
 Appellate Jurisdiction Act 1876
 at-will employment
 AUMF
 bankruptcy proceedings
 Bayh-Dole Act
+bayrak
 Bipartisan Infrastructure Framework
 Bland-Allison Act
 Busification
@@ -1027,13 +945,15 @@ intuitu personae
 judicial panel
 Kassebaum Kennedy Act
 Kassebaum-Kennedy Act
-Labouchère Amendment
+kurios
 latae sententiae
 legal interpretation
 lower court
+Minnesota Supreme Court
 Mothers' rights
 Newfoundland Act 1949
 paraphrasing of copyrighted material
+People's Court
 Periculum in mora
 political murder
 postliminium
@@ -1057,9 +977,12 @@ setback
 Sheriff court
 Sherman Silver Purchase Act
 short-time working
+Silver Purchase Act
 small claims court
 state liability
 Superfund
+Supreme Court of Georgia
+Supreme Court of Texas
 Syria freedom of religion
 Third Enforcement Act
 tribunal de grande instance
@@ -1073,9 +996,11 @@ abeyance
 abuse of process
 actio Publiciana
 ADEA
+African Court of Justice
 AGOA
 Algeria freedom of religion
 ANCSA
+Appellate Body
 appropriation
 art and culture law
 Belarus freedom of religion
@@ -1098,10 +1023,15 @@ construction contract
 contempt of Congress
 contributory negligence
 cost-plus contract
+Court of Federal Claims
+Court of Session
 Cult Awareness Network
 Cyprus freedom of religion
+D.C. Court of Appeals
+DC Court of Appeals
 digital integrity
 DSHEA
+Eastern Caribbean Supreme Court
 Edmunds-Tucker Act
 en banc
 eviction
@@ -1116,6 +1046,7 @@ Genetic Information Nondiscrimination Act
 GINA
 habeas data
 habitability
+High Court of Justiciary
 High Courts of Pakistan
 Homestead principle
 Hunting Act 2004
@@ -1136,10 +1067,13 @@ legitimate expectation
 lengua propia
 majority opinion
 Maldives religious freedom
+malice
 Māori protest movement
 McCarran-Walter Act
 McMahon Act
+Michigan Supreme Court
 Misfeasance
+mülk
 National Environmental Policy Act
 non-citizen suffrage
 Onion Futures Act
@@ -1173,17 +1107,19 @@ res ipsa loquitur
 respondeat superior
 safe country of origin
 search of persons
+Secret Court of 1920
 Section 508
 Sexual Offences Act 2003
 South Korea religious freedom
 stone circle
 Supreme administrative court
-transfer
+Supreme Court of Hawaii
+Supreme Court of Pennsylvania
 transit passage
 Tribunal de commerce
-unincorporated association
 uses and customs
 usos y costumbres
+Vermont Supreme Court
 Volcker Rule
 waste management law
 women's strike
@@ -1193,11 +1129,13 @@ Yemen freedom of religion
 accomplished offense
 actual malice
 adequacy
-admission
 affectio societatis
+Alaska Supreme Court
 allodial title
-alternate
+arbitral award
 arbitration award
+Ark. Supreme Court
+Arkansas Supreme Court
 Assize Court
 Austria freedom of religion
 Build Back Better Act
@@ -1218,6 +1156,7 @@ deception
 disposition
 doctrine of necessity
 domestic relations
+duress
 education law
 Education Reform Act 1988
 Electronic Communications Privacy Act
@@ -1231,6 +1170,7 @@ express kidnapping
 Extraordinary Appeal
 fidei commissum
 first-sale doctrine
+FISCR
 Foraker Act
 Former Presidents Act
 Gender Recognition Act 2004
@@ -1247,6 +1187,7 @@ Housing Act of 1949
 human trafficking in Benin
 hypothesis
 illicit enrichment
+Illinois Supreme Court
 international system
 Internet crime
 Irish Language Act
@@ -1263,15 +1204,18 @@ legal obligation
 Lèse-Majesté Law of Turkey
 malicious prosecution
 manorial court
+Massachusetts Supreme Judicial Court
 military necessity
 Modern Slavery Act 2015
 Mutual Security Act
+N.D. Cal.
 NAGPRA
 name law
 naming law
 National Insurance Act 1911
 National Registration Act 1939
 New Deal
+Nuclear Industries Indemnity Act
 nuclear law
 Oman freedom of religion
 Organic Act of Guam
@@ -1283,10 +1227,10 @@ political question
 praemunire
 prayer for relief
 Price-Anderson Nuclear Indemnity Act
+principle of necessity
 prior restraint
 probate court
 public action
-public institution
 Qatar freedom of religion
 qualified immunity
 Race Relations Act 1968
@@ -1311,6 +1255,7 @@ Royal Assent Act 1967
 Safe Drinking Water Act
 secret trial
 Sedition Act of 1918
+seisin
 Selective Draft Act
 sex characteristics
 sharia courts in Malaysia
@@ -1324,6 +1269,8 @@ Standard Time Act
 status offense
 substantive due process
 substantive equality
+Supreme Court of Florida
+Supreme Court of Illinois
 synchronization right
 Terrorism Act 2000
 Trade Act of 1974
@@ -1337,15 +1284,19 @@ Uniform Monday Holiday Act
 United States Flag Code
 United States religious freedom
 USA Freedom Act
+USCAAF
+Utah Supreme Court
 Vaine pâture
 Welsh Church Act 1914
 Welsh Language Act 1993
 Whistleblower Protection Act
 wine law
+Wisconsin Supreme Court
 wrongful death claim
 wrongful execution
 21st Century Cures Act
 abstraction principle
+abuse of confidence
 Accessio cedit principali
 act-of-state doctrine
 Ad impossibilia nemo tenetur
@@ -1357,6 +1308,7 @@ Air Pollution Control Act
 Aldrich-Vreeland Act
 Aliens Act 1905
 Alkali Act 1863
+American-Mexican Claims Commission
 animal testing regulations
 Antarctic Conservation Act
 anti-homelessness legislation
@@ -1369,6 +1321,7 @@ autumn assizes
 Bailment
 Banking Act of 1935
 Basic People's Court
+Benelux Court of Justice
 Big Navy Act
 Binding corporate rules
 blank endorsement
@@ -1377,7 +1330,6 @@ Botswana freedom of religion
 breach of trust
 buggery
 Burma freedom of religion
-Butare Four
 calculus of negligence
 CAN-SPAM Act of 2003
 Canadian Aboriginal law
@@ -1397,7 +1349,6 @@ concurring opinion
 Copyright Act 1956
 Copyright Act of 1790
 Copyright Act of 1909
-Court of Justice
 CPSIA
 Criminal Attempts Act 1981
 criminal trial
@@ -1406,6 +1357,7 @@ Crown Proceedings Act 1947
 Cuban Democracy Act
 Curtis Act of 1898
 D.C. Compensated Emancipation Act
+d.o.o.
 dangerous driving
 Data Protection Act 1998
 Data Protection Act 2018
@@ -1418,6 +1370,7 @@ disturbing the peace
 diversity jurisdiction
 drag-along right
 drivers' working hours
+EACJ
 ecclesiastical immunity
 Economy Act of 1933
 Electoral Count Act
@@ -1452,7 +1405,6 @@ Gramm-Rudman-Hollings Balanced Budget Act
 Hawaii Admission Act
 HEA
 Hepburn Act
-heritage
 Higher Education Act
 holder of the procuration
 Housing Act of 1937
@@ -1460,9 +1412,9 @@ Humphrey-Hawkins Full Employment Act
 Immigration Act 1971
 Immigration Act of 1917
 implied consent
-incorporated foundation
 Inquisition in the Netherlands
 inscriptio
+inscriptiones
 intellectual property law
 interlocutory injunction
 intermediate people's court
@@ -1489,6 +1441,7 @@ Local Government Act 1888
 local tax
 Luce-Celler Act of 1946
 mandatory sentencing
+Marengo process
 Marengo trial
 Marine Mammal Protection Act
 martial law in Russia
@@ -1548,6 +1501,7 @@ Race Relations Act 1965
 Radiation Exposure Compensation Act
 Radio Act of 1912
 reasonable time
+recess
 recital
 Refugee Relief Act
 Regional Federal Courts
@@ -1588,6 +1542,7 @@ subreption
 symbolic speech
 tag-along right
 tangibility
+tapu
 tempus regit actum
 Tenure of Office Act
 Thailand freedom of religion
@@ -1600,6 +1555,7 @@ travaux préparatoires
 Treason Felony Act 1848
 tribunal of first instance
 TSCA
+United Nations Dispute Tribunal
 Vagrancy Act 1824
 void for vagueness
 Volksschädling
@@ -1609,9 +1565,7 @@ Weeks Act
 Wheeler-Rayburn Act
 18 United States Code
 2010 Tax Relief Act
-acceptance
 Accession Declaration Act 1910
-accident
 Adam Walsh Act
 adequate remedy
 Administrative Court of Thailand
@@ -1627,6 +1581,7 @@ allegation of transsexuality
 American rule
 amount in controversy
 ancillary relief
+Andean Court
 Angola freedom of religion
 Anti-Pinkerton Act
 Anti-Slavery Day Act 2010
@@ -1634,6 +1589,7 @@ Arbitration Act 1996
 Arkansas Constitution
 Arkansas Constitution of 1836
 Arrondissement Court
+aşar
 Assize courts of Sweden
 attribution
 Audio Home Recording Act
@@ -1643,7 +1599,6 @@ Bankhead Good Roads Act
 Bankhead-Shackleford Act
 Banking Act of 1933
 Barbados Independence Act 1966
-barristers' chambers
 benefit administration
 best evidence rule
 Biologics Control Act
@@ -1696,6 +1651,7 @@ copyright formality
 corporate court
 corporate purpose
 Corpus Juris
+Corte d'Assise
 court of assizes
 Court of JFCM
 Crimes Act of 1790
@@ -1707,6 +1663,7 @@ declaration of intent
 deditio
 Defamation Act 2013
 demilitarization
+dictum
 Diplock courts
 directed verdict
 Disability Discrimination Act 1995
@@ -1715,7 +1672,6 @@ divorce law
 dominium directum et utile
 EAHCA
 eboshi oya
-Educate America Act
 Education Act 1902
 Education Act 1918
 Effet utile
@@ -1731,6 +1687,7 @@ Equality Act 2006
 ERISA
 essential elements
 Ethics in Government Act
+European Nuclear Energy Tribunal
 exception of non-performance
 executive assistance
 exploitation right
@@ -1738,7 +1695,6 @@ extinguishment
 FACE
 FACE Act
 faceless court
-faculty
 fair comment
 Fair Credit Reporting Act
 Fair Sentencing Act
@@ -1758,7 +1714,6 @@ FISMA
 Fixed years
 Food Safety Act 1990
 Food Safety Modernization Act
-foreign company
 Foreign Jurisdiction Act 1890
 Fraud Act 2006
 Fraudulent Mediums Act 1951
@@ -1771,8 +1726,10 @@ Gemeinnützigkeit
 gender equality in Tajikistan
 Gesellschaft mit beschränkter Haftung
 Gold Reserve Act
+grama
 Gun laws in Texas
 handover
+Harrison Anti-Narcotic Act
 Harrison Narcotics Tax Act
 Hart-Scott-Rodino Antitrust Improvements Act
 head office
@@ -1831,6 +1788,7 @@ legal custody
 legal recognition
 legislative veto
 Levering Act
+Levering Oath Law
 Local Government Act 1929
 Lodge-Fish Resolution
 long-arm jurisdiction
@@ -1851,7 +1809,6 @@ Migratory Bird Conservation Act
 Morrill Anti-Bigamy Act
 municipal court
 Music Modernization Act
-National Education Goals
 National Firearms Act
 National Housing Act
 Naturalization Act of 1798
@@ -1884,6 +1841,7 @@ Police Court
 position of trust
 possessor
 Potato Act of 1935
+Potato control law
 press freedom in Burma
 press freedom in Djibouti
 press freedom in Ukraine
@@ -1898,7 +1856,6 @@ psephisma
 Public Law 566
 Public Order Act 1986
 Public Schools Act 1868
-public service company
 public trial
 public welfare law
 putative father
@@ -1927,6 +1884,7 @@ Residenzpflicht
 Romania freedom of religion
 rule of law
 Russian Famine Relief Act
+SADC Tribunal
 Scotland Act 1978
 Scotland Act 2012
 Scottish Languages Act 2025
@@ -1982,7 +1940,6 @@ Women's Educational Equity Act
 2008 U.S. Farm Bill
 Abandoned Shipwrecks Act
 Abortion Act 1967
-absence
 absolute immunity
 ACAA
 account of profits
@@ -2015,6 +1972,7 @@ Amnesty Act of 1872
 Andorra freedom of religion
 Anguilla Act 1980
 Animal Welfare Act 2006
+animus
 Antideficiency Act
 Appalachian Regional Development Act
 appearance of impropriety
@@ -2042,7 +2000,6 @@ Bankhead-Jones Act of 1935
 Bankruptcy Act 1869
 Bankruptcy Act 1914
 Bankruptcy Act of 1898
-battery
 Beef Bones Regulations 1997
 Belgium freedom of religion
 beneficium
@@ -2070,6 +2027,7 @@ California MUTCD
 Canadian appellate court
 cantonal tribunal
 Care Standards Act 2000
+Caribbean Community Administrative Tribunal
 case in point
 Casus
 catholica diocesan court
@@ -2099,6 +2057,7 @@ Coal Act
 Coal Mines Act 1911
 Coastal Zone Management Act
 coercive measures
+cohabitant
 cohabitor
 collateral source rule
 collective redress
@@ -2112,7 +2071,6 @@ Commonwealth Immigrants Act 1968
 communications law
 Companies Act 2006
 comparative criminal law
-compensation
 Compounding a felony
 Compounding treason
 Comprehensive Crime Control Act
@@ -2122,7 +2080,6 @@ condition precedent
 condition subsequent
 conflict of legal norms
 Connected Vehicle Security Act
-consequence
 consideration in English law
 consideration under American law
 Consolidated Appropriations Act 2023
@@ -2137,8 +2094,6 @@ Consumer Rights Act 2015
 Contingencies Fund Act 2021
 Continuance
 Continuing Criminal Enterprise
-contribution
-conversion
 Copyright Act of 1831
 Copyright Act of 1870
 COSHH
@@ -2227,13 +2182,11 @@ Enrollment Act
 Environmental Protection Act 1990
 Equal Pay Act 1970
 equality of treatment
-ESMA mega-case
 European Authorized Representative
 Every Student Succeeds Act
 EWRA
 ex officio
 executory contract
-exhibit
 Expatriation Act of 1868
 Expatriation Act of 1907
 expectancy of office
@@ -2263,6 +2216,7 @@ Foreign Assistance Act
 free choice of employment
 Freedom of political communication
 freedom suit
+GEFTA
 gender equality in Morocco
 gender equality in Nicaragua
 General Revision Act
@@ -2277,8 +2231,8 @@ Grain Futures Act
 great irreverance
 gross lease
 Ground Game Act 1880
+Guffey Act
 Guffey Coal Act
-Guffey-Snyder Act
 half-proof
 Hatch Act of 1887
 Hatch-Waxman Act
@@ -2301,6 +2255,7 @@ Humphrey-Kennedy amendment
 Hypnotism Act 1952
 Iceland freedom of religion
 Identity Documents Act 2010
+illegal trade
 illicit trade
 Immigration Act of 1882
 Import Duties Act 1932
@@ -2497,12 +2452,10 @@ predominant language
 Preemption Act of 1841
 Pregnancy Discrimination Act
 PREP Act
-preparation
 Prescription Drug Marketing Act
 press freedom in Bangladesh
 presumption of authorship
 presumption of constitutionality
-principal
 principle of evidence-based trials
 Printing Act of 1895
 Prior consistent statements
@@ -2511,7 +2464,6 @@ Prison Act 1952
 Prison Court
 Prison Security Act 1992
 Privacy Act of 1974
-privilege
 PRMPA
 procedural due process
 property abstract
@@ -2524,6 +2476,7 @@ Public Health Service Act
 Public Law 116-1
 Public Law 42-16
 Public Law 476
+puisne
 pure speech
 Purveyance
 racial hoax
@@ -2540,7 +2493,6 @@ Refugee Act
 regional administrative court
 Regional Labor Courts
 Registered Designs Act 1949
-regulations
 regulatory power
 relator
 reliance damages
@@ -2596,6 +2548,7 @@ Senedd Reform Act
 Senedd Reform Bill
 Separate Car Act
 sequester
+serhat
 serial crime
 Serious Crime Act 2007
 Servicemembers Civil Relief Act
@@ -2615,6 +2568,7 @@ Small Business Act
 Smith-Hughes Act
 social confidentiality
 social court
+soke
 Solatium
 Somalia freedom of religion
 South Korean ordinary court
@@ -2629,7 +2583,6 @@ State of Natural Disaster
 state sovereignty
 statutory name
 Steerage Act of 1819
-Stiftung
 Stock-Raising Homestead Act
 Straw man
 Street Offences Act 1959
@@ -2660,7 +2613,6 @@ Tanzania freedom of religion
 Taxes Management Act 1970
 Tennessee Heritage Protection Act
 Tenure review
-Territorial basin public establishment
 territorial sovereignty
 Terrorism Act 2006
 tertius
@@ -2685,18 +2637,17 @@ Transport Act 1968
 Transport Act 1980
 Transport Act 1985
 Transport Act 2000
-transportation
 transportation law
 Treachery Act 1940
 Treason Act 1842
 Treason Act 1945
-treating
 treaty rights
 treble damages
 trespass to the person
 Trials against Nazi Crimes
 tribunal de proximité
 tribunal judiciaire
+trover
 Trustee Act 1925
 Tucker Act
 U.S. Code Title 2
@@ -2714,7 +2665,6 @@ unenforceable
 unenumerated rights
 unfair labor practice
 Uniform Time Act
-unincorporated entity
 unindicted co-conspirator
 United Kingdom religious freedom
 United Nations Participation Act
@@ -2747,10 +2697,11 @@ Williams Act
 Wills Act 1837
 Wisconsin Circuit Court
 witch trial
-witch trials in Nysa
 Witch Trials in Vaud
 Witnesses Act 1806
+wittum
 Workmen's Compensation Act 1906
+yūshi
 zhunzheng
 1777 Constitution of Vermont
 1973 U.S. Farm Bill
@@ -2759,7 +2710,6 @@ zhunzheng
 2002 Farm Bill
 2016 Colorado Proposition 106
 2017 omnibus spending bill
-2023 Datong rape case
 2025 Colorado Proposition LL
 2025 Colorado Proposition MM
 AAVA
@@ -2769,7 +2719,6 @@ absolute defence
 Academies Act 2010
 acceleration
 acceleration clause
-accommodation
 accounting law
 acknowledgment
 act of aggression
@@ -2864,6 +2813,8 @@ Ancient Monuments Act 1931
 androna
 Animal Health Act 1981
 Animals Act 1971
+animo
+annata
 antecedent
 anti-alienation clause
 Anti-Coolie Act
@@ -2901,9 +2852,11 @@ asonada
 assault causing bodily harm
 Assets for Independence Act
 assisted person
+assize
 Assurance Companies Act 1909
 astrateia
 ASUCI Constitution
+ATCE
 Atomic Energy Act 1946
 Atomic Energy Act 1989
 attachiamenta bonorum
@@ -2911,7 +2864,6 @@ Auctioneers Act 1845
 Audit Commission Act 1998
 Australia Act 1986
 Austria state law
-autarky
 authorship
 Automated Vehicles Act 2024
 Auxiliary Forces Act 1953
@@ -2941,14 +2893,14 @@ Beerhouse Act 1830
 Belize Act 1981
 benchbook
 beneficial interest
-Beobachtungsobjekt
-bestuursorgaan
 Betriebsrisikolehre
 better claim
 Betting Duties Act 1963
 bevatan
+biland
 Bilingual Education Act
 bill of particulars
+biltog
 Bingo Act 1992
 birth domicile
 Bishops Act 1597
@@ -2998,3 +2950,51 @@ California Insurance Equality Act
 California Senate Bill 1534
 California Senate Bill 206
 California Senate Bill 41
+California Senate Bill 684
+California state-funded travel ban
+Cambridge University Act 1856
+Canadian inferior court
+Cancer Act 1939
+canonical faculties
+canonical suppression
+capio mortis causa
+Capital Allowances Act 1968
+Capital Allowances Act 1990
+Capital Allowances Act 2001
+Capper-Ketcham Act
+Capper-Volstead Act
+Car Tax Act 1983
+Caravan Sites Act 1968
+CARE Act
+careless handling
+Carl D. Perkins Act
+Carlin Act
+Casey's Law
+cat's paw theory
+Catalonia Religions Map
+catch-land
+CATO
+causing danger
+CDAPCA
+CDM Regulations
+CDTA Act
+Celler-Kefauver Act
+Cemeteries Clauses Act 1847
+Census Act 1920
+Central dunning court
+Central Intelligence Agency Act
+certified copy
+Chalan
+Chamberlain-Ferris Act
+Chancel Repairs Act 1932
+Chancery Amendment Act 1858
+Chancery Regulation Act 1862
+change of position
+Channel Islands Measure 2020
+Channel Tunnel Act 1987
+Charities Act 1960
+Charities Act 1993
+Charities Act 2006
+Charities Act 2011
+Check 21 Act
+Chemical Safety Improvement Act

@@ -276,7 +276,7 @@ class Wirtschaft(Fachgebiet):
         fly_out(p, t, f, k, draw, FLY_ROUTES)
 
     def error_decor(self, p: QPainter, left: float, top: float) -> None:
-        x, y = left + 4.0, top - 2.0
+        x, y = left - 8.0, top - 3.5
         ringed(p, rounded(x, y, 15.0, 12.0, 2.4), WHITE, 1.2, 3.0)
         fall = QPainterPath(QPointF(x + 2.5, y + 3.0))
         fall.lineTo(x + 6.0, y + 6.0)

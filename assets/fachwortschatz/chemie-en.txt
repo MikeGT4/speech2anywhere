@@ -1,35 +1,43 @@
 hydrogen
 aluminium
+helium
 nitrogen
+sulfur
 lithium
 deoxyribonucleic acid
 DNA
-mercury
+sodium
 calcium
 beryllium
+neon
+zinc
 magnesium
-protein
-silicon
+petrol oil
 petroleum
 potassium
 fluorine
 phosphorus
 uranium
 chlorine
+boron
+argon
 titanium
-diamond
 chromium
+iodine
 arsenic
-platinum
-tobacco
+cobalt
 manganese
+nickel
 biochemistry
 krypton
 gallium
 vanadium
+barium
+radium
 bromine
 francium
 organic chemistry
+radon
 selenium
 cadmium
 scandium
@@ -38,8 +46,11 @@ antimony
 caesium
 germanium
 rubidium
+xenon
 bismuth
+carbohydrate
 tungsten
+wolfram
 iridium
 niobium
 plutonium
@@ -47,24 +58,29 @@ polonium
 carbon dioxide
 palladium
 molybdenum
+osmium
 hafnium
 tantalum
 tellurium
 yttrium
 astatine
 technetium
+indium
 rhodium
 ruthenium
 thorium
 zirconium
 actinium
 neptunium
+alcohols
 lanthanum
 rhenium
 thallium
 europium
 rutherfordium
+cerium
 hassium
+antibiotic
 samarium
 seaborgium
 californium
@@ -77,7 +93,7 @@ gadolinium
 meitnerium
 promethium
 protactinium
-vitamin
+curium
 dysprosium
 fermium
 neodymium
@@ -87,6 +103,7 @@ praseodymium
 berkelium
 darmstadtium
 terbium
+erbium
 lawrencium
 mendelevium
 roentgenium
@@ -100,121 +117,180 @@ chemical reaction
 thulium
 livermorium
 flerovium
+alloy
 gasoline
 tennessine
 inorganic chemistry
+lipid
 ribonucleic acid
 RNA
 physical chemistry
 methane
 analytical chemistry
 ammonia
+penicillin
 amino acid
 cocaine
 glucose
+marble
 thermometer
 natural gas
 aspirin
-Nicotine
+chemical bond
+nicotine
 olive oil
 supernova
 carbon monoxide
+potential of hydrogen
 cholesterol
+hydrocarbon
+quark
+ozone
 vitamin C
+wax
+amber
+opium
 paracetamol
+quartz
+ruby
+alkane
 sulfuric acid
 conflagration
 insulin
+starch
 chlorophyll
+heroin
 limestone
 hemoglobin
+organic compound
 sapphire
 covalent bond
 caffeine
 kerosene
+kerosine
+polymer
 graphite
 nitric acid
 nucleic acids
 acetic acid
+alkene
 benzene
 green tea
 hydrochloric acid
 cellulose
 combustion
+gypsum
 morphine
 mortar and pestle
+adrenaline
 epinephrine
+bicarbonate of soda
 distillation
+distilling
 dopamine
 electrolysis
 sodium bicarbonate
+sodium hydrogen carbonate
 sucrose
 testosterone
-explosion
 ionic bond
 spectroscopy
 oxidation number
+oxide
+phenol
+redox
 vitamin A
 vitamin D
+aldehydes
+alkyne
 catalysis
 crystallography
+nucleotide
 sodium hydroxide
 asbestos
 chemical engineering
+electronegativity
 lysergic acid diethylamide
+urea
 2020 Beirut explosions
+carboxylic acid
+fructose
 keto-D-fructose
 osmosis
 sodium chloride
+ethane
+ethers
 methanol
 adenosine triphosphate
 ATP
 calcium carbonate
 DL-methamphetamine
+ester
+estrogen
 geochemistry
 ibuprofen
+mica
 sildenafil
 silicon dioxide
+steroid
 Tunguska event
 alpha particle
+amine
 β-lactose
+asphalt
 cast iron
 citric acid
 electrochemistry
 ethylene
+halite
 nitroglycerin
 rock asphalt
-Thiamin
-thiaminium
+Thiamine
 tritium
 frankincense
 potassium nitrate
 riboflavin
 stainless steel
+Vitamin Bi
+Vitamin G
 acetylene
 caramel
+inorganic compound
 palm oil
+peptide
 sulfur dioxide
 acetone
+butane
 camphor
 chromatography
 formic acid
+glycerin
 glycerol
 glycine
+Kampfer
+ketone
+macromolecule
 oxytocin
 propane
 sodium carbonate
 TNT
+trinitrotoluene
 vitamin K
 adenine
+agar
 calcite
 carbonic acid
-DL-ketamine
 hydrogen sulfide
+ketamine
 melatonin
+molar mass
 polysaccharide
+fatty acid
+functional group
 hydrogen peroxide
 ionization
+phosphates
+vitamin B9
 allotropy
 amoxicillin
 corundum
@@ -224,62 +300,97 @@ glycogen
 hematite
 L-alanine
 MDMA
+Paraformaldehyde
 phosphoric acid
 polyvinyl chloride
 PVC
 serotonin
 vitamin E
+antioxidant
 calcium hydroxide
 cytosine
 hydrogen cyanide
 hydrolysis
+monosaccharide
+nitrate
+pyrite
+chitin
 Crocus City Hall attack
 Great Fire of London
 guanine
 maltose
 monosodium L-glutamate
+pheromone
+alum
+Alumina
 aluminium oxide
+Aluminum trioxide
 ammonium chloride
 ammonium nitrate
+chloride of ammonium
 glucagon
 molasses
+salinity
+titration
+toxin
 2016 Brussels bombings
 aqua regia
+calcium monoxide
 calcium oxide
 chloroform
+cyanide
 DDT
+dichloro-diphenyl-trichloroethane
 DL-amphetamine
 fuel cell
 gelatin
 graphene
 heavy water
+internal energy
+mass spectrometry
 mustard gas
 orthoboric acid
 oxalic acid
 polyethylene
+polythene
 potassium permanganate
+rac-amphetamine
+borax
 cortisol
 hydrogen bond
+ionization energy
 nitrous oxide
 quantum chemistry
+sarin
 statistical mechanics
 thymine
 adsorption
 DL-glutamic acid
+funnel
+gluten
 photochemistry
 quinine
+ribose
 toluene
 weathering
 wildfire
+B vitamin
 codeine
+copper sulfate
 cupric sulfate
 diethyl ether
+disaccharide
+ethyl ether
 fluorite
 kaolinite
 L-arginine
 potassium hydroxide
+propene
 propylene
 titanium dioxide
+titanium peroxide
+vitamin B
+zircon
 acetylcholine
 Archduke Franz Ferdinand murder
 assassination of Franz Ferdinand
@@ -292,59 +403,91 @@ L-valine
 liquified petroleum gas
 metallic bond
 naphthalene
+Noradrenaline
 norepinephrine
 potassium chloride
+sati
 sunflower oil
 transcription
+triacylglycerol
+triglyceride
 tryptophan
+biotin
+carbonate
+carbonate of potash
 chalcedony
 chemical kinetics
+chloride
 coconut oil
+hand hygiene
 hand washing
 hydrazine
 L-leucine
+monomer
 n-pentane
 pantothenic acid
 polystyrene
 potassium carbonate
 salicylic acid
 sodium nitrate
+uracil
 uric acid
+Vitamin H
 acetaldehyde
+beta-Phenyl-L-alanine
 bubble tea
 collagen
 DL-proline
+ethyl aldehyde
 L-glutamine
 L-histidine
 L-isoleucine
 L-tyrosine
+lard
 phenylalanine
+Proline
+purine
+tannin
 thermochemistry
 Tyr
+amides
 anabolism
-DL-methadone
 DL-methionine
+hydroxide
+hydroxide salt
 Manchester Arena bombing
 methadone
+octane
+phospholipids
+spinel
+sulfate
 2019 Notre Dame fire
 amalgam
+ammonium
 ammonium cation
+ammonium ion
 aniline
+baryte
 Boston Marathon bombings
 galactose
+hexane
 hydrometer
 interferon
 L-serine
 Notre-Dame de Paris fire
 olivine
+peroxide
 protein biosynthesis
+vapor pressure
 β-D-2-deoxyribose
 aldosterone
 benzoic acid
+carotene
 crystallization
 DL-asparagine
 DL-lysine
 galvanic cell
+Half-cystine
 hydrogen chloride
 isoprene
 L-Cysteine
@@ -358,7 +501,10 @@ sodium sulfate
 zinc oxide
 adenosine
 ambergris
+ambra grisea
+ambre gris
 aspartame
+barbiturates
 calcium chloride
 carbon nanotube
 desalination
@@ -366,20 +512,29 @@ diazepam
 Haber-Bosch process
 heparin
 lithium-ion battery
+litmus
 magnesium oxide
 oleic acid
+paraffin
 paraffin wax
 phosgene
 pyrimidine
 stereochemistry
 tetracycline
 vulcanization
+accumulator
 acid-base reaction
 ammonium sulfate
 amylase
+androgen
 barium sulfate
 Diclofenac
+ethylene alcohol
 ethylene glycol
+heterocycle
+heterocyclic compound
+lignin
+pectin
 picric acid
 polyester
 polypropylene
@@ -391,15 +546,19 @@ sertraline
 streptomycin
 2019 Sri Lanka bombings
 butyric acid
+casein
 electrophoresis
 exothermic reaction
 Great Fire of Rome
-laundry
+mercaptan
 nitric oxide
 palmitic acid
 silicone
 styrene
+thiol
 1H-indole
+CFC
+chlorofluorocarbon
 creatine
 doxycycline
 ethyl acetate
@@ -407,6 +566,7 @@ fluoxetine
 growth hormone
 hair dryer
 metformin
+omega-3 fatty acid
 perchloric acid
 phenolphthalein
 phosphine
@@ -416,53 +576,73 @@ potassium cyanide
 pyruvic acid
 semaglutide
 sesame oil
+somatropin
 stearic acid
 sulfur trioxide
 sulfurous acid
 tartaric acid
 thalidomide
+Thermos
 ununennium
 vacuum flask
 vitamin B6
+aliphatic compound
 amphibole
+amphoteric
 amphoterism
+anthocyanins
 azithromycin
 calorimeter
 carbon tetrachloride
 ChAdOx1 nCoV-19
 chemical synthesis
 choline
+ephedrine
+furan
 Gam-COVID-Vac
+glycoprotein
 hydroxychloroquine
-L-ephedrine
 lidocaine
+Lignocaine
 methylphenidate
 metronidazole
 propofol
 Reichstag fire
 saccharin
+Sputnik V
 succinic acid
+synthesis
 taurine
 theoretical chemistry
 Vaxzevria
 acrylic acid
 ACTH
 adipic acid
+adrenocorticotropic hormone
 alprazolam
 astrochemistry
 calcium carbide
+cation
 corticotropin
+cycloalkane
 cyclohexane
 DL-malic acid
+Isopropanol
 isopropyl alcohol
 magnesium sulfate
+musk
+nitrite
 nitrogen oxide
 potassium iodide
+sec-propanol
 silicon carbide
 strychnine
 tweezers
+acetate
 aluminum chloride
+Arsenic oxide
 arsenic trioxide
+arson
 cannabidiol
 chloramphenicol
 chloroquine
@@ -476,9 +656,13 @@ interstitial cell-stimulating hormone
 L-menthol
 lorazepam
 magnesite
+matcha
 midazolam
 neutralization
+nucleoside
+pentose
 polymer chemistry
+rutile
 test tube
 theobromine
 transfer RNA
@@ -487,30 +671,44 @@ vinyl chloride
 γ-aminobutyric acid
 17β-estradiol
 adenosine diphosphate
+Adenosine pyrophosphate
+albumen
 ampicillin
+anion
 anthracene
+beta-Estradiol
+bicarbonate
 bicarbonate ion
 Bunsen burner
+carbide
 carbon-14
 cassiterite
+cis-Estradiol
 computational chemistry
 crucible
 D-sorbitol
+decane
 dexamethasone
 egg white
 erythromycin
+hydrogen carbonate ion
 iron oxide
 melamine
 nitrous acid
+nonane
 oxycodone
 peptide bond
 potassium bromide
 psilocybin
+Sorbitol F
+Sorbitol S
 tramadol
 activated carbon
 aflatoxins
 aluminum hydroxide
+aromatic hydrocarbon
 benzaldehyde
+benzoic aldehyde
 biethylene
 bupropion
 butadiene
@@ -520,15 +718,18 @@ chain reaction
 coumarin
 ferrous sulfate
 ferrous sulphate
+haloalkane
 herbal tea
 iced tea
 imidazole
+inulin
 iron oxide red
 ivermectin
 Kevlar
 lycopene
 naproxen
 omeprazole
+oolong
 PET
 PETE
 Petri dish
@@ -538,6 +739,7 @@ potassium chlorate
 propionic acid
 red iron oxide
 remdesivir
+terpene
 amitriptyline
 Bakelite
 carbon disulfide
@@ -545,6 +747,7 @@ castor oil
 ciprofloxacin
 cryolite
 glutathione
+glycoside
 hydrogen bromide
 hygroscopy
 Kepler's Supernova
@@ -553,50 +756,69 @@ mescaline
 phencyclidine
 prostaglandins
 saponin
+sulfide
 tetrahydrocannabinol
 THC
 thyroid-stimulating hormone
+Thyrotropin
 turpentine
 2016 Istanbul airport attack
 acrolein
+beaker
 bisphenol A
+carotenoid
 centrifuge
 cyclopropane
 DNA polymerase
 ethylene oxide
 flash point
 fumaric acid
+glucocorticoid
+heme
 human follitropin
+Hyaluronan
 hyaluronic acid
 hydrogen fluoride
 hydrogenation
 linseed oil
 medicinal chemistry
 nicotinamide adenine dinucleotide
+Nicotinamide dinucleotide
 Oklahoma City bombing
+organic acid
+petrolatum
 petroleum jelly
 precipitation
+ricin
 sodium nitrite
 water purification
-4-isopropenyl-1-methylcyclohexene
+xylene
 acetic anhydride
 aciclovir
 agricultural chemistry
 barium chloride
 calcium sulfate
 cellophane
+cellulose nitrate
 cyanogen
 cyclonite
 DCM
 dichloromethane
-dipentene
 ferric chloride
 haloperidol
+hydride
+hypochlorite sodium
+indigo
 L-scopolamine
+limonene
 methylene blue
+nitrile
 nitrocellulose
 oseltamivir
+oxalic nitrile
 peanut oil
+pipet
+pipette
 polyurethane
 pyridoxine
 pyrrole
@@ -604,23 +826,28 @@ reaction rate
 reverse osmosis
 sodium bromide
 sodium hypochlorite
+trans fat
 vitamin B3
 white tea
 absorption
 acid dissociation constant
 acrylamide
-Acrylglas
+acrylic
 ammonia solution
+ammonium hydroxide
 arachidonic acid
+Berlin blue
 biopolymer
 burette
 catalase
 cetirizine
+chloromethane
 clonazepam
 cocoa butter
 creatinine
 edetic acid
 endothermic reaction
+fluoride
 liquid oxygen
 LOx
 marinating
@@ -632,6 +859,7 @@ oxidation
 oxidative phosphorylation
 PMMA
 polymethyl methacrylate
+propanol
 propranolol
 propyl alcohol
 Prussian blue
@@ -640,6 +868,7 @@ silver chloride
 sodium acetate
 sodium cyanide
 sodium cyclamate
+sterol
 substitution reaction
 thyroxine
 trypsin
@@ -652,17 +881,23 @@ addition reaction
 aluminium sulfate
 angle bisector
 bonfire
+bromide
 calorimetry
 carbamazepin
+catecholamine
 chloric acid
 chlorobenzene
 cyclobutane
+diene
 double bond
+Erlenmeyer
 Erlenmeyer flask
 filtration
 fish oil
 fractional distillation
 furosemide
+gamma-Hydroxy butyrate
+hexamine
 hydrochlorothiazide
 hypernova
 hypochlorous acid
@@ -679,6 +914,7 @@ potassium sulfate
 reverse transcriptase
 somatostatin
 triiodothyronine
+vanilla
 vanillin
 2024 Hezbollah pager explosions
 acetamide
@@ -686,9 +922,13 @@ amylopectin
 anthraquinone
 atorvastatin
 auto-da-fé
+auto-de-fe
 ayahuasca
+biosynthesis
 biosynthetic process
 carmine
+chemical property
+coordination complex
 cyclopentane
 death by burning
 dextrin
@@ -710,31 +950,47 @@ lithium chloride
 magnesium carbonate
 masala chai
 measuring cylinder
+membrane potential
+metal complex
 N-acetyl-L-cysteine
 n-heptane
 naloxone
+oligosaccharide
 peptidase
 phenobarbital
+phenols
 phosphorus pentoxide
+Protease
+proteinase
 silica gel
 sodium fluoride
+transmembrane potential
 unbinilium
+xylose
 zidovudine
 β-thujaplicin
 2026 Crans-Montana bar fire
+aminoglycoside
+aminoglycoside antibiotic
 amlodipine
 amylose
 arsenic trihydride
-Benzeneacrylic acid
 butanol
 carnitine
+cephalosporin antibiotic
+cephalosporins
 chlorpromazine
+cinnamic acid
 clindamycin
 cortisone
 dextromethorphan
 digoxin
 gentamicin
+gibberellins
 gluconeogenesis
+high-performance liquid chromatography
+high-pressure liquid chromatography
+HPLC
 hydronium
 isobutane
 lead nitrate
@@ -746,14 +1002,14 @@ methylamine
 methylmalonic acid
 montmorillonite
 naphtha
+novichok
 pentobarbital
-pentobarbitone
-Phenylacrylic acid
 plumbous nitrate
 potassium dichromate
 potassium perchlorate
 pregabalin
 quetiapine
+silicate
 sodium thiosulfate
 sulfur hexafluoride
 abscisic acid
@@ -765,36 +1021,44 @@ biomolecule denaturation
 cementite
 cephalexin
 chromic acid
+copper chloride
+copper dichloride
 copper monoxide
 copper oxide
 cupric chloride
 cuprous chloride
 curcumin
+denaturation
 dimethyl ether
 dimethyl sulfoxide
 dinitrogen pentoxide
 distilled water
 Earl Grey tea
 electroplating
+fulminate of mercury
 furfural
+glycolipid
 halogenation
 halothane
+hexose
 inositol
 iodoform
+iso-octane
 Isobutyltrimethylmethane
 isoniazid
-isooctane
 lead monoxide
 lithium hydroxide
 magnesium hydroxide
 manganese dioxide
 meloxicam
 mercury fulminate
+methyl acetylene
 methyl orange
 milk tea
 modafinil
 neoprene
 nicotinamide adenine dinucleotide phosphate
+nitro compound
 O-ethyl S-2-diisopropylaminoethyl methylphosphonothioate
 pentaerythritol tetranitrate
 pethidine
@@ -812,13 +1076,18 @@ zinc chloride
 abacavir
 adenosine cyclic phosphate
 adenosine monophosphate
+Adenosine phosphate
 Agent Orange
+ammonium acid carbonate
 ammonium carbonate
 ammonium hydrogen carbonate
 arabinose
+aromatic compound
 atmospheric chemistry
+b-carotene
 barium oxide
 beryllium oxide
+beta carotene
 buprenorphine
 butanone
 chemical polarity
@@ -826,8 +1095,9 @@ chlorhexidine
 chorionic gonadotropin
 citalopram
 clotrimazole
-Colchicine
+colchicine
 condensation reaction
+Cyclic Adenosine Monophosphate
 DL-glyceraldehyde
 ethanol fermentation
 finasteride
@@ -839,20 +1109,24 @@ hydroxyacetic acid
 L-ornithine
 lauric acid
 loperamide
+lyophilization
 Maillard reaction
 martensite
+methyl ethyl ketone
 metoclopramide
 myristic acid
-N-acetyltrimethylcolchicinic acid methyl ether
 nitromethane
 nucleotide base
 organic synthesis
+osmium oxide
 osmium tetroxide
 phenytoin
 phthalic acid
+polarity
 polychlorinated biphenyl
 retinol
 risperidone
+S-Ornithine
 sodium oxide
 sodium peroxide
 sodium sulfide
@@ -868,6 +1142,9 @@ albendazol
 alpha-linolenic acid
 benzyl alcohol
 benzylpenicillin
+beta-lactam antibiotic
+butene
+butylene
 calcium fluoride
 calcium nitrate
 ceftriaxone
@@ -878,7 +1155,6 @@ coenzyme A
 cuprous oxide
 cyclosporine
 D-glucosamine
-d-pseudoephedrine
 Damascus steel
 dimethyltryptamine
 diphenhydramine
@@ -889,24 +1165,30 @@ Grenfell Tower fire
 Halifax explosion
 heat of combustion
 indomethacin
+iodide
 iron monoxide
 lamotrigine
 levodopa
 levofloxacin
 lithium bromide
+lutein
+Ofloxacin
 olanzapine
 ondansetron
 paclitaxel
 perchlorate ion
+petrochemicals
 petrochemistry
 phenanthrene
 piperidine
 potassium fluoride
 pseudoephedrine
+psi-ephedrine
 quinoline
 rhodonite
 rifampicin
 sodium sulfite
+solder
 soybean oil
 tartrazine
 tautomerism
@@ -915,35 +1197,45 @@ triple bond
 valeric acid
 vinyl acetate
 Wang Fuk Court fire
+xanthophyll
+β-lactam antibiotic
 2-phenethylamine
+acetals
+acetic acid chloride
 acetophenone
 acetyl chloride
 acetyl coenzyme A
+aldose
 alizarin
 alkylation
-anhydrous cyclophosphamide
 barium nitrate
+beta-phenethylamine
 biphenyl
 boron nitride
 calcium oxalate
 cannabinoids
+cell culture
 chlorine dioxide
 chloroethane
 clozapine
 corn starch
 cyclophosphamide
 Dimethyl formamide
-Dimethyl-Formamide
+Dimethylformamide
 dinitrogen tetroxide
 dioxane
+diphenyl
 elastomer
 erythritol
 evapotranspiration
 ferrous chloride
+fibrin
 flavin adenine dinucleotide
 guanosine triphosphate
+halide
 hexadecane
 hornblende
+kaolin
 L-selenocysteine
 losartan
 mebendazole
@@ -951,25 +1243,35 @@ mineral oil
 perovskite
 pig iron
 polycarbonate
+porphyrins
 portland cement
 potassium aluminium sulfate dodecahydrate
-proazamine
 procaine
+promethazine
+propanediol
 propylene glycol
 ranitidine
+reducer
+reducing agent
 RNA splicing
+S-acetyl-CoA
+selenium cysteine
 sigma bond
 sodium benzoate
 sodium thiopental
 Solvay process
+splicing
 sucralose
 supramolecular chemistry
 Tabun
+tallow
 tamoxifen
 theophylline
+thiopental sodium
 thiophene
 trichloroethene
 ubidecarenone
+Ubiquinone
 unbiunium
 undecane
 uranium-235
@@ -978,27 +1280,32 @@ uridine
 vancomycin
 VSEPR theory
 yellow tea
-α-propylene glycol
 2021 Kabul airport attack
 acetanilide
 allopurinol
 amiodarone
 ammonium dichromate
+Amymi
 angiotensins
 benzidine
 benzimidazole
 butan-1-ol
 calcium hypochlorite
+Catechol
 celecoxib
+chlorite
 chlorite group
 chlorous acid
 cobaltous chloride
 coordinate covalent bond
+copper-nickel
 corn oil
 cupronickel
 D-Mannitol
 disproportionation
 dodecane
+electrophilic
+enol
 escitalopram
 eugenol
 firestorm
@@ -1010,28 +1317,39 @@ gutta-percha
 hydrocodone
 hydroxylamine
 L-citrulline
+lactam
+lactone
 lithium hydride
 LOM
-Lopresor
 luminol
 Mannitol
 mercuric oxide
 mercury oxide
 methyl bromide
+metoprolol
 minoxidil
 molecular orbital theory
 MOT
 neomycin
 niacinamide
+nicotinamide
+Nicotine acid amide
+nucleophile
+nucleophilic
+PAH
 pantoprazole
 papaverine
+pH indicator
 polyamide
+polycyclic aromatic hydrocarbons
 potassium ferricyanide
 potassium ferrocyanide
 potassium oxide
 prednisolone
 pyrocatechol
-Seloken
+separation process
+septic tank
+silane
 silver bromide
 sorbic acid
 spironolactone
@@ -1039,6 +1357,7 @@ sylvite
 tetrapotassium hexacyanoferrate
 thiazole
 trazodone
+volatile organic compound
 wrought iron
 ABS
 acesulfame potassium
@@ -1055,9 +1374,12 @@ butter tea
 caproic acid
 captopril
 cesium chloride
+chemical potential
 chloral hydrate
+chloral monohydrate
 chlorate ion
 cholecalciferol
+chromium oxide
 clarithromycin
 covellite
 cupric hydroxide
@@ -1067,39 +1389,54 @@ disulfiram
 DL-homocysteine
 Domodedovo International Airport bombing
 donepezil
+doping
 eternal flame
 ethanethiol
 ferrocene
+free energy
 gallic acid
 geraniol
 gibbsite
+glyceride
 guanosine
 helium-3
+Helmholtz energy
+Helmholtz free energy
 hydration reaction
+ketose
 laboratory flask
 lead tetraoxide
 lead tetroxide
+lipopolysaccharide
+macrolides
 mercuric chloride
+Methanethiol
 methyl mercaptan
 methyl methacrylate
 mirtazapine
 perlite
 povidone-iodine
 protein folding
-reduction
 refining
 resorcin
-septic tank
+Resorcinol
 sillimanite
 simvastatin
 sodium chlorate
 sparkler
 stannic chloride
 stannous chloride
+sulfonic acid
+thioether
+thymol
+tin dichloride
 zinc sulfide
+zwitterion
 2010 Moscow Metro bombings
 2024 Kerman bombings
 assassination of Benazir Bhutto
+azo compound
+Benazir Bhutto murder
 benzocaine
 benzyl chloride
 bisoprolol
@@ -1107,6 +1444,7 @@ butyl acetate
 carbon black
 cellulose acetate
 cetane number
+chromic oxide
 chromium trioxide
 Darjeeling tea
 deoxythymidine
@@ -1118,6 +1456,7 @@ elimination reaction
 ergocalciferol
 ethambutol
 extraction
+freon
 fulminic acid
 incineration
 isotretinoin
@@ -1127,14 +1466,19 @@ lead acetate
 lead diacetate
 lisinopril
 lithium oxide
+metathesis
 naltrexone
 NAME SNR 1987A
 nitrofurantoin
 nitrogen triiodide
+NMR spectroscopy
 photodissociation
+photolysis
 pi bond
+polyphenol
 potassium thiocyanate
 pyrometer
+quinone
 resveratrol
 ritonavir
 rituximab
@@ -1142,8 +1486,10 @@ secretin
 silicic acids
 sodium hydride
 sodium lauryl sulfate
+soman
 spontaneous human combustion
 squalene
+Thymidine
 tirzepatide
 tryptamine
 Tyrian purple
@@ -1154,10 +1500,10 @@ volumetric flask
 1-butyne
 2015 Ankara bombings
 2019 Amazon rainforest wildfires
-3-benzoylhydratropic acid
 4-aminobenzoic acid
 alginic acid
 allyl chloride
+amygdalin
 anatase
 aripiprazole
 betamethasone
@@ -1175,18 +1521,25 @@ clomipramine
 colligative property
 corticotropin releasing hormone
 creosote
+cumene
 cyclohexanol
 cytidine
-D-amygdalin
-D-mandelonitrile-beta-D-glucosido-6-beta-D-glucoside
+decomposition
 dimethylamine
 dinitrogen trioxide
+epoxide
 ergosterol
+ethyl acetylene
 favipiravir
+Fehling's reagent
 Fehling's solution
+gamma-aminobenzoic acid
 glyoxal
 icosane
+imine
+invar
 ion exchange
+isocyanate
 ketoconazole
 ketoprofen
 L-pyrrolysine
@@ -1194,27 +1547,42 @@ L-thyroxine
 lead azide
 lead dioxide
 lead sulfate
+Levothyroxine
+levothyroxine sodium
 linear maltodextrin
 magnesium nitrate
+maltodextrin
 manganese heptoxide
 memantine
 methyl isocyanate
 methylation
+mycose
 nandrolone
 neopentane
 nicotinic acid
 nitration
+nitride
+nitride compound
 nitrification
 nystatin
+oleum
+omega-6 fatty acid
+oxyacid
 oxygen difluoride
+para-aminobenzoic acid
 Paris Green
 paroxetine
+persistent organic pollutant
+PEST analysis
+phosphorous chloride
 phosphorus trichloride
 phytic acid
 piperazine
 potassium acetate
 pyrazine
 reversible reaction
+Schweinfurt green
+sepia
 silver oxide
 stibine
 tadalafil
@@ -1228,7 +1596,9 @@ trimethoprim
 uranium hexafluoride
 valence bond theory
 venlafaxine
+Veronese green
 white lead
+zirconia
 zirconium dioxide
 2002 Bali bombings
 2022 Istanbul bombing
@@ -1240,13 +1610,16 @@ allantoin
 amantadine
 amikacin
 anisole
+Bisulfite de sodium
 black iron sulfide
+boric oxide
 bromoethane
 bromthymol blue
 cadaverine
 capric acid
+carbocation
 carrageenan
-Cathinone
+cathinone
 ceftazidime
 cefuroxime
 chelation
@@ -1254,7 +1627,6 @@ chitosan
 chloral
 chloroprene
 cinnamaldehyde
-Cinnamylaldehyde
 cloruro de níquel
 copolymer
 copper acetate
@@ -1263,25 +1635,34 @@ corn syrup
 cupric acetate
 cupric carbonate
 cyanamide
-D-Cathinone
+cyanate
 D-gluconic acid
 decantation
+decanting
 diboron trioxide
 docosahexaenoic acid
 duloxetine
+enthalpy of formation
+Ethanolamine
 ferric nitrate
 Fischer-Tropsch process
+Fischer-Tropsch synthesis
 flammability
 flocculation
 flotation
 formamide
 geosmin
+Gluconate
 glutaric acid
+Guanosine pyrophosphate
 Guanosine-5'-Diphosphate
 hemicellulose
 hippuric acid
-Hydroxyzine
+hydroxyzine
+i-Butanol
+inflammable
 iron sulfide
+isobutanol
 isobutyl alcohol
 isobutylene
 isoflurane
@@ -1294,14 +1675,18 @@ lithium aluminum hydride
 lithium nitrate
 methyl formate
 miconazole
+mineral acid
 monoethanolamine
 NiCl2
 nitrogen trichloride
 o-chlorobenzylidenemalononitrile
 oxaloacetic acid
+perchloroethylene
 permethrin
 perpendicular bisector
+phosphoric chloride
 phosphorus pentachloride
+phthalate ester
 phthalic anhydride
 piracetam
 polyvinyl acetate
@@ -1309,14 +1694,18 @@ potassium chromate
 Potassium sodium L-tartrate tetrahydrate
 potassium sorbate
 prednisone
+prodrug
+pu'er
 PVA
 Sodium aluminate
 sodium azide
 sodium bisulfate
+sodium hydrogen sulfate
 Sodium hydrogen sulfite
 solid solution
 sphingosine
 standard enthalpy of formation
+superoxide
 tetrachloroethylene
 thebaine
 titanium tetrachloride
@@ -1329,31 +1718,39 @@ zolpidem
 1-octanol
 2022 Crimean Bridge explosion
 2025 Risbergska school shooting
-6-thioctic acid
 adamantane
 allicin
+alpha-Lipoic acid
 ammonium perchlorate
 amphotericin B
 amyl nitrite
 anandamide
+Anh. tenofovir
+anodization
 anodizing
 asymmetrical dimethylhydrazine
 atenolol
 atomoxetine
 azathioprine
 azelaic acid
+azide
 benzoyl chloride
 beta-lactamase
 boron trifluoride
 budesonide
 butyraldehyde
 cadmium sulfide
+carbamate
+carbanion
 carbazole
+carbon oxide sulfide
 carbonyl sulfide
 cesium fluoride
 copper dinitrate
 cordierite
 cupric nitrate
+cyanic acid
+cycloalkene
 cyclohexanone
 cyclohexene
 cyclopropene
@@ -1372,16 +1769,21 @@ glycosidic bond
 Grignard reaction
 hydromorphone
 hypoxanthine
+icosanoid
 imatinib
+isoamyl nitrite
 isocyanic acid
+laboratory equipment
 lanolin
 lead sulfide
 linezolid
+lipoic acid
 lithium fluoride
 methacrylic acid
 methyl iodide
 methylprednisolone
 muscarine
+n-butyl aldehyde
 nifedipine
 Nordic gold
 orlistat
@@ -1389,6 +1791,7 @@ osmoregulation
 oxazepam
 perfluorooctanoic acid
 persulfuric acid
+pewter
 phosphonic acid
 piperine
 piroxicam
@@ -1403,6 +1806,8 @@ selenic acid
 sodium dichromate
 sodium metasilicate
 solid-state chemistry
+stearin
+steroid hormone
 sulfasalazine
 tenofovir disoproxil
 tetrafluoromethane
@@ -1430,8 +1835,10 @@ benzpyrene
 beryllium chloride
 beryllium hydroxide
 Bologna massacre
+borane
 borneol
 bradykinin
+British Anti-Lewisite
 bromic acid
 caesium hydroxide
 calcium acetate
@@ -1440,18 +1847,24 @@ calcium sulfide
 CAM photosynthesis
 campfire
 caprolactam
+carbene
 carbon steel
 carvedilol
 Castle Bravo
 chlordiazepoxide
 chloroauric acid
 chromic chloride
+Chromium trichloride
 cimetidine
 clonidine
 cloxacillin
+Co-trimoxazole
 crystal violet
+cyclic compound
 Daniell cell
 decarboxylation
+dexamphetamine
+Dexedrine
 dextran
 dextroamphetamine
 diatomaceous earth
@@ -1461,7 +1874,10 @@ diltiazem
 dimercaprol
 dimethylmercury
 domperidone
+drying
+enzyme inhibitor
 esomeprazole
+etiracetam
 eucalyptol
 famotidine
 ferrous hydroxide
@@ -1470,16 +1886,18 @@ foot washing
 footwashing
 gold trichloride
 growth medium
+hazardous substances
 hematoxylin
 hemocyanins
 hydrogen selenide
 hydrogen telluride
 hypophosphorous acid
+inert gas
 infliximab
 isoquinoline
+keto acid
 ledeburite
 levetiracetam
-Levitiracetam
 linalool
 liquid nitrogen
 lithium iodide
@@ -1490,15 +1908,22 @@ mupirocin
 neostigmine
 nucleophilic substitution
 Operation Crossroads
+oxalate
+oxalate compound
 palmitoleic acid
 pentaerythritol
+pentyl acetate
+permanganate
 propionaldehyde
+propyl aldehyde
 pyrogallol
 quercetin
 rosuvastatin
+sec-butanol
 selenium dioxide
 silicon tetrachloride
 sodium borohydride
+soil pH
 sorbose
 spatula
 sulfamethoxazole/trimethoprim
@@ -1508,27 +1933,39 @@ trastuzumab
 triclosan
 trifluoroacetic acid
 trimethylamine
+triose
 valsartan
 watch glass
+western blot
 white phosphorus
+zymogen
 1999 Russian apartment bombings
 2016 Istanbul bombing
 2017 Sinai mosque attack
 2017 Tehran attacks
 2023 Hawaii wildfires
+ABV
 aconitine
 adenylate cyclase
+Adenylyl cyclase
 adrenochrome
+alcohol by volume
 alcohol dehydrogenase
 allyl alcohol
 ampoule
+ampulla
 arachidic acid
 arsenous acid
+azure cobalt
 BBIBP-CorV
 benzophenone
+billon
 bioreactor
+bleu de cobalt
 böhmite
+borate
 bromazepam
+bupivacaine
 buspirone
 caprylic acid
 caramelization
@@ -1541,11 +1978,13 @@ cobalt blue
 cobalt monoxide
 cobaltous oxide
 cod liver oil
+copal
 cuvette
 cyanocobalamin
 cyanogen chloride
 D-threose
 dehydrogenation
+diatomic molecule
 dichlorophenoxyacetic acid
 DL-bupivacaine
 DNA methylation
@@ -1560,9 +1999,12 @@ fluorosulfonic acid
 fluvoxamine
 fomepizole
 food chemistry
+glibenclamide
+global warming potential
 glyburide
 hexamethylenediamine
 hyoscyamine
+Indigo carmine
 indigotindisulfonate sodium
 infusion
 inosine
@@ -1581,12 +2023,16 @@ NADH-alcohol dehydrogenase
 nickel-metal hydride battery
 nitramine
 oxidative stress
+oxime
+Paraquat
 paraquat dichloride
 pelargonic acid
 pentene
+per- and polyfluoroalkyl substances
 pH meter
 phenothiazine
 phosphodiester bond
+phosphorus oxide
 pilocarpine
 PLA
 polylactic acid
@@ -1599,8 +2045,9 @@ praziquantel
 primary production
 pyrophosphoric acid
 pyrrolidine
-racemic bupivacaine
 ribavirin
+Riboflavin monophosphate
+Riboflavin phosphate
 rimantadine
 rubidium hydroxide
 salicyl alcohol glucoside
@@ -1608,16 +2055,24 @@ saligenin beta-D-glucopyranoside
 salmeterol
 shea butter
 silver sulfide
+skatol
 sodium amide
+sphingolipids
+sulfoxide
 sunset yellow FCF
 terbinafine
+terpenoid
+tertiary calcium phosphate
 tetradecane
 tetraphosphorus hexaoxide
+tetrose
+thiocyanate
 thiosulfuric acid
 tin dioxide
 tin peroxide
 tranexamic acid
 tretinoin
+tricalcium orthophosphate
 tricalcium phosphate
 trichloroacetic acid
 triiron tetraoxide
@@ -1628,9 +2083,14 @@ zeaxanthin
 2-butyne
 2-mercaptoethanol
 4-aminosalicylic acid
+acaricide
+alicyclic compound
+alkanolamine
 alpha-ketoglutaric acid
 altrose
 aluminium alloy
+amino alcohol
+Ammonium iron sulfate
 anethol
 anthranilic acid
 antimony trichloride
@@ -1644,6 +2104,7 @@ baclofen
 behenic acid
 benzylamine
 berberine
+Beta-Mercaptoethanol
 bevacizumab
 bioinorganic chemistry
 Bordeaux mixture
@@ -1654,16 +2115,22 @@ Büchner funnel
 calcination
 calcium bicarbonate
 calcium gluconate
+Calcium hydrogen carbonate
 carbon suboxide
 cefixime
 cefotaxime
 cetyl alcohol
+chemical affinity
+chemical informatics
 cheminformatics
+chloramine
+chlorite sodium
 chymotrypsin
 clomifene
 Congo red
 corticosterone
 cresols
+cyanoacrylate
 Cyclic Guanosine Monophosphate
 cyclizine
 cycloheptane
@@ -1673,11 +2140,13 @@ dehydroepiandrosterone
 desloratadine
 desmopressin
 desomorphine
+diacylglycerol
 diborane
 dichlorodifluoromethane
 diethylamine
+diglyceride
 dihydrotestosterone
-DL-baclofen
+diphosphate
 equilibrium constant
 ergotamine
 erucic acid
@@ -1688,21 +2157,28 @@ fluphenazine
 folinic acid
 Guanosine cyclic monophosphate
 guanosine monophosphate
+guanosine-phosphate
 guar gum
 heptanoic acid
+heptose
 hydralazine
 hydroxycarbamide
+Hydroxyurea
 hypobromous acid
 jet fuel
 Kočani nightclub fire
 L-Rha
 lansoprazole
 lead chloride
+leukotriene
 magnesium fluoride
 maize flour
 malathion
 mephedrone
-Mevalonic acid
+Methyl t-butyl ether
+Methyl tertiary-butyl ether
+mevalonate
+mevalonic acid
 monochloramine
 montelukast
 n-butyllithium
@@ -1711,6 +2187,7 @@ nickel sulphate
 niclosamide
 norflurane
 nuclear explosion
+nucleoprotein
 October 2017 Mogadishu bombings
 octogen
 oxoacetic acid
@@ -1721,17 +2198,23 @@ peracetic acid
 phenylacetic acid
 pimelic acid
 post-translational protein modification
+posttranslational amino acid modification
+posttranslational modification
 potassium bisulfate
 potassium hydride
+Potassium Hydrogen Sulphate
 protonation
 psilocin
 pyrazole
+pyrophosphate
 quinidine
 ramipril
 rhamnose
 rivaroxaban
 rubidium chloride
+secondary metabolite
 separatory funnel
+sibutramine
 silicon nitride
 sirolimus
 sodium bromate
@@ -1740,6 +2223,8 @@ sodium chromate
 sodium perchlorate
 Soma mine disaster
 strontium oxide
+sulfite
+Sumatran
 sumatriptan
 tannic acid
 temazepam
@@ -1747,12 +2232,12 @@ tert-butyl methyl ether
 TfOH
 thujone
 timolol
-timolol anhydrous
 tool steel
 tragacanth
 trichloromonofluoromethane
 triflic acid
 tritiated water
+tritium oxide
 type Ia supernova
 unbiquadium
 vardenafil
@@ -1766,6 +2251,7 @@ zinc hydroxide
 3-phosphoglyceraldehyde
 acylation
 agomelatine
+aluminium tribromide
 aluminum bromide
 aluminum iodide
 aluminum nitride
@@ -1775,11 +2261,11 @@ argon fluorohydride
 automotive battery
 barbituric acid
 basic fuchsine
+benzoic acid nitrile
 benzonitrile
 Biacetylene
 bioenergetics
 biperiden
-Butadione
 Butadiyne
 butanedione
 calcium hydride
@@ -1790,18 +2276,24 @@ ceramides
 cesium iodide
 chemiosmosis
 chlorambucil
-chlorite
 chlorosulfonic acid
+chromic oxychloride
+chromium dioxide dichloride
 chromyl chloride
+citral
 clavulanic acid
 coal tar
+condensation polymerization
 cottonseed oil
 D-psicose
 decoction
+diacetyl
 dichlorine monoxide
 dieldrin
 dimenhydrinate
 Dinitrophenol
+diol
+dioxin
 dissociation constant
 DNP
 doxylamine
@@ -1811,17 +2303,28 @@ ethyl formate
 fermented food
 fexofenadine
 Flexon
+furanose
 gallium nitride
 gasification
+Gaultheria oil
 gel electrophoresis
 general chemistry
 glutaral
+Glutaraldehyde
+glyceraldehyde-phosphate
+glycosaminoglycan
+Grignard reagent
 high speed steel
+hydron
 hypofluorous acid
+imide
 ipratropium bromide
+isocyanide
 jasmine tea
+ketene
 krypton difluoride
 L-lactate dehydrogenase
+L-lactic dehydrogenase
 lactitol
 Leclanché cell
 liraglutide
@@ -1834,16 +2337,24 @@ mesitylene
 methyl salicylate
 misoprostol
 natamycin
+Nitinol
 nitrosyl chloride
+organophosphorus compound
+organophosphorus compounds
 passivation
 penicillin v
 phenacetin
 phosphorous oxychloride
+phosphorus chloride
+phosphoryl chloride
 polycondensation
 polyethylene glycol
+polyol
 potassium benzoate
+proteoglycan
 putrescine
 pyridazine
+rutin
 sepiolite
 sevoflurane
 sodium formate
@@ -1852,10 +2363,12 @@ sodium oxalate
 spontaneous combustion
 stannous oxide
 stanozolol
+starter battery
 strontium nitrate
 sulfur dichloride
 synthetic rubber
-TCDBD
+t-butanol
+tert-butanol
 tert-butyl alcohol
 tetradioxin
 thiophenol
@@ -1877,8 +2390,13 @@ Yanar Dag
 zinc iodide
 2015 Bangkok bombing
 2015 Beirut bombings
+aldrin
+alkoxide
+alpha-Methyl dopa
 aluminum nitrate
+amino sugar
 ANP
+anticholinergic
 antimony pentachloride
 antimony pentafluoride
 arsphenamine
@@ -1890,20 +2408,22 @@ barium fluoride
 barium sulfide
 barley tea
 basic red 2
+batra
 benzamide
-benzoquinone
 benzotriazole
+biuret
 borazine
 boron trichloride
 bromobenzene
 Burning of Smyrna
+cadmium monoxide
 cadmium oxide
 calcium benzoate
 calcium iodide
 carboplatin
 carnauba wax
 cefazolin
-ceric oxide
+ceric dioxide
 cerium dioxide
 cesium bromide
 cesium nitrate
@@ -1911,12 +2431,15 @@ chemical physics
 chloropicrin
 chromous chloride
 cosmochemistry
+cubane
 cuprous iodide
 cyclooctane
 cycloserine
 daunorubicin
 decalin
+decene
 dehydration reaction
+dicarboxylic acid
 dichloroacetic acid
 diphenylamine
 diphenylmethane
@@ -1945,6 +2468,7 @@ ibogaine
 imipramine
 immunoglobulin E
 indole-3-acetic acid
+infrared camera
 ketorolac
 Kipp's apparatus
 lignoceric acid
@@ -1971,31 +2495,40 @@ neurochemistry
 nickel tetracarbonyl
 nickel-cadmium battery
 nitrazepam
+oligonucleotide
+organic acid anhydride
+organosulfur compound
 orotic acid
 oxazole
 oxytetracycline
 p-benzoquinone
+para-benzoquinone
+peptide hormone
 petroleum ether
 phosphatidyl serine
-Phytomenadione
-Phytonadione
+phytonadione
 polyvinyl alcohol
 polyvinylpyrrolidone
+Potassium dihydrogen phosphate
 potassium metabisulfite
 potato starch
+povidone
 pramipexole
 pyrimethamine
+retort
 round-bottom flask
 safrole
-Selegilina
-Selegiline
+Salvarsan
+selegiline
 self-ionization of water
+sencha
 shikimic acid
 Silenor
 silicon tetrafluoride
 sitagliptin
 sodium bisulfide
 sodium ethanolate
+sodium hydrogen sulfide
 sodium percarbonate
 sodium permanganate
 stavudine
@@ -2005,8 +2538,11 @@ sulfur monoxide
 sym-Dibromoethane
 temozolomide
 tetramethylene glycol
+thermal camera
 thermal decomposition
 thermographic camera
+thermolysis
+Thimerosal
 thiomersal
 thiosulfate ion
 tizanidine
@@ -2018,7 +2554,6 @@ trisodium phosphate
 xenon tetroxide
 zinc-carbon battery
 zopiclone
-1-carvone
 1-decanol
 2-hydroxy-3-phosphonooxypropanoic acid
 2018 Kemerovo fire
@@ -2026,26 +2561,34 @@ zopiclone
 80 Albert Street Fire
 acenaphthene
 adalimumab
-Aerozoin
 al-Ahli Arab Hospital explosion
 aldol condensation
+allene
 allyl isothiocyanate
+alnico
+alpha-amanitin
+aluminium silicate
 aluminosilicate
 aluminum hydride
 ammonium acetate
 ammonium bisulfide
+ammonium hydrosulfide
 amobarbital
 amoxicillin/clavulanic acid
 antipyrine
 arsenic trichloride
 Assam tea
+Augmentin
+azole
 barbital
 barium chlorate
 benzalkonium chloride C8-18
-Benzoin
+benzoin
 benzoin resin
 benzyl benzoate
 beryllium fluoride
+beta-alanine
+beta-lactam
 bisacodyl
 bleomycin
 boron carbide
@@ -2054,14 +2597,16 @@ cadmium iodide
 cafestol
 candesartan
 capecitabine
-Carvon
+carvone
 cefepime
 cellulases
 chalcone
+clenbuterol
 click chemistry
 cobalt sulfate
 cobaltous sulfate
 colistin
+condenser
 coniine
 cristobalite
 crown ether
@@ -2069,37 +2614,47 @@ cyanuric acid
 cyclopentene
 cytidine triphosphate
 deferoxamine
+diammonium acid phosphate
+diammonium hydrogen phosphate
 dibasic ammonium phosphate
 dimethyl sulfate
-DL-mandelic acid
 docetaxel
 elaidic acid
 emtricitabine
+enamine
 erythrosine
 etanercept
 etomidate
 etoposide
 ferroalloy
 flurazepam
+formate
 furfuryl alcohol
+gangliosides
 gemcitabine
+grape oil
 grape seed oil
 griseofulvin
 guaiacol
 guaifenesin
 Hall-Héroult process
+hemiacetal
 heptyl alcohol
+Hindenburg crash
 Hindenburg disaster
 hydrogen astatide
+indene
 indium phosphide
 iodobenzene
 iodoethane
+ionic compound
 isocitric acid
 keto-D-tagatose
 laboratory condenser
 laboratory glassware
 lead carbonate
 levulinic acid
+link chemistry
 lithium peroxide
 Maghrebi mint tea
 magnesium bromide
@@ -2107,11 +2662,15 @@ mandelic acid
 maprotiline
 March 2016 Ankara bombing
 melphalan
+mesna
 methoxyflurane
 methyl benzoate
 mifepristone
 nickel monoxide
 nimesulide
+noble gas compound
+organosilicon
+organosilicon compound
 orichalcum
 orthoperiodic acid
 Ostwald process
@@ -2132,6 +2691,9 @@ potassium sulfite
 pteridine
 pyranose
 pyrantel
+pyrene
+rabeprazole
+reactive oxygen species
 ribulose
 rifabutin
 rivastigmine
@@ -2139,6 +2701,7 @@ S-adenosylmethionine
 salicylaldehyde
 salvinorin A
 selenium trioxide
+sialic acids
 silver difluoride
 single bond
 sodium iodate
@@ -2150,6 +2713,8 @@ succinylcholine
 sulfadiazine
 sulfamethoxazole
 sulfamic acid
+sulfone
+suxamethonium
 tantalum pentoxide
 telmisartan
 Transamination
@@ -2163,6 +2728,7 @@ ultrafiltration
 unbitrium
 valacyclovir
 vanadium trioxide
+Veronal
 vinyl acetylene
 xenon tetrafluoride
 yohimbine
@@ -2170,6 +2736,7 @@ zanamivir
 zinc bromide
 α-amanitin
 β-alanine
+β-lactam
 1-naphthol
 1983 Beirut barracks bombing
 2-chloroacetophenone
@@ -2177,13 +2744,17 @@ zinc bromide
 3-methylpentane
 abelsonite
 acarbose
-achilleic acid
+achiote
+aconitic acid
+Actinomycin iv
+acyl chloride
+aldol
 allylamine
 alpha-amylase
 alternative splicing
 amiloride
 aminophylline
-aminosultopride
+amisulpride
 ammonium persulfate
 androstenedione
 annatto
@@ -2193,61 +2764,73 @@ atazanavir
 bain-marie
 barium titanate
 Bayer process
+benzil
 betaine
 betanin
-biocatechin
 bismuth subsalicylate
+brassinosteroid
+bromate
 bromate ion
 bromocriptine
 bufotenine
 butylated hydroxyanisole
 cadmium nitrate
+calcium dihydrogen phosphate
 calcium phosphate
 camphene
+carbonate anhydrase
+carbonic acid anhydrase
 carbonic anhydrase
+carboxylic acid chloride
 carminic acid
 carnosine
-catechinate
-cathine
+catechin
 cesium carbonate
 cetuximab
 chlorine heptoxide
-Chlorogenic Acid
+chlorogenic acid
 cholinesterase
 chondroitin sulfate
+chromate
 chromium dioxide
-chromium oxide
-citridic acid
 Claisen condensation
+clathrate
+clathrate compound
 clobazam
+corten steel
+Creatine phosphate
 crotonic acid
 cyclobutadiene
 cyclopentanone
 cytarabine
-D-Cathine
 D-penicillamine
 dactinomycin
 dapagliflozin
 December 2013 Volgograd bombings
 denatonium benzoate
+dendrimer
 denosumab
 DES
+diazonium compound
 dibasic sodium phosphate
 dicloxacillin
 diethylstilbestrol
 digitoxin
 dihydroxyacetone phosphate
 dimpylate
+disodium hydrogen phosphate
 efavirenz
 electronic nose
 Emirates Flight 521
 endosulfan
+entheogen
 ethyl acetoacetate
 ethylene glycol dinitrate
 fenethylline
 fenofibrate
 filgrastim
 flow cytometry
+fluorocarbon
 fucoxanthin
 fusidic acid
 galantamine
@@ -2257,17 +2840,21 @@ gemfibrozil
 genmaicha
 germanium dioxide
 gliclazide
+Glycol dinitrate
+gold chloride
 gold monochloride
 helium flash
 heptadecane
+hexene
 hirudin
-Hlorogenic acid
 humic acid
 hydrocodone/paracetamol
 hypoiodous acid
 ifosfamide
 imidacloprid
+Iodine chloride
 iodine monochloride
+iodometry
 irinotecan
 iron pentacarbonyl
 isoamyl alcohol
@@ -2284,16 +2871,22 @@ levocetirizine
 limescale
 lovastatin
 lysergic acid
+lysis
 magnesium iodide
 magnesium sulfide
 MDA
 mefenamic acid
 meldonium
 merbromin
+Mercurochrome
+metallocene
+methyl hydrazine
 methylendioxyamphetamine
 moclobemide
+molality
 molybdenum trioxide
 Monel
+monobasic calcium phosphate
 monocalcium phosphate
 monomethylhydrazine
 muscimol
@@ -2301,16 +2894,23 @@ neohexane
 nevirapine
 nichrome
 nickel hydroxide
+nickel-chrome
+norpseudoephedrine
 nylon 6
 octadecane
 octreotide
+omega-9 fatty acid
+organic peroxide
 organic reaction
+organochlorine compound
 oxacillin
 oxandrolone
 p-aminophenol
 p-cymene
 p-toluenesulfonic acid
+Para-cymene
 pembrolizumab
+perfluorocarbon
 perindopril
 permanganic acid
 phenoxyethanol
@@ -2327,7 +2927,10 @@ pyridostigmine
 pyridoxal phosphate
 rancidification
 rearrangement reaction
+resting membrane potential
+resting potential
 retinal
+RMP
 rofecoxib
 roxithromycin
 rubidium nitrate
@@ -2338,18 +2941,25 @@ smelting
 Smiling Buddha
 sodium fluoroacetate
 sofosbuvir
-Solian
 strontium chloride
 sulfanilamide
+sulfonate
+Sulfonyl chloride
 sulfur tetrafluoride
+sulfuric dichloride
 sulfuryl chloride
 superalloy
 tellurium dioxide
+tetracycline antibiotic
 tetrafluoroboric acid
 tetrahydrothiophene
+thioester
 titanium nitride
+tombac
 triamcinolone
 tropane
+uronic acid
+Vicodin
 weathering steel
 West Fertilizer Company explosion
 Wittig reaction
@@ -2363,11 +2973,15 @@ zinc nitrate
 2011 Minsk Metro bombing
 4-Methyl-m-phenylene diisocyanate
 5-methoxydimethyltryptamine
+acrylonitrile butadiene rubber
 Actinium sesquioxide
+alditol
 aluminum bronze
+ammonium dihydrogen phosphate
 ammonium fluoride
 anastrozole
 androsterone
+arsenate
 barium bromide
 barium chromate
 barium iodide
@@ -2375,7 +2989,10 @@ Belousov-Zhabotinsky reaction
 benzal chloride
 benzonatate
 benzyl acetate
+benzyl dichloride
+benzyl-methanol
 beryllium bromide
+binary compound
 bone char
 brilliant blue FCF
 bromhexine
@@ -2404,16 +3021,17 @@ dabigatran
 decaborane
 December 2016 Istanbul bombings
 dental amalgam
+deoxyribonucleotide
 desflurane
 diazomethane
-dichlorobenzene
 dimanganese trioxide
 dimethyl sulfone
 diphosgene
 disulfur dichloride
-DL-sulpiride
 dynamic equilibrium
+endrin
 entecavir
+equilibrium dynamics
 ethosuximide
 ethylene-vinyl acetate
 everolimus
@@ -2424,12 +3042,15 @@ fipronil
 Fire of Moscow
 fluorene
 fusel alcohol
+fusel oil
 genistein
 gold sesquioxide
 Grand Kartal fire
 green hydrogen
+halocline
 hexachlorobenzene
 hexamethylene triperoxide diamine
+hydrogen trioxide
 hydrous ferric oxide
 hydroxocobalamin
 hydroxyl radical
@@ -2442,13 +3063,16 @@ isomalt
 isopropyl ether
 July 2016 Baghdad bombings
 ketotifen
+L-alliin
 L-xylulose
 labetalol
 letrozole
 lithium polymer battery
 lurasidone
+lyxose
 manganese trioxide
 methemoglobin
+methyl sulfonyl methane
 Methylmercury ion
 molecular sieve
 monobasic ammonium phosphate
@@ -2456,29 +3080,38 @@ monomethylmercury
 myristicin
 naphazoline
 NBR
+nitrile butadiene rubber
 nitrile rubber
 nitroethane
+norephedrine
 nortriptyline
 O-methylbufotenine
 o-phenanthroline
+o-Phthalic imide
 olmesartan
 ortho-phenanthroline
 orthotelluric acid
 oxetane
 p-dichlorobenzene
 pancuronium bromide
+para-dichlorobenzene
+parabens
 phenarsazine chloride
 phenol formaldehyde resin
 phenylacetone
 phenylbutazone
 phenylethyl alcohol
+phosphatidylcholine
+phosphoenolpyruvate
 phosphoenolpyruvic acid
 phthalimide
+phytol
 pimozide
 pioglitazone
 platinum hexafluoride
 plutonium dioxide
 plutonium oxide
+polane
 polyamines
 ponceau 4R
 potassium superoxide
@@ -2487,8 +3120,10 @@ primaquine
 primidone
 procarbazine
 proguanil
+propafenone
 propylthiouracil
 radium chloride
+reducing sugar
 remifentanil
 rheumatoid factor
 ribitol
@@ -2519,12 +3154,15 @@ strontium sulfate
 sulfanilic acid
 sulpiride
 TDI
+tereré
 tetrabromomethane
 tetracaine
 tetrachlorozirconium
 tetrafluoroethylene
 tetrahydropyran
 tetramethylsilane
+thermal analysis
+thiocyanate sodium
 thiocyanic acid
 thymol blue
 tigecycline
@@ -2542,32 +3180,33 @@ zirconium chloride
 1H-tetrazole
 2-chloroethan-1-ol
 2-naphthylamine
-4-diethylamino-2-butinyl alpha-cyclohexylmandelat
-4-diethylamino-2-butynyl alpha-phenylcyclohexaneglycolate
 6-thioguanine
 acamprosate
 acetate-mevalonate pathway
-acetoine
-acetyl methyl carbinol
+acetoin
 alemtuzumab
 alloy steel
 Allura Red AC
+aluminium ammonium sulphate
 aluminium carbide
 ambroxol
 ammonium aluminium sulfate
 ammonium iodide
 ammonium sulfide
 ammonium thiocyanate
+amphiphilic entity
 atovaquone
 Avianca Flight 203
 benzyl bromide
 beryllium hydride
+beta-methyl butyl acetate
 beta-propylene glycol
 betahistine
 bioorganic chemistry
 bortezomib
 bromine pentafluoride
 bromous acid
+butyl phosphate
 butylscopolamine bromide
 butyrophenone
 cacodylic acid
@@ -2575,15 +3214,20 @@ cadmium hydroxide
 cadmium selenide
 calcium chlorate
 calcium chromate
+calcium hydrogen phosphate dihydrate
 carbamoyl phosphate
+Carbon difluoride oxide
 carbon-13
 carbonyl fluoride
 carfentanil
 cariprazine
 chemical biology
+chemical process
+chlorine fluoride
 chlorine monofluoride
 chlorotrifluoromethane
 chloroxylenol
+citronellal
 cobalt difluoride
 Cobalt nitrate
 cobaltous carbonate
@@ -2599,6 +3243,8 @@ DAPI
 daptomycin
 delta bond
 deoxycytidine
+Deoxyribose cytidine
+dibasic calcium phosphate
 dibasic potassium phosphate
 dibutyl phthalate
 dicalcium phosphate
@@ -2606,17 +3252,23 @@ diethyl malonate
 dihydrocodeine
 Dimethylaniline
 Dimethylphenylamine
+dipotassium hydrogen phosphate
+disulfide
 DL-erythrulose
 dobutamine
 docusate sodium
 empagliflozin
+enoxaparin
 enoxaparin sodium
 enzyme catalysis
+equivalent concentration
 ergometrine
 Esteron 245
 ethylidene chloride
 etoricoxib
+fineness
 fludarabine phosphate
+fluorescence in situ hybridization
 fluorobenzene
 formoterol
 foscarnet
@@ -2641,6 +3293,7 @@ indinavir
 Islamabad Marriott Hotel bombing
 isoamyl acetate
 isoprenaline
+Isoproterenol
 keto-D-fructose-6-phosphate
 kojic acid
 lanosterol
@@ -2649,13 +3302,17 @@ light-dependent reactions
 linagliptin
 lithium iron phosphate battery
 lithium perchlorate
+luciferin
 Mannich reaction
 margaric acid
 menadione
+metal carbonyl
 metal-organic framework
 methyl acrylate
 Mevalonate pathway
+Minocin
 minocycline
+mitotane
 MOF
 molybdenum pentachloride
 mometasone furoate
@@ -2663,14 +3320,21 @@ monosodium phosphate
 MPTP
 myrcene
 N-bromosuccinimide
+n-butyl phthalate
 nalidixic acid
+nerol
 ninhydrin
 nitrogen trifluoride
+Norethindrone
 norethisterone
+normality
 noscapine
 omega-propanediol
+oral contraceptive
+organolithium compound
 oxaliplatin
 oxcarbazepine
+oxybutynin
 oxymetazoline
 ozonide
 ozonide ion
@@ -2683,8 +3347,11 @@ pentadiene
 perbromic acid
 perphenazine
 phloroglucinol
+phosphonate
 phosphorus pentasulfide
+phosphorus sulfide
 photoresist
+Phthalocyanine
 picolinic acid
 pigment blue 16
 pindolol
@@ -2692,14 +3359,16 @@ pivalic acid
 plutonium-239
 podofilox
 polyacrylonitrile
+polyatomic ion
 post-transcriptional modification
 PPT
 procainamide
+pyrophoric
 pyrophoricity
 pyrosulfuric acid
-rac-dobutamine
 raloxifene
 rasagiline
+reaction rate constant
 riebeckite
 rotenone
 ruthenium tetroxide
@@ -2710,6 +3379,7 @@ silver fluoride
 silver sulfadiazine
 sinigrin
 sodium ascorbate
+sodium dihydrogen phosphate
 sodium dithionite
 sodium propionate
 sodium salicylate
@@ -2760,6 +3430,7 @@ zinc phosphide
 acitretin
 alendronic acid
 alkaline hydrolysis
+alpha-carotene
 aluminium sulphide
 aluminum antimonide
 amaranth
@@ -2768,6 +3439,7 @@ amodiaquine
 apigenin
 aprepitant
 artificial photosynthesis
+asymmetric synthesis
 bedaquiline
 benazepril
 bendamustine
@@ -2787,9 +3459,10 @@ capillary electrophoresis
 carbon tetraiodide
 carisoprodol
 cefpodoxime
-cefprozil anhydrous
+cefprozil
 ceric sulfate
 cerotic acid
+cesium monoxide
 chemometrics
 chlordane
 chlorpyrifos
@@ -2805,6 +3478,7 @@ cyclooctatetraene
 cypermethrin
 cyproheptadine
 cytidine monophosphate
+d-Propoxyphene
 dapoxetine
 darunavir
 delphinidin chloride
@@ -2815,31 +3489,40 @@ diethylcarbamazine
 diisopropyl
 Dimethyl acetamide
 dimethylacetamide
+Dinitrate d'isosorbide
+dipeptide
 dipyridamole
 DNT
 droperidol
 dust explosion
 ecdysone
-Eflornithine
+eflornithine
 electrolysis of water
 electrophilic addition
 enantioselective synthesis
 enflurane
+ergine
 ertapenem
 ethylene sulfide
 ferroin
 ferrous bromide
+flavin
 fluoroacetic acid
 fluticasone
 Fosfructose
 frost weathering
+fructan
 galactitol
 gefitinib
+Germanium chloride
 germanium tetrachloride
+glycerophospholipid
 gossypol
 hesperidin
 hexafluorosilicic acid
 Homolysis
+hydrazones
+hydrofluorocarbon
 i-urobilinogen
 indium oxide
 iodine pentafluoride
@@ -2853,6 +3536,7 @@ leaving group
 Leblanc process
 leflunomide
 leuprolide
+maltol
 manganese nitrate
 mauveine
 Mercuric iodide
@@ -2865,6 +3549,8 @@ methocarbamol
 methyl propionate
 methyl violet
 methylglyoxal
+mexiletine
+Michael addition
 Michael reaction
 montanic acid
 murexide
@@ -2872,16 +3558,20 @@ naftifine
 nickel carbonate
 nickel carbonate anhydrous
 nickel nitrate
+nitroamine
 norfloxacin
 o-phenylenediamine
 o-xylene
+organoboron compound
+organophosphate
+ortho-xylene
+oxonium
 oxymorphone
 oxyquinoline
-paraformaldehyde
 pentacene
-Pentazocin
-Pentazocina
+pentazocine
 pentoxifylline
+peroxy acid
 perrhenic acid
 phenylacetylene
 phenylhydrazine
@@ -2890,6 +3580,7 @@ phosphorus tribromide
 platinic chloride
 platinium dichloride
 platinous chloride
+polyene
 polyolefin
 potassium formate
 pravastatin
@@ -2900,8 +3591,8 @@ quinapril
 Quinoline Yellow
 radon difluoride
 reactivity
+ropivacaine
 rosiglitazone
-rosiglizole
 rubidium carbonate
 rubidium oxide
 S Andromedae
@@ -2924,6 +3615,7 @@ substance P
 succinic anhydride
 succinyl-CoA
 sufentanil
+sulfinic acid
 superphosphate
 tetracene
 tetralin
@@ -2936,11 +3628,14 @@ total synthesis
 trichlorosilane
 trimipramine
 Triosephosphate isomerase
+trona
 tropilidene
 tungstic acid
 umbelliferone
+umber
 undecanoic acid
 uranium tetrafluoride
+urobilin
 vanadium dioxide
 VCl2
 xanthine oxidase
@@ -2950,13 +3645,13 @@ zoledronic acid
 zonisamide
 zuclopenthixol
 α-carotene
-α-difluoromethylornithine
 1-hexene
 2'-deoxyguanosine
 2-heptanol
 3-phospho-D-glyceroyl phosphate
 3-phospho-D-glyceroyl-phosphate
 acenaphthylene
+acidic oxide
 adapalene
 alfentanil
 allopregnanolone
@@ -2964,11 +3659,14 @@ aluminium arsenide
 aluminum monochloride
 ammonium metavanadate
 ammonium nitrite
+ammonium phosphate
 amorphous metal
 anthracycline antibiotic
+anthracyclines
 arbutin
 avocado oil
 azelastine
+B-type natriuretic peptide
 beclomethasone dipropionate
 benzathine benzylpenicillin
 benzotrichloride
@@ -2980,10 +3678,12 @@ bismuth chloride
 bismuth telluride
 bismuth trifluoride
 bismuthine
+bixin
 brain natriuretic peptide
 Brighton hotel bombing
 bromoacetic acid
 calcium citrate
+calcium dioxide
 calcium iodate
 calcium permanganate
 calcium peroxide
@@ -2994,7 +3694,1307 @@ carbon-carbon bond
 caspofungin
 cefaclor
 cefdinir
+cerebrosides
 cesium sulfate
 Chinese tea
 chlorothiazide
 chlorthalidone
+cholestyramine resin
+cilostazol
+Cinema Rex fire
+cinnamyl alcohol
+cladogenesis
+colestyramine
+column chromatography
+cupellation
+cuprous bromide
+cycloaddition
+cyclodecane
+cyclodextrin
+cyclononane
+cyclopentanol
+desipramine
+Dewar flask
+diazoxide
+difluoromethane
+diloxanide furoate
+diphenyl ether
+diphosphane
+diterpene
+DL-panthenol
+DL-selenomethionine
+electrochemical potential
+entacapone
+epirubicin
+ergoline
+Eriochrome Black T
+estazolam
+ethionamide
+ethyl benzoate
+ethyl butyrate
+Ethyl carbamate
+ethyl methyl ether
+ethyl vanillin
+ethylene oxide cyclic hexamer
+exergonic reaction
+felsicity
+femtochemistry
+ferric ammonium sulfate
+ferric bromide
+ferrosilicon
+fingolimod
+fluorine dioxide
+fondaparinux
+gallium trichloride
+glatiramer acetate
+grunerite
+heptachlor
+heterogeneous catalysis
+hexanal
+hexazine
+homogentisic acid
+hydroformylation
+hydrogen production process
+hydroxytyrosol
+inosine monophosphate
+inosinic acid
+insulin glargine
+iodine heptafluoride
+iodine value
+ion-exchange resin
+isobutyraldehyde
+isopentenyl pyrophosphate
+Kolbe-Schmitt reaction
+L-Malate dehydrogenase
+leaching
+lithium amide
+lithium citrate
+lithium cobalt oxide
+lithium diisopropylamide
+lithium sulfide
+Longjing tea
+luteolin
+m-xylene
+macrocycle
+magnesium hydride
+magnesium peroxide
+magnesium stearate
+magnetic stirrer
+malic dehydrogenase
+maraviroc
+mebeverine
+meclizine
+medroxyprogesterone acetate
+mellitic acid
+mellitic anhydride
+mercury-in-glass thermometer
+meta-xylene
+metallic glass
+methandrostenolone
+methoxyethane
+Methyl-p-hydroxybenzoate
+methylcyclohexane
+methyllithium
+methylparaben
+microscope slide
+milnacipran
+mitoxantrone
+molecular symmetry
+molybdenum hexafluoride
+molybdic acid
+myristyl alcohol
+N-Acetyl-a-D-glucosamine
+N-Acetyl-delta-galactosamine
+naringenin
+natriuretic peptide B
+NbCl5
+nerve growth factor
+nervonic acid
+netilmicin
+nimodipine
+niobium pentachloride
+niobium pentoxide
+nitrilotriacetic acid
+nitrosylsulfuric acid
+nonadecane
+nucleophilic addition
+nusinersen
+omalizumab
+oxamniquine
+oxepin
+oxide of carbon
+oxocarbon
+p-xylene
+paraxylene
+PBD
+pentadecanoic acid
+pentamidine
+permalloy
+perylene
+petrifaction
+petrification
+phalloidin
+phenelzine
+Phenoxy-Benzene
+phenylpropanoid
+phosphide
+phosphorus triiodide
+phytoalexin
+pinacol
+polyacrylamide
+polyadenylation
+polybutadiene
+polynucleotide
+potassium bifluoride
+potassium ferrate
+Potassium hydrogen sulfite
+potassium pyrosulfate
+prilocaine
+prochlorperazine
+propargyl alcohol
+propionic nitrile
+propionitrile
+pseudohalogen
+pyridinium chlorochromate
+raltegravir
+repaglinide
+resiniferatoxin
+retinoid
+rhenium heptoxide
+ribonucleotide
+ropinirol
+rubidium bromide
+rubidium fluoride
+ruthenium dioxide
+s-trinitrobenzene
+scandium oxide
+sedoheptulose
+selenium methionine
+shale oil
+siloxane
+SN2 reaction
+sodium arsenite
+sodium bismuthate
+sodium ferrocyanide
+sodium meta-arsenite
+sodium selenite
+sodium superoxide
+sorafenib
+Strecker amino-acid synthesis
+Strecker synthesis
+Streptozotocin
+succimer
+succinimide
+sulfonamide
+sulfonyl fluoride
+sulfonylurea
+sulfuryl fluoride
+suutei tsai
+sym-trinitrobenzene
+tapentadol
+tea tree oil
+teichoic acid
+tert-butyllithium
+tetrapyrrole
+thermogravimetric analysis
+thioacetamide
+tiglic acid
+titanium carbide
+titanium trichloride
+tolnaftate
+trans-vaccenic acid
+tribasic ammonium phosphate
+tropisetron
+type II supernova
+unbipentium
+unbiseptium
+urethane
+uridine 5'-diphosphate
+Uridine pyrophosphate
+ursolic acid
+valganciclovir
+vecuronium bromide
+volume fraction
+walnut oil
+water softening
+weak acid
+X-ray spectroscopy
+xanthone
+Ziegler-Natta catalyst
+zinc chromate
+α-N-acetyl-D-galactosamine
+α-streptozocin
+β-citronellol
+1-chlorobutane
+1-undecanol
+2-benzofuran
+2-Dichlorobenzene
+2-hexanol
+2-methyl-2-butene
+2-pentanol
+2016 Fort McMurray Wildfire
+2016 March Istanbul bombing
+2017 Parsons Green bombing
+2H-isoindole
+3-pentanol
+3-pentanone
+5-Hydroxymethyl-2-furaldehyde
+5-Hydroxymethylfuraldehyde
+abamectin
+acenocoumarol
+acrylate
+acyl halide
+adiponitrile
+agarose
+aliskiren
+americium dioxide
+amidines
+aminocaproic acid
+aminolevulinic acid
+ammonium cyanate
+amoxapine
+antimony pentoxide
+antimony potassium tartrate trihydrate
+antimony trifluoride
+aptamer
+artemether
+artesunate
+articaine
+Asparaginase
+assassination of Rajiv Gandhi
+atracurium
+atracurium besylate
+August 2016 Gaziantep bombing
+autoprotolysis
+azetidine
+benzenesulfonic acid
+benznidazole
+benzohydrol
+benzyl cyanide
+beta-carboline
+beta-trichloroethane
+biophysical chemistry
+bismuth sulfide
+Brady's reagent
+bromotrifluoromethane
+brotizolam
+bumetanide
+butyl butyrate
+butylene glycol
+cabazitaxel
+cacodyl
+cadmium sulfate
+calcipotriol
+calcium DL-lactate
+calcium formate
+calcium nitride
+calcium phosphide
+cannabinol
+capreomycin
+carbachol
+carbaril
+carboxymethyl cellulose
+cemented carbide
+cephalothin
+ceric ammonium nitrate
+Ceylon tea
+chemical indicator
+chrome alum
+chrysene
+cidofovir
+cilazapril
+cisapride
+clinical chemistry
+CMC
+cobaltous iodide
+cromoglicic acid
+crystal field theory
+crystallinity
+cumulene
+Cyanoacetylene
+cycloalkyne
+cysteamine
+D-arabinitol
+danazol
+dasatinib
+deltamethrin
+deoxynivalenol
+desvenlafaxine
+diazo compound
+dibucaine
+dicopper monosulfide
+dicopper sulphide
+dicumarol
+Dicyanoacetylene
+dimethyl carbonate
+dimethyl fumarate
+dimethylallyl pyrophosphate
+disulfane
+dithiothreitol
+doxazosin
+ductile iron
+dutasteride
+ebastine
+edoxaban
+elemental analysis
+endergonic reaction
+enfuvirtide
+erythorbic acid
+esmolol
+ethyl acrylate
+etizolam
+famciclovir
+felodipine
+Five prime cap
+fludrocortisone
+fluvastatin
+fulvestrant
+furanocoumarin
+Galinstan
+gliadin
+glipizide
+glucan
+glucuronolactone
+gondoic acid
+gyokuro
+hemimellitene
+hemimellitol
+hexachlorophene
+hexafluoropropylene
+hexamethylbenzene
+Hunsdiecker reaction
+hydantoin
+hydrochloride
+hydrogen halide
+hygrine
+hypericin
+ibotenic acid
+idarubicin
+imipen
+Imipenem
+imiquimod
+inconel
+indicator
+inositol trisphosphate
+iodine bromide
+iodine monobromide
+iodine trifluoride
+isatin
+isobutyl acetate
+isopropyl acetate
+isothiocyanate
+kamacite
+Kaprun disaster
+Kremlin drone attack
+L-homoserine
+lecanemab
+lenalidomide
+lithium acetate
+lithium borohydride
+lomustine
+lopinavir/ritonavir
+lumefantrine
+magnesium acetate
+magnesium diboride
+magnesium nitride
+Mar Elias Church attack
+mass fraction
+melissic acid
+methyl butyrate
+methyl ethyl ketone peroxide
+methyl vinyl ketone
+methyltestosterone
+mianserin
+mirabegron
+moroctic acid
+n-butylamine
+N-methyl-D-aspartic acid
+nadolol
+naratriptan
+natalizumab
+near-infrared spectroscopy
+nelfinavir
+neotame
+nirmatrelvir
+nisin
+nonacosane
+norbornane
+norbornene
+norharman
+nucleophilic aromatic substitution
+O-benzoquinone
+obstetrical forceps
+octanitrocubane
+ortho-benzoquinone
+ortho-Dichlorobenzene
+oxidoaluminium
+oxyanion
+p-nitroaniline
+PAF
+palladium dichloride
+penciclovir
+pentanal
+pentazole
+perfluorooctanesulfonic acid
+pericyclic reaction
+Perkin reaction
+phenyl salicylate
+phenylacetonitrile
+phi bond
+phosphatidylethanolamines
+phosphatidylinositols
+pirfenidone
+pitavastatin
+platelet activating factor
+polymer electrolyte fuel cell
+polyvinylidene fluoride
+Port Arthur massacre
+potassium cyanate
+prontosil
+propylamine
+protecting group
+Proton-exchange membrane fuel cells
+pseudocumene
+pyrrolizidine
+quinacrine
+quinazoline
+quinoxaline
+radiolysis
+RNA editing
+RNA modification
+rotary evaporator
+rubidium iodide
+Sandmeyer reaction
+SBR
+Schiff base
+secobarbital
+second strike
+secukinumab
+selenium hexafluoride
+senna glycoside
+silver chlorate
+silver iodate
+silver tetrafluoroborate
+sodium cyanoborohydride
+sodium laureth sulfate
+sodium telluride
+solid oxide fuel cell
+spiro compound
+stigmasterol
+strontium sulfide
+styrene-butadiene
+sulfolane
+suramin
+thallium chloride
+thallium monochloride
+thallium sulfate
+Thallium sulphate
+Thiamine diphosphate
+Thiamine-pyrophosphate
+thioacetic acid
+thioglycolic acid
+thiophosphoryl chloride
+thioridazine
+titanium dichloride
+tolterodine
+trandolapril
+tranylcypromine
+triazine
+triazoles
+tridecanoic acid
+triethanolamine
+triethylenediamine
+trifluoperazine
+trihexyphenidyl
+triptane
+trolamine
+tumbaga
+UDP-a-D-glucose
+UDP-delta-glucose
+undecylenic acid
+uranyl nitrate
+uridine diphosphate glucose
+vanadium carbide
+vial
+wastewater treatment plant
+Wolff-Kishner reduction
+Wood's metal
+zeatin
+α-pinene
+β-trichloroethane
+1-decyne
+1-methylcyclopropene
+1-octene
+1H-indazole
+2-methylhexane
+2-pentanone
+2-pyrrolidone
+2017 Bahawalpur explosion
+2025 Delhi car explosion
+3-hydroxybutanal
+3-methylhexane
+4-hydroxybenzoic acid
+4-nitrophenol
+6-O-beta-D-glucopyranosyl-beta-D-glucopyranose
+9-fluorenone
+acceptable daily intake
+acebutolol
+afatinib
+AIBN
+aldol reaction
+alloxan
+alpha-Butyleneglycol
+alpha-pyrrolidone
+altretamine
+aluminium monofluoride
+ammonium bisulfate
+ammonium chlorate
+ammonium cyanide
+ammonium hydrogen sulfate
+AMPA
+anakinra
+anthocyanidin
+antigorite
+arsenic trisulfide
+Atar
+August 2016 Quetta attacks
+awaruite
+azepine
+baricitinib
+barium acetate
+benzoxazole
+bertrandite
+beryllium nitrate
+beta-gentiobiose
+betulin
+bilastine
+bismuth oxychloride
+bismuth pentafluoride
+bismuth tribromide
+Born-Haber cycle
+bpy
+Brilliant Black BN
+bromcresol purple
+bromochlorodifluoromethane
+bromocresol green
+bromophenol blue
+butorphanol
+butyronitrile
+cadmium fluoride
+caesium auride
+calcifediol
+calcium sorbate
+carbenicillin
+carmustine
+caryophyllene
+cefadroxil
+cerium chloride
+cerous chloride
+cetylpyridinium chloride
+chlordecone
+chloroacetone
+chlorofluoromethane
+chromone
+ciclopirox
+cinchonine
+civetone
+clemastine
+Cobalt diacetate
+Cobaltous acetate
+cobaltous bromide
+cold brew coffee
+conductive polymer
+coniferyl alcohol
+corrin
+corrugated galvanised iron
+cresol red
+crotamiton
+crystal chemistry
+cummingtonite
+cupric arsenite
+cupric bromide
+cyclododecane
+cycloundecane
+D-mannopyranose 6-phosphate
+dantrolene
+deoxy sugar
+diazine
+Dicarbon monoxide
+dichlorvos
+dicyclopentadiene
+diethanolamine
+diethyl phthalate
+diethylpropion
+diethylzinc
+dimethyl dicarbonate
+dithionic acid
+dolutegravir
+domoic acid
+double salt
+dry distillation
+ecgonine
+econazole
+emetine
+epigallocatechin gallate
+eplerenone
+erbia
+erlotinib
+esketamine
+estragole
+ethyl maltol
+ethylene glycol monomethyl ether
+ethylparaben
+etodolac
+exemestane
+farnesyl diphosphate
+farnesyl pyrophosphate
+Fast Yellow AB
+FCC
+fenoprofen
+ferredoxin
+fire point
+flibanserin
+flow battery
+fluid catalytic cracking
+fluoranthene
+fluoropolymer
+flurbiprofen
+formal charge
+gallium phosphide
+gentisic acid
+germanium dichloride
+Germanium fluoride
+germanium tetrafluoride
+Gibbs-Donnan effect
+gingerol
+Giza church fire
+glucaric acid
+gold trihydroxide
+Great Fire of Meireki
+Heck reaction
+heptanal
+Heterolysis
+hydrogen deuteride
+Hydrophobic effect
+hydroxy acid
+hydroxypropyl methylcellulose
+hypertonic
+hypromellose
+ICP-MS
+ICPMS
+indane
+indium arsenide
+indoxyl
+interhalogen
+iodine trichloride
+Iron orthophosphate
+Iron phosphate
+isinglass
+isocitrate dehydrogenase
+isoflavone
+isomaltulose
+isosorbide mononitrate
+isothiazole
+ivabradine
+jasmonate
+kaempferol
+Kuwait mosque bombing
+lavender oil
+lignan
+liquid-liquid extraction
+lithium azide
+loxapine
+m-phenylenediamine
+magic acid
+magnetochemistry
+malononitrile
+Manganese oxide
+Manganese tetroxide
+mechlorethamine
+medazepam
+melarsoprol
+melittin
+mercurous iodide
+mercury dicyanide
+methanogenesis
+methyl anthranilate
+methyl red
+methylcyclopentane
+methylene iodide
+microfiltration
+milrinone
+miraculin
+Mitsunobu reaction
+monoglyceride
+Mononitrate d'Isosorbide
+mycophenolic acid
+N-acetyl-beta-muramic acid
+N-acetylneuraminic acid
+nabumetone
+Neuropeptide Y
+nickel-iron battery
+nifurtimox
+nitazoxanide
+nitramide
+nivolumab
+nonadecanoic acid
+norbornadiene
+octopamine
+olefin metathesis
+oleuropein
+osmiridium
+ovalbumin
+oxalosuccinic acid
+p-coumaric acid
+p-dioxin
+palladium nitrate
+palm kernel oil
+para-nitrophenol
+phenazopyridine
+Phenol red
+phenolsulfonphthalein
+phentolamine
+phosphorus trifluoride
+picloram
+pimecrolimus
+pipemidic acid
+platinum tetrachloride
+plutonium-238
+polyimide
+polyphosphate
+porphobilinogen
+potassium propionate
+potassium-40
+pralidoxime
+prasugrel
+precipitation hardening
+primary alcohol
+promazine
+propyl bromide
+propyl gallate
+propylene dichloride
+prostaglandin E2
+pseudouridine
+PtCl4
+puromycin
+pyrethrin
+quinic acid
+radiation chemistry
+ramelteon
+reelin
+Reimer-Tiemann reaction
+rhodocene
+ribose 5-phosphate
+rizatriptan
+rubidium hydride
+RuBP
+ruthenium trichloride
+s-Tetrachloroethane
+sapropterin
+sesquiterpene
+sevelamer
+short-chain fatty acid
+silver acetate
+silver acetylide
+silver chromate
+silver halide
+sodium dodecylbenzenesulfonate
+sodium hexafluoroaluminate
+sodium selenate
+sodium sorbate
+stannous iodide
+stercobilin
+stereoselectivity
+sucralfate
+sulindac
+tartrate
+teixobactin
+tellurium fluoride
+tellurium hexafluoride
+tetrachloroethane
+tetraethyl silicate
+TFE
+thénardite
+thymidine monophosphate
+ticagrelor
+tonicity
+torasemide
+triamterene
+trichloroisocyanuric acid
+tricobalt tetroxide
+triethylaluminum
+trifluoroethanol
+trihalomethane
+trimetazidine
+trimethylaluminum
+trimethylchlorosilane
+triphenylcarbinol
+triterpene
+tropinone
+tubocurarine
+ulipristal acetate
+urea nitrate
+vacuum distillation
+vanadium tetrafluoride
+vanadium trifluoride
+vanillic acid
+violaxanthin
+Walden inversion
+Wall Street bombing
+Wilkinson's catalyst
+Williamson ether synthesis
+xanthene
+xenon hexafluoroplatinate
+Yellow 2G
+yttrium barium copper oxide
+yttrium chloride
+yuanyang
+yuenyeung
+zaleplon
+Zamak
+zinc diethyl
+zinc ethyl
+zinc selenide
+α-Butylene glycol
+β-neuraminic acid
+1-butanethiol
+1-naphthaleneacetic acid
+2'-deoxyadenosine triphosphate
+2-ethoxyethanol
+2-pentyne
+2-phenylphenol
+2-pyrocatechuic acid
+2005 Sharm el-Sheikh attacks
+2019 Jolo Cathedral bombing
+3-hydroxysalicylic acid
+3-quinuclidinyl-benzilate
+7-dehydrocholesterol
+abatacept
+abciximab
+abiraterone acetate
+acetone cyanohydrin
+acid strength
+acridine orange
+aldicarb
+alfa-PvP
+allyl bromide
+alpha hydroxy acid
+alpha-naphthoquinone
+aluminium orthophosphate
+aluminium phosphate
+aminophenazone
+ammonium formate
+ammonium perrhenate
+ammonium thiosulfate
+amylene hydrate
+anammox
+antimony tribromide
+arecoline
+armodafinil
+arsenic pentafluoride
+arsenic tribromide
+arsenic trifluoride
+arsenide
+ASASSN-15C
+astemizole
+Attack on Fumio Kishida
+auramine hydrochloride
+azilsartan
+azo dye
+ball mill
+baloxavir marboxil
+bancha
+Beckmann rearrangement
+belimumab
+benzatropine
+benzyl salicylate
+beryllium carbide
+beryllium nitride
+beta-sitosterol
+betalain
+bifonazole
+bismuth nitrate
+Blanc chloromethylation
+brilliant green
+brodifacoum
+bromine monofluoride
+burner
+C-peptide
+C3 carbon fixation
+calcium bisulfite
+calcium cyanide
+calcium silicate
+Canada balsam
+caprylaldehyde
+carbon diselenide
+carbon monosulfide
+carbonation
+carbonylation
+carteolol
+cefoperazone
+cefoxitin
+ceftibuten
+cetrimonium bromide
+Cetyl trimethyl ammonium bromide
+chalcogenide
+chloramine T
+chlorine pentafluoride
+chlorobutanol
+chlorofluorocarbon-113
+chromic fluoride
+chromium trifluoride
+cinnarizine
+cis-3-Hexen-1-ol
+cladribine
+clofibrate
+COD
+Colony stimulating factor 2
+cotinine
+cow's milk
+cranberry juice
+crocin
+crotyl alcohol
+crucible steel
+cryostat
+cuprous cyanide
+Cyanidin
+cyanidin cation
+cyanohydrin
+Cyanuric acid chloride
+cyanuric chloride
+cycloheptene
+cyclohexylamine
+DAP
+DBU
+deanol
+decanal
+deflagration
+desorption
+Dess-Martin periodinane
+deuteron
+dexmedetomidine
+dialysis
+diaminopimelic acid
+diazene
+dibenzazepine
+dibenzofuran
+dibenzothiophene
+dibromodimercury
+dichlorocarbene
+dichlorofluoromethane
+dichlorotetrafluoroethane
+dicyclomine
+didanosine
+diethylene glycol dimethylether
+diethylenetriamine
+Dihydrofolate
+Dihydrofolic Acid
+diimide
+diisobutylaluminum hydride
+diketene
+dimethoate
+Dimethyl Cellosolve
+dimethyl disulfide
+dimethyl phthalate
+dimethylglyoxime
+dioxolane
+diphenyl disulfide
+disilane
+disodium 5'-inosinate
+disodium DL-tartrate
+Disulfide dimethyl
+DMAE
+Edman degradation
+enteropeptidase
+eprosartan
+ethacrynic acid
+ethyl chloroformate
+ethyl orthoformate
+ethyl propionate
+ethyl tert-butyl ether
+ethylene glycol dimethyl ether
+etidronic acid
+eucalyptus oil
+Finkelstein reaction
+flavonol
+flecainide
+flupentixol
+furazolidone
+Gabriel synthesis
+gamboge
+geranyl diphosphate
+geranyl pyrophosphate
+germanium disulfide
+glycan
+Glycerol triacetate
+glycyrrhizin
+gold trifluoride
+granisetron
+gunpowder tea
+hafnium tetrachloride
+half-reaction
+hapticity
+HDPE
+Hell-Volhard-Zelinsky halogenation
+hemiaminal
+hentriacontane
+hex-3-en-1-ol
+hexachlorobutadiene
+hexafluorobenzene
+hexafluorophosphoric acid
+hexamethylphosphoramide triamide
+high-density polyethylene
+Hofmann voltameter
+hydrazide
+ibandronic acid
+incubator
+indacaterol
+indican
+indoline
+iodate
+Iron carbonate
+Iron II carbonate
+isomaltose
+isopropyl chloride
+isosafrole
+L-carbocysteine
+L-fuculose
+L-kynurenine
+L-morphan
+lead difluoride
+lead fluoride
+ledipasvir
+levan polysaccharide
+levomenol
+lincosamides
+lithium niobate
+magnesium perchlorate
+malonyl-Coenzyme A
+manganese trifluoride
+Menthone
+mercuric bromide
+mercuric thiocyanate
+mercurous sulfate
+mesityl oxide
+methyl cellulose
+methyl cyanoacrylate
+methyl isobutyl ketone
+methyl morpholine oxide
+methyl nitrate
+methyl nitrite
+methyl phosphite
+methylated cellulose
+methylcobalamin
+methylisothiazolinone
+mirex
+molybdate
+molybdenum dioxide
+monoamine molecular messenger
+monoterpene
+muscone
+N-formylmethionine
+nanochemistry
+nedocromil
+nepetalactone
+nickel iodide
+Nickelous iodide
+nikethamide
+nitrosyl hydride
+non-stoichiometric compounds
+nonahydropentaborane
+nucleoside triphosphate
+octyl acetate
+octyl gallate
+olaparib
+orellanine
+organocatalysis
+oxamide
+oxirene
+oxprenolol
+p-naphthoquinone
+p-toluenesulfonyl chloride
+palbociclib
+palonosetron
+pemetrexed
+pentaborane
+pertechnetic acid
+phenibut
+pheniramine
+phenyl phosphate
+phenyllithium
+phenylthiourea
+photochromism
+photoionization
+phytanic acid
+Piazza Fontana bombing
+pinacolone
+plastoquinone
+plazomicin
+polyacetylene
+polybutylene terephthalate
+polycaprolactone
+polychlorinated dibenzodioxin
+polydimethylsiloxane
+polyhydroxyalkanoate
+polyketide
+polymyxin B
+porphin
+potassium bisulfide
+potassium periodate
+potassium tetrachloroplatinate
+pramlintide
+probenecid
+propiolactone
+propiophenone
+propyl chloride
+propyl mercaptan
+protamine
+protionamide
+protoanemonin
+Proton Sponge
+pterin
+pyroglutamic acid
+pyrroline
+ranolazine
+recrystallization
+rhodamine B
+rifapentine
+rocuronium bromide
+S-carboxymethyl-L-cysteine
+s-trioxane
+sabinene
+Saikazaki bombing
+salicylamide
+salicylic acid amide
+samarium iodide
+sandarac
+saponite
+SDS-PAGE
+selenide
+semicarbazide
+Silver monoxide
+silver peroxide
+sinapic acid
+sodium cyclopentadienide
+sodium hypophosphite
+sodium lactate
+sodium pyrosulfate
+sodium-potassium alloy
+solifenacin
+sonochemistry
+stannic sulfide
+Stannous fluoride
+steam reforming
+stearyl alcohol
+Stille reaction
+strong acid
+strontium bromide
+sulbactam
+sulfadoxine
+sulforaphane
+sunitinib
+syringic acid
+taenite
+tazobactam
+teicoplanin
+tellurium trioxide
+TEMED
+tetrabenazine
+tetranitromethane
+tetrazine
+Texas City disaster
+Texas City Explosion
+thioketone
+thorium chloride
+tin difluoride
+TMEDA
+tolbutamide
+triacetin
+trichlorotrifluoroethane
+trihydrogen cation
+trimethyl phosphite
+trimethylamine oxide
+trioxane
+triphenyl phosphate
+triphosphoric acid
+tripotassium trioxalatoferrate trihydrate
+triprolidine
+tungsten hexachloride
+turanose
+unsaturated hydrocarbon
+urea-formaldehyde
+usnic acid
+ustekinumab
+vulcanized rubber
+xanthate
+zinc cyanide
+zingerone
+zolmitriptan
+α-D-glucose-1-phosphate
+α-pyrrolidinopentiophenone
+1-nonene
+2-heptanone
+2-methylheptane
+2-methylpropane-2-thiol
+2-phenylpropane
+2011 Alexandria bombing
+2023 Canadian wildfires
+2023 Yinchuan gas explosion
+2H-Hexafluoroisopropanol
+3-chloroperbenzoic acid
+4-Chloronitrobenzene
+4-methylimidazole
+4-methylpyridine
+abemaciclib
+acene
+acid salt
+Adams' catalyst
+agmatine
+alpha-hydroxy-alpha-phenylbenzeneacetic acid
+alpha-methyl styrene
+alprostadil
+amine oxide
+amiton
+amitrole
+Ammonia borane
+ammonium bifluoride
+ammonium carbamate
+ammonium chloroplatinate
+ammonium ferric citrate
+ammonium heptamolybdate
+ammonium oxalate
+anabasine
+anagrelide
+analeptic
+anthralin
+antimony tetroxide
+antimony triiodide
+apremilast
+astatine monoiodide
+avanafil
+azacitidine
+azadirachtin
+barium azide
+basiliximab
+benzylpiperazine
+Besifloxacin
+beta-pinene
+bethanechol
+bicyclic compound
+biguanide
+bioorthogonal chemistry
+Birch reduction
+boldenone
+boron triiodide
+bosentan
+branched-chain amino acid
+brimonidine
+brinzolamide
+bromodifluoromethane
+Brown HT
+butyrometer
+caesium acetate
+caesium chromate
+caesium hydride
+calcium bromate
+calcium stearate

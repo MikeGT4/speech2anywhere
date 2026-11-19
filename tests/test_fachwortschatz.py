@@ -67,10 +67,49 @@ def test_glossar_schlaegt_fuer_alltagswoerter_nichts_vor(tmp_path):
     assert fw.glossar("Wir beantragen die Verfügung beim Landgericht.", "de", 5) == []
 
 
+def test_glossar_schlaegt_auch_englisch_fuer_alltagswoerter_nichts_vor(tmp_path):
+    (tmp_path / "medizin-en.txt").write_text("massage\nappendicitis\n", encoding="utf-8")
+    fw = Fachwortschatz.laden(["medizin"], tmp_path)
+    assert fw.glossar("Please send me a message about the apendicitis.", "en", 5) == ["appendicitis"]
+
+
+def test_ohne_feste_sprache_zaehlen_die_alltagswoerter_beider_sprachen(tmp_path):
+    (tmp_path / "medizin-de.txt").write_text("Appendizitis\n", encoding="utf-8")
+    (tmp_path / "medizin-en.txt").write_text("infection\ntherapy\n", encoding="utf-8")
+    fw = Fachwortschatz.laden(["medizin"], tmp_path)
+    assert fw.glossar("Der Patient hat eine Infektion, die Therapie hilft.", "auto", 5) == []
+
+
+def test_englische_verneinungen_loesen_keinen_vorschlag_aus(tmp_path):
+    (tmp_path / "medizin-en.txt").write_text("shoulder\nweren\n", encoding="utf-8")
+    fw = Fachwortschatz.laden(["medizin"], tmp_path)
+    assert fw.glossar("We weren't sure, so we shouldn’t wait.", "en", 5) == []
+
+
+def test_alltagswortlisten_fuer_alle_sprachen_mitgeliefert():
+    from kira.wordlist import default_wordlist
+    for sprache in SPRACHEN:
+        assert len(default_wordlist(sprache)) > 40000, sprache
+
+
 def test_glossar_ordnet_nach_aehnlichkeit(tmp_path):
     (tmp_path / "medizin-de.txt").write_text("Kolposkopie\nLaparoskopie\n", encoding="utf-8")
     fw = Fachwortschatz.laden(["medizin"], tmp_path)
     assert fw.glossar("Wir veranlassen eine Leparoskopie.", "de", 5)[0] == "Laparoskopie"
+
+
+def test_glossar_nimmt_je_wort_nur_die_naechsten_begriffe(tmp_path):
+    (tmp_path / "medizin-de.txt").write_text("Hyperthyreose\nHypothyreose\n", encoding="utf-8")
+    fw = Fachwortschatz.laden(["medizin"], tmp_path)
+    assert fw.glossar("Der Patient hat eine Hypo Tyreose.", "de", 5) == ["Hypothyreose"]
+
+
+def test_hoechstens_drei_sprachen_bleiben_im_speicher(verzeichnis):
+    fw = Fachwortschatz.laden(["medizin"], verzeichnis)
+    for sprache in ("de", "en", "fr", "it", "de"):
+        fw.glossar("Hypo Tyreose", sprache, 5)
+    assert list(fw._index) == ["fr", "it", "de"]
+    assert fw.glossar("Hypo Tyreose", "de", 5) == ["Hypothyreose"]
 
 
 def test_glossar_achtet_auf_grenze(verzeichnis):
@@ -85,7 +124,7 @@ def test_mitgelieferte_listen_vollstaendig():
             pfad = verzeichnis / f"{gebiet}-{sprache}.txt"
             assert pfad.exists(), pfad.name
             zeilen = pfad.read_text(encoding="utf-8").splitlines()
-            assert 100 <= len(zeilen) <= 3000, pfad.name
+            assert 100 <= len(zeilen) <= 6000, pfad.name
             assert all(z and z == z.strip() for z in zeilen), pfad.name
 
 

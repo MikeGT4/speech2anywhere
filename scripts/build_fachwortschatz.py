@@ -9,6 +9,7 @@ import hashlib
 import http.client
 import itertools
 import json
+import os
 import re
 import sys
 import time
@@ -21,31 +22,48 @@ from dataclasses import dataclass
 from pathlib import Path
 
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
-USER_AGENT = "Speech2Anywhere-vocabulary-build/1.0 (https://github.com/MikeGT4/speech2anywhere)"
+USER_AGENT = "fachwortschatz-build/1.1 (https://speech2anywhere.de)"
 LICENSE_URL = "https://www.wikidata.org/wiki/Wikidata:Licensing"
 WORDFREQ_RELEASE = "v3.2"
 WORDFREQ_COMMIT = "42233e6c36ce792031bcccfa17cdd0cec9af5fa7"
-WORDFREQ_URL = (
-    f"https://raw.githubusercontent.com/rspeer/wordfreq/{WORDFREQ_COMMIT}/wordfreq/data/large_de.msgpack.gz"
-)
-WORDFREQ_SHA256 = "8ef04d3f4a28fb48d800d25fa80a96d90a5f80c8496c9a453f99f887c6ad3c12"
+WORDFREQ_URL = "https://raw.githubusercontent.com/rspeer/wordfreq/{commit}/wordfreq/data/large_{language}.msgpack.gz"
+WORDFREQ_SHA256 = {
+    "de": "8ef04d3f4a28fb48d800d25fa80a96d90a5f80c8496c9a453f99f887c6ad3c12",
+    "en": "dffae8066b78dce0a6667cf5f58e567054f902674667090a7ac8a8a44628b05c",
+    "fr": "6f16cd80b9b66c5698ed002becea83ae30d0584c3205f1cf01714ad562c00c8b",
+    "it": "0b5500e425a50e0f1fefb256d9125e74f586ac6b2f2a6e41bc96634bd5613cc7",
+    "nl": "cfdae01b2ccd5bc94be046645b6ba8682e65d6709beedf6ab98d7bdc5414d671",
+    "pl": "fac63e49c49ea2e39dd8a48152d7e54cec0920abbc59993088063ed5d9b528c2",
+    "pt": "7d764586bca6262f554d5fa77ad8e6841ef42534776e70558065140853660ce2",
+    "es": "14f326b4f68d517f9b8b99c1e26ef56a508d2dc8d0ee7a9e6e8732ddab1aa65e",
+}
 
 LANGUAGES = ("de", "en", "fr", "it", "nl", "pl", "pt", "es")
 LANGUAGE_OF_TAG = {language: language for language in LANGUAGES} | {"pt-br": "pt"}
 SHARED_TAG = "mul"
-MAX_TERMS = 3000
+DEFAULT_MAX_TERMS = 3000
+MAX_TERMS = {"medizin": 6000, "medikamente": 5000, "chemie": 5000}
 ITEM_POOL_SIZE = 9000
 QUERY_TIME_LIMIT_SECONDS = 60
 CLIENT_TIMEOUT_SECONDS = QUERY_TIME_LIMIT_SECONDS + 10
-PARALLEL_QUERIES = 2
+PARALLEL_QUERIES = 3
 MAX_ATTEMPTS = 8
 RETRY_STATUS = frozenset({429, 500, 502, 503, 504})
 LABEL_BATCH_SIZE = 250
 COMMON_GERMAN_WORD_COUNT = 20000
-SHORT_LOWERCASE_LENGTH = 6
+COMMON_WORD_ZIPF = 4.0
+COMMON_BUCKET = round((9 - COMMON_WORD_ZIPF) * 100)
+CAPITALIZED_COMMON_ZIPF = 5.0
+CAPITALIZED_COMMON_BUCKET = round((9 - CAPITALIZED_COMMON_ZIPF) * 100)
+RAREST_BUCKET = 10 ** 6
 MIN_TERM_LENGTH = 3
 MAX_TERM_LENGTH = 60
 MAX_TERM_WORDS = 4
+SYNONYM_LIMIT = 2
+COGNATE_MIN = 0.8
+MIN_SYNONYM_LETTERS = 7
+VARIANT_MIN = 0.9
+DERIVED_PREFIX_SHARE = 0.75
 ASSETS_DIR = Path(__file__).resolve().parent.parent / "assets"
 OUTPUT_DIR = ASSETS_DIR / "fachwortschatz"
 KNOWN_GERMAN_WORDS_FILE = ASSETS_DIR / "wordlist-de.txt"
@@ -55,6 +73,7 @@ GERMAN_WORD = re.compile(r"[a-zäöüß]+")
 LETTER_RUN = re.compile(r"[^\W\d_]{3,}")
 INNER_CAPITAL = re.compile(r".\S*[A-ZÄÖÜ]")
 LIST_PAGE = re.compile(r"^(liste|list|lijst|lista|elenco)\s", re.IGNORECASE)
+STEREO_PREFIX = re.compile(r"^(?:\((?:R|S|RS|SR|E|Z|EZ|R,S|S,R|±|\+|-|\+/-)\)-)+(?=[^\W\d_])")
 ALLOWED_PUNCTUATION = frozenset(" -'./+&#")
 EDGE_PUNCTUATION = "-/&'"
 ENGLISH_FUNCTION_WORDS = frozenset({"of", "the", "and", "with", "for", "from", "without", "on"})
@@ -70,6 +89,21 @@ LEADING_ARTICLES = {
 }
 LEADING_ALIAS_LIMIT = 2
 INFLECTION_SUFFIXES = ("es", "en", "s", "n", "e")
+SPELLING_VARIANTS = (
+    ("ph", "f"), ("th", "t"), ("rh", "r"), ("ae", "e"), ("oe", "e"), ("qu", "c"), ("k", "c"), ("z", "c"), ("y", "i"),
+)
+UMLAUT_SPELLING = str.maketrans({"ä": "ae", "ö": "oe", "ü": "ue"})
+WORD_TOKEN = re.compile(r"[^\W\d_]+")
+ALPHABETS = {
+    "de": "äöüß",
+    "en": "",
+    "fr": "àâæçéèêëîïôœùûüÿ",
+    "it": "àèéìíîòóùú",
+    "nl": "áàäéèëíïóöúü",
+    "pl": "ąćęłńóśźż",
+    "pt": "áâãàçéêíóôõú",
+    "es": "áéíñóúü",
+}
 LATIN_RANGE = range(0xC0, 0x250)
 GREEK_RANGE = range(0x370, 0x400)
 TERM_TRANSLATION = (
@@ -90,18 +124,23 @@ class Selector:
     classes: tuple[str, ...] = ()
     path: str = "P31"
     holds: str = ""
+    items: tuple[str, ...] = ()
     prefixes: tuple[str, ...] = ()
     excluded_prefixes: tuple[str, ...] = ()
     gate: tuple[str, ...] = ()
     excluded_classes: tuple[str, ...] = ()
+    excluded_types: tuple[str, ...] = ()
+    excluded_ancestors: tuple[str, ...] = ()
     excluded_properties: tuple[str, ...] = ()
     jurisdictions: tuple[str, ...] = ()
     min_sitelinks: int = 1
+    weight: float = 1.0
     languages: tuple[str, ...] = LANGUAGES
 
 
 @dataclass(frozen=True)
 class WordLists:
+    frequency: dict[str, dict[str, int]]
     common_german: frozenset[str]
     known_german: frozenset[str]
 
@@ -137,12 +176,24 @@ DRUG_IDS = ("P267", "P715")
 NON_THERAPEUTIC_ATC = ("V01", "V03AN", "V07")
 CHEMICAL_ELEMENT = "Q11344"
 HUMAN = "Q5"
+ORGANIZATION = "Q43229"
+COURT = "Q41487"
+INTERNATIONAL_COURT = "Q1262438"
 CURRENCY_CODE = "P498"
 TAXON_NAME = "P225"
+GENE_ONTOLOGY = "P686"
 WIKIMEDIA_PROJECT = "Q14827288"
-ORGANIZATION_TRAITS = ("P856", "P159", "P625")
+WIKIPEDIA_EDITION = "Q10876391"
+DISSOLVED = ("P576",)
+REPEALED = ("P576", "P582")
+TIME_BOUND = ("P580", "P582", "P585")
+ENTITY_TRAITS = ("P856", "P159", "P625", "P571", *DISSOLVED, *TIME_BOUND)
+MONEY_TYPES = ("Q1368", "Q8142", "Q41207", "Q113813711")
+LIFE_SCIENCE_TYPES = ("Q112193867", "Q1441305", "Q2996394")
 PHYSICS_IDS = ("P416", "P2534", "P4020", "P8855")
 UNIT_IDS = ("P2370", "P7825", "P2968")
+NATIONAL_COURT_MIN_SITELINKS = 5
+BROAD_SOURCE_WEIGHT = 0.25
 MESH_MEDICAL_BRANCHES = (
     "A01", "A02", "A03", "A04", "A05", "A06", "A07", "A08", "A09", "A10", "A11", "A12", "A14", "A15", "A16", "A17",
     "C", "E01", "E02", "E03", "E04", "E06", "F03", "H02.403",
@@ -157,7 +208,12 @@ EXCLUDED_ITEMS = frozenset({"Q248542", "Q1126839", "Q1977520", "Q25110971", "Q94
 
 
 def national_laws(language: str, *countries: str) -> Selector:
-    return instances(*LAW_CLASSES, jurisdictions=countries, languages=(language,))
+    return instances(*LAW_CLASSES, jurisdictions=countries, excluded_properties=REPEALED, languages=(language,))
+
+
+def national_courts(language: str, *countries: str) -> Selector:
+    return members(COURT, jurisdictions=countries, excluded_properties=DISSOLVED,
+                   min_sitelinks=NATIONAL_COURT_MIN_SITELINKS, languages=(language,))
 
 
 DOMAINS: dict[str, tuple[Selector, ...]] = {
@@ -191,44 +247,53 @@ DOMAINS: dict[str, tuple[Selector, ...]] = {
     ),
     "jura": (
         instances("Q1756157"),
-        instances("Q2135465"),
+        instances("Q2135465", excluded_ancestors=(ORGANIZATION,)),
         instances("Q130583773"),
         instances("Q131784846"),
-        subclasses("Q41487"),
-        members("Q41487", min_sitelinks=10),
+        subclasses(COURT),
+        members(INTERNATIONAL_COURT, excluded_properties=DISSOLVED),
         subclasses("Q158970"),
         subclasses("Q689247"),
         subclasses("Q697327"),
-        subclasses("Q1301203"),
+        subclasses("Q1301203", excluded_properties=TIME_BOUND),
         members("Q1938208"),
         members("Q3237872"),
         subclasses("Q8458"),
         members("Q10353985"),
         national_laws("de", "Q183"),
+        national_courts("de", "Q183"),
         holders("P9696", languages=("de",)),
         national_laws("en", "Q145", "Q30"),
+        national_courts("en", "Q145", "Q30"),
         holders("P3343", languages=("en",)),
         holders("P3837", languages=("en",)),
         national_laws("fr", "Q142"),
+        national_courts("fr", "Q142"),
         national_laws("it", "Q38"),
+        national_courts("it", "Q38"),
         holders("P8722", languages=("it",)),
         national_laws("nl", "Q55"),
+        national_courts("nl", "Q55"),
         holders("P13979", languages=("nl",)),
         national_laws("pl", "Q36"),
+        national_courts("pl", "Q36"),
         national_laws("pt", "Q45", "Q155"),
+        national_courts("pt", "Q45", "Q155"),
         holders("P9119", languages=("pt",)),
         national_laws("es", "Q29"),
+        national_courts("es", "Q29"),
         holders("P4256", languages=("es",)),
     ),
     "wirtschaft": (
-        holders("P10715", excluded_classes=(HUMAN,), excluded_properties=ORGANIZATION_TRAITS),
+        holders("P10715", excluded_classes=(HUMAN,), excluded_ancestors=(ORGANIZATION,),
+                excluded_properties=ENTITY_TRAITS, weight=BROAD_SOURCE_WEIGHT),
         members("Q29028649"),
-        subclasses("Q247506", excluded_properties=(CURRENCY_CODE,)),
+        subclasses("Q247506", excluded_types=MONEY_TYPES, excluded_properties=(CURRENCY_CODE,)),
         members("Q832161"),
         members("Q1167393"),
         subclasses("Q8161"),
         instances("Q130109687"),
-        subclasses("Q273005", excluded_classes=(WIKIMEDIA_PROJECT,)),
+        subclasses("Q273005", excluded_classes=(WIKIMEDIA_PROJECT,), excluded_types=(WIKIPEDIA_EDITION,)),
         subclasses("Q815823"),
         instances("Q1269299"),
         subclasses("Q192907"),
@@ -243,6 +308,15 @@ DOMAINS: dict[str, tuple[Selector, ...]] = {
         subclasses("Q39809"),
         subclasses("Q2851421"),
         subclasses("Q4116214"),
+        instances("Q64588497"),
+        instances("Q116460050"),
+        instances("Q106905561"),
+        instances("Q64513545"),
+        subclasses("Q8137"),
+        subclasses("Q170924"),
+        subclasses("Q1527264"),
+        subclasses("Q1166072"),
+        subclasses("Q160151"),
     ),
     "technik": (
         members("Q107715", gate=PHYSICS_IDS),
@@ -252,7 +326,7 @@ DOMAINS: dict[str, tuple[Selector, ...]] = {
         near_subclasses("Q1293220"),
         instances("Q125517960"),
         subclasses("Q11653"),
-        holders("P8855"),
+        holders("P8855", excluded_types=LIFE_SCIENCE_TYPES, excluded_properties=(GENE_ONTOLOGY,)),
         near_subclasses("Q839546"),
         subclasses("Q2041172"),
         members("Q1408288"),
@@ -261,6 +335,8 @@ DOMAINS: dict[str, tuple[Selector, ...]] = {
         near_subclasses("Q44167"),
         instances("Q173227"),
         instances("Q140424281"),
+        instances("Q137582043"),
+        subclasses("Q1480529"),
     ),
     "chemie": (
         instances(CHEMICAL_ELEMENT),
@@ -276,6 +352,11 @@ DOMAINS: dict[str, tuple[Selector, ...]] = {
         instances("Q55640599"),
         near_subclasses("Q81163"),
         subclasses("Q37756"),
+        instances("Q47154513"),
+        instances("Q56256173"),
+        instances("Q4751159"),
+        instances("Q3247516"),
+        subclasses("Q71550700"),
     ),
     "it": (
         members("Q9143"),
@@ -303,6 +384,25 @@ DOMAINS: dict[str, tuple[Selector, ...]] = {
         subclasses("Q3966"),
         members("Q181156"),
         subclasses("Q4071928"),
+        members("Q11288"),
+        members("Q11189"),
+        members("Q71550"),
+        members("Q7935198"),
+        members("Q118218718"),
+        members("Q1077480"),
+        members("Q16947796"),
+        members("Q29032804"),
+        members("Q138081337"),
+        members("Q13224353"),
+        members("Q1480561"),
+        members("Q141089604"),
+        members("Q91348108"),
+        members("Q1092177"),
+        members("Q756230"),
+        members("Q14663"),
+        members("Q891055"),
+        members("Q2727468"),
+        members("Q47506"),
     ),
 }
 
@@ -316,6 +416,8 @@ def entity_list(ids: tuple[str, ...]) -> str:
 
 
 def match_clause(selector: Selector) -> str:
+    if selector.items:
+        return f"VALUES ?item {{ {entity_list(selector.items)} }}"
     if selector.holds:
         if not selector.prefixes:
             return f"?item wdt:{selector.holds} [] ."
@@ -341,6 +443,14 @@ def selector_query(selector: Selector) -> str:
         clauses.append(f"FILTER NOT EXISTS {{ ?item wdt:P31 wd:{excluded} }}")
     for excluded in selector.excluded_classes:
         clauses.append(f"FILTER NOT EXISTS {{ ?item wdt:P31/wdt:P279* wd:{excluded} }}")
+    if selector.excluded_types:
+        types = entity_list(selector.excluded_types)
+        clauses.append(f"FILTER NOT EXISTS {{ VALUES ?type {{ {types} }} ?item wdt:P31|wdt:P279 ?type . }}")
+    for ancestor in selector.excluded_ancestors:
+        clauses.append(
+            "FILTER NOT EXISTS { ?item wdt:P279 ?parent . ?parent wdt:P279? ?grandparent . "
+            f"?grandparent wdt:P279? wd:{ancestor} . }}"
+        )
     if selector.excluded_properties:
         alternatives = "|".join(f"wdt:{prop}" for prop in selector.excluded_properties)
         clauses.append(f"FILTER NOT EXISTS {{ ?item {alternatives} [] }}")
@@ -442,22 +552,39 @@ def decode_text(payload: bytes, position: int, length: int) -> tuple[str, int]:
     return payload[position:end].decode("utf-8"), end
 
 
-def load_common_german_words(cache_dir: Path | None) -> frozenset[str]:
-    cache_file = cache_dir / "wordfreq-large_de.msgpack.gz" if cache_dir else None
-    if cache_file and cache_file.exists():
-        compressed = cache_file.read_bytes()
-    else:
-        compressed = http_get(WORDFREQ_URL)
-        if cache_file:
-            cache_file.write_bytes(compressed)
-    if hashlib.sha256(compressed).hexdigest() != WORDFREQ_SHA256:
-        raise RuntimeError("Prüfsumme der wordfreq-Daten stimmt nicht")
-    table, _ = decode_msgpack(gzip.decompress(compressed))
-    header, *buckets = table
-    if not isinstance(header, dict) or header.get("format") != "cB":
-        raise RuntimeError("unerwartetes Format der wordfreq-Daten")
-    ranked = (word for bucket in buckets for word in bucket if GERMAN_WORD.fullmatch(word))
+def load_word_frequencies(cache_dir: Path | None) -> dict[str, dict[str, int]]:
+    frequencies = {}
+    for language in LANGUAGES:
+        cache_file = cache_dir / f"wordfreq-large_{language}.msgpack.gz" if cache_dir else None
+        if cache_file and cache_file.exists():
+            compressed = cache_file.read_bytes()
+        else:
+            compressed = http_get(WORDFREQ_URL.format(commit=WORDFREQ_COMMIT, language=language))
+            if cache_file:
+                cache_file.write_bytes(compressed)
+        if hashlib.sha256(compressed).hexdigest() != WORDFREQ_SHA256[language]:
+            raise RuntimeError(f"Prüfsumme der wordfreq-Daten ({language}) stimmt nicht")
+        table, _ = decode_msgpack(gzip.decompress(compressed))
+        header, *buckets = table
+        if not isinstance(header, dict) or header.get("format") != "cB":
+            raise RuntimeError(f"unerwartetes Format der wordfreq-Daten ({language})")
+        ranks: dict[str, int] = {}
+        for bucket, words in enumerate(buckets):
+            for word in words:
+                ranks.setdefault(word, bucket)
+        frequencies[language] = ranks
+    return frequencies
+
+
+def common_german_words(frequency: dict[str, int]) -> frozenset[str]:
+    ranked = (word for word in frequency if GERMAN_WORD.fullmatch(word))
     return frozenset(itertools.islice(ranked, COMMON_GERMAN_WORD_COUNT))
+
+
+def domain_selectors(domain: str) -> tuple[Selector, ...]:
+    selectors = DOMAINS[domain]
+    roots = tuple(dict.fromkeys(entity for selector in selectors if selector.path != "P31" for entity in selector.classes))
+    return selectors + (Selector(items=roots),) if roots else selectors
 
 
 def collect_items(selectors: tuple[Selector, ...], cache_dir: Path | None) -> list[dict[str, int]]:
@@ -469,13 +596,16 @@ def collect_items(selectors: tuple[Selector, ...], cache_dir: Path | None) -> li
         return list(pool.map(fetch, selectors))
 
 
-def build_pools(selectors: tuple[Selector, ...], found: list[dict[str, int]]) -> dict[str, dict[str, int]]:
+def build_pools(selectors: tuple[Selector, ...], found: list[dict[str, int]]) -> dict[str, dict[str, float]]:
     pools = {}
     for language in LANGUAGES:
-        merged: dict[str, int] = {}
+        merged: dict[str, float] = {}
         for selector, items in zip(selectors, found):
-            if language in selector.languages:
-                merged.update((item, links) for item, links in items.items() if item not in EXCLUDED_ITEMS)
+            if language not in selector.languages:
+                continue
+            for item, links in items.items():
+                if item not in EXCLUDED_ITEMS and links * selector.weight > merged.get(item, -1):
+                    merged[item] = links * selector.weight
         ranked = sorted(merged.items(), key=lambda entry: (-entry[1], int(entry[0][1:])))
         pools[language] = dict(ranked[:ITEM_POOL_SIZE])
     return pools
@@ -528,7 +658,8 @@ def terms_for_language(item_terms: dict[str, list[tuple[str, str]]], language: s
 
 
 def normalize_term(text: str) -> str:
-    return " ".join(unicodedata.normalize("NFC", text).translate(TERM_TRANSLATION).split())
+    term = " ".join(unicodedata.normalize("NFC", text).translate(TERM_TRANSLATION).split())
+    return STEREO_PREFIX.sub("", term)
 
 
 def letter_script(character: str) -> str:
@@ -561,12 +692,17 @@ def starts_with_article(term: str, language: str) -> bool:
     return first in articles or any(article.endswith("'") and first.startswith(article) for article in articles)
 
 
+def word_bucket(term: str, language: str, word_lists: WordLists) -> int:
+    return word_lists.frequency[language].get(term.casefold(), RAREST_BUCKET)
+
+
 def is_common_word(term: str, language: str, word_lists: WordLists) -> bool:
-    if " " in term:
+    if " " in term or INNER_CAPITAL.match(term):
         return False
     if language == "de":
-        return term.casefold() in word_lists.common_german and not INNER_CAPITAL.match(term)
-    return term == term.lower() and len(term) <= SHORT_LOWERCASE_LENGTH
+        return term.casefold() in word_lists.common_german
+    limit = COMMON_BUCKET if term == term.lower() else CAPITALIZED_COMMON_BUCKET
+    return word_bucket(term, language, word_lists) <= limit
 
 
 def accept_term(term: str, kind: str, language: str, word_lists: WordLists) -> bool:
@@ -591,7 +727,7 @@ def is_redundant_alias(
     term: str, own_keys: set[str], label_keys: set[str], english_keys: set[str], language: str, word_lists: WordLists
 ) -> bool:
     key = term.casefold()
-    if key in english_keys:
+    if letters_only(term) in english_keys:
         return True
     if any(label != key and re.search(rf"(?<!\w){re.escape(label)}(?!\w)", key) for label in label_keys):
         return True
@@ -600,9 +736,104 @@ def is_redundant_alias(
     return language == "de" and " " not in term and (term == term.lower() or key in word_lists.known_german)
 
 
+def letters_only(text: str) -> str:
+    return "".join(character for character in text.casefold() if character.isalpha())
+
+
 def label_similarity(alias: str, label_keys: set[str]) -> float:
     key = alias.casefold()
     return max((difflib.SequenceMatcher(None, key, label).ratio() for label in label_keys), default=0.0)
+
+
+def flat_spelling(text: str) -> str:
+    decomposed = unicodedata.normalize("NFKD", text.casefold().translate(UMLAUT_SPELLING))
+    letters = "".join(character for character in decomposed if character.isalpha())
+    for old, new in SPELLING_VARIANTS:
+        letters = letters.replace(old, new)
+    return letters
+
+
+def best_similarity(form: str, others: list[str]) -> float:
+    best = 0.0
+    for other in others:
+        matcher = difflib.SequenceMatcher(None, form, other, autojunk=False)
+        if matcher.real_quick_ratio() > best and matcher.quick_ratio() > best:
+            best = max(best, matcher.ratio())
+    return best
+
+
+def foreign_label_forms(item_terms: dict[str, list[tuple[str, str]]], language: str) -> list[str]:
+    forms = (
+        flat_spelling(normalize_term(text))
+        for tag, entries in item_terms.items() if tag != language
+        for text, kind in entries if kind == "label"
+    )
+    return [form for form in dict.fromkeys(forms) if form]
+
+
+def is_derived(alias: str, labels: list[str], language: str, word_lists: WordLists) -> bool:
+    key = letters_only(alias)
+    bucket = word_bucket(alias, language, word_lists)
+    for label in labels:
+        other = letters_only(label)
+        shorter = min(len(key), len(other))
+        if not shorter or key == other or bucket < word_bucket(label, language, word_lists):
+            continue
+        if len(os.path.commonprefix((key, other))) >= DERIVED_PREFIX_SHARE * shorter:
+            return True
+    return False
+
+
+def in_alphabet(term: str, language: str) -> bool:
+    extra = ALPHABETS[language]
+    return all(character.isascii() or character in extra for character in term.casefold() if character.isalpha())
+
+
+def is_attested(term: str, language: str, word_lists: WordLists) -> bool:
+    words = WORD_TOKEN.findall(term.casefold())
+    return bool(words) and all(word in word_lists.frequency[language] for word in words)
+
+
+def technical_synonyms(
+    aliases: list[str],
+    labels: list[str],
+    item_terms: dict[str, list[tuple[str, str]]],
+    language: str,
+    word_lists: WordLists,
+) -> list[str]:
+    foreign = foreign_label_forms(item_terms, language)
+    if not foreign or not aliases:
+        return []
+    label_forms = [flat_spelling(label) for label in labels]
+    candidates = []
+    for alias in aliases:
+        form = flat_spelling(alias)
+        closeness = best_similarity(form, label_forms) if form else 1.0
+        if closeness >= VARIANT_MIN:
+            continue
+        if len(letters_only(alias)) < MIN_SYNONYM_LETTERS or any(character.isdigit() for character in alias):
+            continue
+        if is_derived(alias, labels, language, word_lists) or not in_alphabet(alias, language):
+            continue
+        if not is_attested(alias, language, word_lists):
+            continue
+        score = round(best_similarity(form, foreign), 2)
+        if score >= COGNATE_MIN:
+            bucket = word_bucket(alias, language, word_lists)
+            candidates.append((-score, bucket, -round(closeness, 2), len(alias), alias, form))
+    clusters: list[list[tuple]] = []
+    for candidate in sorted(candidates):
+        for cluster in clusters:
+            if best_similarity(candidate[-1], [member[-1] for member in cluster]) >= VARIANT_MIN:
+                cluster.append(candidate)
+                break
+        else:
+            clusters.append([candidate])
+    choices = []
+    for cluster in clusters:
+        chosen = min(cluster, key=lambda member: (member[1], member[2], member[0], member[3], member[4]))
+        choices.append((cluster[0][0], chosen[1], chosen[3], chosen[4]))
+    return [alias for *_, alias in sorted(choices)[:SYNONYM_LIMIT]]
 
 
 def alphabetical_key(term: str) -> str:
@@ -610,7 +841,7 @@ def alphabetical_key(term: str) -> str:
     return "".join(character for character in decomposed if not unicodedata.combining(character))
 
 
-def first_unique(candidates: list[tuple]) -> list[str]:
+def first_unique(candidates: list[tuple], limit: int) -> list[str]:
     ranked: list[str] = []
     seen: set[str] = set()
     for *_, term in candidates:
@@ -618,16 +849,17 @@ def first_unique(candidates: list[tuple]) -> list[str]:
         if key not in seen:
             seen.add(key)
             ranked.append(term)
-            if len(ranked) == MAX_TERMS:
+            if len(ranked) == limit:
                 break
     return ranked
 
 
 def rank_terms(
-    pool: dict[str, int],
+    pool: dict[str, float],
     terms: dict[str, dict[str, list[tuple[str, str]]]],
     language: str,
     word_lists: WordLists,
+    limit: int,
 ) -> list[str]:
     leading: list[tuple] = []
     trailing: list[tuple] = []
@@ -637,13 +869,12 @@ def rank_terms(
         labels = [term for term, kind in entries if kind == "label"]
         usable_label = any(accept_term(term, "label", language, word_lists) for term in labels)
         everyday_label = any(is_common_word(term, language, word_lists) for term in labels)
-        aliases_lead = not usable_label and not everyday_label
         english_keys = set()
         if language != "en":
-            english_keys = {normalize_term(text).casefold() for text, _ in item_terms.get("en", [])}
-        own_keys = {term.casefold() for term, _ in entries}
+            english_keys = {letters_only(normalize_term(text)) for text, _ in item_terms.get("en", [])}
+        own_keys = {term.casefold() for term, kind in entries if kind != "alias"}
         label_keys = {term.casefold() for term in labels}
-        aliases = []
+        aliases: list[str] = []
         for term, kind in entries:
             if not accept_term(term, kind, language, word_lists):
                 continue
@@ -653,12 +884,18 @@ def rank_terms(
                 trailing.append((-links, alphabetical_key(term), KIND_ORDER[kind], term))
             elif not is_redundant_alias(term, own_keys, label_keys, english_keys, language, word_lists):
                 aliases.append(term)
-        aliases.sort(key=lambda alias: (-label_similarity(alias, label_keys), len(alias), alias))
-        lead_count = LEADING_ALIAS_LIMIT if aliases_lead else 0
-        for position, term in enumerate(aliases):
-            tier = leading if position < lead_count else trailing
+        aliases = list(dict.fromkeys(aliases))
+        generic = any(" " not in label and word_bucket(label, language, word_lists) <= COMMON_BUCKET for label in labels)
+        synonyms = [] if generic else technical_synonyms(aliases, labels, item_terms, language, word_lists)
+        others = sorted(
+            (alias for alias in aliases if alias not in synonyms),
+            key=lambda alias: (-label_similarity(alias, label_keys), len(alias), alias),
+        )
+        lead_count = 0 if usable_label or everyday_label else max(0, LEADING_ALIAS_LIMIT - len(synonyms))
+        for position, term in enumerate(synonyms + others):
+            tier = leading if position < len(synonyms) + lead_count else trailing
             tier.append((-links, alphabetical_key(term), KIND_ORDER["alias"], term))
-    return first_unique(sorted(leading) + sorted(trailing))
+    return first_unique(sorted(leading) + sorted(trailing), limit)
 
 
 def write_lines(path: Path, lines: list[str]) -> None:
@@ -670,8 +907,12 @@ def load_known_german_words() -> frozenset[str]:
     return frozenset(line.strip().casefold() for line in lines if line.strip() and not line.startswith("#"))
 
 
+def term_limit(domain: str) -> int:
+    return MAX_TERMS.get(domain, DEFAULT_MAX_TERMS)
+
+
 def build_domain(domain: str, out_dir: Path, cache_dir: Path | None, word_lists: WordLists) -> None:
-    selectors = DOMAINS[domain]
+    selectors = domain_selectors(domain)
     log(f"{domain}: {len(selectors)} Klassenabfragen")
     found = collect_items(selectors, cache_dir)
     pools = build_pools(selectors, found)
@@ -679,7 +920,7 @@ def build_domain(domain: str, out_dir: Path, cache_dir: Path | None, word_lists:
     log(f"{domain}: Bezeichnungen für {len(item_ids)} Einträge")
     terms = fetch_terms(item_ids, cache_dir)
     for language in LANGUAGES:
-        ranked = rank_terms(pools[language], terms, language, word_lists)
+        ranked = rank_terms(pools[language], terms, language, word_lists, term_limit(domain))
         write_lines(out_dir / f"{domain}-{language}.txt", ranked)
         log(f"{domain}-{language}: {len(ranked)} Begriffe")
 
@@ -688,7 +929,9 @@ def describe_selector(selector: Selector, names: dict[str, str]) -> str:
     def named(entity: str) -> str:
         return f"{entity} {names[entity]}" if names.get(entity) else entity
 
-    if selector.holds:
+    if selector.items:
+        text = "Einträge " + ", ".join(named(entity) for entity in selector.items)
+    elif selector.holds:
         text = f"Einträge mit {named(selector.holds)}"
         if selector.prefixes:
             text += " (Wert beginnt mit " + ", ".join(selector.prefixes) + ")"
@@ -712,8 +955,16 @@ def describe_selector(selector: Selector, names: dict[str, str]) -> str:
     if selector.excluded_classes:
         text += "; ohne Instanzen von " + ", ".join(named(entity) for entity in selector.excluded_classes)
         text += " und deren Unterklassen"
+    if selector.excluded_types:
+        text += "; ohne direkte Instanzen und Unterklassen von "
+        text += ", ".join(named(entity) for entity in selector.excluded_types)
+    if selector.excluded_ancestors:
+        text += "; ohne Unterklassen bis zur dritten Ebene von "
+        text += ", ".join(named(entity) for entity in selector.excluded_ancestors)
     if selector.excluded_properties:
         text += "; ohne " + ", ".join(selector.excluded_properties)
+    if selector.weight != 1:
+        text += f"; Sitelinks zählen mit dem Faktor {german_number(selector.weight)}"
     if selector.min_sitelinks == 0:
         text += "; auch ohne Sitelinks"
     elif selector.min_sitelinks != 1:
@@ -728,7 +979,7 @@ def entity_names(cache_dir: Path | None) -> dict[str, str]:
     for selectors in DOMAINS.values():
         for selector in selectors:
             entities.update(selector.classes, selector.gate, selector.jurisdictions, selector.excluded_classes,
-                            selector.excluded_properties)
+                            selector.excluded_types, selector.excluded_ancestors, selector.excluded_properties)
             if selector.holds:
                 entities.add(selector.holds)
     query = (
@@ -750,9 +1001,14 @@ def count_lines(path: Path) -> int:
     return len(path.read_text(encoding="utf-8").splitlines()) if path.exists() else 0
 
 
+def german_number(value: float) -> str:
+    return f"{value:,}".replace(",", " ").replace(".", ",").replace(" ", ".")
+
+
 def write_source_note(out_dir: Path, cache_dir: Path | None, retrieval_date: datetime.date) -> None:
     names = entity_names(cache_dir)
     excluded = ", ".join(f"{entity} {names.get(entity, '')}".strip() for entity in EXCLUDED_CLASSES)
+    limits = ", ".join(f"{domain} {german_number(limit)}" for domain, limit in MAX_TERMS.items())
     lines = [
         "# Quellen des Fachwortschatzes",
         "",
@@ -764,21 +1020,34 @@ def write_source_note(out_dir: Path, cache_dir: Path | None, retrieval_date: dat
         "## Auswahl",
         "",
         "- Begriffe: Bezeichnung (rdfs:label) und Kurzname (P1813) in der Sprache der Datei, ersatzweise die",
-        "  sprachübergreifende Bezeichnung (mul).",
-        "- Aliasse (skos:altLabel) stehen hinter allen Bezeichnungen. Hat ein Eintrag keine verwendbare Bezeichnung",
+        "  sprachübergreifende Bezeichnung (mul). Stereodeskriptoren am Anfang wie „(RS)-“ oder „(±)-“ entfallen.",
+        "- Die Oberklassen der Abfragen nach Unterklassen zählen selbst als Einträge.",
+        f"- Fachsynonyme: bis zu {SYNONYM_LIMIT} Aliasse (skos:altLabel) je Eintrag stehen direkt bei der Bezeichnung, außer bei",
+        f"  Einträgen, deren Bezeichnung ein Einzelwort ab Zipf {german_number(COMMON_WORD_ZIPF)} ist,",
+        "  wenn sie der Bezeichnung desselben Eintrags in einer anderen Sprache ähneln (Ähnlichkeit ab",
+        f"  {german_number(COGNATE_MIN)} nach Angleichung der Schreibung ä/ae, ö/oe, ü/ue, ph/f, th/t, rh/r, ae/oe/e, qu/k/z/c, y/i),",
+        f"  mindestens {MIN_SYNONYM_LETTERS} Buchstaben und keine Ziffern haben, nur Buchstaben der Sprache der Datei enthalten",
+        "  und jedes ihrer Wörter in den wordfreq-Daten dieser Sprache vorkommt. Schreibvarianten der Bezeichnung",
+        f"  (Ähnlichkeit ab {german_number(VARIANT_MIN)}) und seltenere Ableitungen von ihr (gemeinsamer Wortanfang über",
+        f"  mindestens {german_number(DERIVED_PREFIX_SHARE)} des kürzeren Begriffs) zählen nicht; von mehreren Schreibvarianten bleibt",
+        "  die in wordfreq häufigere.",
+        "- Übrige Aliasse stehen hinter allen Bezeichnungen. Hat ein Eintrag keine verwendbare Bezeichnung",
         f"  und ist diese kein Alltagswort, rücken bis zu {LEADING_ALIAS_LIMIT} Aliasse an ihre Stelle. Kurznamen von",
         "  Einträgen, deren Bezeichnung ein Alltagswort ist, stehen ebenfalls hinten.",
-        "- Aliasse entfallen, wenn sie der englischen Bezeichnung gleichen, die Bezeichnung nur erweitern oder beugen.",
-        f"- Reihenfolge: Zahl der Sitelinks des Eintrags, bei Gleichstand alphabetisch; höchstens {MAX_TERMS} Begriffe",
-        "  je Datei.",
+        "- Aliasse entfallen, wenn sie Buchstabe für Buchstabe einem englischen Begriff des Eintrags gleichen, die",
+        "  Bezeichnung nur erweitern oder beugen.",
+        "- Reihenfolge: Zahl der Sitelinks des Eintrags, bei Gleichstand alphabetisch; findet nur eine Abfrage mit",
+        "  Gewichtsfaktor den Eintrag, zählen seine Sitelinks mit diesem Faktor. Höchstens so viele Begriffe je",
+        f"  Datei: {limits}, sonst {german_number(DEFAULT_MAX_TERMS)}.",
         f"- Form: {MIN_TERM_LENGTH} bis {MAX_TERM_LENGTH} Zeichen, höchstens {MAX_TERM_WORDS} Wörter, lateinische und"
         " griechische Buchstaben,",
         "  keine Klammern, Kommas oder ziffernlastigen Kennungen.",
-        f"- Alltagswörter: Deutsch ohne die {COMMON_GERMAN_WORD_COUNT:,} häufigsten Wörter aus wordfreq".replace(",", ".")
-        + f" ({WORDFREQ_RELEASE},",
-        "  https://github.com/rspeer/wordfreq, Daten CC BY-SA 4.0); die Liste dient nur als Filter, kein Wort daraus",
-        "  ist übernommen. Deutsche Aliasse zusätzlich ohne Einzelwörter aus `assets/wordlist-de.txt`. Übrige Sprachen",
-        f"  ohne einzelne kleingeschriebene Wörter bis {SHORT_LOWERCASE_LENGTH} Zeichen.",
+        f"- Alltagswörter (wordfreq {WORDFREQ_RELEASE}, https://github.com/rspeer/wordfreq, Daten CC BY-SA 4.0): Deutsch ohne",
+        f"  die {german_number(COMMON_GERMAN_WORD_COUNT)} häufigsten Wörter, außer Wörtern mit Großbuchstaben im Wortinneren; übrige",
+        f"  Sprachen ohne kleingeschriebene Einzelwörter ab Zipf {german_number(COMMON_WORD_ZIPF)} und großgeschriebene ab Zipf"
+        f" {german_number(CAPITALIZED_COMMON_ZIPF)}. Die Häufigkeiten dienen nur als",
+        "  Filter und zur Wahl zwischen Schreibvarianten, kein Wort daraus ist übernommen. Deutsche Aliasse zusätzlich",
+        "  ohne Einzelwörter aus `assets/wordlist-de.txt`.",
         f"- Ausgeschlossen: Instanzen von {excluded}. Einzeln ausgeschlossen, weil ihre Bezeichnungen mit",
         "  Produkt- oder Personennamen zusammenfallen: " + ", ".join(sorted(EXCLUDED_ITEMS, key=lambda e: int(e[1:]))) + ".",
         "",
@@ -814,7 +1083,8 @@ def main() -> int:
     args.out_dir.mkdir(parents=True, exist_ok=True)
     if args.cache_dir:
         args.cache_dir.mkdir(parents=True, exist_ok=True)
-    word_lists = WordLists(load_common_german_words(args.cache_dir), load_known_german_words())
+    frequencies = load_word_frequencies(args.cache_dir)
+    word_lists = WordLists(frequencies, common_german_words(frequencies["de"]), load_known_german_words())
     for domain in args.domains:
         build_domain(domain, args.out_dir, args.cache_dir, word_lists)
     write_source_note(args.out_dir, args.cache_dir, args.retrieval_date)

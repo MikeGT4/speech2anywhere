@@ -194,6 +194,8 @@ class Medizin(Fachgebiet):
         return 0.0
 
     def backdrop(self, p: QPainter, t: float, f: Frame, an) -> None:
+        if self.mode == "error" or (self.mode == "rec" and an.silent and not an.clip):
+            return
         if not self._beats:
             self._calm_history(t)
         now = self.t0 + 0.2 if f.reduced else t
@@ -403,8 +405,9 @@ class Medizin(Fachgebiet):
         fly_out(p, t, f, k, draw, FLY_ROUTES)
 
     def error_decor(self, p: QPainter, left: float, top: float) -> None:
-        p.translate(left + 9.0, top + 4.5)
-        p.rotate(-32)
+        p.translate(left + 2.0, top + 3.5)
+        p.rotate(-45)
+        p.scale(0.8, 0.8)
         outlined(p, rounded(-12.0, -3.8, 24.0, 7.6, 3.8), SKIN, 1.2)
         p.setPen(QPen(faded(INK, 0.5), 0.7))
         p.setBrush(SKIN_PAD)

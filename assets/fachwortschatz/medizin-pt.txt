@@ -1,18 +1,19 @@
-coração
-medicina
 Sangue
 COVID-19
-cérebro
 encéfalo
 síndrome da imunodeficiência adquirida
+cancro
+célula
 malária
+Paludismo
 tuberculose
+pulmão
 pulmão humano
 diabetes mellitus
-Língua
-estômago
+rim
+cólera
 Músculo
-pescoço
+vagina
 obesidade
 Ébola
 varíola
@@ -20,11 +21,17 @@ constipação
 pneumonia
 resfriado
 esqueleto
+lábio
+lepra
+surdez
 sarampo
 sistema nervoso
 doença de Alzheimer
+mal de Alzheimer
+urina
 cefaleia
 acidente vascular cerebral
+unha
 corpo humano
 Epilepsia
 enfarte do miocárdio
@@ -38,62 +45,88 @@ abdómen
 alcoolismo
 diarreia
 diarréia
+distúrbio mental
 perturbação mental
 sistema imunitário
+transtorno mental
+craniano
+crânio
 sistema circulatório
 Asma
 cegueira
+lanifício
+lanifícios
 Aparelho digestivo
 Poliomielite
 Autismo
 alergia
 intestino delgado
 Testículo
+tosse
+umbigo
 cromossoma
 cromossomo
 sífilis
 Cirurgia
 desnutrição
+peste
 Útero
 bochecha
 esquizofrenia
+esquizofrênico
 medicina dentária
 odontologia
 Pâncreas
+veia
+ânus
+excremento
+fezes
+matéria fecal
 psiquiatria
-depressão
 Sémen
 intestino grosso
+suor
 cotovelo
+anticoncepção
+baço
 contracepção
+contraceptivos
 Sistema respiratório
 Circuncisão
 varicela
+Hipertensão
 hipertensão arterial
+queixo
 clítoris
 Dengue
 Hemorroida
 Polegar
 sistema endócrino
 sobrancelha
+vómito
+vômito
 esófago
 língua de sinais
 língua gestual
 neurónio
 neurônio
 Tatuagem
-tristeza
 vaso sanguíneo
-ansiedade
 doença de Parkinson
+Eritrócitos
 hemácia
+mal de Parkinson
 vacinação
 câncer de mama
+Câncer mamário
 cancro da mama
 costela
 mitocôndria
 patologia
+vulva
+anemia
 aparelho reprodutor
+bigode
 Gripe aviária
 medula espinhal
 meningite
@@ -103,14 +136,16 @@ doença pulmonar obstrutiva crônica
 farmacologia
 higiene
 infeção
-infecção
 câncer de pulmão
+câncer pulmonar
 cancro do pulmão
 Demência
+demente
 Eutanásia
 eutanasia
 Garganta
 Bexiga
+coqueluche
 intestino
 leucemia
 MGF
@@ -121,7 +156,9 @@ tosse convulsa
 febre tifoide
 gastroenterite
 Saliva
+sarna
 vesícula biliar
+Gripe porcina
 Gripe suína
 Ovário
 cardiologia
@@ -130,8 +167,11 @@ laringe
 leucócito
 leucócitos
 Síndrome de Down
+acne
 Caxumba
 gonorreia
+Papeira
+Parotidite epidêmica
 parotidite infecciosa
 primeiros socorros
 dedo da mão
@@ -140,8 +180,10 @@ Depressão nervosa
 hemoglobina
 hepatite B
 inflamação
+inflamatório
 insónia
 insônia
+transtorno depressivo maior
 Articulação
 cadáver
 doença infecciosa
@@ -149,17 +191,24 @@ doença infeciosa
 hepatite A
 placenta
 sistema sensorial
+tétano
 tiroide
 Coxa
 disenteria
 enxaqueca
 homeopatia
+migrânea
 tecido cartilaginoso
 alucinação
+Alucinações
+antraz
 carbúnculo
 icterícia
 neurologia
+Distúrbio bipolar
+Distúrbio bipolar de ânimo
 ginecologia
+Ginecológico
 Hipnose
 perturbação bipolar
 perturbação obsessiva-compulsiva
@@ -167,29 +216,40 @@ ribossoma
 ribossomo
 transtorno bipolar
 transtorno obsessivo-compulsivo
+axila
 escroto
 Medula óssea
+miopia
 oftalmologia
+Oftamologista
 traqueia
 abcesso
 abscesso
 catarata
 faringe
+fobia
+óvulo
 escorbuto
+mamilo
 oncologia
 pestana
+pupila
 sistema nervoso central
 ayurveda
 Bronquite
 cárie dentária
 célula estaminal
 célula-tronco
+Cirrose
 cirrose hepática
 pressão sangüínea
 ressonância magnética
 artrite
+Artrítica
+bile
 Dislexia
 epidemiologia
+epidemiológico
 febre amarela
 glaucoma
 hepatite
@@ -197,10 +257,12 @@ imunologia
 pénis humano
 pênis humano
 Próstata
+soluço
 tornozelo
 varíola dos macacos
 anestesia
 apendicite
+bocejo
 cloroplasto
 dermatologia
 Espirro
@@ -208,67 +270,93 @@ Esqueleto humano
 flatulência
 hipófise
 medicina veterinária
+pituitária
+veterinária
+caspa
 citoplasma
 Hiperatividade
 Músculo diafragma
 obstipação
 perturbação hipercinética
 PHDA
+sepse
 septicemia
 TDAH
 verruga
 conjuntivite
+feto
 insuficiência cardíaca
 narcisismo
+Narcisista
+Organelas
 organelo
 quimioterapia
+tifo
 Typhus group
 Uretra
 Dedo indicador
 Gangrena
 hemorragia
+membrana celular
 Membrana plasmática
 órgão sexual
 Osteoporose
 Plaqueta sanguínea
+Plaquetas
 Psicose
+punho
 rubéola
+Trombócitos
 anorexia nervosa
 calcanhar
 daltonismo
 dedo mínimo
 Hérnia
 pálpebra
+plasma
 síndrome de Asperger
 urologia
 Albinismo
 cálculo renal
+Cálculos renais
 cerebelo
+Cesárea
 cesariana
 Clavícula
 hematologia
 pediatria
+Pediátrico
 sistema linfático
+zigoto
+CA de próstata
 Câncer cervical
 câncer de próstata
 cancro da próstata
+Cancro do colo uterino
+Dedo do meio
 dedo médio
+distúrbio de stresse pós-traumático
 escápula
 hipotálamo
 perturbação de stresse pós-traumático
 pomo de adão
-terapia
+reto
 transplantação
 transtorno de estresse pós-traumático
 vitiligo
 capilar sanguíneo
+edema
 espermatozoide
+Fractura
 fratura óssea
+Fraturas
+glândula adrenal
 glândula suprarrenal
 Leitelho
 Pelve
 amnésia
 artelho
+Esclerose em placas
 esclerose lateral amiotrófica
 Esclerose múltipla
 gengiva
@@ -277,31 +365,44 @@ Psoríase
 pulsação arterial
 queimadura
 retículo endoplasmático
+retina
 doença de Lyme
 Doença do sono
 escarlatina
 melancolia
 tomografia computadorizada
 tomografia computorizada
+tripanossomíase africana
 vértebra
+Amigdalite
+bócio
 doença celíaca
 endocrinologia
 Herpes
 Mandíbula
+palato
 paranoia
+Paranóide
 radiologia
 saúde pública
 tonsilite
 toxicologia
+aorta
+Aparelho de Golgi
 artéria aorta
 complexo de Golgi
+Epitelial
 epitélio
+fémur
+fêmur
 hemofilia
+tendão
 vacúolo
 vertigem
 aparelho urinário
 câncer colorretal
 cancro colorretal
+cirurgia plástica
 gastrite
 gema de ovo
 glândula salivar
@@ -309,42 +410,57 @@ HPV
 leishmaniose
 Lúpus eritematoso sistêmico
 síndrome respiratória aguda grave
+sintoma
+Sistema Urinário
 SRAG
+timo
 Transfusão de sangue
+Transfusão sanguínea
+Transfusões sanguíneas
+Trato urinário
+Trompa uterina
+Trompas de Falópio
+tronco
 Tuba Uterina
 vírus do papiloma humano
+vitelo
 anafilaxia
 câncer de pele
 cancro da pele
 choque circulatório
-cirurgia plástica
 cordão umbilical
 doença cardiovascular
 Esquistossomose
 Esterno
+fadiga
 gastrenterologia
 herpes-zóster
 leite materno
 leptospirose
-massagem
 neurose
 tecido conjuntivo
 zumbido
+Arritmia
 arritmia cardíaca
 botulismo
+hímen
 hordéolo
 infertilidade
 lisossoma
 lisossomo
 melanoma
 parede celular
+paredes celulares
 Pelos púbicos
 prurido
 radioterapia
 úlcera péptica
 aborto espontâneo
+apatia
+artrose
 autópsia
 castração
+córnea
 dispneia
 Duodeno
 encefalite
@@ -360,55 +476,77 @@ TPB
 Transtorno de personalidade limítrofe
 acromegalia
 agorafobia
+angina
+Angor pectoris
+anular
 aparelho reprodutor feminino
 déjà vu
+estrábico
 estrabismo
 IMC
 índice de massa corporal
 nefrologia
 nucléolo
 ortopedia
+Ortopédico
 paralisia
+sardas
 sistema tegumentar
+tíbia
+trato genital feminino
 astigmatismo
 brônquio
 câncer do estômago
 cancro do estômago
+Cérebro
 delírio
+Delusão
 disfemia
 Doença de Chagas
 Doença de Crohn
+Ebriedade
 embriaguez
 Endometriose
 gânglio linfático
 histeria
+Histérico
+linfa
+Linfonodos
+Mal de chagas
 medicina tradicional
 parada cardíaca
+parada cardio-respiratória
+Reanimação cardiopulmonar
 reanimação cardiorrespiratória
 Sinapse
-síndrome
 Apêndice vermiforme
 brucelose
 deficiência intelectual
+esporo
+íris
 Kumis
 Pneumologia
-reflexo
 retardo mental
 síncope
 soro do leite
 tonsila
 tumor cerebral
+Tumores cerebrais
 alopécia
 Aneurisma
 biopsia
 biópsia
 desidratação
+escama
 Hipermetropia
 hipotermia
+muco
 prepúcio
+sacro
 Artrite reumatoide
 cancro do pâncreas
 escoliose
+febre aftosa
 glândula paratiroide
 glândula pineal
 insuficiência renal
@@ -417,13 +555,14 @@ linfócito
 olho humano
 perturbação de ansiedade
 reumatologia
+Transtorno de ansiedade
 ANS
 chicungunha
 Cintura
 clamídia
 doença autoimune
 endoscopia
-febre aftosa
+endoscópico
 fibrose cística
 linfoma
 peste bubónica
@@ -435,6 +574,8 @@ sistema nervoso periférico
 Ureter
 VNS
 anemia falciforme
+axónio
+axônio
 beribéri
 cérebro humano
 citoesqueleto
@@ -443,6 +584,7 @@ doença arterial coronária
 doença arterial coronariana
 drogadição
 encéfalo humano
+Maxilar
 Osso maxilar
 reumatismo
 toxicodependência
@@ -451,8 +593,13 @@ Arroto
 caninos
 cerúmen
 colostro
+dente canino
 detecção remota
+distúrbio de personalidade
+eructação
+glande
 hipóxia
+mania
 miocárdio
 otorrinolaringologia
 paralisia do sono
@@ -462,31 +609,39 @@ síndrome de Tourette
 sonambulismo
 transtorno de personalidade
 trauma físico
+traumatismo
+úmero
 zoonose
 aparelho reprodutor masculino
 Ascaridíase
 Aterosclerose
 Bulimia nervosa
+Câncer de ovário
 câncer ovariano
 cancro do ovário
+coreia de Huntington
 disfunção erétil
 doença de Huntington
 furúnculo
 Hipotiroidismo
 infeção do trato urinário
 infecção do trato urinário
+infecção urinária
 linfócito T
 metástase
 miastenia grave
+mucosa
 nefrónio
 neurocirurgia
 pancreatite
 Piercing
 pré-eclampsia
 urticária
+anca
 câncer hepático
 cancro do fígado
 decapitação
+decapitado
 eletroencefalografia
 epiderme
 espectro autista
@@ -497,6 +652,7 @@ nervo craniano
 oncocercose
 quadril
 queratina
+ronco
 síndrome de Guillain-Barré
 síndrome de Turner
 Sistema muscular
@@ -507,7 +663,9 @@ transtornos do espectro autista
 Antebraço
 Ataque de pânico
 centríolo
+cóccix
 colágeno
+corda vocal
 doença de Addison
 fertilização in vitro
 FIV
@@ -526,6 +684,7 @@ cisticercose
 colelitíase
 DCJ
 doença de Creutzfeldt-Jakob
+fobia social
 Geladura
 gravidez ectópica
 hipoglicemia
@@ -533,16 +692,19 @@ masoquismo
 Membrana timpânica
 Neurocisticercose
 perturbação de ansiedade social
+rinite
 sinestesia
-sistema
 talassemia
+Tímpano
 asfixia
+ceco
 claustrofobia
 dermatite
 dismenorreia
 eletrocardiograma
 epistaxe
 Febre Zika
+fetiche sexual
 fetichismo sexual
 geriatria
 hipocampo
@@ -551,11 +713,16 @@ Líquido cefalorraquidiano
 monócito
 osso zigomático
 peroxissoma
+peroxissomos
 síndrome do cólon irritável
+síndrome do intestino irritável
 taquicardia
 Têmpora
+Zigomático
 afogamento
+bolha
 bulbo raquidiano
+cérvix
 complexo de inferioridade
 Cromossoma Y
 dermatofitose
@@ -564,37 +731,49 @@ fenilcetonúria
 Flagelo
 Insolação
 macrófago
+Medula oblonga
+pirose
 sarcoidose
 síndrome da fadiga crónica
 síndrome da fadiga crônica
 síndrome de Marfan
 Tai chi chuan
+tálamo
 toxoplasmose
 transtorno de personalidade antissocial
+cloaca
 cromatina
 dendrito
 Diabetes mellitus tipo 2
+Diabetes tipo II
 doença da mão-pé-boca
 Doença de Graves
 doença de refluxo gastroesofágico
 ecografia
 Eczema
 embolia pulmonar
+Embolismo pulmonar
 gengivite
 hipocondria
 intolerância à lactose
 laringotraqueobronquite
 linfoma de Hodgkin
 Lumbago
+medicina chinesa
 medicina tradicional chinesa
 mieloma múltiplo
 MTC
 osso nasal
+patela
 períneo
 peritonite
 radiografia
 Síndrome de Sjögren
+siso
+Tromboembolismo pulmonar
 ultrassonografia
+úvula
+variz
 acrofobia
 análises ao sangue
 bíceps braquial
@@ -604,7 +783,9 @@ cristalino
 doença genética
 ducto deferente
 exame de sangue
+fimose
 glicemia
+íleon
 mononucleose infecciosa
 necrose
 neuróglia
@@ -614,16 +795,20 @@ planejamento familiar
 Síndrome de Klinefelter
 síndrome do ovário policístico
 tronco cerebral
+Tronco encefálico
 voyeurismo
 ambliopia
 arteriosclerose
 célula sanguínea
 córtex cerebral
+Dente incisivo
 dor abdominal
+fíbula
 gânglio nervoso
 Hematoma
 incisivos
 isquemia
+Isquêmico
 nervo óptico
 Osso frontal
 Osso hioide
@@ -634,14 +819,17 @@ perturbação de personalidade narcisista
 progeria
 ressaca
 tecido adiposo
+trato gastrointestinal
 trombose
 tubo digestivo
+Vaginose
 vaginose bacteriana
 veisalgia
 anestesiologia
 apneia de sono
 carcinoma
 Ciatalgia
+Ciática
 enfisema pulmonar
 epidídimo
 equinococose
@@ -651,12 +839,14 @@ expressão facial
 febre dos fenos
 granulócito neutrófilo
 hidrocefalia
+jejuno
 mamografia
 Monte púbico
 Neutrófilo
 perturbação alimentar
 pleurisia
 síndrome de Cushing
+soro
 transtorno alimentar
 antroposofia
 bradicardia
@@ -667,6 +857,7 @@ Dracunculíase
 envenenamento radioativo
 esclera
 faringite
+Fibrilação atrial
 fibrilação auricular
 fonoaudiologia
 glândula endócrina
@@ -688,22 +879,29 @@ aracnofobia
 Ascite
 caixa torácica
 cleptomania
+Coloração de Gram
 corrimento vaginal
 delirium
 depressão pós-parto
 descompensação horária
 dispepsia
+Dor de dente
 enfarte
 fagócito
 faringite estreptocócica
+febre puerperal
 gêmeos xifópagos
 genómica
 genômica
 Ginecomastia
 hiperglicemia
+Ilhéus de Langerhans
+Ilhéus pancreáticos
 ilhota de Langerhans
+Indigestão
 infarto
 Infecção puerperal
+kuru
 mesencéfalo
 nistagmo
 obstetrícia
@@ -713,8 +911,12 @@ Técnica de Gram
 telómero
 telômero
 traumatologia
+ulna
 Aromaterapia
+ataxia
+autossômica
 autossomo
+Câncer de esôfago
 câncer esofágico
 cancro do esófago
 choque elétrico
@@ -725,9 +927,9 @@ Diagnóstico de COVID-19
 diálise
 disforia de género
 disforia de gênero
-Dor de dente
 Glioblastoma
 glioblastoma multiforme
+gónada
 hipertermia
 injeção
 mastite
@@ -735,6 +937,7 @@ meninge
 miocardite
 músculo liso
 pelagra
+Síndrome pré-menstrual
 tensão pré-menstrual
 terapia genética
 teste de COVID-19
@@ -751,30 +954,41 @@ delirium tremens
 diabetes insípida
 eosinófilo
 esmalte dentário
+Estomatite aftosa
 febre reumática
 glândula bulbouretral
 granulócito eosinófilo
+hipotensão
 hipotensão arterial
 martelo
 medicina natural
 microtúbulo
+Morte Cerebral
 morte encefálica
 Naturopatia
 neoplasia
 otite média
 saturnismo
+simpática
 síndrome de burnout
 sistema nervoso simpático
+sistema simpático
 suco gástrico
 TCC
 Terapia cognitivo-comportamental
 Vesícula seminal
+Vesículas seminais
 abuso de substâncias
 basófilo
 centrossoma
+cifose
+cístico
+cisto
 concussão
+Condiloma acuminado
 coprofagia
 dermatite atópica
+Disturbio do pânico
 doença congénita
 doença congênita
 doença crónica
@@ -782,12 +996,17 @@ doença crônica
 edema pulmonar
 embolia
 envoltório nuclear
+escara
 Escleroderma
+especialidade médica
 fissuras labiopalatinas
 glândula sebácea
 granulócito basófilo
 Heterocromia
 hipersexualidade
+Membrana nuclear
+mudez
+nevo
 osso vómer
 osso vômer
 pericardite
@@ -796,6 +1015,7 @@ protoplasma
 síndrome de Ehlers-Danlos
 tiroidite de hashimoto
 Transtorno de pânico
+tremor
 Úlcera de Buruli
 vasectomia
 verruga genital
@@ -804,14 +1024,21 @@ amiloidose
 andrologia
 angiografia
 antropometria
+aréola
 artéria pulmonar
+artéria tronco pulmonar
 Atrofia
 calvície
 cavidade abdominal
+cavidade nasal
 célula vegetal
+Células vegetais
 centrómero
 centrômero
 cianose
+colon
+cólon
+Contusão
 contusão muscular
 dentina
 doença de Menière
@@ -819,25 +1046,37 @@ Doença do legionário
 fossa nasal
 Hormônio estimulante da tiroide
 incontinência urinária
+Lacrimal
 Laringite
+legionelose
+lipoma
 medicina nuclear
 Músculo deltoide
+narina
 nervo vago
 Osso etmoide
 osso lacrimal
 osso palatino
 Paralisia de Bell
+Parassimpático
 síndrome de Ménière
+Síndrome do canal cárpico
 síndrome do túnel carpal
 sistema límbico
 sistema nervoso parassimpático
+Sistema parassimpático
 sistema visual
 terapia ocupacional
+Tronco pulmonar
 adenoide
 Átrio
 aurícula
 cardiopatia
+carpo
+cílio
 Cirurgia cardiovascular
+cóclea
+cone
 corda dorsal
 Cromossoma X
 Cromossomo sexual
@@ -845,25 +1084,33 @@ esmegma
 febre do vale Rift
 Glândula de Bartholin
 glândula exócrina
+Glândula vestibular maior
 halitose
 hemoptise
+Hiperplasia benigna de próstata
 Hiperplasia prostática benigna
+Hipertrofia prostática benigna
 morte fetal
 nervo trigémeo
 nervo trigêmeo
+Notocorda
 nucleossoma
 pé de atleta
 perda de peso
 punção lombar
 Síndrome de Kawasaki
 sistema locomotor
+úlcera
 adenoma
 anosmia
+Artéria carótida comum
 bigorna
 cálculo dental
+Cancer da tiróide
 cardiopatia congénita
 cardiopatia congênita
 carótida primitiva
+Cuidado paliativo
 endotélio
 entorse
 Enurese noturna
@@ -873,6 +1120,7 @@ hemólise
 leucemia mieloide aguda
 megalomania
 Orbita
+órbita
 paliativismo
 Panturrilha
 piromania
@@ -884,19 +1132,23 @@ prostatite
 rosácea
 Sarcoma
 Sputa
+tarso
 transtorno de personalidade esquizoide
 Tumor da tiroide
 angiologia
 avitaminose
 Barreira hematoencefálica
 bastonete
+canela
 célula dendrítica
 chi kung
 coito interrompido
 convulsão
+convulsões
 diencéfalo
 dieta mediterranea
 dieta mediterrânica
+Dismorfia
 dismorfofobia
 Distrofia muscular de Duchenne
 eclampsia
@@ -908,20 +1160,24 @@ Fibra muscular
 fístula
 glândula sudorípara
 hemorragia intracerebral
+Hipovitaminose
 inanição
 insuficiência renal crónica
 insuficiência renal crônica
 luxação
 manobra de Heimlich
 mastócito
+medicina de emergência
 medicina de urgência
 membro superior
 metatarso
+micose
 miócito
 molusco contagioso
 nervo oculomotor
 orelha média
 ortodontia
+Ortodôntico
 osso do quadril
 ouvido médio
 Oxigenação por membrana extracorporal
@@ -929,13 +1185,18 @@ Oxigenação por membrana extracorpórea
 Qigong
 síndrome de Williams
 Síndrome nefrótica
+tálus
 telemetria
 tendão calcâneo
+Tendão de Aquiles
 terapia intravenosa
+transplante cardíaco
 transplante de coração
+Transtorno dismórfico corporal
 Tricomoníase
 vaginite
 vasculite
+Via intravenosa
 acidose
 aerofobia
 agnosia
@@ -943,21 +1204,28 @@ astenia
 câncer de bexiga
 cancro da bexiga
 coroide
+COVID longa
+COVID persistente
+cromátides
 cromatídio
 deficiência auditiva
 deglutição
 Dermatite seborreica
 Diabetes mellitus tipo 1
+Diabetes tipo I
 dificuldade de aprendizagem
 doença de descompressão
 Ejaculação precoce
 Eletroconvulsoterapia
+Erupção cutânea
 espasmo
 estatura
 estribo
 exantema
 Febre hemorrágica viral
 hérnia de disco
+Hérnia discal
+herniação discal
 impetigo
 metacarpo
 nervo espinhal
@@ -965,13 +1233,19 @@ nervo olfatório
 olfactivo
 ouvido interno
 pé chato
+Pé plano
 polidactilia
 Presbiopia
+rubor
 sadismo
 savantismo
+Síndroma das pernas irrequietas
 síndrome das pernas inquietas
 Síndrome de Reye
+síndrome de Savant
+síndrome do sábio
 síndrome pós-COVID
+transe
 trepanação
 Tríceps braquial
 triquinose
@@ -979,14 +1253,15 @@ vaginismo
 Alopecia areata
 anemia ferropriva
 bronquiectasia
+cãibra
 canal auditivo
 captura de movimento
 cardiomiopatia
 célula exterminadora natural
 célula NK
 Citogenética
-confusão
 cor da pele humana
+corpo vítreo
 Dente decíduo
 distrofia muscular
 dor torácica
@@ -1000,13 +1275,17 @@ Hiperidrose
 hipertrofia
 humor vítreo
 Implantodontia
+Linfócito NK
 listeriose
 lóbulo occipital
 ludopatia
 mediastino
+medicina forense
 medicina legal
+miocardiopatia
 moscas volantes
 musicoterapia
+Natural killer
 parênquima
 parto pré-termo
 perturbação de personalidade histriónica
@@ -1014,12 +1293,15 @@ placa bacteriana
 prosopagnosia
 psicofísica
 psicossomática
+púbis
 rabdomiólise
 TPH
 Transtorno de personalidade esquiva
 transtorno de personalidade histriônica
 tricotilomania
+Trompa de eustáquio
 tuba auditiva
+Tuba de Eustáquio
 vértebra cervical
 amebíase
 angioedema
@@ -1027,16 +1309,20 @@ Anorexia
 calcâneo
 câncer endometrial
 cancro do endométrio
+ceratoconjuntivite sicca
 conjuntiva
 cromossoma 1
 degenerescência macular
 Disenteria amébica
 distimia
 ecocardiografia
+Ectoderma
 ectoderme
 elefantíase
 Endocardite
+enema
 fasciite necrosante
+imagem médica
 imagiologia médica
 infecção pelo vírus Nipah
 karoshi
@@ -1057,19 +1343,24 @@ síndrome de Edwards
 síndrome de Rett
 síndrome do olho seco
 sistema nervoso somático
+Sobredose
 substância cinzenta
 teratoma
 tomografia
+Tomógrafo
+virose
 anomalia cromossómica
 anomalia cromossômica
 artéria coronária
 arteríola
 astrócito
 blastocisto
+bouba
 Bursite
 caquexia
 Célula de Schwann
 cistite
+derme
 Desastre de Minamata
 disco intervertebral
 disfunção sexual
@@ -1090,7 +1381,10 @@ nervo abducente
 nervo troclear
 osteogénese imperfeita
 osteogênese imperfeita
+Papanicolaou
+pica
 pielonefrite
+pleura
 poliploidia
 síndrome de Münchhausen
 Teste de Papanicolau
@@ -1103,6 +1397,7 @@ acalasia
 acuidade visual
 anedonia
 blástula
+Cisto de ovário
 cisto ovariano
 cromossoma 2
 doença de Tay-Sachs
@@ -1110,19 +1405,24 @@ Dorsalgia
 endemia
 escala de Apgar
 esterilização
+exame clínico
 exame físico
+exantema súbito
 febre do Nilo Ocidental
 Fibrilhação ventricular
 fígado gorduroso
 filaríase
+Filariose
 hematócrito
 hérnia inguinal
 hipertensão pulmonar
 imunização
+Índice de apgar
 insuficiência respiratória
 liofilização
 medicina esportiva
 Melanócito
+Mesoderma
 mesoderme
 microfilamento
 neuroblastoma
@@ -1139,10 +1439,12 @@ síndrome de Angelman
 Síndrome de Prader-Willi
 telemedicina
 teste de Apgar
+tique
 transtorno somatoforme
 transtornos do humor
 tricuríase
 trissomia X
+uremia
 Ventosaterapia
 Acidente isquémico transitório
 auscultação
@@ -1151,6 +1453,7 @@ blefarite
 cariolinfa
 choque séptico
 cisto sinovial
+cólica
 corpo caloso
 corpo lúteo
 cretinismo
@@ -1171,6 +1474,7 @@ mielina
 mutismo seletivo
 nervo acessório
 nervo hipoglosso
+Núcleo plasma
 peçonha
 perturbação de ansiedade generalizada
 proteinúria
@@ -1182,28 +1486,39 @@ Síndrome de Korsakov
 Sistema renina-angiotensina
 SRME
 substância branca
+transplante de rim
 transplante renal
 transtorno de personalidade paranóide
 trauma balístico
 trombocitopenia
 veia cava inferior
+Adenopatia
 Adipócito
 alergia alimentar
 alexitimia
+amnião
+âmnion
 anestesia geral
 Área de Broca
 cintura escapular
+colite
 cromossoma 3
 cultura celular
 dermatopatia
 diagnóstico diferencial
 disgrafia
 dissecção da aorta
+Endometrial
 endométrio
 febre de Lassa
 filamento intermédio
+Filamentos intermediários
+Fluido amniótico
 folículo ovariano
 fototerapia
+Gânglio basal
+Gânglios da base
+Giro de Broca
 hemisfério cerebral
 hemograma
 hiperplasia
@@ -1213,6 +1528,7 @@ linfoma não Hodgkin
 Líquido amniótico
 matriz extracelular
 miofibrilha
+miose
 músculo glúteo máximo
 Músculo peitoral maior
 neonatologia
@@ -1226,7 +1542,6 @@ Resistência à insulina
 Restauração dental
 síndrome coronária aguda
 síndrome do choque tóxico
-sugestão
 transtorno de personalidade esquizotípica
 traqueostomia
 vegetativo
@@ -1241,6 +1556,7 @@ coagulação intravascular disseminada
 cólica do lactente
 concha nasal inferior
 Couro cabeludo
+cravo
 cromatóforo
 diplopia
 dispareunia
@@ -1249,13 +1565,16 @@ ecolalia
 Eletromiografia
 encefalite do carrapato
 endoderme
+Endoscopia digestiva alta
 envenenamento por cogumelos
+Escalpo
 esofagogastroduodenoscopia
 febre hemorrágica da Crimeia-Congo
 feocromocitoma
 fibrose
 glândula de Skene
 hallux valgus
+Hálux valgo
 hematoma subdural
 Hemoglobina glicosilada
 hemorragia subaracnóide
@@ -1266,8 +1585,10 @@ hipoatividade sexual
 hipospádia
 imunodeficiência
 infecção hospitalar
+Infecção nosocomial
 LASIK
 lobo temporal
+Lobos temporais
 mácula lútea
 músculo quadríceps femural
 Neurofibromatose
@@ -1278,6 +1599,7 @@ osso escafoide
 osso semilunar
 osteossarcoma
 perturbação do sono
+pólipo
 pré-molar
 protoplasto
 Rodopsina
@@ -1285,12 +1607,17 @@ SDRA
 síndrome de Treacher Collins
 síndrome do desejo hipoativo
 Síndrome metabólica
+uveíte
 xerostomia
+abulia
 acumulação compulsiva
+áxis
 broncoscopia
 camada germinativa
+Câncer de testículo
 câncer testicular
 cancro do testículo
+Capa germinativa
 Ceratocone
 compartimento fascial
 complexo principal de histocompatibilidade
@@ -1303,19 +1630,24 @@ estenose aórtica
 Física médica
 fisiopatologia
 folículo piloso
+Foto-receptores
 fotorreceptor
 glomérulo
 Herpes labial
 Hidrocele
 humor aquoso
 infecção oportunista
+infecções oportunistas
 Intoxicação por água
+Leucemia linfocítica crónica
 leucemia linfoide crônica
 mastectomia
 mecónio
 mecônio
 neurastenia
 neurônio motor
+neuropatia
+neuropatia periférica
 otólito
 oxigenoterapia
 parestesia periférica
@@ -1323,17 +1655,21 @@ plasmócito
 ponte aorto-coronária
 prosencéfalo
 retinite pigmentosa
+retinose pigmentar
 síndrome da serotonina
 Síndrome do X frágil
 Síndrome XYY
 teste de gravidez
 tetralogia de Fallot
 Transtorno afetivo sazonal
+tumor do testículo
 uranálise
 uretrite
+Urinálise
 velocidade de hemossedimentação
 Acatisia
 angioplastia
+apneia
 arco aórtico
 artéria subclávia
 aspergilose
@@ -1349,6 +1685,7 @@ disfonia
 endocárdio
 Epicanto
 Epicondilite
+Esternocleidomastóideo
 fascite plantar
 Febre paratifoide
 fontanela
@@ -1373,18 +1710,23 @@ leucemia mieloide crônica
 medicina baseada em evidências
 menorragia
 midríase
+mielodisplasia
 misofonia
 músculo esternocleidomastoideo
 músculo esternocleidomastoideu
+neoplasia benigna
 osso pisiforme
 osteomalacia
 ouvido externo
 palpitação
 parestesia
+Parótida
 peste bovina
+pisiforme
 pneumoconiose
 privação de sono
 psicodrama
+ptose
 rinoplastia
 síndrome de Brugada
 Síndrome de Cotard
@@ -1403,9 +1745,11 @@ aneurisma cerebral
 bartholinite
 Cancro mole
 capuz clitoridiano
+Carcinoma hepatocelular
 cardiomiopatia hipertrófica
 ciclotimia
 Círculo arterial cerebral
+Círculo arterial do cérebro
 cirurgia de redesignação sexual
 Cirurgia torácica
 Crise epiléptica
@@ -1425,6 +1769,7 @@ Esqueleto facial
 Flebite
 fotofobia
 glomerulonefrite
+glote
 Granuloma
 HeLa
 Hemocromatose
@@ -1433,6 +1778,7 @@ hepatocarcinoma
 hipernatremia
 Hipertricose
 hipocaliemia
+ílio
 insuficiência hepática
 intoxicação por mercúrio
 Lábios maiores
@@ -1440,6 +1786,7 @@ leucopenia
 linfócito T auxiliar
 linfócito T CD4
 menisco
+Miocardiopatia hipertrófica
 músculo grande dorsal
 nefrite
 nefropatia
@@ -1449,7 +1796,10 @@ osso capitato
 paroníquia
 placenta prévia
 policitemia vera
+Polígono de Willis
 Pseudópode
+Psitacose
+reprodução assistida
 reprodução medicamente assistida
 retinoblastoma
 Sarcoma de Ewing
@@ -1483,6 +1833,7 @@ câncer do rim
 cancro do rim
 cavidade torácica
 cefaleia de tensão
+cefaléia do tipo tensional
 Ceratite
 cetoacidose diabética
 colangiocarcinoma
@@ -1496,12 +1847,14 @@ doença aguda
 doença arterial periférica
 doença inflamatória intestinal
 doença inflamatória intestinal crônica
+doença neurodegenerativa
 encefalopatia hepática
 eritema infeccioso
 erotomania
 esclerose tuberosa
 esófago de Barrett
 esôfago de Barrett
+estria
 febre catarral
 fibrodisplasia ossificante progressiva
 fluido corporal
@@ -1517,6 +1870,7 @@ Meta-hemoglobinemia
 nervo glossofaríngeo
 nervo vestibulococlear
 neurodegeneração
+neurodegenerativa
 nódulo de Ranvier
 onicocriptose
 ortorexia
@@ -1524,16 +1878,19 @@ osso trapezoide
 osteoblasto
 palato mole
 papila gustativa
+Papila lingual
 plasmodesmo
 poro nuclear
 queloide
 Síndrome da pessoa rígida
+Síndrome de Reiter
 síndrome hemolítica-urémica
 síndrome hemolítico-urêmica
 sobrepeso
 suco pancreático
 termografia
 tontura
+Trapezóide
 valva mitral
 Válvula mitral
 vervo vestibulococlear
@@ -1544,8 +1901,10 @@ anemia perniciosa
 apiterapia
 artéria carótida interna
 azoospermia
+bezoar
 caixa craniana
 Calo
+carótida interna
 célula somática
 cirurgia bucomaxilofacial
 cirurgia vascular
@@ -1559,7 +1918,6 @@ cromossoma 20
 cromossoma 22
 demência vascular
 dermatomiosite
-diagnóstico
 diarreia do viajante
 Doença de Charcot-Marie-Tooth
 Doença de Hirschsprung
@@ -1571,16 +1929,19 @@ hepatite D
 Hiperventilação
 Hostilidade
 ictiose
+ísquio
 junção celular
 mastoidite
 Medicina geral e familiar
 misofobia
+mórula
 nefroblastoma
 nefropatia diabética
 nomograma
 osso piramidal
 Osso sesamoide
 osteoclasto
+otite
 pitiríase rósea
 poliúria
 prótese dentária
@@ -1594,9 +1955,11 @@ síndrome de Stevens-Johnson
 terror noturno
 trato respiratório
 trombose venosa profunda
+Tumor de Wilms
 vaso linfático
 venereologia
 vias aéreas
+vias respiratórias
 víscera
 Xenoenxerto
 actinomicose
@@ -1614,11 +1977,15 @@ câncer de laringe
 câncer de pênis
 cancro da laringe
 cancro do pénis
+cancro espinocelular
 carcinoma espinocelular
 Cataplexia
+cetose
 choreia
 Comorbidade
 contracepção de emergência
+Cordão espermático
+Cordões espermáticos
 cromossoma 11
 cromossoma 12
 cromossoma 14
@@ -1639,6 +2006,7 @@ Doença negligenciada
 doença respiratória
 epiglotite
 estenose espinhal
+exame médico
 Febre hemorrágica de Marburg
 fissura anal
 funículo espermático
@@ -1656,33 +2024,40 @@ mucormicose
 músculo ciliar
 músculo coracobraquial
 músculo peitoral menor
+navicular
 orquite
 osso navicular
 palpação
 periósteo
 perturbação esquizoafetiva
+piloro
 Prova da tuberculina
 púrpura trombocitopênica idiopática
 síndrome da cauda equina
 Síndrome da mão alheia
 síndrome de Arnold-Chiari
+Síndrome de Behçet
 Síndrome de Capgras
 síndrome de Goodpasture
 síndrome de Wolff-Parkinson-White
 Síndrome dolorosa complexa regional
 siringomielia
 sistema vestibular
+transtorno de personalidade dependente
 Transtorno esquizoafetivo
 Tricoma
 tronco braquiocefálico
+úvea
 veia pulmonar
 zoofobia
 agranulocitose
 alcalose
 alergologia
 aracnoide
+Aracnóide-máter
 área de Wernicke
 argiria
+Câncer de útero
 cancro do útero
 cápsula de Bowman
 comunicação interventricular
@@ -1706,6 +2081,7 @@ fluido intersticial
 fluoretação de água
 fuso acromático
 galactorreia
+Hemorragia gastrointestinal
 hemorragia intracraniana
 hipocratismo digital
 hipoderme
@@ -1736,9 +2112,12 @@ Tolerância medicamentosa
 Torcicolo
 Transtorno dissociativo
 tumor ósseo
+tumores ósseos
 valva aórtica
 valvopatia
 varíola bovina
+vénula
+vênula
 xerodermia pigmentosa
 xeroftalmia
 acolhimento familiar
@@ -1751,11 +2130,13 @@ anorgasmia
 arte terapia
 Artéria femoral
 artéria radial
+arterite de células gigantes
 arterite temporal
 artralgia
 Assistolia
 bacteremia
 Blastómeropintu
+caseum
 Célula caliciforme
 célula de Leydig
 célular caliciforme
@@ -1769,12 +2150,14 @@ desvitalização
 distócia
 doença de Von Willebrand
 doença parasitária
+Enfermidade parasitária
 Epididimite
 ergotismo
 Exodontia
 Falsas memórias
 ferido em batalha
 Fitoterapia
+Fluido sinovial
 Fluorose dentária
 foliculite
 frênulo prepucial
@@ -1782,6 +2165,7 @@ Galactosemia
 gravidez psicológica
 hiperparatiroidismo
 hiperplasia adrenal congênita
+Hiperplasia suprarrenal congénita
 hipotensão postural
 Imuno-histoquímica
 Imunoensaio
@@ -1804,11 +2188,13 @@ neocórtex
 neuropatia diabética
 órgão de Corti
 parafimose
+Parasitose
 polidipsia
 Púrpura de Henoch-Schönlein
 retenção urinária
 reticulócito
 retinopatia
+Sinóvia
 Spliceossoma
 transtorno de conversão
 tratamento de canal
@@ -1863,14 +2249,19 @@ interação medicamentosa
 Isquiossurais
 junção comunicante
 Laqueadura
+Ligação de trompas
+Ligadura de trompas
 lobo da ínsula
+Lobo Insular
 lóbulo da orelha
 lordose
 massa corporal
 medicina hiperbárica
 membrana serosa
+miíase
 mixomatose
 músculo bíceps da coxa
+Músculo bíceps femoral
 músculo braquial anterior
 Músculo infraespinhal
 Músculo serrátil anterior
@@ -1885,10 +2276,12 @@ Paraplegia
 Pé de trincheira
 Perturbação do neurodesenvolvimento
 plasmaferese
+Proctologista
 psicoacústica
 pterígio
 PTGO
 púrpura
+reação adversa ao medicamento
 seio maxilar
 SIA
 sigmoide
@@ -1900,10 +2293,12 @@ síndrome de Zollinger-Ellison
 Síndrome HELLP
 Sistema geniturinário
 sudor anglicus
+suor inglês
 Taxa de filtração glomerular
 temperatura corporal
 torção testicular
 transplante de fígado
+transplante hepático
 Trombólise
 úlcera bucal
 vaginoplastia
@@ -1927,6 +2322,7 @@ cancro do ânus
 cavidade corporal
 célula estaminal embrionária
 célula parietal
+Células parietais
 cintilografia
 cirurgia robótica
 coloração H&E
@@ -1950,13 +2346,16 @@ Esteato-hepatite não alcoólica
 estupor
 exoftalmia
 fratura da anca
+fratura de pênis
 fratura peniana
 gastrectomia
+glioma
 Granulomatose de Wegener
 hematemese
 histopatologia
 Índice terapêutico
 irritabilidade
+Ishihara
 leucocitose
 Litíase
 malformação arteriovenosa
@@ -1998,10 +2397,14 @@ Vilosidade intestinal
 abcesso pulmonar
 abscesso pulmonar
 adenoma de hipófise
+Adenoma de pituitária
 Alterações fibrocísticas da mama
+amigdalectomia
 áreas de Brodmann
 artéria celíaca
 Arterite de Takayasu
+autismo altamente-funcional
+autismo de alta funcionalidade
 autismo de alto desempenho
 Automedicação
 câncer de vesícula biliar
@@ -2029,15 +2432,18 @@ Desrealização
 dissecação
 distúrbio da fala
 Doença da Membrana Hialina
+Doença de Osgood-Schlatter
 doença de Pompe
 doença do rim policístico
 esterilização compulsiva
 estimulação cerebral profunda
 falência múltipla de órgãos
+falência múltipla dos órgãos
 fasciolíase
 febre recorrente
 Fibrose pulmonar idiopática
 filtro labial
+Fluido extracelular
 formação reticular
 glicocálix
 glossodínia
@@ -2057,10 +2463,14 @@ líquido extracelular
 Lucilia sericata
 medicina espacial
 medicina unani
+Meio extracelular
+melena
 membrana basal
 microbiologia clínica
+microbiologia médica
 micropênis
 microvilos
+Microvilosidades
 modificação corporal
 músculo ancôneo
 músculo ancónio
@@ -2068,7 +2478,9 @@ músculo sartório
 Músculo subescapular
 nefropatia por IgA
 Neuroma do acústico
+noma
 Obesidade abdominal
+Osgood-Schlatter
 Paralisia Facial
 periodonto
 rejeição social
@@ -2089,6 +2501,7 @@ teste rápido de antígeno
 tonsilectomia
 transplante de medula óssea
 Transtorno delirante
+Tumor de hipófise
 ultrafiltração
 veia subclávia
 Verminose
@@ -2104,17 +2517,22 @@ Apresentação pélvica
 artéria ilíaca comum
 artéria renal
 artéria ulnar
+Artérias ilíacas comuns
 Artrite séptica
+atopia
 canais semicirculares
+carência de vitamina D
 cateterismo cardíaco
 célula-tronco pluripotente induzida
 Ciguatera
 cisto de Baker
+cisto poplíteo
 citometria de fluxo
 colangite esclerosante primária
 condrócito
 Confabulação
 coração humano
+défice de vitamina D
 deficiência de alfa-1-antitripsina
 deficiência de vitamina D
 dendrímeros
@@ -2128,10 +2546,12 @@ epífise
 estenose mitral
 estridor
 eutanásia em animais
+fóvea
 frieira
 gangrena gasosa
 Glabela
 glicosúria
+hálux
 hematoma epidural
 hiperalgesia
 hipercapnia
@@ -2142,11 +2562,13 @@ Infertilidade feminina
 labirintite
 Lipedema
 microscopia confocal
+mioma
 moxabustão
 músculo levantador da escápula
 necrose avascular
 neuropsiquiatria
 Oligodendroglioma anaplásico
+Oócito I
 ostomia
 ovócito
 Paget do osso
@@ -2157,10 +2579,15 @@ periodontia
 petéquia
 prolapso uterino
 queratinócito
+quimo
 regurgitação mitral
 rotura do útero
+Rotura uterina
 Ruptura do útero
+Ruptura uterina
+Shigelose
 sinais vitais
+Sinal vital
 Síndrome de Legg-Calvé-Perthes
 síndrome de Von Hippel-Lindau
 síndrome paraneoplásica
@@ -2170,6 +2597,7 @@ soalho pélvico
 terapia dirigida
 terapia larval
 Tifo epidémico
+Tifo exantemático
 traqueíte
 Tratamento da dor
 tromboflebite
@@ -2188,6 +2616,8 @@ artéria mesentérica superior
 astrocitoma
 ataxia de Friedreich
 ateroma
+aura
+Câncer da vulva
 câncer vulvar
 capsulite
 célula apresentadora de antígeno
@@ -2198,6 +2628,7 @@ Choque cardiogênico
 cistocelo
 Clatrina
 Clitoromegalia
+coccidiose
 coloboma
 complicações na gravidez
 comportamento passivo-agressivo
@@ -2215,6 +2646,8 @@ Entrópio
 erro metabólico hereditário
 esofagite
 espondilose
+Estenose do piloro
+Estenose hipertrófica do piloro
 estenose pilórica
 Exame de HIV
 farmacoterapia
@@ -2222,6 +2655,7 @@ Fluoroscopia
 hebefrenia
 Hipercolesterolemia hereditária
 Hipertensão intracraniana idiopática
+Hipertrofia clitoriana
 Hipervitaminose
 Infarto cerebral
 insuficiência adrenal
@@ -2261,6 +2695,7 @@ Síndrome do encarceramento
 síndrome neuroléptica maligna
 surdo-cegueira
 tecido ósseo
+Teste HIV
 toxicomania
 transplante de córnea
 transtorno de adaptação
@@ -2269,6 +2704,7 @@ valva pulmonar
 agitação psicomotora
 agrafia
 alcaptonúria
+anóxia
 aparelho justaglomerular
 artéria basilar
 Azurófilo
@@ -2284,12 +2720,16 @@ célula alfa
 Célula de Purkinje
 cirurgia pediátrica
 cirurgia refrativa
+clone
 Compulsão alimentar
+conduto auditivo
 córtex adrenal
 criptosporidíase
 dançaterapia
 deficiência de iodo
+Desequilíbrio hidroeletrolítico
 diagnóstico genético pré-implantação
+Diagnóstico pré-implante
 discinesia tardia
 dislipidemia
 Displasia cervical
@@ -2332,6 +2772,7 @@ hipoterapia
 homocistinúria
 infeção respiratória
 infecção respiratória
+Infecções respiratórias
 interneurônio
 intussuscepção
 Junção de oclusão
@@ -2351,6 +2792,7 @@ meningococcemia
 mesoterapia
 mielite transversa
 mixedema
+mormo
 músculo digástrico
 músculo estapédio
 músculo glúteo mínimo
@@ -2361,6 +2803,7 @@ músculo tríceps sural
 nervo mediano
 neurofibromatose tipo 1
 Neurofibromatose tipo I
+Neuroimagem
 neuroimagiologia
 núcleo supraquiasmático
 nutrição parenteral
@@ -2387,10 +2830,12 @@ Síndrome de Churg-Strauss
 Síndrome de Dandy-Walker
 Síndrome de Dravet
 síndrome de Kallmann
+Síndrome de Korsakoff
 Síndrome de Moebius
 Síndrome de Wernicke-Korsakoff
 síndrome XXXXX
 sistema lacrimal
+somito
 Sonilóquio
 taquicardia supraventricular
 tempestade de citocina
@@ -2399,6 +2844,8 @@ tetraplegia
 torção do ovário
 toxocaríase
 transplante fecal
+Transtorno de eletrólito
+Transtorno psicótico compartido
 tripanossomíase
 troponina
 tumor neuroendócrino
@@ -2412,7 +2859,9 @@ angioplastia coronária
 aniridia
 Anquiloglossia
 atrofia de múltiplos sistemas
+atrofia multissistêmica
 autossugestão
+axilas
 Canal inguinal
 câncer vaginal
 cartilagem hialina
@@ -2420,20 +2869,24 @@ cartilagem tireoide
 Célula germinativa
 célula piramidal
 ceratose actínica
+Ceratose solar
 Cirurgia ocular
 cistite intersticial
 Coceira do nadador
+conduto colédoco
 corpúsculo de Pacini
 crista neural
 dedo em gatilho
 degeneração espinocerebelar
 dente permanente
+dentição permanente
 doença cerebrovascular
 Doença de Rhesus
 ducto colédoco
 ducto torácico
 Ectima contagioso
 empiema
+Encefalite Amebiana Primária
 entomofobia
 epitálamo
 eritema nodoso
@@ -2480,6 +2933,7 @@ obstrução intestinal
 organoide
 organóide
 osso longo
+ósteon
 Ovogônia
 perda de paladar
 perturbação pervasiva do desenvolvimento
@@ -2521,6 +2975,7 @@ transtorno de apego reativo
 Transtorno global do desenvolvimento
 treinamento autógeno
 Trimetilaminuria
+Válvula ileocecal
 ventrículo esquerdo
 volume sistólico
 acidose láctica
@@ -2590,6 +3045,7 @@ Imunodeficiência combinada grave
 injeção subcutânea
 insuficiência venosa crónica
 lagoftalmo
+leitura dos lábios
 leitura labial
 Leucoencefalopatia multifocal progressiva
 menopausa prematura
@@ -2617,6 +3073,7 @@ onda cerebral
 órgão sensorial
 osteófito
 osteoma
+pápula
 Paratuberculose
 pé diabético
 Periplasma
@@ -2639,6 +3096,7 @@ shell shock
 síndrome de Fanconi
 Síndrome de Fregoli
 síndrome de Ganser
+síndrome de Lambert-Eaton
 Síndrome de Werner
 Síndrome de Wiskott-Aldrich
 síndrome hepatorrenal
@@ -2662,6 +3120,8 @@ Alergia alfa-gal
 amnésia dissociativa
 androfobia
 aqueduto cerebral
+Aqueduto de Sylvius
+Aqueduto do mesencéfalo
 Arco faríngeo
 artéria tireóidea superior
 arterite
@@ -2679,8 +3139,10 @@ campilobacteriose
 candidíase oral
 cardiomegalia
 cerúleo
+Cheyne-Stokes
 circulação extracorpórea
 cirrose biliar primária
+Cirurgia Bariátrica
 Cisto de Naboth
 coagulopatia
 colesteatoma
@@ -2717,6 +3179,7 @@ fenda interglútea
 fenda labial
 fístula obstétrica
 forame oval
+fórnix
 fuso muscular
 gastroplastia
 glicogenose
@@ -2729,6 +3192,7 @@ herpangina
 Himenoplastia
 hipertrofia mamária
 hipofosfatemia
+inchaço
 incontinência fecal
 infestação
 leucodistrofia metacromática
@@ -2747,6 +3211,7 @@ músculo esfíncter da pupila
 músculo esterno-hioideo
 Músculo grácil
 músculo ilíaco
+Músculo quadrado do lombo
 músculo quadrado lombar
 músculo romboide maior
 Músculo subclávio
@@ -2792,6 +3257,7 @@ turgidez
 veia ázigos
 veia renal
 volume corpuscular médio
+Volume globular médio
 vólvulo
 vôlvulo
 xantelasma
@@ -2806,13 +3272,16 @@ Artéria facial
 artéria hepática comum
 artéria ilíaca interna
 artéria temporal superficial
-aspecto
+aspeto
 Atonia uterina
+Atresia de esôfago
 atresia esofágica
 bexiga hiperativa
 Bloqueio atrioventricular
+Bolsa sinovial
 braquicefalia
 broncopneumonia
+bursa
 canal lacrimal
 Carga viral
 cartilagem cricoide
@@ -2822,6 +3291,7 @@ Cirurgia corretora do estrabismo
 Cistinose
 Coana
 condrossarcoma
+Contrações de Braxton Hicks
 coroa da glande
 Corpo de Lewy
 corpúsculo renal
@@ -2880,10 +3350,12 @@ músculo dilatador da pupila
 Músculo estilo-hióideo
 Músculo extensor dos dedos
 músculo iliocostal
+Músculo intercostal
 músculo omo-hióideo
 Músculo pectíneo
 músculo plantar
 músculo romboide menor
+Músculo transverso abdominal
 músculo transverso do abdome
 músculo zigomático menor
 músculos extraoculares
@@ -2896,6 +3368,7 @@ oftalmoplegia
 ondas de calor
 parkinsonismo
 periostite
+piúria
 plexo cervical
 Plexo solar
 pliometria
@@ -2914,6 +3387,7 @@ síndrome da lise tumoral
 Síndrome de Adams-Stokes
 Síndrome de Crouzon
 síndrome de lowe
+Síndrome de Menkes
 Síndrome de Morquio
 Síndrome de Sturge-Weber
 Síndrome do desfiladeiro torácico
@@ -2925,6 +3399,7 @@ tomografia de coerência óptica
 tomografia otica
 transtorno do ciclo vigília-sono
 Trombose venosa cerebral
+Túnel carpal
 túnel do carpo
 varizes esofágicas
 ventrículo direito
@@ -2932,6 +3407,7 @@ virilização
 xantoma
 anodontia
 ansiedade ao clima
+Apófise mastóide
 apoplexia
 Arcada supraciliar
 artéria maxilar
@@ -2940,6 +3416,7 @@ Artéria umbilical
 átrio direito
 átrio esquerdo
 aurícula direita
+Aurícula esquerda
 Banho de lama
 braquidactilia
 Bursa de Fabricius
@@ -2991,10 +3468,2533 @@ Geleia de Wharton
 globo pálido
 grânulos de Fordyce
 hepatite alcoólica
+Hepatopatia
+Hepatopatia alcoólica
 hidrocefalia de pressão normal
 Hidropsia fetal
+hifema
 hiperaldosteronismo
 hiperlexia
 hipermobilidade
 Hiperqueratose
 Hipomenorreia
+hipotonia
+histerosalpingografia
+histeroscopia
+Imbecil
+Imbecilidade
+Infecção emergente
+janela oval
+junção aderente
+lâmina basal
+linfócito T regulador
+língua geográfica
+Litotripsia
+litotriptor
+Malformação capilar
+medula adrenal
+Monossomia
+Morgellons
+Mucopolissacaridose tipo III B
+Músculo adutor curto
+músculo fibular longo
+músculo levantador do ânus
+músculo milo-hióideo
+Músculo obturador interno
+músculo oponente do polegar
+músculo tensor do tímpano
+músculo tibial posterior
+músculos escalenos
+músculos lumbricais
+nervo laríngeo recorrente
+neuroendocrinologia
+Obesidade infantil
+Obturador interno
+oclusão
+onda alfa
+orelha de couve-flor
+orquidectomia
+ortopneia
+osteopetrose
+Overdose de barbitúricos
+pesquisa em meditação
+Picada de aranha
+plastinação
+processo mastoide
+proctite
+Prolapso do cordão umbilical
+prolapso retal
+psiquiatria infantojuvenil
+quarto ventrículo
+queimadura química
+quelite angular
+Queratose pilar
+Querníctero
+reflexo faríngeo
+Reflexo fótico do espirro
+rejuvenescimento
+Restrição calórica
+retroperitônio
+sífilis congénita
+sífilis congênita
+síncope vasovagal
+Síndrome de Aarskog
+Síndrome de Alagille
+síndrome de Bartter
+Síndrome de Crigler-Najjar
+Síndrome de Poland
+Síndrome de Rubinstein-Taybi
+Síndrome de Sanfilippo
+síndrome de Zellweger
+Síndrome pós concussão
+sinovite
+Tecido muscular estriado
+Tempestade de citocinas
+tendinite
+Tendinite patelar
+Tendinopatia
+timoma
+tinea capitis
+Transposição de grandes artérias
+transtorno esquizofreniforme
+triquíase
+tumor carcinoide
+túnica íntima
+úlcera varicosa
+Ultrassonografia obstétrica
+Verruga plantar
+vesícula sináptica
+abdominoplastia
+Abductor pollicis longus
+Abdutor longo do polegar
+abscesso amebiano
+abscesso anorretal
+Abscesso dental
+Agamaglobulinemia ligada ao X
+amnésia global transitória
+Ampola hepatopancreática
+Angiografia por ressonância magnética
+Aracnoidite adesiva
+artéria cerebral posterior
+artéria ilíaca externa
+Artéria lingual
+artéria mesentérica inferior
+artéria poplítea
+artéria torácica interna
+articulação sinovial
+artrogripose
+astenopia
+Ataxia telangiectasia
+beriliose
+bronquite crônica
+Calvária
+cápsula interna
+Cartilagem fibrosa
+Cefaleia por abuso medicamentoso
+Célula amácrina
+células amácrinas
+ciclosporíase
+cisto dermoide
+claudicação intermitente
+Cólica biliar
+cólon ascendente
+cólon descendente
+coprocultura
+Corpúsculo polar
+córtex entorrinal
+Costocondrite
+dacriocistite
+dependência de opioides
+Depressão psicótica
+desbridamento
+Disfunção temporo-mandibular
+Disfunção temporomandibular
+Doença de Gumboro
+doença de lesão mínima
+doença endócrina
+doença por coronavírus
+doença pulmonar intersticial
+Dor pélvica
+Ductos de Müller
+Ectopia cervical
+ectrodactilia
+empiema pleural
+Encefalite de São Luís
+epigastro
+eritema multiforme
+erosão dentária
+Esclerose sistêmica
+Esfíncter de Oddi
+esfregaço de sangue
+fasciculação
+fibra elástica
+Foice cerebral
+Fotoceratite
+gânglio sentinela
+giro angular
+giro fusiforme
+glóbulo polar
+hérnia cerebral
+hiperandrogenismo
+Hiperpigmentação
+hipertensão arterial essencial
+Hipertensão essencial
+hipocapnia
+Hipoplasia do coração esquerdo
+Homem XX
+insuficiência hepática aguda
+intertrigo
+lâmina própria
+Larva migrans cutânea
+leiomiossarcoma
+ligadura
+linfócito B de memória
+lisencefalia
+lúnula
+luxação do ombro
+maldição de Ondina
+medicina ortomolecular
+megacólon
+Método mãe canguru
+microscopia eletrônica
+Microssoma
+MMPI
+Músculo abdutor do hálux
+Músculo esternotireoideo
+músculo extensor do indicador
+músculo génio-hióideo
+músculo gênio-hióideo
+Músculo levantador da pálpebra
+músculo mentual
+Músculo oblíquo inferior
+Músculo piramidal
+Músculo quadrado femoral
+Músculo reto superior
+Músculo serrátil póstero-inferior
+músculo serrátil póstero-superior
+músculo tireo-hioideo
+Músculos intercostais externos
+Músculos intercostais internos
+nefrotoxicidade
+nervo craniano zero
+Nervo Pudendo
+Neurofeedback
+núcleo rubro
+odontopediatria
+oligo-hidrâmnio
+Onfalocele
+orientação sexual egodistónica
+orientação sexual egodistônica
+osteocondrite
+osteocondrite dissecante
+osteopenia
+ototoxicidade
+pasteurelose
+Perfuração do tímpano
+Perfuração no tímpano
+Perservação do pensamento
+Peste equina africana
+Pioderma Gangrenoso
+piodermite
+piodermite gangrenosa
+pterigo palatino
+ptose mamária
+quilotórax
+Rafe perineal
+refluxo vesicouretral
+ruptura prematura de membranas
+sarcolema
+septo interventricular
+sinais e sintomas
+Síndrome de Beckwith-Wiedemann
+Síndrome de Bloom
+Síndrome de Dubin-Johnson
+Síndrome de Klüver-Bucy
+Síndrome de Laron
+síndrome de Ondine
+Síndrome de Pfeiffer
+síndrome de Waterhouse-Friderichsen
+Síndrome nefrítica
+Telangiectasia
+terceiro ventrículo
+Teste de Coombs
+TGD-SOE
+tiroidectomia
+toracotomia
+TPD-SOE
+trago
+Transtorno de tique
+Trismo
+úlcera de córnea
+veia axilar
+veia femoral
+veia jugular externa
+ventrículo lateral
+ventrículos laterais
+Vero
+Acloridria
+Agramatismo
+alcalose respiratória
+alexia
+aloenxerto
+alucinação auditiva
+ancilostomíase
+angina de Prinzmetal
+angioma
+Angiopatia amiloide cerebral
+antracose
+antropofobia
+aorta descendente
+artéria carótida
+artéria gástrica esquerda
+articulação do quadril
+artrodese
+Astrocitoma pilocítico
+ataque de cão
+auriculoterapia
+Baroreceptor
+Barorreceptor
+burning mouth syndrome
+Bypass gástrico
+cárdia
+cardiotocografia
+Cardiotoxicidade
+cavidade pélvica
+célula bipolar da retina
+Célula de Ito
+Célula de Paneth
+Célula satélite glial
+Célula T de memória
+célula tronco neoplásica
+células estaminais cancerígenas
+citopatologia
+Contusão cerebral
+Contusão pulmonar
+Cordão nucal
+Cordão umbilical cervical
+Córtex orbitofrontal
+crise psicogénica não epilética
+crise psicogênica não epilêtica
+crosta láctea
+Dacrioadenite
+dec
+Decídua
+défice cognitivo ligeiro
+Delírio persecutório
+dermatite herpetiforme
+dieta vegetal
+dilatação e curetagem
+displasia broncopulmonar
+Dispositivo de assistência ventricular
+Distócia de ombro
+diurese
+Doença do espaço
+doença hereditária
+doença sistémica
+doença sistêmica
+ectoplasma
+ejaculação retardada
+embolia gordurosa
+encefalite Anti-Receptor N-Metil-D-Aspartato
+Encefalite equina do leste
+endolinfa
+Envenenamento por etilenoglicol
+Envenenamento por organofosforado
+epidemiologia veterinária
+Epilepsia do lobo temporal
+equimose
+escavação retouterina
+escotoma
+Espermátide
+espermatócito
+Estenose da artéria carótida
+estrongiloidíase
+fenómeno entóptico
+fenômeno entóptico
+Focomelia
+fratura de clavícula
+Fratura de Colles
+giro pós-central
+glândula adanal
+hemartrose
+hemianopsia
+hemossiderose
+hepatoblastoma
+Hiperamonemia
+hipoestesia
+Hiposfresia
+Infusão intraóssea
+koro
+Kttp
+latirismo
+leiomioma
+leucodistrofia
+linfangioma
+linfo-histiocitose hemofagocítica
+linfoblasto
+linfoma folicular
+Lipodistrofia
+Macroglobulinemia de Waldenström
+mácula densa
+medicina do sono
+Melanoma uveal
+mesotélio
+Microscopia de força atômica
+multirresistência medicamentosa
+músculo abdutor do mínimo
+músculo adutor do polegar
+músculo genioglosso
+músculo hioglosso
+músculo longo da cabeça
+músculo longuíssimo dorsal
+Músculo oblíquo superior
+Músculo obturador externo
+Músculo oponente do mínimo
+músculo palmar breve
+Músculo reto da coxa
+Músculo reto femoral
+Músculo reto inferior
+músculo reto medial
+músculo temporoparietal
+Nanoftalmia
+nefrectomia
+nefropatia membranosa
+nefroptose
+Neoplasia endócrina múltipla
+Nervo frênico
+Nervo musculocutâneo
+nervo oftálmico
+neurite
+núcleo geniculado lateral
+Nutrição esportiva
+olho vermelho
+Oligomenorreia
+oligospermia
+omento maior
+opistótono
+otologia
+Papiledema
+patologia clínica
+perfil lipídico
+Pericôndrio
+perilinfa
+Perturbações do movimento
+pinta
+Plagiocefalia
+Plasma rico em plaquetas
+pneumonia viral
+pólipo cervical
+pólipo endometrial
+pólipo intestinal
+procedimento minimamente invasivo
+processo coracoide
+Prolapso da válvula mitral
+prolapso de valva mitral
+Reação de Jarisch-Herxheimer
+regurgitação
+respiração em líquido
+Rinofima
+saco lacrimal
+schwannoma
+seios venosos durais
+seminoma
+sialolitíase
+sibilo
+Síndrome da Doença Pós-Orgásmica
+Síndrome da transfusão feto-fetal
+Síndrome de Bálint
+Síndrome de Bardet-Biedl
+Síndrome de Boerhaave
+síndrome de Charles Bonnet
+síndrome de Duane
+síndrome de ekbom
+síndrome de hiperestimulação ovariana
+síndrome de Kartagener
+Síndrome de Li-Fraumeni
+síndrome de Mallory-Weiss
+Síndrome de marshall-stickler
+síndrome de Noé
+Síndrome de Sotos
+síndrome de Stickler
+Síndrome de wagner-stickler
+Síndrome de West
+síndrome de Wolf-Hirschhorn
+subtálamo
+sulco central
+superinfecção
+tabes dorsalis
+Transtorno de ruminação
+Transtorno de somatização
+traumatismo craniano
+trombose coronariana
+trombose venosa
+TTPA
+tumor de células germinativas
+Tumor de Pancoast
+Úraco
+via sublingual
+Viremia
+vitrectomia
+Acantócito
+Acrocórdon
+afasia nominal
+alveolite alérgica extrínseca
+ameloblasto
+anasarca
+Angina de Vincent
+anovulação
+artéria comunicante posterior
+artéria hepática própria
+Artéria uterina
+atresia biliar
+Autoexame de mama
+azotemia
+Basofilia
+bexiga neurogênica
+câmara posterior
+Carcinoma ductal in situ
+Carvão
+Célula mesenquimatosa
+célula parafolicular
+célula principal
+Célula Th17
+Centro germinativo
+cisto epidermoide
+cólon transverso
+condição pré-maligna
+condroblasto
+condrocalcinose
+Conjuntivite alérgica
+Contração
+Coriorretinopatia serosa central
+Corneal limbus
+Crescimento intra uterino restrito
+Cromossomo artificial bacteriano
+declínio cognitivo
+défice cognitivo
+degeneração ganglionar córtico-basal
+degeneração Walleriana
+derrame pericárdico
+Dissomia uniparental
+distresse
+Doença de Refsum
+doença granulomatosa crónica
+Doença trofoblástica gestacional
+Dor testicular
+ducto lactífero
+duodenopancreatectomia
+Ecografia Doppler
+Ecopraxia
+Efeito Warburg
+eminência hipotenar
+ependimoma
+eritrasma
+erliquiose
+exsanguinação
+fenda palatina
+Fissura longitudinal
+Fratura proximal do úmero
+gengivite ulcerativa necrosante aguda
+Genu varum
+Gestação prolongada
+glomerulonefrite rapidamente progressiva
+hipertonia
+hipervolemia
+histiócito
+holoprosencefalia
+imunodeficiência congénita
+imunodeficiência congênita
+imunodeficiência primária
+Infecção por adenovírus
+infertilidade masculina
+insensibilidade congênita à dor
+Insuficiência Tricúspide
+intubação
+Iontoforese
+laringoscopia
+lentigem
+Lesão por raio
+linfocitopenia
+Linfocitose
+língua negra pilosa
+loaíase
+macrocefalia
+Macrossomia fetal
+medicina fetal
+medicina materno-fetal
+Membrana de Descemet
+Membrana externa bacteriana
+microtia
+mielócito
+Mudança de humor
+músculo cricotireóideo
+músculo esplénio da cabeça
+músculo esplênio da cabeça
+músculo estiloglosso
+músculo fibular curto
+Músculo gêmeo inferior
+Músculo longo do colo
+músculo reto lateral
+músculo transverso do tórax
+Músculo vasto lateral
+Músculo vasto medial
+Nasofaringe
+nefrite tubulointersticial
+Nervo mandibular
+nervo tibial
+Nervo torácico longo
+Neurito
+Neurônio bipolar
+Núcleo do trato solitário
+odinofagia
+odor corporal
+omento menor
+onda delta
+Onda gama
+ondas beta
+paniculite
+paraganglioma
+Pediculose pubiana
+perdigoto
+Pericardiocentese
+planeamento familiar natural
+planejamento familiar natural
+pneumocistose
+pneumonite de hipersensibilidade
+pré-maligna
+pré-malignidade
+Protuberância occipital externa
+Psicastenia
+psicogeriatria
+Psicose tóxica das anfetaminas
+pupila de Argyll Robertson
+Ramsay-Hunt-Syndrom
+Reação cruzada
+ritmo beta
+sebo
+sialadenite
+sigmoidoscopia
+síndrome da sela vazia
+síndrome de captura precordial
+síndrome de Cockayne
+Síndrome de Cruveilhier-Baumgarten
+Síndrome de Dressler
+síndrome de dumping
+Síndrome de Gerstmann
+síndrome de Klippel-Feil
+Síndrome de Loeys-Dietz
+Síndrome de obesidade-hipoventilação
+Síndrome de Ramsay Hunt
+Síndrome de Silver-Russell
+Síndrome de Smith-Lemli-Opitz
+Síndrome do impacto
+síndrome do nó sinusal
+Síndrome hemolítico-urêmica atípica
+Síndrome Kabuki
+Síndrome Kearns-Sayre
+Substância biogênica
+Suporte à vida
+Taquicardia sinusal
+Terapia de quelação
+Testes cutâneo-alérgicos
+Tonometria
+Tórax instável
+Toxicidade do metal
+tricoleucemia
+tricologia
+Tumor de Merkel
+Tumor gastrointestinal do estroma
+tungíase
+veia safena parva
+vestíbulo da orelha
+vestíbulo do ouvido
+Vício em comida
+abetalipoproteinemia
+Abrasão corneana
+acidose respiratória
+adenoidectomia
+Afalia
+afasia de wernicke
+agenesia de corpo caloso
+Agenesia renal
+amelogênese imperfeita
+anaplasmose
+anemia hemolítica autoimune
+anemia microcítica
+angina de Ludwig
+Angioma cereja
+anisocitose
+Anorquia
+artéria cística
+artéria coronária direita
+artéria da retina central
+artéria meníngea média
+Artéria occipital
+artéria testicular
+autismo clássico
+autismo infantil
+bursite olecraniana
+Calcinose-estrio-pálido-dentada bilateral
+cardiomiopatia restritiva
+cavidade glenoidal
+Célula da granulosa
+Célula gigante de Langhans
+célula justaglomerular
+centro organizador dos microtúbulos
+Cérebro dividido
+Choque neurogênico
+Cirurgia a laser
+climoterapia
+clitoridectomia
+colestase intra-hepática da gravidez
+colículo superior
+Colite isquêmica
+condroma
+condromalácia patelar
+contração ventricular prematura
+contracepção hormonal
+contratura
+corioretinite
+córtex motor primário
+Criptas de Lieberkühn
+Crise adrenal
+demodicidose
+Dermatite perioral
+Dermatoscopia
+diabetes mody
+Dispneia paroxística noturna
+Doença de Batten
+Doença de Marek
+Doença de Tangier
+dor referida
+duodenite
+Ectopia lentis isolada
+Elevador do palato
+epífora
+epitélio pseudoestratificado
+Escleroterapia
+Espermatocele
+Espinha dendrítica
+estadiamento do câncer
+Estenose da válvula pulmonar
+Estimulação do nervo vago
+faloplastia
+fetoscopia
+Fibrilação
+Forame jugular
+fotodermatite
+fratura craniana
+frênulo da língua
+Frênulo lingual
+gastrinoma
+gastrostomia
+Gravidez abdominal
+Hemangioma cavernoso
+hemoglobinopatia
+Hemorragia obstétrica
+hérnia femoral
+Hipercinesia
+hipermagnesemia
+hipertensão gestacional
+hipoalbuminemia
+Indução do parto
+Ingurgitamento mamário
+Isquémia cerebral
+isquemia cerebral
+labirinto ósseo
+laserterapia
+Laserterapia de baixa potência
+Lesão axonal difusa
+ligamento cruzado posterior
+ligamento inguinal
+ligamento periodontal
+mancha café com leite
+Manchas Hepáticas
+medicina holística
+Medicina social
+Membrana sinovial
+Membranas sinoviais
+Miocardiopatia restritiva
+Mioquimia
+Miotonia
+mixoma
+Músculo abaixador do supercílio
+Músculo coccígeo
+músculo fibular terceiro
+Músculo gêmeo superior
+músculo papilar
+Músculo semiespinal da cabeça
+Músculo vasto intermédio
+nocardiose
+núcleo lentiforme
+Núcleos da rafe
+oligodedroglioma
+Organ-on-a-chip
+pancitopenia
+Panleucopenia felina
+Parotidite
+pectus carinatum
+periodontite apical
+pico de fluxo expiatório
+pinguécula
+pneumonectomia
+Poliangiite microscópica
+poliartrite
+PRK
+Pronação dolorosa
+Prostatite aguda
+proteinose alveolar pulmonar
+Pseudoartrose
+psicocirurgia
+Pupila tônica de Adie
+radiculopatia
+recaída
+recidiva
+Rede de modo padrão
+Região pseudoautossômica
+rete mirabile
+Retração gengival
+rim em ferradura
+seio carótico
+Síndrome Barth
+síndrome carcinóide
+síndrome da unha amarela
+Síndrome de Adie
+Síndrome de Alstrom
+síndrome de bassen-kornzweig
+Síndrome de Brown-Séquard
+Síndrome de Ellis-Van Creveld
+síndrome de Leigh
+Síndrome de Nelson
+Síndrome de Rotor
+Síndrome de Smith-Magenis
+síndrome de tolosa-hunt
+Síndrome de Wolfram
+síndrome do quebra-nozes
+Síndrome Joubert isolado
+Síndrome pós-pólio
+sistema de ductos coletores
+Tabagismo e gravidez
+tecido conjuntivo frouxo
+tecido conjuntivo laxo
+Tendinite do calcâneo
+TENS
+Terceiro mamilo
+testes de função hepática
+Tetra-amelia
+tirosinemia
+toracocentese
+Trabécula
+translucência nucal
+tricotilofagia
+tuberculose do sistema nervoso
+túbulo contorcido proximal
+tumor de glândula salivar
+urgência psiquiátrica
+vasa vasorum
+veia ilíaca externa
+Veia safena magna
+Via mesolímbica
+vício comportamental
+aderência
+anemia sideroblástica
+anidrose
+aorta torácica
+Apneia obstrutiva do sono
+apófise
+Apoplexia pituitária
+arco senil
+Área de superfície corporal
+artéria braquial profunda
+Artéria brônquica
+artéria coronária esquerda
+artéria frénica inferior
+artéria frênica inferior
+artéria gástrica direita
+artéria gastro-omental direita
+artéria ovariana
+Artéria ovárica
+artéria pudenda interna
+Artéria supraescapular
+artéria toracoacromial
+artropatia
+Associação CHARGE
+Associação VACTERL
+autotransplante
+blastoma
+bradipneia
+Bregma
+Cardiopatia isquémica
+cavidade craniana
+Cefaleia pós-punção dural
+cegueira da neve
+célula de lugar
+Célula delta
+Célula enterocromafim
+célula enterocromoafim
+célula espumosa
+Célula intersticial de Cajal
+célula m
+Célula T natural killer
+células de lugar
+células procariontes
+ciliopatia
+cisto aracnoide
+Coccidínia
+Coma hiperosmolar hiperglicémico
+Cordas tendinosas
+Corpo de Cajal
+crise tireotóxica
+Dedo de baseball
+deficiência de zinco
+Diarreia viral bovina
+diátese hemorrágica
+dirofilariose
+Disgeusia
+distrofia fascio-escapulo-humeral
+doença de bornholm
+doença de Castleman
+doença de darier
+Doença de Farber
+Doença de McArdle
+doença de urbach-wiethe
+doença vascular
+Doenças hipertensivas da gravidez
+edema macular
+Emetropia
+Encefalite herpética
+encefalocele
+enfisema subcutâneo
+epêndima
+Epitélio olfatório
+eritromelalgia
+Escândalo da talidomida
+esprú tropical
+estenose da artéria renal
+estenose uretral
+Extrofia da bexiga
+Fabela
+facada
+Fadiga por Compaixão
+Febre da carraça africana
+fibrócito
+fístula arteriovenosa
+Fratura de Galeazzi
+Fratura do rádio distal
+fratura nasal
+Gamagrafia óssea
+Gêmeo parasita
+giro para-hipocampal
+glândula apócrina
+Glândulas de Brünner
+Glucagonoma
+Hematidrose
+Hematoma subungueal
+hemofilia A
+Hemofilia B
+hérnia diafragmática
+hibridação in situ
+hiperestesia
+hipertelorismo
+hipopion
+Hipóxia cerebral
+ileostomia
+imunoquímica
+Infecção congênita por citomegalovírus
+Infecção transmitida verticalmente
+Internação
+Intoxicação escombroide
+intoxicação por opioides
+inversão uterina
+isosporíase
+Laringomalácia
+Leucemia aguda
+leucemia promielocítica aguda
+Linfócito NKT
+linguagem precipitada
+Linha primitiva
+Lipotimia
+Lobo límbico
+Lúpus eritematoso
+lúpus eritematoso discóide
+Lupus vulgaris
+macroglossia
+mal de Pott
+malária aviária
+mamoplastia
+medicina molecular
+medicina tradicional coreana
+MELAS
+meningismo
+mesonefro
+Micetoma
+micose fungoide
+Mielografia
+mielopatia
+mri de difusão
+músculo bulbocavernoso
+Músculo cricoaritenóideo lateral
+músculo detrusor
+músculo eretor do pelo
+Músculo escaleno anterior
+músculo esplênio cervical
+Músculo tireoaritenóideo
+Mycetoma
+nefrite lúpica
+nervo axilar
+Nervo escapular dorsal
+neuricisticercosis
+neuroblasto
+Núcleo de Edinger-Westphal
+occipício
+Osteogênese por distração
+otomicose
+panbronquiolite difusa
+Parafrenia
+paralisia periódica hipocalémica
+paraparesia espástica familiar
+parede abdominal
+patologia forense
+patologia molecular
+pedúnculo cerebral
+Perfuração por arma branca
+perturbação cognitiva
+peste septicémica
+policondrite recidivante
+Polimastia
+Prolaps
+Prostatectomia
+radiografia panorâmica
+receptor de sabor
+recetor gustativo
+retinopatia hipertensiva
+ruptura da aorta
+ruptura do manguito rotador
+sangramento após o coito
+sangue oculto nas fezes
+sangue venoso
+saúde global
+sequela
+sicose
+Síndrome CHARGE
+Síndrome de Aagenaes
+Síndrome de Aicardi
+Síndrome de Chediak-Higashi
+Síndrome de Chédiak-Higashi
+síndrome de Felty
+Síndrome de Klippel-Trenaunay-Weber
+Síndrome de Landau-Kleffner
+Síndrome de Lemierre
+Síndrome de Liddle
+síndrome de Lown-Ganong-Levine
+Síndrome de Pierre Robin
+síndrome de Sézary
+síndrome de supercrescimento bacteriano
+Síndrome de Sweet
+síndrome de Tietze
+Síndrome do restaurante chinês
+Síndrome do vômito cíclico
+Síndrome DRESS
+Síndrome Goldenhar
+Síndrome Jacobsen
+Síndrome Pibloktoq
+Síndrome Plummer-Vinson
+síndrome WAGR
+substância cinzenta periaquedutal
+Taquifemia
+técnica de relaxamento
+tempestade tireoidiana
+TPAC
+transplante de pênis
+transtorno afetivo bipolar I
+transtorno afetivo bipolar II
+transtorno bipolar I
+transtorno bipolar II
+transtorno do processamento auditivo
+transtorno factício
+trato espinotalâmico
+Trauma penetrante
+Traumatismo dentário
+Trombocitemia essencial
+Trombocitopenia induzida por heparina
+tuberculose multirresistente
+Tumor de Warthin
+Ultrassom terapêutico
+urticária aquagênica
+Útero bicorno
+veia cefálica
+veia mesentérica superior
+veia umbilical
+via nasal
+Abrasão dentária
+acesso expandido
+Alergia ao ovo
+ameloblastoma
+Anemia de Diamond-Blackfan
+angioma estelar
+anisaquíase
+aparelho de Ilizarov
+artéria cerebelar inferior posterior
+artéria cólica esquerda
+artéria gastro-omental esquerda
+artéria gastroduodenal
+Artéria iliolombar
+artéria tireóidea inferior
+Artéria torácica lateral
+arteríola aferente
+Articulação em sela
+Artropatia neuropática
+Árvore biliar
+atresia da válvula tricúspide
+Atresia tricúspide
+Barreira hemato-testicular
+Beta-thalassemia
+bloqueio de ramo
+bulbo do vestíbulo
+calcinose
+Cálices
+calo ósseo
+Camada leucoplaquetária
+Campimetria
+Canais de Havers
+Cartilagem costal
+Célula G
+célula mioepitelial
+celulite orbitária
+Ceratoacantoma
+Cirurgia fetal
+clinodactilia
+Coinfecção
+colectomia
+concha nasal
+conjuntivite neonatal
+cordoma
+coriomeningite linfocitária
+Corno cutâneo
+Corpo esponjoso
+corpúsculo de inclusão
+córtex
+córtex auditivo
+crioglobulinemia
+cuidados de saúde primários
+Defeito do tubo neural
+deficiência de folato
+dermatite de contacto alérgica
+dermatite de contato alérgica
+desinstitucionalização
+dieta diabética
+diprósopos
+Disease Pelizaeus-Merzbacher
+disfonia espasmódica
+disforia de gênero infantil
+disortografia
+displasia fibrosa
+Displasia renal multicística
+Distrofia da córnea
+Doença de Bowen
+Doença de Caroli
+Doença de Hartnup
+dor retal
+eletroflotação
+encefalite viral
+Encoprese
+endoftalmite
+Enterococo resistente à vancomicina
+enterocolite
+erisipelóide
+escuta dicótica
+esquizofrenia progressiva
+estreptobacilose
+Fascículo arqueado
+Febre de ouropoch
+Fecalito
+fibrossarcoma
+fitofotodermatite
+Forame espinhoso
+Fotopletismografia
+fototoxicidade
+fratura da bacia
+fratura da pélvis
+Fratura de Jones
+fratura mandibular
+fratura pélvica
+gânglio ciliar
+Giro temporal superior
+Glândula sudorípara écrina
+glomerulonefrite membranoproliferativa
+glomerulonefrite pós-estreptocócica
+Granuloma piogênico
+Hemangioblastoma
+Hematometra
+hérnia diafragmática congênita
+Hidradenitis
+Hidrocele testicular
+hilo renal
+Hiperostose
+Hiperplasia do endométrio
+hipodontia
+hipofosfatasia
+hipoproteinemia
+inalação
+incompetência istmocervical
+isocromossomo
+leishmaniose cutânea
+linfangioleiomiomatose
+Língua fissurada
+Linhas de Beau
+Macronúcleo
+Mapeamento cerebral
+Máscara laríngea
+matriz nuclear
+Mielinólise pontina central
+Miofibroblasto
+Monossomia 1p36
+mucopolissacaridose VI
+Músculo cricoaritenóideo posterior
+músculo escaleno posterior
+músculo isquiocavernoso
+músculo palatofaríngeo
+músculo palatoglosso
+Músculo salpingofaríngeo
+Músculo suspensor do duodeno
+músculos da respiração
+músculos supra-hióideos
+Não disjunção
+necrose tubular aguda
+nefropatia hipertensiva
+Neurônio multipolar
+nitrogénio ureico no sangue
+Nódulo de Heberden
+nódulo de Schmorl
+Onfalite
+onicólise
+Ortoqueratologia
+osteocondroma
+osteosclerose
+osteotomia
+Palilalia
+parada respiratória
+Parafasia
+paragem respiratória
+Paralisia periódica tirotóxica
+partículas de ribonucleoproteínas heterogéneas
+pé cavo
+perda auditiva ocupacional
+perda auditiva sensorioneural
+Peritonite bacteriana espontânea
+peso ao nascer
+Placa neural
+Placenta retida
+pneumonite
+pneumoperitônio
+Polineuropatia desmielinizante inflamatória crônica
+politraumatismo
+Post SSRI Sexual Dysfunction
+pseudo-hermafroditismo
+Psicose induzida por substância/medicação
+psiquiatria biológica
+Quemose
+queratose
+querubismo
+Rabdomioma
+Reflexo miotático
+ressecção transuretral de próstata
+retículo sarcoplasmático
+sáculo
+Salicismo
+sangue arterial
+Sensibilidade ao glúten não-celíaca
+Sinciciotrofoblasto
+Síndrome Andersen-Tawil
+Síndrome CREST
+Síndrome de Gitelman
+síndrome de Goltz
+Síndrome de McCune-Albright
+Síndrome de Parinaud
+síndrome de Parry-Romberg
+síndrome de phelan-mcdermid
+Síndrome de Rasmussen
+síndrome de Vogt-Koyanagi-Harada
+síndrome do cabeceio
+Síndrome do cabelo impenteável
+sindrome dolorosa miofascial
+Síndrome Pitt-Hopkins
+Síndrome Rothmund-Thomson
+síndrome XXXX
+síndrome XXYY
+subnutrição
+sulco calcarino
+tabagismo
+tecido adiposo branco
+Tentativa de suicídio
+Tentório cerebelar
+Terapia de fluoreto
+Teste rápido de diagnóstico
+Tofo
+toracoscopia
+transtorno de personalidade passivo-agressiva
+Transtorno psicótico breve
+trato respiratório superior
+trissomia 16
+Tronco tireocervical
+tuberculose miliar
+Útero didelfo
+veia ilíaca interna
+veia poplítea
+Vermis
+VIPoma
+aborto habitual
+Aborto recorrente
+Abscesso tubo-ovariano
+acefalia
+acidemia propiônica
+acrocianose
+Adermatoglifia
+afasia de Broca
+Alergia ao trigo
+Amaurose fugaz
+angiodisplasia
+angiomiolipoma
+Anoxia perinatal
+artéria auricular posterior
+artéria cerebelar inferior anterior
+artéria cerebelar superior
+Artéria epigástrica inferior
+artéria espinal anterior
+artéria pancreaticoduodenal inferior
+artéria retal superior
+artéria sacral mediana
+arteríola eferente
+astenozoospermia
+aterectomia
+Atrofia muscular progressiva
+Autofagossoma
+avaliação da função respiratória
+bejel
+bissinose
+Cardiomiopatia arritmogênica hereditária
+Célula de Reed-Sternberg
+célula reticular
+Cirurgia da mão
+cirurgia do aparelho digestivo
+Coloração ácido periódico-Schiff
+Côndilo occipital
+contenção médica
+contratura de Volkmann
+Contratura isquêmica de Volkmann
+Corpo de Weibel-Palade
+Corpora quadrigemina
+córtex renal
+Criocirurgia
+Cromossomo em anel
+Curetagem
+Cutis laxa
+Dartos
+Defeito do septo atrioventricular
+deiscência
+delírio religioso
+Dente impactado
+Dependência de cocaína
+disgenesia gonadal
+Displasia ectodérmica sindrômica
+distensão abdominal
+distrofia de Fuchs
+distúrbio da diferenciação sexual
+Doença Cushing
+Doença de Carrión
+Doença de Coats
+Doença de Kienböck
+dorsal
+embotamento afetivo
+Encefalopatia de Hashimoto
+Endomísio
+endoplasma
+Endósteo
+Enxaqueca retiniana
+ependimócito
+epicôndilo medial do úmero
+Epilepsia do lobo frontal
+Epineuro
+epitélio colunar simples
+eritrodermia
+escafocefalia
+espaço epidural
+espaço subaracnoideo
+esquizofasia
+Esquizofrenia infantil
+estenose do esófago
+facomatose
+Fator V de Leiden
+Fibra nervosa
+fossa temporal
+fratura de úmero
+fratura do escafoide
+Gás no sistema portal
+gínglimo
+Giro denteado
+giro frontal inferior
+glomo carótico
+Gotejamento pós-nasal
+Hematocolpos
+hermafroditismo verdadeiro
+hidranencefalia
+hipercalciúria
+hiperoxalúria
+hipertrofia ventricular esquerda
+Hipopigmentação
+histiocitose
+incoerência
+Incontinência de pigmento
+Injeção intradérmica
+injeção intravenosa
+Inseticida e câncer
+intolerância hereditária à frutose
+Intoxicação por betabloqueadores
+Laringectomia
+ligamento colateral medial
+ligamento redondo do útero
+Linfoma de células B
+lofgren
+Luxação do joelho
+Malabsorção de frutose
+Malformação arteriovenosa cerebral
+Massa mamária
+mediastinite
+medicina kampo
+medula renal
+Membrana basilar
+Metáfise
+Mieloblasto
+morte cardíaca súbita
+mucopolissacaridose do tipo VII
+Músculo condroglosso
+Músculo escaleno médio
+músculo estilofaríngeo
+músculo longitudinal inferior
+músculo longitudinal superior
+músculo lumbrical do pé
+Músculo pubococcígeo
+músculos infra-hióideos
+músculos interósseos palmares
+Músculos subcostais
+nervo ilioinguinal
+Nervo subclávio
+Nervo toracodorsal
+Neutrofilia
+Nevralgia pós-herpética
+Odontoma
+osteíte
+osteíte alveolar
+osteoma osteoide
+PAIR
+penfigoide bolhoso
+penfigóide gestacional
+Picnodisostose
+Plexo de Auerbach
+Plexo mioentérico
+plexo nervoso
+pneumonia eosinofílica
+Psicologia da reabilitação
+Queratite herpética
+Repressão de memória
+Retina horizontal cell
+sacroileíte
+salada de palavras
+Sarcoma de tecidos moles
+sarcoma sinovial
+satiríase
+seio aórtico
+Seio Pré-auricular
+Síndrome de Aase
+Síndrome de Birt-Hogg-Dubé
+Síndrome de Cowden
+Síndrome de Gardner
+Síndrome de Hurler
+Síndrome de Löffler
+Síndrome de Melkersson-Rosenthal
+Síndrome de Miller-Dieker
+Síndrome de Seckel
+Síndrome de Shwachman-Diamond
+Síndrome de Sjögren-Larsson
+Síndrome de Sly
+Síndrome de Susac
+Síndrome de Volkmann
+Síndrome de Wellens
+Síndrome Holt-Oram
+Síndrome Larsen
+Síndrome MERRF
+Síndrome Pendred
+síndrome unha-patela
+Síndrome XYYY
+Sistema portal
+sistema venoso portal
+sobrediagnóstico
+suco intestinal
+Sulco temporal superior
+taupatia
+therapeutic hypothermia
+Tireoidite de De Quervain
+Transfusão de plaquetas
+transplante de pâncreas
+trigonocefalia
+Trombastenia de Glanzmann
+túbulo contorcido distal
+Tumor filoide
+Úlcera do pé diabético
+Veia basílica
+veia esplénica
+veia esplênica
+veia profunda
+Vilosidades coriónicas
+volume corrente
+xantomatose cerebrotendinosa
+yersiniose
+Acidemia metilmalônica
+Alergia ao látex
+Alucinose
+anemia na gravidez
+Apicoplasto
+Appendix testis
+Arinia congênita completa
+artéria pericardiofrênica
+artéria subescapular
+artéria suprarrenal média
+Artéria tibial anterior
+artéria umeral circunflexa anterior
+artéria umeral circunflexa posterior
+artéria vaginal
+artéria vesical inferior
+Aspiração uterina a vácuo
+Asplenia
+Astrocitoma anaplásico
+baço acessório
+BiPAP
+Bócio multinodular tóxico
+cálculo biliar
+cálculos biliares
+canalopatia
+câncer de apêndice
+cápsula renal
+Carcinoma adenoide cístico
+Carcinoma adrenocortical
+Carcinoma inflamatório da mama
+carcinoma medular da tiroide
+Carcinoma urotelial
+Cardiomiopatia periparto
+cardiopatia hipertensiva
+cardioplegia
+cefalometria
+Célula estaminal neural
+célula satélite
+célula satélite muscular
+célula tumoral circulante
+Células dendríticas foliculares
+Ceratólise pontuada
+CHO
+choque anafilático
+cistectomia
+Citrulinemia
+coledocolitíase
+colite microscópica
+comissura anterior
+Cone medular
+Conização cervical
+corneal endothelium
+coroideremia
+Corpo albicans
+corpo cavernoso do clitóris
+Crista do ílio
+crista ilíaca
+cromoblastomicose
+Cúneo
+Deficiência de 5α-redutase 2
+Deficiência de glutaril-CoA desidrogenase
+dentinogénese imperfeita
+dentinogênese imperfeita
+Depressão mascarada
+dermatite de estase
+Descolamento do vítreo posterior
+desproporção cefalopélvica
+Discectomia
+displasia fibromuscular
+disreflexia autonômica
+dissonia
+Distrofia muscular de Emery-Dreifuss
+distúrbios do assoalho pélvico
+Divertículo de Zenker
+doença da mama
+doença da tireoide
+Doença de Bright
+Doença de Erdheim-Chester
+Doença de Freiberg
+Doença de Wolman
+Doença Lhermitte-Duclos
+doença pulmonar restritiva
+Dores de crescimento
+Drenagem linfática
+Ectopia cordis
+Eletrocirurgia
+emaranhados neurofibrilares
+encefalite autoimune
+encefalopatia hipertensiva
+enoftalmia
+enterotoxemia
+entomologia médica
+enxerto ósseo
+Epimísio
+episclerite
+epitélio cúbico simples
+epitrocleite
+Erdheim-Chester
+Eritroplasia
+esclerose concêntrica de Baló
+Esôfago em martelo pneumático
+Esqueleto cardíaco
+exaustão pelo calor
+Fantosmia
+fasciite
+fasciotomia
+febre da água negra
+Fibrotórax
+Fígado gorduroso da gravidez
+Fístula liquórica
+Fístula reto-vaginal
+flebografia
+Fossa infratemporal
+Fratura de Monteggia
+Fratura do tornozelo
+Gânglio trigeminal
+Gefirofobia
+Geologia médica
+germinoma
+Gliomatose cerebral
+hemibalismo
+hemoglobina corpuscular média
+Hemoglobina globular média
+Hemolacria
+hemorragia digestiva alta
+Hepatectomia
+hidratação
+himenolepíase
+hiperhomocisteinemia
+Hipersonia idiopática
+hipertensão ocular
+Hipogalactia
+hipoglicemia reativa
+imunodeficiência comum variável
+infecção perinatal
+insuficiência venosa crónica cerebroespinal
+linfadenectomia
+lumpectomia
+Lunático
+mediastinoscopia
+membrana tectorial
+meralgia parestésica
+microdontia
+micrognatismo
+microsporidiose
+mielencéfalo
+monitorização terapêutica de fármacos
+Músculo tarsal superior
+Músculos intercostais íntimos
+músculos interósseos dorsais
+Nefronoptise
+nervo coclear
+Nervo cutâneo femoral lateral
+nervo glúteo superior
+Nervo peitoral medial
+Nervo supraescapular
+neurofibromatoses
+neurofilamento
+neuronite vestibular
+nevo melanocítico congênito
+nutrição clínica
+Olécrano
+onda theta
+ortóptica
+osso vormiano
+osteodistrofia renal
+pandas
+Paralisia de Erb
+Paralisia por carrapato
+paraparesia espástica tropical
+Pata de ganso
+pênfigo vulgar
+Peri-hepatite gonocócica
+Perimísio
+perturbação do desenvolvimento
+Pinealócito
+pleurodese
+pneumonia bacteriana
+Pneumonia intersticial aguda
+polineuropatia amiloidótica familiar
+porfiria aguda intermitente
+porfiria cutânea tarda
+procedimiento médico
+Prurido anal
+pseudoalucinação
+pseudomixoma peritoneal
+Pseudoxantoma elástico
+Pubalgia
+PUVA
+rânula
+RDW
+Receptor de rianodina
+Red Cell Distribution Width
+Redução do prepúcio clitoriano
+rete testis
+retinite
+retinoscopia
+rickettsiose
+seio sigmoide
+Sepse neonatal
+siderose
+Síndrome Costello
+Síndrome da regressão caudal
+Síndrome de Aicardi-Goutières
+Síndrome de desengajamento cognitivo
+Síndrome de Erdheim-Chester
+síndrome de Hamman-Rich
+Síndrome de Leriche
+Síndrome de Marcus-Gunn
+Síndrome de McLeod
+Síndrome de Meckel-Gruber
+Síndrome de Meigs
+Síndrome de Mirizzi
+Síndrome de Potter
+Síndrome de Riley-Day
+síndrome de Shy-Drager
+Síndrome do óleo tóxico
+Síndrome do trato iliotibial
+Síndrome hipernictemeral
+Síndrome QT curto congênito
+Síndrome Weaver
+Síndrome XXXY
+Sinéquia vulvar
+sistema reticuloendotelial
+suores noturnos
+taquicardia paroxística auricular
+taquicardia paroxística supraventricular
+tarso da pálpebra
+Taurodontismo
+Tenesmo retal
+terapia de substituição renal
+Terapias expressivas
+Teste rápido para estreptococos
+timpanoplastia
+Toxicidade por lítio
+tractus corticospinalis
+transplante de cérebro
+transtorno da comunicação
+traqueomalácia
+Triângulo femoral
+trombose de veia porta
+tubérculo
+Tumor de Krukenberg
+Tumor epitelial-estromal de superfície
+tumor venéreo transmissível
+utrículo
+Vaginal
+Venografia
+Via vaginal
+vigorexia
+Abstinência de opioides
+Acolia
+Adenoma da tiroide
+adenoma hepático
+adrenalectomia
+Água corporal
+Aneurisma da aorta torácica
+Angiografia cerebral
+Angiostrongilíase
+artéria cólica média
+Artéria comunicante anterior
+Artéria femoral profunda
+Artéria glútea inferior
+Artéria palatina ascendente
+artéria pancreaticoduodenal superior
+artéria sigmóidea
+artéria suprarrenal superior
+Artéria tireóidea ima
+artérias gástricas curtas
+Articulação condiloide
+articulação metatarsofalângica
+Aspergilose broncopulmonar alérgica
+Asteríxis
+Atresia da vagina
+atresia pulmonar
+Baixo peso de nascimento
+blefarocálase
+bócio endêmico
+Bola de Bichat
+bradicardia sinusal
+braquimetatarsia
+Bursite pré-patelar
+Câncer de uretra
+capilares linfáticos
+cardiomiócito
+cartilagem elástica
+Cefaleia orgástica
+Célula de Renshaw
+célula epitelial da tiroide
+célula eucariótica
+célula folicular da tireóide
+célula neuroendócrina
+Célula PP
+células eucariontes
+Cementoblasto
+centro respiratório
+Ceratite por Acanthamoeba
+cicatriz hipertrófica
+Cicloplegia
+cirurgia micrográfica
+Cisto perineural
+Cisto tireoglosso
+citopenia
+Classificação de Salter-Harris
+Clívo
+colangiopancreatografia por ressonância magnética
+Colículo inferior
+Coluna de Bertin
+cúspide
+demofobia
+dependência de benzodiazepina
+dermatocalasia
+desequilíbrio ácido-básico
+desnutrição proteico-calórica
+Disfunção da tuba auditiva
+disosmia
+Displasia epifisária múltipla
+Distonia cervical
+Doença de Brill-Zinsser
+Doença de Degos
+Doença de Dent
+Doença de Kennedy
+doença de Köhler
+Doença de Marchiafava-Bignami
+Doença de Menetrier
+Doença de Sandhoff
+doença do sistema imunológico
+Doença Kikuchi-Fujimoto
+Doença neuromuscular
+Doença psiquiátrica rara
+doença sanguínea
+Durina
+Ecoendoscopia
+Ectasia
+Eletrocorticografia
+enantema
+Endocardite de Libman-Sacks
+entesopatia
+Enxaqueca abdominal
+eosinopenia
+epicôndilo lateral do úmero
+Epilepsia focal
+eponíquio
+Epoóforo
+eritema ab igne
+Eritrodisestesia palmoplantar
+erupção polimorfa à luz
+Escápula alada
+Esclerodermia localizada
+Essure
+esteatonecrose
+Esteatose
+eucariótica
+exame complementar de diagnóstico
+Exostoses múltiplas hereditárias
+fáscia plantar
+Febre hemorrágica argentina
+Febre hemorrágica Boliviana
+febre hemorrágica de Omsk
+fibromatose
+fímbria
+Forame interventricular
+forame vertebral
+fraqueza muscular
+Fratura da patela
+Fratura do boxeador
+fratura em galho verde
+Fundoplicação de Nissen
+Gálea aponeurótica
+gânglio pterigopalatino
+Gastroenterite rotavírica
+Gerador de padrão central
+Glândula uretral
+Glicosúria renal
+gnatologia
+Hematoma do septo nasal
+Hemisferectomia
+Herpes zoster oftálmico
+Hialino
+Higroma cístico
+hilo
+Hiperostose esquelética idiopática difusa
+hipertensão arterial secundária
+hipertensão renovascular
+Idade óssea
+Imunoeletroforese
+incisivo central superior
+Incontinência de esforço
+infecção subclínica
+Intoxicação por antidepressivos tricíclicos
+Intoxicação por teobromina
+Kerion celsi
+labirinto membranoso
+Lesões orais
+Ligamento suspensor do pênis
+Linfoma MALT
+linha celular imortalizada
+linhagem celular
+luxação da anca
+malformação adenomatóide cística congênita
+Mandíbula deslocada
+manganismo
+metamielócito
+Microalbuminúria renal
+Mielite flácida aguda
+miopatia nemalínica
+mucocele
+Mucosa gástrica
+Mucosa oral
+Músculo aritenóideo transverso
+Músculo articular do joelho
+Músculo vertical
+narcologia
+Nervo vestibular
+Neuroacantocitose
+Neuroestimulação
+Neuromiotonia
+neuronio sensorial olfatório
+Neurônio unipolar
+neurônios olfatórios
+neuropatia óptica
+Nódulo de Bouchard
+NOTES
+Núcleo supraóptico
+onicogrifose
+orofaringe
+ovarite
+oxicefalia
+paracoccidioidomicose
+paragonimíase
+Paralisia de Klumpke
+Paramétrio
+Parvovirus
+Parvovírus
+Patologia Bucal
+PCO2
+perineuro
+pitiríase
+plano anatómico
+Plexo submucoso
+Pneumomediastino
+prega palmar transversal única
+pressão arterial
+Prostatite bacteriana crônica
+Prova cruzada
+prova de broncoprovocação
+Pseudo-obstrução intestinal
+Pseudohipoparatireoidismo
+queratomalácia
+respiração pela boca
+Retinosquise
+Rim espongiforme medular
+Ruptura do diafragma
+sangramento gastrointestinal inferior
+seio sagital superior
+Seio transverso
+shunt cerebral
+Síndrome Carpenter
+Síndrome Cogan
+Síndrome Cohen
+Síndrome de Alpers
+Síndrome de Bernard-Soulier
+Síndrome de congestão pélvica
+Síndrome de Hughes-Stovin
+Síndrome de Ogilvie
+síndrome do bebé cinzento
+síndrome do bebê cinzento
+Síndrome Dubowitz
+Síndrome Hallermann-Streiff
+Síndrome hipereosinofílica
+Síndrome PFAPA
+síndrome poliglandular autoimune
+Síndrome Scheie
+Síndrome Simpson-Golabi-Behmel
+Síndrome triplo A
+Síndrome XXXXY
+sinovite vilonodular pigmentada
+Somatostatinoma
+struma ovarii
+Subclinical infection
+tempo de sangramento
+Terminação livre
+teste de inclinação ortostática
+tifo murino
+Toxicidade da digoxina
+Transtorno de personalidade depressiva
+Transtorno de personalidade haltlose
+transtornos da motilidade ciliar
+Trauma vaginal
+Trígono cistepático
+tromboembolismo
+trombose do seio cavernoso
+truncus arteriosus
+tuberculose pulmonar
+Tumor de Klatskin
+tumor pulmonar
+tumos cordao sexual
+Ultrassonografia endoscópica
+Utrículo prostático
+Valva aórtica bicúspide
+Válvula de uretra posterior
+Válvula do seio coronário
+Veia cardíaca maior
+veia central da retina
+veia cubital mediana
+Veia hemiázigo acessória
+Veia jugular anterior
+Veias braquiais
+ablação por cateter
+aceruloplasminemia
+Acidemia isovalérica
+Acrodermatite
+adenoma pleomórfico
+Adipose dolorosa
+afasia progressiva primária
+AGJ
+Alocórtex
+Amaurose
+análise da marcha
+Apendicite epiploica
+Área postrema
+artéria alveolar inferior
+Artéria cervical profunda
+Artéria colateral ulnar inferior
+Artéria colateral ulnar superior
+artéria cólica direita
+artéria descendente anterior esquerda
+artéria esfenopalatina
+Artéria facial transversa
+artéria glútea superior
+artéria ileocólica
+artéria recorrente radial
+Artéria submental
+Artéria toracodorsal
+artéria vesical superior
+Artérias lombares
+articulação metacarpofalangeana
+Artrografia
+Aspartilglicosaminúria
+autismo atípico
+Axênico
+Baixa estatura
+blefarofimose
+Canal carótico
+Canal carotídeo
+câncer de adrenal
+canino superior
+Cardite
+Carotenose
+Carúnculo lacrimal
+Cavidade medular
+cavidade peritoneal
+Cavidade uterina
+Célula APUD
+célula ECL
+célula enteroendócrina
+célula gigante
+célula tipo-enterocromafim
+célula tipo-enterocromoafim
+Ceratoconjuntivite primaveril
+Cisterna do quilo
+Cisto coloide
+cistos coledocianos
+colesterolose da vesícula biliar
+Coma mixedematoso
+Complexo de Carney
+consolidação pulmonar
+Contração atrial prematura
+Corpo de Mallory
+Corpos estranhos retais
+Córtex pré-motor
+Crises reflexas
+deficiência de fosfofrutoquinase
+deficiência de selênio
+Depressão melancólica
+Diploe
+Disdiadococinesia
+disgerminoma
+Displasia ectodérmica hipohidrótica
+Displasia tanatofórica
+Dissecção da artéria carótida
+Distomatose
+distonia focal
+distrofia muscular congénita
+doença bacteriana
+doença de Machado-Joseph
+Doença de Rosai-Dorfman
+doença musculoesquelética
+Ducto parotídeo
+Ductus
+Eczema herpético
+eletronistagmografia
+Encefalomielite autoimune experimental
+epitélio estratificado pavimentoso
+Esofagectomia
+espaço intercostal
+Espinha ilíaca ântero-superior
+esporozoíto
+estapedectomia
+Estenose da válvula tricúspide
+estesioneuroblastoma
+exame do estado mental
+falange média
+Filamina
+fístula de Cimino
+Flexibilidade cerosa
+Fluorose óssea
+forame obturado
+Fotodermatose rara
+frigidez
+galactocele
+Galactosialidose
+gânglio autonômico
+Gânglios autônomos
+Glândulas de Tyson
+Glândulas Prepuciais
+Glicemia de jejum alterada
+Gonartrose
+grânulos de Birbeck
+Hemangioma infantil
+Herpes neonatal
+hiperinsulinismo
+Hiperinsulinismo isolado congênito
+Hiperosmia
+Hipoaldosteronismo
+hipocondroplasia
+HIV e gravidez
+incisivo central inferior
+Instabilidade de microsatélites
+intolerância ao glúten
+Intoxicação por nicotina
+Konzo
+laminectomia
+Leprechaunismo
+lesão de Hill-Sachs
+Ligamento largo do útero
+Linfocitos infiltrantes de tumor
+Lipofuscinose ceroide neuronal
+macrocitose
+manchas de Bitot
+Medicina funcional
+meningite asséptica
+Micronúcleo
+microscopia eletrónica de transmissão
+mielossupressão
+monoftalmia
+Músculo da úvula
+Músculo transverso da língua
+negativismo
+nervo infraorbital
+Nervo peitoral lateral
+neuroimunologia
+Neuropatia motora multifocal
+neurorradiologia
+núcleo vestibular
+Núcleos cerebelares profundos
+osso irregular
+osteoblastoma
+otoscopia
+Ovalocitose
+parasitemia
+penfigoide
+perturbação específica do desenvolvimento
+Piebaldismo
+piemia
+Pilomatrixoma
+Poiquilocitose
+Postura anormal
+primeiro molar superior
+primeiro pré-molar superior
+proeritroblasto
+Pseudoaneurisma
+pseudocisto pancreático
+Pseudohiperaldosteronismo
+psiquiatria transcultural
+Quimioterapia neoadjuvante
+reabsorção óssea
+salpingectomia
+Sarcoma do corpo uterino
+Sarcoma pleomórfico indiferenciado
+saúde do trabalho
+saúde ocupacional
+Seio esfenoparietal
+Seio petroso inferior
+semiologia médica
+Septo pelúcido
+Sequestro pulmonar
+sinal de Cullen
+sinal de Grey-Turner
+Síndrome Antley-Bixler
+Síndrome Blau
+Síndrome cardio-facio-cutâneo
+Síndrome Coffin-Lowry
+Síndrome Coffin-Siris
+síndrome compartimental abdominal
+Síndrome de ablefaro-macrostomia
+Síndrome de Eagle
+Síndrome de Hermansky-Pudlak
+Síndrome de Hiper IgE
+Síndrome de Kleefstra
+Síndrome de McKusick-Kaufman
+Síndrome de nevo Becker
+Síndrome de Saethre-Chotzen
+Síndrome de Terson
+síndrome de Timothy
+Síndrome de trombocitopenia-agenesia radial
+Síndrome Evans
+Síndrome Hajdu-Cheney
+Síndrome Johanson-Blizzard
+Síndrome Mowat-Wilson
+Síndrome Muckle-Wells
+Síndrome Muenke
+Síndrome Neu-Laxova
+síndrome pós-colecistectomia
+Síndrome Roberts
+Síndrome SAPHO
+Síndrome Schwartz-Jampel
+Síndrome Wiedemann-Rautenstrauch
+sintomatologia
+Terapia neoadjuvante
+Teratoma sacrococcígeo
+Teste de Schilling
+teste RAST
+Tireoidite de Riedel
+tiroidite de Riedel
+Tolerância diminuída à glicose
+transtorno do sadismo sexual
+transtorno específico do desenvolvimento
+transtorno hipersexual
+Transtornos de apego
+Trauma abdominal
+trauma acústico
+triagem auditiva neonatal universal
+Triângulo urogenital
+Tumor ocular
+ureteroscopia
+Vagina septada
+Veia radial
+veia superficial
+Veias radiais
+veias ulnares
+vulvectomia
+zarolho
+Abertura mediana
+acaríase
+acatalasia
+Acrania
+acrticulação carpometacarpal
+adamantinoma
+Agamaglobulinemia
+alopecia universalis
+Anemia megaloblástica familiar
+Aplasia da cútis congênita
+Aracnodactilia contratural congênita
+Arco palmar profundo
+Artéria angular
+artéria bucal
+Artéria dorsal do pénis
+Artéria dorsal do pênis
+artéria etmoidal anterior
+artéria frênica superior
+artéria infraorbital
+Artéria interóssea comum
+Artéria obturatória
+Artéria retal média
+Artéria sacral lateral
+Artéria timpânica anterior
+Artérias temporais profundas
+Articulação fibrosa
+Artroplastia
+Atresia das coanas
+Avaliação Cognitiva de Montreal
+baixa visão
+bartonelose
+Buftalmia
+Calcifilaxia
+Cancro da orofaringe
+carcinoma bronquíolo-alveolar
+carcinoma lobular invasivo
+cartilagem cuneiforme
+célula oxífila
+célula principal da paratiroide
+células mesangiais
+Cetoacidose alcoólica
+Choque hemorrágico
+cirurgia do trauma
+Cirurgia Ortognática
+cirurgia veterinária
+Cisto radicular
+claudicação
+complacência pulmonar
+Confluência dos seios
+coristoma
+Corpo do pênis
+corpúsculo de krause
+crista galli
+cromossoma X humano
+Defeito pupilar aferente relativo
+deficiência da ornitina transcarbamilase
+Deficiência de GLUT1
+Deficiência múltipla de sulfatase
+deficiência visual cortical
+Deformidade de Sprengel
+dermatofibrosarcoma protuberans
+Desordem da maturidade sexual
+deuteranopia
+Diabulimia
+dicromacia
+Dismetria
+Displasia campomélica
+Dissecção da artéria vertebral
+Doença aleutiana do vison
+Doença de Blount
+Doença de Caffey
+doença de Haff
+doença de Ollier
+Doença de Paget extramamária
+doença geriátrica
+Doença Gorham-Stout
+Doença IgG4-relacionada
+Doença pulmonar obstrutiva
+Ectima
+edema periférico
+Eflúvio
+encefalomielite
+enfisema
+Epidemiologia genética
+Epidermólise bolhosa distrófica
+Epifisiólise do quadril
+epitélio colunar estratificado
+Equinócito
+eritema palmar
+Eritema tóxico
+erliquiose monocítica humana
+erro de tipo I
+erro de tipo ii
+Esclerose lateral primária
+estenose espinhal lombar
+estereocílio
+estereotipias motoras
+estria terminal
+exaustão emocional
+falange distal
+falange proximal
+Falanges proximais
+falso positivo
+fâneros
+Fascículo muscular
+Fasciite eosinofílica
+Febre Pontiac
+Fibrose retroperitoneal
+Fractura do calcâneo
+Fratura de Jefferson
+Fratura do Platô Tibial
+Fucosidose
+Fungemia
+Gnatostomíase
+Hemicrânia paroxística
+Hemiplegia alternante da infância
+Hemorragia pré-parto
+hidrartrose
+Hidropisia
+Hiperecplexia
+Hipertrofia ventricular direita
+imunopatologia
+Inclusão citoplasmática
+Índice internacional normalizado
+irite
+Jurkat
+Laceração
+Lemnisco medial
+Lesão Bankart
+Lesão de Lisfranc
+ligamento amarelo
+Lóbulo parietal inferior
+Luxação da rótula
+malformação vascular
+manúbrio
+Merozoíto
+Microangiopatia trombótica
+mioblasto
+miopatia mitocondrial
+Movimentos periódicos dos membros
+mucolipidose
+músculos abdominais
+nanismo primordial
+Nervo espinhal cervical 1
+Nervo espinhal cervical 2
+nervo fibular superficial
+nervos intercostais
+neurofisiologia clínica
+neurotologia
+núcleo arqueado
+Núcleo basal de Meynert
+núcleo olivar inferior
+oftalmia simpática
+Omento
+oncocitoma
+osteíte fibrosa cística
+Osteocondropatia
+overjet
+pancreatectomia
+Papiloma do plexo coroide
+Paragânglio
+Paralisia periódica hipercalêmica
+Pineoblastoma
+Pituicito
+pletismografia
+Plexo cardíaco
+pneumonia intersticial idiopática
+polineuropatia alcoólica
+porencefalia
+Porfiria eritropoiética congênita
+Prega semilunar da conjuntiva
+primeiro pré-molar inferior
+processo alveolar
+proteopatia
+Prurigo de Besnier
+Prurigo nodular
+Pseudoacondroplasia
+quimioprofilaxia
+Raiz do pênis
+retinite por citomegalovírus
+Retroversão uterina
+Rinotraqueíte bovina infecciosa
+rubeose
+Ruptura do tendão patelar
+segundo molar superior
+Seio occipital
+Seio petroso superior
+septo atrioventricular
+septo interatrial
+Sindesmose
+Síndrome anti-sintetase
+Síndrome BOR
+Síndrome da costela escorregadia
+Síndrome da dor patelofemoral
+síndrome de Gradenigo
+Síndrome de Meige
+síndrome de Mendelson
+Síndrome Denys-Drash
+síndrome do túnel tarsal
+Síndrome Fraser
+Síndrome Laurence-Moon
+Síndrome Marinesco-Sjögren
+Síndrome Muir-Torre
+Síndrome Pallister-Killian
+Síndrome Pearson
+Síndrome POEMS
+Síndrome Weill-Marchesani
+sínfise da mandíbula
+sistema nervoso humano
+Sitosterolemia
+sodoku
+Sulco coronário
+Suporte avançado à vida
+Taquicardia auricular multifocal
+Taquicardia ventricular polimórfica catecolaminérgica
+Taquipneia transitória do recém-nascido
+Tegumento
+Terapia de Reposição Enzimática
+teste auditivo
+Teste VDRL
+tinea nigra
+Trabéculas cárneas
+trato respiratório inferior
+trauma torácico
+Tronco costocervical
+tuberculoma
+tumor da medula espinhal
+Tumor neuroectodérmico primitivo
+Tumor neuroendocrino pancreático
+Uretrite não gonocócica
+Urticária solar
+Útero septado
+varicela por rickettsia
+Vasa praevia
+Vaso reto descendente
+Veia gástrica esquerda
+Veia lingual
+veia ovárica
+veia testicular
+veias linguais
+veias pudendas internas
+Veias tireóideas inferiores
+Veias vorticosas
+vesícula
+Acidúria argininosuccínica
+Advanced cardiac life support
+ainhum
+albinismo ocular
+Alfa-manosidose
+Alfa-talassemia
+Amelia
+Amplitude de movimento
+Anfiartrose
+aniseiconia
+anisomelia
+anuscopia
+Arco palmar superficial
+Ariboflavinose
+artéria arqueada do rim
+Artéria auricular profunda
+Artéria colateral média
+artéria colateral radial
+artéria corióidea anterior
+artéria cremastérica
+Artéria do canal pterigóideo
+artéria dorsal do nariz
+Artéria escapular circunflexa
+Artéria espinal posterior
+artéria interlobular do rim
+artéria lacrimal
+artéria massetérica
+Artéria nasal dorsal
+Artéria palatina descendente
+articulação interfalangeana da mão
+Aspiração de corpo estranho
+Ataxia rara
+Atresia intestinal
+Bainha carótica
+Bulbo do pênis
+Caco-2
+Canal adutor
+canal coclear
+Câncer anaplásico da tireoide
+canto do olho
+Carcinoma embrionário
+carcinoma mucoepidermoide
+carcinossarcoma
+Cardite reumática
+Cateterismo
+Células HUVEC
+Celulite periorbital
+Chinchonismo
+Citotrofoblasto
+colite colagenosa
+Colo cirúrgico do úmero
+colúria
+coproporfiria hereditária
+corneal epithelium
+Corno anterior da medula
+corpo de Heinz
+costâmero
+Craniectomia descompressiva
+Crise suicida
+Curvatura maior do estômago
+Deficiência de biotinidase
+Degeneração marginal pelúcida
+Dente invaginado

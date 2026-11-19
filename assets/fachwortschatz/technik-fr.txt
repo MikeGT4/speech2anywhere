@@ -1,34 +1,23 @@
-ordinateur
-Internet
-télévision
-couleur
-semaine
-énergie
-téléphone
+atome
 intelligence artificielle
-électricité
-informatique
 élément chimique
-communication
 système d'exploitation
 onde sonore
 molécule
+ingénierie
+constante d'Archimède
 horloge
-seconde
+téléphone cellulaire
 téléphone mobile
+mécanique quantique
 électron
-logiciel
-température
-photosynthèse
-information
 kilogramme
 langage de programmation
 algorithme
 nombre de comptage
 nombre pour compter
+proton
 Système international d'unités
-matière
-fenêtre
 nombre complexe
 thermodynamique
 année-lumière
@@ -39,30 +28,31 @@ accélération
 équation
 courant électrique
 entier relatif
+litre
 neutron
 probabilité
 théorie de la relativité
 numéro atomique
 addition
-fonction
 vitesse de la lumière
-fréquence
 transistor
 algèbre linéaire
 boussole
 énergie renouvelable
-longueur
 télécommunications
 kilomètre
 kilomètre carré
-chaleur
+plasma
 condensateur
-division
 latitude
+mécanique classique
 multiplication
-optique
 relativité générale
 champ magnétique
+kelvin
+clou
+diode
+ion
 matériel informatique
 rayonnement électromagnétique
 relativité restreinte
@@ -82,39 +72,39 @@ infrarouge
 nombre rationnel
 unité centrale de traitement
 isotope
-résistance
 semi-conducteur
 longitude
 transformateur
 base de données
-ensemble
-mécanique
+photon
 unité astronomique
-mouvement
+ampère
 pile électrique
-pression
 cosmologie
 hectare
 machine à vapeur
 aurore polaire
 énergie solaire
-distance
+laser
+volt
+newton
+sphère
 fission nucléaire
 programme informatique
+watt
 conservation de l'énergie
-puissance
-symbole
 thermomètre
 degré Celsius
 imprimante
 astrophysique
 fraction
 microphone
-diamètre
+joule
 particule élémentaire
 tension électrique
 cryptographie
-travail
+radar
+gramme
 loi d'Ohm
 mémoire vive
 ordinateur personnel
@@ -123,14 +113,16 @@ potentiel hydrogène
 unité de mesure
 champ électrique
 quantité de mouvement
-système
+quark
 centimètre
+cône
 génie mécanique
+Ingénierie mécanique
 matrice
 pourcent
 cylindre
 écran d'ordinateur
-balance
+mole
 fusion nucléaire
 lampe à incandescence
 bobine d'inductance
@@ -142,30 +134,32 @@ compilateur
 point de fusion
 racine carrée
 énergie cinétique
-incendie
 longueur d'onde
 magnétisme
 rayon gamma
+bit
 espace-temps
 mètre carré
 moteur électrique
+spatiotemporel
 entropie
 masse atomique
 circuit intégré
 génie génétique
 inertie
+ingénierie génétique
 physique des particules
 radioactivité
 tablette tactile
 centrale nucléaire
 génie civil
 génie logiciel
+octet
 point d'ébullition
 pression atmosphérique
 courant alternatif
+hertz
 neutrino
-poussière
-variable
 biophysique
 degré Fahrenheit
 hygrométrie
@@ -176,63 +170,72 @@ loi de l'attraction universelle
 loi de la gravitation
 réalité virtuelle
 baromètre
-cataracte
 centrale électrique
 énergie potentielle
 fibre optique
-mutation
 positron
-vitesse
+tonne
+usine électrique
 millimètre
 sismologie
-application
+boson
+cinématique
 espace vectoriel
 fermion
 haut-parleur
 hyperlien
+parsec
 réfraction
 sécurité des systèmes d'information
 Universal Serial Bus
 antenne radioélectrique
 calorie
 courant continu
+ohm
 rayonnement cosmique
 cadran solaire
 électrolyse
 fichier informatique
 lois de Kepler
 physique théorique
-solution
 cloud computing
 décalage vers le rouge
 équations de Maxwell
 nucléon
+radian
 résistance électrique
 routeur
+acre
 diffusion de la matière
+diffusion moléculaire
 effet photoélectrique
 électrostatique
 panneau routier
+Photoélectrique
 vitesse du son
 ångström
 candela
 conducteur électrique
+mécanique des fluides
 nanomètre
 nombre d'oxydation
-réflexion
 assembleur
 cristallographie
 cybernétique
 loi de Coulomb
 scanner
+toupie
 constante de Planck
 demi-vie
 diode électroluminescente
 génie chimique
+ingénierie chimique
 micromètre
 périmètre
 physique atomique
+supercalculateur
 superordinateur
+abs
 code-barres
 éolienne
 fermeture éclair
@@ -240,56 +243,80 @@ foresterie
 générateur électrique
 microprocesseur
 moment de torsion
+résine
 supraconductivité
 valeur absolue
 adhésif
+albédo
 induction électromagnétique
-ressort
+soudage
 télégraphie
 ultrason
 viscosité
+déviation standard
 écart type
+Force fondamentale
 interaction élémentaire
+Interaction fondamentale
 logiciel malveillant
 poussée d'Archimède
+principe d'Archimède
+rétine
+sonar
 théorie des cordes
 tube fluorescent
+air conditionné
+Alt-Azimuth
+azimut
 capteur
 champ électromagnétique
 climatisation
+climatiseur
 disquette
 électrolyte
 électronvolt
 Ethernet
+farad
 fil métallique
 interaction électromagnétique
 masse solaire
 noyau de système d'exploitation
 particule alpha
+pixel
 tomodensitométrie
+verge
 capacité électrique
+effet de Coriolis
 électrochimie
+force d'inertie de Coriolis
 force de Coriolis
 gyroscope
 moteur à réaction
 pare-feu
 radiologie
 cellule photovoltaïque
+Cellule solaire
+compas
 note de musique
+nœud
 réseau privé virtuel
 RPV
 théorème de Gauss
 accélérateur de particules
 astrolabe
+Boyle-Mariotte
 déterminant
 diffraction
 énergie électrique
 langage machine
 loi de Boyle-Mariotte
+mécanique statique
 mètre cube
 mille nautique
 quantum
 segment
+spin
+statique
 système de coordonnées cartésiennes
 théorie de l'information
 Arduino
@@ -299,6 +326,7 @@ déclinaison
 intrication quantique
 mémoire morte
 métrologie
+moment angulaire
 moment cinétique
 nombre de masse
 parallaxe
@@ -312,10 +340,13 @@ aérosol
 becquerel
 constante gravitationnelle
 écran à cristaux liquides
+grandeur physique
 interférence
+liquid cristal display
 magnitude apparente
 masse molaire
 mélatonine
+Radiation Ionisante
 radiothérapie
 rayonnement ionisant
 vitesse de libération
@@ -325,9 +356,10 @@ force centripète
 force de Lorentz
 génie informatique
 ionisation
+muon
+once
 période orbitale
 produit scalaire
-surface
 tube électronique
 accélération de la pesanteur
 amplitude
@@ -343,9 +375,9 @@ réseau social
 stéradian
 vitesse angulaire
 ampèremètre
+capacité calorifique
 capacité thermique
 convection
-hauteur
 hypertexte
 paratonnerre
 physique mathématique
@@ -353,8 +385,6 @@ principe de Carnot
 réaction nucléaire
 sablier
 second principe de thermodynamique
-spectre
-concentration
 constante de Boltzmann
 constante physique
 corps noir
@@ -362,6 +392,7 @@ décimètre
 enthalpie
 inductance
 intervalle
+lumen
 oscillation
 oscilloscope
 particule
@@ -371,6 +402,7 @@ Rayon atomique
 théorème de Bernoulli
 cathode
 climat tropical
+couture
 impression 3D
 loi de Hooke
 machine thermique
@@ -380,12 +412,14 @@ physique classique
 salinité
 série de Fourier
 sismographe
+Sismomètre
 solubilité
 solvant
 sous-ensemble
 tension superficielle
+tesla
+théorie classique
 transformée de Fourier
-altitude
 électrode
 électrodynamique
 énergie interne
@@ -393,6 +427,7 @@ indice de réfraction
 loi des gaz parfaits
 lois de Kirchhoff
 médiane
+palier
 pile à combustible
 polyéthylène
 préfixe SI
@@ -406,7 +441,9 @@ décibel
 fluorescence
 horloge atomique
 loi d'Avogadro
+mécanique statistique
 métronome
+périphérique
 périphérique informatique
 produit vectoriel
 quantité de matière
@@ -418,7 +455,7 @@ variable aléatoire
 variance
 voltmètre
 adsorption
-bioluminescence
+anode
 champ magnétique terrestre
 date calendaire
 dualité onde-corpuscule
@@ -426,28 +463,30 @@ dualité onde-corpuscule
 énergie mécanique
 flux magnétique
 galvanomètre
+latex
 loi de Hubble-Lemaître
 lumière du soleil
 mégaoctet
 moyenne arithmétique
 nombre imaginaire pur
 tangente
+weber
 climat continental
+Continentalité
 espace euclidien
 espérance de vie humaine
 force électromotrice
 fusible
 impédance
 kilo-octet
+mécanique céleste
 mécatronique
 nombre d'Avogadro
 point de rosée
 pollution lumineuse
 processeur graphique
-rapport
 turbine à vapeur
 unité imaginaire
-atmosphère
 compteur Geiger
 diélectrique
 dispersion
@@ -464,31 +503,39 @@ picomètre
 réseau étendu
 sievert
 bascule
+carat
 construction automobile
 écartement des rails
 gigaoctet
+gray
 Loi de Biot-Savart
+lux
+m-contrôleur
 masse moléculaire
 mètre par seconde
 microcontrôleur
+Radio-isotope
 radionucléide
 siemens
 théodolite
 transition de phase
 altimètre
+capacité calorique spécifique
 capacité thermique massique
 décroissance radioactive
-héméralopie
+Identification par radiofréquence
 impulsion
 inclinaison
 ingénierie et technologie spatiale
 interrupteur
 modulation du signal
+observatoire spatial
 Radio-identification
 télescope spatial
 triplet pythagoricien
 calibre
 centre d'inertie
+centre de masse
 enthalpie de vaporisation
 girouette
 nombre quantique
@@ -503,14 +550,16 @@ solidification
 tube cathodique
 amplificateur opérationnel
 année tropique
-déplacement
+Densimètre
 deuxième loi de Newton
 effet Compton
 électrodynamique quantique
 hydromètre
 joystick
+kilomètre heure
 kilomètre par heure
 moyenne géométrique
+Par mille
 parallélisme
 période d'incubation
 perpendicularité
@@ -524,11 +573,13 @@ centre de données
 climat polaire
 constante des gaz parfaits
 constante molaire des gaz
+datacenters
 déchet radioactif
 dilatation du temps
 diode Zener
 effet tunnel
 ferromagnétisme
+frein
 interface
 modulation de fréquence
 onde stationnaire
@@ -542,69 +593,88 @@ accumulateur lithium-ion
 brasage
 champ vectoriel
 charnière
+composant électronique
 déformation d'un matériau
+distribution de probabilité
+dynamique des fluides
+dynamique fluide
 électron de valence
 épingle
 GNSS
+hélice
+lithium ion
 loi de probabilité
+mécanique des milieux continus
 niveau à bulle
+nivelle
 physique des milieux condensés
 radiographie
 relation d'équivalence
 résistivité
 signal analogique
 vilebrequin
+accumulateur
+accumulateur electrique
 batterie rechargeable
 cyclotron
 effet Vavilov-Tcherenkov
 électricité statique
 espérance mathématique
+excentricité de l'orbite
 excentricité orbitale
 instrument de mesure
-inverse
 lampe de poche
 langage de haut niveau
 loi de conservation
+loi de Faraday
 loi de Lenz-Faraday
 luminescence
 montre intelligente
 Photodiode
+pion
 pluviomètre
 prise électrique
-rythme circadien
 solénoïde
+verste
 âge de la personne
 coefficient de Poisson
 énergie marémotrice
 enthalpie de fusion
+essieu
 génie biomédical
 génie militaire
+ingénierie biomédicale
 Loi de Lenz
 moment magnétique
 parc éolien
 perméabilité magnétique
 piézoélectricité
+Piézoélectriques
 pression osmotique
 rapporteur
+réactance
 réactance électrique
 redresseur
 tokamak
 topologie de réseau
 transmission sans fil
+transporteur
 turbine à gaz
 accélération angulaire
+biomécanique
 bionique
 CDQ
+charge électrique élémentaire
 charge élémentaire
 chromodynamique quantique
 distance focale
-éclairage
 femtomètre
 infographie
 ITER
 Loi de Dalton
 loi de Stefan-Boltzmann
 pied à coulisse
+timbre
 vecteur de position
 annihilation
 calorimètre
@@ -616,41 +686,60 @@ coup de soleil
 court-circuit
 diamagnétisme
 dioptrie
+disjonction
 disjonction logique
 divergence
 embrayage
 énergie chimique
+énergie de Gibbs
+énergie libre de Gibbs
 enthalpie libre
+gravitation quantique
 gravité quantique
+kilo
 lunette astronomique
 modulation d'amplitude
 multimètre
+nano
+négation
 négation logique
 période de rotation
 production d'électricité
+production d'énergie électrique
 rayon solaire
 réseau électrique
 résonance magnétique nucléaire
 signature numérique
+télescope réfracteur
+Arithmetic Logical Unit
+cation
+clepsydre
 constante cosmologique
 cyberespace
 diffusion Rayleigh
+dispersion de Rayleigh
+empan
 énergie d'activation
+énergie photovoltaïque
 énergie solaire photovoltaïque
 Fidget spinner
+giga
 horloge hydraulique
 hygromètre
 invite de commande
 ligne de commande
 magnétostatique
 magnitude de moment
+milli
 nucléide
 photométrie
+photovoltaïque
+physique de l'état solide
 physique du solide
 roue à aubes
+Roue hydraulique
 télédiffusion
 thyristor
-transparence
 troisième loi de Newton
 unité arithmétique et logique
 arc électrique
@@ -660,10 +749,13 @@ communication en champ proche
 conjugué
 cristallographie par rayons X
 densité de probabilité
+fdp
 fonction de densité
 incendie criminel
+méga
 paramagnétisme
 principe de Nernst
+rail
 rayon de covalence
 référentiel galiléen
 sauvegarde
@@ -673,10 +765,12 @@ système expert
 thermistance
 traînée
 algorithme génétique
+anion
 contrôle du trafic aérien
 cosmologie physique
 courants de Foucault
 cryonie
+delta de Kronecker
 demi-grand axe
 indicateur de vitesse
 loi de Hess
@@ -685,6 +779,7 @@ magnitude
 manomètre
 module d'Young
 pellicule photographique
+phonon
 physique moléculaire
 première loi de Newton
 RAID
@@ -692,13 +787,17 @@ rayon de Schwarzschild
 recherche opérationnelle
 ruban adhésif
 si et seulement si
+ssi
 symbole de Kronecker
+symbole delta de Kronecker
 thermocouple
 vent stellaire
 chaleur latente
 chambre à brouillard
+chambre de Wilson
 conductance électrique
 constante de Faraday
+coudée
 effet Hall
 effet Zeeman
 heure d'hiver
@@ -706,6 +805,7 @@ infrason
 interactions homme-machine
 kilowattheure
 logiciel système
+matrice identité
 matrice unité
 mille carré
 mouvement propre
@@ -715,7 +815,6 @@ phosphorescence
 pression partielle
 réaction en chaîne
 sédimentation
-tableau
 température de la pièce
 temps de Planck
 téraoctet
@@ -724,29 +823,43 @@ vecteur unitaire
 accéléromètre
 angiographie
 angle solide
+centi
 client-serveur
+curie
 éclairement lumineux
 écran à plasma
 flux lumineux
 génie industriel
+ingénierie industrielle
 magnétohydrodynamique
 masse de Chandrasekhar
 médecine nucléaire
 température de Curie
+téra
+triode
 catalyseur
 collision
 compteur électrique
 convertisseur analogique-numérique
+déca
+déci
 équation d'Einstein
 équation d'état
+équation de champ d'Einstein
+femto
 FireWire
 flux électrique
 foire aux questions
+gauss
+hecto
+hystérèse
 hystérésis
+katal
 langage de bas niveau
 loi de Titius-Bode
 optique géométrique
 physique moderne
+pico
 point d'éclair
 rayon cathodique
 Reduced instruction set computer
@@ -755,13 +868,15 @@ sous-programme
 terraformation
 vitesse orbitale
 volume molaire
+yotta
 apprentissage en ligne
+baud
 capture électronique
 Constante de Wien
+delta de Dirac
 détecteur de mensonge
 distribution de Dirac
 échelle Réaumur
-égalité
 électroscope
 entropie de Shannon
 FET
@@ -783,18 +898,26 @@ sphère armillaire
 télétexte
 transistor unipolaire
 transmission de données
+vidéoconférence
 visioconférence
 vitesse de réaction
 absorption
 affinité électronique
+auto pilote
 bâtonnet
+bit quantique
 bouteille de Leyde
 chaîne de caractères
 complementary metal oxide semi-conductor
+constante d'acidité
 constante de dissociation acide
 DELO
 diode électroluminescente organique
-fatigue
+électricité solaire
+énergie pneumatique
+équations de Lagrange
+erg
+fréquence angulaire
 géotechnique
 IGFET
 implication logique
@@ -806,16 +929,21 @@ odomètre
 oxydation
 piège à souris
 pilote automatique
+pinte
 profondeur de champ
 puissance solaire
 pulsation
+qubit
 reboisement
 registre de processeur
+tableau de caractères
 télémesure
+Télémétrie
 transistor bipolaire
 turbine hydraulique
 vitesse radiale
 argument du périastre
+atto
 biréfringence
 boîte quantique
 calorimétrie
@@ -833,7 +961,6 @@ diffusion des ondes
 douzaine
 élongation
 épuration des eaux
-exposition
 feu de joie
 field-programmable gate array
 génie environnemental
@@ -841,8 +968,11 @@ grandeur scalaire
 horloge astronomique
 influence électrostatique
 ingénierie des systèmes
+lacet
 laminage
+loi physique
 masse de la Terre
+masse terrestre
 nucléosynthèse
 olympiade
 périphérique d'entrée
@@ -850,18 +980,24 @@ périphérique de stockage d'information
 Photorésistance
 physique appliquée
 poids spécifique
+Point quantique
 potentiomètre
 processeur
+production de paire
 raie spectrale
+rivet
 science alimentaire
+stator
 synchrotron
 taille d'un être humain
 Varistance
+yocto
 aberration de la lumière
 actionneur
 aimantation
 année galactique
 architecture ARM
+atavus
 batterie au plomb
 boîte de vitesses
 bolomètre
@@ -872,24 +1008,32 @@ concentration molaire
 connectique
 constante de structure fine
 cristal
+cylindre gradué
 densité de courant électrique
 dissociation
+dyne
 effet de peau
+Effet pelliculaire
 effet thermoélectrique
 éprouvette graduée
 génie électrique
 grandeur sans dimension
 hectomètre
 ingénierie électronique
+laplacien
+laque
 largeur de bande
+lieue
 lois de Faraday
 luminance
 luminosité solaire
 mètre ruban
 module d'élasticité
 opérande
+opérateur de Laplace
 opérateur laplacien
 pavé tactile
+péta
 pétaoctet
 photonique
 pont de Wheatstone
@@ -906,6 +1050,7 @@ transport d'énergie électrique
 abat-jour
 aberration optique
 année sidérale
+champ de scalaires
 champ scalaire
 chimiluminescence
 commutation de paquets
@@ -916,8 +1061,11 @@ distance de Levenshtein
 énergie de liaison nucléaire
 énergie du point zéro
 envergure
+exa
 interruption
+kintsugi
 lampe à diode électroluminescente
+lampe a led
 lampe néon
 longitude du nœud ascendant
 microclimat
@@ -925,33 +1073,35 @@ microscope à force atomique
 Nébulosité et opacité
 opérateur hamiltonien
 Pentium
-photopériodisme
 porosité
 principe de superposition
 signal logique
 susceptibilité magnétique
+teinte
 tomographie
 tribologie
 tube de Pitot
 uranium appauvri
+zepto
+zetta
 antenne parabolique
-automatique
 bruit blanc
 contrainte normale ultime
 effet Meissner
 effet Tyndall
+fdr
 FLOPS
 fonction de répartition
 fréquence cardiaque
 galvanoplastie
 générateur thermoélectrique à radioisotope
-identité
 intensité acoustique
 kilogramme-force
 Lampe fluorescente
 loi de Raoult
 lutte contre l'incendie
 matrice carrée
+moment de dipôle électrique
 moment dipolaire
 montre gousset
 moteur à courant continu
@@ -961,12 +1111,19 @@ passeport biométrique
 photodétecteur
 polymorphisme
 pouvoir de résolution
+Résolution angulaire
+Résolution optique
 rotationnel
 température effective
 tirant d'eau
 tour par minute
+verrou
+à-coup
 acuité visuelle
 ampère-heure
+Beer lambert
+bioingénierie
+Biphényles polychlorés
 capteur d'images
 capteur de photoscope
 compte-tours
@@ -975,7 +1132,7 @@ débit binaire
 Electrically-erasable programmable read-only memory
 électroluminescence
 état excité
-fibrillation ventriculaire
+fathom
 force d'inertie
 génie biologique
 ingénierie alimentaire
@@ -983,16 +1140,16 @@ loi de Beer-Lambert
 Loi de Henry
 masse atomique relative
 masse invariante
+mécanique des sols
 newton-mètre
 ohmmètre
 optique quantique
 page d'accueil
 partie par million
-phototropisme
 polychlorobiphényle
-poussée
 rayon de Bohr
 relation binaire
+sphygmomanomètre
 superposition quantique
 sylviculture
 système sur puce
@@ -1009,11 +1166,13 @@ dosimètre
 echelle de Brinell
 échelle de Brinell
 effet Auger
+émission Auger
 énergie de liaison
 fermeture autoagrippante
 fonction de Heaviside
 génie nucléaire
 matrice transposée
+mécanique des solides déformables
 mégaphone
 minute d'arc
 opérateur nabla
@@ -1029,15 +1188,18 @@ stratégie de régulation
 tachéomètre
 turbine Francis
 vibrato
-accommodation
+barn
 base de connaissance
 bulletin board system
 canal de communication
 caténaire
 chronomètre
+compas gyroscopique
 composant semiconducteur
+cycle de Méton
 cycle métonique
 Découpe laser
+densité de flux magnétique
 distance euclidienne
 élastomère
 étalonnage
@@ -1057,13 +1219,15 @@ matrice symétrique
 modérateur
 module d'élasticité isostatique
 niveau optique
+particule matter
 particules en suspension
 pas de vis
 Pentium 4
 photomètre
+photothérapie
 physique statistique
 processus thermodynamique
-produit
+radio-fréquence
 raideur
 rayonnement continu de freinage
 réseau local virtuel
@@ -1072,9 +1236,11 @@ stockage d'énergie
 Stroboscope
 téléscripteur
 thermocline
+transformation thermodynamique
 transmutation
 usinage
 Zilog Z80
+angle d'attaque
 anomalie moyenne
 architecture orientée services
 bioremédiation
@@ -1086,17 +1252,23 @@ contamination radioactive
 contrainte de cisaillement
 Design Transport
 diode Schottky
+distribution d'énergie électrique
 Dolby Digital
 élastique
 énergie solaire thermique
 front d'onde
 furlong
 géoingénierie
+gloss
 horloge à quartz
 incidence
 induction électrique
 intégrale curviligne
 isobare
+lakh
+lévitation magnétique
+macula
+maculaire
 matrice inversible
 métrique de Schwarzschild
 millimètre de mercure
@@ -1121,47 +1293,60 @@ turbine Kaplan
 vecteur de Poynting
 accès direct en mémoire
 Accès direct mémoire
+agro-sylviculture
 agroforesterie
 British thermal unit
 châssis
 cierge magique
 composantes d'une force
 constante de Rydberg
+dopage
 électromécanique
+énergie de Helmholtz
 énergie libre
 équation de continuité
 flamme éternelle
 génie hydraulique
+Jailbreak
 jailbreak d'iOS
 lévitation
 loi de Joule
 longueur d'un arc
 magnétostriction
+masse de Jupiter
 masse jovienne
 mégamètre
 milliseconde
 optique adaptative
+patchwork
 photomultiplicateur
 physique médicale
 port parallèle
 potentiel chimique
 rayon ionique
 réaction nucléaire en chaîne
-rupture
+sparkle
 température de Planck
 tube à rayons X
 uranium enrichi
 Vis sans fin
 admittance
 afforestation
+agrafe
 antenne Yagi
 antiferromagnétisme
 architecture navale
 Celeron
+coma
+composant de machine
+Connecteur RCA
 constante de Stefan-Boltzmann
+convertisseur catalytique
 coronographe
 démarreur
 dessiccateur
+disjonction exclusive
+dissipateur
 dissipateur thermique
 diviseur de tension
 éolipyle
@@ -1175,52 +1360,62 @@ glucomètre
 mille par heure
 million d'années
 multiplication des matrices
+multiplication matricielle
 nombre quantique secondaire
 perçage
+perforation
 période biologique
 photolithographie
 physique numérique
 pot catalytique
 pression de radiation
 Prise RCA
+produit de matrices
 profondeur des couleurs
 pyromètre
 radiomètre
 régulateur de tension
 retombée radioactive
 saturation
+socket
 spectroscopie RMN
 technologie environnementale
 télescope optique
 théorème de flux-divergence
 trackball
 traitement primaire de l'eau
-transmission
 turbine Pelton
 valeur énergétique
 antenne dipolaire
 archine
 bêtatron
 biomimétisme
+constante de Dirac
 constante de Planck réduite
 contacteur
 Croix de Malte
 détecteur de particules
 diode laser
 Disjoncteur différentiel
+dorure
 électromètre
 ferrimagnétisme
 génie minier
 goniomètre
+hydrodynamique
 Intel Atom
 Intel Core
 Intel Core 2
 isomère nucléaire
 lampe à incandescence halogène
+Lampe halogène
+Machine à différences
 machine analytique
 machine différentielle
+macramé
 masse de Planck
 maxwell
+mécanique analytique
 mètre par seconde carrée
 nombre quantique principal
 optique non linéaire
@@ -1229,6 +1424,7 @@ reconnaissance de formes
 Régulateur PID
 section efficace
 serre-joint
+super capacités
 supercondensateur
 système d'exploitation temps réel
 système fermé
@@ -1255,6 +1451,7 @@ effet Faraday
 état fondamental
 fonction d'état
 frittage
+gal
 Hémisphères de Magdebourg
 ingénierie tissulaire
 intégrale de surface
@@ -1267,37 +1464,44 @@ matrice unitaire
 mémoire non volatile
 modulation de phase
 MOS Technology 6502
-ouverture
+néper
 pendule
 Pentium II
 Pentium III
 permittivité du vide
+peson
 photoluminescence
 podomètre
 port en lourd
 pression acoustique
 projecteur à grande ouverture
+radiation solaire
 rayonnement solaire
 réacteur surgénérateur
 relèvement
 Ressort à lames
 température de couleur
 ténacité
+théorème d'Ampère-Stokes
 théorème de Stokes
+tpl
 travail de sortie
-visibilité
+triac
 vitesse de phase
 yottaoctet
 AirPods
 angle horaire
 anodisation
+Anodisé
 architecture logicielle
 barograph
 câble de traction
 chariotage
 culasse
 densité d'énergie
+densité énergétique
 écholocalisation
+Écholocation
 élévation
 fabrication assistée par ordinateur
 FAO
@@ -1315,6 +1519,7 @@ matrice d'adjacence
 matrice hermitienne
 nombre de Froude
 phaseur
+poise
 préfixe binaire
 Pyranomètre
 Réfractomètre
@@ -1337,15 +1542,19 @@ arc blanc
 aridité
 ballon-sonde
 capteur photographique
+climat aride
 compteur d'eau
+constante diélectrique
 construction engineers
 curiethérapie
+debye
 distance de Hamming
 dureté de l'eau
 écran plat
 efficience
 émission stimulée
 équation de Nernst
+étalon
 feu de camp
 filtre passe-bas
 fission spontanée
@@ -1364,14 +1573,18 @@ paire de Cooper
 permittivité relative
 photocoupleur
 physique atmosphérique
+physique de l'atmosphère
 point d'auto-inflammation
 polariseur
+poud
 PSI
 radar à synthèse d'ouverture
 radar météorologique
 réseau électrique intelligent
 rugosité
 Slinky
+SmartGrids
+télex
 théorie BCS
 turbidité
 unité de contrôle
@@ -1380,6 +1593,7 @@ voltampère
 wattmètre
 accident nucléaire
 accumulateur nickel-hydrure métallique
+Accumulateur Nickel-métal Hydrure
 analyseur de paquets
 Architecture 32 bits
 ascendance thermique
@@ -1405,9 +1619,11 @@ frein à disque
 Géoradar
 gravimètre
 incandescence
+incident nucléaire
 inclinomètre
 kibibyte
 latence
+lunaison
 microgramme
 microprocesseur multi-cœur
 mois lunaire
@@ -1417,23 +1633,27 @@ oersted
 Pentode
 pH-mètre
 phénomène de transfert
+pignon
 plastifiant
 Polarimètre
+polarisation
 polarisation électrique
 Port PS/2
 potentiel de réchauffement global
 procédé biologique
+processus biologique
 produit mixte
 Radar géologique
+réluctance
 réluctance magnétique
 réponse en fréquence
 root d'Android
+rupture spontanée de symétrie
 scie circulaire
 Servomoteur
 signal de fumée
 son multicanal
 son numérique
-structure
 supraconducteur
 télégraphie sans fil
 télescope de Newton
@@ -1453,8 +1673,10 @@ coefficient de variation
 crémaillère
 cylindrée
 débit volumique
+dégel
 Dolby Atmos
 Échelle Newton
+éclat
 effet Hall quantique entier
 énergie de désintégration
 Exynos
@@ -1464,7 +1686,6 @@ forme bilinéaire
 génie physique
 géophone
 ingénierie sociale
-intensité
 Interférence électromagnétique
 Internet par satellite
 jour du dépassement
@@ -1494,9 +1715,11 @@ rectification
 réduction du paquet d'onde
 rétroviseur
 Shunt
+sonie
 spectrogramme
 supraconducteur à haute température
 synthèse additive
+tachygraphe
 taximètre
 tonnage
 vecteur
@@ -1516,9 +1739,9 @@ Digital Theater System
 effet Kerr
 effet photovoltaïque
 énergie potentiel électrique
+energie potentielle electrostatique
 étrangeté
 guide d'onde
-intégrité
 Interféromètre de Michelson
 jauge de déformation
 kilogramme par mètre cube
@@ -1528,6 +1751,7 @@ masse corporelle humaine
 mebibyte
 mosaïque
 oscillation de neutrinos
+oxymètre de pouls
 palier lisse
 passivation
 Pile Leclanché
@@ -1547,15 +1771,19 @@ télématique
 télémètre
 température corporelle
 tenseur métrique
+théorie de l'information quantique
 thermoluminescence
 Thin-film transistor
 transformée en Z
 Transistor Darlington
 Transmission intégrale
 vitesse de groupe
+8-bits
 accumulateur nickel-cadmium
 alphabet
 autotransformateur
+batterie nickel-cadmium
+Beta thermodynamique
 caméra thermique
 circuit magnétique
 Cliquet
@@ -1565,6 +1793,7 @@ crochet
 DDR3 SDRAM
 décohérence quantique
 Diffraction des électrons
+Diffraction électronique
 dispositif de pointage
 éconophysique
 écoulement de Poiseuille
@@ -1585,24 +1814,32 @@ héliosismologie
 intensité du champ magnétique
 joint torique
 ligne de champ
+loch
 logique séquentielle
+loi de Poiseuille
 mégabit
 mémoire volatile
 montre-bracelet
+Nickel-cadmium
 Northbridge
 paramètre
+perche
 Phonautographe
 physico-chimie
+physique chimique
 physique quantique
 posemètre
+potentiel de gravitation
 propulsion moteur arrière
 puissance optique
+rad
 Radeon
 rapport gyromagnétique
 règles de Hund
 repliement de spectre
 sensibilité climatique
 serre-câble
+soudage TIG
 stellarator
 taillis
 technologie du téléphone
@@ -1612,6 +1849,7 @@ tension mécanique
 textile non tissé
 thermomètre à résistance
 tonne longue
+torr
 traction
 UART
 Unité à virgule flottante
@@ -1623,7 +1861,6 @@ cadence de tir
 candela par mètre carré
 cheville
 chromage
-clavier
 compresseur
 décalage d'Einstein
 diode Gunn
@@ -1639,9 +1876,11 @@ Gamme pythagoricienne
 gibibyte
 incertitude de mesure
 Intel Core i7
+irradiation solaire
 Kilobit
 lecteur de disques compacts
 limite d'Oppenheimer-Volkoff
+Limite de Tolman-Oppenheimer-Volkoff
 loi de Moseley
 loi de Rayleigh-Jeans
 longueur de liaison
@@ -1659,7 +1898,10 @@ queue cométaire
 radioprotection
 rapport cyclique
 rayonnement solaire global
+relation d'ordre
 Ryzen
+Second messager
+soudage à l'arc
 sous-espace vectoriel
 Spaghettification
 tebibyte
@@ -1688,8 +1930,10 @@ coefficient de transfert thermique
 colorimétrie
 compatibilité électromagnétique
 confinement de couleur
+confinement des quarks
 Connecteur BNC
 coprocesseur
+Cyclisme urbain
 date limite d'utilisation optimale
 DDR2 SDRAM
 débit d'absorption spécifique
@@ -1701,11 +1945,14 @@ dossier médical informatisé
 électro-osmose
 équipartition de l'énergie
 exbibyte
+fovéa
 frein à tambour
 frein de stationnement
 impédance acoustique
 intensité du champ électrique
 isolation galvanique
+mécanique des structures
+mécanique structurelle
 microcontrôleur PIC
 milligramme
 millilitre
@@ -1715,6 +1962,7 @@ moteur hydraulique
 moulage
 nez électronique
 nombre de Grashof
+octant
 onde plane
 pierrage
 polarisabilité
@@ -1726,9 +1974,12 @@ SDRAM
 série harmonique
 SHA-2
 Socket 939
+soudage laser
 spectrographe
+stone
 sverdrup
 syntaxe de codage
+Télescope de Schmidt
 télescope solaire
 thermomètre de Galilée
 tourbillon
@@ -1742,8 +1993,10 @@ vérificateur d'absence de tension
 vitesse de dérive
 abscisse
 activité chimique
+addition des matrices
 addition matricielle
 AMD Opteron
+amorce
 arithmomètre
 atténuation
 attoseconde
@@ -1772,7 +2025,6 @@ dessiatine
 diffusivité thermique
 dipôle magnétique
 dispositif rétroréfléchissant
-distribution
 éblouissement
 écobuage
 énergie de Fermi
@@ -1791,18 +2043,21 @@ information quantique
 ingénierie financière
 jeu de barres
 jeu électronique
+jouet électronique
 joule par mole
 loi de Curie
 loi de Graham
+lustre
 magnéton nucléaire
 magnétorésistance
+mécanique théorétique
 moment quadratique
 Nilomètre
+Opteron
 papier kraft
 paramètre cristallin
 pebibyte
 Pentium M
-période
 pied carré
 potentiel de Lennard-Jones
 potentiel normalisé d'une électrode
@@ -1830,6 +2085,7 @@ transition vitreuse
 travail thermodynamique
 XLR
 avertisseur sonore
+balun
 Bâton de Jacob
 bio-impression
 brasage fort
@@ -1844,6 +2100,7 @@ coordonnée généralisée
 DDR4 SDRAM
 dendrite
 dilatation gravitationnelle du temps
+distribution de Weibull
 domaine magnétique
 échouage des cétacés
 éclairement énergétique
@@ -1881,6 +2138,7 @@ plaque à orifice
 potentiel vecteur
 procédé chimique
 production décentralisée
+quadri-impulsion
 quadri-moment
 radioluminescence
 réponse impulsionnelle
@@ -1888,8 +2146,10 @@ résistance à la compression
 résistance thermique
 sectionneur
 Secure Hash Algorithm
+soudage MIG-MAG
 structure de bande électronique
 susceptance
+tael
 Tegra
 Terrestrial Trunked Radio
 thermodynamique hors équilibre
@@ -1931,6 +2191,8 @@ Drag Reduction System
 écologie forestière
 écrouissage
 éolienne de secours
+erlang
+fabrication de l'acier
 Fast Ethernet
 fraction molaire
 fraisage
@@ -1949,7 +2211,7 @@ Interrupteur reed
 intonation juste
 Junction Field Effect Transistor
 knock-out
-largeur
+lag
 Laser au CO2
 Laser dioxyde de carbone
 masse réduite
@@ -1967,6 +2229,7 @@ propulsion nucléaire
 radar de recul
 radar Doppler
 rapport taille-hanche
+rayon alpha
 rayonnement alpha
 rayonnement bêta
 rayonnement corpusculaire
@@ -1974,6 +2237,7 @@ réseau d'énergie électrique
 résistance au roulement
 résonance de Helmholtz
 rhéostat
+Ritchey-Chrétien
 RTH
 sonomètre
 spiromètre
@@ -1984,6 +2248,7 @@ télescope Ritchey-Chrétien
 théorie de la communication
 Thermodynamique des trous noirs
 Trusted Platform Module
+uptime
 vérin hydraulique
 vitesse de détonation
 volume d'éjection
@@ -1995,12 +2260,15 @@ Apple A10 Fusion
 Apple A5
 Apple M2
 bande de fréquence
+barye
 battement par minute
+Beat per minute
 boîte blanche
 Caméra miniature
 Cellule Grätzel
 champ solénoïdal
 chien de garde
+Choc inélastique
 claquage
 collision inélastique
 cryptographie post-quantique
@@ -2010,8 +2278,8 @@ densité de flux thermique
 Diaphonie
 diffraction de Fraunhofer
 diffraction de neutrons
+Diffraction neutronique
 diode PIN
-dispositif
 Duron
 DXing
 effet Seebeck
@@ -2028,9 +2296,9 @@ géomagnétisme
 Gigabit Ethernet
 GPS différentiel
 héliomètre
+Hewlett-Packard Instrument Bus
 histoire de la cryptographie
 histoire de la radio
-HPIB
 hypsomètre
 Indice d'acide
 Induit
@@ -2041,37 +2309,39 @@ koinobori
 longueur d'onde de Compton
 MagSafe
 Microservices
+mil
 montre mécanique
+morgen
 nombre de Knudsen
 nombre quantique du spin
 norme matricielle
 onde acoustique
 onde d'Alfvén
-opérateur
 ouverture numérique
 partie réelle
-phototaxie
 physique des plasmas
 picoseconde
 Potentiel de Yukawa
 potentiel électrochimique
 production d'hydrogène
 propulseur d'étrave
+pulsations par minute
 radiophysique
 relais Buchholz
 relation de dispersion
 sac sous vide
+sagène
 Schuko
 Socket A
 spectre sonore
 spectroscopie des rayons X
+stère
 télescope de Dobson
 température de Néel
 Thermomètre à mercure
 transgène
 vitesse relative
 absorbance
-achromatopsie
 AMD K6
 angle de position
 Apple A12 Bionic
@@ -2088,6 +2358,7 @@ atténuateur
 autoradiogramme
 bobine d'arrêt
 Bobines de Helmholtz
+bracelet brésilien
 calculatrice scientifique
 capacité de canal
 champ tensoriel
@@ -2097,6 +2368,7 @@ Computer-aided software engineering
 Connecteur DIN
 constante de Hubble
 convection atmosphérique
+curta
 D-sub
 démolition navale
 densité de Planck
@@ -2105,9 +2377,9 @@ dosimétrie
 édition électronique
 effet Joule
 Électrofiltre
-équivalent
 étamage
 film inversible
+filtre électrostatique
 fonction échelon
 fonte au sable
 force de Planck
@@ -2126,9 +2398,11 @@ masse effective
 masse en relativité restreinte
 microphone à charbon
 mode avion
+moyeu
 nombre de Rayleigh
 nombre de Strouhal
 passeport grec
+pédale
 Pentium D
 physical change
 piézomètre
@@ -2140,6 +2414,7 @@ port de jeu
 pouce de mercure
 pseudovecteur
 puissance de dix
+Rayon anodique
 rayon de courbure
 rayons canaux
 RDRAM
@@ -2156,10 +2431,11 @@ téléconférence
 téramètre
 Tube de Williams
 USB On-The-Go
-vérification
+vecteur axial
 voie de signalisation Wnt
 volume globulaire moyen
 accélération centripète
+accès aléatoire
 accès direct
 accès séquentiel
 accumulateur nickel-fer
@@ -2194,7 +2470,6 @@ Diffractométrie de rayons X
 dilatomètre
 distance lunaire
 effet Barkhausen
-équipement
 état stationnaire
 Europlug
 filament
@@ -2209,7 +2484,9 @@ Intel Core i5
 interaction d'échange
 Interrupteur de position
 Ivy Bridge
+jansky
 laser hélium-néon
+ligne électrique
 lisibilité
 Lithographie Extreme UltraViolet
 Ludion
@@ -2225,6 +2502,7 @@ ordonnée
 partie imaginaire
 Pentium Dual-Core
 personnalisation
+phone
 physique des accélérateurs
 point d'inflammation
 potentiomètre Poggendorff
@@ -2236,6 +2514,7 @@ radiotraceur
 réflexion optique
 Skylake
 Socket 754
+soudage par faisceau d'électrons
 source lumineuse
 surface spécifique
 système linéaire
@@ -2261,12 +2540,12 @@ bit par seconde
 bureau des méthodes
 capteur de glycémie
 cathodoluminescence
-cellule
 Cellule photoélectrique
 centimètre carré
 chambre à étincelles
 chatoiement
 chemin optique
+cicéro
 circuit virtuel
 Combustible MOX
 condensateur électrolytique
@@ -2275,22 +2554,26 @@ constante de temps
 contact électrique
 DCS
 DEB
+denier
 densité API
 dentelure
 déportance
 deutéron
 diamètre à hauteur d'homme
+dilatation linéique relative
 dose efficace
 dose équivalente
 dose équivalente en banane
 Effet Fujiwara
 Effet Purkinje
+élasticité linéaire
 électrode au calomel saturé
+électrode au calomel saturée
 énergie de Planck
 énergie potentielle élastique
-enregistrement
 entropie molaire standard
 EPCD
+équivalent de dose
 erreur humaine
 essai biologique
 Filetage métrique
@@ -2299,6 +2582,7 @@ fusion par confinement inertiel
 grillage
 horloge japonaise
 Humbucker
+Hydropneumatique
 hypercharge
 Ignitron
 intégrale de volume
@@ -2336,6 +2620,7 @@ rayon δ
 seuil absolu d'audition
 silicium sur isolant
 Socket AM3
+soudage par résistance
 Suspension hydropneumatique
 système numérique de contrôle-commande
 Tache de Fresnel
@@ -2346,6 +2631,7 @@ température potentielle
 tenseur d'Einstein
 tenseur des contraintes
 théorème de superposition
+théorie de l'élasticité
 théorie mathématique de l'élasticité
 Thermo-hygrographe
 turbine de Tesla
@@ -2364,6 +2650,8 @@ analyseur logique
 angle de rotation
 antenne cornet
 Apple A14 Bionic
+audioconférence
+Balance à watt
 balance de torsion
 Balance du watt
 boite à gants
@@ -2377,6 +2665,7 @@ chambre à fils
 collecteur tournant
 commande optimale
 concentration minimale inhibitrice
+conduction osseuse
 conférence téléphonique
 Connecteur radiofréquence
 constante de Loschmidt
@@ -2388,7 +2677,6 @@ Désulfuration
 détecteur de radar routier
 Détendeur
 diffusion de la lumière
-dilatation linéique relative
 diode avalanche
 distorsion
 distribution quantique de clé
@@ -2403,7 +2691,9 @@ famille Motorola 68000
 fonction de Hamilton
 frein de vélo
 galvanisation
+Gate Turn Off
 GDDR
+Géomécanique
 Gyrolaser
 hectolitre
 horizon des particules
@@ -2413,10 +2703,12 @@ indice humidex
 ingénierie des connaissances
 instrument scientifique
 Interaction spin-orbite
+inverse d'une matrice
 jauge de carburant
 kilomètre cube
 lambert
 luminosité de Planck
+luopan
 lysimètre
 matière sèche
 matrice définie positive
@@ -2438,6 +2730,7 @@ pavillon acoustique
 peinture en poudre
 perforation du tympan
 période synodique
+phot
 photobiologie
 physique spatiale
 physique thermique
@@ -2455,17 +2748,22 @@ répétabilité de mesure
 résonance acoustique
 ressort de torsion
 retraitement du combustible nucléaire
+rodage
 saisie immobilière
 scintillation
 Scléromètre
 séparation isotopique
 SODAR
 sonorisation
+soudage à l'arc submergé
+soudage par point
 StrongARM
 technicien en radiologie
 technique des procédés
 technologie numérique
+Télescope Cassegrain
 télescope de type Cassegrain
+tenseur de champ électromagnétique
 tenseur électromagnétique
 thermochromisme
 Thyristor GTO
@@ -2481,6 +2779,7 @@ AirPods Max
 albédo de Bond
 altitudes et vitesses
 AMD K6-2
+anéroïde
 anode sacrificielle
 antenne monopôle
 appareil électrique
@@ -2492,6 +2791,7 @@ Autoradio
 bande de conduction
 barre de Sheffer
 basse tension
+batman
 Broadwell
 câble Bowden
 Capsule de Vidie
@@ -2506,6 +2806,7 @@ coefficient de diffusion
 comma pythagoricien
 cosmologie quantique
 couplage inductive
+Courbe de Paschen
 DBm
 décapage
 décharge électrique
@@ -2526,6 +2827,7 @@ GDDR5
 General Electric LM2500
 géopotentiel
 gradient vertical de température
+groma
 Hauteur d'échelle
 hypercharge faible
 hyperfocale
@@ -2534,6 +2836,7 @@ impédance caractéristique du vide
 imprimante 3D
 industrie automobile au Japon
 ingénierie ferroviaire
+instruction informatique
 instruction machine
 interféromètre de Mach-Zehnder
 inversion de contrôle
@@ -2550,11 +2853,13 @@ longueur d'onde de Broglie
 MDA
 mebibit
 mécanique quantique relativiste
+mèche
 méthode hill-climbing
-Model Driven Architecture
+mire
 moment statique
 momento de flexión
 montre de plongée
+nat
 néguentropie
 observatoire d'ondes gravitationnelles
 Olivetti Programma 101
@@ -2563,6 +2868,7 @@ palier magnétique
 phénomène critique
 physique des polymères
 physique mésoscopique
+pin
 Point d'accroche
 pose de la quille
 Power quality
@@ -2578,16 +2884,23 @@ Résistance de rappel
 Rutherford
 S-Box
 Scram
+senseur stellaire
+Sertissage
 SHA-3
 sibilance
 sonde de pression
+soudage par friction malaxage
+soudure à froid
 statcoulomb
+stilb
 SuperH
 sûreté nucléaire
 syndrome de Boerhaave
 système polyphasé
 télescope infrarouge
 térabit
+toise
+transformateur de potentiel
 transformateur de tension
 transition isomérique
 Transporteur à vis
@@ -2600,6 +2913,7 @@ XScale
 Yottabit
 Zen 2
 Zero insertion force
+aéromécanique
 Arbre de défaillances
 architecture de processeur
 atmosphère technique
@@ -2608,6 +2922,7 @@ Baromètre de FitzRoy
 barre de son
 Barre de torsion
 biocybernétique
+broche
 cannelure
 cathode froide
 Célomètre
@@ -2625,7 +2940,9 @@ décharge partielle
 densitomètre
 dépollution
 Détecteur d'anomalie magnétique
+Disque d'Airy
 distillateur
+DragonBall
 durée d'ensoleillement
 eau virtuelle
 effet Thomson
@@ -2638,8 +2955,10 @@ espace de de Sitter
 examètre
 Feddan
 Fiche banane
+flare
 flux thermique
 force gravitationelle
+gamma
 Générateur de basses fréquences
 générateur de son
 gibibit
@@ -2653,6 +2972,7 @@ Intel i860
 Intel i960
 Intel SpeedStep
 irradiation
+jugère
 lampe à induction
 loi de dilution d'Ostwald
 machine à mesurer tridimensionnelle
@@ -2670,6 +2990,7 @@ neuromodulation
 nouvelle méthode autr
 odeur corporelle
 oiseau buveur
+palme
 partie par milliard
 pétabit
 pétamètre
@@ -2677,324 +2998,3 @@ phase géométrique
 photo-évaporation
 photocathode
 Photovoltaïque intégré au bâti
-physique des basses températures
-PlayStation Camera
-plethron
-pont de Maxwell
-prix de l'électricité
-programmation orientée composant
-projecteur d'illumination
-quadriphonie
-quadrivitesse
-radar d'alerte précoce
-radar trans-horizon
-ralentisseur
-rapidité
-réacteur à neutrons rapides
-réflectivité bidirectionnelle
-régulateur linéaire
-réparation
-réseau d'antennes
-réticulation par irradiation UV
-Samsung Galaxy Gear
-séparation magnétique
-Small form-factor pluggable
-SO-DIMM
-son pur
-Sony Dynamic Digital Sound
-spinthariscope
-tache d'Airy
-Tébibit
-télescope Schmidt-Cassegrain
-tension de claquage
-tension de Planck
-thermomètre infrarouge
-tige d'ancrage
-trafic Internet
-Trinitron
-tube de caméra
-vis à billes
-vis viva
-VistaVision
-yard carré
-zeptomètre
-Zettabit
-AMD FX
-analyseur de réseau
-Antenne hélice axiale
-Apple A16 Bionic
-Apple A9X
-astrarium
-biomécatronique
-boucle locale
-brise-soleil
-chaîne à rouleaux
-champlevé
-charge glycémique
-climat de l'Europe
-concentration massique
-Connecteur Molex
-contrôle d'attitude
-Convection thermique
-courant de fuite
-courant de Planck
-courbure scalaire
-Débitmètre électromagnétique
-Débitmètre massique
-déclin d'orbite
-densite linéaire
-densité massique d'énergie
-déphasage
-développement d'énergie
-Diagramme de Nyquist
-diode Transil
-éclairage de sécurité
-électromultiplicateur
-entropie conditionnelle
-EPYC
-Erieye
-Exabit
-excès de masse
-facteur g d'un atome
-Frittage sélectif par laser
-GeForce 3
-génie énergétique
-gilbert
-grandeur physique vectorielle
-Gyromètre à fibre optique
-impédance du circuit d'entrée
-Ingénierie de l'assainissement
-ingénierie de trafic
-ingénierie des protéines
-instrument d'astronomie
-Intel Core i9
-interrupteur au mercure
-kilobit par seconde
-kilowatt
-Lampe germicide
-loi de Buys-Ballot
-loi de Gustafson
-loi de Malus
-loi des états correspondants
-LPDDR
-marché de l'électricité
-microréseau
-milieu amplificateur
-Moderate-Resolution Imaging Spectroradiometer
-MODFET
-Monture Nikon F
-MOS Technology 6510
-Niveau laser
-Noyau de ferrite
-observatoire de neutrinos
-OMAP
-ondulation résiduelle
-Optique intégrée
-Packet radio
-pénombre
-Pentium P5
-pied cube
-pile à combustible alcaline
-Pile Weston
-plaque de cuisson
-portée visuelle de piste
-processeur physique
-profondeur
-profondimètre
-propagation des ondes
-puissance acoustique
-puissance nominale
-Radar Freya
-Radar Würzburg
-rafale de vent
-rapport masse sur charge
-rayon jovien
-rayonnement photosynthétiquement actif
-règle de sélection
-ressort hélicoïdal
-ROM hacking
-rotomoulage
-sabordage
-Samsung Gear
-Scie cloche
-sécurité automobile
-shannon
-Sociophysique
-Socket AM4
-Socket S1
-Speakon
-sylvo-urbanisme
-Sylvopastoralisme
-System Management Bus
-télescope géant
-température critique
-Théorie de Ginzburg-Landau
-théorie de stabilité
-transformateur de mesure
-vecteur de Burgers
-vernier
-vitesse de rotation
-voie de signalisation Notch
-VU-mètre
-zettamètre
-5 nm
-acoustique industrielle
-acre-pied
-activité
-Alder Lake
-AN/APG-77
-antenne log-périodique
-Apple A10X Fusion
-Apple A8X
-Axe de piston
-B-L
-balance à fléau
-Boomer
-boucle locale radio
-Câblage par fil
-cécité des neiges
-cellule photoélectrochimique
-cellule photovoltaïque à pérovskites
-centrale électrique solaire
-centrale électrique virtuelle
-CHAdeMO
-commutateur en boîtier DIP
-contrôleur d'affichage vidéo
-courroie synchrone
-criticité
-DAACO
-diagramme lieu des racines
-diode à semiconducteur
-distance d'arrêt
-dynamique de rotation
-Écho lumineux
-éclairage du jour
-effet électro-optique
-effet magnéto-optique
-électroacoustique
-électrocution
-Électrode de verre
-électrolyseur
-électrostriction
-élément entier
-énergie acoustique
-énergie photonique
-estampage
-exitance énergétique
-facteur d'activité
-forçage génétique
-Frein moteur
-fréquence angulaire de Planck
-GDDR3
-générateur de gaz
-gestion durable des forêts
-horloge électrique
-hystérésis magnétique
-Impression d'organes
-In-ear monitors
-informatique sans serveur
-Intel GMA
-Intel iAPX 432
-laser à gaz
-maison intelligente
-Mass
-Masse minimale
-masse surfacique
-masse volumique apparente
-mètre pliant
-Micro-HF
-microphone électrostatique
-microtron
-millimètre cube
-minute-lumière
-monture d'objectif
-moteur à l'oxyde nitreux
-Moteur piézoélectrique
-moulage par soufflage
-nettoyage cryogénique
-nocturlabe
-nombre de Margoulis
-nombre de Stanton
-Nuvistor
-oscillation forcée
-partitionnement de disque
-Pebibit
-photodiode avalanche
-pince crocodile
-point d'écoulement
-polyéthylène réticulé
-potentiométrie
-pouvoir rotatoire spécifique
-pression d'arrêt
-pression pulsée
-Procédé planar
-Processus Urca
-produit dyadique
-quinzaine
-radiocommunication
-réacteur à fusion
-réimpression
-réseau de substitution-permutation
-rythme biologique
-Siegbahn
-Single coil
-Socket 563
-Super I/O
-Surface de Fermi
-system in package
-système d'air comprimé
-Système Four Thirds
-table de transition d'état
-théorème de Bloch
-théorie de la plasticité
-Trafic QRP
-Transconductance
-trigénération
-Turion 64 X2
-unité de rack
-unité fondamentale
-22 nanomètres
-accelerated processing unit
-aiguisage
-AN/SPY-1
-antenne directionnelle
-antenne omnidirectionnelle
-apparence
-Apple A12X Bionic
-Apple A19
-Apple M5
-architecture orientée évènements
-ARM Cortex-A9 MPCore
-astrophysique nucléaire
-Attachment Unit Interface
-attophysique
-Aubage
-Audion
-BASIC Stamp
-bobine de charge
-bouteille de prélèvement
-brisure de symétrie
-changeur de prises
-chaos quantique
-chromaticité
-coefficient d'absorption
-comma syntonique
-Couple conique
-courbure moyenne
-covariance générale
-cyanomètre
-cycle diurne
-décagramme
-délimiteur
-densité critique
-Détecteur de foudre
-Digital Mobile Radio
-diode à vide
-Dolby Pro Logic
-écouteurs Apple
-Effervescence
-effet Cotton-Mouton
-effet Early
-effet Rossiter-McLaughlin
-électro-optique
-électrode de travail

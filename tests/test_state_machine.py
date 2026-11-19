@@ -455,7 +455,7 @@ def _switched_off_app():
     return app, styler
 
 
-def test_polish_switched_off_injects_the_recognised_text():
+def test_polish_switched_off_injects_the_recognized_text():
     app, styler = _switched_off_app()
     app.on_hotkey_press()
     app.on_hotkey_release(duration_ms=500)

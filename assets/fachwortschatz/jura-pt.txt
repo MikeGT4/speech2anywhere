@@ -1,35 +1,27 @@
-casamento
 matrimónio
-racismo
-partido político
+Direitos humanos
 Direito autoral
 direitos de autor
 prostituição
-negócio
 genocídio
 Tribunal Internacional de Justiça
-assassinato
 assassínio
 liberdade de expressão
 Corte Penal Internacional
 direito internacional
-contrato
 domínio público
-Inquisição
-tortura
+débito
 direitos da mulher
 Direito criminal
 direito penal
 crime de guerra
-Julgamentos de Nuremberg
-testamento
-Suprema Corte Americana
 TEDH
 Tribunal de Estrasburgo
 liberdade de imprensa
 igualdade de género
 igualdade de gênero
 rebelião
+Liberdade de religião
 liberdade religiosa
 propriedade intelectual
 Direito constitucional
@@ -39,65 +31,61 @@ Veto
 diretor executivo
 diretor-geral
 direito administrativo
-direitos
-homicídio
 assassinato de figura pública
 Magnicídio
 pessoa jurídica
-cooperativa
-cooperativismo
 difamação
 direito do trabalho
 Direito trabalhista
 Sequestro
-traição
 Direitos da criança
 crime organizado
 direito civil
 estado de emergência
 estado de exceção
 Tribunal de Justiça Europeu
-Inquisição espanhola
+cibercrime
 crime digital
 crime eletrônico
+delito informático
 direito canónico
 direito público
-fundação
 direitos civis
 direitos civis e políticos
 Nota promissória
-subsidiária
 assassinato em massa
 assassínio em massa
 pessoa física
 habeas corpus
+competência jurisdicional
 corte suprema
 Esquema Ponzi
 jurisdição
+Suprema Corte
 caça às bruxas
 Compensação de guerra
+Direito das Famílias
 direito de família
 Discurso de ódio
 união civil
 presunção da inocência
 direito privado
-massacre
 extradição
 narcotráfico
 Negacionismo do Holocausto
+tráfico de drogas
 liberdade de informação
-propriedade privada
 violência sexual
 Crime de ódio
 chantagem
 direito à educação
 direito da concorrência
 direito de propriedade
-mandato
 direito ambiental
 lei de talião
 Pensão alimentícia
 abuso sexual de menor
+Abuso sexual infantil
 contrato de trabalho
 Direito da União Europeia
 evasão fiscal
@@ -106,24 +94,22 @@ ijtihad
 Jus soli
 ordália
 precedente jurídico
-Processo
-associação
+corte constitucional
 direito comercial
 direito das obrigações
 direito internacional privado
+processo judicial
 Prova jurídica
-Supremo Tribunal da Índia
 tribunal constitucional
 Direito de guerra
 direito do consumidor
 extorsão
 infanticídio
 fiança judicial
-Sinédrio
 Desapropriação
+Expropriação
 Apropriação indébita
 ciberataque
-Conciergerie
 direito tributário
 força maior
 Negligência
@@ -138,22 +124,26 @@ fontes do direito
 interesse público
 perjúrio
 coerção
+direitos fundamentais
 liberdade de circulação
 Tribunal de Justiça Europeia
 Direito societário
-Empresário em nome individual
+millet
 Prescrição
 processo penal
-TPIR
 direitos reprodutivos
 liberdade de associação
 petição inicial
+réu
 dados pessoais
 direitos digitais
 indicação geográfica
+Indicações geográficas
 Insurgência
 princípio da precaução
 prostituição infantil
+sanção
+Sancionar
 tribunal de apelação
 Usufruto
 capacidade de exercício
@@ -166,135 +156,121 @@ falsificação
 instrumental médico
 liberdade condicional
 subsidiariedade
+direito internacional penal
 direito penal internacional
 posse legal
 Rapto de noivas
-assalto
 Direito imobiliário
 direito processual civil
+motim
 sociedade europeia
+Societas europea
 consentimento
 crime do colarinho branco
+delito
+prisão preventiva
 prisão provisória
 Capacidade jurídica
-Conselho Constitucional da França
 direito espacial
 ataque terrorista
 atentado terrorista
 Diligência prévia
 Direito da informática
 Farsa jurídica
-sentença
 sistema jurídico
-tribunal Revolucionário
 Bet Din
 Código de Direito Canónico
 Contraventor
 corte internacional
 crime de lesa-majestade
 direitos linguísticos
+dolo
 erro judicial
+Lesa majestade
 tráfico de armas
-Tribunal Mundial
+tribunal internacional
 Direito militar
 direitos de minorias
+Justiça militar
 Lenda negra
-Suprema Corte de Israel
 Tribunal de Tóquio
 abdução
-acusação
 assédio judicial
 consentimento informado
 controle de constitucionalidade
+Contumaz
 de minimis
 direitos trabalhistas
 Erga omnes
-Helieia
 in absentia
 Processo cautelar
 usucapião
-Volksgerichtshof
-Corte Popular Suprema Chinesa
 diligência
 direito financeiro
 Lei ex post facto
 presunção
 sociedade de responsabilidade limitada
-Supremo Tribunal da Austrália
 carta de corso
 Constituição brasileira de 1988
+Constituição do Brasil
 Constituição Federal de 1988
 Direito à privacidade
 direito aeronáutico
+felony
 Ordem pública
 Soberania alimentar
-Suprema Corte do Canadá
 Unionismo político
 uti possidetis
 enriquecimento injusto
 Ius gentium
 Litígio de mudança climática
 Princípio da razoabilidade
-Rota Romana
 STF
-Suprema Corte do Paquistão
 Supremo Tribunal Federal
 Constituição portuguesa de 1976
 crime de conspiração
-declaração
 esfaqueamento
 lei da sodomia
 magistrado administrativo
 parlamentos
-Reichskammergericht
 assassinato seletivo
-BGH
 coisa julgada
 condições da ação
-Corte Constitucional da Coreia
 devido processo legal
 direito à integridade física
 direito das sucessões
 direito de autor
 domicílio
+droit d'auteur
 flagrante
 Garantia
 Julgamento por combate
 lex specialis
 Obiter dictum
 OEA
-Penitenciária Apostólica
 Remédio legal
-Suprema Corte do Japão
 assassinato de reputação
-Assinatura Apostólica
 busca e apreensão
-condenação
-Conselho dos Dez
+naskh
 negação plausível
 Relação de causalidade
 affidavit
-audiência
-Corte Constitucional da Rússia
 execução extrajudicial
 gerente-geral
 interino
 Mischling
 responsabilidade objetiva
 sufrágio censitário
-Supremo Tribunal da Espanha
-Tribunal Constitucional de Espanha
 bem imóvel
 caso legal
 direitos indígenas
 impunidade
 Independência judicial
+litígio
 Não devolução
 Pacto Civil de Solidariedade
 Parlamento de Paris
 peregrino
-processo judicial
-Senado da Finlândia
 Circunstâncias atenuantes
 civitas
 direito eleitoral
@@ -303,16 +279,13 @@ direitos LGBT na Áustria
 direitos sexuais
 insubordinação
 Julgamento de animais
+má-fé
 nullum crimen sine lege
 Recurso de cassação
 Res nullius
 sistema penitenciário
 Soberania parlamentar
-Suprema Corte da Rússia
 Veredicto
-Alta Corte de Justiça
-Conselho Áulico
-Corte Constitucional da Ucrânia
 direito de petição
 Direito de retorno palestino
 direito econômico
@@ -323,10 +296,7 @@ regulação do arrendamento
 restituição
 SDSR
 Stare decisis
-Tribunal Constitucional da Polónia
 adjudicação
-BAG
-Conselho das Índias
 Curatela
 delação premiada
 Direito de retorno
@@ -339,7 +309,6 @@ Reconhecimento criminal
 tribunal eclesiástico
 Aktiengesellschaft
 Circunstâncias agravantes
-Corte de Pilatos
 direito urbanístico
 Direitos da juventude
 Direitos da terra indígena
@@ -349,56 +318,48 @@ Impactos ambientais da aviação
 receptação
 recetação
 Sequestro de bens
-Suprema Corte da Califórnia
-Suprema Corte de Delhi
-Tribunal de Pilatos
-Tribunal de Primeira Instância
-Tribunal de Russell
 acordo legal
 condição legal
 Desconsideração da personalidade jurídica
 indício
 Inquisição medieval
 IRMCT
+Mão-morta
 Mãos-mortas
 MICT
 política de armamento
 política de armas
+princípio jurídico
 Recrutamento forçado
-Suprema Corte da Noruega
-Suprema Corte da Suécia
+status legal
 Suprema Corte da Ucrânia
-Tribunal Revolucionário Islâmico
 violência de género
 violência de gênero
-Yuan Judiciário
 alienação fiduciária
 animal law
-Bundesfinanzhof
+asilo
 copyfraud
 Corpo de delito
-Corte de Cassação
 Direito comum
 doutrina da descoberta
+doutrina dos descobrimentos
 Julgamento de Belsen
 lex lata
 Não repúdio
 Segurança jurídica
-Supremo Tribunal da Islândia
 acção penal
 Anticrese
-Conselho de Estado
 direito agrário
 direitos transgénero
 direitos transgênero
-instituição de crédito
+ġība
 instituto jurídico
 opinio iuris
 pro hac vice
+procedimento legislativo
 processo legislativo
 tribunal do trabalho
 Ação Pauliana
-Bundessozialgericht
 crime contra a propriedade
 crime passional
 criminalização
@@ -406,6 +367,7 @@ direito processual penal
 direito sanitário
 direitos de pessoas LGBTI
 direitos humanos intersexo
+direitos LGBT
 In articulo mortis
 leis anti-blasfêmia
 lex ferenda
@@ -414,16 +376,10 @@ Neonaticídio
 Princípio do efeito direto
 Raptio
 Real Audiência
-Real Audiência de Quito
+Reclamona comum
 sanidade mental
-Suprema Corte
-Supremo Tribunal da Polónia
-Supremo Tribunal da Turquia
 A contrario
 ação popular
-Alto Tribunal Iraquiano
-Conselho de estado turco
-consideração
 crime violento
 crise de reféns
 Direito do transporte
@@ -434,19 +390,17 @@ Imprimi potest
 Lei do Ventre Livre
 Litisconsórcio
 Mare Clausum
-Meclisi Ali-i Tanzimat
 paternidade
 Summum ius
-Suprema Corte da Indonésia
-Suprema Corte de Bangladesh
-Tribunal Constitucional da Romênia
 Tribunal Superior Eleitoral
 TSE
+tutela
 Uso da força
 aberratio ictus
 assassinato judicial
 Assize
 autodeterminação de gênero
+autoidentificação de gênero
 crime sexual
 critério posterior
 Direito desportivo
@@ -461,10 +415,6 @@ parecer jurídico
 Princípio do primado
 Rescisão
 Retroatividade das leis
-Sarbochha Adalat
-Suprema Corte da Bielorrússia
-Suprema Corte do Chile
-Supremo Tribunal da Irlanda
 trânsito em julgado
 barulho de avião
 Bonus pater familias
@@ -475,13 +425,12 @@ Ex factis jus oritur
 homicídio premeditado
 intervenção de terceiros
 restitutio ad integrum
-Supremo Tribunal Administrativo
 Tribunal Constitucional de Portugal
 tribunal de círculo
-Tribunal Supremo de Justiça
 anulável
 brocardo
 cadeia de custódia
+Câmaras Especializadas do Kosovo
 Carta Constitucional de 1826
 Constituição Portuguesa de 1826
 Contumácia
@@ -532,35 +481,47 @@ personalidade jurídica empresarial
 poder público
 political murder
 razoabilidade
+recuo
 Testemunha hostil
 Tribunal de Recurso
 Abuso processual
 Agravo
 Apropriação original
 Código Civil Brasileiro
+Código Civil do Brasil
 Constituição portuguesa de 1933
+Corte Africana de Justiça
 Desacato ao Congresso
 Direitos de vizinhança
 evicção
 filiação ilegítima
+filiação natural
 foro externo e interno
 habeas data
 habitabilidade
+ilegitimidade
 imprudência
 Justiça política
 Lei Eusébio de Queirós
+Lei Euzébio de Queiroz
 Lei Maria da Penha
 Lei Rouanet
 Liberdade religiosa por região
+mülk
 Obediência hierárquica
 opinião da maioria
 Pendência
 Per curiam
 Pleno do tribunal
 Prevaricação
-transferência
+STJ
+Superior Tribunal de Justiça
+Tribunal Superior do Trabalho
+Tribunal Supremo Caribenho Oriental
+TST
 Affectio societatis
 censura prévia
+coação
 Código Civil Português
 Constituição brasileira de 1967
 Corte senhorial
@@ -569,21 +530,24 @@ Direito objetivo
 dispositivo normativo
 execução injusta
 hipótese normativa
-instituição pública
+Judiciário Paulista
 Liberdade religiosa na Mauritânia
-órgão público
 princípio geral do direito
 propriedade socialista
 razão social
 sequestro relâmpago
 Sistema Internacional
+Superior Tribunal Militar
+Supremo Tribunal de Justiça
+Supremo Tribunal Militar
+TJSP
 Tribunal de Assize
 Tribunal Regional Eleitoral
 Autoridade competente
-autorização
 Cogitationes poenam nemo patitur
 Constituição brasileira de 1946
 Constituição portuguesa de 1838
+d.o.o.
 Decisão interlocutória
 Diferenças irreconciliáveis
 direito alimentar
@@ -601,17 +565,18 @@ Perturbação do sossego
 Resposta glomar
 Tag along
 Tempus regit actum
+Tribunais Regionais Federais
 tribunal da sharia
 Tribunal de Justiça
 Tribunal Regional Federal
+aşar
 Autotutela
 cargo de confiança
 CDC
 Código do Consumidor
 Código Penal Brasileiro
-competência
 conflitos de leis
-empresa estrangeira
+Corte Andina de Justiça
 estado de direito
 Estatuto do Índio
 Formalidades de direitos autorais
@@ -621,9 +586,11 @@ In personam
 Lei do Sorteio
 mainland China
 Mineração ilegal no Peru
+posição de confiança
 Princípio da concentração
 sinistro
 tachar de transexual
+Tribunal de Justiça Andino
 tribunal superior
 acessibilidade universal
 Acusação constitucional no Chile
@@ -632,7 +599,6 @@ Administrative Reconsideration cases
 Ames Moot Court Competition
 Animus domini
 antinomia jurídica
-ausência
 boa conduta
 Central Government Industrial Tribunal
 Classificação suspeita
@@ -643,6 +609,7 @@ Comitê de Bacia Hidrográfica
 compensação
 comunhão de bens
 conflito de normas jurídicas
+conflito normativo
 Constituição baiana de 1989
 constituição em sentido material
 decisão de expropriação
@@ -669,7 +636,6 @@ münaseha
 oficiosamente
 Ponto de carregamento
 Puisne
-Stiftung
 subscriptio
 Tribunal Regional do Trabalho
 Vidualitium
@@ -678,12 +644,8 @@ Agricultura patronal
 AI-5 das universidades
 Arbeitnehmerhaftung
 ASBI
-autarquia
-autoria
-bestuursorgaan
 Betriebsrisikolehre
 Boedel
-Câmara
 CATO
 CIF
 Código de Águas Minerais
@@ -706,6 +668,7 @@ Einigung
 Einverständnis
 Einwilligung
 elemento de conexão
+exposição e abandono
 Exposição ou abandono
 fogo rural
 formalisme excessif
@@ -714,9 +677,9 @@ Gegenvorstellung
 Gerichtsbarkeit
 gross negligence
 Hammerschlags- und Leiterrecht
-Hoheitliche Aufgabe
 impedimento
 incêndio rural
+incêndios rurais
 Indigenato
 Injusta provocação da vítima
 Ius Archivi
@@ -725,7 +688,6 @@ Justiçamento
 Labour Courts
 Laufbahnbefähigung
 LDB
-legislação
 Lei Afonso Arinos
 Lei Agnelo/Piva
 Lei Aldir Blanc
@@ -750,6 +712,7 @@ Lei Falcão
 Lei Rivadávia
 Lei Rubem Braga
 Leis da natureza
+LEP
 Libelo
 LICC
 LINDB
@@ -767,7 +730,6 @@ pratideśanīya
 prova irrefutável
 Recurso especial repetitivo
 Regulativ
-Scottish charitable incorporated organisation
 sekhiya
 solo rústico
 Staatsrecht
@@ -775,7 +737,7 @@ SUAS
 sıvış yılı
 Tax court
 Testamentary guardian
-Textilschieberprozesse von Glauchau-Meerane
+tribunais de relação
 tribunal da relação
 tribunal de justiça militar
 Vermögensdelikt
@@ -786,34 +748,19 @@ direitos autorais
 meretrício
 democídio
 chacina
-estatuto
 Tribunal Penal Internacional
 direito das gentes
 dominio publico
-Familiar do Santo Ofício
-Inquisidor
-Inquisidor-mor
-Santo Ofício
-Tribunal do santo ofício
 Torturador
 Direitos das mulheres
 Justiça penal
 Crimes de guerra
 Ab intestato
 Facultas testandi
-Julgamento de nuremberg
-Julgamento de nuremberga
-Julgamentos de nuremberga
-Processo de nuremberg
-Processos de Nuremberg
-Tribunal de nuremberg
-Tribunal Militar Internacional
 imprensa livre
-conspiração
 igualdade entre os sexos
 igualdade sexual
 intentona
-levantamento
 rebeliao
 sedição
 sublevação
@@ -821,7 +768,6 @@ Liberdade de adoração
 Liberdade de crença
 Liberdade de culto
 Liberdade de fé
-Liberdade de religião
 Propriedades intelectuais
 Direito latino
 Lei romana
@@ -834,7 +780,6 @@ homicidio
 pessoa colectiva
 pessoa coletiva
 pessoa juridica
-Cooperativo
 direito laboral
 Pérfido
 Rapto
@@ -850,15 +795,12 @@ estado de sítio
 organização criminosa
 regime de exceção
 sindicato do crime
-Inquisición española
-cibercrime
 Código canônico
 Código de direito canônico
 crime hi-tech
 crimes eletrônicos
 crimes na internet
 criminalidade informática
-delito informático
 Direito Canônico
 Direito eclesiástico
 e-crime
@@ -867,7 +809,6 @@ Lei canónica
 Lei canônica
 direitos políticos
 direitos políticos e civis
-subordinado de
 assassinatos em massa
 pessoa fisica
 pessoa natural
@@ -875,14 +816,11 @@ pessoas físicas
 pessoas jurídicas
 Hábeas
 Hábeas Corpus
-Habeas-corpus
-competência jurisdicional
 Suprema Corte de Justiça
 Supremo Tribunal
 Tribunal supremo
 caça as bruxas
 Direito da Família
-Direito das Famílias
 Direito familiar
 parceria civil
 parceria registada
@@ -893,12 +831,6 @@ David irving
 Negação do Holocausto
 Negadores do Holocausto
 Revisionismo do holocausto
-tráfico de drogas
-Dono
-Espaço privado
-Propriedade particular
-Proprietária
-Proprietário
 Crimes de ódio
 antitruste
 lei antitruste
@@ -906,8 +838,8 @@ Procuração
 lei do talião
 pena de Talião
 retaliação
+talião
 talionato
-Abuso sexual infantil
 contrato a prazo
 contrato a termo certo
 contrato a termo incerto
@@ -919,14 +851,12 @@ julgamento pelo fogo
 ordálio
 sentença divina
 sonegação fiscal
+ação judicial
 conflito de leis
-corte constitucional
 DIP
 DIPri
 Direito Empresarial
 Direito Empresarial ou Comercial
-organização voluntária
-Suprema Corte da Índia
 defesa do consumidor
 direito blélico
 direito consumerista
@@ -934,9 +864,6 @@ direito da guerra
 direito dos conflitos armados
 direitos do consumidor
 Fiança
-Sanedrim
-Sinedrim
-Expropriação
 Apropriação indevida
 ataque cibernético
 descuido
@@ -958,57 +885,41 @@ fontes jurídicas
 direito das sociedades comerciais
 processo criminal
 acionado
-acusado
 polo passivo
 corte de apelação
 dados de um indivíduo
-Indicações geográficas
 insurgencia
 Insurreição
-Sancionar
 Capacidade de fato
 direito a ser esquecido
 dispositivo medico
 liberdade supervisionada
-direito internacional penal
 amotinação
 Societas europae
-Societas europea
-aprovação
 Crime de colarinho-branco
 detenção preventiva
 detenção provisória
-prisão preventiva
 direito do espaço
 Código legal
-julgamento
 Sistema legal
 Sistemas jurídicos
 Erro judiciário
-Lesa majestade
 Lesa-majestade
-tribunal internacional
 direitos das minorias
-Justiça militar
 Tribunais militares
 Tribunal militar
-Tribunal supremo de israel
 À revelia
 abducao
 adjudicação constitucional
-Contumaz
 fiscalização da constitucionalidade
 Revelia
-Tribunal Popular
 carta de marca
 Constituição brasileira
 Constituição Cidadã
 Constituição de 1988
 Constituição de 88
-Constituição do Brasil
 Constituição federal brasileira
 Constituição Federal do Brasil
-Corte Suprema do Canadá
 Crfb
 crime de alta gravidade
 Direito Aéreo
@@ -1016,8 +927,7 @@ direito réreo
 conspiração crimosa
 Constituição de 1976
 direito sucessório
-droit d'auteur
-Penitenciaria Apostólica
+flagra
 remédio jurídico
 Nexo de causalidade
 Relação causal
@@ -1026,7 +936,6 @@ Oitiva
 Voto Censitário
 bem imobiliário
 direito indígena
-litígio
 processo de tribunal
 processo em tribunal
 propriedade imobiliária
@@ -1036,27 +945,23 @@ nulla poena sine lege
 sistema correcional
 controlo do arrendamento
 regulação da locação
-Tribunal Constitucional polaco
 colaboração premiada
-Conselho de Índias
 escritura
 escrituração pública
 In limine litis
 nulabilidade
+nulos
 feminismo nos EUA
 Seqüestro de bens
 convênio
 desarmamento no mundo
 estado legal
 legislação sobre armas
-Mão-morta
 prejuízos
 prova circunstancial
 situação legal
-status legal
 Circulação fiduciária
 doutrina das descobertas
-doutrina dos descobrimentos
 Fiduciária
 Julgamento de Bergen-Belsen
 law concerning animals
@@ -1066,33 +971,22 @@ direitos trans
 instituto de direito
 Justiça do Trabalho
 Justiça Trabalhista
-procedimento legislativo
 tribunal trabalhista
 direitos das pessoas intersexo
+direitos das pessoas intersexos
 direitos das pessoas intersexuais
 direitos de pessoas LGBT
 direitos humanos de intersexos
 direitos humanos intersexuais
 direitos intersexos
 direitos intersexuais
-direitos LGBT
 direitos LGBTI
-Sąd Najwyższy
-Supremo Tribunal polaco
-Tribunal Supremo da Polónia
 Acção Popular
-CCR
 Contrario sensu
-Danistay Baskanligi
-Danıştay Başkanlığı
 Lei Rio Branco
 Litisconsorte
-Meclis-i Vala-i Ahkâm-ı Adliye
-Şura-yı Devlet
-Türkiye Cumhuriyeti Danıştay Başkanlığı
 auto-identificação de género
 autodeterminação de género
-autoidentificação de gênero
 força da coisa julgada
 identificação própria de gênero
 Primado do direito europeu
@@ -1107,6 +1001,7 @@ Constituição do Império
 Constituição imperial de 1824
 Constituição Outorgada
 Constituição portuguesa de 1821
+feto
 MCI
 Primeira Constituição do Brasil
 produção legislativa
@@ -1114,30 +1009,25 @@ Vacatio leges
 Vacation legis
 bastardia
 Código Civil de 2002
-Código Civil do Brasil
 filiação adulterina
-filiação natural
 foro externo
 foro interno
-ilegitimidade
 Lei Eusébio de Queiroz
-Lei Euzébio de Queiroz
 NCC
 Novo Código Civil
 antecedente normativo
 coacção
+coagir
 Constituição de 1967
 Denominação social
 Direito objectivo
 dispositivo jurídico
 hipótese de incidência
 licença de sincronização
-organismo governamental
-organismo público
-órgãos públicos
 princípios gerais do direito
 seqüestro relâmpago
 seqüestro-relâmpago
+STM
 TRE
 Constituição de 1838
 Constituição de 1946
@@ -1147,15 +1037,15 @@ inscriptiones
 Tempus regis actum
 TRF
 Tribunais de Justiça
-Tribunais Regionais Federais
+asar
 Código Penal do Brasil
 corte superior
 direito conflitual
+foro
 palácio da Justiça
-posição de confiança
+TJA
 CBHs
 colisão de normas jurídicas
-conflito normativo
 constituição em sentido substancial
 constituição material
 direitos reprodutivos e sexuais
@@ -1174,19 +1064,14 @@ Crimes hediondos
 CTN
 Diretório Pombalino
 exposição de pessoa indefesa
-exposição e abandono
 fogo em território rural
-incêndios rurais
 Jovem Aprendiz
 LCH
-LEP
 LRF
 Menor Aprendiz
 prāyaścittika
-relação
 solo rural
 TJM
 trabalho pòstumo
 tribunais da relação
-tribunais de relação
 tribunal de relação

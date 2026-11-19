@@ -1,6 +1,6 @@
 [project]
 name = "kira"
-version = "0.7.0"
+version = "0.7.1"
 description = "Voice-to-text app for macOS and Windows 11"
 requires-python = ">=3.12"
 dependencies = [
@@ -70,6 +70,13 @@ packages = ["kira"]
 "assets/digitalroots-logo.png" = "kira/_assets/digitalroots-logo.png"
 "assets/kira-splash.png" = "kira/_assets/kira-splash.png"
 "assets/wordlist-de.txt" = "kira/_assets/wordlist-de.txt"
+"assets/wordlist-en.txt" = "kira/_assets/wordlist-en.txt"
+"assets/wordlist-es.txt" = "kira/_assets/wordlist-es.txt"
+"assets/wordlist-fr.txt" = "kira/_assets/wordlist-fr.txt"
+"assets/wordlist-it.txt" = "kira/_assets/wordlist-it.txt"
+"assets/wordlist-nl.txt" = "kira/_assets/wordlist-nl.txt"
+"assets/wordlist-pl.txt" = "kira/_assets/wordlist-pl.txt"
+"assets/wordlist-pt.txt" = "kira/_assets/wordlist-pt.txt"
 "assets/fonts/IBMPlexMono-Regular.ttf" = "kira/_assets/fonts/IBMPlexMono-Regular.ttf"
 "assets/fonts/IBMPlexMono-Medium.ttf" = "kira/_assets/fonts/IBMPlexMono-Medium.ttf"
 "assets/fonts/IBMPlexMono-SemiBold.ttf" = "kira/_assets/fonts/IBMPlexMono-SemiBold.ttf"

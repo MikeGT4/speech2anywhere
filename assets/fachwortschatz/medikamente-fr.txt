@@ -1,3 +1,4 @@
+vaccin
 hormone
 antibiotique
 vitamine
@@ -6,28 +7,38 @@ acide aminé
 cocaïne
 glucose
 acide acétylsalicylique
+aspirine
 érythrocyte
 vitamine C
+opium
 paracétamol
 insuline
 héroïne
 caféine
 acide acétique
+acide éthanoïque
 acide chlorhydrique
 morphine
 adrénaline
+épinéphrine
 bicarbonate de sodium
 dopamine
 testostérone
+phénol
+Plaquette sanguine
 thrombocyte
 vitamine A
 plasma sanguin
+urée
 chlorure de sodium
+COVID vaccin
 fructose
 vaccin contre la Covid-19
+vaccin covid
 carbonate de calcium
 ibuprofène
 narcotique
+oestrogène
 Sildénafil
 œstrogène
 acide citrique
@@ -37,9 +48,11 @@ H. perforatum
 Hypericum perforatum
 vitamine B2
 camphre
+glycérine
 glycérol
 glycine
 ocytocine
+Oxytocine
 kétamine
 mélatonine
 antalgique
@@ -51,8 +64,11 @@ vitamine E
 antioxydant
 vitamine B12
 alumine
+alun
 chlorure d'ammonium
 glucagon
+oxyde d'aluminium
+acide borique
 acide orthoborique
 atropine
 chloroforme
@@ -60,11 +76,12 @@ dichlorodiphényltrichloroéthane
 DL-amphétamine
 gélatine
 permanganate de potassium
+borax
 cortisol
 protoxyde d'azote
 quinine
 bacille Calmette et Guérin
-bacille Calmette Guérin
+bacille de Calmette-Guerin
 codéine
 éther diéthylique
 sulfate de cuivre
@@ -73,12 +90,14 @@ acétylcholine
 chlorure de potassium
 fentanyl
 noradrénaline
+Norépinéphrine
 tryptophane
 acide salicylique
 vitamine B8
 antidépresseur
 collagène
 glutamine
+méthadone
 galactose
 interféron
 aldostérone
@@ -100,6 +119,7 @@ pectine
 sertraline
 streptomycine
 monoxyde d'azote
+oxyde nitrique
 silicone
 vaccin contre la rougeole
 acides gras oméga-3
@@ -111,7 +131,9 @@ Metformine
 phénolphtaléine
 sémaglutide
 thalidomide
+Antipsychotique
 azithromycine
+éphédrine
 Gam-COVID-Vac
 hydroxychloroquine
 lidocaïne
@@ -121,6 +143,8 @@ neuroleptique
 opioïde
 propofol
 psychotrope
+Spoutnik V
+substance psychoactive
 vaccin Oxford-AstraZeneca
 alcool isopropylique
 alprazolam
@@ -131,6 +155,7 @@ hormone corticotrope
 iodure de potassium
 sulfate de magnésium
 vaccin mRNA-1273
+Acide Gamma-aminobutyrique
 acide γ-aminobutyrique
 anhydride arsénieux
 benzodiazépine
@@ -139,6 +164,7 @@ chloramphénicol
 chloroquine
 chlorure d'aluminium
 corticoïde
+corticostéroïde
 hormone lutéinisante
 lorazépam
 midazolam
@@ -151,6 +177,7 @@ estradiol
 oxycodone
 sorbitol
 tramadol
+Œstradiol
 anticoagulant
 bupropione
 capsaïcine
@@ -164,8 +191,10 @@ remdésivir
 stimulant
 sulfate de fer
 sulfate ferreux
+vaccin antipoliomyélitique
 vaccin contre la poliomyélite
 amitriptyline
+beta bloqueur
 bêta-bloquant
 ciprofloxacine
 glutathion
@@ -190,6 +219,7 @@ pyridoxine
 scopolamine
 vaccin contre l'hépatite B
 vaccin contre la grippe
+vaccin de l'hépatite B
 acétate de sodium
 bleu de Prusse
 cétirizine
@@ -199,6 +229,7 @@ propan-1-ol
 propranolol
 Trypsine
 antiviral
+Antiviraux
 bromure
 carbamazépine
 chlorure de magnésium
@@ -220,7 +251,10 @@ naloxone
 phénobarbital
 vaccin contre l'hépatite A
 vaccin contre le choléra
+vaccin du choléra
+Vaccin hépatite A
 zidovudine
+amlodipine
 antiacide
 antibiotique aminoglycoside
 antihistaminique
@@ -230,6 +264,7 @@ chlorpromazine
 clindamycine
 cortisone
 désinfectant
+désinfection
 dextrométhorphane
 digoxine
 gentamicine
@@ -237,11 +272,12 @@ hexafluorure de soufre
 laxatif
 méthotrexate
 noramidopyrine
+pentobarbital
 perchlorate de potassium
 prégabaline
 quétiapine
 thiosulfate de sodium
-vaccin ROR
+vaccin MMR
 Vaccin RRO
 acide valproïque
 céphalexine
@@ -261,9 +297,13 @@ abacavir
 bêta-carotène
 buprénorphine
 chlorhexidine
+citalopram
 clotrimazole
+colchicine
 finastéride
 fluconazole
+Gonadotrophine chorionique
+Gonadotrophine chorionique humaine
 hormone gonadotrophine chorionique
 hydroquinone
 Lactobacillus
@@ -273,6 +313,7 @@ phénytoïne
 retinol
 rispéridone
 solution hydro-alcoolique
+ß-carotène
 sulfate de zinc
 albendazole
 alcool benzylique
@@ -296,6 +337,7 @@ lévofloxacine
 olanzapine
 ondansétron
 paclitaxel
+pseudoéphédrine
 rifampicine
 Ad26.COV2.S
 antibiotique sulfamidé
@@ -304,11 +346,14 @@ chloroéthane
 chlorure de fer
 clozapine
 coenzyme Q10
+cyclophosphamide
 Inhibiteur de l'ECA
+kaolin
 losartan
 mébendazole
 Mercury
 procaïne
+prométhazine
 protochlorure de fer
 ranitidine
 tamoxifène
@@ -333,7 +378,9 @@ trazodone
 vaccin à ARN
 vaccin contre les oreillons
 analyse d'urine
+Anticonvulsivant
 antiépileptique
+antifongique
 antimycosique
 anxiolytique
 artémisinine
@@ -373,6 +420,7 @@ acétate de potassium
 acide 4-aminobenzoïque
 acide alginique
 Acide nicotinique
+alginates
 aripiprazole
 bétaméthasone
 calcitriol
@@ -380,18 +428,21 @@ clomipramine
 collyre
 créosote
 cyanamide calcique
+cyanamide de calcium
 dépresseur
 époxyde
 favipiravir
 gonadotrophine
 kétoconazole
-ketoprofene
+kétoprofène
 L-thyroxine
+lévothyroxine
 mémantine
 nandrolone
 nystatine
 paroxétine
 pipérazine
+S-thyroxine
 Tadalafil
 topiramate
 triméthoprime
@@ -402,6 +453,10 @@ amikacine
 ceftazidime
 céfuroxime
 Crème hydratante
+duloxétine
+émollient
+Hydratant
+hydroxyzine
 isoflurane
 lamivudine
 lindane
@@ -434,12 +489,14 @@ imatinib
 immunosuppresseur
 Inhibiteur calcique
 Interleukine
+lait artificiel
 linézolide
 méthylprednisolone
 nifédipine
 orlistat
 oxazépam
 piroxicam
+psychédéliques
 pyrazinamide
 réserpine
 sel de lithium
@@ -452,7 +509,6 @@ acétate de calcium
 anthelminthique
 antidépresseur tricyclique
 apomorphine
-British Anti Lewisite
 carvedilol
 Ceratonia
 chlordiazépoxide
@@ -469,6 +525,7 @@ famotidine
 Hydrogénotartrate de potassium
 Immunoglobuline G
 infliximab
+inhibiteur d'enzyme
 inhibiteur enzymatique
 lévétiracétam
 micro-élément
@@ -486,7 +543,7 @@ acide tranexamique
 anesthésique local
 BBIBP-CorV
 bromazépam
-bupivacaine
+bupivacaïne
 buspirone
 carbonate acide de potassium
 carmin d'indigo
@@ -516,7 +573,7 @@ anatoxine
 androstanolone
 antiarythmique
 antidiabétique
-baclofene
+baclofène
 bevacizumab
 carbapénème
 céfixime
@@ -527,9 +584,12 @@ clomifène
 cyclizine
 desloratadine
 desmopressine
+éosine
 ergotamine
 estrone
 fluphénazine
+Gluconate calcique
+Gluconate de calcium
 gomme de guar
 hydralazine
 hydroxyurée
@@ -546,13 +606,16 @@ pentahydroxyéthanoate de calcium
 quinidine
 ramipril
 rivaroxaban
+sibutramine
 sirolimus
 sumatriptan
 témazépam
+timolol
 vardénafil
 vortioxétine
 acide ursodesoxycholique
 agomélatine
+antisérum
 apixaban
 bipéridène
 bromure d'ipratropium
@@ -569,6 +632,7 @@ méfloquine
 méprobamate
 misoprostol
 natamycine
+pénicilline V
 phénacétine
 phénoxyméthylpénicilline
 polyéthylène glycol
@@ -613,10 +677,12 @@ oxytétracycline
 perturbateur endocrinien
 phosphate trisodique
 phylloquinone
+Phyto-œstrogène
 phytoestrogène
 pramipexole
 pyriméthamine
 Sartans
+sélégiline
 sitagliptine
 stavudine
 témozolomide
@@ -625,11 +691,11 @@ Tizanidine
 tocilizumab
 triazolam
 tuberculine
+vaccin contre la malaria
 vaccin contre le paludisme
 vaccin DTC
 zopiclone
-acide mandelique
-acide phénylglycolique
+acide mandélique
 adalimumab
 amobarbital
 Barbital
@@ -640,6 +706,7 @@ candesartan
 capécitabine
 céfépime
 Citrate tripotassique
+clenbuterol
 colistine
 dacarbazine
 desferrioxamine
@@ -654,6 +721,7 @@ griseofulvin
 guaïfénésine
 maprotiline
 melphalan
+mesna
 méthoxyflurane
 mifépristone
 nimésulide
@@ -664,6 +732,7 @@ phényléphrine
 physostigmine
 pipéracilline
 pyrantel
+rabéprazole
 rifabutine
 rivastigmine
 S-adénosylméthionine
@@ -688,6 +757,7 @@ acide méfénamique
 actinomycine D
 amiloride
 aminophylline
+amisulpride
 antibiotique tétracyclinic
 antiémétique
 antihistaminique H2
@@ -695,13 +765,16 @@ atazanavir
 bromocriptine
 cetuximab
 cholinestérase
+chondroïtine sulfate
 clobazam
+Créatine phosphate
 cytarabine
 dapagliflozin
 denosumab
 DES
 dicloxacilline
 diéthylstilbestrol
+Digitaline
 digitoxine
 Diurétique thiazidique
 éfavirenz
@@ -724,6 +797,7 @@ mercurochrome
 moclobémide
 névirapine
 nootropique
+norpseudoéphédrine
 octréotide
 oxacilline
 oxandrolone
@@ -739,7 +813,6 @@ roxithromycine
 sofosbuvir
 sulfanilamide
 sulfate de chondroïtine
-sultopride
 triamcinolone
 triméthylglycine
 vaccin contre la varicelle
@@ -771,11 +844,14 @@ olmesartan
 phénylbutazone
 phénylpropanolamine
 pimozide
+pioglitazone
 prazosine
+primaquine
 primidone
 procarbazine
 produit de contraste
 proguanil
+propafenone
 propylthiouracile
 provitamine
 rémifentanil
@@ -785,6 +861,7 @@ riluzole
 saquinavir
 streptokinase
 sucre inverti
+sulpiride
 tétracaïne
 tigécycline
 tropicamide
@@ -797,6 +874,7 @@ acide nalidixique
 alemtuzumab
 ambroxol
 Astringence
+Astringentes
 ATC code A01
 atovaquone
 bétahistine
@@ -808,6 +886,7 @@ contraception orale
 Cyclobenzaprine
 cytisine
 dihydrocodéine
+dobutamine
 Docusate de sodium
 empagliflozine
 enoxaparine
@@ -832,10 +911,12 @@ médicament psychotrope
 médicament sur ordonnance
 ménadione
 minocycline
+mitotane
 noréthistérone
 noscapine
 oxaliplatine
 oxcarbazépine
+oxybutynine
 oxymétazoline
 Peptide vasoactif intestinal
 perphénazine
@@ -854,7 +935,7 @@ sulfacétamide
 Suvorexant
 tamsulosine
 terbutaline
-tianéptine
+tianeptine
 tiotropium
 topotécan
 triclabendazole
@@ -887,6 +968,7 @@ diéthylcarbamazine
 dinitrate d'isosorbide
 dipyridamole
 dropéridol
+éflornithine
 enflurane
 ertapénem
 FBP
@@ -895,6 +977,7 @@ gefitinib
 leflunomide
 leuprorelin
 méthocarbamol
+mexilétine
 myorelaxant
 naftifine
 norfloxacine
@@ -903,6 +986,8 @@ pentoxifylline
 perborate de sodium
 pravastatine
 quinapril
+ropivacaïne
+rosiglitazone
 spectinomycine
 spiramycine
 sufentanil
@@ -912,6 +997,7 @@ tinidazole
 trimipramine
 vaccin atténué
 vaccin contre le cancer
+virus atténué
 zonisamide
 zuclopenthixol
 acétate de glatiramère
@@ -944,9 +1030,11 @@ fingolimod
 Fondaparinux
 furoate de diloxanide
 huile d'arbre à thé
+Huile de Melaleuca
 insuline glargine
 maraviroc
 mébévérine
+méclozine
 Méthandrosténolone
 milnacipran
 mitoxantrone
@@ -1002,8 +1090,10 @@ cystéamine
 danazol
 dasatinib
 Deltaméthrine
+desvenlafaxine
 dibucaine
 dicoumarol
+diméthyl fumarate
 doxazosine
 dutasteride
 ébastine
@@ -1026,9 +1116,11 @@ imiquimod
 Incrétinomimétique
 lactate de calcium
 Lecanemab
+lénalidomide
 lomustine
 lopinavir/ritonavir
 méthyltestostérone
+miansérine
 Mirabegron
 monobactame
 nabilone
@@ -1060,6 +1152,7 @@ acide pipémidique
 Ad5-nCoV
 afatinib
 altrétamine
+amfepramone
 anakinra
 antipaludéen
 ATC code A03
@@ -1078,12 +1171,15 @@ dantrolène
 décongestionnant nasal
 dinoprostone
 dolutégravir
+éconazole
 émétine
 Éplérénone
 erlotinib
 eskétamine
+etodolac
 exémestane
 Expectorant
+fénoprofène
 flibanserin
 flurbiprofène
 Gliflozine
@@ -1133,6 +1229,8 @@ acide ibandronique
 agents antiobésité
 alpha-bloquant
 antidiarrhéique
+antiparasitaire
+antiparasite
 armodafinil
 astémizole
 ATC code A02
@@ -1165,6 +1263,7 @@ DIU au cuivre
 eprosartan
 flécaïnide
 furazolidone
+Glycyrrhizine
 granisétron
 Huile essentielle d'eucalyptus
 indacatérol
@@ -1288,6 +1387,7 @@ nalbuphine
 nalméfène
 nicardipine
 nilotinib
+nisoldipine
 nizatidine
 oligo-élément
 onasemnogene abeparvovec
@@ -1376,6 +1476,7 @@ enzalutamide
 eszopiclone
 étiléfrine
 Facteur Laki-Lorand
+Facteur XIII
 fenoterol
 flunarizine
 fluocinolone acetonide
@@ -1480,6 +1581,7 @@ EpiVacCorona
 évolocumab
 febuxostat
 felbamate
+fenfluramine
 fidaxomicine
 fludiazépam
 fluoxymestérone
@@ -1501,6 +1603,7 @@ mazindol
 mépivacaïne
 micafungine
 moutarde azotée
+moxon
 nateglinide
 nintédanib
 Nordazépam
@@ -1525,6 +1628,7 @@ Sarilumab
 saxagliptine
 silibinine
 sparfloxacine
+Spartéine
 substitut du lait
 sympatholytique
 tazarotène
@@ -1544,9 +1648,11 @@ ZMapp
 4-hexylrésorcinol
 acrivastine
 ado-trastuzumab emtansine
+adrafinil
 agent alkylant antinéoplasique
 ajmaline
 Aloxiprine
+aminoglutéthimide
 amorolfine
 anesthésique général
 anidulafungine
@@ -1586,6 +1692,7 @@ Doripénème
 durvalumab
 Dyclonine
 enoxacine
+épinastine
 étravirine
 fenbendazole
 fenoldopam
@@ -1627,6 +1734,7 @@ sulfaméthizol
 Symbicort
 tacalcitol
 talinolol
+taxane
 telaprevir
 tériflunomide
 Térizidone
@@ -1640,6 +1748,7 @@ trichlorfon
 valdecoxib
 vincamine
 vinpocétine
+Virus like particles
 zalcitabine
 zofenopril
 acide carglumique
@@ -1706,6 +1815,7 @@ lubiprostone
 métacycline
 Métolazone
 nalorphine
+néfopam
 nératinib
 nicergoline
 nifuroxazide
@@ -1722,6 +1832,7 @@ pomalidomide
 Pralatrexate
 prucalopride
 reteplase
+sertaconazole
 sirop d'ipéca
 Sotrovimab
 stupéfiant
@@ -1852,6 +1963,7 @@ spirapril
 stiripentol
 sulfinpyrazone
 tafamidis
+tégafur
 telbivudine
 témocilline
 temsirolimus
@@ -2009,6 +2121,7 @@ Fesoterodine
 fléroxacine
 galcanézumab
 ganirélix
+gomme de Sterculia
 gomme karaya
 hexamidine
 Inhibiteur de l'intégrase
@@ -2054,6 +2167,7 @@ Romosozumab
 rosoxacine
 Sacubitril/valsartan
 sulbutiamine
+sultopride
 téduglutide
 télavancine
 Tocolytique
@@ -2119,6 +2233,7 @@ ibalizumab
 ifenprodil
 Inhibiteur du TNF
 interféron alfa-2b
+iode
 isépamicine
 ixazomib
 Ketanserin
@@ -2252,6 +2367,7 @@ pinacidil
 Pramiracetam
 Propivérine
 proxymétacaïne
+R-thyroxine
 ravulizumab
 reposal
 Rucaparib
@@ -2261,6 +2377,7 @@ Supplément de calcium
 talbutal
 Tavaborole
 Tertatolol
+thiocolchicoside
 tildrakizumab
 undécanoate de testostérone
 uramustine
@@ -2276,6 +2393,7 @@ xanthotoxine
 ZyCoV-D
 Acétate d'estradiol cypionate/médroxyprogestérone
 agoniste adrénergique
+antagoniste de la nicotine
 antagoniste nicotinique
 anti-transpirant
 Anticoagulant oral direct
@@ -2374,6 +2492,7 @@ chlorphenoxamine
 chlorproéthazine
 Clofoctol
 Crofelemer
+démecolcine
 démégestone
 dopexamine
 dropropizine
@@ -2420,6 +2539,7 @@ salicylate de potassium
 Satraplatin
 Spesolimab
 Sputnik Light
+stimulant cardiaque
 sulfamoxole
 Sulfonate d'alkyle
 taliglucérase alfa
@@ -2611,6 +2731,7 @@ antinéoplasique dérivé du platine
 Antivitamine K
 cathartique
 catumaxomab
+clobenzorex
 cobimétinib
 Copanlisib
 Crospovidone
@@ -2642,6 +2763,7 @@ Naproxcinod
 Nirsevimab
 Noréthandrolone
 Obiltoxaximab
+oléate d'éthanolammonium
 Oxétacaïne
 palmitate de colfosceril
 paraméthasone
@@ -2679,6 +2801,7 @@ Viltolarsen
 actinomycine
 albiglutide
 Aminoacridine
+ancrod
 antiasthmatique
 autovaccin
 bulévirtide
@@ -2723,6 +2846,7 @@ vaccin de synthèse
 vaccin grippal vivant atténué
 Vélagliflozine
 Acétylleucine
+advil
 afelimomab
 agoniste GABA
 alglucérase
@@ -2822,6 +2946,7 @@ efmoroctocog alfa
 éponge de gélatine résorbable
 Facteur IX recombinant
 fluoroestradiol f-18
+Hormone antidiurétique
 hydrotalcite
 Iberogast
 insuline lente
@@ -2834,6 +2959,7 @@ miotique
 moroctocog alfa
 Naftazone
 neuroprotecteur
+nitrite de n-amyle
 nitrite de n-pentyle
 Paralen
 pipenzolate
@@ -2851,12 +2977,14 @@ vasoconstricteur
 vasopressine
 acide alimentaire
 action pharmacologique
+adrénergique
 agent adrénergique
 agent alkylant
 agent anti-démence
 agent antiviral
 agent de radioprotection
 aldesleukine
+alli
 Altafur
 Anti-propulsif
 antibiotique antinéoplasique
@@ -2865,7 +2993,6 @@ antihelminthique antinématode
 antimaniaque
 antiulcéreux
 antiviral à action directe
-aspirine
 atorvastatine/périndopril/amlodipine
 Atsipol
 azilsartan
@@ -2916,6 +3043,7 @@ somatropine recombinant
 Susoctocog alfa
 Tegretol
 thiazolidinedione
+thiopental
 thymoleptique
 trospium
 ulipristal
@@ -2932,6 +3060,7 @@ Verorab
 Viagra
 vonicog alfa
 Œstroprogestatif
+2care4
 A-MethaPred
 Abasaglar
 Abasaglar KwikPen
@@ -2950,7 +3079,6 @@ ABSIMKY
 Abstral
 Acarizax
 Accofil
-Accord
 Aceinhib
 Aciclodan
 Addyi
@@ -2985,6 +3113,7 @@ Krka
 Lonsurf
 Loradamed
 Macure
+medac
 Medical Valley
 Medrol
 Metacam
@@ -2998,3 +3127,968 @@ Noriday
 Norinyl
 Norquen
 Olpha
+Ortho-Novum
+Otezla
+Oxycontin
+Panodil
+Panodil Brus
+Panodil Extra
+Panodil Hot
+Panodil Junior
+Panodil Zapp
+ProAir
+Probiopur 5M gél. FL/30
+Proventil
+Qilu
+Qlearquil Allergy Relief
+Razadyne
+Rexulti
+Sabervel
+SAD
+Sandoz
+Saxenda
+Serevent
+Sildenafil Teva
+Solu-Medrol
+Stada
+Synagis
+Tamiflu
+Tavist Non-Sedating
+Tazicef
+Tecfidera
+Teva
+Transderm Scop
+Tygacil
+ventoline
+Victoza
+Viread
+Vivanta
+Wainua
+Wal Zyr D
+Wal-itin
+warfarin
+Xadago
+Xarelto
+Zentiva
+Zomig
+Zyban
+medicament
+alcool de grain
+alcool éthylique
+alkohol
+esprit de vin
+esprit-de-vin
+EtOH
+Flegmasse
+Cocaïnomane
+Cocaïnomanie
+Cockaïne
+Cockkaïne
+Cokaine
+Globule rouge
+Globules rouges
+Hematie
+Hématie
+Hématies
+diacétylmorphine
+diamorphine
+heroine
+héroine
+héroïnomanie
+Rabla
+Caféïne
+cafeine
+matéine
+méthylthéobromine
+méthylthéophylline
+Stinergic
+théine
+thénine
+acide acetique
+acide ethanoique
+acide éthanoique
+AcOH
+CH3-COOH
+CH3COOH
+HOAc
+acide chlohydrique
+acide chloridrique
+acide chlorydrique officinal
+acide muriatique
+esprit de sel
+HCl
+HCl aq
+epinéphrine
+Bicarbonate De Soude
+Carbonate acide de sodium
+carbonate monosodique
+CHNaO3
+Épitestostérone
+Hydrogénocarbonate de sodium
+Monohydrogénocarbonate de sodium
+NaHCO3
+PIF
+acide carbolique
+acide phénique
+Plaquettaire
+Plaquettes sanguines
+plasmatique
+pPlasma artériel
+CON2H4
+Perlurée
+Uree
+ClNa
+Gluculose
+Lévulose
+NaCl
+vaccin contre le Covid-19
+ibuprofene
+ibuprophène
+Ester trinitrique du glycérol
+Trinitrate de glycéryle
+millepertuis commun
+Millepertuis officinal
+Millepertuis perfore
+Millepertuis perforé
+acide aminoacétique
+Gly
+glycocolle
+Gro
+H2N-CH2-COOH
+Occytocine
+Ocytocique
+Circadin
+Hormone du sommeil
+analgesique
+antidouleur
+eau oxygenee
+eau oxygenée
+eau oxygénée
+hydropéroxyde
+perhydrol
+peroxyde d'hydrogene
+péroxyde d'hydrogène
+acide L-lactique
+Ecsta
+Ecstasie
+Ecstazy
+Ectasy
+Emma
+Extasy
+lactique
+Xta
+Anti-oxydant
+Anti-oxydants
+Antioxygène
+cobalamine
+facteur extrinsèque
+sal d'amoniak
+acide boracique
+Acide x-phénylacrilique
+Acide x-phénylacrylique
+benzedrine
+benzèdrine
+benzédrine
+borate d'hydrogène
+CHCl3
+Freon 20
+TCM
+trichlorométhane
+Gaz hilarant
+Oxyde de diazote
+Oxyde nitreux
+Protoxide d'azote
+Tétraborate de sodium
+Écorce du Pérou
+bacille Calmette Guérin
+bacille Calmette-Guérin
+bacillus Calmette-Guérin
+Codéïne
+diéthyl éther
+diéthyléther
+ether diethylique
+éther éthylique
+éther sulfurique
+éther vitriolique
+éthéromanie
+éthoxyéthane
+oxyde d'éthyle
+oxyde de diéthyle
+Sulfate cuprique
+æther sulfurique
+æther vitriolique
+acétate de choline
+KCl
+Noradréline
+acide 2-hydroxybenzoïque
+acide orthoxybenzoïque
+vitamine H
+Collagene
+Procollagène
+thymoanaleptique
+botuline
+électrocortine
+sel de Glauber
+sulfate de soude
+Toxine botulinique
+vaccin BioNTech
+Vaccin BioNTech COVID-19
+vaccin Pfizer-BioNTech
+Vistabel
+Adénosinergique
+CaCl2
+Heparine
+Novazam
+Vallium
+androgene
+antiandrogène
+hormones androgéniques
+oxyde azotique
+acide oméga-3
+antibactérien
+Contergan
+germicide
+Kevadon
+Neurosedyn
+Omega 3
+Oméga 3
+Omega-3
+Oméga-3
+Phénolphtaleine
+Phénolphtaleïne
+Softenon
+Softénon
+Talimol
+Anti-psychotique
+méthylphenidate
+opioide
+Xylocaïne
+Corticostimuline
+Corticotrophine
+Corticotropine
+Diuretique
+Hormone adrénocorticotrope
+MgSO4
+sel anglais
+vaccin Moderna
+Acide g-amino butyrique
+Acide g-aminobutyrique
+AlCl3
+cortico-stéroide
+corticoide
+corticoides
+corticostéroide
+corticostéroides
+Equitam
+glucocorticostéroïde
+Lendormine
+Temesta
+trichlorure d'aluminium
+Aacidexam
+Abboticine
+creme solaire
+dihydrohydroxycodéine
+écran solaire
+écran total
+Glucitol
+Gulitol
+Aleve
+Apranax
+Capsaicine
+Capsicine
+charbon activé
+charbon de bois activé
+charbon végétal médicinal
+Excitant
+Mopral
+Naproxene
+beta bloquant
+bêta bloquant
+bêta bloqueur
+beta-bloquant
+béta-bloquant
+beta-bloqueur
+bêta-bloqueur
+bêtabloquant
+bêtabloquants
+Delta9-tétrahydrocannabinol
+GSH
+Hallucinogene
+Hormone thyréo-stimulante
+huile de castor
+Plantes hallucinogènes
+Psychodysleptique
+Psychotomimétique
+tétrahydrocannabinol
+Thyreostimuline
+Thyrotropine
+β-bloquant
+β-bloqueur
+dépendance aux somnifères
+Glucocorticoide
+NaNO2
+nitrite de soude
+somnifère
+somnifères
+Bleu de methylene
+bleu de phénylène
+burundanga
+Chlorure de méthylthioninium
+Méthylthioninium
+NaClO
+NaOCl
+oséltamivir
+vaccin hépatite B
+acetate de sodium
+bleu de Berlin
+bleu prussien
+CH3COONa
+éthanoate de sodium
+ferrocyanure ferrique
+stérilet
+carbamazepine
+HCTZ
+HCZ
+Hexaméthylènetétramine
+Héxamine
+MgCl2
+Steroide anabolisant
+Stéroide anabolisant
+Stéroïdes anabolisants
+Urotropine
+Avaxim
+gardénal
+Antacide
+Anti-acide
+Anti-bactérien
+anti-bactériens
+Anti-histaminique
+biocide
+Cephalosporine
+Chloropromazine
+Cortizone
+dextrométhorphan
+dextromethorphane
+DXM
+Gentamycine
+hyposulfite de sodium
+KClO4
+métamizole
+Pregabaline
+RRO
+Séroquel
+vaccin ROR
+C2HBrClF3
+Cephalexine
+CF3-CHClBr
+CHI3
+Dépakine
+diméthyl sulfoxyde
+hydrate de magnésie
+hydroxyde de magnesium
+Isolactose
+lait de magnésie
+magnésie hydratée
+Modasomil
+Modiodal
+Pentrite
+sulfinylbisméthane
+Triiodométhane
+Virgyl
+ZnCl2
+Beta-carotène
+bétacarotène
+gel hydroalcoolique
+Gonadotropine chorionique
+Hormone chorionique gonadotrope
+Human chorionic gonadotrophin
+Lactobacille
+Primperan
+Sub
+Suboxone
+Subu
+Subutex
+Vitamine A1
+Β-carotène
+Anti-pyrétique
+Antibiotique bêta-lactame
+Antibiotique beta-lactamine
+Antipyretique
+Béta lactamine
+Béta-lactamine
+Bêta-lactamine
+chitosamin
+Cis-diamminedichloroplatinum
+Dihydroxyphénylalanine
+Fébrifuge
+Fluoréscéine
+Nautamine
+Plavix
+Pyoverdine
+Tavanic
+Uranine
+C2HCl3
+Calaba
+Chlorure D'éthyle
+Chlorure d'ethyle
+chlorure ferreux
+diméthylxanthine
+Éther muriatique
+Novocaïne
+TCE
+trichlo
+trichlore
+trichloréthène
+trichlorethylene
+trichloroéthène
+trichloroéthylène
+vaccin contre la rage
+vaccin Janssen
+Betaloc
+Cerebrex
+neomycine
+Zyloric
+analyse urinaire
+Antabus
+Anti-convulsivant
+Anti-épileptique
+anti-fongique
+Anticomitial
+Anticomitiaux
+Anticonvulsant
+Anticonvulsif
+Antiepileptique
+Artemisinin-based Combination Treatment
+Colécalciférol
+Espéral
+Hormone thyroidienne
+Hormones thyroïdiennes
+Norset
+Resorcine
+Résorcinol
+Thyroïdienne
+Triïodothyronine
+Vitamine D3
+Anti-hypertenseur
+AntiCD20
+Cholecystokinine
+Dodécylsulfate de sodium
+Glycoside cardiotonique
+Hétéroside cardiotonique
+Hétérosides cardiotoniques
+Hypotenseur
+IDEC-C2B8
+Laurylsulfate de soude
+Mounjaro
+Secretine
+Sodium dodécylsulfate
+station de transfusion sanguine
+Traitements contre l'hypertension
+vitamine D2
+acide 4-amino-benzoïque
+acide para-aminobenzoique
+acide para-aminobenzoïque
+acide paraaminobenzoïque
+Acide pyridine-carboxylique-3
+CaCN2
+Célestène
+créosoté
+depresseur
+Gonadonostimuline
+Gonadostimuline
+Gonadotropine
+gouttes oculaires
+gouttes ophtalmiques
+hormones gonadotropes
+ketoprofene
+oxacyclopropane
+Creme hydratante
+Crèmes hydratantes
+Mineralocorticoide
+Monazole
+Permethrine
+Acide alpha-lipoïque
+Acide azelaique
+amphotericine B
+Antagoniste du calcium
+anti inflammatoire
+Anti-métabolite
+antiinflammatoire
+Bloqueurs de canaux calciques
+drogues psychédéliques
+Hormone thyreotrope
+Immuran
+lait infantile
+Lipoate
+Neurolithium
+préparation infantile
+préparation pour nourrisson
+psychedelique
+Sels de lithium
+Seresta
+Stratera
+Stratéra
+Strattera
+Tenofovir
+Teralithe
+Téralithe
+Thyréolibérine
+ZYVOXID
+Acetate de calcium
+anthelmintique
+Antidepresseur tricyclique
+antihelminthique
+Bactrim
+chlorure de méthylrosanilinium
+esoméprasole
+esoméprazole
+IgG
+Tartarate de monopotassium
+Tartrate monopotassique
+Tartre
+Violet cristallisé
+violet de cristal
+violet de Paris
+Acide indigodisulfonique
+Acide indigosulfonique
+Anesthesique local
+Anxyrex
+Apriso
+Asacol
+bicarbonate de potasium
+bicarbonate de potassium
+Decazole
+Floxyfral
+Hyosciamine
+Ipocal
+L-tétramisole
+Levasole
+Lialda
+Mesacol
+Pilule du lendemain
+Rowasa
+Salofalk
+Tramisole
+Tretinoine
+Trétinoine
+Vermisol
+5-hydroxytestostérone
+Andractim
+Anti-diabétique
+Antidiabetique
+Antidiabétiques oraux
+baclofene
+Carbapeneme
+clomiphène
+Eosine
+ergotine
+gomme Guar
+guar
+IMAO
+Inhibiteur Des Monoamine Oxydases
+mèche
+Normison
+Pentahydroxyethanoate de calcium
+rapamycine
+Temazépam
+3-O-rutinosylquercétol
+anti-sérum
+Phenacetine
+Poly oxyde d'éthylène
+Polyoxyéthylène
+Rutine
+sérothérapie
+sérumthérapie
+Sophorine
+Stanabol
+vaccin contre la variole
+Œstriol
+ARA2
+C9H9HgNaO2S
+GLP-1
+Incretine
+LDX
+Leurre hormonal
+Méropénème
+Merthiolate
+Méthicilline
+Modulateur Endocrinien
+Oestromimétique
+orthophosphates de sodium
+Perturabeurs endocriniens
+Perturbateur hormonal
+Perturbateurs endocrinien
+Perturbateurs endocriniens
+Perturbateurs hormonaux
+Perturbation endocrinienne
+Perturbation hormonale
+phosphates de Sodium
+Phyto-estrogène
+Phyto-oestrogène
+phytoménadione
+Pseudo-hormones
+Sirdalud
+Thimérosal
+Vitamine K1
+Xéno-œstrogène
+Xénoestrogène
+acide mandelique
+acide phénylglycolique
+agent sympathomimétique
+Bleomycine
+citrate de potassium
+Dalmadorm
+Déféroxamine
+Desferal
+drogue adrénergique
+Esérine
+Ésérine
+Mifégyne
+Myfégine
+Pilule abortive
+acide gamolénique
+Acide Γ-linolénique
+Acide γ-linolenique
+Anti-émétique
+Antiemetique
+Ara-C
+Aracytine
+C6H8ClN7O
+Distilbène
+facteur de Stuart-Prower
+facteur X
+FNF
+merbromine
+Modamide
+Stilboestrol-Borne
+sulfate de chondroitine
+Urbanyl
+Hydroxycobalamine
+Tranxène
+Tranxilium
+WAY-GAR-936
+Astringente
+Buscopan
+DBP
+Dioctyl sulfosuccinate de sodium
+Facteur VII
+klinomycine
+Medicament orphelin
+médicament sous ordonnance
+Méthotriméprazine
+Narcotine
+Navelbine
+Noretindrona
+Raloxifen
+Spasfon
+Spiriva
+Tabex
+tianéptine
+tioguanine
+Trilifan
+Vasoactive instinal peptide
+Vasoactive intestinal hormone
+vitamine K3
+Cypermethrine
+Décontracturant
+Ertapénème
+NaBO3
+Priligy
+SeS2
+sulfure de selenium
+vaccin vivant
+Antiagregant
+Beclometasone
+benzathine pénicilline G
+cholestyramine
+cofacteur de la ristocetine
+Facteur von Willebrand
+Ixel
+Levomilnacipran
+Mélasol
+métandiénone
+méthandiénone
+Na2SeO3
+netilmicine
+Nuctalon
+PTTa
+sel de benzylpénicilline dibenzyléthylènediamine
+Sélénite
+Selenite de sodium
+Sulfamides hypoglycémiants
+Sulfonyluré
+Sulfonyluree
+Ti-tree
+vaccin tué
+Virus inactivé
+Adixone
+Benzonidazole
+Calcipotriène
+cromoglicate
+Defanyl
+Deltamethrine
+diméthylfumarate
+Enfurvitide
+Fuzeon
+Fuzéon
+Imipénem
+Terfluzine
+Acide pimémidique
+Bromélaïne
+bromélaïnes
+Bromeline
+daproptérine
+hypolipidémiant
+Phenolsulfonephtaleine
+Phénolsulfonephtaléine
+Rouge de phenol
+Rouge phenol
+Rouge phénol
+saproptérine
+tetrahydrobiopterine
+Acide glycyrrhizinique
+agent bloquant alpha-adrénergique
+AlPO4
+amodiméthicone
+amodimétichone
+anti-parasitaire
+anti-parasite
+Antidiarrheique
+bloqueur d'adrénorécepteurs alpha
+bloqueur d'alpha-adrénorécepteurs
+bloqueur des récepteurs alpha-adrénergiques
+carteolol base
+Coramine
+diméthicone
+diméthyl-polysiloxane
+diméthylpolysiloxane
+dimétichone
+diméticone
+essence d'eucalypte
+Étidronate
+Glycyrrhyzine
+inhibiteur d'alpha-adrénorécepteurs
+inhibiteur des récepteurs alpha-adrénergiques
+mécobalamine
+PMDS
+préparation hypocalorique
+Sang artificiel
+stérilet au cuivre
+Substituts du sang
+Truxal
+trypanicide
+trypanocide
+5-aza
+ADNase
+Cerivastatine
+Desoxyribonuclease
+Diuretique de l'anse
+Diurétiques de l'anse
+G-Strophanthine
+Gastrografine
+méthylphénobarbital
+NOCTAMIDE
+Ouabaïne
+Plantago sempervirens
+Tétrahydroaminacrine
+Thermonucléase
+vaccin contre le SIDA
+Acide chenodeoxycholique
+adénosylcobalamine
+antagonistes du calcium
+antihémorragique
+Céfpirome
+Cefpirone
+dibencozide
+Facteur XIIIa
+inhibiteurs calciques
+Risédronate
+Soliris
+Xatral
+1alpha-OH D3
+Alfacalcidolum
+Alsiodol
+Anorexigene
+Coupe-faim
+djinesein
+djineseing
+djineseingue
+djinesin
+djinesing
+djinesingue
+Equilium
+Josacine
+Moutarde à l'azote
+Moutardes Azotées
+Moutardes azotees
+néopynamine
+Nordaz
+Seriel
+Silybine
+Sivextro
+substituts du lait
+Tiapridal
+triméprazine
+DYNASTAT
+hexylrésorcinol
+Interféron bêta
+Limécycline
+mépyramine
+métrifonate
+métriphonate
+para-aminopyridine
+adjuvant vaccinal
+Adjuvants vaccinaux
+adjuvants vacciniques
+Anti-moussant
+Becampicilline
+charbon de Belloc
+Diuretique epargneur de potassium
+immunoactivateur
+immunoadjuvant
+immunopotentialisateur
+méthacycline
+Myolastan
+Panox gé
+Phenicol
+phénothrine
+Raxone
+vaccin sous-unité
+agent antinéoplasique
+anti-mitotique
+antinéoplasique
+Fluostigmine
+méthysergide base
+molécule anticancéreuse
+oncostatique
+Tyrotricine
+vaccin CureVac
+agent anesthesique volatil
+Dipiperon
+emetique
+gaz anesthésiant
+Gerbant
+hydroxy-4-butyrate de sodium
+Neurostéroïde
+p-amino phényl sulfonyl guanidine
+Tractocile
+Tractosil
+vomitif
+Anti-intégrases
+Anti-prurigineux
+Antithyroidien
+Arcalion
+estrogènes sulfoconjugés équins
+Inhibiteur d'integrase
+Inhibiteur d'intégrase
+Inhibiteurs d'intégrase
+Médiator
+NEPRESSOL
+octylène glycol
+POLARAMINE
+Polystyrènesulfonate
+Agent chimiotherapeutique
+Amplixa
+Anti-TNF alpha
+Galafold
+Hidrasec
+iduronidase
+Isepamicine
+Neulactil
+Neuleptil
+Péricyazine
+produit dopant
+Propériciazine
+Prostaglandine F2α
+Tercian
+Tiorfan
+chlorhydrate de kéracaïne
+Inhibiteur de la phosphodiesterase
+kéracaïne
+Keratolytique
+Lepirudine
+moutarde uracile
+Pancreatine
+sels d'or
+antisudoral
+Cyclofem
+EC/MPA
+Mélagatran
+Nouvel anticoagulant oral
+Stresam
+16-oxo eburnone
+Acide paraamino-hippurique
+adrénolytique
+agent adrénolytique
+agent anti-adrénergique
+agent bloquant adrénergique
+amino-acétate d'aluminium
+antagoniste des récepteurs adrénergique
+anti-adrénergique
+bloqueur adrénergique
+bloqueur de récepteurs adrénergiques
+Covatine
+EURELIX
+inhibiteur adrénergique
+médicament adrénolytique
+Tonicardiaque
+bélantamab mafodotine
+inducteur de l'ovulation
+Infanrix Hexa
+Isoméride
+Méthyldigoxine
+Metildigoxine
+PHMB
+RRO-Var
+piméthixène
+tuaminoheptane
+VariZIG
+Xigris
+adipiodone meglumine
+Agent mucoprotecteur
+amoébicide
+Antivitaminiques K
+éprazinone base
+hydrogeno-aspartate de magnésium
+NILEVAR
+Sel de platine
+cristal meth
+metamphétamine
+néomycine B
+Pervitin
+Pervitine
+yaa baa
+agonistes des récepteurs gabaergiques
+antianémiant
+antianémique
+Cédiranib
+Infergen
+Oral Turinabol
+Répulsifs anti-alcooliques
+AASAL
+anticoccidien
+Iopodate de sodium
+médicament contre la lèpre
+spécialité médicamenteuse
+vitamine B9
+analgésique non opioïde
+anti-NGF
+Antigoutteux
+Hormone ADH
+Hormone anti-diurétique
+produits dermatologique
+Rabipur
+agents adrénergiques
+antiviraux à action directe
+Gleptosil
+Heptomer
+Iron heptonate
+laxatif de lest
+laxatif de masse
+lévofolinate de calcium
+médicament adrénergique
+médicaments adrénergiques
+somatotropine recombinant
+Clarityne
+Méloxicam
+pentosane polysulfate de sodium

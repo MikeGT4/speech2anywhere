@@ -1,31 +1,64 @@
 waterstof
-zuurstof
 koolstof
 aluminium
+helium
 stikstof
+zwavel
 lithium
+lood
+tin
 desoxyribonucleïnezuur
 natrium
+kwik
 calcium
 beryllium
+neon
+zink
+eiwit
 magnesium
+proteïne
 silicium
 aardolie
+kalium
+fluor
+fosfor
+uraan
+chloor
+boor
+argon
+titaan
 diamant
+chroom
+jood
+arseen
+arsenicum
+kobalt
 platina
+tabak
 mangaan
+nikkel
 biochemie
 krypton
 gallium
 vanadium
+barium
+radium
+broom
 francium
 organische chemie
+radon
+seleen
 cadmium
 scandium
 strontium
 antimoon
+cesium
 germanium
 rubidium
+xenon
+bismut
+koolhydraat
+koolhydraten
 wolfraam
 iridium
 niobium
@@ -34,21 +67,28 @@ polonium
 koolstofdioxide
 palladium
 molybdeen
+osmium
 hafnium
 tantaal
 telluur
 yttrium
+astaat
 technetium
+indium
+rodium
 ruthenium
 thorium
 zirkonium
 actinium
 neptunium
 lanthaan
+renium
 thallium
 europium
 rutherfordium
+cerium
 hassium
+antibioticum
 samarium
 seaborgium
 californium
@@ -62,6 +102,7 @@ meitnerium
 promethium
 protactinium
 vitamine
+curium
 dysprosium
 fermium
 neodymium
@@ -71,9 +112,11 @@ praseodymium
 berkelium
 darmstadtium
 terbium
+erbium
 lawrencium
 mendelevium
 röntgenium
+base
 ethanol
 holmium
 ytterbium
@@ -84,89 +127,131 @@ chemische reactie
 thulium
 livermorium
 flerovium
-benzine
+legering
 tennessine
 anorganische chemie
+lipide
 ribonucleïnezuur
 fysische chemie
 methaan
+analytische chemie
 analytische scheikunde
 ammoniak
+penicilline
 aminozuur
 cocaïne
 glucose
+marmer
 thermometer
 aardgas
 messing
 acetylsalicylzuur
+aspirine
+chemische binding
 nicotine
 olijfolie
 supernova
 koolstofmonoxide
+neutrale oplossing
+PHdd
 cholesterol
+koolwaterstof
+quark
+ozon
 vitamine C
 barnsteen
+kwarts
+opium
 paracetamol
+robijn
+alkaan
+alkanen
 zwavelzuur
 insuline
 zetmeel
 bladgroen
+chlorofyl
 heroïne
 kalksteen
 hemoglobine
+organische verbinding
 saffier
 covalente binding
 cafeïne
 petroleum
+polymeer
 grafiet
+nucleïnezuren
 nucleïnezuur
 salpeterzuur
 azijnzuur
+alkeen
 benzeen
 groene thee
 zoutzuur
 cellulose
+gips
 morfine
 verbranding
 mortier en vijzel
 adrenaline
+epinefrine
 destillatie
 dopamine
 elektrolyse
 natriumwaterstofcarbonaat
 sacharose
 testosteron
-explosie
 ionaire binding
+ionische binding
 spectroscopie
+fenol
 oxidatietoestand
+oxide
 redoxreactie
 vitamine A
 vitamine D
+aldehyde
+alkyn
 katalyse
 kristallografie
 natriumhydroxide
+nucleotide
+asbest
 chemische technologie
+elektronegativiteit
 lysergeenzuurdiethylamide
+ureum
+carbonzuur
 explosies in Beiroet
 explosies in haven Beiroet
 fructose
 natriumchloride
+osmose
 Ethaan
+ether
 methanol
 adenosinetrifosfaat
 calciumcarbonaat
+ester
 geochemie
 ibuprofen
 metamfetamine racemaat
+mica
+oestrogeen
 sildenafil
 siliciumdioxide
+steroïde
 Toengoeska-explosie
 alfadeeltje
+amine
 lactose
+asfalt
 citroenzuur
 elektrochemie
+etheen
 gietijzer
+haliet
 nitroglycerine
 thiamine
 tritium
@@ -174,12 +259,22 @@ kaliumnitraat
 olibanum
 riboflavine
 roestvast staal
+Acetyleen
+anorganische verbinding
+ethyn
 karamel
 palmolie
+peptide
 zwaveldioxide
+aceton
+butaan
 chromatografie
 glycerol
 glycine
+kamfer
+keton
+macromoleculen
+macromolecuul
 mierenzuur
 natriumcarbonaat
 oxytocine
@@ -187,13 +282,20 @@ propaan
 Trinitrotolueen
 vitamine K
 adenine
+agar
 calciet
 diwaterstofcarbonaat
 ketamine
 melatonine
+molaire massa
 polysacharide
 waterstofsulfide
+fosfaat
+functionele groep
 ionisatie
+rubber
+vetzuur
+vitamine B9
 waterstofperoxide
 alanine
 allotropie
@@ -202,63 +304,90 @@ formaldehyde
 fosforzuur
 glycogeen
 hematiet
+korund
 MDMA
 Melkzuur
 polyvinylchloride
 serotonine
 vitamine E
+antioxidant
 calciumhydroxide
 cytosine
 hydrolyse
+monosacharide
+Nitraat
+pyriet
 waterstofcyanide
 chitine
+Feromonen
+feromoon
 Grote brand van Londen
 guanine
 maltose
+maté
 Mononatriumglutamaat
+aluin
 aluminiumoxide
 ammoniumchloride
 ammoniumnitraat
 glucagon
 melasse
+saliniteit
+titratie
+toxine
 amfetamine
 boorzuur
 brandstofcel
 calciumoxide
 chloroform
+cyanide
 dichloordifenyltrichloorethaan
 gelatine
 grafeen
+Interne energie
+inwendige energie
 kaliumpermanganaat
 koningswater
+massaspectrometrie
 mosterdgas
 oxaalzuur
 polyetheen
+radicaal
 zwaar water
 cortisol
 distikstofmonoxide
+Ionisatie-energie
+ionisatiepotentiaal
 kwantumchemie
 natriumtetraboraat
+sarin
 statistische mechanica
 thymine
 waterstofbrug
 adsorptie
 fotochemie
+fotochemisch
 glutaminezuur
+gluten
+kinine
 natuurbrand
+ribose
 tolueen
 trechter
 verwering
 arginine
+B-vitamines
 codeïne
 Diethylether
+disacharide
 fluoriet
 kaliumhydroxide
 kaoliniet
 kopersulfaat
 propeen
-titaniumdioxide
-titaniumoxide
+titaandioxide
+titaanwit
+vitamine B
 wit kopersulfaat
 zirkoon
 Acetylcholine
@@ -267,30 +396,41 @@ bilirubine
 fentanyl
 histamine
 kaliumchloride
+lpg
 metaalbinding
 Moord in Sarajevo
 Moord op Frans Ferdinand
 naftaleen
 noradrenaline
+norepinefrine
 transcriptie
+triacylglycerol
 tryptofaan
+valine
 Weduweverbranding
 zonnebloemolie
 zwarte thee
 biotine
+carbonaat
 chalcedoon
 chemische kinetiek
+chloride
 handhygiëne
 hydrazine
 kaliumcarbonaat
+Kinetiek
 kokosolie
+kokosvet
 leucine
+monomeer
 n-pentaan
 natriumnitraat
 pantotheenzuur
 polystyreen
 salicylzuur
+uracil
 urinezuur
+Vitamine H
 aceetaldehyde
 bubbelthee
 collageen
@@ -300,15 +440,26 @@ glutamine
 histidine
 isoleucine
 Purine
+reuzel
+tannine
 thermochemie
 Tyr
 tyrosine
+amide
 anabolisme
+fosfolipide
+hydroxide
 Methadon
 methionine
+octaan
+spinel
+Sulfaat
 amalgaam
 ammonium
 aniline
+bariet
+cokes
+dampdruk
 Desoxyribose
 eiwitsynthese
 galactose
@@ -317,8 +468,12 @@ interferon
 n-hexaan
 Notre-Dame-brand van 2019
 olivijn
+peroxide
+proteine biosynthese
+serine
 aldosteron
 benzoëzuur
+caroteen
 DL-asparagine
 DL-lysine
 galvanisch element
@@ -335,7 +490,10 @@ waterstofchloride
 zilvernitraat
 zinkoxide
 adenosine
+amber
 aspartaam
+barbituraat
+Barbituraten
 calciumchloride
 diazepam
 fosgeen
@@ -354,10 +512,13 @@ tetracycline
 vulkanisatie
 ammoniumsulfaat
 amylase
+androgeen
 bariumsulfaat
 diclofenac
 Ethaandiol
-Etheenglycol
+Ethyleenglycol
+Heterocyclische
+heterocyclische verbinding
 lignine
 oplaadbare batterij
 pectine
@@ -368,6 +529,7 @@ pyridine
 pyrolyse
 sertraline
 streptomycine
+teflon
 zuur-basereactie
 boterzuur
 caseïne
@@ -378,7 +540,9 @@ palmitinezuur
 silicone
 stikstofmonoxide
 styreen
+thiol
 wasgoed
+chloorfluorkoolstofverbinding
 creatine
 doxycycline
 ethylacetaat
@@ -390,6 +554,8 @@ haardroger
 Indool
 kaliumcyanide
 metformine
+Omega 3-vetzuren
+plaaster
 pleister
 polymerisatie
 pyrodruivenzuur
@@ -398,14 +564,18 @@ sesamolie
 stearinezuur
 thalidomide
 thermosfles
+thermoskan
 ununennium
 vitamine B6
 waterstofperchloraat
 waterstofsulfiet
 wijnsteenzuur
 zwaveltrioxide
+alifatische koolwaterstoffen
+alifatische verbinding
 amfibool
 amfoteer
+anthocyaan
 AstraZeneca-vaccin
 azithromycine
 barnsteenzuur
@@ -413,7 +583,9 @@ calorimeter
 chemische synthese
 choline
 efedrine
+furaan
 Gam-COVID-Vac
+glycoproteïne
 hydroxychloroquine
 lidocaïne
 methylfenidaat
@@ -421,9 +593,13 @@ metronidazol
 propofol
 Rijksdagbrand
 sacharine
+Spoetnik V
+synthese
 Taurine
 tetrachloormethaan
+Theoretisch chemicus
 theoretische chemie
+Theoretische scheikunde
 vaccin van AstraZeneca
 2-propanol
 acrylzuur
@@ -433,12 +609,18 @@ Appelzuur
 astrochemie
 calciumcarbide
 corticotropine
+cycloalkaan
 cyclohexaan
 kaliumjodide
+kation
 magnesiumsulfaat
+muskus
+Nitriet
+pincet
 siliciumcarbide
 stikstofoxide
 strychnine
+acetaat
 aluminiumchloride
 arabische gom
 brandstichting
@@ -447,26 +629,36 @@ chlooramfenicol
 chloroquine
 gamma-aminoboterzuur
 glyfosaat
+kraken
 Krater van Derweze
 lorazepam
 Luteïniserend hormoon
 magnesiet
+matcha
 Menthol
 midazolam
 milieuchemie
+neutralisatie
 neutralisatiereactie
+nucleoside
+pentose
 polymeerchemie
 reageerbuis
+rutiel
 theobromine
 transfer RNA
 Trinity
 vinylchloride
 adenosinedifosfaat
 ampicillin
+anion
 antraceen
+bicarbonaat
 Bunsenbrander
+carbide
 cassiteriet
 computationele chemie
+decaan
 dexamethason
 Erytromycine
 Estradiol
@@ -486,6 +678,7 @@ waterstofcarbonaat
 actieve kool
 aflatoxine
 aluminiumhydroxide
+aromatische koolwaterstof
 benzaldehyde
 bupropion
 Calcitonine
@@ -493,6 +686,7 @@ capsaïcine
 coumarine
 erythreen
 fosforescentie
+halogeenalkaan
 ijsthee
 ijzersulfaat
 imidazool
@@ -500,6 +694,7 @@ inuline
 ivermectine
 kaliumchloraat
 kettingreactie
+kevlar
 kruidenthee
 lycopeen
 naproxen
@@ -510,18 +705,25 @@ polyethyleentereftalaat
 propionzuur
 remdesivir
 Rood ijzeroxide
+terpeen
 amitriptyline
 bakeliet
+Castorolie
 ciprofloxacine
+essence de terpentijn
 Fencyclidine
+Glucoside
 glutathion
+glycoside
 hygroscopisch
 koolstofdisulfide
 kryoliet
 malonzuur
 mescaline
 prostaglandinen
+Ricinusolie
 saponine
+sulfide
 Supernova 1604
 terpentijnolie
 Tetrahydrocannabinol
@@ -532,23 +734,30 @@ acroleïne
 Bekerglas
 bisfenol A
 bomaanslag in Oklahoma City
+carotenoïde
 centrifuge
 cyclopropaan
 DNA-polymerase
 etheenoxide
 follikelstimulerend hormoon
 fumaarzuur
+glucocorticoïde
+heemverbinding
 hyaluronan
+hyaluronzuur
 hydrogenering
 lijnzaadolie
 medicinale chemie
 natriumnitriet
 nicotinamide-adenine-dinucleotide
+organisch zuur
 precipitatie
+ricine
 Vaseline
 vlampunt
 waterstoffluoride
 waterzuivering
+xyleen
 aciclovir
 agrochemie
 azijnzuuranhydride
@@ -560,28 +769,37 @@ Cyclotrimethyleentrinitroamine
 dichloormethaan
 ferrichloride
 haloperidol
+hydride
 ijzertrichloride
+indigo
 Limoneen
 methyleenblauw
 natriumbromide
 natriumhypochloriet
 niacine
+nitril
 omgekeerde osmose
 oseltamivir
 oxalonitril
 pindaolie
+pipet
 polyurethaan
 pyridoxine
 Pyrrool
 reactiesnelheid
 scopolamine
+transvet
+Vitamine PP
 witte thee
 1-propanol
 absorptie
 acrylamide
+alpaca
 ammonia
 arachidonzuur
+Berlijns blauw
 biopolymeer
+buret
 cacaoboter
 cetirizine
 chloormethaan
@@ -589,12 +807,14 @@ clonazepam
 Creatinine
 endotherme reactie
 Ethyleendiaminetetra-azijnzuur
+fluroride
 katalase
 kernproef
 marineren
 natriumacetaat
 natriumcyanide
 natriumcyclamaat
+natuurlijke rubber
 natuurrubber
 oxidatie
 oxidatieve fosforylering
@@ -602,6 +822,7 @@ PMMA
 polymethylmethacrylaat
 propranolol
 Pruisisch blauw
+sterol
 substitutiereactie
 thyroxine
 Trypsine
@@ -614,10 +835,13 @@ zuurconstante
 4-hydroxybutaanzuur
 acridine
 additiereactie
+alkadieen
 aluminiumsulfaat
 bissectrice
+bromide
 calorimetrie
 carbamazepine
+catecholamine
 chloorbenzeen
 cyclobutaan
 dubbele binding
@@ -655,11 +879,15 @@ autodafe
 Ayahuasca
 biosynthese
 Chai
+chemische stofeigenschap
+Complex
+coördinatieverbinding
 cyclopentaan
 dextrine
 difosforpentoxide
 dissociatie
 dood door verbranding
+epoxy
 Ethylbenzeen
 fenobarbital
 flunitrazepam
@@ -674,15 +902,18 @@ lithiumchloride
 loodaccu
 maatcilinder
 magnesium carbonate
+membraanpotentiaal
 n-heptaan
 naloxon
 natriumfluoride
+oligosacharide
 protease
 silicagel
 unbinilium
 waterstofjodide
 Xylose
 zidovudine
+aminoglycosiden
 Amlodipine
 amylose
 Arsine
@@ -690,13 +921,16 @@ butanol
 Cafébrand in Crans-Montana
 Cafébrand Le Constellation
 carnitine
+cefalosporine
 chloorpromazine
 clindamycine
 cortison
 dextromethorfan
 digoxine
 gentamicine
+gibberelline
 gluconeogenese
+high-performance liquid chromatography
 hydroxonium
 kaliumdichromaat
 kaliumperchloraat
@@ -708,10 +942,13 @@ methylamine
 methylmalonzuur
 methylpropaan
 montmorilloniet
+nafta
 natriumthiosulfaat
+novitsjok
 pentobarbital
 pregabaline
 quetiapine
+silicate
 zwavelhexafluoride
 abscisinezuur
 acetonitril
@@ -731,8 +968,10 @@ earl grey
 elektrodepositie
 furfural
 gedestilleerd water
+glycolipide
 Halogenering
 halothaan
+Hexose
 inositol
 isoniazide
 jodoform
@@ -749,6 +988,8 @@ modafinil
 natriumjodide
 neopreen
 nicotinamide adenine dinucleotide phosphate
+nitrogroep
+pek
 penta-erytritoltetranitraat
 pethidine
 Propyn
@@ -762,9 +1003,11 @@ zinkchloride
 abacavir
 adenosinemonofosfaat
 Agent Orange
+alcoholische vergisting
 ammoniumcarbonaat
 ammoniumwaterstofcarbonaat
 Arabinose
+aromatische verbinding
 atmosfeerchemie
 bariumoxide
 berylliumoxide
@@ -772,6 +1015,7 @@ bètacaroteen
 buprenorfine
 butanon
 chloorhexidine
+choriongonadotrofine
 Citalopram
 clotrimazol
 colchicine
@@ -800,11 +1044,11 @@ nitromethaan
 nucleobase
 organische synthese
 Ornithine
-Osmiumtetraoxide
-Osmiumtetroxide
+Polaire
 polaire verbinding
 polychloorbifenyl
 retinol
+Risperdal
 risperidon
 tetrodotoxine
 vermiculiet
@@ -818,6 +1062,8 @@ albendazol
 alfalinoleenzuur
 benzylalcohol
 benzylpenicilline
+bèta-lactam-antibioticum
+buteen
 calciumfluoride
 calciumnitraat
 ceftriaxone
@@ -837,6 +1083,7 @@ flatbrand Tai Po 2025
 fluorescein
 Grote brand van Chicago
 indometacine
+jodide
 kaliumfluoride
 lamotrigine
 Levodopa
@@ -854,6 +1101,7 @@ Pseudo-efedrine
 rhodoniet
 rifampicine
 sojaolie
+soldeer
 soldeertin
 specifieke energie
 Tartrazine
@@ -861,9 +1109,12 @@ tautomerie
 tetra-ethyllood
 valeriaanzuur
 vinylacetaat
+xantofyl
+acetaal
 acetofenon
 acetyl-CoA
 acetylchloride
+aldose
 alizarine
 alkylering
 bariumnitraat
@@ -871,6 +1122,7 @@ bifenyl
 boornitride
 calciumoxalaat
 cannabinoïde
+celcultuur
 chloordioxide
 chloorethaan
 clozapine
@@ -886,22 +1138,27 @@ fibrine
 Flavine-adenine-dinucleotide
 gele thee
 guanosinetrifosfaat
+halogenide
 hexadecaan
 hoornblende
 kaolien
 losartan
 maiszetmeel
+Maïzena
 mebendazol
 minerale olie
 Natriumbenzoaat
 natriumthiopental
 perovskiet
 polycarbonaat
+porfyrine
 portlandcement
 procaïne
+Proces van Solvay
 Promethazine
 Propyleenglycol
 ranitidine
+reductor
 ruwijzer
 Selenocysteïne
 sigma-binding
@@ -910,6 +1167,7 @@ Splicing
 sucralose
 supramoleculaire chemie
 Tabun
+talg
 tamoxifen
 theofylline
 thiofeen
@@ -939,6 +1197,8 @@ cupronickel
 disproportioneringsreactie
 Dodecaan
 donor-acceptorbinding
+elektrofiel
+Enol
 escitalopram
 eugenol
 fluorantimoonzuur
@@ -951,6 +1211,9 @@ Kaliumferricyanide
 Kaliumhexacyanoferraat
 Kaliumhexaferrocyanide
 kaliumoxide
+koper-nikkel
+lactam
+lacton
 lithiumhydride
 luminol
 maïsolie
@@ -960,16 +1223,23 @@ minoxidil
 molecuulorbitaaltheorie
 neomycine
 nicotinamide
+nucleofiel
 pantoprazol
 papaverine
+pH-indicator
 polyamide
+polycyclische aromatische koolwaterstoffen
 prednisolon
+scheidingsmethode
+septische put
+silaan
 smeedijzer
 sorbinezuur
 spironolacton
 sylviet
 Thiazool
 trazodon
+vluchtige organische stof
 vuurstorm
 waterstofchloriet
 zilverbromide
@@ -987,10 +1257,10 @@ Boterthee
 capronzuur
 captopril
 cesiumchloride
+chemische potentiaal
 chloraalhydraat
 chloraat
 cholecalciferol
-Chroom
 claritromycine
 covellien
 diantimoontrioxide
@@ -1005,12 +1275,18 @@ galluszuur
 Geraniol
 Gibbsiet
 Glucuronzuur
+glyceride
 guanosine
 helium-3
+Helmholtz vrije energie
+Helmholtzenergie
 Homocysteïne
 hydratiereactie
+ketose
+Lipopolysaccharide
 Loodtetraoxide
 Loodtetroxide
+macrolide
 Methaanthiol
 methylmethacrylaat
 mirtazapine
@@ -1020,15 +1296,19 @@ povidonjodium
 raffinage
 reductie
 resorcinol
-septische put
 sillimaniet
 simvastatine
 SnCl2
 SnCl4
 Sterretje
 sublimaat
+sulfonzuur
+thio-ether
+thymol
 zinksulfide
+zwitterion
 afvalverbranding
+azoverbinding
 Benazir Bhutto
 benzocaïne
 benzylchloride
@@ -1037,17 +1317,18 @@ Bomaanslagen Kerman 2024
 carbon black
 Celluloseacetaat
 cetaangetal
+chinon
 CrO3
 Darjeeling
 desiccator
 detonatie
 Diels-Alder-reactie
-divanadiumpentaoxide
 eliminatiereactie
 ergocalciferol
 Ethambutol
 extractie
 fotodissociatie
+freon
 fulminezuur
 isotretinoïne
 itraconazol
@@ -1065,7 +1346,10 @@ naltrexon
 natriumdodecylsulfaat
 natriumhydride
 nitrofurantoïne
+NMR-spectroscopie
 pi-binding
+polyfenol
+purper
 pyrometer
 resveratrol
 ritonavir
@@ -1079,7 +1363,6 @@ Tirzepatide
 tri-joodnitride
 Tryptamine
 unbibium
-vanadiumpentoxide
 Zelfmoord aanslagen metro moskou
 1-butyn
 4-aminobenzoic acid
@@ -1108,14 +1391,17 @@ cytidine
 dimethylamine
 distikstoftrioxide
 eicosaan
+epoxide
 Ergosterol
 favipiravir
 Fehlingsreagens
 fosfortrichloride
 fytinezuur
 Glyoxaal
+imine
 Invar
 Ionenwisselaar
+isocyanaat
 kaliumacetaat
 ketoconazol
 Ketoprofen
@@ -1135,13 +1421,21 @@ Natuurbranden in het Amazonegebied
 Neopentaan
 nicotinezuur
 nitrering
+nitride
 nitrificatie
 nystatine
+oleum
+Omega 6-vetzuren
 ontledingsreactie
+oxozuur
 paroxetine
+persistente organische verontreinigende stof
 piperazine
 Pyrazine
 Pyrrolysine
+Reactie van Cannizzaro
+sepia
+STEP-analyse
 stibine
 tadalafil
 tereftaalzuur
@@ -1169,11 +1463,14 @@ acetylaceton
 Allantoïne
 amantadine
 amikacine
+anisol
+anorganisch zuur
 Bomaanslag Istanboel 2022
 boortrioxide
 broomethaan
 broomthymolblauw
 Cadaverine
+carbokation
 Carrageen
 Cathinon
 ceftazidim
@@ -1185,6 +1482,7 @@ chloropreen
 copolymeer
 CS-gas
 cyaanamide
+cyanaat
 Cystine
 decaanzuur
 decanteren
@@ -1196,6 +1494,7 @@ flotatie
 formamide
 fosforpentachloride
 ftaalzuuranhydride
+Ftalaat
 Geosmin
 Gluconzuur
 glucosestroop
@@ -1225,17 +1524,20 @@ natriumwaterstofsulfaat
 natriumwaterstofsulfiet
 ontvlambaar
 oxaalazijnzuur
+perchloorethyleen
 permethrin
 piracetam
 polyvinylacetaat
 prednison
+Prodrug
 Pu-er
 sfingosine
 stikstoftrichloride
+superoxide
 tetrachlooretheen
 Thebaïne
+TiCl4
 titaantetrachloride
-titaniumtetrachloride
 vacuümpomp
 vaste oplossing
 verapamil
@@ -1256,6 +1558,7 @@ atenolol
 atomoxetine
 azathioprine
 azelaïnezuur
+azide
 B Cas
 benzoylchloride
 Beta-lactamase
@@ -1263,17 +1566,23 @@ boortrifluoride
 budesonide
 butanal
 cadmiumsulfide
+carbamaat
+carbanion
 Carbazool
 Carbonylsulfide
 cesiumfluoride
 cordieriet
+cycloalkeen
 cyclohexanon
 cyclohexeen
 cyclopropeen
 Cytochroom P450
+dapson
 DEET
 dimethylsulfide
 doxorubicine
+drogen
+eicosanoïde
 ethidiumbromide
 Ethylamine
 explosies op de Krimbrug
@@ -1287,9 +1596,13 @@ Isoamylnitriet
 isocyanic acid
 joodmethaan
 kaliumsulfide
+labuitrusting
+lanoline
+lead
 linezolid
 Lipoic Acid
 lithiumfluoride
+lithiumtherapie
 methacrylzuur
 methylprednisolone
 Muscarine
@@ -1314,6 +1627,7 @@ schietpartij Risbergska 2025
 seleenzuur
 stearine
 Ster van Brahe
+steroïdhormoon
 sulfasalazine
 tenofovir
 tetrafluormethaan
@@ -1321,6 +1635,7 @@ TRH
 unbihexium
 vastestofchemie
 verzinken
+wolvet
 xenontrioxide
 1-pentanol
 2-butanol
@@ -1328,6 +1643,7 @@ xenontrioxide
 Acetylering
 Air India-vlucht 182
 alambiek
+Alkaline
 alkalinebatterij
 apomorphine
 astaxanthine
@@ -1340,6 +1656,7 @@ Benzopyreen
 berylliumchloride
 berylliumhydroxide
 bomaanslag in Bologna 1980
+Boraan
 Borneol
 bosbranden in Portugal 2017
 bradykinine
@@ -1348,6 +1665,7 @@ calciumbromide
 calciumsulfide
 CAM-plant
 Caprolactam
+carbeen
 carvedilol
 Castle Bravo
 cesiumhydroxide
@@ -1357,6 +1675,7 @@ cimetidine
 clonidine
 cloxacillin
 co-trimoxazol
+cyclische verbinding
 daniell-element
 decarboxylering
 dextraan
@@ -1372,12 +1691,16 @@ duivelsdrek
 Esomeprazol
 Eucalyptol
 famotidine
+gevaarlijke goederen
 Haematoxylin
 Hemocyanine
 horlogeglas
+inert gas
 infliximab
+inhibitor
 isochinoline
 kampvuur
+ketocarbonzuur
 koolstofstaal
 kristalviolet
 ledeburiet
@@ -1394,9 +1717,13 @@ nucleofiele substitutie
 onderfosforigzuur
 ontbindingstemperatuur
 Operation Crossroads
+oxalaat
 palmitoleïnezuur
 penta-erytritol
 pentylacetaat
+permanganaat
+pH van de bodem
+Pro-enzym
 Propanal
 pyrogallol
 quercetine
@@ -1417,14 +1744,18 @@ voetwassing
 waterstofbromaat
 waterstofselenide
 waterstoftelluride
+Western blot
 witte fosfor
 1-penteen
 aanslagen in Teheran
+aardopwarmingsvermogen
 Aconitine
 adenylate cyclase
 Adrenochroom
 alcoholdehydrogenase
+alcoholpercentage
 allylalcohol
+ampul
 arachidinezuur
 arsenigzuur
 Azorubine
@@ -1432,6 +1763,7 @@ BBIBP-CorV
 benzofenon
 biljoengoud
 bioreactor
+boraat
 bromazepam
 Bupivacaine
 buspirone
@@ -1439,9 +1771,12 @@ carbamidezuur
 Chloordifluormethaan
 chloortrifluoride
 chlorphenamine
+cuvet
 cyanocobalamine
 cyanogeenchloride
 dehydrogenering
+diatomisch molecuul
+DNA-methylatie
 DNA-methylering
 epichloorhydrine
 Ethinylestradiol
@@ -1453,12 +1788,14 @@ fluvoxamine
 fomepizole
 Fosfodiësterbinding
 fosfortrioxide
+Geeloranje S
 glibenclamide
 Hexamethyleendiamine
 hyoscyamine
 indigokarmijn
 infusie
 Inosine
+isoprenoïde
 isoxazool
 kaliumbromaat
 kaliumjodaat
@@ -1466,6 +1803,7 @@ kaliumperoxodisulfaat
 kaliumwaterstofcarbonaat
 karamellisatie
 kobaltblauw
+kopal
 levamisole
 levensmiddelenchemie
 levertraan
@@ -1483,9 +1821,11 @@ nikkel-metaalhydrideaccu
 nonaanzuur
 octaanzuur
 oxidatieve stress
+oxime
 paraquat
 pH-meter
 pilocarpine
+poly- en perfluoralkylstoffen
 polymelkzuur
 polyoxymethyleen
 praziquantel
@@ -1498,20 +1838,22 @@ rimantadine
 rubidiumhydroxide
 Salicine
 salmeterol
+sfingolipide
 sheaboter
 Skatool
 SnO2
+sulfoxide
 terbinafine
 tetradecaan
 Tetryl
+thiocyanaat
 thiozwavelzuur
 Threose
-tindioxide
 tretinoïne
 tricalciumfosfaat
 trichloorazijnzuur
 uraandioxide
-uraniumdioxide
+urania
 waterstofjodaat
 Wurtz-reactie
 Zeaxanthine
@@ -1520,8 +1862,11 @@ Zonnegeel FCF
 zwart ijzeroxide
 2-butyn
 2-mercaptoethanol
+acaricide
 Afzuigerlenmeyer
 Alfa-ketoglutaarzuur
+alicyclische verbinding
+alkanolamine
 aluminiumlegering
 Anethol
 antimony trichloride
@@ -1547,15 +1892,19 @@ calciumwaterstofcarbonaat
 Carbon suboxide
 cefixime
 cefotaxime
+chemische affiniteit
 chemoinformatica
 Chlooramine
 clomifeen
 Congorood
 Corticosterone
+cresol
+cyanoacrylaat
 cyclisch guanosinemonofosfaat
 cyclizine
 cycloheptaan
 cyclopentadieen
+DAG
 Dehydroepiandrosteron
 desloratadine
 desmopressin
@@ -1568,6 +1917,7 @@ dihydrotestosteron
 ergotamine
 erucazuur
 Erythrose
+estron
 Ethyleendiamine
 evenwichtsconstante
 fenylazijnzuur
@@ -1577,6 +1927,7 @@ glyoxylzuur
 guanosinemonofosfaat
 guargom
 heptaanzuur
+Heptose
 hexadecanol
 HMX
 hydralazine
@@ -1587,6 +1938,7 @@ kernexplosie
 kerosine
 kinidine
 lansoprazol
+leukotrieen
 looizuur
 magnesiumfluoride
 maïsmeel
@@ -1604,6 +1956,7 @@ natriumchromaat
 natriumperchloraat
 niclosamide
 nikkelsulfaat
+Nucleoproteïne
 para-aminosalicylzuur
 paraldehyde
 paromomycin
@@ -1615,16 +1968,19 @@ posttranslationele modificatie
 protonering
 psilocine
 Pyrazool
+Pyrofosfaat
 Raketinslag in Polen 2022
 ramipril
 Rhamnose
 rivaroxaban
 rubidiumchloride
 Scheitrechter
+secundaire metaboliet
 sibutramine
 siliciumnitride
 sirolimus
 strontiumoxide
+sulfiet
 sumatriptan
 supernova type Ia
 temazepam
@@ -1669,12 +2025,14 @@ chloorsulfonzuur
 chlorambucil
 chloriet
 Chromylchloride
+citral
 clavulaanzuur
 condensatiepolymerisatie
 Diacetyleen
 dichloormonoxide
 Dieldrin
 dimenhydrinate
+diol
 Dissociatieconstante
 doxylamine
 eicosapentaeenzuur
@@ -1684,6 +2042,7 @@ fenacetine
 fexofenadine
 fosforylchloride
 fuchsine
+furanose
 galliumnitride
 gasificatie
 gaultheria
@@ -1691,9 +2050,14 @@ gefermenteerd voedsel
 gel-elektroforese
 Glutaraldehyde
 Glyceraldehyde 3-phosphate
+glycosaminoglycaan
+Grignard-reagens
+imide
 Ipratropium bromide
+Isocyanide
 kaliumbenzoaat
 katoenzaadolie
+keteen
 koffiezuur
 kryptondifluoride
 Lactitol
@@ -1711,9 +2075,12 @@ Natriummetabisulfiet
 Natriumoxalaat
 Nitinol
 nitrosylchloride
+organofosfor
 passiveren
 Phenoxymethylpenicillin
 polyethyleenglycol
+polyol
+proteoglycaan
 Psicose
 putrescine
 Pyridazine
@@ -1743,8 +2110,12 @@ zinkjodide
 zwaveldichloride
 1-deceen
 aardappelmeel
+aldrin
+alkoxide
 aluminiumnitraat
+aminosuiker
 ANP
+anticholinergica
 antimony pentachloride
 antimoonpentafluoride
 arsfenamine
@@ -1758,6 +2129,7 @@ bariumsulfide
 batrachotoxine
 Benzamide
 Benzotriazool
+biuret
 boortrichloride
 Borazine
 Broombenzeen
@@ -1776,9 +2148,11 @@ cycloserine
 daunorubicin
 Decaline
 dehydratie
+dicarbonzuur
 dichloorazijnzuur
 Difenylamine
 difenylmethaan
+disulfide
 elektrofiele aromatische substitutie
 elementaire reactie
 farnesol
@@ -1831,13 +2205,17 @@ nikkel-cadmium-accu
 nikkeltetracarbonyl
 nitrazepam
 Ofloxacine
+oligonucleotide
+organozwavelchemie
 orootzuur
 Oxazool
 oxytetracycline
 P-benzochinon
+peptidehormoon
 Petroleumether
 polyvinylalcohol
 polyvinylpyrrolidon
+povidon
 pramipexol
 pyrimethamine
 Retort
@@ -1864,9 +2242,11 @@ triethylamine
 trinatriumfosfaat
 verestering
 vliegas
+warmtebeeldcamera
 xenon tetroxide
 Zink-koolstofcel
 zopiclon
+zuuranhydride
 zuurkast
 zwavelbrug
 1-decanol
@@ -1878,6 +2258,7 @@ acenafteen
 adalimumab
 Alfa-amanitine
 allylisothiocyanaat
+alnico
 aluminiumhydride
 aluminosilicaat
 Amandelzuur
@@ -1888,6 +2269,7 @@ amobarbital
 antipyrine
 arseentrichloride
 Assamthee
+azool
 Barbital
 bariumchloraat
 Benzalkoniumchloride
@@ -1922,8 +2304,10 @@ cytidinetrifosfaat
 deferoxamine
 dimethylsulfaat
 docetaxel
+edelgasverbinding
 elaïdinezuur
 emtricitabine
+Enamine
 enkelvoudige binding
 erythrosine
 Etanercept
@@ -1932,14 +2316,17 @@ Etoposide
 fenylefrine
 ferrolegering
 flurazepam
+formiaat
 furfurylalcohol
 fytochemie
+gangliosides
 gemcitabine
 grape seed oil
 griseofulvin
 Guaiacol
 guaifenesine
 Hall-Héroult-proces
+hemiacetaal
 Hindenburgramp
 Indeen
 indiumfosfide
@@ -1962,17 +2349,20 @@ magnesiumbromide
 maprotiline
 Marokkaanse muntthee
 melfalan
+mesna
 methoxyflurane
 Methylbenzoaat
 mifepriston
 natriumjodaat
 nimesulide
+organosiliciumchemie
 orichalcum
 Ostwaldproces
 oxalylchloride
 paliperidon
 parathion
 PbCO3
+percolator
 percoleren
 peroxodizwavelzuur
 phentermine
@@ -1981,7 +2371,9 @@ piperacillin
 profielstaal
 pteridine
 pyrantel
+pyreen
 rabeprazole
+reactieve zuurstofverbinding
 ribulose
 rifabutine
 rivastigmine
@@ -1989,6 +2381,7 @@ S-Adenosylmethionine
 salicylaldehyde
 salvinorin A
 seleentrioxide
+Siaalzuur
 sotalol
 Soxhlet-apparaat
 strontiumcarbonaat
@@ -1996,6 +2389,7 @@ succinylcholine
 sulfadiazine
 sulfamethoxazole
 sulfaminezuur
+sulfon
 Synulox
 tagatose
 tantalum pentoxide
@@ -2008,7 +2402,6 @@ tungsten trioxide
 ultrafiltratie
 unbitrium
 valaciclovir
-Vanadiumtrioxide
 Vinylacetyleen
 Waterstofastatide
 xenontetrafluoride
@@ -2026,6 +2419,8 @@ zinkbromide
 abelsoniet
 acarbose
 Aconietzuur
+acylchloride
+Aldol
 Allylamine
 alternatieve splicing
 amiloride
@@ -2037,12 +2432,12 @@ Anthofylliet
 aspirator
 atazanavir
 AuCl
-bain marie
 balneum Mariae
 bariumtitanaat
 Bayerproces
 Benzil
 Betanine
+brassinosteroïde
 bromaat
 bromocriptine
 Bufotenine
@@ -2058,6 +2453,7 @@ Chlooracetofenon
 chlorogeenzuur
 cholinesterase
 chondroïtine
+chromaat
 Claisen-condensatie
 clobazam
 cortenstaal
@@ -2068,10 +2464,12 @@ cyclopentanon
 cytarabine
 dapagliflozin
 denatoniumbenzoaat
+dendrimeer
 denosumab
 di-ethylstilbestrol
 diammoniumperoxodisulfaat
 diazinon
+diazoniumverbinding
 dichlorine heptoxide
 dicloxacillin
 digitoxine
@@ -2079,12 +2477,14 @@ Dihydroxyacetone phosphate
 Efavirenz
 Emirates vlucht 521
 Endosulfan
+entheogeen
 ethenon
 ethylacetoacetaat
 fenetylline
 fenofibraat
 filgrastim
 flowcytometrie
+fluorkoolstof
 fosforpentafluoride
 fucoxanthine
 fusidinezuur
@@ -2098,6 +2498,7 @@ Glycoldinitraat
 Heliotropine
 heliumflits
 Heptadecaan
+hexeen
 hirudine
 humuszuur
 ifosfamide
@@ -2107,24 +2508,29 @@ irinotecan
 isoftaalzuur
 isomerisatie
 Jasmijnzuur
+jodometrie
 joodmonochloride
 kaliummanganaat
 kamfeen
 karmijnzuurm
 ketelsteen
 kilonova
+L-cetirizine
 Lapsang souchong
 latanoprost
 levocetirizine
 lovastatine
+lyse
 magnesiumjodide
 magnesiumsulfide
 MDA
 mefenamic acid
 meldonium
 Merbromine
+metalloceen
 methylhydrazine
 moclobemide
+molaliteit
 molybdiet
 Monel
 monocalciumfosfaat
@@ -2135,8 +2541,10 @@ nevirapine
 nichroom
 Octadecaan
 octreotide
+omega 9-vetzuren
 omleggingsreactie
 organische reactie
+organochloorchemie
 oxacilline
 oxandrolon
 p-cymeen
@@ -2154,9 +2562,11 @@ pyridostigmine
 pyridoxaalfosfaat
 ranzig worden
 Retinal
+RMP
 rofecoxib
 roxithromycin
 rubidiumnitraat
+Rustpotentiaal
 sebacinezuur
 selenigzuur
 smelten
@@ -2164,15 +2574,20 @@ Smiling Buddha
 sofosbuvir
 strontiumchloride
 sulfapreparaat
+sulfonaat
 sulfurylchloride
 telluurdioxide
 tenamfetamine
+tetracyclines
 tetrafluorboorzuur
 tetrahydrothiofeen
+thio-ester
 titanium nitride
+tombak
 triamcinolon
 trimethylglycine
 tropaan
+uronzuur
 Vicodin
 Wittig-reactie
 Xenonhexafluoride
@@ -2193,6 +2608,8 @@ ammoniumfluoride
 anastrozole
 Androsteron
 Angelicazuur
+Antitrypsine
+Arsenaat
 bariumbromide
 bariumchromaat
 bariumjodide
@@ -2202,6 +2619,7 @@ Benzalchloride
 benzonatate
 benzylacetaat
 Berylliumbromide
+binaire verbinding
 Bomaanslagen in Bombay
 Bomaanslagen in Mumbai
 brand Grand Kartal 2025
@@ -2223,12 +2641,14 @@ clofazimine
 clorazepinezuur
 dabigatran
 Decaboraan
+Deoxyribonucleotide
 desfluraan
 diazomethaan
 difosgeen
 Diisopropylether
 dimethylsulfon
 dynamisch evenwicht
+endrin
 Ethosuximide
 ethyleenvinylacetaat
 Everolimus
@@ -2242,11 +2662,13 @@ ferulazuur
 fipronil
 fluoreen
 Foezelolie
+fosfatidylcholine
 ftaalimide
 Fytol
 Galacturonzuur
 gamma-butyrolacton
 Genisteïne
+halocline
 hexachloorbenzeen
 hydroxylradicaal
 hypochloriet
@@ -2277,11 +2699,11 @@ nortriptyline
 olmesartan
 Oxetaan
 Pancuronium
+parabeen
 pentanatriumtrifosfaat
 phosphoenolpyruvic acid
 pimozide
 pioglitazone
-plutoniumdioxide
 polyamine
 ponceau 4R
 prazosin
@@ -2293,6 +2715,7 @@ Propafenone
 propylthiouracil
 PuO2
 radiumchloride
+reducerende suiker
 remifentanil
 reumafactor
 Ribitol
@@ -2319,6 +2742,7 @@ tetrabroommethaan
 tetrafluoretheen
 Tetrahydropyraan
 tetramethylsilaan
+thermische analyse
 thiocyaanzuur
 thymolblauw
 tigecycline
@@ -2347,6 +2771,7 @@ alemtuzumab
 allura rood AC
 Aluminiumammoniumsulfaat
 ambroxol
+amfifiel
 ammoniumjodide
 ammoniumsulfide
 ammoniumthiocyanaat
@@ -2366,9 +2791,11 @@ cadmiumselenide
 calciumchloraat
 Calciumchromaat
 carbamoyl phosphate
+carbonylcomplex
 carbonylfluoride
 carfentanil
 cariprazine
+chemisch proces
 Chemische biologie
 chloormonofluoride
 Chloortrifluormethaan
@@ -2391,11 +2818,14 @@ enoxaparin
 enzymatische katalyse
 ergometrine
 etoricoxib
+fijnheid
 Floroglucinol
 fludarabine
 fluorbenzeen
+Fluorescentie-in-situhybridisatie
 formoterol
 foscarnet
+fosfonzuur
 Fosforpentasulfide
 fosinopril
 fotoresist
@@ -2404,7 +2834,6 @@ ganciclovir
 Gibberellinezuur
 Glycation
 Grijs gietijzer
-hafniumdioxide
 hafniumoxide
 hexachloorethaan
 Hexanitrohexaazaisowurtzitaan
@@ -2426,6 +2855,7 @@ LFP-accu
 Lichtreacties
 linagliptine
 lithiumperchloraat
+Luciferine
 Mannich-reactie
 menadion
 metaal-organisch raamwerk
@@ -2450,7 +2880,10 @@ Nerol
 Ninhydrine
 nitrogen trifluoride
 norethindrone
+normaliteit
 noscapine
+oraal anticonceptiemiddel
+organolithiumchemie
 oxaliplatin
 oxcarbazepine
 Oxybutynine
@@ -2466,16 +2899,17 @@ pivalinezuur
 plutonium-239
 podofyllotoxine
 polyacrylonitrile
+polyatomisch ion
 posttranscriptionele modificatie
 procainamide
 pyrofore stof
 pyrozwavelzuur
 raloxifene
 rasagiline
+reactiesnelheidsconstante
 riebeckiet
 Rotenon
 rutheniumtetraoxide
-rutheniumtetroxide
 Sabatierreactie
 Saxitoxine
 staallegering
@@ -2483,6 +2917,7 @@ sterling silver
 stoomdestillatie
 sulfacetamide
 superoxidedismutase
+Suzuki-koppeling
 Suzuki-reactie
 tamsulosine
 terbutaline
@@ -2527,6 +2962,7 @@ amarant
 amatoxine
 Apigenin
 aprepitant
+Artificiele fotosynthese
 Asymmetrische synthese
 Barnsteenzuuranhydride
 benazepril
@@ -2570,6 +3006,7 @@ di-ethylcarbamazine
 Diarylquinoline
 Dibroommethaan
 Dimethylaceetamide
+dipeptide
 dipyridamol
 droperidol
 ecdysone
@@ -2581,11 +3018,15 @@ ertapenem
 Fenylacetyleen
 Fenylhydrazine
 Ferroïne
+flavine
 flucytosine
 fluorazijnzuur
+fluorkoolwaterstoffen
 fluticasone
+fosfoglyceride
 Fosforpentabromide
 fosfortribromide
+fructaan
 galactitol
 gefitinib
 geheugenmetaal
@@ -2595,6 +3036,7 @@ hesperidien
 hexachloorplatinazuur
 hexafluorkiezelzuur
 Homolytische splitsing
+hydrazon
 iodine pentafluoride
 isordil
 kaliumformiaat
@@ -2625,15 +3067,21 @@ natriumperboraat
 natriumperjodaat
 Natriumselenide
 natriumstearaat
+nickel
 nikkelcarbonaat
+nitroamine
 norfloxacin
 O-Phenylenediamine
 O-Xylene
+organoboorchemie
+organofosforverbinding
+oxonium
 oxymorfon
 paraformaldehyde
 pentaceen
 Pentazocine
 pentoxifylline
+peroxycarbonzuur
 Perreniumzuur
 platinadichloride
 polyolefinen
@@ -2659,6 +3107,7 @@ strontiumfluoride
 substantie P
 Succinyl-CoA
 sufentanil
+sulfienzuur
 superfosfaat
 tetraceen
 tetrajoodmethaan
@@ -2673,6 +3122,7 @@ trifluorkobalt
 trimipramine
 Triosefosfaatisomerase
 Umbelliferone
+umber
 undecaanzuur
 uraantetrafluoride
 Urobilin
@@ -2729,6 +3179,7 @@ Calciumsulfiet
 caspofungin
 cefaclor
 cefdinir
+Cerebroside
 Chloorthiazide
 cholestyramine
 cilostazol
@@ -2737,6 +3188,7 @@ cladogenese
 cupellatie
 Cycloadditie
 cyclodecaan
+cyclodextrine
 cyclononaan
 cyclopentanol
 Deoxyguanosine
@@ -2749,6 +3201,7 @@ difluormethaan
 Difosfaan
 diloxanide
 dimercaptosuccinic acid
+diterpeen
 dizuurstofdifluoride
 entacapone
 Ergoline
@@ -2760,10 +3213,13 @@ ethylcarbamaat
 ethylvanilline
 exergone reactie
 felsisch
+fenylpropanoïde
 Ferrosilicium
 fingolimod
 Fondaparinux
+fosfide
 fosfortrijodide
+fytoalexine
 gallium trichloride
 glatirameer
 Gruneriet
@@ -2784,6 +3240,7 @@ Kolbe-Schmitt-reactie
 kolomchromatografie
 koolstof-koolstofbinding
 koolstofdioxide-fixatie
+koolstofoxide
 kwikthermometer
 lanthaansesquioxide
 lithium citraat
@@ -2793,6 +3250,7 @@ lithiumsulfide
 Longjingthee
 Luteoline
 M-Xylene
+macrocyclische verbinding
 Magneetroerder
 magnesiumperoxide
 magnesiumstearaat
@@ -2837,29 +3295,40 @@ Polyadenylatie
 polybutadiene
 prochlorperazine
 Propaannitril
+pseudohalogeen
 Pyridiniumchlorochromaat
 raltegravir
 repaglinide
 resiniferatoxine
+retinoïde
+ribonucleotide
+röntgenspectroscopie
 ropinirole
 rubidiumbromide
 rubidiumfluoride
-rutheniumdioxide
 scandiumoxide
 schalieolie
 Selenomethionine
+siloxaan
 SN2-reactie
 sodium arsenite
 sorafenib
 Strecker-aminozuursynthese
 Succinimide
+sulfonamide
+sulfonylureum
 sulfurylfluoride
 Supernova type II
 suultei tsai
 tapentadol
+Tea Tree Olie
+tea-tree
+Teichoic acid
 tert-butyllithium
 Tetranatriumhexacyanoferraat
+tetrapyrrool
 theeboomolie
+thermogravimetrische analyse
 Thioaceetamide
 TiCl3
 Tiglinezuur
@@ -2873,6 +3342,7 @@ tropisetron
 uitlogen
 unbipentium
 unbiseptium
+urethaan
 uridinedifosfaat
 vacceenzuur
 valganciclovir
@@ -2886,18 +3356,22 @@ Xanthone
 zenuwgroeifactor
 ziegler-nattakatalysator
 Zinkchromaat
+zwak zuur
 1-chloorbutaan
 2-hexanol
 2-methyl-2-buteen
 3-pentanol
 4-nitroaniline
+5'-cap
 5-amino-4-oxo-pentaanzuur
 aanslag kerk Mar Elias
 abamectine
 acenocoumarol
+acrylaat
 Adiponitril
 Agarose
 aliskiren
+amidine
 ammoniumcyanaat
 amoxapine
 Antimoonkaliumtartraat
@@ -2945,13 +3419,16 @@ cinchocaine
 cisapride
 CMC
 cromoglicinezuur
+cumuleen
 Cyanoacetyleen
+cycloalkyn
 cysteamine
 danazol
 dasatinib
 Deltamethrin
 Deoxynivalenol
 Desvenlafaxine
+diazoverbinding
 dicoumarol
 Dicyanoacetyleen
 Dimethylallyl pyrophosphate
@@ -2978,6 +3455,7 @@ felodipine
 fenylsalicylaat
 fludrocortisone
 fluvastatine
+furocoumarinen
 Galinstan
 Gliadine
 glipizide
@@ -2989,6 +3467,7 @@ hexachlorofeen
 hexafluorpropeen
 hexamethylbenzene
 Hunsdiecker-reactie
+hydrochloride
 Hydroxymethylfurfural
 hygrine
 Hypericin
@@ -2997,4 +3476,1525 @@ idarubicin
 imipenem
 imiquimod
 inconel
+indicator
 Inositol trisphosphate
+Isatine
+iso-ascorbinezuur
+Iso-indool
+Isobenzofuraan
+isobutylacetaat
+isopropylacetaat
+isothiocyanaat
+joodmonobromide
+joodtrifluoride
+Kabeltreinramp in Kaprun
+kaliumcyanaat
+kaliumhexachloroplatinaat
+klinische chemie
+kristallijne
+kristalliniteit
+kristalveldtheorie
+Lecanemab
+Lenalidomide
+lithiumacetaat
+lithiumboorhydride
+lomustine
+lopinavir/ritonavir
+Magnesiumdiboride
+magnesiumnitride
+massafractie
+melissinezuur
+methylbutanoaat
+Mianserin
+Mirabegron
+n-butylamine
+N-methyl-D-asparaginezuur
+nabij-infraroodspectroscopie
+nadolol
+naratriptan
+natalizumab
+natriumcyanoboorhydride
+natriumlaurylethersulfaat
+natriumtelluride
+nelfinavir
+Neotaam
+nikkelijzer
+Nirmatrelvir
+Nisine
+nodulair gietijzer
+Nonacosaan
+Norbornaan
+Norborneen
+nucleofiele aromatische substitutie
+Octanitrocubane
+oxoanion
+PdCl2
+PEM FC
+penciclovir
+pentaan-3-on
+Pentan-2-ol
+pentanal
+Pentazole
+perfluoroctaansulfonzuur
+pericyclische reactie
+Perkin-reactie
+phi-binding
+Phosphatidylethanolamine
+Phosphatidylinositol
+Pinene
+pirfenidone
+pitavastatin
+Platelet-activating factor
+polyvinylideenfluoride
+Propylamine
+Pyrrolizidine
+radiolyse
+rioolzuiveringsinstallatie
+RNA editing
+rubidiumjodide
+Sandmeyer-reactie
+Schiff-base
+secobarbital
+second strike
+seleenhexafluoride
+senna glycoside
+solid oxyde fuel cell
+spiroverbinding
+stigmasterol
+strontiumsulfide
+sulfamidochrysoïdine
+Sulfolaan
+suramin
+thalliumsulfaat
+Thiamine pyrophosphate
+thioazijnzuur
+Thiofosforylchloride
+thioglycolzuur
+thioridazine
+titanium
+tolterodine
+trandolapril
+Tranylcypromine
+Triazine
+triazool
+triethanolamine
+Triethyleendiamine
+tumbaga
+undecyleenzuur
+uranyl nitrate
+vanadiumcarbide
+verlostang
+waterstofhalogenide
+Wolff-Kishner-reductie
+Woodsmetaal
+zeatine
+zilverchloraat
+zilverjodaat
+zilvertetrafluorboraat
+zuurhalogenide
+1-broompropaan
+1-methylcyclopropeen
+1-octeen
+2-methoxyethanol
+2-methylhexaan
+2-pentanon
+2-pyrrolidon
+3-Hydroxybutanal
+3-methylhexaan
+4-cumaarzuur
+4-hydroxybenzoëzuur
+4-nitrofenol
+Aanslag in Koeweit
+aanvaardbare Dagelijkse Inname
+acebutolol
+aldol-reactie
+Alkeenmetathese
+alloxaan
+amfepramon
+ammonium chlorate
+ammonium cyanide
+ammoniumwaterstofsulfaat
+AMPA
+anakinra
+antigoriet
+Atar
+autobom Delhi 2025
+Azepine
+Azobisisobutyronitril
+bariumacetaat
+Benzoxazool
+bertrandiet
+Bèta-caryofylleen
+Betuline
+Bilastine
+bismutpentafluoride
+Bismuttribromide
+Bomaanslag op Wall Street
+Born-Habercyclus
+Briljantzwart BN
+Bromocresol purple
+Broomchloordifluormethaan
+broomcresolgroen
+broomfenolblauw
+butorfanol
+Butyronitrile
+calcifediol
+calcium sorbate
+Carbenicillin
+carmustine
+cefadroxil
+cetylpyridinium chloride
+Chlooraceton
+Chloordecon
+Chloorfluormethaan
+chloormethine
+Chromone
+ciclopirox
+Cinchonine
+Civeton
+Clemastine
+cobalt
+Coniferylalcohol
+corrine
+cresolrood
+cummingtoniet
+cyclo-undecaan
+Cyclododecaan
+di-ethylzink
+diazine
+Dichloorvos
+Dicyclopentadieen
+diethanolamine
+diethylftalaat
+Dijoodmethaan
+Dikoolstofmonoxide
+Dimethyldicarbonaat
+dubbelzout
+ecgonine
+Econazol
+Emetine
+Epigallocatechin gallate
+Eplerenone
+erlotinib
+estragol
+Ethyl-p-hydroxybenzoaat
+Ethylmaltol
+Etodolac
+exemestane
+Farnesyl pyrophosphate
+Fast yellow AB
+fenolrood
+Fenoprofen
+FePO4
+flibanserin
+flowbatterij
+fluid catalytic cracking
+Fluoranteen
+Fluorenon
+fluorpolymeer
+Flurbiprofen
+formele lading
+fosfortrifluoride
+Geel 2G
+Gentiobiose
+gentisinezuur
+Gibbs-Donnan-evenwicht
+Gingerol
+golfplaat
+Grote brand van Meireki
+Heck-reactie
+Heptanal
+Heterolytische splitsing
+hydroxycarbonzuur
+hydroxypropylmethylcellulose
+Indane
+Indazool
+indium arsenide
+Indoxyl
+Inductief gekoppeld plasma massaspectrometrie
+Interhalogeen
+isoflavonen
+isomaltulose
+Isothiazool
+ivabradine
+jasmonaat
+joodtrichloride
+Kaempferol
+kalium-40
+Kaliumpropionaat
+Kerkbrand in Gizeh
+koperwaterstofarseniet
+kristalchemie
+Lavendelolie
+lignaan
+lithium azide
+loxapine
+M-Fenyleendiamine
+magische zuur
+medazepam
+Melarsoprol
+Mellitine
+methanogenese
+Methylantranilaat
+methylcyclopentaan
+methylrood
+miraculin
+Mitsunobu-reactie
+mycofenolzuur
+N-Acetylmuramic acid
+nabumetone
+natriumdodecylbenzeensulfonaat
+natriumselenaat
+natriumsorbaat
+Neuropeptide Y
+Nifurtimox
+nikkel-ijzerbatterij
+nitramide
+nivolumab
+Norbornadieen
+octopamine
+Oleuropein
+Osmiridium
+ovalbumin
+oxaalbarnsteenzuur
+palmpitolie
+phenazopyridine
+phentolamine
+picloram
+pimecrolimus
+pipemidic acid
+plutonium-238
+plutoniumtrichloride
+Polyfosfaat
+polyimide
+porphobilinogen
+pralidoxime
+prasugrel
+precipitatie-harden
+promazine
+Propaandinitril
+Propylgallaat
+PtCl4
+pyrethrine
+Quinic acid
+ramelteon
+Reeline
+Reimer-Tiemann-reactie
+rizatriptan
+RuBP
+sesquiterpene
+sevelamer
+silver
+Sodium cobaltinitrite
+sodium hexafluoroaluminate
+stercobilin
+stereoselectiviteit
+sulindac
+Tartraat
+teixobactine
+telluurhexafluoride
+Tetraethylorthosilicaat
+tetrahydrobiopterin
+Thenardiet
+Thymidinemonofosfaat
+ticagrelor
+toniciteit
+torasemide
+tri-ethylaluminium
+triamterene
+Trichloorisocyanuurzuur
+trifenylmethanol
+trihalomethanen
+trimetazidine
+trimethylaluminium
+trimethylchloorsilaan
+triterpeen
+tubocurarine
+ulipristalacetaat
+Urea nitrate
+Vacuümdestillatie
+Vanadiumoxytrichloride
+Violaxanthine
+vislijm
+vloeistof-vloeistofextractie
+Waldeninversie
+Wilkinson-katalysator
+Williamson-ethersynthese
+Xantheen
+xenon hexafluoroplatinate
+yttrium-barium-koperoxide
+zaleplon
+Zamak
+zelfontbrandingstemperatuur
+Zilveracetylide
+zilverchromaat
+zilverhalogenide
+zinkselenide
+1-chloorpropaan
+1-naftaleenazijnzuur
+1-propaanthiol
+2-chloorpropaan
+2-dimethylaminoethanol
+2-ethoxyethanol
+3-quinuclidinyl benzilate
+7-Dehydrocholesterol
+abatacept
+abciximab
+acetoncyanohydrine
+Acridine-oranje
+Alfa-Pyrrolidinopentiofenon
+allylbromide
+AlPO4
+ammonium formate
+ammonium thiosulfate
+ammoniumperrenaat
+anammox
+Arecoline
+armodafinil
+arsenide
+ASASSN-15lh
+AsBr3
+astemizole
+Auramine O
+azopigment
+Bancha
+Beckmann-omlegging
+belimumab
+benzatropine
+benzylsalicylaat
+bèta-sitosterol
+betalaïne
+Bifenyl-2-ol
+bifonazole
+Bisabolol
+bismuth
+Blanc-chloormethylering
+brander
+Brodifacoum
+broedmachine
+broommonofluoride
+Butaanthiol
+C-peptide
+C3-plant
+calciumcyanide
+Calciumsilicaat
+calciumwaterstofsulfiet
+Canadabalsem
+Carbocisteine
+carboniseren
+carbonylatie
+carteolol
+cefoperazone
+cefoxitin
+ceftibuten
+cetrimoniumbromide
+chalcogeniden
+chloorpentafluoride
+chloramine-T
+chlorobutanol
+cinnarizine
+cis-3-hexenol
+cladribine
+clofibrate
+Colony stimulating factor 2
+Cotinine
+cranberrysap
+Crocine
+Crotylalcohol
+Cryostat
+cyanidine
+cyanohydrine
+cyanuurchloride
+Cyclohepteen
+cyclohexylamine
+cyclopentadiënylnatrium
+DBU
+Decanal
+deflagratie
+Deoxyadenosinetrifosfaat
+desorptie
+dess-martin-periodinaan
+deuteron
+dialyse
+Diazeen
+dibenzazepine
+Dibenzofuran
+Dichloortetrafluorethaan
+dichlorocarbene
+Dicyclomine
+didanosine
+diethyleentriamine
+difenyldisulfide
+Diglyme
+Dihydrofolic acid
+Diisobutylaluminiumhydride
+Diketeen
+Dimethoaat
+Dimethyldisulfide
+dimethylftalaat
+dimethylglyoxime
+Edman-degradatie
+Enterokinase
+eprosartan
+ethacrynic acid
+Ethyl-tert-butylether
+Ethylchloorformiaat
+ethylpropanoaat
+eucalyptusolie
+fenyllithium
+Fenylthiocarbamide
+Finkelstein-reactie
+flecainide
+Fuculose
+furazolidone
+fytaanzuur
+Gabriel-synthese
+gietstaal
+Glycaan
+glyceroltriacetaat
+glycyrrhizinezuur
+granisetron
+gummigut
+gunpowder
+Halfreactie
+hapticiteit
+Hell-Volhard-Zelinsky-halogenering
+hemiaminal
+Hentriacontaan
+herkristallisatie
+hexachloorbutadieen
+hexafluorbenzeen
+hexafluorfosforzuur
+hexamethylfosfortriamide
+HfCl4
+hoge-dichtheidspolyetheen
+hydrazide
+indacaterol
+indican
+Indoline
+isosafrole
+jodaat
+kaliumferrioxalaat
+Kaliumperjodaat
+Kaliumtetrachloroplatinaat
+koemelk
+kogelmolen
+kynurenine
+Levaan
+levorfanol
+lithium niobate
+magnesiumperchloraat
+mesityloxide
+Methyl-2-cyanoacrylaat
+Methylcobalamine
+methylisobutylketon
+methylisothiazolinon
+Methylnitriet
+Mirex
+Molybdaat
+molybdenum
+monoterpene
+Moordaanslag op Fumio Kishida
+Muskon
+N-Formylmethionine
+N-methylmorfoline-N-oxide
+Naftochinon
+NaK
+natriumhypofosfiet
+Natriuminosinaat
+natriumlactaat
+Natriumtartraat
+nedocromil
+Nepetalacton
+Nitroxyl
+nucleosidetrifosfaat
+Octanal
+octylacetaat
+Octylgallaat
+omkristallisatie
+orellanine
+Oxireen
+oxprenolol
+p-tolueensulfonylchloride
+palbociclib
+Palonosetron
+pemetrexed
+pentaboraan
+Phenibut
+pheniramine
+Pinacolone
+Plastoquinone
+Polyacetylene
+polybutyleentereftalaat
+polycaprolacton
+Polydimethylsiloxaan
+porfine
+pramlintide
+probenecid
+Propiolacton
+protamine
+Prothionamide
+protoanemonine
+pterin
+Pyrroline
+ranolazine
+Rhodamine B
+Rifapentine
+Rocuronium
+sabineen
+salicylamide
+sandarac
+Saponiet
+SDS-PAGE
+selenide
+semicarbazide
+Sinapinic acid
+Sodium pyrosulfate
+Solifenacine
+sterk zuur
+Stille-reactie
+Stoomreforming
+strontiumbromide
+Sulbactam
+sulfadoxine
+Sulforafaan
+sunitinib
+Taeniet
+tazobactam
+teicoplanin
+telluurtrioxide
+tetrabenazine
+Tetramethylethyleendiamine
+tetranitromethaan
+tetrazine
+Texas City disaster
+thioketon
+toestel van Hofmann
+tolbutamide
+Trichloortrifluorethaan
+trifenylfosfaat
+trimethylfosfiet
+Trioxaan
+triprolidine
+triwaterstofkation
+Ureumformaldehyde
+usninezuur
+ustekinumab
+vulkanisatierubber
+Wolfraamhexachloride
+xanthaat
+zingerone
+zolmitriptan
+Zytiga
+Β-propiolacton
+1-noneen
+2-Arachidonoylglycerol
+2-heptanon
+2-methylheptaan
+2-methylpyridine
+2-nitroaniline
+3-chloorperoxybenzoëzuur
+4-methoxybenzoëzuur
+4-Methylimidazole
+4-methylpyridine
+4-nitrochloorbenzeen
+aceen
+Agmatine
+Alfa-methylstyreen
+alprostadil
+amine-oxide
+amitrol
+Ammonia borane
+ammonium bifluoride
+ammonium ferric citrate
+ammonium heptamolybdate
+ammonium hexachloroplatinate
+ammoniumoxalaat
+Anagrelide
+apremilast
+Argininosuccinic acid
+astaatmonojodide
+AuBr3
+avanafil
+azacitidine
+Azadirachtin
+Azepaan
+basiliximab
+BCAA
+Benzylpiperazine
+Besifloxacin
+Beta-Pinene
+betaïne
+bethanechol
+biguanide
+bio-orthogonale chemie
+biobrandstofcel
+Birch-reductie
+bomaanslag in Alexandrië
+Boortrijodide
+Bosbranden Canada 2023
+bosentan
+Brand op King's Cross
+brimonidine
+Broomdifluormethaan
+Brown HT
+Butyrometer
+calciumstearaat
+Captan
+carbimazol
+carboxylaat
+cefamandole
+cefotetan
+cefradine
+cerivastatine
+certolizumab pegol
+cesiumacetaat
+cesiumchromaat
+Chagai-I
+chemisch inert
+chicle
+chinuclidine
+chloormonoxide
+Chloorpentafluorethaan
+Chloortrifluoretheen
+chlorine
+chorisminezuur
+chromium
+chroomnitride
+cicutoxine
+clobetasol
+clomethiazole
+cobicistat
+Contactproces
+Copper
+coroneen
+crocetin
+Cyclosarin
+deferiprone
+delavirdine
+demeclocycline
+desogestrel
+dexketprofen
+Di-tert-butyldicarbonaat
+diatrizoate
+dichloorsilaan
+dichlorine trioxide
+Dicyaandiamide
+Dimethyldichloorsilaan
+Dimethyltereftalaat
+dimetindeen
+diose
+dioxiraan
+disodium guanylate
+disopyramide
+Ditranol
+diuron
+dizwaveldecafluoride
+dorzolamide
+Dulcine
+Dureen
+Dysprosiumtrichloride
+English Breakfast tea
+Ethefon
+Ethylcinnamaat
+ethyleencarbonaat
+Etonogestrel
+etsen
+Europia
+explosie Shahid Rajaee 2025
+Fenton-reactie
+Fentons reagens
+fenylmagnesiumbromide
+fibrinolyse
+flavoproteïne
+flutamide
+Fosforsesquisulfide
+fotokatalyse
+fudeoxyglucose
+fulminaat
+fysische organische chemie
+galbanum
+galvaniseren
+Gebrugde verbinding
+gemberthee
+geranyl acetate
+Glutamine synthetase
+glyceryltrioleaat
+Glycopyrronium
+golimumab
+goserelin
+Goudpentalfluoride
+gramicidin
+hexaan-2-on
+Hexafluoro-2-propanol
+hexamethyldisilazaan
+hexetidine
+HgF2
+hojicha
+homatropine
+Huperzine A
+hyponitrous acid
+icaridin
+indiumantimonide
+insuline aspart
+Insuline lispro
+ipilimumab
+Iproniazide
+Iso-elektrisch focusseren
+Isoeugenol
+itaconzuur
+Jojoba-olie
+Jones-oxidatie
+kaliumperoxosulfaat
+Kobaltoceen
+kruidnagelolie
+Kukicha
+kwartsglas
+Kynureenzuur
+lacosamide
+lithium-luchtbatterij
+Lithopoon
+Lormetazepam
+Magnesium silicide
+magnesiumcitraat
+manganaat
+Methylcyclopropaan
+Methyleendifenyldi-isocyanaat
+methylfenobarbital
+Methylhexanamine
+Metol
+miglitol
+miltefosine
+moexipril
+molybdenum hexacarbonyl
+morin
+motilin
+Nafcillin
+nalmefeen
+natriumcyanaat
+natriumdiethyldithiocarbamaat
+natriummanganaat
+natriumtelluriet
+Nefazodone
+Neodymiumsesquioxide
+neutron number
+nicardipine
+nilotinib
+nisoldipine
+Nitrosonium
+nizatidine
+Nonanal
+Noord-Korea doet zesde kernproef
+NPH-insuline
+ochratoxine
+Oligopeptide
+orciprenaline
+ouabaïne
+Palytoxine
+pancreatic polypeptide
+PbCl4
+pemoline
+phenazepam
+Phenazine
+polyesterlijm
+polyetheretherketon
+polyisopreen
+polykristallijn
+Polymer clay
+praseodymiumsesquioxide
+Proopiomelanocortin
+Propyfenazon
+Pyrazolon
+pyrethroïde
+racemisch tilidine
+radicalaire polymerisatie
+reflux
+rhodiumtrichloride
+rilpivirine
+Rookgasontzwavelingsinstallatie
+S-Adenosyl-L-homocysteine
+Safranal
+Sesamol
+siderofoor
+sodium bis
+Steviolglycoside
+strontium-90
+tacrine
+telluurtetrachloride
+telluurtetrafluoride
+temperatuurcoëfficiënt
+Teniposide
+tenoxicam
+terazosin
+teriparatide
+tert-butylhydroperoxide
+tert-butylthiol
+Tetramethylammoniumhydroxide
+thial
+Thiepine
+Thietaan
+thio-acetaal
+Thiotepa
+Thiothixene
+tiagabine
+ticarcillin
+ticlopidine
+titanium tetraiodide
+torsiebalans
+tri-ethylboraan
+Triaminotrinitrobenzeen
+trifluridine
+trimethylboraat
+trinitramide
+UCl3
+Ullmann-reactie
+ultracentrifuge
+uranium trioxide
+uranoceen
+Vela-supernovarestant
+vemurafenib
+Verbenon
+vetalcohol
+viervoudige binding
+vigabatrin
+vildagliptine
+vinylfluoride
+Zafirlukast
+zilverperchloraat
+Zuur zout
+zuurstof-18
+1-Hexacosanol
+1-Octen-3-ol
+17-OH-progesteron
+2-Amino-2-methylpropaanzuur
+2-aminofenol
+2-aminopyridine
+2-broompropaan
+2-butoxyethanol
+2-chloor-2-methylpropaan
+2-methyl-1-butanol
+2-Phosphoglyceric acid
+3-aminofenol
+3-methyl-2-butanon
+3-nitroaniline
+4-aminobifenyl
+4-chlooraniline
+4-dimethylaminopyridine
+4-hydroxybenzaldehyde
+5-Methylcytosine
+Aceclofenac
+acepromazine
+acetarsol
+Acetylbromide
+Acetylide
+Aerozine 50
+alfuzosin
+alitretinoin
+Allobarbital
+alosetron
+Alpha-Pinene
+Aluminon
+ammonium permanganate
+auranofine
+Auricupride
+auxochrome
+Azeet
+Azlocillin
+Benzisoxazool
+benzofenon-3
+Benzvaleen
+Benzylchloorformiaat
+Berylliumcarbonaat
+bezafibrate
+bimatoprost
+BINAP
+Biochemische cascade
+bisphenol S
+bomaanslag Mogadishu 2022
+Bradford City-stadionramp
+brandaanslag in Solingen
+Bromodichloromethane
+broombenzylcyanide
+bullvaleen
+Bunsen-element
+butoconazole
+Calciumarsenaat
+canagliflozin
+Caprolacton
+catenaan
+Cefpirome
+chavicol
+Chlooraceetaldehyde
+Chlooraceetamide
+Chromel
+Chromoceen
+chroomhexacarbonyl
+Citrinine
+cobamamide
+cocathee
+CR gas
+Creosol
+cryptand
+Cupferron
+cycloheximide
+Cyclopentolaat
+cytidinedifosfaat
+DADS
+Daidzein
+deoxyguanosinetrifosfaat
+deoxyuridine
+desmosine
+dexmethylfenidaat
+dexrazoxan
+di-ethylsulfide
+dibutylether
+didymium
+Dieckmann-condensatie
+Diethylcarbonaat
+diethylsulfaat
+Difenylacetyleen
+diflunisal
+Dihydrofolate reductase
+Dihydropyraan
+dikobaltoctacarbonyl
+Dimethylnitrosamine
+docosanol
+dolasetron
+doxapram
+Dunnite
+Eculizumab
+eiwitzuivering
+Elektrofiele substitutie
+elvitegravir
+enzalutamide
+ETFE
+Ethoxyquin
+ethyl lactate
+Etilefrine
+Fenaleen
+fenoterol
+fenprocoumon
+Fenylethylether
+flunarizine
+fluocinolone acetonide
+fluorofoor
+fluorometholone
+Gallium antimonide
+gatifloxacin
+Gemifloxacin
+Geranylgeranyl pyrophosphate
+glucosinolaat
+Glutethimide
+Glycidol
+guanethidine
+henryreactie
+HEPES
+HMG-CoA
+Homovanillic acid
+humuleen
+hydroxylammoniumchloride
+hydroxylysine
+hypobromiet
+ibrutinib
+Imidazolidine
+InCl3
+Indool-3-boterzuur
+insuline detemir
+iohexol
+joodmonofluoride
+Juglon
+kaliumfulminaat
+ketazolam
+kobaltfosfaat
+Koolstof-waterstofbinding
+koolstoftrioxide
+Lanthaniumcarbonaat
+lapatinib
+Lead styphnate
+linalyl acetate
+Linamarine
+lipogenese
+lithium-zwavel-accu
+lithiumhexafluorfosfaat
+Loodzirconaattitanaat
+Lugdunaam
+Maitotoxine
+malondialdehyde
+Meldrum's acid
+melezitose
+menachinon
+methacroleïne
+Methazolamide
+methohexital
+methomyl
+Methylchloorformiaat
+methylergometrine
+methyleugenol
+Methyljasmonaat
+Methylone
+Microcystine
+MnBr2
+N-methylpyrrolidon
+nachtclubbrand Santa Maria
+Naringin
+natriumaluminiumhydride
+Natriumdichloorisocyanuraat
+natriumgluconaat
+Natriummetavanadaat
+Natriumorthovanadaat
+Neroli
+neurotensin
+Nikkeloceen
+nitrofural
+Nitroniumion
+Orphenadrine
+oxaprozin
+Oxepaan
+oxolinic acid
+Patentblauw V
+pelargoonzuurvanillylamide
+Philippine Airlines-vlucht 434
+Phorbol
+Phosphole
+Piperiton
+piperonylbutoxide
+polonium-210
+poly-elektrolyt
+Polysulfide
+prefeenzuur
+Prenol
+Prismaan
+Propylhexedrine
+quaternair ammoniumzout
+ractopamine
+ranibizumab
+Reformatski-reactie
+rhenium heptafluoride
+rhodamine
+rimonabant
+riociguat
+risedronate
+Roerstaaf
+roflumilast
+Rood 2G
+Rosenmund-reductie
+Rotigotine
+ruimteverwering
+rupatadine
+s-butyllithium
+Scandiumfluoride
+Schiemann-reactie
+sclareol
+Seleentetrachloride
+silodosine
+sodium arsenate
+sodium fluorosilicate
+Sodium phosphide
+Sonogashira-koppeling
+Strontiumchromaat
+strontiumranelaat
+sugammadex
+Sulfamide
+Swern-oxidatie
+synephrine
+TbCl3
+telithromycine
+TEPP
+terfenyl
+terlipressin
+terpineen
+tert-butylhydrochinon
+tetrahedraan
+tetrasodium pyrophosphate
+Thermisch verzinken
+Thiazine
+Thiofosgeen
+Thymidinetrifosfaat
+Thyroid peroxidase
+tinsulfaat
+tipranavir
+toluïdine
+Trenbolone
+tri-ethylcitraat
+tri-ethyleentetramine
+tri-ethylfosfiet
+trifenyleen
+trifosgeen
+trimethylphosphine
+Tsjitsjibabin-reactie
+Tyrosol
+unbioctium
+uraniumverrijking
+vanadiumnitride
+Vaska's complex
+verfstripper
+viloxazine
+vorinostat
+vreugdevuur van de ijdelheden
+water-gas-shift-reactie
+waterstofsuperoxide
+WGSR
+Wolframietsulfide
+ylide
+Zearalenon
+ziconotide
+zilverazide
+zinkpyrithion
+zirkoontetrafluoride
+zwavelsuboxide
+1-aminocyclopropaan-1-carbonzuur
+1-chloronaphthalene
+2-broom-2-methylpropaan
+2-broombutaan
+2-methyltetrahydrofuraan
+2-nonenal
+2-pyron
+2005 Amman bombings
+2C-I
+3-center-2-elektronbinding
+3-hexyn
+3-methylpyridine
+5-Hydroxymethylcytosine
+6-benzyladenine
+accupack
+acefaat
+Acenaftochinon
+Acetylenediol
+acetyljodide
+additiepolymerisatie
+adefovir
+Aducanumab
+alfa-tomatine
+alfacalcidol
+alglucosidase alfa
+alimemazine
+Allysine
+alprenolol
+amfetamines
+aminal
+Amitraz
+androstane
+Appel-reactie
+aranesp
+Arbusov-reactie
+aromataseremmers
+arsanilzuur
+Ascorbylpalmitaat
+AsI3
+asparagusinezuur
+auermetaal
+Aurine
+azodicarbonamide
+Baeyer-Villiger-reactie
+Bamberger-omlegging
+bariumoxalaat
+Basketaan
+bêta-2 microglobuline
+bexarotene
+Bleve
+bomaanslag in Rangoon
+bombykol
+boride
+bosbranden in Israël 2010
+brivaracetam
+Bromadiolon
+Bronopol
+broomchloormethaan
+broomfenac
+Broomfluormethaan
+Butenafine
+butobarbital
+butylacrylaat
+Cacodyl oxide
+Calcitonin gene-related peptide
+Camptothecine
+canakinumab
+ceftizoxime
+Cevimeline
+Chinaldine
+chinolinezuur
+chinolizidine
+chloorfenol
+Chloorjoodmethaan
+chloornitraat
+chlorpropamide
+Chrysoïne
+citronella
+Claisen-omlegging
+Coenzyme B
+CuN6
+Curtius-omlegging
+Cyanogeenjodide
+cycloartenol
+Cyclobarbital
+cyproteronacetaat
+D-alfa-tocoferol
+daclizumab
+delta-valerolactone
+deoxyadenosinemonofosfaat
+deoxycytidinetrifosfaat
+deoxyuridinemonofosfaat
+dermatan sulfate
+desonide
+Devarda's alloy
+Dewarbenzeen
+Di-tert-butylperoxide
+diboortetrafluoride
+Dichlooramine
+Diethylazodicarboxylaat
+Diflubenzuron
+dihydroergotamine
+Dihydropyridine
+Diisopropylamine
+dilithium
+Dimedone
+dimethoxymethaan
+dimethyloxalaat
+dimethyltelluride
+Dimethylzink
+diosmin
+Disodium pyrophosphate
+Dithizone
+dodecahedraan
+Dolichol
+DPA
+drospirenon
+duroplast
+dysprosiumtrioxide
+Ectoine
+Elektrodialyse
+Ethynol
+febuxostat
+felbamaat
+fenchone
+Fenfluramine
+Fenitrothion
+fenmetrazine
+fenylacetaat
+fidaxomicine
+fludiazepam
+fluor-18
+fluoxymesterone
+Fosfofructokinase 1
+Fractionele kristallisatie
+frovatriptan
+fulveen
+gemtuzumab ozogamicin
+Ginseng
+Glucose oxidase
+Gramine
+guanidiniumchloride
+halazepam
+harmine
+Helofytenfilter
+hexafluoraceton
+Hydroxamzuur
+Hydroxyquinol
+hypotaurine
+icatibant
+ijzerlactaat
+Imazalil
+iminium
+indantreen
+indiumtinoxide
+infraroodthermometer
+Intramoleculaire reactie
+ionofoor
+isocarboxazid
+josamycin
+kaïnezuur
+kaliumwaterstofftalaat
+kanamycin A
+klinische biochemie
+kristalfractionatie
+kwadraatzuur
+Lactol
+levosimendan
+ligandveldtheorie
+lithium carbide
+lithium hypochlorite
+lithiumijzerfosfaat
+Lithiumtetramethylpiperidide
+lomefloxacin
+lorcaserin
+lornoxicam
+lutetium trioxide
+Magnesiumsulfiet
+Mandelonitrile
+mazindol
+MCPA
+meadzuur
+mepivacaine
+Metacresol
+Methylchloorisothiazolinon
+methylmagnesiumchloride
+moxonidine
+Muscazone
+Myrcenol
+N-chloorsuccinimide
+naamreactie
+nateglinide
+Natriumerythorbaat
+Natriumhexafluorfosfaat
+Natriumperrenaat
+natriumtetrafenylboraat
+Neohesperidine dihydrochalcon
+Niflumic Acid
+nimetazepam
+nintedanib
+nitroguanidine
+nitron
+Nordazepam
+octene
+Operation Buster-Jangle
+Operation Castle
+Operation Greenhouse
+Operation Ivy
+Operation Plumbbob
+Operation Ranger
+Orcin
+organoarseenchemie
+ortho-ester
+Orthocresol
+orthokoolzuur
+ovaleen
+Oxazolidine
+oxidatieve additie
+Oxindool
+paclobutrazol
+pamidronate
+panitumumab
+Paracresol
+Paraxanthine
+pelargonidin
+pentafluorethaan
+Pentetinezuur
+perchlorylfluoride
+Performic acid
+pertuzumab
+Phenoxybenzamine
+Phospholipase A2
+Phosphomolybdic acid
+piceen
+PoCl2
+polidocanol
+Polyacrylzuur
+Polyfenyleensulfide
+Polysorbaat 80
+Polyvinylbutyral
+Pristaan
+Propylparaben
+PuF3
+Pyridoxamine
+quazepam
+rasburicase
+resazurin
+rode fosfor
+rodiumacetaat
+roseliet
+rotaxane
+Rubreen
+rufinamide
+Rutinose
+ryanodine
+Salsalate
+sandwichverbinding
+Santonin
+Scopoletin
+Semisynthese
+Sharpless-epoxidatie
+silicene
+Siliciumtetrabromide
+Silumin
+Sivextro
+Sodium dithionate
+sodium hexametaphosphate
+solvolyse
+sparfloxacin
+Sparteïne
+Stercobilinogen
+Steviol
+stikstofmosterd
+still
+strontiumjodide
+Strontiumperoxide
+SYBR Green I
+taurogalzuur
+tautomerization
+tazarotene
+TcCl4
+telluurtetrabromide
+TEMPO
+Tenecteplase
+Tereftaloylchloride
+tetrahydrogestrinon
+tetramethrine
+tetrapropylammonium perruthenate
+Thiaan
+Thiamethoxam
+Thiazolidine
+Thioaceton
+thioamide
+tolvaptan
+Toxafeen
+Tractiebatterij
+Transfluthrin
+Transmetallatie
+travoprost
+Trifenylamine
+trifenylfosfineoxide
+trifluorazijnzuuranhydride
+trifluraline
+trigonelline
+tropine
+Twistaan
+uitharden
+vanadaat
+Vanadiumhexacarbonyl
+verzepingsgetal
+Wurtz-Fittig-reactie
+Xylaan
+zesvoudige binding
+zilverbromaat
+zilvercyanaat
+Zilvernitride
+Zilversubfluoride
+zilvertelluride
+zwaveloxiden
+1-chloor-2-nitrobenzeen
+1-hydroxybenzotriazool
+2-aminobutaan
+2-aminothiazool
+2-methylfuraan
+3-careen
+3-hydroxy-3-methylbutaanzuur
+4-hexylresorcinol
+4-hydroxy-4-methylpentan-2-on
+4-Hydroxyfenylpyrodruivenzuur
+4-methylpentan-2-ol
+4-pyron
+6-Phosphogluconolactone
+abrine
+Absinthine
+Acemetacin
+Acetamiprid
+acrivastine
+adrafinil
+advanced glycation end product
+ajmaline
+alachloor
+Alitame
+alkalinebrandstofcel
+alkylbenzeen
+alumel
+Aluminiumdiboride
+aminering
+Aminoglutethimide
+ammonium azide
+ammonium diuranate
+ammonium sulfamate
+Amorolfine
+anileridine
+aprobarbital
+Argatroban
+aromatische sulfonering

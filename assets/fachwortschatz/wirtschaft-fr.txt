@@ -1,284 +1,227 @@
-science économique
-communisme
 capitalisme
-socialisme
-pauvreté
-pétrole
-mondialisation
 marxisme
-monnaie
 produit intérieur brut
-Bitcoin
-travail
-inflation
-entreprise
 IDH
 indice de développement humain
-capital
-pièce de monnaie
-finance
-chômage
 cryptomonnaie
 comptabilité
-média social
-microéconomie
-BRICS
-richesse
-investissement
-assurance
-Groupe des huit
-bureaucratie
 monopole
-infrastructure
 billet de banque
-compagnie
 banque centrale
-chaîne de blocs
-franc suisse
-service
 parité de pouvoir d'achat
-guichet automatique bancaire
-banqueroute
 bourse des valeurs
 toutes taxes comprises
 TVA
-déflation
+emprunt
 offre et demande
+propriété intellectuelle
 croissance économique
 économie de marché
-émigration
 épargne retraite
 concours de référencement
-obligation
 optimisation du référencement
 enchère
 entrepreneuriat
 impôt sur le revenu
 droit de douane
-économétrie
 personne morale
 bourse d'études
 coopérative
 libre marché
-classe ouvrière
-blanchiment d'argent
-égalitarisme
 valeur mobilière
 bas de bilan
 haut de bilan
 économie planifiée
-moyenne arithmétique
-produit
 société par actions
+audit
 Dow Jones Industrial Average
-exploration de données
-New Deal
 hyperinflation
 laissez-faire
-Web 2
-Web2
-demande
+dividende
 femme d'affaires
 homme d'affaires
 kolkhoze
 marché boursier
 métier manuel
-parlement bicaméral
 Accise
-concurrence
-Gen X
-génération X
 keynésianisme
-argent liquide
 comptes annuels
 école autrichienne d'économie
 niveau de vie
-raffinerie de pétrole
+science économique
 chaîne de Ponzi
-comptable
 coût monétaire
 dette de l'État
 financement participatif
 marché financier
+schema de Ponzi
+allocation universelle
 Économie mixte
-heuristique
 indemnité de guerre
 mendicité
-oligopole
 physiocratie
-aide sociale
 assurance maladie
 moyens de production
 pouvoir d'achat
-règlement européen données personnelles
-RGPD
+usure
+communisme
+subside
 subvention
+système économique
 anarcho-capitalisme
 chiffre d'affaires
 produit dérivé financier
-qualité de vie
 seuil de pauvreté
 Standard & Poor's 500
 coût d'opportunité
 économie circulaire
 économie comportementale
-gestion du risque
-livre blanc
 commerce de gros
 école classique
-externalisation
+économie classique
+économistes classiques
 IPC
 jeton non fongible
 niveau général des prix
+pourboire
 prix à la consommation
 produit national brut
 comptabilité en partie double
 contrat à terme
 DAX
+économie libérale
+introduction en bourse
 libéralisme économique
-monnaie fiduciaire
+libertés économiques
 secteur secondaire
 sériciculture
-utilité
 autarcie
 capital humain
-capital risque
-capitalisation boursière
+capital social
 contrat de bail
 hypothèque
 secteur tertiaire
 créancier
+Créditeur
 tenue de livre
 avantage comparatif
 banque d'investissement
 CAC quarante
 marché des capitaux
+socialisme
+tribut
 banque de dépôt
 commodité
 cycle économique
 écoblanchiment
 impôt sur les sociétés
 indice boursier
+marketing digital
 marketing numérique
 réserves de change
-solidus
-analyse technique
 assurance vie
 banque en ligne
-chaîne d'approvisionnement
+business models
 compte de résultat
 courbe de Phillips
 école néoclassique
+économie néo-classique
 empreinte carbone
+marketing multiniveau
 modèle d'entreprise
+rareté
 service financier
-sesterce
 vente multiniveau
 vente pyramidale
-abonnement
 emprunt d'État
 International Financial Reporting Standards
 marché monétaire
-masse monétaire
 monnaie numérique
 ressource non renouvelable
+résultat net
 shilling
 société à capitaux privés
 impôt indirect
-intervalle de confiance
 NASDAQ-100
-responsabilité sociale des entreprises
-résultat net
 revenu national brut
 service écologique
+service écosystémique
 tableau de financement
 vente à perte
 crédit hypothécaire
 décroissance
 fonds négocié en bourse
 industrie musicale
+Mal hollandais
 maladie hollandaise
-no.wikipedia.org
 plus-value
 social media marketing
-Wikipedia en norvegien
+mondialisation
 aléa moral
 comptabilité de gestion
-compte d'épargne
 coût fixe
 économie sociale de marché
+intérêts composés
 Nikkei 225
+passif
+Risque moral
 salariat
 taux d'intérêt
 titisme
 arbitrage
 konzern
-Loi de Peter
-Principe de Peter
 revenu par tête
-segmentation
+revenu per capita
+SaaSS
 surplus
 tragédie des biens communs
-utilité marginale
+tragédie des communs
+capital propre
+capitaux propres
 école de Chicago
 économie du savoir
 flux de trésorerie
+free cash flow
 impôt progressif
 optimum de Pareto
-shilling du Somaliland
+affacturage
 comptabilité générale
 coopérative de crédit
-étiquette
+Immobilisation corporelle
 Indice Big Mac
 marketing électronique
+marketing Internet
 réassurance
-test de Student
-dépense
+redevance
 économie d'échelle
-entreprise individuelle
-fabricant d'équipement d'origine
+éducation des adultes
 formation des adultes
 Libor
-liquidité
 marketing viral
-monnaie électronique
 secteur économique
-antoninien
-fiorino
-pièce d'or
-pièces en euros
 Price Earning Ratio
 affiliation
 capitalisme d'État
-cours légal
-économie du bien-être
 économie écologique
-fonds mutuel
-inventaire
+économie marxiste
+instrument financier
 marxisme économique
 passager clandestin
-pensée de groupe
+swap
 théorie de la valeur-travail
-attaque zero-day
 BAII
 branche économique
-business angel
 chaîne de valeur
 credit default swap
-directeur financier
-directrice financière
-droit maritime
 EBITDAR
 économie des institutions
 Euribor
 impôt sur la fortune
+institutionnalisme
 loi de Gresham
-monnaie de réserve
 pinkwashing
 socialisme de marché
-statère
-capital social
-fonds indiciel
+contrat intelligent
 forward
 free to play
 guerilla marketing
@@ -287,20 +230,21 @@ incitation économique
 marché secondaire
 microcrédit
 opération financière
-responsabilité comptable
+principes comptables
+rente
 taxe carbone
+transaction financière
+actif circulant
+apanage
 assurance sociale
 BAIIDA
 business to business
-dépression
 Diversification
 force de travail
-freeganisme
 Ghazis
 image de marque
 main-d'œuvre
 marketing de contenu
-microfinance
 taxe foncière
 autogestion
 autopartage
@@ -311,64 +255,66 @@ Coût par clic
 coût proportionnel
 couverture de risque
 déchet plastique
-efficience
 insolvabilité
-kreuzer
 location de voiture
 marginalisme
 mode de production
 monnaie romaine
+mutualisme
 mutuellisme
 neuromarketing
-pfennig
+péage
 propriété personnelle
 recyclage des plastiques
 télémarketing
 théorie du choix rationnel
 warrant
 assurance voyage
+collatéral
 comptabilité nationale
 congé parental
 création monétaire
 cryptomonnaie stable
-darique
+envois de fonds
 fonds de roulement
 impôt direct
 Industries créatives
 retour sur investissement
 société en nom collectif
+stagnation
 stagnation économique
 Stavka
 valeur actuelle nette
+actifs incorporels
 action de priorité
+Action privilégiée
 assignat
-auto-entrepreneur
+assurance chômage
 caisse d'épargne
+capital immatériel
+capital naturel
 Changes flottants
-couronne
 destination touristique
 distributionnisme
-financement
-hyperpérion
 impôt à taux unique
-malédiction des ressources naturelles
-pièce commémorative
-tétradrachme
+jeton
+taux d'imposition
 assurance automobile
-code mnémonique
+capital financier
 Cost accounting
 de gré à gré
 déflateur du PIB
 écotaxe
-expatrié
 Marché efficient
 Marchés efficients
+paisa
 redevance audiovisuelle
 Seuil de rentabilité
 subprime
-système monétaire européen
+Télévision à péage
 télévision payante
 trafic d'armes
+virement bancaire
 action de société
 arrêt maladie
 blue chip
@@ -377,104 +323,99 @@ comportement du consommateur
 coût de transaction
 droit d'enregistrement
 droits de succession
-économie d'entreprise
 économie de la surveillance
 Indice de liberté économique
 indice des prix
 marché primaire
-Monnaie de commodité
-monnaie forte
-operateur de marche
-opérateur de marché
 part de marché
-pièce de huit
 population active
-thaler de Marie-Thérèse
+rapatriement
+riba
 bourse de commerce
 business to consumer
 consommation ostentatoire
+Droits de scolarité
 échange de cryptomonnaies
 économie de l'offre
 économie participative
 Hang Seng Index
 Happy Planet Index
+Homme économique
 homo œconomicus
 Hyperinflation allemande 1923
 marketing par courriel
 Minimum vital
 option binaire
 pari sportif
-piastre
 projet Wikimédia
 revenu national
 search engine marketing
 Taxe sur la vente
 théorie monétaire moderne
-value at risk
-vendeur ou vendeuse
+média social
+médias sociaux
+microéconomie
+arrhes
 banque privée
+biens communaux
+compétitivité
 compétitivité économique
 équilibre général
-flux de travail
 fonds de dotation
 junk bond
-Krugerrand
 meme coin
 nouvelle économie keynésienne
+paiement sans contact
 post-keynésianisme
 prêt étudiant
-région métropolitaine statistique
-souverain anglais
+sukuk
 taxe pigouvienne
-Abenomics
 accès anticipé
 autosuffisance
 avantage absolu
 comportement grégaire
 coopérative agricole
-distribution
 dollar Geary-Khamis
+dollar international
 Ibex 35
 Iqtâ
 marketing d'influence
 marketing mobile
-monnaie virtuelle
-pièce de 1 euro
 prêt entre particuliers
+Principal-agent
 Problème principal-agent
 productivité du travail
-réal espagnol
+Recettes publiques
 Révolution des prix
 taux d'escompte
 unité de compte
 bénéfice par action
 Billet de 200 euros
-bonne pratique
+capital culturel
 chèque de voyage
 coopérative d'habitation
 courbe des taux
 crédit-bail
 impôt régressif
-Lightning Network
 Loi des trois secteurs
-Maravédis
 marketing écologique
-napoléon
+marketing vert
 OPEX
-pièce en argent
-pièces en euro d'Andorre
-Politique de substitution d'importations
 recherche en sciences sociales
+recherche sociale
 répartition des revenus
+Reprise d'entreprise
 société écran
 swap de taux d'intérêt
 Taux de clics
 taxe Tobin
-technologie portative
 théorie des perspectives
 théorie moderne du portefeuille
 too big to fail
 traitement des eaux usées
+travelers cheque
+zakât
+infrastructure
 actif financier
 activity-based costing
 Alfa Romeo Alfasud
@@ -484,20 +425,18 @@ Billet de 500 euros
 BSE Sensex
 consignation
 crypto-anarchisme
-dinar or
-doublon
 dupondius
 économie socialiste de marché
 FGDR
 impôt négatif
 Initial Coin Offering
 location en temps partagé
-monnaie scripturale
 post-capitalisme
+propriété publique
 ratio financier
 studio d'animation
 subvention à l'emploi
-action dépréciée
+chaîne de blocs
 action ordinaire
 AEX index
 banque mobile
@@ -508,138 +447,138 @@ billet de 50 euros
 capital intellectuel
 coopérative de consommation
 économie hétérodoxe
-farthing
 Fonds structurels communautaires
 Fonds structurels européens
 fongible
-fossé des générations
+fouage
 gabelle du sel
+gain en capital
 Imposition à la source
 Impôt à la source
 Impôt sur les plus-values
+management buy-out
 marché à terme
 marché obligataire
 Néokeynésianisme
-pièce de 2 euros
 précarité énergétique
-quadrans
-quinaire
+prix de transfert
 rationalité limitée
 socialisme autogestionnaire
-soultani
-statut juridique
 Swiss Market Index
 taux d'intérêt réel
 théorie du ruissellement
-Wikipédia en biélorusse
-1 cent d'euro
+Automated Teller Machines
+guichet automatique bancaire
 argent de poche
-argenteus
-automatisation robotisée des processus
 banque de détail
-bractéate
+banqueroute
 collateralized debt obligations
 Denier de Saint-Pierre
 Échelle de Nielsen
 évaluation immobilière
-Groupe des dix
+Iassak
 indicateur économique
 marketing social
-mauvaise créance
-monnaie globale
 monnaie locale
 obligation de guerre
 OMX Stockholm 30
-pièce d'investissement
 piège du revenu intermédiaire
+prélèvement bancaire
 répartition des richesses
-silique
+revenu disponible
 Topix
 vente aux enchères électroniques
-10 cents d'euro
+agio
 amortissement
 assurance responsabilité civile
 coefficient bêta
 Conjoncture
 coopérative de travail associé
-crédit syndiqué
 dépenses publiques
 Économie bouddhiste
 effet d'éviction
-endossement
 Euro Stoxx 50
 euro-obligation
 fuite des capitaux
 historicisme
+honoraires
 impôt ad valorem
 incidence fiscale
+leverage buy out
 link building
+mannequin promotionnel
 marché au comptant
 marge bénéficiaire nette
 mur de son
 néo-banque
 obligation d'entreprise
 OMX Helsinki 25
+rachat d'entreprise par endettement
 Ratio de liquidité générale
 règle de Taylor
 socialisation des biens
 Spamdexing
 surconsommation
-tremissis
-50 cents d'euro
+ghetto
 Adjudication à la hollandaise
-analyse de la valeur
 balance des capitaux
 banque libre
 banque offshore
-bureau virtuel
+bien immeuble
 Canevas d'affaires
+Carry trade
 dépenses militaires
-eagle américain
 enfermement propriétaire
 Grande Démission
+impôt philosophiquement dédicacé
 Indice RTS
-intelligence artificielle faible
 libéralisme
 marketing relationnel
 marque personnelle
 obligation convertible
 Propension à consommer
-quarter
+recouvrement de créances
 S&P CNX Nifty
 société anonyme
 SSE Composite Index
 subvention agricole
-syndication de contenu
 système d'échange local
 système monétaire carolingien
 taxe sur la consommation
 théorie de l'utilité espérée
 théorie de la valeur
 vente directe
+déflation
 American Depository Receipt
 argent en polymère
+aval
 banque publique
 Battle pass
-bien d'équipement
 biens et services
 billet en polymère
 canvassing
 capitalisme monopoliste d'État
-demi-dollar
+Colonialisme interne
+EBE
+école de pensée économique
 Effet multiplicateur du crédit
+émigration
 équation comptable fondamentale
-escudo espagnol
+excédent brut d'exploitation
 forfaiting
 gestion de logement
 golden share
+indemnité de licenciement
 juricomptabilité
 marge opérationnelle
+marge sur coût variable
 marketing sportif
 Monnaie grecque antique
 Nasdaq Composite
 Obligation zéro-coupon
 plate-forme électronique de trading
+prix de marché
+prix du carbone
 saint-simonisme
 saisie immobilière
 Surproduction
@@ -650,41 +589,37 @@ Treasury Bond
 TSDI
 valeur nette comptable
 voyage à forfait
-2 cents d'euro
-5 cents d'euro
-50 State Quarters
+zéro-coupon
 Asset backed securities
-Asset Backed Security
 Baltic Dry Index
+call
 CoinMarketCap
 consolidation comptable
 débenture
-dollar Morgan
-drachme
 économie de l'information
-emploi frictionel
 Équivalence ricardienne
 financiarisation
 fonds commun de créances
-fonds vautour
 fruit tropical
-konventionstaler
 ligne de crédit
+micropaiement
 modèle anglo-saxon
 modèle DSGE
-Mouvement FIRE
 multiplicateur d'investissement
+multiplicateur keynésien
+offre publique d'achat
 paquet de maternité
-prime de risque
 Prix prédateurs
-programmation
 race queen
-redlining
 réseau téléphonique
+restitution
+revenu passif
 rotation de stock
 S&P/MIB
 taux d'intérêt nominal
+théorie économique
 tragédie des anticommuns
+économétrie
 argent rose
 assurance de biens
 audiovisuel commercial
@@ -693,69 +628,76 @@ banque de développement
 banque directe
 bid et ask
 billet cent dollars américain
+classe ouvrière
+coupon
 crédit permanent
 crédit social
 cœur de compétence
-dead cat bounce
 Dette circulante
+diffusion commerciale
 économie de plateformes
 ferme de contenus
 génération de leads
 gestion d'actifs
 Kospi
-mannequin promotionnel
+marge brute
 marketing des services
 marketing politique
-monnaie byzantine
-monnaie de substitution
 nouvelle économie institutionnelle
+octroi
 OMX Copenhagen 20
 Parité des taux d'intérêt
-Peace Dollar
+Passif circulant
 permission marketing
+prix de l'électricité
 rémunération pour copie privée
 social media optimisation
 Société coopérative européenne
 structure de défaisance
 syndicalisme
+tarification de l'encombrement urbain
 taux directeur
-tchervonets
 tourisme international
+triens
 triple play
+viager
 Zadruga
+blanchiment d'argent
+Égalitaire
+égalitarisme
 ambush marketing
-American Silver Eagle
 assurance habitation
 assurance incendie
 Assurance Maritime
 Axiome des préférences révélées
 capitalisme tardif
 cash management
-céntimo
+Chiles en nogada
 créance hypothécaire titrisée
 Demeurage
 écart de production
-économie à la tâche
 enchère de Vickrey
 géomarketing
 impôt vexatoire
-lettre d'intention de commande
 libre-service de gros
 marché de l'électricité
 Marge bénéficiaire brute
 métier vert
 modèle d'évaluation par arbitrage
-monnaie complémentaire
+moyenne arithmétique
 OBX
 Per diem
 plafonnement des prix
 réduction de la pauvreté
 Relevé de compte
-Riksdaler
 Suica
-Sycee
 Taxe soda
+travail à la tâche
 valeur économique ajoutée
+exploration de données
+Toile 2.0
+Web au carré
+parlement bicaméral
 action cotée en cents
 appât à queer
 apprentissage entrepreneurial
@@ -766,19 +708,13 @@ capabilité
 capital constant
 Cens
 Commercialisation des produits agricoles
+coût de revient
 dérivé de crédit
 Développementalisme
-dollar Flowing Hair
-dollar Sacagawea
-Ecu
 Employer branding
-Escudo angolais
-Escudo chilien
-feuille d'érable en or
 financement de projet
 Good Country Index
 growth hacking
-histaménon
 hyperinflation au Zimbabwe
 localité communautaire
 Loi de Wagner
@@ -788,22 +724,24 @@ marketing orienté client
 mont-de-piété
 Obligation verte
 passerelle de paiement
-pièce de monnaie bimétallique
 Pingback
-plan financier
+prime d'assurance
 production potentielle
+Produit potentiel
 Propension à payer
+put
 Q de Tobin
-réal portugais
-réserve pétrolière
 Social Security
+Stock option
 Taux d'intérêt effectif
 taux de marque
 Théorème de Haavelmo
-vereinsthaler
+Gen X
+génération X
+argent liquide
 Action en réserve
-aes grave
 affranchissement
+asset
 assurance de dommages
 banque islamique
 bourse de Malte
@@ -811,11 +749,9 @@ bullionisme
 Catallaxie
 cloaking
 comptabilité publique
-couronne britannique
 coût par mille
-cruzeiro
 décimalisation
-désintermédiation
+Deutschlandticket
 École de Manchester
 enchère inversée
 fidélisation
@@ -823,43 +759,45 @@ flux d'énergie
 Gross Rating Point
 indicateur de progrès véritable
 Indice des directeurs d'achat
-miliarense
-moyen d'échange
+local commercial
 MSCI mondial
 panier repas à cuisiner
-pièce d'un dollar Eisenhower
-pistole
+péage urbain
+pension alimentaire pour enfant
 provision
 Quincunx
-réserve comptable
-sapèque
-série du dollar présidentiel
+rachat d'actions par l'entreprise
+restitution des biens culturels
 Serpent monétaire européen
-sixpence
 Special Purpose Acquisition Company
+Strike
 taux de rebond
 taux de transformation
 TCAC
 théorie de la localisation
 théorie du revenu permanent
-valeur intrinsèque
+Vente d'épouse en Angleterre
+heuristique
+oligopole
+aide sociale
+règlement européen données personnelles
+RGPD
 Actif sous-jacent
 Akamatsu
 ATX
 Austrian Traded Index
 banque d'affaires
-boucle salaires-prix
 carte verte
+cession-bail
 Charge indirecte
 Chartalisme
 congé de maternité
-Continental
-conversion
 coquillage monétaire
 créance douteuse
 crédit à la consommation
 Critiques de l'économie
 dénomination
+Droit préférentiel de souscription
 éco-capitalisme
 économie stationnaire
 effet rouge à lèvres
@@ -868,45 +806,50 @@ Euronext 100
 Fiscalité noire
 fusion d'entreprises
 Índice do Dólar Americano
-Livre malawienne
 logement social
-Mancus
 Merval
 micro fondation
 mixeur de crypto-monnaie
 Modèle de Rostow
 momentum
 partenariat limité
+plafond salarial
 préférence pour la liquidité
+Prime
+prix bid
 Produit mondial brut
+qualité de vie
 rapport prêt-valeur
-Real argentin
 revenu médian
 revenu minimum
-shilling britannique
 swap de devises
 système agro-alimentaire
 système agro-alimentaire durable
+système généralisé de préférences
 tontine
 trade marketing
 Vol d'oies sauvages
+gestion de risques
+gestion du risque
+livre blanc
+externalisation
+actif toxique
 actifs sous gestion
-Augustalis
+bien meuble
+capital risque
+capitalisation boursière
 cause marketing
-chalque
 Chrématistique
 comptabilité créative
 Coût par action
 dark pool
-demi-dollar Franklin
-demi-dollar Kennedy
 Démographie économique
+devise
 effet de substitution
 enchère en dollars
 fonction d'utilité
 fonction de demande hicksienne
 gestion de patrimoine
-High Yield Investment Program
 hyperinflation au Venezuela
 Indice Bovespa
 indice d'Atkinson
@@ -914,37 +857,30 @@ inflation sous-jacente
 marché contestable
 marché réglementé
 marketing international
-marque blanche
 MDAX
 métabolisme social
 MOEX Russia Index
 monétisation
 monnaie d'invasion japonaise
 Montée en gamme
-nomisma
 Noyau bancaire
-Ōban
 Obligation perpétuelle
-piéfort
+prix ask
 produit intérieur net
 produit structuré financier
-Reichsthaler
-remboursement
 Rentier capitalism
 rivalité
+Signal-prix
 taxe sur les carburants
-thaler prussien
 Total return swap
-VAR
+analyse technique
 assurance crédit
 benefit corporation
-budget base zéro
 Certificat Or
+chaîne d'approvisionnement
+chèque britannique
 chrysargyre
-Comptes Nostro et Vostro
-D-U-N-S
 démarchage
-dollar commercial
 Échange de liens
 économie des ressources
 endogénéité
@@ -953,7 +889,6 @@ Financement du terrorisme
 Forward Rate Agreement
 gains du commerce
 garantie de prêt immobilier
-half-cent
 Inflation par la demande
 inflation par les coûts
 ISEQ 20
@@ -961,9 +896,10 @@ location opérationnelle
 marketing industriel
 miliaresion
 monnaie de nécessité
-monnaie privée
 obligation sécurisée
 PGF
+porte à porte
+prix plancher
 productivité globale des facteurs
 Protection juridique
 publicité pour le tabac
@@ -972,126 +908,115 @@ Ratio de Treynor
 Renault Monaquatre
 Renault Monasix
 retour social sur investissement
-rixdale
 salaire d'efficience
-sextans
 société d'assurance mutuelle
 société en participation
 STOXX Europe 600
 Straits Times Index
-Taux actuariel
 Taux au jour-le-jour
 taux de chômage
 visiteur unique
 vulgarisation agricole
-æs rude
+intervalle de confiance
+responsabilité sociale des entreprises
 Action de croissance
-anciennes monnaies chinoises
+aspre
 assurance accident
 CAC Next 20
 Capital circulant
 capitalisme autoritaire
 co-insurance
+compte d'épargne
 courbe de Beveridge
 CROBEX
-demi-dollar Walking Liberty
 déstockage
-Devises de l'Union européenne
-dollar du Sealand
-dollar Gobrecht
 Économie créative
 Effet Balassa-Samuelson
 Élasticité de substitution
 enchères anglaises
-euromonnaie
 Federal Reserve Bank
 immeuble de bureaux
-Indian Head cent
 Indice de confiance
 initiative de Chiang Mai
 IPCH
 KOSDAQ
-Liberty Head nickel
-life cycle cost
 Malédiction du vainqueur
 métallisme
-monnaie alternative
 Normes comptables des USA
 NYSE Composite
+offre publique
 option exotique
 PASMO
-politique d'appauvrissement du voisin
 PSEi
-quadrigatus
-réal mexicain
-Remboursement d'impôts
-responsabilité limitée
 revenu par ménage
 S&P/ASX 50
 S&P/TSX 60
 sortie de capitaux
+Taux de référence
 taxe de séjour
-thaler de l'Érythrée italienne
-Visa Electron
+Loi de Peter
+Principe de Peter
+segmentation
+utilité marginale
+test de Student
 affermage des impôts
-backtesting
 Biflation
 bilan carbone
 Brady Bonds
-Britannia
 CAPE
 CAPE ratio
 capital économique
-centime d'euro
 club de livres
 co-branding
-commission
 comptabilité environnementale
 congé de paternité
-couronne slovaque
-date d'entrée en vigueur
-date de valeur
-Doji
-dollar Susan B. Anthony
+copaiement
 Écuage
-Effet Fisher
-Escudo santoméen
-Financial Services Modernization Act
-Flying Eagle cent
-fourrée
+entité économique
+fabricant d'équipement d'origine
 IBED
+Illiquide
 Iltizam
 Impôt sur le célibat
 Indice rouge à lèvres
 ispence
-Jefferson nickel
 jeton de téléphone
-Klippe
+liquidité
 location de vélos
+maona
 marketing événementiel
 marketing sensoriel
 mécanisme de Vickrey-Clarke-Groves
 méthode des coûts complets
 modèle d'affaire durable
-monnaie gauloise
 Nasdaq Financial-100
 nautika
-nugget australien
 Obrok
+pizzo
 prêt personnel
 Prêt relais
+prêt/emprunt de titres
 question méridionale
+réal
 Retour sur capitaux investis
-Seated Liberty dollar
-Standing Liberty quarter
-Stella
+salaire d'un dollar symbolique
 Swaption
 système européen de comptabilité
 taxe sur l'alcool
 TecDAX
 ticket de quai
 travail collaboratif
+cours légal
+économie du bien-être
+pensée de groupe
+attaque zero-day
+business angel
+directeur financier
+directrice financière
+droit maritime
+monnaie de réserve
 À la marge
+agios
 arbitrisme
 assurance animaux de compagnies
 Assurance décès invalidité
@@ -1099,35 +1024,25 @@ assurance invalidité
 bancassurance
 banque digitale
 BET Index
-billet de zéro roupies
 Billets Touristiques
 Bon au porteur
-Buffalo nickel
 CAC Mid 60
 capital variable
 capitalisme de plateforme
 captive
 Chevening Scholarship
-chômage conjoncturel
 concentration d'un marché
 Consommation intermédiaire
 Coûts de sortie
-decussis
-demi-couronne
+croissance sans emploi
 Dérivé climatique
-Désordre de paiement
 dodrans
-dollar Lafayette
-ducaton
 Effet de richesse
 Effet Marginal
 Eurosclérose
 excluabilité
-fat-tax
 financement des campagnes électorales
-Franc de la Réunion
 Front running
-Fugio Cent
 gamme de produits
 gestion de services
 Gilt
@@ -1142,78 +1057,68 @@ Managed Care Organization
 Marketing des jeux vidéo
 Marketing par interruption
 micro-assurance
-Monnaie Barber
 monnaie de carte
 myopie de levitt
 NZSX50
 open interest
 optimum de second rang
-pièce écrasée
+pay to play
 prix fixe
 Raison sociale
 réduction de coût
-rente viagère
+Rente viagère
+responsabilité comptable
 ressources énergétiques mondiales
-Shield nickel
+standing order
 Swap de change
 syndrome des Galápagos
 taux d'imposition marginal
-Trois pence
 vente judiciaire
-vreneli
+freeganisme
+microfinance
+efficience
 AMX index
+auto-entrepreneur
 banque cantonale
 bashraf
 BELEX15
-Bol d'arc-en-ciel
-Brillant universel
 certificat vert
 chèque en blanc
-Columbian half dollar
 condition de Samuelson
 Credit linked note
 Détour de production
-Dette décotée
 dette intérieure
 Diversification agricole
-double eagle
-double eagle de 1933
 Dow Jones Sustainability World
 Émergie
 entreprise municipale
 Esclave énergétique
 évaluation financière
-expropriation
-fice pounds
 Finance catholique
 financement de la recherche
 flexibilité du travail
 Floating charge
-frédéric d'or
 FTSE/Athex 20
 gestion structurée
 histoire du commerce
 IFRS 16
+indemnité de retard
 Indice Case-Shiller
 Indice PFTS
 International Property Rights Index
-Libertad
 livrée d'avion
+malédiction des ressources naturelles
 marché de l'énergie
 Marketing interactif
-monnaie de siège
 normes comptables de durabilité
 obligation à taux variable
-obole ionienne
 OMX Nordic 40
 OMX Tallinn
-Peso costaricien
 planification en France
 Plateforme coopérative
 plateforme multilatérale de négociation
-Principes comptables
+Porte-monnaie privé en Inde
 production musicale
-radiate
 saturation
 SDAX
 Security market line
@@ -1225,20 +1130,29 @@ Théorie de l'enchère foncière
 Théorie des insiders-outsiders
 Théorie du risque
 Tranche de crédit
-Unite
 Usurier Japonais
-Wash trade
 Wilshire 5000
+code mnémonique
+expatrié
+système monétaire européen
+économie d'entreprise
+monnaie forte
+operateur de marche
+opérateur de marché
+value at risk
+vendeur ou vendeuse
 Alcabala
 apprentissage par la pratique
 assurance pour l'aviation
+Avantage en nature
 BAIIA
 Bloomberg Commodity Index
-bolognino
 bourse à la criée
 bourse d'énergie
+brut de référence
+capitalisme commercial
 capitalisme marchand
-collection
+commission d'interchange
 comptabilité hollywoodienne
 coopérative alimentaire autogérée
 courtage
@@ -1247,25 +1161,22 @@ crédit bancaire
 créséïde
 croissance à périmètre constant
 croissance organique
-cruzado
-Demi-penny
+Désintermédiation
 Dow Jones Utility Average
+droit de douane environnemental
 Duplication de contenu
-écu de tir
 Effet Keynes
+Environmental tarifaire
 Euro et République tchèque
 financement des partis politiques
-franc à cheval
-Gesellschaft mit beschrankter Haftung
-GmbH
+flux de travail
+gestion d'aéroport
 H share
-Hache-monnaie
 Half-pay
 impôts sur le tabac
-millime
-Monnaie wisigothe
+lettrage comptable
 Moroccan All Shares Index
-noircissement d'argent
+naming
 Nouvelle synthèse néoclassique
 Obligation samouraï
 OMX Iceland 15
@@ -1277,14 +1188,18 @@ prix de réserve
 prix des carburants routiers
 produit intérieur brut réel
 RAROC
-réformation
+Risk-Weighted Assets
 S&P Latin America 40
 S&P/TSX
+salaire de réserve
 SARON
 SCA
+sen
 STOXX Europe 50
 TA-125 Index
+tarif extérieur commun
 taux d'intérêt anticipé
+taux d'intérêt négatif
 taux de plus-value
 Taxe d'habitation
 théorie du commerce international
@@ -1293,28 +1208,27 @@ théorie du l'impérialisme
 travailleur forestier
 United States Note
 vente liée
-1 paisa
+Workflows
+bonne pratique
+Lightning Network
+Politique de substitution d'importations
+technologie portative
 action de classe B
+action dépréciée
 allocation de maternité
-Arche de Noé
 assurance sur le cancer
 Balance des invisibles
-Bawbee
-bénéfice
 Bourrage de mots-clés
+Buyout
 CAC Small
+Capital public
 Capitalisme rhénan
 Chèque certifié
 chèque de banque
-cinquante cents
 comptabilité générationnelle
-coût de production
 Coût par mille impressions
-décadrachme
 Demand Note
 devise en or numérique
-dix cents
-dix francs Hercule
 don gratifiant
 Earned Wage Access
 échange inégal
@@ -1326,18 +1240,16 @@ Embedded Value
 Équilibre général calculable
 Equity swap
 Eurocheque
-Europa Star
 excédent de trésorerie d'exploitation
+facilité de refinancement
 FBCF
 FCBF
 Floor
-franc guadeloupéen
+fossé des générations
 FTSE/JSE Afrique Top 40
-gestion d'aéroport
 Gold penny
 greenback
 Hansatsu
-Ichibuban
 Indice de Laspeyres
 Indice Grubel-Lloyd
 inflation en Inde
@@ -1349,12 +1261,11 @@ modèle de revenus
 Monnaie constante
 P&I
 Perte d'exploitation
-Pièces de monnaie ukrainiennes
 Politique commune des transports
 Pool de la mort
-premier Manat azerbaïdjanais
 Progression à froid
 propension à épargner
+rançonnement
 redevance audiovisuelle au Royaume-Uni
 Referer spam
 règlement du vivant
@@ -1370,15 +1281,16 @@ SIBOR
 SOFIX
 Sous-capitalisation
 Stamp Act
+statut juridique
+statuts
 Street marketing
 supervision musicale
 SVOD
 Swiss Performance Index
-tangochŏn
 Taux d'intérêt naturel
 techniques de vente
-tenga boukharienne
 théorie de la régulation
+Théorie du circuit monétaire
 timbre-monnaie
 Treasury Bill
 TVA sociale
@@ -1386,34 +1298,41 @@ Undercover marketing
 valeur terminale
 Vente à la bougie
 vente aux enchères d'art
+Visa payWave
 Year-to-date
 Yuan
+automatisation robotisée des processus
+mauvaise créance
+crédit syndiqué
+endossement
+analyse de la valeur
+bureau virtuel
+intelligence artificielle faible
+syndication de contenu
 100 francs Delacroix
 50 francs Saint-Exupéry
+Acqui-embauche
 addiction rationnelle
 All Ordinaries
 answer engine optimization
+Assegno di congrua
 assurance construction
-Australian florin
-Australian penny
-Australian shilling
 Bancozettel
 Banque de grande clientèle
 bibliothèque circulante
-Big Maple Leaf
+bibliothèque roulante
+bien d'équipement
+Bien de production
 Bit
-Blanca
 Bourse sportive
 buy-to-play
 Cambridge Circus
-Capital négatif
 Capitalisme populaire
 capitalisme woke
 carnet d'ordres
 catastrophe bond
 cave coopérative de vinification
 céréaliculture
-cinquante francs Hercule
 COLCAP
 commerce des armes
 coopérative citoyenne d'énergie
@@ -1422,65 +1341,62 @@ coopérative sociale
 corporation à but lucratif
 declarations
 defined benefit plan
-deux dollars
-deux francs Semeuse
 disability benefits
 Division internationale du travail
-dix francs Mathieu
-double tournois
 économie de fonctionnalité
 élasticité de la production
-Exclusion bancaire
 Fakelaki
 fédération coopérative
 FTSE Italia Small Cap
 GKO
-Halfpenny
+haraç
 Hawaii overprint note
 incohérence temporelle
 Indice Zimbabwe Industrial
 instrument négociable
 International Accounting Standard 39
 inversion
+Kirchensteuer
 mensualité
 méreau de communion
 monétisation de jeu vidéo
-monnaie de Populonia
-Monnaie divisionnaire
-Monnaie du Jubilee
 MSCI EAEO
 MSCI EAFE
-New Zealand florin
 ÖkoDAX
+opération bancaire
+paiement direct
+Parts de prise
 pension de survie
 pension de veuve
 piastre égyptienne
+prix du gaz
 productivisme
 programme d'aide
 programme de l'Union européenne
-Quinaire d'or
 Raiffeisen
 Recommerce
-rial / riyal
+rémunération et avantages sociaux
+restitué
 Rogers International Commodity Index
-rouble Makhno
 screening
 SET50 Index
 siège au kilomètre offert
 Sinistralité
 Spoofing
-tangbaekchŏn
+sportler
+superprofit
 taux d'efficience
 taux d'inflation
 taxe sur les robots
-thaler zurichois
 théorème de l'enfant gâté
-type Semeuse
-un franc Semeuse
-unité monétaire
-vingt francs Mont-Saint-Michel
-vingt-cinq cents
-Yarmaq
+emploi frictionel
+Mouvement FIRE
+prime de risque
+redlining
+dead cat bounce
+économie à la tâche
+gig économie
+lettre d'intention de commande
 10 francs Voltaire
 10 nouveaux francs Richelieu
 100 francs Corneille
@@ -1490,7 +1406,6 @@ Yarmaq
 action de classe A
 Action émise
 ağnam resmi
-American Eagle bullion coins
 Association de presse amateur
 assurance de prêt
 assurance dentaire
@@ -1503,11 +1418,10 @@ BIRS
 Bouclier fiscal
 Bowie Bonds
 CAC All-Tradable
+capital scientifique
+Capitale italienne du livre
 Capitalisme d'imprimerie
 CDAX
-cinq cents
-cinq francs Semeuse
-Compte joint
 Consommation intérieure de matières
 Core Web Vitals
 crèche-garderie
@@ -1515,10 +1429,7 @@ D&O
 Dette souveraine
 dextans
 didrachme
-dix francs République
-dollar voyageur
 Dow Jones Global Titans
-dubbeltje
 EarnIn
 Effet Sénèque
 exubérance Irrationnelle
@@ -1534,45 +1445,44 @@ liberté d'entreprendre
 Loi de Bowley
 marketing interne
 marketing pharmaceutique
-monnaie décimale
-Monnaie matières premières
+Multipropriété
 NASDAQ Biotechnology Index
-New Zealand half crown
-New Zealand halfpenny
-New Zealand penny
-New Zealand threepence
 Nifty Jr.
 option sur taux
+Péage virtuel
 péché originel
-Peso équatorien
-Plack
+plan financier
 planning stratégique
 Productivité matières
+produits constatés d'avance
 progrès technique
 propriété partagée
-Quirate
-Réal vénézuélien
-refrappe
+Rapatriement japonais de Huludao
 Relocalisation économique
 Rémunération des salariés
-rouble de Sestroretsk
+réserve pétrolière
+revenu d'inactivité
 S corp
 S&P Vietnam 10 Index
 SPA
 SPDR
 swap de variance
 taux d'autosuffisance alimentaire
+taux de change anticipé
 taxe au tonnage
 taxe parafiscale
 théorie des bottes
 TIBOR
 total du bilan
 tressis
-Universal life
-vingt francs Coq
 WIG
 Wiki Loves Film
-window dressing
+moyen d'échange
+réserve comptable
+valeur intrinsèque
+boucle salaires-prix
+marque blanche
+VAR
 10 francs Berlioz
 100 francs Cézanne
 100 nouveaux francs Bonaparte
@@ -1581,9 +1491,8 @@ window dressing
 5 francs Pasteur
 50 francs Racine
 500 francs Pascal
-âge pour travailler
-Amortissement accéléré
 Application en flux
+aşar
 assurance contre l'agression
 assurance des bâtiments
 assurance dommages
@@ -1592,20 +1501,19 @@ Assurance obsèques
 assurance sur la pollution
 assurance sur le terrorisme
 Auction rate security
+Bataille de procurations
 BBC Global 30
 Berggeschrey
 Billet de 2000 lei
-Bodle
 Box mensuelle
 BRVM Composite
+budget base zéro
 Capsule CRD
-chaîne des titres
-cinq centimes Marianne
-cinquante centimes Marianne
 commerce du bois
 commercial mortgage-backed security
 Compression de marges
 comptabilité analytique
+Comptes Nostro et Vostro
 coopératives de pêche
 Coût par engagement
 Coût par lead
@@ -1613,19 +1521,22 @@ crédit d'escompte
 crédit en devises
 Crédit immobilier
 Cybermarketing
-demi-franc semeuse
-dix centimes Marianne
 Dotation
+Économie de ménage
 Élasticité énergétique
+Emarketing
 employé de banque
 entreprise libérée
 Exchange-traded product
 expert SEO
+finance collaborative
 Financement monétaire
+foyer fiscal
 FTSE Italia STAR
 FTSE4Good
 garantie de prêt
 gaspillage
+gender marketing
 grosse banque
 GSE Composite Index
 HDAX
@@ -1636,34 +1547,27 @@ Impôt anticipé
 Impôt minimum de remplacement
 indicateur macroéconomique
 Industrie musicale chrétienne
-informations personnelles identifiables
-ISDA Master Agreement
-Joseon Tongbo
-Kangourou australien en argent
-Koala en platine
 Landesförderinstitut
 marché d'analyse politique
 Marketing 2.0
 marketing genré
 Mon Tatarstan
 monétique
-Monnaie de Cosa
-Monnaie de Volaterrae
 Monnaie endogène
-monnaie librement convertible
 MSCI marchés émergents
-Noble
 NTX
 OMX Vilnius
 ophélimité
+Ostiarium
 paiement à la performance
-panda chinois
 Pay-Per-Call
-pièce de 10 euros
-pièces de monnaie roumaines
+Postage rate
 Pricing dynamique
+prix au détail
+Prix de l'eau potable
 produit intérieur brut nominal
 publicité directe au consommateur
+Quarantième des Gaules
 quartuncia
 quinconce
 Règle de Tinbergen
@@ -1675,25 +1579,37 @@ Societe cooperative de production
 Société coopérative de production
 société étrangère
 SONIA
+sous-performance
 sportwave
 Spur ryal
 subdivision d'unité monétaire
 Swap quanto
 Tallage
+Taux actuariel
 taux de croissance
-thaler de Hesse-Cassel
 Tracking stock
+transfert d'argent
 travailleur du bois
 travailleuse du bois
 Tunindex
-un franc de Gaulle
 Value Line Composite Index
 VDAX
 Vente de pâtisseries
 vente forcée
-vingt centimes Marianne
 World Water Index
 Zinsoption
+life cycle cost
+politique d'appauvrissement du voisin
+Remboursement d'impôts
+responsabilité limitée
+backtesting
+date d'entrée en vigueur
+date de valeur
+Doji
+Effet Fisher
+Financial Services Modernization Act
+chômage conjoncturel
+Désordre de paiement
 1 dollar américain
 10 francs Minerve
 10 francs Mineur
@@ -1713,9 +1629,7 @@ Zinsoption
 200 francs noir
 25 francs bleu
 250 francs Comptoirs
-3 centimes Dupré
 300 francs Clément Serveau
-4-Pfennig-Münze
 5 francs Berger
 5 francs violet
 5 francs Zodiaque
@@ -1728,11 +1642,14 @@ Zinsoption
 5000 francs rouge
 5000 francs Union française
 5000 francs Victoire
+actif non financier
 aide alimentaire
 Air Passenger Duty
 allocations familiales en Suisse
 arbitrage mondial du travail
 ARENH
+ass
+Assurance chômage en France
 assurance contre les inondations
 assurance propriétaire
 assurance sur la guerre
@@ -1740,31 +1657,28 @@ aurum coronarium
 banque de développement multilatérale
 banque publique de développement
 BELEXline
+bien immobilier résidentiel
 Bundesobligation
 Buy one give one
 caféiculture
 caja rural
+capital d'emprunt
 capitalisme de sauvetage
 capitalisme partenaire
-cent francs Marie Curie
-cent francs Panthéon
+Cathedraticum
 changeur de monnaies numériques
 chèque postal
 çift resmi
-cinq centimes épi
 commerce illégal
+concept économique
 corporation de droit public
 crédit agricole
-Denar Princes Polonie
-deux centimes épi
+Dette décotée
 disruption
 District Cooperative Central Bank
 DivDAX
-dix francs Léon Gambetta
-dix francs Millénaire Capétien
-dix francs Montesquieu
-dix francs Roland Garros
-dix francs Victor Hugo
+dividende intérimaire
+doume
 Droit de cornage
 Dzair Index
 échange écologiquement inégal
@@ -1775,20 +1689,23 @@ EIRL
 Eranos
 établissement public
 Euro Medium Term Notes
-euros des régions
 exogénéité
+expropriation
+extelligence
 fonction d'utilité de Friedman-Savage
+frais de traitement
 FTSE All-World
+Généralités
 gümrük resmi
 Hébergement parasite
 HSTECH
 IBrX
 Impôt seigneurial
+index ZEW
 Indexcat
 indice ZEW
 inflation alimentaire
 inflation en Suisse
-influence
 information économique
 Insurtech
 KASE Index
@@ -1801,74 +1718,67 @@ Loi NOME
 London Interbank Bid Rate
 Marketing de Halo 3
 marxisme autogestionnaire
-médaille Hünkar İskelesi
-monnaie de nickel
-monnaie non-décimale
+mécénat en logiciel libre
+minerval
 Morocco Stock Index 20
 müskirat resmi
 mutisme vert
 MWIG40
 négoce de matières premières
-New Zealand crown
 NISAX20
 Nmax
-non-linéarité
 OMX Riga
 OPCVM
 opération de pension
 pass-through
 pension de vieillesse
-pièce d'un demi-dinar algérien
 politique nutritionnelle
-portefeuille bitcoin
-pot-de-vin
 Prépension
 prestation sociale
+putty-putty
+rappel d'ambassadeur
 rav akçesi
+réclamation
 redevance audiovisuelle en Italie
-règle de l'uptick
+rémunération forfaitaire
 resm-i bennak
+revenu cadastral
 ROTX
 SBI TOP
 Schatz
 secteur des archives
 Service de la dette
-shilling anglaise
 société par actions simplifiée
 Stampit
 sténo-dactylo
+stips
 STX EU Enlarge 15
 Swap d'inflation
-Swap de volatilité
 Tanzania All Share
+tarification à la sortie
 Taux d'emploi des femmes
 Taux de l'intérêt légal
+Taxe sur le charbon
 tekalif
 TEPIX
 Théorie du sludge
 tokushu hōjin
 Trade sale
+Transaction erronée
 Transformité
-trésor monétaire
-un centime épi
-un franc États généraux
-un franc Jacques Rueff
-un franc Première République
-uniface
-vingt francs Jeux méditerranéens
+Wash trade
 Wikimedia République du congo
 Xalq bank
-Yotin korta
+Zielverkaufspreis
 Zwischenschein
-10 roubles Nicolas II
-10 roubles or russe
+coût de production
+Capital négatif
+Exclusion bancaire
 100 000 lires Manzoni
 1000 francs bleu
 1000 francs Germinal
 1000 francs noir
 20 couronnes Selma Lagerlöf
-20 Mark or
-5 francs Semeuse argent
 50 000 lires Leonardo
 500 francs bleu
 500 francs Chateaubriand
@@ -1877,14 +1787,15 @@ Zwischenschein
 500 francs La Paix
 500 francs noir
 500 francs Victor Hugo
+Abgabepreis
 Abonnement téléphonique
 Abverkauf
 Abzinsungspapier
 Acapte
 Acceptation sous bénéfice d'inventaire
 Accomenda
+Achats intra-application
 Action de préférence
-Action privilégiée
 actions de sociétés
 Activités de banque centrale
 activités des sociétés holding
@@ -1894,10 +1805,9 @@ agence d'urbanisme
 aire d'influence
 Akzeptkredit
 allocations familiales en Belgique
-Altun
-Andorra Eagle
+annata
 Apetissement
-Appel Public À L'épargne
+appel public à l'épargne
 Architecture Billings Index
 Arion
 Arya
@@ -1918,14 +1828,13 @@ assurance pension légale
 assurance sur l'art
 assurance vie variable
 ATOL
-aurelianianus
 Autres intermédiations monétaires
 Baç
-Bajoire
 Bank van Lening
 Bankaktiebolag
 banque à charte
 banque gratuite
+bataille financière
 BBL
 Bermuda Stock Exchange Index
 BET-TR
@@ -1936,19 +1845,24 @@ billet de 10 shillings
 Billet de monnoye
 Bitchcoin
 BLOM
+Boalache
 Bolsa de Panama General
 Bombing marketing
 Bon de souscription
 Bona
+Borgeleje
 bostadsförening
 Botswana Gaborone Index
+Boues et lanternes
 Bourse au mérite
+box-office
+Brillant universel
 BRL
 BRVM 10
 Bubill
 BUBOR
 Burcap
-Buy-in
+bureau d'octroi du Mail
 CAC All-Share
 CAC IT 20
 CAC Large 60
@@ -1963,65 +1877,49 @@ cavalerie
 CEECEEUR
 CEETX
 Cekin
-cent francs André Malraux
-cent francs Charlemagne
-cent francs Clovis
-cent francs Émile Zola
-cent francs Fraternité
-cent francs Jean Monnet
-cent francs La Fayette
-cent francs René Descartes
 cercle de lecture
-certificat
 Chatrel
 China Traded Index
-cinq francs Hercule
-cinq francs Mendès France
-cinq francs Tour Eiffel
-cinq francs Voltaire
 CITI 64
 CITI 65
 club épargne
 comptabilité d'entreprise
+compte épargne-temps
+Compte joint
 Conge de maternite
 Congé de naissance
 congé parental en Belgique
 congé parental en France
 consensus de Jackson Hole
 Consignation en France
+Consolidator Grant
 consommation alimentaire
 Contraction budgétaire expansionniste
 coopérative d'achat
 coopératives en Champagne
 Cost-of-Thriving-Index
-couronne tchécoslovaque
 courtage maritime
 crédit client
 Critique de Walters
 CTX
-Cuauhtémoc
 Cyprus General Market Index
 CySE General
-Dalero
 décalage vers le rouge
 défaut de couverture médicale
 demande en microéconomie
 Designated Activity Company
 dette convertible
-deux francs Georges Guynemer
-deux francs Jean Moulin
-deux francs Louis Pasteur
 deuxième Manat azerbaïdjanais
 Dienstleistungsgenossenschaft
 diminution de valeur
 Distro
-dix francs François Rude
-dix francs Robert Schuman
-dix francs Stendhal
+Dividende en droit français
+diwano
+domiciliation bancaire
+Dotation sur le Mont-de-Milan
+Douane de Lyon
 dumping agricole
-Dupondius de Nîmes
-Dwudenar
-Eco-Pesa
+Échats de Bordeaux
 économie de troc
 Écu à la couronne
 effet boule de neige
@@ -2037,6 +1935,8 @@ Enzâl
 Épargne solidaire
 EPE
 EPIX
+Estimation automobile
+etiquette de gondole
 Feudum
 financement de l'éducation
 financement direct
@@ -2044,15 +1944,18 @@ financement hospitalier
 financement naval
 financement public
 fiscalité nationale
-FOK
+Fixed Termination Rate
+flux de paiement
+Forfait hospitalier
 forfait mobile international
-Fryderyk Chopin
 FTSE ADX General Index
 FTSE Namibia Overall
 FTSE/CySE 20
 Gabela
 garantie d'achat
+Gedinge
 Gescal
+gueyte
 Hang Seng MidCap Index
 HASPAX
 hôte d'accueil
@@ -2068,6 +1971,8 @@ impôt sur le tabac
 impôt sur le thé
 incertitude radicale
 indemnité kilométrique vélo
+indemnité parlementaire
+Indemnité transitoire
 Indice Al Quds
 Indice Bolsa General
 Indice Hermès
@@ -2080,6 +1985,7 @@ Instrument de préadhésion
 instrument dérivé sur l'électricité
 intérêt conventionnel
 Intermédiation monétaire
+Intermittent du spectacle
 ISBVL
 Jeune entreprise innovante
 Junior Association
@@ -2095,27 +2001,21 @@ Laos Composite
 Latibex All Share
 Latibex Brésil
 Latibex Top
+Lengolik
 LevDAX
 Licitation
 Liens réciproques
 ligne de produits
-lingot-monnaie des îles Cook
 Live Betting
 Location financière
 logo sonore
+loyer de chauffage
 marketing artistique
-Merki
 MIFROG
-mnaeion
-monnaie commune
-monnaie d'essai
-Monnaie d'occupation
 Monnaie exogène
-Monnaie fondante
-monnaie kanak
-monnaie unique
 Moroccan Bond Index
 MOSTE
+Mostowe
 moyenne mobile exponentielle triple
 MSCI ACWI
 MSCI ACWI IMI
@@ -2135,6 +2035,7 @@ Nouveaux économistes
 NSE All Share
 NSE All-Share Index
 numéraire
+nüzül
 nx-25 Natur-Aktien-Index
 NZX 15 Gross
 NZX Top 10
@@ -2147,6 +2048,7 @@ otlak resmi
 Overseas Chinese bank
 Pagejacking
 PayActiv
+Pension alimentaire
 pension d'emploi
 phénomène économique
 PIB à PPA
@@ -2154,25 +2056,31 @@ PIB de la France
 Pib français
 PIB PPA
 PIBOR
-pièce de 5 euros
-pièce de monnaie contrefaite
+Piquet
 Plan d'épargne retraite d'entreprise
-plaque-monnaie des îles Cook
+politique tarifaire
 pouvoir d'achat en France
+précompte professionnel
 Préfecture à Madagascar
+Prestation compensatoire
+Prestation compensatoire en France
 prêt à taux variable
 prêt garanti par l'État
 prêt participatif
 Prêt SMS
 Prêt viager hypothécaire
+principe de rémunération variable
 principe du reflux
 Prix capturé
+prix de revient
+prix de revient unitaire
+prix de vente
+Prix net
 production agricole
 produit aquatique
 Programme d'initiative communautaire Urban
 projet Wikimedia de contenu
 Prospection multi-canal
-Proxy Statement
 Publicité d'assurance
 Punazs
 quasi-fonds propres
@@ -2182,8 +2090,11 @@ Ratio Cooke
 Ratio McDonough
 redevance audiovisuelle en France
 relations de travail
+Rémunération des fonctionnaires
 resm-i mücerred
-rigsort
+revenu de retraite
+revenus de mécénat
+Risturn
 Rouage
 RUONIA
 S&P 500 Banks Index
@@ -2192,15 +2103,18 @@ S&P Africa 40 Index
 S&P Financials Select Sector
 S&P/IFCG Extended Frontier 150
 S&P/IFCI
+salaire minimum agricole garanti
 sambruksförening
 Sans station
-Schelin
+Sanssi
+Schutzgebühr
 Schwarze Wette
 SCIC
 SEMDEX
 shooting premium
 SIMIC
 sin sot
+Soće
 société anonyme privée
 Société anonyme sportive professionnelle
 société coopérative d'intérêt collectif
@@ -2212,10 +2126,15 @@ société quasi-étrangère
 SOFFEX
 Sparkasse
 STOXX Nordic 30
+strip
 subvention de recherche
 subventions aux énergies renouvelables
+surcharge tarifaire maritime
 système agro-alimentaire résilient
 système comptable américain
+Tarif fille
+tarif horaire
+tarif réduit
 Tarification à l'activité
 taux d'inflation optimal
 Taux d'inversion
@@ -2228,18 +2147,22 @@ théorème de non-substitution
 théorème marxien fondamental
 théorie des bulles rationnelles
 Théorie du commerce intra-branche
-Timber Wolf
+Traitement des fonctionnaires
+traites
+Transfert
+transmission d'entreprise en Scop
 Trappe à inflation
-trimestre fiscal
+Tratta
+Trésor royal
 troisième Manat azerbaïdjanais
 UFABET
+Universal life
 valeur nominale
 VeniVidiVici student prêt
 Vente à distance
 Vente à domicile
 vente à la criée
 vente d'organes
-Vera valor
 version linguistique de Wikibooks
 version linguistique de Wikinews
 version linguistique de Wikiquote
@@ -2249,39 +2172,47 @@ version linguistique de Wikivoyage
 version linguistique du Wiktionnaire
 VINX
 VSE
+Watari
 Wertpapierhandelsbank
 WIBOR
 WIG-chemia
 WIG-górnictwo
 WIG20short
 wiki Wikimedia
+window dressing
 WIRON
 Yomiuri Stock Index
-Zero-Cost-Collar
 Zuschlagsteuer
 Zwischenverkauf
-économique
-sciences économiques
-crise pétrolière
-crises pétrolières
-exploitation pétrolière
-huile de roche
-or noir
-petrole
-produits pétroliers
+Zwischenzins
+âge pour travailler
+Amortissement accéléré
+chaîne des titres
+informations personnelles identifiables
+ISDA Master Agreement
+non-linéarité
+portefeuille bitcoin
+règle de l'uptick
+Swap de volatilité
+Buy-in
+FOK
+Proxy Statement
+trimestre fiscal
+Zero-Cost-Collar
+Bancaire
+Établissement bancaire
+Société bancaire
 PIB
-XBT
 erosion monetaire
 érosion monetaire
 érosion monétaire
 hausse des prix
-affaires
 Classement IDH Des Pays
 Indicateur de développement humain
 Indicateur du développement humain
 Indice de developpement humain
-pièces de monnaie
-chomage
+markéting
+mercatique
 crypto-monnaie
 cryptodevise
 monnaie cryptographique
@@ -2289,48 +2220,31 @@ comptabilisation
 comptabilisé
 comptabiliser
 comptabilite
-comptes
-médias sociaux
-réseaux sociaux
-micro-économie
-BRIC
-Grande fortune
-Riche
 surinvestissement
 asssurances
 précaution
 prévoyant
 rassurance
-Charité islamique
 monopoliste
 pratiques monopolistiques
-Zakat al fitr
-Zakkat
 billets de banque
+fafiot
 monnaie fiducière
 papier monnaie
-société
-francs suisses
 Parite de pouvoir d'achat
 Parité des pouvoirs d'achats
 Parités de pouvoir d'achat
-Automate bancaire
-Automated Teller Machines
-Dabiste
-Distributeur automatique de billets
-Distributeur de billets
-Guichet automatique
-Guichets automatiques
-Mur qui crache
-Postomat
-cessation de paiement
-dépôt de bilan
-faillite
 chéquier
+interet
 HTVA
-cadre financier
-comptabilité budgétaire
+annuité
+appointement
+droits salariaux
 offre et la demande
+revenu salarial
+revenus salariaux
+droits intellectuels
+propriete intellectuelle
 croissance du PIB
 croissance economique
 economie de marche
@@ -2338,12 +2252,12 @@ economie de marche
 épargne-retraite
 PERCO
 concours de positionnement
-recette
 référencement naturel
 référencement organique
 référencement SEO
 Revenu
 upranking
+encan
 enchere
 entreprenariat
 entrepreneuriale
@@ -2359,15 +2273,6 @@ bourse d'etude
 bourse étudiante
 bourses d'études
 Libre-marché
-classe ouvriere
-anti-money laudering
-blanchiment de capitaux
-blanchiment de l'argent
-blanchiment de l'argent sale
-Égalitaire
-Egalitarisme
-Égalitariste
-Société égalitaire
 titre financier
 valeur financière
 valeur mobiliere
@@ -2387,24 +2292,11 @@ economie planifiee
 marchandise
 société par action
 sociétés par action
-valeur moyenne
-data-mining
+sociétés par actions
 DJIA
 Dow Jones
-ECBD
-exploitation des données
-exploration de donnees
-forage de données
-fouille de données
-Nouvelle donne
-hyper-inflation
 Laisser-faire
-Toile 2.0
-Web au carré
 artisanat
-Bicaméralisme
-Bicamerisme
-bicamérisme
 femmes d'affaires
 hommes d'affaires
 Kolkhoznik
@@ -2415,6 +2307,7 @@ keynesianisme
 keynésien
 kéynesien
 keynésienne
+keynésiennes
 pensée keynésienne
 politique keynésienne
 Ecole Autrichienne
@@ -2423,9 +2316,12 @@ Ecole autrichienne d'economie
 Ecole autrichienne d'économie
 École d'économie autrichienne
 École économique autrichienne
+sciences économiques
 chaine de Ponzi
 dette de l'etat
 dette publique
+Épargnant
+Epargne
 financement collaboratif
 marché de capitaux
 marche financier
@@ -2433,21 +2329,33 @@ marchés de capitaux
 marchés financiers
 montage Ponzi
 pyramide de Ponzi
-schema de Ponzi
 schéma de Ponzi
 schéma Ponzi
 sociofinancement
 Vente
 actif sous jacent
+Borgerlon
+dividende citoyen
+dividende territorial
+dividende universel
+dotation universelle d'autonomie
 Economie mixte
-euristique
 faire la manche
 mendier
-Oligopolisation
 physiocrates
 physiocratique
 physiocratisme
 prix d'exercice
+revenu citoyen
+revenu d'existence
+revenu d'existence inconditionnel
+revenu de base
+revenu de vie
+revenu garanti
+revenu inconditionnel suffisant
+revenu minimum garanti
+revenu social garanti
+revenu universel
 Système économique mixte
 assurance santé
 assurance-maladie
@@ -2455,8 +2363,8 @@ assurance-santé
 assurances maladies
 assurances santé
 baiser du diable
-subside
 subsidiation
+systèmes économiques
 Anarcapie
 Anarcho capitalisme
 Anarcho-capitaliste
@@ -2465,36 +2373,25 @@ Chiffres d'affaires
 contrat dérivé
 derivative product
 Individualisme libéral
+payement
 Seuil de pauvrete
 Seuils de pauvreté
-analyse des risques
 coût d'option
-gestion de risques
-gestion des risques
 grandeur monétaire
-Livres Blancs
-management du risque
-classique
 commerce en gros
 ecole classique
-économie classique
-économistes classiques
-externalisée
-impartition
 JNF
-Taler
+pourliche
 théorie économique classique
 comptabilité d'engagement
 comptabilite en partie double
 Contrat a terme
 Contrats à terme
 digraphie
-économie libérale
+Entrée en bourse
 liberalisme economique
 liberté économique
-libertés économiques
 Opération à terme
-papier-monnaie
 Sericiculture
 Sériculture
 utilite
@@ -2502,17 +2399,11 @@ autarcique
 autoproduction
 bail commercial
 bailleur
-capital de risque
-capital risqueur
-capital-risque
-capitalisation boursiere
 contrat de location
 Indépendance économique
-location
-valeur actionnariale
+louage
 Accipiens
 Creancier
-Créditeur
 avantages comparatifs
 Banques d'investissement
 Marche des capitaux
@@ -2525,15 +2416,11 @@ cycles économiques
 cyclicité économique
 éco-blanchiment
 indices boursiers
-marchandises
-marketing digital
 reserves de change
 réserves monétaires
 tendance conjoncturelle
 verdissement
 verdissement d'image
-analyse graphique
-analyste technique
 chaîne d'argent
 commercialisation à paliers multiples
 comptes de résultat
@@ -2542,7 +2429,6 @@ contenu CO2
 ecole néo-classique
 école néo-classique
 ecole neoclassique
-économie néo-classique
 économistes néoclassiques
 empreinte CO2
 état des résultats
@@ -2551,55 +2437,50 @@ jeu de l'avion
 marketing à paliers multiples
 marketing de réseau
 marketing multi-niveaux
-marketing multiniveau
 modèle d'activité
 modèle d'affaire
+modèle d'affaires
 modèles d'entreprise
 multi-niveau
 néoclassiques
 participation aux bénéfices
 raréfaction
+rarete
 secteur bancaire
 théorie économique néoclassique
 théorie néoclassique
 vente multi-niveau
+Bénéfice net
 emprunt d'Etat
 entreprise privée
 JGB
 Marche monetaire
-Masse monetaire
+monnaie électronique
 obligation du Trésor
 ressource naturelle non renouvelable
 ressource non-renouvelable
 ressources naturelles non renouvelables
 ressources non renouvelables
+Resultat net
 schilling
 société fermée
 société non cotée
 société privée
 souscription
+souscriptions
 Treasury
-Bénéfice net
 fiscalité indirecte
 fonction écosystémique
 fonctions écologiques
 fonctions écosystémiques
 impot indirect
 impôts indirects
-responsabilité sociale d'entreprise
-responsabilité sociale de l'entreprise
-responsabilité sociétale d'entreprise
-responsabilité sociétale des entreprises
-Resultat net
 RNB
-RSE
-service écosystémique
 service environnemental
 services ecologiques
 services écosystémiques
 crédit immobilier hypothécaire
 ETF
-Exchange Traded Fund
 Fonds coté en bourse
 Fonds cotés en bourse
 Fonds negocie en bourse
@@ -2607,23 +2488,25 @@ Fonds négociés en bourse
 Fonds transigé en bourse
 industrie discographique
 industrie du disque
-Mal hollandais
 Malaise hollandais
-no.wiki+nn.wiki
-nowikipedia
 objecteur de croissance
 objection de croissance
 prêt hypothécaire
 survaleur
 Syndrome hollandais
+crise pétrolière
+crises pétrolières
+exploitation pétrolière
+huile de roche
+or noir
+petrole
+produits pétroliers
 Alea moral
-compte sur livret
 cout fixe
 coûts fixes
 Danger moral
 marché dérivés de taux
 Nikkeï
-Risque moral
 taux d'emprunt
 taux d'interet
 titoisme
@@ -2633,28 +2516,22 @@ PIB par habitant
 PIB per capita
 revenu par habitant
 revenu par tete
-revenu per capita
 tragédie des communaux
-tragédie des communs
-Utilite marginale
-Utilités marginales
-Aurei
-Auréi
-Auréus
+actif net
 capital cognitif
 capital savoir
 capital-savoir
 capitalisme cognitif
 cash-flow Disponible
 cash-flow libre
-Denier d'or
 Ecole de Chicago
 économie de l'immatériel
 économie de la connaissance
 economie du savoir
 flux de fonds
 flux de tresorerie
-free cash flow
+fond propre
+fonds propres
 optimalité de Pareto
 optimum économique
 assurance des assurances
@@ -2663,77 +2540,44 @@ Cooperative de credit
 digital marketing
 etiquette
 marketing electronique
-marketing Internet
 mercatique électronique
 reassurance
 réassureur
-Test de t
-test t
-Test-t
+royaltie
 campagne virale
 domaine d'activité
-éducation des adultes
-FEO
 formation permanente
-Illiquide
 parasitage publicitaire
 secteur d'activité
 viralité
 PER
-pièce en or
 Ratio cours / bénéfice
 Rendement bénéficiaire
-Bien-être
 cavalier libre
-cours legal
 éconologie
 éconologue
-Économie du bien être
-Economie du bien-etre
-économie marxiste
-effet de groupe
-effets de groupe
+Instruments financiers
 marxisme economique
-pensee de groupe
-pensée groupale
 valeur travail
-branche
 Branche d'activité
 Chaine de valeur
 couverture de défaillance
-directeur administratif
-directeur administratif et financier
-direction financière
 economie socialiste de marche
-Guinee
-industrie
-institutionnalisme
 Institutionnalisme americain
 institutionnalisme américain
 institutionnaliste
-monnaie de reserve
 permutation de l'impayé
 socialisme de marche
-virus zero-day
-vulnérabilité zero-day
-compte-rendu
 Forfait Fiscal
-gestion indicielle
 incitateur
 incitation
 Micro-crédit
 operation financiere
-récompense
-reddition de compte
-rendre compte
+PCGR
 résultat anticipé
 stimulant
-Tracker
-transaction financière
 commerce interentreprises
 EBIDA
-gratuivorisme
-Micro-finance
 RBE
 Résultat brut d'exploitation
 sécurité sociale obligatoire
@@ -2748,7 +2592,6 @@ déficit courant
 déficits courants
 marginaliste
 modes de production
-mutualisme
 mutualisme libertaire
 neuromercatique
 paiement au clic
@@ -2771,35 +2614,43 @@ industries culturelles
 Principe d'équilibre financier
 SNC
 société de personnes
-stagnation
+Transfert d'argent des immigrés
 VAN
 Actions de priorité
 actions privilégiées
 ADP
-auto entrepreneur
-autoentrepreneur
+allocation chômage
+allocations chômage
+assurance chomage
+assurance-chômage
+assurance-emploi
 banque d'épargne
 caisse d'Epargne
 caisse populaire
 caisses d'Epargne
 caisses d'épargne
+capital écologique
 distributiste
-Hyperpere
-Hyperpère
 impot a taux unique
 impôt proportionnel
-micro-entrepreneur
+indemnisation du chômage
 part privilégiée
+stock de ressources naturelles
 assurance auto
 Deflateur du PIB
 Efficience Du Marché
 Efficience du marche
+gratification
 redevance télé
 redevance télévisée
 redevance télévision
 redevance tv
 taxe écologique
-Télévision à péage
+virement
+virement automatique
+chomage
+chomdu
+chômdu
 capitalisme de surveillance
 congé maladie
 Cout de transaction
@@ -2807,23 +2658,20 @@ Coûts de transaction
 droits d'enregistrement
 Gestion des immobilisations
 Immobilisation
+Immobilisations
 impôt sur les successions
 leader de marché
 Marche primaire
-négociant
 part de marche
 parts de marché
 PDM
-trader indépendant
-trader institutionnel
-agent de vente
+ribâ
 chartaliste
-Commercial
 école de l'offre
 economie de l'offre
 économie participaliste
 economie participative
-Homme économique
+frais de scolarité
 Homo oeconomicus
 HSI
 pari hippique
@@ -2835,20 +2683,16 @@ projet MediaWiki
 supply siders
 systèmes de paris sportifs
 théorie de l'offre
-Valeur à Risque
-Value-At-Risk
-vendeur
-vendeuse
+réseaux sociaux
+micro-économie
 banque privee
 banques privées
 compétitif
 compétitive
-compétitivité
 competitivite economique
 compétitivité hors-prix
 compétitivité-coût
-Flux de travaux
-Gestion des flux d'informations
+Grande fortune
 mème coin
 obligation à haut risque
 obligation de pacotille
@@ -2857,38 +2701,32 @@ obligation pourrie
 Post-keynesianisme
 Post-keynesien
 Post-keynésien
-Processus de workflow
-région metropolitaine des États-Unis
+Riche
 soukouk
-Souverain
+suruk
 taxe pigovienne
 Coopératives agricoles
-dollar international
 étalon monétaire
 fenêtre d'escompte
 instinct grégaire
-Iqta
 Marketing téléphonique
 métrologie monétaire
-pièce de un euro
-Principal-agent
 Probleme principal-agent
 Publicité mobile
 Publicité par téléphone mobile
-Real de a ocho
-Real espagnol
 Sociétés coopératives agricoles
 taux créditeur des banquiers
 taux de l'escompte
 affectation des revenus
 affectation du revenu
 alerte sur bénéfice
+ana
 bail à rente
 bénéfice net par action
 benefice par action
 BNPA
-bonnes pratiques
 charges d'exploitation
+Charité islamique
 coopérative d'habitants
 dépense opérationnelle
 dépenses de fonctionnement
@@ -2896,12 +2734,16 @@ dépenses opérationnelles
 distribution des revenus
 distribution du revenu
 épuration des eaux
-exemples de bonnes pratiques
-guide de bonnes pratiques
-marketing vert
+Offre publique d'échange
+Offre publique de retrait
+Offre publique de vente
+Offres publiques
+OPE
+OPF
+OPR
+OPV
 Paravent de société
-Pieces en euro d'Andorre
-recherche sociale
+Raid boursier
 répartition du revenu
 résultat par action
 Sociétés apparentes
@@ -2911,13 +2753,13 @@ Sociétés fantômes
 Sociétés fictives
 Sociétés interposées
 taxe Robin des bois
-technologie mettable
 theorie des perspectives
 théorie du portefeuille
 theorie moderne du portefeuille
-travelers cheque
-travellers cheque
+travelers cheques
 travellers chèques
+Zakat al fitr
+Zakkat
 Actifs financiers
 Alfasud
 Alfasud sprint
@@ -2925,24 +2767,18 @@ allocation familiale
 argent braguette
 indicateur financier
 ratios financiers
-2 euros
-action à rendement
-action de valeur
-action depreciee
-actions en redressement
 Courant néo-keynésien
 equation de Fisher
 Faux saunier
 Faux-saunage
 Faux-sauniers
 Ferme du Roi
-fossé générationnel
-fourthling
 Gabeleurs
 Gabeleux
 Gabelous
 Grande gabelle
 Impôt sur le sel
+MVLT
 Neo-keynesianisme
 Néo-keynésianisme
 Néo-keynésien
@@ -2952,19 +2788,33 @@ Pays de salines
 Pays exempts
 Pays redimés
 Petite gabelle
-Piece de 2 euros
+plus value
+plus values
+plus-values immobilières
+PVLT
 Rationalite limitee
 Régime fiscal des plus-values
-statuts
 Synthèse néokeynésienne
 taux d'interet reel
-ARP
-automatisation des processus robotisés
-automatisation robotisée
+Automate bancaire
+Dabiste
+Distributeur automatique de billets
+Distributeur de billets
+Guichet automatique
+Guichets automatiques
+Mur qui crache
+Postomat
 banque de detail
+cessation de paiement
 Denier de Saint Pierre
+dépôt de bilan
+domiciliation
+Jassak
 MLC
 monnaie communautaire
+prélèvement automatique
+Yassak
+acquisition par emprunt
 Coefficient beta
 construction de liens
 construction de liens hypertextes
@@ -2974,20 +2824,19 @@ coopératives de production
 coopératives de travail associé
 création de liens
 création de liens hypertextes
-crédit consortial
-credit syndique
 école historique allemande
 école historique anglaise
 école historique française
 Effet d'eviction
 fardeau fiscal
+Financement mezzanine PME
 Hyper-consommation
 Indexation abusive
+leverage buy-out
+leverage management buy-out
+LMBO
 Marche au comptant
 marge nette
-pool bancaire
-pool de financement
-prêt syndiqué
 ratio de liquidité
 Référencement abusif
 regle de Taylor
@@ -2995,6 +2844,157 @@ Sur-consommation
 Surconsomme
 Surconsommer
 Surconsumérisme
-syndicat financier
 taux de marge
 taux de Taylor
+taxe ad valorem
+tissage de liens
+Ultra-consommation
+cadre financier
+comptabilité budgétaire
+budget de la Défense
+budget militaire
+Collecte religieuse gouvernementale
+impôt d'Église
+Mouvement de capitaux
+Mouvements de capitaux
+Sociétés anonymes
+subventions agricoles
+action de référence
+action spécifique
+courant de pensée économique
+démarchage électoral
+ecole de pensee economique
+écoles de pensée économique
+Marge d'exploitation
+Marge operationnelle
+marge sur cout variable
+mercatique sportive
+Nbv
+TAEG
+Baltic exchange dry index
+capitalisme anglo-saxon
+Effet ricardien
+ensemble de maternité
+Equivalence ricardienne
+multiplicateur keynesien
+OPA
+option d'achat
+Ricardien
+taux d'interet nominal
+Théorème Ricardo-Barro
+théories économiques
+tragedie des anticommuns
+véhicule d'investissement dédié
+classe ouvriere
+Credit social
+Créditisme
+Créditiste
+Cœur de competence
+Cœur de métier
+Dividende monétaire
+Dividende social
+dual play
+génération de prospects
+gestion de portefeuille
+Idéologie créditiste
+Kopsi
+mercatique politique
+NEI
+néo-institutionnalisme
+Philosophie créditiste
+prospection
+publicité électorale
+référencement social
+remuneration pour copie privee
+Social-créditisme
+Structure de defeasance
+tarif d'électricité
+Tarif d'Hydro
+tarif de l'électricité
+tarification de l'électricité
+Taxe Sacem
+anti-money laudering
+blanchiment de capitaux
+blanchiment de l'argent
+blanchiment de l'argent sale
+Egalitarisme
+Égalitariste
+Société égalitaire
+écart de PIB
+enchère au second prix
+payer et emporter
+payer-emporter
+Taxe boissons sucrées
+Tsuika
+valeur moyenne
+VEA
+ECBD
+exploitation des données
+exploration de donnees
+forage de données
+fouille de données
+Bicaméralisme
+Bicamerisme
+bicamérisme
+Coefficient de Tobin
+Dérivés de crédit
+grande surface de bricolage
+GSB
+Instruments dérivés de crédit
+Marché de la construction
+Option d'achat d'actions
+Option de souscription d'actions
+Option de vente
+Option sur les titres
+Option sur titres
+Options de souscription d'action
+PIB potentiel
+Stock-option
+Stock-options
+Theoreme d'Haavelmo
+Théorème d'Haavelmo
+valeur à quatre sous
+banques islamiques
+Bullioniste
+camouflage
+comptabilite publique
+comptabilités publiques
+courant de matière
+dissimulation
+Ecole de Manchester
+flux de matière
+flux de substances
+Flux énergétique
+indicateur de progres veritable
+kit à cuisiner
+Libéralisme de Manchester
+masquage
+Point d'Exposition Brut
+rachat d'action
+rachat d'actions
+rachat d'actions propres
+Revenu permanent
+Ticket Allemagne
+Vente d'épouse
+euristique
+Oligopolisation
+absence de maternité
+accord d'échange monétaire
+capitalisme vert
+cauri
+Charges Indirectes
+congé maternité
+congés maternité
+Droit preferentiel de souscription
+Minima Sociaux
+Minimum social
+Monnaie de coquillages
+prêt à la consommation
+Sous-jacent
+analyse des risques
+gestion des risques
+Livres Blancs
+management du risque
+externalisée
+impartition
+Actif à haut risque

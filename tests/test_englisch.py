@@ -319,7 +319,7 @@ if sys.platform == "win32":
 
     def test_settings_tabs_are_english(settings):
         assert [tab.text() for tab in settings._tabs] == [
-            "Microphone", "Clean-up", "Keys", "Indicator", "Sound", "Learning", "Specialist vocabulary", "About",
+            "Microphone", "Clean-up", "Keys", "Indicator", "Sound", "Learning", "Vocabulary", "About",
         ]
 
     def test_english_tabs_fit_when_the_settings_open(settings, qtbot):
@@ -336,7 +336,7 @@ if sys.platform == "win32":
         texts = _visible_texts(page)
         assert _german_left(texts) == []
         assert {
-            "Specialist vocabulary", "Medicine", "Medications", "Law", "Business", "Science and engineering",
+            "Vocabulary", "Medicine", "Medications", "Law", "Business", "Science and engineering",
             "Chemistry", "IT",
         } <= texts
         assert any(text.startswith("The fields you switch on") for text in texts)

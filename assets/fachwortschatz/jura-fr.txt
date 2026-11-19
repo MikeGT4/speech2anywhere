@@ -1,28 +1,19 @@
-mariage
-racisme
-parti politique
+droits humains
 droits d'auteur
 prostitution
-entreprise
 génocide
 CIJ
 Cour internationale de justice
-meurtre
 liberté d'expression
+liberté de parole
 Cour pénale internationale
 CPI
 droit international
-contrat
 domaine public
-Inquisition
-torture
 droits des femmes
 droit pénal
 crime de guerre
-procès de Nuremberg
-testament
 CEDH
-Cour suprême des États-Unis
 CourEDH
 liberté de la presse
 égalité des sexes
@@ -30,9 +21,10 @@ rébellion
 liberté de religion
 propriété intellectuelle
 droit constitutionnel
-Droit d'autodétermination des peuples
+Auto-détermination
 Droit des peuples
 droit romain
+veto
 directeur général
 directrice générale
 droit administratif
@@ -40,33 +32,30 @@ droits et libertés
 homicide
 magnicide
 personne morale
-coopérative
 diffamation
 droit du travail
 enlèvement
-trahison
 droits de l'enfant
 CJCE
 CJUE
 crime organisé
 droit civil
 état d'urgence
-inquisition espagnole
+crime informatique
+criminalité informatique
 cybercrime
 droit canonique
 droit public
-fondation
 droits civiques
 moyen de paiement
-filiale
 personne physique
 tuerie de masse
 habeas corpus
 chaîne de Ponzi
 compétence juridictionnelle
 cour suprême
-TPIY
-Tribunal pénal pour l'ex-Yougoslavie
+juridiction
+schema de Ponzi
 chasse aux sorcières
 discours de haine
 droit de la famille
@@ -74,20 +63,21 @@ indemnité de guerre
 union civile
 présomption d'innocence
 droit privé
-massacre
 extradition
+narcotrafic
 négation de la Shoah
 trafic de stupéfiants
 liberté de l'information
-propriété privée
 violence sexuelle
+alibi
 crime de haine
 chantage
 contrat de mandat
 créancier
+Créditeur
 droit à l'éducation
 droit de la concurrence
-possession
+mandant
 droit de l'environnement
 loi du talion
 obligation alimentaire
@@ -100,10 +90,7 @@ droit du sol
 fraude fiscale
 ijtihâd
 ordalie
-précédent
-associations sans but lucratif
 cour constitutionnelle
-Cour suprême de l'Inde
 droit commercial
 droit des obligations
 droit international privé
@@ -112,8 +99,8 @@ extorsion
 infanticide
 protection des consommateurs
 libération sous caution
-Sanhédrin
 expropriation
+attaque informatique
 conciergerie de Paris
 constitution de 1958
 constitution française
@@ -127,7 +114,6 @@ responsabilité extracontractuelle
 cour martiale
 droit procédural
 mise en examen
-Cour suprême du Royaume-Uni
 escroquerie
 intérêt général
 parjure
@@ -135,32 +121,34 @@ source du droit
 coercition
 Cour de justice
 liberté de circulation
+libertés fondamentales
+Libre circulation
 droit des affaires
-entreprise individuelle
+millet
 prescription
 procédure pénale
-TPIR
 droit à l'alimentation
 droit reproductif
 liberté d'association
-plainte
 cour d'appel
 données personnelles
 droit numérique
 indication géographique
+Insurgé
 insurrection
 principe de précaution
 prostitution infantile
-sanction
 usufruit
 capacité d'exercice
-détention
 dispositif médical
 droit à l'oubli
 droit maritime
 falsification
+forgerie
 libération conditionnelle
 principe de subsidiarité
+Subsidiaire
+Subsidiarité
 droit international pénal
 mariage par enlèvement
 Principes de Nuremberg
@@ -169,9 +157,7 @@ mutinerie
 procédure civile
 société européenne
 voie de fait
-consentement
 contrat de vente
-Cour constitutionnelle fédérale
 criminalité en col blanc
 détention provisoire
 mandat politique
@@ -180,26 +166,22 @@ Conseil constitutionnel
 droit à l'eau
 droit de l'espace
 attaque terroriste
+attentat terroriste
 diligence raisonnable
 droit du numérique
-jugement
 parodie de procès
 système juridique
-tribunal
-tribunal révolutionnaire
 Beth din
 Conseil d'État
-Constitution française de 1791
 contravention
-CPIJ
-CPJI
+cour internationale
 crime de lèse-majesté
 droit canon catholique
 droits linguistiques
 erreur judiciaire
 juridiction internationale
 trafic d'armes
-Cour suprême d'Israël
+tribunal international
 droits des minorités
 justice militaire
 Légende noire espagnole
@@ -214,23 +196,20 @@ contumace
 de minimis
 droits des travailleurs
 Erga omnes
-Héliée
 Poursuite-bâillon
 Poursuites-bâillons
 prescription acquisitive
-Volksgerichtshof
+usucapion
 Constitution de l'an III
-Cour populaire suprême chinoise
 diligence
-Haute Cour d'Australie
 loi rétroactive
 présomption
 SARL
 société à responsabilité limitée
 Charte de 1814
-Cour suprême du Canada
 délit pénal
 Droit aérien
+édit de Villers-Cotterêts
 intégrité territoriale
 lettre de marque
 Ordonnance de Villers-Cotterêts
@@ -239,17 +218,14 @@ souveraineté alimentaire
 Uti possidetis juris
 Constitution de 1793
 Constitution de l'an I
-Cour suprême du Pakistan
 droit des gens
 droits ESC
 enrichissement sans cause
+Ius gentium
 principe de proportionnalité
-Rote romaine
-tribunal suprême fédéral
 association de malfaiteurs
 Avarie
-chambre impériale
-déclaration
+estoc
 loi anti-sodomie
 Parlement
 tribunal administratif
@@ -257,22 +233,16 @@ assassinat ciblé
 Autorité de chose jugée
 Chose jugée
 CIDH
-Cour constitutionnelle de Corée
-Cour fédérale
-Cour suprême du Japon
-domicile
 droit d'auteur
 droit des successions
+droits de l'auteur
 duel judiciaire
 flagrant délit
 Garantie
 intégrité physique
 lex specialis
 obiter dictum
-Pénitencerie apostolique
 revendication
-condamnation
-Conseil des Dix
 déni plausible
 droit médical
 Droits LGBT aux États-Unis
@@ -280,20 +250,16 @@ mandat d'arrêt
 mansukh
 nulla poena sine lege
 Sapage de réputation
-Signature apostolique
-TFPUE
 transaction juridique
-Tribunal du genocide cambodgien
-Tribunal du génocide cambodgien
 affidavit
 audition
 cambriolage
 Cour de cassation
-Cour suprême des Pays-Bas
 droit de rétention
 éligibilité
 estoppel
 exécution extrajudiciaire
+gérant général
 intérim
 manager général
 mariage gay en France
@@ -301,34 +267,26 @@ Mariage pour Tous
 Mischling
 recours collectif
 suffrage censitaire
-tribunal constitutionnel
-tribunal suprême
 agent de l'étranger
 bien immeuble
-Cour constitutionnelle de Thaïlande
-Cour constitutionnelle de Turquie
-Cour d'État d'Estonie
 cour fédérale de district
 droit des peuples autochtones
 Gestion d'affaire
+Gestion d'affaires
 impunité
 indépendance juridique
 initiative législative
+litige
 non-refoulement
 opinion dissidente
 pacte civil de solidarité
 Parlement de Paris
 pérégrin
-Sénat
-Tribunal administratif fédéral
-chambre étoilée
 civitas
-cour d'appel du Haut-Norrland
-Cour suprême de Russie
-cour suprême des Philippines
 dépénalisation de l'homosexualité
 dépénalisation universelle de l'homosexualité
 droit à la sexualité
+Droit de l'immigration
 droit des étrangers
 droit électoral
 droits LGBT en Autriche
@@ -349,9 +307,7 @@ système pénitentiaire
 tribunal pour enfants
 verdict
 Actus reus
-Conseil aulique
 contrôle des loyers
-Cour constitutionnelle de l'Ukraine
 Demande reconventionnelle
 droit de pétition
 droit des contrats
@@ -360,7 +316,6 @@ droits civils
 escroquerie sentimentale
 état d'exception
 Haute Cour
-Haute Cour de justice
 intrusion
 Landfrieden
 mens rea
@@ -373,8 +328,6 @@ acte notarié
 adjudication
 Ala Kachuu
 clausula rebus sic stantibus
-Conseil des Indes
-Cour constitutionnelle d'Autriche
 curatelle
 détention arbitraire
 Droit au retour
@@ -383,38 +336,27 @@ nullité
 parade d'identification
 suum cuique
 tribunal ecclésiastique
-Tribunal fédéral
-tribunal fédéral du travail
 Actio libera in causa
 Aktiengesellschaft
 circonstance aggravante
-CJCP
 copycat crime
-Cour suprême de Californie
 droit de l'urbanisme
 droit ecclésiastique
 droits des patients
 féminisme aux États-Unis
 filiation légitime
-Haute Cour de Delhi
 Impacts environnementaux de l'aviation
-jugement de Pilate
 Kadiluk
-Lois constitutionnelles de 1875
-Millet des Rums
 Nuisances aériennes
+recel
 séquestration
 Séquestre
-Tribunal de première instance
-tribunal Russell
 Auto-incrimination
 Constitution de l'an X
 contrat d'assurance
 contrat d'entreprise
 contrat de bail
 Cour suprême d'Ukraine
-Cour suprême de Norvège
-Cour suprême de Suède
 Inquisition médiévale
 législation sur les armes
 levée du voile corporatif
@@ -426,19 +368,14 @@ MIFRTP
 offre et acceptation
 porte tambour
 préjudice
+revolving doors
 statut légal
 violence de genre
-Yuan judiciaire
 aliénation juridique
 complicité
-Conseil des troubles
 Constitution de 1946
 Constitution française de 1946
 copyfraud
-Cour constitutionnelle de Hongrie
-Cour fédérale des finances
-Cour suprême d'Islande
-Cour suprême de cassation
 doctrine de la découverte
 droit de la nationalité
 droit des animaux
@@ -452,31 +389,26 @@ précaire
 procès de Belsen
 Règles Mandela
 Règles Nelson Mandela
-réserve
 sécurité juridique
 tribunal de district
 allonge en sport
 antichrèse
-Audience nationale
 Code forestier
 Constitution de Bayonne
-Cour constitutionnelle de Biélorussie
-Cour constitutionnelle du Bélarus
-Cour constitutionnelle suprême
 droit agraire
 droits culturels
 droits des personnes transgenres
-établissement de crédit
 extraordinary rendition
 fraude à la loi
+ġība
 institution juridique
 intérêt supérieur de l'enfant
 juridiction du travail
-non confessionnel
 organisation juridictionnelle au Japon
 poursuite pénale
 pro hac vice
 procédure législative
+processus législatif
 Religion à Bahreïn
 responsabilité internationale
 action paulienne
@@ -484,11 +416,6 @@ atteinte aux biens
 Audiencia
 Constitution française de 1852
 contrefaçon de monnaie
-Cour suprême de Corée
-Cour suprême de l'URSS
-Cour suprême de Pologne
-Cour suprême du Danemark
-court suprême de Madras
 crime passionnel
 crimes communistes
 droit de la santé
@@ -509,26 +436,14 @@ néonaticide
 pénalisation
 Procès fictif
 Rapt collectif de femmes
-Real Audiencia de Quito
 sensibilisation juridique
 tribunal de la famille
-tribunal du Reich
-tribunal social fédéral
+tribunal de première instance
 usurpation
 a contrario
 action populaire
-Attara Kacheri
-Calcutta High Court
 Citation directe
 contrainte directe
-Cour constitutionnelle de l'Arménie
-Cour constitutionnelle de Roumanie
-Cour constitutionnelle de Slovénie
-Cour constitutionnelle de Tchéquie
-Cour suprême d'Afghanistan
-Cour suprême d'Argentine
-Cour suprême de Thaïlande
-Cour suprême du Bangladesh
 crime violent
 délit corporatif
 dommage corporel
@@ -536,7 +451,6 @@ droit d'accession
 droit de conquête
 droit des assurances
 droit du transport
-Gacaca
 Imprimi potest
 intention de génocide
 ius trium liberorum
@@ -544,6 +458,7 @@ liberté d'éducation
 liberté des mers
 loi du mariage
 mare clausum
+nexum
 nuisance
 Partenariat enregistré
 paternité
@@ -552,24 +467,15 @@ processus réglementaire
 Religion en Arabie saoudite
 succursale
 tribunal cantonal
-tribunal spécial irakien
+Tutélaire
 tutelle
 aberratio ictus
 Assizes
 autoidentification de genre
 bénéfice du doute
 code de banqueroute
-Cour constitutionnelle de Bosnie-Herzégovine
-Cour constitutionnelle de Croatie
-Cour de la Chancellerie
+cour d'assises
 Cour de la Couronne
-Cour suprême d'Iran
-Cour suprême d'Irlande
-Cour suprême de Biélorussie
-Cour suprême de Croatie
-Cour suprême de Finlande
-Cour suprême du Chili
-Cour suprême du Népal
 crime sexuel
 droit du sport
 Entrée en force
@@ -583,56 +489,43 @@ meurtre judiciaire
 principe d'attribution
 principe de primauté
 remédiation
+Rescision
 rétroactivité
 right to know
 Salaire maximum
 shangaïer
 voir dire
 abolition
-assassinat
-attaque
 bon père de famille
 bruit aérien
-cathédrale Saint-Canice de Kilkenny
 Constitution française de 1848
 corpus separatum
-Cour administrative suprême
-Cour constitutionnelle d'Albanie
-Cour constitutionnelle de Lituanie
 cour de circuit
-Cour du Lord Lyon
-Cour suprême d'Azerbaïdjan
-Cour suprême du Mexique
-Curie de Hongrie
 date d'entrée en vigueur
 devoir de vigilance
 Iltizam
 indigénat
-intervention
 Juridiction unique des brevets
 libertini
 Lois Jules Ferry
 Oberlandesgericht
 opportunité des poursuites
 pretium doloris
-Procès d'Istanbul de 1919-1920
 restitutio in integrum
 roi en son parlement
 succession ab intestat
-TPF
-tribunal constitutionnel du Portugal
-Tribunal pénal fédéral
 Tribunal spécial pour l'Ukraine
-tribunal suprême de justice
 Actions de la loi
 activité minière illégale
 anfechtung
 bien sans maître
 brocard
 capacité de discernement
+Chambres spéciales du Kosovo
 châtiment extrajudiciaire
 Code pénal de 1810
 Contrat en droit anglais
+Cour caribéenne de justice
 cour d'état
 dépôt de sûreté
 droit de douane
@@ -649,32 +542,38 @@ loi obsolète
 Loi sur la laïcité
 loi sur les médias
 meurtre en série
+nafaqa
 négligence criminelle
 Nullification
 ordre judiciaire
 Partus sequitur ventrem
+peine extrajudiciaire
 Personne protégée
 Preuve du feu
+référé
 Religion en Iran
 séparation de biens
 Squeeze out
+Tribunal d'exception
 Accommodement raisonnable
 administrative offense
 allégation
 apologie du terrorisme
-article
 avant-contrat
+Chambres de réunion
+clause
+contrat préliminaire
 cour spéciale
 cour suprême d'État
 DAVDSI
+directeur juridique
 directeur ou directrice juridique
+directrice juridique
 dissolution
-distinction
 droit à la mobilité
 droit de gage
 droit de grève
 exécution forcée
-faillite
 hungarikum
 illégalité
 incitation au génocide
@@ -687,8 +586,8 @@ Loi Veil
 Magistrates' court
 mater semper certa est
 mineur non accompagné
-minorité
 mort légale
+mund
 objection
 Procès des collaborateurs norvégiens
 Recevabilité
@@ -697,9 +596,11 @@ res derelictae
 Retenue judiciaire
 Sondergericht
 tribunal d'honneur
+Tribunal militaire international
 Tribunaux Mixtes d'Égypte
 activité partielle
 assassinat politique
+bajrak
 centumvirs
 collège de juges
 Cour des petites créances
@@ -710,6 +611,7 @@ Emploi à discrétion
 Faute
 intuitu personæ
 Juridictions fédérales des États-Unis
+kyrios
 latae sententiae
 Loi du maximum général
 Lois scélérates
@@ -726,13 +628,13 @@ théories de l'interprétation juridique
 transfert de propriété
 tribunal de grande instance
 Tribunal populaire
-violence
-association de fait
 Audiencias Provinciales
 Bench trial
 cercle de pierre
+CJR
 Contrat en régie
 copie privée
+Cour administrative suprême
 cour d'appel de Norvège
 Cult Awareness Network
 droit des brevets
@@ -748,13 +650,14 @@ juridictions fédérales de l'Allemagne
 langue propre
 Liberte religieuse en Algerie
 Liberté Religieuse En Algérie
+mülk
+palais Thiac
 pays d'origine sûr
 pays indien
 Per curiam
 Procédure abusive
 procès politique
 règlement ecclésiastique
-transfert
 tribunal de commerce
 tribunal supérieur de justice
 tribunaux d'exception
@@ -763,7 +666,7 @@ acte de gouvernement
 action publique
 affectio societatis
 caractère approprié
-cour d'assises
+contrat d'Ulysse
 Cour des successions
 disculpation
 doctrine de la nécessité
@@ -772,7 +675,6 @@ droit des marques
 droit des noms
 droit nucléaire
 exécution par erreur
-institution publique
 Jus de non evocando
 justice de paix
 justiciabilité
@@ -780,7 +682,6 @@ liberté religieuse au Canada
 loi de cryptographie
 Loi Deixonne
 loi sur l'éducation
-Loi sur le sacrilège
 Loyauté communautaire
 nécessité militaire
 obligation légale
@@ -806,7 +707,6 @@ accord de principe
 agere per formulas
 Amendement Mirguet
 antidosis
-autorisation
 autorité compétente
 blank endorsement
 C. consom.
@@ -816,8 +716,10 @@ commercium
 communauté d'universités et d'établissements
 conseil de prud'hommes
 cour administrative d'appel
+Cour de Justice Benelux
 CPH
 criminalité financière
+d.o.o.
 délai raisonnable
 divergences irréconciliables
 droit alimentaire
@@ -831,6 +733,7 @@ ex parte
 impôt local
 injonction interlocutoire
 inscriptio
+inscriptiones
 intermediate people's court
 Irréfragable
 isotélie
@@ -852,18 +755,16 @@ peine plancher
 PJL République numérique
 présidial
 présomption irréfragable
-prestation
 principe de l'intertemporalité
 Procès Marengo
-protégé
 quaestio
 quasi-délit
-Quatre de Butare
 qui tam
 réglementation de l'expérimentation animale
 Règles d'entreprise contraignantes
 Res perit domino
 Tapu
+TCANU
 tempus regit actum
 travaux préparatoires
 tribunal de la charia
@@ -874,13 +775,13 @@ administrateur provisoire
 agence régionale de santé
 agresseur
 ARS
+aşar
 Autonomie des universités
 Caractère véritable
 chaîne des titres
 Chine continentale
 Cohéritiers
 commentaire loyal
-compétence
 Compétence ratione loci
 Confino
 conflits de lois
@@ -894,7 +795,6 @@ droit constitutionnel comparé
 droits environnementaux
 droits humains en Islam
 Effet utile
-entreprise d'intérêt public
 état de droit
 exception d'inexécution
 fraus omnia corrumpit
@@ -906,6 +806,7 @@ Installation classée
 Installations classées
 iudex non calculat
 Juge Du Fond
+Juicio por la verdad
 juridiction civile
 Jus gladii
 Loi de sûreté générale
@@ -921,6 +822,7 @@ Loi Waldeck-Rousseau de 1884
 mesure conservatoire de protection
 mesure superprovisionnelle
 objet social
+objets sociaux
 Officialité
 ordalie à l'aiguille
 Patrimoine
@@ -933,12 +835,11 @@ pupille de l'État
 ré-interrogatoire
 reconnaissance légale
 Réforme des universités françaises
-société étrangère
+SADC Tribunal
 tribunal d'arrondissement
 tribunal d'entreprise
 tribunal d'instance
 tribunal du travail
-absence
 Accessibilite aux personnes handicapees
 Accessibilité Aux Personnes Handicapées
 accessibilité universelle
@@ -997,17 +898,13 @@ Droit pénal spécial
 droits des hommes
 échevinage
 Édit de Ségur
-entité de fait
-EPTB
 fixgeschaft
-fondation allemande
 Huriet-Sérusclat
 Inaedificatio
 indignité successorale
 langue prédominante
 Loi Astier
 loi Bachelot
-Loi Bas-Lauriol
 loi CAP
 Loi Carrez
 loi constitutionnelle de 2008
@@ -1025,8 +922,7 @@ Loi Haby
 Loi Hortefeux
 Loi HPST
 Loi Huriet
-Loi informatique et Liberté
-Loi informatique et libertes
+Loi Informatique Et Libertés
 Loi Jospin
 loi LCAP
 Loi LOADDT
@@ -1047,7 +943,6 @@ naissance hors mariage
 nantissement
 Officialité diocésain
 Paquet fiscal
-partenaire
 Permission de travestissement
 point de recharge
 Pollicitant
@@ -1060,25 +955,23 @@ proposition transactionnelle
 Rechtbank
 réforme constitutionnelle de 2008
 Règle du sens ordinaire
-réglementation
 répartition par État
 représentation en justice
 secret social
 Solatium doloris
-solidarité
 SRU
 subscriptio
 Superficie Carrez
 Surface privative
 tribunal d'opinion
 tribunal de proximité
+tribunal diocésain
 tribunal judiciaire
 under seal
 Zentgericht
 œuvre musicale
 Acceptation sous bénéfice d'inventaire
 accords global
-accords globaux
 acte d'agression
 action directe
 action en justice
@@ -1090,6 +983,7 @@ Amendement Scellier
 Amodiation
 ampliation
 Amtsbot
+annata
 apport anticipé
 Arbeitnehmerhaftung
 Article L33-1
@@ -1097,13 +991,11 @@ asonade
 assurement
 attaque avec prise d'otages
 attribution préférentielle
-autarcie
 bail emphytéotique
 bataille des conditions générales
-Beobachtungsobjekt
-bestuursorgaan
 Betriebsrisikolehre
 bevatan
+biland
 Boedel
 Borgeleje
 bouclier de protection
@@ -1196,7 +1088,6 @@ ekscedent
 élimination provisoire
 engagements de Paris
 enrichissement illégitime
-Entreprise adaptée
 établissement régional d'enseignement adapté
 État de catastrophe naturelle
 Etoile de Legrand
@@ -1222,7 +1113,6 @@ guet-apens
 Hammerschlags- und Leiterrecht
 Használat
 hjemfald
-Hoheitliche Aufgabe
 hustugt
 Indigenato
 indisponibilité du corps humain
@@ -1235,17 +1125,16 @@ Intime conviction du juge
 Iobsp
 iudicium populi
 Ius Archivi
+judicia populi
 jura realia
-juridiction
 juridiction ad-hoc
 juridiction pénale
-Juridiction quasi épiscopale
 Kreisgericht
 Labour Courts
 Laufbahnbefähigung
 LCEN
-législation
 LFSS
+libelo
 Licence nationale
 lieu de paiement
 LOADT
@@ -1361,6 +1250,7 @@ nasciturus
 négligence grave
 Neustoyka
 nissaggiya-pācittiya
+nizam
 Nondum Conceptus
 Nuisance aérienne
 nullius dioecesis
@@ -1373,10 +1263,8 @@ ONDAM
 option héréditaire
 ordalie bilatérale
 ordalie par l'eau froide
-ordonnance
 Ordonnance de 1945
 Ordonnance de Moulins
-ordonnance Debré
 Organised market
 pācittiya
 Pacte de preference
@@ -1395,11 +1283,11 @@ probation
 procédure de restructuration préventive
 procès de la trahison
 prodicasia
-Projet d'aménagement d'ensemble
 Projet urbain partenarial
 prorogation
 protection des locataires
 prud'homies de pêcheurs
+qazaf
 quarela
 Quitus
 rapt pédophile
@@ -1412,31 +1300,30 @@ révocation de licence
 Rheinschifffahrtsgericht
 risque externe
 SARVI
-Scottish charitable incorporated organisation
 sekhiya
 Semaine de 40 heures
 séparation des patrimoines
 service numérique
 sincérité du scrutin
 site Seveso
-société d'économie mixte locale
 société de gestion
 statut personnel en France
 steuerbegünstigter Zweck
 sukuasema
-suppression
 Système Unique d'Assistance Sociale
 sıvış yılı
+TACE
 Tanfu
 Tax court
 Testamentary guardian
-Textilschieberprozesse von Glauchau-Meerane
 théorie de la politique
 TPCN
+transformative agreements
 très grande plateforme
 tribunal administratif au Québec
 tribunal de la Curie
 tribunal indigène
+tribunal métropolitain
 Tribunal pénal canonique national
 tribunal supérieur d'appel
 TSA
@@ -1446,6 +1333,7 @@ Union
 urtjuva
 Vejartin
 Vermögensdelikt
+verna
 Vice du consentement
 Vices du consentement
 vide ab initio
@@ -1461,21 +1349,19 @@ femme et femme
 homme et femme
 homme et homme
 matrimonialité
-affaires
+droits de l'Homme
+cours de justice
 homicide volontaire
 droit de parler librement
-liberté de parole
 Tribunal pénal international
 contractualisation
 contractuel
 contractuelle
 endettement
-Inquisiteur
-Inquisitorial
-Sant'Uffizio
-question
 supplice
 torturé
+torturée
+torturés
 droit de la femme
 droit des femmes
 droits de la femme
@@ -1485,15 +1371,14 @@ droit criminel
 droit penal
 système pénal
 crimes de guerre
-proces de Nuremberg
-Cour suprême américaine
-Cour Suprême des Etats-Unis
+crimes de guerres
 liberté de presse
 égalité de genre
 égalité des genres
 égalité femmes-hommes
 égalité hommes-femmes
 soulèvement populaire
+tollé
 liberté de croyance
 liberté de culte
 liberté de foi
@@ -1502,19 +1387,19 @@ liberté des cultes
 liberté religieuse
 droits intellectuels
 propriete intellectuelle
-Auto-détermination
 Auto-détermination des peuples
 Autodetermination
 Autodétermination des peuples
 Autonomie des peuples
 Droit à l'autodétermination
+Droit d'autodétermination des peuples
 Droit de véto
 droit des Quirites
 droit latin
 Principe d'autodétermination des peuples
+véto
 chef de la direction
 stratif
-libertés
 meurtre au 1er degré
 meurtre au premier degré
 meurtre au second degré
@@ -1524,6 +1409,7 @@ organisme corporatif
 calomnie
 Diffamatoire
 enlevement
+rapt
 droit de l'enfant
 droit des enfants
 droits des enfants
@@ -1534,14 +1420,9 @@ droit non pénal
 droit non-criminel
 etat d'urgence
 organisation criminelle
-Inquisición española
-Inquisition portugaise
+pègre
 Code des canons
-crime informatique
-criminalité informatique
-cyber crime
 cyber criminalité
-cyber-crime
 cyber-criminalité
 cyber-délinquance
 cybercriminalité
@@ -1559,7 +1440,6 @@ droits civique
 liberté civique
 libertés civiques
 responsabilité civique
-subsidiaire
 tueries de masse
 Abbé Ascorpus
 chaine de Ponzi
@@ -1567,7 +1447,6 @@ compétence judiciaire
 montage Ponzi
 pyramide de Ponzi
 ressort judiciaire
-schema de Ponzi
 schéma de Ponzi
 schéma Ponzi
 chasse aux sorcieres
@@ -1579,8 +1458,8 @@ partenariat civil
 in dubio pro reo
 presomption d'innocence
 exaction
-narcotrafic
 trafic de drogue
+trafic de drogues
 violence sexiste
 violences sexistes et sexuelles
 violences sexuelles et sexistes
@@ -1589,8 +1468,6 @@ crime haineux
 crimes haineux
 Accipiens
 Creancier
-Créditeur
-mandant
 Droit environnemental
 Législation environnementale
 loi sur l'environnement
@@ -1601,6 +1478,7 @@ Réglementation environnementale
 Réglementations sur l'environnement
 Talion
 abus sexuels sur mineur
+abus sexuels sur mineurs
 agression sexuelle sur mineur
 droit communautaire
 droit de l'Union
@@ -1608,6 +1486,7 @@ droit de l'Union europeenne
 égalité de droit
 égalité des droits
 égalité en droit
+égalité en droits
 Épreuve du feu
 ijtihād
 Jugement de Dieu
@@ -1617,9 +1496,10 @@ législation européenne
 principe d'égalité
 principe de non-discrimination
 Sanction divine
-Cour suprême d'Inde
-Cour Suprême indienne
+action judiciaire
 droit du commerce
+litige judiciaire
+procès civil
 propriété commerciale
 droit des conflits armées
 droit des conflits armes
@@ -1628,12 +1508,10 @@ loi de la guerre
 protection du consommateur
 Liberté sous caution
 attaque de hacker
-attaque informatique
 Conciregerie de Paris
 Détournement de biens
 Detournement de fonds
 Détournements de fonds
-fiscalité
 lien de causalité
 Palais de la Cité
 responsabilité civile délictuelle
@@ -1642,16 +1520,18 @@ Cours martiales
 Inculpation
 Mis en examen
 arnaque
-Cour Suprême britannique
 source de droit
 sources de droit
 sources du droit
-contrainte
 Droit de libre circulation
 Droit de voyager
+droit fondamental
+droits fondamentaux
 Liberte de circulation
 Liberté de mouvement
-Libre circulation
+liberté fondamentale
+liberté individuelle
+libertés individuelles
 Libre circulation des personnes
 Libre-circulation
 droit des entreprises
@@ -1666,21 +1546,17 @@ Droits numériques
 indication geographique
 indications géographiques
 Insurections
-Insurgé
 label d'origine
 Principe de prudence
 usufruitier
 création de faux
 fabrication de faux
-forgerie
 liberté sous condition
 oubli numérique
 Principe de subsidiarite
 Principes de subsidiarité
 Subsidiairement
 Subsidiarite
-Subsidiarité
-agression
 droits réels
 Entreprise européenne
 acquiescement
@@ -1691,24 +1567,17 @@ Mandats politiques
 Droit spatial
 Juridiction constitutionnelle française
 Sages du Palais-Royal
-attentat
-attentat terroriste
 diligences raisonnables
 système de justice
 systeme juridique
 systèmes de loi
 systèmes juridiques
 Beit din
-cour internationale
 Crime de lèse majesté
 Crime de lese-majeste
 droit canonique catholique
 Erreurs judiciaires
-tribunal international
 Tribunal rabbinique
-Cour Suprême d'Israel
-Cour supreme d'Israel
-Cour suprême israélienne
 juridictions militaires
 Legende noire espagnole
 TMIEO
@@ -1721,70 +1590,51 @@ coutumace
 par coutumace
 par coutumance
 possession adversative
-Tribunal du peuple
-usucapion
-application
 Constitution de 1795
 presomption
 SÀRL
+zèle
 Charte constitutionnelle de 1814
-Cour supreme du Canada
-édit de Villers-Cotterêts
 lettre de commission
 lettre de course
 ordonnance Guilelmine
 sécurité alimentaire
 enrichissement injustifié
-Ius gentium
 estocade
 Parlements d'Ancien Régime
 poignardage
-BGH
-Cour constitutionnelle de Coree
-Cour federale
 droit de succession
 droit successoral
-droits de l'auteur
 flagrant delit
 intégrité corporelle
 loi successorale
 lois successorales
-Penitencerie apostolique
-Pénitencier apostolique
-Pénitencier majeur
-résidence
 résidence principale
-succession
-CETC
-Conseil des X
 législation médicale
 mandat d'arret
 mandats d'arrêt
 mansûkh
+nasikh
+nâsikh
 transaction
 verset abrogé
 versets abrogés
 audience judiciaire
 déclaration sous serment
-gérant général
 Vote censitaire
-conflit
 contentieux
-Cour administrative fédérale
-Cour suprême d'Estonie
 droit autochtone
 droit des autochtones
 droits des autochtones
 Initiative parlementaire
+pacsé
 pacte civil de solidarite
 pactes civils de solidarité
-Partie
 peregrin
 civitates
 Déloyauté
 dépénaliser l'homosexualité
 Droit de l'asile
-Droit de l'immigration
 Droit des etrangers
 droit electoral
 Droits des étrangers
@@ -1800,31 +1650,22 @@ régime pénitentiaire
 système correctionnel
 arnaque amoureuse
 arnaque sentimentale
-Aulique
-Conseiller aulique
 Droit d'exception
 esprit criminel
 Etat d'exception
+intrus
 originalité minimale
 Traite de Fontainebleau
 acte notarial
 Adjudicataire
 annulation
-BAG
-Juges de Mon Repos
 juridiction ecclésiastique
 nullite
 procès ecclésiastique
-tribunal diocésain
-Tribunal federal
-décision de Pilate
-Jésus devant Pilate
 lois religieuses
 Nuisance aerienne
 Receleur
-TPICE
 Constitution de 1802
-dommage
 Droit De Créance
 Droit de creance
 droit personnel
@@ -1834,12 +1675,9 @@ loi des Burgondes
 main-morte
 mortemain
 MTPI
-revolving doors
 statut personnel
 VBG
-Bundesfinanzhof
 Confiance légitime
-Cour constitutionnelle hongroise
 déclaration interprétative
 droit animal
 droit commun
@@ -1850,29 +1688,21 @@ loi de nationalité
 Meilleure Technologie Disponible
 Meilleures technologies disponibles
 Sécurisation juridique
-Tribunal constitutionnel de Hongrie
-Tribunal constitutionnel hongrois
 Acte Constitutionnel de l'Espagne
 antichrese
-Audiencia Nacional d'Espagne
 droit agricole
 droits des personnes trans
 droits des trans
 droits des transgenres
 droits trans
 gage immobilier
-Haute Cour constitutionnelle
-Haute Cour constitutionnelle égyptienne
 Loi forestière
 Loi sur la forêt
-processus législatif
 rechtsinstitut
 Renditions extraordinaires
 Restitution extraordinaire
 tribunaux du travail
-Audience royale de Quito
 Constitution de 1852
-Cour impériale de Leipzig
 droit de la sante
 droit santé
 droits des LGBTQ
@@ -1883,27 +1713,17 @@ faux-monnayage
 loi Hadopi 1
 Premier ressort
 Première instance
-Présidence de Quito
-Presidencia de Quito
 Tribunal de premiere instance
-Tribunal impérial de Leipzig
-Tribunal social federal
 tribunal-école
 actions populaires
-CCR
-Cour constitutionnelle d'Arménie
-Cour d'arbitrage
 création réglementaire
 droit des trois enfants
 élaboration de règles
-Gatchatcha
 jus liberorum
 LPart
 Partenariat enregistre
 préjudice corporel
 prises d'otages
-Tribunal special irakien
-Tutélaire
 Tuteur légal
 autodesignation d'identité de genre
 autodesignation de genre
@@ -1915,7 +1735,6 @@ doutes insurmontables
 droit sportif
 exécution en portrait
 infraction sexuelle
-Rescision
 Revenu maximal
 Revenu maximal autorisé
 Revenu maximum
@@ -1925,40 +1744,33 @@ shangaier
 affranchis
 Balance Des Pouvoirs
 Bon pere de famille
-Bonus paterfamilias
 Constitution de 1848
 Constitution francaise de 1848
-Cour suprême de Hongrie
 devoir de diligence
 Équilibre des pouvoirs
-Haute cour administrative
 libertinae
 Loi Ferry
 Loi Jules Ferry
 Lois Ferry
 obligation de diligence
 Romains affranchis
-administrateur
 Ancien Code pénal
 Code penal de 1810
 Code Pénal Impérial Français
+CSK
 Institutions judiciaires
 Juridiction judiciaire
 Juridictions d'exception
 Juridictions spécialisées
 Legis actio
 loi sur l'alcool
-peine extrajudiciaire
 separation de biens
-Tribunal d'exception
 affirmation
+Chambres de reunion
 chef du service juridique
 communication favorable au terrorisme
-contrat préliminaire
 contrat préparatoire
 directeur des affaires juridiques
-directeur juridique
-directrice juridique
 mobilité comme droit
 pré-contrat
 promesse de contrat
@@ -1982,15 +1794,9 @@ Juge du droit
 Juridiction consulaire
 situation en suspens
 actes de gouvernement
-affectio-societatis
-contrat d'Ulysse
 Droit de cite
 Droits de cité
-établissement public
 législation de l'éducation
-Loi du sacrilège
-Loi Sacrilège
-Loi sur le sacrilege
 lois sur le nucléaire
 Loyaute communautaire
 PGD
@@ -2002,7 +1808,6 @@ différences irréconciliables
 différences irréductibles
 différends irréconcilables
 endossement en blanc
-inscriptiones
 isotèle
 Liberté d'autodétermination
 madamato
@@ -2028,15 +1833,14 @@ action téméraire et vexatoire
 action téméraire ou vexatoire
 administratrice
 agences régionales de santé
+asar
 Banc du roi
 Caractere veritable
 Cour superieure
 damnum injuria datum
 droit comparé des constitutions
-entreprise étrangère
 Exception d'inexecution
 Inspection des installations classées
-Juicio por la verdad
 Juicios por la Verdad
 Juridictions civiles
 loi Barthou
@@ -2046,7 +1850,6 @@ Loi LRU
 Loi Pécresse
 mesures préliminaires
 objet statutaire
-objets sociaux
 Officialite
 père supposé
 Pupille de l'Etat
@@ -2070,6 +1873,8 @@ Loi chinoise
 loi d'orientation sur l'éducation
 Loi de securite financiere
 Loi des Trente
+Loi informatique et Liberté
+Loi informatique et libertes
 Marche libre
 Offre de contrat
 Personne à Mobilité Réduite
@@ -2088,6 +1893,7 @@ Superficie privative
 TEPA
 Utilisateur de fauteuil roulant
 accord transformant
+accords globaux
 accords transformants
 appareil d'aide au mouvement
 aqua frigida
@@ -2116,8 +1922,8 @@ droit de contestation
 droit de rectification
 droit de réponse
 droit des média
+droit des médias
 Edit de Moulins
-entreprises adaptées
 EREA
 Établissement régional d'éducation adaptée
 Etablissement Regional d'Enseignement Adapte
@@ -2129,9 +1935,7 @@ HADOPI 2
 intégrité du scrutin
 intermédiaires en financement participatif
 iudicia populi
-judicia populi
 judicium populi
-Juridiction quasi-épiscopale
 Juridictions pénales
 juriste en droit immobilier
 loi Claeys-Leonetti
@@ -2155,7 +1959,6 @@ Monopole d'initiative
 Nuisance olfactive
 nullius diœcesis
 oeuvre posthume
-Ordonnance Debre
 Perben 2
 Plan Fillon
 posthume
@@ -2170,16 +1973,13 @@ Réforme Fillon des retraites
 Relégation
 répartition des compétences
 répétition de l'indu
-SAEML
 services numériques
 sincérité de l'élection
 sincérité du vote
-Societe d'economie mixte locale
 statut coutumier
 TPCI
 tribunal d'équité
 tribunal de chancellerie
-tribunal métropolitain
 Tribunal pénal canonique interdiocésain
 Tribunal superieur d'appel
 Tribunaux administratifs du Québec

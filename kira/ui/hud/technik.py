@@ -158,6 +158,10 @@ class Technik(Fachgebiet):
         super().__init__()
         self._needle = 0.0
 
+    def on_press(self, t: float, f: Frame) -> None:
+        super().on_press(t, f)
+        self._needle = 0.0
+
     def step(self, t: float, dt: float, f: Frame, tap, an) -> None:
         super().step(t, dt, f, tap, an)
         target = 0.0
@@ -324,7 +328,7 @@ class Technik(Fachgebiet):
         fly_out(p, t, f, k, draw, FLY_ROUTES)
 
     def error_decor(self, p: QPainter, left: float, top: float) -> None:
-        p.translate(left + 9.0, top + 2.0)
+        p.translate(left - 2.0, top + 2.0)
         p.rotate(-40)
         outlined(p, rounded(-2.4, 2.0, 4.8, 9.0, 2.0), HANDLE, 1.2)
         stroke(p, 0.0, -7.0, 0.0, 2.0, INK, 2.6)

@@ -24,9 +24,13 @@ def load_wordlist(path: Path) -> frozenset[str]:
     )
 
 
-@lru_cache(maxsize=1)
-def default_wordlist() -> frozenset[str]:
-    return load_wordlist(assets_dir() / WORDLIST_FILE)
+@lru_cache(maxsize=None)
+def _wordlist(language: str) -> frozenset[str]:
+    return load_wordlist(assets_dir() / WORDLIST_FILE.replace("-de", f"-{language}"))
+
+
+def default_wordlist(language: str = "de") -> frozenset[str]:
+    return _wordlist(language)
 
 
 def is_common(phrase: str, words: frozenset[str]) -> bool:

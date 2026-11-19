@@ -1,5 +1,4 @@
 medycyna
-choroba
 COVID-19
 zespół nabytego niedoboru odporności
 nowotwór złośliwy
@@ -8,32 +7,50 @@ malaria
 wątroba
 aborcja
 gruźlica
+kość
+płuco
 jama ustna
 cukrzyca
+diabetes mellitus
+ząb
 żołądek
-cholera
+nerka
+włos
+grypa
 mięsień
+szyja
+pochwa
 wścieklizna
 otyłość
 gorączka krwotoczna Ebola
 ospa prawdziwa
 przeziębienie
 zapalenie płuc
+broda
 głuchota
 szkielet
+trąd
 warga ust
+korzeń
+odra
 układ nerwowy
 choroba Alzheimera
+mocz
 ból głowy
 paznokieć
 staw kolanowy
 udar mózgu
 ciało ludzkie
+epilepsja
 gorączka
 padaczka
 okolica pośladkowa
 zawał mięśnia sercowego
 choroby przenoszone drogą płciową
+narząd
+łza
+nerw
+noga
 alkoholizm
 biegunka
 układ odpornościowy
@@ -42,71 +59,101 @@ czaszka
 układ krwionośny człowieka
 astma oskrzelowa
 ślepota
+wełna
 Choroba Heinego-Medina
 układ pokarmowy człowieka
+autyzm
 alergia
+jądro
 jelito cienkie
+kaszel
+pępek
 chromosom
+kiła
+syfilis
 chirurgia
+dżuma
+macica
 niedożywienie
 policzek
 schizofrenia
 stomatologia
+tkanka
 trzustka
+tułów
+kał
+odbyt
 psychiatria
 nastrój depresyjny
+sperma
 jelito grube
+pot
 Staw łokciowy
 antykoncepcja
+Metody antykoncepcji
 śledziona
 układ oddechowy
 Obrzezanie
 ospa wietrzna
 nadciśnienie tętnicze
+brew
 Denga
 guzki krwawnicze
+hemoroidy
 Kciuk
 układ hormonalny
 wymioty
 łechtaczka
 język migowy
 naczynie krwionośne
+neuron
 przełyk
+tatuaż
 choroba Parkinsona
 Erytrocyt
+lęk
 szczepienie ochronne
 mitochondrium
 patologia
 rak sutka
+srom
 Żebra
 niedokrwistość
 ptasia grypa
 układ rozrodczy
+wąsy
 Rdzeń kręgowy
 zapalenie opon mózgowo-rdzeniowych
 farmakologia
 higiena
+infekcja
 przewlekła obturacyjna choroba płuc
 tętnica
 zakażenie
+demencja
 eutanazja
 Gardziel
 otępienie
 rak płuca
 białaczka
 jądro komórkowe
+jelito
 krztusiec
 Okaleczanie żeńskich narządów płciowych
 pęcherz moczowy
 dur brzuszny
 Pęcherzyk żółciowy
 Ślina
-wirusowe zakażenia przewodu pokarmowego
 świerzb
+wirusowe zakażenia przewodu pokarmowego
+jajnik
 Świńska grypa
 błonica
+dyfteryt
 kardiologia
+krtań
 leukocyt
+Syndrom Downa
 Zespół Downa
 Nagminne zapalenie przyusznic
 pierwsza pomoc
@@ -116,10 +163,11 @@ bezsenność
 hemoglobina
 palec ręki
 zaburzenia depresyjne
-zapalenie
 choroba zakaźna
 narządy zmysłów
+staw
 tarczyca
+tężec
 WZW A
 łożysko
 chrząstka
@@ -129,6 +177,7 @@ migrena
 Udo
 halucynacje
 neurologia
+wąglik
 żółtaczka
 ginekologia
 hipnoza
@@ -141,13 +190,19 @@ Moszna
 okulistyka
 szpik kostny
 tchawica
+fobia
+katarakta
 Komórka jajowa
+ropień
+zaćma
 brodawka sutkowa
 onkologia
 ośrodkowy układ nerwowy
+rzęsa
 szkorbut
 Źrenica
 Ajurweda
+bronchit
 ciśnienie tętnicze
 komórki macierzyste
 marskość wątroby
@@ -159,6 +214,7 @@ dysleksja
 epidemiologia
 gruczoł krokowy
 immunologia
+jaskra
 ludzkie prącie
 ospa małpia
 staw skokowy górny
@@ -173,6 +229,7 @@ Kichanie
 medycyna weterynaryjna
 przysadka mózgowa
 układ kostny człowieka
+weterynaria
 zapalenie wyrostka robaczkowego
 ziewanie
 znieczulenie
@@ -180,31 +237,41 @@ ADHD
 brodawka
 cytoplazma
 Przepona
+sepsa
 zaparcie
+łupież
 cewka moczowa
 chemioterapia nowotworów
 dna moczanowa
 narcyzm
 niewydolność serca
+Organella
 organellum
+płód
+tyfus
 zapalenie spojówek
 błona komórkowa
+Gangrena
 genitalia
 krwotok
 nadgarstek
 osteoporoza
 Palec wskazujący
 psychoza
+psychozy
 Różyczka
 trombocyt
 zgorzel
+daltonizm
 jadłowstręt psychiczny
 Osocze krwi
 palec mały
+pięta
 powieka
 pragnienie
 przepuklina
 ślepota barw
+Syndrom Aspergera
 urologia
 Zespół Aspergera
 albinizm
@@ -216,9 +283,9 @@ obojczyk
 pediatria
 śpiączka
 układ limfatyczny
+zygota
 Bielactwo nabyte
 jabłko Adama
-leczenie
 odbytnica
 Palec środkowy
 Podwzgórze
@@ -228,10 +295,12 @@ szczęki
 transplantacja
 zespół stresu pourazowego
 łopatka
+kapilary
 kość miedniczna
 maślanka
 naczynie włosowate
 nadnercze
+obrzęk
 plemnik
 złamanie
 amnezja organiczna
@@ -242,34 +311,42 @@ retikulum endoplazmatyczne
 Siatkówka
 stwardnienie rozsiane
 stwardnienie zanikowe boczne
+tętno
 Łuszczyca
 borelioza
+kręg
 melancholia
 płonica
 śpiączka afrykańska
+szkarlatyna
 tomografia komputerowa
 Złudzenie
+angina
 Celiakia
 endokrynologia
 paranoja
 Podniebienie
 radiologia
 toksykologia
+wole
 zakażenia opryszczkowe
 zdrowie publiczne
 żuchwa człowieka
 aorta człowieka
 aparat Golgiego
+futro
 Hemofilia
 Kość udowa
 ścięgno
 Tkanka nabłonkowa
 wakuola
 zawroty głowy
+chirurgia plastyczna
 grasica
 HPV
 jajowód
 leiszmanioza
+objaw kliniczny
 rak jelita grubego
 SARS
 Ślinianka
@@ -277,12 +354,14 @@ toczeń rumieniowaty układowy
 transfuzja krwi
 Wirus brodawczaka ludzkiego
 zapalenie błony śluzowej żołądka
+żółtko
 anafilaksja
-chirurgia plastyczna
 choroby układu krążenia
 gastroenterologia
 Leptospirozy
+masaż
 mleko matki
+mostek
 nowotwór złośliwy skóry
 pępowina
 półpasiec
@@ -292,6 +371,8 @@ tkanka łączna
 wstrząs
 zaburzenia nerwicowe
 zmęczenie
+arytmia
+Botulizm
 błona dziewicza
 choroba wrzodowa
 czerniak złośliwy
@@ -301,11 +382,15 @@ niepłodność
 Owłosienie łonowe
 radioterapia
 ściana komórkowa
+świąd
 zaburzenia rytmu serca
 zatrucie jadem kiełbasianym
+apatia
+autopsja
 choroba zwyrodnieniowa stawów
 duszność
 dwunastnica
+kąpiel
 karłowatość
 kastracja
 krzywica
@@ -327,10 +412,13 @@ kość piszczelowa
 nefrologia
 ortopedia
 Palec serdeczny
+paraliż
+piegi
 porażenie
 powłoka wspólna
 wskaźnik masy ciała
 żeński układ płciowy
+zez
 astygmatyzm
 Choroba Chagasa
 choroba Leśniowskiego-Crohna
@@ -346,6 +434,8 @@ oskrzela
 rak żołądka
 resuscytacja krążeniowo-oddechowa
 synapsa
+synapsy
+syndrom
 urojenia
 węzeł chłonny
 zespół chorobowy
@@ -354,7 +444,9 @@ Kumys
 Migdałki podniebienne
 niepełnosprawność intelektualna
 nowotwory ośrodkowego układu nerwowego
+odruch
 omdlenie
+pień
 pulmonologia
 serwatka
 tęczówka
@@ -369,9 +461,11 @@ napletek
 odwodnienie
 śluz zwierzęcy
 tętniak
+łuska
 Limfocyt
 ludzkie oko
 niewydolność nerek
+pryszczyca
 Przytarczyce
 rak trzustki
 reumatoidalne zapalenie stawów
@@ -391,7 +485,7 @@ moczowód
 mukowiscydoza
 obwodowy układ nerwowy
 plastyd
-pryszczyca
+talia
 VNS
 Anemia sierpowata
 Beri-beri
@@ -401,27 +495,38 @@ Cytoszkielet
 medycyna wewnętrzna
 mózgowie człowieka
 narkomania
+neuryt
 szczęka
+afazja
 choroby odzwierzęce
 Hipoksja
+kieł
 Kość ramienna
+laryngologia
+mania
 mięsień sercowy
 odbijanie
+otolaryngologia
 otorynolaryngologia
 Porażenie przysenne
+siara
 somnambulizm
 teledetekcja
+uraz
 woskowina
 zaburzenie osobowości
 zespół Tourette'a
+żołądź
 bulimia
 Błona śluzowa
+Choroba Huntingtona
 Czyrak
 glistnica
 Limfocyt T
 męski układ płciowy
 miastenia
 miażdżyca
+nefron
 neurochirurgia
 Niedoczynność tarczycy
 Piercing
@@ -433,7 +538,9 @@ stan przedrzucawkowy
 zaburzenia erekcji
 zakażenie układu moczowego
 zapalenie trzustki
+biodro
 chrapanie
+dekapitacja
 elektroencefalografia
 fibromialgia
 Jaglica
@@ -454,6 +561,7 @@ Centriola
 Choroba Addisona
 fałd głosowy
 gruczoł mlekowy
+kefir
 Kolagen
 kość guziczna
 matka zastępcza
@@ -464,6 +572,7 @@ przedramię
 ząb trzonowy
 zaburzenie dysocjacyjne tożsamości
 Zapłodnienie pozaustrojowe
+blizna
 błona bębenkowa
 Choroba Creutzfeldta-Jakoba
 ciąża pozamaciczna
@@ -481,6 +590,7 @@ Wągrzyca
 asfiksja
 Dysmenorrhoea
 elektrokardiografia
+elektrokardiogram
 fetyszyzm seksualny
 geriatria
 hipokamp
@@ -506,14 +616,18 @@ osobowość dyssocjalna
 Pęcherz
 Rdzeń przedłużony
 Sarkoidoza
+syndrom Marfana
 szyjka macicy
+Tai Chi Huan
 Taijiquan
 toksoplazmoza
 udar cieplny
 utonięcie
+wić
 Wzgórze
 Zespół chronicznego zmęczenia
 zespół Marfana
+zgaga
 Choroba Gravesa-Basedowa
 choroba refluksowa przełyku
 Chromatyna
@@ -528,6 +642,9 @@ lumbago
 medycyna chińska
 nietolerancja laktozy
 Podgłośniowe zapalenie krtani
+radiografia
+rentgen
+rzepka
 szpiczak mnogi
 ultrasonografia
 wyprysk
@@ -563,9 +680,11 @@ Amblyopia
 bakteryjne zapalenie pochwy
 ból brzucha
 elementy morfotyczne krwi
+kac
 kora mózgu
 kość czołowa
 kość gnykowa
+krwiak
 narcystyczne zaburzenie osobowości
 Nerw wzrokowy
 niedokrwienie
@@ -583,8 +702,10 @@ Bąblowica
 jelito czcze
 Katar sienny
 mammografia
+mimika
 Najądrze
 Neutrofil
+róża
 rozedma płuc
 rwa kulszowa
 Surowica
@@ -616,12 +737,14 @@ ostre zapalenie gardła
 porfiria
 Salmonelloza
 sztuczne unasiennianie
+trauma
 Twardówka
 ukąszenie węża
 wrzodziejące zapalenie jelita grubego
 Arachnofobia
 Barwienie metodą Grama
 Bliźnięta nierozdzielone
+Bóle zębów
 chirurgia urazowa
 Depresja poporodowa
 dyspepsja
@@ -634,6 +757,7 @@ Klatka piersiowa
 kleptomania
 kość klinowa
 kość łokciowa
+kuru
 majaczenie
 Oczopląs
 odma opłucnowa
@@ -641,19 +765,22 @@ Paciorkowcowe zapalenie gardła
 położnictwo
 śródmózgowie
 telomer
+Traumatologia
+upławy
 Wodobrzusze
 Wysepki Langerhansa
 zakażenie połogowe
+zawał
 zespół zmiany stref czasowych
 Aromaterapia
 Ataksja
 autosom
-Bóle zębów
 Cukrzyca ciężarnych
 cytozol
 Dializa
 dysforia płciowa
 glejak wielopostaciowy
+gonada
 hipertermia
 opony mózgowo-rdzeniowe
 pachwina
@@ -715,6 +842,7 @@ Owrzodzenie Buruli
 protoplazma
 Różnobarwność tęczówki
 Rozszczep wargi i podniebienia
+specjalność medyczna
 torbiel
 twardzina
 wada wrodzona
@@ -726,6 +854,7 @@ Zator
 zatrucie tlenkiem węgla
 zespół Ehlersa-Danlosa
 zespół lęku napadowego
+znamię
 amyloidoza
 andrologia
 Angiografia
@@ -751,12 +880,15 @@ nozdrze
 Objaw Bella
 Okrężnica
 ostre zapalenie krtani
+sinica
 stłuczenie
 terapia zajęciowa
 tętnice płucne
+Tyreotropina
 Tłuszczak
 układ limbiczny
 układ przywspółczulny
+zębina
 zespół cieśni nadgarstka
 łysienie
 Choroba Kawasakiego
@@ -764,20 +896,25 @@ choroba serca
 chromosom X
 chromosomy płci
 Cuchnący oddech
+czopki
 gorączka doliny Rift
 Gruczoły przedsionkowe większe
 grzybice skóry
 kardiochirurgia
 Kość nadgarstka
 krwioplucie
+mastka
 Migdałek gardłowy
 nakłucie lędźwiowe
 narząd ruchu
 nerw trójdzielny
 Nukleosom
 przedsionek serca
+rzęska
+ślimak
 Struna grzbietowa
 utrata wagi
+wrzód
 Łagodny rozrost gruczołu krokowego
 Anosmia
 giardioza
@@ -787,11 +924,13 @@ Hemoliza
 kamień nazębny
 kowadełko
 megalomania
+mięsak
 Moczenie nocne
 Nowotwory tarczycy
 opieka paliatywna
 Orbita
 Ostre białaczki szpikowe
+Piroman
 piromania
 plwocina
 podeszwa
@@ -805,6 +944,7 @@ Tętnica szyjna wspólna
 trądzik różowaty
 wada serca
 zapalenie gruczołu krokowego
+łydka
 angiologia
 Awitaminoza
 Bariera krew-mózg
@@ -812,8 +952,10 @@ Ciągłe pozaustrojowe natlenianie krwi
 Cielesne zaburzenie dysmorficzne
 dieta śródziemnomorska
 drgawki
+Dysmorfofobia
 dystrofia mięśniowa Duchenne'a
 Dźwigacz
+goleń
 gruczoł potowy
 grzybica
 głodzenie
@@ -833,6 +975,7 @@ nagłośnia
 Nerw okoruchowy
 Objaw Raynauda
 ortodoncja
+pręcik
 przeszczepienie serca
 przetoka
 przewlekła niewydolność nerek
@@ -858,6 +1001,7 @@ chromatyda
 cukrzyca typu 1
 Dyskopatia
 gorączka krwotoczna
+kurcz
 Kwasica
 liszajec zakaźny
 long COVID
@@ -866,15 +1010,18 @@ Naczyniówka
 Nerw rdzeniowy
 nerw węchowy
 niedosłuch
+platfus
 pochwica
 polidaktylia
 połykanie
 płaskostopie
 rak pęcherza moczowego
 Rumieniec
+sadyzm
 Śródręcze
 Starczowzroczność
 strzemiączko
+syndrom POST COVID
 terapia elektrowstrząsowa
 Trans
 trepanacja
@@ -903,6 +1050,7 @@ karnacja
 Komórka NK
 kość łonowa
 kręgi szyjne
+Limfocyt NK
 Listerioza
 medycyna psychosomatyczna
 medycyna sądowa
@@ -930,6 +1078,7 @@ wcześniactwo
 zęby mleczne
 Łysienie plackowate
 anoreksja
+Carcinoma endometrium
 Choroba Nipah
 choroba wirusowa
 chromosom 1
@@ -994,6 +1143,7 @@ Nerw bloczkowy
 Nerw odwodzący
 odmiedniczkowe zapalenie nerek
 opłucna
+pica
 poliploidalność
 skóra właściwa
 spektrum alkoholowych uszkodzeń płodu
@@ -1035,12 +1185,16 @@ przepuklina pachwinowa
 Rumień nagły
 Skala Apgar
 stawianie baniek
+Sterylizacja
 Stopa końsko-szpotawa
+Syndrom Angelmana
 telemedycyna
+tik
 Torbiel jajnika
 trichurioza
 trisomia chromosomu X
 Ubezpłodnienie
+visus
 Zaburzenia afektywne
 zaburzenia somatoformiczne
 zapalenie kości i szpiku
@@ -1054,8 +1208,12 @@ Ciałko żółte
 Ciało modzelowate
 dysfagia
 dyskalkulia
+ganglion
 gorączka Q
+jad
+kolka
 Kretynizm
+krezka
 Liposukcja
 małopłytkowość
 mialgia
@@ -1076,6 +1234,7 @@ rana postrzałowa
 retinopatia cukrzycowa
 rzadka choroba
 Substancja biała
+Syndrom Korsakowa
 torbiel galaretowata
 Układ renina-angiotensyna-aldosteron
 wstrząs septyczny
@@ -1098,6 +1257,7 @@ Endometrium
 Filament pośredni
 fototerapia
 Gorączka Lassa
+hiperplazja
 Immunoterapia
 insulinooporność
 Jądra podstawne
@@ -1107,7 +1267,9 @@ Macierz pozakomórkowa
 Mięsień piersiowy większy
 mięsień pośladkowy wielki
 Miofibryle
+mioza
 Morfologia krwi
+musculus gluteus maximus
 Narząd Jacobsona
 neonatologia
 Nerw kulszowy
@@ -1141,6 +1303,7 @@ Dyzostoza żuchwowo-twarzowa
 Echolalia
 Elektromiografia
 entoderma
+gastroskopia
 Gorączka krwotoczna krymsko-kongijska
 gradówka
 Gruczoły przedsionkowe mniejsze
@@ -1206,8 +1369,11 @@ mastektomia
 mieszek włosowy
 Motoneuron
 Neurastenia
+Neurony motoryczne
 neuropatia
 odczyn Biernackiego
+otolit
+Patofizjologia
 Pomostowanie aortalno-wieńcowe
 Powięź
 przewlekłe białaczki limfatyczne
@@ -1296,6 +1462,7 @@ Zmarszczka nakątna
 żyła główna
 łokieć tenisisty
 łuk aorty
+Anemia aplastyczna
 BPPV
 Choroba Peyroniego
 chromosom 21
@@ -1352,6 +1519,7 @@ tylakoid
 układ komorowy
 Układ wydalniczy
 Urazowe uszkodzenie mózgu
+vena cava superior
 wargi sromowe większe
 wirusowe zapalenie wątroby
 wrzód weneryczny
@@ -1367,6 +1535,7 @@ Ziarniniak
 żyła główna górna
 łąkotka
 Łożysko przodujące
+anatomia patologiczna
 Aneuploidia
 aparat ortodontyczny
 Apraksja
@@ -1380,6 +1549,7 @@ choroby neurodegeneracyjne
 chromosom 4
 chromosom 5
 czaszka człowieka
+diagnoza prenatalna
 droga podania
 dystonia
 Encefalopatia wątrobowa
@@ -1392,6 +1562,7 @@ Keloid
 Kość czworoboczna mniejsza
 Kubki smakowe
 Kwasica ketonowa
+letarg
 methemoglobinemia
 nadwaga
 nerw językowo-gardłowy
@@ -1429,6 +1600,7 @@ Afrykański pomór świń
 Ametropia
 apiterapia
 Azoospermia
+bezoar
 Biegunka podróżnych
 chirurgia naczyniowa
 chirurgia szczękowo-twarzowa
@@ -1455,6 +1627,7 @@ ksenotransplantacja
 Lęki nocne
 medycyna rodzinna
 Mizofobia
+morula
 mózgoczaszka
 Naczynie chłonne
 Nagniotek
@@ -1505,6 +1678,7 @@ chromosom 6
 chromosom 7
 chromosom 8
 chromosom 9
+Diagnostyka laboratoryjna
 dysforia
 Dyspraksja
 Idiopatyczny
@@ -1543,7 +1717,9 @@ rak krtani
 rak prącia
 Rozcięgno
 Ślinianka podżuchwowa
+Syndrom Capgrasa
 Szczelina odbytu
+Test Mantoux
 tętnica ramienna
 układ bodźcotwórczo-przewodzący serca
 układ przedsionkowy
@@ -1592,6 +1768,7 @@ mlekotok
 nacięcie krocza
 nadkrwistość
 neurotyczność
+neurotyk
 Niedobór dehydrogenazy glukozo-6-fosforanowej
 Niedobór witaminy B12
 niedrożność jelit
@@ -1604,6 +1781,7 @@ Pajęczynówka
 Palce pałeczkowate
 Powiększanie biustu
 Płyn tkankowy
+rumień
 Skóra pergaminowa
 stan padaczkowy
 Tachypnoe
@@ -1639,6 +1817,7 @@ Ekstrakcja zęba
 Ergotyzm
 Fluoroza
 Galaktozemia
+hipotensja ortostatyczna
 hipotonia ortostatyczna
 Immunoassay
 Immunohistochemia
@@ -1650,6 +1829,7 @@ Koprolalia
 kora nowa
 korona protetyczna
 Kość sześcienna
+krem
 Krioterapia
 Limfocyt Tc
 Makrobiotyka
@@ -1661,9 +1841,12 @@ Metaplazja
 Mięsień obły mniejszy
 Mięsień obły większy
 Mięsień skroniowy
+Musculus teres major
+Musculus teres minor
 nadczynność przytarczyc
 Narząd Cortiego
 Neuropatia cukrzycowa
+obraz kliniczny
 Obrzęk limfatyczny
 Olbrzymiokomórkowe zapalenie tętnic
 omocznia
@@ -1688,6 +1871,7 @@ zatrucie cyjankiem
 załupek
 Alkoholowy zespół abstynencyjny
 Angielskie poty
+aphtha
 Barotrauma
 bezmocz
 Biblioterapia
@@ -1701,6 +1885,7 @@ Dysplazja
 Dysplazja stawu biodrowego
 encefalopatia
 Endosomy
+esica
 hamstring
 higiena ustna
 hiperlipidemia
@@ -1778,6 +1963,7 @@ zespół Zollingera-Ellisona
 zwierzęce ugryzienie
 żyła szyjna wewnętrzna
 Adrenoleukodystrofia
+Anemia hemolityczna
 Anizokoria
 Barwienie hematoksyliną i eozyną
 blefarospazm
@@ -1802,6 +1988,7 @@ Komórki okładzinowe
 Kosmki jelitowe
 Leukocytoza
 Malformacja tętniczo-żylna
+marazm
 mechanoreceptor
 medycyna tropikalna
 Mięsień okrężny oka
@@ -1809,6 +1996,7 @@ mięsień pośladkowy średni
 Mięsień skośny zewnętrzny brzucha
 miopatie
 mózgowie
+musculus gluteus medius
 Niealkoholowa stłuszczeniowa choroba wątroby
 Niedokrwistość Fanconiego
 Niedokrwistości hemolityczne
@@ -1826,6 +2014,7 @@ psychoterapia behawioralna
 Rak odbytu
 scyntygrafia
 Staw skroniowo-żuchwowy
+stupor
 szczotkowanie zębów
 tablice Ishihary
 terapia protonowa
@@ -1875,6 +2064,7 @@ histoplazmoza
 idiopatyczne włóknienie płuc
 Inwersja chromosomowa
 Karcynogeneza
+kauteryzacja
 Kinetochor
 Kolposkopia
 Komórki B
@@ -1897,6 +2087,7 @@ Nadciśnienie wrotne
 Nefropatia IgA
 niewydolność wielonarządowa
 opukiwanie
+ostracyzm
 Otyłość brzuszna
 Pień trzewny
 Pola Brodmanna
@@ -1926,6 +2117,7 @@ Torbiel włosowa
 Twór siatkowaty
 Ubytek w przegrodzie międzyprzedsionkowej
 Ultrafiltracja
+unani
 Wielotorbielowatość nerek
 wykluczenie społeczne
 Wzdęcie
@@ -1938,11 +2130,13 @@ Zespół zaburzeń oddychania noworodka
 Żyła podobojczykowa
 Acanthosis nigricans
 aorta wstępująca
+atopia
 cewka nerwowa
 Cewnikowanie serca
 chondrocyt
 choroba Pageta kości
 Choroba Perthesa
+chymus
 Ciguatera
 Cukromocz
 cytometria przepływowa
@@ -1962,6 +2156,7 @@ Hipowolemia
 indukowane pluripotencjalne komórki macierzyste
 Jałowa martwica kości
 kanały półkoliste
+Kapsułka endoskopowa
 Keratynocyt
 Klatka piersiowa lejkowata
 konfabulacja
@@ -1981,6 +2176,7 @@ Niedobór alfa1-antytrypsyny
 niedomykalność zastawki mitralnej
 niepłodność kobieca
 Odmroziny
+oocyt
 Paluch
 Panewka stawu biodrowego
 Pęknięcie macicy
@@ -2142,7 +2338,9 @@ interneuron
 Jądra nadskrzyżowaniowe
 jama bębenkowa
 Kanał Schlemma
+katar
 kępka Peyera
+klon
 Komórki Purkiniego
 Kora nadnerczy
 Kryptosporydioza
@@ -2158,6 +2356,7 @@ Mięsień półbłoniasty
 Mięsień półścięgnisty
 mięsień strzemiączkowy
 Mięsień trójgłowy łydki
+musculus gluteus minimus
 narząd łzowy
 nerw pośrodkowy
 Nerwiakowłókniakowatość typu 1
@@ -2203,6 +2402,7 @@ Tętnica podstawna
 tetraplegia
 Toksokaroza
 Troponina
+Troponiny
 Trypanosomiaza
 Wgłobienie
 Wirus paragrypy
@@ -2333,6 +2533,7 @@ Zespół złego wchłaniania
 zespoły mieloproliferacyjne
 złamanie przewlekłe
 Atetoza
+Audiometria
 Badanie słuchu
 Biopsja kosmówki
 chemoreceptor
@@ -2393,6 +2594,7 @@ Mikrochirurgia
 Mikroskop kontrastowo-fazowy
 napadowa nocna hemoglobinuria
 nerw promieniowy
+neuropatia autonomiczna
 neuropatologia
 Niedomykalność szczeliny powiekowej
 nieprawidłowe krwawienie maciczne
@@ -2424,6 +2626,7 @@ Siodło tureckie
 spermatogonium
 Śpiączka cukrzycowa
 stopa cukrzycowa
+Syndrom Lyella
 Tętnica śledzionowa
 Tętnica środkowa mózgu
 transfuzjologia
@@ -2584,6 +2787,7 @@ Amuzja
 Anizometropia
 Anoftalmia
 anomalia Ebsteina
+Arteria hepatica communis
 Atrezja przełyku
 Atypowe zapalenie płuc
 Autoimmunologiczne zapalenie wątroby
@@ -2701,6 +2905,7 @@ Anodoncja
 Balneologia
 Ból nowotworowy
 Brachydaktylia
+Carcinoma in situ
 Cewnik urologiczny
 Choroba Albersa-Schönberga
 Choroba Morgellonów
@@ -2731,7 +2936,7 @@ Histerosalpingografia
 Hyperleksja
 Hypomenorrhoea
 hysteroscopy
-imbecylizm
+imbecyl
 Język geograficzny
 Kaletka Fabrycjusza
 kiła wrodzona
@@ -2843,6 +3048,7 @@ Cyklosporoza
 Dentofobia
 Depresja psychotyczna
 Dół skrzydłowo-podniebienny
+efapsa
 egodystoniczna orientacja seksualna
 Ektrodaktylia
 fascykulacja
@@ -2889,9 +3095,11 @@ MMPI-2
 Nadbrzusze
 nadciśnienie pierwotne
 Nadżerka szyjki macicy
+nefrotoksyczność
 Nerw końcowy
 Nerw sromowy
 Neurotrening
+Nucleus ruber
 Obłączek
 Odczyn antyglobulinowy Coombsa
 Oddzielająca martwica kostno-chrzęstna
@@ -2919,6 +3127,7 @@ sklepienie czaszki
 skurcz dodatkowy
 St. Louis encephalitis
 stomatologia dziecięca
+Synapsa elektryczna
 Syndrom de la Chapelle
 Szczękościsk
 szew krocza
@@ -2998,3 +3207,2794 @@ egzostoza
 epidemiologia weterynaryjna
 Fokomelia
 gruczoły odbytowe
+Guz Pancoasta
+Gwiaździak włosowatokomórkowy
+Halucynoza pasożytnicza
+Hemosyderoza
+Hepatoblastoma
+Hip replacement
+Hiperamonemia
+Hipestezja
+Hiposmia
+infuzja doszpikowa
+jama miednicy
+Kamica ślinianek
+Kardiotokografia
+Kardiotoksyczność
+Komórki Ito
+Komórki Panetha
+Komórki satelitarne
+Koro
+Latyryzm
+Leukodystrofie
+Limfoblast
+Lipidogram
+Lipodystrofia
+Makroglobulinemia Waldenströma
+Mastitis
+Małoocze
+medycyna reprodukcyjna
+medycyna rozrodu
+medycyna snu
+Mięsień bródkowo-językowy
+Mięsień dłoniowy krótki
+Mięsień długi głowy
+Mięsień gnykowo-językowy
+Mięsień najdłuższy
+Mięsień napinacz podniebienia miękkiego
+Mięsień obniżacz wargi dolnej
+Mięsień prosty dolny
+Mięsień prosty przyśrodkowy
+Mięsień prosty uda
+Mięsień przeciwstawiacz palca małego
+Mięsień przywodziciel kciuka
+Mięsień skośny górny
+Mięsień skroniowo-ciemieniowy
+Mięsień zasłaniacz zewnętrzny
+Mięsień zginacz długi palców
+Mięsień zwieracz zewnętrzny odbytu
+Mięśniak gładkokomórkowy
+Mięśnie mimiczne
+minimalnie inwazyjna chirurgia
+Mnoga gruczolakowatość wewnątrzwydzielnicza
+Moczownik
+Mroczki
+Nadkażenie
+Nadwrażliwość zębiny
+Nasieniak
+nefrektomia
+Nerka ruchoma
+Nerw mięśniowo-skórny
+nerw oczny
+Nerw przeponowy
+Nerwiakowłókniak
+Niskowzgórze
+Nowotwór zarodkowy
+Obwódka Zinna
+Ochrzęstna
+Oligospermia
+Opistotonus
+Osocze bogatopłytkowe
+Ostroga piętowa
+otologia
+Padaczka skroniowa
+Pierwotna dyskineza rzęsek
+Pinta
+Plagiocefalia
+plamka gęsta
+podanie pod język
+pogryzienie przez psa
+Przewlekła choroba płuc
+Przychłonka
+Przydanka
+Rakowe komórki macierzyste
+Reakcja Jarischa-Herxheimera
+Regurgitacja
+Rodzinna angiopatia amyloidowa
+Sieć większa
+Splot krzyżowy
+Śródchłonka
+staw biodrowy
+Stomatodynia
+świsty
+Tarcza zastoinowa
+tęgoryjec dwunastnicy
+Temperatura ciała człowieka
+tętnica szyjna
+Tętnica żołądkowa lewa
+TTTS
+uraz głowy
+Urojenia prześladowcze
+VAD
+węgorczyca
+Wiąd rdzenia
+Wielooporność
+Wiremia
+Witrektomia
+woreczek łzowy
+wrzód twardy
+wypadanie płatka zastawki mitralnej
+Wytrysk opóźniony
+zaburzenia ruchowe
+zaburzenie somatyzacyjne
+zakrzepica tętnicy wieńcowej
+zamroczenie
+Zapalenie gruczołu łzowego
+Zasadowica oddechowa
+Zatoka Douglasa
+zatoki żylne opony twardej
+Zatrucie glikolem etylenowym
+Zespół Bálinta
+Zespół Bardeta-Biedla
+zespół Boerhaavego
+Zespół Charlesa Bonneta
+Zespół Duane'a
+zespół hiperstymulacji jajników
+Zespół Li-Fraumeni
+Zespół Mallory'ego-Weissa
+Zespół przetoczenia między bliźniakami
+Zespół przeżuwania
+Zespół Sotosa
+Zespół Sticklera
+Zespół Westa
+Zespół Wolfa-Hirschhorna
+Zjawiska entoptyczne
+żołądź łechtaczki
+Zwężenie tętnic szyjnych
+Żylna choroba zakrzepowo-zatorowa
+Żywienie sportowców
+Złamanie Collesa
+Złamanie obojczyka
+łagodne zaburzenia poznawcze
+Łuk jarzmowy
+łyżeczkowanie macicy
+ablacja przezskórna
+Afazja amnestyczna
+Afazja nominalna
+Akantocyt
+Alergia krzyżowa
+Alergiczne zapalenie pęcherzyków płucnych
+alogia
+ameloblast
+Analgezja wrodzona
+Angina Plauta-Vincenta
+Ankylostomatoza
+Atopowe zapalenie spojówek
+Atrezja dróg żółciowych
+Bazofilia
+białaczka włochatokomórkowa
+blaszka graniczna tylna rogówki
+CADASIL
+Centralna retinopatia surowicza
+chirurgia onkologiczna
+Chondroblasty
+Chondrokalcynoza
+Choroba Hallervordena-Spatza
+Choroba Refsuma
+Choroba Rittera
+choroby układowe tkanki łącznej
+Chylus
+Ciążowa choroba trofoblastyczna
+deficyt poznawczy
+Disomia jednorodzicielska
+dystres
+Dystroficzne neuryty
+Echopraksja
+efekt Warburga
+fale beta
+Fale delta
+Fale gamma
+Gruczolakorak jelita cienkiego
+Głowa Meduzy
+głownia
+Hemoglobina płodowa
+Hipertrofia wewnątrzmaciczna
+Hiperwolemia
+Hipotrofia wewnątrzmaciczna
+Histiocyt
+holoprozencefalia
+Jądro pasma samotnego
+jedzenie kompulsywne
+język włochaty
+Jontoforeza
+Klatka piersiowa cepowata
+Kolana koślawe
+Komora tylna oka
+Kłębik
+laryngoskopia
+Limfocytoza
+Limfopenia
+Loajoza
+Magnetosom
+Makrocefalia
+Mielocyt
+Mięsień długi szyi
+Mięsień kolcowy
+Mięsień obniżacz kąta ust
+Mięsień obszerny boczny
+Mięsień obszerny przyśrodkowy
+Mięsień pierścienno-tarczowy
+mięsień poprzeczny klatki piersiowej
+Mięsień prosty boczny
+Mięsień rylcowo-językowy
+Mięsień strzałkowy krótki
+Mikrotia
+naturalne planowanie rodziny
+Nerw piersiowy długi
+nerw piszczelowy
+Nerw udowy
+niedomykalność zastawki trójdzielnej
+niepłodność męska
+nowotwory podścieliskowe przewodu pokarmowego
+Objaw Argylla Robertsona
+Odmowa chodzenia do szkoły
+Odynofagia
+Ogon koński
+pankreatoduodenektomia
+Pappataci
+pęcherz neurogenny
+Perikardiocenteza
+perinatologia
+Pierwotne niedobory odporności
+Plama soczewicowata
+Pneumocystoza
+poprzecznica
+przedsionek
+Przewlekła choroba ziarniniakowa
+Przyzwojak
+Psychastenia
+psychogeriatria
+Psychoza amfetaminowa
+Rąbek rogówki
+Rak neuroendokrynny skóry
+Rak nieinwazyjny przewodowy sutka
+Samobadanie piersi
+Sieć mniejsza
+sigmoidoskopia
+skin tag
+Ślinochron
+ślinotok
+śródmiąższowe zapalenie nerek
+Stan przedrakowy
+Staw barkowo-obojczykowy
+Sztuczny chromosom bakteryjny
+Tachykardia zatokowa
+terapia chelatowa
+Testy skórne
+Tętnica maciczna
+tętnica wątrobowa właściwa
+Tętnica łącząca tylna
+tonometria okulistyczna
+trądzik chlorowy
+Trychologia
+Tungoza
+uduszenie gwałtowne
+Ultrasonografia dopplerowska
+wahania nastroju
+Wrodzona ślepota Lebera
+Wstrząśnienie serca
+wykrwawienie
+wyściółczak
+Zaburzenie postrzegania spowodowane halucynogenami
+zapalenie okołokoronowe
+Zapalenie tkanki tłuszczowej
+zatrucie metalem
+Zespół aspiracji smółki
+Zespół chorego węzła zatokowo-przedsionkowego
+Zespół Cockayne'a
+Zespół Dresslera
+Zespół Gerstmanna
+Zespół Kabuki
+Zespół Kearnsa-Sayre'a
+Zespół Klippla-Feila
+Zespół Loeysa-Dietza
+Zespół ostrej moszny
+Zespół poposiłkowy
+Zespół pustego siodła
+Zespół Silvera-Russella
+Zespół Smitha-Lemliego-Opitza
+Źrenica Argyll Robertsona
+związek biogenny
+zwyrodnienie korowo-podstawne
+Zwyrodnienie Wallera
+Żyła nieparzysta krótka
+Żyła odstrzałkowa
+Łój
+Łupież rumieniowy
+Abetalipoproteinemia
+Adenotomia
+Afalia
+Agenezja ciała modzelowatego
+Agenezja nerek
+Amelogenesis imperfecta
+Angina Ludwiga
+Anizocytoza
+anorchizm
+antykoncepcja hormonalna
+blaszka graniczna przednia rogówki
+Ból rzutowany
+błędnik kostny
+Błona maziowa
+cholestaza ciężarnych
+Chondromalacja
+Choroba Fahra
+Choroba Mareka
+Choroba Spielmeyera-Vogta-Sjögrena
+Choroba tangierska
+Chrzęstniak
+Cukrzyca typu MODY
+demodeciodoza
+Dermatoskopia
+Dychawica sercowa
+embolizacja
+Epiphora
+Falloplastyka
+fetoskopia
+Gastrinoma
+Gastrostomia
+Globus
+Gruźlica układu nerwowego
+Hemochromatoza pierwotna
+hemoglobinopatia
+Hipoalbuminemia
+Indukcja porodu
+Istota zbita
+Jądra szwu
+Jądro soczewkowate
+Kardiomiopatia ograniczająca
+Kardiomiopatia restrykcyjna
+Klatka piersiowa kurza
+Klimatoterapia
+Kolec dendrytyczny
+komórka przykłębuszkowa
+Kompleks synaptonemalny
+Kwasica oddechowa
+Laseroterapia
+Leukoencefalopatia podkorowa
+Medycyna społeczna
+Metatarsalgia Mortona
+Mezolimbiczny szlak dopaminergiczny
+Mięsień brodawkowaty
+Mięsień czworoboczny podeszwy
+Mięsień dźwigacz podniebienia miękkiego
+Mięsień guziczny
+Mięsień prostownik krótki palców
+Mięsień prosty boczny głowy
+Mięsień strzałkowy trzeci
+Mięsień zginacz krótki palców
+Migdałek językowy
+Migdałek trąbkowy
+Mikroskopowe zapalenie naczyń
+minimalnie inwazyjna chirurgia zeza
+Miokimie
+Naczyniaki starcze
+Nadciśnienie tętnicze w ciąży
+nawrót choroby
+nerka podkowiasta
+Nerwiak
+niedokrwienie mózgu
+Niedokrwienne zapalenie jelita grubego
+nokardioza
+Nowotwory gruczołów ślinowych
+Otwór szyjny
+Ozębna
+Pancytopenia
+Plamy café au lait
+Podwichnięcie Chassaignac
+Polipragmazja
+Politelia
+Post-polio
+Proteinoza pęcherzyków płucnych
+Przepuklina udowa
+Przezierność karkowa
+Przezskórna stymulacja nerwów
+Przełom nadnerczowy
+Psychochirurgia
+Radikulopatia
+Recesje dziąsłowe
+Semispinalis
+Sieć dziwna
+Skąpodrzewiak
+Skleroterapia
+Śluzak
+Staw krzyżowo-biodrowy
+Staw rzekomy
+Szczytowy przepływ wydechowy
+Tętnica jądrowa
+tętnica oponowa środkowa
+tętnica pęcherzykowa
+Tętnica środkowa siatkówki
+tętnica wieńcowa prawa
+tkanka łączna luźna
+torakocenteza
+trichofagia
+Tyrozynemia
+Tłuszczyk
+Uchyłek odbytnicy
+układ krwionośny
+Użądlenie
+uzależnienie behawioralne
+Warstwa ziarnista
+Wędzidełko języka
+Więzadło krzyżowe tylne
+Więzadło pachwinowe
+wstrząs neurogenny
+Zatoka tętnicy szyjnej
+Zespół Adie
+Zespół Alströma
+Zespół Bartha
+Zespół Browna-Séquarda
+Zespół dziadka do orzechów
+Zespół Ellisa-van Crevelda
+Zespół Joubert
+Zespół Kannera
+Zespół Leigha
+zespół Nelsona
+Zespół nocnego jedzenia
+Zespół Rotora
+Zespół Smith-Magenis
+Zespół Tolosy-Hunta
+Zespół Wolframa
+Zespół żółtych paznokci
+Ziarnina
+Zwichnięcie soczewki
+żyła biodrowa zewnętrzna
+Żyła odpiszczelowa
+żyły wątrobowe
+złamanie kości czaszki
+Anhydroza
+arachnodaktylia
+artropatia
+Asocjacja CHARGE
+Asocjacja VACTERL
+autotransplantacja
+Bolesny rumień kończyn
+BVD/MD
+Choroba Castlemana
+Choroba Christmasa
+Choroba Dariera
+Choroba Farbera
+Choroba McArdle'a
+Choroba Stilla u dorosłych
+Choroba Strümplla
+Choroba Urbacha-Wiethego
+Choroba wtrętowa
+Chrząstkozrost
+Ciałko Cajala
+ciliopatie
+Cytotoksyczność zależna od przeciwciał
+część piersiowa aorty
+depresja anaklityczna
+Droga rdzeniowo-wzgórzowa
+dwurożność macicy
+dysbakterioza przewodu pokarmowego
+Dystrofia twarzowo-łopatkowo-ramieniowa
+Embriopatia talidomidowa
+Emetropia
+fabella
+Fetus in fetu
+Fibrocyt
+ftyzjatria
+GALT
+giełkot
+glukagonoma
+gruczolakotorbielak brodawczakowaty limfatyczny
+Gruczoł apokrynowy
+gruźlica kręgosłupa
+Hematohydrozja
+Hemofilia B
+hiperteloryzm
+Hipokaliemiczne porażenie okresowe
+hospitalizacja
+Ileostomia
+immunochemia
+Irydektomia
+Istota szara okołowodociągowa
+Izosporoza
+jądro Edingera-Westphala
+Kalendarz szczepień
+Kofeinizm
+komórki Cajala
+Komórki D
+Konary mózgu
+Krew utajona
+Krwiak podokostnowy
+krwiak podpaznokciowy
+Laryngomalacja
+limfocyt NKT
+Makroglosja
+Malformacje odbytu i odbytnicy
+Małopłytkowość poheparynowa
+medycyna molekularna
+Mielografia
+Mięsień opuszkowo-gąbczasty
+Mięsień pierścienno-nalewkowy boczny
+Mięsień pochyły przedni
+Mięsień przywłosowy
+Mięsień skośny dolny głowy
+Mięsień tarczowo-nalewkowy
+Mięsień wielodzielny
+mięsień wypieracz pęcherza moczowego
+Mięsień zwieracz górny gardła
+Mięśnie dźwigacze żeber
+Mięśnie klatki piersiowej
+Mycetoma
+Nabłonek oddechowy
+Nadpłytkowość samoistna
+Nefropatia toczniowa
+Nerw grzbietowy łopatki
+Nerw pachowy
+Nerw zasłonowy
+Neuroblast
+Neuropil
+Niedokrwistość syderoblastyczna
+Niedokrwistość zakaźna koni
+niedotlenienie mózgu
+niedrobnokomórkowy rak płuca
+Nowotwory serca
+Objawy oponowe
+obrażenia od wybuchu
+Odruch nurkowania
+Opryszczkowe zapalenie mózgu
+osteogeneza dystrakcyjna
+Ostra białaczka promielocytowa
+Pantomogram
+parafrenia
+pęknięcie aorty
+Pibloktoq
+Pień współczulny
+Pleurodynia epidemica
+podanie donosowe
+podstawa czaszki
+Potylica
+powierzchnia ciała
+Premedykacja
+Prolaps
+Prosaki
+Przeczulica
+przedawkowanie opioidów
+Przepuklina mózgowa
+Przepuklina przeponowa
+przeszczepienie prącia
+Przetoka tętniczo-żylna
+przełom tarczycowy
+Psychoonkologia
+płat limbiczny
+rana kłuta
+Retinopatia nadciśnieniowa
+Ropostek
+Rozlane zapalenie oskrzelików
+Ściana jamy brzusznej
+Scombrotoksizm
+Ślepota śnieżna
+Splot lędźwiowy
+Sprue tropikalna
+struny ścięgniste
+Synapsa immunologiczna
+Syndrom chińskiej restauracji
+szmer oddechowy
+Tętnica jajnikowa
+Tętnica nadłopatkowa
+tętnica piersiowo-barkowa
+Tętnica przeponowa dolna
+Tętnica sromowa wewnętrzna
+tętnica wieńcowa lewa
+Tętnica żołądkowo-sieciowa prawa
+Toczeń rumieniowaty
+Toczeń rumieniowaty krążkowy
+tradycyjna medycyna koreańska
+Trofozoit
+Udar przysadki
+uraz penetrujący
+Urojenia ksobne
+Wągrzyca Układu Nerwowego
+wlew doodbytniczy
+Wtórny zespół stresu pourazowego
+Wynicowanie macicy
+Wynicowanie pęcherza moczowego
+wyściółka
+Zaburzenia pozorowane
+Zaburzenia smaku
+zatoka klinowa
+Zespół Aagenaesa
+Zespół Aicardiego
+Zespół Chediaka-Higashiego
+Zespół Felty'ego
+Zespół Goldenhara
+Zespół Jacobsen
+Zespół Klippla-Trénaunaya
+Zespół Landaua-Kleffnera
+Zespół Lemierre'a
+Zespół Liddle'a
+Zespół Lowna-Ganonga-Levine'a
+Zespół MELAS
+Zespół Pierre'a Robina
+Zespół Plummera-Vinsona
+Zespół popunkcyjny
+Zespół Sézary'ego
+Zespół Sweeta
+zespół Tietzego
+Zespół WAGR
+Zespół Wallenberga
+Zespół wymiotów cyklicznych
+ziarniniak grzybiasty
+zinc level
+zrosty
+Żyła krezkowa górna
+Żyła odpromieniowa
+Żyła pępkowa
+Złamanie Galeazziego
+złe samopoczucie
+Łagodzenie bólu porodowego
+abrazja
+Akantoliza
+aktywność elektryczna bez tętna
+alergiczne kontaktowe zapalenie skóry
+Angiokeratoma
+Anisakioza
+aparat Ilizarowa
+Artropatia neurogenna
+Atonia
+atrezja zastawki trójdzielnej
+azot mocznika
+Badanie pola widzenia
+Bariera krew-jądro
+Biorezonans
+Blednica
+Ból fantomowy
+Bruzda ostrogowa
+Cherubinkowość
+chirurgia prenatalna
+Choroba Bowena
+Choroba Carolego
+choroba Hartnupów
+Choroba lasu Kyasanur
+Choroba Pelizaeusa-Merzbachera
+choroby odkleszczowe
+corpus spongiosum penis
+Dieta DASH
+Diprosopus
+dysforia płciowa u dzieci
+Dysortografia
+Dysplazja włóknista kości
+Efekt cytopatyczny
+Elektrokoagulacja
+Fakoemulsyfikacja
+Fitofotodermatoza
+fluoryzacja zębów
+Fototoksyczność
+gorączka metaliczna
+Gorączka o nieznanej przyczynie
+Gorączka od ugryzienia szczura
+Gorączka Oropouche
+górne drogi oddechowe
+Gruczoł ekrynowy
+Gruźlica prosówkowa
+Guz wydzielający VIP
+Guzki Heberdena
+Guzki Schmorla
+Hidradenitis
+hipodoncja
+Hipofosfatazja
+hipoproteinemia
+inhalacja
+Izochromosom
+Jądro dwuznaczne
+Język mosznowy
+Kamienie kałowe
+kanalik łzowy
+Kanał Haversa
+Kaweole
+Klinodaktylia
+Koinfekcja
+Kolektomia
+Komórka mioepitelialna
+Komórki G
+Korteks
+Kostnina
+Kołowacizna
+Krioglobulinemia
+Limfangioleiomiomatoza
+Limfocytarne zapalenie mózgu
+Linie Beau
+macierz jądrowa
+Makronukleus
+maska krtaniowa
+medycyna estetyczna
+medycyna katastrof
+Mielinoliza środkowa mostu
+Mięsień kulszowo-jamisty
+Mięsień pierścienno-nalewkowy tylny
+Mięsień pochyły tylny
+Mięsień podniebienno-gardłowy
+mięsień podniebienno-językowy
+Mięsień przywodziciel palucha
+Mięsień skośny górny głowy
+Mięsień zginacz krótki palucha
+Mięsień zwieracz środkowy gardła
+Mięsień zwieracz wewnętrzny odbytu
+Mięśniak prążkowanokomórkowy
+Mięśnie nadgnykowe
+mięśnie oddechowe
+Mięśnie płatowate
+Mięśnie skręcające
+Miofibroblast
+mukopolisacharydoza typu VI
+Muselmann
+Naczyniak krwionośny zarodkowy
+Namiot móżdżku
+nerw strzałkowy wspólny
+Nerwiakowłókniakowatość typu 2
+nieceliakalna nadwrażliwość na gluten
+Niedokrwistość Blackfana-Diamonda
+Niewydolność cieśniowo-szyjkowa
+NLD
+Nondysjunkcja
+Nużyca
+onycholiza
+Opuszki przedsionka
+Orbitopatia tarczycowa
+Ortokorekcja
+Osobowość bierno-agresywna
+Osteoskleroza
+Osteotomia
+Ostre kłębuszkowe zapalenie nerek
+Otępienie z ciałami Lewy'ego
+Otwór kolcowy
+Palilalia
+Parafazja
+Pęczek łukowaty
+Pień tarczowo-szyjny
+podstawowa opieka zdrowotna
+próba samobójcza
+Przewlekła zapalna poliradikuloneuropatia demielinizacyjna
+Przezcewkowa elektroresekcja gruczołu krokowego
+PSSD
+Punkty spustowe
+Robak
+Róg skórny
+Rogowiak kolczystokomórkowy
+Ropień zagardłowy
+Rzężenia
+schizofrenia pełzająca
+sferoplast
+Siateczka sarkoplazmatyczna
+Spontaniczne bakteryjne zapalenie otrzewnej
+stabilizator Ilizarowa
+Staw mostkowo-obojczykowy
+Staw siodełkowy
+Struniak
+Świadoma narkoza
+Syncytiotrofoblast
+Szew strzałkowy
+Szew węgłowy
+Szew wieńcowy
+Szkliwiak
+test słuchania dychotycznego
+Tętnica biodrowo-lędźwiowa
+Tętnica gardłowa wstępująca
+Tętnica okrężnicza lewa
+Tętnica piersiowa boczna
+Tętnica tarczowa dolna
+Tętnica żołądkowo-dwunastnicza
+Tętnica żołądkowo-sieciowa lewa
+Tetrasomia chromosomu X
+torakoskopia
+Trisomia 16
+Tyreotoksyczne porażenie okresowe
+urodzeniowa masa ciała
+uzależnienie od tytoniu
+VRE
+Wady cewy nerwowej
+Więzadło Treitza
+woreczek
+Wrodzona przepuklina przeponowa
+Wyrostek kolczysty
+Włókniakomięsak
+Zanieczyszczanie się kałem
+zapalenie aorty
+Zapalenie mózgu Rasmussena
+Zapalenie pępka
+Zatrucie toksynami mięczaków morskich
+zatrzymanie oddechu
+Zespół Andersen-Tawila
+Zespół delecji 22q13.3
+Zespół Gitelmana
+Zespół kanału łokciowego
+Zespół Maroteaux-Lamy'ego
+Zespół McCune'a-Albrighta
+Zespół monosomii 1p36
+Zespół nabłoniaków znamionowych
+Zespół Parinauda
+Zespół Parry'ego-Romberga
+Zespół Roszpunki
+Zespół Rothmunda-Thomsona
+Zespół słabości
+Zespół Vogta-Koyanagiego-Harady
+Zwój rzęskowy
+żyła biodrowa wewnętrzna
+Żyła biodrowa wspólna
+Żyła podkolanowa
+Acefalia
+agnozja wzrokowa
+Akrocyjanoza
+alergia na pszenicę
+Angiodysplazja jelitowa
+Arytmogenna kardiomiopatia prawej komory
+Asthenozoospermia
+Aterektomia
+Balantidioza
+Bejel
+bezsoczność
+Ból korzeniowy
+Błona podstawowa
+Choroba Andersen
+Choroba Carrióna
+Choroba Coatsa
+Choroba Coriego
+Choroba Kienböcka
+Choroba Mondora
+Choroba Thomsena
+Chromosom pierścieniowy
+Czynnik V Leiden
+Dół skroniowy
+Dysgenezja gonad
+Dystrofia Fuchsa
+Ektopia
+Encefalopatia AIDS
+Encefalopatia Hashimoto
+Erytrodermia
+ewentracja
+Fakomatozy
+Farmakoepidemiologia
+Fikobilisomy
+flebologia
+Glejoza
+Guz liściasty
+Guz olbrzymiokomórkowy kości
+Hiperkalciuria
+hiperoksaluria
+Hipoksja okołoporodowa
+Hipopigmentacja
+Histiocytoza
+hydranencefalia
+jersinioza
+Kampo
+kanalik dystalny
+kapnometria
+klonorchoza
+Komórki Reed-Sternberga
+Koncentrat krwinek płytkowych
+Kostniak kostninowy
+Krążenie wrotne
+Kriochirurgia
+Ksantomatoza mózgowo-ścięgnista
+Kłębek szyjny
+Kłykcie potyliczne
+Laryngektomia
+Mieloblast
+Mięsak maziówkowy
+Mięsień pochyły środkowy
+Mięsień podłużny dolny
+Mięsień podłużny górny
+Mięsień prostownik krótki palucha
+Mięsień uszny tylny
+Mięsień łonowo-guziczny
+mięśnie glistowate stopy
+Mięśnie międzykolcowe
+Mięśnie międzykostne stopy
+Mięśnie międzypoprzeczne
+Mięśnie podgnykowe
+Mięśnie podżebrowe
+Mieszana choroba tkanki łącznej
+Monocytoza
+Mroczki migocące
+mukopolisacharydoza typu VII
+Naczyniakomięśniakotłuszczak
+nadrozpoznawalność
+nagła śmierć sercowa
+Narządy okołokomorowe
+Nawrotny częstoskurcz przedsionkowo-komorowy węzłowy
+Nerw biodrowo-pachwinowy
+Neutrofilia
+Nietrzymanie barwnika
+Objętość oddechowa
+obojnactwo prawdziwe
+Odczyn wiązania dopełniacza
+okienko okrągłe
+Ostre eozynofilowe zapalenie płuc
+Osutki polekowe
+Otwór podoczodołowy
+Padaczka czołowa
+Padaczka fotogenna
+Pasmo wzrokowe
+Pemfigoid ciężarnych
+Podostre zapalenie tarczycy
+Pokrywa śródmózgowia
+polikoria
+poronienie nawykowe
+Przedklinek
+Przestrzeń podpajęczynówkowa
+Przezczaszkowa stymulacja prądem stałym
+Przykurcz Volkmanna
+Psychoterapia online
+pyknodysostoza
+sałata słowna
+schizofazja
+Skaningowy transmisyjny mikroskop elektronowy
+Skóra wiotka
+skręcona kostka
+sok jelitowy
+splot Auerbacha
+Stożkowa tomografia komputerowa
+Suchy zębodół
+szew
+Tauopatie
+Tętnica krzyżowa pośrodkowa
+Tętnica nabrzuszna dolna
+Tętnica trzustkowo-dwunastnicza dolna
+Trombastenia Glanzmanna
+układ glimfatyczny
+Uraz akustyczny
+Ureazowy test oddechowy
+urojenie religijne
+Wagotomia
+Więzadło obłe macicy
+Więzadło poboczne piszczelowe
+Wizualna skala analogowa
+Wspólny kanał przedsionkowo-komorowy
+wyparte wspomnienia
+zaburzenie rozwoju płci
+zaburzenie tożsamości płciowej
+Zakręt zębaty
+Zaniewidzenie jednooczne
+Zapalenie śródpiersia
+zastrzyk dożylny
+zębiak
+Zespół Aase'a
+Zespół Birt-Hogg-Dubé
+Zespół Cowden
+Zespół Da Costy
+Zespół Gardnera
+Zespół Holt-Orama
+Zespół Hurler
+Zespół Larsena
+Zespół LEOPARD
+Zespół Löfflera
+Zespół Melkerssona-Rosenthala
+Zespół MERRF
+Zespół Millera-Diekera
+Zespół odwracalnej tylnej encefalopatii
+Zespół paznokieć-rzepka
+Zespół Pendreda
+Zespół Seckela
+Zespół Shwachmana-Diamonda
+Zespół Sjögrena-Larssona
+Zespół Sly'a
+Zespół Susaca
+Ziarnistości pajęczynówki
+zwężenie przełyku
+Żyła odłokciowa
+Żyła śledzionowa
+Żyła wielka mózgu
+Złamanie kości łódeczkowatej
+łyżeczkowanie
+AADD
+Acyduria glutarowa typu I
+adenoid
+Alergia na nikiel
+Apikoplast
+Arhinia
+aspiracja próżniowa
+asplenia
+badanie przesiewowe noworodków
+bakteryjna choroba płuc
+Bolesne skurcze przełyku
+Choroba bornajska
+choroba Brighta
+Choroba Erdheima-Chestera
+Choroba Lhermitte'a-Duclos
+Choroideremia
+chromoblastomikoza
+Ciałko białawe
+CTVT
+Cystektomia
+cytrulinemia
+czarnomocz zimniczy
+Deficyt lizosomalnej kwaśnej lipazy
+Dentinogenesis imperfecta
+Depresja maskowana
+discektomia
+Dół podskroniowy
+Drenaż limfatyczny
+Dysplazja włóknisto-mięśniowa
+Dysproporcja matczyno-płodowa
+dyssomnia
+Dystrofia Emery'ego-Dreifussa
+Ektopia serca
+Enoftalmia
+Fenomen Marcusa Gunna
+Flebografia
+Gefyrofobia
+Glejakowatość mózgu
+górny neuron ruchowy
+Guz Krukenberga
+Gwiaździak anaplastyczny
+Hemibalizm
+Hemolakria
+Hiperhomocysteinemia
+Hipersomnia idiopatyczna
+Hipoglikemia reaktywna
+Hymenolepioza
+immunofenotyp
+implantologia
+Jądro niskowzgórzowe Luysa
+kamień żółciowy
+Kanał wzrokowy
+kanałopatie
+Kardiomiopatia połogowa
+kardioplegia
+Klinek
+Komórki satelitarne mięśni
+komórki sitowe
+Konizacja szyjki macicy
+Kości krótkie
+kości płaskie
+Kostki Worma
+kwasica metylomalonowa
+Limfadenektomia
+MCH
+MCHC
+mediastinoskopia
+medycyna stylu życia
+Meralgia z parestezjami
+Mięsień uszny górny
+Mięsień uszny przedni
+Mikrognacja
+Mikroskopowe zapalenie jelita grubego
+monorchizm
+Nabłonek sześcienny
+nadciśnienie oczne
+Nefronoftyza
+Nerw krtaniowy górny
+Nerw nadłopatkowy
+nerw pośladkowy górny
+Nerw skórny boczny uda
+neurofilamenty
+Niedobór 5α-reduktazy
+Niedowład Erba
+Omamy rzekome
+Omięsna
+Ostra choroba retrowirusowa
+Ostre stłuszczenie wątroby ciężarnych
+PANDAS
+Pęcherzyca zwykła
+Pinealocyty
+podanie dopochwowe
+podwójne rozpoznanie
+Porażenie kleszczowe
+Porażenie postępujące
+poszukiwanie uwagi
+procedura medyczna
+Próżniociąg
+przednercze
+przestrzeń zewnątrzkomórkowa
+Przewlekła mózgowo-rdzeniowa niewydolność żylna
+Płynotok
+Rak nadnercza
+Rak rdzeniasty tarczycy
+rak urotelialny
+Rdzeniomózgowie
+Receptor rianodynowy
+Replantacja
+retinoskopia
+riketsjozy
+Rodzinna dysautonomia
+Rozlany skurcz przełyku
+Rozpiętość rozkładu objętości erytrocytów
+Rozrodczak
+Sekwencja Potter
+Śledziona dodatkowa
+Śluzak rzekomy otrzewnej
+Splątki neurofibrylarne
+Spoidło mózgowe przednie
+śródbłonek komory przedniej
+ssanie
+Staw szczytowo-obrotowy
+Stwardnienie koncentryczne Baló
+Szczelina oczodołowa górna
+Szkielet serca
+tarczka
+Taurodontyzm
+Terapia nerkozastępcza
+termoreceptor
+Tętnica nadnerczowa środkowa
+tętnica osierdziowo-przeponowa
+Tętnica piersiowa górna
+tętnica piszczelowa przednia
+Tętnica podłopatkowa
+Tracheomalacja
+tractus corticospinalis
+transfer zarodka
+Trójkąt udowy
+Tropikalna spastyczna parapareza
+Tympanoplastyka
+Uchyłek Zenkera
+Układ fagocytarny
+Uporczywa terapia
+wertebroplastyka
+Więzadło rzepki
+wskaźnik kostkowo-ramienny
+Wtrętowe zapalenie mięśni
+wyczerpanie cieplne
+Żabka
+Zaburzenia miesiączkowania
+zaburzenie rozwoju
+Zakażenia okresu noworodkowego
+Zakręty Heschla
+Zakrzepica żyły wrotnej
+zapalenie nadtwardówki
+Zapalenie nerwu przedsionkowego
+Zatoka esowata
+Zespół Aicardiego-Goutièresa
+Zespół Costello
+Zespół Fitz-Hugh-Curtisa
+Zespół Hammana-Richa
+zespół krótkiego QT
+zespół Leriche'a
+Zespół Marcusa Gunna
+Zespół Meckela
+Zespół Meigsa
+Zespół Mirizziego
+Zespół przewlekłej żałoby
+Zespół regresji kaudalnej
+Zespół Shy'a-Dragera
+Zespół stożka rdzeniowego
+zespół Weavera
+Zespół wibracyjny
+Zespół Łucji Frey
+Zwój trójdzielny
+Zwłóknienie klatki piersiowej
+Złamanie Monteggii
+łagiewka
+Łokieć golfisty
+Acholia
+Adrenalektomia
+Akrocefalia
+angiostrongyloza
+Argentyńska gorączka krwotoczna
+Asterixis
+Autoimmunologiczne zespoły niedoczynności wielogruczołowej
+badanie lekarskie
+Biopsja wątroby
+Blaszka Brucha
+Ból głowy towarzyszący seksowi
+Boliwijska gorączka krwotoczna
+Bruzda ciemieniowo-potyliczna
+błędnik błoniasty
+Choroba Alpersa
+Choroba Degosa
+Choroba Haileya-Haileya
+Choroba Kaszina-Beka
+Choroba Kennedy'ego
+Choroba Kikuchi-Fujimoto
+choroba nerwowo-mięśniowa
+choroba układu krwiotwórczego
+choroby autozapalne
+Chłoniak MALT
+Controlled atmosphere killing
+Cystografia
+Czas krwawienia
+Czepiec ścięgnisty
+demofobia
+diabetologia
+dur endemiczny
+Dwurzędność rzęs
+entezopatie
+Eozynopenia
+Erytrodyzestezja dłoniowo-podeszwowa
+Fibromatoza
+Fimbrie
+Fundoplikacja Nissena
+Gruczolak wątrobowokomórkowy
+Gruczoły Ebnera
+Guz Klatskina
+Guzki Boucharda
+Guzki śpiewacze
+Guzy jajnika hormonalnie czynne
+Halucynoza alkoholowa
+Hemisferektomia
+Hirudoterapia
+Inkontynencja stresowa
+Jądrzak
+Kamptodaktylia
+komórka eukariotyczna
+komórka neuroendokrynna
+komórka Renshawa
+Kościozrost
+kręgosłup człowieka
+krytyczne niedokrwienie kończyn
+LACI
+Lejek
+linia komórkowa
+Livedo reticularis
+Malformacje macicy
+Metamielocyt
+Mięsień nalewkowy
+Mięsień pionowy języka
+Mięsień stawowy kolana
+Migrena brzuszna
+Mikroalbuminuria
+miopatia nemalinowa
+Mnogie kostniakochrzęstniaki
+Naczyniak limfatyczny torbielowaty
+Nadciśnienie naczyniowonerkowe
+nadjajnik
+Nasieniotok
+Nerka gąbczasta
+Nerw płciowo-udowy
+Nerw łydkowy
+Neuroakantocytoza
+neuropatia nerwu wzrokowego
+Niedowład Klumpke
+NOTES
+oddychanie przez usta
+odma śródpiersiowa
+Odnogi mózgu
+Omska gorączka krwotoczna
+ośrodek oddechowy
+Ostre rozdęcie okrężnicy
+parakokcydioidomikoza
+Parvovirus
+pasma Meesa
+Pierścień ścięgnisty wspólny
+Półpasiec oczny
+Próba krzyżowa
+Przepuklina Spiegela
+Przewlekła rzekoma niedrożność jelit
+Przymacicze
+pyłkowica
+Rak jajowodu
+Rozsiana samoistna hiperostoza szkieletu
+rzekoma niedoczynność przytarczyc
+Serce sportowca
+Somatostatinoma
+Spirometryczna próba prowokacyjna
+splot Meissnera
+Steatonecrosis
+Stok
+Struna bębenkowa
+Szponowatość paznokci
+Test pochyleniowy
+Tętnica nabrzuszna górna
+Tętnica nadnerczowa górna
+Tętnica podniebienna zstępująca
+Tętnica trzustkowo-dwunastnicza górna
+Tętnica łącząca przednia
+Tkanka chrzęstna sprężysta
+Torbiel przewodu tarczowo-językowego
+Torbiel Tarlova
+Torbiel zastoinowa błony śluzowej
+Torebka zewnętrzna
+transient synovitis
+Trójkąt pęcherzykowo-wątrobowy
+Ultrasonografia endoskopowa
+Uzdeczka
+Wiek kostny
+Więzadło wieszadłowe prącia
+Wole jajnikowe
+Wrodzona gruczolakowatość torbielowata płuc
+Wspólny pień tętniczy
+wyrostek rzęskowy
+Zaburzenia węchu
+Zaciskające zapalenie osierdzia
+Zapalenie przymacicza
+Zapalenie skóry szpary międzypalcowej
+Zapalenie wsierdzia Libmana-Sacksa
+Zaraza stadnicza
+Zastawka zatoki wieńcowej
+Zastawki cewki tylnej
+Zatoka poprzeczna
+Zatoka strzałkowa górna
+Zatrucie manganem
+Zatrucie teobrominą
+Zespół Allgrove'a
+Zespół Bernarda-Souliera
+Zespół Brunnera
+Zespół Burnetta
+Zespół Carpentera
+Zespół Cogana
+Zespół Cohena
+Zespół Dubowitza
+Zespół Hallermanna-Streiffa
+zespół hipereozynofilowy
+Zespół Hughesa-Stovina
+Zespół Isaacsa-Mertensa
+Zespół Marchiafavy-Bignamiego
+Zespół Ogilviego
+Zespół PFAPA
+Zespół podkradania tętnicy podobojczykowej
+Zespół Simpsona-Golabi-Behmel
+Zespół suszonej śliwki
+Zespół szarego dziecka
+ziejąca trąbka słuchowa
+Zwichnięcie rzepki
+Zwiotczające zapalenie rdzenia kręgowego
+Zwój skrzydłowo-podniebienny
+Zwyrodnienie żółtkowate plamki
+Żyła pośrodkowa łokcia
+żyła sercowa wielka
+Żyła środkowa siatkówki
+Żyła szyjna przednia
+Żyły ramienne
+Złamanie patologiczne
+Złamanie zielonej gałązki
+Łagiewka sterczowa
+Łopatka skrzydlata
+Adiadochokineza
+analiza chodu
+APUD
+Aspartyloglikozaminuria
+astma burzowa
+Atrezja jelita cienkiego
+Atypowy nowotwór teratoidny
+Autyzm atypowy
+Awersja seksualna
+Awolicja
+Blepharophimosis
+Ból nocyplastyczny
+bóle mięśniowo-szkieletowe
+ceroidolipofuscynozy neuronalne
+Chirurgia endokrynologiczna
+Cholesteroloza
+choroba bakteryjna
+Choroba Dercuma
+Choroba pęcherzykowa świń
+Choroba Rosai-Dorfmana
+Choroba skokowa owiec
+Choroba Tarui'ego
+Choroba Unverrichta-Lundborga
+choroba zębów
+Chrząstka różkowata
+Ciałka Mallory'ego
+depresja melancholiczna
+Dół czaszki tylny
+Ductus
+dyslalia głoskowa
+Dysplazja przegrodowo-oczna
+Dysplazja śmiertelna
+Elektronystagmografia
+Enukleacja
+Epiploic appendagitis
+Filamenty
+Fotodermatoza
+giętkość woskowa
+Gruczolak wielopostaciowy
+Guz desmoidalny
+Gwiaździak podwyściółkowy olbrzymiokomórkowy
+Głowica
+Hiperosmia
+Hipoaldosteronizm
+Hipochondroplazja
+Hipohydrotyczna dysplazja ektodermalna
+Jądra móżdżku
+Jądra przedsionkowe
+Jama macicy
+jama otrzewnej
+jednooczność
+Kamień nosowy
+Kanał sromowy
+Kanał tętnicy szyjnej
+Komisura
+Konzo
+kość różnokształtna
+Kostniak zarodkowy
+Laminektomia
+Leczenie neoadiuwantowe
+Leprechaunizm
+Leukokoria
+Linia grzebieniasta
+Lobektomia
+Mikroiniekcja
+Mikronukleus
+moczówka prosta nerkowa
+Nadziąślak
+Napadowy ból odbytu
+narażenie na nikotynę
+nekrobioza
+Nerw bębenkowy
+Nerw biodrowo-podbrzuszny
+nerw podoczodołowy
+nerw pośladkowy dolny
+Nerw skórny przyśrodkowy ramienia
+Nerwiak węchowy zarodkowy
+Neuroimmunologia
+neuroradiologia
+niepożądane odczyny poszczepienne
+Nieprawidłowa glikemia na czczo
+Niestabilność mikrosatelitarna
+Niezróżnicowany mięsak pleomorficzny
+Objaw Cullena
+Objaw Greya Turnera
+Objaw Janewaya
+Objaw Trousseau
+Odczulanie
+orchidopeksja
+Organizator jąderka
+otoczka mielinowa
+otoskopia
+Otwór kulszowy
+Otwór okrągły
+Otwór zasłoniony
+Pachymetria
+Padaczka odruchowa
+Pemfigoid
+Pętla szyjna
+Piebaldyzm
+Pilomatrixoma
+Plamki Bitota
+Poikilocytoza
+Pole najdalsze
+Politerapia
+Porażenie międzyjądrowe
+Potworniak okolicy krzyżowo-guzicznej
+późne macierzyństwo
+Proerytroblast
+Przegroda przezroczysta
+Przerost migdałka gardłowego
+Przetoka dializacyjna
+Przewód słuchowy wewnętrzny
+przezcewnikowe wszczepienie zastawki aortalnej
+Przełom tarczycowy hipometaboliczny
+psychiatria kulturowa
+Rak brodawkowaty tarczycy
+reanimacja
+Ropnica
+Równoważnik metaboliczny
+Rozrost mikroguzkowy nadnerczy
+rzekomy pomór drobiu
+Sekwestracja płuca
+Sensoryzmy
+spondylodeza
+Sporozoit
+Śródkoście
+Stan minimalnej świadomości
+Stapedektomia
+Stenoza zastawki trójdzielnej
+Sternotomia
+Stwardnienie tętnic typu Mönckeberga
+Świąd wodny
+Szczelina oczodołowa dolna
+Szew czołowy
+Sztuczny chromosom drożdżowy
+Test radioalergosorpcji
+Test Schillinga
+Tętniak rzekomy
+tętnica grzbietowa stopy
+Tętnica lędźwiowa
+Toczeń rumieniowaty polekowy
+Torbiele dróg żółciowych
+Torebka ostatnia
+Trabekulektomia
+Transmisyjny mikroskop elektronowy
+trauma acustico
+Ureterocoele
+Wieloogniskowa neuropatia ruchowa
+Więzadło podłużne przednie
+Więzadło podłużne tylne
+Więzadło szerokie macicy
+wizualizacja kierowana
+wrodzona dystrofia mięśniowa
+wrodzony hiperinsulinizm
+Wulwektomia
+Zaburzenia czynnościowe przewodu pokarmowego
+zaburzenia związane z glutenem
+Zakotwiczenie rdzenia
+Zakręt przyśrodkowy
+Zapalenie gruczołu tarczowego Riedla
+zarośnięcie błony dziewiczej
+Zatoka klinowo-ciemieniowa
+Zatoka skalista dolna
+Zawał płuca
+Zespół Antleya-Bixlera
+Zespół ATR-X
+Zespół Blaua
+Zespół bułata
+Zespół Coffina-Lowry'ego
+Zespół Coffina-Siris
+Zespół Eagle'a
+Zespół Evansa
+Zespół Gianottiego-Crostiego
+Zespół Gorlina i Vickersa
+Zespół Hajdu-Cheneya
+Zespół Hermanskiego-Pudlaka
+Zespół Hioba
+Zespół Johanson-Blizzarda
+Zespół Lujana-Frynsa
+Zespół McKusicka-Kaufmana
+Zespół Mowata-Wilsona
+Zespół Muckle'a-Wellsa
+Zespół Neua-Laxovy
+zespół po cholecystektomii
+zespół poreperfuzyjny
+Zespół Robertsa
+Zespół SAPHO
+Zespół Schwartza-Jampela
+Zespół sercowo-twarzowo-skórny
+Zespół szabli tureckiej
+Zespół sztywności odmóżdżeniowej
+Zespół Sæthrego-Chotzena
+Zespół Tersona
+Zespół Wiedemanna-Rautenstraucha
+Zespół Williamsa i Pollocka
+Ziarnistości Birbecka
+Znamię Beckera
+Żyła grzbietowa prącia
+Żyła krezkowa dolna
+Żyła oczna górna
+Żyły promieniowe
+Żyły skroniowe powierzchowne
+Żyły łokciowe
+Akatalazja
+Akrania
+Anaplazmoza
+Astazja
+Astma aspirynowa
+Atrezja nozdrzy tylnych
+autotransfuzja
+Badanie neurologiczne
+Bartoneloza
+Brodawczak splotu naczyniówkowego
+Błąd drugiego rodzaju
+Błąd pierwszego rodzaju
+Błona podśluzowa
+Błoniasty przyczep pępowiny
+Chemoprewencja
+chirurgia ortognatyczna
+chirurgia weterynaryjna
+Choroba Blounta
+Choroba Caffeya
+Choroba De Vivo
+Choroba Gorhama
+Choroba Hersa
+Choroba Olliera
+Choroba Ormonda
+Choroba Sprengla
+Choroba Zalewu Wiślanego
+Chrząstka klinowata
+ciałko Krausego
+crista galli
+Cytomegalowirusowe zapalenie siatkówki
+desmurgia
+deuteranopia
+Diabulimia
+Dichromatyzm
+Dysmetria
+Dysplazje kręgosłupowo-nasadowe
+Dystrofia kości przytarczyczkowa
+Enzymatyczna terapia zastępcza
+Eozynofilowe zapalenie powięzi
+Epiphyseolysis capitis femoris
+Fałdy Kerkringa
+Fungemia
+Genodermatozy
+Gingiwektomia
+Gnatostomoza
+Gonioskopia
+Gruźliczak
+Grzybica czarna
+Guz Brennera
+Guzek Aschoffa
+guzek siostry Mary Joseph
+Hiperbilirubinemia
+Hiperekpleksja
+Hiperkaliemiczne porażenie okresowe
+Holter ciśnieniowy
+Hortiterapia
+Idiopatyczne śródmiąższowe zapalenia płuc
+immunopatologia
+Integument
+Istota właściwa rogówki
+Jądro podstawne Meynerta
+Jądro zębate
+Katatrenia
+Kolano biegacza
+komórki sutkowe
+Kordocenteza
+Korzeń grzbietowy
+Kość klinowata boczna
+Kość międzyciemieniowa
+krew w stolcu
+Leukoarajoza
+Ludzka erlichioza monocytarna
+Malrotacja jelit
+Megaureter
+Międzynarodowy współczynnik znormalizowany
+Mikroangiopatia
+Mioblast
+Mutyzm akinetyczny
+MZGKU
+Nabłonek jednowarstwowy płaski
+Naczynia przodujące
+Nagryz pionowy
+nerw czołowy
+Nerw językowy
+Nerw potyliczny większy
+Nerw skalisty większy
+niedobór deaminazy adenozynowej
+niedobór karbamoilotransferazy ornitynowej
+nowotwór rdzenia kręgowego
+Obrzęk Reinkego
+Odczyn lateksowy
+Odma
+Odpryskowiak
+Oliwka
+Onkocytoma
+Operacja Jawdyńskiego-Crile'a
+opieka długoterminowa
+Otwór kulszowy mniejszy
+Otwór poszarpany
+Parakeratoza
+Pęczek podłużny przyśrodkowy
+Pierścień Schatzkiego
+Pituicyty
+Pletyzmografia
+podrażnienie skóry
+Polineuropatia alkoholowa
+Polipowatość młodzieńcza
+porażenie nerwu krtaniowego wstecznego
+Powięź poprzeczna
+Prążek krańcowy
+Protetyka
+prurigo
+Prymitywny guz neuroektodermalny
+Przegroda międzyprzedsionkowa
+Przegroda przedsionkowo-komorowa
+Przemijający szybki oddech noworodka
+Przewlekła napadowa hemikrania
+Przydatki macicy
+Przyjajnik
+Rak pęcherzykowy tarczycy
+Rana szarpana
+Rękojeść mostka
+rhizarthrose
+Ropień Brodiego
+Rubeoza tęczówki
+Rumień dłoni
+Sitosterolemia
+sparganoza
+Splot sercowy
+Spoidło tylne
+Spływ zatok
+Szew łuskowy
+Szyszyniak zarodkowy
+teratogenność
+teratozoospermia
+Testy NIPT
+Tętnica bębenkowa przednia
+tętnica błędnika
+Tętnica ciała szklistego
+tętnica poprzeczna szyi
+Torbiel czekoladowa
+Torbiel korzeniowa
+torbiel nerki
+Torbiel skrzelopochodna
+transplantologia
+Triada O'Donoghue
+Trójkąt tętnicy szyjnej
+Trylogia Fallota
+tyłopochylenie macicy
+układ nerwowy człowieka
+vena cordis media
+węchowy zespół odnoszący
+Wielokształtny częstoskurcz przedsionkowy
+Więzadła żółte
+Więzadło krzyżowo-guzowe
+Więzozrost
+Więzozrost piszczelowo-strzałkowy
+Woloocze
+Współczulne zapalenie oka
+wyrostek rylcowaty
+Wyrostek zębodołowy
+Włókniakomięsak guzowaty skóry
+Zaawansowane zabiegi resuscytacyjne
+zakażenie Clostridioides difficile
+Zapalenie powięzi z eozynofilią
+zapewnienie drożności układu oddechowego
+Zatoka potyliczna
+Zatoka skalista górna
+Zawiązek
+Zawzgórze
+Zbiornik móżdżkowo-rdzeniowy
+Zespół Barakata
+Zespół Bealsa
+Zespół Blanda-White'a-Garlanda
+Zespół Denysa-Drasha
+Zespół Frasera
+Zespół Gradenigo
+Zespół Heerfordta
+Zespół Imerslund-Gräsbecka
+Zespół Marinescu-Sjögrena
+Zespół Meige'a
+Zespół Mendelsona
+Zespół Muira-Torre'a
+Zespół neurologiczny wysokich ciśnień
+Zespół Nijmegen
+Zespół Ohtahary
+Zespół Pallistera-Killiana
+Zespół Pearsona
+Zespół POEMS
+zespół preekscytacji
+Zespół skrzelowo-uszno-nerkowy
+Zespół ucisku tętnicy krezkowej
+Zespół Weilla-Marchesaniego
+Zespół żebra szyjnego
+Zespół Zievego
+Ziarniniak obrączkowaty
+Ziarniszczak
+Zimowiak
+Zjawisko Arthusa
+Zwyrodnienie powrózkowe rdzenia kręgowego
+Żyła jądrowa
+Żyła jajnikowa
+Żyła językowa
+Żyła kątowa
+żyła piersiowa wewnętrzna
+żyła sercowa średnia
+Żyła sromowa wewnętrzna
+Żyła tarczowa dolna
+Żyła twarzowa
+Żyła żołądkowa lewa
+Żyły wirowate
+Złamanie Jeffersona
+Łuk dłoniowy głęboki
+łysienie ogólne
+Łysienie telogenowe
+Aerodontalgia
+Aksolema
+Alfa-mannozydoza
+amelia
+anisomelia
+Atrezja dwunastnicy
+biopsja prostaty
+Błona międzykostna przedramienia
+Choroba Camuratiego-Engelmanna
+Choroba central core
+choroba drobiu
+choroba Handa-Schüllera-Christiana
+Choroba Kostmanna
+choroba pierwotniakowa
+Choroba Segawy
+Choroba zarostowa żył wątrobowych
+Choroby psychosomatyczne
+ciemiączko przednie
+Cieśń gardzieli
+ciśnienie zaklinowania
+Czas trombinowy
+deformacja Madelunga
+Drobnozakrętowość
+drop
+Drżenie zamiarowe
+Dysplazja diastroficzna
+Dysplazja przynasadowa McKusicka
+Dystonia torsyjna typu 1
+Dystonia wrażliwa na dopaminę
+Dystrofia tłuszczowo-płciowa
+Dziedziczna koproporfiria
+endarterektomia
+Endarterektomia tętnicy szyjnej
+enteropatia
+Enteropatia z utratą białek
+Fasciolopsis buski
+Fałd przedsionkowy
+Frymartynizm
+Genu Recurvatum
+Glomerulopatie
+Gorączka neutropeniczna
+Gruczoł żołądkowy
+Grzybica brody
+Hallux rigidus
+Hemeralopia
+Hemoperfuzja
+Hiperoksja
+Immunodyfuzja
+Indeks płynu owodniowego
+Jod-Basedow
+Kanał przywodzicieli
+kokartroza
+Kolec kulszowy
+Kość klinowata przyśrodkowa
+Kość podstawnopotyliczna
+Krwawienie dokomorowe
+Laktotrofy
+LUTS
+Macica jednorożna
+Meningoza
+Metagonimoza
+mezangium
+Mięsień mostkowy
+Mięsień poprzeczny głęboki krocza
+Mięsień poprzeczny powierzchowny krocza
+Mięsień przywodziciel najmniejszy
+mikrodermabrazja
+Mikrotomografia
+Miomektomia
+Modiolus
+Nadreaktywność oskrzeli
+Nefropatia analgetyczna
+Nefropatia bałkańska
+Nerw nosowo-rzęskowy
+Nerw skórny tylny uda
+Nerw uszny wielki
+nerw łzowy
+Niescalony mięsień lewej komory
+Odruch strzemiączkowy
+Ogniskowy rozrost guzkowy wątroby
+omamy hipnopompiczne
+Oocysta
+Operacja Blalock-Taussig
+operacja Fontana
+Osteodystrofia
+Ostre poprzetoczeniowe uszkodzenie płuc
+Otwór sieciowy
+Paramiotonia wrodzona
+Pasmo biodrowo-piszczelowe
+Pęcherzyk porcelanowy
+Peliosis hepatis
+Pierwotna nadczynność przytarczyc
+Poduszka
+Porażenie nerwu okoruchowego
+Porażenie okresowe
+porażenie wiotkie
+Powiększanie ust
+Powięź nerkowa
+Próba Barany'ego
+Protoporfiria erytropoetyczna
+Przedgłowie
+Przepuklina w kresie białej
+radioterapia onkologiczna
+Rak anaplastyczny tarczycy
+Rak pęcherzyka żółtkowego
+Rak śluzowo-naskórkowy
+Rak zarodkowy
+Reliabilizm
+rentgenologia
+Rozrodczak zarodkowy
+Rumień nekrotyczny wędrujący
+schody przedsionka
+Selektywny niedobór immunoglobuliny A
+Sercowy zespół X
+Sialografia
+Sierp móżdżku
+simultanagnozja
+Skorupka
+Splot żylny pochwowy
+Staw szczytowo-potyliczny
+Stopa madurska
+substytucyjna terapia opioidowa
+Symblepharon
+Szew potyliczno-sutkowy
+szyjka chirurgiczna kości ramiennej
+Taśmy okrężnicy
+Telazjoza
+Telekantus
+Teleradiologia
+Tętnica grzbietowa nosa
+Tętnica naczyniówkowa przednia
+Torebka Tenona
+Trądzik niemowlęcy
+Troczek prostowników
+Troczek zginaczy
+Trójkąt podżuchwowy
+Trójkąt przedni szyi
+trzustka obrączkowata
+Tubulopatie
+Tymocyt
+Wczesnodziecięca białaczka nielimfocytowa
+Wędzidełko łechtaczki
+Wibrioza
+Więzadło poboczne strzałkowe
+Więzadło podstawowe macicy
+wir włosów
+wrodzone zgrubienie paznokci
+wrzód dwunastnicy
+Wtórna nadczynność przytarczyc
+włókna kojarzeniowe
+Włóniakowatość guzkowata rozcięgna podeszwowego
+zaburzenia lękowo-depresyjne
+Zachłyśnięcie
+Zapalenie małych naczyń skóry
+zatrucie talem
+Zespół Adamsa-Olivera
+Zespół Axenfelda-Riegera
+Zespół Bannayana-Rileya-Ruvalcaby
+Zespół Benedikta
+Zespół Cronkhite'a-Canady
+Zespół Currarino
+Zespół czołowy
+Zespół EEC
+Zespół GRACILE
+Zespół Greiga
+zespół IPEX
+Zespół Jeunego
+zespół Le Merrera
+Zespół Marshalla-Smitha
+Zespół nadlepkości
+Zespół Opitza-Kaveggii
+Zespół Pallistera-Hall
+Zespół PAPA
+Zespół Potocki-Lupskiego
+Zespół presuicydalny
+Zespół RAPADILINO
+Zespół Robinowa
+Zespół rzekomoopuszkowy
+Zespół Seipa-Berardinelliego
+Zespół unikania patologicznego
+Zespół ustno-twarzowo-palcowy typu I
+Zespół van der Woude
+Zespół wątrobowo-płucny
+Zespół Webera
+Zespół znikającego płodu
+Znamię Oty
+Znamię Spitz
+znieczulenie regionalne
+Żółtakogwiaździak pleomorficzny
+zwężenie pochwy
+Żyła brzeżna lewa
+Żyła kręgowa
+Żyła nadnerczowa
+żyła sercowa mała
+żyła skośna przedsionka lewego
+Żyła uszna tylna
+Żyła wzgórzowo-prążkowiowa górna
+Żyła zażuchwowa
+Żyły oskrzelowe
+Żyły przeponowe dolne
+Żyły przełykowe
+Żyły wypustowe
+Złamania części twarzowej czaszki
+Złamanie otwarte
+Złośliwość histologiczna
+Acrodermatitis enteropathica
+Acyduria mewalonianowa
+Acyduria orotowa
+acydurie organiczne
+Agada
+Akrodynia
+Aktygrafia
+Aminoaciduria
+Amniotomia
+Anartria
+anejakulacja
+Anocja-mikrocja
+Anomalia Pelgera-Hueta
+Argininemia
+Artykulator
+Asocjacja PHACE
+Astereognozja
+Bezzębie
+Biopsja nerki
+bloczek kości ramiennej
+brachydaktylia typ D
+Brodawczaki krtani
+chirurgia stomatologiczna
+chondropatia
+Choroba Abta-Letterera-Siwego
+Choroba Baastrupa
+Choroba Foxa-Fordyce'a
+Choroba Haglunda
+choroba kości
+Chłonkomocz
+Ciąża jajnikowa
+Depresja lekooporna
+Dół czaszki przedni
+Dół czaszki środkowy
+dysfunkcja węzła zatokowego
+Dysplazja zębiny
+Elektrochemioterapia
+Embolektomia
+epidemiologia kliniczna
+erytrofobia
+Erytroleukemia
+Eunuchoidyzm
+Fałd nalewkowo-nagłośniowy
+Gammapatia monoklonalna
+Gastropeksja
+Gonocyt
+Gorączka wschodniego wybrzeża Afryki
+guzek węchowy
+gwiaździak zarodkowy
+Haczyk skrzydłowy
+Hemimelia strzałkowa
+hipoestrogenizm
+Hipomelanoza Ito
+hipoplazja móżdżku
+Hipoteloryzm
+Istota bezimienna
+jejustomia
+Jumping frenchman
+kandydoza przełyku
+katastroficzny zespół antyfosfolipidowy
+Kora gruszkowata
+Kość klinowata pośrednia
+Krętarz
+Krętarz mniejszy
+Krótkotrwałe epizody psychotyczne
+Krwinkomocz
+ksantynuria
+Limfografia
+linia papilarna
+Lobomykoza
+Mal de Meleda
+Mamelon
+Mięsień pochyły najmniejszy
+mikrostomia
+nabłoniak
+Naczynie zatokowe
+nadmiar estrogenu
+nadwrażliwość typu I
+Nawrót kapilarny
+Neowaskularyzacja
+Nerw skalisty mniejszy
+Nerw uszno-skroniowy
+Nerwy nadobojczykowe
+Neurologiczne zespoły paranowotworowe
+Neutropeniczne zapalenie jelit
+Niedobór LCAT
+Nowotwór dysembrioplastyczny neuroepitelialny
+Obrót zewnętrzny na główkę
+Odczyn Kveima
+Odma wewnątrzczaszkowa
+Ostra niewydolność serca
+Ostre infekcyjne zapalenie tarczycy
+Otoczkowiak
+Parasystolia
+pęcherzyki zewnątrzkomórkowe
+pęknięcie krocza
+Pemfigoid bliznowaciejący
+perforacja macicy
+Piedra biała
+Pierwotna samoistna hemosyderoza płucna
+Pneumoencefalografia
+Pole Brodmanna 44
+Pole przedwzrokowe
+Porażenie opuszkowe
+Porażenie Todda
+Postać Marburga stwardnienia rozsianego
+Pozorny nadmiar mineralokortykoidów
+Położenie poprzeczne płodu
+Prototekoza
+przeczos
+Przewlekła białaczka neutrofilowa
+Przewód Whartona
+przyczepki sieciowe
+Psychozy krótkotrwałe
+Płetwistość szyi
+Retinopatia Purtschera
+Reumatyzm palindromiczny
+Rinosporydioza
+Ropniak podtwardówkowy
+roponercze
+Rozdwojenie rdzenia kręgowego
+rzekomo-rzekoma niedoczynność przytarczyc
+Schizencefalia
+Schizofrenia prosta
+Serce trójprzedsionkowe
+Siateczka śródplazmatyczna szorstka
+Sieć żylna grzbietowa ręki
+Skaczący Francuzi z Maine
+splenoza
+Splot skrzydłowy
+Szew czołowo-sitowy
+Szew klinowo-łuskowy
+szyjka anatomiczna kości ramiennej
+tapetum
+Test hamowania deksametazonem
+tętnica głęboka prącia
+Tętnica międzypłatowa nerki
+tętnica nadnerczowa dolna
+Tętnica podżebrowa
+tętnica łydkowa
+Tetraploid
+Trachelektomia
+Trichotiodystrofia
+tritanopia
+trójkąt pęcherza moczowego
+Trójkąt tarczowy
+Trombektomia
+Twardziel
+Tympanoskleroza
+układ oddechowy człowieka
+układ stomatognatyczny
+Utajone zakażenie prątkiem gruźlicy
+Wenezuelska gorączka krwotoczna
+Węzły chłonne pachwinowe powierzchowne
+Więzadło krzyżowo-kolcowe
+Więzadło przyśrodkowe
+Więzadło skokowo-strzałkowe przednie
+Więzadło wątrobowo-dwunastnicze
+wydzielina z prącia
+Zabieg Credégo
+zanik korowy tylny
+Zanikowe zapalenie skóry
+Zapalenie ochrzęstnej małżowiny usznej
+Zapalenie plazmakomórkowe żołędzi Zoona
+Zatoka prosta
+Zespół aglosja-adaktylia
+Zespół APECED
+Zespół Börjesona-Forssmana-Lehmana
+Zespół CHILD
+Zespół eksfoliacji
+Zespół Freemana-Sheldona
+Zespół Grisela
+Zespół gumiastych pęcherzyków znamionowych
+Zespół Jacksona-Weissa
+Zespół Jervella i Lange-Nielsena
+Zespół Kasabacha-Merritt
+Zespół krótkie żebro-polidaktylia
+Zespół Lady Windermere
+Zespół mioklonii i opsoklonii
+Zespół Nethertona
+Zespół Omenna
+Zespół pasm owodniowych
+Zespół Refetoffa
+Zespół Romano-Warda
+Zespół Shprintzena-Goldberga
+Zespół tętnicy rdzeniowej przedniej
+Zespół VEXAS
+Zespół Walkera-Warburg
+Zespół wewnątrzrdzeniowy
+Zespół Whitakera
+Zespoły hiper IgM
+Zjawisko Somogyi
+Zmiany Dieulafoya
+Znamię Suttona
+Zwój podżuchwowy
+Zwój trzewny
+Zwój uszny
+Zwój współczulny
+Zwojakoglejak
+Żyła Labbego
+żyła maciczna
+Żyła piersiowa boczna
+Żyła podstawna
+Żyła potyliczna
+Żyła szyjna głęboka
+Żyła tarczowa środkowa
+Żyły dolne mózgu
+Żyły móżdżku
+Żyły poprzeczne szyi
+Żyły przednie serca
+Łysienie całkowite
+Acheiropodia
+Achondrogeneza
+Afazja przewodzeniowa
+Akropachia tarczycowa
+Alergia na jad błonkoskrzydłych
+Amazia
+Angina brzuszna
+Anomalia Maya-Hegglina
+Aplazja kości promieniowej
+atrycja
+Atypowa hiperplazja przewodowa
+Beauty parlour syndrome
+Blaszka krańcowa
+Ból trzewny
+Bradykinezja
+Brazylijska gorączka krwotoczna
+Całkowita zdolność wiązania żelaza
+Cerebellar peduncle
+chirurgia polowa
+Choroba Hoffy
+choroba Norriego
+Choroba Otto-Chrobaka
+Choroba Schildera
+Choroba Seitelbergera
+choroba układu moczowego
+Choroba van Buchema
+Choroba Webera-Christiana
+choroby zwierząt
+Cross linking
+Czynnościowa pojemność zalegająca
+Defekografia
+Deficyt dehydrogenazy pirogronianu
+Dekortykacja
+Diafanoskopia czaszki
+Diaschiza
+Dieta wegańska
+Dikrocelioza
+Dół kulszowo-odbytniczy
+Dół nadkłowy
+dysfunkcja rozkurczowa
+Dziedziczne zapalenie trzustki
+echoencefalografia
+egzekucja przez utopienie
+Encefalopatia Cree
+Encefalopatia Kri
+Enzootyczna białaczka bydła
+Epizod afektywny mieszany
+Gorączka plamicowa brazylijska
+Gorączka plamista
+Granulocytoza
+Gruczolakomięśniakowatość pęcherzyka żółciowego
+Gruczoły Bowmana
+Guz brodawkowaty okolicy szyszynki
+Guz popielaty
+Hamartoma podwzgórza
+hemimegalencefalia
+Hemimelia
+Hiperproteinemia
+Hipersplenizm
+Histiocytoza płucna X
+Hodowla wirusów
+Izodicentryczny chromosom 15
+Jądra ślimakowe
+Kanał udowy
+Kardiologia interwencyjna
+kardiologia inwazyjna
+Kardiomiotomia metodą Hellera
+Kieszonki skrzelowe
+Klips naczyniowy
+Koniuszek serca
+Krążek stawowy
+Lampa polimeryzacyjna
+LCM
+Małżowina nosowa środkowa
+Melanoza okrężnicy
+Miednicomierz
+Mięsień tarczowo-nagłośniowy
+Modzele pośladkowe
+Morfinizm
+Mowa przełykowa
+Mukopolisacharydoza typu I
+Nabłoniak rdzeniakowy
+Naczyniakowłókniak
+Nefropatia kontrastowa
+nephropathia epidemica
+Nerw pośredni
+Nerw potyliczny mniejszy
+nerw sitowy przedni
+Nerw udowo-goleniowy
+Nesidioblastoza
+Neuromonitoring
+Niedobór izomerazy fosfotriozowej
+Niedobór leukocytarnych cząstek adhezyjnych
+Niedrożność smółkowa
+nieketonowa hiperglicynemia
+Niemiarowość zatokowa
+Niespecyficzne śródmiąższowe zapalenie płuc
+Nowotwory nerek
+obrąbek podpaznokciowy
+Obręcz
+Odległość ciemieniowo-siedzeniowa
+Odmóżdżenie
+Ogniskowa dysplazja korowa
+omamy hipnagogiczne
+Opadnięcie trzewi
+operacja Norwooda
+Opsoklonie
+osteonekroza szczęki
+Osteopoikilia
+Otamowanie
+Pa-Leng
+Padaczka miokloniczna Lafory
+Padaczka Rolanda
+Padaczka rolandyczna
+Pallidotomia
+Parapareza
+Parkinsonizm plus
+Pałeczka
+Pęcherzyca liściasta
+Pęczek czerwienno-rdzeniowy
+Pęczek smukły
+pęknięcie mięśnia sercowego
+Pentalogia Cantrella
+perforacja wrzodu
+Piedra czarna
+Pojedyncza tętnica pępowinowa
+Poporodowe zapalenie tarczycy
+Porażenie nerwu odwodzącego
+Powięź piersiowo-lędźwiowa
+Powięź przedramienia
+powikłania poporodowe
+protanomalia
+protanopia
+Przerost połowiczy
+Przewlekła białaczka mielomonocytowa
+Przewód chłonny prawy
+Rak języka
+Rak śluzowy sutka
+Rizomeliczna chondrodysplazja punktowa
+Rozlane krwawienie pęcherzykowe
+Rumień stwardniały
+rumień wędrujący
+Siateczka śródplazmatyczna gładka
+Śluz szyjkowy
+Splot podbrzuszny górny
+Splot żylny odbytniczy
+splot żylny pęcherzowy
+Sploty żylne kręgowe wewnętrzne
+Staw pierścienno-tarczowy
+Stwardnienie zanikowe boczne-parkinsonizm/zespół otępienny
+Synaptosom
+Synowektomia
+Szew czołowo-jarzmowy
+Szew klinowo-ciemieniowy
+Szew klinowo-czołowy
+Szew klinowo-jarzmowy
+Szew klinowo-sitowy
+Szew skroniowo-jarzmowy
+Tachylalia
+talerz biodrowy
+TBI
+Tętnica bębenkowa dolna
+Tętnica bębenkowa górna
+tętnica błądząca
+Tętnica kolana środkowa
+Tętnica międzyżebrowa tylna
+Tętnice rzęskowe
+Tętnice rzęskowe przednie
+Tętnice rzęskowe tylne długie
+Trójkąt boczny szyi
+Urojeniowy syndrom błędnej identyfikacji
+Warstwa niepewna
+wielochorobowość
+Więzadło biodrowo-udowe
+Więzadło Botalla
+Więzadło gnykowo-nagłośniowe
+Więzadło głowy kości udowej
+Więzadło kruczo-obojczykowe
+Więzadło odbytniczo-maciczne
+Więzadło piszczelowo-strzałkowe przednie
+Więzadło sierpowate
+Więzadło skokowo-strzałkowe tylne
+Wrastanie owłosienia
+Wstęga boczna
+Włókniak jajnika
+Włókniak młodzieńczy nosogardła
+zaburzenia seksualne
+zaburzenie nabyte
+zaburzenie stanu odżywienia
+Zanik zębatoczerwienny pallidoniskowzgórzowy
+Zanokcica opryszczkowa
+Zapalenia mózgu doliny Murray
+Zapalenie układu limbicznego
+Zęby noworodkowe
+Zespół Avellisa
+Zespół Behra
+Zespół Bjørnstada
+Zespół Buschkego-Ollendorff
+zespół Costeffa
+Zespół De Grouchy'ego
+Zespół Donnai-Barrow
+Zespół dziecka kolodionowego
+zespół Flammera
+Zespół Fostera Kennedy'ego
+Zespół Foville'a
+Zespół Frynsa
+Zespół klasy ekonomicznej
+Zespół kwiatu powoju
+Zespół mięśnia nawrotnego obłego
+Zespół Millarda-Gublera
+Zespół mnogich płetwistości
+Zespół Morvana
+Zespół niebieskich pieluszek
+Zespół Papillona-Lefèvre
+zespół psychoorganiczny
+Zespół Rabsona-Mendenhalla
+Zespół ROHHAD
+zespół rozrodczo-oddechowy świń
+Zespół Stauffera
+Zespół Swyera-Jamesa
+Zespół Turcota
+Zespół ustno-twarzowo-palcowy
+Zespół Verneta
+Zespół WHIM
+Zespół wzgórzowy
+Zespół włosowo-wątrobowo-jelitowy
+Zespół Yunisa-Varona
+Zespół Zimmermanna-Labanda
+Ziarniniak eozynofilowy
+Żołądek arbuzowaty
+Zrost międzywzgórzowy
+żuchwa
+zwężenia krtaniowo-tchawicze
+Żyła brzeżna prawa
+Żyła głęboka okalająca biodro
+Żyła krętniczo-okrężnicza
+Żyła nabrzuszna powierzchniowa
+Żyła nadoczodołowa
+Żyła pośrodkowa przedramienia
+żyła żołądkowa prawa
+Żyły górne mózgu
+Żyły lędźwiowe
+żyły najmniejsze serca
+Żyły osierdziowo-przeponowe
+Żyły śródkościa
+Złuszczające śródmiąższowe zapalenie płuc
+Łojotok
+Alloimmunologiczna małopłytkowość noworodków
+Angiomatosis bacillaris
+Badania miazgi zębów
+Balistokardiografia
+Bazopenia
+Błona czworokątna
+Błona tarczowo-gnykowa
+Choroba Naxos
+Choroba Oguchiego
+Choroba łańcuchów ciężkich immunoglobulin
+Chrząstka stawowa
+Ciała kolankowate przyśrodkowe
+Colic flexures
+Cytoredukcja
+Desmoplastyczny guz drobnookrągłokomórkowy
+Droga rdzeniowo-móżdżkowa tylna
+dyschondrosteoza Lériego-Weilla
+Dysplazja czołowo-nosowa
+Dysplazja Greenberg
+Dystrofia Thiela-Behnkego
+Elektroneurografia
+Encefalomalacja
+Enteropatyczne zapalenie stawów
+Enterotoksynogenny szczep E. coli
+Ewisceracja
+fonokardiografia
+Geotrychoza
+ginekologia estetyczna
+Glossoptosis
+Gorączka Pela-Ebsteina
+Guz Abrikosowa
+Guz Pindborga
+Guzek reumatoidalny
+HaCaT
+Heterotaksja
+Hipoplazja nerwu wzrokowego
+iniekcja doszklistkowa
+Jądro czopowate
+Jądro nerwu podjęzykowego
+Jądro Onufa
+Jądro przedsionkowe boczne
+Jama przegrody przezroczystej
+Język malinowy
+Kanał Guyona
+Kanał zasłonowy
+Kieszonka krtaniowa
+Komórki interstycjalne
+Kość bocznopotyliczna
+Kulawizna
+Leukafereza
+Limfocytowe śródmiąższowe zapalenie płuc
+Livedo vasculitis
+Margines chirurgiczny
+Małżowina nosowa górna
+medycyna paliatywna
+Meteopatia
+Mięsak pęcherzykowy
+Mięśnie przedkręgowe
+Móżdżkowy Syndrom Poznawczo-Emocjonalny
+Mózgowy zespół utraty soli
+Multipotencja
+Młodzieńcze zapalenie skórno-mięśniowe
+nagryz poziomy
+Narząd Zuckerkandla
+Nerw nosowo-podniebienny
+Nerw skalisty głęboki
+Nerw strzemiączkowy
+Nerwiak komórkowy ośrodkowy
+Neuroliza
+Niedobór kinazy pirogronianowej
+Niedobór tetrahydrobiopteryny
+niestabilność chromosomów
+Notalgia paresthetica
+Nowotwory drobnookrągłokomórkowe
+odcinek piersiowy kręgosłupa
+Okienko aortalno-płucne
+Olfaktometria
+Onkocytoma nerki
+Otwór gruszkowaty
+Pęcherzyca paraneoplastyczna
+Perikardiektomia
+PLEVA
+Pneumaturia
+Podwyściółczak
+Porażenie nerwu bloczkowego
+Powięź Bucka
+Połączenie śledzionowo-mosznowe
+proprioreceptor
+Przegroda oczodołowa
+Przestrzeń wchodu
+Przetrwała błona źrenicza
+Płynotok nosowy
+Rak splotu naczyniastego
+Ramię zstępujące pętli Henlego
+retinaculum
+Rynologia
+Schizofrenia pseudonerwicowa
+schizofrenia rezydualna
+Sialopenia
+Splot podbrzuszny dolny
+Splot podstawny
+Splot żylny sterczowy
+Sploty żylne kręgowe zewnętrzne
+Środek półowalny
+Śródoperacyjne odzyskiwanie krwi
+Staw pierścienno-nalewkowy
+striated cutaneous muscle
+struktura anatomiczna
+suchość pochwy
+Terapia resynchronizująca
+Tętnica mięśniowo-przeponowa
+Tętnice rzęskowe tylne krótkie
+Toczeń rumieniowaty noworodków
+Torbiel samotna kości
+torbiel tętniakowata
+Torebka tłuszczowa nerki
+Tracheobronchomegalia
+Tracheobronchopatia osteochondroplastyczna
+Trójkąt podbródkowy
+Trójkąt łopatkowo-czworoboczny
+Trójkąt łopatkowo-obojczykowy
+Udar maciczno-łożyskowy
+Ultrasonografia transrektalna
+Uszkodzenie ośrodkowego neuronu ruchowego
+Więzadła dłoniowe
+Więzadło kruczo-ramienne
+Więzadło kulszowo-udowe
+Więzadło podkolanowe skośne
+Więzadło tarczowo-nagłośniowe
+Wrodzona dystrofia mięśniowa Fukuyamy
+Wrodzony brak nasieniowodów
+Wrodzony niedobór białka C
+Wrzód Cushinga
+Wysiękowe zapalenie ucha środkowego
+Wzgórek jajonośny
+Zabieg Halsteda
+Zaburzenia osobowości wiązki B
+Zaburzenie semantyczno-pragmatyczne
+Zachyłek gruszkowaty
+Zachyłek Morrisona
+Zakrzepowe zapalenie żył powierzchownych
+zaniki mięśni pochodzenia rdzeniowego
+Zapalenie błon surowiczych
+zapalenie nosogardła
+Zapalenie opon mózgowo-rdzeniowych Mollareta
+Zapalenie pnia mózgu Bickerstaffa
+zastrzyk dootrzewnowy
+Ześlizgiwanie
+Zespół Cloustona
+Zespół delecji 2q37
+Zespół dysplazji nerkowo-wątrobowo-trzustkowej
+Zespół dziecka-opony Michelin
+Zespół Elejalde
+Zespół Fanconiego-Bickela
+Zespół Gallowaya-Mowata
+Zespół Haima-Munka
+Zespół Heyde'a
+Zespół hydrolethalus
+Zespół ICF
+Zespół Jarcho-Levina
+Zespół KBG
+Zespół krętości tętnic
+Zespół lipodystrofii HIV
+Zespół Majewskiego
+Zespół MNGIE
+Zespół Mohra-Tranebjaerga
+Zespół nagich limfocytów
+Zespół nakładania
+Zespół NARP
+Zespół Nezelofa
+Zespół onejroidalny
+Zespół Opitza-G
+Zespół Perlmana
+Zespół Revesza
+Zespół samych komórek Sertolego
+Zespół Sneddona
+Zespół Townesa-Brocksa
+Zespół usidlenia tętnicy podkolanowej
+Zespół Younga
+zespół zależności alkoholowej
+Zespół zatoki szyjnej
+Zjawisko Ashmana
+żywienie medyczne
+Żyła głęboka twarzy
+Żyła krzyżowa pośrodkowa
+Żyła nadłopatkowa
+Żyła oczna dolna
+Żyła podżebrowa
+Żyła zespalająca górna
+Żyła żołądkowo-sieciowa lewa
+Żyły międzyżebrowe tylne
+Złamanie wyprostne
+łupież biały
+Łysienie bliznowaciejące
+gałka oczna
+zmarli
+Zmarł
+zimnica
+Caput
+skrobanka
+terminacja ciąży
+gruźlik
+suchoty
+TBC
+tuberkuloza
+jama gębowa
+wpust żołądka
+wskaźnik twarzowy
+czarna ospa
+choroba Hansena
+kościec
+lepra
+wargi ust
+system korzeniowy
+uryna
+apopleksja
+wylew krwi do mózgu
+zdarzenie mózgowonaczyniowe
+atak serca
+pośladek
+pośladki
+sempiterna
+zawał serca
+narządy
+nocycepcja
+ciecz łzowa
+film łzowy
+kończyna dolna
+choroba alkoholowa
+choroby psychiatryczne
+choroby psychiczne
+choroby umysłowe
+przeczyszczenie
+rozwolnienie
+toksykomania alkoholowa
+układ immunologiczny
+uzależnienie od alkoholu
+zaburzenia psychiatryczne
+astma
+dychawica oskrzelowa
+runo owcze
+Cewa pokarmowa
+Droga pokarmowa
+Układ pokarmowy zwierząt
+Układ trawienny
+Alergie
+Immunoterapia swoista
+Klasyfikacja Gela-Coombsa
+Reakcja alergiczna
+Reakcje alergiczne
+Uczulenie
+choroba francuska
+chromosomy
+chromozom
+franca
+lues
+morbus gallicus
+weneria
+buccae
+morbus Bleuleri
+policzki
+psychozy schizofreniczne
+schizofrenik
+ekskrementy
+odchody
+stolec
+nasienie
+pocenie
+pocenie się
+poty
+Kontrola urodzeń
+Kontrola urodzin
+Britmilah
+Cyrkumcyzja
+Varicella zoster
+choroba nadciśnienowa
+nadciśnienie samoistne
+Brwi
+mieć doła
+Pollex
+przygnębienie
+torsje
+Wirus dengi
+zasmucenie
+żylaki odbytu
+alfabet migowy
+dziara
+Komórka nerwowa
+Komórki nerwowe
+migowy
+Naczynia krwionośne
+Neurony
+Czerwone ciałko krwi
+Czerwone krwinki
+drżączka poraźna
+Erytrocyty
+Krwinka czerwona
+Krwinki czerwone
+lęki
+niepokój
+Parkinson
+uczucie niepokoju
+błona mitochondrialna
+chondriosom
+Chrząstki żebrowe
+Costae
+grzebienie mitochondrialne
+Rak gruczołu sutkowego
+Rak piersi
+wulwa
+Skaleczenie
+Vulnus
+wirusowe zapalenie mózgu
+zapalenie opon mózgowych
+ZOMR
+Zranienie
+Blue bloater
+Pink puffer
+POChP
+demencja starcza
+nowotwór złośliwy płuc
+nowotwór złośliwy płuca
+rak oskrzela
+rak płuc
+Wspomagane samobójstwo
+zespół otępienny
+zespoły otępienia
+zespoły otępienne
+Białaczki
+jądra komórkowe
+karion
+kiszki
+klitoridektomia
+koklusz
+nuculeus
+nukleus
+obrzezanie kobiet
+wyrzezanie
+grypa jelitowa
+grypa żołądkowa
+rotawirusowe zapalenie żołądkowo-jelitowe
+tyfus brzuszny
+wirusowe zakażenie przewodu pokarmowego
+Woreczek żółciowy
+Grypa A/H1N1
+Grypa meksykańska
+Grypa świń
+Grypy A/H1N1
+białe ciałka krwi
+białe krwinki
+Choroba Downa
+diphteria
+dyfteria
+dławiec
+Idiotyzm mongolski
+krwinka biała
+krwinki białe
+leukocyty
+Mongolizm
+Mongoloidia
+Trisomia 21
+pomoc przedlekarska
+Świnka
+trądzik pospolity
+tryper
+wiewiór
+choroba afektywna jednobiegunowa
+depresja jednobiegunowa
+depresja kliniczna
+epizod depresyjny
+proces zapalny
+reakcja zapalna
+stan zapalny
+zaburzenie afektywne jednobiegunowe
+zaburzenie depresyjne
+zapalenia
+zespół depresyjny
+choroba zaraźliwa
+choroby infekcyjne
+popłód
+trup
+atak migrenowy
+Czerwonka
+Czerwonka bakteryjna
+epizod migrenowy

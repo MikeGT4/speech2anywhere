@@ -1,11 +1,13 @@
 # © 2026 Mike Pollow, Digitalroots. Alle Rechte vorbehalten.
 from __future__ import annotations
 
+import math
 import random
 import re
 import sys
 from pathlib import Path
 
+import numpy as np
 import pytest
 
 if sys.platform != "win32":
@@ -22,6 +24,9 @@ from tests.test_hud_styles import DT, Driver, _corner_ink, _count_color, _ink, _
 
 FIELDS = ("medizin", "medikamente", "jura", "wirtschaft", "technik", "chemie", "it")
 REFINED = ("medikamente", "jura")
+DECOR_FIELDS = ("medizin", "wirtschaft", "technik", "chemie", "it")
+TEXT_AIR = 3.0
+NARROW_TEXT_W = 120.0
 SCENES = [(key, scene) for key in FIELDS for scene in create_style(key).SCENES]
 FIELD_KINDS = {"talk", "shout", "think", "look", "wink", "sad"}
 ERROR_TEXT = "Mikrofon nicht gefunden.|Gerät prüfen, dann erneut drücken."
@@ -306,6 +311,51 @@ def test_done_decor_keeps_its_air_at_full_swing(qapp, key):
     assert not tight, tight[:6]
 
 
+def _rgba(img: QImage) -> np.ndarray:
+    ptr = img.constBits()
+    ptr.setsize(img.sizeInBytes())
+    return np.frombuffer(ptr, np.uint8).reshape(img.height(), img.bytesPerLine() // 4, 4)[:, :img.width()]
+
+
+def _changed(a: QImage, b: QImage) -> np.ndarray:
+    return (_rgba(a) != _rgba(b)).any(axis=2)
+
+
+def _grown(mask: np.ndarray, reach: int) -> np.ndarray:
+    out = mask.copy()
+    h, w = mask.shape
+    for dy in range(-reach, reach + 1):
+        for dx in range(-reach, reach + 1):
+            if dx * dx + dy * dy <= reach * reach:
+                out[max(dy, 0):h + min(dy, 0), max(dx, 0):w + min(dx, 0)] |= (
+                    mask[max(-dy, 0):h + min(-dy, 0), max(-dx, 0):w + min(-dx, 0)])
+    return out
+
+
+@pytest.mark.parametrize("key", DECOR_FIELDS)
+@pytest.mark.parametrize("language", ["de", "en"])
+def test_error_text_in_four_lines_keeps_its_air_to_the_decor(qapp, monkeypatch, key, language):
+    monkeypatch.setattr(cm, "HINT_TEXT_W", NARROW_TEXT_W)
+    texte.set_language(language)
+    try:
+        message = texte.tr(ERROR_TEXT)
+        first, _, second = message.partition("|")
+        assert len(cm.error_lines(first, second)) == 4
+        d = Driver(key, px=4.0)
+        d.style.error(d.t, message, d.f)
+        full = d.render()
+        monkeypatch.setattr(d.style, "error_decor", lambda *_args: None)
+        bare = d.render()
+        monkeypatch.setattr(cm, "error_lines", lambda *_args: [])
+        empty = d.render()
+    finally:
+        texte.set_language("de")
+    decor, words = _changed(full, bare), _changed(bare, empty)
+    assert decor.any() and words.any()
+    clash = _grown(decor, math.ceil(TEXT_AIR * d.f.px)) & words
+    assert not clash.any(), int(clash.sum())
+
+
 @pytest.mark.parametrize("key", FIELDS)
 def test_host_passes_spoken_words_to_field_styles(qtbot, tmp_path, key):
     from kira.ui.hud_qt import PopupHUD
@@ -355,6 +405,21 @@ def test_heartbeat_line_beats_higher_while_speaking(qapp):
     assert max(amp for _s, _p, amp in loud.style._beats) > max(amp for _s, _p, amp in quiet.style._beats) + 0.2
 
 
+@pytest.mark.parametrize("state, hidden", [("silent", True), ("error", True), ("talk", False), ("clip", False)])
+def test_heartbeat_line_stays_out_of_the_hint_bubble(qapp, monkeypatch, state, hidden):
+    d = Driver("medizin")
+    if state == "error":
+        d.style.error(d.t, ERROR_TEXT, d.f)
+        d.run(0.5, amp=0.0)
+    else:
+        d.press()
+        d.run(2.0, amp={"silent": 0.0, "talk": 0.5, "clip": 3.0}[state])
+        assert (d.an.silent, d.an.clip) == (state == "silent", state == "clip")
+    shown = d.render()
+    monkeypatch.setattr(d.style, "backdrop", lambda *_args: None)
+    assert (d.render() == shown) is hidden
+
+
 def test_meter_needle_rests_without_signal_and_pins_in_the_red_when_too_close(qapp):
     d = Driver("technik")
     d.press()
@@ -363,6 +428,21 @@ def test_meter_needle_rests_without_signal_and_pins_in_the_red_when_too_close(qa
     d.run(0.4, amp=3.0)
     assert d.an.clip
     assert d.style._needle > 0.9
+
+
+def test_needle_and_tubes_start_each_dictation_at_rest(qapp):
+    d = Driver("technik")
+    d.press()
+    d.run(0.4, amp=3.0)
+    assert d.style._needle > 0.9
+    d.press()
+    assert d.style._needle == 0.0
+    d = Driver("chemie")
+    d.press()
+    d.run(0.4, amp=3.0)
+    assert d.style._levels != list(chemie.IDLE_LEVELS)
+    d.press()
+    assert d.style._levels == list(chemie.IDLE_LEVELS)
 
 
 def test_coin_stack_grows_with_spoken_words_up_to_its_height(qapp):
@@ -399,6 +479,22 @@ def test_wifi_bars_follow_the_voice(qapp):
     loud = d.render()
     assert _count_color(loud, (66, 54, 36, 20), (0x4F, 0xC1, 0xFF), d.f.px) > _count_color(
         silent, (66, 54, 36, 20), (0x4F, 0xC1, 0xFF), d.f.px)
+
+
+def test_wifi_hides_no_warning_mark_under_the_hint_bubble(qapp):
+    d = Driver("it")
+    d.press()
+    d.run(1.5, amp=0.0)
+    assert d.an.silent
+    img = QImage(round(W * d.f.px), round(H * d.f.px), QImage.Format.Format_ARGB32_Premultiplied)
+    img.fill(0)
+    p = QPainter(img)
+    p.setRenderHint(QPainter.RenderHint.Antialiasing, True)
+    p.scale(d.f.px, d.f.px)
+    d.style.backdrop(p, d.t, d.f, d.an)
+    p.end()
+    assert _ink(img) > 200
+    assert _count_color(img, (0, 0, W, H), (0xFF, 0xC4, 0x00), d.f.px) == 0
 
 
 def _accessory_ink(style, pose: saison.Pose, box: tuple[float, float, float, float], px: float = 2.0) -> int:

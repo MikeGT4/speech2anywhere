@@ -376,7 +376,7 @@ def test_news_tell_what_this_version_brings():
     import kira.ui.welcome_dialog as wd
     for word in ("Fachwortschatz", "Zusammenhang", "Anzeige-Stile", "Abschnitt 10"):
         assert word in wd._NEWS_HTML, word
-    for word in ("Specialist vocabulary", "in context", "indicator styles", "section 10"):
+    for word in ("Vocabulary", "in context", "indicator styles", "section 10"):
         assert word in wd._NEWS_HTML_EN, word
     assert wd._NEWS_HTML.count("<li>") == wd._NEWS_HTML_EN.count("<li>") == 4
 
@@ -386,7 +386,7 @@ def test_version_is_the_same_in_both_places():
     from pathlib import Path
     from kira import __version__
     text = (Path(__file__).resolve().parent.parent / "pyproject.toml").read_text(encoding="utf-8")
-    assert re.search(r'^version = "([^"]+)"', text, re.M).group(1) == __version__ == "0.7.0"
+    assert re.search(r'^version = "([^"]+)"', text, re.M).group(1) == __version__ == "0.7.1"
 
 
 def test_about_shows_the_models_of_the_processor_mode(qtbot, monkeypatch):

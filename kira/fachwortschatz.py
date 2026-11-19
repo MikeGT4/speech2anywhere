@@ -20,10 +20,13 @@ GEBIET_NAMEN = {
     "medizin": "der Medizin", "medikamente": "dem Bereich Medikamente und Wirkstoffe", "jura": "dem Recht",
     "wirtschaft": "der Wirtschaft", "technik": "Wissenschaft und Technik", "chemie": "der Chemie", "it": "der IT",
 }
-SCHWELLE_MIT_WORTLISTE = 0.75
-SCHWELLE_OHNE_WORTLISTE = 0.8
+SCHWELLE_DEUTSCH = 0.75
+SCHWELLE_SONST = 0.8
 MIN_BUCHSTABEN = 5
+ABSTAND_ZUM_BESTEN = 0.05
+SPRACHEN_IM_SPEICHER = 3
 _WORT_RE = re.compile(r"\w+")
+_VERNEINUNG_RE = re.compile(r"\b\w+n['’]t\b", re.IGNORECASE)
 _VERBUNDEN_RE = re.compile(r"\w+(?:[-']\w+)+")
 _BUCHSTABEN_RE = re.compile(r"[^\W\d_]")
 
@@ -69,7 +72,7 @@ def _nur_buchstaben(text: str) -> str:
 
 
 def _gramme(text: str) -> list[str]:
-    woerter = _WORT_RE.findall(text)
+    woerter = _WORT_RE.findall(_VERNEINUNG_RE.sub(" ", text))
     gramme: list[str] = []
     for n in (1, 2, 3):
         gramme.extend(" ".join(woerter[i:i + n]) for i in range(len(woerter) - n + 1))
@@ -120,6 +123,7 @@ class Fachwortschatz:
         for s in self.sprachen_fuer(sprache):
             self._index_fuer(s)
             self._bekannt(s)
+            default_wordlist(s)
 
     def _bekannt(self, sprache: str) -> frozenset[str]:
         bekannt = self._bekannte.get(sprache)
@@ -139,6 +143,11 @@ class Fachwortschatz:
                 for variante in _loeschvarianten(code):
                     index[variante].append(nummer)
             self._index[sprache] = index
+            for alt in list(self._index)[:-SPRACHEN_IM_SPEICHER]:
+                del self._index[alt]
+                self._bekannte.pop(alt, None)
+        else:
+            self._index[sprache] = self._index.pop(sprache)
         return index
 
     def glossar(self, text: str, sprache: str | None, grenze: int) -> list[str]:
@@ -148,16 +157,18 @@ class Fachwortschatz:
         vorhanden = {g.casefold() for g in gramme}
         vorhanden.update(t.casefold() for t in _VERBUNDEN_RE.findall(text))
         beste: dict[str, tuple[float, str]] = {}
-        for s in self.sprachen_fuer(sprache):
+        sprachen = self.sprachen_fuer(sprache)
+        alltag = [default_wordlist(s) for s in sprachen]
+        for s in sprachen:
             index = self._index_fuer(s)
             liste = self.begriffe(s)
             bekannt = self._bekannt(s)
-            schwelle = SCHWELLE_MIT_WORTLISTE if s == "de" else SCHWELLE_OHNE_WORTLISTE
+            schwelle = SCHWELLE_DEUTSCH if s == "de" else SCHWELLE_SONST
             for gramm in gramme:
                 roh = _nur_buchstaben(gramm)
                 if len(roh) < MIN_BUCHSTABEN or gramm.casefold() in bekannt:
                     continue
-                if s == "de" and is_common(gramm, default_wordlist()):
+                if any(is_common(gramm, liste_alltag) for liste_alltag in alltag):
                     continue
                 code = phonetic_code(gramm)
                 if len(code) < 2:
@@ -165,16 +176,23 @@ class Fachwortschatz:
                 nummern: set[int] = set()
                 for variante in _loeschvarianten(code):
                     nummern.update(index.get(variante, ()))
-                for nummer in nummern:
+                treffer: list[tuple[float, str]] = []
+                for nummer in sorted(nummern):
                     begriff = liste[nummer]
-                    schluessel = begriff.casefold()
-                    if schluessel in vorhanden:
+                    if begriff.casefold() in vorhanden:
                         continue
                     ziel = _nur_buchstaben(begriff)
                     if 2 * min(len(roh), len(ziel)) / (len(roh) + len(ziel)) < schwelle:
                         continue
                     wert = difflib.SequenceMatcher(None, roh, ziel, autojunk=False).ratio()
-                    if wert >= schwelle and wert > beste.get(schluessel, (0.0, ""))[0]:
+                    if wert >= schwelle:
+                        treffer.append((wert, begriff))
+                if not treffer:
+                    continue
+                grenzwert = max(wert for wert, _ in treffer) - ABSTAND_ZUM_BESTEN
+                for wert, begriff in treffer:
+                    schluessel = begriff.casefold()
+                    if wert >= grenzwert and wert > beste.get(schluessel, (0.0, ""))[0]:
                         beste[schluessel] = (wert, begriff)
         geordnet = sorted(beste.values(), key=lambda paar: -paar[0])
         return [begriff for _, begriff in geordnet[:grenze]]

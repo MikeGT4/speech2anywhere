@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.7.1 (19.11.2026)
+
+- Fachwortschatz: Alltagswörter lösen jetzt in allen acht Sprachen keinen Vorschlag mehr aus, vorher nur im Deutschen
+- Einstellungen: Die Reiterleiste ist schmaler, das Fenster damit auch (auf Englisch 888 statt 1.023 Pixel); der Reiter heißt auf Englisch „Vocabulary“
+- Fachwortschatz: Je verhörtem Wort gehen nur noch die ähnlichsten Begriffe an die Politur; englische Verneinungen wie „shouldn't“ lösen keinen Vorschlag mehr aus
+- Anzeige-Stile Wirtschaft, Technik, IT und Medizin: Die Verzierung der Fehleranzeige liegt neben dem Text statt darunter; in Medizin schaut bei „Kein Signal“ kein Rest der EKG-Linie mehr hervor
+- Einstellungen speichern auch dann richtig, wenn ein Abschnitt der Konfiguration als `{}` geschrieben ist
+- Fachlisten neu gebaut: Fachsynonyme wie Myokardinfarkt, Pneumonie und Metoprolol stehen jetzt in den Listen, dazu Serversoftware wie Nginx; Medizin bis 6.000 Begriffe, Medikamente und Chemie bis 5.000; weniger Fachfremdes an der Spitze von Jura, Wirtschaft und Technik
+- Messung wiederholt: mit Fachgebiet 1 von 133 Fachbegriffen falsch, ohne 8; normale Diktate nicht schlechter
+- Von 0.5.5 bis 0.7.0 aus lädt das Update in der App nur das Programmpaket
+
 ## 0.7.0 (19.11.2026)
 
 - Fachwortschatz: Im neuen Reiter „Fachwortschatz“ schaltest du Fachgebiete ein (Medizin, Medikamente, Jura, Wirtschaft, Wissenschaft und Technik, Chemie, IT); die Politur erkennt verhörte Fachbegriffe dann im Zusammenhang, in allen acht Sprachen (in normalem Text, Chat und Mail, nur mit eingeschalteter Politur). Begriffe aus Wikidata, ohne Anspruch auf Vollständigkeit; ohne Auswahl bleibt alles wie bisher

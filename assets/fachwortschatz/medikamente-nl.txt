@@ -1,3 +1,6 @@
+geneesmiddel
+medicament
+vaccin
 hormoon
 antibioticum
 vitamine
@@ -6,8 +9,11 @@ aminozuur
 cocaïne
 glucose
 acetylsalicylzuur
+aspirine
+Erytrocyten
 rode bloedcel
 vitamine C
+opium
 paracetamol
 insuline
 heroïne
@@ -16,16 +22,22 @@ azijnzuur
 zoutzuur
 morfine
 adrenaline
+epinefrine
 dopamine
 natriumwaterstofcarbonaat
 testosteron
 bloedplaatje
+fenol
+Trombocyten
+Trombocytose
 vitamine A
 bloedplasma
+ureum
 COVID-19-vaccin
 fructose
 natriumchloride
 calciumcarbonaat
+drug
 ibuprofen
 oestrogeen
 sildenafil
@@ -37,9 +49,12 @@ riboflavine
 sint-Janskruid
 glycerol
 glycine
+kamfer
 oxytocine
 ketamine
 melatonine
+analgetica
+analgeticum
 pijnstiller
 waterstofperoxide
 amoxicilline
@@ -48,6 +63,7 @@ Melkzuur
 vitamine E
 antioxidant
 cobalamine
+aluin
 aluminiumoxide
 ammoniumchloride
 glucagon
@@ -61,6 +77,8 @@ kaliumpermanganaat
 cortisol
 distikstofmonoxide
 natriumtetraboraat
+kinine
+B-vitamines
 BCG-vaccin
 codeïne
 Diethylether
@@ -71,9 +89,12 @@ Acetylcholine
 fentanyl
 kaliumchloride
 noradrenaline
+norepinefrine
 tryptofaan
 biotine
 salicylzuur
+Vitamine H
+antidepressiva
 antidepressivum
 collageen
 glutamine
@@ -101,7 +122,9 @@ streptomycine
 mazelenvaccin
 silicone
 stikstofmonoxide
+antidotum
 antisepticum
+antiseptisch
 doxycycline
 fenolftaleïne
 fluoxetine
@@ -110,6 +133,7 @@ Omega 3-vetzuren
 semaglutide
 tegengif
 thalidomide
+Antipsychotica
 antipsychoticum
 AstraZeneca-vaccin
 azithromycine
@@ -120,13 +144,17 @@ lidocaïne
 methylfenidaat
 metronidazol
 morfinomimeticum
+Neuroleptica
+opioïden
 propofol
 psychoactief middel
+Spoetnik V
 vaccin van AstraZeneca
 2-propanol
 afrodisiacum
 alprazolam
 corticotropine
+diuretica
 diureticum
 flavonoïde
 kaliumjodide
@@ -154,6 +182,7 @@ zonnebrandcreme
 actieve kool
 aluminiumhydroxide
 anticoagulans
+anticoagulantia
 bupropion
 capsaïcine
 ijzersulfaat
@@ -166,10 +195,12 @@ remdesivir
 stimulantia
 amitriptyline
 bètablokker
+Castorolie
 ciprofloxacine
 glutathion
 hallucinogeen
 prostaglandinen
+Ricinusolie
 statine
 Tetrahydrocannabinol
 thyreoïdstimulerend hormoon
@@ -190,6 +221,7 @@ pyridoxine
 scopolamine
 selectieve serotonine-heropnameremmer
 1-propanol
+Berlijns blauw
 cetirizine
 clonazepam
 natriumacetaat
@@ -219,6 +251,7 @@ Warfarine
 zidovudine
 aminoglycosiden
 Amlodipine
+antacida
 antacidum
 antihistaminicum
 BMR-vaccin
@@ -227,6 +260,7 @@ cefalosporine
 chloorpromazine
 clindamycine
 cortison
+desinfecteren
 dextromethorfan
 digoxine
 gentamicine
@@ -258,6 +292,7 @@ abacavir
 bètacaroteen
 buprenorfine
 chloorhexidine
+choriongonadotrofine
 Citalopram
 clotrimazol
 colchicine
@@ -271,6 +306,7 @@ Lactobacillus
 loperamide
 metoclopramide
 retinol
+Risperdal
 risperidon
 zinksulfaat
 albendazol
@@ -336,8 +372,11 @@ RNA-vaccin
 spironolacton
 trazodon
 anti-epilepticum
+antimycotica
 antimycoticum
+Anxiolytica
 anxiolyticum
+Anxiolytische
 artemisinine
 benzoylperoxide
 captopril
@@ -353,6 +392,7 @@ resorcinol
 schildklierhormonen
 simvastatine
 sublimaat
+urine analyse
 urine-onderzoek
 antihypertensivum
 benzocaïne
@@ -420,6 +460,7 @@ verapamil
 vincristine
 zolpidem
 amphotericin B
+Anti-inflammatoir
 antimetaboliet
 atenolol
 atomoxetine
@@ -428,11 +469,13 @@ azelaïnezuur
 budesonide
 Calciumantagonist
 carbamaat
+dapson
 DEET
 doxorubicine
 flesvoeding
 hydromorfon
 imatinib
+immunosuppressiva
 immuunsuppressivum
 Interleukine
 linezolid
@@ -504,6 +547,7 @@ levamisole
 levertraan
 levonorgestrel
 lokaal anestheticum
+Lokale anesthetica
 mesalazine
 moxifloxacin
 pilocarpine
@@ -528,7 +572,9 @@ cyclizine
 desloratadine
 desmopressin
 dihydrotestosteron
+eosine
 ergotamine
+estron
 guargom
 hydralazine
 hydroxyurea
@@ -550,7 +596,6 @@ sumatriptan
 temazepam
 Timolol
 vardenafil
-verband
 vortioxetine
 agomelatine
 antiserum
@@ -654,6 +699,7 @@ guaifenesine
 kaliumcitraat
 maprotiline
 melfalan
+mesna
 methoxyflurane
 mifepriston
 nimesulide
@@ -710,6 +756,7 @@ hemagglutinine
 Hib vaccine
 ifosfamide
 irinotecan
+L-cetirizine
 latanoprost
 levocetirizine
 lovastatine
@@ -739,6 +786,7 @@ trimethylglycine
 zinkacetaat
 Alfa 1-antitrypsine
 anastrozole
+Antitrypsine
 benzonatate
 broomhexine
 busulfan
@@ -948,6 +996,8 @@ sorafenib
 Succinimide
 sulfonylureum
 tapentadol
+Tea Tree Olie
+tea-tree
 theeboomolie
 tolnaftaat
 tricalciumcitraat
@@ -1392,6 +1442,7 @@ fludiazepam
 fluoxymesterone
 frovatriptan
 gemtuzumab ozogamicin
+Ginseng
 halazepam
 icatibant
 ionofoor
@@ -1555,6 +1606,7 @@ Heptaminol
 illegale drug
 Imiglucerase
 intraveneuze immunoglobulinetherapie
+ipecac
 isradipine
 kaliumsparend diureticum
 lanreotide
@@ -1707,6 +1759,7 @@ difluprednate
 Dihydrotachysterol
 dipivefrin
 eltrombopag
+Emetica
 Epanolol
 ethylloflazepaat
 flumequine
@@ -1715,6 +1768,7 @@ gemeprost
 H1-antagonist
 ibritumomab tiuxetan
 Idursulfase
+Inhalatie-anesthetica
 isoconazole
 kaliumlactaat
 lisuride
@@ -1859,6 +1913,7 @@ remikiren
 Thebacon
 tibolone
 tiludroninezuur
+TNF blockers
 TNF-alfa-remmers
 tolperisone
 Tramazoline
@@ -2120,7 +2175,9 @@ Tedisamil
 Tenitramine
 Advil
 afelimomab
+anabole
 anabolica
+anabool
 Brinase
 DIVA vaccin
 Doxepin
@@ -2128,6 +2185,7 @@ Elcatonin
 GABA-agonist
 Hemopure
 invers vaccin
+Marker vaccin
 mydriatica
 Oral-Turinabol
 Panipenem/betamipron
@@ -2154,6 +2212,7 @@ niet opioïde analgeticum
 Paralen
 RabAvert
 Selegiline
+vasopressine
 Aloxiprin
 Altafur
 Anticorticosteroid
@@ -2182,6 +2241,7 @@ Verorab
 virale vaccins
 Virus-like particles-vaccin
 voedingszuur
+2care4
 A-MethaPred
 Abasaglar
 Abasaglar KwikPen
@@ -2230,6 +2290,7 @@ Humalog
 Krka
 Loradamed
 Macure
+medac
 Medical Valley
 Medrol
 Microzide
@@ -2279,6 +2340,9 @@ Xadago
 Xarelto
 Zentiva
 Zomig
+heilzaam middel
+medicijn
+traditioneel medicijn
 entstof
 gevaccineerd
 vaccineren
@@ -2287,9 +2351,9 @@ EtOH
 cartose
 druivensuiker
 acetosal
-aspirine
 Bloedlichaam
 Erythrocyt
+Erythrocyten
 Erytrocyt
 Rode bloedcellen
 Rode bloedlichaampjes
@@ -2303,6 +2367,7 @@ coffeine
 coffeïne
 mateine
 mateïne
+theïne
 AcOH
 CH3-COOH
 CH3COOH
@@ -2314,7 +2379,6 @@ HCl aq
 Kapanol
 MS Contin
 Sevredol
-epinefrine
 Baksoda
 CHNaO3
 Dubbelkoolzure soda
@@ -2325,12 +2389,13 @@ NaHCO3
 Natriumbicarbonaat
 Nigrostriatale circuit
 Zuiveringszout
+carbol
 carbolzuur
 fenolgroep
 hydroxybenzeen
 Thrombocyt
+Thrombocyten
 Trombocyt
-Trombocytose
 plasma in het bloed
 ClNa
 coronavaccin
@@ -2338,6 +2403,7 @@ coronavirusvaccin
 fruitsuiker
 NaCl
 vruchtensuiker
+brufen
 Cacit
 Viagra
 Aneurine
@@ -2356,8 +2422,6 @@ Gly
 Gro
 H2N-CH2-COOH
 analgesie
-analgetica
-analgeticum
 pijnstilling
 zuurstofwater
 amoxycilline
@@ -2368,7 +2432,6 @@ Extacy
 Tocoferol
 Tocopherol
 Α-tocoferol
-Anti-oxidant
 Anti-oxidantia
 Antioxidans
 extrinsic factor
@@ -2383,7 +2446,6 @@ CHCl3
 Dicophane
 Freon 20
 Geleermiddel
-methyltrichloride
 permanganaten
 TCM
 trichloormethaan
@@ -2394,7 +2456,6 @@ stresshormoon
 Jezuietenpoeder
 Jezuïetenpoeder
 Pil Bandoeng
-B-vitamines
 BGC-tuberculosevaccin
 blauwe vitriool
 Diëthylether
@@ -2405,15 +2466,13 @@ carfentanyl
 durogesic
 kalizout
 KCl
-norepinefrine
 Vitamine B7
 Vitamine B8
-Vitamine H
 anti-depressiva
 anti-depressivum
-antidepressiva
 Glutaminaat
 stemmingsverbeteraar
+stemmingsverbeteraars
 Mephenon
 IFN-gamma
 IFN-γ
@@ -2442,11 +2501,9 @@ Voltaren
 Voltarol
 Zoloft
 silicoon
-antidotum
 antigif
 antisepsis
 antiseptica
-antiseptisch
 antitoxine
 contergan
 desinfectans
@@ -2470,13 +2527,12 @@ Omega-3-vetzuren
 Prosimed
 softenon
 Anti-psychoticum
-Antipsychotica
 AstraZeneca-coronavaccin
 azitromycine
 Diprivan
 endrine
 ephedronguent
-Neuroleptica
+flagyl
 Oxford-vaccin
 Oxford/AstraZeneca-vaccin
 Psycholeptica
@@ -2485,7 +2541,6 @@ Russische coronavaccin Spoetnik
 Russische Spoetnik-V-vaccin
 Russische Spoetnikvaccin
 Russische vaccin
-Spoetnik V
 Spoetnik-vaccin
 Sputnik-vaccin
 vaccin van Oxford/AstraZeneca
@@ -2494,7 +2549,6 @@ Xylocaine visqueuse
 adrenocorticotroof hormoon
 Afrodisiac
 Afrodisiaca
-diuretica
 diuretisch
 Liefdesmiddel
 MgSO4
@@ -2506,15 +2560,21 @@ aluminiumtrichloride
 Bijnierschorshormoon
 Corticoid
 Corticoïd
+Corticoide
+Corticoïde
+Corticoiden
 Corticosteroïd
+Corticosteroide
+Corticosteroiden
+minims
 temesta
 Inderm
 actief kool
 actief koolstoffilter
 actieve koolstof
-anticoagulantia
 antistolling
 antistollingsmiddel
+antistollingsmiddelen
 bloedverdunner
 capsaïne
 cokeskool
@@ -2522,28 +2582,31 @@ groene vitriool
 koolfilter
 koolfiltratie
 naprovite
+norit
 psychostimulantia
 psychostimulantium
 stimulantium
 stimulerend middel
 stollingsremmer
+zyban
 beta blokker
 beta-blokker
 bèta-blokker
 betablokker
-Castorolie
 GSH
 Hallucinogene
 Hallucinogene middelen
+Hallucinogenen
 prostaglandine
+prostaglandines
 Psychedelica
 Psychodyslepticum
-Ricinusolie
 thyreotroop hormoon
 thyroïdstimulerend hormoon
 thyrotroof hormoon
 tryptizol
 β-blokker
+β-blokkers
 doorslaapmiddel
 inslaapmiddel
 NaNO2
@@ -2558,13 +2621,13 @@ selectieve serotonineheropnameremmer
 selective serotinine reuptake inhibitor
 serotonineheropnameremmers
 Tamiflu
-Berlijns blauw
 CH3COONa
 NaAc
 Pruissisch blauw
 Rivotril
 spiraaltje
 Anabole steroide
+Anabole steroiden
 Antiviraal middel
 HCTZ
 HCZ
@@ -2573,7 +2636,6 @@ HPV-vaccinatie
 MgCl2
 Tegretol
 fluimucil
-antacida
 Anti-histaminica
 Antihistaminica
 Bisoltussin
@@ -2585,14 +2647,11 @@ Dampo Bij Droge Hoest
 Darolan
 Darolan Hoestprikkeldempend
 Daromefan
-desinfecteren
 desinfecterend middel
 DXM
 gentamycine
-Largactil
 laxantia
 laxerend
-Lyrica
 methothrexaat
 purgeermiddel
 Siquil
@@ -2604,13 +2663,11 @@ depakine
 Modiodal
 Movicox
 pentriet
-Provigil
 Trijoodmethaan
 ZnCl2
 Belivon
 Bèta-caroteen
 Betacaroteen
-choriongonadotrofine
 Cipramil
 diphenylhydantoine
 fenytoine
@@ -2619,13 +2676,11 @@ humaan choriongonadotropine
 Lactobacil
 pregnyl
 Rispen
-Risperdal
 vitamine A1
 Antipyretica
 Baccatine
 Beta-lactam-antibiotica
 Beta-lactam-antibioticum
-Cis platin
 Cis platina
 Cisplatina
 Cisplatinum
@@ -2643,9 +2698,11 @@ Tavanic
 2-di-ethylamino-ethyl 4-aminobenzoaat
 ACE remmer
 ACE-blokker
+Ace-blokkers
 Aceremmer
 C2HCl3
 Chinaklei
+cozaar
 Janssen-vaccin
 Janssenvaccin
 Johnson & Johnson vaccin
@@ -2655,8 +2712,10 @@ Nederlands coronavaccin
 Novocaïne
 Phenergan
 porceleinaarde
+proke
 tamoxifeen
 TCE
+tri
 trichloorethyleen
 ubichinon
 ubiquinon
@@ -2675,13 +2734,10 @@ Anti-epileptica
 anti-schimmel
 Antiepileptica
 Antiepilepticum
-antimycotica
-Anxiolytica
 Anxiolytisch
 chloralhydraat
 Refusal
 schildklierhormoon
-urine analyse
 urine onderzoek
 urineonderzoek
 AntiCD20
@@ -2695,12 +2751,10 @@ Mounjaro
 Natrium dodecyl sulfaat
 Natriumlaurylsulfaat
 Novatec
-Zestril
 alginezuur
 Alkeenoxide
 CaCN2
 CH3COOK
-Cialis
 Efexor
 seroxat
 Vleeslijm
@@ -2716,13 +2770,12 @@ Vochtinbrengende crèmes
 Zimycan
 adriamycine
 adriblastina
-Anti-inflammatoir
 Antiflogistica
 Azelainezuur
 babymelk
+caelyx
 Calciumblokker
 doxorubin
-immunosuppressiva
 immunosuppressivum
 immuunsuppressiva
 Ontstekingsremmend
@@ -2742,7 +2795,6 @@ Gastrocure
 IgG
 inhibitie van enzymen
 monokaliumtartraat
-Motilium
 Nexium
 Tildiem
 wijnkristal
@@ -2759,12 +2811,9 @@ Locaal anestheticum
 Lokaal anaestheticum
 Lokaal anesthetica
 Lokale anaesthetica
-Lokale anesthetica
 Normoglaucon
-Pentasa
 Pilo
 retinolzuur
-Salagen
 Salofalk
 Sinopharm-vaccin
 Sinovac-vaccin
@@ -2772,13 +2821,13 @@ tretinoine
 tretinoingel
 vaccin van Sinovac
 biofarmaceutisch
+clomid
 clomifeencitraat
 dihydrotesteron
 guarpitmeel
-Imigran
 Imitrex
-Levitra
 MAO-remmer
+MAO-remmers
 monoamine oxidase-remmer
 monoamine oxidaseremmer
 monoamine-oxidase-remmer
@@ -2793,14 +2842,12 @@ Normison
 oestron
 paraceetaldehyde
 pergotime
-akineton
 antisera
 immuunserum
 nasa rhinathiol
 nasa-rhinatiol
 nasarhinatiol
 nuso-san
-otrivine
 otrivine anti-rhinitis
 polyetheenoxide
 polyethyleenoxide
@@ -2818,19 +2865,16 @@ fyto-oestrogeen
 Fytomenadion
 hoestonderdrukker
 hormoonverstoorder
-Januvia
 LDX
 methicilline
 Ofloxaxine
+phytoestrogenen
 Vitamine K1
 Dalmadorm
-Etopophos
 Hypnomidate
-Invega
 Sotacor
 Sotalex
 Uromaline
-Anavar
 Anti-emetica
 Ceeox
 Ceoxx
@@ -2838,15 +2882,13 @@ di-ethyl-stilboestrol
 diëthylstilbestrol
 FNF
 gamoleninezuur
-H2-antagonist
-L-cetirizine
+H2-antagonisten
 Mercurochroom
 nasacort
 sulfapreparaten
 tetracyclinen
 Vioxx
 Alfa-1 antitrypsine
-Antitrypsine
 chloorazepam
 clorazepaat
 exendin-4
@@ -2869,7 +2911,6 @@ psychofarmacum
 Rhino humex
 Tabex
 Triclabendazol
-Vicks sinex
 weesmedicijn
 Merckprareduct
 Natriumperoxoboraat
@@ -2889,17 +2930,12 @@ Lantus
 Pantothenol
 plaatjesaggregatieremmer
 Retinoide
-Tea Tree Olie
-tea-tree
 chromoniclinezuur
-Lescol
 Nalcrom
-Sprycel
 Ultracain
 CellCept
 Elidel
 MMF
-Mustargen
 Mycofenolaatmofetil
 Dimethylpolysiloxaan
 glycyrrhizine
@@ -2909,12 +2945,10 @@ multivitaminepreparaat
 tosylchloramidenatrium
 Truxal
 Cholstat
-Gabitril
 Indische psyllum
-Lipobay
 Lisdiuretica
+ouabaine
 Psylliumvezel
-Tracleer
 vlozaad
 Acomplia
 adenosylcobalamine
@@ -2934,7 +2968,6 @@ Alsiodol
 Ionoforen
 Myozyme
 Selectieve oestrogeen-receptor modulator
-Sparteine
 stikstofmosterdverbinding
 sympathicolytica
 vector vaccin
@@ -2957,9 +2990,7 @@ Dampvormig anestheticum
 difenadion
 dipiperon
 Elaprase
-Emetica
 Inhalatie-anesthesie
-Inhalatie-anesthetica
 mizollen
 Prikpil
 Dexa Rhinospray
@@ -2967,7 +2998,6 @@ Dexarhinospray
 Modalim
 Rhinospray
 tiludronaat
-TNF blockers
 insuline-analogon
 insuline-analoog
 insulineanaloog
@@ -2976,6 +3006,7 @@ nieuwe orale anticoagulantia
 Triethyleenglycoldiglycidylether
 acetylcholinereceptor-antagonist
 anticholinergicum
+ascal
 PHMB
 plantengroeiregulator
 chrystal meth
@@ -2983,18 +3014,22 @@ desoxyefedrine
 methylamfetamine
 neomycine B
 pervetine
-anabole
-anabool
-Marker vaccin
 omgekeerd vaccin
 Oral Turinabol
 cypro-teron/ethinylestradiol
 cyproteronacetaat/ethinylestradiol
-Diane
-Diane 35
-Diane35
-Deprenyl
 Eldepryl
 L-Deprenyl
 maagtablet
 mioticum
+Rabipur
+Selegeline
+vasopresine
+zuurremmer
+Eiwitsubeenheidsvaccin
+Gleptosil
+Heptomer
+Iron heptonate
+isosorbidedinitraatzalf
+Vecuroniumbromide
+Clarityne

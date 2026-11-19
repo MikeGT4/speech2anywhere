@@ -2,25 +2,38 @@
 
 - Quelle: Wikidata, https://www.wikidata.org, Abfragen über https://query.wikidata.org/sparql
 - Lizenz: CC0 1.0, https://www.wikidata.org/wiki/Wikidata:Licensing
-- Abrufdatum: 2026-11-18
+- Abrufdatum: 2026-11-19
 - Erzeugt mit `scripts/build_fachwortschatz.py`
 
 ## Auswahl
 
 - Begriffe: Bezeichnung (rdfs:label) und Kurzname (P1813) in der Sprache der Datei, ersatzweise die
-  sprachübergreifende Bezeichnung (mul).
-- Aliasse (skos:altLabel) stehen hinter allen Bezeichnungen. Hat ein Eintrag keine verwendbare Bezeichnung
+  sprachübergreifende Bezeichnung (mul). Stereodeskriptoren am Anfang wie „(RS)-“ oder „(±)-“ entfallen.
+- Die Oberklassen der Abfragen nach Unterklassen zählen selbst als Einträge.
+- Fachsynonyme: bis zu 2 Aliasse (skos:altLabel) je Eintrag stehen direkt bei der Bezeichnung, außer bei
+  Einträgen, deren Bezeichnung ein Einzelwort ab Zipf 4,0 ist,
+  wenn sie der Bezeichnung desselben Eintrags in einer anderen Sprache ähneln (Ähnlichkeit ab
+  0,8 nach Angleichung der Schreibung ä/ae, ö/oe, ü/ue, ph/f, th/t, rh/r, ae/oe/e, qu/k/z/c, y/i),
+  mindestens 7 Buchstaben und keine Ziffern haben, nur Buchstaben der Sprache der Datei enthalten
+  und jedes ihrer Wörter in den wordfreq-Daten dieser Sprache vorkommt. Schreibvarianten der Bezeichnung
+  (Ähnlichkeit ab 0,9) und seltenere Ableitungen von ihr (gemeinsamer Wortanfang über
+  mindestens 0,75 des kürzeren Begriffs) zählen nicht; von mehreren Schreibvarianten bleibt
+  die in wordfreq häufigere.
+- Übrige Aliasse stehen hinter allen Bezeichnungen. Hat ein Eintrag keine verwendbare Bezeichnung
   und ist diese kein Alltagswort, rücken bis zu 2 Aliasse an ihre Stelle. Kurznamen von
   Einträgen, deren Bezeichnung ein Alltagswort ist, stehen ebenfalls hinten.
-- Aliasse entfallen, wenn sie der englischen Bezeichnung gleichen, die Bezeichnung nur erweitern oder beugen.
-- Reihenfolge: Zahl der Sitelinks des Eintrags, bei Gleichstand alphabetisch; höchstens 3000 Begriffe
-  je Datei.
+- Aliasse entfallen, wenn sie Buchstabe für Buchstabe einem englischen Begriff des Eintrags gleichen, die
+  Bezeichnung nur erweitern oder beugen.
+- Reihenfolge: Zahl der Sitelinks des Eintrags, bei Gleichstand alphabetisch; findet nur eine Abfrage mit
+  Gewichtsfaktor den Eintrag, zählen seine Sitelinks mit diesem Faktor. Höchstens so viele Begriffe je
+  Datei: medizin 6.000, medikamente 5.000, chemie 5.000, sonst 3.000.
 - Form: 3 bis 60 Zeichen, höchstens 4 Wörter, lateinische und griechische Buchstaben,
   keine Klammern, Kommas oder ziffernlastigen Kennungen.
-- Alltagswörter: Deutsch ohne die 20.000 häufigsten Wörter aus wordfreq (v3.2,
-  https://github.com/rspeer/wordfreq, Daten CC BY-SA 4.0); die Liste dient nur als Filter, kein Wort daraus
-  ist übernommen. Deutsche Aliasse zusätzlich ohne Einzelwörter aus `assets/wordlist-de.txt`. Übrige Sprachen
-  ohne einzelne kleingeschriebene Wörter bis 6 Zeichen.
+- Alltagswörter (wordfreq v3.2, https://github.com/rspeer/wordfreq, Daten CC BY-SA 4.0): Deutsch ohne
+  die 20.000 häufigsten Wörter, außer Wörtern mit Großbuchstaben im Wortinneren; übrige
+  Sprachen ohne kleingeschriebene Einzelwörter ab Zipf 4,0 und großgeschriebene ab Zipf 5,0. Die Häufigkeiten dienen nur als
+  Filter und zur Wahl zwischen Schreibvarianten, kein Wort daraus ist übernommen. Deutsche Aliasse zusätzlich
+  ohne Einzelwörter aus `assets/wordlist-de.txt`.
 - Ausgeschlossen: Instanzen von Q115305900 großes Sprachmodell, Q870780 Chatbot. Einzeln ausgeschlossen, weil ihre Bezeichnungen mit
   Produkt- oder Personennamen zusammenfallen: Q248542, Q1126839, Q1977520, Q25110971, Q94638515, Q134083964, Q136549314.
 
@@ -59,45 +72,53 @@
 ### jura
 
 - Instanzen von Q1756157 Rechtszweig
-- Instanzen von Q2135465 Rechtsbegriff
+- Instanzen von Q2135465 Rechtsbegriff; ohne Unterklassen bis zur dritten Ebene von Q43229 Organisation
 - Instanzen von Q130583773 Art des Verbrechens
 - Instanzen von Q131784846 type of contract
 - Unterklassen von Q41487 Gericht
-- Instanzen und Unterklassen von Q41487 Gericht; mindestens 10 Sitelinks
+- Instanzen und Unterklassen von Q1262438 internationales Gericht; ohne P576
 - Unterklassen von Q158970 Delikt
 - Unterklassen von Q689247 Rechtsmittel
 - Unterklassen von Q697327 Klage
-- Unterklassen von Q1301203 Prozess
+- Unterklassen von Q1301203 Prozess; ohne P580, P582, P585
 - Instanzen und Unterklassen von Q1938208 Rechtsinstitut
 - Instanzen und Unterklassen von Q3237872 Grundrecht
 - Unterklassen von Q8458 Menschenrechte
 - Instanzen und Unterklassen von Q10353985 legal principle
-- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q183 Deutschland; nur für de
+- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q183 Deutschland; ohne P576, P582; nur für de
+- Instanzen und Unterklassen von Q41487 Gericht; Geltungsbereich oder Staat Q183 Deutschland; ohne P576; mindestens 5 Sitelinks; nur für de
 - Einträge mit P9696 Buzer.de-Gesetzeskennung; nur für de
-- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q145 Vereinigtes Königreich, Q30 Vereinigte Staaten; nur für en
+- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q145 Vereinigtes Königreich, Q30 Vereinigte Staaten; ohne P576, P582; nur für en
+- Instanzen und Unterklassen von Q41487 Gericht; Geltungsbereich oder Staat Q145 Vereinigtes Königreich, Q30 Vereinigte Staaten; ohne P576; mindestens 5 Sitelinks; nur für en
 - Einträge mit P3343 legislation.gov.uk-ID; nur für en
 - Einträge mit P3837 Öffentliches Recht der Vereinigten Staaten; nur für en
-- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q142 Frankreich; nur für fr
-- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q38 Italien; nur für it
+- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q142 Frankreich; ohne P576, P582; nur für fr
+- Instanzen und Unterklassen von Q41487 Gericht; Geltungsbereich oder Staat Q142 Frankreich; ohne P576; mindestens 5 Sitelinks; nur für fr
+- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q38 Italien; ohne P576, P582; nur für it
+- Instanzen und Unterklassen von Q41487 Gericht; Geltungsbereich oder Staat Q38 Italien; ohne P576; mindestens 5 Sitelinks; nur für it
 - Einträge mit P8722 Normattiva ID; nur für it
-- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q55 Niederlande; nur für nl
+- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q55 Niederlande; ohne P576, P582; nur für nl
+- Instanzen und Unterklassen von Q41487 Gericht; Geltungsbereich oder Staat Q55 Niederlande; ohne P576; mindestens 5 Sitelinks; nur für nl
 - Einträge mit P13979 BWB-Nummer; nur für nl
-- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q36 Polen; nur für pl
-- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q45 Portugal, Q155 Brasilien; nur für pt
+- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q36 Polen; ohne P576, P582; nur für pl
+- Instanzen und Unterklassen von Q41487 Gericht; Geltungsbereich oder Staat Q36 Polen; ohne P576; mindestens 5 Sitelinks; nur für pl
+- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q45 Portugal, Q155 Brasilien; ohne P576, P582; nur für pt
+- Instanzen und Unterklassen von Q41487 Gericht; Geltungsbereich oder Staat Q45 Portugal, Q155 Brasilien; ohne P576; mindestens 5 Sitelinks; nur für pt
 - Einträge mit P9119 LexML Brazil ID; nur für pt
-- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q29 Spanien; nur für es
+- Instanzen von den Gesetzesklassen; Geltungsbereich oder Staat Q29 Spanien; ohne P576, P582; nur für es
+- Instanzen und Unterklassen von Q41487 Gericht; Geltungsbereich oder Staat Q29 Spanien; ohne P576; mindestens 5 Sitelinks; nur für es
 - Einträge mit P4256 BOE-Kennung; nur für es
 
 ### wirtschaft
 
-- Einträge mit P10715 Investopedia-Begriffskennung; ohne Instanzen von Q5 Mensch und deren Unterklassen; ohne P856, P159, P625
+- Einträge mit P10715 Investopedia-Begriffskennung; ohne Instanzen von Q5 Mensch und deren Unterklassen; ohne Unterklassen bis zur dritten Ebene von Q43229 Organisation; ohne P856, P159, P625, P571, P576, P580, P582, P585; Sitelinks zählen mit dem Faktor 0,25
 - Instanzen und Unterklassen von Q29028649 wirtschaftliches Konzept
-- Unterklassen von Q247506 Finanzinstrument; ohne P498
+- Unterklassen von Q247506 Finanzinstrument; ohne direkte Instanzen und Unterklassen von Q1368 Geld, Q8142 Währung, Q41207 Münze, Q113813711 Münzart; ohne P498
 - Instanzen und Unterklassen von Q832161 betriebswirtschaftliche Kennzahl
 - Instanzen und Unterklassen von Q1167393 ökonomische Kennzahl
 - Unterklassen von Q8161 Steuer
 - Instanzen von Q130109687 Steuerart
-- Unterklassen von Q273005 Wirtschaftssystem; ohne Instanzen von Q14827288 Wikimedia-Projekt und deren Unterklassen
+- Unterklassen von Q273005 Wirtschaftssystem; ohne Instanzen von Q14827288 Wikimedia-Projekt und deren Unterklassen; ohne direkte Instanzen und Unterklassen von Q10876391 Wikipedia-Sprachauflage
 - Unterklassen von Q815823 Geschäftsmodell
 - Instanzen von Q1269299 Rechtsform für Unternehmen
 - Unterklassen von Q192907 Jahresabschluss
@@ -112,6 +133,15 @@
 - Unterklassen von Q39809 Vermarktung
 - Unterklassen von Q2851421 costs
 - Unterklassen von Q4116214 Buchhaltung
+- Instanzen von Q64588497 accounting term
+- Instanzen von Q116460050 Eigentumstyp
+- Instanzen von Q106905561 Bilanzkennzahl
+- Instanzen von Q64513545 Wirtschaftsterminologie
+- Unterklassen von Q8137 Kapital
+- Unterklassen von Q170924 Zins
+- Unterklassen von Q1527264 Einkommen
+- Unterklassen von Q1166072 Transaktion
+- Unterklassen von Q160151 Preis
 
 ### technik
 
@@ -122,7 +152,7 @@
 - Unterklassen bis zur zweiten Ebene von Q1293220 physikalisches Phänomen
 - Instanzen von Q125517960 type of electronic component
 - Unterklassen von Q11653 elektronisches Bauelement
-- Einträge mit P8855 IEV-Nummer
+- Einträge mit P8855 IEV-Nummer; ohne direkte Instanzen und Unterklassen von Q112193867 Krankheitstyp, Q1441305 klinisches Zeichen, Q2996394 biologischer Vorgang; ohne P686
 - Unterklassen bis zur zweiten Ebene von Q839546 Maschinenelement
 - Unterklassen von Q2041172 Messgerät
 - Instanzen und Unterklassen von Q1408288 Fertigungsverfahren
@@ -131,6 +161,8 @@
 - Unterklassen bis zur zweiten Ebene von Q44167 Motor
 - Instanzen von Q173227 physikalische Konstante
 - Instanzen von Q140424281 type of device
+- Instanzen von Q137582043 Teilgebiet der Mechanik
+- Unterklassen von Q1480529 Fügen
 
 ### chemie
 
@@ -147,6 +179,11 @@
 - Instanzen von Q55640599 Gruppe chemischer Einheiten
 - Unterklassen bis zur zweiten Ebene von Q81163 Polymer
 - Unterklassen von Q37756 Legierung
+- Instanzen von Q47154513 Strukturklasse von chemischen Verbindungen
+- Instanzen von Q56256173 Klasse von chemischen Verbindungen mit ähnlichen Anwendungen oder Funktionen
+- Instanzen von Q4751159 chemisches Analyseverfahren
+- Instanzen von Q3247516 Labormethode
+- Unterklassen von Q71550700 chemische Größe
 
 ### it
 
@@ -175,19 +212,38 @@
 - Unterklassen von Q3966 Hardware
 - Instanzen und Unterklassen von Q181156 Softwareentwurfsmuster
 - Unterklassen von Q4071928 Cyberattacke
+- Instanzen und Unterklassen von Q11288 Webserver
+- Instanzen und Unterklassen von Q11189 Proxy
+- Instanzen und Unterklassen von Q71550 Anwendungsserver
+- Instanzen und Unterklassen von Q7935198 Virtualisierungslösung
+- Instanzen und Unterklassen von Q118218718 container orchestrator
+- Instanzen und Unterklassen von Q1077480 Hypervisor
+- Instanzen und Unterklassen von Q16947796 kontinuierliche Integrationssoftware
+- Instanzen und Unterklassen von Q29032804 configuration manager
+- Instanzen und Unterklassen von Q138081337 infrastructure provisioning tool
+- Instanzen und Unterklassen von Q13224353 Monitoring-Software
+- Instanzen und Unterklassen von Q1480561 Issue-Tracking-System
+- Instanzen und Unterklassen von Q141089604 VPN software
+- Instanzen und Unterklassen von Q91348108 daemon-managing daemon
+- Instanzen und Unterklassen von Q1092177 Message Oriented Middleware
+- Instanzen und Unterklassen von Q756230 Verzeichnisdienst
+- Instanzen und Unterklassen von Q14663 Unix-Shell
+- Instanzen und Unterklassen von Q891055 Paketverwaltung
+- Instanzen und Unterklassen von Q2727468 Build-Automatisierung
+- Instanzen und Unterklassen von Q47506 Compiler
 
 Gesetzesklassen: Q820655 Gesetz, Q922203 Gesetzbuch, Q1923776 Zivilgesetzbuch, Q7755 Verfassung, Q2076487 organic law, Q6453643 decree-law, Q2703920 Verordnung, Q3042975 Real Decreto (Spanien), Q13408009 französisches Gesetz, Q4677783 Act of Parliament (Großbritannien), Q1006079 Bundesgesetz (Deutschland), Q16603799 Bundesverordnung (Deutschland).
 
-Eigenschaften in den Filtern: P159 Hauptverwaltung, P225 wissenschaftlicher Name, P267 ATC-Code, P416 Formelzeichen (string), P486 MeSH-Kennung, P493 ICD-9, P494 ICD-10 Identifikator, P498 Währungscode (ISO 4217), P557 DiseasesDB-ID, P604 MedlinePlus-Kennung, P625 geographische Koordinaten, P673 eMedicine, P699 Disease-Ontology-ID, P715 Drugbank-ID, P856 offizielle Website, P1323 Terminologia-Anatomica-98-ID, P1402 Foundational-Model-of-Anatomy-Kennung, P1690 ICD-10-PCS, P1692 ICD-9-CM, P2370 Umrechnung in SI-Einheit, P2534 Formel, P2968 QUDT Maßeinheiten-Kennung, P4020 Dimension gemäß Internationalem Größensystem, P4338 LOINC-Kennung, P5806 SNOMED-CT-ID, P7807 ICD-11 Identifikator (Foundation), P7825 UCUM-Code, P8855 IEV-Nummer.
+Eigenschaften in den Filtern: P159 Hauptverwaltung, P225 wissenschaftlicher Name, P267 ATC-Code, P416 Formelzeichen (string), P486 MeSH-Kennung, P493 ICD-9, P494 ICD-10 Identifikator, P498 Währungscode (ISO 4217), P557 DiseasesDB-ID, P571 Datum der Gründung, Entstehung, Erbauung, P576 Auflösungsdatum, P580 Startzeitpunkt, P582 Endzeitpunkt, P585 Zeitpunkt/Stand, P604 MedlinePlus-Kennung, P625 geographische Koordinaten, P673 eMedicine, P686 Gene-Ontology-Identifikator, P699 Disease-Ontology-ID, P715 Drugbank-ID, P856 offizielle Website, P1323 Terminologia-Anatomica-98-ID, P1402 Foundational-Model-of-Anatomy-Kennung, P1690 ICD-10-PCS, P1692 ICD-9-CM, P2370 Umrechnung in SI-Einheit, P2534 Formel, P2968 QUDT Maßeinheiten-Kennung, P4020 Dimension gemäß Internationalem Größensystem, P4338 LOINC-Kennung, P5806 SNOMED-CT-ID, P7807 ICD-11 Identifikator (Foundation), P7825 UCUM-Code, P8855 IEV-Nummer.
 
 ## Begriffe je Datei
 
 | Gebiet | de | en | fr | it | nl | pl | pt | es |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| medizin | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 |
-| medikamente | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 |
-| jura | 3000 | 3000 | 2186 | 1280 | 1726 | 964 | 1192 | 2166 |
-| wirtschaft | 3000 | 3000 | 3000 | 2179 | 2420 | 1936 | 1927 | 3000 |
+| medizin | 6000 | 6000 | 6000 | 6000 | 6000 | 6000 | 6000 | 6000 |
+| medikamente | 4411 | 5000 | 4094 | 3297 | 3035 | 3275 | 4203 | 4082 |
+| jura | 3000 | 3000 | 1986 | 1135 | 1620 | 873 | 1077 | 1961 |
+| wirtschaft | 3000 | 3000 | 3000 | 1971 | 2388 | 1721 | 1901 | 3000 |
 | technik | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 |
-| chemie | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 |
+| chemie | 5000 | 5000 | 5000 | 5000 | 5000 | 5000 | 5000 | 5000 |
 | it | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 | 3000 |

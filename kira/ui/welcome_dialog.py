@@ -51,9 +51,9 @@ def welcomed_before() -> bool:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Neuer Reiter „Fachwortschatz“: Fachgebiete einschalten, von Medizin über Jura bis IT.</li>
-  <li>Die Politur erkennt verhörte Fachbegriffe dann im Zusammenhang, in allen acht Sprachen.</li>
-  <li>Sieben neue Anzeige-Stile mit eigenen Tönen, einer je Fachgebiet.</li>
+  <li>Fachwortschatz: Alltagswörter lösen in allen acht Sprachen keinen Vorschlag mehr aus, vorher nur im Deutschen.</li>
+  <li>Die Reiterleiste der Einstellungen ist schmaler.</li>
+  <li>Seit 0.7.0 dabei: Reiter „Fachwortschatz“, die Politur erkennt verhörte Fachbegriffe im Zusammenhang; sieben Anzeige-Stile mit Tönen, einer je Fachgebiet.</li>
   <li>Mehr dazu in der Anleitung, Abschnitt 10.</li>
 </ul>
 """
@@ -145,7 +145,7 @@ Tray-Menü steht „Update auf … installieren…“. Abschaltbar in der Rohcon
 <code>updates.check_interval_hours</code>.</p>
 <p>Manuell: Tray → <b>„Updates suchen..."</b> oder Einstellungen → Reiter „Über“ →
 Update-Button. Hat sich seit deiner Version nur das Programm geändert, lädt
-Speech2Anywhere nur das Programmpaket (rund 5 MB), prüft dessen Prüfsumme, spielt es
+Speech2Anywhere nur das Programmpaket (rund 6 MB), prüft dessen Prüfsumme, spielt es
 nach einem kurzen Beenden ein und startet von selbst neu. Sonst lädt es das ganze
 Paket (Stub + Splits), verifiziert die SHA256-Hashes und startet den Setup-Wizard.</p>
 <p>Jedes Release ist mit einer bestimmten Ollama-Version und bestimmten Fassungen der
@@ -174,7 +174,7 @@ Geprüft sind nur die gemma4-Modelle.</p>
 
 <h3>10. Fachwortschatz</h3>
 <p>Im Reiter „Fachwortschatz“ schaltest du Fachgebiete ein: Medizin, Medikamente, Jura, Wirtschaft, Wissenschaft und Technik, Chemie und IT.<br>
-Dann schreibt Speech2Anywhere deren Fachbegriffe öfter richtig, in allen acht Sprachen.<br>
+Dann schreibt Speech2Anywhere deren Fachbegriffe öfter richtig. Begriffslisten gibt es für alle acht Sprachen, gemessen ist die Wirkung auf Deutsch und Englisch.<br>
 Die Politur erfährt das Fachgebiet und bekommt je Diktat bis zu fünf Fachbegriffe, die ähnlich klingen wie das Erkannte.<br>
 Aus „Ass Pirin“ wird so bei eingeschaltetem Gebiet „Medikamente“ „Aspirin“.<br>
 Das wirkt in normalem Text, Chat und Mail und nur mit eingeschalteter Politur; Terminal und Code bleiben wörtlich.</p>
@@ -197,9 +197,9 @@ Bei nativen Crashes: <code>speech2anywhere-faulthandler.log</code> daneben.</p>
 _NEWS_HTML_EN = """
 <h3>New in v{version}</h3>
 <ul>
-  <li>New “Specialist vocabulary” tab: switch on fields, from medicine and law to IT.</li>
-  <li>The clean-up then recognises misheard technical terms in context, in all eight languages.</li>
-  <li>Seven new indicator styles with their own sounds, one per field.</li>
+  <li>Specialist vocabulary: everyday words no longer trigger a suggestion in any of the eight languages, before only in German.</li>
+  <li>The tab bar in the settings is narrower; the tab is now called “Vocabulary”.</li>
+  <li>Here since 0.7.0: the “Vocabulary” tab, the clean-up recognizes misheard technical terms in context; seven indicator styles with sounds, one per field.</li>
   <li>More in the guide, section 10.</li>
 </ul>
 """
@@ -291,7 +291,7 @@ tray menu shows “Install update to …”. You can switch this off in the raw 
 <code>updates.check_interval_hours</code>.</p>
 <p>Manually: Tray → <b>“Check for updates…”</b> or Settings → “About” tab →
 update button. If only the program has changed since your version,
-Speech2Anywhere downloads just the program package (about 5 MB), verifies its checksum, installs it
+Speech2Anywhere downloads just the program package (about 6 MB), verifies its checksum, installs it
 after closing briefly and restarts by itself. Otherwise it downloads the whole
 package (stub + splits), verifies the SHA256 hashes and starts the setup wizard.</p>
 <p>Every release is measured with a specific Ollama version and specific versions of the
@@ -319,19 +319,19 @@ Type the name like this: <code>hf.co/user/model:Q4_K_M</code>, saving downloads 
 Only the gemma4 models are tested.</p>
 
 <h3>10. Specialist vocabulary</h3>
-<p>On the “Specialist vocabulary” tab you switch on fields: medicine, medications, law, business, science and engineering, chemistry and IT.<br>
-Speech2Anywhere then gets their technical terms right more often, in all eight languages.<br>
-The clean-up is told the field and gets up to five technical terms per dictation that sound like what was recognised.<br>
+<p>On the “Vocabulary” tab you switch on fields: medicine, medications, law, business, science and engineering, chemistry and IT.<br>
+Speech2Anywhere then gets their technical terms right more often. There are term lists for all eight languages; the effect is measured in German and English.<br>
+The clean-up is told the field and gets up to five technical terms per dictation that sound like what was recognized.<br>
 With “Medications” switched on, “ass pirin” becomes “aspirin”.<br>
 This works in plain text, chat and mail, and only with the clean-up switched on; terminal and code stay literal.</p>
 <p>The terms come from Wikidata and make no claim to be complete.<br>
 Only switch on what you need: the more fields, the more likely a term from another field fits.<br>
-With nothing selected, Speech2Anywhere recognises speech as before.<br>
+With nothing selected, Speech2Anywhere recognizes speech as before.<br>
 A restart is needed after saving.</p>
 
 <h3>Configuration</h3>
 <p>Tray → <b>“Settings…”</b>: tabs Microphone, Clean-up, Keys, Indicator,
-Sound, Learning, Specialist vocabulary and About. Rare fields (replacements, modes, initial prompt) via
+Sound, Learning, Vocabulary and About. Rare fields (replacements, modes, initial prompt) via
 “Open raw config…”.</p>
 
 <h3>Logs</h3>

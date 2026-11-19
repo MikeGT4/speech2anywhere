@@ -1,16 +1,14 @@
-medicine
-disease
 COVID-19
 AIDS
 HIV/AIDS
 malaria
-abortion
 tuberculosis
-diabetes
-stomach
 influenza
 cholera
+vagina
+rabies
 obesity
+Ebola fever
 Ebola hemorrhagic fever
 smallpox
 common cold
@@ -21,6 +19,7 @@ skeleton
 measles
 nervous system
 Alzheimer's disease
+urine
 headache
 epilepsy
 human body
@@ -33,55 +32,81 @@ diarrhea
 immune system
 mental disorder
 circulatory system
+asthma
 blindness
+wool
 human digestive system
 poliomyelitis
-shoulder
+autism
+allergies
 allergy
 small intestine
 testicle
+cough
+navel
 chromosome
 syphilis
 forehead
 malnutrition
-surgery
+plague
+uterus
+cheek
 dentistry
 pancreas
 schizophrenia
+thorax
+vein
+anus
+excrement
+feces
 psychiatry
-depression
+semen
 large intestine
 perspiration
+elbow
 birth control
+contraception
 respiratory system
+spleen
 chickenpox
 circumcision
+varicella
 arterial hypertension
+hypertension
 clitoris
 dengue fever
 endocrine system
 eyebrow
 hemorrhoid
+hormonal system
+sadness
 vomiting
 blood vessel
 esophagus
-sadness
+nerve cell
+neuron
 sign language
-anxiety
+erythrocytes
 Parkinson's disease
 red blood cell
 vaccination
 breast cancer
+mitochondria
 mitochondrion
+pathobiology
 pathology
+rib
+vulva
+anemia
 avian influenza
 moustache
+mustaches
 reproductive system
 meningitis
 spinal cord
+artery
 chronic obstructive pulmonary disease
 hygiene
-infection
 pharmacology
 dementia
 euthanasia
@@ -95,40 +120,55 @@ pertussis
 urinary bladder
 gallbladder
 gastroenteritis
-typhoid fever
+saliva
 scabies
+typhoid fever
+ovary
 swine influenza
 cardiology
 diphtheria
 Down syndrome
+larynx
+leukocyte
 white blood cell
+acne
 first aid
 gonorrhea
+mumps
 hemoglobin
 hepatitis B
 inflammation
 insomnia
 major depressive disorder
+cadaver
+corpse
 hepatitis A
 infectious disease
 placenta
 sensory nervous system
 tetanus
+thyroid
 thyroid gland
 cartilage
 dysentery
 homeopathy
 migraine
+thigh
 anthrax
 hallucination
+icterus
 jaundice
 neurology
 bipolar disorder
 gynaecology
 hypnosis
+hypnotic
+hypnotism
 obsessive-compulsive disorder
 ribosome
+armpit
 bone marrow
+myopia
 ophthalmology
 scrotum
 trachea
@@ -136,19 +176,26 @@ abscess
 cataract
 egg cell
 pharynx
+phobia
 central nervous system
 CNS
 eyelashes
+nipple
 oncology
+pupil
+scurvy
 Ayurveda
 blood pressure
 bronchitis
+cirrhosis
 Dental caries
 liver cirrhosis
 magnetic resonance imaging
 MRI
 stem cell
+ankle
 arthritis
+bile
 dyslexia
 epidemiology
 glaucoma
@@ -165,23 +212,37 @@ chloroplast
 dermatology
 flatulence
 human skeleton
+hypophysis
 pituitary gland
+sneeze
+veterinary care
 veterinary medicine
+yawn
 ADHD
 attention deficit hyperactivity disorder
 constipation
 cytoplasm
 dandruff
+diaphragm
+sepsis
+septicemia
 thoracic diaphragm
+verruca
+wart
 chemotherapy
 conjunctivitis
+gout
 heart failure
 human fetus
 narcissism
 organelle
+typhus
 urethra
-bleeding
+cell membrane
+cellular membrane
 gangrene
+genitalia
+genitals
 index finger
 osteoporosis
 plasma membrane
@@ -189,62 +250,91 @@ platelet
 psychosis
 rubella
 sex organ
+thrombocytes
 anorexia nervosa
 Asperger syndrome
 Asperger's
 blood plasma
 color blindness
+eyelid
+heel
+hernia
 little finger
+thirst
 urology
 albinism
 cerebellum
 cesarean section
+cesarian
 clavicle
+coma
 hematology
 kidney stone disease
 lymphatic system
+nephrolithiasis
 pediatrics
+zygote
 cervix uterine cancer
 hypothalamus
+jaw
 laryngeal prominence
 middle finger
 post-traumatic stress disorder
 prostate cancer
+prostatic cancer
+rectum
 scapula
-therapy
+shoulder blade
+transplant
 transplantation
 vitiligo
 adrenal gland
 bone fracture
 buttermilk
 capillary
+edema
+pelvis
+spermatozoa
 spermatozoon
 ALS
 amnesia
 amyotrophic lateral sclerosis
 endoplasmic reticulum
+gingiva
+gums
 hepatitis C
 multiple sclerosis
 psoriasis
+retina
 African trypanosomiasis
+Borrelia
 computed tomography
+computerized tomography
 illusion
+Lyme borreliosis
 Lyme disease
 melancholia
+Scarlatina
 scarlet fever
 vertebra
 celiac disease
 endocrinology
+goiter
 herpes simplex
 mandible
+palate
 paranoia
+paranoid
 public health
 radiology
 tonsillitis
 toxicology
+aorta
 epithelium
+femur
 Golgi apparatus
 hemophilia
+tendon
 vacuole
 vertigo
 blood transfusion
@@ -255,12 +345,17 @@ gastritis
 HPV
 human papillomavirus infection
 leishmaniasis
+plastic surgery
 salivary gland
 SARS
 severe acute respiratory syndrome
+symptom
 systemic lupus erythematosus
+thymus
+torso
 urinary system
 anaphylaxis
+bilharzia
 breast milk
 cardiovascular disease
 connective tissue
@@ -268,36 +363,45 @@ fatigue
 gastroenterology
 herpes zoster
 leptospirosis
-massage
+mother milk
+navel string
 neurosis
-plastic surgery
 schistosomiasis
 skin cancer
 sternum
 tinnitus
 umbilical cord
 adaptive radiation therapy
+arrhythmia
 botulism
 cell wall
 heart arrhythmia
 hordeolum
+hymen
 infertility
+itch
 lysosome
 melanoma
 peptic ulcer disease
+pruritus
 pubic hair
+radiotherapy
+apathy
 autopsy
 bathing
 borderline personality disorder
 BPD
 castration
+cornea
 duodenum
 dwarfism
 dyspnea
 encephalitis
 miscarriage
+nausea
 osteoarthritis
 placebo
+rhinosinusitis
 rickets
 sinusitis
 acromegaly
@@ -315,8 +419,10 @@ orthopedics
 paralysis
 ring finger
 strabismus
+tibia
 alcohol intoxication
 astigmatism
+bronchi
 bronchus
 cardiac arrest
 cardiopulmonary resuscitation
@@ -325,26 +431,42 @@ Chagas disease
 Crohn's disease
 delusion
 endometriosis
+folk medicine
 hysteria
+lymph
 lymph node
 stomach cancer
 stuttering
 synapse
-syndrome
+synaptic
 traditional medicine
 appendix
 brain tumor
 brucellosis
 intellectual disability
+iris
+kumis
 pulmonology
+reflex
+spore
 syncope
+tonsil
+whey
 alopecia
 aneurysm
+biopsy
 dehydration
 foreskin
 hyperopia
 hypothermia
+mucus
+prepuce
+sacrum
 anxiety disorder
+Ca body of pancreas
+FMD
+foot-and-mouth disease
+HMD
 human eye
 kidney failure
 ligament
@@ -360,47 +482,60 @@ autoimmune disease
 autonomic nervous system
 bubonic plague
 chikungunya
+chlamydia
 chlamydia infection
 cystic fibrosis
 endoscopy
-FMD
-foot-and-mouth disease
-HMD
 lymphoma
 peripheral nervous system
 plastid
+ureter
 VNS
+waist
+axon
 beriberi
 coronary artery disease
 cytoskeleton
+drug addiction
 human brain
 internal medicine
 maxilla
 rheumatism
+Sickle cell anemia
 sickle-cell disease
 substance dependence
 aphasia
 burping
 canine tooth
 colostrum
+earwax
 glans penis
 humerus
 hypoxia
+mania
 myocardium
 otolaryngology
+otorhinolaryngology
 personality disorder
 remote sensing
 sleep paralysis
 sleepwalking
+somnambulism
 Tourette syndrome
+zoonoses
 zoonosis
 ascariasis
+atheromatous plaque
 atherosclerosis
 body piercing
+boil
+bulimia
 bulimia nervosa
+cancer of the ovary
 erectile dysfunction
 Huntington's disease
 hypothyroidism
+infection of urinary tract
 male reproductive system
 metastasis
 mucous membrane
@@ -409,6 +544,7 @@ nephron
 neurosurgery
 ovarian cancer
 pancreatitis
+piercing
 pre-eclampsia
 T-lymphocytes
 urinary tract infection
@@ -422,6 +558,7 @@ electroencephalography
 epidermis
 fibromyalgia
 Guillain-Barré syndrome
+hand hygiene
 hand washing
 keratins
 liver cancer
@@ -432,19 +569,28 @@ onchocerciasis
 snoring
 trachoma
 Turner syndrome
+Turner's syndrome NOS
 Addison's disease
 centriole
 cerebral palsy
+coccyx
 collagen
 dissociative identity disorder
+fertilization in vitro
 forearm
 in vitro fertilization
 IVF
+kefir
 mammary gland
+molar
 night blindness
 panic attack
 surrogacy
 vocal folds
+alveoli
+alveolus
+cholelithiasis
+cicatrix
 CJD
 Creutzfeldt-Jakob disease
 cysticercosis
@@ -454,20 +600,26 @@ frostbite
 gallstone disease
 hypoglycemia
 masochism
+neurocysticercosis
 organ system
 pulmonary alveolus
 rhinitis
 SAD
+scar
 social anxiety disorder
+social phobia
 synesthesia
+system of organs
 thalassemia
 asphyxia
+cecum
 cerebrospinal fluid
 claustrophobia
 dermatitis
 dysmenorrhea
 ECG
 electrocardiography
+epistaxis
 foodborne illness
 geriatrics
 hippocampus
@@ -483,32 +635,44 @@ antisocial personality disorder
 ASPD
 blister
 bovine spongiform encephalopathy
+cervix
 dermatophytosis
 drowning
+flagella
 flagellum
 heartburn
 heat stroke
 inferiority complex
+insolation
 macrophage
 Marfan syndrome
 medulla oblongata
 myalgic encephalomyelitis/chronic fatigue syndrome
 phenylketonuria
 PKU
+ringworm
 sarcoidosis
 Tai chi chuan
+taijiquan
 thalamus
 toxoplasmosis
 Y chromosome
+acute obstructive laryngitis
 chromatin
+cloaca
+croup
 dendrite
+eczema
 gastroesophageal reflux disease
 gingivitis
 HFMD
 Hodgkin lymphoma
+hypochondriac
 hypochondriasis
 lactose intolerance
 lower back pain
+lumbago
+lung embolism
 medical ultrasonography
 multiple myeloma
 nasal bone
@@ -518,10 +682,14 @@ peritonitis
 pulmonary embolism
 radiography
 Sjögren's syndrome
+sonography
 TCM
 toxic diffuse goiter
 traditional Chinese medicine
 type 2 diabetes
+ultrasonography
+uvula
+varices
 varicose veins
 vesicular stomatitis and exanthem
 wisdom tooth
@@ -532,6 +700,9 @@ blood test
 brain stem
 family planning
 genetic disease
+glia cells
+glial cell
+ileum
 infectious mononucleosis
 Klinefelter's syndrome
 motion sickness
@@ -540,7 +711,9 @@ neuroglia
 pericardium
 phimosis
 PMOS
+polycystic ovary syndrome
 polyendocrine metabolic ovarian syndrome
+radius
 vas deferens
 voyeurism
 abdominal pain
@@ -550,6 +723,7 @@ arteriosclerosis
 bacterial vaginosis
 blood cell
 cerebral cortex
+fibula
 frontal bone
 ganglion
 gastrointestinal tract
@@ -562,6 +736,7 @@ narcissistic personality disorder
 NPD
 optic nerve
 periodontitis
+peritoneal
 peritoneum
 progeria
 thrombosis
@@ -573,6 +748,7 @@ carcinoma
 Cushing's syndrome
 eating disorder
 echinococcosis
+emphysema
 epididymis
 erysipelas
 facial expression
@@ -590,19 +766,24 @@ anthroposophy
 antimicrobial resistance
 artificial insemination
 atrial fibrillation
+B lymphocyte
 B-cell
 bradycardia
+Colitis Ulcerative
 colonoscopy
 dracunculiasis
 endocrine gland
 hyperthyroidism
 occipital bone
+os temporale
 parietal bone
 pharyngitis
 porphyria
+psychic trauma
 psychological trauma
 radiation syndrome
 salmonellosis
+sclera
 skeletal muscle
 snakebite
 speech-language pathology
@@ -614,6 +795,7 @@ arachnophobia
 ascites
 conjoined twins
 delirium
+dyspepsia
 genomics
 gram stain
 gynecomastia
@@ -632,23 +814,33 @@ pneumothorax
 postpartum depression
 puerperal infection
 rib cage
+Siamese twins
 sphenoid bone
+Streptococcal angina
 streptococcal pharyngitis
 telomere
+toothache
 traumatology
+ulna
 vaginal discharge
 aromatherapy
+ataxia
 autosome
 cholecystitis
 COVID-19 test
 cytosol
+dialysis
+electric shock
 electrical injury
 esophageal cancer
 GBM
 gender dysphoria
+gender-role dysphoria
 gene therapy
 gestational diabetes
 glioblastoma
+gonad
+groin
 hyperthermia
 injection
 mastitis
@@ -658,7 +850,6 @@ pellagra
 premenstrual syndrome
 renal dialysis
 smooth muscle tissue
-toothache
 tularemia
 achondroplasia
 amenorrhea
@@ -666,6 +857,8 @@ aphthous stomatitis
 AVP disorder
 brain death
 bulbourethral gland
+burned out
+burnout
 candidiasis
 CBT
 cellulitis
@@ -689,6 +882,7 @@ seminal vesicula
 sympathetic nervous system
 visual impairment
 abnormal kyphosis
+abuse of substances
 anogenital venereal wart
 atopic dermatitis
 basophil
@@ -701,11 +895,18 @@ chronic thyroiditis
 concussion
 congenital disorder
 coprophagia
+cyst
+edema pulmonary
 Ehlers-Danlos syndrome
 embolism
+genital warts
+Hashimoto's thyroiditis
 heterochromia
 hypersexuality
+limb
+medical specialty
 muteness
+nevus
 nuclear membrane
 obsolete cheilopalatoschisis
 panic disorder
@@ -716,27 +917,38 @@ pulmonary edema
 scleroderma
 sebaceous gland
 substance abuse
+tremor
 vasectomy
+vomer
 abdominal cavity
 Amg
 amygdala
+AMYLOID
 amyloidosis
 andrology
 angiography
 anthropometry
+areola
 atrophy
 bald head
 Bell's palsy
+bruise
 carpal tunnel syndrome
 centromere
 centromere complex
+colon
+contusion
 cyanosis
 deltoid muscle
+dentin
 ethmoid bone
 lacrimal bone
 laryngitis
+Legionella
+Legionellosis
 legionnaires' disease
 limbic system
+lipoma
 Meniere's disease
 nasal cavity
 nostril
@@ -744,16 +956,21 @@ nuclear medicine
 occupational therapy
 palatine bone
 parasympathetic nervous system
+pl. amygdalae
 plant cell
 pulmonary artery
 thyroid-stimulating hormone
+Thyrotropin
 urinary incontinence
 vagus nerve
 visual system
 adenoid
+atrium
 Bartholin's gland
+benign prostatic hyperplasia
 cardiac surgery
 carpal bone
+cilium
 CMAMMA
 cochlea
 cone cell
@@ -766,26 +983,35 @@ Kawasaki disease
 lumbar puncture
 notochord
 nucleosome
+pes dermatophytosis
 prostatic hypertrophy
 Rift Valley fever
 sex chromosome
+smegma
 stillbirth
 tinea pedis
 trigeminal nerve
+ulcer
 weight loss
 X chromosome
+acute myelogenous leukemia
 acute myeloid leukemia
 adenoma
 AML
 anosmia
 calculus
+calf
 common carotid artery
+Congenital Heart Defects
 congenital heart disease
 endothelium
+Giardia
 giardiasis
 grandiose delusions
 hematuria
 hemolysis
+incus
+megalomania
 nocturnal enuresis
 palliative care
 priapism
@@ -797,20 +1023,27 @@ sarcoma
 schizoid personality disorder
 ScPD
 SPD
+sprain
+sputum
 SzPD
 tarsal bones
 thyroid cancer
 Achilles tendon
 angiology
+astragalus
+atlas
 blood-brain barrier
 body dysmorphic disorder
 cerebral hemorrhage
+chi gung
+chi kung
 chronic renal insufficiency
 coitus interruptus
 convulsion
 dendritic cell
 diencephalon
 Duchenne muscular dystrophy
+dysmorphia
 eclampsia
 emergency medicine
 epiglottis
@@ -823,27 +1056,37 @@ hip bone
 intravenous infusion and defusion
 joint dislocation
 lower leg
+luxation
 mast cell
 Mediterranean diet
+metatarsal
 metatarsal bones
 middle ear
 molluscum contagiosum
+mycoses
+mycosis
 myocyte
 nephrotic syndrome
 oculomotor nerve
 orthodontics
+pons
+qigong
 Raynaud syndrome
 rod cell
 SIDS
 starvation
 sudden infant death syndrome
 sweat gland
+talus
 telemetry
+Tendon Achilles
 trichomoniasis
 upper extremity
 vaginitis
 vasculitis
 vitamin deficiency
+water warts
+Williams syndrome
 Williams-Beuren syndrome
 acidosis
 agnosia
@@ -857,23 +1100,35 @@ electroconvulsive therapy
 flat feet
 flying phobia
 hearing loss
+hemorrhagic fever
+herniated disc
 human height
 impetigo
 inner ear
 learning disability
 long covid
+Long-haul covid
+metacarpal
 metacarpal bones
 olfactory nerve
 polydactyly
 premature ejaculation
 presbyopia
+rash
 restless legs syndrome
 Reye syndrome
+sadism
 savant syndrome
+Seborrheic Eczema
 seborrhoeic dermatitis
+spasm
 spinal disc herniation
 spinal nerve
+stapes
+stature
 swallowing
+trance
+trepanation
 trepanning
 triceps brachii muscle
 trichinosis
@@ -911,8 +1166,10 @@ mental confusion
 motion capture
 muscle cramp
 muscular dystrophy
+music psychotherapy
 music therapy
 natural killer cell
+NK cells
 occipital lobe
 parenchyma
 preterm birth
@@ -920,6 +1177,7 @@ problem gambling
 prosopagnosia
 psychophysics
 psychosomatic medicine
+psychosomatics
 pubic bone
 rhabdomyolysis
 spina bifida
@@ -933,15 +1191,21 @@ anorexia
 auricle
 bloodletting
 calcaneus
+cloister
 conjunctiva
 dental pulp
+diagnostic imaging
 drug overdose
 dysthymia
+E trisomy
 echocardiography
 ectoderm
 Edwards syndrome
+elephantiasis
 endocarditis
 endometrial cancer
+enema
+eyelid elephantiasis
 facial nerve
 filarial elephantiasis
 frontal lobe
@@ -955,6 +1219,7 @@ maternal death
 medical imaging
 necrotizing fasciitis
 Nipah virus infection
+overdose
 rectus abdominis muscle
 Rett syndrome
 rigor mortis
@@ -965,15 +1230,18 @@ tomography
 trapezius muscle
 trigeminal neuralgia
 viral infectious disease
+virus infection
 abducens nerve
 arteriole
 astrocyte
 blastocyst
 bursitis
 cachexia
+chromosomal mutation
 chromosome abnormality
 coronary artery
 cystitis
+dermis
 diverticulitis
 fetal alcohol spectrum disorders
 fibroblast
@@ -988,21 +1256,27 @@ hysterectomy
 intervertebral disc
 IVD
 kwashiorkor
+lung fibrosis
 microcephaly
 Minamata disease
 Munchausen syndrome
+nervus abducens
 osteogenesis imperfecta
 Pap test
+pica
+pleura
 polyploidy
 preventive medicine
 pulmonary fibrosis
 pyelonephritis
+raster electron microscope
 scanning electron microscope
 Schwann cell
 sexual dysfunction
 trochlear nerve
 varicocele
 ventricle of the heart
+yaws
 achalasia
 actin filament
 Angelman syndrome
@@ -1015,6 +1289,7 @@ cellulite
 clubfoot
 cupping therapy
 drug withdrawal
+endemic
 endemic disease
 exanthema subitum
 fatty liver disease
@@ -1026,6 +1301,7 @@ human mouth
 immunization
 inguinal hernia
 Kaposi's sarcoma
+lyophilization
 melanocyte
 mesoderm
 mood disorder
@@ -1038,23 +1314,32 @@ Prader-Willi syndrome
 pulmonary hypertension
 refrigeration
 respiratory failure
+Respiratory Insufficiency
+respiratory insufficiency/failure
+Roseola
 somatic symptom disorder
 sports medicine
 sterilisation
 Tay-Sachs disease
 telemedicine
+tic
 trichuriasis
 triple X syndrome
+trisomy X
+uremia
 ventricular fibrillation
 visual acuity
 West Nile fever
 accessory nerve
 acute kidney injury
+acute lymphoblastic leukemia
 acute lymphocytic leukemia
 ALL
 auscultation
 balanitis
 blepharitis
+cat's cry syndrome
+colic
 corpus callosum
 corpus luteum
 cretinism
@@ -1062,11 +1347,14 @@ cri-du-chat syndrome
 diabetic retinopathy
 dyscalculia
 dysphagia
+female pelvic inflammatory disease
+Ganglia
 ganglion cyst
 generalized anxiety disorder
 gunshot wound
 hypoglossal nerve
 inferior vena cava
+keto diet
 ketogenic diet
 kidney transplantation
 Korsakoff's syndrome
@@ -1075,6 +1363,7 @@ mesentery
 mesothelioma
 Middle East respiratory syndrome
 myalgia
+myelin
 nucleoplasm
 paranasal sinus
 paranoid personality disorder
@@ -1084,15 +1373,20 @@ PPD
 proteinuria
 Q fever
 rare disease
+renal transplantation
 renin-angiotensin system
+Renin-Angiotensin-Aldosterone System
 selective mutism
 septic shock
 thrombocytopenia
 transient cerebral isolation
+venom
 white matter
 acute coronary syndrome
+adenopathy
 adipocyte
 alexithymia
+amnion
 amniotic fluid
 aortic dissection
 basal ganglia
@@ -1103,10 +1397,13 @@ cerebral hemisphere
 colitis
 complete blood count
 dental restoration
+dermatosis
+diagnosis differential
 differential diagnosis
 dysgraphia
 endometrium
 extracellular matrix
+follicle of ovary
 food allergy
 general anaesthesia
 gluteus maximus muscle
@@ -1118,7 +1415,9 @@ intermediate filament
 Jacobson's organ
 Lassa fever
 lymphadenopathy
+miosis
 myofibril
+neonatal
 neonatology
 non-Hodgkin lymphoma
 osteopathy
@@ -1127,15 +1426,16 @@ pectoral girdle
 pectoralis major
 persistent vegetative state
 phototherapy
+receptor
 schizotypal personality disorder
 sciatic nerve
 sensory receptor
 skin disease
 StPD
-suggestion
 toxic shock syndrome
 tracheotomy
 TSS
+Acoustic neurofibromatosis
 acute respiratory distress syndrome
 amniocentesis
 audiology
@@ -1145,7 +1445,10 @@ basal cell skin carcinoma
 BCC
 canine distemper
 catatonia
+central Neurofibromatosis
+chalazion
 chromatophore
+comedo
 Crimean-Congo hemorrhagic fever
 diplopia
 disseminated intravascular coagulation
@@ -1155,9 +1458,12 @@ electromyography
 endoderm
 esophagogastroduodenoscopy
 fibrosis
+frigidity
+gastroscopy
 genital herpes
 glycated haemoglobin
 hallux valgus
+herpes genitalia
 hospital-acquired infection
 hypercalcemia
 hypoactive sexual desire disorder
@@ -1165,28 +1471,38 @@ hypospadias
 immunodeficiency
 inferior nasal concha
 labia minora
+Laser In Situ Keratomileusis
 LASIK
 lunate bone
+macula lutea
 macula of retina
+macular
 meibomian cyst
 metabolic syndrome
 mirror neuron
+musculus quadriceps femoris
 mushroom poisoning
 neurofibromatoses
+nosocomial infection
 occupational disease
 onychomycosis
+Osteogenic sarcoma
 osteosarcoma
 phaeochromocytoma
+polyp
 premolar
 protoplast
 quadriceps femoris muscle
 rhodopsin
 SAH
+scalp
 scaphoid bone
 SDH
 sinoatrial node
+sinus node
 Skene's gland
 sleep disorder
+spinal muscle atrophy
 spinal muscular atrophy
 subarachnoid hemorrhage
 subdural hematoma
@@ -1198,6 +1514,7 @@ xerostomia
 aboulia
 aortic valve stenosis
 aqueous humour
+breast amputation
 bronchoscopy
 CABG
 choking
@@ -1210,6 +1527,8 @@ defibrillation
 Dupuytren's contracture
 erythrocyte sedimentation rate
 ESR
+Fallot tetralogy
+fascia
 fragile X syndrome
 germ layer
 glomerulus
@@ -1222,30 +1541,40 @@ major histocompatibility complex
 mastectomy
 meconium
 medical physics
+Morbus Dupuytren
 motor neuron
 neurasthenia
+neuropathy
 opportunistic infection
 otolith
+overhydration
 oxygen therapy
 pathophysiology
 peripheral neuropathy
+photoreceptor
 photoreceptor cell
+physiopathology
 plasma cell
 pregnancy test
 prosencephalon
 retinitis pigmentosa
 seasonal affective disorder
+serotonergic syndrome
+serotonin storm
 serotonin syndrome
+sphincter
 sphincter muscle
 testicular cancer
 tetralogy of Fallot
 urethritis
 urinalysis
 water intoxication
+winter depression
 XYY syndrome
 akathisia
 angioplasty
 aortic arch
+apnea
 aspergillosis
 assisted suicide
 benign neoplasm
@@ -1263,6 +1592,7 @@ dysphonia
 endocardium
 Epicanthic fold
 evidence-based medicine
+fatal familial insomnia
 fatal insomnia
 FFI
 fontanelle
@@ -1270,6 +1600,7 @@ general surgery
 hamate bone
 health informatics
 hemangioma
+hiatal hernia
 hiatus hernia
 hirsutism
 hydronephrosis
@@ -1278,26 +1609,29 @@ hypersensitivity
 hypersomnia
 immunosuppression
 infectious diseases
-isolation
 lacrimal gland
 medical genetics
 menorrhagia
 misophonia
 mouth cancer
 mydriasis
+Myelodysplasia
 myelodysplastic syndrome
 osteomalacia
 outer ear
 palpitation
+Paratyphoid
 paratyphoid fever
 paresthesia
 parotid gland
 Patau syndrome
 perikaryon
+pisiform
 pisiform bone
 plantar fasciitis
 pneumoconiosis
 psychodrama
+ptosis
 rhinoplasty
 rinderpest
 sleep deprivation
@@ -1307,10 +1641,12 @@ subclavian artery
 substantia nigra
 tennis elbow
 thoracic vertebra
+translocation
 vena cava
 adenocarcinoma
 aplastic anemia
 assisted reproductive technology
+Bartholin's Cyst
 Bartholin's duct cyst
 benign paroxysmal positional nystagmus
 bile duct
@@ -1334,6 +1670,7 @@ glottis
 granuloma
 GRS
 HeLa
+helper T cell
 hepatocellular carcinoma
 hormone replacement therapy
 human chromosome 21
@@ -1341,6 +1678,7 @@ hypernatremia
 hypertrichosis
 hypertrophic cardiomyopathy
 hypokalemia
+ilium
 internet use disorder
 intracranial aneurysm
 iron overload
@@ -1354,6 +1692,7 @@ meniscus
 mercury poisoning
 morning sickness
 nephritis
+nephropathy
 neuralgia
 obsessive-compulsive personality disorder
 OCPD
@@ -1369,8 +1708,12 @@ pleural effusion
 polycythemia vera
 postural orthostatic tachycardia syndrome
 POTS
+pseudopod
 pseudopodium
+psittacosis
 reducing diet
+renal glomerulus nephritis
+retina neuroblastoma
 retinal detachment
 retinoblastoma
 seizure
@@ -1381,6 +1724,7 @@ T helper cell
 thoracic surgery
 thylakoid
 traumatic brain injury
+vaginal yeast infection
 ventricular system
 viral hepatitis
 vulvovaginal candidiasis
@@ -1420,9 +1764,11 @@ hypocalcaemia
 IBD
 inflammatory bowel diseases
 ingrown nail
+keloid
 keratitis
 kidney cancer
 lethargy
+membrane
 meningioma
 methemoglobinemia
 mitral valve
@@ -1430,12 +1776,14 @@ Mongolian spot
 neurodegeneration
 node of Ranvier
 nuclear pore
+orthorexia
 orthorexia nervosa
 osteoblast
 overweight
 pancreatic juice
 peripheral artery disease
 plasmodesma
+prenatal diagnostics
 prenatal testing
 psoriatic arthritis
 reactive arthritis
@@ -1443,6 +1791,7 @@ route of administration
 soft palate
 spinal canal
 SPS
+stiff man syndrome
 stiff-person syndrome
 stretch marks
 taste buds
@@ -1455,14 +1804,17 @@ African swine fever
 apitherapy
 artificial respiration
 azoospermia
+bezoar
 cell junction
 Charcot-Marie-Tooth disease
 cholecystectomy
 ciliary body
+congenital megacolon
 deep vein thrombosis
 dentures
 dermatomyositis
 diabetic nephropathy
+diagnostics
 epidermolysis bullosa
 epidural anesthesia
 family medicine
@@ -1482,6 +1834,7 @@ ischium
 lymphatic vessel
 mastoiditis
 medical diagnostics
+morula
 mysophobia
 nephroblastoma
 neurocranium
@@ -1490,6 +1843,7 @@ nomogram
 nose-picking
 oral and maxillofacial surgery
 osteoclast
+otitis
 pernicious anemia
 pityriasis rosea
 polyuria
@@ -1507,11 +1861,16 @@ stenosis
 Stevens-Johnson syndrome
 traveler's diarrhea
 triquetral bone
+triquetrum
 tropical disease
 vascular dementia
 vascular surgery
 venereology
+viscera
+viscus
+xenograft transplantation
 xenotransplantation
+abrasion
 actinomycosis
 acupressure
 alien hand syndrome
@@ -1529,11 +1888,15 @@ brachial artery
 brachiocephalic artery
 brachytherapy
 bronchiole
+cancer of larynx
 Capgras syndrome
 cataplexy
 cauda equina syndrome
+Chiari Malformation
+CHIARI MALFORMATION TYPE II
 choreatic disease
 ciliary muscle
+comorbid
 comorbidity
 complex regional pain syndrome
 coracobrachialis muscle
@@ -1542,8 +1905,10 @@ dependent personality disorder
 developmental coordination disorder
 DPD
 dysphoria
+dyspraxia
 electrical cardiac conduction system
 emergency contraception
+emergency postcoital contraception
 epiglottitis
 Gaucher's disease
 Goodpasture syndrome
@@ -1558,13 +1923,16 @@ human chromosome 6
 human chromosome 7
 human chromosome 8
 human chromosome 9
+Idiopathic thrombocytopenic purpura
 idiopathy
 intensive care medicine
+juvenile idiopathic arthritis
 juvenile rheumatoid arthritis
 ketosis
 laryngeal cancer
 Mantoux test
 Marburg virus disease
+medical test
 megakaryocyte
 microbiological culture
 miliaria
@@ -1577,6 +1945,7 @@ palpation
 pectoralis minor muscle
 penile cancer
 periosteum
+postcoital contraception
 pulmonary vein
 pylorus
 respiratory disease
@@ -1591,30 +1960,39 @@ syringomyelia
 tracheal intubation g
 transmissible spongiform encephalopathy
 trichomes
+tuberculin test
+uvea
 vestibular system
 visceral leishmaniasis
 Wolff-Parkinson-White syndrome
+abasia
 acute pancreatitis
 agranulocytosis
 alkalosis
 allergology
 aortic valve
+arachnoid
 arachnoid mater
 argyria
 bone neoplasm
+bone tumor
 Bowman's capsule
 breast augmentation
 breast fibroadenoma
+Cancer of Uterus
 carbuncle
 cerebral edema
+cowpox
 desmosome
 dissociative disorder
 diverticulosis
 drug tolerance
 dysuria
+Encephalitis Lethargica
 episiotomy
 erythema
 febrile seizure
+fibroadenoma
 galactorrhea
 gastrocnemius muscle
 gastrointestinal bleeding
@@ -1624,8 +2002,10 @@ human chromosome 10
 human chromosome 18
 human skin
 hydatidiform mole
+hypodermis
 iatrogenesis
 ICH
+ileus
 interstitial fluid
 intracranial hemorrhage
 leukorrhea
@@ -1645,6 +2025,8 @@ spinal cord injury
 spindle
 status epilepticus
 stomatitis
+stress cardiomyopathy
+stress-induced cardiomyopathy
 subcutaneous tissue
 tachypnea
 takotsubo cardiomyopathy
@@ -1652,6 +2034,7 @@ torticollis
 trapezium
 uterine cancer
 ventricular septal defect
+venule
 vitamin B12 deficiency
 von Economo's disease
 water fluoridation
@@ -1660,6 +2043,7 @@ xeroderma pigmentosum
 xerophthalmia
 abdominal aortic aneurysm
 acrosomal vesicle
+acrosome
 allantois
 anencephaly
 angiogenesis
@@ -1671,7 +2055,9 @@ aviation medicine
 blastomer
 Bloodstream infection
 Burkitt lymphoma
+clinical sign
 codependency
+codependent
 congenital adrenal hyperplasia
 conversion disorder
 coprolalia
@@ -1682,12 +2068,15 @@ cytology
 cytotoxic T cell
 dental extraction
 dental fluorosis
+depilation
 diabetic neuropathy
+dystocia
 epididymitis
 ergotism
 false memory
 false pregnancy
 femoral artery
+Fluorosis
 folliculitis
 foster care
 galactosemia
@@ -1704,7 +2093,9 @@ intramuscular injection
 ketoacidosis
 Leydig cell
 lymphedema
+Lymphoedema NOS
 macrobiotic diet
+macrobiotics
 metaplasia
 neocortex
 obstructed labor
@@ -1718,6 +2109,7 @@ penile frenulum
 phytotherapy
 polydipsia
 radial artery
+resistance training
 reticulocyte
 retinal disease
 root canal treatment
@@ -1728,6 +2120,7 @@ temporal muscle
 teres major muscle
 teres minor muscle
 tonsillolith
+tooth extraction
 traditional Tibetan medicine
 tricuspid valve
 trisomy
@@ -1736,6 +2129,7 @@ von Willebrand's disease
 wounded in action
 abnormal lordosis
 acute bronchitis
+acute cholangitis
 adverse drug reaction
 AIS
 alcohol withdrawal syndrome
@@ -1743,6 +2137,7 @@ Alport syndrome
 androgen insensitivity syndrome
 animal bite
 antiserum
+anuria
 ascending cholangitis
 atrioventricular node
 autosomal recessive congenital ichthyosis
@@ -1753,6 +2148,8 @@ body temperature
 brachialis muscle
 cat-scratch disease
 cementum
+chills
+cholangitis
 chronic wasting disease
 Conn's syndrome
 CWD
@@ -1774,7 +2171,9 @@ genetic testing
 genitourinary system
 glomerular filtration rate
 glucose tolerance test
+hamstring
 hamstring muscles
+harlequin ichthyosis
 health geography
 HELLP syndrome
 hemothorax
@@ -1786,6 +2185,8 @@ hyperlipidemia
 hypogonadism
 hypomania
 hypoparathyroidism
+immune sera
+immune serum
 impulsivity
 infraspinatus muscle
 Insula
@@ -1821,6 +2222,7 @@ serratus anterior muscle
 Sertoli cell
 shoulder joint
 sigmoid colon
+sinus of maxilla
 spermatic cord torsion
 spirometry
 stretching
@@ -1828,6 +2230,8 @@ supraspinatus muscle
 sweating sickness
 thrombolysis
 TMS
+Torsion of Testicular Cord
+Torsion of testis
 transcranial magnetic stimulation
 trench foot
 tubal ligation
@@ -1840,10 +2244,13 @@ abdominal aorta
 abdominal external oblique muscle
 acute abdomen
 acute stress reaction
+Adrenoleukodystrophy
 Alice in Wonderland syndrome
 anal cancer
+ANEMIA HEMOLYTIC
 anisocoria
 anterior pituitary
+antiphospholipid antibody syndrome
 antiphospholipid syndrome
 arteriovenous malformation
 axillary artery
@@ -1851,6 +2258,7 @@ behavior therapy
 blepharospasm
 body cavity
 brown adipose tissue
+cancer of anus
 childhood disintegrative disease
 chronic pain
 classical swine fever
@@ -1868,6 +2276,7 @@ Fabry disease
 Fanconi anemia
 feline infectious peritonitis
 gastrectomy
+glioma
 gluteus medius muscle
 granulomatosis with polyangiitis
 H&E stain
@@ -1881,14 +2290,18 @@ histopathology
 human leukocyte antigen
 intestinal villus
 irritability
+Ishihara plate
 Ishihara test
 Korean hemorrhagic fever
 leukocytosis
 long QT syndrome
 marasmus
+Mayer-Rokitansky-Kuster-Hauser syndrome
 mechanoreceptor structure
+mechanoreceptors
 Müllerian agenesis
 muscular disease
+myopathy
 non-alcoholic fatty liver disease
 nonalcoholic fatty liver disease
 Noonan syndrome
@@ -1908,6 +2321,7 @@ premenstrual dysphoric disorder
 progressive supranuclear palsy
 Proteus syndrome
 prothrombin time
+proton beam therapy
 proton therapy
 robot-assisted surgery
 scintigraphy
@@ -1915,6 +2329,7 @@ serum sickness
 shaken baby syndrome
 Str
 striatum
+stupor
 temporomandibular joint
 therapeutic index
 thromboangiitis obliterans
@@ -1922,9 +2337,14 @@ tooth brushing
 tropical medicine
 unconsciousness
 vertebral artery
+villus intestinalis
+Wegener granulomatosis
 Whipple disease
 X-linked adrenoleukodystrophy
 abdominal obesity
+acoustic neuroma
+Adenoma of Pituitary
+Adenoma of Pituitary Gland
 aerophagia
 anconeus muscle
 aphonia
@@ -1934,6 +2354,7 @@ beta cell
 body modification
 breast fibrocystic disease
 Brodmann area
+callus
 carcinogenesis
 cardiac output
 cardiac tamponade
@@ -1945,6 +2366,8 @@ colposcopy
 compulsory sterilization
 cor pulmonale
 COVID-19 disease in pregnancy
+cryo-conservation
+cryogenic preservation
 cryopreservation
 cyclopia
 cystoscopy
@@ -1957,11 +2380,13 @@ exploding head syndrome
 extracellular fluid
 facial paralysis
 fasciolosis
+FIBROCYSTIC PULMONARY DYSPLASIA
 foreign accent syndrome
 gallbladder cancer
 glossitis
 glycocalyx
 glycogen storage disease II
+helminthiasis
 hematopoietic stem cell transplantation
 heterochromatin
 HFA
@@ -1970,6 +2395,7 @@ high-functioning autism
 histoplasmosis
 HSCT
 human nose
+hyaline membrane disease
 hyperacusis
 hypoxemia
 idiopathic pulmonary fibrosis
@@ -1982,14 +2408,18 @@ leukoplakia
 Lucilia sericata
 lung abscess
 medical microbiology
+melena
 micropenis
 microvillus
 military medicine
 multiple organ dysfunction syndrome
 nasal septum
+noma
 Osgood-Schlatter's disease
+ostracism
 parasitic helminthiasis infectious disease
 percussion
+periodontium
 Philadelphia chromosome
 philtrum
 pilonidal cyst
@@ -2005,8 +2435,10 @@ sarcopenia
 sartorius muscle
 self-medication
 separation anxiety disorder
+septum nasi
 sick building syndrome
 situs inversus
+situs transversus
 social rejection
 space medicine
 speech disorder
@@ -2019,6 +2451,7 @@ tooth supporting structure
 tympanites
 ultrafiltration
 umbilical hernia
+unani
 ventricular tachycardia
 vestibular schwannoma
 Ziehl-Neelsen stain
@@ -2030,12 +2463,16 @@ anaplastic oligodendroglioma
 androgenic alopecia
 animal euthanasia
 ascending aorta
+atopy
+avascular necrosis
 Baker's cyst
+bone necrosis
 breech presentation
 capsule endoscopy
 cardiac catheterization
 chilblains
 chondrocyte
+chyme
 ciguatera
 common iliac artery
 conduct disorder
@@ -2043,11 +2480,14 @@ confabulation
 confocal microscopy
 convalescence
 dendrimer
+dermatillomania
 diastema
 drug resistance
 epidemic typhus
 epidural cranial hematoma
+Epidural hematoma
 epiphysis
+euthanasia of animals
 excoriation disorder
 female infertility
 flexor carpi ulnaris muscle
@@ -2056,6 +2496,7 @@ fovea centralis
 gas gangrene
 Glabella
 glycosuria
+hallux
 hantavirus pulmonary syndrome
 human heart
 human reproductive system
@@ -2065,18 +2506,23 @@ hyperuricemia
 hypovolemia
 induced pluripotent stem cell
 keratinocyte
+Keratosis nigricans
 labyrinthitis
 Legg-Calvé-Perthes disease
 levator scapulae muscle
 lipedema
 maggot therapy
 metabolic acidosis
+Mitral Insufficiency
+Mitral stenosis
 mitral valve insufficiency
 mitral valve stenosis
 moxibustion
+myoma
 myotonic dystrophy
 neural tube
 neuropsychiatry
+oocyte
 osteonecrosis
 Paget's disease of bone
 pain management
@@ -2095,6 +2541,7 @@ septic arthritis
 shigellosis
 sirenomelia
 sports injury
+stoma
 stridor
 suicidal ideation
 systemic inflammatory response syndrome
@@ -2111,7 +2558,7 @@ vulvodynia
 adhesions of uterus
 adjustment disorder
 adrenal insufficiency
-amyloid
+Anaemia megaloblastic
 angiosarcoma
 ankylosis
 anosognosia
@@ -2122,11 +2569,13 @@ aortic aneurysm
 aphakia
 astrocytoma
 atheroma
+aura
 Becker muscular dystrophy
 birthmark
 bone tissue
 cardiogenic shock
 cerebral infarction
+Clathrin
 clathrin complex
 clitoromegaly
 coccidiosis
@@ -2143,7 +2592,6 @@ dentition
 diagnosis of HIV/AIDS
 dietetics
 disorganized schizophrenia
-elephantiasis
 endodontics
 enterocyte
 entropion
@@ -2156,7 +2604,13 @@ Fournier gangrene
 Friedreich ataxia
 frozen shoulder
 graft-versus-host disease
+Graft-vs-Host Diseases
+gut enterocytes
+HIV test
+HIV testing
+Hypertrophy of clitoris
 hypervitaminosis
+idiopathic intracranial hypertension
 iliopsoas
 inherited metabolic disorder
 Kupffer cell
@@ -2184,6 +2638,7 @@ optic chiasm
 optic neuritis
 parasomnia
 paresis
+passive agressive personality
 passive-aggressive behavior
 pharmacotherapy
 platysma muscle
@@ -2207,23 +2662,28 @@ Valsalva maneuver
 visual snow syndrome
 vulvar cancer
 Waardenburg's syndrome
+Waardenburg-Klein syndrome
 Wechsler Adult Intelligence Scale
 adrenal cortex
+agitation
 agraphia
 alkaptonuria
 alpha cell
 anal fistula
 animal-assisted therapy
+anoxia
 axial skeleton
 basilar artery
 binge eating disorder
 biofeedback
 blastomycosis
+canal of Schlemm
 Canavan disease
 cervical intraepithelial neoplasia
 chest radiograph
 chronic pancreatitis
 Churg-Strauss syndrome
+clone
 complex post-traumatic stress disorder
 contagious disease
 cryptosporidiosis
@@ -2234,9 +2694,11 @@ demyelinating disease
 digastric muscle
 Dravet syndrome
 ductus arteriosus
+dyslipidemia
 electrolyte imbalance
 eosinophilia
 eosinophilic esophagitis
+equine therapy
 external ear canal
 familial Mediterranean fever
 fecal bacteriotherapy
@@ -2257,6 +2719,7 @@ homocystinuria
 human head
 human parainfluenza
 hyperdontia
+hyperphagia
 hyperprolactinemia
 impulse control disorder
 inappropriate antidiuretic hormone secretion
@@ -2269,9 +2732,12 @@ juxtaglomerular apparatus
 Kallmann syndrome
 Kussmaul breathing
 lacrimal apparatus
+lanugo
 lice infestation
 lichen planus
+lichen ruber planus
 lipid metabolism disorder
+lisp
 logorrhea
 lymphogranuloma venereum
 malignant hyperthermia
@@ -2300,27 +2766,39 @@ palmaris longus muscle
 pancreatic duct
 parenteral nutrition
 pediatric surgery
+pediculosis
+Pediculosis + lice
 pentasomy X
+Peyer patches
 Peyer's patch
 phage therapy
 phlegmon
 photochemotherapy
+photodynamic therapy
+Physical and Rehabilitation Medicine
 physical medicine and rehabilitation
 pia mater
+Pigmented nevus
 polyphagia
 preimplantation genetic diagnosis
+premature retinopathy
 psychomotor agitation
+Purkinje
 Purkinje cell
 refractive surgery
 renal cell carcinoma
 repetitive strain injury
+repetitive stress injuries
 respiratory tract infection
 retinopathy of prematurity
+rhinorrhea
 runny nose
 Schlemm's canal
+Schwartz-Bartter syndrome
 sclerosis
 semimembranosus muscle
 semitendinosus muscle
+somite
 Somniloquy
 specific phobia
 spinal ganglia
@@ -2334,13 +2812,14 @@ substance intoxication
 suprachiasmatic nucleus
 supraventricular tachycardia
 syndactyly
-syndrome of inappropriate antidiuresis
 tardive dyskinesia
+tardive oral dyskinesia
 tetraplegia
 tight junctions
 toxocariasis
 transverse myelitis
 triceps surae
+Troponin
 troponin complex
 trypanosomiasis
 tympanic cavity
@@ -2364,6 +2843,8 @@ bee sting
 bowel obstruction
 brachioradialis
 buccinator muscle
+Budd-Chiari syndrome
+cancer of vagina
 caudate nucleus
 cercarial dermatitis
 cerebrovascular disease
@@ -2375,8 +2856,8 @@ congenital hypothyroidism
 contagious pustular dermatitis
 deaf-mute
 dental alveolus
-diagnosis
 diogenes syndrome
+Eisenmenger's reaction
 Eisenmenger's syndrome
 empyema
 entomophobia
@@ -2397,6 +2878,8 @@ heart murmur
 hepatic vein thrombosis
 hereditary hemorrhagic telangiectasia
 hh blood group
+hip-waist ratio
+His bundle
 hyaline cartilage
 hyperaemia
 hypoventilation
@@ -2425,6 +2908,7 @@ obsession
 oogonium
 oral medicine
 organoid
+osteon
 palatine tonsil
 percutaneous coronary intervention
 permanent teeth
@@ -2440,6 +2924,7 @@ pyramidal cell
 reactive attachment disorder
 refeeding syndrome
 Rh disease
+Rhesus incompatibility
 rumination
 salpingitis
 scanning probe microscopy
@@ -2452,12 +2937,14 @@ Sheehan's syndrome
 spinocerebellar ataxia
 spondylolisthesis
 stereotypy
+stomatology
 stress fracture
 stroke volume
 supinator muscle
 taeniasis
 tenosynovitis
 tensor fasciae latae muscle
+tetany
 thoracic duct
 thyroid cartilage
 thyroiditis
@@ -2471,6 +2958,7 @@ underarm hair
 Usher syndrome
 vaginal cancer
 waist-hip ratio
+waist-to-hip ratio
 whitlow
 WHR
 abnormal uterine bleeding
@@ -2483,7 +2971,10 @@ atrophic vaginitis
 atypical depressive disorder
 audiometry
 avoidant/restrictive food intake disorder
+Babinski reflex
 basilar skull fracture
+carcinoma of nasopharynx
+chemoreceptor
 chemoreceptor cell
 cholestasis
 chorioamnionitis
@@ -2495,8 +2986,10 @@ coccidioidomycosis
 computer vision syndrome
 connectome
 coronary sinus
+corpuscle of Meissner
 corrugator supercilii muscle
 craniosynostosis
+cryo-electron microscopy
 cryogenic electron microscopy
 depersonalization-derealization disorder
 diabetic coma
@@ -2519,6 +3012,7 @@ Fregoli delusion
 Ganser syndrome
 glyoxysome
 gustatory system
+gyrus
 hamartoma
 Hantavirus infectious disease
 hepatorenal syndrome
@@ -2536,17 +3030,21 @@ Kayser-Fleischer ring
 Krabbe disease
 lactic acidosis
 lagophthalmos
+Lambert Eaton syndrome
 Lambert-Eaton myasthenic syndrome
+Lambert-Eaton-Rooke syndrome
 lateral pterygoid muscle
 lip reading
 lumbar region
 lung volumes
+Lyell's Syndrome
 meibomian glands
 microsurgery
 middle cerebral artery
 moya moya disease
 muscle dysmorphia
 muscle of mastication
+Nasopharyngeal carcinoma
 nasopharynx carcinoma
 neural oscillation
 neuropathology
@@ -2557,14 +3055,17 @@ nymphomania
 occipitofrontalis muscle
 occupational stress
 odontoblast
+off-label drug use
 off-label use
 Orbicularis oris muscle
 osteoma
 osteophyte
+papule
 paratuberculosis
 paroxysmal nocturnal hemoglobinuria
 pediatric multisystem inflammatory syndrome
 Perinatal mortality
+periplasm
 periplasmic space
 phase contrast microscopy
 phonophobia
@@ -2589,6 +3090,7 @@ retinal ganglion cell
 rib fracture
 risorius muscle
 role-playing
+roleplay
 sebaceous cyst
 sella turcica
 sensory organ
@@ -2596,32 +3098,42 @@ severe combined immunodeficiency
 shell shock
 skin grafting
 soleus muscle
+spermatogonia
 spermatogonium
 splenic artery
 staining
 stimming
+stroma
 subcutaneous injection
 tactile corpuscle
 thought disorder
+thrombocythemia
+thrombocytosis
 thrombogavitis
 thrombophilia
 thrombotic thrombocytopenic purpura
 toxic epidermal necrolysis
 transfusion medicine
 upper respiratory tract infection
+vaginal atrophy
+veneer
 vulvitis
 Werner syndrome
 Wernicke encephalopathy
 Wiskott-Aldrich syndrome
+work stress
 zona pellucida
 zygomaticus major muscle
+absence epilepsy
 absence seizure
 achromatopsia
 adductor longus muscle
 alpha-gal allergy
+Alpha-gal syndrome
 amniotic fluid embolism
 androphobia
 Apert syndrome
+aqueduct of Sylvius
 arteritis
 aspermia
 auto-brewery syndrome
@@ -2634,12 +3146,18 @@ bariatric surgery
 blepharoplasty
 blood coagulation disease
 blood culture
+body integrity disorder
 body integrity dysphoria
+body integrity identity disorder
 bone marrow examination
 breast hypertrophy
+bronchial spasm
+Bronchiolitis fibrosa obliterans
 bronchiolitis obliterans
 bronchospasm
 bulbous corpuscle
+Campylobacter enteritis
+Campylobacter Gastroenteritis
 campylobacteriosis
 cardiomegaly
 cardiopulmonary bypass
@@ -2650,7 +3168,9 @@ cholesteatoma
 cleft lip
 cleidocranial dysplasia
 clinical chemistry
+coagulopathy
 common hepatic duct
+compulsion
 compulsive behavior
 craniopharyngioma
 cremaster muscle
@@ -2658,13 +3178,17 @@ cryptococcosis
 Darwin's tubercle
 delayed puberty
 delayed sleep phase disorder
+delayed sleep phase syndrome
 dextrocardia
 diaphysis
 dissociative amnesia
 drug testing
 dyslalia
+dysphasia
 epispadias
 erythroblast
+eschar
+exosomes
 extracellular exosome
 fecal incontinence
 flexor hallucis longus muscle
@@ -2680,9 +3204,13 @@ hematospermia
 hemidesmosome
 hemoglobinuria
 herpangina
+Histiocytosis X
+hymen reconstruction surgery
 hymenorrhaphy
+hypertensive crisis
 hypophosphatemia
 iliacus muscle
+incontinence
 infestation
 infibulation
 inner cell mass
@@ -2719,13 +3247,17 @@ obstetric fistula
 oncovirus
 oral candidiasis
 otalgia
+pallor
 paranoid schizophrenia
 patent ductus arteriosus
+Pediculosis capitis
+Pediculus capitis
 Pediculus humanus capitis infestation
 pelvic organ prolapse
 pericyte
 Peutz-Jeghers syndrome
 pharyngeal arch
+pimple
 placenta accreta
 podocyte
 polyhydramnios
@@ -2734,6 +3266,7 @@ precocious puberty
 premaxilla
 presbycusis
 primary biliary cholangitis
+psychogenic amnesia
 pubic symphysis
 pupillary light reflex
 putamen
@@ -2760,8 +3293,10 @@ symphysis
 tachyphylaxis
 temper tantrum
 tibialis anterior muscle
+trophoblast
 trophoblast cell
 vitamin A deficiency
+Volvulus
 white coat hypertension
 xanthelasma
 xiphoid process
@@ -2772,11 +3307,13 @@ afferent nerve fiber
 agranulocytes
 Alexander disease
 allodynia
+amusia
 anatomical snuff box
 anisometropia
 anophthalmia
 anterior cerebral artery
 anterior cruciate ligament injury
+aortic insufficiency
 aortic valve insufficiency
 appendicular skeleton
 applied kinesiology
@@ -2785,10 +3322,13 @@ atrial flutter
 atrioventricular block
 atypical pneumonia
 autoimmune hepatitis
+AV block
 bariatric medicine
+bariatrics
 brachycephaly
 brain abscess
 Braxton Hicks contraction
+bronchial pneumonia
 bronchopneumonia
 canine hip dysplasia
 carpal tunnel
@@ -2799,13 +3339,16 @@ cervical plexus
 chondrosarcoma
 chromotherapy
 circadian rhythm sleep disorder
+color therapy
 combat disorder
 common hepatic artery
 congenital rubella syndrome
 contact dermatitis
+Contact eczema
 continuous positive airway pressure
 Cornelia de Lange syndrome
 corona of glans penis
+cricoid
 cricoid cartilage
 Crouzon syndrome
 cystic duct
@@ -2815,8 +3358,10 @@ deviated septum
 dissociative fugue
 dysbiosis
 Ebstein anomaly
+Endocarditis infective
 esophageal atresia
 esophageal varix
+esophagus atresia
 euchromatin
 exanthem
 extensor carpi radialis brevis
@@ -2826,8 +3371,10 @@ extensor digitorum muscle
 extraocular muscle
 facial artery
 familial adenomatous polyposis
+fatshaming
 frequent urination
 frontal sinus
+gastrointestinal disease
 gastrointestinal system disease
 hemiplegia
 hepatotoxicity
@@ -2846,14 +3393,18 @@ iris dilator muscle
 iron deficiency
 ketonuria
 lactational amenorrhea
+laryngeal spasm
 laryngospasm
 Levator anguli oris
 Lewy body
 linea alba
+Lowe syndrome
 lysosomal storage disease
 malleolus
+masculinization
 maxillary nerve
 Menkes disease
+Menkes syndrome
 mesonephric duct
 metencephalon
 metrorrhagia
@@ -2863,21 +3414,27 @@ Mittelschmerz
 Morquio syndrome
 motor cortex
 motor nerve
+mucopolysaccharidosis type IV
 myelofibrosis
+nasal septum deviation
 nasolacrimal duct
 necrotizing enterocolitis
 nipple discharge
 oculocerebrorenal syndrome
+Oesophageal varices
+Oesophagus varices
 omohyoid muscle
 ophthalmoplegia
 optical coherence tomography
 overactive bladder
 paracetamol toxicity
 parkinsonian syndrome
+Parkinsonism
 pectineus muscle
 periostitis
 phagosome
 phoniatrics
+Piriformis Muscle Syndrome
 piriformis syndrome
 plant disease
 plantaris muscle
@@ -2886,6 +3443,7 @@ plyometrics
 polytene chromosome
 posterior nasal apertures
 pustule
+pyuria
 renal corpuscle
 retrograde ejaculation
 rhomboid minor muscle
@@ -2900,6 +3458,8 @@ Stargardt disease
 startle response
 Strabismus eye surgery
 Sturge-Weber syndrome
+Sturge-Weber-Dimitri syndrome
+Sturge-Weber-Krabbe syndrome
 stylohyoid muscle
 substance use disorder
 superficial temporal artery
@@ -2934,20 +3494,25 @@ arytenoid cartilage
 balneology
 barbiturate overdose
 Bartter disease
+Bartter's syndrome
 basal body
 basal lamina
+bilirubin encephalopathy
 binge drinking
 brachydactyly
 bursa of Fabricius
 calorie restriction
 cancer pain
+carcinoid
 carcinoid tumor
+Cataract Extraction
 cataract surgery
 catarrh
 cauliflower ear
 chemical burn
 child and adolescent psychiatry
 childhood obesity
+chorea minor
 choriocarcinoma
 chromaffin cell
 colostomy
@@ -2967,6 +3532,7 @@ efferent nerve fiber
 egg donation
 electrooculography
 emerging communicable disease
+emerging infectious disease
 epicardium
 epidermodysplasia verruciformis
 extensor pollicis brevis muscle
@@ -2984,6 +3550,7 @@ hyperactivity
 hyperaldosteronism
 hyperkeratosis
 hyperlexia
+Hypermobility
 hypermobility syndrome
 hyphema
 hypomenorrhea
@@ -2998,3 +3565,2436 @@ left atrium
 levator ani
 levator labii superioris
 lithotripsy
+liver disease
+lumbricals of the hand
+mammary Paget's disease
+mammillary body
+mastoid process
+maxillary artery
+monosomy
+Morgellons
+mucopolysaccharidosis type IIIB
+mud bath
+multiple chemical sensitivity
+multiprotein complex
+mylohyoid muscle
+neuroendocrinology
+nicotine dependence
+normal pressure hydrocephalus
+obstetric ultrasonography
+obturator internus muscle
+occlusion
+ophthalmic artery
+opponens pollicis muscle
+orchiectomy
+orthopnea
+osteopetrosis
+oval window
+patellar tendinitis
+photic sneeze reflex
+plantar wart
+plastination
+pleural cavity
+Poland syndrome
+port-wine stain
+post-concussion syndrome
+proctitis
+protein complex
+rectal prolapse
+recurrent disseminated encephalomyelitis
+recurrent laryngeal nerve
+regulatory T cell
+rejuvenation
+respiratory rate
+retinal pigment epithelium
+retroperitoneal space
+retroperitoneum
+right atrium
+Rubinstein syndrome
+Rubinstein-Taybi syndrome
+Sanfilippo syndrome
+scalene muscles
+Scheuermann's disease
+schizophreniform disorder
+scleritis
+seborrheic keratosis
+shin splints
+small cell carcinoma
+spider bite
+spondylitis
+spondyloarthritis
+spondyloarthropathy
+striated muscle tissue
+superciliary arch
+superior vena cava syndrome
+Swyer syndrome
+Sydenham's chorea
+synaptic vesicle
+synovitis
+taijin kyofusho
+tendinitis
+tendinopathy
+tensor tympani muscle
+thenar eminence
+thymoma
+tibialis posterior muscle
+tinea capitis vale
+transposition of great vessels
+trichiasis
+tunica intima
+umbilical artery
+umbilical cord prolapse
+urinary catheterization
+vasovagal response
+vasovagal syncope
+venous ulcer
+verruca plantaris
+vital capacity
+waterborne disease
+weight cycling
+Wharton's jelly
+whiplash
+whiplash injuries
+XY gonadal dysgenesis
+Zellweger syndrome
+abdominoplasty
+abductor hallucis muscle
+abductor pollicis longus muscle
+acute liver failure
+African horse sickness
+alcohol abuse
+amacrine cell
+ampulla of Vater
+angular gyrus
+anorectal abscess
+arachnoiditis
+arthrogryposis
+arthrogryposis multiplex congenita
+articular fibrocartilage
+ascending colon
+asthenopia
+ataxia telangiectasia
+axillary vein
+Beckwith-Wiedemann syndrome
+berylliosis
+biliary colic
+black eye
+blood film
+Bloom syndrome
+blunt trauma
+brachiocephalic vein
+brain herniation
+Bruton's syndrome
+Bruton-type agammaglobulinemia
+calvaria
+cat eye syndrome
+cerebral lobe
+cervix erosion
+chemical synapse
+chronic bronchitis
+chylothorax
+congenital central hypoventilation syndrome
+Coombs test
+corneal ulcer
+coronarography
+coronary angiography
+coronavirus disease
+costochondritis
+COVID
+cutaneous larva migrans
+cyclosporiasis
+dacryocystitis
+debridement
+dental abscess
+dental erosion
+dental fear
+dental prosthesis
+dermoid cyst
+descending colon
+dislocated shoulder
+Dubin-Johnson syndrome
+ectrodactyly
+ego-dystonic sexual orientation
+elastic fiber
+electrical synapse
+electron microscopy
+Empyema of pleura
+endocrine system disease
+entorhinal cortex
+epigastrium
+Erosion of cervix
+erythema multiforme
+essential hypertension
+extensor digitorum longus muscle
+extensor hallucis longus muscle
+extensor indicis muscle
+extensor pollicis longus muscle
+external iliac artery
+external intercostal muscles
+external jugular vein
+extrapyramidal symptoms
+falx cerebri
+fasciculation
+femoral vein
+fibrocartilage
+Flexor pollicis brevis muscle
+fusiform gyrus
+geniohyoid muscle
+HLHS
+hyperandrogenism
+hyperpigmentation
+hypocapnia
+hypoplastic left heart syndrome
+infectious bursal disease
+inferior mesenteric artery
+inferior oblique muscle
+intermittent claudication
+internal capsule
+internal intercostal muscle
+internal thoracic artery
+interstitial lung disease
+intertrigo
+interventricular septum
+iron poisoning
+kangaroo care
+Klüver-Bucy syndrome
+lamina propria
+Laron syndrome
+lateral ventricle
+Leber hereditary optic neuropathy
+Leber optic atrophy
+leiomyosarcoma
+levator palpebrae superioris muscle
+ligature
+lingual artery
+lipoid nephrosis
+lissencephaly
+liver abscess
+Louis Bar syndrome
+lunula
+magnetic resonance angiography
+malocclusion
+mantle cell lymphoma
+medication overuse headache
+megacolon
+memory B cell
+mentalis
+microsome
+Minimal Change Glomerulonephritis
+Minnesota Multiphasic Personality Inventory
+MMPI
+mucosa-associated lymphoid tissue
+nephritic syndrome
+nephrotoxicity
+neurofeedback
+neurogenic arthrogryposis multiplex congenita
+NFB
+oligohydramnios
+omphalocele
+Ondine syndrome
+opioid use disorder
+optic disc
+orthomolecular medicine
+osteochondritis
+osteochondritis dissecans
+osteochondrosis
+osteopenia
+Other pervasive developmental disorders
+ototoxicity
+paramesonephric duct
+pasteurellosis
+pediatric dentistry
+pelvic pain
+perforated eardrum
+perineal raphe
+periodontosis
+perseveration
+persistent genital arousal disorder
+Persistent Sexual Arousal Syndrome
+pervasive developmental disorder NOS
+Pfeiffer syndrome
+photokeratitis
+pleural empyema
+polar body
+popliteal artery
+posterior cerebral artery
+premature heart beat
+premature rupture of membranes
+psychotic depression
+pterygopalatine fossa
+Ptosis mammary
+ptosis of the breast
+pudendal nerve
+pyoderma
+pyoderma gangrenosum
+pyramidalis muscle
+quadratus femoris muscle
+red nucleus
+retina amacrine cell
+retrograde amnesia
+sarcolemma
+sentinel lymph node
+serratus posterior inferior muscle
+serratus posterior superior muscle
+sphincter of ampulla
+sphincter of Oddi
+St. Louis encephalitis
+steambath
+sternothyroid muscle
+stool test
+superior rectus muscle
+symptom or sign
+synovial joint
+systemic scleroderma
+telangiectasia
+temporomandibular dysfunction syndrome
+temporomandibular joint syndrome
+terminal nerve
+third ventricle
+thoracotomy
+thyrohyoid muscle
+thyroidectomy
+tic disorder
+trabecular bone
+tragus
+transient global amnesia
+trismus
+Vero
+vesicoureteral reflux
+Waterhouse-Friderichsen syndrome
+X-linked agammaglobulinemia
+XX male syndrome
+Achilles tendon rupture
+achlorhydria
+Adductor pollicis muscle
+adventitia
+agrammatism
+akinetopsia
+allotransplantation
+anal gland
+analgesia
+ancylostomiasis
+angioma
+animal hoarding
+anthracosis
+anthropophobia
+Anti-N-Methyl-D-Aspartate Receptor Encephalitis
+anti-NMDA receptor encephalitis
+arthrodesis
+atomic force microscopy
+auditory hallucination
+auriculotherapy
+Bálint's syndrome
+Balint-Holmes syndrome
+Bardet-Biedl syndrome
+baroreceptor
+bipolar cell of retina
+Boerhaave syndrome
+booster dose
+bronchopulmonary dysplasia
+burning mouth syndrome
+calcaneal spur
+cardia
+cardiotocography
+cardiotoxicity
+carotid artery
+carotid artery stenosis
+carotid stenosis
+central sulcus
+cerebral amyloid angiopathy
+cerebral contusion
+cervical polyp
+chancre
+Charles Bonnet syndrome
+CIPA
+clavicle fracture
+clinical pathology
+clitoral glans
+Colles' fracture
+colorectal polyp
+coracoid process
+coronary thrombosis
+cranial trauma
+cytopathology
+dacryoadenitis
+decidua
+delayed ejaculation
+delusional parasitosis
+dentine hypersensitivity
+depressor labii inferioris muscle
+dermatitis herpetiformis
+descending aorta
+digit ratio
+dilation and curettage
+diuresis
+dog bite
+Duane retraction syndrome
+Duane's syndrome
+dural venous sinuses
+early pregnancy bleeding
+Eastern equine encephalitis
+ecchymosis
+ectoplasm
+endolymph
+endometrial polyp
+entoptic phenomenon
+epizootiology
+Ethylene glycol poisoning
+exostosis
+external anal sphincter
+facial muscles
+fat embolism
+Feto-fetal transfusion syndrome
+flexor digitorum longus muscle
+follicular lymphoma
+fornix vaginae
+gastric bypass surgery
+genioglossus
+genital retraction syndrome
+germ cell tumor
+greater omentum
+Greg pouch
+hemarthrosis
+hemianopia
+hemophagocytic lymphohistiocytosis
+Hemophagocytic syndrome
+hemosiderosis
+hepatoblastoma
+hereditary disorder
+hip joint
+hip replacement surgery
+HSAN IV
+human body temperature
+hyoglossus
+hyperammonemia
+hypoesthesia
+hyposmia
+inferior rectus muscle
+intraosseous infusion
+Jarisch-Herxheimer reaction
+Kartagener syndrome
+koro
+laboratory medicine
+lacrimal sac
+Latent autoimmune diabetes
+lateral geniculate nucleus
+lathyrism
+left gastric artery
+leiomyoma
+leukodystrophy
+Li-Fraumeni syndrome
+lipid profile
+lipodystrophy
+liquid breathing
+liver stellate cell
+longissimus
+longus capitis muscle
+Lymphatic Malformation
+lymphoblast
+macula densa
+Mallory-Weiss syndrome
+mastitis in dairy cattle
+medial rectus muscle
+melanoma of uvea
+membranous glomerulonephritis
+memory T cell
+mesothelium
+microphthalmia
+mild cognitive impairment
+minimally invasive surgeries
+minimally-invasive procedures
+mitral valve prolapse
+movement disorders
+multiple drug resistance
+multiple endocrine neoplasia
+musculocutaneous nerve
+neck pain
+neoplastic stem cells
+nephrectomy
+nephroptosis
+neurilemmoma
+neuritis
+nuchal cord
+obnubilation
+obturator externus muscle
+occupational injury
+oligomenorrhea
+oligospermia
+omentum majus
+ophthalmic nerve
+opisthotonus
+orbitofrontal cortex
+organophosphate poisoning
+otology
+ovarian hyperstimulation syndrome
+palmaris brevis muscle
+Pancoast tumor
+Paneth cell
+papilledema
+partial thromboplastin time
+pelvic cavity
+perichondrium
+perilymph
+persecutory delusion
+phocomelia
+phrenic nerve
+pilocytic astrocytoma
+pinta disease
+plagiocephaly
+plant-based diet
+platelet-rich plasma
+PNES
+Polyp of Cervix
+polyp of colon
+Polyp of Endometrium
+post orgasmic sick syndrome
+postcentral gyrus
+postorgasmic illness syndrome
+Prinzmetal's angina
+psychogenic non-epileptic seizures
+Pulmonary contusion
+rectus femoris muscle
+red eye
+regurgitation
+reproductive medicine
+respiratory alkalosis
+retina bipolar cell
+rhinophyma
+rumination disorder
+sacral plexus
+satellite glial cell
+Schwannoma
+scotoma
+seborrheic infantile dermatitis
+seminoma
+shoulder dystocia
+sialolithiasis
+sleep medicine
+somatization disorder
+Sotos syndrome
+space motion sickness
+spermatid
+spermatocyte
+sports nutrition
+Stickler syndrome
+strongyloidiasis
+sublingual
+sublingual administration
+subthalamus
+superinfection
+superior oblique muscle
+systemic disease
+tabes dorsalis
+temporal lobe epilepsy
+temporoparietalis muscle
+tensor veli palatini muscle
+twin-to-twin transfusion syndrome
+urachus
+urine output
+uveal melanoma
+vaginal fornix
+venous thrombosis
+ventricular assist device
+viral pneumonia
+viremia
+visual verbal agnosia
+vitrectomy
+Waldenström macroglobulinemia
+West syndrome
+wheeze
+Wolf-Hirschhorn syndrome
+zonule of Zinn
+zygomatic arch
+acanthocyte
+acromioclavicular joint
+adenovirus infection
+adult Refsum disease
+alogia
+ameloblast
+amnesic aphasia
+anasarka
+ancylostoma duodenale ancylostomiasis
+anomic aphasia
+anovulation
+Argyll Robertson pupil
+atypical hemolytic uremic syndrome
+azotemia
+bacterial artificial chromosome
+bacterial outer membrane
+basophilia
+benzodiazepine withdrawal syndrome
+beta wave
+biliary atresia
+biogenic substance
+bipolar neuron
+body odor
+Bórrar
+breast self-examination
+CADASIL
+Caput medusae
+cauda equina
+CBD
+central serous retinopathy
+chelation therapy
+chloracne
+chondroblast
+chondrocalcinosis
+chronic granulomatous disease
+chyle
+cleft palate
+Cockayne syndrome
+cognitive deficit
+Commotio cordis
+congenital insensitivity to pain
+connective tissue disease
+contraction
+corneal limbus
+corticobasal degeneration
+cricothyroid muscle
+cross-allergy
+cross-reactivity
+cutaneous squamous-cell carcinoma
+DCIS
+delta wave
+dental dam
+depressor anguli oris muscle
+Descemet's membrane
+distress
+Doppler ultrasonography
+Dressler's syndrome
+ductal carcinoma in situ
+dumping syndrome
+echopraxia
+ehrlichiosis
+empty sella syndrome
+ependymoma
+epidermoid cyst
+erythrasma
+exsanguination
+external occipital protuberance
+extrinsic allergic alveolitis
+femoral nerve
+fetal hemoglobin
+fetal macrosomia
+fibularis brevis muscle
+flail chest
+food addiction
+gamma wave
+gastric chief cell
+gastrointestinal stromal tumor
+gemellus inferior
+genu valgum
+genu varum
+geriatric psychiatry
+germinal center
+Gerstmann Badal syndrome
+Gerstmann syndrome
+gestational trophoblastic disease
+Gulf War syndrome
+hairy cell leukemia
+hairy tongue
+hallucinogen persisting perception disorder
+hammer toe
+hematologic neoplasm
+Hematologic Neoplasms
+hemi-azygos vein
+hemoglobin F
+hepatic artery proper
+histiocyte
+holoprosencephaly
+hypersalivation
+hypertonia
+hypervolemia
+Hypothenar eminence
+inferior gemellus muscle
+interstitial nephritis
+intrauterine growth restriction
+intubation
+iontophoresis
+joint replacement
+Kabuki syndrome
+Kearns-Sayre syndrome
+keraunopathy
+Klippel-Feil syndrome
+lactiferous duct
+language disorder
+large for gestational age
+laryngoscopy
+lateral rectus muscle
+Leber congenital amaurosis
+lentigo
+lesser omentum
+life sustaining care
+lifestyle disease
+lingual papilla
+Loeys-Dietz syndrome
+loiasis
+long thoracic nerve
+longitudinal cerebral fissure
+longus colli muscle
+lymphocytosis
+lymphopenia
+macrocephaly
+magnetosome
+male infertility
+mandibular nerve
+maternal-fetal medicine
+meconium aspiration syndrome
+Merkel cell carcinoma
+mesenchymal stem cell
+mesenchymal stromal cell
+metal poisoning
+microtia
+milk fever
+mood swing
+myelocyte
+nasopharynx
+natural family planning
+neural nucleus
+neurite
+neurogenic bladder
+obesity hypoventilation syndrome
+ocular tonometry
+odynophagia
+pancreaticoduodenectomy
+panniculitis
+pantothenate kinase-associated neurodegeneration
+parafollicular cell
+paraganglioma
+Pediculosis Pubis
+Pediculus pubis
+pericardial effusion
+pericardiocentesis
+pericoronitis
+perinatology
+phlebotomus fever
+Pneumocystis carinii pneumonia
+pneumocystis pneumonia
+posterior chamber of eyeball
+posterior communicating artery
+postterm pregnancy
+pre-malignant neoplasm
+precordial catch syndrome
+Precordial pain
+primary immunodeficiency disease
+proximal humerus fracture
+psychasthenia
+Pthirus pubis infestation
+pulmonary aspiration
+radiofrequency ablation
+Ramsay Hunt syndrome
+rapidly progressive glomerulonephritis
+reconstructive surgery
+right bundle branch block
+Ritter's disease
+rubber dam
+school refusal
+shivering
+shoulder impingement syndrome
+sialadenitis
+sick sinus syndrome
+sigmoidoscopy
+Silver-Russell syndrome
+sinus tachycardia
+skin allergy test
+skin oil
+skin tag
+small intestine cancer
+small saphenous vein
+Smith-Lemli-Opitz syndrome
+smut
+solitary nucleus
+spinalis muscles
+splenius capitis muscle
+Staphylococcal scalded skin syndrome
+stimulant psychosis
+styloglossus
+surgical oncology
+T helper 17 cell
+testicular pain
+tibial nerve
+transverse colon
+transversus thoracis muscle
+trichology
+tricuspid insufficiency
+tricuspid valve insufficiency
+tungiasis
+uniparental disomy
+uterine artery
+uterine contraction
+vastus lateralis muscle
+vastus medialis
+vestibule of the ear
+Vincent's angina
+Wallerian degeneration
+Warburg effect
+abdominal pregnancy
+abetalipoproteinemia
+Achilles tendinitis
+acute prostatitis
+adenoidectomy
+Adie syndrome
+adrenal crisis
+age spot
+Agenesis of Corpus Callosum
+Alström syndrome
+amelogenesis imperfecta
+anaplasmosis
+anisocytosis
+anorchia
+aphallia
+Apical periodontitis NOS
+atrophic gastritis
+autoimmune hemolytic anemia
+Barth syndrome
+basal ganglia calcification
+behavioral addiction
+Binswanger's disease
+bony labyrinth
+Bowman's membrane
+brain ischemia
+breakthrough infection
+breast engorgement
+Brown-Séquard syndrome
+café au lait spot
+cancer staging
+cannabinoid hyperemesis syndrome
+carcinoid syndrome
+cardiac asthma
+cardiovascular system
+carotid sinus
+cavernous hemangioma
+central retinal artery
+chondroma
+chondromalacia patellae
+chorioretinitis
+classic autism
+climatotherapy
+clitoridectomy
+coccygeus muscle
+collecting duct system
+colonic ischemia
+compact bone
+condyle
+contracture
+corneal abrasion
+Corpus Callosum Agenesis
+cracked nipple
+cystic artery
+default mode network
+default network
+default state network
+demodicosis
+dendrite spine
+dendritic spine
+depressor supercilii muscle
+dermatoscopy
+desquamation
+DIDMOAD
+diffuse axonal injury
+duodenitis
+ectopia lentis
+electroretinography
+Ellis-Van Creveld syndrome
+embolization
+emergency psychiatry
+epiphora
+excessive tearing
+extensor digitorum brevis muscle
+external iliac vein
+feline panleukopenia
+femoral hernia
+fetoscopy
+fibrillation
+fibularis tertius
+fine-needle aspiration
+flexor digitorum brevis muscle
+frenulum linguae
+frenulum of tongue
+frontalis muscle
+fundus
+gastric atrophy
+gastrinoma
+gastrostomy
+gemellus superior
+gestational hypertension
+gingival recession
+glenoid fossa
+globus pharyngis
+Graham 293
+granulation tissue
+granulosa cell
+great saphenous vein
+grid cell
+grid neuron
+HEK
+hemochromatosis
+hemoglobinopathy
+hepatic vein
+hereditary haemochromatosis
+high altitude cerebral edema
+high altitude pulmonary edema
+holistic health
+hormonal contraception
+horseshoe kidney
+hydrothorax
+hyperkinesia
+hypermagnesemia
+hypoalbuminemia
+hypothalamic-pituitary-gonadal axis
+inguinal ligament
+insect-inflicted wound
+intestinal gland
+intrahepatic cholestasis of pregnancy
+ischemic colitis
+Joubert syndrome
+jugular foramen
+juvenile neuronal ceroid lipofuscinosis
+juxtaglomerular cell
+labor induction
+Langhans giant cell
+laser phototherapy
+laser surgery
+laser therapy
+left bundle branch hemiblock
+Leigh disease
+LEIGH SYNDROME
+lentiform nucleus
+lentigo senilis
+levator veli palatini
+lingual tonsil
+liquid biopsy
+liver function test
+loose connective tissue
+Ludwig's angina
+Marek's disease
+Mason-type diabetes
+mesolimbic pathway
+mesolimbic system
+microcytic anemia
+microscopic polyangiitis
+Microscopic polyarteritis
+microtubule organizing center
+middle meningeal artery
+minimally invasive strabismus surgery
+monogenic diabetes
+Morton's neuroma
+myokymia
+myotonia
+myxoma
+Nelson syndrome
+neurodermatitis
+neurogenic shock
+neuroma
+night eating syndrome
+nocardiosis
+nubbin
+nuchal scan
+Nursemaid's elbow
+nutcracker syndrome
+obstetrical hemorrhage
+occipital artery
+olecranon bursitis
+oligodendroglioma
+organ-on-a-chip
+pancytopenia
+papillary muscles
+parotitis
+peak expiratory flow
+pectus carinatum
+periapical periodontitis
+periodontal fiber
+perioral dermatitis
+phalloplasty
+photobiomodulation
+photodermatitis
+photorefractive keratectomy
+pinguecula
+pneumonectomy
+podiatry
+polyarthritis
+polypharmacy
+post-polio syndrome
+posterior cruciate ligament
+premature ventricular contraction
+primary motor cortex
+proximal renal tubule
+proximal tubule
+pseudarthrosis
+pseudoautosomal region
+pseudostratified columnar epithelium
+psychosurgery
+pulmonary alveolar proteinosis
+pulmonary stenosis
+pulmonary valve stenosis
+PYOMETRA
+pyometritis
+quadratus plantae muscle
+radiculopathy
+raphe nuclei
+receptive aphasia
+rectocele
+rectus capitis lateralis muscle
+referred pain
+relapse
+renal agenesis
+respiratory acidosis
+restrictive cardiomyopathy
+rete mirabile
+right coronary artery
+Rotor syndrome
+sacroiliac joint
+salivary gland neoplasm
+sclerotherapy
+semispinalis capitis
+senile angioma
+Senile hemangioma
+sensory aphasia
+skull fracture
+Smith-Magenis syndrome
+Smoking and pregnancy
+SMS
+social medicine
+spermatocele
+split-brain
+subcortical arteriosclerotic encephalopathy
+superior colliculus
+superior gemellus muscle
+synaptonemal complex
+synovial membrane
+Tangier disease
+testicular artery
+Tetra-amelia syndrome
+thoracentesis
+tinea corporis
+tolosa-hunt syndrome
+total amelia
+trabecula
+transcutaneous electrical nerve stimulation
+trichophagia
+tubal tonsil
+tuberculous meningitis
+tyrosinemia
+vagus nerve stimulation
+variant Creutzfeldt-Jakob disease
+vasa vasorum
+vastus intermedius muscle
+vCJD
+Wernicke's aphasia
+Wolfram syndrome
+Wolfram-Syndrom
+yellow nail syndrome
+Aagenaes syndrome
+abdominal wall
+accessory breast
+acute leukemia
+acute promyelocytic leukemia
+adhesion
+adult-onset Still's disease
+African tick-bite fever
+Aicardi syndrome
+anal atresia
+ANEMIA SIDEROBLASTIC
+anhidrosis
+antibody-dependent cellular cytotoxicity
+aortic rupture
+apocrine sweat gland
+aquagenic urticaria
+arachnodactyly
+arachnoid cyst
+arcus senilis
+arrector pili muscle
+arteria coronaria sinistra
+Arteria pudenda interna
+arteriosclerotic heart disease
+arteriovenous fistula
+arthropathy
+autologous transplantation
+autosomal dominant polycystic kidney
+autotransplantation
+avian malaria
+axillary nerve
+base of skull
+bicornuate uterus
+bipolar I disorder
+bipolar II disorder
+bladder exstrophy
+blast injury
+blastoma
+body surface area
+bone scintigraphy
+bovine virus diarrhea
+bradypnea
+Brain Cysticercosis
+bregma
+bronchial artery
+Brunner's glands
+bulbospongiosus muscle
+bundle branch block
+caffeine dependence
+Cajal body
+callus distraction
+Castleman's disease
+central auditory processing disorder
+central retinal vein occlusion
+cephalic vein
+cephalohematoma
+cerebral hypoxia
+cerebral peduncle
+cerebral sulcus
+CHARGE syndrome
+Chediak-Higashi syndrome
+cheilitis
+Chinese restaurant syndrome
+chordae tendineae
+chronic atrophic rhinitis
+ciliopathy
+cluttering
+coccydynia
+cognitive disorder
+compassion fatigue
+congenital cytomegalovirus infection
+cranial cavity
+cyclic vomiting syndrome
+cystoisosporiasis
+deep brachial artery
+delta cell
+delusions of reference
+dental trauma
+detrusor muscle
+detrusor urinae muscle
+diaphragmatic hernia
+diastasis recti
+diffuse large B-cell lymphoma
+diffuse panbronchiolitis
+diffusion-weighted magnetic resonance imaging
+dirofilariasis
+discoid lupus erythematosus
+distal radius fracture
+distraction osteogenesis
+dive reflex
+diving reflex
+DLE
+Dorsal scapular nerve
+drug allergy
+drug hypersensitivity syndrome
+Drug-Induced Adverse Reactions
+dysgeusia
+Edinger-Westphal nucleus
+effects of cannabis
+emmetropia
+encephalocele
+enterochromaffin cell
+ependyma
+epidemic pleurodynia
+equine infectious anemia
+erythromelalgia
+essential thrombocytosis
+fabella
+facioscapulohumeral muscular dystrophy
+factitious disorder
+Farber Disease
+Farber lipogranulomatosis
+febrile neutrophilic dermatosis
+fecal occult blood test
+Felty's syndrome
+female sexual arousal disorder
+fetus in fetu
+fibrocyte
+foam cell
+forensic pathology
+Galeazzi fracture
+global health
+glucagonoma
+glycogen storage disease V
+Goldenhar syndrome
+gut-associated lymphoid tissue
+hammer finger
+Health effects of alcohol
+heart cancer
+heart tumor
+hematidrosis
+hemophilia A
+hemophilia B
+hemorrhagic diathesis
+hemorrhagic disease
+heparin-induced thrombocytopenia
+hereditary spastic paraplegia
+Herpes simplex virus encephalitis
+herpesviral encephalitis
+hospitalism
+hospitalization
+hyperesthesia
+hyperosmolar hyperglycemic state
+hypertelorism
+hypertensive disease of pregnancy
+hypertensive retinopathy
+hypokalemic periodic paralysis
+Hypopyon
+ileostomy
+immunochemistry
+immunological synapse
+imperforate anus
+in situ hybridization
+incisional hernia
+inferior phrenic artery
+inpatient care
+internal pudendal artery
+interstitial cells of Cajal
+iridectomy
+Jacobsen syndrome
+keratosis follicularis
+Klippel-Trénaunay-Weber syndrome
+Landau-Kleffner syndrome
+laryngomalacia
+lateral cricoarytenoid muscle
+lateral medullary syndrome
+left coronary artery
+Lemierre's syndrome
+levatores costarum muscles
+Liddle syndrome
+limbic lobe
+lipoid proteinosis
+lobe
+lower gastrointestinal series
+lower respiratory tract infection
+Lown-Ganong-Levine syndrome
+lumbar plexus
+lupus erythematosus
+lupus nephritis
+lupus vulgaris
+macroglossia
+macrophage-derived foam cell
+MACULAR EDEMA
+macular retinal edema
+major duodenal papilla
+malaise
+mallet finger
+mammaplasty
+MELAS syndrome
+meningism
+mesonephros
+microfold cell
+Milium
+molecular medicine
+molecular pathology
+MSG symptom complex
+multidrug-resistant tuberculosis
+multifidus muscle
+mycetoma
+mycosis fungoides
+myelography
+myelopathy
+nasal administration
+nasal fracture
+nasion
+natural killer T cell
+negative-pressure wound therapy
+neuroblast
+neuropil
+NKT cell
+non-small-cell lung carcinoma
+obliquus capitis inferior muscle
+obstructive sleep apnea
+obturator nerve
+occiput
+olfactory epithelium
+opioid overdose
+orthopantomogram
+otomycosis
+ovarian artery
+pain during childbirth
+parahippocampal gyrus
+paraphrenia
+pectoral muscles
+penetrating trauma
+penis transplantation
+periaqueductal gray
+petrous bone
+petrous part
+Phocomelia due to thalidomide
+Photophthalmia
+phthisiology
+piblokto
+Pierre Robin sequence
+Pierre Robin syndrome
+pituitary apoplexy
+place cell
+Plummer-Vinson syndrome
+post-dural-puncture headache
+postcoital bleeding
+Pott disease
+prediabetes
+prediabetes syndromeverga
+premedication
+primitive streak
+profunda brachii
+prokaryotic cell
+prolapse
+Promyelocytic Leukemia
+prostatectomy
+psycho-oncology
+psychosocial oncology
+referential delusions
+relapsing polychondritis
+relaxation technique
+renal artery obstruction
+respiratory epithelium
+respiratory sound
+right gastric artery
+right gastroepiploic artery
+rotator cuff tear
+scalenus anterior
+Scombroid food poisoning
+septicemic plague
+sequelae
+Sezary's disease
+sideroblastic anaemia P
+sinus of sphenoidal bone
+small intestinal bacterial overgrowth
+sphenoidal sinus
+spinal cord disease
+spinothalamic tract
+splenius cervicis muscle
+stab wound
+subcutaneous emphysema
+Subungual hematoma
+superior mesenteric vein
+superior pharyngeal constrictor muscle
+supramarginal gyrus
+suprascapular artery
+Sweet Syndrome
+sycosis
+sympathetic trunk
+synchondrosis
+taste receptor cell
+therapeutic ultrasound
+thoracic aorta
+thoracoacromial artery
+thyroarytenoid muscle
+thyroid crisis
+Tietze syndrome
+tinea favosa
+tonic-clonic seizure
+trabecular meshwork
+traditional Korean medicine
+triple-negative breast cancer
+trophozoites
+tropical sprue
+Ultrasonic Therapy
+Ultrasound Therapy
+umbilical vein
+urethral stricture
+uterine inversion
+vaccination schedule
+VACTERL association
+vascular disease
+venous blood
+vertically transmitted infection
+WAGR syndrome
+Wallenberg syndrome
+Warthin's tumor
+water allergy
+zinc deficiency
+22q13 deletion syndrome
+48 XXXX syndrome
+acantholysis
+acute kidney tubular necrosis
+acute proliferative glomerulonephritis
+acute tubular necrosis
+adductor hallucis muscle
+aesthetic medicine
+afferent arteriole
+allergic contact dermatitis
+ameloblastoma
+Andersen syndrome
+Andersen-Tawil syndrome
+anemia hypochromic
+anesthesia awareness
+angiokeratoma
+anisakiasis
+aortitis
+arcuate fasciculus
+arterial blood
+ascending pharyngeal artery
+Aspirin poisoning
+atony
+attempted suicide
+auditory cortex
+basal cell nevus syndrome
+Beau's lines
+beta thalassemia
+biliary tract
+binge eating
+biological psychiatry
+bioresonance therapy
+birth weight
+blood urea nitrogen
+blood-testis barrier
+boutonneuse fever
+Bowen's disease
+brain mapping
+breast cyst
+brief psychotic disorder
+buffy coat
+bulb of vestibule
+calcarine fissure
+calcinosis
+campimetry
+cannabis dependence
+Caroli disease
+caveola
+central pontine myelinolysis
+cerebellar vermis
+cervical cerclage
+cervical incompetence
+chemosis
+cherubism
+chlorosis
+chordoma
+chromosome 1p36 deletion syndrome
+chronic inflammatory demyelinating polyradiculoneuropathy
+ciliary ganglion
+clinodactyly
+Coenurosis
+coinfection
+cold urticaria
+colectomy
+common fibular nerve
+common iliac vein
+Compassionate Use Trial
+congenital diaphragmatic hernia
+corneal dystrophy
+coronal suture
+corpus spongiosum penis
+cortex
+costal cartilage
+crackles
+CREST syndrome
+cryoglobulinemia
+Cutaneous horn
+cutaneous leishmaniasis
+cytopathic effect
+DASH diet
+deinstitutionalisation
+dental abrasion
+developmental disability
+diabetic diet
+Diamond-Blackfan anemia
+dichotic listening test
+diprosopus
+disaster medicine
+dysorthography
+eccrine sweat gland
+egg allergy
+electrocoagulation
+encopresis
+end-of-life care
+endometrial hyperplasia
+endophthalmitis
+enterocolitis
+environmental medicine
+erysipelothrix rhusiopathiae infectious disease
+expanded access
+fecolith
+fetal distress
+Fetal surgery
+fever of unknown origin
+fibroblastic sarcoma
+fibrocartilage callus
+fibrosarcoma
+fibrous dysplasia of bone
+fissured tongue
+flexor hallucis brevis muscle
+fluoride therapy
+folate deficiency
+foramen spinosum
+forensic photography
+Fracture of pelvis
+frailty syndrome
+free upper limb
+G cell
+gastroduodenal artery
+gender dysphoria in children
+Gitelman syndrome
+Gorlin syndrome
+Graves' ophthalmopathy
+gummatous syphilis
+Hartnup disease
+Haversian canal
+heart conduction disease
+Heberden's node
+hemangioblastoma
+hemometra
+hidradenitis
+hilum of kidney
+hydrocele testis
+hyperostosis
+hypochromic anemia
+hypophosphatasia
+hypoproteinemia
+iliolumbar artery
+Ilizarov apparatus
+inclusion body
+inferior thyroid artery
+inhalation
+inhalation administration
+inhalation route
+integrative medicine
+internal iliac vein
+ischiocavernosus muscle
+isochromosome
+Jones fracture
+keratoacanthoma
+keratosis
+Kyasanur forest disease
+lacrimal canaliculi
+lambdoid suture
+laryngeal mask airway
+lateral thoracic artery
+left colic artery
+left gastro-omental artery
+left gastroepiploic artery
+Lewy body dementia
+lingua plicata
+lymphangioleiomyomatosis
+lymphocytic choriomeningitis
+Lymphocytic meningitis
+macronucleus
+macropsia
+mandibular fracture
+mange
+McCune-Albright syndrome
+membranoproliferative glomerulonephritis
+metal fume fever
+micromastia
+middle pharyngeal constrictor muscle
+miliary tuberculosis
+mucopolysaccharidosis VI
+multicystic dysplastic kidney
+multipolar neuron
+muscles of respiration
+Muselmann
+myoepithelial cell
+myofascial pain syndrome
+myofibroblast
+nasal concha
+neonatal conjunctivitis
+nephrosclerosis
+neural plate
+neural tube defect
+neurofibromatosis type II
+neurogenic arthropathy
+Nevus Araneus
+nodding disease
+non-celiac gluten sensitivity
+non-verbal learning disorder
+nondisjunction
+nuclear matrix
+nucleus ambiguus
+NVLD
+obliquus capitis superior muscle
+occupational hearing loss
+omphalitis of newborn
+onycholysis
+orbital cellulitis
+Oropouche fever
+orthokeratology
+osteochondroma
+osteosclerosis
+osteotomy
+palatoglossus muscle
+palatopharyngeus muscle
+Palilalia
+paraphasia
+Parinaud's syndrome
+Parry-Romberg syndrome
+passive-aggressive personality disorder
+patch test
+Pelizaeus-Merzbacher disease
+pelvic fracture
+pes cavus
+phacoemulsification
+phantom pain
+PHELAN-MCDERMID SYNDROME
+photoplethysmogram
+phototoxic
+phototoxicity
+phytophotodermatitis
+Pitt-Hopkins syndrome
+pneumonitis
+pneumoperitoneum
+poliosis
+polytrauma
+popliteal vein
+Post-SSRI sexual dysfunction
+posterior cricoarytenoid muscle
+posterior inferior cerebellar artery
+preterm infant
+primary care
+processus spinosus
+pseudohermaphroditism
+psychogenic pain
+pudendal cleft
+pulseless electrical activity
+pyogenic granuloma
+rapid diagnostic test
+Rapunzel syndrome
+Rasmussen subacute encephalitis
+Rasmussen's encephalitis
+rat-bite fever
+rectal pain
+rectus capitis anterior muscle
+renal calyx
+respiratory arrest
+retained placenta
+retropharyngeal abscess
+rhabdomyoma
+ribonucleoprotein complex
+ribonucleoproteins
+Romberg syndrome
+rotatores muscles
+Rothmund-Thomson syndrome
+saccule
+saddle joint
+sagittal suture
+salpingopharyngeus muscle
+sarcoplasmic reticulum
+scalenus posterior
+Schmorl's nodes
+sensorineural hearing loss
+set of suprahyoid muscles
+shellfish poisoning
+sluggish schizophrenia
+spasmodic dystonia
+spheroplast
+sphincter ani internus muscle
+spider angioma
+spinous process
+splenius muscles
+spontaneous bacterial peritonitis
+sternoclavicular articulation
+stretch reflex
+substance-induced psychosis
+superior mesenteric artery syndrome
+Superior temporal gyrus
+suspensory muscle of duodenum
+syncytiotrophoblast
+tear of meniscus
+tentorium cerebelli
+thalassemia beta
+thoracoscopy
+thyrocervical trunk
+Thyrotoxic periodic paralysis
+tick-borne disease
+tobacco use disorder
+tooth agenesis
+tophus
+Transurethral Resection of Prostate
+travel medicine
+tricuspid atresia
+tricuspid valve atresia
+trigger point
+trisomy 16
+tunica media
+turbinate
+TURP
+ulnar nerve entrapment
+uncombable hair syndrome
+undernutrition
+upper respiratory tract
+urea nitrogen
+urolithiasis
+uterus didelphys
+Vancomycin-resistant Enterococcus
+vasospasm
+VIPoma
+viral encephalitis
+Vogt-Koyanagi syndrome
+Vogt-Koyanagi-Harada syndrome
+weight gain
+white adipose tissue
+XXXX syndrome
+XXYY syndrome
+Aase syndrome
+Aase-Smith Syndrome
+abdominal distention
+abdominal surgery
+acephaly
+achylia
+acrocyanosis
+adermatoglyphia
+Agalactia
+AIDS dementia complex
+alveolar osteitis
+amaurosis fugax
+angiodysplasia
+angiomyolipoma
+anterior inferior cerebellar artery
+anterior spinal artery
+aortic sinus
+Arachnoid granulation
+arrhythmogenic right ventricular cardiomyopathy
+asphyxia in neonates
+asphyxia neonatorum
+asthenozoospermia
+atherectomy
+atrioventricular septal defect
+autophagosome
+AV nodal reentrant tachycardia
+B-cell lymphoma
+balantidiasis
+basilar membrane
+basilic vein
+bejel
+beta blocker poisoning
+Birt-Hogg-Dube syndrome
+Bloch-Sulzberger syndrome
+bone inflammation disease
+Breast atrophy
+breast lump
+Broca's aphasia
+bullous pemphigoid
+byssinosis
+capnography
+carotid body
+Carrion's disease
+central nervous system disease
+cerebral arteriovenous malformation
+cerebrotendinous xanthomatosis
+childhood schizophrenia
+chondroglossus
+chorionic villi
+chronic nonbacterial prostatitis
+circumventricular organ
+clonorchiasis
+Coats disease
+cocaine use disorder
+complement fixation test
+cone beam computed tomography
+cooling down
+corpora quadrigemina
+Cowden syndrome 1
+cranial suture
+cryosurgery
+curettage
+Cushing's disease
+cutis laxa
+dartos
+De Quervain's thyroiditis
+deep vein
+dentate gyrus
+diabetic foot ulcer
+dietary fructose intolerance
+disorder of consciousness
+disorder of sex development
+distal convoluted tubule
+dorsal
+drug eruption
+ectodermal dysplasia
+ectopia
+efferent arteriole
+Endemic syphilis
+endomysium
+endoplasm
+endosteum
+eosinophilic pneumonia
+ependymal cell
+epidural space
+epineurium
+erythroderma
+esophageal stricture
+esotropia
+expressive aphasia
+extensor hallucis brevis muscle
+extremities
+Factor V Leiden
+frontal lobe epilepsy
+Fructose Intolerance
+fructose malabsorption
+Fuchs' endothelial dystrophy
+Gardner's syndrome
+gender identity disorder
+giant-cell tumor of bone
+Glanzmann's thrombasthenia
+gliosis
+glycogen storage disease III
+glycogen storage disease IV
+glymphatic system
+gonadal dysgenesis
+great cerebral vein
+hand surgery
+Hashimoto encephalitis
+Hashimoto's encephalopathy
+Health effects of pesticides
+hematocolpos
+hereditary fructose intolerance syndrome
+hermaphroditism
+herpes gestationis
+herpes simplex virus keratitis
+hinge joint
+histiocytosis
+Holt-Oram syndrome
+horizontal cell
+horizontal cell of retina
+humeral fracture
+humerus fracture
+Hurler syndrome
+hydranencephaly
+hypercalciuria
+hyperoxaluria
+hyperventilation syndrome
+hypopigmentation
+ilioinguinal nerve
+impacted tooth
+inferior epigastric artery
+inferior frontal gyrus
+inferior pancreaticoduodenal artery
+inferior pharyngeal constrictor muscle
+Infrahyoid muscles
+Infraorbital foramen
+intense pulsed light
+Interspinales muscle
+Intertransversarii muscle
+intestinal juice
+intestinal parasite infection
+intradermal injection
+intravenous injection
+Kampo
+keratoconjunctivitis
+Kienbock's disease
+knee dislocation
+Larsen syndrome
+laryngectomy
+Laryngopharyngeal reflux
+left ventricular hypertrophy
+LEOPARD syndrome
+Loeffler syndrome
+Löfgren syndrome
+lumbricals of the foot
+mast cell activation syndrome
+math phobia
+mathematical anxiety
+MDS
+medial collateral ligament
+medial epicondyle of humerus
+median sacral artery
+mediastinitis
+medical restraint
+Melkersson-Rosenthal syndrome
+memory disorder
+MERRF syndrome
+metaphysis
+midbrain tectum
+Miller-Dieker lissencephaly syndrome
+mixed connective tissue disease
+Mondor's disease
+monocytosis
+mucopolysaccharidosis type VII
+myeloblast
+myenteric plexus
+myotonia congenita
+Nadi pariksha
+nail-patella syndrome
+NCT
+nerve block
+nerve fiber
+nerve plexus
+neural pathway
+neurocirculatory asthenia
+Neutron capture therapy
+neutrophilia
+noise-induced hearing loss
+occipital condyle
+occipitalis muscle
+odontoma
+online counseling
+optic pathway
+optic tract
+oroya fever
+osteitis
+osteoid osteoma
+overdiagnosis
+palmar interossei muscles
+pancreas transplantation
+peanut allergy
+Pendred syndrome
+Perinatal Asphyxia
+periodic acid-Schiff stain
+phakomatosis
+pharmacoepidemiology
+phlebology
+photosensitive epilepsy
+phycobilisome
+phyllodes tumor
+plantar interossei muscles
+platelet transfusion
+polycoria
+portal venous system
+post-nasal drip
+posterior auricular artery
+posterior auricular muscle
+Posterior Leukoencephalopathy Syndrome
+posterior reversible encephalopathy syndrome
+postherpetic neuralgia
+preauricular sinus and cyst
+precentral gyrus
+precuneus
+progressive muscular atrophy
+progressive spinal muscular atrophy
+propionic acidemia
+pseudobulbar affect
+psychiatric rehabilitation
+pubococcygeus muscle
+pulmonary eosinophilia
+pulmonary function test
+pulse diagnosis
+pycnodysostosis
+radicular pain
+recurrent miscarriage
+reduced affect display
+Reed-Sternberg cell
+religious delusion
+renal cortex
+renal medulla
+repressed memory
+reticular cell
+retina horizontal cell
+retinal migraine
+ring chromosome
+round ligament of uterus
+round window
+sacroiliitis
+satyriasis
+scalenus medius
+scanning transmission electron microscopy
+scaphocephaly
+scaphoid fracture
+schizophasia
+scintillating scotoma
+Seckel syndrome
+Sharp syndrome
+Shwachman-Diamond syndrome
+simple columnar epithelium
+Sjogren-Larsson syndrome
+Sly syndrome
+soft-tissue sarcoma
+splenic vein
+spondylolysis
+sprained ankle
+stylopharyngeus muscle
+subacute granulomatous thyroiditis
+subarachnoid space
+subclavian nerve
+subcostalis muscle
+sudden cardiac death
+superior cerebellar artery
+superior rectal artery
+superior temporal sulcus
+Susac's syndrome
+synarthroidal joint
+synovial sarcoma
+tauopathy
+temporal fossa
+therapeutic hypothermia
+thoracodorsal nerve
+tidal volume
+transcranial direct-current stimulation
+trigonocephaly
+true hermaphroditism
+tubo-ovarian abscess
+urea breath test
+vagotomy
+vasomotor rhinitis
+vertex
+visual agnosia
+visual analogue scale
+Volkmann's contracture
+Weibel-Palade body
+Wellens' syndrome
+wheat allergy
+withdrawal symptom
+word salad
+wound dehiscence
+XYYY syndrome
+yersiniosis
+5-alpha-reductase deficiency
+accessory spleen
+acquired hypogammaglobulinemia
+acupuncture point
+acute intermittent porphyria
+acute interstitial pneumonitis
+acute yellow liver atrophy
+adenoid cystic carcinoma
+adrenocortical carcinoma
+adult ADHD
+AFLP
+Aicardi-Goutieres syndrome
+alpha motor neuron
+anaphylactic shock
+anaplastic astrocytoma
+anemia in pregnancy
+Anisomastia
+ankle brachial pressure index
+ankle fracture
+anterior auricular muscle
+anterior commissure
+anterior humeral circumflex artery
+anterior segment of eyeball
+anterior tibial artery
+anticipation
+Aortoiliac occlusive disease
+apicoectomy
+apicoplast
+appendix cancer
+appendix of testis
+Arrhinia
+asplenia
+asterion
+athletic pubalgia
+atlanto-axial joint
+atrioventricular reentrant tachycardia
+attention seeking
+autoimmune encephalitis
+autonomic dysreflexia
+avulsion fracture
+bacterial pneumonia
+Balo concentric sclerosis
+blackwater fever
+bone grafting
+bone metastasis
+bone transplantation
+Borna disease
+brain transplantation
+breast disease
+Bright's disease
+canine transmissible venereal tumor
+carcinoma of urothelial cell
+Cardiac skeleton
+cardioplegia
+caudal regression syndrome
+cephalometry
+cephalopelvic disproportion
+cerebrospinal fluid leak
+channelopathy
+CHO
+choledocholithiasis
+choroideremia
+chromoblastomycosis
+chronic cerebrospinal venous insufficiency
+circulating tumor cell
+citrullinemia
+clinical nutrition
+clitoral hood reduction
+cochlear nerve
+cognitive disengagement syndrome
+common variable immunodeficiency
+communication disorder
+community-acquired pneumonia
+congenital melanocytic nevus
+conization
+conus medullaris
+corneal endothelium
+coronary artery dissection
+corpus albicans
+corpus cavernosum clitoridis
+Costello syndrome
+crus of clitoris
+cuneus
+cystectomy
+dentinogenesis imperfecta
+developmental disorder
+diffuse esophageal spasm
+discectomy
+disease mongering
+diseases of poverty
+diving medicine
+dorsolateral prefrontal cortex
+drug monitoring
+dual diagnosis
+dyskinesia of esophagus
+dyssomnia
+ectopia cordis
+electrosurgery
+embryo transfer
+Emery-Dreifuss muscular dystrophy
+Endocrine adenomatosis multiple
+endothelium of cornea
+enophthalmos
+enterotoxemia
+epimysium
+epiretinal membrane
+episcleritis
+Erb's palsy
+Erdheim-Chester disease
+erythroplakia
+ethmoid sinus
+eustachian valve
+expressive therapy
+external fixation
+extracellular space
+familial amyloid polyneuropathy
+familial dysautonomia
+fasciitis
+fasciotomy
+Fecal impaction
+femoral triangle
+fibromuscular dysplasia
+fibrothorax
+Fitz-Hugh-Curtis syndrome
+flank
+flat bone
+fluid replacement
+fluid therapy
+follicular dendritic cell
+Freiberg disease
+frenulum breve
+Frey syndrome
+futile medical care
+gallstone
+gephyrophobia
+germinoma
+gliomatosis cerebri
+glutaric aciduria type 1
+growing pains
+Haemolacria
+HAM
+heat exhaustion
+hemiballismus
+hepatectomy
+human gait
+hydatid of Morgagni
+hymenolepiasis
+hyperhomocysteinemia
+hypertensive encephalopathy
+hypertensive heart disease
+hyperthermia therapy
+hypopharynx
+idiopathic hypersomnia
+iliac crest
+Iliotibial band syndrome
+immunophenotyping
+implantology
+inclusion body myositis
+inferior temporal gyrus
+inferior vesical artery
+inflammatory breast cancer
+infratemporal fossa
+inherited pseudoxanthoma elasticum
+innermost intercostal muscle
+intravaginal administration
+jaw-winking syndrome
+Krukenberg tumor
+Labial fusion
+laryngopharynx
+lateral femoral cutaneous nerve
+latex allergy
+Leriche syndrome
+leukonychia
+Lhermitte-Duclos disease
+lifestyle medicine
+limb-girdle muscular dystrophy
+lithium toxicity
+low milk supply
+lumpectomy
+Lunatic
+lymph drainage
+lymphadenectomy
+manual lymphatic drainage
+Marcus-Gunn syndrome
+masked depression
+McLeod syndrome
+mean corpuscular hemoglobin
+mean corpuscular hemoglobin concentration
+Meckel syndrome
+medial epicondylitis
+medial pectoral nerve
+mediastinoscopy
+medical entomology
+medical geology
+medical procedure
+Meigs syndrome
+menstrual disorder
+meralgia paraesthetica
+methylmalonic acidemia
+metritis
+microdontia
+micrognathia
+micrognathism
+microscopic colitis
+microsporidiosis
+middle suprarenal artery
+Mirizzi's syndrome
+mitochondrial replacement therapy
+mononuclear phagocyte system
+Monorchism
+Monteggia fracture
+mosquito-borne disease
+Multiple Endocrine Adenomatosis
+myelencephalon
+myocardial perfusion imaging
+myosatellite cell
+neonatal sepsis
+nephronophthisis
+neural stem cell
+neurofibrillary tangle
+neurofibroma
+neurofilament
+newborn infant screening
+newborn screening
+nickel allergic contact dermatitis
+nicotine gum
+night sweats
+Non-24-Hour Sleep-Wake Rhythm Disorder
+non-invasive ventilation
+nutcracker-esophagus
+ocular hypertension
+olecranon
+Oligohydramnios Sequence
+optic canal
+orthoptics
+overtraining
+PANDAS
+paraventricular nucleus of hypothalamus
+paroxysmal supraventricular tachycardia
+patellar tendon
+pelvic floor dysfunction
+pemphigus vulgaris
+percutaneous vertebroplasty
+pericardiacophrenic artery
+perimysium
+perinatal infectious disease
+peripartum cardiomyopathy
+pes anserinus
+phantosmia
+pinealocyte
+pitted keratolysis
+pleurodesis
+Polymorphic Eruption of Pregnancy
+porphyria cutanea tarda
+porphyria intermittent acute
+portal vein thrombosis
+posterior humeral circumflex artery
+postprandial hypoglycemia
+Potter's syndrome
+Progressive paralysis
+prolonged grief disorder
+pronephros
+pruritus ani
+pseudogynecomastia
+pseudohallucination
+pseudomyxoma peritonei
+PUPPP
+PUVA therapy
+ranula
+rapid strep test
+RDW
+RDW-CV
+reactive hypoglycemia
+rectal tenesmus
+rectovaginal fistula
+rehabilitation
+REM sleep behavior disorder
+renal capsule
+renal osteodystrophy
+renal replacement therapy
+replantation
+restrictive lung disease
+rete testis
+retinitis
+retinoscopy
+rickettsiosis
+Riley-Day syndrome
+ryanodine receptor
+Sacral regression syndrome
+Satellite cell
+self-defeating personality disorder
+short bone
+short QT syndrome
+short-term effects of alcohol
+Shy-Drager syndrome
+siderosis
+sigmoid sinus
+simple cuboidal epithelium
+sluggish cognitive tempo
+sporadic hypogammaglobulinemia
+stasis dermatitis
+stunted growth
+subscapular artery
+subthalamic nucleus
+suction
+superior auricular muscle
+superior frontal gyrus
+superior gluteal nerve
+superior laryngeal nerve
+superior orbital fissure
+superior tarsal muscle
+superior thoracic artery
+suprascapular nerve
+surface epithelial-stromal tumor
+tarsus
+Taurodontism
+tectorial membrane
+tendon sheath
+therapeutic drug monitoring
+thermoreceptor
+theta rhythm
+thyroid gland disease
+thyroid medullary carcinoma
+thyroid nodule
+tick paralysis
+Toxic multinodular goitre
+toxic oil syndrome
+tracheomalacia
+tractus corticospinalis
+transitional cell carcinoma
+transthyretin amyloidosis
+Transverse temporal gyrus
+trigeminal ganglion
+tubercle
+tympanoplasty
+upper gastrointestinal bleeding
+upper motor neuron
+urothelial carcinoma
+utricle
+vaccine-preventable diseases
+vacuum aspiration
+vacuum extraction
+vaginal artery
+venography
+ventouse
+vertebroplasty
+vestibular neuronitis
+vibration white finger
+vitreous detachment
+Weaver syndrome
+Weaver-Like syndrome
+Weaver-Smith Syndrome
+Wolman disease
+wormian bone
+XXXY syndrome
+Zenker's diverticulum
+abdominal migraine
+Acanthamoeba keratitis
+accessory hemiazygos vein
+Acholia
+acid-base imbalance
+acute flaccid myelitis
+acute limb ischaemia
+acute tricyclic antidepressant poisoning
+adenocarcinoma of the lung
+adrenalectomy
+age determination by skeleton
+alcoholic hallucinosis
+allergic bronchopulmonary aspergillosis
+Alpers' disease
+ALPERS-HUTTENLOCHER SYNDROME
+anatomical plane
+ANEMIA MACROCYTIC
+anemia of chronic disease
+angiostrongyliasis
+anterior communicating artery
+anterior jugular vein
+anulus tendineus communis
+Argentine hemorrhagic fever
+arterial blood pressure
+articularis genus muscle
+Ascending palatine artery
+asterixis
+asymptomatic infection
+athletic heart syndrome
+autoimmune polyendocrine syndrome
+avoidance coping
+balanoposthitis
+benzodiazepine dependence
+Bernard-Soulier syndrome
+bicuspid aortic valve
+bladder calculus
+bleeding time
+blepharochalasis
+body water
+Bolivian hemorrhagic fever
+Bouchard's nodes
+boxer's fracture
+brachial veins
+brachymetatarsia
+breath holding spell
+Brill-Zinsser disease
+bronchial challenge test
+Bruch's membrane
+Brunner Syndrome
+buccal fat pad
+calcific tendinitis
+Calcium channel blocker toxicity
+camptodactyly
+cancer of urethra
+cardiac myocyte
+cardiomyocyte
+Carpenter syndrome
+cavernous sinus thrombosis
+cell line
+cementoblast
+central pattern generator
+central retinal vein
+cerebral angiography
+cerebral crus
+cerebral shunt
+cervical dystonia
+chemotherapy-induced acral erythema
+chorda tympani
+chronic bacterial prostatitis
+Chronic Marchiafava-Bignami syndrome
+ciliary process
+clivus
+Cogan syndrome
+Cohen syndrome
+common truncus arteriosus
+computer-aided diagnosis
+congenital cystic adenomatoid malformation
+constrictive pericarditis
+covering sickness
+coxa vara
+cross-matching
+cycloplegia
+cystic lymphangioma
+cystography
+Cystohepatic triangle
+cytopenia
+deep femoral artery
+Degos disease
+demophobia
+Dent disease
+depressive personality disorder
+dermatochalasis
+Diabetes Renal
+diabetology
+diagnostic test
+diaphragmatic rupture
+diffuse idiopathic skeletal hyperostosis
+digoxin toxicity
+dislocation of hip
+dislocation of jaw
+distichia
+distributive shock
+Dubowitz syndrome
+dysosmia
+ectasia
+elastic cartilage
+electrocorticography
+ellipsoid joint
+enanthem
+endemic goiter
+endemic typhus
+endoneurium
+endoscopic ultrasound
+enthesopathy
+eosinopenia
+eponychium
+epoophoron
+erythema ab igne
+Essure
+eukaryotic cell
+exchange transfusion
+exotropia
+external capsule
+fallopian tube cancer

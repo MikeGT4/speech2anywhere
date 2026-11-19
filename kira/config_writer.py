@@ -164,6 +164,12 @@ def _insert_into_sections(
             out_lines[insert_at - 1] += "\n"
         indent = _section_indent(out_lines, start, end)
         new_lines: list[str] = []
+        for key, value in _inline_mapping(out_lines[start], section).items():
+            out_lines[start] = f"{section}:\n"
+            if key not in sections_to_insert[section]:
+                new_lines.append(f"{indent}{key}: {_format_scalar(value)}\n")
+        if out_lines[start].split(":", 1)[1].split("#", 1)[0].strip() in ("{}", "null", "~"):
+            out_lines[start] = f"{section}:\n"
         for key, value in sections_to_insert[section].items():
             new_lines.append(f"{indent}{key}: {_format_scalar(value)}\n")
         inserts.append((insert_at, new_lines))
@@ -172,6 +178,15 @@ def _insert_into_sections(
     for idx, lines_to_add in inserts:
         out_lines = out_lines[:idx] + lines_to_add + out_lines[idx:]
     return out_lines
+
+
+def _inline_mapping(header: str, section: str) -> dict[str, Any]:
+    try:
+        value = yaml.safe_load(header)
+    except yaml.YAMLError:
+        return {}
+    inner = value.get(section) if isinstance(value, dict) else None
+    return inner if isinstance(inner, dict) else {}
 
 
 def _section_indent(lines: list[str], start: int, end: int) -> str:

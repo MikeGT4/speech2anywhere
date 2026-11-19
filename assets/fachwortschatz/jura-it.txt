@@ -1,86 +1,81 @@
-matrimonio
-razzismo
-partito politico
-copyright
-prostituzione
-azienda
+diritti umani
 genocidio
+organo giurisdizionale
 Corte internazionale di giustizia
+assassinio
 omicidio volontario
 libertà di parola
 Corte penale internazionale
 diritto internazionale
-contratto
+dominio pubblico
 pubblico dominio
-Inquisizione
-tortura
 diritti delle donne
+diritto criminale
 diritto penale
 crimine di guerra
-Processo di Norimberga
-testamento
+frode
 Corte di Strasburgo
 Corte EDU
 libertà di stampa
-ribellione
 uguaglianza di genere
+Libertà di religione
 libertà religiosa
 proprietà intellettuale
 diritto costituzionale
+Autodeterminazione
 autodeterminazione dei popoli
 diritto romano
+veto
 amministratore delegato
 diritto amministrativo
-diritti
-omicidio
 magnicidio
 persona giuridica
 diffamazione
 diritto del lavoro
-società cooperativa
 sequestro di persona
-tradimento
 diritti dell'infanzia e l'adolescenza
 Corte di Giustizia
 Corte di giustizia europea
 criminalità organizzata
+crimine organizzato
 diritto civile
 stato di emergenza
-Inquisizione spagnola
 crimine informatico
 diritto canonico
 diritto pubblico
-fondazione
 cambiale
 diritti civili
-società controllata
+lettera di cambio
 persona fisica
+persone fisiche
 habeas corpus
 corte suprema
-giurisdizione
 schema Ponzi
-appello
 caccia alle streghe
 diritto di famiglia
+diritto familiare
 Incitamento all'odio
 indennità di guerra
+Riparazioni di guerra
 unione civile
 presunzione d'innocenza
 diritto privato
 massacro
 estradizione
+narcotraffico
+negazione dell'olocausto
 negazionismo dell'Olocausto
+revisionismo dell'Olocausto
 traffico di droga
 libertà d'informazione
-proprietà privata
 violenza sessuale
+alibi
 crimini d'odio
 diritto allo studio
-mandato
 norme giuridiche sulla concorrenza
-possesso
 ricatto
 Alimenti
+diritto ambientale
 diritto dell'ambiente
 legge del taglione
 abuso sessuale su minori
@@ -90,44 +85,49 @@ evasione fiscale
 Ijtihad
 Ius soli
 ordalia
-precedente
-processo
 uguaglianza difronte alla legge
 uguaglianza giuridica
-associazione di volontariato
+azione legale
 corte costituzionale
-Corte Suprema dell'India
 diritto commerciale
 diritto internazionale privato
 obbligazione
+tribunale costituzionale
 Carta di Nizza
 CDFUE
 diritto bellico
 estorsione
 infanticidio
 tutela del consumatore
+cauzione
 cauzione di buona condotta
 Costituzione della Repubblica Italiana
-Sinedrio
+espropriazione
 espropriazione per pubblica utilità
 appropriazione indebita
 attacco informatico
-Conciergerie
+cyber attacco
+diritto fiscale
 diritto tributario
 forza maggiore
 negligenza
 Pacta sunt servanda
 responsabilità extracontrattuale
 corte marziale
+Corti marziali
+diritto procedurale
 diritto processuale
-Alta Corte di Londra
 falsa testimonianza
 fonte del diritto
+fonte di diritto
 interesse pubblico
+scam
 coercizione
+libertà di circolazione
 libertà di movimento
+libertà e diritti fondamentali
 diritto societario
-prescrizione
+millet
 processo penale
 convenuto
 diritti riproduttivi
@@ -138,10 +138,13 @@ corte d'appello
 dato personale
 diritti digitali
 indicazione geografica
+insorgenze
 insurrezione
 principio di precauzione
 prostituzione minorile
+sanctio
 sanzione
+tribunale d'appello
 usufrutto
 capacità di agire
 detenzione
@@ -150,46 +153,46 @@ diritto della navigazione
 dispositivo medico
 falsificazione
 liberazione condizionale
+libertà condizionata
 principio di sussidiarietà
+Sussidiarietà
 diritto internazionale penale
+diritto penale internazionale
 principi di Norimberga
 Rapimento della sposa
-aggressione
 ammutinamento
 processo civile
 Società europea
 acconsentimento
 compravendita
-Corte costituzionale federale tedesca
 Criminalità economica
 custodia cautelare in carcere
-delitto
 mandato elettorale
 capacità giuridica
-Consiglio costituzionale
 diritto aerospaziale
 diritto all'acqua
+attacco terroristico
 attentato terroristico
 diritto informatico
 due diligence
-giudizio
 processo farsa
 sistema giuridico
 Tribunale dell'Unione europea
-tribunale rivoluzionario
 Beth Din
 contravvenzione
 diritti linguistici
+dolo
 errore giudiziario
 lesa maestà
 traffico di armi
 tribunale internazionale
-Corte Suprema di Israele
 diritti delle minoranze
 diritto militare
 Leggenda Nera
+Abduction
 azione penale
 consenso informato
+contumace
 diritti dei lavoratori
 Erga omnes
 Judicial review
@@ -198,42 +201,33 @@ procedimento in contumacia
 Rapimento alieno
 SLAPP
 usucapione
-Volksgerichtshof
-Corte Suprema dell'Australia
 diligenza
 legge ex post facto
 presunzione
 società a responsabilità limitata
-Corte suprema del Canada
 diritto alla privacy
 fellonia
 integrità territoriale
 lettera di corsa
 ordine pubblico
+patente di corsa
 sovranità alimentare
 Uti possidetis
-Corte suprema del Pakistan
+Ignorantia iuris neminem excusat
 ignorantia legis non excusat
 ingiustificato arricchimento
 ius gentium
 principio di proporzionalità
-Tribunale della Rota Romana
-Tribunale Supremo Federale
 accoltellamento
 associazione illecita
 Avaria
-Corte della Camera Imperiale
-dichiarazione
 immunità
 leggi sulla sodomia
+magistratura amministrativa
 Parlamento francese
 tribunale amministrativo
-Corte Costituzionale della Corea
-Corte federale di giustizia
-Corte Suprema del Giappone
 cosa giudicata
 diritto d'autore
-domicilio
 Duello di Dio
 flagranza
 Garanzia
@@ -241,45 +235,33 @@ giusto processo
 Lex specialis derogat generali
 Obiter dictum
 omicidio mirato
-Penitenzieria Apostolica
 ricorso giurisdizionale
-successione
 Causalità
-condanna
-Consiglio dei Dieci
 distruzione della reputazione
 Naskh
 Negabilità plausibile
 principio di legalità penale
-Segnatura Apostolica
-Tribunale della funzione pubblica
-Tribunale Speciale della Cambogia
 affidavit
 azione collettiva
-Corte costituzionale della Russia
-corte costituzionale spagnola
-Corte costituzione russa
 Corte di Cassazione
 corte marziale sommaria
+direttore generale
 Diritto di ritenzione
 elettorato passivo
 esecuzione capitale stragiudiziale
+esecuzione stragiudiziale
 Estoppel
 facente funzioni
 general manager
+iter giudiziario
 Mischling
 responsabilità oggettiva
 suffragio censitario
-Tribunal Supremo
 Udienza
 agente straniero
 caso giudiziario
-corte Amministrativa Federale
-Corte costituzionale della Thailandia
-Corte costituzionale della Turchia
 diritti degli indigeni
 gestione di affare altrui
-immobile
 iniziativa legislativa
 opinione dissenziente
 Parlamento di Parigi
@@ -303,12 +285,11 @@ res nullius
 ricorso per cassazione
 sistema penitenziario
 sottrazione di minorenne
-Star Chamber
+tribunale dei minori
+tribunale minorile
 tribunale per i minorenni
 alta corte
-Consiglio aulico
 Consulta
-Corte Costituzionale dell'Ucraina
 diritti dei lavoratori sessuali
 diritto contrattuale
 diritto di petizione
@@ -322,42 +303,32 @@ soglia di originalità
 Stare decisis
 Stato d'eccezione
 trascuratezza
-Tribunale Costituzionale della Polonia
 truffa romantica
 Violazione di domicilio
 aggiudicazione
 Ala kachuu
 atto notarile
-Bundesarbeitsgericht
-confronto
-Consiglio delle Indie
-Corte costituzionale dell'Austria
 Cuique suum
 diritto del ritorno
 ingiunzione preliminare
+mora
 nullità
 pentitismo
 rebus sic stantibus
-Tribunale federale svizzero
 actio libera in causa
 aggravante
+Circostanze aggravanti
 diritto ecclesiastico
 diritto urbanistico
 effetto copycat
-Emittente
 filiazione legittima
-giudizio di Pilato
 Kadiluk
 requisizione
 ricettazione
-Rūm millet
-Tribunale di Primo Grado
-Tribunale Russell
 accordo delle parti
 comunione
 contratto d'opera
 Corte Suprema dell'Ucraina
-Corte suprema di Svezia
 Impressment
 Inquisizione medievale
 IRMCT
@@ -365,19 +336,16 @@ Libertà religiosa in Azerbaigian
 manomorta
 MICT
 porta girevole
+Principio giuridico
 Superamento della personalità giuridica
 violenza di genere
-Yuan giudiziario
 alienazione
 animal law
 At His Majesty's Pleasure
 Best Available Technology
-Bundesfinanzhof
 certezza del diritto
 complicità
-Consiglio dei torbidi
 Copyfraud
-Corte Costituzionale dell'Ungheria
 Corte suprema di cassazione
 diritto comune
 diritto di cittadinanza
@@ -390,14 +358,12 @@ precaria
 processo di Belsen
 Regole Mandela
 anticresi
-Audiencia Nacional
-Corte costituzionale della Bielorussia
 diritti culturali
 diritti delle persone transgeneri
 diritto agrario
-ente creditizio
 extraordinary rendition
 frode alla legge
+ġība
 illecito internazionale
 istituto giuridico
 Opinio iuris sive necessitatis
@@ -407,38 +373,30 @@ procedimento legislativo
 Processo del lavoro
 Religioni in Bahrein
 Sistema giudiziario del Giappone
-Suprema Corte Costituzionale dell'Egitto
 Actio Pauliana
 Audiencia
-Audiencia Reale di Quito
-Bundessozialgericht
 Criminalizzazione
 delitto contro il patrimonio
 delitto passionale
 diritti LGBT
 diritto processuale penale
 falsificazione del denaro
+falsificazione di moneta
 in articulo mortis
 leggi sulla blasfemia
 Lex ferenda
 Movente
-Reichsgericht
 ricusazione
 sanità mentale
 unione civile in Italia
 Ziamet
 Accessione
 azione popolare
-Consiglio di Stato
-Corte costituzionale del Belgio
-Corte costituzionale della Romania
-Corte Costituzionale della Slovacchia
-Corte Suprema dell'Afghanistan
+azioni popolari
 crimine violento
 dignità umana
 Diritto di conquista
 diritto matrimoniale
-Gacaca
 Ius trium liberorum
 legge sulla privacy
 Lesa maestà in Thailandia
@@ -454,13 +412,9 @@ pretura
 processo contro l'Amistad
 seccatura
 stabile organizzazione
-Summum ius summa iniuria
-Supreme Court Bangladesh
 Unione civile in Svizzera
 aberratio ictus
-Corte costituzionale del Sudafrica
 Corte d'assise
-Corte suprema della Finlandia
 Diritto fallimentare italiano
 diritto sportivo
 fatto giuridico
@@ -472,33 +426,26 @@ opinione legale
 reato sessuale
 rescissione
 retroattività
-Sarbochha Adalat
 successione mortis causa
 Tribunali dell'indipendenza
 Voir dire
-attacco
 buon padre di famiglia
-cattedrale di San Canizio
 Corpus separatum
 disonestà
 dura lex sed lex
-eccezione
 Ex facto oritur ius
 Iltizam
 Indigénat
-intervento
 liberti
 Oberlandesgericht
 omicidio premeditato
 restitutio in integrum
-TPF
-Tribunale Nazionale Supremo
-Tribunale penale federale
-Tribunale supremo di giustizia
 Tribunale unificato dei brevetti
+actio
 annullabile
 assassinio seriale
 brocardo
+Camere specializzate del Kosovo
 Catena di custodia
 concorrenza sleale
 contumacia
@@ -517,13 +464,12 @@ Squeeze out
 Teoria della nullificazione
 Tribunale ordinario
 administrative offense
-articolo
 codice civile italiano
 contratto preliminare
-denuncia
 Det norske landssvikoppgjoret
 diritto alla mobilità
 diritto di sciopero
+dissoluzione
 Dolo eventuale
 Dottrina della struttura fondamentale
 illegalità
@@ -542,8 +488,10 @@ Vacatio legis
 acceptilatio
 Acquiescenza
 Agaluk
+bajrak
 Bussificazione
 cassa integrazione
+Consiglio di Stato
 corte centumvirale
 Corte dello sceriffo
 Corti di ammiragliato
@@ -551,6 +499,7 @@ Dicasterion
 ente morale
 interpretazione giuridica
 intuitu personae
+kyrios
 Latae sententiae
 omicidio politico
 Periculum in mora
@@ -565,7 +514,6 @@ Bundesgericht
 Copia privata
 cost fee
 Cult Awareness Network
-ente di fatto
 eredità giacente
 evizione
 filiazione naturale
@@ -587,12 +535,9 @@ Corte manoriale
 Diritto d'autore italiano
 diritto di sincronizzazione
 Diritto oggettivo
-disposizione
-ente pubblico
 Fideicommissa
 Gewere
 interdizione
-istituzione pubblica
 Lodo
 opinione giudiziaria
 Personalità ambientale
@@ -609,15 +554,17 @@ Ultra posse nemo obligatur
 Violenza privata
 Accessorium sequitur principale
 Ad impossibilia nemo tenetur
+agere per formulas
 antidosis
 autorité compétente
-autorizzazione
 Cogitationis poenam nemo patitur
+d.o.o.
 dibattimento giudiziario
 diritto alimentare
 diritto di voto
 imposta locale
 inscriptio
+inscriptiones
 intermediate people's court
 isotelia
 Jobs Act
@@ -637,13 +584,13 @@ tempus regit actum
 Tingsrätt
 tribunale della sharia
 tribunale militare
+tribunali Militari
 Agence régionale de santé
 antincendio boschivo
+aşar
 autotutela
 avocazione
 back bond
-Bench
-Chambers
 confino
 curatore
 damnum iniuria datum
@@ -657,7 +604,6 @@ diritto della previdenza sociale
 eccezione di inadempimento
 Gesellschaft mit beschränkter Haftung
 Ictu oculi
-impresa estera
 inibizione
 Ius gladii
 libertà religiosa in Italia
@@ -670,14 +616,14 @@ processo pubblico
 psephisma
 rapporto di lavoro
 scopo statutario
-sinistro
 Tuziorismo
 Vim vi repellere licet
 Aberratio delicti
 Administrative Reconsideration cases
+alea
 Animus domini
 antinomia
-assenza
+Beneficio
 beneficium
 Canone di locazione lordo
 cassa integrazione guadagni
@@ -711,8 +657,9 @@ processo per stregoneria
 punto di ricarica
 Statuto dei lavoratori
 Statuto del Veneto
+Statuto della Calabria
 Statuto della Regione Calabria
-Stiftung
+Statuto regionale della Calabria
 subscriptio
 Tribunale di prossimità
 Tribunale diocesano
@@ -737,12 +684,12 @@ Arbeitnehmerhaftung
 arbitrato
 arricchimento indebito
 associazione di tipo mafioso
+associazione mafiosa
 astrateia
 atti osceni
 atto di aggressione
 baciatico
 Beneficium excussionis
-bestuursorgaan
 Betriebsrisikolehre
 Boedel
 CATO
@@ -750,7 +697,6 @@ Certat de damno vitando
 CIF
 commutazione
 Conciliation machinery
-condotta
 conferenza di servizi
 Confessio est regina probatio
 Coramage
@@ -790,12 +736,12 @@ Genus numquam perit
 Gerichtsbarkeit
 Habemus confitentem reum
 Hammerschlags- und Leiterrecht
-Hoheitliche Aufgabe
 impedimento
 Imputet sibi
 In limine litis
 infermità mentale
 Inquisizione di Malta
+Inquisizione romana di Malta
 interruzione del processo
 Intra vires
 Invecta et illata
@@ -820,7 +766,6 @@ Nullum crimen sine iniuria
 obbligatorietà
 Öffentliches Baurecht
 opera postuma
-ordinanza
 ordinanza contingibile e urgente
 Organised market
 pācittiya
@@ -832,18 +777,16 @@ processo di impeachment
 prodicasia
 Promessa di matrimonio
 provvedimento amministrativo
-rappresentazione
 Regulativ
 rinvio a giudizio
 rischio esterno
-Scottish charitable incorporated organisation
 sekhiya
 sequestro conservativo
 Si vera sunt
 soggiorno obbligato
 soppressione
-sospensione
 Staatsrecht
+starr
 surrogazione
 sıvış yılı
 Tam dixit quam voluit
@@ -851,7 +794,6 @@ Tantundem eiusdem generis
 Tax court
 terraggeria
 Testamentary guardian
-Textilschieberprozesse von Glauchau-Meerane
 Titolo esecutivo
 Tot crimina tot poenae
 tribunale metropolitano
@@ -861,85 +803,58 @@ TUFF
 TULPS
 Unum castigabis centum emendabis
 Vermögensdelikt
+verna
 Voluntary Arbitration
 contratto matrimoniale
 marito e moglie
-movimento politico
-partito
+diritti dell'uomo
 meretricio
-aziende
 genocidi
+collegio giudicante
 Corte Mondiale
-assassinio
 CPI
 Tribunale Penale Internazionale
 diritto pubblico internazionale
 leggi internazionali
-accordo
-dominio pubblico
-Inquisitore
-Visita inquisitoriale
 seviziare
 seviziata
 seviziato
 sevizie
-diritto criminale
 crimini di guerra
-Tribunale di Norimberga
 ultime volontà
 CEDU
+Ribellione
 Libertà di culto
-Libertà di religione
 diritti intellettuali
-Autodeterminazione
 Diritto all'autodeteminazione dei popoli
 Nazionalismo wilsoniano
 amministratore delegata
 capo azienda
-diritto
 enti giuridici
 persone giuridiche
 Libelli famosi
-organismi cooperativi
-organismo cooperativo
-Soc. Coop.
-società cooperative
 rapimento
 Corte di Lussemburgo
-crimine organizzato
+mafie
 malavita
 stato d'emergenza
-Inquisición española
 diritti dei cittadini
-lettera di cambio
 vaglia cambiario
-controllata
-Controllate
-Società controllate
-società partecipata
-società sussidiaria
-sussidiaria
 assassinio di massa
 omicidio di massa
-persone fisiche
 uccisione di massa
 kabeas-corpus
 schema di Ponzi
 tribunale supremo
 cacciatore di streghe
-diritto familiare
 Razzismo linguistico
 Riparazione di guerra
-Riparazioni di guerra
 patto civile di solidarietà
 innocente finché dimostrato
 presunzione di innocenza
 presunzione di non colpevolezza
 antidroga
 narcotrafficanti
-narcotraffico
-negazione dell'olocausto
-revisionismo dell'Olocausto
 revisionismo della storiografia nazista
 spaccio di droga
 spaccio di stupefacenti
@@ -954,7 +869,6 @@ diritto antitrust
 DSU
 legge antitrust
 Certificazione Ambientale
-diritto ambientale
 pena del taglione
 abuso sessuale minorile
 Contratto individuale di lavoro
@@ -963,19 +877,15 @@ diritto delle Comunità Europee
 diritto europeo
 evasione
 Ordalie
-procedimento
 procedimento processuale
-Associazione riconosciuta
-Associazioni riconosciute
+causa legale
+controversia legale
+procedimento giudiziario
 sindacato costituzionale
-tribunale costituzionale
 Validità probatoria
-cauzione
 Costituzione italiana
 Ordinamento costituzionale italiano
-Sinedrita
 acquisizione coattiva
-espropriazione
 espropriazione anomala
 espropriazione di fatto
 espropriazione per pubblico interesse
@@ -984,19 +894,14 @@ esproprio per pubblica utilità
 nazionalizzazione
 nazionalizzazioni
 statalizzazione
-cyber attacco
 cyber-attacco
 cyberattacco
 danno ingiusto
-diritto fiscale
 Illecito extracontrattuale
 Natura extra-contrattuale
 Neminem laedere
 Responsabilità aquiliana
-Corti marziali
-diritto procedurale
 Beni comuni
-fonte di diritto
 fonte giuridica
 fonti del diritto
 fonti di diritto
@@ -1004,39 +909,26 @@ Risorse comuni
 sistema delle fonti
 Spergiuro
 libera circolazione
-libertà di circolazione
 diritto delle società
 Consolidatio
 dati giudiziari
 dati identificativi
 dati personali
-insorgenze
-sanctio
-sanzioni
-tribunale d'appello
 Usufruttuario
-libertà condizionata
 libetà condizionale
-Sussidiarietà
 Azione possessoria
 Azioni possessorir
-diritto penale internazionale
 vie di fatto
-approvazione
 assenso
 carcerazione preventiva
-consenso
-Corte costituzionale federale
 custodia cautelare
 misura cautelare personale coercitiva
 misura coercitiva
 misure cautelari personali coercitive
 misure coercitive
 Diritto cosmico
-attacco terroristico
 dovuta diligenza
 farsa giudiziaria
-magistratura
 processo sommario
 ragionevole diligenza
 sistema legale
@@ -1047,8 +939,6 @@ crimenlese
 ius canonicum
 traffico d'armi
 Tribunale rabbinico
-Abduction
-contumace
 incriminazione
 misure cautelari
 processo contumaciale
@@ -1057,23 +947,17 @@ Rapimenti alieni
 Sequestro alieno
 legge retroattiva
 presunzioni legali
-Corte suprema canadese
 lettera di marca
-patente di corsa
 arricchimento ingiustificato
 arricchimento senza causa
-Ignorantia iuris neminem excusat
 Lex ignorantia negat
-Sacra Rota
 associazione a delinquere
 associazione per delinquere
 Avarìa
 corte amministrativa
 cospirazione criminale
 leggi antisodomia
-magistratura amministrativa
 assassinio mirato
-BGH
 Combattimento giudiziario
 cosa detta incidentalmente
 cosa detta occasionalmente
@@ -1088,21 +972,15 @@ omicidio selettivo
 passaggio in giudicato
 passata in giudicato
 passato in giudicato
-Penitenziere Maggiore
 sentenza passata in giudicato
 uccisione mirata
 Negazione plausibile
 Nesso causale
-consulta spagnola
-corte costituzionale di Spagna
-direttore generale
 esecuzione arbitraria
 esecuzione extragiudiziale
-esecuzione stragiudiziale
 omicidio extragiudiziale
 omicidio stragiudiziale
 conflitto legale
-controversia legale
 settore immobiliare
 vicenda giudiziaria
 Circostanze
@@ -1110,9 +988,6 @@ Circostanze di reato
 diritti sessuali
 Mala fede
 penitenziario
-tribunale dei minori
-tribunale minorile
-Corte suprema ucraina
 diritti civici
 Fatispecie
 gran corte
@@ -1120,25 +995,20 @@ Inadimplenti non est adimplendum
 incuria
 Stato di eccezione
 A ciascuno il suo
-BAG
 istrumento
 Res sic stantibus
-Tribunale federale
+rogito
 Aggravanti
-Circostanze aggravanti
 Requisizioni
-convenzione
 stato giuridico
 alienabile
 alienante
 alienatario
-cessione
 law concerning animals
 mancipazione
 mancìpium
 Suprema corte di cassazione
 consegna straordinaria
-istituto
 iter legis
 iter legislativo
 normazione
@@ -1147,20 +1017,15 @@ azione pauliana
 contraffazione del denaro
 contraffazione di denaro
 contraffazione di moneta
-Corte Sociale Federale
 De lege ferenda
 delitto patrimoniale
 diritti gay
 diritti LGBTI
 diritti LGBTQ
 falsificazione di denaro
-falsificazione di moneta
 incompatibilità del giudice penale
 procedura penale
 reato contro il matrimonio
-tribunale del Terzo Reich
-azioni popolari
-CCR
 Unione domestica registrata
 delitto sessuale
 Reato a sfondo sessuale
@@ -1170,19 +1035,19 @@ omicidio doloso
 Tribunale Regionale Superiore
 omicidio seriale
 abrogazione
+art.
 Codice civile
 Codice Vassalli
-compromesso
 Cosa abbandonata
 Cose abbandonate
 Det norske landssvikoppgjøret
-dissoluzione
 Landssvikoppgjoret
 Landssvikoppgjøret
 minore non accompagnato
 mobilità come diritto
 Res derelictaa
 Rettsoppgjøret
+CdS
 Interpretazione
 Interpretazione della norma
 kyrieia
@@ -1209,11 +1074,8 @@ proscioglimento
 accomandante
 accomandanti
 accomandatario
-agere per formulas
 giurisdizione militare
 giustizia militare
-inscriptiones
-licenza
 Madamismo
 magistrature militari
 Nemo ad impossibilia tenetur
@@ -1221,12 +1083,10 @@ presunzione legale assoluta
 presunzioni assolute
 presunzioni legali assolute
 processo per formulas
-sequestro
 soci accomandanti
 soci accomandatari
 Tempus regit actus
-tribunali Militari
-decreto
+asar
 Dediticio
 diritto previdenziale
 obiettivi dell'azienda
@@ -1235,7 +1095,6 @@ obiettivo statutario
 scopo dell'azienda
 Socialmente pericoloso
 tacciare di transessualità
-Beneficio
 CIGO
 diritti riproduttivi e sessuali
 JUS VARIANDI
@@ -1244,12 +1103,9 @@ processi alle streghe
 processi per stregoneria
 processo alle streghe
 Statuto calabrese
-Statuto della Calabria
 Statuto regionale calabrese
-Statuto regionale della Calabria
 subscriptiones
 associazione di stampo mafioso
-associazione mafiosa
 atto di guerra
 basatico
 basatura
@@ -1265,7 +1121,6 @@ Fumus commisi delicti
 ghiandatico
 glandatico
 Infermità di mente
-Inquisizione romana di Malta
 Libertà d'espressione
 misura cautelare in Italia
 ordinanza di necessità

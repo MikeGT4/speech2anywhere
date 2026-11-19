@@ -12,7 +12,7 @@ from kira.ui.hud.base import EASE_OUT, Frame, clamp
 from kira.ui.hud.fachgebiet import (
     Fachgebiet, badge_check, fly_out, lettering, outlined, ringed, ringed_line, rounded, stroke, twinkle,
 )
-from kira.ui.hud.saison import INK, ROUND, WHITE, YELLOW, Pose, ellipse, faded, glow, sparkle
+from kira.ui.hud.saison import INK, ROUND, WHITE, Pose, ellipse, faded, glow, sparkle
 from kira.texte import N_
 
 SLATE = QColor("#1F2633")
@@ -83,7 +83,7 @@ def _headset(p: QPainter, dy: float, angle: float, led: bool, mic_drop: float, m
     p.restore()
 
 
-def _wifi(p: QPainter, x: float, y: float, bars: int, color: QColor, warn: bool) -> None:
+def _wifi(p: QPainter, x: float, y: float, bars: int, color: QColor) -> None:
     for k, r in enumerate(WIFI_RADII):
         rect = QRectF(x - r, y - r, 2 * r, 2 * r)
         for pen_color, width in ((WHITE, 5.2), (INK, 3.6), (color if k < bars else DIM, 1.8)):
@@ -91,8 +91,6 @@ def _wifi(p: QPainter, x: float, y: float, bars: int, color: QColor, warn: bool)
             p.setBrush(Qt.BrushStyle.NoBrush)
             p.drawArc(rect, 45 * 16, 90 * 16)
     ringed(p, ellipse(x, y - 0.5, 2.2), color if bars > 0 else DIM, 1.2, 3.0)
-    if warn:
-        lettering(p, x + 11.0, y - 3.0, "!", 10.0, 0.0, YELLOW, 2.0, 0.8)
 
 
 def _binary_clock(p: QPainter, elapsed: float, reduced: bool) -> None:
@@ -165,17 +163,17 @@ class IT(Fachgebiet):
         _headset(p, dy, angle, led, drop, wiggle)
 
     def backdrop(self, p: QPainter, t: float, f: Frame, an) -> None:
-        bars, color, warn = 3, CYAN, False
+        bars, color = 3, CYAN
         if self.mode == "rec":
             if an.clip:
                 color = CODE_RED
             elif an.silent:
-                bars, warn = 0, True
+                bars = 0
             else:
                 bars = 3 if self._lv > 0.62 else 2 if self._lv > 0.38 else 1 if self._lv > 0.12 else 0
         elif self.mode == "error":
             bars = 0
-        _wifi(p, WIFI_AT.x(), WIFI_AT.y(), bars, color, warn)
+        _wifi(p, WIFI_AT.x(), WIFI_AT.y(), bars, color)
 
     def paint_clock(self, p: QPainter, elapsed: float, reduced: bool) -> None:
         _binary_clock(p, elapsed, reduced)
@@ -311,4 +309,4 @@ class IT(Fachgebiet):
         fly_out(p, t, f, k, draw, GLYPH_ROUTES)
 
     def error_decor(self, p: QPainter, left: float, top: float) -> None:
-        _beetle(p, left + 10.0, top + 2.0, 20.0)
+        _beetle(p, left + 2.0, top + 2.0, 20.0)

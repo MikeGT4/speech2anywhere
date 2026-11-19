@@ -51,7 +51,7 @@ Ohne NVIDIA-Grafikkarte bleibt es beim Prozessor.</p>
 _HELP_HTML_EN = """
 <h3>What the switch changes</h3>
 <p>Speech2Anywhere works in two steps.<br>
-Whisper recognises what you say.<br>
+Whisper recognizes what you say.<br>
 A language model then cleans up the text.<br>
 <b>Run on</b> decides whether both run on the processor or on the graphics card.</p>
 
@@ -60,7 +60,7 @@ A language model then cleans up the text.<br>
   <li>Runs on any Windows PC, even without an NVIDIA graphics card.</li>
   <li>Recognition with Whisper small, a download of about 0.5 GB.</li>
   <li>Clean-up with gemma4:e4b, a download of about 10 GB, using about 5.4 GB of memory.</li>
-  <li>Measured on a desktop processor with 8 cores: about 1 s to recognise a short dictation,
+  <li>Measured on a desktop processor with 8 cores: about 1 s to recognize a short dictation,
   plus 2 to 3 s for the clean-up.</li>
   <li>A laptop takes longer.</li>
   <li>Without clean-up it stays at about 1 s. The switch for that is on the <b>Clean-up</b> tab.</li>

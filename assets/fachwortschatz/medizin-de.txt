@@ -1,6 +1,7 @@
 COVID-19
 AIDS
 Malaria
+Abortus
 Schwangerschaftsabbruch
 Diabetes mellitus
 Influenza
@@ -9,7 +10,9 @@ Tollwut
 Adipositas
 Ebolafieber
 Pocken
+Variola
 Lungenentzündung
+Pneumonie
 Gehörlosigkeit
 Lepra
 Nervensystem
@@ -18,10 +21,12 @@ Kopfschmerz
 Epilepsie
 menschlicher Körper
 Gesäß
+Myokardinfarkt
 Geschlechtskrankheiten
 Träne
 Abdomen
 Alkoholkrankheit
+Diarrhö
 psychische Störung
 Kreislaufsystem
 Blindheit
@@ -34,6 +39,8 @@ Syphilis
 Gebärmutter
 Mangelernährung
 Bauchspeicheldrüse
+Odontologie
+Pankreas
 Schizophrenie
 Thorax
 Vene
@@ -43,18 +50,25 @@ Dickdarm
 Ellbogen
 Atemwege
 Empfängnisverhütung
+Kontrazeption
+Kontrazeptiva
 Milz
+Varizella
+Varizellen
 Windpocken
 Zirkumzision
 arterielle Hypertonie
 Augenbraue
 Denguefieber
+Endokrines System
 Hämorrhoiden
 Hormonsystem
 Klitoris
 Blutgefäß
 Gebärdensprache
 Nervenzelle
+Neurone
+Ösophagus
 Speiseröhre
 Tätowieren
 Ängstlichkeit
@@ -66,6 +80,7 @@ Pathologie
 Rippe
 Vulva
 Anämie
+aviäre Influenza
 Reproduktionssystem
 Schnurrbart
 Vogelgrippe
@@ -74,18 +89,22 @@ Rückenmark
 Arterie
 chronisch obstruktive Lungenerkrankung
 Pharmakologie
+Schlagader
 Bronchialkarzinom
 Harnblase
+Intestinal
 Keuchhusten
 Leukämie
 weibliche Genitalverstümmelung
 Zellkern
 Gallenblase
 Gastroenteritis
+Krätze
+Skabies
 Speichel
 Typhus
 Eierstock
-Krätze
+Ovarien
 Schweineinfluenza
 Diphtherie
 Down-Syndrom
@@ -96,9 +115,11 @@ Akne
 Erste Hilfe
 Gonorrhoe
 Mumps
+Parotitis epidemica
 Hämoglobin
 Hepatitis B
 Schlaflosigkeit
+Articulatio
 Gelenk
 Hepatitis A
 Infektionskrankheit
@@ -106,6 +127,7 @@ Plazenta
 Schilddrüse
 Sinnessystem
 Tetanus
+Thyroidea
 Knorpel
 Anthrax
 Halluzination
@@ -121,6 +143,8 @@ Hodensack
 Knochenmark
 Kurzsichtigkeit
 Luftröhre
+Ophthalmologie
+Skrotum
 Abszess
 Eizelle
 Katarakt
@@ -147,6 +171,7 @@ Glaukom
 Hepatitis
 Immunologie
 Lese- und Rechtschreibstörung
+Menschlicher Penis
 Mpox
 Penis des Menschen
 Prostata
@@ -166,23 +191,30 @@ ADHS
 Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung
 Cytoplasma
 Hautschuppe
+Obstipation
 Sepsis
 Verstopfung
 Warze
 Zwerchfell
 Chemotherapie
 Fleckfieber
+Flecktyphus
 Gicht
 Harnröhre
 Herzinsuffizienz
+Keratoconjunctivitis
 Konjunktivitis
 menschlicher Fötus
 Narzissmus
+Narzisstisch
 Organell
 Blutung
 Gangrän
 Geschlechtsorgan
+Hämorrhagie
+Hämorrhagisch
 Osteoporose
+Plasmamembran
 Psychose
 Röteln
 Thrombozyt
@@ -197,10 +229,13 @@ Hernie
 kleiner Finger
 Urologie
 Albinismus
+Calculus renalis
+Clavicula
 Hämatologie
 Kaiserschnitt
 Kleinhirn
 lymphatisches System
+Lymphsystem
 Nierenstein
 Pädiatrie
 Schlüsselbein
@@ -210,6 +245,8 @@ Hypothalamus
 Mastdarm
 Mittelfinger
 Posttraumatische Belastungsstörung
+Posttraumatische Stressbelastung
+Posttraumatisches Stresssyndrom
 Prostatakrebs
 Schulterblatt
 Transplantation
@@ -220,9 +257,11 @@ Kapillare
 Knochenbruch
 Nebenniere
 Ödem
+Spermatozoen
 Spermium
 Amnesie
 Amyotrophe Lateralsklerose
+Brandwunde
 endoplasmatisches Retikulum
 Hepatitis C
 Multiple Sklerose
@@ -231,6 +270,8 @@ Schuppenflechte
 Zahnfleisch
 Zehe
 Afrikanische Schlafkrankheit
+Afrikanische Trypanosomiasis
+Computed Axial Tomography
 Computertomographie
 Lyme-Borreliose
 Melancholie
@@ -256,17 +297,22 @@ Vakuole
 Vertigo
 Ableitende Harnwege
 Bluttransfusion
+Chirurgische Plastik
 Dotter
 Eileiter
 Gastritis
 HPV
 Humane Papillomviren
+Humanes Papillomvirus
 kolorektales Karzinom
+Kosmetische Chirurgie
 Leishmaniose
 Lupus erythematodes
+plastische Chirurgie
 schweres Akutes Atemwegssyndrom
 Speicheldrüse
 Thymus
+Tuba uterina
 Anaphylaxie
 Bilharziose
 Bindegewebe
@@ -280,16 +326,20 @@ Leptospirose
 Muttermilch
 Nabelschnur
 Neurose
-plastische Chirurgie
+Ölmassage
 Tinnitus
+Arrhythmie
 Botulismus
 Gerstenkorn
 Herzrhythmusstörung
 Hymen
+Infertilität
 Juckreiz
 Lysosom
 Magengeschwür
 Malignes Melanom
+Melanom
+Radiotherapie
 Schamhaar
 Strahlentherapie
 Unfruchtbarkeit
@@ -301,12 +351,15 @@ Badekultur
 Borderline-Persönlichkeitsstörung
 BPS
 Duodenum
+Dyspnoe
 Enzephalitis
+Enzephalomyelitis
 Fehlgeburt
 Hornhaut
 Kastration
 Kleinwuchs
 Obduktion
+Osteoarthrose
 Placebo
 Rachitis
 Sinusitis
@@ -325,6 +378,7 @@ Schielen
 Schienbein
 Sommersprossen
 weibliche Geschlechtsorgane
+Alkoholintoxikation
 Alkoholvergiftung
 Astigmatismus
 Bronchialsystem
@@ -339,6 +393,7 @@ Morbus Crohn
 Stottern
 Synapse
 Telencephalon
+traditionelle Medizin
 Volksmedizin
 Brucellose
 geistige Behinderung
@@ -346,6 +401,7 @@ Hirntumor
 Kumys
 Molke
 Pneumologie
+Pulmologie
 Spore
 Synkope
 Tonsilla palatina
@@ -354,15 +410,19 @@ Aneurysma
 Biopsie
 Dehydratation
 Haarausfall
+Hyperopie
 Hypothermie
 Kreuzbein
+Os sacrum
 Penisvorhaut
 Schleim
 Schuppe
 Weitsichtigkeit
 Angststörung
 Bauchspeicheldrüsenkrebs
+Ligamentum
 Lymphozyt
+Maul- und Klauenseuche
 menschliches Auge
 Nebenschilddrüse
 Nierenversagen
@@ -375,10 +435,10 @@ Autoimmunerkrankung
 Beulenpest
 Chikungunyafieber
 Chlamydiose
+Cystische Fibrose
 Endoskopie
 Harnleiter
 malignes Lymphom
-Maul- und Klauenseuche
 Mukoviszidose
 peripheres Nervensystem
 Plastid
@@ -390,12 +450,14 @@ Axon
 Beriberi
 Innere Medizin
 koronare Herzkrankheit
+Maxillare
 Menschliches Gehirn
 Oberkiefer
 Rheuma
 Sichelzellenanämie
 Zytoskelett
 Aphasie
+Caninus
 Eckzahn
 Fernerkundung
 Glans penis
@@ -406,6 +468,7 @@ Kolostrum
 Manie
 Oberarmknochen
 Ohrenschmalz
+Oto-Rhino-Laryngologie
 Persönlichkeitsstörung
 Rülpsen
 Schlafparalyse
@@ -432,6 +495,7 @@ Piercing
 Präeklampsie
 Schleimhaut
 T-Lymphozyt
+Urtikaria
 Autismusspektrum
 Elektroenzephalografie
 Enthauptung
@@ -459,9 +523,12 @@ Nachtblindheit
 Nebennierenrindeninsuffizienz
 Panikattacke
 Steißbein
+Stimmband
 Stimmlippe
 Unterarm
 Zentriol
+Zerebralparese
+Alveole
 Cholelithiasis
 CJK
 Creutzfeldt-Jakob-Krankheit
@@ -470,9 +537,11 @@ Extrauteringravidität
 Hypoglykämie
 Lungenbläschen
 Masochismus
+Membrana tympani
 Organsystem
 Rhinitis
 Soziale Angststörung
+Sozialphobie
 Synästhesie
 Thalassämie
 Trommelfell
@@ -480,6 +549,7 @@ Zystizerkose
 Asphyxie
 Blinddarm
 Dermatitis
+Dysmenorrhoe
 EKG
 Elektrokardiogramm
 Geriatrie
@@ -513,6 +583,7 @@ Phenylketonurie
 PKU
 Sarkoidose
 Sodbrennen
+Tai ji chuan
 Taijiquan
 Thalamus
 Toxoplasmose
@@ -520,6 +591,7 @@ Y-Chromosom
 Akute obstruktive Laryngitis
 Chromatin
 Dendrit
+Diabetes Typ II
 Ekzem
 gastroösophagealer Reflux
 Gingivitis
@@ -535,14 +607,18 @@ Lungenembolie
 Morbus Basedow
 multiples Myelom
 Nasenbein
+Os nasale
 Perineum
 Peritonitis
+Radiographie
 Röntgen
 Sjögren-Syndrom
 Sonografie
 TCM
 traditionelle chinesische Medizin
 Typ-2-Diabetes
+Varikosis
+Varizen
 Weisheitszahn
 Zäpfchen
 Akrophobie
@@ -551,12 +627,16 @@ Blutzucker
 Erbkrankheit
 Familienplanung
 Gliazelle
+Glukosespiegel
 Herzbeutel
 Hirnstamm
 Ileum
+Infektiöse Mononukleose
 Klinefelter-Syndrom
+M. biceps brachii
 Musculus biceps brachii
 Nekrose
+Perikard
 Pfeiffer-Drüsenfieber
 Phimose
 Polyendokrines metabolisches Ovarialsyndrom
@@ -568,10 +648,12 @@ Arteriosklerose
 bakterielle Vaginose
 Bauchschmerz
 Blutkörperchen
+Cortex cerebri
 Fettgewebe
 Ganglion
 Großhirnrinde
 Hämatom
+Inzisiven
 Ischämie
 narzisstische Persöhnlichkeitsstörung
 Parodontitis
@@ -598,6 +680,7 @@ Lungenemphysem
 Mammographie
 Mimik
 Nebenhoden
+Neutrophile
 Neutrophiler Granulozyt
 Pleuritis
 Schlafapnoe-Syndrom
@@ -606,10 +689,13 @@ Venushügel
 Anthroposophie
 antimikrobielle Resistenz
 B-Lymphozyt
+B-Zellen
 Bradykardie
 Colitis ulcerosa
 Dracontiasis
 endokrine Drüse
+Erythema solare
+Erythema solaris
 Hinterhauptbein
 Höhenkrankheit
 Hyperthyreose
@@ -617,6 +703,7 @@ Insemination
 Koloskopie
 Logopädie
 Morbus Wilson
+Os occipitale
 Pharyngitis
 Porphyrie
 Salmonellose
@@ -631,6 +718,7 @@ Vorhofflimmern
 Arachnophobie
 Aszites
 Delir
+Dyspepsie
 Geburtshilfe
 Genomik
 Gram-Färbung
@@ -645,8 +733,10 @@ Kuru
 Langerhans-Insel
 Mittelhirn
 Nystagmus
+Os sphenoidale
 Phagozyt
 Pneumothorax
+Postpartale Depression
 Postpartale Stimmungskrisen
 Rippenbogen
 Scheidenausfluss
@@ -656,13 +746,17 @@ Telomer
 Traumatologie
 Ulna
 Verdauungsstörung
+Zahnschmerzen
 Aromatherapie
 Ataxie
 Autosom
+Autosomal
 Cholezystitis
 Corona-Test
 Cytosol
 Dialyse
+elektrischer Schlag
+elektrischer Schock
 Gentherapie
 Geschlechtsdysphorie
 glatte Muskulatur
@@ -676,11 +770,11 @@ Mastitis
 Myokarditis
 Pellagra
 Prämenstruelles Syndrom
+Regio inguinalis
 Schwangerschaftsdiabetes
 Speiseröhrenkrebs
 Stromschlag
 Tularämie
-Zahnschmerzen
 Achondroplasie
 Akute Mittelohrentzündung
 Amenorrhoe
@@ -692,15 +786,20 @@ Bulbourethraldrüse
 Burn-out
 Delirium tremens
 Diabetes insipidus
+Eosinophile
 eosinophiler Granulozyt
 Hirntod
+Hypotonie
 Kandidose
+Kognitive Therapie
 kognitive Verhaltenstherapie
 KVT
 Magensaft
+Mikrotubuli
 Mikrotubulus
 Naturheilkunde
 Neoplasie
+Otitis media acuta
 rheumatisches Fieber
 Sehbehinderung
 Selbstverletzendes Verhalten
@@ -708,9 +807,11 @@ Sympathikus
 Zahnschmelz
 Zellulitis
 abnormale Kyphose
+Basophile
 Basophiler Granulozyt
 Buruli-Ulkus
 chronische Krankheit
+Commotio cerebri
 Condylomata acuminata
 Dekubitus
 Drogenmissbrauch
@@ -722,11 +823,14 @@ Hashimoto-Thyreoiditis
 Hypersexualität
 Iris-Heterochromie
 Kernhülle
+Kernmembran
 Kohlenstoffmonoxidintoxikation
 Koprophagie
 Lippen-Kieferspalte
 Lungenödem
+medizinisches Fachgebiet
 Missbildung
+Mutismus
 Nävus
 Neurodermitis
 Panikstörung
@@ -748,6 +852,7 @@ Anthropometrie
 Arteria pulmonalis
 Atrophie
 Bauchhöhle
+Cavitas abdominalis
 Centromer
 Colon
 Dentin
@@ -756,6 +861,7 @@ Fazialislähmung
 Gaumenbein
 Harninkontinenz
 Karpaltunnelsyndrom
+Kontusion
 Laryngitis
 Legionellose
 Limbisches System
@@ -766,21 +872,29 @@ Nasenhöhle
 Nasenloch
 Nervus vagus
 Nuklearmedizin
+Os ethmoidale
+Os lacrimale
+Os palatinum
 Parasympathikus
 Pflanzenzelle
 Prellung
+Pulmonalarterie
 Siebbein
 Thyreotropin
+Thyroidea stimulierendes Hormon
 Tränenbein
+Vagusnerv
 visuelles System
 Warzenhof
 Zyanose
 Adenoide
+Bewegungsapparat
 Chorda dorsalis
 exokrine Drüse
 Fußpilz
 Geschlechtschromosom
 Gewichtsreduktion
+Glandula Bartholin
 Glandula vestibularis major
 Hämoptyse
 Handwurzelknochen
@@ -791,8 +905,10 @@ Kawasaki-Syndrom
 Kombinierte Malon- und Methylmalonazidurie
 Lumbalpunktion
 Mundgeruch
+N. trigeminus
 Nukleosom
 Prostatavergrößerung
+Rift-Valley-Fieber
 Rifttalfieber
 Smegma
 Stütz- und Bewegungsapparat
@@ -810,6 +926,7 @@ angeborener Herzfehler
 Anosmie
 Arteria carotis communis
 Auswurf
+Distorsion
 Endothel
 Enuresis
 Fußsohle
@@ -834,6 +951,7 @@ Achillessehne
 Angiologie
 Avitaminose
 Blut-Hirn-Schranke
+Chronische Niereninsuffizienz
 chronisches Nierenversagen
 Coitus interruptus
 Dammbein
@@ -863,6 +981,7 @@ nephrotisches Syndrom
 Nervus oculomotorius
 Notfallmedizin
 Obere Extremität
+Oculomotorius
 plötzlicher Kindstod
 Pons
 Qigong
@@ -871,10 +990,12 @@ Schweißdrüse
 Sprungbein
 Stäbchen
 Telemetrie
+Tendo calcaneus
 Trichomoniasis
 Unterernährung
 Unterschenkel
 Vaskulitis
+Williams Syndrom
 Williams-Beuren-Syndrom
 Zwischenhirn
 Agnosie
@@ -886,7 +1007,9 @@ Blasenkrebs
 Chorioidea
 Chromatid
 Dekompressionskrankheit
+Diabetes Typ I
 Effloreszenz
+Ejaculatio praecox
 Elektrokrampftherapie
 Erröten
 Flugangst
@@ -896,16 +1019,22 @@ Innenohr
 Inselbegabung
 Lernbehinderung
 Long COVID
+M. triceps brachii
+Metacarpus
 Mittelhandknochen
 Musculus triceps brachii
+N. olfactorius
 Nervus olfactorius
 Plattfuß
 Polydaktylie
+Presbyopie
 Restless-Legs-Syndrom
 Reye-Syndrom
 Sadismus
+Savant-Syndrom
 Schluckakt
 Schwerhörigkeit
+Seborrhoische Dermatitis
 Seborrhoisches Ekzem
 Spasmus
 Spinalnerv
@@ -913,6 +1042,7 @@ Steigbügel
 Trance
 Trepanation
 Trichinellose
+Trichinose
 Typ-1-Diabetes
 Vaginismus
 vorzeitiger Samenerguss
@@ -922,6 +1052,7 @@ Bronchiektasie
 Brustschmerz
 Eisenmangelanämie
 Eustachi-Röhre
+forensische Medizin
 Frühgeburt
 geistige Verwirrung
 Glaskörper
@@ -936,14 +1067,18 @@ japanische Enzephalitis
 Kardiomyopathie
 Krampf
 Listeriose
+Lobus occipitalis
 Mediastinum
 Milchgebiss
 Motion Capture
 Mouches volantes
 Musiktherapie
 Muskeldystrophie
+Muskelkrampf
+Natürliche Killerzellen
 NK-Zelle
 Occipitallappen
+Os pubis
 Parenchym
 pathologisches Spielen
 Prosopagnosie
@@ -955,13 +1090,17 @@ Riesenwuchs
 Schambein
 Spina bifida
 Trichotillomanie
+Tuba auditiva
 Uterusmyom
+Wassertherapie
 Zahnbelag
 Zahnimplantat
 Zytogenetik
 Aderlass
 Amöbenruhr
+Angioödem
 Anorexie
+Auricula
 Bauchspiegelung
 Bindehaut
 Chromosom 1
@@ -978,6 +1117,12 @@ Frontallappen
 Graue Substanz
 Karōshi
 Keratoconjunctivitis sicca
+Klistier
+Konjunktiva
+Konjunktiven
+Laparoskopie
+Lobus frontalis
+M. rectus abdominis
 Makuladegeneration
 medizinisches bildgebendes Verfahren
 Musculus rectus abdominis
@@ -991,13 +1136,17 @@ Quincke-Ödem
 Rett-Syndrom
 Silikose
 Somatisches Nervensystem
+Substantia grisea
 Teratom
 Tomografie
 Totenstarre
+Trapezmuskel
 Trigeminusneuralgie
+Trisomie E
 Überdosis
 Virusinfektion
 Zahnpulpa
+Arteria coronaria
 Arteriole
 Astrozyt
 Bandscheibe
@@ -1016,6 +1165,7 @@ Herzklappe
 Hyponatriämie
 Hysterektomie
 Kachexie
+Koronararterie
 Koronargefäß
 Krampfaderbruch
 Kwashiorkor
@@ -1023,6 +1173,8 @@ Lungenfibrose
 Mikrozephalie
 Minamata-Krankheit
 Münchhausen-Syndrom
+N. abducens
+N. trochlearis
 Nervus abducens
 Nervus trochlearis
 Osteogenesis imperfecta
@@ -1031,13 +1183,19 @@ Pfortader
 Pica-Syndrom
 Pleura
 Polyploidie
+Präventivmedizin
 Rasterelektronenmikroskop
 Schleimbeutelentzündung
 Schwann-Zelle
 sexuelle Dysfunktion
+Varikozele
+Vena portae
+Vena portae hepatis
+Ventrikel
 Zystitis
 Achalasie
 affektive Störung
+Aktinfilamente
 Angelman-Syndrom
 Anhedonie
 Apgar-Score
@@ -1052,8 +1210,10 @@ Filariose
 Gefriertrocknung
 Gehörknöchelchen
 Hämatokrit
+Hernia inguinalis
 Immunisierung
 Kammerflimmern
+Kaposi-Sarkom
 Klumpfuß
 körperliche Untersuchung
 Leistenbruch
@@ -1067,6 +1227,7 @@ Osteomyelitis
 Ovarialzyste
 Pityriasis versicolor
 Prader-Willi-Syndrom
+Pulmonale Arterielle Hypertonie
 pulmonale Hypertonie
 respiratorische Insuffizienz
 Schröpfen
@@ -1079,7 +1240,9 @@ Telemedizin
 Tic
 Trichuriasis
 Triple-X-Syndrom
+Trisomie X
 Urämie
+ventrikuläre Fibrillation
 West-Nil-Fieber
 Akute lymphatische Leukämie
 akutes Nierenversagen
@@ -1087,6 +1250,7 @@ ALL
 Auskultation
 Blepharitis
 Corpus callosum
+Cri-du-chat Syndrom
 diabetische Retinopathie
 Dyskalkulie
 Dysphagie
@@ -1101,13 +1265,18 @@ Ketogene Diät
 Kolik
 Korsakow-Syndrom
 Kretinismus
+Liposuktion
+Lobus parietalis
+Mesenterium
 Middle East respiratory syndrome
 Myalgie
 Myelin
+N. accessorius
 Nasennebenhöhle
 Nervus accessorius
 Nervus hypoglossus
 Nierentransplantation
+Nucleus accessorius
 Paranoide Persönlichkeitsstörung
 Parietallappen
 Pleuramesotheliom
@@ -1127,6 +1296,7 @@ Weiße Substanz
 Adipozyt
 akutes Koronarsyndrom
 Alexithymie
+Allgemeinanästhesie
 Amnion
 Aortendissektion
 Apallisches Syndrom
@@ -1134,7 +1304,9 @@ Basalganglien
 Blutbild
 Broca-Areal
 Chromosom 3
+Dermatose
 Differentialdiagnose
+Differenzialdiagnostik
 Dysgraphie
 Endometrium
 extrazelluläre Matrix
@@ -1158,16 +1330,19 @@ Muskelfibrille
 Nahrungsmittelallergie
 Narkose
 Neonatologie
+Nervus ischiadicus
 Non-Hodgkin-Lymphom
 Osteopathie
 Ovarialfollikel
 pectoralis major
+Phototherapie
 Plexus brachialis
 Rezeptorzelle
 Schizotypische Persönlichkeitsstörung
 Schultergürtel
 Suggestion
 Toxisches Schocksyndrom
+Tracheostoma
 Tracheotomie
 Zellkultur
 Acute Respiratory Distress Syndrome
@@ -1183,6 +1358,7 @@ Disseminierte intravasale Koagulopathie
 Dyspareunie
 Echolalie
 Elektromyografie
+Elektromyogramm
 entoderm
 Exzessives Schreien im Säuglingsalter
 Fibrose
@@ -1196,12 +1372,16 @@ HbA1c
 Hyperkalzämie
 Hypospadie
 Immundefekt
+Immundefizienz
 Katatonie
 kleine Schamlippen
 Komedo
+Komedonen
 Kopfschwarte
 Krim-Kongo-Fieber
 Laser-in-situ-Keratomileusis
+Lobus temporalis
+M. quadriceps femoris
 metabolisches Syndrom
 Mondbein
 Mundtrockenheit
@@ -1209,6 +1389,7 @@ Musculus quadriceps femoris
 Nagelpilz
 Neurofibromatose
 nosokomiale Infektion
+Os lunatum
 Os scaphoideum
 Osteosarkom
 Paraurethraldrüse
@@ -1217,6 +1398,7 @@ Pilzvergiftung
 Polyp
 Prämolar
 Protoplast
+Respiratory Distress Syndrom
 Rhodopsin
 Schlafstörung
 Sinusknoten
@@ -1228,20 +1410,26 @@ Subduralhämatom
 Temporallappen
 Treacher-Collins-Syndrom
 Uveitis
+Xerostomie
 Abulie
 angeborene Aortenstenose
+Aortenstenose
 Blutsenkungsreaktion
 Bronchoskopie
+Brustamputation
 Chronische lymphatische Leukämie
 Defibrillation
+Dupuytren-Kontraktur
 Fallot-Tetralogie
 Faszie
 Fotorezeptor
 Fragiles-X-Syndrom
+Frühdefibrillation
 Glomerulum
 Haarfolikel
 Haupthistokompatibilitätskomplex
 Herpes labialis
+Herpes simplex labialis
 Hodenkrebs
 Hydrozele
 Hyperhydration
@@ -1257,6 +1445,7 @@ Mononeuropathia multiplex
 Morbus Dupuytren
 Motoneuron
 Neurasthenie
+Neuropathie
 opportunistische Infektion
 Otolith
 Pathophysiologie
@@ -1294,6 +1483,8 @@ Epikanthus medialis
 Erbsenbein
 Evidenzbasierte Medizin
 Fontanelle
+Glandula lacrimalis
+Glandula parotis
 gutartiger Tumor
 Hakenbein
 Hämangiom
@@ -1303,10 +1494,13 @@ Hochempfindlichkeit
 Hohlvene
 Hydronephrose
 Hyperkaliämie
+Hypersomnie
 Immunsuppression
 Infektiologie
 Isolierung
 Katalepsie
+Letale familiäre Insomnie
+M. sternocleidomastoideus
 medizinische Genetik
 Medizinische Informatik
 Menorrhagie
@@ -1316,10 +1510,12 @@ Musculus sternocleidomastoideus
 Mydriasis
 Myelodysplastisches Syndrom
 Ohrspeicheldrüse
+Os hamatum
 Osteomalazie
 Palpitation
 Parästhesie
 Paratyphus
+Parotis
 Pätau-Syndrom
 Plantarfasziitis
 Pneumokoniose
@@ -1352,11 +1548,14 @@ Ewing-Sarkom
 Gallengang
 GaOP
 Geschlechtsangleichende Operation
+Gilbert-Syndrom
 Glomerulonephritis
 Glottis
 Granulom
 große Schamlippen
+Hämochromatose
 HeLa
+Hepatozelluläres Carcinom
 Hirnaneurysma
 Hormonersatztherapie
 Hypernatriämie
@@ -1373,6 +1572,7 @@ Leberzellkarzinom
 Lendenwirbel
 Leukopenie
 Lichtscheu
+M. latissimus dorsi
 Meniskus
 Mikrodeletionssyndrom 22q11
 Morbus Meulengracht
@@ -1382,13 +1582,17 @@ Nephropathie
 Netzhautablösung
 Neuralgie
 Ornithose
+Os capitatum
+Os ilium
 Paronychie
 Peritonealdialyse
 Phlebitis
+Photophobie
 Placenta praevia
 Pleuraerguss
 Polycythaemia vera
 Posturales orthostatisches Tachykardiesyndrom
+Psittakose
 Quecksilbervergiftung
 Retinoblastom
 Riechbahn
@@ -1415,6 +1619,7 @@ Asbestose
 Babesiose
 Barrett-Ösophagus
 Benommenheit
+Biologische Membran
 Biomembran
 Blauzungenkrankheit
 Brusthöhle
@@ -1429,6 +1634,7 @@ Fibrodysplasia ossificans progressiva
 Gallengangskarzinom
 Gaumensegel
 Geschmacksknospe
+Glossopharyngeus
 hämolytisch-urämisches Syndrom
 Hepatische Enzephalopathie
 Hepatozyt
@@ -1447,6 +1653,7 @@ menschlicher Schädel
 Methämoglobinämie
 Mitralklappe
 Mongolenfleck
+N. vestibulocochlearis
 Nervus glossopharyngeus
 Nervus vestibulocochlearis
 neurodegenerative Erkrankung
@@ -1454,6 +1661,7 @@ Nierenkrebs
 Orthorexie
 Osteoblast
 periphere Arterielle Verschlusskrankheit
+Plasmodesmen
 Plasmodesmos
 Pränataldiagnostik
 Psoriasisarthritis
@@ -1467,6 +1675,7 @@ Tuberöse Sklerose
 Unguis incarnatus
 Wirbelkanal
 Zahnspange
+A. carotis interna
 Allgemeinmedizin
 Ametropie
 Apitherapie
@@ -1537,6 +1746,7 @@ Akupressur
 Alien-Hand-Syndrom
 Analfissur
 Aponeurose
+Appendektomie
 Arteria brachialis
 Arthroskopie
 Atelektase
@@ -1546,6 +1756,7 @@ Blinddarmentfernung
 Brachytherapie
 Capgras-Syndrom
 Cauda-equina-Syndrom
+Cauda-Syndrom
 Chiari-Malformation
 Chorea
 Chromosom 11
@@ -1571,7 +1782,9 @@ Hämatopoetische Stammzelle
 Idiopathie
 Idiopathische thrombozytopenische Purpura
 Intensivmedizin
+Intensivtherapie
 juvenile idiopathische Arthritis
+Juvenile rheumatoide Arthritis
 Kataplexie
 Kehlkopfkrebs
 Ketose
@@ -1579,8 +1792,11 @@ Knochenhaut
 Komorbidität
 komplexes regionales Schmerzsyndrom
 Lewy-Körper-Demenz
+M. pectoralis minor
 Marburgfieber
+medizinische Untersuchung
 Megakaryozyt
+mikrobiologische Kultur
 Mikroorganismenkultur
 Miliaria
 Morbus Adamantiades-Behçet
@@ -1592,6 +1808,7 @@ Orchitis
 Os naviculare
 Palpation
 Peniskrebs
+Periost
 Plattenepithelkarzinom
 postkoitale Kontrazeption
 Pylorus
@@ -1604,6 +1821,7 @@ Transmissible spongiforme Enzephalopathie
 Trichom
 Truncus brachiocephalicus
 Tuberkulin-Test
+Übertragbare spongiforme Enzephalopathie
 Uvea
 Vena pulmonalis
 vernachlässigte Krankheit
@@ -1616,6 +1834,7 @@ akute Pankreatitis
 Alkalose
 Allergologie
 Aortenklappe
+Arachnoidea
 Argyrie
 Blasenmole
 Bowman-Kapsel
@@ -1628,12 +1847,14 @@ Desmosom
 Dissoziative Bewusstseinsstörung
 Divertikulose
 Dysurie
+Episiotomie
 Erythema
 Europäische Schlafkrankheit
 Fibroadenom
 Fieberkrampf
 Fluoridierung
 Galaktorrhoe
+Gastrocnemius
 Gastrointestinale Blutung
 Gewebsflüssigkeit
 Glucose-6-Phosphat-Dehydrogenase-Mangel
@@ -1646,6 +1867,7 @@ Karbunkel
 Knochentumor
 Kuhpocken
 Lungenpest
+Masseter
 menschliche Haut
 Mikroglia
 Mikroskopie
@@ -1653,6 +1875,7 @@ Musculus gastrocnemius
 Musculus masseter
 Neurotizismus
 Oligodendrozyt
+Os trapezium
 Polyglobulie
 Präfrontaler Cortex
 Rückenmarkssyndrom
@@ -1672,10 +1895,12 @@ Uteruskarzinom
 Venole
 Ventrikelseptumdefekt
 Vitamin-B12-Mangel
+Wernicke-Areal
 Wernicke-Zentrum
 Wurzelkanal
 Xeroderma pigmentosum
 Xerophthalmie
+abdominales Aortenaneurysma
 Adrenogenitales Syndrom
 Akrosom
 Allantois
@@ -1686,6 +1911,7 @@ Arbeitsmedizin
 Arteria femoralis
 Arteria radialis
 Arteriitis cranialis
+Arteriitis temporalis
 Arthralgie
 Asystolie
 Bakteriämie
@@ -1706,6 +1932,7 @@ Extraktion
 falsche Erinnerungen
 Follikulitis
 Galaktosämie
+Goblet-Zelle
 Harnverhaltung
 Hautcreme
 Hyperparathyreoidismus
@@ -1715,11 +1942,13 @@ Insulinpumpe
 intramuskuläre Injektion
 Jacketkrone
 Ketoazidose
+klinisches Zeichen
 Konversionsstörung
 Koprolalie
 Krafttraining
 Kryotherapie
 Kunsttherapie
+Leydig-Zelle
 Leydig-Zwischenzelle
 Luftfahrtmedizin
 Lymphödem
@@ -1757,13 +1986,16 @@ Alport-Syndrom
 Androgenresistenz
 Anurie
 Aphthe
+Apparatus urogenitalis
 Arteria carotis externa
 Arzneimittelwechselwirkung
 Atrioventrikularknoten
 Barotrauma
+Bibliotherapie
 Cholangitis
 Chronic Wasting Disease
 Colon sigmoideum
+Conn-Syndrom
 Dehnung
 dilatative Kardiomyopathie
 DNA-Analyse
@@ -1786,7 +2018,9 @@ Hirsuties papillaris penis
 Hodentorsion
 Hüftdysplasie
 Hyperbare Oxygenierung
+Hyperbare Sauerstofftherapie
 Hyperemesis gravidarum
+Hyperlipidämie
 Hyperlipoproteinämie
 Hypogonadismus
 Hypomanie
@@ -1803,6 +2037,9 @@ Körpertemperatur
 Kuhmilchallergie
 Lebertransplantation
 Low-Carb
+M. biceps femoris
+M. serratus anterior
+M. supraspinatus
 medizinische Geographie
 Morbus Conn
 Münchhausen-Stellvertretersyndrom
@@ -1820,9 +2057,11 @@ Neutropenie
 Oberarm
 Ohrläppchen
 Onychophagie
+Orale Glukosetoleranz
 Oraler Glukosetoleranztest
 Osteozyt
 Otosklerose
+Paraplegiker
 Plasmapherese
 Poesie- und Bibliotherapie
 Proktologie
@@ -1834,14 +2073,17 @@ Scheidenvorhof
 Schultergelenk
 Schüttelfrost
 Sertoli-Zelle
+Sinus maxillaris
 Spirometrie
 Spritzkanal
 Stoffwechselstörung
+Stretchen
 Thrombolyse
 Tierbiss
 TMS
 transkranielle Magnetstimulation
 Tunica serosa
+Vestibulum vaginae
 visueller Cortex
 Wurzelzement
 zahnmedizinische Prophylaxe
@@ -1849,11 +2091,13 @@ Zollinger-Ellison-Syndrom
 Adenohypophyse
 Adrenoleukodystrophie
 Akute Belastungsreaktion
+Akuter Bauch
 Akutes Abdomen
 Alice-im-Wunderland-Syndrom
 Analkarzinom
 Anisokorie
 Antiphospholipid-Syndrom
+Aorta abdominalis
 Arteria axillaris
 Arteria vertebralis
 arteriovenöse Malformation
@@ -1882,13 +2126,17 @@ Hellersche Demenz
 Histopathologie
 Human Leukocyte Antigen
 Ishihara-Farbtafel
+Ishihara-Tafel
 Kiefergelenk
 Klassische Schweinepest
 Konkrement
 Kontraindikation
+Kontraindiziert
 Kopf-Hals-Karzinom
 Körperhöhle
 Leukozytose
+M. gluteus medius
+M. obliquus externus abdominis
 Magenresektion
 Marasmus
 Mayer-Rokitansky-Küster-Hauser-Syndrom
@@ -1906,6 +2154,7 @@ Otitis externa
 Papillom
 Parietalzelle
 Pemphigus
+Penisbruch
 Penisruptur
 Phantomschmerz
 Prämenstruelle dysphorische Störung
@@ -1926,6 +2175,7 @@ Stupor
 Szintigrafie
 Therapeutische Breite
 Tropenmedizin
+Tropische Medizin
 Verhaltenstherapie
 Visueller Neglect
 vorzeitige Plazentalösung
@@ -1940,6 +2190,7 @@ Atemnotsyndrom des Neugeborenen
 Atriumseptumdefekt
 Basalmembran
 Betazelle
+Bleaching
 Body-Modification
 Brodmann-Areal
 Cor pulmonale
@@ -1963,6 +2214,7 @@ Histoplasmose
 Hornschwiele
 Hyperakusis
 Hypophysenadenom
+Hypophysentumor
 Hypoxämie
 idiopathische Lungenfibrose
 IgA-Nephritis
@@ -1976,6 +2228,7 @@ Kryokonservierung
 Laparotomie
 Leukoplakie
 Lungenabszess
+M. sartorius
 Mastopathie
 medizinische Mikrobiologie
 menschliche Nase
@@ -1995,16 +2248,19 @@ Perkussion
 Philadelphia-Chromosom
 Philtrum
 portale Hypertension
+Pseudomembranöse Colitis
 Rückfallfieber
 Sarkopenie
 SARS-CoV-2 Antigen Test
 Selbstmedikation
+Septum nasale
 Sick-Building-Syndrom
 Sinus pilonidalis
 Situs inversus
 Sprechstörung
 Stammfettsucht
 Stammzelltransplantation
+Subscapularis
 Takayasu-Arteriitis
 Teerstuhl
 tiefe Hirnstimulation
@@ -2032,6 +2288,7 @@ Akanthose
 Alpha-1-Antitrypsin-Mangel
 Anaplastisches Oligodendrogliom
 androgene Alopezie
+Aorta ascendens
 Arteria iliaca communis
 Arteria renalis
 Arteria ulnaris
@@ -2073,6 +2330,8 @@ Konfabulation
 Konfokalmikroskop
 Labyrinthitis
 Lipödem
+M. flexor carpi ulnaris
+M. levator scapulae
 Madentherapie
 menschliches Fortpflanzungssystem
 menschliches Herz
@@ -2090,8 +2349,12 @@ Neuralrohr
 Neuropsychiatrie
 Nierenbecken
 Osteodystrophia deformans
+Ostitis deformans
+Ostitis deformans Paget
+Paleo-Diät
 Paraneoplastisches Syndrom
 Parodontologie
+Pelvis renalis
 Peritonsillarabszess
 Petechie
 Primär sklerosierende Cholangitis
@@ -2140,6 +2403,9 @@ Endodontie
 Enterozyt
 Entropium
 Enzymdefekt
+Facelifting
+familiäre Hypercholesterinämie
+Fluoroskopie
 Fournier-Gangrän
 Friedreich-Ataxie
 Frozen Shoulder
@@ -2148,6 +2414,7 @@ Graft-versus-Host-Reaktion
 Hamburg-Wechsler-Intelligenztest für Erwachsene
 Hebephrene Schizophrenie
 Henlesche Schleife
+Hirninfarkt
 HIV-Test
 Hyperlipidämie Typ 2
 Hypervitaminose
@@ -2164,8 +2431,11 @@ Kupffer-Zelle
 Langerhans-Zelle
 Locked-in-Syndrom
 Lokalanästhesie
+M. flexor digitorum superficialis
+M. pronator teres
 Malignes Neuroleptika-Syndrom
 Meckel-Divertikel
+Melioidose
 Merkel-Zelle
 Motorische Endplatte
 Mundschutz
@@ -2173,10 +2443,13 @@ Musculus flexor digitorum superficialis
 Musculus pronator teres
 Musculus psoas major
 Muskeldystrophie Becker-Kiener
+Ncl. accumbens
 Nebenniereninsuffizienz
+Nervus ulnaris
 Neuritis nervi optici
 Neurohypophyse
 Neuromyelitis optica
+Nozizeption
 Nozizeptor
 Nucleus accumbens
 Oligurie
@@ -2197,12 +2470,14 @@ pyramidales System
 regenerative Medizin
 Schwangerschaftskomplikationen
 Sexsucht
+Spondylose
 Spondylosis deformans
 Taubblindheit
 Tendovaginitis stenosans de Quervain
 Tiefenrausch
 Toxikomanie
 Untergewicht
+Valsalva-Manöver
 Valsalva-Versuch
 verstopfte Nase
 visual snow
@@ -2257,6 +2532,7 @@ juxtaglomerulärer Apparat
 Kadmiumvergiftung
 Kallmann-Syndrom
 Kinder- und Jugendchirurgie
+Kinderchirurgie
 Klon
 Komplexe Posttraumatische Belastungsstörung
 Kryptosporidiose
@@ -2267,6 +2543,7 @@ Lichen ruber planus
 Lispeln
 Logorrhoe
 Lymphogranuloma venereum
+M. palmaris longus
 Maligne Hyperthermie
 Mastozytose
 medizinischer Notfall
@@ -2292,6 +2569,7 @@ Myxödem
 Nasenausfluss
 Nasenpolyp
 Nebennierenrinde
+Nervus medianus
 neuroendokriner Tumor
 Neurofibromatose Typ 1
 Neuroimaging
@@ -2324,6 +2602,7 @@ Rotz
 Schadensminimierung
 Schlemm-Kanal
 Schwartz-Bartter-Syndrom
+Semitendinosus
 Sklerose
 Somniloquie
 Spätdyskinesie
@@ -2344,6 +2623,7 @@ Tränenapparat
 Transverse Myelitis
 Troponin
 Trypanosomiasis
+Vena jugularis interna
 Wernicke-Korsakow-Syndrom
 Zervikale intraepitheliale Neoplasie
 Zytokinsturm
@@ -2358,6 +2638,7 @@ Aniridie
 Ankyloglosson
 Arsenvergiftung
 Aspirationspneumonie
+Atemdepression
 Augenoperation
 Autogenes Training
 Autosuggestion
@@ -2365,6 +2646,8 @@ Bienenstich
 Bindungsstörung
 Bombay-Blutgruppe
 Budd-Chiari-Syndrom
+Canalis inguinalis
+Cartilago thyroidea
 Diogenes-Syndrom
 Ductus choledochus
 Ductus thoracicus
@@ -2387,12 +2670,18 @@ Hypoventilation
 Ileozäkalklappe
 Insektenphobie
 interstitielle Zystitis
+Keratosis solaris
 Kompartmentsyndrom
+kongenitale Hypothyreose
 Leistenkanal
 linke Herzkammer
+linkes Ventrikel
 Liposarkom
 Luftembolie
 Lungentransplantation
+M. extensor carpi ulnaris
+M. flexor digitorum profundus
+M. obliquus internus abdominis
 Magenlähmung
 Malassimilation
 Mastodynie
@@ -2415,18 +2704,23 @@ Musculus tensor fasciae latae
 Myeloproliferative Erkrankung
 Myositis
 Nahrungsmittelunverträglichkeit
+Ncl. caudatus
 Neuralleiste
 Nissl-Schollen
 Nucleus caudatus
 Obsession
 Oogon
+Oogonien
 Organoid
+Os longum
+Ossa longa
 Panaritium
 Plexus choroideus
 Polyarteriitis nodosa
 Polysomnographie
 Primäre Amöben-Meningoenzephalitis
 Prolaktinom
+Prothetik
 Pyramidenzelle
 Rastersondenmikroskopie
 Refeeding-Syndrom
@@ -2466,6 +2760,7 @@ Zahnfach
 Zahnprothetik
 Zerebrovaskuläre Störung
 Zerkariendermatitis
+A. cerebri media
 Aktivitäten des täglichen Lebens
 Amnioninfektionssyndrom
 Aortenisthmusstenose
@@ -2484,6 +2779,7 @@ Chorionzottenbiopsie
 Chronisch-venöse Insuffizienz
 Claustrum
 Computer Vision Syndrom
+Cyber Vision Syndrom
 De-Toni-Fanconi-Syndrom
 Denkstörung
 Depersonalisations- und Derealisationssyndrom
@@ -2494,9 +2790,11 @@ Dysautonomie
 Dyshidrosis
 Ektropium
 endoskopisch retrograde Cholangiopankreatikographie
+Fanconi-Syndrom
 Feminisierung
 Fibrom
 Fokal segmentale Glomerulosklerose
+Fokale Glomerulosklerose
 Fregoli-Syndrom
 Fremdkörper
 Ganser-Syndrom
@@ -2533,6 +2831,9 @@ Lendenregion
 Lippenlesen
 Lungenvolumen
 Lyell-Syndrom
+M. flexor carpi radialis
+M. flexor pollicis longus
+M. pronator quadratus
 Magnesiummangel
 Meibom-Drüse
 Meissner-Körperchen
@@ -2553,9 +2854,11 @@ Musculus risorius
 Musculus soleus
 Muskeldysmorphie
 Nasopharynxkarzinom
+Nervus radialis
 neurolues
 Neuropathologie
 Nykturie
+Nymphoman
 Odontoblast
 Off-Label-Use
 Osteom
@@ -2586,6 +2889,7 @@ subkutan
 Thrombophilie
 Thrombotisch-thrombozytopenische Purpura
 Thrombozytose
+Toxische epidermale Nekrolyse
 Transfusionsmedizin
 Türkensattel
 Vaginale Atrophie
@@ -2599,6 +2903,7 @@ Wernicke-Enzephalopathie
 Wiskott-Aldrich-Syndrom
 Zona pellucida
 zygomaticus major
+A. thyroidea superior
 Absencenepilepsie
 Achromatopsie
 Adipositaschirurgie
@@ -2628,6 +2933,8 @@ Embryoblast
 Epispadie
 Exosom
 Extrakorporale Zirkulation
+febre maculosa
+Flexor hallucis longus
 Foramen ovale
 Fornix
 Fruchtwasserembolie
@@ -2645,6 +2952,7 @@ Hymenalrekonstruktion
 Hypertensive Krise
 Hypophosphatämie
 Hyposphagma
+Incontinentia alvi
 Infestation
 Infibulation
 Kardiomegalie
@@ -2667,6 +2975,7 @@ Lippenspalte
 Locus caeruleus
 Lumpy-Skin-Krankheit
 Lymphangitis
+M. adductor longus
 Magnetoenzephalographie
 Makromastie
 Meningoenzephalitis
@@ -2708,6 +3017,7 @@ Polyhydramnion
 polysom
 Poritze
 Presbyakusis
+Primär biliäre Cholangitis
 primär biliäre Zirrhose
 Processus xiphoideus
 psychogene Amnesie
@@ -2741,8 +3051,11 @@ Wachstumshormonmangel
 Weißkittelhypertonie
 Windeldermatitis
 Xanthelasma
+Xanthelasmen
 zwanghaftes Verhalten
 Zwischenkieferbein
+A. cerebri anterior
+A. temporalis superficialis
 Adams-Stokes-Syndrom
 afferenz
 Alexander-Krankheit
@@ -2765,10 +3078,13 @@ AV-Block
 Bariatrie
 Blutgasanalyse
 Brachycephalie
+Braxton-Hicks-Kontraktion
 Bronchopneumonie
+Bursa synovialis
 Choane
 Chondrosarkom
 Cornelia-de-Lange-Syndrom
+Corpusculum renale
 CPAP-Beatmung
 crista
 Crouzon-Syndrom
@@ -2806,6 +3122,11 @@ Lewy-Körperchen
 Linea alba
 Lowe-Syndrom
 Lysosomale Speicherkrankheit
+M. abductor pollicis brevis
+M. extensor digiti minimi
+M. extensor digitorum
+M. rhomboideus minor
+M. transversus abdominis
 Magendarmerkrankung
 Menkes-Syndrom
 menschliches Aussehen
@@ -2830,6 +3151,8 @@ Musculus plantaris
 Musculus rhomboideus minor
 Musculus stylohyoideus
 Musculus transversus abdominis
+Myelofibrose
+N. maxillaris
 nekrotisierende Enterokolitis
 Nervus maxillaris
 Nierenkörperchen
@@ -2845,11 +3168,13 @@ Phagosom
 Phoniatrie
 Piriformis-Syndrom
 Plexus cervicalis
+Plexus solaris
 Plyometrie
 Pollakisurie
 Polytänchromosom
 Pyurie
 rechte Herzkammer
+rechter Ventrikel
 Retrograde Ejakulation
 Ringknorpel
 Riss des vorderen Kreuzbandes
@@ -2857,6 +3182,7 @@ Rötelnembryofetopathie
 Schleimbeutel
 Schlupfwarzen
 Septumdeviation
+Sinus frontalis
 Sinusthrombose
 Sonnengeflecht
 Spieltherapie
@@ -2865,6 +3191,7 @@ Sporotrichose
 Sprühtrocknung
 Stimmritzenkrampf
 Stirnhöhle
+Sturge-Weber-Krabbe-Syndrom
 Sturge-Weber-Syndrom
 Substanzgebrauchsstörung
 Thoracic-outlet-Syndrom
@@ -2903,6 +3230,7 @@ Bilirubinenzephalopathie
 Blumenkohlohr
 Brachydaktylie
 Bursa Fabricii
+Capsula articularis
 Carcinoma in situ
 Chorea minor
 Chorionepitheliom
@@ -2920,6 +3248,7 @@ Emerging Infectious Disease
 Epidermodysplasia verruciformis
 Epikard
 Feinultraschall
+Fenestra ovalis
 Feuermal
 Fordyce-Drüse
 Gelenkkapsel
@@ -2940,10 +3269,12 @@ Kalorienrestriktion
 Karzinoid
 Katarrh
 Katheterismus
+Keratosis follicularis
 Kinder- und Jugendpsychiatrie
 Kinderpsychiatrie
 Kontinuierlich messender Glucosesensor
 Kraniektomie
+Kraniotomie
 Krebsschmerzen
 Kugelzellenanämie
 Lebererkrankung
@@ -2952,6 +3283,10 @@ Lichen pilaris
 Lingua geographica
 linker Vorhof
 Lithotripsie
+M. adductor brevis
+M. extensor pollicis brevis
+M. obturator internus
+M. tibialis posterior
 Mastdarmvorfall
 Mastoid
 Monosomie
@@ -2972,6 +3307,7 @@ Musculus opponens pollicis
 Musculus tensor tympani
 Musculus tibialis posterior
 Muskelhypotonie
+Mylohyoideus
 Nabelarterie
 Nabelschnurvorfall
 nachteilige Auswirkung
@@ -2980,6 +3316,7 @@ Neuroendokrinologie
 Nikotinabhängigkeit
 Normaldruckhydrozephalus
 obere Einflussstauung
+Obturator internus
 Okklusion
 Öko-Emotionen
 Orchiektomie
@@ -2998,3 +3335,2666 @@ Rauschtrinken
 rechter Vorhof
 Regulatorische T-Zelle
 Retroperitonealraum
+Rubinstein-Taybi-Syndrom
+Sanfilippo-Syndrom
+Scheuermann-Krankheit
+Schienbeinkantensyndrom
+Schlammbad
+Schleudertrauma
+Seborrhoische Keratose
+Shin splint
+Skleritis
+Spinnenbiss
+Spondylarthrose
+Spondylitis
+Stellknorpel
+Swyer-Syndrom
+synaptisches Vesikel
+Synovitis
+Taijin Kyōfushō
+Tendinitis
+Tendopathie
+Thenar
+Thymom
+Tinea capitis
+Transposition der großen Arterien
+Trichiasis
+Tunica intima
+Überaugenwulst
+Ulcus cruris venosum
+Verätzung
+Verjüngung
+vierter Ventrikel
+Vitalkapazität
+Von-Gierke-Krankheit
+wasserbürtige Krankheiten
+Wharton-Sulze
+Würgreflex
+Zellweger-Syndrom
+A. mesenterica inferior
+afrikanische Pferdepest
+Alkoholmissbrauch
+Amakrinzelle
+Antikörpersuchtest
+Arachnopathie
+Arteria cerebri posterior
+Arteria iliaca externa
+Arteria lingualis
+Arteria mesenterica inferior
+Arteria poplitea
+Arteria thoracica interna
+Arthrogryposis multiplex congenita
+Asthenopie
+äußere Drosselvene
+Bauchdeckenstraffung
+Beckenschmerzen
+Beckwith-Wiedemann-Syndrom
+Berylliose
+Blaues Auge
+Bloom-Syndrom
+Blutausstrich
+Bruton-Syndrom
+Capsula interna
+Cat-Eye-Syndrom
+Chemische Synapse
+chronische Bronchitis
+Chylothorax
+Claudicatio intermittens
+Colon ascendens
+Cyclosporiasis
+Dakryozystitis
+Dampfbad
+Débridement
+Dermoidzyste
+Dubin-Johnson-Syndrom
+Einklemmung
+Ektrodaktylie
+Elastische Faser
+Elektronenmikroskopie
+Epigastrium
+Erosion
+Erythema exsudativum multiforme
+Essentielle Hypertonie
+extrapyramidales Syndrom
+Extrasystole
+Falx cerebri
+Faszikulation
+Fehlbiss
+Fossa pterygopalatina
+Gedächtniszelle
+Gyrus angularis
+Gyrus fusiformis
+Hormonstörung
+Hornhautulcus
+Hyperandrogenämie
+Hyperpigmentierung
+Hypokapnie
+Hypoplastisches Linksherz-Syndrom
+Ichdystone Sexualorientierung
+Infektiöse Bursitis der Hühner
+Interstitielle Lungenerkrankung
+Intertrigo
+Jugularis externa
+Kalotte
+Kammerscheidewand
+Känguru-Methode
+Katzenaugen-Syndrom
+keratoconjunctivitis photoelectrica
+Kinderzahnheilkunde
+Klüver-Bucy-Syndrom
+Koronarangiographie
+Kortikalis und Spongiosa
+kraniomandibuläre Dysfunktion
+Lamina propria
+Laron-Syndrom
+Larva migrans cutanea
+laterale Ventrikel
+Leberabszess
+Lebersche Optikusatrophie
+Leiomyosarkom
+Ligatur
+Lissenzephalie
+Louis-Bar-Syndrom
+Lunula
+M. abductor hallucis
+M. abductor pollicis longus
+M. extensor pollicis longus
+M. flexor pollicis brevis
+M. levator palpebrae superioris
+M. quadratus femoris
+Magnetresonanzangiographie
+MALT
+Mantelzelllymphom
+medikamentinduzierter Kopfschmerz
+Megakolon
+Memory-Zelle
+Mikrosom
+Minimal-Change-Glomerulonephritis
+Minnesota Multiphasic Personality Inventory
+MMPI
+Müller-Gang
+Musculi intercostales interni
+Musculus abductor digiti minimi
+Musculus abductor hallucis
+Musculus abductor pollicis longus
+Musculus extensor digitorum longus
+Musculus extensor hallucis longus
+Musculus extensor indicis
+Musculus extensor pollicis longus
+Musculus flexor pollicis brevis
+Musculus geniohyoideus
+Musculus intercostalis externus
+Musculus intercostalis internus
+Musculus levator palpebrae superioris
+Musculus mentalis
+Musculus obliquus inferior
+Musculus pyramidalis
+Musculus quadratus femoris
+Musculus rectus superior
+Musculus serratus posterior inferior
+Musculus serratus posterior superior
+Musculus sternothyroideus
+Musculus thyrohyoideus
+Nephrotoxizität
+Nervus pudendus
+Nervus terminalis
+Neurofeedback
+Nucleus ruber
+Oberschenkelvene
+Oligohydramnion
+Omphalozele
+Opiatmissbrauch
+Orthomolekulare Medizin
+Osteochondrose
+Osteochondrosis
+Osteochondrosis dissecans
+Osteopenie
+Ototoxizität
+Parodontose
+Pasteurellose
+Periproktitis
+Perseveration
+Persistent sexual arousal syndrome
+Pfeiffer-Syndrom
+Pleuraempyem
+Polkörper
+Portioerosion
+Pyoderma gangraenosum
+Pyodermie
+Raphe penis
+Retrograde Amnesie
+Sarkolemm
+Schädeldach
+Schädelkalotte
+Schulterluxation
+Seitenventrikel
+St.-Louis-Enzephalitis
+Stuhltest
+Stumpfe Verletzung
+Symptom oder Anzeichen
+Synovialgelenke
+systemische Sklerodermie
+Teleangiektasie
+Thorakotomie
+Thyreoidektomie
+Tragus
+Transiente globale Amnesie
+Trismus
+Trommelfellperforation
+Undine-Syndrom
+Vena femoralis
+Vero
+Vesikorenaler Reflux
+Wächterlymphknoten
+Waterhouse-Friderichsen-Syndrom
+XX-Mann
+Zahnabszess
+Zahnbehandlungsphobie
+Zahnprothese
+absteigende Aorta
+Achillessehnenruptur
+Achlorhydrie
+Aderhautmelanom
+Agrammatismus
+Akinetopsie
+Allotransplantation
+Analdrüse
+Analgesie
+Angiom
+Ankylostomiasis
+Anthrakose
+Anthropophobie
+Anti-NMDA-Rezeptor-Enzephalitis
+Aorta descendens
+Arbeitsschaden
+Arcus zygomaticus
+Arteria carotis
+Arteria gastrica sinistra
+Arthrodese
+auditorische Halluzination
+Aurikulotherapie
+Bálint-Syndrom
+Barorezeptor
+Beckenhöhle
+Bewegungsstörungen
+Bewusstseinstrübung
+Bipolare Zellen der Retina
+Blutungen in der Frühschwangerschaft
+Boerhaave-Syndrom
+Boosterdosis
+bronchopulmonale Dysplasie
+Burning-Mouth-Syndrom
+Cardia
+Charles-Bonnet-Syndrom
+Cytopathologie
+Dermatitis herpetiformis Duhring
+Dermatozoenwahn
+Dickdarmpolyp
+Diurese
+Douglas-Raum
+Duane-Syndrom
+Dyslexie
+Ejaculatio retarda
+Ekchymose
+Ektoplasma
+Endolymphe
+Epizootiologie
+Exostose
+Fersensporn
+Fetofetales Transfusionssyndrom
+Fettembolie
+Fingerlängenverhältnis
+Flüssigkeitsbeatmung
+Follikuläres Lymphom
+Gehirnprellung
+gerötete Augen
+Gyrus postcentralis
+Hämarthrose
+hämophagozytische Lymphohistiozytose
+Hemianopsie
+Hepatoblastom
+Hereditäre sensorisch-autonome Neuropathie
+Hsan Typ IV
+Hüftgelenk
+Hüftoperation
+Hundebiss
+Hypästhesie
+Hyperammonämie
+Hyposmie
+intraossärer Zugang
+Jarisch-Herxheimer-Reaktion
+Jochbogen
+Kardiotokografie
+Kardiotoxizität
+Karotisstenose
+Kartagener-Syndrom
+Keimzelltumor
+Keuchen
+Klavikulafraktur
+Klitoriseichel
+Kopfverletzung
+Koro
+Koronarthrombose
+Körpertemperatur des Menschen
+Krebsstammzelle
+Laboratoriumsmedizin
+LADA
+Lathyrismus
+Laurence-Moon-Biedl-Bardet-Syndrom
+leichte kognitive Beeinträchtigung
+Leiomyom
+Leukodystrophie
+Li-Fraumeni-Syndrom
+Lipodystrophie
+Lungenkontusion
+Lymphatische Fehlbildung
+M. abductor digiti minimi
+M. adductor pollicis
+M. flexor digitorum longus
+M. longissimus
+M. longus capitis
+M. obturator externus
+M. opponens digiti minimi
+M. palmaris brevis
+M. rectus femoris
+M. tensor veli palatini
+Macula densa
+Mallory-Weiss-Syndrom
+Mantelzelle
+Membranöse Glomerulonephritis
+Mikrophthalmie
+Milchschorf
+mimische Muskulatur
+minimalinvasive Chirurgie
+Mitralklappenprolaps
+Morbus Waldenström
+Multiple endokrine Neoplasie
+Multiresistenz
+Musculus adductor pollicis
+Musculus depressor labii inferioris
+Musculus flexor digitorum longus
+Musculus genioglossus
+Musculus hyoglossus
+Musculus longissimus
+Musculus longus capitis
+Musculus obliquus superior
+Musculus obturator externus
+Musculus palmaris brevis
+Musculus rectus femoris
+Musculus rectus inferior bulbi
+Musculus rectus medialis
+Musculus sphincter ani externus
+Musculus temporoparietalis
+Musculus tensor veli palatini
+Nabelschnurumschlingung
+Ncl. subthalamicus
+Nephrektomie
+Nervus musculocutaneus
+Nervus ophthalmicus
+Nervus phrenicus
+Neuritis
+Obturator externus
+Oligomenorrhoe
+Oligospermie
+Omentum majus
+Opisthotonus
+Orbitofrontalen Cortex
+Östliche Pferdeenzephalomyelitis
+Otologie
+ovarielles Hyperstimulationssyndrom
+Pancoast-Tumor
+Paneth-Zelle
+Partielle Thromboplastinzeit
+Perichondrium
+Perilymphe
+Pflanzenbasierte Ernährung
+Phokomelie
+Pilozytisches Astrozytom
+Pinta
+Plagiozephalie
+Plexus lumbosacralis
+Postorgasmic Illness Syndrom
+Prinzmetal-Angina
+Processus coracoideus
+Rasterkraftmikroskopie
+Raumkrankheit
+Reproduktionsmedizin
+Respiratorische Alkalose
+Roux-en-Y-Magenbypass
+Schlafmedizin
+Schulterdystokie
+Schwannom
+Seminom
+Sialolithiasis
+Sinus durae matris
+Skotom
+Sotos-Syndrom
+Spermatide
+Spermatozyt
+Sporternährung
+Stauungspapille
+Sternzellen
+Stickler-Syndrom
+sublingual
+Subthalamus
+Sulcus centralis
+Superinfektion
+systemische Erkrankung
+T-Gedächtniszelle
+Temporallappenepilepsie
+Thrombozytenreiches Plasma
+Tierhortung
+Tränendrüsenentzündung
+Tränensack
+Tunica adventitia
+Ulcus durum
+Urachus
+Ventricular Assist Device
+Verfolgungswahn
+virale Pneumonie
+Virämie
+Vitrektomie
+Wanderniere
+West-Syndrom
+Wolf-Hirschhorn-Syndrom
+Zerebrale Amyloidangiopathie
+Zungenbrennen
+Zytodiagnostik
+Adamantoblast
+Akanthozyt
+Akutes Skrotum
+Allergietest
+Alogie
+Anasarka
+Angina Plaut-Vincent
+Anomia
+Anovulation
+Argyll-Robertson-Zeichen
+Arteria communicans posterior
+Arteria hepatica propria
+Arteria uterina
+Aspirat
+Aspirationsprophylaxe
+Augenkammer
+Ausbluten
+Äußere Membran
+Azotämie
+Bacterial Artificial Chromosome
+Basophilie
+Betawelle
+Biogen
+bipolare Nervenzelle
+CADASIL
+Camera posterior bulbi
+Caput medusae
+Cauda equina
+Chelat-Therapie
+Chlorakne
+Chondroblast
+Cockayne-Syndrom
+colon transversum
+Deltawelle
+Dressler-Syndrom
+duktales Karzinom in situ
+Dumping-Syndrom
+Dünndarmkrebs
+Duodenopankreatektomie
+Echopraxie
+Empty-Sella-Syndrom
+Ependymom
+Epidermoidzyste
+Erythrasma
+Esssucht
+exogen allergische Alveolitis
+Farbkodierte Doppler-Sonografie
+Fissura longitudinalis
+Frösteln
+Gallengangatresie
+Gamma-Welle
+Gastrointestinaler Stromatumor
+Gaumenspalte
+Gelenkersatz
+Gerontopsychiatrie
+Gerstmann-Syndrom
+Golfkriegssyndrom
+Haarzellleukämie
+Hallucinogen Persisting Perception Disorder
+Hammerzehe
+Hämoglobin F
+Hauptzelle
+Herzverletzung
+Histiozyt
+Hochfrequenzablation
+Holoprosencephalie
+humane Adenoviren
+Hypersalivation
+Hypertonie
+Hypervolämie
+Hypothenar
+Impingement
+Impotentia generandi
+Instabiler Thorax
+Interstitielle Nephritis
+Intrauterine Wachstumsretardierung
+Intubation
+Iontophorese
+Kabuki-Syndrom
+Kearns-Sayre-Syndrom
+Keimzentrum
+kleine Rosenader
+Klippel-Feil-Syndrom
+Kniefehlstellung
+Kofferdam
+Kollagenose
+Körpergeruch
+Kortikobasale Degeneration
+Kreuzreaktivität
+Laryngoskopie
+Lebersche Kongenitale Amaurose
+Lentigo
+Limbus
+Loeys-Dietz-Syndrom
+Loiasis
+Lymphopenie
+Lymphozytose
+M. gemellus inferior
+M. transversus thoracis
+Magnetosom
+Makrosomie
+Makrozephalie
+Mekoniumaspiration
+Merkelzellkarzinom
+Mesenchymale Stammzelle
+Metallvergiftung
+Milchfieber
+Musculus cricothyroideus
+Musculus depressor anguli oris
+Musculus fibularis brevis
+Musculus gemellus inferior
+Musculus longus colli
+Musculus rectus lateralis
+Musculus spinalis
+Musculus splenius
+Musculus styloglossus
+Musculus transversus thoracis
+Musculus vastus lateralis
+Musculus vastus medialis
+Myelozyt
+Nasopharynx
+Natürliche Familienplanung
+Nervus femoralis
+Nervus mandibularis
+Nervus thoracicus longus
+Nervus tibialis
+Neurit
+Neurogene Blase
+Nucleus
+Nucleus tractus solitarii
+Ohrmuschelfehlbildung
+Omentum minus
+Pannikulitis
+Parafollikuläre Zelle
+Paragangliom
+Perikarderguss
+Perikardpunktion
+Perinatalmedizin
+Phlebotomusfieber
+Pickwick-Syndrom
+Präkanzerose
+primäre Immundefektkrankheit
+Proximale Humerusfraktur
+Pseudogicht
+Psychasthenie
+Radiofrequenzablation
+Ramsay-Hunt-Syndrom
+Rasch progressive Glomerulonephritis
+Rechtsschenkelblock
+Refsum-Syndrom
+rekonstruktive Chirurgie
+Retinopathia centralis serosa
+Runge-Zeichen
+Saphena parva
+Schulangst
+Schultereckgelenk
+Schwarze Haarzunge
+Septische Granulomatose
+Sialadenitis
+Sick-Sinus-Syndrom
+Sigmoidoskopie
+Silver-Russell-Syndrom
+Sinustachykardie
+Smith-Lemli-Opitz-Syndrom
+Sprachstörung
+Staphylococcal scalded skin syndrome
+Stimmungsschwankungen
+TH17-Zelle
+Tonometer
+Tonometrie
+Trichologie
+Trikuspidalinsuffizienz
+Tungiasis
+Übertragungszeichen
+Uniparentale Disomie
+Valgusstellung
+Vena saphena parva
+Vorhof des Ohrs
+Wahrnehmungsstörung
+Wallersche Degeneration
+Warburg-Effekt
+Abetalipoproteinämie
+Achillessehnenentzündung
+Adenotomie
+Adie-Syndrom
+Alström-Syndrom
+Altersfleck
+Alveolarproteinose
+Amelogenesis imperfecta
+Anaplasmose
+Anorchie
+Aphallie
+apikale Parodontitis
+Arteria centralis retinae
+Arteria coronaria dextra
+Arteria cystica
+Arteria meningea media
+Arteria occipitalis
+Arteria testicularis
+Asthma cardiale
+Augenhintergrund
+Autoimmunhämolytische Anämie
+Barth-Syndrom
+Bauchhöhlenschwangerschaft
+Brown-Séquard-Syndrom
+Café-au-lait-Fleck
+Cannabis-Hyperemesis-Syndrom
+Caro luxurians
+Chondrom
+Chondropathia patellae
+Chorioretinitis
+Colliculi superiores
+Colliculus superior
+Corpus-callosum-Agenesie
+Default Mode Network
+Demodikose
+Dermatoskopie
+Desquamation
+DIDMOAD-Syndrom
+diffus axonale Verletzung
+Dornfortsatz
+Duodenitis
+Elektroretinogramm
+Ellis-van-Creveld-Syndrom
+Embolisation
+Extrakorporale Stoßwellentherapie
+Feinnadelbiopsie
+fetales Tabaksyndrom
+Fetoskopie
+Fibrillation
+Foramen jugulare
+Frühkindlicher Autismus
+ganzheitliche Medizin
+Gastrostoma
+Gastrostomie
+Geburtseinleitung
+Gestationshypertonie
+Gingivarezession
+Globussyndrom
+Granulationsgewebe
+Granulosazelle
+Gyrus praecentralis
+Hämochromatose klassische
+Hämoglobinopathie
+Herz-Kreislauf-System
+hinteres Kreuzband
+Höhenhirnödem
+Höhenlungenödem
+Hufeisenniere
+Hypalbuminämie
+Hyperkinese
+Hypermagnesiämie
+Iliosakralgelenk
+Impfdurchbruch
+Insektenstich
+Intrahepatische Schwangerschaftscholestase
+ischämische Colitis
+Joubert-Syndrom
+Kavernom
+Kielbrust
+Klimatherapie
+Klitoridektomie
+knöchernes Labyrinth
+Kondylus
+Kontraktur
+Langhans-Riesenzelle
+Lebervene
+Leberwerte
+Leigh-Syndrom
+Leistenband
+Lichen simplex chronicus
+Lichtallergie
+Lieberkühn-Krypten
+Ligamentum inguinale
+Linksschenkelblock
+Linsenluxation
+Liquid biopsy
+Low-Level-Lasertherapie
+Ludwig-Angina
+M. fibularis tertius
+M. levator veli palatini
+M. vastus intermedius
+Marek-Krankheit
+mesolimbisches System
+Mikroskopische Polyangiitis
+Mikrozytäre Anämie
+Minimalinvasive Strabismuschirurgie
+MODY
+Morbus Fahr
+Morton-Neuralgie
+MTOC
+Musculus coccygeus
+Musculus depressor supercilii
+Musculus extensor digitorum brevis
+Musculus fibularis tertius
+Musculus flexor digitorum brevis
+Musculus frontalis
+Musculus gemellus superior
+Musculus levator veli palatini
+Musculus peroneus tertius
+Musculus quadratus plantae
+Musculus rectus capitis lateralis
+Musculus semispinalis
+Musculus vastus intermedius
+Myokymie
+Myotonie
+Myxom
+Nachtessersyndrom
+Nackentransparenz
+Nelson-Tumor
+Neurom
+Neuronale Ceroid-Lipofuszinose
+Nierenagenesie
+Nussknacker-Syndrom
+Oligodendrogliom
+Panleukopenie
+Panzytopenie
+Papillarmuskel
+Parodontitis apicalis
+Parotitis
+Peak Flow
+Periorale Dermatitis
+Phalloplastie
+Photorefraktive Keratektomie
+Pinguecula
+Pleurapunktion
+Pneumektomie
+Podiatrie
+Polyarthritis
+Polypharmazie
+Polythelie
+Post-Polio-Syndrom
+Proximaler Tubulus
+Pseudarthrose
+Pseudoautosomale Region
+Psychiatrische Krise
+Psychochirurgie
+Pulmonalstenose
+Pyometra
+Radikulopathie
+Radiusköpfchen-Subluxation
+Raphe-Kerne
+rechte Koronararterie
+Rektozele
+Respiratorische Azidose
+Rete mirabile
+Rotor-Syndrom
+Rückfall
+Sammelrohr
+Schädelfraktur
+Schulterpfanne
+Serothorax
+Sinus caroticus
+Sklerotherapie
+Smith-Magenis-Syndrom
+SMS
+Sozialmedizin
+Speicheldrüsen-Tumoren
+Spermatozele
+Split Brain
+Stadienbestimmung
+Subkortikale arteriosklerotische Enzephalopathie
+Substantia corticalis
+substanzungebundene Abhängigkeit
+Synaptonemaler Komplex
+Tangier-Krankheit
+Tendinitis der Achillessehne
+Tetraamelie
+Tinea corporis
+Tolosa-Hunt-Syndrom
+Tonsilla lingualis
+Tonsilla tubaria
+Tränenträufeln
+transkutane elektrische Nervenstimulation
+Trichophagie
+tuberkulöse Meningitis
+Tyrosinämie
+Vagusnervstimulator
+Vena hepatica
+Vena iliaca externa
+Vena saphena magna
+ventrikuläre Extrasystole
+Wernicke-Aphasie
+Wurzelhaut
+Yellow-nail-Syndrom
+Zungenbändchen
+Aagenaes-Syndrom
+afrikanisches Zeckenbissfieber
+Aicardi-Syndrom
+Akute febrile neutrophile Dermatose
+Alkohol und Gesundheit
+Analatresie
+Anhidrose
+Ansteckende Blutarmut der Einhufer
+Antikörperabhängige zellvermittelte Zytotoxizität
+Aorta thoracica
+apokrine Schweißdrüse
+Apophyse
+Arachnodaktylie
+Arachnoidalzyste
+Arcus senilis
+Arteria gastrica dextra
+Arteria gastroomentalis dextra
+Arteria ovarica
+Arteria phrenica inferior
+Arteria profunda brachii
+Arteria pudenda interna
+Arteria suprascapularis
+Arteria thoracoacromialis
+Arteriovenöse Fistel
+Arthropathie
+Artifizielle Störung
+Atemgeräusch
+Atresia ani
+autosomal-dominante Zystenniere
+Autotransplantation
+Bauchwand
+Beziehungsideen
+Bipolar-I-Störung
+Bipolar-II-Störung
+Blasenekstrophie
+Blastom
+Bradypnoe
+Bregma
+Bronchialarterie
+Brunner-Drüsen
+BVD/MD
+Cajal-Körper
+CHARGE-Syndrom
+Chediak-Higashi-Syndrom
+Cheilitis
+Chinarestaurant-Syndrom
+Chordae tendineae
+Coffeinismus
+Contergan-Skandal
+Darmassoziiertes Immunsystem
+Deltazelle
+Diffuses großzelliges B-Zell-Lymphom
+Diffusionsgewichtete Magnetresonanztomographie
+Diskoider Lupus erythematodes
+Distale Radiusfraktur
+DRESS-Syndrom
+Dünndarmfehlbesiedlung
+Durchblutungsstörung
+Edinger-Westphal-Kern
+Effekte von Cannabis
+Emmetropie
+Enterochromaffine Zelle
+Enterostoma
+Entspannungsverfahren
+Enzephalozele
+Ependym
+Epidemische Pleurodynie
+Equine Infektiöse Anämie
+Erbgrind
+Erythromelalgie
+Essentielle Thrombozythämie
+Fabella
+Farber-Syndrom
+Fazioskapulohumerale Muskeldystrophie
+Felsenbein
+Felty-Syndrom
+Fibrozyt
+Flimmerepithel
+FOB-Test
+Foetus in foeto
+forensische Pathologie
+Fundus hypertonicus
+Galeazzi-Fraktur
+Geschmacksrezeptor
+Geschmacksstörung
+Globale Gesundheit
+Glucagonom
+Glutamat-Unverträglichkeit
+Goldenhar-Syndrom
+Grenzstrang
+Gyrus parahippocampalis
+Gyrus supramarginalis
+Hämhidrose
+Hammerfinger
+Hämorrhagische Diathese
+Harnröhrenstriktur
+Hautemphysem
+Heparin-induzierte Thrombozytopenie
+Herpes-Enzephalitis
+Herpes-simplex-Enzephalitis
+Herztumor
+Herzwurmerkrankung
+Hospitalismus
+Hyperästhesie
+Hypertelorismus
+hypokaliämische periodische Paralyse
+Hypopyon
+Immunologische Synapse
+Impfkalender
+In-situ-Hybridisierung
+Iridektomie
+ischämische Herzkrankheit
+Jacobsen-Syndrom
+Kallusdistraktion
+Keilbeinhöhle
+Kephalhämatom
+Klippel-Trénaunay-Weber-Syndrom
+Knochentuberkulose
+Kokzygodynie
+Kolonkontrasteinlauf
+Kolostomie
+Körperoberfläche
+Landau-Kleffner-Syndrom
+Laryngomalazie
+Lemierre-Syndrom
+Liddle-Syndrom
+linke Koronararterie
+Lown-Ganong-Levine-Syndrom
+Lupus vulgaris
+M-Zelle
+Makroglossie
+Makulaödem
+Malaise
+MELAS
+Meningismus
+Milien
+Molekulare Biomedizin
+Molekularpathologie
+Morbus Castleman
+Morbus Darier
+Morbus McArdle
+Morbus Still des Erwachsenen
+Musculi levatores costarum
+Musculi multifidi
+Musculus arrector pili
+Musculus bulbospongiosus
+Musculus constrictor pharyngis superior
+Musculus cricoarytaenoideus lateralis
+Musculus detrusor vesicae
+Musculus obliquus capitis inferior
+Musculus pectoralis
+Musculus scalenus anterior
+Musculus splenius cervicis
+Mycetoma
+Mycosis fungoides
+Myelografie
+Myelopathie
+N. axillaris
+N. obturatorius
+Nabelvene
+Nasenbeinfraktur
+Nervus axillaris
+Nervus dorsalis scapulae
+Nervus obturatorius
+Neuroblast
+neurokognitive Störung
+Neuropil
+nicht-kleinzelliges Bronchialkarzinom
+Nierenarterienstenose
+NKT-Zelle
+Occiput
+Orthopantomographie
+Ozaena
+Papilla duodeni major
+Penetrationstrauma
+Penistransplantation
+Periaquäduktales Grau
+Phthisiologie
+Pibloktoq
+Pierre-Robin-Sequenz
+Pierre-Robin-Syndrom
+Plummer-Vinson-Syndrom
+Poltern
+Polychondritis
+postpunktioneller Kopfschmerz
+Prämedikation
+Primitivstreifen
+Prokaryotische Zelle
+Prolaps
+Promyelozytenleukämie
+Prostatektomie
+Psychoonkologie
+Rektusdiastase
+Respiratorisches Epithel
+Riechschleimhaut
+Rotatorenmanschettenruptur
+Schädelbasis
+Schädelhöhle
+Schaumzelle
+Schenkelblock
+Schneeblindheit
+sekundäre Krankheit
+Sézary-Syndrom
+Skelettszintigrafie
+stationäre Behandlung
+Stichverletzung
+subkutanes Emphysem
+Subunguales Hämatom
+Sweet-Syndrom
+Synchondrose
+Syndrom des zyklischen Erbrechens
+Tauchreflex
+thyreotoxische Krise
+Tietze-Syndrom
+Trophozoit
+Tropische Sprue
+Troyer-Syndrom
+Ultraschalltherapie
+Urbach-Wiethe-Syndrom
+Urniere
+Uterus bicornis
+VACTERL-Assoziation
+Vakuumtherapie
+Vena cephalica
+vertikale Infektionsübertragung
+Verwachsung
+Vogelmalaria
+WAGR-Syndrom
+Wallenberg-Syndrom
+Warthin-Tumor
+Wassernesselsucht
+Zahnfraktur
+Zentrale auditive Verarbeitungsstörung
+Zentralvenenthrombose
+Ziliopathie
+Zinkmangel
+Zwerchfellhernie
+Abrasio dentium
+Akantholyse
+Akute vorübergehende psychotische Störungen
+allergisches Kontaktekzem
+Ameloblastom
+Andersen-Tawil-Syndrom
+angeborene Zwerchfellhernie
+Angiokeratom
+Anisakiasis
+Aortitis
+Arteria cerebelli inferior posterior
+Arteria colica sinistra
+Arteria gastroduodenalis
+Arteria gastroepiploica sinistra
+Arteria iliolumbalis
+Arteria inferior posterior cerebelli
+Arteria pharyngea ascendens
+Arteria thoracica lateralis
+Arteria thyroidea inferior
+Arteria-mesenterica-superior-Syndrom
+Articulatio sellaris
+ästhetische Medizin
+Atemmuskulatur
+Atonie
+Auditiver Kortex
+Beau-Linien
+Beckenbruch
+Beckenfraktur
+Beta-Thalassämie
+Binge-Eating
+Biologische Psychiatrie
+Bioresonanztherapie
+Blood urea nitrogen
+Blut-Hoden-Schranke
+Boutonneuse-Fieber
+Buffy-Coat
+Caroli-Syndrom
+Caveolae
+Charcot-Fuß
+Chemosis
+Cherubismus
+Chordom
+chronisch inflammatorische demyelinisierende Polyneuropathie
+Coenurose
+Compassionate Use
+CREST-Syndrom
+Cytopathischer Effekt
+Dehnreflex
+Deinstitutionalisierung der Psychiatrie
+Diamond-Blackfan-Syndrom
+Diprosopus
+Eiallergie
+Einschlusskörperchen
+ekkrine Schweißdrüse
+elektrokoagulace
+Elektromechanische Entkoppelung
+Endokrine Orbitopathie
+Endometriumhyperplasie
+Endophthalmitis
+Enkopresis
+Entwicklungsbeeinträchtigung
+Epikutantest
+Erregungsleitungsstörung
+Erysipeloid
+Fasciculus arcuatus
+Fibrosarkom
+Fibröse Dysplasie
+Fieber unklarer Genese
+Folsäuremangel
+Foramen spinosum
+Forensische Fotografie
+Fötalchirurgie
+G-Zelle
+Gallenwege
+Ganglion ciliare
+Gebrechlichkeit
+Geburtsgewicht
+Gewichtszunahme
+Gitelman-Syndrom
+Goltz-Gorlin-Syndrom
+Gonoblennorrhoe
+Hämangioblastom
+Hämatometra
+Harnröhrenschwellkörper
+Harnstein
+Hartnup-Krankheit
+Hausärztliche Versorgung
+Hauthorn
+Havers-Kanal
+Heberden-Arthrose
+Heberden-Knoten
+Hidradenitis
+Hirnkartierung
+Hohlfuß
+Hornhautdystrophie
+Hyperostose
+Hypodontie
+Hypophosphatasie
+Hypoproteinämie
+Ilizarowapparat
+Inhalation
+Innenohrschwerhörigkeit
+Intraoperative Wachheit
+Isochromosom
+Jones-Fraktur
+Kallus
+Kalzinose
+Keratoakanthom
+Keratoderma
+kernmatrix
+Klinodaktylie
+Koinfektion
+Kolektomie
+Kotstein
+Kryoglobulinämie
+kutane Leishmaniose
+Kyasanur-Wald-Fieber
+Larynxmaske
+Legasthenie
+Lewy-Body-Demenz
+Lingua plicata
+Lymphangioleiomyomatose
+Lymphozytäre Choriomeningitis
+M. adductor hallucis
+M. obliquus capitis superior
+Makronukleus
+Mammazyste
+Maroteaux-Lamy-Syndrom
+Membranoproliferative Glomerulonephritis
+Meniskusriss
+Metalldampffieber
+mikrodeletionssyndrom 1p36.33
+Miliartuberkulose
+Morbus Bowen
+Multizystische Nierendysplasie
+Muschelvergiftung
+Musculi rotatores
+Musculus adductor hallucis
+Musculus constrictor pharyngis medius
+Musculus cricoarytaenoideus posterior
+Musculus flexor hallucis brevis
+Musculus ischiocavernosus
+Musculus obliquus capitis superior
+Musculus palatoglossus
+Musculus palatopharyngeus
+Musculus rectus capitis anterior
+Musculus salpingopharyngeus
+Musculus scalenus posterior
+Musculus sphincter ani internus
+Musculus suspensorius duodeni
+Muselmann
+Muttermundschwäche
+Myoepithelzelle
+myofasziales Schmerzsyndrom
+Myofibroblast
+Naevus araneus
+Nagelablösung
+Nephrosklerose
+Nervus fibularis communis
+Neuralplatte
+Neuralrohrdefekt
+Neurofibromatose Typ 2
+Nicht-Zöliakie-Nicht-Weizenallergie-Weizensensitivität
+Nickkrankheit
+Nierenkelch
+Non-Disjunction
+Nonverbale Lernstörung
+Nucleus ambiguus
+Omphalitis
+Orbitaphlegmone
+Oropouche-Fieber
+Orthokeratologie
+Osteochondrom
+Osteosklerose
+Osteotomie
+Palilalie
+Paraphasie
+Parinaud-Syndrom
+Parry-Romberg-Syndrom
+passiv-aggressive Persönlichkeitsstörung
+Pelizaeus-Merzbacher-Krankheit
+Perimetrie
+Phakoemulsifikation
+Phelan-McDermid-Syndrom
+Photoplethysmogramm
+Phototoxie
+Pitt-Hopkins-Syndrom
+Plazentaretention
+Pneumonitis
+Pneumoperitoneum
+Poliosis
+Polyradikuloneuropathie
+Polytrauma
+Post-SSRI Sexual Dysfunction
+Postinfektiöse Glomerulonephritis
+primäre ZNS-Lymphom
+Pseudohermaphroditismus
+pyogenes Granulom
+Rapunzelsyndrom
+Rasmussen-Enzephalitis
+Rasselgeräusch
+Rattenbissfieber
+Räude
+Reisemedizin
+Rhabdomyom
+ribonucleoprotein
+Rothmund-Thomson-Syndrom
+Schamspalte
+schleichenden Schizophrenie
+Schmorl-Knorpelknötchen
+Selbstmordversuch
+somatoforme Schmerzstörung
+spasmodische Dysphonie
+Sphaeroplast
+Splenius
+Spontan bakterielle Peritonitis
+Sternoklavikulargelenk
+substanzinduzierte Psychose
+Syndrom der unkämmbaren Haare
+Tabaksucht
+Tentorium cerebelli
+Thorakoskopie
+Tophus
+Transurethrale Resektion
+Triggerpunkttherapie
+Trikuspidalatresie
+Trisomie 16
+Truncus thyrocervicalis
+Tunica media
+Ulnarisrinnen-Syndrom
+Umweltmedizin
+Unterkieferfraktur
+Uterus didelphys
+Vasospasmus
+Vena iliaca communis
+Vena iliaca interna
+Vena poplitea
+Verner-Morrison-Syndrom
+Virale Enzephalitis
+Vogt-Koyanagi-Harada-Syndrom
+Vorhofschwellkörper
+Wiesengräserdermatitis
+Zentrale pontine Myelinolyse
+Zervixcerclage
+β-Thalassämie
+13C-Harnstoff-Atemtest
+Aase-Smith-Syndrom
+Achylie
+Adermatoglyphie
+Affektinkontinenz
+Affektverflachung
+Agalaktie
+Akrozyanose
+Alveolitis sicca
+Angiodysplasie
+Angiomyolipom
+arrhythmogene rechtsventrikuläre Kardiomyopathie
+Arteria auricularis posterior
+Arteria cerebelli inferior anterior
+Arteria cerebelli superior
+Arteria epigastrica inferior
+Arteria inferior anterior cerebelli
+Arteria pancreaticoduodenalis inferior
+Arteria rectalis superior
+Arteria sacralis mediana
+Arteria spinalis anterior
+Arteria spinalis ventralis
+Arteria superior cerebelli
+Arzneimittelexanthem
+Asthenospermie
+Atherektomie
+Atrio-ventrikulärer Septumdefekt
+AV-Knoten-Reentrytachykardie
+Bloch-Sulzberger-Syndrom
+Bor-Neutroneneinfangtherapie
+Broca-Aphasie
+Bullöses Pemphigoid
+Byssinose
+Cardiophobie
+Cerebrotendinöse Xanthomatose
+Clonorchiose
+Cool Down
+Cori-Krankheit
+Cowden-Syndrom
+Cutis-laxa-Syndrom
+Cystosarcoma phylloides
+Darmparasitose
+Darmsaft
+digitale Volumentomographie
+ektodermale Dysplasie
+Ektopie
+Endemische Syphilis
+Endoplasma
+Endost
+Entzugssyndrom
+Ependymzelle
+epinerium
+Erdnussallergie
+Erinnerungsverfälschung
+Erythrodermie
+Esotropie
+Externe kraniale Neurostimulation
+Extremität
+Faktor-V-Leiden-Mutation
+Fenestra cochleae
+Fenestra rotunda
+Fixierung
+Flimmerskotom
+Foramen infraorbitale
+Fossa temporalis
+Frontallappenepilepsie
+Fuchs-Endotheldystrophie
+Gardner-Syndrom
+Gedächtnisstörung
+Geschlechtsidentitätsstörung
+Glanzmann-Thrombasthenie
+Gliose
+Glomus caroticum
+Glymphatisches System
+Gonadendysgenesie
+Gyrus dentatus
+Gyrus frontalis inferior
+habitueller Abort
+Hämatokolpos
+Handchirurgie
+Hashimoto-Enzephalopathie
+Hereditäre Fruktoseintoleranz
+Herpes corneae
+Histiozytose
+Holt-Oram-Syndrom
+Horizontalzelle
+Hornstein-Knickenberg-Syndrom
+Humerusfraktur
+Hyperkalzurie
+Hyperoxalurie
+Hypopigmentierung
+Intense Pulsed Light
+intestinale Fruktoseintoleranz
+Intrakutane Injektion
+intravenös
+Kahnbeinbruch
+Kampo
+Kapnometrie
+Kokainabhängigkeit
+Komplementbindungsreaktion
+Krankheit des zentralen Nervensystems
+Kürettage
+Lärmschwerhörigkeit
+Larsen-Syndrom
+Laryngektomie
+Laryngitis gastrica
+LEOPARD-Syndrom
+Ligamentum teres uteri
+linksventrikuläre Hypertrophie
+Löffler-Syndrom
+Löfgren-Syndrom
+Lunatummalazie
+Lungenfunktion
+M. scalenus medius
+Mastzellaktivierungssyndrom
+MDS
+Mediastinitis
+Melkersson-Rosenthal-Syndrom
+MERRF-Syndrom
+Metaphyse
+Milde therapeutische Hypothermie
+Miller-Dieker-Syndrom
+Mondor-Krankheit
+Monozytose
+Morbus Andersen
+Morbus Coats
+Morbus Cushing
+Morbus Hurler
+Musculi infrahyoidei
+Musculi interossei palmares
+Musculi interspinales
+Musculi intertransversarii
+Musculi lumbricales pedis
+Musculus auricularis posterior
+Musculus chondroglossus
+Musculus constrictor pharyngis inferior
+Musculus extensor hallucis brevis
+Musculus occipitalis
+Musculus pubococcygeus
+Musculus scalenus medius
+Musculus stylopharyngeus
+Musculus subcostalis
+Myeloblast
+Myotonia congenita Thomsen
+Nagel-Patella-Syndrom
+Nervenbahn
+Nervenfaser
+Nervus ilioinguinalis
+Nervus subclavius
+Nervus thoracodorsalis
+Neutrophilie
+Ohrfistel
+Onlineberatung
+Oroya-Fieber
+Osteoid-Osteom
+Osteoonychodysplasie
+Ostitis alveolaris
+Pacchionische Granulation
+Pankreastransplantation
+PAS-Reaktion
+Pemphigoides gestationis
+Pendred-Syndrom
+Phakomatose
+Pharmakoepidemiologie
+Phlebologie
+Photosensibilität
+Phycobilisom
+Platzbauch
+Plexus myentericus
+plötzlicher Herztod
+Polykorie
+Post-Zoster-Neuralgie
+Posteriores reversibles Enzephalopathie-Syndrom
+Precuneus
+Progressive Muskelatrophie
+Propionazidämie
+Pulsdiagnose
+Pyknodysostose
+Quervain-Thyreoiditis
+Rastertransmissionselektronenmikroskop
+Rehabilitation psychisch Kranker
+religiöser Wahn
+Retikulumzelle
+retinaler Arterienverschluss
+Riesenzelltumor
+Ringchromosom
+Sakroiliitis
+Satyriasis
+Schädelsutur
+Scharniergelenk
+Schizophasie
+Seckel-Syndrom
+Seelenblindheit
+Sehbahn
+Sharp-Syndrom
+Shwachman-Bodian-Diamond-Syndrom
+Sinubronchiales Syndrom
+Sjögren-Larsson-Syndrom
+Skaphozephalus
+Sly-Syndrom
+Spondylolysis
+Sternberg-Riesenzelle
+Störungen der Vasomotorik
+Subakute granulomatöse Thyreoiditis
+Subakute Thyreoiditis de Quervain
+Subarachnoidalraum
+Sulcus temporalis superior
+Supinationstrauma
+Susac-Syndrom
+Synarthrose
+Synovialsarkom
+Tauopathie
+Tractus opticus
+Trigonocephalie
+Tuboovarialabszess
+Tunica dartos
+Vagotomie
+Varianten der Geschlechtsentwicklung
+Vena basilica
+Vena cerebri magna
+Vena splenica
+Visuelle Analogskala
+Viszeralchirurgie
+Volkmann-Kontraktur
+Völlegefühl
+Weibel-Palade-Körperchen
+Weichteilsarkom
+Wellens-Syndrom
+Wortsalat
+Yersiniose
+Zahnretention
+Zerebrale arteriovenöse Malformation
+Zirkumventrikuläres Organ
+Abrissfraktur
+Absaugen
+Adenoid-zystisches Karzinom
+ADS-E
+Aicardi-Goutières-Syndrom
+Akute intermittierende Porphyrie
+akute interstitielle Pneumonie
+ambulant erworbene Pneumonie
+anaphylaktischer Schock
+Anaplastisches Astrozytom
+Anhaltende Trauerstörung
+Antizipation
+Arrhinie
+Arteria circumflexa humeri anterior
+Arteria circumflexa humeri posterior
+Arteria pericardiacophrenica
+Arteria subscapularis
+Arteria thoracica superior
+Arteria tibialis anterior
+Arteria vaginalis
+Arteria vesicalis inferior
+Asplenie
+aufmerksamkeitssuchend
+Autonome Dysreflexie
+AV-Reentrytachykardie
+bakterielle Pneumonie
+Ballismus
+BIPAP-Beatmung
+Borna-Krankheit
+Brightsche Krankheit
+Brusterkrankung
+Canalis opticus
+CHO
+Choroideremie
+Chronische Cerebro-Spinale Venöse Insuffizienz
+Commissura anterior
+Conus medullaris
+Costello-Syndrom
+Crista iliaca
+Crus clitoridis
+Cuneus
+Darmbeinkamm
+Dentinogenesis imperfecta
+Diffuser Ösophagusspasmus
+Disease Mongering
+Drug Monitoring
+Dyssomnie
+Embryotransfer
+Emery-Dreifuss-Muskeldystrophie
+Enophthalmus
+Enterotoxämie
+Entwicklungsstörung
+Erdheim-Chester-Erkrankung
+Ernährungsmedizin
+Erythrozytenverteilungsbreite
+Extrazellulär
+Familiäre Amyloid-Polyneuropathie
+Familiäre Dysautonomie
+Fasziotomie
+Fibromuskuläre Dysplasie
+Fissura orbitalis superior
+Fitz-Hugh-Curtis-Syndrom
+Fixateur externe
+Fossa infratemporalis
+Frenulum breve
+Frey-Syndrom
+Gallenstein
+Ganglion trigeminale
+Gephyrophobie
+Germinom
+Glaskörperabhebung
+Gliedergürteldystrophie
+Gliomatosis cerebri
+Glutarazidurie Typ 1
+Gyri temporales transversi
+Gyrus frontalis superior
+Hämolacria
+Hepatektomie
+Herzektopie
+Herzskelett
+Herzstillstand
+HF-Chirurgie
+Homocysteinämie
+Hymenolepiasis
+Hypogalaktie
+Idiopathische Hypersomnie
+Immunphänotypisierung
+Implantologie
+kaudales Regressionssyndrom
+Kephalometrie
+Klitorisschenkel
+Klitorisvorhautreduktion
+Knöchel-Arm-Index
+Knochenmetastase
+Knochentransplantation
+Kommunikationsstörung
+Konisation
+konnataler Nävuszellnävus
+Konzentrische Sklerose Baló
+Koprostase
+Krukenberg-Tumor
+künstlerische Therapie
+Kurzer Knochen
+kurzzeitige Auswirkungen von Alkohol
+Larvierte Depression
+Latexallergie
+Läuferknie
+Lebensstilmedizin
+Leriche-Syndrom
+Lhermitte-Duclos-Syndrom
+Lidgerüst
+Lipomastie
+Lumpektomie
+Lymphadenektomie
+Manuelle Lymphdrainage
+Marcus-Gunn-Syndrom
+McLeod-Syndrom
+Meckel-Syndrom
+Mediastinoskopie
+medizinisches Verfahren
+Meigs-Syndrom
+menschlicher Gang
+Meralgia paraesthetica
+Methylmalonazidurie
+Metritis
+Mikrodontie
+Mikrognathie
+mikroskopische Colitis
+Mikrosporidiose
+Mirizzi-Syndrom
+Mitochondrial Replacement Therapy
+mittlere Korpuskuläre Hämoglobinkonzentration
+mittleres Korpuskuläres Hämoglobin
+Monorchie
+Monteggia-Fraktur
+Morbus Erdheim-Chester
+Morbus Köhler-Freiberg
+Musculi interossei dorsales
+Musculus auricularis anterior
+Musculus auricularis superior
+Musculus tarsalis
+Myokardszintigrafie
+Nachtschweiß
+Nebenmilz
+Nebennierenrindenkarzinom
+Nephronophthise
+Nervus cochlearis
+Nervus cutaneus femoris lateralis
+Nervus gluteus superior
+Nervus laryngeus superior
+Nervus pectoralis
+Nervus suprascapularis
+Neugeborenenscreening
+Neugeborenensepsis
+Neuritis vestibularis
+Neurofibrom
+Nicht-24-Stunden-Schlaf-Wach-Störung
+Nickelallergie
+Nierenersatztherapie
+Nikotinkaugummi
+Nucleus paraventricularis
+Nukleotomie
+Nussknacker-Oesophagus
+obere gastrointestinale Blutung
+okuläre Hypertension
+Oligohydramnion-Sequenz
+Orthoptik
+PANDAS
+Pemphigus vulgaris
+Perimysium
+Peripartale Kardiomyopathie
+Pes anserinus
+Pfortaderthrombose
+Phantosmie
+Phlebografie
+Platter Knochen
+Pleuraschwarte
+Pleurodese
+Porphyria cutanea tarda
+Postprandiale Hypoglykämie
+Potter-Syndrom
+Pruritus ani
+Pseudomyxoma peritonei
+Pseudoxanthoma elasticum
+PUVA
+Ranula
+Regeltypusstörung
+Rektovaginale Fistel
+REM-Schlaf-Verhaltensstörung
+Renale Osteodystrophie
+Replantation
+Retikulohistiozytäres System
+Retinitis
+Ryanodin-Rezeptor
+Schenkeldreieck
+Schilddrüsenerkrankung
+Schilddrüsenknoten
+Schlundrachen
+Schwellkörper der Klitoris
+Sehnenscheide
+Short-QT-Syndrom
+Shy-Drager-Syndrom
+Siderose
+Sinus sigmoideus
+Sluggish cognitive tempo
+Spanisches Ölsyndrom
+Sporadische Einschlusskörpermyositis
+Sprunggelenkfraktur
+Steroid-5α-Reduktase-Mangel
+Sticker-Sarkom
+Stuhlzwang
+Tauchmedizin
+Taurodontie
+Tektorialmembran
+Thermorezeptor
+Thetawelle
+Tracheomalazie
+tractus corticospinalis
+Tropische Spastische Paraparese
+Tuberkel
+Tympanoplastik
+Übertraining
+Urothelkarzinom
+Vakuumextraktion
+Valvula Eustachii
+Variables Immundefektsyndrom
+Vertebroplastie
+Vibrationsbedingtes vasospastisches Syndrom
+Vorniere
+Wachstumsschmerzen
+Weaver-Syndrom
+Wolman-Krankheit
+Wormsche Knochen
+Wurzelspitzenresektion
+Zeckenparalyse
+Zenker-Divertikel
+Zirkulierende Tumorzelle
+Zitrullinämie
+Zystektomie
+Acanthamoeba keratitis
+Adrenalektomie
+Affektkrampf
+Alkoholhalluzinose
+allergische bronchopulmonale Aspergillose
+Alpers-Huttenlocher-Syndrom
+Anämie bei chronischen Erkrankungen
+Androblastom
+Anulus tendineus communis
+Aponeurosis plantaris
+Argentinisches hämorrhagisches Fieber
+Arteria colica media
+Arteria epigastrica superior
+Arteria glutaea inferior
+Arteria palatina ascendens
+Arteria pancreaticoduodenalis superior
+Arteria profunda femoris
+Arteria tibialis posterior
+Arteriae gastricae breves
+Arteriae sigmoideae
+Asterixis
+Balanoposthitis
+Beckenvenensyndrom
+Bernard-Soulier-Syndrom
+Beschälseuche
+Best-Krankheit
+Bichat-Fettpfropf
+Bikuspidalität
+Blutaustauschtransfusion
+Blutegelbehandlung
+Blutkrankheit
+Blutungszeit
+Bouchard-Arthrose
+Brachymetatarsie
+Bruch-Membran
+Burnett-Syndrom
+Calot-Dreieck
+Capsula externa
+Carpenter-Syndrom
+Central pattern generator
+Chorda tympani
+Chronische intestinale Pseudoobstruktion
+Cogan-I-Syndrom
+Cohen-Syndrom
+Colliculi inferiores
+Colliculus inferior
+computerassistierte Detektion
+Coxa vara
+Coxitis fugax
+Cycloplegica
+Degos-Syndrom
+Dent-Syndrom
+Dermatochalasis
+Dermatofibrom
+Diabetes renalis
+Diabetologie
+diagnostisches Verfahren
+Differentialblutbild
+Distichiasis
+Dubowitz-Syndrom
+Eigelenk
+Ektasie
+Enanthem
+Endoneurium
+Endosonografie
+Enochlophobie
+Enthesiopathie
+Epiphysiolyse
+Epoophoron
+Erythema ab igne
+eukaryotische Zelle
+EVALI
+Exotropie
+Extensionsverband
+Fehlbildungen der Gebärmutter
+Fibromatose
+Fluoreszenzangiographie
+Frontotemporallappen-Degeneration
+Fundoplikatio
+Galea aponeurotica
+Ganglion pterygopalatinum
+Geruchsrezeptor
+Gnathologie
+Grey-Syndrom
+Grünholzfraktur
+Habenulae
+Hallermann-Streiff-Syndrom
+Halsfistel
+Haltlose Persönlichkeitsstörung
+Hämoglobin A
+Hand-Fuß-Syndrom
+Hautinfektion
+Hemisphärektomie
+Hereditäre multiple Exostosen
+hirnorganisches Syndrom
+Hughes-Stovin-Syndrom
+Humane Rotaviren
+Hyalinität
+Hydrosalpinx
+Hygroma colli
+Hypereosinophilie-Syndrom
+Hypertrophe Narbe
+Hypogastrium
+Ileitis
+Immunelektrophorese
+Immunerkrankung
+Iridozyklitis
+Jodmangelstruma
+Kamptodaktylie
+Kaschin-Beck-Krankheit
+Keimstrang-Stromatumor
+Keratomalazie
+Kerion
+Kipptischuntersuchung
+klaffende Tube
+Klatskintumor
+Knochenalter
+kochsalzarme Diät
+Kreuzprobe
+Leberbiopsie
+Leberverfettung
+Libman-Sacks-Endokarditis
+Ligamentum suspensorium penis
+Livedo reticularis
+Lungentuberkulose
+Lungentumor
+Magenschleimhaut
+Magnetresonanz-Cholangiopankreatikographie
+MALT-Lymphom
+Marchiafava-Bignami-Syndrom
+Markschwammniere
+Mediastinalemphysem
+Mees-Nagelbänder
+membranöses Labyrinth
+Ménétrier-Syndrom
+Metamyelozyt
+Methacholintest
+Mikroalbuminurie
+Milch-Alkali-Syndrom
+Mitochondriales Ribosom
+mittlere Ellbogenvene
+Moderhinke
+Mohs-Chirurgie
+Monoaminoxidase-A-Mangel
+Morbus Forestier
+Morbus Hailey-Hailey
+Morbus Köhler-Albau
+Morbus Scheie
+Morphaea
+Mukozele
+Multiple epiphysäre Dyplasie
+Multiple kartilaginäre Exostosen
+Mundschleimhaut
+Musculus articularis genus
+Narkologie
+Nasenschleimhaut
+Nemalin-Myopathie
+Nervus genitofemoralis
+Nervus vestibularis
+Neuroakanthozytose
+Neuromuskuläre Erkrankung
+Neuromyotonie
+Neurosekretorische Zelle
+Neurostimulation
+Nucleus supraopticus
+Ogilvie-Syndrom
+Omsker Fieber
+Onychogrypose
+Opioidentzugssyndrom
+opisthorhoz
+Optikusneuropathie
+Ora serrata
+Oropharynx
+Parametrium
+Parvovirus
+Patellafraktur
+Patellaluxation
+pathologische Fraktur
+Perineurium
+Periodische Fiebersyndrome
+Persistierender Truncus arteriosus
+PFAPA-Syndrom
+Pigmentierte villonoduläre Synovialitis
+Pityriasis
+Plexus submucosus
+Pollenallergie
+Polyendokrine Autoimmunerkrankungen
+Polymorphe Lichtdermatose
+Primäre Ciliäre Dyskinesie
+Prune-Belly-Syndrom
+Pseudohypoparathyreoidismus
+Pseudoobstruktion
+Pulmonalatresie
+Radiodermatitis
+Renshaw-Zelle
+Retinoschisis
+Riechstörung
+Sandhoff-Krankheit
+Scapula alata
+schädlicher Gebrauch von Benzodiazepinen
+Schilddrüsenadenom
+Semispinalis
+Septumhämatom
+Sexualkopfschmerz
+Simpson-Golabi-Behmel-Syndrom
+Sinterungsbruch
+Sinus transversus
+Somatostatinom
+Speläotherapie
+Spermatorrhoe
+Spieghel-Hernie
+Spinobulbäre Muskelatrophie Typ Kennedy
+Sportherz
+Stickstoffhypoxie
+Stimmlippenknötchen
+Struma ovarii
+Subclavian-Steal-Syndrom
+Südamerikanischen Blastomykose
+Superior sagittal sinus
+Synostose
+Tarlov-Zyste
+Tendinitis calcarea
+Theobrominvergiftung
+Thromboembolie
+Tommy John Surgery
+Toxisches Megakolon
+Transiente Synovitis
+Triple-A-Syndrom
+Truncus arteriosus communis
+Tubenkarzinom
+Turmschädel
+Unipolare Nervenzelle
+untere gastrointestinale Blutung
+Urethralklappe
+Vaginalatresie
+Vena brachialis
+Vena hemiazygos accessoria
+Vena jugularis anterior
+Vermeidungsverhalten
+Vierfingerfurche
+virale Meningitis
+Zehengrundgelenk
+Zelllinie
+Zementoblast
+Zentralkanal
+Zerebralshunt
+Zwerchfellruptur
+Zystographie
+Zytopenie
+Abdominaltrauma
+Ablepharon-Makrostomie-Syndrom
+Acaeruloplasminämie
+Adipositas dolorosa
+Adulte T-Zell-Leukämie
+Alveolarmakrophage
+Amaurose
+Ambulante Pflege
+Anaphrodisie
+Ansa cervicalis
+anteriore ischämische Optikusneuropathie
+Antley-Bixler-Syndrom
+Antriebslosigkeit
+APUD
+aquagener Pruritus
+Area postrema
+Arteria alveolaris inferior
+Arteria cervicalis profunda
+Arteria colica dextra
+Arteria collateralis ulnaris inferior
+Arteria collateralis ulnaris superior
+Arteria glutaea superior
+Arteria ileocolica
+Arteria labialis inferior
+Arteria lumbalis
+Arteria mediana
+Arteria sphenopalatina
+Arteria submentalis
+Arteria thoracodorsalis
+Arteria transversa faciei
+Arteria vesicalis superior
+Arthrographie
+Aseptische Meningitis
+Asomatognosie
+Aspartylglukosaminurie
+Ästhesioneuroblastom
+ATR-X-Syndrom
+atypischer Autismus
+Atypischer teratoider/rhabdoider Tumor
+Autonomes Ganglion
+bakterielle Infektionskrankheit
+Becker-Nävus
+Birbeck-Granulum
+Blasenbildende Autoimmundermatosen
+Blau-Syndrom
+Blepharophimose
+Bösartiges Katarrhalfieber
+Bronchographie
+Bursa omentalis
+Canalis caroticus
+Canalis pudendalis
+Capsula extrema
+Carney-Komplex
+Carotinämie
+Cartilago corniculata
+Cholesteatose
+Christ-Siemens-Touraine-Syndrom
+Cimino-Shunt
+Cisterna chyli
+Coffin-Lowry-Syndrom
+Coffin-Siris-Syndrom
+Cullen-Zeichen
+CUP-Syndrom
+Darmatresie
+Desmoid-Tumor
+Dhat-Syndrom
+Diabetes insipidus renalis
+Diadochokinese
+Diploe
+Distomatose
+Ductulus
+Ductus parotideus
+Duodenalkarzinom
+Dysgerminom
+Eagle-Syndrom
+Einäugigkeit
+Elektronystagmographie
+Endokrine Chirurgie
+Entwicklungsretardierung
+Enukleation des Augens
+Epulis
+Evans syndrome
+Experimentelle autoimmune Enzephalomyelitis
+Femoro-acetabuläres Impingement
+Filamin
+Fissura orbitalis inferior
+Flexibilitas Cerea
+fokale Dystonie
+Foramen ischiadicum majus
+Foramen obturatum
+Foramen rotundum
+Fossa cranii posterior
+Funktionsmedizin
+Galaktosialidose
+Gallenblasenpolyp
+Gallengangszyste
+Ganganalyse
+Gebärmutterhalskanal
+Geburtstrauma
+Gedeihstörung
+Gewitter-Asthma
+Gianotti-Crosti-Syndrom
+Glückshaube
+Glutensensitivität
+Gonarthrose
+Grey-Turner-Zeichen
+Gyrus rectus
+Hajdu-Cheney-Syndrom
+Hämaskos
+Helix
+Hereditäre Elliptozytose
+Hermansky-Pudlak-Syndrom
+Herpes neonatorum
+Heterophorie
+Hill-Sachs-Läsion
+Hiob-Syndrom
+Hirnatrophie
+Hymenalatresie
+Hyperinsulinismus
+Hypochondroplasie
+Hyposensibilisierung
+Impfschaden
+Inanition
+Innerer Gehörgang
+Intercostalraum
+Internukleäre Ophthalmoplegie
+Invasives duktales Karzinom
+Isocortex und Allocortex
+Isovalerianazidämie
+Janeway-Läsion
+Johanson-Blizzard-Syndrom
+Kapillarlecksyndrom
+Kardio-fazio-kutanes Syndrom
+Karditis
+katathym-imaginative Psychotherapie
+Katheterablation
+Keratitis superficialis punctata
+Keshan-Krankheit
+Kleefstra-Syndrom
+klinische Pharmakologie
+Kniegelenksarthrose
+Koffeinismus
+Kolloidzyste
+Kombinationstherapie
+Kommissur
+kongenitale Muskeldystrophie
+Kongenitaler Hyperinsulinismus
+Konsolidierung
+Konzo
+Kreuzbiss
+Labrum glenoidale
+Laminektomie
+Leprechaunismus
+Leukokorie
+Ligamentum latum uteri
+Ligamentum longitudinale anterius
+Ligamentum longitudinale posterius
+Ligamentum longitudinale ventrale
+Linea dentata
+Linea pectinata
+Lipomatosis dolorosa
+Lobektomie
+Louping Ill
+Lujan-Fryns-Syndrom
+Lungeninfarkt
+Magenerkrankung
+Makrozytose
+Malignes Fibröses Histiozytom
+Mallory-Körper
+Markhöhle
+McKusick-Kaufman-Syndrom
+melancholische Depression
+metabolisches Äquivalent
+Metacarpophalangealgelenk
+Mikronucleus
+Mikrosatelliteninstabilität
+Modellgussprothese
+Mönckeberg-Sklerose
+Morbus Tarui
+Mowat-Wilson-Syndrom
+Muckle-Wells-Syndrom
+Muenke-Syndrom
+Multifokale motorische Neuropathie
+Myelinhülle
+Myelosuppression
+Myxödemkoma
+Ncl. vestibularis
+Negativismus
+Nekrobiose
+Neoadjuvante Therapie
+Nervus cutaneus brachii medialis
+Nervus gluteus inferior
+Nervus iliohypogastricus
+Nervus infraorbitalis
+Nervus tympanicus
+Neu-Laxova-Syndrom
+Neugeborenenhörscreening
+Neuroimmunologie
+Neuroradiologie
+Newcastle-Krankheit
+Nikotinvergiftung
+Nuclei vestibulares
+Nucleus vestibularis
+Nukleolusorganisatorregion
+Orales Allergiesyndrom
+Orchidopexie
+Ösophagektomie
+Osteoblastom
+Otoskopie
+Pachymeter
+Pankreaszyste
+Papilläres Schilddrüsenkarzinom
+Parasitämie
+Peritonealraum
+Pestizidvergiftung
+Phalanx media
+Photodermatose
+Piebaldismus
+Pilomatrixom
+pleomorphes Adenom
+Poikilozytose
+Postcholezystektomiesyndrom
+Primärer Progressiver Aphasie
+Proctalgia fugax
+Pseudohypoaldosteronismus
+Pulmonaler Sequester
+Pyämie
+Radio-Allergo-Sorbens-Test
+Ramus interventricularis anterior
+Reanimation
+Reinkultur
+Rektaler Fremdkörper
+Reperfusionsschaden
+Retainer
+reversibles zerebrales Vasokonstriktionssyndrom
+Rhinolith
+Riedel-Struma
+Riesenzelle
+Roberts-Syndrom
+Rosai-Dorfman-Erkrankung
+Saethre-Chotzen-Syndrom
+SAPHO-Syndrom
+Schalltrauma
+Schilling-Test
+Schwartz-Jampel-Syndrom
+Selenmangel
+Septo-optische Dysplasie
+Septum pellucidum
+Sinus petrosus inferior
+Skumin-Syndrom
+Spasmus hemifacialis
+Spina iliaca anterior superior
+Spondylodese
+Spontanremission
+Sporozoit
+Steigbügelplastik
+Steißbeinteratom
+Sternotomie
+Stimmstörung
+Störung der Sinnesverarbeitung
+Störung mit sexuellem Sadismus
+Subependymales Riesenzellastrozytom
+Sutura frontalis
+Symptomatologie
+Tanycyt
+TAR-Syndrom
+Terson-Syndrom
+Tethered cord
+thanatophore Dysplasie
+Timothy-Syndrom
+Trabekulektomie
+Tränenkarunkel
+Transmissionselektronenmikroskopie
+transversus linguae
+Trikuspidalklappenstenose
+Tunica adventitia von Blutgefäßen
+unregelmäßiger Knochen
+Unverricht-Lundborg-Erkrankung
+Ureteroskopie
+Ureterozele
+Uterusmyom-Embolisation
+Vaginalseptum
+Vena ophthalmica superior
+Verhaltens- und emotionale Störungen
+vesikuläre Schweinekrankheit
+vorderer Darmbeinstachel
+Vulvektomie
+Wiedemann-Rautenstrauch-Syndrom
+Wirbelbogengelenk
+Yeast Artificial Chromosome
+Zentrale Sensibilisierung
+zwanghafte sexuelle Verhaltensstörung
+A-Streptokokken
+Acariasis
+Adnexe
+Advanced Life Support
+Akatalasie
+Akinetischer Mutismus
+Akranie
+Aleutenkrankheit
+Alternierende Hemiplegie des Kindesalters
+Alterskrankheit
+Alveolarknochen
+Antisynthetase-Syndrom
+Aplasia cutis congenita
+Arcus palmaris profundus
+Arteria angularis
+Arteria appendicularis
+Arteria buccalis
+Arteria circumflexa ilium profunda
+Arteria ethmoidalis anterior
+Arteria hyaloidea
+Arteria infraorbitalis
+Arteria interossea communis
+Arteria meningea posterior
+Arteria obturatoria
+Arteria phrenica superior
+Arteria rectalis media
+Arteria temporalis profunda
+Arteria transversa cervicis
+Arteria tympanica anterior
+Arthroplastik
+Arthus-Reaktion
+Articulatio fibrosa
+Aschoff-Knoten
+Aspergillom
+Atemwegsmanagement
+Augenverletzung
+ausgekugeltes Knie
+äußeres Keilbein
+Baby-Entzug
+Bankart-Läsion
+Bartonellose
+Bauchmuskulatur
+Bindegewebsgelenk
+Bland-White-Garland-Syndrom
+Blount-Krankheit
+Branchio-oto-renales Syndrom
+Brenner-Tumor
+bronchioloalveoläres Karzinom
+Brueghel-Syndrom
+Calciphylaxie
+Campomele-Dysplasie
+Chemoprophylaxe
+Choanalatresie
+Cisterna cerebellomedullaris
+claudication
+Colorado-Tick-Virus
+Colorado-Zeckenfieber
+Commissura posterior
+Cordozentese
+Costa cervicalis
+CPT 2-Mangel
+crista galli
+Cyriax-Syndrom
+Daumensattelgelenk
+Denys-Drash-Syndrom
+Dermatofibrosarcoma protuberans
+Deuteranopie
+Dichromatopsie
+dritter Mittelhandknochen
+Dysmetrie
+Echinozyt
+Ecthyma
+Emphysem
+Endometriumablation
+Enzymersatztherapie
+Eosinophile Fasziitis
+Epidermolysis bullosa dystrophica
+Epikondylus
+Epiphyseolysis capitis femoris
+Erworbene isolierte aplastische Anämie
+Erythema neonatorum
+Exazerbation
+Fallot-Trilogie
+Fascia transversalis
+Fasciculus
+Fasciculus longitudinalis medialis
+Fehler 1. Art
+Fehler 2. Art
+Fingerknochen
+Fischkrankheit
+Foramen ischiadicum minus
+Foramen lacerum
+Fraser-Syndrom
+Fucosidose
+Funikuläre Myelose
+Gartentherapie
+Gefäßmalformation
+Gelenkerguss
+Genitalerkrankung
+Genodermatose
+Gingivahyperplasie
+GLUT1-Defizit-Syndrom
+Gorham-Stout-Syndrom
+Gradenigo-Syndrom
+Granuloma anulare
+Granulosazelltumor
+Haaranalytik
+Haffkrankheit
+Halsrippe
+häusliche Langzeitpflege
+Hautanhangsgebilde
+HDR-Syndrom
+Heerfordt-Syndrom
+Helicotrema
+Hereditärer Adenosindesaminase-Mangel
+Hernioplastik
+Hibernom
+High Pressure Nervous Syndrome
+Hitzekrampf
+humane Granulozytäre Anaplasmose
+Humane monozytäre Ehrlichiose
+Hypogammaglobulinämie
+idiopathische interstitielle Pneumonie
+Imerslund-Gräsbeck-Syndrom
+Immunpathologie
+Infantile kortikale Hyperostose
+Infektiöse Bovine Rhinotracheitis
+Inkabein
+Insertio velamentosa
+International Normalized Ratio
+intrazellulär
+Invasives lobuläres Karzinom
+Jefferson-Fraktur
+Jurkat
+Juveniles Polyposis-Syndrom
+Kammerwinkel
+Karotisdreieck
+Karzinophobie
+Katathrenie
+Katatone Schizophrenie
+Keratoglobus
+klinische Neurophysiologie
+Kongenitale Kontrakturale Arachnodaktylie
+Kongenitale Spondyloepiphysäre Dysplasie
+konnatale Hyperekplexie
+Körperbezogene repetitive Verhaltensstörungen
+Kraurose
+Krause-Körperchen
+Latextest
+Ligamentum flavum
+Ligamentum sacrotuberale
+Lipid Droplet
+Lithotomie
+Lobulus parietalis inferior
+maligner peripherer Nervenscheidentumor
+Malrotation
+Marcus-Gunn-Pupillenzeichen
+Marinescu-Sjögren-Syndrom
+maschinelle Autotransfusion
+Megaureter
+Meige-Syndrom
+menschliches Nervensystem
+Merozoit
+Metathalamus
+Meyer'sche Schleife
+Mikroangiopathie
+Milzruptur
+Mitochondriale Myopathie
+Molekulare Bildgebung
+Montreal Cognitive Assessment
+Morbus Günther
+Morbus Hers
+Morbus Pearson
+Muir-Torre-Syndrom
+Mukolipidose
+Müller-Gang-Persistenzsyndrom
+Multipler Sulfatase-Mangel
+Myoblast
+Neck-Dissection
+Nephrokalzinose
+Nervus intercostalis
+Nervus lingualis
+Nervus occipitalis major
+Nervus petrosus major
+Neugeborenenexanthem
+Neurootologie
+Nicht-invasiver Pränataltest
+Nierenzyste
+Nijmegen-Breakage-Syndrom
+Normozytäre Anämie
+Nucleus arcuatus
+Nucleus basalis
+Nucleus dentatus
+Nucleus olivaris
+Nussallergie
+Ohrmuskulatur
+Ohtahara-Syndrom
+Olfaktorische Referenzstörung
+Ollier-Syndrom
+Omentum
+Onkozytom
+Oropharynxkarzinom
+Osteochondropathie
+Ostitis fibrosa cystica
+Pallister-Killian-Syndrom
+Pallium
+Palmarerythem
+Paraganglion
+Parakeratose
+Paroophoron
+Paroxysmale Hemikranie
+Patellarsehnenruptur
+PBMC
+Periodic Limb Movement Disorder
+Peripartale Blutung
+Phalanx distalis
+Phalanx proximalis
+Pineoblastom
+Plethysmografie
+Plexus cardiacus
+Plexus-choroideus-Papillom
+POEMS-Syndrom
+Pontiac-Fieber
+Porenzephalie
+Präexzitation
+primäre Lateralsklerose
+Primitiv neuroektodermaler Tumor
+Proliferationstherapie
+Proteinfehlfaltungserkrankung
+Prurigo
+Prurigo nodularis
+Pseudoachondroplasie
+Radiusköpfchenbruch
+Reinke-Ödem
+Rekurrensparese
+Retroperitonealfibrose
+Retroversion des Uterus
+Rhizarthrose
+Rickettsien-Pocken
+Rindenblindheit
+Rubeosis iridis
+Samter-Trias
+Sattelnase
+Schwangerschaftsprurigo
+Schwannomatose
+Sinus petrosus superior
+Sitosterolämie
+Sparganose
+Spondylodiszitis
+Sprachentwicklungsverzögerung
+Sprengel-Deformität
+stereotype Bewegungsstörung
+Stereozilien
+Still-Syndrom
+Stria terminalis
+Submukosa
+SUDEP
+Sympathische Ophthalmie
+Syndesmose
+Tarsaltunnelsyndrom
+Tela submucosa
+Telogeneffluvium
+Thoraxtrauma
+thrombotische Mikroangiopathie
+Tomakulöse Neuropathie
+Toxisches Kontaktekzem
+Transplantologie
+Truncus costocervicalis
+Truncus-coeliacus-Kompressionssyndrom
+Überbiss
+Uncus
+Unfallchirurgie
+Unhappy Triad
+Urticaria solaris
+Uterus arcuatus
+Uterus septus
+Vasookklusion
+VDRL-Test
+Vena angularis
+Vena ovarica
+Vena testicularis
+Vena thoracica interna
+Vesicula
+Vesikovaginale Fistel
+Vorhofscheidewand
+Weill-Marchesani-Syndrom
+Wirbelbruch
+Zapfen-Stäbchen-Dystrophie
+Zieve-Syndrom
+Zirrhose
+zweiter Mittelhandknochen
+Zystom
+3D-Zellkultur
+3M-Syndrom
+Achard-Thiers-Syndrom
+Acne neonatorum
+Adams-Oliver-Syndrom
+Adenomyom
+akzelerierter idioventrikulärer Rhythmus
+alveoläre Echinokokkose
+Amelie
+Amphiarthrose
+Analgetikanephropathie
+Anaplastisch-großzelliges Lymphom
+angeborene Katarakt
+Aniseikonie
+Anoskopie
+Arcus palmaris superficialis
+Area pretectalis
+Ariboflavinose
+Arteria auricularis profunda
+Arteria choroidea anterior
+Arteria circumflexa femoris lateralis
+Arteria circumflexa ilium superficialis
+Arteria circumflexa scapulae
+Arteria labialis superior
+Arteria lacrimalis
+Arteria masseterica
+Arteria palatina descendens
+Arteria spinalis posterior
+Arteriolosklerose
+asphyxierende Thoraxdysplasie
+Ausdauertraining
+Autoimmunthyreoiditis
+Autoimmunthyreopathie
+Autosomal-dominante Ichthyose
+Axenfeld-Rieger Syndrom
+Axenfeld-Syndrom
+Axolemm
+Balkan-Nephritis
+Balkan-Nephropathie
+Beinlängendifferenz
+Benedikt-Syndrom
+Bilirubinurie
+Biotinidasemangel
+Blalock-Taussig-Anastomose
+Blalock-Taussig-Shunt
+Blow-out-Fraktur
+Blut-Augen-Schranke
+Blut-Luft-Schranke
+Blutdruckmessung
+Blutsystem
+Caco-2
+Canalis adductorius
+Caplan-Syndrom
+Caput succedaneum
+Central-Core-Myopathie
+Chemobrain
+Chronisch thromboembolische pulmonale Hypertonie
+Cinchonismus
+collum chirurgicum humeri
+Costamer
+Coxarthrose
+Cronkhite-Canada-Syndrom
+Currarino-Syndrom
+Darmschleimhaut
+Dens invaginatus

@@ -2,12 +2,17 @@ szczepionka
 hormon zwierzęcy
 antybiotyk
 witamina
+witaminy
+etanol
 aminokwas
 glukoza
 kokaina
+aspiryna
 kwas acetylosalicylowy
 Erytrocyt
 kwas L-askorbinowy
+witamina C
+opium
 paracetamol
 insulina
 heroina
@@ -16,9 +21,11 @@ kwas octowy
 kwas solny
 morfina
 adrenalina
+epinefryna
 dopamina
 testosteron
 wodorowęglan sodu
+fenol
 trombocyt
 witamina A
 Osocze krwi
@@ -36,11 +43,13 @@ nitrogliceryna
 witamina B1
 dziurawiec zwyczajny
 H. perforatum
+ryboflawina
 witamina B2
 gliceryna
 glicyna
 Kamfora
 oksytocyna
+ketamina
 melatonina
 analgetyk
 nadtlenek wodoru
@@ -48,8 +57,11 @@ amoksycylina
 kwas mlekowy
 MDMA
 witamina E
+antyoksydanty
 przeciwutleniacz
+kobalamina
 witamina B12
+ałuny
 chlorek amonu
 glukagon
 tritlenek diglinu
@@ -74,12 +86,14 @@ chlorek potasu
 fentanyl
 L-tryptofan
 noradrenalina
+norepinefryna
 biotyna
 kwas salicylowy
+antydepresanty
 Kolagen
 L-glutamina
 lek przeciwdepresyjny
-polamidon
+metadon
 galaktoza
 interferony
 aldosteron
@@ -102,6 +116,8 @@ sertralina
 streptomycyna
 Silikony
 tlenek azotu
+antidotum
+antyseptyczny
 antyseptyk
 doksycyklina
 fenoloftaleina
@@ -112,27 +128,35 @@ odtrutka
 semaglutyd
 talidomid
 azytromycyna
+efedryna
 Gam-COVID-Vac
 hydroksychlorochina
 lek przeciwpsychotyczny
 lidokaina
 metronidazol
 metylofenidat
+neuroleptyki
+opioid
 propofol
 substancja psychoaktywna
 Vaxzevria
 Afrodyzjak
+alkohol izopropylowy
 alprazolam
+diuretyki
 flawonoid lub związek pokrewny
+flawonoidy
 Hormon adrenokortykotropowy
 izopropanol
 jodek potasu
 lek moczopędny
 siarczan magnezu
 Szczepionka Moderny przeciw COVID-19
+benzodiazepiny
 chloramfenikol
 chlorek glinu
 chlorochina
+Glikokortykosteroidy
 kannabidiol
 Kortykosteroidy
 kwas γ-aminomasłowy
@@ -149,6 +173,7 @@ estradiol
 filtr przeciwsłoneczny
 oksykodon
 sorbitol
+antykoagulanty
 bupropion
 iwermektyna
 kapsaicyna
@@ -163,6 +188,7 @@ węgiel aktywny
 wodorotlenek glinu
 amitryptylina
 antagonista receptorów β-adrenergicznych
+beta-blokery
 cyprofloksacyna
 glutation
 halucynogen
@@ -170,7 +196,9 @@ Hormon tyreotropowy
 olej rycynowy
 prostaglandyny
 statyna
+statyny
 tetrahydrokannabinol
+Tyreotropina
 azotyn sodu
 glukokortykoid
 kwas fumarowy
@@ -193,6 +221,7 @@ propanol
 propranolol
 Trypsyna
 Wkładka domaciczna
+bromek
 Cervarix
 chlorek magnezu
 furosemid
@@ -228,6 +257,7 @@ lek przeciwhistaminowy
 metotreksat
 MMR
 nadchloran potasu
+pentobarbital
 pregabalina
 sól sodowa metamizolu
 środek dezynfekcyjny
@@ -248,15 +278,17 @@ petydyna
 wodorotlenek magnezu
 β-laktuloza
 abakawir
+beta-karoten
 buprenorfina
 chloroheksydyna
-cytalopram
+citalopram
 fenytoina
 finasteryd
 flukonazol
 gonadotropina kosmówkowa
 hydrochinon
 klotrimazol
+kolchicyna
 Lactobacillus
 loperamid
 Metoklopramid
@@ -269,6 +301,7 @@ albendazol
 alkohol benzylowy
 anestetyki
 antybiotyk β-laktamowy
+antybiotyki beta-laktamowe
 benzylopenicylina
 ceftriakson
 cisplatyna
@@ -286,22 +319,27 @@ Olanzapina
 olej sojowy
 ondansetron
 paklitaksel
+pseudoefedryna
 rifampicyna
 środek przeciwgorączkowy
 Ad26.COV2.S
 benzoesan sodu
 chlorek żelaza
 chloroetan
-cyklofosfoamid
+cyklofosfamid
 dichlorek żelaza
 inhibitor konwertazy angiotensyny
+kaolin
 klozapina
+koenzym Q
 lek sulfonamidowy
 losartan
 mebendazol
 Mercury
 prokaina
+prometazyna
 ranitydyna
+sulfonamidy
 Tamoksyfen
 teofilina
 trichloroeten
@@ -367,6 +405,7 @@ fawipirawir
 Gonadotropiny
 kalcytriol
 ketokonazol
+ketoprofen
 klomipramina
 kreozot
 krople do oczu
@@ -389,9 +428,12 @@ amantadyna
 amikacyna
 ceftazydym
 cefuroksym
+duloksetyna
 emolient
+hydroksyzyna
 Izofluran
 lamiwudyna
+lindan
 mikonazol
 mineralokortykoidy
 permetryna
@@ -409,6 +451,7 @@ atenolol
 atomoksetyna
 azatiopryna
 budezonid
+dapson
 doksorubicyna
 hydromorfon
 imatynib
@@ -435,6 +478,7 @@ tyreoliberyna
 apomorfina
 chlordiazepoksyd
 cymetydyna
+cyneol
 dekstroamfetamina
 diltiazem
 dimerkaprol
@@ -446,7 +490,7 @@ Fluorouracyl
 Immunoglobuliny G
 infliksymab
 inhibitor enzymu
-karwedylol
+karwedilol
 kloksacylina
 klonidyna
 Kotrimoksazol
@@ -465,6 +509,7 @@ walsartan
 wodorowinian potasu
 antybiotyk chinolonowy
 bromazepam
+bupiwakaina
 buspiron
 chlorfeniramina
 cyjanokobalamina
@@ -473,8 +518,7 @@ ezetymib
 fluwoksamina
 Fomepizol
 glibenklamid
-hioscyamina
-hyoscyamina
+hioscyjamina
 indygokarmin
 inozyna
 Kwas traneksamowy
@@ -489,10 +533,12 @@ rymantadyna
 salmeterol
 środki znieczulające miejscowo
 terbinafina
+tran
 tretynoina
 wodorowęglan potasu
 5α-dihydrotestosteron
 Anatoksyna
+baklofen
 bewacizumab
 biofarmaceutyk
 cefiksym
@@ -526,10 +572,11 @@ paraldehyd
 paromomycyna
 ramipryl
 rywaroksaban
-sibutramina
 sirolimus
 sumatryptan
+sybutramina
 temazepam
+tymolol
 Wardenafil
 Wortioksetyna
 agomelatyna
@@ -552,7 +599,9 @@ Meflochina
 meprobamat
 mizoprostol
 natamycyna
+Penicylina V
 polietylenoglikol
+rutyna
 sewofluran
 Smoła pogazowa
 surowica odpornościowa
@@ -591,6 +640,7 @@ Nitrazepam
 oksytetracyklina
 Pirymetamina
 pramipeksol
+selegilina
 stawudyna
 temozolomid
 tiamazol
@@ -628,16 +678,19 @@ gwajafenezyna
 johimbina
 kandesartan
 kapecytabina
+klenbuterol
 Kolistyna
-kwas fenyloglikolowy
+kwas migdałowy
 maprotylina
 melfalan
+mesna
 metoksyfuran
 Mifepriston
 nimesulid
 paliperidon
 Piperacylina
 pyrantel
+rabeprazol
 ryfabutyna
 Rywastygmina
 S-adenozylometionina
@@ -652,10 +705,12 @@ zanamiwir
 akarboza
 amiloryd
 aminofilina
+amisulpryd
 arabinozyd cytozyny
 atazanawir
 Bromokryptyna
 cetuksymab
+Cholinoesterazy
 czynnik X
 D-penicylamina
 daktynomycyna
@@ -678,6 +733,7 @@ gliklazyd
 Hemaglutynina
 ifosfamid
 irynotekan
+katyna
 klobazam
 Kwas fusydowy
 kwas γ-linolenowy
@@ -725,6 +781,7 @@ irbesartan
 ketotifen
 Klofazymina
 klorazepan
+kontrast
 kwas cholowy
 labetalol
 Letrozol
@@ -737,8 +794,10 @@ pioglitazon
 prazosyna
 prokarbazyna
 prokwanil
+propafenon
 propylotiouracyl
 prowitamina
+prymachina
 prymidon
 remifentanyl
 rifaksymina
@@ -748,6 +807,7 @@ rotavirus vaccine
 sakwinawir
 środek cieniujący
 Streptokinaza
+sulpiryd
 Szczepionki DNA
 tetrakaina
 tropikamid
@@ -767,6 +827,7 @@ cyklobenzapryna
 cytyzyna
 daptomycyna
 dihydrokodeina
+dobutamina
 Dokuzynian sodu
 empagliflozyna
 enoksaparyna
@@ -790,11 +851,13 @@ lewomepromazyna
 linagliptyna
 menadion
 minocyklina
+mitotan
 mometazon
 Narkotyna
 noretysteron
 oksaliplatyna
 okskarbazepina
+oksybutynina
 oksymetazolina
 Perfenazyna
 Pindolol
@@ -811,6 +874,7 @@ sulfacetamid
 suworeksant
 tamsulozyna
 terbutalina
+tianeptyna
 tioguanina
 Tiotropium
 topotekan
@@ -832,6 +896,7 @@ bendamustyna
 benzydamina
 brekspiprazol
 cefpodoksym
+cefprozyl
 chinapryl
 cypermetryna
 cyproheptadyna
@@ -843,6 +908,7 @@ dietylokarbamazyna
 dipirydamol
 disiarczek selenu
 droperydol
+eflornityna
 enfluran
 ertapenem
 flutikazon
@@ -853,12 +919,14 @@ kwas alendronowy
 kwas zoledronowy
 leflunomid
 leuprorelina
+meksyletyna
 methocarbamol
 nadboran sodu
 norfloksacyna
 Pentazocyna
 pentoksyfilina
 prawastatyna
+ropiwakaina
 rozyglitazon
 spektynomycyna
 Spiramycyna
@@ -898,7 +966,7 @@ kaspofungina
 leki przeciwpłytkowe
 marawirok
 mebeweryna
-meklozyna
+meklizyna
 metandienon
 Milnacipran
 mitoksantron
@@ -941,6 +1009,7 @@ cysteamina
 Danazol
 dasatynib
 deltametryna
+dezwenlafaksyna
 dikumarol
 DL-mleczan wapnia
 doksazosyna
@@ -970,8 +1039,10 @@ kwas kromoglikanowy
 kwas undecylenowy
 kwas ε-aminokapronowy
 lekanemab
+lenalidomid
 lomustyna
 lopinawir / rytonawir
+mianseryna
 mirabegron
 Monobaktamy
 nabilon
@@ -994,6 +1065,7 @@ triheksyfenidyl
 Urokinaza
 acebutolol
 afatynib
+amfepramon
 anakinra
 Bilastyna
 bromelina
@@ -1003,16 +1075,16 @@ chlormetyna
 cyklopiroks
 czerwień fenolowa
 dantrolen
-dietylokatynon
-dietylopropion
 dinoproston
 dolutegrawir
+ekonazol
 eksemestan
 emetyna
 Eplerenon
 erlotynib
-esketamina
+etodolak
 fenazopirydyna
+fenoprofen
 fentolamina
 Flibanseryna
 flurbiprofen
@@ -1071,6 +1143,7 @@ ceftybuten
 chloramina T
 chloroprotyksen
 cynaryzyna
+deanol
 Deksmedetomidyna
 didanozyna
 dimetykon
@@ -1133,6 +1206,7 @@ bosentan
 brymonidyna
 brynzolamid
 Casirivimab/imdevimab
+CDP-cholina
 cefamandol
 cefotetan
 Cefradyna
@@ -1180,6 +1254,7 @@ nalmefen
 nefazodon
 nikardypina
 Nilotynib
+nizoldypina
 Olejek goździkowy
 onasemnogen abeparwowek
 orcyprenalina
@@ -1200,6 +1275,7 @@ Teryparatyd
 tetryzolina
 tiagabina
 tiotepa
+tiotyksen
 tykarcylina
 tyklopidyna
 wemurafenib
@@ -1220,6 +1296,7 @@ azlocylina
 Bezafibrat
 bimatoprost
 cefpirom
+cyklopentolat
 czwartorzędowy kation amoniowy
 Czynnik XIII
 Dalteparyna
@@ -1304,6 +1381,7 @@ diosmina
 Drospirenon
 ewolokumab
 febuksostat
+fenfluramina
 fenoksybenzamina
 fidaksomycyna
 fludiazepam
@@ -1353,9 +1431,11 @@ tofizopam
 Tolkapon
 trawoprost
 acemetacyna
+adrafinil
 ajmalina
 Akrywastyna
 aloksypryna
+aminoglutetymid
 amorolfina
 anidulafungina
 anilerydyna
@@ -1370,6 +1450,7 @@ dienogest
 difenoksylat
 dorypenem
 enoksacyna
+epinastyna
 etchlorwynol
 fenbendazol
 fenoldopam
@@ -1380,6 +1461,7 @@ heksobarbital
 Heksylorezorcynol
 Idarucizumab
 iloperydon
+iloprost
 imidapryl
 Inhibitory odwrotnej transkryptazy
 kolesewelam
@@ -1408,6 +1490,7 @@ teryflunomid
 teryzydon
 tiokonazol
 tirofiban
+tiuram
 tolazamid
 trastuzumab emtanzyna
 waldekoksyb
@@ -1443,6 +1526,7 @@ metolazon
 MIBI
 mleczan Ringera
 nalorfina
+nefopam
 nicergolina
 nifuroksazyd
 olejek bergamotowy
@@ -1454,9 +1538,11 @@ Pirytramid
 pralatreksat
 protryptylina
 prukalopryd
+sertakonazol
 środek przeciwpieniacy
 sulfafurazol
 Szczepionka wektorowa
+tegaserod
 tetraazotan erytrytu
 Tetrazepam
 trabektedyna
@@ -1471,6 +1557,7 @@ agonista receptorów adrenergicznych β2
 aksytynib
 amprenawir
 Aniracetam
+antagonisty aldosteronu
 antazolina
 aprotynina
 artemeter/lumefantryna
@@ -1516,6 +1603,7 @@ lerkanidypina
 marybawir
 metyprylon
 mitomycyna
+molindon
 nialamid
 nitrendypina
 parykalcytol
@@ -1536,6 +1624,7 @@ sulfadimetoksyna
 sulfatiazol
 Sulfinpirazon
 Szczepionka przeciw dżumie
+tegafur
 telbiwudyna
 temsirolimus
 tetracykliczne leki przeciwdepresyjne
@@ -1558,6 +1647,7 @@ antymonoglukonian sodu
 antytoksyna błonicza
 atozyban
 bamlanivimab
+bendroflumetiazyd
 Benzbromaron
 biały precypitat rtęciowy
 butamirat
@@ -1612,6 +1702,7 @@ treosulfan
 wersenian wapniowo-disodowy
 γ-hydroksymaślan sodu
 ambazon
+anilid
 aurotioglukoza
 Avelumab
 benfluoreks
@@ -1662,6 +1753,7 @@ prystynamycyna
 racetamy
 retygabina
 sisomycyna
+smecta
 środek antymitotyczny
 środek przeciwświądowy
 sultopryd
@@ -1689,6 +1781,7 @@ chlorek dekwaliny
 cyjamemazyna
 cyklotiazyd
 cyprofibrat
+cytostatyki
 D-glukonian potasu
 distygmina
 eletryptan
@@ -1775,6 +1868,7 @@ metoksalen
 metyklotiazyd
 molsydomina
 nafarelina
+nomifenzyna
 Oxlumo
 pramiracetam
 proksybarbal
@@ -1787,6 +1881,7 @@ Sole złota
 środek poronny
 temokapryl
 tertatolol
+tiokolchikozyd
 tulobuterol
 walbenazyna
 wismodegib
@@ -1858,6 +1953,7 @@ dimetakryna
 enkainid
 eprozynol
 etamifilina
+fluorochinolony
 flutrimazol
 glukonian mleczan wapnia
 inhibitor kinazy proteinowej
@@ -1866,7 +1962,7 @@ Inhibitory receptora glikoproteinowego IIb/IIIa
 karbuterol
 kwinizokaina
 lazofoksyfen
-lewoamlodypina
+metoksyfenamina
 metopimazyna
 metypranolol
 mezorydazyna
@@ -1903,7 +1999,6 @@ bibrokatol
 bromek emepronium
 cerytynib
 cylnidypina
-deksfenfluramina
 dihydrochinina
 DL-mleczan magnezu
 Elotuzumab
@@ -1939,6 +2034,7 @@ darglitazon
 dihydrochinidyna
 dobesylan wapnia
 Drotrekogina alfa
+fenyramidol
 feprazon
 Glikol metoksypolietylenowy epoetyny beta
 glutaminian argininy
@@ -1970,6 +2066,7 @@ antagonista receptora opioidowego
 antagonista receptorów adrenergicznych α1
 antagonisty receptora wazopresyny
 Antytoksyna jadu żmij
+cyklopentamina
 dalfoprystyna
 dekspantenol
 Diuretyki rtęciowe
@@ -2004,18 +2101,20 @@ Edrekolomab
 englitazon
 etafenon
 framycetyna
+gepefryna
 guanozodyna
 inhibitory deacetylazy histonowej
 lek przeciwastmatyczny
 meprotiksol
+metamfetamina
 prajmalina
-riwoglitazon
 rywoglitazon
 abetimus
 Advil
 anabolik
 antagonista receptorów glutaminianowych
 doksakurium
+doksepina
 eluksadolina
 Epoetyna beta
 fimasartan
@@ -2024,9 +2123,11 @@ gedokarnil
 imetelstat
 Katridekakog
 lewometadon
+lobeglitazon
 maślan hydrokortyzonu
 modulatory i stymulatory serotoniny
 mydriatyk
+netoglitazon
 Oral-Turinabol
 pranoprofen
 związek selenu
@@ -2072,6 +2173,7 @@ Altafur
 Anticorticosteroid
 antybiotyk przeciwnowotworowy
 Aspirin
+azemiglitazon
 azylsartan medoksomilu
 Bromek glikopironiowy
 dekwalina
@@ -2097,11 +2199,13 @@ salicylan imidazolu
 środek przeciwwrzodowy
 substancja alkilująca
 thyreoideum
+tiopental
 Verorab
 wekuronium
 zmiatacz wolnych rodników
 związek kadmu
 związek wapnia
+2care4
 A-MethaPred
 Abasaglar
 Abasaglar KwikPen
@@ -2153,6 +2257,7 @@ Isopto Atropine
 Krka
 Loradamed
 Macure
+medac
 Medical Valley
 Medrol
 Microzide
@@ -2201,23 +2306,20 @@ Xadago
 Xarelto
 Zentiva
 Zomig
+preparat leczniczy
 szczepionki
 hormony zwierzęce
 antybiotyki
-witaminy
-alkohol
 alkohol etylowy
 EtOH
 aminokwasy
 cukier gronowy
 metylobenzoiloekgonina
-aspiryna
 Czerwone ciałko krwi
 Czerwone krwinki
 Erytrocyty
 Krwinka czerwona
 Krwinki czerwone
-witamina C
 4-acetamidofenol
 acetaminofen
 N-acetylo-4-aminofenol
@@ -2228,6 +2330,7 @@ diacetylomorfina
 diamorfina
 guaranina
 mateina
+teina
 AcOH
 CH3-COOH
 CH3COOH
@@ -2239,7 +2342,6 @@ HCl aq
 kwas chlorowodorowy
 zajzajer
 zalzajer
-epinefryna
 hormon agresji
 bikarbonat
 CHNaO3
@@ -2248,6 +2350,7 @@ NaHCO3
 prolaktostatyna
 soda do pieczenia
 soda oczyszczona
+karbol
 kwas karbolowy
 płytka Bizzozera
 płytka krwi
@@ -2271,7 +2374,6 @@ triazotan glicerolu
 triazotan gliceryny
 dziurawiec pospolity
 laktoflawina
-ryboflawina
 witamina G
 glicerol
 glikokol
@@ -2292,10 +2394,10 @@ ekstazy
 Emma
 kwas 2-hydroksypropanowy
 Tokoferol
+Tokoferole
 antyoksydant
-antyoksydanty
 antyutleniacz
-kobalamina
+antyutleniacze
 witamina B-12
 chlorek amonowy
 salmiak
@@ -2314,6 +2416,7 @@ trichlorometan
 trójchlorek formylu
 trójchlorek metylenu
 trójchlorometan
+boraks
 hydrokortyzon
 Bacillus Calmette-Guerin
 eter etylowy
@@ -2324,14 +2427,12 @@ witaminay B
 witaminy grupy B
 witaminy z grupy B
 KCl
-norepinefryna
 kwas 2-hydroksybenzenokarboksylowy
 kwas 2-hydroksybenzoesowy
 kwas o-hydroksybenzoesowy
 witamina B7
 witamina H
 antydepresant
-antydepresanty
 glutamina
 lek antydepresyjny
 leki antydepresyjne
@@ -2339,6 +2440,7 @@ leki przeciwdepresyjne
 środki antydepresyjne
 tymoleptyk
 tymoleptyki
+polamidon
 galakto-heksoza
 interferon alfa
 Interferon gamma
@@ -2348,6 +2450,7 @@ botulinotoksyna
 botulotoksyna
 jad kiełbasiany
 kamień piekielny
+lapis
 piekielny kamień
 sól glauberska
 Szczepionka BioNTech
@@ -2361,8 +2464,6 @@ hormony płciowe męskie
 Pektyna
 śródbłonkowy czynnik relaksacyjny
 śródbłonkowy czynnik rozluźniający
-antidotum
-antyseptyczny
 Contergan
 dihydroftalofenon
 dihydroksyftalofenon
@@ -2370,7 +2471,6 @@ kwas tłuszczowy omega-3
 kwasy omega-3
 kwasy tłuszczowe omega-3
 kwasy tłuszczowe ω-3
-Lenalidomid
 omega 3
 omega-3
 Rewlimid
@@ -2387,19 +2487,15 @@ leki przeciwschizofreniczne
 lignokaina
 LPPIIG
 neuroleptyk
-neuroleptyki
 opioidy
 psychotrop
 substancja psychotropowa
 Szczepionka AstraZeneca przeciw COVID-19
 Szczepionka oksfordzka przeciw COVID-19
 Adrenokortykotropina
-alkohol izopropylowy
 diuretyk
-diuretyki
 epsomit
 flawonoid
-flawonoidy
 flawonoidy lub związki pokrewne
 Kortykotropina
 leki moczopędne
@@ -2410,13 +2506,11 @@ sól gorzka
 środki moczopędne
 AlCl3
 benzodiazepina
-benzodiazepiny
 chloromycetyna
 detreomycyna
 Glikokortykoid
 Glikokortykoidy
 Glikokortykosteroid
-Glikokortykosteroidy
 Glikokortykosterydy
 Glukokortykoidy
 Kortykosteroid
@@ -2428,7 +2522,6 @@ leki benzodiazepinowe
 Midanium
 amfebutamon
 antykoagulant
-antykoagulanty
 doustne środki antykoagulacyjne
 leczenie przeciwzakrzepowe
 lek przeciwzakrzepowy
@@ -2440,7 +2533,6 @@ węgiel leczniczy
 beta-adrenolityk
 beta-adrenolityki
 beta-bloker
-beta-blokery
 GSH
 halucynogeny
 inhibitor reduktazy HMG-CoA
@@ -2457,11 +2549,9 @@ narkotyk halucynogenny
 Narkotyk psychedeliczny
 narkotyki halucynogenne
 prostaglandyna
-statyny
 substancja halucynogenna
 substancje halucynogenne
 tetrahydrokanabinol
-Tyreotropina
 β-adrenolityk
 β-adrenolityki
 β-bloker
@@ -2489,6 +2579,7 @@ Spirala domaciczna
 sześciocyjanożelazian żelaza
 Wewnątrzmaciczna wkładka antykoncepcyjna
 Wkładka wewnątrzmaciczna
+bromki
 HCTZ
 HCZ
 heksametylenotetraamina
@@ -2530,10 +2621,9 @@ Tetraazotan pentaerytrytolu
 ZnCl2
 Akseroftol
 beta HCG
-beta-karoten
 chlorheksydyna
+cytalopram
 antybiotyk beta-laktamowy
-antybiotyki beta-laktamowe
 antybiotyki β-laktamowe
 antypiretyk
 antypiretyki
@@ -2552,31 +2642,31 @@ lek przeciwgorączkowy
 leki przeciwgorączkowe
 lewofloksacyna
 lewofloksacyna bezwodna
+mapryl
 Plavix
 rifampina
 ryfampicyna
 ryfampina
 siarczan glukozaminy
 środki przeciwgorączkowy
+taksol
 uranina
 Zyllt
 C2HCl3
 chlorek etylu
+cyklofosfoamid
 I-ACE
 IACE
 inhibitory ACE
 inhibitory enzymu konwertującego angiotensynę
 inhibitory konwertazy
 inhibitory konwertazy angiotensyny
-koenzym Q
 koenzym Q10
 leki sulfonamidowe
 Mercurius
-Nolvadex
 Nolvadex-D
 nowokaina
 sulfonamid
-sulfonamidy
 Tamoksifen
 Tamoxifen-Ebewe
 TCE
@@ -2614,7 +2704,6 @@ leki uspakajające
 leki uspokajające
 małe trankwilizery
 Mirzaten
-Remeron
 Rezorcynol
 witamina D3
 anestezyna
@@ -2630,8 +2719,8 @@ Mounjaro
 Pankreozymina
 sól sodowa siarczanu laurylu
 witamina D2
+algina
 CaCN2
-Cialis
 cyjanamid wapnia
 cyjanamid wapniowy
 cyjanamidek wapniowy
@@ -2672,7 +2761,6 @@ spermicydy
 środek plemnikobójczy
 środki plemnikobójcze
 staveran
-Adalat
 adriamycyna
 amfoterycyna
 antagonista wapnia
@@ -2696,6 +2784,7 @@ pirazyno-2-karboksyamid
 psychodeliki
 pyrazynamid
 środki przeciwzapalne
+uretan
 uretany
 altramet
 Apo-Famo
@@ -2712,6 +2801,7 @@ famogast
 fiolet gencjanowy
 herceptyna
 IgG
+karwedylol
 Ko-trimoksazol
 leki przeciwrobacze
 metylorozanilina
@@ -2728,9 +2818,10 @@ antybiotyki chinolonowe
 chinolon
 chinolony
 chlorfenamina
-D-norgestrel
 duboizyna
 Exacyl
+hioscyamina
+hyoscyamina
 kwas 5-aminosalicylowy
 kwas retinowy
 kwaśny węglan potasu
@@ -2758,11 +2849,11 @@ leki przeciwcukrzycowe
 MAO-I
 MAOI
 rapamycyna
+sibutramina
 signopam
 Toksoid
 antysurowica
 makrogol
-Penicylina V
 poliglikol
 V-cylina
 witamina P
@@ -2799,6 +2890,7 @@ Enbrel
 eseryna
 guajazyl
 hypnomidate
+kwas fenyloglikolowy
 Polimiksyna E
 Polimyksyna E
 Riwastygmina
@@ -2816,7 +2908,6 @@ ara-C
 arabinocytozyna
 Cholinesteraza
 Cholinoesteraza
-Cholinoesterazy
 cytarabina
 czynnik Stuarta-Prower
 diuretyki tiazydowe
@@ -2826,16 +2917,20 @@ Fosfagen
 kwas gamma-linolenowy
 leki nootropowe
 leki przeciwwymiotne
+norpseudoefedryna
 pabiamid
+penicylamina
 prostaglandyna I2
+pseudonorefedryna
 stilbestrol
+tiazyd
 tiazydy
 triamcinolon
 Butapirazol
 egzenatyd
 Fenylbutazon
+inwert
 klorazepat
-kontrast
 kontrasty
 prowitaminy
 Rilutek
@@ -2863,7 +2958,6 @@ raloksifen
 Spiriva
 Tabex
 tabletka antykoncepcyjna
-Trilafon
 Viksen
 flucytozyna
 fluorocytozyna
@@ -2879,8 +2973,8 @@ spazmolityki
 tynidazol
 Cytrynian triwapniowy
 debecylina
+meklozyna
 metandrostenolon
-Nexavar
 pochodna sulfonylomocznika
 pochodne sulfonylomocznika
 prochlorperazyna
@@ -2897,10 +2991,14 @@ kwas 10-undecenowy
 melitoksyna
 mleczan wapnia
 Monobaktam
+trans-2-fenylocyklopropano-1-amina
 biodroxil
 bromelaina
 Corlentor
+dietylokatynon
+dietylopropion
 Duracef
+esketamina
 fenolosulfoftaleina
 hydroksypropylometyloceluloza
 kwas pipemidowy
@@ -2934,13 +3032,11 @@ antyandrogeny
 Babka
 Basiliksimab
 Bazyliksimab
-CDP-cholina
 Certolizumab
 chlormetiazol
 cygnolina
 Deoksyrybonukleaza
 DNaza
-F18-FDG
 Fluorodeoksyglukoza
 g-strofantyna
 Kwas 7-deoksycholowy
@@ -2952,7 +3048,6 @@ posakonazol
 Siderofor
 Simponi
 Simulect
-Ticlid
 tikarcylina
 17α-hydroksyprogesteron
 Acetonid flucinolonu
@@ -2985,7 +3080,6 @@ anorektyki
 azotoiperyt
 azotoiperyty
 dezmetylodiazepam
-DHE
 fasturtec
 inhibitory aromatazy
 iperyty azotowe
@@ -2998,3 +3092,184 @@ sympatolityki
 Zenapax
 iloperidon
 monofluorofosforan sodu
+kwas karbamiloglutaminowy
+kwas karbamino-L-glutaminowy
+kwas ureidoglutarowy
+mleczanowy roztwór Ringera
+Raxone
+ringer mleczanowy
+roztwór Ringera mleczanowy
+Somavert
+środki przeciwpieniące
+sumitryna
+β-dihydroartemizynina
+adjuwant
+agoniści receptora beta2
+antagonisty receptora aldosteronowego
+beta-agoniści
+beta-mimetyki
+beta2-mimetyk
+beta2-mimetyki
+bozutynib
+bromural
+czterocykliczne leki przeciwdepresyjne
+dazabuwir
+Inhibitor beta laktamaz
+Inhibitor beta-laktamaz
+Inhibitory β-laktamaz
+leki beta-adrenergiczne
+leki przeciwnowotworowe
+meklofenoksat
+mitomycyny
+Penicylina z inhibitorem
+Penicyliny z inhibitorem
+temsyrolimus
+zymeldyna
+zymelidyna
+β2-mimetyk
+β2-mimetyki
+alindapryl
+antagonisty receptora H1
+antyhistaminiki
+chelaton
+indalapryl
+leki antyhistaminowe
+mleczan potasu
+Neuroaktywne steroidy
+odwrotne agonisty receptora H1
+Orthoclone
+Pirytynol
+precypitat nietopliwy
+sól wapniowo-disodowa kwasu etylenodiaminotetraoctowego
+Steroidy neuroaktywne
+sulfoguanidyna
+wersenian disodowo-wapniowy
+Winian antymonylu-potasu
+acetylokarnityna
+anilidy
+benralizumabum
+chinupristyna/dalfopristyna
+inhibitory proteaz
+inhibitory wychwytu zwrotnego norepinefryny
+kwinuprystyna/dalfoprystyna
+lek przeciwświądowy
+lek tokolityczny
+leki przeciwświądowe
+leki tokolityczne
+NO-SPA
+pirolnitryna
+środki przeciwświądowe
+tokolityki
+Tyreostatyki
+cytostatyczne środki
+cytostatyk
+fosforany magnezu
+krioprotektanty
+leki cytostatyczne
+mepolizumabum
+ritodryna
+środki antymitotyczne
+szczepionka prepandemiczna przeciw grypie
+kwas difenoksylowy
+lek antymuskarynowy
+leki przeciwparkinsonowskie
+propycylina
+agonisty receptorów adrenergiczne
+cerebrolisyne
+antybiotyki fluorochinolonowe
+aprindyna
+chinizokaina
+fluorochinolon
+inhibitory kinazy proteinowej
+lewoamlodypina
+okstryfilina
+sulfonian alkilu
+antyestrogen
+antyestrogeny
+deksfenfluramina
+hydrochinina
+inhibitor proteasomów
+inhibitory proteasomu
+kamforosulfonian trimetafanu
+kwas 3-hydroksy-3-metyloglutarowy
+leki urykozuryczne
+wazodylatatory
+ciglitazon
+dobesylan wapniowy
+Drotrekogin
+hydrochinidyna
+środki przeciwmutagenne
+substancja antymutagenna
+substancja przeciwmutagenna
+substancje antymutagenne
+substancje przeciwmutagenne
+Szczepionka przeciw grypie A/H1N1
+agonista receptora α-adrenergicznego
+antagonista opioidowy
+D-pantenol
+leki przeciwnowotworowe zawierające platynę
+pantenol
+d-metamfetamina
+leki przeciwastmatyczne
+N-metylo-1-fenylopropylo-2-amina
+N-metyloamfetamina
+neomycyna B
+riwoglitazon
+anaboliki
+mydriatyki
+Oral Turinabol
+związki selenu
+aminochinoliny
+folacyna
+karbamidy
+kokcydiostatyki
+kwas listny
+kwas pteroiloglutaminowy
+lek przeciwjaskrowy
+Leki przeciwjaskrowe
+moczniki
+związki siarki
+Adiuretin
+adiuretyna
+antagonista receptora prostaglandynowego
+antagonisty receptora prostaglandynowego
+antagonisty receptorów prostaglandynowych
+antydiuretyna
+azotyn amylu
+azotyn n-pentylu
+chelator
+chelatory
+czynnik chelatujący
+czynniki chelatujące
+Inhibitory NS3/4A
+Inhibitory proteazy NS3/4A
+nieopioidowe analgetyki
+nieopioidowe leki przeciwbólowe
+nieopioidowe środki przeciwbólowe
+nieopioidowy analgetyk
+nieopioidowy środek przeciwbólowy
+Rabipur
+środki przeciwinfekcyjne
+wazopresyna
+związki chelatujące
+związki rtęci
+związki srebra
+akceptor rodnikowy
+glandula thyreoidea siccata
+Gleptosil
+glikopironium
+Heptomer
+Iron heptonate
+lek przeciwwrzodowy
+leki przeciwwrzodowe
+promazyny
+płyn do dializy otrzewnowej
+Seebri Breezhaler
+środek alkilujący
+środek przeciwotępienny
+środki przeciwwrzodowe
+tarczyca suszona
+tyroidyna
+zmiatacz rodnikowy
+związki wapnia
+Clarityne

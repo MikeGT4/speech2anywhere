@@ -167,6 +167,10 @@ class Chemie(Fachgebiet):
         super().__init__()
         self._levels = list(IDLE_LEVELS)
 
+    def on_press(self, t: float, f: Frame) -> None:
+        super().on_press(t, f)
+        self._levels = list(IDLE_LEVELS)
+
     def step(self, t: float, dt: float, f: Frame, tap, an) -> None:
         super().step(t, dt, f, tap, an)
         targets = list(IDLE_LEVELS)

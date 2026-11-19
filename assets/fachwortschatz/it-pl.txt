@@ -1,12 +1,15 @@
 Linux
 system operacyjny
 HTML
+HyperText Markup Language
 Ubuntu
 Microsoft Windows
+MS Windows
 Windows
 gra komputerowa
 język programowania
 PHP
+algorytm
 Python
 JavaScript
 Mozilla Firebird
@@ -17,11 +20,13 @@ Bitcoin
 C++
 mysz komputerowa
 MediaWiki
+Cascading Style Sheet
 kaskadowe arkusze stylów
 dysk twardy
 klawiatura komputerowa
 Unicode
 iPhone
+sprzęt komputerowy
 Unix
 CPU
 procesor
@@ -31,8 +36,10 @@ C Sharp
 drukarka
 mikrofon
 płyta kompaktowa
+wi-fi
 macOS
 SQL
+Structured Query Language
 pamięć o dostępie swobodnym
 RAM
 wirus komputerowy
@@ -61,6 +68,7 @@ aplikacja mobilna
 BASIC
 LaTeX
 Lua
+serwer
 Windows Vista
 programowanie obiektowe
 Macintosh
@@ -70,10 +78,12 @@ Monero
 oprogramowanie użytkowe
 Visual Basic
 Fortran
+Google Play
 ASCII
 Opera
 Windows 8
 IPod
+router
 model TCP/IP
 pamięć USB
 język asemblera
@@ -88,6 +98,7 @@ GNU
 protokół transferu plików
 ekran dotykowy
 phishing
+struktura danych
 złośliwe oprogramowanie
 brzytwa Ockhama
 COBOL
@@ -103,6 +114,7 @@ MP3
 Safari
 Ada
 Hello world
+antywirus
 język maszynowy
 program antywirusowy
 RSS
@@ -132,12 +144,12 @@ serwer WWW
 BIOS
 Graphics Interchange Format
 Haskell
+protokół komunikacyjny
 wyrażenie regularne
 .NET Framework
 dystrybucja Linuksa
 Symbian
 BitTorrent
-Golang
 pilot zdalnego sterowania
 Raspberry Pi
 urządzenie peryferyjne
@@ -145,6 +157,8 @@ Vim
 arkusz kalkulacyjny
 koń trojański
 Mac OS
+Macintosh operating systems
+Microsoft Windows Millenium Edition
 Prolog
 Windows Me
 Adobe Flash
@@ -160,6 +174,7 @@ High-Definition Multimedia Interface
 interpreter
 iPhone 5
 IPv6
+język znaczników
 Microsoft Windows 1.x
 oprogramowanie sprzętowe
 pamięć flash
@@ -171,17 +186,21 @@ mikrokontroler
 OpenBSD
 Scratch
 VHS
+Video Home System
 XHTML
 analogia
+Arch Linux
 DOS
 Microsoft Access
+Microsoft Office Access
 Microsoft Visual Studio
 napęd SSD
+parabola
 przypowieść
 ransomware
 Solaris
-Arch Linux
 ASP.NET
+bot
 Kotlin
 Kubuntu
 pamięć podręczna
@@ -216,18 +235,22 @@ Karta dźwiękowa
 karta sieciowa
 Microsoft Windows 2.x
 silnik gry komputerowej
+stos
 Windows NT
 Algol
 aplikacja internetowa
+aplikacja webowa
 Dynamic Host Configuration Protocol
 Eclipse
 funkcja skrótu
 iPhone 5s
+JavaScript Object Notation
 język skryptowy
 jQuery
 JSON
 Node.js
 obliczenia równoległe
+paradygmat programowania
 PostgreSQL
 programowanie funkcyjne
 Przypowieść o synu marnotrawnym
@@ -259,6 +282,7 @@ Windows 8.1
 ActionScript
 algorytm Dijkstry
 dysk optyczny
+GNU Compiler Collection
 MacBook Pro
 Microsoft Windows Server 2003
 programowanie zwinne
@@ -285,6 +309,7 @@ IPhone 6
 iPhone X
 Mandriva Linux
 powłoka systemowa
+pulpit
 Apple TV
 biblioteka programistyczna
 Brave
@@ -301,6 +326,7 @@ Active Server Pages
 Address Resolution Protocol
 Brainfuck
 CD-ROM
+format pliku
 iPhone 5C
 Kali Linux
 katalog
@@ -315,6 +341,7 @@ Scala
 sortowanie przez scalanie
 wyświetlacz plazmowy
 Adobe Acrobat
+adware
 APL
 Google Talk
 GTK
@@ -331,6 +358,7 @@ debugger
 emulator
 iPhone 3G
 iPod Touch
+kodek
 MD5
 pamięć dynamiczna
 Sterownik PLC
@@ -345,6 +373,7 @@ NetBSD
 Notatnik
 Ogg
 OpenDocument
+ploter
 przypowieść Jezusa
 rejestr procesora
 rootkit
@@ -356,6 +385,7 @@ Django
 DOM
 Drukarka laserowa
 Haiku
+Jabber
 korektor pisowni
 metoda Newtona
 Microsoft Windows Server 2008
@@ -369,6 +399,8 @@ Sortowanie przez wybieranie
 system uniksopodobny
 Token ring
 urządzenie wejściowe
+Windows Server Vista
+Windows Vista Server
 XMPP
 Xubuntu
 zasilacz komputera
@@ -388,6 +420,7 @@ Visual Studio Code
 Windows 3.0
 Wzory Cramera
 XSL Transformations
+Advanced Package Tool
 Brama sieciowa
 Common Gateway Interface
 CP/M
@@ -395,6 +428,7 @@ EPUB
 Intel Pentium
 IPhone 8
 keylogger
+Manjaro
 Manjaro Linux
 Odległość Levenshteina
 Open Shortest Path First
@@ -402,21 +436,26 @@ skala Kardaszowa
 system rozpoznawania twarzy
 uczenie przez wzmacnianie
 ZIP
+cyberatak
 drzewo binarne
 Godot
 Google Meet
 IPhone SE
 Kopiec
+Kubernetes
 Lightweight Directory Access Protocol
 MacBook
 macierz kwadratowa
 mobilny system operacyjny
 NetBeans
+nginx
 obudowa komputera
 phpMyAdmin
 PostScript
 Red Hat Enterprise Linux
+Red Hat Entreprise
 SQL injection
+SQL Insertion
 terminal komputerowy
 wikikod
 Wireless Application Protocol
@@ -424,6 +463,7 @@ Xcas
 Adobe Flash Player
 Całkowanie przez części
 Deepin
+elektroniczny papier
 elementary OS
 FreeDOS
 iPhone 11
@@ -452,9 +492,11 @@ Erlang
 framework
 gamepad
 Gecko
+gedit
 Google Hangout
 IPhone 12
 konstrukcje klasyczne
+kryptografia symetryczna
 Live CD
 Lynx
 macierz transponowana
@@ -498,6 +540,7 @@ Source
 Spring Framework
 SQLite
 Static Random Access Memory
+Ultra HDTV
 Ultra High Definition Television
 Unified Extensible Firmware Interface
 vibe coding
@@ -527,12 +570,17 @@ Projekt GNU
 Qualcomm Snapdragon
 sledzenie promieni
 Standard Template Library
+szyfr
 TensorFlow
+VirtualBox
 Wątek
 WebKit
+łata
 Android 12
+bufor
 Demon
 drukarka atramentowa
+edytor graficzny
 Fiber Distributed Data Interface
 Flutter
 Google Sites
@@ -561,6 +609,7 @@ Point to Point Protocol
 program graficzny
 Samba
 SeaMonkey
+sed
 sortowanie przez kopcowanie
 SPARQL
 tablica multimedialna
@@ -568,10 +617,12 @@ transformator
 uczenie nienadzorowane
 Windows 9x
 ABAP
+Active Directory
 Android Lollipop
 Atak brute force
 Betamax
 Bogacz i Łazarz
+Brutal force
 cecha podzielności
 Celeron
 CUDA
@@ -610,14 +661,14 @@ CyanogenMod
 DLL
 Drzewo czerwono-czarne
 Edubuntu
+fork
 Gopher
 Intel Atom
 Intel Core
 Intel Core 2
+Internet Information Services
 iPadOS
 IPhone 11 PRO
-iPhone SE 2
-iPhone SE 2020
 iPod shuffle
 Java Development Kit
 Laravel
@@ -642,6 +693,7 @@ algorytm sympleksowy
 AmigaOS
 Android TV
 Audio Video Interleave
+Bugzilla
 Całkowanie przez podstawienie
 cykliczny kod nadmiarowy
 DDR SDRAM
@@ -664,6 +716,7 @@ Pentium III
 Protokół Diffiego-Hellmana
 przepływ sterowania
 QuickTime
+RPM Package Manager
 Singleton
 smart contract
 Software Development Kit
@@ -690,6 +743,7 @@ Filtr Kalmana
 Frame Relay
 iPad mini
 Jednostka zarządzania pamięcią
+język zapytań
 macierz hermitowska
 macierz Jacobiego
 macierz sąsiedztwa
@@ -714,6 +768,7 @@ Scilab
 skaner kodów kreskowych
 storage area network
 Super Audio Compact Disc
+Synaptic
 system zarządzania pakietami
 Trisquel
 wieloplatformowość
@@ -741,6 +796,7 @@ iPhone 13 Pro
 iPhone 15 Pro
 komputer jednopłytkowy
 kontroler gier
+LLVM
 macierz ortogonalna
 Make
 Microsoft Windows Neptune
@@ -754,6 +810,7 @@ Robak Morrisa
 Stała Michaelisa
 SteamOS
 Sublime Text
+switch KVM
 szyfr podstawieniowy
 Szyfr z kluczem jednorazowym
 teoria odstraszania
@@ -773,7 +830,7 @@ Android 11
 Android Auto
 Android Pie
 Apache Hadoop
-AStar
+Apache Tomcat
 Atom
 Bada OS
 CD-R
@@ -804,6 +861,7 @@ Metoda Simpsona
 Napęd Zip
 ODBC
 OpenID
+OpenVPN
 oprogramowanie wieloplatformowe
 pasek zadań
 procesor wielordzeniowy
@@ -817,6 +875,7 @@ Rejestr
 Representational State Transfer
 REXX
 Sprite
+Squid
 szyfr blokowy
 VisiCalc
 WannaCry
@@ -836,7 +895,10 @@ CD-RW
 Conficker
 CSMA/CD
 DBASE
+Debian Package Manager
+Document Type Declaration
 Document Type Definition
+Dpkg
 edytor HTML
 Elixir
 Extensible Stylesheet Language
@@ -888,6 +950,7 @@ CURL
 DB2
 DOCSIS
 edytor grafiki rastrowej
+ext4
 GoldSrc
 Google Web Toolkit
 HUD
@@ -908,6 +971,7 @@ OAuth
 Open Hardware
 OpenWrt
 pamięć ferrytowa
+Phabricator
 Plan 9
 QNX
 Sega CD/Mega CD
@@ -929,17 +993,24 @@ WHOIS
 Windows Media Audio
 ZigBee
 .htaccess
+Adobe ColdFusion
 algorytm Bellmana-Forda
 Android One
 Anjuta
+Apache Maven
 AppleScript
 Bogosort
 Darwin
 DDR3 SDRAM
+Emotion UI
 EMUI
+ext2
 FFmpeg
+Flatpak
+Free Pascal
 FreeBASIC
 Frostbite
+GitLab
 harmonogramowanie
 Haswell
 IDLE
@@ -949,6 +1020,7 @@ iPod Classic
 IRIX
 ISOFS
 koprocesor
+log
 Mac OS X 10.0
 Mac OS X 10.6
 macierz Toeplitza
@@ -987,13 +1059,16 @@ Android 15
 Android 16
 Android Cupcake
 Atak NotPetya
+Bitbucket
 CakePHP
 Camino
+Centrum oprogramowania Ubuntu
 Computer Aided Engineering
 Dekorator
 Dev-C++
 dowód z wiedzą zerową
 Ekran projekcyjny
+ext3
 Fasada
 Firefox dla Androida
 format otwarty
@@ -1008,6 +1083,7 @@ iPhone 18 Pro
 JavaFX
 KHTML
 klawiatura
+koncentrator USB
 Lampa cyfrowa
 las losowy
 Mac OS 9
@@ -1018,6 +1094,7 @@ Macierz gęstości
 macierz klatkowa
 macierz rzadka
 Metoda gradientu prostego
+npm
 OpenCL
 OpenType
 Powłoka Bourne'a
@@ -1041,6 +1118,7 @@ Windows Server 7
 Wireless Markup Language
 XML Schema
 Zig
+Zsh
 ACPI
 Advanced Linux Sound Architecture
 Apple A4
@@ -1052,7 +1130,6 @@ Blowfish
 bomba logiczna
 CD-Audio
 Chromium OS
-Code Blocks
 CodeIgniter
 Common Intermediate Language
 CryEngine
@@ -1070,7 +1147,9 @@ Google Cardboard
 GraphQL
 HP-UX
 ISO
+JIT
 JScript
+Jython
 KolibriOS
 kompresja dynamiki
 Linspire
@@ -1103,8 +1182,10 @@ Simulink
 Solus
 Symfony
 System V
+systemd
 TDMA
 urządzenie wielofunkcyjne
+usługa katalogowa
 Vala
 vCard
 Visual FoxPro
@@ -1113,7 +1194,9 @@ Windows Server 2019
 Windows Server 2022
 wygaszacz ekranu
 wyświetlacz siedmiosegmentowy
+Xen
 XUL
+Yacc
 Z File System
 ZFS
 Apache Lucene
@@ -1162,9 +1245,11 @@ Polecenie
 procesor wektorowy
 protokół kryptograficzny
 PyCharm
+QEMU
 Redis
 Reverse Address Resolution Protocol
 rozdzielczość 8K
+Sailfish
 Sailfish OS
 Scientific Linux
 Shapefile
@@ -1192,6 +1277,8 @@ AROS Research Operating System
 Atbasz
 Boo
 Btrfs
+Clang
+CPAN
 DDR4 SDRAM
 dekompilator
 DVD-Audio
@@ -1208,7 +1295,10 @@ iPhone Duo
 iPhone OS 1
 IPod mini
 izomorfizm grafów
+Jenkins
+JIRA
 JUnit
+Kernel-based Virtual Machine
 klawisz funkcyjny
 kompozyt
 Licznik programu
@@ -1231,11 +1321,15 @@ Parrot OS
 PDF/A
 PEAR
 PfSense
+plama
 Plankalkül
+Playfair
 POP3
 RC4
 regula falsi
 round robin
+rysik
+S.M.A.R.T.
 Sass
 ScummVM
 Secure Sockets Layer
@@ -1246,8 +1340,10 @@ Sprawdzian krzyżowy
 Standard ML
 stos wywołań
 Stream Control Transmission Protocol
+szpila
 Szyfr Playfair
 Szyfr przestawieniowy
+tar
 taśma filmowa 35 mm
 Triangulacja Delone
 TYPO3
@@ -1270,6 +1366,7 @@ AMD Fusion
 AMD K5
 Android-x86
 Angular
+Apache Kafka
 Apple Silicon
 Arcnet
 Brackets
@@ -1281,6 +1378,7 @@ DVD-RAM
 EBNF
 Eclair
 Edytor heksadecymalny
+EndeavourOS
 EURion
 Fast Ethernet
 FireOS
@@ -1300,6 +1398,7 @@ K-najbliższych sąsiadów
 Klawisze strzałek
 Księgowanie
 Kylix
+Lighttpd
 Links
 Logical Link Control
 macierz nilpotentna
@@ -1310,6 +1409,7 @@ menu kontekstowe
 Message Passing Interface
 Metafora zbitej szyby
 metoda różnic skończonych
+Microsoft Hyper-V
 Monitor brajlowski
 Motorola 68K
 MX Linux
@@ -1322,6 +1422,7 @@ PlayStation Move
 Plone
 PocketStation
 Portable Executable
+Portage
 prototyp
 Proxmox Virtual Environment
 przetwarzanie współbieżne
@@ -1343,13 +1444,17 @@ TrackPoint
 Trusted Platform Module
 Void Linux
 VRAM
+w3m
 WebRTC
 Windows Phone 7
 Windows Phone 8.1
 XFS
+YaST
+YUM
 zdecentralizowana autonomiczna organizacja
 Zenwalk
 Adobe Shockwave
+Akcelerator SI
 algorytm Floyda-Warshalla
 Algorytm Knutha-Morrisa-Pratta
 AntiX
@@ -1376,7 +1481,6 @@ edytor grafiki wektorowej
 edytor wideo
 EMac
 emulator terminalu
-EndeavourOS
 eskalacja uprawnień
 exFAT
 Fibre Channel
@@ -1399,6 +1503,8 @@ IP over Avian Carriers
 iPhone OS 2
 IS-IS
 J Sharp
+Java Message Service
+Java Messaging Service
 Język drabinkowy
 KDE neon
 klaster dyskowy
@@ -1427,14 +1533,15 @@ oprogramowanie edukacyjne
 Point-to-Point Protocol over Ethernet
 Portable Game Notation
 Power Mac
-przycisk
 Pyłek
 Quake engine
 Ramdysk
 ReiserFS
+Reverse proxy
 RLE
 Rozproszona tablica mieszająca
 Samsung Experience
+Shockwave
 Sieć Feistela
 Struts
 Super Game Boy
@@ -1442,6 +1549,7 @@ Symulowane wyżarzanie
 SYN flood
 szyfr strumieniowy
 Tablicowanie
+token
 Trident
 Twofish
 Universal Disk Format
@@ -1484,6 +1592,7 @@ Challenge Handshake Authentication Protocol
 Cisco IOS
 Clipper
 Cocoa
+Composer
 cross-site request forgery
 czytnik kart
 D-Bus
@@ -1513,6 +1622,7 @@ macierz Hadamarda
 macOS Catalina
 MacOS Tahoe
 menedżer haseł
+MinGW
 Moblin
 MRAM
 Mutoskop
@@ -1521,13 +1631,16 @@ NixOS
 Nośnik magnetyczny
 Oberon
 odkryty atak
+Open proxy
 OpenAL
+Pacman
 Pango
 Parabola GNU/Linux
 PDF.js
 Pentium D
 Pełnomocnik
 PhysX
+Pip
 Profibus
 Qubes OS
 RISC OS
@@ -1540,6 +1653,7 @@ sekcja krytyczna
 Selenium
 skrypt powłoki
 Skutek uboczny
+Snap
 Snobol
 Sortowanie kubełkowe
 Squeak
@@ -1548,6 +1662,7 @@ TOSLINK
 USSD
 UUCP
 Whitespace
+WildFly
 Windows 3.1
 Wyszukiwanie wyczerpujące
 XOOPS
@@ -1556,7 +1671,6 @@ Abstract Window Toolkit
 Adreno
 algorytm deterministyczny
 Animated Portable Network Graphics
-archiwum
 Avant Browser
 BlackBerry 10
 Bootstrap Protocol
@@ -1565,6 +1679,7 @@ CALL
 CLU
 CrunchBang
 Digital Signature Algorithm
+DNF
 DocBook
 DR-DOS
 Drzewo splay
@@ -1598,6 +1713,7 @@ macOS Ventura
 MD4
 menedżer pobierania plików
 MFC
+Microsoft Foundation Class
 Microsoft Windows Odyssey
 Modbus
 Monada
@@ -1620,15 +1736,17 @@ Red Flag Linux
 Remote Desktop Protocol
 Ren'Py
 Rocky Linux
+Samsung Apps
+Samsung Galaxy Store
 Samsung Gear VR
 schemat poznawczy
+siatka
 Sieć Kohonena
 Skylake
 SMIL
 sortowanie grzebieniowe
 SRWare Iron
 stacja dokująca
-Stan
 struktura zbiorów rozłącznych
 Svelte
 Synchroniczna sieć optyczna
@@ -1730,6 +1848,7 @@ programowanie genetyczne
 Programowanie ograniczeń
 przeglądarka grafik
 PyGTK
+PyPy
 Racket
 RC5
 RC6
@@ -1755,8 +1874,10 @@ Turion 64
 uczenie samonadzorowane
 unifikacja
 Windows Forms
+WireGuard
 WxPython
 Xiaomi HyperOS
+zlib
 algorytm aproksymacyjny
 Algorytm Karatsuby
 Algorytm Metropolisa-Hastingsa
@@ -1770,17 +1891,20 @@ Apache Spark
 Apple A14 Bionic
 archiwizator plików
 Aspell
+Atak Smurf
 Atak urodzinowy
 AV1
 Bazaar
 BeagleBoard
 Behavior-driven development
+Bison
 bugtracker
 Carbon
 Cieniowanie płaskie
 ColorOS
 CPL
 CSMA/CA
+cyferblat
 Czynnik całkujący
 DBSCAN
 DD-WRT
@@ -1816,7 +1940,7 @@ MonoDevelop
 Motion JPEG
 Motorola 6809
 Netfilter
-Nim
+NuGet
 Nura
 OpenEXR
 OS X Server
@@ -1846,6 +1970,7 @@ Synchronous Digital Hierarchy
 system kontroli wersji
 Tabula recta
 tarcza zegara
+Tcsh
 Test pierwszości AKS
 TGA
 Visual J++
@@ -1859,6 +1984,7 @@ wyświetlacz nagłowny
 Xine
 XNA
 XSL Formatting Objects
+Zabbix
 zdarzenie
 zintegrowany system biblioteczny
 4GL
@@ -1871,20 +1997,25 @@ AliOS
 AMD K6-2
 Apple A15 Bionic
 Apple M4
+Aptitude
 Arc
 AspectJ
 AutoLISP
 Back Orifice
 biblioteka JavaScript
+biblioteka języka JavaScript
+Bitmapa
 BlackArch
 Blok kontrolny procesu
 blokada
 Broadwell
 Business Process Execution Language
+cegła
 Ceylon
 Cinema Display
 Coinmarketcap
 Contiki
+Daydream
 Decima
 Deflate
 DesktopBSD
@@ -1971,9 +2102,11 @@ SparkyLinux
 SPDY
 STL
 strona kodowa
+Super VHS
 SuperH
 SUSE Linux Enterprise Server
 Szyfr masoński
+Terraform
 Test pierwszości Fermata
 TiddlyWiki
 torrent
@@ -2003,7 +2136,9 @@ Algorytm Karpa-Rabina
 Algorytm malarza
 Allegro
 Android Go
+ArchBang
 Arora
+Artificial Intelligence Markup Language
 Asahi Linux
 Asp.net mvc
 AVIF
@@ -2019,17 +2154,22 @@ Confluence
 CORS
 CouchDB
 Creeper
+Cross-kompilator
 Cross-Origin Resource Sharing
 CRUX
 Cursor
 Debian GNU/Hurd
 Delphi
 direct-attached storage
+DragonBall
 Drzewiec
 EFS
 Encrypting File System
 Ethereum Classic
+Friendly interactive shell
 GNFS
+GNU Guix
+Homebrew
 host adapter
 HSQLDB
 HTML Help
@@ -2049,6 +2189,7 @@ IW engine
 Java Persistence API
 kierownica
 Kile
+Kompilator skrośny
 LaTeX/Zarządzanie bibliografią
 LibreWolf
 Literate programming
@@ -2069,6 +2210,7 @@ NetLogo
 Network Information Service
 OpenIndiana
 OpenVZ
+paddle
 Platformy niskokodowe
 PlayStation VR2
 Precision Time Protocol
@@ -2089,6 +2231,7 @@ SCO UNIX
 Serpent
 SFP
 Sidux
+SLS Linux
 SO-DIMM
 Softlanding Linux System
 Sortowanie gnoma
@@ -2105,6 +2248,7 @@ Ubuntu Mobile
 Ututo
 visionOS
 VistaVision
+VMware Workstation
 Web Open Font Format
 WebAuthn
 Whonix
@@ -2130,10 +2274,10 @@ Algorytm online
 Algorytm wektora odległości
 Amos
 Analiza składowych niezależnych
+ANTLR
 any key
 Apple A16 Bionic
 Apple File System
-ArchBang
 ARQ
 Axolotl
 BLAG
@@ -2155,6 +2299,7 @@ e-mail spoofing
 ELinks
 Errno
 Extensible Metadata Platform
+FASM
 FastCGI
 FED
 FITS
@@ -2163,6 +2308,7 @@ FreeSBIE
 Gamebryo
 GBS
 GeForce 3
+GlassFish
 GLib
 HEIF
 HFS+
@@ -2185,6 +2331,7 @@ macierz antyhermitowska
 macierz Grama
 macierz losowa
 macierz przekątniowo dominująca
+Mantis
 Marching cubes
 Media Center Edition
 Merkury
@@ -2198,6 +2345,7 @@ Musepack
 NES Zapper
 NetBEUI
 Network Control Program
+nostr
 Nova
 OpenLayers
 Oxygen Project
@@ -2206,7 +2354,6 @@ Parser LL
 Physics processing unit
 PL/M
 PlayStation Portal
-podanie
 porwanie przeglądarki
 POSIX Threads
 problem selekcji
@@ -2229,6 +2376,7 @@ Security Assertion Markup Language
 Self
 silnik bazy danych
 Skaloniezmiennicze przekształcenie cech
+Slammer
 SpiderMonkey
 Spyder
 SQL Slammer
@@ -2242,6 +2390,7 @@ Test Lucasa-Lehmera
 TLE
 Ubuntu Netbook Edition
 Universal Windows Platform
+Upstart
 Uuencode
 VectorLinux
 VMU
@@ -2266,6 +2415,7 @@ Apple A8X
 Apple DOS
 Apple Filing Protocol
 Apple iPad
+Apple iPad 2019
 AtheOS
 atrapa obiektu
 Autoconf
@@ -2311,8 +2461,8 @@ Intel GMA
 Intel iAPX 432
 Internet Explorer 5
 interpreter wiersza poleceń
-iPad 7
 iPadOS 26
+Jetty
 Joy-Con
 KIO
 krążek rozmycia
@@ -2334,6 +2484,7 @@ NetSurf
 OAI-PMH
 Obiekt transferu danych
 Online Certificate Status Protocol
+OpenRC
 Oprogramowanie biznesowe
 OSGi
 Paletowa tablica informacyjna
@@ -2359,6 +2510,7 @@ reStructuredText
 Rocq
 ROOT
 Scintilla
+Serenity
 SerenityOS
 Session Description Protocol
 Sixaxis
@@ -2372,6 +2524,8 @@ szybka odwrotność pierwiastka kwadratowego
 szyfr polialfabetyczny
 tablica partycji
 TikiWiki
+time.h
+transpilator
 Turion 64 X2
 UClibc
 VC-1
@@ -2379,6 +2533,7 @@ Visual Component Library
 VoiceXML
 Web
 WiFi Calling
+Windows Package Manager
 Wzorzec architektoniczny
 zegar elektryczny
 zmienna przepływność
@@ -2397,6 +2552,7 @@ Apple A19
 Apple EarPods
 Apple M5
 Aproksymacja wielomianowa
+Artix Linux
 AsciiDoc
 Atari TOS
 Avast Secure Browser
@@ -2408,6 +2564,7 @@ Box2D
 BSON
 C-HTML
 CalDAV
+cheat
 Clean
 Comodo Dragon
 Creation Engine
@@ -2426,6 +2583,7 @@ FastTrack
 Fonty PostScript
 Fox Engine
 Freescale ColdFire
+gałąź
 gałka analogowa
 GDDR4
 GNU Classpath
@@ -2514,6 +2672,7 @@ Turbolinux
 Ultrix
 Unreal Engine 5
 uogólniona macierz odwrotna
+Vinyl Cache
 WavPack
 Web2py
 Wet za wet
@@ -2539,7 +2698,6 @@ Apache Derby
 Apple A18
 Apple Display Connector
 ARM Cortex-A7 MPCore
-Artix Linux
 arytmetyka dowolnej precyzji
 assert.h
 Atari Jaguar CD
@@ -2572,8 +2730,10 @@ Edlin
 F2FS
 Font awesome
 FoxPro
+GCJ
 GDAL
 GeoTIFF
+GFortran
 GNU readline
 Gtkmm
 Homoikoniczność
@@ -2583,17 +2743,20 @@ IBM WebSphere Application Server
 iMUSE
 Indukcja wsteczna
 Initrd
+Interactive Music Streaming Engine
 Internet Explorer 3
 Internet Explorer 4
 Interpolacja Hermite'a
 Inwersja priorytetów
 iPadOS 13
 IPv5
+Javac
 JavaCC
 Jekyll
 JQuery UI
 Kanotix
 kodek audio
+Kolekcja portów
 Krzywa eliptyczna Diffiego-Hellmana
 KTurtle
 kwadrat grecko-łaciński
@@ -2633,10 +2796,12 @@ Parted Magic
 Phonon
 PHP-GTK
 PHPUnit
+Pkgsrc
 Play
 Podman
 Pole bitowe
 PowerBASIC
+Privoxy
 Protokół HART
 Q Sharp
 Q4OS
@@ -2653,17 +2818,21 @@ Shiira
 Shovelware
 Snowdrop
 Sortowanie introspektywne
+StarOffice Basic
 Stick PC
 SunOS
 System III
 System Trachtenberga
 Szyfr Beale'a
 TIN
+Tiny C Compiler
+tmpfs
 Transputer
 Turbo Basic
 Unreal Engine 4
 Velocity
 Vite
+VMware Fusion
 wentylator komputerowy
 Windows 10X
 Windows Internet Name Service
@@ -2710,6 +2879,7 @@ Computer Science Network
 ConTeXt
 Copland
 Cryptojacking
+Dash
 DESX
 Direct Rendering Manager
 Distributed Computing Environment
@@ -2727,7 +2897,7 @@ fastboot
 File Allocation Table 32-bit
 framework CSS
 FreedomBox
-funkcja
+GDebi
 Glide
 Global Interpreter Lock
 Graphics Draw
@@ -2753,6 +2923,7 @@ kontynuacja
 KParts
 Kwantowe wyżarzanie
 Libavcodec
+libpng
 libvirt
 Libxml
 LiMux
@@ -2766,6 +2937,7 @@ MEMZ
 Metal
 Metoda Galerkina
 Metoda oddziaływania konfiguracji
+Microsoft SMS
 Millipede
 MkLinux
 MT9
@@ -2780,6 +2952,7 @@ OmniROM
 OpenMosix
 OpenSound Control
 OPNsense
+Optymalizacja kodu wynikowego
 Org-mode
 OStatus
 pakiet instalacyjny
@@ -2796,6 +2969,7 @@ Random early detection
 Refractor Engine
 Replit
 ROSA Linux
+RubyGems
 Sad Satan
 Schemat płatka śniegu
 Sequenced Packet Exchange
@@ -2806,6 +2980,7 @@ Siatka Zachmana
 SilverStripe
 Sinclair BASIC
 Skipjack
+snd
 Sonifikacja
 sortowanie zewnętrzne
 SPH
@@ -2823,178 +2998,3 @@ TOPS-10
 Transformator wizyjny
 trwała struktura danych
 typowanie silne
-UltraSPARC
-Underscore.js
-Unix Wersja 7
-Unreal Engine 3
-Uzupełnienie Schura
-Vector Markup Language
-VESA Display Data Channel
-VP7
-VRM
-wbudowany system operacyjny
-Whisper
-WiDi
-Windows CE 5.0
-Windows Driver Model
-Windows Workflow Foundation
-Wymiana klucza
-XBL
-XLIFF
-XWiki
-Yocto
-Yoper
-Active Template Library
-AdaBoost
-Adaptive Server Enterprise
-Agda
-algorytm Cohena-Sutherlanda
-algorytm Fermata
-Algorytm Floyda-Steinberga
-Algorytm piekarniany
-AMV Video
-Android App Bundle
-Apache Commons
-Apache CXF
-Apple A5X
-Apple Studio Display
-Apple Watch Ultra
-Archiwum z komiksami
-Arduino IDE
-ARts
-AsteroidOS
-Asymptote
-ATL
-Autorun.inf
-Baza danych szeregów czasowych
-Be File System
-BFS
-Blitter
-Bluesnarfing
-Cable Modem Termination System
-CANpen
-Commodore BASIC
-CosmosOS
-DAAP
-Doctrine
-Drukarka stałoatramentowa
-Eclipse Deeplearning4j
-Eric
-FastAPI
-Flux
-GAP
-GeeXboX
-GEGL
-General Transit Feed Specification
-Generalized Markup Language
-Generator Fibonacciego
-GEOS
-ggplot2
-GObject
-Google RankBrain
-Googlebook OS
-GOST
-Grml
-Guix
-HATEOAS
-Heurystyki wydawania sądów
-Hi8
-HQ9+
-IBM Rational ClearCase
-Infinity Engine
-IPCop
-JBIG
-Klawiatura membranowa
-klient FTP
-klient komunikatora internetowego
-Komodo
-Kryptoanaliza liniowa
-KWallet
-Leaflet
-Leaky Bucket
-libdvdcss
-Libjpeg
-Link Control Protocol
-Local Interconnect Network
-M-DISC
-Magic Keyboard
-Magnetofon ADAT
-man page
-mechanizm Grotthusa
-Metoda dużych wirów
-Metoda Gutmanna
-Mobilinux
-Model nomologiczno-dedukcyjny
-MooTools
-MPEG-DASH
-multitap
-Netflow
-Netlista
-Network Security Services
-OBEX
-OGM
-Open Virtualization Format
-OpenStep
-oprogramowanie biurowe
-parasol nuklearny
-Pentium OverDrive
-PICO-8
-PL/pgSQL
-Portable anymap
-programowanie ewolucyjne
-przenośny Firefox
-Przestrzeń tabel
-PTS-DOS
-Python Imaging Library
-Qiskit
-Qt Extended
-Raptor Lake
-Reguła satysfakcji
-Reiser4
-ReWire
-Ricoh 5A22
-RTEMS
-Schemat identyfikacji Schnorra
-SCIgen
-security.txt
-Shadowsocks
-Short Message Peer-to-Peer
-SNES-CD
-Sourcemage
-Speech Synthesis Markup Language
-Sqlplus
-stacja dysków
-Steam Frame
-Strategia optymalna
-string.h
-SUSE Linux Enterprise Desktop
-System wspomagający dowodzenie twierdzeń
-SystemVerilog
-Tezos
-Trac
-Twisted
-uniwersalny pilot
-UnrealScript
-urządzenie szyfrujący
-Uzbl
-Virtual Hard Disk
-VLAN Trunking Protocol
-Vyatta
-Web Proxy Auto-Discovery Protocol
-Whirlpool
-Wielki Szyfr
-WPA2
-Xenos
-XHTML Mobile Profile
-Zend Studio
-Zephyr
-Zilog Z180
-2GL
-Access Database Engine
-Adabas
-ADOdb
-ALGOL W
-Algorytm Hoare'a
-Algorytm push-relabel
-AmigaE
-AmigaOS 4
