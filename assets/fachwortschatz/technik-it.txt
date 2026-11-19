@@ -1,0 +1,3000 @@
+computer
+Internet
+televisione
+settimana
+energia
+telefono
+intelligenza artificiale
+elettricità
+informatica
+elemento chimico
+comunicazione
+sistema operativo
+molecola
+pi greco
+orologio
+secondo
+telefono cellulare
+elettrone
+software
+temperatura
+fotosintesi clorofilliana
+informazione
+chilogrammo
+linguaggio di programmazione
+algoritmo
+numero naturale
+protone
+circonferenza
+materia
+finestra
+numero complesso
+termodinamica
+anno luce
+misurazione
+velocità
+telescopio
+accelerazione
+equazione
+corrente elettrica
+numero intero
+neutrone
+probabilità
+teoria della relatività
+numero atomico
+addizione
+funzione
+velocità della luce
+frequenza
+transistor
+algebra lineare
+bussola
+energie rinnovabili
+lunghezza
+telecomunicazioni
+chilometro
+chilometro quadrato
+condensatore
+divisione
+latitudine
+moltiplicazione
+relatività generale
+campo magnetico
+hardware
+radiazione elettromagnetica
+relatività ristretta
+numero reale
+raggi X
+nucleo atomico
+radiazione ultravioletta
+rete di computer
+sottrazione
+densità
+elettromagnetismo
+calcolatrice
+carica elettrica
+CPU
+elettrotecnica
+numero razionale
+radiazione infrarossa
+unità di elaborazione centrale
+isotopo
+resistore
+semiconduttore
+longitudine
+trasformatore
+base di dati
+insieme
+meccanica
+unità astronomica
+pressione
+cosmologia
+motore a vapore
+aurora polare
+energia solare
+distanza
+fissione nucleare
+programma
+legge di conservazione dell'energia
+potenza
+simbolo
+termometro
+grado Celsius
+stampante
+apparecchio fotografico
+astrofisica
+frazione
+microfono
+diametro
+particella elementare
+tensione elettrica
+crittografia
+legge di Ohm
+personal computer
+RAM
+acidità
+basicità
+unità di misura
+campo elettrico
+quantità di moto
+sistema
+centimetro
+ingegneria meccanica
+matrice
+percentuale
+cilindro
+schermo di computer
+bilancia
+fusione nucleare
+lampadina
+fisica nucleare
+induttore
+radiazione
+ceramica
+compilatore
+punto di fusione
+radice quadrata
+energia cinetica
+incendio
+lunghezza d'onda
+magnetismo
+pollice
+raggi gamma
+bottone
+metro quadrato
+motore elettrico
+spaziotempo
+entropia
+massa atomica
+circuito integrato
+fisica delle particelle
+inerzia
+ingegneria genetica
+radioattività
+centrale nucleare
+ingegneria civile
+ingegneria del software
+pressione atmosferica
+punto di ebollizione
+corrente alternata
+neutrino
+polvere
+variabile
+biofisica
+grado Fahrenheit
+onda radio
+robotica
+umidità
+coulomb
+legge di gravitazione universale
+realtà virtuale
+barometro
+cataratta
+centrale elettrica
+energia potenziale
+fibra ottica
+mutazione
+positrone
+tonnellata
+millimetro
+sismologia
+altoparlante
+applicazione
+collegamento ipertestuale
+fermione
+rifrazione
+sicurezza informatica
+spazio vettoriale
+USB
+antenna
+caloria
+corrente continua
+raggi cosmici
+elettrolisi
+fisica teorica
+leggi di Keplero
+orologio solare
+soluzione
+cloud computing
+equazioni di Maxwell
+nucleone
+radiante
+resistenza elettrica
+spostamento verso il rosso
+diffusione di materia
+effetto fotoelettrico
+elettrostatica
+segnale stradale
+velocità del suono
+Ångström
+candela
+conduttore elettrico
+nanometro
+riflessione
+stato di ossidazione
+cibernetica
+cristallografia
+forza di Coulomb
+linguaggio assembly
+scanner
+trottola
+costante di Planck
+emivita
+fisica atomica
+ingegneria chimica
+LED
+micrometro
+perimetro
+successione
+supercalcolatore
+cerniera lampo
+codice a barre
+generatore elettrico
+microprocessore
+momento meccanico
+scienze forestali
+superconduttività
+turbina eolica
+valore assoluto
+adesivo
+Induzione elettromagnetica
+telegrafia
+ultrasuoni
+viscosità
+deviazione standard
+grado d'arco
+interazione fondamentale
+lampada fluorescente
+malware
+principio di Archimede
+teoria delle stringhe
+campo elettromagnetico
+condizionamento dell'aria
+elettrolita
+elettronvolt
+Ethernet
+filo metallico
+floppy disk
+interazione elettromagnetica
+massa solare
+particella α
+sensore
+tomografia computerizzata
+capacità elettrica
+elettrochimica
+Esoreattore
+firewall
+forza di Coriolis
+giroscopio
+radiologia
+cella solare
+compasso
+nota musicale
+rete privata virtuale
+teorema del flusso
+acceleratore di particelle
+astrolabio
+determinante
+diffrazione
+energia elettrica
+legge di Boyle-Mariotte
+linguaggio macchina
+metro cubo
+miglio nautico
+segmento
+sistema di riferimento cartesiano
+teoria dell'informazione
+Arduino
+ascensione retta
+cavallo vapore
+declinazione
+entanglement quantistico
+metrologia
+momento angolare
+numero di massa
+parallasse
+potenza elettrica
+Read Only Memory
+ROM
+teoria quantistica dei campi
+turbina
+unità di massa atomica
+aerosol
+becquerel
+costante di gravitazione universale
+display a cristalli liquidi
+interferenza
+magnitudine apparente
+massa molare
+melatonina
+radiazione ionizzante
+radioterapia
+velocità di fuga
+cifratura
+costante di Avogadro
+forza centripeta
+forza di Lorentz
+ingegneria informatica
+ionizzazione
+periodo di rivoluzione
+prodotto scalare
+superficie
+valvola termoionica
+accelerazione di gravità
+ampiezza
+antiparticella
+forza centrifuga
+IMC
+indice di massa corporea
+magnitudine assoluta
+olografia
+Postulato fondamentale di Lavoisier
+primo principio della termodinamica
+Principio di Lavoiser
+rete sociale
+steradiante
+velocità angolare
+altezza
+amperometro
+capacità termica
+clessidra
+convezione
+fisica matematica
+ipertesto
+parafulmine
+reazione nucleare
+secondo principio della termodinamica
+spettro atomico
+concentrazione
+corpo nero
+Costante di Boltzmann
+costante fisica
+decimetro
+entalpia
+equazione di Bernoulli
+induttanza
+intervallo
+oscillazione
+oscilloscopio
+particella
+Particella beta
+potenziale elettrico
+Raggio atomico
+clima tropicale
+fisica classica
+legge di Hooke
+macchina termica
+momento di inerzia
+numero di Mach
+salinità
+serie di Fourier
+sismometro
+solubilità
+solvente
+sottoinsieme
+stampa 3D
+tensione superficiale
+trasformata di Fourier
+altitudine
+cuscinetto
+elettrodinamica classica
+elettrodo
+energia interna
+indice di rifrazione
+Legge dei gas ideali
+Legge dei gas perfetti
+leggi di Kirchhoff
+mediana
+pila a combustibile
+polietilene
+prodotto cartesiano
+sestante
+auricolari
+cerchio
+conducibilità termica
+decibel
+energia di ionizzazione
+fluorescenza
+legge di Avogadro
+metronomo
+orologio atomico
+periferica
+prodotto vettoriale
+quantità di sostanza
+radiantismo
+radiotelescopio
+risonanza
+tensione interna
+trasformata di Laplace
+variabile casuale
+varianza
+voltmetro
+adsorbimento
+bioluminescenza
+campo geomagnetico
+data del calendario
+dualismo onda-particella
+elettromagnete
+energia meccanica
+flusso magnetico
+galvanometro
+lattice
+legge di Hubble
+luce solare
+media aritmetica
+megabyte
+numero immaginario
+tangente
+clima continentale
+forza elettromotrice
+fusibile
+impedenza
+inquinamento luminoso
+kilobyte
+meccatronica
+Numero di Avogadro
+punto di rugiada
+rapporto
+spazio euclideo
+speranza di vita
+turbina a vapore
+unità di elaborazione grafica
+unità immaginaria
+atmosfera
+contatore Geiger
+dielettrico
+dispersione ottica
+ergonomia
+firmware
+gestione dei rifiuti
+gradiente
+intensità luminosa
+intranet
+linguaggio di markup
+luminosità
+Numero di Reynolds
+picometro
+sievert
+Wide Area Network
+Carato
+flip-flop
+gigabyte
+industria automobilistica
+legge di Biot-Savart
+massa molecolare
+metro al secondo
+microcontrollore
+radionuclide
+scartamento ferroviario
+siemens
+teodolite
+transizione di fase
+altimetro
+calore specifico
+cecità notturna
+decadimento radioattivo
+identificazione a radiofrequenza
+impulso
+inclinazione orbitale
+ingegneria aerospaziale
+interruttore
+modulazione
+telescopio spaziale
+terna pitagorica
+banderuola
+calibro
+centro di massa
+database management system
+entalpia di vaporizzazione
+irraggiamento
+numero quantico
+regolo calcolatore
+resistenza meccanica
+segnale elettrico
+solidificazione
+sveglia
+tubo a raggi catodici
+amplificatore operazionale
+anno tropico
+chilometro orario
+densimetro
+elettrodinamica quantistica
+joystick
+media geometrica
+parallelismo
+per mille
+Periodo di incubazione
+perpendicolarità
+pressione di vapore
+scattering Compton
+secondo principio della dinamica
+spostamento
+tasso di natalità
+Apple Watch
+capillarità
+cella galvanica
+centro elaborazione dati
+clima polare
+costante dei gas
+dilatazione del tempo
+diodo Zener
+effetto tunnel
+ferromagnetismo
+interfaccia
+legge di Ampère
+modulazione di frequenza
+onda stazionaria
+pompa di calore
+principio di Pascal
+puntatore
+riconoscimento ottico dei caratteri
+scalare
+scoria radioattiva
+albero a gomiti
+analogico
+batteria li-ion
+brasatura
+campo vettoriale
+cerniera
+deformazione
+distribuzione di probabilità
+elettrone di valenza
+fisica della materia condensata
+livella
+radiografia
+relazione di equivalenza
+resistività elettrica
+batteria ricaricabile
+ciclotrone
+eccentricità orbitale
+effetto Čerenkov
+elettricità statica
+fotodiodo
+legge di conservazione
+legge di Faraday
+linguaggio ad alto livello
+linguaggio di alto livello
+luminescenza
+pluviometro
+reciproco
+ritmo circadiano
+smartwatch
+solenoide
+spina elettrica
+strumento di misura
+torcia elettrica
+valore atteso
+energia mareomotrice
+entalpia di fusione
+genio militare
+ingegneria biomedica
+legge di Lenz
+modulo di Poisson
+momento magnetico
+parco eolico
+permeabilità magnetica
+piezoelettricità
+pressione osmotica
+protrattore
+raddrizzatore
+reattanza
+Tokamak
+topologia di rete
+turbina a gas
+Wireless
+accelerazione angolare
+bionica
+carica elementare
+computer grafica
+cromodinamica quantistica
+femtometro
+illuminazione
+ITER
+legge delle pressioni parziali
+legge di Stefan-Boltzmann
+lunghezza focale
+posizione
+sommatoria
+annichilazione
+calorimetro
+conduttività elettrica
+conduzione termica
+congiunzione logica
+cortocircuito
+costruzione navale
+diamagnetismo
+diottria
+disgiunzione logica
+divergenza
+energia chimica
+energia libera di Gibbs
+eritema solare
+firma digitale
+frizione
+gravità quantistica
+modulazione di ampiezza
+multimetro
+negazione
+periodo di rotazione
+produzione di energia elettrica
+raggio solare
+rete elettrica
+risonanza magnetica nucleare
+telescopio rifrattore
+catione
+costante cosmologica
+cyberspazio
+Energia di attivazione
+energia solare fotovoltaica
+fidget spinner
+fisica dello stato solido
+fotometria
+igrometro
+linea di comando
+magnetostatica
+magnitudo momento
+nuclide
+orologio idraulico
+radiodiffusione
+riga di comando
+ruota idraulica
+scala magnitudo momento
+scattering di Rayleigh
+terzo principio della dinamica
+tiristore
+trasparenza e traslucenza
+unità aritmetica e logica
+apparecchio acustico
+chipset
+complesso coniugato
+Densità di probabilità
+diffrazione dei raggi X
+Funzione di densità
+incendio doloso
+ionizzazione dei gas
+Near Field Communication
+paramagnetismo
+Raggio covalente
+resistenza fluidodinamica
+sistema di riferimento inerziale
+sistema embedded
+sistema esperto
+spettrometro
+termistore
+terzo principio della termodinamica
+algoritmo genetico
+controllo del traffico aereo
+corrente parassita
+cosmologia fisica
+crionica
+delta di Kronecker
+fisica molecolare
+legge di Hess
+lunghezza di Planck
+manometro
+nastro adesivo
+pellicola fotografica
+primo principio della dinamica
+principio zero della termodinamica
+raggio di Schwarzschild
+RAID
+ricerca operativa
+se e solo se
+semiasse maggiore
+tachimetro
+termocoppia
+vento stellare
+calore latente
+camera a nebbia
+chilowattora
+conduttanza elettrica
+Costante di Faraday
+effetto Hall
+effetto Zeeman
+fosforescenza
+infrasuono
+interfaccia uomo-computer
+matrice identità
+media armonica
+miglio quadro
+moto proprio
+Muscovite
+reazione a catena
+Sedimentazione
+sistema software
+tabella
+temperatura ambiente
+Tempo di Planck
+tempo standard
+terabyte
+USB-C
+versore
+accelerometro
+angiografia
+angolo solido
+Flusso luminoso
+illuminamento
+ingegneria industriale
+Limite di Chandrasekhar
+magnetoidrodinamica
+medicina nucleare
+punto di Curie
+schermo al plasma
+sistema client-server
+catalizzatore
+cellula cono
+contatore elettrico
+convertitore analogico-digitale
+Equazione di campo
+equazione di stato
+Equazioni di Einstein
+FAQ
+fisica moderna
+Flusso del campo elettrico
+isteresi
+legge di Titius-Bode
+linguaggio a basso livello
+linguaggio di basso livello
+ottica geometrica
+punto di infiammabilità
+raggio catodico
+reduced instruction set computer
+reologia
+sottoprogramma
+terraformazione
+velocità orbitale
+volume molare
+Wireless Local Area Network
+apprendimento online
+cattura elettronica
+Delta di Dirac
+DRAM
+elettroscopio
+entropia dell'informazione
+FET
+fisica sperimentale
+grado centesimale
+grado Réaumur
+inverter
+legge di Gay-Lussac
+legge di Wien
+luce del giorno
+macchina della verità
+magnetometro
+magnetron
+onda elettromagnetica
+onda longitudinale
+onda trasversale
+permittività elettrica
+principio di equivalenza
+radiazione di sincrotrone
+sfera armillare
+teletext
+trasmissione digitale
+uguaglianza
+umidità relativa
+velocità di reazione
+videoconferenza
+absorbimento
+affinità elettronica
+bastoncello
+bottiglia di Leida
+CMOS
+Costante di dissociazione acida
+geotecnica
+implicazione logica
+lavaggio del cervello
+legge di Planck
+livello energetico
+macchina elettrica
+MOSFET
+odometro
+OLED
+ossidazione
+pilota automatico
+potenza solare
+Profondità di campo
+registro
+rimboschimento
+stringa
+telemetria
+transistor a giunzione bipolare
+Trappola per topi
+turbina idraulica
+velocità radiale
+argomento del pericentro
+birifrangenza
+calorimetria
+camera a bolle
+clima subartico
+coerenza
+curvatura
+diametro angolare
+Diffusione Compton
+dozzina
+elongazione
+esposizione
+Field Programmable Gate Array
+fisica applicata
+forgiatura a stampo
+Fotoresistenza
+grandezza scalare
+induzione elettrostatica
+ingegneria ambientale
+ingegneria dei sistemi
+laminazione
+linea spettrale
+Massa terrestre
+metal detector
+nucleosintesi
+olimpiade
+orologio astronomico
+periferica d'ingresso
+peso specifico
+potenziometro
+processore
+produzione di coppia
+punto quantico
+rivetto
+scattering
+scienza dell'alimentazione
+sincrotrone
+spostamento verso il blu
+statore
+statura
+supporto di memoria
+trattamento delle acque reflue
+varistore
+aberrazione della luce
+anno galattico
+architettura ARM
+atavismo
+attuatore
+batteria piombo-acido
+bolometro
+carrello d'atterraggio
+chimica verde
+cilindro graduato
+coefficiente di comprimibilità cubica
+connettore elettrico
+costante di struttura fine
+densità di corrente elettrica
+dissociazione
+effetto pelle
+effetto termoelettrico
+ettometro
+fotonica
+galleria del vento
+gruppo adimensionale
+ingegneria elettrica
+ingegneria elettronica
+larghezza di banda
+leggi di Faraday sull'elettrolisi
+Luminanza
+luminosità solare
+metro a nastro
+modulo di elasticità
+molarità
+operando
+operatore di Laplace
+petabyte
+polarizzazione magnetica
+Ponte di Wheatstone
+potenziale di membrana
+quoziente
+radiobiologia
+riverbero
+röntgen
+telefonia
+temperatura termodinamica
+touchpad
+trasmissione di energia elettrica
+vetro cristallo
+abat-jour
+Aberrazione
+anno siderale
+apertura alare
+campo scalare
+chemiluminescenza
+Commutazione di pacchetto
+convertitore digitale-analogico
+distanza di Levenshtein
+effetto termoionico
+energia di punto zero
+fotoperiodismo
+interrupt
+interruttore magnetotermico
+lampada a LED
+lampada al neon
+longitudine del nodo ascendente
+microclima
+microscopio a forza atomica
+Operatore hamiltoniano
+Pentium
+porosità
+principio di sovrapposizione
+segnale digitale
+suscettività magnetica
+tomografia
+tonalità
+tribologia
+tubo di Pitot
+uranio impoverito
+volante
+Antenna parabolica
+carico di rottura
+chiavistello
+chilogrammo forza
+Controllo automatico
+effetto Meissner-Ochsenfeld
+effetto Tyndall
+FLOPS
+fotorivelatore
+frequenza cardiaca
+funzione di ripartizione
+galvanostegia
+Generatore termoelettrico a radioisotopi
+giri al minuto
+identità
+Intensità acustica
+legge di Raoult
+matrice quadrata
+momento di dipolo elettrico
+motore in corrente continua
+multitasking
+numero barionico
+orologio da tasca
+Passaporto biometrico
+pescaggio
+polimorfismo
+Risoluzione angolare
+rumore bianco
+Semiasse
+spegnere un incendio
+temperatura effettiva
+acutezza visiva
+amperora
+bioingegneria
+braccio
+campo gravitazionale terrestre
+cinghia
+contagiri
+dispositivo a carica accoppiata
+eccitazione
+EEPROM
+elettroluminescenza
+fibrillazione ventricolare
+forza apparente
+fototropismo
+ingegneria alimentare
+legge di Henry
+legge di Lambert-Beer
+massa a riposo
+massa atomica relativa
+newton per metro
+ohmetro
+ottica quantistica
+pagina principale
+parti per milione
+policlorobifenili
+raggio di Bohr
+relazione binaria
+selvicoltura
+sfigmomanometro
+sovrapposizione quantistica
+strappo
+system-on-a-chip
+telescopio riflettore
+trasduttore
+velocità di trasmissione
+cogenerazione
+decametro
+dosimetro
+DSP
+durezza Brinell
+emissione Auger
+energia di legame
+funzione gradino di Heaviside
+Impianto di rivelazione incendi
+ingegneria nucleare
+matrice trasposta
+megafono
+molletta da bucato
+operatore nabla
+orologio a cucù
+Orologio per scacchi
+pascalina
+pleocroismo
+principio della termodinamica
+prova di durezza Brinell
+punto cieco
+semiretta
+sistema di controllo
+tacheometro
+traccia
+turbina Francis
+vibrato
+accomodazione
+base di conoscenza
+Bremsstrahlung
+Bulletin board system
+ciclo metonico
+cronometro
+dispositivo a semiconduttore
+distanza euclidea
+elastomero
+EPROM
+Exabyte
+fattore di potenza
+filettatura
+fisica statistica
+fotometro
+fototerapia
+frequenza dei fotogrammi
+geologia applicata
+girobussola
+idrofono
+immagazzinamento dell'energia
+induzione magnetica
+Ingegneria agraria
+Intel i386
+lampada
+linea aerea di contatto
+livello
+manica a vento
+matrice simmetrica
+moderatore
+Modulo di compressibilità
+particolato
+Pentium 4
+portata
+prodotto
+radiofrequenza
+rigidezza
+SRAM
+stroboscopio
+taratura
+telescrivente
+termoclino
+trasformazione termodinamica
+trasmutazione
+VLAN
+Zilog Z80
+angolo d'attacco
+anomalia media
+Biorimediazione
+Brillantezza
+centimetro cubo
+contaminazione radioattiva
+costante solare
+diodo Schottky
+distribuzione di energia elettrica
+Dolby Digital
+elastico
+Fronte d'onda
+furlong
+fusione a cera persa
+geoingegneria
+Impianto solare termodinamico
+Induzione elettrica
+ingegneria dei trasporti
+integrale di linea
+isobaro
+lacuna elettronica
+levitazione magnetica
+matrice invertibile
+media quadratica
+millimetri di mercurio
+Modulo di taglio
+multiplazione
+numero d'onda
+orologio al quarzo
+PowerPC
+Propulsione a curvatura
+Qualcomm Snapdragon
+radiometria
+Reg. T.
+risonanza paramagnetica elettronica
+service-oriented architecture
+sforzo di taglio
+sistema di misurazione
+Spazio-tempo di Schwarzschild
+tempesta di fuoco
+tonnellata di stazza
+turbina Kaplan
+vettore di Poynting
+Agroforestazione
+assorbimento
+British thermal unit
+costante di Rydberg
+Direct Memory Access
+drogaggio
+elettromeccanica
+Energia libera di Helmholtz
+equazione di continuità
+fiamma eterna
+fisica medica
+fotomoltiplicatore
+frattura
+ingegneria idraulica
+jailbreak
+legge di joule
+levitazione
+lunghezza di un arco
+Magnetostrizione
+Massa gioviana
+megametro
+millisecondo
+ottica adattiva
+porta parallela
+potenziale chimico
+raggio ionico
+sparklers
+temperatura di Planck
+tubo radiogeno
+uranio arricchito
+Agrafes
+ammettenza
+Antenna Yagi
+Antiferromagnetismo
+architettura navale
+Celeron
+connettore RCA
+Conservazione del momento
+Convertitore catalitico
+coronografo
+costante di Stefan-Boltzmann
+disgiunzione esclusiva
+dissipatore
+eolipila
+essiccatore
+estinzione
+estrusione
+fisica computazionale
+flessione
+GeForce
+glucometro
+litografia
+matraccio
+megaanno
+miglio orario
+moltiplicazione di matrici
+motorino di avviamento
+numero quantico orbitale
+partitore di tensione
+perforazione
+pirometro
+pressione di radiazione
+profondità di colore
+radiometro
+regolatore di tensione
+ricaduta radioattiva
+saturazione cromatica
+telescopio ottico
+teorema della divergenza
+trackball
+trasmissione
+trattamento dell'acqua
+turbina Pelton
+antenna a dipolo
+Aršin
+betatrone
+biomimetica
+controllore PID
+costante di Planck ridotta
+croce di Malta
+diodo laser
+doratura
+Elettrometro
+ferrimagnetismo
+goniometro
+ingegneria mineraria
+Intel Atom
+Intel Core
+Intel Core 2
+interruttore differenziale
+isomeria nucleare
+Lampada alogena
+macchina analitica
+macchina differenziale
+massa di Planck
+maxwell
+metro al secondo quadrato
+Miglio cinese
+momento torcente
+morsetto
+numero quantico principale
+ottica non lineare
+rapporto segnale/rumore
+riconoscimento di pattern
+rivelatore di particelle
+sezione d'urto
+Sistema chiuso
+sistema isolato
+sistema operativo real-time
+supercondensatore
+teleruttore
+unità internazionale
+velocità alla volata
+ammortizzazione
+anno giuliano
+Asse ottico
+balestra
+calcolatrice meccanica
+camera di combustione
+costante dielettrica del vuoto
+DDR SDRAM
+dimensione
+dinamometro
+diodo tunnel
+diodo varicap
+dose assorbita
+effetto Faraday
+emisferi di Magdeburgo
+Fotoluminescenza
+freno dinamometrico
+funzione di stato
+imposta
+ingegneria tissutale
+integrale di superficie
+isospin
+Isotono
+Itanium
+lampada ad arco
+lavoro di estrazione
+matrice nulla
+matrice unitaria
+memoria non volatile
+microprocessore 6502
+modulazione di fase
+orologio a pendolo
+pedometro
+Pentium II
+Pentium III
+pick-up
+portata massica
+pressione acustica
+proiettore da ricerca
+radiazione solare
+rapporto focale
+reattore nucleare autofertilizzante
+rotta navale
+sinterizzazione
+stadera
+stato fondamentale
+temperatura di colore
+tenacità
+teorema di Stokes
+tonnellaggio di portata lorda
+velocità di fase
+visibilità
+wind shear
+Yottabyte
+AirPods
+angolo orario
+anodizzazione
+architettura software
+armonica
+chiusura
+computer-aided manufacturing
+densità energetica
+ecolocalizzazione
+Fasore
+gigametro
+grafo planare
+lampada a scarica
+legge di Stokes
+luogo di lavoro
+Magnetone di Bohr
+matrice delle adiacenze
+matrice hermitiana
+matrice trasposta coniugata
+numero di Froude
+Piranometro
+prefissi per multipli binari
+rifrattometro
+sabbiatura
+spintronica
+Subwoofer
+tecnologia a montaggio superficiale
+Tensione magnetica
+testata
+tornitura
+Xeon
+Zettabyte
+zincatura
+alambicco
+algoritmo evolutivo
+alta tensione
+Angolo di Brewster
+angolo diedro
+Apple M1
+application specific integrated circuit
+arco di nebbia
+aridità
+brachiterapia
+campione
+contatore dell'acqua
+coppia di Cooper
+distanza di Hamming
+durezza dell'acqua
+efficienza
+emissione stimolata
+equazione di Nernst
+filtro passa basso
+fisica dell'atmosfera
+fissione spontanea
+fuoco da campo
+IGBT
+ingegneria delle costruzioni
+Inter Integrated Circuit
+klystron
+legge dell'inverso del quadrato
+legge di Darcy
+Liquefazione delle sabbie
+matrice ortogonale
+optoisolatore
+pallone sonda
+Polarizzatore
+potenziale gravitazionale
+Psi
+radar ad apertura sintetica
+radar meteorologico
+rugosità
+saldatura ossiacetilenica
+Schermo piatto
+sensore di immagini
+Slinky
+Smart grid
+Tecnica CRISPR
+temperatura di autoignizione
+teoria BCS
+turbidimetria
+unità di controllo
+vasi comunicanti
+voltampere
+wattmetro
+Accumulatore nichel-metallo idruro
+audio digitale
+battimento
+cella elettrochimica
+chimica degli alimenti
+clinometro
+Corrente ascensionale
+corrente di spostamento
+DIAC
+Ecoscandaglio
+elaborazione dati
+emissività
+exergia
+fenomeno di trasporto
+freno a disco
+funzionale
+funzione crittografica di hash
+georadar
+Global Warming Potential
+gravimetro
+gravità specifica
+incandescenza
+incidente nucleare
+Kibibyte
+latenza
+legge di Kirchhoff
+Mese sinodico
+microgrammo
+mobilità sostenibile
+Monoblocco
+motore passo-passo
+multi core
+nanismo insulare
+nanosecondo
+nave-faro
+oersted
+piaccametro
+pignone
+plastificante
+polarimetro
+polarizzazione elettrica
+porta PS/2
+processo biologico
+prodotto misto
+punto tipografico
+Riluttanza
+risposta in frequenza
+rooting
+rottura spontanea di simmetria
+sega circolare
+segnali di fumo
+Servomotore
+sniffing
+struttura
+superconduttore
+Surround
+telegrafia senza fili
+telescopio newtoniano
+trasduzione del segnale
+ADSL sat
+ADSL satellitare
+affinità chimica
+Analizzatore di spettro
+Atmel AVR
+banda proibita
+Cammino libero medio
+cilindrata
+Cloisonné
+Coefficiente di dilatazione termica
+coefficiente di variazione
+collasso della funzione d'onda
+computazione a 64 bit
+cremagliera
+cronotachigrafo
+disgelo
+Dolby Atmos
+Earth Overshoot Day
+Effetto Hall quantistico
+fisica tecnica
+Flogopite
+forma bilineare
+funzione di trasferimento
+geofono
+High Voltage Direct Current
+ingegneria sociale
+Innalzamento ebullioscopico
+Intel i486
+Intel i486DX2
+intensità
+Koku
+lampada ad alogenuri metallici
+legge di Bragg
+leggi dei gas
+leggi di Fick
+lucentezza
+manutenzione
+mareografo
+mescolanza additiva
+microsecondo
+Numero di Prandtl
+oncia troy
+pendenza topografica
+Pentium Pro
+portata volumetrica
+pressofusione
+punti per pollice
+reattore chimico
+rettifica
+Samsung Exynos
+Scala Newton
+Shunt
+Specchio retrovisore
+spettrogramma
+stakeholder
+Superconduttività ad alte temperature
+tassametro
+velocità di otturazione
+vettore
+AMOLED
+assembler
+Astrografo
+attinometro
+bilanciamento del colore
+bronzina
+chilogrammo al metro cubo
+combustione spontanea
+commutazione di circuito
+costante di dissociazione
+Digital Theater System
+Effetto fotovoltaico
+Effetto Kerr
+energia libera
+energia potenziale elettrica
+estensimetro
+Fondo di radioattività naturale
+informatica quantistica
+integrità dei dati
+interferometro di Michelson
+legge di Lambert
+manutenzione del software
+Mebibyte
+mosaico genetico
+Oscillazione del neutrino
+passivazione
+permeabilità magnetica del vuoto
+peso corporeo umano
+Pila Leclanché
+planimetro
+portatore di carica
+potenziale scalare
+pulsiossimetro
+quadrante
+risonanza Schumann
+Sevivon
+spettroscopio
+Stranezza
+tecnologia alimentare
+telematica
+telemetro
+temperatura corporea
+tensore metrico
+termoluminescenza
+Thin Film Transistor
+transistor Darlington
+Trasformata zeta
+trasmissione seriale
+Trazione integrale
+urto elastico
+Velocità di filtrazione glomerulare
+velocità di gruppo
+8 bit
+accumulatore nichel-cadmio
+alfabeto
+aliasing
+apparecchio di Kipp
+Autotrasformatore
+auxiliary power unit
+Beta termodinamica
+circuito magnetico
+circuito sequenziale
+DDR3
+decoerenza quantistica
+dispositivo di puntamento
+econofisica
+Electron diffraction
+Elettrodo standard a idrogeno
+eliosismologia
+energia potenziale gravitazionale
+energia radiante
+equilibrio termico
+esposimetro
+Fascetta
+Filtro passa alto
+filtro passa banda
+fisica chimica
+fisica quantistica
+Fonautografo
+forma d'onda
+Gigantismo insulare
+Haswell
+ingegneria delle telecomunicazioni
+legge di Poiseuille
+Linea di campo
+Megabit
+memoria volatile
+northbridge
+O-ring
+orologio da polso
+parametro
+Radeon
+rapporto giromagnetico
+regole di Hund
+scintilla elettrica
+sensitività climatica
+Solcometro
+spazio affine
+Stellarator
+Telemetro laser
+tensione
+termocamera
+Termoresistenza
+tessuto non tessuto
+Trazione anteriore
+trazione posteriore
+UART
+Unità in virgola mobile
+Viscosimetro
+Acceleratore lineare
+Astrosismologia
+cadenza di tiro
+Coda
+Core i7
+cromatura
+Diodo Gunn
+duty cycle
+efficienza luminosa
+elettricità atmosferica
+elettroerosione
+Formante
+fototransistor
+frequenza fondamentale
+fusione
+Gibibyte
+incertezza di misura
+intensità di corrente
+Kilobit
+legge di Moseley
+legge di Rayleigh-Jeans
+leggi di Fresnel
+lettore CD
+Limite di Tolman-Oppenheimer-Volkoff
+Lunghezza di legame
+meccanica della frattura
+Nixie
+numero quantico magnetico
+ortodromia
+ottetto
+peso massimo al decollo
+pila di volta
+Plasticità fenotipica
+Plogging
+Pompa fluidodinamica
+punto base
+radioprotezione
+relazione d'ordine
+Ryzen
+Scala pitagorica
+Secondo messaggero
+sottospazio vettoriale
+Sovralimentazione tramite compressore volumetrico
+Spaghettificazione
+strumento dei passaggi
+tassello
+tastiera
+tebibyte
+time-sharing
+tonnellata equivalente di petrolio
+trasformatore di corrente
+travelling wave tube
+vettore d'onda
+Vocoder
+voltammetria
+VoLTE
+volume specifico
+Wavelet
+Active electronically scanned array
+amministratore di rete
+Apple A4
+armonici naturali
+astigmatismo
+ballast
+bariogenesi
+cartella clinica elettronica
+Cercafase
+coefficiente di scambio termico
+colorimetria
+compatibilità elettromagnetica
+confinamento dei quark
+connettore BNC
+coprocessore
+DDR2
+elaborazione delle informazioni
+elettrificazione
+Elettrosmosi
+Exbibyte
+Freno a tamburo
+freno di stazionamento
+impedenza acustica
+ingegneria gestionale
+Isolamento elettrico
+Levigatura
+Life Cycle Assessment
+milligrammo
+millilitro
+Misuratore di portata
+mobilità ciclabile
+Molalità
+motore a corrente alternata
+motore a reazione
+naso elettronico
+Numero di Grashof
+Onda piana
+ottante
+Periodo di conservazione
+PIC
+picnometro
+polarizzabilità
+Potenziale di elettrodo
+Psicrometro
+ridondanza
+rimanenza
+rumore rosa
+SDRAM
+SHA-2
+sintassi
+Socket 939
+spettrografo
+stampaggio
+sturalavandino
+sverdrup
+tasso d'assorbimento specifico
+telescopio Schmidt
+Telescopio solare
+teorema di equipartizione dell'energia
+Termometro galileiano
+Traffic Collision Avoidance System
+Triboluminescenza
+velocità di deriva
+vorticità
+16 millimetri
+addizione di matrici
+area superficiale
+aritmometro
+ascissa
+attenuazione
+attività
+attosecondo
+barre di moderazione
+bioacustica
+biomassa
+blindosbarra
+brocciatrice
+camera a ionizzazione
+campo visivo
+carta kraft
+catarifrangente
+chiavetta
+Coefficiente di dilatazione adiabatica
+coefficiente di resistenza aerodinamica
+coercitività
+compressione fisica
+connettore VGA
+Connettore XLR
+conoscenza aperta
+Costante di reticolo
+cronografo
+Desiàtine
+diffusività termica
+dipolo magnetico
+distribuzione
+energia di Fermi
+energia luminosa
+fluoroscopia
+Flusso radiante
+Forza ionica
+forza risultante
+fuoco prescritto
+Gigabit
+gioco elettronico
+Heat pipe
+iconoscopio
+informazione quantistica
+ingegneria finanziaria
+joule per mole
+lavoro termodinamico
+legge di Curie
+legge di Graham
+magnetone nucleare
+Magnetoresistenza
+Microprocessore superscalare
+Nilometro
+non-disgiunzione inclusiva
+occhiello
+Opteron
+orologio digitale
+pebibyte
+Pentium M
+piede quadro
+Pireliometro
+potenziale di Lennard-Jones
+potenziale standard di riduzione
+Pressostato
+processore vettoriale
+quota piezometrica
+Radiometro di Crookes
+relatività galileiana
+Röntgen equivalent man
+Scandaglio
+scintillatore
+secondo luce
+sensore di prossimità
+southbridge
+Spoletta
+Standard Edison
+Superparamagnetismo
+Suscettività elettrica
+Taglio raso
+tastiera virtuale
+tensor processing unit
+Thyratron
+transizione vetrosa
+Trasduttore di posizione angolare
+angolo giro
+Balun
+bastone di Giacobbe
+biostampa tridimensionale
+calafataggio
+carica di Planck
+clacson
+Comparatore
+coordinate generalizzate
+copiglia
+DDR4
+dendrite
+dilatazione temporale gravitazionale
+distribuzione di Weibull
+Dominio magnetico
+editing genomico
+effetto Peltier
+femtosecondo
+Fenomeno lunare transiente
+Formula ipsometrica
+Forzante radiativo
+funzione booleana
+generazione distribuita
+impronta idrica
+ingegneria navale
+irradianza
+Legge di Wiedemann-Franz
+linea spezzata
+lotta aerea antincendio
+luce monocromatica
+lucernario
+Luci di navigazione
+motore lineare
+motore pneumatico
+Motore universale
+Motorola 6800
+oceanografia fisica
+orifizio tarato
+pellicola cinematografica 35 millimetri
+perforazione intestinale
+Phenom
+pinzetta ottica
+potenziale vettore
+processo chimico
+quadrimpulso
+Radioluminescenza
+Real-time clock
+resistenza a compressione
+resistenza termica
+risposta impulsiva
+Secure Hash Algorithm
+Sezionatore
+Spiaggiamento di cetacei
+Strumentazione di controllo
+struttura elettronica a bande
+suscettanza
+Tael
+Tegra
+telescopio terrestre
+termodinamica del non equilibrio
+TETRA
+Trasmissione parallela
+Tubo di Crookes
+Virtual Address eXtension
+ablazione
+AirPods Pro
+albero di trasmissione
+AMD Fusion
+AMD K5
+audiometro
+Banda di valenza
+Bastoncini di Nepero
+Bottone a pressione
+cilindro idraulico
+colorimetro
+comunicazione ottica
+conversione interna
+costante di Coulomb
+costruzione delle strade
+DEC Alpha
+decimetro cubo
+densità di numero
+distanza comovente
+Doppio strato elettrico
+Drag Reduction System
+ecologia forestale
+enterprise architecture
+Fast Ethernet
+fenomeno ottico
+fonometro
+Fotosintesi artificiale
+frazione molare
+fresatura
+fugacità
+Gancio di traino
+gravità di superficie
+High Bandwidth Memory
+Idrogetto
+impianto elettrico di potenza
+incrudimento
+ingegneria della sicurezza
+instabilità di Jeans
+interferometro di Fabry-Pérot
+intervallo dinamico
+intonazione naturale
+JFET
+larghezza
+laser ad anidride carbonica
+MacPherson
+Massa ridotta
+Motorola 68K
+nanorobotica
+pellicola cinematografica
+Pressione dinamica
+processori progettati da Apple
+propulsione nucleare
+radar Doppler
+radiazione alfa
+radiazione beta
+ram air turbine
+Reed
+reostato
+Rilevatore a Scintillazione
+risonanza di Helmholtz
+Ritchey-Chrétien
+Scarica a bagliore
+Sempron
+sensori di parcheggio
+Spazzole
+Spirometro
+SQUID
+stereolitografia
+Svedberg
+teoria della comunicazione
+Termodinamica dei buchi neri
+Trusted Platform Module
+voltampere reattivo
+Volume sistolico
+VRAM
+acceleratore IA
+accoppiamento
+anomalia vera
+apertura numerica
+apparecchiatura
+Apple A10 Fusion
+Apple A5
+Apple M2
+barenatura
+battiti per minuto
+Brix
+Campo vettoriale solenoidale
+Cella di Grätzel
+Delta-v
+dependency injection
+deposizione fisica da vapore
+Diafonia
+diffrazione di Fraunhofer
+diffrazione neutronica
+diodo PIN
+Duron
+effetto Seebeck
+elica di manovra
+Eliometro
+figura di Lichtenberg
+filtro elimina banda
+fisica del plasma
+frazione volumica
+frequenza di campionamento
+frequenza di commutazione
+G-Shock
+geomagnetismo
+Gigabit Ethernet
+GPS differenziale
+ingegneria dell'affidabilità
+interferometro
+Ipsometro
+itnervallo di frequenza
+Koinobori
+lunghezza d'onda Compton
+MagSafe
+Microservizi
+modalità d'attesa
+norma matriciale
+Numero di acidità
+Numero di Knudsen
+numero quantico di spin
+onda di Alfvén
+onda sonora
+operatore
+parte reale
+picosecondo
+Potenziale di Yukawa
+Potenziale elettrochimico
+produzione di idrogeno
+Radioascolto
+radiofisica
+Relazione di dispersione
+Relè di Buchholz
+rottura dielettrica
+Schuko
+Socket 462
+Sottovuoto
+Spettro acustico
+spettroscopia a raggi X
+Stero
+storia della crittografia
+storia della radio
+tecnologia a fori passanti
+telescopio dobsoniano
+Temperatura di Néel
+Test strutturale
+thermal design power
+Transgene
+urto anelastico
+ventosa
+watchdog
+Accelerazione standard di gravità
+acromatopsia
+AMD K6
+ampiezza angolare
+angolo d'incidenza
+angolo di posizione
+Apple A12 Bionic
+Apple A6
+Apple A7
+Apple A8
+Apple A9
+Apple M3
+APS-C
+argomento
+assorbanza
+Athlon 64 X2
+attenuatore
+Autoradiografia
+calcolatrice scientifica
+Capacità di canale
+colata in sabbia
+comparatore a lampeggio
+Computer-aided software engineering
+Connettore DIN
+Contatore intelligente
+costante di Hubble
+Curta
+D-subminiature
+densità di Planck
+Dimmer
+dosimetria
+editoria digitale
+effetto Joule
+Elicità
+eliofanografo
+Filtro elettrostatico
+forza di Planck
+frazione massica
+Frequenza di taglio
+funzione gradino
+game port
+gancio di trazione
+Generatore di segnali
+ingegneria dell'autoveicolo
+InHg
+isomorfismo
+Lunghezza di Debye
+massa efficace
+massa relativistica
+materiale invertibile
+memoria magnetica
+Numero di Rayleigh
+Numero di Strouhal
+passaporto greco
+pedale di bicicletta
+Pentium D
+peso equivalente
+piezometro
+Pile ad ossido solido
+pinza amperometrica
+planetario meccanico
+potenza di dieci
+pseudovettore
+punzonatura
+Radianza
+Raggi anodici
+Rambus DRAM
+Riflettanza
+ruota libera
+Shaku
+Socket AM2
+sovralimentazione
+spazio colore sRGB
+Stabilità dell'aria
+teleconferenza
+terametro
+tornitura in lastra
+Tubo Williams
+USB On-The-Go
+verificazione
+volume corpuscolare medio
+Accelerazione centripeta
+accesso casuale
+accesso sequenziale
+Adreno
+Ātar
+Audiogramma
+base ortonormale
+calutron
+cambio robotizzato
+ciclocomputer
+Colata continua
+contatore del gas
+contatore proporzionale
+Core i3
+Core i5
+curvimetro
+densità elettronica
+Diametro equivalente
+diavoletto di Cartesio
+Diffrazione di Fresnel
+dilatometro
+Distanza lunare
+Effetto Barkhausen
+Effetto intaglio
+equipaggiamento
+Eurospina
+fisica dell'acceleratore
+fonte di luce
+galloccia
+gestione di rete
+Girotrone
+godronatura
+Gradiente di temperatura
+Ground Proximity Warning System
+Informazione mutua
+interazioni di scambio
+Isoperimetria
+Ivy Bridge
+Jansky
+laser a elio-neon
+lavoro virtuale
+leggibilità
+linea elettrica
+Litografia ultravioletta estrema
+livello di Fermi
+mandrino
+Modellazione a deposizione fusa
+moderazione del traffico
+numero di Eulero
+Orbiting Astronomical Observatory
+ordinata
+Orologio radiocontrollato
+parafango
+parte immaginaria
+Pentium Dual Core
+personalizzazione
+pila a secco
+Principio di località
+protezione catodica
+Punto di combustione
+Razzo termico nucleare
+Relè a stato solido
+residuo fisso
+riflessione speculare
+rivelatore a semiconduttore
+sensore a pixel attivi
+sistema lineare
+Skylake
+Socket 754
+spettro di potenza
+tracciante radioattivo
+traduttore
+trasmittanza
+Visione fotopica
+yottametro
+10 gigabit Ethernet
+4 bit
+anomalia eccentrica
+Apple A11 Bionic
+Apple A13 Bionic
+arresto di emergenza
+attacco Canon EF
+bit per secondo
+Camera a scintilla
+capannina meteorologica
+catodoluminescenza
+centimetro quadro
+Circuito virtuale
+combustibile ossido misto
+condensatore elettrolitico
+connettore mini-DIN
+contatto elettrico
+Costante di tempo
+DCS
+dentellatura
+deutone
+distribuzione di Rayleigh
+Dose efficace
+dose equivalente
+effetto Purkinje
+elettrodo a calomelano
+energia di Planck
+energia elastica
+entropia molare standard
+errore umano
+filettatura metrica ISO
+Fotodisintegrazione
+Fototubo
+frequenza respiratoria
+fusione a confinamento inerziale
+gatteggiamento
+Grado API
+Humbucker
+Ignitron
+Indice di resa cromatica
+Ingegneria manufatturiera
+Ingegneria ottica
+integrale di volume
+Ipercarica
+Laringofono
+Laser a eccimeri
+libbra forza
+Macchia di Poisson
+Megabit per secondo
+metamerismo
+metrica di Reissner-Nordström
+metro cubo al secondo
+motore elettrico di trazione
+nefoscopio
+neuroingegneria
+Numero di Weber
+occhio magico
+Orbiting Solar Observatory
+orologio marcatempo
+osmolarità
+OTDR
+paraselenio
+Pebble
+permeabilità
+Phenom II
+piegatura
+Pin Grid Array
+Potenziale magnetico
+Raggi delta
+Raggio classico dell'elettrone
+Sistema di controllo distribuito
+Socket 423
+Socket AM3
+Sospensione idropneumatica
+telescopio gregoriano
+telescopio zenitale
+Temperatura potenziale
+Template method
+tensione di snervamento
+tensore di Einstein
+teoria dell'elasticità
+Termoigrografo
+Tostatura
+turbina di Tesla
+Turion 64
+tweeter
+yoctometro
+AdS
+Albedo geometrica
+AMD K6-III
+analizzatore logico
+Antenna a tromba
+Apple A14 Bionic
+Assorbimento acustico
+audioconferenza
+bilancia di torsione
+Bilancia di Watt
+Calcolatrice grafica
+Camera a multifili
+centrale geotermoelettrica
+chilometro cubo
+Collettore rotante
+concentrazione minima inibitoria
+conduzione ossea
+configurazione Cassegrain
+Connettore RF
+controllo ottimo
+coppa di Faraday
+Costante di Loschmidt
+Costante gravitazionale planetaria
+DDR5
+decilitro
+Dekatron
+Diffusione della luce
+diodo a valanga
+display fluorescente a vuoto
+Dispositivo vigilante
+distorsione ottica
+distribuzione a chiave quantistica
+effetto Unruh
+Elettrodo di riferimento
+Energia di Hartree
+ettolitro
+flashover
+fotobiologia
+Freno
+galvanizzazione
+Gate Turn Off
+GDDR
+Giroscopio ottico
+Indice di calore
+ingegneria dei processi
+ingegneria della conoscenza
+Interazione spin-orbita
+inversa di una matrice
+Lambert
+lappatura
+lisimetro
+matrice definita positiva
+meccanica delle rocce
+Meccanismo di Kozai
+megatone
+microfilm
+millesimo di radiante
+Motorola 6809
+Musth
+Nucleo magnetico
+Numero neutronico
+onde di Rayleigh
+orizzonte di particella
+pastiglie freno
+perforazione timpanica semplice
+piedi al secondo
+Polarizzazione del vuoto
+potenza di Planck
+pressione di Planck
+processo di esecuzione forzata
+radar secondario di sorveglianza
+radar warning receiver
+radiopropagazione
+Raggio d'inerzia
+reaction control system
+Regolatore di pressione
+ripetibilità
+riprocessamento
+Risonanza acustica
+Scatola a guanti
+Sclerometro
+scrubber
+sensore induttivo
+separazione isotopica
+sistema informatico d'ufficio
+SODAR
+sostanza secca
+spazio anti de Sitter
+StrongARM
+strumento scientifico
+tecnico di radiologia
+tecnologie digitali
+Tensore elettromagnetico
+teoria dell'impeto
+Termocromismo
+Toilette spaziale
+valore efficace
+Veleno neutronico
+velocità variometrica
+verniciatura a polvere
+vita media
+AirPods Max
+Albedo di Bond
+Altezza di scala
+AMD K6-2
+Antenna a monopolo
+Apple A15
+Apple M4
+architettura guidata dal modello
+attometro
+Banda di conduzione
+bassa tensione
+Broadwell
+Carico strutturale
+Cella di carico
+centilitro
+Chain home
+Charm
+chilotone
+CODAG
+coniazione
+convertitore di frequenza
+correggia
+cosmologia quantistica
+curve di Paschen
+cuscinetto magnetico
+decapaggio
+Decibel milliwatt
+Diffusività di materia
+dispositivo elettrico
+Distanza iperfocale
+Effetto Pockels
+energia solare spaziale
+Equazione di Clausius-Mossotti
+FinFET
+Fluorocromo
+Forward looking infrared
+GDDR5
+General Electric LM2500
+General Instrument AY-3-8910
+Geopotenziale
+giorno siderale
+Gradiente termico verticale
+Groma
+Impedenza caratteristica del vuoto
+impostata
+industria automobilistica in Giappone
+ingegneria ferroviaria
+interferometro di Mach-Zehnder
+ipercarica debole
+istruzione
+Kaby Lake
+Kibibit
+lunghezza d'onda de Broglie
+Mali
+Mebibit
+Meccanica quantistica relativistica
+Momento flettente
+Momento statico
+Nat
+Negentropia
+Olivetti Programma 101
+operatore di Sheffer
+orologio subacqueo
+Pesa pubblica
+piedino
+Pilone alare
+Ponte di Kelvin
+principio di Landauer
+Propulsore elettrico
+protezione forestale
+Qualità dell'energia
+Quick Charge
+radiatore
+Read-eval-print loop
+registered jack
+Relazione di Laplace
+Resistenza pull-up
+respiro sibilante
+rivelatore di onde gravitazionali
+Rutherford
+S-Box
+SCRAM
+sensore a infrarossi passivo
+sensore stellare
+SHA-3
+sicurezza nucleare
+sndrome di Boerhaave
+Stadia
+stampante 3D
+statcoulomb
+Stilb
+SuperH
+telescopio infrarosso
+teoria di Betz
+terabit
+Transizione isomerica
+Trasduttore di spostamento induttivo
+unità di misura inerziale
+videotex
+visione scotopica
+wattora
+XScale
+Zen 2
+Zero Insertion Force
+acqua virtuale
+Albero dei guasti
+alesaggio
+ancoraggio strutturale
+antenna a schiera
+atmosfera tecnica
+Campo vettoriale conservativo
+checkpoint
+chip sonoro
+CODOG
+Coffee Lake
+Conservazione del momento angolare
+Controrotazione
+Corrente debole neutra
+costanti di Lamé
+Coulombometria
+criofisica
+dendometro
+Densitometro
+disco di Airy
+distillatore
+Drinking bird
+Effetto Thomson
+Eliofania
+Evaporimetro
+exametro
+Feddan
+forza gravitazionale
+Fotoevaporazione
+fotovoltaico architettonicamente integrato
+freno ferroviario
+Funzione di efficienza luminosa
+Generatore di forme d'onda
+geometria di fase
+Gibibit
+girodirezionale
+iarda quadra
+imbutitura
+Impedenza caratteristica
+ingegneria termica
+Innesto a baionetta
+Intel Arc
+Intel Graphics Technology
+Intel i860
+Intel i960
+irradiazione
+Land Grid Array
+legge di Ostwald
+Magnetic Anomaly Detector
+Materiale fertile
+Microbiologia alimentare
+microperforazione
+Momento sismico
+Motorola Dragonball
+nanofotonica
+Nefoipsometro
+neuromodulatore
+numero di saponificazione
+parti per miliardo
+petametro
+PlayStation Camera
+Ponte di Maxwell
+Profilo scanalato
+Quadrifonia
+Quadrivelocità
+Radio satellitare
+Raffreddamento ad aria
+rapidità
+reattore a neutroni veloci
+regolatore lineare
+retarder
+Rimozione dell'anidride carbonica
+riparazione
+Samsung Galaxy Gear
+Scarica parziale
+Schmidt-Cassegrain
+SO-DIMM
+Sony Dynamic Digital Sound
+soundbar
+spazio di de Sitter
+SpeedStep
+spintariscopio
+Storm glass
+suono puro
+Suono surround 5.1
+Tebibit
+tensione di Planck
+Tensione di rottura
+termometro a infrarossi
+traffico Internet
+traffico web
+Trinitron
+Tubo da ripresa
+Vis viva
+VistaVision
+zeptometro
+aderenza
+AMD FX
+Analizzatore di reti
+Antenna elicoidale
+Apple A16 Bionic
+Apple A9X
+area del cerchio
+asse terrestre
+autoaffondamento
+biomeccatronica
+Carico glicemico
+Catena articolata Galle
+Champlevé
+chilowatt
+climi in Europa
+concentrazione massica
+controllo d'assetto
+corrente di Planck
+curvatura scalare
+Debimetro
+Decadimento orbitale
+densità lineare
+Diagramma di Nyquist
+Direct-Shift Gearbox
+dispersione elettrica
+Elettromoltiplicatore
+Entropia condizionale
+Fattore di Landé
+fisica sociale
+fornello
+frangisole
+Frequenzimetro
+Freya
+GeForce 3
+grandezza vettoriale
+HEMT
+Ibrido
+Ingegneria del traffico
+ingegneria energetica
+ingegneria sanitaria
+Innesto F-Moun
+Intel Core i9
+Interruttore a mercurio
+Kerma
+kilobit per secondo
+lampada di emergenza
+Lampada germicida
+legge di Buys Ballot
+linea d'abbonato
+mercato elettrico
+Microgrid
+Mired
+Moderate-Resolution Imaging Spectroradiometer
+Molex
+Nanosensori
+Notch
+OMAP
+Ondulazione residua
+Packet radio
+penombra
+Physics Processing Unit
+piede cubo
+Pila a combustibile alcalina
+Pila Weston
+potenza sonora
+presa tipo N
+Profondimetro
+profondità
+Raddrizzatore al mercurio
+Radiazione fotosinteticamente attiva
+raffica di vento
+Regola di selezione
+ROM hacking
+rotostampaggio
+Samsung Gear
+sega a tazza
+shannon
+Sicurezza automobilistica
+Silvopastorizia
+Sinterizzazione laser selettivo
+Socket AM4
+Socket S1
+Speakon
+spina tipo N
+strumento astronomico
+sviluppo nell'energetica
+System Management Bus
+Telescopio estremamente grande
+temperatura critica
+Teorema degli stati corrispondenti
+teoria della stabilità
+Teoria di Ginzburg-Landau
+tettonofisica
+Transil
+vettore di Burgers
+VU meter
+Würzburg
+zettametro
+5 nm
+Alder Lake
+AN/APG-77
+Antenna logperiodica
+Apple A10X
+Apple A8X
+Baktun
+cecità da neve
+cella elettrolitica
+Cella fotoelettrochimica
+Cella fotovoltaica perovskitica
+centrale solare
+CHAdeMO
+Circolatore
+coefficiente di attività
+COGAG
+compressore d'aria
+Connettore a coccodrillo
+Controllo adattativo
+Diade
+diodo a semiconduttore
+DIP switch
+Eco luminosa
+effetto elettro-ottico
+elemento intero
+elettroacustica
+elettrocuzione
+Elettrodo a membrana
+Elettrodo a vetro
+emittanza
+Energia del fotone
+energia rotazionale
+formula di Chézy
+Fotodiodo a valanga
+fotogrammi al secondo
+Freni magnetici
+gestione forestale sostenibile
+In-ear monitor
+indice di polidispersione
+ingegneria acustica
+ingegneria dei requisiti
+Innesto dell'ottica fotografica
+Intel iAPX 432
+Klippe
+luogo delle radici
+Makie
+Massa minima
+metro ripiegabile
+microfono a condensatore
+millimetro cubo
+minuto luce
+motore posteriore
+notturlabio
+Numero B-L
+Numero di Stanton
+Nuvistor
+operatore impulso
+orologio elettrico
+Pebibit
+piede acro
+polietilene reticolato
+potenziometria
+potere rotatorio
+pressione di pulsazione
+Pressione totale
+Processi planari
+pulizia criogenica
+Punto di scorrimento
+QRP
+Quattro Terzi
+quindicina
+Rack unit
+radiocomunicazione
+reattore nucleare a fusione
+ristampa
+Serverless
+Single coil
+Socket 563
+Spinotto
+Stampaggio per soffiaggio
+Super I/O
+Superficie di Fermi
+system in package
+Tabella di stato
+teorema di Bloch
+teoria della plasticità
+Termometro a gas
+Transconduttanza
+Trigenerazione
+trivella
+Turion 64 X2
+Video Display Controller
+Virometro
+Wire bonding
+wireless local loop
+Woofer
+accelerated processing unit
+Aerometro
+affilatura
+AN/SPY-1
+antenna direzionale
+Antenna omnidirezionale
+apparenza
+Apple A12X
+Apple A19
+Apple M5
+ARM Cortex-A9 MPCore
+assale a portale
+Attachment Unit Interface
+Basic Stamp
+bilancia analitica
+biorobotica
+bottiglia di Nansen
+chassis
+Cianometro
+cilindro pneumatico
+Coefficiente di assorbimento
+Comma sintonico
+Coppia conica
+Covarianza generale
+Cromaticità
+curvatura media
+decagrammo
+Digital Mobile Radio
+Dinodo
+diodo a vuoto
+Dispositivo multiporta
+Dolby Surround Pro Logic
+EarPods
+effetto Early
+effetto Rossiter-McLaughlin
+Elettrodo di lavoro
+Eliotropo
+ettogrammo
+Exbibit
+fattore-g
+Finestra tettonica
+Fire Control Radar
+fisica degli attosecondi
+Freescale ColdFire
+Fulminometro
+Funzione rampa
+Galleria del vento verticale
+Geode
+gigaanno
+Google Tensor
+Gradiente di pressione
+Green Ethernet
+gruppo motopropulsore
+High Energy Transient Explorer
+Intel MCS-48
+ISQ
+Legge di Geiger-Nuttall
+Logica push
+luxmetro
+Majorana 1
+medimno
+Micro Quattro Terzi
+Midrange
+milia passum
+miriametro
+Modulo Multi-Chip
+Monitor da studio
+Motion Detection
+Motore Hemi
+motore inferenziale
+nanoindentazione
+Open collector
+Orologio a candela
+orologio floreale
+orologio universale
+OTFT
+parametro di impatto
+PC speaker
+Phage display
+Picco di domanda
+Pila a concentrazione
+Potenziale di Liénard-Wiechert
+PowerPC G4
+processo tecnico
+produzione di formaggio
+PSoC
+pupinizzazione
+radiointerferometro
+Ricoh 2A03
+riga tipografica
+robotica degli sciami
+Samsung Galaxy Watch
+saturazione
+Scala graduata
+separatore
+serie 78xx
+Smoot
+Soppressore
+Stokes
+Telerobotica
+telescopio per raggi X
+telescopio Wolter
+temperatura di transizione vetrosa
+tensiometro
+Topness
+trafilatura
+transistor a singolo elettrone
+trivellazione in mare aperto
+trottola ribaltina
+unità enzimatica
+venturimetro
+Viaggio attivo
+Visione periferica
+Xeon Phi
+10Base-T
+7 nm
+AN/SPY-6
+Apple A18
+Apple S1
+ARM Cortex-A8
+assorbività molare
+Audiogramma normalizzato di Fletcher-Munson
+autovettore
+Backscatter
+boa meteorologica
+Board foot
+BogoMips
+Bottomness
+cannocchiale
+Catetometro
+chilosecondo
+Chronon
+Cilindro parabolico
+Circuito aperto
+coclea idraulica
+CODLAG
+Comet Lake
+contralbero
+controllabilità
+controllo non lineare
+Controllo robusto
+conversione parametrica
+Crusoe
+decalitro
+dinamica dei corpi rigidi
+disco di Eulero
+Disdrometro
+Distant Early Warning Line
+E-meter
+Effetto di prossimità
+Effetto pinch
+efficienza quantica
+energia di superficie
+Fotomorfogenesi
+gate array
+gestione della radiazione solare
+gittata
+Giunto viscoso
+grammatura
+Hewlett-Packard 9100A
+Ice Lake
+illuminotecnica
+industria aeronautica
+ingegneria dei materiali
+ingegneria guidata dal modello
+ingegneria planetaria
+INMOS Transputer
+Intermodulazione
+IPod Hi-Fi
+Isofonia
+Kunkudro
+Larrabee
+Legge di de Vaucouleurs
+magnete permanente
+manutenzione preventiva
+Marco di Colonia
+matematica per l'ingegneria
+MESFET
+metrica di Minkowski
+microfono a elettrete
+Mini DisplayPort
+Modding
+Molteplicità di spin
+Momento angolare orbitale totale
+MOSFET di potenza
+motore omopolare
+motore termico
+Network processor
+nichelatura
+Numero di Fresnel
+operatore di trasmissione energetica
+Operatore posizione
+Orologio a incenso
+orologio binario
+perdita di carico
+Pixel Buds
+pollice cubo
+Pollice quadro
+Potenziale efficace
+Potenziale Galvani
+POWER5
+pressione arteriosa media
+proprietà fisica intensiva
+Pseudoscalare
+Raggio effettivo
+relazioni costitutive
+rivelatore a gas
+Rivelatore ad infrarossi
+Scala French
+scatterometro
+schermo capacitivo
+segnatura
+Selettività
+sensore fotoelettrico
+sistema luminoso di avvicinamento
+Sistema pentaconta
+Sistema tempo-invariante
+Socket F
+statvolt
+stress termico
+tecnologia della tastiera
+termoelettricità
+Termoformatura
+Termometrografo
+Tex
+tubo a gas
+Valanga Townsend
+velocità al suolo
+videografia
+viscosità dinamica
+Visione mesopica
+zeptosecondo
+Ago di Vicat
+Antenna a stilo
+Apostilb
+Apparato di Fizeau-Foucault
+Apple A6X
+arc fault detection devices
+assemblaggio meccanico
+Attuatore lineare
+Baionetta Z-Mount
+canalizzazione aeraulica
+capacità termica volumetrica
+carta crespata
+chimografo
+clessidra ad acqua
+COGOG
+colata centrifuga
+colonna a riempimento
+Comunicazione senza connessione
+Costante di Curie
+costante gravitazionale di Gauss
+cryptojacking
+Darcy
+Daryal
+decigrammo
+Delaminazione
+Diffraction limited

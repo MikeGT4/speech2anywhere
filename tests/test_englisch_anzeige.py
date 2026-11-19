@@ -13,13 +13,14 @@ from PyQt6.QtGui import QPainter, QPainterPath
 from kira import texte
 from kira.config import HUD_STYLES
 from kira.ui.hud import base as hud_base
+from kira.ui.hud.chemie import ELEMENTS
 from tests.test_hud_styles import Driver
 
 LATIN = re.compile(r"[A-Za-zÄÖÜäöüß]")
 NOISE = "0123456789#%&*+=<>/"
 SAME_IN_BOTH = frozenset({
     "RING!", "DING!", "KIAI!", "HA!", "hm", "ho!", "TRIG", "XY", "LOCK", "3 ms/div", "5 kHz", "−∞ dBFS",
-})
+}) | frozenset(symbol for symbol in ELEMENTS if len(symbol) > 1)
 ENGLISH_BY_DESIGN = frozenset({"klassisch"})
 ERROR_TEXT = "Mikrofon nicht gefunden.|Gerät prüfen, dann erneut drücken."
 

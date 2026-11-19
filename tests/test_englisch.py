@@ -154,7 +154,7 @@ if sys.platform == "win32":
         "Speech2Anywhere", "Sound", "Version", "Deutsch", "English", "Comic", "Manga (Shōnen)", "Halloween", "Phosphor",
         "Gun Barrel", "Log:", "Whisper: ", "Ollama: ", "Gemma: ", "Setup", "Speech2Anywhere Setup",
         "Speech2Anywhere: Setup", "© 2026 Mike Pollow · Digitalroots", "© 2026 Mike Pollow", "Hugging Face…", "USB Microphone", "Kubernetes", "Docker",
-        "kuh bernetes", "doku", "auf kuh bernetes", "mit doku", "f8", "f9",
+        "kuh bernetes", "doku", "auf kuh bernetes", "mit doku", "f8", "f9", "IT",
     })
 
     def _lettered(texts) -> set[str]:
@@ -319,8 +319,27 @@ if sys.platform == "win32":
 
     def test_settings_tabs_are_english(settings):
         assert [tab.text() for tab in settings._tabs] == [
-            "Microphone", "Clean-up", "Keys", "Indicator", "Sound", "Learning", "About",
+            "Microphone", "Clean-up", "Keys", "Indicator", "Sound", "Learning", "Specialist vocabulary", "About",
         ]
+
+    def test_english_tabs_fit_when_the_settings_open(settings, qtbot):
+        settings.show()
+        qtbot.waitExposed(settings)
+        header = settings._tabs[0].parentWidget()
+        frames = [tab.geometry() for tab in settings._tabs]
+        assert all(tab.width() >= tab.sizeHint().width() for tab in settings._tabs)
+        assert all(left.right() < right.left() for left, right in zip(frames, frames[1:]))
+        assert frames[-1].right() < header.width() <= settings.width()
+
+    def test_specialist_vocabulary_page_shows_no_german_in_english(settings):
+        page = settings._pages.widget(settings._PAGE_TITLES.index("Fachwortschatz"))
+        texts = _visible_texts(page)
+        assert _german_left(texts) == []
+        assert {
+            "Specialist vocabulary", "Medicine", "Medications", "Law", "Business", "Science and engineering",
+            "Chemistry", "IT",
+        } <= texts
+        assert any(text.startswith("The fields you switch on") for text in texts)
 
     def test_interface_language_names_itself_in_its_own_language(settings):
         labels = [settings._ui_language.itemText(i) for i in range(settings._ui_language.count())]

@@ -58,6 +58,29 @@ def test_right_click_on_label_does_not_toggle(qtbot):
     assert not switch.isChecked()
 
 
+def _row_frames(qtbot, columns: int | None):
+    card = comic.ComicCard("Fachwortschatz") if columns is None else comic.ComicCard("Fachwortschatz", columns=columns)
+    rows = [card.add_row(name, "Beschreibung.", comic.ToggleSwitch()) for name in ("Medizin", "Jura", "Chemie")]
+    qtbot.addWidget(card)
+    card.resize(900, card.sizeHint().height())
+    card.show()
+    return [row.geometry() for row in rows]
+
+
+def test_rows_stack_in_one_column_by_default(qtbot):
+    first, second, third = _row_frames(qtbot, None)
+    assert first.left() == second.left() == third.left()
+    assert first.bottom() < second.top() < third.top()
+
+
+def test_two_columns_put_rows_side_by_side_and_keep_them_aligned(qtbot):
+    first, second, third = _row_frames(qtbot, 2)
+    assert first.top() == second.top()
+    assert second.left() > first.right()
+    assert third.top() > first.bottom()
+    assert third.left() == first.left()
+
+
 def test_labels_of_other_controls_stay_plain(qtbot):
     card = comic.ComicCard("Anzeige")
     combo = QComboBox()

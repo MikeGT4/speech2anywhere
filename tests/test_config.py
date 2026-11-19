@@ -299,3 +299,25 @@ def test_processor_mode_defaults():
     assert cfg.whisper.device == "gpu"
     assert cfg.whisper.cpu_model == "small"
     assert cfg.styler.enabled is True
+
+
+def test_specialist_fields_are_off_by_default(tmp_path):
+    assert Config().fachwortschatz.gebiete == []
+    assert load_config(tmp_path / "missing.yaml").fachwortschatz.gebiete == []
+
+
+def test_specialist_fields_keep_known_keys_in_fixed_order_without_repeats(tmp_path):
+    yaml_file = tmp_path / "config.yaml"
+    yaml_file.write_text("fachwortschatz:\n  gebiete: [it, piep, ' Medizin ', it, jura]\n", encoding="utf-8")
+    assert load_config(yaml_file).fachwortschatz.gebiete == ["medizin", "jura", "it"]
+
+
+def test_specialist_fields_accept_every_known_key():
+    from kira.config import FACHGEBIETE, FachwortschatzConfig
+    assert FachwortschatzConfig(gebiete=list(reversed(FACHGEBIETE))).gebiete == list(FACHGEBIETE)
+
+
+@pytest.mark.parametrize("value", ["medizin", 5, None, {"medizin": True}, True])
+def test_invalid_specialist_fields_fall_back_to_none(value):
+    from kira.config import FachwortschatzConfig
+    assert FachwortschatzConfig(gebiete=value).gebiete == []

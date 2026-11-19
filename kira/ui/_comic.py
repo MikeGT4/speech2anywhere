@@ -822,10 +822,14 @@ class ComicCard(QWidget):
     BORDER = 3
     SHADOW = 5
     LABEL_W = 270
+    COLUMN_GAP = 24
 
-    def __init__(self, title: str, mascot=None, parent: QWidget | None = None, row_padding: int = 9) -> None:
+    def __init__(self, title: str, mascot=None, parent: QWidget | None = None, row_padding: int = 9,
+                 columns: int = 1) -> None:
         super().__init__(parent)
         self._row_padding = row_padding
+        self._columns = max(1, columns)
+        self._line: QHBoxLayout | None = None
         outer = QVBoxLayout(self)
         b, s = self.BORDER, self.SHADOW
         outer.setContentsMargins(b + 24, b + 14, b + s + 24, b + s + 8)
@@ -847,7 +851,8 @@ class ComicCard(QWidget):
         self._row_count = 0
 
     def add_row(self, label: str, sub: str, control) -> QWidget:
-        if self._row_count:
+        column = self._row_count % self._columns
+        if self._row_count and not column:
             self._rows.addWidget(_DottedRule())
         row = QWidget()
         lay = QHBoxLayout(row)
@@ -890,7 +895,14 @@ class ComicCard(QWidget):
                 widget.setAccessibleName(label)
             if sub and not widget.accessibleDescription():
                 widget.setAccessibleDescription(sub)
-        self._rows.addWidget(row)
+        if self._columns == 1:
+            self._rows.addWidget(row)
+        else:
+            if not column:
+                self._line = QHBoxLayout()
+                self._line.setSpacing(self.COLUMN_GAP)
+                self._rows.addLayout(self._line)
+            self._line.addWidget(row, 1)
         self._row_count += 1
         return row
 

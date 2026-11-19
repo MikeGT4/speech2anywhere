@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-__version__ = "0.6.4"
+__version__ = "0.7.0"
 UPDATE_REPO = "MikeGT4/speech2anywhere"
 LOG_NAME = "speech2anywhere.log"
 FAULTHANDLER_LOG_NAME = "speech2anywhere-faulthandler.log"

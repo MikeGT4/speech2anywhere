@@ -22,7 +22,7 @@ from kira.ui._dialog_style import (
 from kira.ui._progress_view import ProgressView
 
 from kira import __version__, UPDATE_REPO, ollama_pull, progress as prog
-from kira.config import LANGUAGE_NAMES, SOUND_EVENTS, default_config_path, effective_hotkey, load_config
+from kira.config import FACHGEBIETE, LANGUAGE_NAMES, SOUND_EVENTS, default_config_path, effective_hotkey, load_config
 from kira.hardware import CPU_WHISPER_REPO, cpu_whisper_dir
 from kira.hotkey_win import SUPPORTED_COMBOS
 from kira.config_writer import update_scalars
@@ -60,6 +60,16 @@ _SOUND_ROWS = (
     ("stopp", N_("Beim Loslassen"), N_("Die Aufnahme endet.")),
     ("fertig", N_("Text ist da"), N_("Der Text ist eingefügt.")),
     ("fehler", N_("Bei Fehlern"), N_("Etwas ging schief.")),
+)
+
+_FACHGEBIET_ROWS = (
+    ("medizin", N_("Medizin"), N_("Krankheiten, Symptome, Anatomie, Untersuchungen.")),
+    ("medikamente", N_("Medikamente"), N_("Wirkstoffe und Arzneimittel.")),
+    ("jura", N_("Jura"), N_("Rechtsbegriffe, Gesetze, Gerichte.")),
+    ("wirtschaft", N_("Wirtschaft"), N_("Betriebswirtschaft, Finanzen, Rechnungswesen.")),
+    ("technik", N_("Wissenschaft und Technik"), N_("Physik, Ingenieurwesen, Einheiten.")),
+    ("chemie", N_("Chemie"), N_("Elemente, Verbindungen, Fachbegriffe.")),
+    ("it", "IT", N_("Programmiersprachen, Software, Protokolle.")),
 )
 
 
@@ -303,7 +313,9 @@ def _ask_restart(parent: QWidget | None) -> bool:
 
 
 class SettingsDialog(QDialog):
-    _PAGE_TITLES = (N_("Mikrofon"), N_("Politur"), N_("Tasten"), N_("Anzeige"), "Sound", N_("Lernen"), N_("Über"))
+    _PAGE_TITLES = (
+        N_("Mikrofon"), N_("Politur"), N_("Tasten"), N_("Anzeige"), "Sound", N_("Lernen"), N_("Fachwortschatz"), N_("Über"),
+    )
 
     def __init__(self, open_learned_words=None, request_restart=None) -> None:
         super().__init__()
@@ -338,12 +350,13 @@ class SettingsDialog(QDialog):
         body_lay.addLayout(self._build_footer())
         root.addWidget(body, 1)
 
-        for build in (self._page_mikrofon, self._page_politur, self._page_tasten,
-                      self._page_anzeige, self._page_sound, self._page_lernen, self._page_ueber):
+        for build in (self._page_mikrofon, self._page_politur, self._page_tasten, self._page_anzeige,
+                      self._page_sound, self._page_lernen, self._page_fachwortschatz, self._page_ueber):
             self._pages.addWidget(build())
         self._sync_compute_dependents()
         self._tabs[0].setChecked(True)
         self._pages.setCurrentIndex(0)
+        self.setMinimumWidth(max(self.minimumWidth(), root.minimumSize().width()))
 
     def _build_header(self) -> QWidget:
         header = comic.DarkHeader()
@@ -369,6 +382,7 @@ class SettingsDialog(QDialog):
         self._tabs: list[comic.BubbleTab] = []
         for index, title in enumerate(self._PAGE_TITLES):
             tab = comic.BubbleTab(tr(title))
+            tab.setMinimumWidth(tab.sizeHint().width())
             self._tab_group.addButton(tab, index)
             tabs.addWidget(tab, 0, Qt.AlignmentFlag.AlignBottom)
             self._tabs.append(tab)
@@ -803,8 +817,9 @@ class SettingsDialog(QDialog):
         self._hud_live_words = comic.ToggleSwitch()
         self._hud_live_words.setChecked(self._cfg.ui.hud_live_words)
         self._live_words_tip = tr(
-            "In den Stilen „Comic (Bla-Bla)“, „Manga“, „Halloween“ und „Weihnachten“ erscheinen beim Sprechen\n"
-            "Fetzen der erkannten Wörter. Sie sind am Bildschirm zu sehen, auch bei einer Bildschirmfreigabe."
+            "In den Stilen „Comic (Bla-Bla)“, „Manga“, „Halloween“, „Weihnachten“, „Medizin“, „Medikamente“, „Jura“,\n"
+            "„Wirtschaft“, „Wissenschaft und Technik“, „Chemie“ und „IT“ erscheinen beim Sprechen Fetzen der erkannten Wörter.\n"
+            "Sie sind am Bildschirm zu sehen, auch bei einer Bildschirmfreigabe."
         )
         self._hud_live_words.setToolTip(self._live_words_tip)
         self._hud_live_words.toggled.connect(self._hud_preview.set_live_words)
@@ -874,6 +889,23 @@ class SettingsDialog(QDialog):
             learned_button.clicked.connect(self._open_learned_words)
             card.add_row(tr("Gelernte Wörter"), tr("Liste ansehen und Einträge freigeben."), self._left(learned_button))
         return self._page(card, comic.HintBubble([tr("Nach dem nächsten Neustart legt das Lernen los.")]))
+
+    def _page_fachwortschatz(self) -> QWidget:
+        card = comic.ComicCard(tr("Fachwortschatz"), self._mascot, columns=2)
+        self._fachgebiete: dict[str, comic.ToggleSwitch] = {}
+        for key, label, description in _FACHGEBIET_ROWS:
+            switch = comic.ToggleSwitch()
+            switch.setChecked(key in self._cfg.fachwortschatz.gebiete)
+            card.add_row(tr(label), tr(description), switch)
+            self._fachgebiete[key] = switch
+        hint = comic.HintBubble([
+            tr(
+                "Eingeschaltete Fachgebiete helfen der Politur bei Fachbegriffen, in allen acht Sprachen.\n"
+                "Kein Anspruch auf Vollständigkeit, die Begriffe stammen aus Wikidata.\n"
+                "Ohne Auswahl erkennt Speech2Anywhere wie bisher."
+            ),
+        ])
+        return self._page(card, hint)
 
     def _page_ueber(self) -> QWidget:
         card = self._card(tr("Über"))
@@ -1149,6 +1181,9 @@ class SettingsDialog(QDialog):
             updates["whisper.cpu_model"] = cpu_model
         if polish_on != self._cfg.styler.enabled:
             updates["styler.enabled"] = polish_on
+        gebiete = [key for key in FACHGEBIETE if self._fachgebiete[key].isChecked()]
+        if gebiete != self._cfg.fachwortschatz.gebiete:
+            updates["fachwortschatz.gebiete"] = gebiete
 
         self._cfg_path.parent.mkdir(parents=True, exist_ok=True)
         if not self._cfg_path.exists():

@@ -1,0 +1,3000 @@
+Linux
+sistema operacional
+sistema operativo
+HTML
+Ubuntu
+Microsoft Windows
+Windows
+jogo eletrônico
+videojogo
+linguagem de programação
+PHP
+Python
+JavaScript
+Mozilla Firefox
+Java
+Android
+navegador
+navegador web
+Bitcoin
+C++
+MediaWiki
+Cascading Style Sheets
+disco rígido
+teclado
+Unicode
+iPhone
+Unix
+CPU
+unidade central de processamento
+programação de computadores
+software livre
+C Sharp
+CSharp
+impressora
+microfone
+disco compacto
+wi-Fi
+macOS
+SQL
+memória de acesso aleatório
+memória de acesso randômico
+RAM
+Vírus de computador
+Debian
+iOS
+ecrã do computador
+monitor de vídeo
+Perl
+DVD
+compilador
+Windows 7
+Bluetooth
+Placa-mãe
+Ruby
+XML
+Pascal
+PDF
+Portable Document Format
+blockchain
+Internet Explorer
+MS-DOS
+Windows 10
+Windows XP
+Hypertext Transfer Protocol
+aplicação móvel
+aplicativo móvel
+BASIC
+LaTeX
+Lua
+servidor
+Windows Vista
+orientação a objetos
+Macintosh
+aplicação
+aplicativo
+Domain Name System
+iPad
+Monero
+Visual Basic
+Fortran
+ASCII
+Opera
+Windows 8
+IPod
+roteador
+TCP/IP
+USB flash drive
+assembly
+digitalizador
+digitalizador de imagem
+Git
+MySQL
+Windows 11
+Microprocessador
+Voz sobre IP
+Disco Blu-ray
+File Transfer Protocol
+GNU
+ecrã tátil
+malware
+Phishing
+tela sensível ao toque
+COBOL
+disquete
+Ethernet
+GitHub
+Lisp
+MATLAB
+Navalha de Occam
+Protocolo de Internet
+Windows 95
+IRC
+MP3
+Safari
+Ada
+Programa Olá Mundo
+Antivírus
+código de máquina
+RSS
+Arduino
+placa de vídeo
+SVG
+Windows 98
+Fedora Linux
+LCD
+Linux Mint
+Processador de texto
+Berkeley Software Distribution
+FreeBSD
+Transmission Control Protocol
+Windows Phone
+API
+aprendizagem profunda
+câmara web
+Ethereum
+Litecoin
+Win2K
+big data
+Curta-metragem
+Microsoft Edge
+servidor web
+BIOS
+expressão regular
+Graphics Interchange Format
+Haskell
+.NET Framework
+distribuição GNU/Linux
+distribuição Linux
+Symbian OS
+BitTorrent
+controlo remoto
+Golang
+Periférico
+Raspberry Pi
+Vim
+cavalo de troia
+folha de cálculo
+Mac operating system
+planilha eletrônica
+Prolog
+Windows ME
+Adobe Flash
+armazenamento de computador
+crivo de Eratóstenes
+Flash
+sistema de ficheiros
+Unidade de processamento gráfico
+ARPANET
+Firmware
+Google+
+High-Definition Multimedia Interface
+interpretador
+iPhone 5
+IPv6
+memória flash
+Rust
+Windows 1.x
+algoritmo de Euclides
+HTML5
+HTTPS
+microcontrolador
+OpenBSD
+Scratch
+Video Home System
+XHTML
+analogia
+DOS
+Microsoft Access
+Microsoft Visual Studio
+parábola
+Ransomware
+Solaris
+SSD
+Arch Linux
+ASP.NET
+Kotlin
+Kubuntu
+SGBD
+SGDB
+Worm
+Ataque DoS
+cifra de César
+Flood de rede
+joystick
+Memória do computador
+spyware
+Apple Watch
+cartão perfurado
+driver de dispositivo
+Enterprise Content Manangement
+OpenGL
+PNG
+reconhecimento ótico de caracteres
+Sgc
+Simple Mail Transfer Protocol
+algoritmo de ordenação
+Chrome OS
+comutador
+Dogecoin
+SSH
+Telnet
+User Datagram Protocol
+editor de texto
+Gentoo Linux
+heurística
+Linguagem de alto nível
+motor de jogo
+placa de rede
+Placa de som
+Windows 2.x
+Windows NT
+ALGOL
+aplicação web
+computação paralela
+Dynamic Host Configuration Protocol
+Eclipse
+função de hash
+iPhone 5S
+jQuery
+JSON
+linguagem de script
+Node.js
+Parábola do Filho Pródigo
+PostgreSQL
+programação funcional
+quicksort
+Swift
+Unity
+Ambiente de desenvolvimento integrado
+DirectX
+estrutura de dados array
+iPhone 4S
+iPhone 7
+Método de Monte Carlo
+Oracle
+Slackware
+Subversion
+Unreal Engine
+Visual Basic .NET
+assinatura digital
+bubble sort
+Chromium
+concentrador
+IMAX
+IPv4
+Knoppix
+linguagem formal
+Project Glass
+Windows 8.1
+ActionScript
+Algoritmo de Dijkstra
+desenvolvimento ágil de software
+disco óptico
+MacBook Pro
+Windows Server 2003
+BeOS
+chipset
+eliminação de Gauss
+Internet Message Access Protocol
+MacBook Air
+near field communication
+Padrão de projeto
+Padrões de Projeto
+programação estruturada
+Scheme
+TeX
+Transport Layer Security
+Advanced Encryption Standard
+algoritmo genético
+ambiente de desktop
+AWK
+cliente
+Emacs
+GNU Octave
+interpolação
+iPhone 4
+IPhone 6
+IPhone X
+Mandriva Linux
+Apple TV
+biblioteca
+Brave
+Data Encryption Standard
+Docker
+iMac
+matriz identidade
+pesquisa binária
+POSIX
+React
+Smalltalk
+software de sistema
+Address Resolution Protocol
+ASP
+Brainfuck
+CD-ROM
+diretório
+ecrã a plasma
+estrutura de árvore
+iPhone 5c
+Kali Linux
+Logo
+Netscape Navigator
+Notepad++
+Objective-C
+openSUSE
+ordenação por mistura
+programação imperativa
+Scala
+tela de plasma
+Windows Mobile
+Adobe Acrobat
+APL
+Bom samaritano
+Google Talk
+GTK
+HD DVD
+iPhone 3GS
+Konqueror
+Linguagem de baixo nível
+MINIX
+Rastreador web
+sub-rotina
+tablete gráfico
+web crawler
+Controlador lógico programável
+depurador
+Dynamic random access memory
+emulador
+iPhone 3G
+IPod touch
+MD5
+tabela de dispersão
+Windows NT 4.0
+Bloco de Notas
+Bootstrap
+GNU/Linux
+Internet Control Message Protocol
+iPhone 6S
+Lubuntu
+NetBSD
+Ogg
+OpenDocument
+parábola de Jesus
+plotter
+registador
+registrador
+Rootkit
+SMILES
+Tcl
+Tool Command Language
+Bitcoin Cash
+corretor ortográfico
+dispositivo de entrada
+Django
+DOM
+Haiku
+Huggle
+impressora a laser
+Insertion sort
+método de Newton
+MVC
+NTFS
+processador
+ReactOS
+selection sort
+sistema operativo tipo Unix
+Token ring
+Web semântica
+Windows Server 2008
+XMPP
+Xubuntu
+aprendizagem supervisionada
+CentOS
+File Allocation Table
+Google PageRank
+Mathematica
+Microsoft SQL Server
+OS/2
+PageRank
+painel tátil
+processo
+Red Hat Linux
+regra de Cramer
+Simple Network Management Protocol
+TypeScript
+Visual Studio Code
+Windows 3.0
+XSLT
+aprendizagem por reforço
+CGI
+CP/M
+distância Levenshtein
+EPUB
+Escala de Kardashev
+gateway
+IPhone 8
+keylogger
+Manjaro Linux
+Open Shortest Path First
+Pentium
+sistema de reconhecimento facial
+ZIP
+árvore binária
+chassis
+gabinete
+Godot
+Google Meet
+Injeção de SQL
+IPhone SE
+LDAP
+MacBook
+matriz quadrada
+NetBeans
+phpMyAdmin
+PostScript
+Red Hat Enterprise Linux
+sistema operacional móvel
+sistema operativo móvel
+terminal
+wikitexto
+Wireless Application Protocol
+Xcas
+Adobe Flash Player
+Deepin
+elementary OS
+FreeDOS
+Identificação por dois fatores
+integração por partes
+IPhone 11
+JavaServer Pages
+Mp4
+MPEG-4 Part 14
+NoSQL
+papel eletrônico
+placa de expansão
+PowerShell
+programação dinâmica
+Programação extrema
+resolução 4K
+SGML
+Stuxnet
+Tagged Image File Format
+VBScript
+Windows 10 Mobile
+access point
+algoritmo de chave simétrica
+Android Nougat
+Android Studio
+Apple Vision Pro
+arquivo de texto
+busca em profundidade
+caneta óptica
+Cardano
+Depuração
+DSP
+Erlang
+ficheiro de texto
+framework
+gamepad
+Gecko
+Google Hangouts
+iPhone 12
+Live CD
+Lynx
+Markdown
+matriz transposta
+Middleware
+MongoDB
+OCaml
+PROM
+Puppy Linux
+Routing Information Protocol
+SOAP
+Vue.js
+WatchOS
+WebM
+Apple II
+Border Gateway Protocol
+busca em largura
+caso estudo
+Clojure
+Cygwin
+Device Independent Bitmap
+Ecosia
+EFI
+encapsulamento
+Estudo de caso
+Excel VBA
+FLAC
+Forth
+GNU Hurd
+HarmonyOS
+hidrofone
+interface serial
+IPhone 15
+matriz simétrica
+MIUI
+Mosaic
+Network Time Protocol
+Pegasus
+Pentium 4
+Série Apple II
+Source
+Spring Framework
+SQLite
+SRAM
+UHDTV
+ultra-alta definição
+Vibe coding
+Vivaldi
+Zilog Z80
+Android Marshmallow
+Android Oreo
+árvore binária de busca
+cálculo da Páscoa
+correção
+Damn Small Linux
+Dart
+Eiffel
+Embarcadero Delphi
+Firefox OS
+ILOVEYOU
+integração numérica
+IPsec
+matriz inversível
+método dos elementos finitos
+Opera Mini
+Parábola das Dez Virgens
+PowerPC
+Projeto GNU
+ray tracing
+reprodutor de mídia
+reprodutor multimédia
+service-oriented architecture
+Snapdragon
+Standard Template Library
+TensorFlow
+utilitário
+WebKit
+Android 12
+aprendizagem não supervisionada
+Codificação de Huffman
+desbloqueio do iOS
+editor gráfico
+Fiber Distributed Data Interface
+Flutter
+gerenciador de arquivos
+gestor de ficheiros
+Google Sites
+Groovy
+heapsort
+impressora a tinta
+impressora jato de tinta
+IPad 2
+iPhone 14
+iPhone 17
+IPhone XR
+iPhone XS
+jailbreak
+JEE
+Laserdisc
+LineageOS
+lousa digital
+Matriz diagonal
+matriz triangular
+Matroska
+Maxthon
+NNTP
+Placa sintonizadora de TV
+Point-to-Point Protocol
+programa para escritório
+quadro interactivo
+Samba
+SeaMonkey
+SPARQL
+transformer
+Windows 9x
+Windows CE
+Windows Server 2012
+ABAP
+Android Lollipop
+ataque de força bruta
+Betamax
+carregador de inicialização
+Celeron
+cifra de Vigenère
+Compute Unified Device Architecture
+critérios de divisibilidade
+divisão e conquista
+DjVu
+Gambas
+GeForce
+Google Wave
+iPhone 13
+iPod Nano
+Julia
+MariaDB
+motor de renderização
+OpenSolaris
+OpenSSL
+Parábola do Semeador
+PL/I
+programação lógica
+programação procedural
+Protocolo de Pagamento Ripple
+Real-time Transport Protocol
+Simula
+SliTaz
+trackball
+trissecção do ângulo
+Vorbis
+Windows NT 3.1
+amostragem de sinal
+Android 13
+árvore B
+Árvore rubro-negra
+bifurcação
+Common Lisp
+Core 2
+CVS
+CyanogenMod
+deadlock
+DLL
+Edubuntu
+Gopher
+Intel Atom
+Intel Core
+iPadOS
+IPhone 11 Pro
+iPhone SE 2
+iPhone SE 2020
+iPod shuffle
+Java Development Kit
+Laravel
+Mac Pro
+Maple
+matrizes de Pauli
+mecanismo de reação
+método da bisseção
+método da bissecção
+ontologia
+processo de Gram-Schmidt
+programação declarativa
+PyTorch
+Sistema operacional de tempo-real
+software colaborativo
+Vulnerabilidade de dia zero
+Zorin OS
+algoritmo simplex
+AmigaOS
+Android TV
+Audio Video Interleave
+Caixa de diálogo
+Contrato inteligente
+CRC
+DDR SDRAM
+DHTML
+Diffie-Hellman
+dispositivo de saída
+DualShock
+estrutura de controle
+hardware de rede
+Integração por substituição
+iPhone 12 Pro
+iPhone 16
+Itanium
+Kinect
+matriz nula
+matriz unitária
+MPEG-4
+MPLS
+OpenVMS
+Pentium II
+Pentium III
+programas de apresentação
+QuickTime
+singleton
+software development kit
+Stable Diffusion
+SuSE Linux
+Turbo Pascal
+VCD
+WAV
+Wi-Fi Protected Access
+Wii Remote
+Windows Server
+XPath
+AirPods
+algoritmo de busca
+algoritmo guloso
+Árvore AVL
+ataque man-in-the-middle
+BCPL
+Conjugado transposto
+CPU cache
+DragonFly BSD
+Filtro de Kalman
+Frame relay
+IPad mini
+linguagem de programação esotérica
+matriz de adjacência
+matriz hermitiana
+matriz jacobiana
+matriz transposta conjugada
+MeeGo
+Mercurial
+método de Runge-Kutta
+Multics
+multiplataforma
+Network File System
+Parábola da Ovelha Perdida
+PCLinuxOS
+perceptron
+PL/SQL
+Post Office Protocol
+RAR
+Red Star OS
+Rockstar Advanced Game Engine
+Scilab
+Shell do Unix
+sistema gerenciador de pacotes
+sistema gestor de pacotes
+Super Audio CD
+Teleprompter
+Trisquel
+Windows API
+Xeon
+ABC
+Advanced Interactive eXecutive
+Algoritmo de Shor
+algoritmo evolutivo
+Alt
+Android 14
+AngularJS
+APK
+Apple M1
+Chaveador KVM
+cifra de substituição
+Cinética de Michaelis-Menten
+comma-separated values
+CompactFlash
+computador de placa única
+controlador de jogo
+Exif
+exploit
+Flock
+GameMaker
+GNOME Web
+hipervisor
+IPhone 13 Pro
+iPhone 15 Pro
+Make
+matriz ortogonal
+Morris worm
+MPEG-4 AVC
+Object Pascal
+One-time pad
+Painel eletrônico
+Palm OS
+pregadura
+programação genérica
+QBasic
+SteamOS
+Sublime Text
+teoria da intimidação
+Tizen
+Universal Media Disc
+WEP
+Windows 3.1x
+Windows Fundamentals
+Windows Home Server
+Windows Neptune
+WorldWideWeb
+Xcode
+Advanced Audio Coding
+agregador
+Algoritmo de Prim
+Android 11
+Android Auto
+Android Pie
+Apache Hadoop
+Atom
+Bada
+barra de tarefas
+busca linear
+CD-R
+cifra de bloco
+CinemaScope
+cliente de e-mail
+Diagrama de Voronoi
+Dublin Core
+esquemas táticos do futebol
+Face ID
+Fórmula de Simpson
+formulário web
+função hash criptográfica
+GNU C Library
+Google Fuchsia
+Google TV
+Hadoop
+HomePod
+impressora matricial
+IOS 7
+iOS 8
+Kerberos
+Ligador
+Maemo
+Material Design
+MathML
+matriz antissimétrica
+método de Euler
+Minimax
+multinúcleo
+ODBC
+OpenID
+Parábola dos Talentos
+Processing
+Programação orientada a aspecto
+prova de trabalho
+RADIUS
+Registro do Sistema
+REST
+REXX
+root no Android
+software multiplataforma
+Spanning Tree Protocol
+Sprite
+tipo abstrato de dado
+VisiCalc
+WannaCry
+Wear OS
+Windows 3.x
+Windows Phone 8
+Windows RT
+Xenix
+XQuery
+Zip drive
+algoritmo de fila simples
+Android Jelly Bean
+Android KitKat
+Apache Ant
+Atmel AVR
+AutoIt
+Biblioteca padrão do C
+CD-RW
+Conficker
+CSMA/CD
+DBASE
+Editor HTML
+Elixir
+Esquema de Horner
+Extensible Stylesheet Language
+Flask
+Geofone
+GrapheneOS
+Hessiano
+Interface de documento tabulada
+Internet Group Management Protocol
+IPhone 14 Pro
+iPhone Air
+JDBC
+KDevelop
+Lazarus
+LG webOS
+Macintosh 128K
+Mono
+MPEG-1
+Parábola das Ervas Daninhas
+Pentium Pro
+quadrado latino
+Radio Data System
+recursividade
+Samsung Exynos
+Serial Peripheral Interface
+shell sort
+Silverlight
+SLAX
+Software wiki
+Sora
+Ubuntu Studio
+VRML
+WebAssembly
+webOS
+Windows Server 2016
+3DES
+3GP
+ActiveX
+Algoritmo de Kruskal
+Android 10
+Android Ice Cream Sandwich
+BackTrack
+BlackBerry OS
+calendário cósmico
+ChEBI
+Control
+cURL
+DB2
+DOCSIS
+editor de gráficos rasterizados
+estratégia
+Factory Method
+Formato MARC
+GoldSrc
+Google Web Toolkit
+Hardware livre
+head up display
+IBook
+Interpretador de JavaScript
+iOS 6
+iOS 9
+Kate
+Luhn algorithm
+Mac OS Classic
+Mac OS X v10.5
+Mac OS X v10.7
+memória de ferrite
+metaprogramação
+Novell Netware
+OAuth
+OpenWrt
+PC-BSD
+QNX
+radix sort
+rede adversária generativa
+Sega CD/Mega CD
+SHA-1
+sistema algébrico computacional
+Tails
+TempleOS
+TvOS
+Ubuntu Touch
+unidade de fita
+Web Services Description Language
+WebGL
+WebP
+WHOIS
+Windows 2.1
+Windows Media Audio
+ZigBee
+.htaccess
+algoritmo de Bellman-Ford
+Android One
+Anjuta
+AppleScript
+bogosort
+Darwin
+DDR3 SDRAM
+EMUI
+escalonamento de processos
+escrita especular
+FFmpeg
+FreeBASIC
+Frostbite
+gerenciamento eletrônico de documentos
+GNU nano
+Haswell
+IDLE
+IPad Air
+IPad Pro
+iPod Classic
+IRIX
+linguagem de programação visual
+Log de dados
+Mac OS X v10.0
+Mac OS X v10.6
+Mageia
+matriz de permutação
+matriz de Toeplitz
+memória volátil
+Modularidade
+navegador móvel
+OpenCV
+Parábola da Figueira Estéril
+programação modular
+programação orientada a eventos
+Radeon
+Rich Text Format
+Sabayon Linux
+Samsung Browser
+Servlet
+Solana
+Tkinter
+transformada rápida de Fourier
+Trivial File Transfer Protocol
+UART
+Ubuntu MATE
+unidade de ponto flutuante
+Universal asynchronous receiver/transmitter
+vetor associativo
+Wikibase
+Windows NT 3.5
+XHR
+XMLHttpRequest
+Adapter
+Android 15
+Android 16
+Android Cupcake
+Android Gingerbread
+backtracking
+Biblioteca padrão do C++
+Bourne shell
+CakePHP
+Camino
+Concentrador USB
+condição de corrida
+Decorator
+Dev-C++
+engenharia assistida por computador
+Firefox para Android
+florestas aleatórias
+formato aberto
+Geany
+Intel Core i7
+IntelliJ IDEA
+iPhone 16 Pro
+iPhone 17 Pro
+iPhone 18 Pro
+JavaFX
+k-means
+KHTML
+Mac OS 9
+Mac OS X v10.1
+Mac OS X v10.2
+matriz densidade
+matriz elementar
+matriz em blocos
+matriz esparsa
+método do gradiente
+modelo oculto de Markov
+Motor de física
+OpenCL
+OpenType
+Operação elementar
+Parábola do Rico Insensato
+port scanner
+prova de conhecimento zero
+prova de participação
+retropropagação
+RPG Maker
+Ryzen
+Sega 32X
+Smarty
+Swing
+Theora
+Tubo de Nixie
+WebSockets
+Windows Media Video
+Windows NT 3.51
+Windows Server 2008 R2
+WML
+XML Schema
+Zig
+ACPI
+Advanced Linux Sound Architecture
+análise de frequência
+análise do caminho crítico
+Apple A4
+Apple Pencil
+Árvores de Merkle
+Ataque de dicionário
+Blowfish
+Chromium OS
+CodeIgniter
+Código G
+Common Intermediate Language
+compressor
+coprocessador
+CryEngine
+DDR2 SDRAM
+descanso de tela
+Dillo
+DIMM
+display de sete segmentos
+equipamento multifuncional
+Evernote
+Firebird
+GNU Emacs
+Google Cardboard
+GraphQL
+Headset de realidade virtual
+HP-UX
+Imagem ISO
+JScript
+KolibriOS
+leitor de tela
+Linspire
+LoRa
+Mac OS X v10.4
+macOS Big Sur
+Magic Mouse
+matriz de rotação
+Melissa
+Memória de tambor
+MenuetOS
+Microcontrolador PIC
+Midori
+Modula-2
+MPEG-H Part 2
+NEXTSTEP
+NVRAM
+óculos VR
+Parábola da Dracma Perdida
+Parábola do Amigo Importuno
+Parábola dos Lavradores Maus
+Plataforma Java
+Programação pareada
+Qwant
+Raspberry Pi OS
+Raw
+RTSP
+SDRAM
+Server Message Block
+servidor de impressão
+SHA-2
+Simulink
+SolusOS
+Symfony
+TDMA
+UNIX System V
+Vala
+vCARD
+Visual FoxPro
+Vulkan
+Wibree
+Windows Server 2019
+Windows Server 2022
+XUL
+Z File System
+ZFS
+abstract factory
+Apache Lucene
+Auto Hot Key
+AutoHotkey
+avaliação preguiçosa
+Bomba Zip
+botão de pressão
+Combo-box
+command
+DICOM
+digital signage
+Divisão polinomial
+duck typing
+Famicom Disk System
+Ferramenta de programação
+Gene Ontology
+gerador de números pseudoaleatórios
+GNewSense
+Hibernate
+IOS 5
+IOTA
+iPhone 16e
+Java Archive
+jogo eletrónico
+K-Meleon
+KaiOS
+Keyhole Markup Language
+Linux Lite
+Luanti
+Mac OS X v10.3
+MacBook Neo
+MicroSD
+Modelo de Hopfield
+Modular Audio Recognition Framework
+Navegação estrutural
+Observer
+Ontologias Gênicas
+Opteron
+Opus
+Parábola da Pérola
+Parábola do Empregador Generoso
+Parábola do Tesouro Escondido
+PC-DOS
+Pentium M
+Phong shading
+processador vetorial
+programação reflexiva
+protocolo de segurança
+PyCharm
+Redis
+reflexão
+Resolução 8K
+Reverse Address Resolution Protocol
+Sailfish OS
+Scientific Linux
+Séries de Bowen
+Shapefile
+SkyOS
+superescalar
+Syllable
+teclado virtual
+teste de primalidade
+Trabalhadores da Última Hora
+TrueType
+Ubuntu Kylin
+Unidade de Processamento Tensorial
+Xandros
+YAML
+Acid2
+Adobe Creative Cloud
+algoritmo quântico
+Alpine Linux
+AMD Phenom
+analisador sintático
+Android Honeycomb
+App Inventor
+AROS
+Atbash
+Boo
+Bridge
+Btrfs
+Cifra de transposição
+Cifra Playfair
+Composite
+contador de programa
+DDR4
+descompilador
+DVD-Audio
+Encapsulated PostScript
+espetos
+Express.js
+filtro de conteúdo
+GNU IceCat
+International Data Encryption Algorithm
+Internet Explorer 8
+Internet Explorer 9
+IOS 4
+IP spoofing
+iPhone Duo
+iPhone OS 1
+IPod mini
+isomorfismo de grafos
+JUnit
+LED TV
+Lightning Network
+matriz adjunta
+matriz de Vandermonde
+matriz normal
+MEPIS
+método da posição falsa
+método das secantes
+Método de Gauss-Seidel
+Motorola 6800
+Nintendo 64DD
+Nvidia Tegra
+Pale Moon
+Parábola do Mordomo Infiel
+Parábola dos Dois Devedores
+Parábola dos Dois Filhos
+Parrot OS
+PDF/A
+PEAR
+PfSense
+Pilha de chamada
+Plankalkül
+Post Office Protocol 3
+RC4
+relógio de tempo real
+round-robin
+Sass
+ScummVM
+SDL
+Segure sockets layer
+SHA
+Standard ML
+Stream Control Transmission Protocol
+tecla de função
+Triangulação de Delaunay
+Typo3
+validação cruzada
+VAX/VMS
+Virtual Studio Technology
+Vírus de macro
+VxWorks
+Waterfox
+Weka
+WordPerfect
+XAML
+Zcash
+Zend Framework
+.NET
+AirPods Pro
+algoritmo de Bresenham
+Algoritmo de Grover
+Altair BASIC
+AMD APU
+AMD K5
+Android Eclair
+Android-x86
+Angular
+Ant Colony Optimization
+Arcnet
+arquivo recipiente
+Arquivo sonoro
+Ataque de Falsificação
+Brackets
+classificador Naive Bayes
+Cocktail sort
+CoffeeScript
+Colônia de Formigas
+Component Object Model
+Constelação EURion
+Controle de enlace lógico
+counting sort
+DEC Alpha
+decomposição em valores singulares
+Desmontador
+Dongle
+EBNF
+ecrã retina
+Editor hexadecimal
+Falácia da janela quebrada
+Fast Ethernet
+Fire OS
+Firebase
+Formalismo de Backus-Naur Estendido
+formatos de ficheiro gráfico
+GhostBSD
+Gnutella
+headset
+High Bandwidth Memory
+INTERCAL
+iPad Air 2
+iPhone OS 3
+JavaServer Faces
+Journaling
+Keras
+Kylix
+linguagem interpretada
+Links
+Mathcad
+Matplotlib
+Matrix
+matriz nilpotente
+menu de contexto
+Message Passing Interface
+método das diferenças finitas
+Motorola 68K
+MX Linux
+NetBIOS
+Oracle Linux
+organização autônoma descentralizada
+Parábola do Credor Incompassivo
+Parábola do Juiz Iníquo
+Pardus
+PlayStation Move
+Plone
+PocketStation
+Portable Executable
+programação concorrente
+prototype
+Proxmox
+Proxmox Virtual Environment
+Pywikibot
+Q-DOS
+React Native
+RPG
+Sempron
+servidor de aplicação
+sistema de janelas
+soquete de internet
+SSH file transfer protocol
+strategy
+Suplantação
+tabela de Cayley
+teclas direcionais
+tela retina
+teorema das raízes racionais
+Trusted Platform Module
+Unix SCP
+Void Linux
+VRAM
+WebRTC
+Windows Phone 7
+Windows Phone 8.1
+XFS
+Zenwalk
+acelerador de IA
+Adobe Shockwave Player
+algoritmo de expectativa-maximização
+Algoritmo de Floyd-Warshall
+Algoritmo de Knuth-Morris-Pratt
+Android Donut
+AntiX
+Anvil
+Apache Struts
+Apple A10 Fusion
+Apple A5
+Apple Lossless
+Apple M2
+Base
+Bluefish
+botões direcionais
+builder
+Bytecode Java
+cifra de fluxo
+Cifra Feistel
+Codificação run-length
+COM
+Csh
+DiSEqC
+Distributed hash table
+DokuWiki
+Duron
+editor de gráficos vetoriais
+editor de vetores gráficos
+ELF
+EMac
+EndeavourOS
+escalada de privilégios
+escalamento de privilégios
+ExFAT
+Fibre channel
+FLV
+Flyweight
+framework para aplicações web
+geocodificação
+geração automática de texto
+Gettext
+Gigabit Ethernet
+GNU gettext
+gravitomagnetismo
+Hack
+Havok
+High-Level Data Link Control
+HSUPA
+HTTP/2
+Human resource management system
+Inferno
+Injeção de dependência
+Internet Explorer 10
+Internet Explorer 7
+IP via pombo-correio
+IPhone OS 2
+J sharp
+KDE neon
+kriging
+Language Integrated Query
+linguagem ladder
+Liquid Glass
+Log4j
+LUT
+macOS Sierra
+MagSafe
+Malbolge
+MapReduce
+matriz binária
+matriz booleana
+matriz de covariância
+matriz de incidência
+matriz de transformação
+Microsserviço
+Mydoom
+Next.js
+Opera Mobile
+OWL
+Parábola do Grande Banquete
+Parábola do Servo Fiel
+Portable Game Notation
+Power Macintosh
+PPPoE
+produto de Wallis
+programação baseada em protótipos
+Quake engine
+RAM drive
+rede semântica
+ReiserFS
+Samsung Experience
+Simulated annealing
+Sistema de Arquivos Interplanetário
+software educativo
+Super Game Boy
+SYN Flood
+Trident
+Twofish
+unidade de alocação
+Universal Disk Format
+UseModWiki
+Vídeo digital
+WebDAV
+Windows Cairo
+Windows Communication Foundation
+Windows Nashville
+Windows Presentation Foundation
+wxWidgets
+X3D
+Z-Wave
+Acid3
+AIFF
+AirPlay
+algoritmo probabilístico
+ALOHAnet
+AMD K6
+Android Froyo
+Ansible
+Apache Cassandra
+Apple A12 Bionic
+Apple A6
+Apple A7
+Apple A8
+Apple A9
+Apple M3
+Athlon 64 X2
+Audio Stream Input/Output
+BBCode
+Biblioteca Boost
+Bucket sort
+busca por força bruta
+caso de teste
+Challenge-Handshake Authentication Protocol
+Cisco IOS
+Clipper
+Cocoa
+Cross-site request forgery
+D-Bus
+Direct3D
+editor de código fonte
+extensão de navegador
+Fluxbuntu
+FreeNAS
+Galeon
+GeoJSON
+gerenciadores de senhas
+Goobuntu
+Google App Engine
+Google GrandCentral
+Graphics Device Interface
+GStreamer
+GW-BASIC
+Interpolação linear
+iSCSI
+Klik
+KWrite
+Leitor de cartão
+LESS
+linguagem de montagem x86
+Live USB
+LOLCODE
+LZW
+Mac OS 8
+Mac Studio
+macOS Catalina
+macOS Tahoe
+Matriz de Hadamard
+método iterativo
+Moblin
+MRAM
+mutoscópio
+NASM
+NixOS
+Nó-i
+Oberon
+OpenAL
+OxygenOS
+Pango
+Parábola da Rede
+Parábola do Fermento
+Parabola GNU/Linux
+Parabola GNU/Linux-libre
+PDF.js
+Pentium D
+PhysX
+Profibus
+Protocolo de roteamento
+Protocolo de tunelamento
+Proxy
+Qubes OS
+rainbow table
+RDRAM
+região crítica
+RISC OS
+SciTE
+SCUMM
+Selenium
+shell script
+SNOBOL 4
+Squeak
+TFT LCD
+toolkit
+UUCP
+Whitespace
+Windows 3.1
+XOOPS
+Yellow Dog Linux
+Z-buffer
+Abstract Window Toolkit
+Adreno
+algoritmo determinístico
+ambiente de trabalho remoto
+Animated Portable Network Graphics
+arquivo cabeçalho
+Árvore splay
+Ataque de canal lateral
+Avant Browser
+BlackBerry 10
+BOOTP
+buffer circular
+CLU
+comb sort
+conversor de dados
+Core i5
+Crunchbang linux
+CryptoLocker
+Datagram Congestion Control Protocol
+Descoberta de Vizinhos
+DNS cache poisoning
+DocBook
+DR-DOS
+DSS
+DVD-Video
+DWG
+Dylan
+Espera ativa
+Esquema
+Extended file system
+Extensible Authentication Protocol
+FileMaker
+Filme 8 mm
+Firefox Focus
+FreeRTOS
+Game Boy Camera
+gerenciador de downloads
+Gobuntu
+GOS
+Haxe
+Imageon
+Intel Core i3
+Internet Explorer 11
+Ivy Bridge
+Korn Shell
+linguagem compilada
+macOS Sonoma
+macOS Ventura
+Malha poligonal
+mapa auto-organizável
+matriz de transição
+MD4
+memento
+Memória ECC
+Método de Jacobi
+Método MCMC
+Microsoft Foundation Classes
+Modbus
+MorphOS
+MQTT
+ncurses
+OpenJDK
+Parábola da Figueira
+Parábola da Semente
+Password authentication protocol
+PCX
+Pentium Dual-Core
+Ping da morte
+Point-to-Point Tunneling Protocol
+Programação por contrato
+QuickBASIC
+Red Flag Linux
+Rede ótica síncrona
+Regras de Cahn-Ingold-Prelog
+Remote Desktop Protocol
+Ren'Py
+Rocky Linux
+Samsung Gear VR
+Skylake
+SMIL
+software social
+SRWare Iron
+State
+Svelte
+Tabela de Partição GUID
+Transact-SQL
+UFS
+Ultra HD Blu-ray
+União-Busca
+visitor pattern
+VP8
+VP9
+Web Map Service
+Win32/CIH
+Windows Odyssey
+WPCleaner
+Z/OS
+4 bits
+Accelerated Mobile Pages
+ActivityPub
+Adobe AIR
+Advanced Photo System
+ALGOL 60
+ALGOL 68
+Algoritmo CYK
+Algoritmo de Ford-Fulkerson
+Algoritmo de Strassen
+Algoritmo do banqueiro
+AMD Phenom II
+Android 17
+ANSI C
+Apple A11 Bionic
+Apple A13 Bionic
+Aprendizado autosupervisionado
+aprendizagem Q
+Aqua
+atributo
+Backbone.js
+Befunge
+C++ Builder
+casamento de padrões
+CIDO
+Cinerama
+Clickjacking
+CSMA
+Cython
+disco rígido híbrido
+DNS sobre HTTPS
+DVD-R
+DVD-RW
+editor de áudio digital
+Electron
+Enxame de partículas
+estratégia evolucionariamente estável
+Ethernet 10 Gigabit
+exclusão mútua
+Falkon
+Fórmulas de Newton-Cotes
+gerador de código
+GLSL
+GNUstep
+Google Sitemaps
+GPX
+HPFS
+ICMPv6
+id Tech 1
+Internet Explorer 6
+iPad mini 2
+iPad mini 3
+JEdit
+Job Control Language
+JPEG XR
+Leafpad
+LINPACK
+M.U.G.E.N
+macOS Mojave
+macOS Monterey
+Magnetic ink character recognition
+matriz aumentada
+matriz idempotente
+Mediator
+Memória semicondutora
+Microsoft Small Basic
+Miranda
+Módulo do núcleo
+Nexenta OS
+Notação Forsyth-Edwards
+Occam
+Ogre3d
+OPML
+Pattern matching
+Pawn
+PC Card
+pistola de luz
+programação com restrições
+programação genética
+PyGTK
+Quiosque eletrônico
+Quiosque interativo
+Racket
+RC5
+RC6
+REBOL
+redução de dimensionalidade
+RenderWare
+Representação intermediária
+RTCP
+Satellaview
+segunda quantização
+Sistema Interactivo Multimédia
+skiplist
+Source 2
+Stata
+Super-8
+telefone de disco
+Template Method
+tempo de execução
+TTA
+Turion 64
+unificação
+Wake-on-LAN
+Windows Forms
+Windows Preinstallation Environment
+WxPython
+Xiaomi HyperOS
+A Luz do Mundo
+ABC notação musical
+Adaptive Multi-Rate
+algoritmo de aproximação
+algoritmo de Euclides estendido
+Algoritmo de Karatsuba
+Algoritmo de Metropolis-Hastings
+Algoritmo Needleman-Wunsch
+AlmaLinux
+AMD K6-III
+Amoeba
+Antergos
+Apache Spark
+Apple A14 Bionic
+armazenamento em disco
+Arquivador de arquivos
+Ataque do aniversário
+Ataque Smurf
+AV1
+barra de endereço
+Bazaar
+Beagleboard
+Behavior Driven Development
+Biblioteca Científica GNU
+Blaster
+Brew
+Carbon
+Code Red
+ColorOS
+Compilador de compilador
+Crivo de Atkin
+CSMA/CA
+DBSCAN
+DD-WRT
+DDR5 SDRAM
+Deep learning super sampling
+Devuan
+Display VFD
+DreamLinux
+Espionagem cibernética
+Fator integrante
+Flame
+Fluxo de transporte MPEG
+FTPS
+GD-ROM
+GDDR
+Gestão de ativos digitais
+head-mounted display
+HomePod Mini
+HSM
+Icon
+Id Tech 5
+ID3
+INI
+Interpolação bilinear
+interpreter
+JPEG XL
+Layer 2 Tunneling Protocol
+Linguagem de Programação Combinada
+linguagem de programação dinâmica
+Luz do mundo
+matriz de Hessenberg
+matriz definida positiva
+matriz inversa
+Matriz Laplaciana
+memória de vídeo
+Mesa
+Metafont
+Microsoft XNA
+monitor
+MonoDevelop
+Motorola 6809
+Motorola 680x0
+Netfilter
+Nim
+Nura
+OpenEXR
+Ovelhas e Bodes
+Padrão Sagan
+Printer Command Language
+PulseAudio
+Pure Data
+REDengine
+regra de quadratura gaussiana
+Remix OS
+Revision Control System
+Robot Operating System
+Sasser
+scareware
+SDH
+sequestro de sessão
+Servo
+shading
+sistema de biblioteca integrada
+Small Web Format
+sobrecarga de método
+SOCKS
+Solidity
+Soma de Cesàro
+StrongARM
+Teste de primalidade AKS
+Tk Toolkit
+Truevision TGA
+Visual J++
+VOB
+Windows Embedded
+Windows Server 2025
+WinFS
+Xine
+XSL-FO
+Algoritmo de De Casteljau
+Algoritmo de Deutsch-Jozsa
+Algoritmo de Peterson
+Algoritmo de Smith-Waterman
+AMD K6-2
+Apple A15 Bionic
+Apple Cinema Display
+Apple M4
+Arc
+arquivo de torrent
+Árvore B+
+AspectJ
+AutoLISP
+AVCHD
+Back Orifice
+biblioteca JavaScript
+BlackArch Linux
+Broadwell
+Business Process Execution Language
+cadeado
+Ceylon
+Cifra ADFGVX
+cifra maçónica
+Codificação estatística
+coerência de cache
+Coinmarketcap
+Contiki
+criptoanálise diferencial
+D3.js
+Daydream
+Decima
+DEFLATE
+DesktopBSD
+Direct Connect
+Elive
+Elm
+Emacs Lisp
+Fieldbus
+filtragem colaborativa
+Finger
+FLTK
+formato de filme
+FRAM
+FreeType
+FUSE
+Game Maker Language
+Garuda OS
+GDDR5
+Geography Markup Language
+HDV
+Heap binomial
+Hierarchical File System
+HTTP/3
+IBM POWER
+iMac G4
+Ingres
+instrução
+Internet Explorer Mobile
+Inversão de controle
+iPhone 17e
+JFS
+Kaby Lake
+KIM-1
+Limbo
+linguagem de programação multiparadigma
+LXC
+LZMA
+M0n0wall
+macOS Sequoia
+Magic Trackpad
+Mali
+Mapa de bits
+Matriz de Confusão
+matriz diagonalizável
+matrizes gama
+Meta-heurística
+MetaPost
+Método de Burrows-Wheeler
+MGCP
+modelo de fundação
+Modo de operação
+Motif
+Motor de software
+Nintendo DS Browser
+NUbuntu
+OmniWeb
+OpenGL ES
+painel IPS
+Peppermint Linux OS
+Plataforma S60
+Portlet
+programação
+Protocolos AAA
+Protocolos de coerência
+PSPad
+Raku
+RealAudio
+Redmine
+redução
+REPL
+S-VHS
+separação de conceitos
+Series 40
+SHA-3
+SharpDevelop
+Singularity
+Sistema operacional em disco
+Sneakernet
+Soundex
+SparkyLinux
+SPDY
+SuperH
+TiddlyWiki
+Tox
+Ubuntu Budgie
+UnixWare
+web cache
+Web Server Gateway Interface
+webpack
+Windows Server 2012 R2
+Zen 2
+Zeroconf
+3-D Secure
+A/UX
+Acid1
+Active record
+adaptador de host
+ADO.NET
+agrupamento hierárquico
+AIML
+algoritmo de Boruvka
+Algoritmo de Las Vegas
+Algoritmo do pintor
+Algoritmo DPLL
+algoritmo para encontrar raiz
+Allegro
+Android Go
+aptosid
+Arora
+Árvore 2-3
+Asahi Linux
+AVIF
+Beamer
+Berkeley DB
+Bit array
+Blitz Basic
+Bluejacking
+CHM
+Cifra de Hill
+CKEditor
+code injection
+Codificação de Vídeo Versátil
+Coffee Lake
+Confluente
+Contando o Custo
+CORS
+CouchDB
+Creeper
+Cross-origin resource sharing
+CRUX
+Cursor
+Debian GNU/Hurd
+Delphi
+Direct Attached Storage
+EFS
+Encrypting File System
+Ethereum Classic
+Freescale DragonBall
+Generic Routing Encapsulation
+Geradores congruentes lineares
+gnome sort
+Google Apps Script
+Google File System
+HSQLDB
+illumos
+IMac G3
+Intel Arc
+Intel HD Graphics
+Intel i860
+Intel i960
+interior gateway protocol
+Interpolação polinomial
+iPad mini 4
+IPhone 6 Plus
+Irrlicht
+IW Engine
+Java Persistence API
+Java/Introdução às classes
+JDeveloper
+Kile
+KVCD
+LibreWolf
+M3U
+Matriz CKM
+matriz de Hankel
+matriz de Hilbert
+Memória estendida
+Microsoft BASIC
+Microsoft cabinet file
+Mini DVD
+Minimo
+Modula
+Multiple-image Network Graphics
+NetLogo
+NIS
+One wire
+OpenIndiana
+OpenVZ
+Parábola do Servo Inútil
+pesquisa tabu
+pipeline
+PlayStation Camera
+PlayStation Eye
+PlayStation VR2
+Preenchimento por inundação
+Presto
+Profiling
+Programação literária
+PTP
+Relação sinal-ruído de pico
+Replicant
+Schema.org
+scikit-learn
+SCO UNIX
+Serpent
+SLS Linux
+SO-DIMM
+Software gerenciador de referências
+Standard Widget Toolkit
+SuperCollider
+System 7
+tabela de página
+Tecla morta
+Tru64 UNIX
+Turbo C
+Turbo C++
+TWAIN
+TWRP
+Ubuntu GNOME
+Ubuntu Mobile
+Ututo
+visionOS
+volante
+WebAuthn
+Whonix
+Wi-Fi Direct
+Windows Metafile
+Wolfram
+XBRL
+XCF
+XGBoost
+XML-RPC
+μClinux
+4DX
+ADO.NET Entity Framework
+Adobe FrameMaker
+Algorand
+Algoritmo C4.5
+Algoritmo de Edmonds-Karp
+Algoritmo de Gauss-Newton
+Algoritmo de Johnson
+Algoritmo de Quine-McCluskey
+algoritmo de seleção
+AMD FX
+AMOS
+Amostragem de Gibbs
+Analisador sintático LL
+análise de componentes independentes
+analogia hidráulica
+any key
+APM
+Apple A16
+Apple File System
+ArchBang
+Árvore k-d
+Árvores R
+automação de compilação
+Banana Pi
+banco de dados objeto-relacional
+BLEU
+Blum Blum Shub
+Bullet
+CachyOS
+Caml
+Chakra Linux
+Cisco Discovery Protocol
+CLIPS
+controlador
+CTSS
+DECnet
+Dirac
+Discurso sobre julgamentos
+Discurso sobre os julgamentos
+Display emissor de campo
+Dojo
+Dolby TrueHD
+DualDisc
+editor de partitura
+ELinks
+email spoofing
+Envenenamento de DNS
+EPYC
+Errno.h
+esquema estrela
+estratégia de jogador
+Extensible Metadata Platform
+Família MacBook
+FreeSBIE
+Game Boy Player
+Gamebryo
+GeForce 3
+GLib
+Grails
+GRASP
+HEIF
+HFS+
+HLSL
+id Tech 4
+Informix
+Interior Gateway Routing Protocol
+iPodLinux
+Java Native Interface
+JNDI
+Kademlia
+Lazy loading
+Linguagem server-side
+Listas invertidas
+LZH
+Marching Cubes
+matriz aleatória
+matriz anti-hermitiana
+Matriz de Gram
+matriz fracamente diagonal dominante
+mecanismo de armazenamento
+Memória auxiliar
+Mercury
+microdrama
+Microsoft Macro Assembler
+Mirai
+misologia
+Modelica
+Modelo de difusão
+MoinMoin
+MPEG-1 Audio Layer II
+Musepack
+NCP
+Neo4j
+NetBEUI
+Nintendo Zapper
+Nostr
+Nova
+OpenLayers
+Paradox
+Perfurador de cartão
+PL/M
+Plataforma Universal do Windows
+PlayStation Portal
+POSIX Threads
+programação de matriz
+protocolo Signal
+Puppet
+QML
+QUIC
+R.O.B.
+ray casting
+RealMedia
+Redox
+ReFS
+Rekonq
+Rockbox
+router sem fios
+RRDTool
+runtime type information
+Scanner Access Now Easy
+Self
+Sequestro de navegador
+sistema de arquivos virtual
+Soquete de domínio Unix
+SpiderMonkey
+Spyder
+SQL Slammer
+SQLAlchemy
+SyncML
+TECO
+teoria hebbiana
+TKIP
+TurboGears
+TWiki
+UUE
+Vector Linux
+Vetor distância
+VMU
+Windows Home Server 2011
+XML Paper Specification
+ZIM
+Algoritmo de Aho-Corasick
+algoritmo de Briot-Ruffini
+Algoritmo de Christofides
+Algoritmo de Levenberg-Marquardt
+Algoritmo XOR Swap
+Amazon Dynamo
+Apache Cocoon
+Apple A8X
+Apple DOS
+Apple Filing Protocol
+Apple iPad
+Apple ProDOS
+Arachne
+assistente
+AtheOS
+Audio Codec 97
+aumento de gradiente
+Autoconf
+BACnet
+best-first search
+BETA
+Blazor
+BonziBuddy
+Branch e bound
+C++/CLI
+cifra polialfabética
+CodeLite
+Controle do PlayStation
+Coq
+CoreOS
+Crystal
+Csound
+Customer Premises Equipment
+Debian Edu
+Debian GNU/kFreeBSD
+demonstração construtiva
+Destilação de conhecimento
+diferenciação numérica
+Divisão por tentativa
+DOT
+Dot matrix display
+EComStation
+EGO
+Elk Cloner
+Emmabuntüs
+EOS.IO
+Euphoria
+Exame de Graham
+ExtJS
+extrapolação de Richardson
+FOAF
+Foresight Linux
+Formato FASTA
+Fórmula BBP
+Game Boy Printer
+General MIDI
+GNU Guile
+GoboLinux
+GRPC
+Home Assistant
+Impressora de sublimação
+IMS DC
+Inform
+Integração de Monte Carlo
+Intel iAPX 432
+Internet Explorer 5
+interpretador de comandos
+iPad 7
+iPadOS 26
+Jovial
+Joy-Con
+KIO
+Kylin
+LADSPA
+Lean
+LibreOffice Base
+LuaTeX
+Lunascape
+LynxOS
+Material Exchange Format
+matriz de Hurwitz
+matriz de Sylvester
+Microfone sem fio
+Microsoft Management Console
+Microsoft Midori
+Mini CD
+Mixi
+mock object
+Mozilla Firefox 4
+Mythbuntu
+NetSurf
+OAI-PMH
+Oculus Quest 2
+Odd-even sort
+OSGi
+Padrão de arquitetura
+Panda
+Perfil de cores ICC
+Perl Compatible Regular Expressions
+Piet
+Ping flood
+Poppler
+Power Mac G4 Cube
+Power Macintosh G4
+PowerBuilder
+programação orientada a agentes
+PureOS
+Quake III engine
+Quanta Plus
+raiz quadrada inversa rápida
+RDF Schema
+reStructuredText
+Return-oriented programming
+ROOT
+sampleamento de imagem
+Scintilla
+Scrypt
+SerenityOS
+Session description protocol
+shortest job first
+Sistema de acesso condicional
+Sixaxis
+SJF
+SquashFS
+stdio.h
+Stream Processing/Processador de Fluxo
+Syslog
+SystemRescueCD
+tabela de partição
+thread safety
+TikiWiki
+Transcodificação
+UClibc
+Upscaling
+variable bitrate
+VC-1
+Visual Component Library
+VoiceXML
+VoWLAN
+Web
+Windows Embedded CE 6.0
+XZ Utils backdoor
+Zstandard
+ActiveX Data Objects
+Advanced Message Queuing Protocol
+alavanca analógica
+Algoritmo de Tomasulo
+Algoritmo embrulho para presente
+ALT Linux
+Alto-falante de PC
+Analisador sintático LR
+Android Automotive
+Apple A19
+Apple earbuds
+Apple M5
+array de sufixos
+Árvore 2-3-4
+AsciiDoc
+Avast SafeZone Browser
+Backplane
+BASIC Stamp
+BigTable
+BitKeeper
+Box2D
+BSON
+C-HTML
+CalDAV
+cifra afim
+Clean
+Comodo Dragon
+CORDIC
+Correção de Bonferroni
+corretor gramatical
+Creation Engine
+Crystal Space
+Cyc
+DarkBASIC
+DCOM
+Delay-tolerant networking
+DirectShow
+Disco óptico da Nintendo
+Dynamic time warping
+EasyPeasy
+Ember.js
+estratégia de avaliação
+Exterior Gateway Protocol
+FastTrack
+Filtro bayesiano
+Fontes PostScript
+GDDR4
+GDDR6
+GLUT
+GNU Classpath
+GNU TeXmacs
+Google Jamboard
+Green Ethernet
+HarfBuzz
+Heurística da representatividade
+iCalendar
+Injeção de prompt
+Intel MCS-48
+Interactive Data Language
+Internet Explorer 1
+Internet Explorer 2
+interpolação por spline
+inversa generalizada
+ISAPI
+Java Management Extensions
+JBuilder
+Jinja
+Joliet
+JSON-LD
+KaOS
+Kexi
+LIFO
+Lyric
+Majorana 1
+matriz companheira
+MD2
+Media Transfer Protocol
+Memória racetrack
+Mersenne Twister
+Meta Quest 3
+método do gradiente conjugado
+método dos volumes finitos
+Multiplicação por duplicação
+MUMPS
+MusicXML
+MVS
+Nike+iPod
+Notepad2
+NTLM
+NVIDIA Cg
+Olho por olho
+OpenFlow
+OpenMandriva
+OpenNLP
+OpenSearch
+Opera GX
+OTR
+Overhead
+Pentoo
+Pico
+Pike
+PowerPC G4
+Programação quântica
+Protocol Buffers
+Protocolo de Needham-Schroeder
+Puffin Browser
+PureBasic
+Qt Creator
+Quake II engine
+RAM-CMOS
+RE Engine
+Real Time Messaging Protocol
+Regin
+ReRAM
+Ricoh 2A03
+RIPEMD
+Sabily
+scanner de vulnerabilidades
+SFML
+Sleipnir
+software de genealogia
+Steam Controller
+tabela de símbolos
+TACACS
+Tailwind CSS
+Texmaker
+Text Encoding Initiative
+TinyMCE
+TOML
+TOS
+Turbolinux
+Ultrix
+unidade de processamento acelerado
+Unreal Engine 5
+VHS-C
+VMware ESXi
+Wavpack
+Web2py
+Wii Balance Board
+Wii U GamePad
+Windows Media
+write once read many
+Xeon Phi
+Xlib
+Zeus
+ZX Microdrive
+.htpasswd
+.NET Compact Framework
+10BASE-T
+3D XPoint
+agregação bootstrap
+Algoritmo Schönhage-Strassen
+Amazon Silk
+AMS-LaTeX
+Android Things
+Apache Derby
+Apache Wicket
+Apple A18
+aritmética de precisão arbitrária
+ARM Cortex-A8
+Artix Linux
+assert.h
+Atari Jaguar CD
+Autenticação por dois fatores
+Azure Linux
+Biblioteca de fitas
+Bionic
+BioPython
+Blockly
+Build Engine
+camada de compatibilidade
+CD Video
+CD+G
+CD-Text
+Cifras de Beale
+Cinepak
+codec de áudio
+código de três endereços
+coeficientes a determinar
+CryptoNote
+CSPRNG
+Cue
+Curry
+Curva elíptica Diffie-Hellman
+Customer Information Control System
+Datalog
+DHCPv6
+diferença dividida
+Direct Rendering Infrastructure
+DK Bongos
+DLL injection
+DRAKON
+Edlin
+eliminação de Gauss-Jordan
+F2FS
+Factor
+FictionBook
+FlexRay
+Font Awesome
+Force touch
+Formato FASTQ
+fórmula do cadarço
+FoxPro
+GeoTIFF
+GNU Multi-Precision Library
+GNU readline
+Google Cast
+Gtkmm
+HBase
+Hugo
+IAd
+IMUSE
+Indeo
+Initrd
+Internet Explorer 3
+Internet Explorer 4
+interpolação de Hermite
+intro sort
+iPadOS 13
+IPv5
+JavaCC
+Jekyll
+Kanotix
+Karel
+Kivy
+KTurtle
+LAPACK
+LibreSSL
+Ligação dinâmica
+linguagem baseada em objetos
+LonWorks
+luva virtual
+Maclisp
+MapServer
+Matriz banda
+matriz circulante
+matriz de Cartan
+Matriz GE
+matriz unimodular
+Max
+método de Trachtenberg
+MHTML
+Michelangelo
+microfone de eletreto
+Microsoft Forefront
+MidnightBSD
+Model-view-viewmodel
+Modula-3
+Mojo
+Mozilla Firefox 3
+Mp3PRO
+Musix
+NDISwrapper
+Nuxt.js
+Oculus
+OpenMediaVault
+OpenOffice Basic
+Ouriço
+Parábola do Homem Valente
+Paranoid Android
+Parted Magic
+Phonon
+PHP-GTK
+PHPUnit
+Pirâmide de aprendizagem
+PlayStation 3 system software
+PmWiki
+Podman
+Power Glove
+POWER5
+PowerBASIC
+PRIAM
+Programação em Lógica Indutiva
+Protocolo HART
+protocolo sem estado
+Q4OS
+Research Unix
+Rhapsody
+Rhino
+RONJA
+Secure Electronic Transaction
+Shiira
+Shovelware
+Sistema Operacional Distribuído
+Snowdrop
+software criptográfico
+Stick PC
+Stooge Sort
+SunOS
+Texinfo
+Thread pool
+TMPFS
+TOPS-20
+Turbo Basic
+Twig
+UCSD Pascal
+UML Actor
+UML Ator
+Unidade Jaz
+Unreal Engine 4
+vinculação de nomes
+Vite
+WebSphere Application Server
+Windows 10X
+Windows HPC Server 2008
+Windows Internet Name Service
+Windows MultiPoint Server
+XEmacs
+Yii
+YubiKey
+Zen
+Zeta
+Zypper
+Adventure Game Studio
+algoritmo de Risch
+Algoritmo de Thompson
+Algoritmo Earley
+Analisador sintático descendente recursivo
+Apache Hive
+aplicação de console
+Apple A6X
+Apple IIe
+Apple ProRes
+aprendizagem semissupervisionada
+Armazenamento em ADN
+Armazenamento em DNA
+ataque de temporização
+Avaliação de curto-circuito
+B.A.T.M.A.N.
+BackBox
+Bitcoin Gold
+BlackBerry PlayBook OS
+BLISS
+BlueJ
+Broadway
+Brotli
+Cabo Game Link
+CalyxOS
+Camellia
+CAST5
+CBC-MAC
+CBHD
+Clear Linux
+CLISP
+Coda
+Código Bacon
+COMAL
+Common Lisp Object System
+complemento de Schur
+Conector RJ45
+Conectores RJ45
+ConTeXt
+Copland
+Correcção de Bessel
+ctype.h
+DES-X
+Direct Rendering Manager
+DIX
+DVD+R DL
+Dynamic Kernel Module Support
+eCos
+EdgeHTML
+Enhanced Versatile Disc
+EPOC
+estrutura de dados persistente
+extração de características
+Fastboot
+fator de anomalia local
+File Allocation Table 32-bit
+Flow-Matic
+Frameworks CSS
+FreedomBox
+Freespire
+GBA-to-Gamecube cable
+GD Graphics Library
+Glide
+Goanna
+Google Antigravity
+Graphite
+GUMI
+Hamlets
+High Level Assembly
+ImageJ
+indexação na web
+Integer BASIC
+Interação de configurações
+iPadOS 18
+IPhone 7 Plus
+Janela modal
+Java Transaction API
+Joe
+JOGL
+Kaito
+Kazehakase
+KDE Frameworks
+KPart
+Krait
+LAPB
+Libavcodec
+libvirt
+libxml2
+LiMux
+Linux Bazzite
+localStorage
+Lustre
+macOS Golden Gate
+matriz centrossimétrica
+matriz de Cauchy
+matriz de distâncias
+MEMZ
+Meteor
+MkLinux
+Model-view-presenter
+MT9
+NEC V20
+NetFront
+Nutch
+Ollama
+OmniROM
+OpenMosix
+OPNsense
+Org-mode
+OStatus
+pacote de software
+Padrão de publicação-assinatura
+Parsix
+PhpStorm
+pluggable authentication modules
+PowerPC G3
+processador de modelo
+Procfs
+programação reativa
+prova por exaustão
+PS2 Linux
+Query by Example
+RANSAC
+Recozimento quântico
+Redução em tempo polinomial
+Refractor Engine
+registador de índice
+registrador de índice
+Replit
+ROSA Linux
+Sad Satan
+SDRAM GDDR7
+sessionStorage
+Shadow map
+Shakespeare
+SilverStripe
+Sinatra
+Sinclair BASIC
+Sistema R
+SQL Server Management Studio
+Sticky bit
+Super NES Mouse
+SxS
+tecla Fn
+Teclado alfanumérico
+TextMate
+TeXworks
+Three.js
+Timsort
+token bucket
+TOPS-10
+Transformer de Visão
+TV de LCD
+UltraSPARC
+Underscore.js
+Unix versão 7
+Unreal Engine 3
+Verge3D
+Vfat
+Video wall
+VP7
+Web Feature Service
+Windows CE 5.0
+Windows Driver Model
+Windows Embedded Compact 7
+Wiper
+XBL
+Xenon
+XLIFF
+XWiki
+Yocto
+Yoper
+YUI Library
+Zachman Framework
+acionador de disco
+Active Template Library
+AdaBoost
+Adaptive Server Enterprise
+ADAT
+Agda
+alfabeto tebano
+Algoritmo apriori
+Algoritmo de Baum-Welch
+algoritmo de Chudnovsky
+algoritmo de Fisher-Yates
+Algoritmo de Hopcroft-Karp
+algoritmo de Markov
+algoritmo de thomas
+algoritmo não determinístico
+algoritmos de multiplicação
+Aluminium OS
+AMV
+Android App Bundle
+AODV
+Apache Portable Runtime
+Apple A5X
+Apple Studio Display
+Apple Watch Ultra
+appliance
+aprendizagem ativa
+Arduino IDE
+ARM Cortex-M
+aRts
+Asianux
+Assinatura de Schnorr
+assistente de prova
+AsteroidOS
+Asymptote
+ATL
+Banco de Dados Temporais
+Barabási-Albert model
+Be File System
+BFS
+Blender Game Engine
+Canaima
+Chord
+Cifra
+ClearOS
+cliente de mensagens instantâneas
+cliente FTP
+Cobra
+COLLADA
+Commodore BASIC
+Cosmos
+Crivo de Sundaram
+Cross-browser
+Culpa coletiva alemã
+DAAP
+Deeplearning4j
+Despacho múltiplo

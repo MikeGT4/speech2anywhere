@@ -1,0 +1,3000 @@
+Linux
+besturingssysteem
+HyperText Markup Language
+Ubuntu
+Windows
+videospel
+PHP
+programmeertaal
+Python
+JavaScript
+Mozilla Firefox
+Java
+Android
+webbrowser
+bitcoin
+C++
+MediaWiki
+Cascading Style Sheets
+harde schijf
+toetsenbord
+Unicode
+iPhone
+Unix
+centrale verwerkingseenheid
+CPU
+programmeren
+vrije software
+C Sharp
+CSharp
+printer
+microfoon
+compact disc
+wi-Fi
+macOS
+SQL
+RAM
+random-access memory
+computervirus
+Debian
+iOS
+computerbeeldscherm
+Perl
+compiler
+Windows 7
+Bluetooth
+moederbord
+Ruby
+XML
+Pascal
+PDF
+Portable Document Format
+blockchain
+MS-DOS
+Windows 10
+Windows Internet Explorer
+Windows XP
+Hypertext Transfer Protocol
+mobiele app
+BASIC
+LaTeX
+Lua
+Windows Vista
+objectgeoriënteerd programmeren
+Apple Macintosh
+applicatie
+Domain Name System
+iPad
+Monero
+Visual Basic
+Fortran
+ASCII
+Opera
+Windows 8
+IPod
+TCP/IP
+USB-stick
+assembleertaal
+scanner
+Git
+MySQL
+Windows 11
+IP-telefonie
+microprocessor
+blu-ray
+File Transfer Protocol
+GNU
+aanraakscherm
+malware
+phishing
+COBOL
+diskette
+Ethernet
+GitHub
+internetprotocol
+Lisp
+MATLAB
+Ockhams scheermes
+Windows 95
+Internet Relay Chat
+MP3
+Safari
+Ada
+Hello world
+antivirussoftware
+machinetaal
+Really Simple Syndication
+Arduino
+Scalable Vector Graphics
+videokaart
+Windows 98
+Fedora Linux
+Linux Mint
+Liquid crystal display
+tekstverwerker
+Berkeley Software Distribution
+FreeBSD
+Transmission Control Protocol
+Windows Phone
+application programming interface
+deep learning
+Ethereum
+Litecoin
+Win2K
+big data
+korte film
+Microsoft Edge
+webserver
+BIOS
+GIF
+Haskell
+reguliere expressie
+.NET Framework
+Linuxdistributie
+Symbian
+afstandsbediening
+BitTorrent
+Golang
+randapparaat
+Raspberry Pi
+Vim
+Mac-besturingssysteem
+Prolog
+spreadsheet
+trojaans paard
+Windows ME
+Adobe Flash
+bestandssysteem
+computergeheugen
+Flash
+GPU
+Tor
+zeef van Eratosthenes
+ARPANET
+firmware
+flashgeheugen
+Google+
+High-Definition Multimedia Interface
+Internet Protocol versie 6
+interpreter
+iPhone 5
+Rust
+Windows 1.0
+Algoritme van Euclides
+Extensible HyperText Markup Language
+HTML5
+HyperText Transfer Protocol Secure
+microcontroller
+OpenBSD
+Scratch
+VHS
+analogie
+DOS
+Microsoft Office Access
+Microsoft Visual Studio
+parabel
+ransomware
+Solaris
+solid-state drive
+Arch Linux
+ASP.NET
+computerworm
+databasemanagementsysteem
+Internetbot
+Kotlin
+Kubuntu
+Caesarcijfer
+denial-of-service
+intern geheugen
+joystick
+spyware
+Apple Watch
+contentmanagementsysteem
+OpenGL
+optical character recognition
+ponskaart
+Portable Network Graphics
+Simple Mail Transfer Protocol
+stuurprogramma
+Dogecoin
+Google Chrome OS
+Secure Shell
+sorteeralgoritme
+Telnet
+User Datagram Protocol
+Engine
+geluidskaart
+Gentoo Linux
+heuristiek
+Netwerkkaart
+rasterafbeelding
+teksteditor
+Windows 2.0
+Windows NT
+Algol
+Dynamic Host Configuration Protocol
+Eclipse
+functioneel programmeren
+hashfunctie
+iPhone 5s
+jQuery
+JSON
+Node.js
+parallelle computer
+PostgreSQL
+proxyserver
+quicksort
+scripttaal
+Swift
+Unity
+verloren zoon
+webapplicatie
+Apache Subversion
+integrated development environment
+iPhone 4S
+iPhone 7
+Microsoft DirectX
+Monte-Carlosimulatie
+Oracle Database
+Slackware Linux
+Unreal Engine
+Visual Basic .NET
+bubblesort
+Chromium
+digitale handtekening
+ethernethub
+formele taal
+Google Glass
+IMAX
+Internet Protocol versie 4
+Knoppix
+Windows 8.1
+ActionScript
+agile-software-ontwikkeling
+Dijkstra's algoritme
+MacBook Pro
+optische schijf
+Windows Server 2003
+BeOS
+chipset
+Gauss-eliminatie
+gestructureerd programmeren
+Internet Message Access Protocol
+MacBook Air
+Near field communication
+ontwerppatroon
+plug-in
+Scheme
+TeX
+Transport Layer Security
+Advanced Encryption Standard
+AWK
+desktopomgeving
+Emacs
+genetisch algoritme
+GNU Octave
+interpolatie
+iPhone 4
+iPhone 6
+iPhone X
+Mandriva Linux
+Apple TV
+Brave
+computerbibliotheek
+Data Encryption Standard
+dichotomie
+Docker
+eenheidsmatrix
+iMac
+POSIX
+React
+Smalltalk
+systeemsoftware
+Active Server Pages
+Address Resolution Protocol
+Brainfuck
+directory
+imperatief programmeren
+iPhone 5C
+Kali Linux
+Logo
+mergesort
+Netscape Navigator
+Notepad++
+Objective-C
+openSUSE
+plasmascherm
+Scala
+Windows Mobile
+Adobe Acrobat
+APL
+Barmhartige Samaritaan
+Google Talk
+grafisch tableau
+GTK
+Hd dvd
+iPhone 3GS
+Konqueror
+Minix
+subprogramma
+debugger
+Dynamic random-access memory
+emulator
+hashtabel
+iPhone 3G
+iPod Touch
+MD5
+programmable logic controller
+Windows NT 4.0
+beeldweergaveapparaat
+Bootstrap
+gelijkenis van Jezus
+GNU/Linux
+Internet Control Message Protocol
+iPhone 6S
+Lubuntu
+NetBSD
+Notepad
+Ogg
+OpenDocument
+plotter
+registergeheugen
+rootkit
+SMILES
+Tcl
+Bitcoin Cash
+computervoeding
+Django
+Document Object Model
+DOM
+Haiku
+Huggle
+Insertion sort
+invoerapparaat
+Jabber
+laserprinter
+methode van Newton-Raphson
+model-view-controller
+New Technology File System
+processor
+ReactOS
+Selection sort
+semantisch web
+spellingcontrole
+token ring
+Unixachtig besturingssysteem
+Windows Server 2008
+XMPP
+Xubuntu
+CentOS
+computerproces
+Extensible Stylesheet Language Transformations
+File Allocation Table
+gelinkte lijst
+Mathematica
+Microsoft SQL Server
+OS/2
+PageRank
+Red Hat Linux
+Regel van Cramer
+Session Initiation Protocol
+Simple Network Management Protocol
+supervised learning
+touchpad
+TypeScript
+Visual Studio Code
+Windows 3.0
+Common Gateway Interface
+CP/M
+EPUB
+gateway
+gezichtsherkenningssysteem
+iPhone 8
+keylogger
+Levenshteinafstand
+Manjaro
+Open Shortest Path First
+Pentium
+reinforcement learning
+Schaal van Kardasjev
+ZIP
+Apache NetBeans
+binaire boom
+computerkast
+computerterminal
+Godot
+Google Meet
+iPhone SE
+Lightweight Directory Access Protocol
+MacBook
+mobiel besturingssyteem
+phpMyAdmin
+PostScript
+Red Hat Enterprise Linux
+SQL-injectie
+vierkante matrix
+wikitekst
+Wireless Application Protocol
+Xcas
+Adobe Flash Player
+Deepin
+dynamisch programmeren
+elektronisch papier
+elementary OS
+Extreme programming
+FreeDOS
+insteekkaart
+IPhone 11
+JavaServer Pages
+MPEG-4 Part 14
+multifactorauthenticatie
+NoSQL
+partiële integratie
+PowerShell
+Standard Generalized Markup Language
+Stuxnet
+Tagged Image File
+VBScript
+Windows 10 Mobile
+Android Nougat
+Android Studio
+Apple Vision Pro
+Cardano
+construeren
+debuggen
+depth-first search
+digitale signaalprocessor
+Erlang
+framework
+gamepad
+Gecko
+getransponeerde matrix
+Google Hangouts
+iPhone 12
+lichtpen
+live-cd
+Lynx
+Markdown
+middleware
+MongoDB
+netwerkbridge
+Ocaml
+Programmable read-only memory
+Puppy Linux
+Routing Information Protocol
+SOAP
+symmetrische cryptografie
+text file
+Vue.js
+watchOS
+WebM
+wireless access point
+Apple II-familie
+BMP
+Border Gateway Protocol
+breadth-first search
+case study
+Clojure
+Cygwin
+Ecosia
+Extensible Firmware Interface
+FLAC
+Forth
+GNU/Hurd
+HarmonyOS
+hydrofoon
+inkapseling
+iPhone 15
+MIUI
+Mosaic
+Network Time Protocol
+Pegasus
+Pentium 4
+seriële poort
+Source engine
+Spring Framework
+SQLite
+Static random-access memory
+symmetrische matrix
+ultra-high-definition television
+vibe coding
+Vivaldi
+Android Marshmallow
+Android Oreo
+binaire zoekboom
+chiffre
+computus paschalis
+Damn Small Linux
+Dart
+Delphi
+Eiffel
+eindige-elementenmethode
+Firefox OS
+ILOVEYOU
+IPsec
+mediaspeler
+numerieke integratie
+onderhoudssoftware
+Opera Mini
+PowerPC
+Qualcomm Snapdragon
+raytracing
+service-oriëntatie
+Standard Template Library
+TensorFlow
+WebKit
+Android 12
+bestandsbeheerder
+cd-video
+diagonaalmatrix
+digitaal schoolbord
+driehoeksmatrix
+fiber distributed data interface
+Flutter
+Google Sites
+grafisch programma
+Groovy
+heapsort
+Huffmancodering
+inkjetprinter
+iPad 2
+iPhone 14
+iPhone 17
+iPhone XR
+iPhone XS
+jailbreak
+Java 2 Enterprise Edition
+kantoorsoftwarepakket
+LineageOS
+Matroska
+Maxthon
+Network News Transfer Protocol
+Point-to-Point Protocol
+Samba
+SeaMonkey
+SPARQL
+Windows 9x
+Windows CE
+Windows Server 2012
+ABAP
+Android Lollipop
+Betamax
+bootloader
+brute force
+Celeron
+CUDA
+deelbaarheidsregel
+DjVu
+driedeling van de hoek
+Gambas
+GeForce
+Gelijkenis van de zaaier
+Google Wave
+iPhone 13
+iPod nano
+Julia
+klavier
+layout-engine
+logisch programmeren
+MariaDB
+Ogg Vorbis
+OpenSolaris
+OpenSSL
+PL/1
+procedurele programmering
+Realtime Transport Protocol
+Ripple
+Simula
+SliTaz
+trackball
+Verdeel-en-heers-algoritme
+Vigenèrecijfer
+Windows NT 3.1
+Android 13
+batchbestand
+bemonstering
+bisectiemethode
+collaborative software
+Common Lisp
+Concurrent Versions System
+CyanogenMod
+deadlock
+declaratieve taal
+Dynamically Linked Library
+Edubuntu
+Gopher
+Gram-schmidtmethode
+Intel Atom
+Intel Core
+Intel Core 2
+iPadOS
+IPhone 11 Pro
+iPhone SE 2
+iPhone SE 2020
+iPod shuffle
+Java Development Kit
+Laravel
+Mac Pro
+Maple
+ontologie
+Pauli-matrix
+PyTorch
+reactiemechanisme
+realtimebesturingssysteem
+rood-zwartboom
+zero-day attack
+Zorin OS
+AmigaOS
+Android TV
+Audio Video Interleave
+control flow
+Cyclic redundancy check
+DDR SDRAM
+Diffie-Hellman-sleuteluitwisselingsprotocol
+DualShock
+Dynamic HTML
+integratie door substitutie
+iPhone 12 Pro
+iPhone 16
+Itanium
+Kinect
+MPEG-4
+Multiprotocol Label Switching
+netwerkhardware
+nulmatrix
+OpenVMS
+Pentium II
+Pentium III
+presentatiesoftware
+QuickTime
+simplexmethode
+singleton
+smart contract
+software development kit
+Stable Diffusion
+SuSE Linux
+Turbo Pascal
+uitvoerapparaat
+unitaire matrix
+venster
+Video-cd
+WAV
+Wi-Fi Protected Access
+Wii-afstandsbediening
+Windows Server
+XPath
+AirPods
+barcodescanner
+BCPL
+bogenmatrix
+Complex geconjugeerde matrix
+CPU cache
+DragonFly BSD
+esoterische programmeertaal
+Frame relay
+greedy algorithm
+hermitische matrix
+iPad Mini
+Jacobi-matrix
+Kalman-filter
+man-in-the-middle-aanval
+MeeGo
+memory management unit
+Mercurial
+Multics
+multiplatform
+Network File System
+pakketbeheer
+PCLinuxOS
+perceptron
+PL/SQL
+Post office protocol
+RAR
+Red Star OS
+Rockstar Advanced Game Engine
+Runge-Kuttamethode
+Scilab
+storage area network
+Super audio compact disc
+support vector machine
+teleprompter
+Trisquel
+Windows API
+Xeon
+zoekalgoritme
+ABC
+afschrikking
+AIX
+Algoritme van Shor
+Alt
+Android 14
+AngularJS
+APK
+Apple M1
+beeldscherm
+CompactFlash
+Exchangeable Image File Format
+exploit
+flatscreen
+Flock
+GameMaker
+genericiteit
+GNOME Web
+hypervisor
+I2C-bus
+IC-bus
+iPhone 13 Pro
+iPhone 15 Pro
+kommagescheiden bestand
+KVM-switch
+Michaelis-Menten-vergelijking
+Morris-worm
+MPEG-4 AVC
+MPEG4-AVC
+Object Pascal
+one-time pad
+orthogonale matrix
+PalmOS
+penning
+QBasic
+singleboardcomputer
+spelbesturingsapparaat
+SteamOS
+Sublime Text
+substitutieversleuteling
+Tizen
+Universal Media Disc
+Windows 3.1x
+Windows FLP
+Windows Home Server
+Windows Neptune
+Wired Equivalent Privacy
+WorldWideWeb
+Xcode
+8051-microcontroller
+abstract datatype
+Advanced Audio Coding
+Algoritme van Prim
+Android 11
+Android Auto
+Android P
+antisymmetrische matrix
+Apache Hadoop
+Aspectgeoriënteerd programmeren
+Atom
+blokvercijfering
+Cinemascope
+cryptografische hashfunctie
+Dublin Core
+e-mailclient
+Face ID
+feedreader
+frmatie
+Gelijkenis van de talenten
+Gelijkenis van het mosterdzaad
+GNU C Library
+Google Fuchsia
+Google TV
+HomePod
+HTML-formulier
+intrusion detection system
+iOS 7
+iOS 8
+Kerberos
+lineair zoeken
+Linken
+Maemo
+Material design
+Mathematical Markup Language
+matrixprinter
+Methode van Euler
+minimax
+multikernprocessor
+Open DataBase Connectivity
+OpenID
+platform-onafhankelijke software
+Processing
+proof-of-work system
+RADIUS
+Regel van Simpson
+Register
+Representational state transfer
+REXX
+rooting
+Spanning tree protocol
+Sprite
+taakbalk
+VisiCalc
+Voronoi-diagram
+WannaCry
+Wear OS
+Windows 3.x
+Windows Phone 8
+Windows RT
+Xenix
+XQuery
+Zipdisk
+Android Jelly Bean
+Apache Ant
+Atmel AVR
+AutoIt
+Conficker
+CSMA/CD
+dBase
+Document Type Definition
+Elixir
+Extensible Stylesheet Language
+Exynos
+Flask
+geofoon
+GrapheneOS
+Hessiaan
+Hornerschema
+HTML-editor
+Internet group management protocol
+iPhone 14 Pro
+iPhone Air
+Java DataBase Connectivity
+KDevelop
+KitKat
+Latijns vierkant
+Lazarus
+Macintosh 128K
+Microsoft Silverlight
+Mono
+MPEG-1
+Pentium Pro
+Radio Data System
+recursie
+Serial Peripheral Interface
+Shellsort
+Slax
+Sora
+Standaard C-bibliotheek
+tabblad
+Ubuntu Studio
+VRML
+WebAssembly
+webOS
+wikisoftware
+Windows Server 2016
+3DES-encryptiealgoritme
+3e generatie iPhone SE
+3GP
+ActiveX
+Android 10
+assembler
+BackTrack
+BlackBerry OS
+ChEBI
+computeralgebrasysteem
+control
+cURL
+DFT
+dichtheidsfunctionaaltheorie
+DSLAM
+factory
+Farizeeër en de tollenaar
+generatief antagonistennetwerk
+GoldSrc
+Google Web Toolkit
+head-up display
+IBM DB2
+iBook
+Ice Cream Sandwich
+iOS 6
+iOS 9
+Kate
+kosmische kalender
+Kruskals algoritme
+Luhn algorithm
+Mac OS Klassiek
+Mac OS X 10.5
+Mac OS X 10.7
+MARC
+metaprogrammeren
+methode
+Novell NetWare
+OAuth
+open hardware
+OpenWrt
+PC-BSD
+Plan 9
+programma voor rasterafbeeldingen
+QNX
+radix sort
+Sega CD/Mega CD
+SHA-1
+Tails
+tapedrive
+TempleOS
+tvOS
+Ubuntu Touch
+Web Services Description Language
+WebGL
+WebP
+Whois
+Windows 2.1x
+Windows Media Audio
+ZigBee
+.htaccess
+aanwijsapparaat
+Algoritme van Bellman-Ford
+Android One
+Anjuta
+AppleScript
+associatieve array
+Bogosort
+Darwin OS
+DDR3 SDRAM
+documentmanagementsysteem
+Emotion UI
+event-driven programming
+fast Fourier transform
+FFmpeg
+floating-point unit
+FreeBASIC
+Frostbite
+Haswell
+IDLE
+iPad Air
+iPad Pro
+iPod Classic
+IRIX
+Mac OS X 10.0
+Mac OS X 10.6
+Mageia
+mobiele webbrowser
+Modulair programmeren
+Office Open XML
+OpenCV
+permutatiematrix
+Radeon
+Rich Text Format
+Sabayon Linux
+Samsung Internet
+scheduling
+Servlet
+Solana
+spiegelschrift
+Tkinter
+Toeplitz-matrix
+Trapeziumregel
+Trivial File Transfer Protocol
+UART
+Ubuntu MATE
+visuele programmeertaal
+vluchtig geheugen
+Wikibase
+Windows NT 3.5
+XHR
+XMLHTTP
+adapter
+AMD Ryzen
+Android 15
+Android 16
+Android Gingerbread
+backpropagation
+backtracking
+blokmatrix
+boekhoudprogramma
+Bourne shell
+CakePHP
+Camino
+computer-aided engineering
+Cupcake
+Decorator
+Dev-C++
+dichtheidsmatrix
+elementaire matrix
+Façade
+Geany
+gradientendaling
+hidden Markov model
+IJle matrix
+Intel Core i7
+IntelliJ IDEA
+iPhone 16 Pro
+iPhone 17 Pro
+iPhone 18 Pro
+JavaFX
+k-means clustering
+KHTML
+Mac OS 9
+Mac OS X 10.1
+Mac OS X 10.2
+Nixie
+open bestandsformaat
+OpenCL
+OpenType
+Petya
+portscan
+projectiescherm
+race condition
+random forest
+RPG Maker
+Sega 32X
+Smarty
+Swing
+Theora
+Tiny Core Linux
+USB-hub
+WebSocket
+Windows Media Video
+Windows NT 3.51
+Windows Server 2008 R2
+Wireless Markup Language
+XML Schema Definitietaal
+Yandex Browser
+zero-knowledge-proof
+Zig
+Advanced Linux Sound Architecture
+Apple A4
+Apple Pencil
+Blowfish-encryptiealgoritme
+Bluetooth low energy
+Code Blocks
+CodeIgniter
+Common Intermediate Language
+Compact Disc Digital Audio
+coprocessor
+CryEngine
+DDR2 SDRAM
+Dillo
+DRC
+dual in-line memory module
+Evernote
+Firebird
+frequentieanalyse
+G-code
+GNU Emacs
+Google Cardboard
+Google Chromium OS
+GraphQL
+hash-boom
+HP-UX
+ISO
+Java-platform
+JScript
+KolibriOS
+kopieerapparaat
+Kritieke pad
+Linspire
+logic bomb
+LoRa
+Mac OS X 10.4
+Mac OS X 10.8
+macOS 11
+Magic Mouse
+Melissa
+MenuetOS
+Midori
+Modula-2
+MPEG-H Part 2
+NeXTStep
+niet-vluchtig geheugen
+pair programming
+printerserver
+Qwant
+Raspberry Pi OS
+RAW
+Real Time Streaming Protocol
+rotatiematrix
+schermbeveiliging
+schermlezer
+SDRAM
+SHA-2
+Simulink
+SMB
+Solus
+Symfony
+System V
+time division multiple access
+Trommelgeheugen
+Vala
+vCard
+virtual reality-headset
+Visual FoxPro
+Vulkan.
+Windows Server 2019
+Windows Server 2022
+woordenlijstaanval
+XML User Interface Language
+Z File System
+zevensegmentendisplay
+ZFS
+16mm-film
+Apache Lucene
+array processor
+AutoHotkey
+beeldkrant
+Blink
+Bowen-reactiereeks
+Brain-virus
+broodkruimelnavigatie
+Commandopatroon
+cryptografisch protocol
+Deb
+Decompressiebom
+DICOM
+drukknop
+Duck-typing
+elektronisch spel
+Famicom Disk System
+Gene Ontology
+gNewSense
+Hibernate
+Hopfield-netwerk
+IBM PC DOS
+iOS 5
+IOTA
+iPhone 16e
+IPX
+JAR
+K-Meleon
+KaiOS
+Keyhole Markup Language
+Linux Lite
+Luanti
+Luie evaluatie
+Mac OS X 10.3
+MacBook Neo
+microSD
+Modular Audio Recognition Framework
+objectgeoriënteerde database
+Observer
+Opteron
+Opus
+Pentium M
+Phong shading
+priemgetaltest
+programmeertool
+pseudotoevalsgenerator
+PyCharm
+Redis
+reflectie
+relational database management system
+Reverse Address Resolution Protocol
+Sailfish OS
+Scientific Linux
+Shapefile
+SkyOS
+staartdeling
+superscalaire processor
+Syllable
+Tensor Processing Unit
+TrueType
+Ubuntu Kylin
+UPnP
+Xandros Desktop OS
+YAML
+35mm-film
+Acid2
+Adobe Creative Cloud
+Alpine Linux
+Amiga Research Operating System
+Atbash
+bewegingsonscherpte
+Boo
+Btrfs
+call stack
+DDR4 SDRAM
+decompiler
+Delaunay-triangulatie
+Dubbele transpositie cijfer
+DVD-Audio
+Encapsulated PostScript
+Express.js
+Extensible Application Markup Language
+functietoets
+geadjugeerde matrix
+GNU IceCat
+Honeycomb
+International Data Encryption Algorithm
+Internet Explorer 8
+Internet Explorer 9
+Internet protocol spoofing
+internetfilter
+iOS 4
+iPhone Duo
+iPhone OS 1
+iPod mini
+isomorfie van grafen
+JUnit
+kwantumalgoritme
+ledtelevisie
+Lightningnetwerk
+Macrovirus
+MEPIS
+Microsoft HoloLens
+Model Context Protocol
+Motorola 6800
+Netwerkbesturingssysteem
+Nintendo 64DD
+normale matrix
+Pale Moon
+Parrot OS
+PDF/A
+pfSense
+Phenom
+Plankalkül
+Playfaircijfer
+Post Office Protocol 3
+programmateller
+RC4
+realtimeklok
+regula falsi
+round-robin
+Sass
+ScummVM
+secant-methode
+Secure Sockets Layer
+SHA-familie
+Simple DirectMedia Layer
+Standard ML
+Stream Control Transmission Protocol
+Tegra
+TYPO3
+Vandermonde-matrix
+VAX
+Virtual Studio Technology
+VxWorks
+Waterfox
+Weka
+WordPerfect
+Zcash
+Zend Framework
+.NET Core
+AirPods Pro
+Altair BASIC
+AMD K5
+Android-x86
+Angular
+Apple proceccors
+Apple Processoren
+applicatieserver
+ARCNET
+audiobestandsformaat
+beeldbestandsformaat
+Brackets
+brailleleesregel
+Bresenham-algoritme
+Cayley-tabel
+cocktail sort
+CoffeeScript
+Component Object Model
+Container formaat
+counting sort
+cursortoets
+DEC Alpha
+decentrale autonome organisatie
+disassembler
+dvd-ram
+EBNF
+Eclair
+eindige-differentiemethode
+Fast Ethernet
+Fire OS
+gedistribueerd programmeren
+GhostBSD
+Gnutella
+Grover's algorithm
+headset
+Hex-editor
+High Bandwidth Memory
+INTERCAL
+internet socket
+iPad Air 2
+iPhone OS 3
+JavaServer Faces
+Journaling
+K-nearest neighbor algorithm
+Keras
+Kylix
+Links
+Logical link control
+Mathcad
+Matplotlib
+Matrix
+Message Passing Interface
+mierenkolonieoptimalisatie
+Motorola 68K
+MX Linux
+naive Bayes classifier
+NetBIOS
+nilpotente matrix
+Oracle Linux
+Pardus
+PlayStation Move
+Plone
+PocketStation
+pointing stick
+Portable Executable
+Proxmox
+Pywikibot
+React Native
+Retina-display
+RPG
+secure copy protocol
+Sempron
+singulierewaardenontbinding
+spoofing
+SSH File Transfer Protocol
+Strategy pattern
+Trusted Platform Module
+venstersysteem
+Video random-access memory
+Void Linux
+WebRTC
+Windows Phone 7
+Windows Phone 8.1
+XFS
+Zenwalk Linux
+accumulator
+Adobe Shockwave
+Android Donut
+AntiX
+Anvil
+Apache Struts
+Apple A10 Fusion
+Apple A5
+Apple Lossless
+Apple M2
+binaire matrix
+Bluefish
+Bodhi Linux
+C shell
+Cairo
+cluster
+COM
+covariantiematrix
+D-pad
+DECsystem
+dependency injection
+Digital Video
+DiSEqC
+distributed hash table
+DokuWiki
+Duron
+educatieve software
+electronic design automation
+eMac
+EndeavourOS
+exFAT
+Feistelcijfer
+Fibre Channel
+Flash video
+Floyd-Warshall algorithm
+Flyweight pattern
+geocode
+Gigabit Ethernet
+GNU Gettext
+Hack
+Havok
+High-Level Data Link Control
+High-Speed Uplink Packet Access
+HPIB
+HTTP/2
+incidentiematrix
+Inferno
+Intermediate System-to-Intermediate System
+Internet Explorer 10
+Internet Explorer 7
+InterPlanetary File System
+IP over Avian Carriers
+iPhone OS 2
+J sharp
+J-sharp
+KDE neon
+kleinbeeld
+Knuth-Morris-Pratt algorithm
+Kriging
+Ladderdiagram
+Language Integrated Query
+Liquid Glass
+Log4j
+lookup table
+MagSafe
+Malbolge
+MapReduce
+Microservice
+Mydoom
+Next.js
+OpenOffice.org Base
+Opera Mobile
+personeelsinformatiesysteem
+Point-to-point protocol over Ethernet
+Portable Game Notation
+Power Macintosh
+programma voor vectorafbeeldingen
+Prototype-gebaseerd programmeren
+Quake engine
+ramdrive
+Reiser File System
+Run-length encoding
+Samsung Experience
+semantisch netwerk
+simulated annealing
+stroomvercijfering
+Super Game Boy
+SYN flood
+Terminalemulator
+Trident
+Twofish-encryptiealgoritme
+Universal Disk Format
+UseModWiki
+videobewerkingssoftware
+Wallis-product
+Web Ontology Language
+WebDAV
+Windows Communication Foundation
+Windows Nashville
+Windows Presentation Foundation
+Windowstoets
+wxWidgets
+X3D
+Z-Wave
+Acid3
+Advanced Systems Format
+aftrekaanval
+AirPlay
+ALOHAnet
+Amaya
+AMD K6
+Android Froyo
+Ansible
+Apache Cassandra
+AppImage
+Apple A12 Bionic
+Apple A6
+Apple A7
+Apple A8
+Apple A9
+Apple M3
+Athlon 64 X2
+Audio Interchange File Format
+Audio Stream Input/Output
+BBCode
+Boost
+broncode-editor
+browserextensie
+Challenge-handshake authentication protocol
+Cisco Internetwork Operating System
+Clipper
+Cocoa
+D-Bus
+dieptebuffer
+Direct3D
+dubbelschaak
+Fluxbuntu
+Galeon
+Gelijkenis van de zuurdesem
+GeoJSON
+Goobuntu
+Google App Engine
+Google Voice
+Graphics Device Interface
+GStreamer
+GW-BASIC
+Hadamardmatrix
+Inode
+ISCSI
+iterative method
+kaartlezer
+koolmicrofoon
+kritieke sectie
+KWrite
+Lempel Ziv Welch
+LESS
+live-USB
+LOLCODE
+Mac OS 8
+Mac Studio
+macOS Catalina
+macOS Tahoe
+magnetische opslag
+Moblin
+MRAM
+mutoscoop
+Netwide Assembler
+neveneffect
+NixOS
+Oberon
+OpenAL
+OxygenOS
+Pango
+Parabola GNU/Linux-libre
+PDF.js
+Pentium D
+PhysX
+Profibus
+Programmeren in x86 assembler
+Proxy pattern
+Qubes OS
+rainbow table
+Rambus Inline Memory Module
+RISC OS
+SciTE
+SCUMM
+Selenium
+shellscript
+SNOBOL
+Squeak
+testcase
+TFT LCD
+toolkit
+TOSLINK
+TrueNAS
+tunnelingprotocol
+Unix to Unix Copy
+USSD
+Wachtwoordmanager
+Whitespace
+XOOPS
+Yellow Dog Linux
+8mm-film
+Abstract Windowing Toolkit
+Adreno / Imageon
+Apple iSight
+Avant Browser
+BlackBerry 10
+BootP
+busy waiting
+Cahn-Ingold-Prelog-prioriteitsregels
+Chain-of-responsibility pattern
+CIH
+CLU
+conversie
+CrunchBang Linux
+cryptoware
+Datagram Congestion Control Protocol
+design by contract
+Digital Signature Algorithm
+DocBook
+docking station
+downloadmanager
+DR-DOS
+DVD-Video
+Dylan
+ECC-geheugen
+extended File System
+Extensible Authentication Protocol
+FileMaker
+Firefox Focus
+FreeRTOS
+Game Boy Camera
+Gobuntu
+gOS
+GUID Partition Table
+hamburger menu
+Haxe
+headerbestand
+inkapselen
+Intel Core i3
+Intel Core i5
+Intel Pentium Dual-Core
+Internet Explorer 11
+intrusion prevention system
+Ivy Bridge
+KornShell
+macOS Sonoma
+macOS Ventura
+MD4
+Methode van Jacobi
+Microsoft Foundation Classes
+Miller-Rabin-priemgetaltest
+Modbus
+MorphOS
+MQ Telemetry Transport
+ncurses
+OpenJDK
+Password Authentication Protocol
+PCX
+ping-of-death
+Point-to-Point Tunneling Protocol
+QuickBASIC
+Red Flag Linux
+remote desktop
+Ren'Py
+Rocky Linux
+Samsung Gear VR
+Skylake
+SMIL
+sociale software
+SONET
+speculatieve uitvoering
+splayboom
+SRWare Iron
+State
+stochastische matrix
+Svelte
+textueel zoekalgorithme
+Transact-SQL
+UFS
+vertaler
+VP8
+VP9
+Web Map Service
+Windows Odyssey
+WPCleaner
+z/OS
+10 Gigabit Ethernet
+70mm-film
+Accelerated Mobile Pages
+ActivityPub
+Adobe Integrated Runtime
+Advanced Photo System
+Algol 68
+Algol-60
+Android 17
+ANSI C
+Apple A11 Bionic
+Apple A13 Bionic
+Aqua
+ATRAC
+attribuut
+Backbone.js
+Befunge
+Boyer-Moore string search algorithm
+C++Builder
+Carrier sense multiple access
+cinerama
+clickjacking
+CYK-algoritme
+Cython
+databaseschema
+DNS over HTTPS
+Doom engine
+Dvd-r
+Dvd-rw
+Electron
+Falkon
+Ford-Fulkerson algorithm
+Formule van Newton-Cotes
+Forsyth-Edwardsnotatie
+GLSL
+GNUstep
+GPS Exchange Format
+High Performance File System
+Hongaars algoritme
+hybride schijf
+ICMPv6
+Idempotente matrix
+image viewer
+Indicatorbuis
+Interne representatie
+Internet Explorer 6
+IP Multimedia Subsystem
+IPad mini 2
+iPad mini 3
+jEdit
+Job Control Language
+JPEG XR
+kiesschijf
+Leafpad
+lichtpistool
+LINPACK
+loadable kernel module
+M.U.G.E.N
+macOS 12
+Microsoft Small Basic
+Miranda
+Mobile IP
+Nexenta OS
+numeriek toetsenblok
+Occam
+OGRE
+OPML
+patroonvergelijking
+Pawn
+PC Card
+Phenom II
+Polybiusvierkant
+PyGTK
+Q-learning
+Racket
+RC5
+RC6
+Real-time Transport Control Protocol
+REBOL
+RenderWare
+Replay attack
+run time
+Satellaview
+Sitemaps
+sjabloonmethodepatroon
+snelkoppeling
+Stata
+Strassen algorithm
+Super 8
+True Audio
+wake-on-LAN
+Wederzijdse uitsluiting
+Windows Forms
+wxPython
+Xiaomi HyperOS
+Zlib
+Abc-notatie
+adresbalk
+AKS-test
+AlmaLinux
+AMD K6-III
+Amoeba
+Antergos
+Apache Spark
+Apple A14 Bionic
+AV1
+Bazaar
+BeagleBoard
+behavior-driven development
+bilinear interpolation
+birthday attack
+Blaster
+bug tracking system
+Carbon
+Cesàro-sommatie
+Code Red
+ColorOS
+CPL
+CSMA/CA
+cyberspionage
+DBSCAN
+DD-WRT
+Devuan
+digital asset management
+digitale pen
+distributed denial-of-service
+Dreamlinux
+Flame
+FTP over SSL
+GD-ROM
+GDDR
+gelijkenis van de lamp
+GNU Aspell
+GNU Scientific Library
+Hardware security module
+head-Mounted Display
+Hessenbergmatrix
+HomePod Mini
+Icon
+id Tech 5
+ID3
+IFO
+INI
+integrerende factor
+inverse matrix
+ISO/IEC 646
+JPEG XL
+Karatsuba algorithm
+Kwadratuurformule van Gauss
+L2TP
+Mac OS X Server
+Mesa
+Metafont
+Metropolis-Hastings algorithm
+monitor
+MonoDevelop
+Motion JPEG
+Motorola 68000 familie
+Motorola 6809
+Netfilter
+NFO-bestand
+Nim
+Nura
+OpenEXR
+overloading
+parsergenerator
+PCL
+positief-definiete matrix
+PulseAudio
+Pure Data
+REDengine
+Remix OS
+Revision Control System
+Robot Operating System
+Sasser
+scareware
+Serial Line Internet Protocol
+Servo
+session hijacking
+Small Web Format
+Smurf
+SOCKS
+Solidity
+StrongARM
+substitutie
+synchrone digitale hiërarchie
+tabula recta
+TGA
+Tk-toolkit
+uitgebreid algoritme van Euclides
+Vacuum fluorescent display
+versiebeheersysteem
+Visual J++
+Viterbi algorithm
+voorval
+wijzerplaat
+Windows Embedded
+Windows Server 2025
+WinFS
+Winsock
+XNA
+XSL Formatting Objects
+3D-printer
+4GL
+ADFGX-cijfer
+AliOS
+AMD K6-2
+Apple A15 Bionic
+Apple Cinema Display
+Apple M4
+Arc
+AspectJ
+AutoLISP
+AVCHD
+Back Orifice
+binomiale prioriteitswachtlijn
+Bitmap
+BlackArch Linux
+Booth's multiplication algorithm
+Broadwell
+Burrows-Wheelertransformatie
+Business Process Execution Language
+Ceylon
+codepagina
+CoinMarketCap
+collaborative filtering
+Contiki
+D3.js
+Decima
+Deflate
+DesktopBSD
+diagonaliseerbare matrix
+digitale fotolijst
+Direct Connect
+disk operating system
+Dolphin Browser
+Elive
+Elm
+Emacs Lisp
+Fermattest
+Filesystem in Userspace
+filmformaat
+Finger protocol
+FLTK
+FreeType
+Game Maker Language
+Gamma-matrices
+Garuda Linux
+GDDR5
+Geography Markup Language
+Google Daydream
+Hierarchical File System
+High Definition Video
+HTTP/3
+IBM POWER
+IMac G4
+Ingres
+instructie
+Internet Explorer Mobile
+Internet Key Exchange
+iPhone 17e
+JavaScript-bibliotheek
+Journaled File System
+KIM-1
+Limbo
+LXC
+LZMA
+M0n0wall
+macOS Sequoia
+Magic Trackpad
+Mali
+Media Gateway Control Protocol
+metaheuristiek
+MetaPost
+Motif
+multi-paradigmaprogrammeertaal
+Nintendo DS Browser
+nUbuntu
+OmniWeb
+OpenGL ES
+Page Up/Down
+PCRAM
+Peppermint Linux OS
+Portlet
+Power Mac G5
+process control block
+programmatuur voor projectplanning
+PSPad
+Raku
+RealAudio
+Redmine
+reductie
+Resource Reservation Protocol
+rozenkruisersgeheimschrift
+S-box
+S-VHS
+Series 40
+Server Side Includes
+SHA-3
+SharpDevelop
+Singularity
+Smith-Waterman algorithm
+Sneakernet
+software-engine
+Soundex
+SparkyLinux
+SPDY
+STL-bestand
+SuperH
+SUSE Linux Enterprise Server
+TiddlyWiki
+Tox
+Ubuntu Budgie
+UnixWare
+Veldbus
+Video 8
+Web Server Gateway Interface
+webcache
+Webpack
+Wederzijds uitsluitingsalgoritme van Peterson
+Windows Server 2012 R2
+XScale
+Zen 2
+Zeroconf
+1-Wire
+3-D Secure
+A/UX
+Acid1
+Active record patroon
+ADO.NET
+AES3
+AIML
+Allegro
+Android Go
+ANSI-tekenset
+aptosid
+Arora
+Asahi Linux
+ASP.NET MVC Framework
+Astra Linux
+Beamer
+Berkeley DB
+Bit array
+Blitz Basic
+bluejacking
+Borůvka's algorithm
+Cabinet
+CKEditor
+Classfile
+Code page 437
+code-injectie
+Confluence
+CORS
+CouchDB
+Creeper
+cross-origin resource sharing
+CRUX
+Cursor
+Debian GNU/Hurd
+Dekker's algorithm
+Direct-attached storage
+dode toets
+DPLL-algoritme
+Dragonball
+EFS
+Encrypting File System
+Ethereum Classic
+Extended memory
+Floodfill-algoritme
+Gelijkenis van de torenbouw
+Generic Routing Encapsulation
+getallenlichamenzeef
+Gnome sort
+Google File System
+Hankel-matrix
+Hilbert-matrix
+HSQLDB
+ICO
+illumos
+iMac G3
+Industry Foundation Classes
+Intel Arc
+Intel HD Graphics
+Intel i860
+Intel i960
+interior gateway protocol
+IPad mini 4
+iPhone 6 Plus
+Irrlicht Engine
+IW engine
+Java Persistence API
+JDeveloper
+Kile
+leren door lesgeven
+LibreWolf
+lineaire-congruentiegenerator
+Low code
+M3U
+Matter
+Microsoft BASIC
+Microsoft Compiled HTML Help
+MiniDVD
+Minimo
+Modula
+Multiple-image Network Graphics
+Natural Language Toolkit
+NetLogo
+Network Information Service
+OpenIndiana
+OpenVZ
+pagineringstabel
+PlayStation Camera
+PlayStation Eye
+PlayStation VR2
+Precision Time Protocol
+Presto
+Profiler
+Prototype JavaScript Framework
+racestuur
+Replicant
+Schema.org
+Schildersalgoritme
+scikit-learn
+SCO OpenServer
+Serpent
+SLS Linux
+Small form-factor pluggable transceiver
+SO-DIMM
+software voor referentiebeheer
+standaard voor weergavemodus
+Standard Widget Toolkit
+Super Video CD
+SuperCollider
+System 7
+Tabu search
+Tru64 UNIX
+Turbo C
+Turbo C++
+TWAIN
+TWRP
+Ubuntu GNOME
+Ubuntu Mobile
+Ututo
+Versatile Video Coding
+visionOS
+VistaVision
+Web Open Font Format
+WebAuthn
+Whonix
+Wi-Fi Direct
+Windows Metafile
+Wolfram Language
+XBRL
+XCF
+XGBoost
+XML-RPC
+ΜClinux
+4DX
+ADO.NET Entity Framework
+Adobe FrameMaker
+Advanced Power Management
+Algorand
+AMOS
+any key
+Apple A16 Bionic
+Apple File System
+ArchBang
+Automatic repeat request
+Axolotl
+Banana Pi
+Berkeley sockets
+BLEU
+Blum Blum Shub
+boosting
+browserkaper
+buildautomatisering
+Bullet
+CachyOS
+Caml
+Chakra Linux
+Cisco Discovery Protocol
+CLIPS
+Compatible Time-Sharing System
+controller
+Data access object
+database-engine
+DECnet
+default gateway
+diagonaal gedomineerde matrix
+Dirac
+diskettestation
+DNS-vergiftiging
+Dojo
+Dolby TrueHD
+draadloze router
+DualDisc
+ELinks
+Errno.h
+Extern geheugen
+FastCGI
+Field emission display
+FITS
+FreeSBIE
+Game Boy Player
+Gamebryo
+GeForce 3-serie
+Gibbs sampling
+GLib
+Grails
+Grammatrix
+GRASP
+HEIF
+HFS Plus
+High Level Shader Language
+hydraulische analogie
+IBM i
+IBM Informix
+Id Tech 4
+independent component analysis
+Intel Core i9
+Interior Gateway Routing Protocol
+iPodLinux
+Iterator pattern
+Java Native Interface
+Joli OS
+k-d tree
+kaartponser
+Kademlia
+LHA
+LPDDR
+Lucas-Lehmertest voor mersennegetallen
+Marching cubes
+meet-in-the-middle attack
+Mercury
+Microsoft Macro Assembler
+Mirai
+Modelica
+MoinMoin
+MOS Technology 6510
+MPEG-1 Audio Layer 2
+Musepack
+muzieknotatiesoftware
+Neo4j
+NES Zapper
+NetBEUI
+Network Control Program
+Nostr
+Nova
+online-algoritme
+OpenLayers
+Oxygen Project
+Paradox
+pathfinding
+personal information manager
+physics processing unit
+PL/M
+PlayStation Portal
+printer steganography
+Puppet
+QML
+Quine-McCluskey algorithm
+R-tree
+R.O.B.
+RealMedia
+Redox
+ReFS
+retrogradeprobleem
+Rockbox
+RRDtool
+Run-time type information
+S/MIME
+Scale-invariant feature transform
+Scanner Access Now Easy
+Security Assertion Markup Language
+Self
+Server-side scripting
+SpiderMonkey
+splinter en de balk
+Spyder
+SQL Slammer
+SQLAlchemy
+sterschema
+strategie
+SyncML
+TECO
+Template
+Temporal Key Integrity Protocol
+toevalsmatrix
+TurboGears
+TWiki
+Ubuntu Netbook Edition
+Universal Windows Platform
+Uuencoding
+variable-message sign
+Vector Linux
+virtueel bestandssysteem
+werkgeheugen
+Windows Home Server 2011
+Windows XP MCE
+Windows XP Media Center
+XML Paper Specification
+XMP
+ZIM
+A.out
+agentgeoriënteerde programmering
+Alder Lake
+Algoritme van Borwein
+Amazon DynamoDB
+Apache Cocoon
+Apple A8X
+Apple DOS
+Apple Filing Protocol
+Apple iPad 2019
+Apple ProDOS
+Arachne
+AtheOS
+Autoconf
+BACnet
+bedrijfssoftware
+best-first search
+BETA
+bewijs door constructie
+Blazor
+Bonzi Buddy
+C++/CLI
+Canny-randzoeker
+CCMP
+CodeLite
+command interpreter
+condensatormicrofoon
+CoreOS
+Crystal
+Csound
+daisy chain
+Debian Edu
+Debian GNU/kFreeBSD
+Diameter
+Direct Stream Digital
+document-georiënteerde databank
+eComStation
+EGO
+elektrische klok
+Elk Cloner
+Emmabuntüs
+EOS
+Euphoria
+ExpressCard
+Ext JS
+fast inverse square root
+FASTA
+Firefox 4
+FOAF
+Foresight Linux
+Frugalware Linux
+Game Boy Printer
+GDDR3
+General MIDI
+geschiedenis van Apple-toetsenborden
+GhostNet
+GNU Guile
+GoboLinux
+Google Panda
+gRPC
+Home Assistant
+Hurwitz-matrix
+ICC-profiel
+Iceweasel
+id Tech 3
+in-memory database
+Index Translationum
+Inform
+Information Management System
+Intel GMA
+Intel iAPX 432
+Internet Explorer 5
+iPad 7
+iPadOS 14
+iPadOS 15
+iPadOS 16
+iPadOS 26
+JOVIAL
+Joy-Con
+KIO
+Klapperbord
+Kylin
+LADSPA
+LibreOffice Base
+Linpus
+LuaTeX
+Lunascape
+LynxOS
+machtsverheffing door kwadrateren
+Material Exchange Format
+Matrixdisplay
+Microdrive
+Microsoft Management Console
+Mini CD
+MINIX 3
+Mixi
+mockobject
+Mythbuntu
+Nagle's algorithm
+NetSurf
+Null pointer
+Oculus Quest 2
+odd-even sort
+Online Certificate Status Protocol
+orgelpedaal
+OSGi
+pancake sort
+partitietabel
+Perl Compatible Regular Expressions
+Piet
+Ping flood
+Poppler
+Power Mac G4
+PowerBuilder
+PureOS
+quadtree
+Quanta Plus
+RDFS
+RealVideo
+reStructuredText
+Richardson-extrapolatie
+Rocq
+ROOT
+Scintilla
+SerenityOS
+Session Description Protocol
+Shunting-yardalgoritme
+Sixaxis
+SquashFS
+stdio.h
+stream processing
+Sylvestermatrix
+Syslog
+System 6
+SystemRescue
+Tiki Wiki CMS Groupware
+transcoderen
+Variabele bit-rate
+VC-1
+VCL
+Video Display Controller
+VoiceXML
+Web
+Windows Embedded CE 6.0
+Zstandard
+μClibc
+3D-controller
+accelerated processing unit
+ActiveX Data Objects
+Advanced Message Queuing Protocol
+Affiene cijfer
+ALT Linux
+Andrew File System
+Android Automotive
+Apache Tapestry
+Apple A12X Bionic
+Apple A19
+Apple earbuds
+Apple M5
+ARM Cortex-A9 MPCore
+AsciiDoc
+Backplane
+BASIC Stamp
+Bayesian spam filtering
+BigTable
+BitKeeper
+blind signature
+Bonferroni-correctie
+Box2D
+BSON
+CalDAV
+call-by-name
+Clean
+Coldfire
+Comodo Dragon
+Compact HTML
+computergestuurde tegenstander
+CORDIC
+Creation Engine
+crimeware
+Crystal Space
+Cyc
+DALI
+DarkBASIC
+delay-tolerant networking
+Digitale inkt
+DirectShow
+distributed component object model
+dynamic time warping
+EasyPeasy
+Ember.js
+Extended display identification data
+Exterior Gateway Protocol
+FastTrack
+Fox Engine
+GDDR4
+GDDR6
+Gell-Mann-matrices
+GNU Classpath
+GNU TeXmacs
+GPRS Tunnelling Protocol
+grammaticacontrole
+HarfBuzz
+HITS algorithm
+iCalendar
+Iconv
+input-output memory management unit
+Intel MCS-48
+Intel MIC
+Interactive Data Language
+Internet Explorer 1
+Internet Explorer 2
+issue tracker
+Java Management Extensions
+Java Web Start
+JBuilder
+Jinja
+Joliet
+JSON-LD
+KaOS
+Kexi
+known-plaintext attack
+Kwadratische zeef
+LCOS
+Lifo
+Linear classifier
+LRC
+mailbomb
+Majorana 1
+MD2
+Media Transfer Protocol
+Mersennetwister
+Multiple Virtual Storage
+MUMPS
+MusicXML
+Needham-Schroeder-protocol
+Nelder-Mead-methode
+Nike+iPod
+Nintendo optische schijf
+Notepad2
+NTLM
+Off-the-Record Messaging
+OpenMandriva
+OpenSearch
+Opera GX
+overhead
+paginabeschrijvingstaal
+PC speaker
+Pentoo
+Pico
+Pike
+pipeline
+Pollards rho-algoritme
+Postscript Type 1
+PowerPC G4
+Protocol Buffers
+PSoC
+PureBasic
+Qt Creator
+Racetrack memory
+RE Engine
+Real Time Messaging Protocol
+Regin
+Ricoh 2A03
+RIPEMD
+RRAM
+RSSI
+Sabily
+SFML
+simlock
+Sleipnir
+smoothing
+Softwaresynthesizer
+Steam Controller
+STUN
+symbol table
+TACACS
+Tailwind CSS
+Texmaker
+Text Encoding Initiative
+Tiny Encryption Algorithm
+TinyMCE
+Tomasulo algorithm
+TOML
+TOS
+Turbolinux
+Ultrix
+Unreal Engine 5
+valse beveiligingssoftware
+versiebeheerstak
+VHS-C
+VMware ESX
+WavPack
+Web2py
+Wii Balance Board
+Wii U GamePad
+Windows Media
+write once read many
+Xlib
+Zeus
+ZX Microdrive
+.NET Compact Framework
+10BASE-T
+3D XPoint
+AAC+
+Amazon Silk
+AMS-LaTeX
+Android Things
+answer set programming
+Apache Derby
+Apache Velocity
+Apache Wicket
+Apple A18
+Apple Disk Image
+Apple Display Connector
+ARM Cortex-A7
+ARM Cortex-A8
+Artix Linux
+Assert.h
+Atari Jaguar CD
+AUSTRUMI Linux
+Azure Linux
+Bandmatrix
+Beale ciphers
+Bharat Operating System Solutions
+binding
+Bionic
+Biopython
+Blockly
+Build engine
+Cartan-matrix
+CD Video
+CD+G
+CD-Text
+certificate revocation list
+challenge response-authenticatie
+CICS
+Cinepak
+COFF
+CryptoNote
+Cue
+Curry
+D-STAR
+Datagram Transport Layer Security
+Datalog
+DHCPv6
+DICT
+Direct Rendering Infrastructure
+DK Bongo
+documentatiegenerator
+DRAKON
+Dropper
+earliest deadline first scheduling
+EDLIN
+elektretmicrofoon
+encryptiesoftware
+F2FS
+Factor
+FictionBook
+Firefox 3
+FlexRay
+Font Awesome
+FoxPro
+Gauss-Jordaneliminatie
+GDAL
+General Electric-matrix
+GeoTIFF
+Gerber format
+GNU readline
+HART
+HBase
+HP-GL/2
+HTTP Live Streaming
+Hugo
+iAd
+Ice Lake
+IMUSE
+Indeo
+Initrd
+Internet Explorer 3
+Internet Explorer 4
+introsort
+iPadOS 13
+iPod Hi-Fi
+ISAM
+Iterative deepening depth-first search
+JavaCC
+Jaz
+Jekyll
+jQuery UI
+Kanotix
+Karel
+kernel trick
+Kivy
+KTurtle
+LAPACK
+Larrabee
+Leerpiramide
+LibreSSL
+LIMS
+Linux Security Modules
+Local Operating Network
+loop unrolling
+Lucifer
+Maclisp
+magnussoft ZETA
+MapServer
+Max/MSP
+MHTML
+Michelangelovirus
+Microsoft Forefront
+MidnightBSD
+MOD
+model-view-viewmodel
+Modula-3
+Mp3PRO
+Musix
+NDISwrapper
+Network processor
+Nintendo e-Reader
+Nuxt
+objectgeoriënteerde programmeertaal
+Oculus VR
+OpenMediaVault
+OpenOffice Basic
+OpenSPARC
+Parted Magic
+Phonon
+PHP-GTK
+PHPUnit
+Play Framework
+PlayStation 3 system software
+PmWiki
+Podman
+Power Glove
+POWER5
+PowerBASIC
+Q4OS
+RC2
+Redux
+Research Unix
+Resource Interchange File Format
+Rhapsody
+Rhino
+RONJA
+S-matrix
+Schönhage-Strassen algorithm
+secret sharing
+Secure Electronic Transaction
+Shiira
+shovelware
+Snowdrop
+spraaksegmentatie
+Stick-pc
+Stooge sort
+SunOS
+Tango Desktop Project
+Tape library
+Texinfo
+three address code
+TOPS-20
+triangulated irregular network
+Turbo BASIC
+twee staps authenticatie
+Twig
+UCSD Pascal
+unimodulair
+UNIX System III
+Unreal Engine 4
+Vite
+WebSphere Application Server
+Western Design Center 65C02
+Windows 10X
+Windows HPC Server 2008
+Windows Internet Name Service
+Windows MultiPoint Server
+X PixMap
+XEmacs
+XML Schema
+Yii
+YubiKey
+Zen
+Zesde generatie iPad Mini
+ZYpp
+ACE
+ACME-protocol
+Advanced Mobile Location
+Adventure Game Studio
+Algemene Lucas-Lehmertest
+Anna Kournikova
+Apache Xerces
+Apple A6X
+Apple IIe
+Apple Pro Display XDR
+Autoresponder
+B.A.T.M.A.N.
+BackBox
+Baconalfabet
+Base Class Library
+Basic Linear Algebra Subprograms
+Bazzite
+bewijs door gevalsonderscheiding
+Bink Video
+Bitcoin Gold
+BlackBerry Tablet OS
+BLISS
+BlueJ
+Broadway
+Brotli
+Bun
+CalyxOS
+Camellia
+CBC-MAC
+China Blue High-Definition
+Clear Linux OS
+CLISP
+Coda
+COMAL
+Common Lisp Object System
+Computer Graphics Metafile
+console-applicatie
+ConTeXt
+Continuation
+Copland
+CSNET
+ctype.h
+DES-X
+Device Independent
+Direct Rendering Manager
+Display Data Channel
+Distributed Computing Environment
+Dunia Engine
+Dvd+r
+DVD+R DL
+Dvd+rw
+Dynamic Kernel Module Support
+Ebuild
+eCos
+EdgeHTML
+eDonkeynetwerk
+Embedded Linux
+Enhanced Versatile Disc
+EPOC
+Familiar Linux
+fastboot
+File Allocation Table 32-bit
+FLOW-MATIC
+Fn-toets
+FreedomBox
+Freespire
+functie
+Game Link Cable
+GD Graphics Library
+Glide
+Goanna
+grafische bibliotheek
+Graphite
+Hamlets
+Hashcash
+High Level Assembly
+Home gateway
+HOTAS
+IBM System R
+ImageJ
+ingebed besturingssysteem
+Integer BASIC
+Intel HEX
+Interchange File Format
+International Image Interoperability Framework
+IPad Pro 1ste generatie
+iPadOS 17
+iPadOS 18
+iPhone 7 Plus
+Java OpenGL
+Java Transaction API
+Jerusalem
+Joe's Own Editor
+jQuery Mobile
+JSDoc
+Kaito
+KASUMI
+Kazehakase
+KDE Frameworks
+Kermit
+KPart
+Krait
+LAPB
+lcd tv
+Libavcodec
+libvirt
+libxml2
+LiMux
+Lustre
+macOS Golden Gate
+Megpoid
+MEMZ
+Metal
+Meteor
+Microsoft Windows XP Embedded
+Millipede
+MkLinux
+MT9
+NEC V20
+NetFront
+NetWare Core Protocol
+NeXT Computer
+Nutch
+ODROID
+Ollama
+OmniROM
+Open Sound Control
+openMosix
+OpenRISC
+OPNsense
+Org-mode
+OStatus
+Parsix
+path tracing
+PhpStorm
+Pikachu-virus
+Pluggable authentication module
+PowerPC G3
+Procfs
+projectietoetsenbord
+ProRes 422
+Query by Example
+random early detection
+RANSAC
+Refractor Engine
+Replit
+Risch algorithm
+ROSA Linux
+Sad Satan
+Shadow mapping
+Shakespeare
+SilverStripe
+Sinatra
+Sinclair BASIC
+Skipjack
+Solovay-Strassen-priemgetaltest
+sonification
+SoundFont
+Spring
+SPX
+SQL Server Management Studio
+sterk typesysteem
+Sticky bit
+TextMate
+TeXworks
+Three.js
+Timsort
+toetsenblok
+TOPS-10
+Underscore.js
+Unix Versie 7
+Vector Markup Language
+videomuur
+VP7
+Web Feature Service
+Web storage
+Windows CE 5.0
+Windows Driver Model
+Windows Embedded Compact 7
+Windows Workflow Foundation
+wiskundige software
+XLIFF
+XML Binding Language
+XWiki
+Yocto
+YOPER
+Zachman Framework
+A-priori algoritme
+Active Template Library
+AdaBoost
+Adaptive Server Enterprise
+ADAT
+Agda
+Android App Bundle
+Apache Commons
+Apache CXF
+Apache Harmony
+Apache Portable Runtime
+Apple A5X
+Apple Studio Display
+Apple Watch Ultra
+Applesoft BASIC
+Arduino IDE
+ARM Cortex-M
+ARts
+Asianux
+AsteroidOS
+ASUS Tinker Board
+Asymptote
+ATI Xenos
+ATL
+Autorun.inf
+Barabási-Albert model
+Baum-Welch algorithm
+Be File System
+Bewijsassistent
+BFS
+big.LITTLE
+Blender Game Engine
+Blitter
+Bluesnarfing
+bol van Ewald
+Cable modem termination system
+Canaima
+CANopen
+Catalyst
+chatprogramma
+Chord
+Chosen-plaintext attack
+Chudnovsky algorithm
+ClearOS
+Cobra
+Cohen-Sutherland algorithm
+COLLADA
+Comic book archive
+Commodore BASIC
+Common Address Redundancy Protocol
+Cosmos
+Cross-browser
+Deeplearning4j
+Digital Audio Access Protocol
+Doctrine
+dubbelkernprocessor
+Duqu
+EDRAM
+encryptie-apparaat
+Eric Python IDE
+Extensible Provisioning Protocol
+FastAPI
+Fermats factorisatiemethode
+Fibre Channel over Ethernet
+Finnix
+Firefox Portable
+Fisher-Yates-shuffle
+Floyd-Steinberg dithering
+Flux
+Fuduntu
+GAP
+GeeXboX
+GEGL
+General Transit Feed Specification
+Generalized Markup Language
+Geos
+ggplot2
+GObject
+Googlebook OS
+GOST
+Grml
+Grotthuss mechanisme
+Guix
+Gutmann method
+handcijfer
+HATEOAS
+Hempel-oppenheimschema
+Hi 8
+Hierarchical Data Format
+IBM Rational ClearCase
+Idris
+Infinity Engine
+Internet Printing Protocol
+IPCop
+IPFire
+JBIG
+jMonkeyEngine
+KOI8-R
+Komodo
+KWallet
+Labelprinter
+Lagged Fibonacci generator
+Lamport's bakery algorithm
+Leaflet
+leaky bucket
+Libdvdcss

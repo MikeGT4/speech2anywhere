@@ -51,6 +51,14 @@ GLOSSARY_INSTRUCTION = (
     "Sonst nichts ändern."
 )
 
+FACHGEBIET_INSTRUCTION = (
+    "Fachgebiet: Das Diktat stammt aus {gebiete}. Die Spracherkennung verhört Fachbegriffe oft "
+    "zu ähnlich klingenden Alltagswörtern oder zerlegt sie in mehrere Wörter. Ergibt ein Wort "
+    "oder eine Wortfolge im Zusammenhang keinen Sinn und klingt sie wie ein Fachbegriff dieses "
+    "Gebiets, schreibe den Fachbegriff in korrekter Schreibweise. Wörter, die im Zusammenhang "
+    "Sinn ergeben, bleiben unverändert."
+)
+
 
 LANGUAGE_RULE = (
     "Sprache: Gib den Text in genau der Sprache zurück, in der der Input steht. "
@@ -104,6 +112,14 @@ def _template_with_rules(template: str, mode: str, language: str | None = None) 
     template = _insert_before_input(template, LANGUAGE_RULE)
     hint = _language_hint(language) if mode in LANGUAGE_HINT_MODES else None
     return _insert_before_input(template, hint) if hint else template
+
+
+def _template_with_fachgebiete(template: str, fachgebiete: list[str] | None) -> str:
+    if not fachgebiete:
+        return template
+    namen = fachgebiete[0] if len(fachgebiete) == 1 else ", ".join(fachgebiete[:-1]) + " oder " + fachgebiete[-1]
+    block = FACHGEBIET_INSTRUCTION.format(gebiete=namen).replace("{", "{{").replace("}", "}}")
+    return _insert_before_input(template, block)
 
 
 def _template_with_glossary(template: str, glossary: list[str] | None) -> str:
@@ -396,10 +412,12 @@ class Styler:
 
     async def polish(
         self, text: str, mode: str, glossary: list[str] | None = None, language: str | None = None,
+        fachgebiete: list[str] | None = None,
     ) -> str:
         if not text.strip():
             return text
         template = _template_with_rules(load_prompt(mode), mode, language)
+        template = _template_with_fachgebiete(template, fachgebiete)
         prompt = _template_with_glossary(template, glossary).format(text=text)
         mode_cfg = self._config.styler.modes.get(mode, ModeConfig())
         model = self._resolve_model(mode)

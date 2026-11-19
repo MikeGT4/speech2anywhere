@@ -8,6 +8,7 @@ from enum import Enum, auto
 from typing import Callable
 import numpy as np
 from kira.config import Config
+from kira.glossary import GLOSSARY_MAX_TERMS
 from kira.recorder import Recorder, DeviceUnavailable, SAMPLE_RATE
 from kira.texte import tr
 
@@ -48,6 +49,9 @@ def _language_is_certain(transcription) -> bool:
     return probability is not None and probability >= LANGUAGE_HINT_MIN_PROBABILITY
 
 
+FACHWORTSCHATZ_MODES = frozenset({"plain", "chat", "email", "email_formal"})
+
+
 class KiraApp:
     def __init__(
         self,
@@ -58,6 +62,7 @@ class KiraApp:
         injector,
         on_state_change: Callable[[State], None] = lambda s: None,
         learning=None,
+        fachwortschatz=None,
     ) -> None:
         self._config = config
         self._recorder = recorder
@@ -66,6 +71,7 @@ class KiraApp:
         self._injector = injector
         self._on_state_change = on_state_change
         self._learning = learning
+        self._fachwortschatz = fachwortschatz
         self._state = State.IDLE
         self._press_time: float | None = None
         self._loop: asyncio.AbstractEventLoop | None = None
@@ -235,10 +241,13 @@ class KiraApp:
                 )
             else:
                 mode = detect_mode(self._config)
-                glossary = self._glossary_for(transcription.text)
+                fach = self._fachwortschatz if self._fach_gilt(mode) else None
+                glossary = self._glossary_for(transcription.text, self._fach_sprache(transcription), fach)
                 extra = {"glossary": glossary} if glossary else {}
                 if _language_is_certain(transcription):
                     extra["language"] = transcription.language
+                if fach is not None and fach.kontext:
+                    extra["fachgebiete"] = fach.kontext
                 if self._config.styler.enabled:
                     polished = await self._styler.polish(
                         transcription.text, mode=mode, **extra,
@@ -275,14 +284,39 @@ class KiraApp:
             else:
                 self._set_state(State.IDLE)
 
-    def _glossary_for(self, text: str) -> list[str] | None:
-        if self._learning is None:
-            return None
-        try:
-            return self._learning.glossary_for(text) or None
-        except Exception:
-            log.exception("Lernen: Glossar-Auswahl fehlgeschlagen, Diktat läuft ohne")
-            return None
+    def _fach_gilt(self, mode: str) -> bool:
+        return self._fachwortschatz is not None and self._config.styler.enabled and mode in FACHWORTSCHATZ_MODES
+
+    def _fach_sprache(self, transcription) -> str:
+        language = getattr(transcription, "language", "")
+        probability = getattr(transcription, "language_probability", None)
+        if language and (probability is None or probability >= LANGUAGE_HINT_MIN_PROBABILITY):
+            return language
+        return self._config.whisper.language
+
+    def _glossary_for(self, text: str, language: str | None = None, fach=None) -> list[str] | None:
+        terms: list[str] = []
+        if self._learning is not None:
+            try:
+                terms = list(self._learning.glossary_for(text) or [])
+            except Exception:
+                log.exception("Lernen: Glossar-Auswahl fehlgeschlagen, Diktat läuft ohne")
+        if fach is not None and len(terms) < GLOSSARY_MAX_TERMS:
+            try:
+                start = time.perf_counter()
+                known = {t.casefold() for t in terms}
+                extra = [
+                    t for t in fach.glossar(text, language, GLOSSARY_MAX_TERMS)
+                    if t.casefold() not in known
+                ]
+                terms.extend(extra[:GLOSSARY_MAX_TERMS - len(terms)])
+                log.info(
+                    "Fachwortschatz: Glossar in %.1f ms%s", (time.perf_counter() - start) * 1000,
+                    f": {', '.join(extra)}" if extra else "",
+                )
+            except Exception:
+                log.exception("Fachwortschatz: Glossar-Auswahl fehlgeschlagen, Diktat läuft ohne")
+        return terms or None
 
     def _record_dictation(self, mode: str, transcription, text: str, audio: np.ndarray) -> None:
         if self._learning is None:
@@ -303,7 +337,7 @@ class _StubTranscriber:
 
 class _StubStyler:
     def __init__(self, cfg): self.cfg = cfg
-    async def polish(self, text, mode, glossary=None, language=None): return text
+    async def polish(self, text, mode, glossary=None, language=None, fachgebiete=None): return text
 
 
 class _StubInjector:

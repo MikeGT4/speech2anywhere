@@ -1,0 +1,3000 @@
+hormoon
+antibioticum
+vitamine
+ethanol
+aminozuur
+cocaïne
+glucose
+acetylsalicylzuur
+rode bloedcel
+vitamine C
+paracetamol
+insuline
+heroïne
+cafeïne
+azijnzuur
+zoutzuur
+morfine
+adrenaline
+dopamine
+natriumwaterstofcarbonaat
+testosteron
+bloedplaatje
+vitamine A
+bloedplasma
+COVID-19-vaccin
+fructose
+natriumchloride
+calciumcarbonaat
+ibuprofen
+oestrogeen
+sildenafil
+citroenzuur
+nitroglycerine
+thiamine
+H. perforatum
+riboflavine
+sint-Janskruid
+glycerol
+glycine
+oxytocine
+ketamine
+melatonine
+pijnstiller
+waterstofperoxide
+amoxicilline
+MDMA
+Melkzuur
+vitamine E
+antioxidant
+cobalamine
+aluminiumoxide
+ammoniumchloride
+glucagon
+amfetamine
+atropine
+boorzuur
+chloroform
+dichloordifenyltrichloorethaan
+gelatine
+kaliumpermanganaat
+cortisol
+distikstofmonoxide
+natriumtetraboraat
+BCG-vaccin
+codeïne
+Diethylether
+kopersulfaat
+vitamine B
+wit kopersulfaat
+Acetylcholine
+fentanyl
+kaliumchloride
+noradrenaline
+tryptofaan
+biotine
+salicylzuur
+antidepressivum
+collageen
+glutamine
+Methadon
+galactose
+interferon
+aldosteron
+botulinetoxine
+DL-lysine
+natriumsulfaat
+progesteron
+Tozinameran
+zilvernitraat
+adenosine
+calciumchloride
+diazepam
+heparine
+magnesiumoxide
+tetracycline
+androgeen
+diclofenac
+pectine
+sertraline
+streptomycine
+mazelenvaccin
+silicone
+stikstofmonoxide
+antisepticum
+doxycycline
+fenolftaleïne
+fluoxetine
+metformine
+Omega 3-vetzuren
+semaglutide
+tegengif
+thalidomide
+antipsychoticum
+AstraZeneca-vaccin
+azithromycine
+efedrine
+Gam-COVID-Vac
+hydroxychloroquine
+lidocaïne
+methylfenidaat
+metronidazol
+morfinomimeticum
+propofol
+psychoactief middel
+vaccin van AstraZeneca
+2-propanol
+afrodisiacum
+alprazolam
+corticotropine
+diureticum
+flavonoïde
+kaliumjodide
+magnesiumsulfaat
+Moderna-vaccin
+aluminiumchloride
+benzodiazepine
+cannabidiol
+chlooramfenicol
+chloroquine
+corticosteroïde
+gamma-aminoboterzuur
+lorazepam
+Luteïniserend hormoon
+midazolam
+theobromine
+ampicillin
+dexamethason
+Erytromycine
+Estradiol
+oxycodon
+Sorbitol
+tramadol
+zonnebrandcreme
+actieve kool
+aluminiumhydroxide
+anticoagulans
+bupropion
+capsaïcine
+ijzersulfaat
+ivermectine
+lysozym
+naproxen
+omeprazol
+poliovaccin
+remdesivir
+stimulantia
+amitriptyline
+bètablokker
+ciprofloxacine
+glutathion
+hallucinogeen
+prostaglandinen
+statine
+Tetrahydrocannabinol
+thyreoïdstimulerend hormoon
+wonderolie
+fumaarzuur
+glucocorticoïde
+natriumnitriet
+salbutamol
+slaapmiddel
+aciclovir
+griepprik
+haloperidol
+Hepatitis B vaccine
+methyleenblauw
+natriumhypochloriet
+oseltamivir
+pyridoxine
+scopolamine
+selectieve serotonine-heropnameremmer
+1-propanol
+cetirizine
+clonazepam
+natriumacetaat
+propranolol
+Pruisisch blauw
+spiraal
+Trypsine
+anabole steroïde
+antiviraal geneesmiddel
+bromide
+carbamazepine
+furosemide
+hexamine
+HPV-vaccin
+hydrochloorthiazide
+loratadine
+magnesiumchloride
+acetylcysteïne
+atorvastatine
+fenobarbital
+flunitrazepam
+gabapentine
+magnesium carbonate
+naloxon
+natriumfluoride
+Warfarine
+zidovudine
+aminoglycosiden
+Amlodipine
+antacidum
+antihistaminicum
+BMR-vaccin
+carnitine
+cefalosporine
+chloorpromazine
+clindamycine
+cortison
+dextromethorfan
+digoxine
+gentamicine
+kaliumperchloraat
+laxeermiddel
+metamizol
+methotrexaat
+natriumthiosulfaat
+ontsmettingsmiddel
+pentobarbital
+pregabaline
+quetiapine
+zwavelhexafluoride
+cefalexine
+dimethylsulfoxide
+halothaan
+inositol
+isoniazide
+jodoform
+lactulose
+magnesiumhydroxide
+meloxicam
+modafinil
+penta-erytritoltetranitraat
+pethidine
+valproïnezuur
+zinkchloride
+abacavir
+bètacaroteen
+buprenorfine
+chloorhexidine
+Citalopram
+clotrimazol
+colchicine
+fenytoïne
+finasteride
+fluconazol
+handalcohol
+humaan choriongonadotrofine
+hydrochinon
+Lactobacillus
+loperamide
+metoclopramide
+retinol
+risperidon
+zinksulfaat
+albendazol
+anestheticum
+antipyreticum
+benzylalcohol
+benzylpenicilline
+bèta-lactam-antibioticum
+ceftriaxone
+ciclosporine
+cisplatine
+clopidogrel
+D-Glucosamine
+diphenhydramine
+Enalapril
+fluorescein
+indometacine
+lamotrigine
+Levodopa
+levofloxacine
+olanzapine
+ondansetron
+paclitaxel
+Pseudo-efedrine
+rifampicine
+sojaolie
+ACE-remmer
+Ad26.COV2.S
+chloorethaan
+clozapine
+co-enzym Q10
+Cyclofosfamide
+hondsdolheidvaccin
+kaolien
+losartan
+mebendazol
+Mercury
+Natriumbenzoaat
+procaïne
+Promethazine
+ranitidine
+sulfonamide
+tamoxifen
+theofylline
+trichlooretheen
+vancomycine
+allopurinol
+amiodaron
+bofvaccin
+celecoxib
+Covaxin
+escitalopram
+hydrocodon
+Mannitol
+Metoprolol
+minoxidil
+neomycine
+nicotinamide
+pantoprazol
+papaverine
+prednisolon
+RNA-vaccin
+spironolacton
+trazodon
+anti-epilepticum
+antimycoticum
+anxiolyticum
+artemisinine
+benzoylperoxide
+captopril
+chloraalhydraat
+cholecalciferol
+claritromycine
+disulfiram
+donepezil
+mirtazapine
+povidonjodium
+Protonpompremmer
+resorcinol
+schildklierhormonen
+simvastatine
+sublimaat
+urine-onderzoek
+antihypertensivum
+benzocaïne
+Bisoprolol
+Cholecystokinine
+ergocalciferol
+Ethambutol
+hartglycoside
+isotretinoïne
+itraconazol
+lisinopril
+naltrexon
+natriumdodecylsulfaat
+nitrofurantoïne
+ritonavir
+rituximab
+Secretine
+Tirzepatide
+4-aminobenzoic acid
+alginaat
+aripiprazol
+betamethasone
+calcitriol
+calciumcyaanamide
+clomipramine
+creosote
+epoxide
+favipiravir
+kaliumacetaat
+kalmeringsmiddel
+ketoconazol
+Ketoprofen
+Levothyroxine
+memantine
+nandrolon
+nicotinezuur
+nystatine
+oogdruppels
+paroxetine
+piperazine
+tadalafil
+topiramaat
+trimethoprim
+Trombine
+venlafaxine
+acetazolamide
+amantadine
+amikacine
+ceftazidim
+cefuroxim
+Duloxetine
+emolliens
+Hydroxyzine
+isofluraan
+lamivudine
+lindaan
+miconazol
+mineralocorticoïden
+permethrin
+piracetam
+prednison
+Prodrug
+spermicide
+verapamil
+vincristine
+zolpidem
+amphotericin B
+antimetaboliet
+atenolol
+atomoxetine
+azathioprine
+azelaïnezuur
+budesonide
+Calciumantagonist
+carbamaat
+DEET
+doxorubicine
+flesvoeding
+hydromorfon
+imatinib
+immuunsuppressivum
+Interleukine
+linezolid
+Lipoic Acid
+lithiumtherapie
+methylprednisolone
+nifedipine
+ontstekingsremmer
+orlistat
+oxazepam
+piroxicam
+pyrazinamide
+reserpine
+sulfasalazine
+tenofovir
+TRH
+WHO essentieel geneesmiddel
+5-fluoruracil
+anthelminthicum
+apomorphine
+calciumacetaat
+carvedilol
+Ceratonia
+chloordiazepoxide
+cimetidine
+clonidine
+cloxacillin
+co-trimoxazol
+dextro-amfetamine
+diltiazem
+Dimercaprol
+domperidon
+Esomeprazol
+Eucalyptol
+famotidine
+Immunoglobuline G
+infliximab
+inhibitor
+kaliumwaterstoftartraat
+kristalviolet
+levetiracetam
+micronutriënten
+mupirocine
+neostigmine
+rosuvastatine
+tacrolimus
+trastuzumab
+triclosan
+tricyclische antidepressiva
+valsartan
+BBIBP-CorV
+bromazepam
+Bupivacaine
+buspirone
+chlorphenamine
+CoronaVac
+cyanocobalamine
+Ethinylestradiol
+Ezetimibe
+fluorchinolon
+fluvoxamine
+fomepizole
+glibenclamide
+hyoscyamine
+indigokarmijn
+Inosine
+kaliumwaterstofcarbonaat
+levamisole
+levertraan
+levonorgestrel
+lokaal anestheticum
+mesalazine
+moxifloxacin
+pilocarpine
+praziquantel
+ribavirin
+rimantadine
+salmeterol
+terbinafine
+tretinoïne
+anatoxine
+anti-aritmisch middel
+Antidiabeticum
+baclofen
+bevacizumab
+biologicals
+calciumgluconaat
+carbapenem
+cefixime
+cefotaxime
+clomifeen
+cyclizine
+desloratadine
+desmopressin
+dihydrotestosteron
+ergotamine
+guargom
+hydralazine
+hydroxyurea
+kinidine
+lansoprazol
+malathion
+monoamine-oxidaseremmer
+montelukast
+natriumchloriet
+niclosamide
+para-aminosalicylzuur
+paraldehyde
+paromomycin
+ramipril
+rivaroxaban
+sibutramine
+sirolimus
+sumatriptan
+temazepam
+Timolol
+vardenafil
+verband
+vortioxetine
+agomelatine
+antiserum
+apixaban
+biperideen
+bronchodilatator
+buiktyfusvaccin
+chlorambucil
+dimenhydrinate
+doxylamine
+estriol
+fenacetine
+fexofenadine
+Ipratropium bromide
+Lactitol
+liraglutide
+mefloquine
+meprobamaat
+misoprostol
+natamycine
+Phenoxymethylpenicillin
+polyethyleenglycol
+Rutine
+sevofluraan
+stanozolol
+steenkoolteer
+tobramycine
+varenicline
+vinblastine
+xylometazoline
+Angiotensine receptorblokker
+anticholinergica
+aztreonam
+carboplatin
+cefazolin
+cycloserine
+daunorubicin
+DPT-vaccin
+endocriene disruptor
+flucloxacilline
+flumazenil
+fosfomycin
+Fylochinon
+fyto-oestrogenen
+glimepiride
+hoestdrank
+imipramine
+Incretine
+ketorolac
+lincomycin
+lisdexamfetamine
+malaria-vaccin
+mercaptopurine
+meropenem
+methaqualon
+methimazole
+methyldopa
+meticilline
+nebivolol
+nitrazepam
+Ofloxacine
+oxytetracycline
+pramipexol
+pyrimethamine
+sitagliptine
+stavudine
+temozolomide
+Thiomersal
+Tizanidine
+tocilizumab
+triazolam
+trinatriumfosfaat
+tuberculine
+zopiclon
+adalimumab
+Amandelzuur
+amobarbital
+antipyrine
+Barbital
+benzylbenzoaat
+bisacodyl
+bleomycine
+candesartan
+capecitabine
+cefepime
+Clenbuterol
+colistine
+dacarbazine
+deferoxamine
+docetaxel
+emtricitabine
+Etanercept
+Etomidaat
+Etoposide
+fenylefrine
+flurazepam
+gele koorts vaccin
+gemcitabine
+griseofulvin
+guaifenesine
+kaliumcitraat
+maprotiline
+melfalan
+methoxyflurane
+mifepriston
+nimesulide
+paliperidon
+phentermine
+physostigmine
+piperacillin
+pyrantel
+rabeprazole
+rifabutine
+rivastigmine
+S-Adenosylmethionine
+sotalol
+succinylcholine
+sulfadiazine
+sulfamethoxazole
+sympathicomimeticum
+telmisartan
+valaciclovir
+yohimbine
+zanamivir
+acarbose
+amiloride
+aminofylline
+amisulpride
+anti-emeticum
+atazanavir
+bromocriptine
+Cathine
+cetuximab
+cholinesterase
+chondroïtine
+clobazam
+Coagulation factor X
+Creatinefosfaat
+cytarabine
+dapagliflozin
+denosumab
+di-ethylstilbestrol
+dicloxacillin
+digitoxine
+Efavirenz
+fenetylline
+fenofibraat
+filgrastim
+fusidinezuur
+galantamine
+gammalinoleenzuur
+gemfibrozil
+gliclazide
+GLP-1
+H2-receptorantagonist
+hemagglutinine
+Hib vaccine
+ifosfamide
+irinotecan
+latanoprost
+levocetirizine
+lovastatine
+mefenamic acid
+meldonium
+Merbromine
+moclobemide
+nevirapine
+octreotide
+oxacilline
+oxandrolon
+pembrolizumab
+Penicillamine
+perindopril
+Prostacyclin
+pyridostigmine
+pyridoxaalfosfaat
+rofecoxib
+roxithromycin
+smart drug
+sofosbuvir
+sulfapreparaat
+tetracyclines
+Thiazidediureticum
+triamcinolon
+trimethylglycine
+zinkacetaat
+Alfa 1-antitrypsine
+anastrozole
+benzonatate
+broomhexine
+busulfan
+chlortetracycline
+choliczuur
+clofazimine
+clorazepinezuur
+contraststof
+desfluraan
+DNA-vaccin
+Ethosuximide
+Everolimus
+exenatide
+fenylbutazon
+indapamide
+invertsuiker
+irbesartan
+ketotifen
+labetalol
+naphazoline
+nortriptyline
+olmesartan
+pimozide
+pioglitazone
+prazosin
+Primaquine
+primidone
+procarbazine
+proguanil
+Propafenone
+propylthiouracil
+remifentanil
+rifaximin
+riluzol
+rotavirus vaccine
+saquinavir
+SNRI
+Streptokinase
+Sulpiride
+tigecycline
+tropicamide
+ziprasidone
+acamprosaat
+Adstringentia
+alemtuzumab
+ambroxol
+ATC-code A01
+atovaquon
+bètahistine
+bortezomib
+butylscopolamine
+cariprazine
+chloorxylenol
+Coagulation factor VII
+cytisine
+Daptomycin
+dibutylftalaat
+dihydrocodeïne
+DMARD
+Dobutamine
+enoxaparin
+ergometrine
+etoricoxib
+Floroglucinol
+fludarabine
+formoterol
+foscarnet
+fosinopril
+ganciclovir
+hydroxyproline
+IDV
+indinavir
+isoprenaline
+levomepromazine
+linagliptine
+menadion
+minocycline
+mitotane
+mometasonfuroaat
+Nalidixic Acid
+natriumdioctylsulfosuccinaat
+natriumpropionaat
+nicotinevervangingstherapie
+norethindrone
+noscapine
+oraal anticonceptiemiddel
+oxaliplatin
+oxcarbazepine
+Oxybutynine
+oxymetazoline
+pindolol
+podofyllotoxine
+procainamide
+psychofarmaca
+raloxifene
+rasagiline
+sulfacetamide
+tamsulosine
+terbutaline
+tianeptine
+tiotropium
+topotecan
+triclabendazool
+Vasoactive intestinal peptide
+vinorelbine
+voriconazol
+weesgeneesmiddel
+Zilversulfadiazine
+5-Hydroxytryptofaan
+8-Hydroxyquinoline
+acitretine
+alendroninezuur
+aprepitant
+benazepril
+bendamustine
+Benzydamine
+brexpiprazole
+cabergoline
+carisoprodol
+cefpodoxime
+Cefprozil
+Cypermetrine
+Cyproheptadine
+dapoxetine
+darunavir
+dextropropoxyfeen
+di-ethylcarbamazine
+Diarylquinoline
+dipyridamol
+droperidol
+Eflornithine
+enfluraan
+ertapenem
+flucytosine
+fluticasone
+gefitinib
+isordil
+leflunomide
+leuprorelin
+levend vaccin
+methocarbamol
+Mexiletine
+naftifine
+natriumperboraat
+norfloxacin
+Novavax vaccin
+Novavax-COVID-19-vaccin
+Pentazocine
+pentoxifylline
+pravastatine
+quinapril
+Ropivacaine
+rosiglitazone
+seleniumsulfide
+spectinomycin
+spierverslapper
+Spiramycine
+sufentanil
+thiabendazool
+tinidazole
+trimipramine
+zoledronaat
+zonisamide
+zuclopentixol
+adapaleen
+alfentanil
+ATC-code C01
+azelastine
+beclomethasone
+betaxolol
+bicalutamide
+caspofungin
+cefaclor
+cefdinir
+Chloorthiazide
+cholestyramine
+cilostazol
+desipramine
+dianadol
+diazoxide
+diloxanide
+entacapone
+estazolam
+fingolimod
+Fondaparinux
+geïnactiveerd vaccin
+glatirameer
+insuline glargine
+magnesiumperoxide
+maraviroc
+mebeverine
+milnacipran
+natriumseleniet
+netilmicin
+nimodipine
+nusinersen
+omalizumab
+oxamniquine
+panthenol
+Phenelzine
+prochlorperazine
+raltegravir
+repaglinide
+retinoïde
+ropinirole
+sorafenib
+Succinimide
+sulfonylureum
+tapentadol
+theeboomolie
+tolnaftaat
+tricalciumcitraat
+trombocytenaggregatieremmer
+tropisetron
+valganciclovir
+vonwillebrandfactor
+5-amino-4-oxo-pentaanzuur
+acenocoumarol
+adderall
+aliskiren
+amoxapine
+artemether
+articaïne
+ATC-code N02
+atracurium
+Benznidazole
+brotizolam
+bumetanide
+cabazitaxel
+calcipotriol
+calciumlactaat
+capreomycin
+carbachol
+cefalotin
+cidofovir
+cilazapril
+cinchocaine
+cisapride
+cromoglicinezuur
+cysteamine
+danazol
+dasatinib
+Deltamethrin
+Desvenlafaxine
+dicoumarol
+dimethylfumaraat
+doxazosin
+DPP-4 remmers
+dutasteride
+ebastine
+Edoxaban
+enfuvirtide
+esmolol
+famciclovir
+felodipine
+fenylsalicylaat
+fludrocortisone
+fluvastatine
+glipizide
+hexachlorofeen
+idarubicin
+imipenem
+imiquimod
+Lecanemab
+Lenalidomide
+lomustine
+lopinavir/ritonavir
+Mianserin
+Mirabegron
+monobactam
+nabilone
+nadolol
+naratriptan
+natalizumab
+nelfinavir
+penciclovir
+pirfenidone
+pitavastatin
+Quassia
+secobarbital
+senna glycoside
+thioridazine
+tolterodine
+trandolapril
+Tranylcypromine
+triethanolamine
+undecyleenzuur
+acebutolol
+Ad5-nCoV
+amfepramon
+anakinra
+ATC-code A03
+ATC-code A11
+Bilastine
+Bromelain
+butorfanol
+calcifediol
+Carbenicillin
+carmustine
+cefadroxil
+chloormethine
+ciclopirox
+Clemastine
+decongestivum
+Econazol
+Emetine
+Eplerenone
+erlotinib
+Etodolac
+exemestane
+Expectorans
+fenolrood
+Fenoprofen
+flibanserin
+Flurbiprofen
+hydroxypropylmethylcellulose
+ivabradine
+Lavendelolie
+loxapine
+medazepam
+Melarsoprol
+mycofenolzuur
+nabumetone
+natriumselenaat
+Nifurtimox
+nivolumab
+octopamine
+phenazopyridine
+phentolamine
+pimecrolimus
+pipemidic acid
+pralidoxime
+prasugrel
+promazine
+pyrethrine
+ramelteon
+rizatriptan
+sevelamer
+Staalpillen
+sulindac
+tetrahydrobiopterin
+ticagrelor
+torasemide
+triamterene
+trimetazidine
+tubocurarine
+ulipristalacetaat
+zaleplon
+2-dimethylaminoethanol
+abatacept
+abciximab
+Alfablokker
+AlPO4
+armodafinil
+astemizole
+ATC-code A02
+ATC-code A10
+ATC-code A14
+ATC-code A16
+ATC-code C07
+ATC-code J01
+ATC-code N05
+belimumab
+benzatropine
+Bifenyl-2-ol
+bifonazole
+Calciumsilicaat
+Carbocisteine
+carteolol
+cefoperazone
+cefoxitin
+ceftibuten
+Chloorprotixeen
+chloramine-T
+chlorobutanol
+cinnarizine
+cladribine
+clofibrate
+Dicyclomine
+didanosine
+dimethylftalaat
+eprosartan
+ethacrynic acid
+eucalyptusolie
+flecainide
+furazolidone
+glycyrrhizinezuur
+granisetron
+indacaterol
+Methylcobalamine
+multivitamine
+nedocromil
+oxprenolol
+palbociclib
+Palonosetron
+pemetrexed
+Phenibut
+pheniramine
+Polydimethylsiloxaan
+pramlintide
+probenecid
+protamine
+Prothionamide
+ranolazine
+Rifapentine
+salicylamide
+Sulbactam
+sunitinib
+tazobactam
+teicoplanin
+Tenofovir/emtricitabine
+tetrabenazine
+tolbutamide
+tranquilizer
+triprolidine
+ustekinumab
+zolmitriptan
+alprostadil
+ammonium ferric citrate
+Anagrelide
+apremilast
+ATC-code A06
+ATC-code A08
+ATC-code B01
+ATC-code C02
+ATC-code C03
+ATC-code D08
+ATC-code J05
+ATC-code L01
+ATC-code M05
+ATC-code N03
+ATC-code N04
+ATC-code N06
+ATC-code N07
+avanafil
+Avermectin
+azacitidine
+basiliximab
+Besifloxacin
+bethanechol
+biguanide
+bosentan
+Botmorfogenetisch proteïne
+brimonidine
+carbimazol
+cefamandole
+cefotetan
+cefradine
+cerivastatine
+certolizumab pegol
+clomethiazole
+cobicistat
+deferiprone
+delavirdine
+demeclocycline
+desogestrel
+Desoxyribonuclease
+dexketprofen
+diatrizoate
+dimetindeen
+disopyramide
+Ditranol
+dorzolamide
+Etonogestrel
+flutamide
+fudeoxyglucose
+Gardasil
+golimumab
+goserelin
+gramicidin
+hexetidine
+HIV vaccin
+homatropine
+insuline aspart
+Insuline lispro
+ipilimumab
+Iproniazide
+kruidnagelolie
+lacosamide
+Lisdiureticum
+Lormetazepam
+magnesiumcitraat
+methylfenobarbital
+miglitol
+miltefosine
+moexipril
+Nafcillin
+nalmefeen
+Nefazodone
+nicardipine
+nilotinib
+nisoldipine
+nizatidine
+orciprenaline
+ouabaïne
+parasympaticomimeticum
+pemoline
+Propyfenazon
+Psyllium
+Pyrazolon
+racemisch tilidine
+Reboxetine
+rilpivirine
+Serpin
+siderofoor
+sporenelement
+tacrine
+Teniposide
+tenoxicam
+terazosin
+teriparatide
+Thiotepa
+Thiothixene
+tiagabine
+ticarcillin
+ticlopidine
+trifluridine
+vemurafenib
+vigabatrin
+vildagliptine
+Zafirlukast
+17-OH-progesteron
+Aceclofenac
+acepromazine
+acetarsol
+activator
+alfuzosin
+alitretinoin
+Allobarbital
+alosetron
+ATC-code A04
+ATC-code A09
+ATC-code B02
+ATC-code B05
+ATC-code C04
+ATC-code C08
+ATC-code C09
+ATC-code D03
+ATC-code D04
+ATC-code D09
+auranofine
+Azlocillin
+bezafibrate
+bimatoprost
+butoconazole
+canagliflozin
+Cefpirome
+cobamamide
+Cyclopentolaat
+Dalteparine
+dexmethylfenidaat
+dexrazoxan
+diflunisal
+docosanol
+dolasetron
+doxapram
+Eculizumab
+elvitegravir
+enzalutamide
+Etilefrine
+fenoterol
+fenprocoumon
+flunarizine
+fluocinolone acetonide
+fluorometholone
+gatifloxacin
+Gemifloxacin
+Glutethimide
+guanethidine
+hemostaticum
+ibrutinib
+Ijzergluconaat
+Immunogoud
+insuline detemir
+iohexol
+kanamycin
+ketazolam
+Lanthaniumcarbonaat
+lapatinib
+lijnzaad
+Methazolamide
+methohexital
+methylergometrine
+nitrofural
+Orphenadrine
+oxaprozin
+oxolinic acid
+quaternair ammoniumzout
+ranibizumab
+rimonabant
+riociguat
+risedronate
+roflumilast
+Rotigotine
+rupatadine
+silodosine
+strontiumranelaat
+sugammadex
+synephrine
+telithromycine
+terlipressin
+tipranavir
+tri-ethyleentetramine
+viloxazine
+vorinostat
+werkingsmechanisme
+ziconotide
+zinkpyrithion
+alfacalcidol
+alglucosidase alfa
+alimemazine
+alprenolol
+aranesp
+aromataseremmers
+ATC-code A12
+ATC-code B03
+ATC-code B06
+ATC-code D02
+ATC-code D05
+ATC-code D06
+ATC-code D07
+ATC-code L03
+ATC-code L04
+ATC-code M02
+ATC-code M03
+ATC-code M09
+ATC-code P02
+ATC-code R06
+bexarotene
+brivaracetam
+broomfenac
+Butenafine
+butobarbital
+canakinumab
+ceftizoxime
+Cevimeline
+chlorpropamide
+Cyclobarbital
+daclizumab
+dermatan sulfate
+desonide
+dihydroergotamine
+diosmin
+drospirenon
+EpiVacCorona
+febuxostat
+felbamaat
+Fenfluramine
+fidaxomicine
+fludiazepam
+fluoxymesterone
+frovatriptan
+gemtuzumab ozogamicin
+halazepam
+icatibant
+ionofoor
+isocarboxazid
+josamycin
+levosimendan
+lomefloxacin
+lorcaserin
+lornoxicam
+mazindol
+melkvervanger
+mepivacaine
+moxonidine
+nateglinide
+Niflumic Acid
+nintedanib
+Nordazepam
+P. senega
+pamidronate
+panitumumab
+pertuzumab
+Phenoxybenzamine
+polidocanol
+Polygala senega
+prokineticum
+quazepam
+rasburicase
+rufinamide
+S. boulardii
+Saccharomyces boulardii
+Salsalate
+Selectieve oestrogeenreceptormodulator
+Sivextro
+sparfloxacin
+Sparteïne
+stikstofmosterd
+sympathicolyticum
+tazarotene
+Tenecteplase
+tetramethrine
+tolvaptan
+travoprost
+ZMapp
+4-hexylresorcinol
+Acemetacin
+acrivastine
+adrafinil
+ajmaline
+algemeen anesthetica
+Aminoglutethimide
+Amorolfine
+anileridine
+aprobarbital
+Argatroban
+ATC-code A05
+ATC-code C05
+ATC-code C10
+ATC-code D10
+ATC-code G02
+ATC-code H02
+ATC-code H03
+ATC-code J02
+ATC-code J04
+ATC-code M01
+ATC-code M04
+ATC-code N01
+ATC-code R05
+ATC-code S01
+ATC-code S02
+ATC-code V08
+benperidol
+brompheniramine
+cefapirin
+Cefditoren
+chlorquinaldol
+colesevelam
+CoviVac
+Dalfampridine
+dexibuprofen
+Dichlorofeen
+dienogest
+difenoxylaat
+doripenem
+enoxacin
+Etravirine
+fenoldopam
+hexobarbital
+Idarucizumab
+idoxuridine
+iloprost
+imidapril
+interferon bèta-1a
+lentinan
+levobunolol
+lymecycline
+medroxyprogesteron
+menotropine
+mepyramine
+metrifonaat
+Metyrapon
+mezlocillin
+natriumfosfaat
+ofatumumab
+Parecoxib
+pazopanib
+pefloxacin
+perampanel
+Perubalsem
+prazepam
+romiplostim
+Sulconazol
+sulfamethizole
+tacalcitol
+talinolol
+telaprevir
+Terizidone
+Thiamfenicol
+Thiram
+tioconazole
+tirofiban
+valdecoxib
+virus-like particle
+zalcitabine
+zofenopril
+aflibercept
+Aluminiumchloorhydraat
+ATC-code D11
+ATC-code G01
+ATC-code G03
+ATC-code G04
+ATC-code H05
+ATC-code J06
+ATC-code J07
+ATC-code L02
+ATC-code P01
+ATC-code P03
+ATC-code R02
+ATC-code R03
+ATC-code S03
+ATC-code V03
+bacampicillin
+Bazedoxifen
+Bergamotolie
+boceprevir
+Bopindolol
+Carbromal
+carglumaatzuur
+Chlorcyclizine
+clotiazepam
+cloxazolam
+Colestipol
+crizotinib
+cyfluthrin
+darifenacin
+desoximetason
+diastase
+fenothrine
+folcodine
+geconjugeerd vaccin
+Heptaminol
+illegale drug
+Imiglucerase
+intraveneuze immunoglobulinetherapie
+isradipine
+kaliumsparend diureticum
+lanreotide
+Loprazolam
+meclofenamic acid
+methacycline
+Metolazone
+nicergoline
+nifuroxazide
+Octylmethoxycinnamaat
+oxiconazole
+pegvisomant
+Penbutolol
+pirenzepine
+Piritramide
+protriptyline
+prucalopride
+Raxone
+reteplase
+Sertaconazole
+subunit-vaccins
+Sulfamethazine
+sulfisoxazole
+tafluprost
+tegaserod
+trabectedin
+treprostinil
+trimebutine
+trimethadione
+Tylenol
+Tyrosinekinaseremmers
+Vidarabine
+Virale-vectorvaccin
+4-methoxyfenol
+agglutinine
+almotriptan
+alteplase
+Ammonium lactate
+amprenavir
+aniracetam
+antitumoraal middel
+aprotinin
+ATC-code A13
+ATC-code D01
+ATC-code R01
+ATC-code V09
+barnidipine
+Benorilate
+Benzethoniumchloride
+Bergapten
+Bevantolol
+buflomedil
+cabozantinib
+camazepam
+celiprolol
+Checkpointremmer
+cinacalcet
+Corbevax
+Daratumumab
+Dihydrostreptomycin
+dofetilide
+dronedarone
+efalizumab
+Etofenamaat
+Etretinaat
+flavoxaat
+flubendazole
+Flufenamic acid
+Fusafungine
+halofantrine
+immunologisch adjuvant
+Inosine pranobex
+interferon bèta-1b
+ivacaftor
+ketobemidon
+lercanidipine
+linaclotide
+loracarbef
+megestrol
+Mersalyl
+methyprylon
+methysergide
+mitomycin
+Monobenzon
+nialamide
+nitrendipine
+Ocrelizumab
+palivizumab
+panobinostat
+pegfilgrastim
+pentostatin
+Pentylenetetrazol
+peramivir
+phenindione
+pinazepam
+piribedil
+pivampicillin
+ponatinib
+Practolol
+pramocaïne
+puberteitsremmer
+spirapril
+stiripentol
+Sulfamerazine
+Sulfapyridine
+sulfinpyrazone
+tafamidis
+Tegafur
+telbivudine
+temocillin
+temsirolimus
+toloxatone
+triptorelin
+troleandomycin
+trovafloxacin
+Tyrothricin
+Urapidil
+Valpromide
+Vinylbital
+zimelidine
+zorecimeran
+11-Deoxycorticosterone
+abiraterone
+afutuzumab
+ambrisentan
+amifostine
+angiogeneseremmer
+ATC-code H01
+Atosiban
+Bamlanivimab
+bendroflumethiazide
+benzbromarone
+blinatumomab
+braakmiddel
+brentuximab vedotin
+butamirate
+Calciumdinatrium-ethyleendiaminetetraäcetaat
+cangrelor
+Cefetamet
+Cinoxacin
+dampvormige anesthetica
+deflazacort
+degarelix
+Delapril
+diacerein
+diclofenamide
+didecyldimethylammoniumchloride
+difacinon
+difluprednate
+Dihydrotachysterol
+dipivefrin
+eltrombopag
+Epanolol
+ethylloflazepaat
+flumequine
+fosamprenavir
+gemeprost
+H1-antagonist
+ibritumomab tiuxetan
+Idursulfase
+isoconazole
+kaliumlactaat
+lisuride
+magaldrate
+Melperone
+Midecamycin
+miglustat
+mizolastine
+Muromonab-CD3
+nitisinone
+Obidoxime
+opipramol
+ornidazole
+Oxiracetam
+Paraoxon
+Pasireotide
+pipamperon
+tenofovir alafenamide
+terfenadine
+xipamide
+zinkgluconaat
+aceclidine
+acetylcarnitine
+andexanet alfa
+anilide
+antimitoticum
+ATC-code A15
+ATC-code R07
+ATC-code V04
+benfluorex
+benralizumab
+Bentazepam
+Canrenone
+Carbenoxolon
+Clotiapine
+Dexchlorpheniramine
+dextromoramide
+Diosmectite
+drotaverine
+eptifibatide
+erdosteine
+erenumab
+ezogabine
+fleroxacin
+hexamidine
+isothipendyl
+karayagom
+lacidipine
+Lofexidine
+lumiracoxib
+Medroxyprogesteron-injectie
+mefenorex
+Mephenesin
+Mepindolol
+meptazinol
+methylpentynol
+Metirosine
+Moroxydine
+Nadifloxacin
+Narcobarbital
+nicorandil
+nilutamide
+oxatomide
+pentagastrin
+pipradrol
+pirbuterol
+Pleconaril
+Policosanol
+pristinamycin
+Pyrrolnitrin
+quinupristin/dalfopristin
+Racetam
+rosoxacin
+Sisomicin
+sulbutiamine
+Talampicillin
+Triflusal
+trioxsalen
+Tripelennamine
+Troxerutin
+Vinbarbital
+4-Dimethylaminophenol
+acipimox
+afamelanotide
+Alcuroniumchloride
+alminoprofen
+ATC-code H04
+ATC-code V10
+Azapropazone
+Azidamfenicol
+balsalazide
+bambuterol
+Barbexaclone
+becaplermin
+Bezitramide
+bretylium
+bupranolol
+Cervarix
+ciprofibraat
+cryoprotectant
+defibrotide
+distigmine
+Dixyrazine
+eletriptan
+estramustine
+fenbufen
+fenspiride
+flunisolide
+Fluspirileen
+Fluticasonfuroaat
+Fumagilline
+Galafold
+hydroflumethiazide
+ibalizumab
+kajeputolie
+Ketanserin
+levodropropizine
+Loxoprofen
+mafenide
+magnesiumfosfaat
+mecamylamine
+metaraminol
+Methsuximide
+Methylnaltrexon
+Niaprazine
+nicomorfine
+Nifuratel
+Nitroxoline
+Olaflur
+Oleandomycin
+olsalazine
+otilonium bromide
+Pandemrix
+Pegaptanib
+penfluridol
+pergolide
+Phensuximide
+Photosensibilisator
+prolintaan
+racecadotril
+remikiren
+Thebacon
+tibolone
+tiludroninezuur
+TNF-alfa-remmers
+tolperisone
+Tramazoline
+Trichlormethiazide
+Virginiamycin
+abarelix
+afobazole
+Alclofenac
+alefacept
+ATC-code V06
+Bekanamycin
+Beraprost
+Broomperidol
+bufexamac
+buserelin
+clobutinol
+clodronate
+Clopenthixol
+Cloranolol
+Clorindione
+Colestilan
+dibekacin
+difenoxine
+Doxefazepam
+Eperisone
+fenazocine
+Fencamfamine
+fenoperidine
+fenylkwiknitraat
+Gallopamil
+goudverbinding
+grepafloxacin
+ibutilide
+Iclaprim
+indoramin
+insulineanalogon
+Iprindole
+latamoxef
+lepirudin
+levosulpiride
+Mebhydrolin
+Medifoxamine
+Melitracen
+Methoxamine
+methoxsalen
+molsidomine
+nafarelin
+naftidrofuryl
+Nifurtoinol
+Nomifensine
+Ornipressin
+Oxlumo
+Oxolamine
+pancreatine
+perflenapent
+Pramiracetam
+Propiverine
+ravulizumab
+Reposal
+Ronifibrate
+sargramostim
+siltuximab
+Sulbenicillin
+talbutal
+Thiocolchicoside
+Tulobuterol
+vernakalant
+Adrenalon
+Allylestrenol
+antitranspirant
+ataluren
+Aurotioprol
+Azanidazole
+bemegride
+Bendazac
+Bioallethrine
+Brivudine
+bromopride
+calciumglycerofosfaat
+Cloperastine
+Debrisoquin
+directwerkende orale anticoagulantia
+Doxofylline
+Droxicam
+dyphylline
+Feneticilline
+fenozolone
+Fenticonazole
+flupirtine
+glibornuride
+Indoprofen
+inotuzumab ozogamicin
+iopamidol
+isoxsuprine
+levacetylmethadol
+lynestrenol
+manidipine
+Masitinib
+Mepartricin
+mifamurtide
+Norprolac
+ocriplasmine
+omoconazole
+perflubron
+Phenacemide
+Pirprofen
+pizotifen
+Plicamycin
+Policresulen
+Prulifloxacin
+Rufloxacin
+Temafloxacin
+Thonzylamine
+Tiopronin
+Tocainide
+velaglucerase alfa
+ximelagatran
+alfaxalone
+Alkylsulfonaat
+Angiotensine II
+aprindine
+benoxaprofen
+captodiame
+Clofoctol
+Cyclopenthiazide
+dropropizine
+encainide
+Etoglucid
+Gasotransmitter
+Idrocilamide
+iodamide
+iodixanol
+metipranolol
+Nimustine
+normethadon
+Oxaceprol
+Pidotimod
+Piretanide
+proteïnekinaseinhibitor
+Reproterol
+rescinnamine
+Ribostamycin
+rolitetracycline
+Satraplatin
+Sitafloxacin
+triflupromazine
+Trilostane
+vinflunine
+zipeprol
+Abacavir/dolutegravir/lamivudine
+amsacrine
+Anistreplase
+arsthinol
+Beclamide
+bibrocathol
+Cadralazine
+carbasalaatcalcium
+Cloprednol
+dexfenfluramine
+Ditazole
+Edoxudine
+elotuzumab
+Faropenem
+Felbinac
+Fentiazac
+Fluindione
+Flunoxaprofen
+Fomivirsen
+gadobutrol
+Garenoxacin
+Guacetisal
+halcinonide
+histapyrrodine
+ibuproxam
+Indobufen
+Ioflupane
+isopropamide
+meglutol
+miocamycin
+moricizine
+Nalfurafine
+natriumfenylbutyraat
+Nifenazone
+oxametacin
+Paramethadione
+parasympathicolyticum
+pazufloxacin
+Polyhexanide
+proglumetacin
+rokitamycin
+Sobrerol
+Succinylsulfathiazole
+sulodexide
+Sultiame
+Suprofen
+tetracosactide
+Tilorone
+tribenoside
+Bemiparin
+Benadryl
+briakinumab
+Bumadizone
+Cimetropium bromide
+clofedanol
+Cortivazol
+Elosulfase alfa
+Fipexide
+formestane
+Gestrinone
+Givinostat
+Iocarmic acid
+Ipriflavone
+medisch gebruik van zilver
+Mitobronitol
+Muzolimine
+NuvaRing
+Picotamide
+Ridaforolimus
+Secretagoog
+tocofersolan
+VariZIG
+Bunaftine
+catumaxomab
+Colextran
+Danaparoid
+ergotalkaloïden
+Etamivan
+Fenquizone
+Guanoxan
+hematinicum
+letosteine
+Lonidamine
+Mangafodipir
+pirisudanol
+plantengroeiregelaar
+Prethcamide
+progabide
+Propentofylline
+radiosensitizer
+Rociverine
+Taurolidine
+Aminoacridine
+Ancrod
+Dibromotyrosine
+DKTP-vaccin
+Domiodol
+Edrecolomab
+Elvitegravir/cobicistat/emtricitabine/tenofovir
+Ethylestrenol
+Fenoverine
+Flosequinan
+framycetine
+iobitridol
+Iophendylate
+methamfetamine
+Parnaparin
+Sipuleucel-T
+Tedisamil
+Tenitramine
+Advil
+afelimomab
+anabolica
+Brinase
+DIVA vaccin
+Doxepin
+Elcatonin
+GABA-agonist
+Hemopure
+invers vaccin
+mydriatica
+Oral-Turinabol
+Panipenem/betamipron
+Ranitidina bismuto citrato
+Technetium
+zinkzalf
+Actiq
+Batroxobin
+Cadexomer iodine
+CimaVax-EGF
+cyproteron/ethinylestradiol
+foliumzuur
+Replagal
+Actrapid
+algeldraat
+antidiuretisch hormoon
+dermatica
+Fluzone
+Ipecacuanha
+maagzuurremmer
+miotica
+n-amylnitriet
+niet opioïde analgeticum
+Paralen
+RabAvert
+Selegiline
+Aloxiprin
+Altafur
+Anticorticosteroid
+azilsartan
+bulkvormer
+Echinaforce
+Evista
+farmacologische werking
+Gleptoferron
+glycopyrronium
+immunologische factor
+krypton-81m
+luchtwegmedicatie
+natuurgeneesmiddel
+Nicofetamide
+NicVAX
+nitraatzalf
+Protein subunit vaccine
+recombinant-DNA-geneesmiddel
+rocuronium
+Sabin vaccin
+sclerosans
+thiazolidinedione
+vecuronium
+Verorab
+virale vaccins
+Virus-like particles-vaccin
+voedingszuur
+A-MethaPred
+Abasaglar
+Abasaglar KwikPen
+Abasaglar Tempo Pen
+Abboticin
+Abboticin Novum
+Abdomin Citrus
+Abdomin Junior Neutral
+Abdomin Neutral
+Abevmy
+Abigerd
+Abilify
+Abilify Maintena
+Abraxane
+ABSIMKY
+Abstral
+Acarizax
+Accofil
+Accord
+Aceinhib
+Aciclodan
+Addyi
+Afinitor
+Alavert
+Aller-Tec D
+Amaryl
+Anafranil
+Aristo
+Ativan
+Azilect
+Brintellix
+Carefarm
+Cetiri-D
+Champix
+Chateal
+Cipralex
+Claritin
+Clear-Atadine
+Copaxone
+Depo-Medrol
+Elmiron
+Fortaz
+Frova
+Glenmark
+Humalog
+Krka
+Loradamed
+Macure
+Medical Valley
+Medrol
+Microzide
+Monopril
+Mylan
+NeuralCIM
+Norethin
+Noriday
+Norinyl
+Norquen
+Olpha
+Ortho-Novum
+Oxycontin
+Panodil
+Panodil Brus
+Panodil Extra
+Panodil Hot
+Panodil Junior
+Panodil Zapp
+ProAir
+Proventil
+Qilu
+Qlearquil Allergy Relief
+Razadyne
+Rexulti
+Sabervel
+SAD
+Sandoz
+Saxenda
+Serevent
+Soliris
+Solu-Medrol
+Stada
+Tavist Non-Sedating
+Tazicef
+Teva
+Transderm Scop
+Tygacil
+Ventolin
+Victoza
+Vivanta
+Wainua
+Wal Zyr D
+Wal-itin
+warfarin
+Xadago
+Xarelto
+Zentiva
+Zomig
+entstof
+gevaccineerd
+vaccineren
+alkohol
+EtOH
+cartose
+druivensuiker
+acetosal
+aspirine
+Bloedlichaam
+Erythrocyt
+Erytrocyt
+Rode bloedcellen
+Rode bloedlichaampjes
+Rood bloedlichaampje
+Diacetylmorfine
+Heroine
+Smack
+cafeine
+caffeïne
+coffeine
+coffeïne
+mateine
+mateïne
+AcOH
+CH3-COOH
+CH3COOH
+ethaanzuur
+HOAc
+ijsazijn
+HCl
+HCl aq
+Kapanol
+MS Contin
+Sevredol
+epinefrine
+Baksoda
+CHNaO3
+Dubbelkoolzure soda
+Maagzout
+Mesocorticaal circuit
+Mesolimbisch circuit
+NaHCO3
+Natriumbicarbonaat
+Nigrostriatale circuit
+Zuiveringszout
+carbolzuur
+fenolgroep
+hydroxybenzeen
+Thrombocyt
+Trombocyt
+Trombocytose
+plasma in het bloed
+ClNa
+coronavaccin
+coronavirusvaccin
+fruitsuiker
+NaCl
+vruchtensuiker
+Cacit
+Viagra
+Aneurine
+Citraten
+Deponit
+Glyceroltrinitraat
+Nytroglycerine
+Vitamine B1
+Sint Janskruid
+Sintjanskruid
+St janskruid
+St. Janskruid
+vitamine B2
+camphora
+Gly
+Gro
+H2N-CH2-COOH
+analgesie
+analgetica
+analgeticum
+pijnstilling
+zuurstofwater
+amoxycilline
+Augmentin
+Ecstacy
+Emma
+Extacy
+Tocoferol
+Tocopherol
+Α-tocoferol
+Anti-oxidant
+Anti-oxidantia
+Antioxidans
+extrinsic factor
+extrinsieke factor
+vitamine b12
+aluinaarde
+salmiak
+salmiakzout
+Amfetaminea
+Benzedrine
+CHCl3
+Dicophane
+Freon 20
+Geleermiddel
+methyltrichloride
+permanganaten
+TCM
+trichloormethaan
+Distikstofoxide
+Hydrocortison
+Lachgas
+stresshormoon
+Jezuietenpoeder
+Jezuïetenpoeder
+Pil Bandoeng
+B-vitamines
+BGC-tuberculosevaccin
+blauwe vitriool
+Diëthylether
+Ethoxyethaan
+M. bovis BCG
+Mycobacterium bovis bacillus Calmette-Guerin
+carfentanyl
+durogesic
+kalizout
+KCl
+norepinefrine
+Vitamine B7
+Vitamine B8
+Vitamine H
+anti-depressiva
+anti-depressivum
+antidepressiva
+Glutaminaat
+stemmingsverbeteraar
+Mephenon
+IFN-gamma
+IFN-γ
+IFNgamma
+IFNγ
+BioNTech-vaccin
+botuline
+botuline-toxine
+coronavaccin van Pfizer/BioNTech
+glauberzout
+Helse steen
+Pfizer-vaccin
+Pfizer/BioNTech-vaccin
+vaccin van farmaceuten Pfizer/BioNTech
+vaccin van Pfizer/BioNTech
+CaCl2
+Stesolid
+androgenen
+Besitran
+Cataflam
+Lustral
+Serlain
+Sertralin
+sertralinum
+Voltaren
+Voltarol
+Zoloft
+silicoon
+antidotum
+antigif
+antisepsis
+antiseptica
+antiseptisch
+antitoxine
+contergan
+desinfectans
+desinfecterende
+desinfectie
+Docfluoxetine
+Eskim
+fenolftaleien
+fenolftaleïen
+fenolftaleine
+Fluctin
+Fluox
+Fluoxemed
+Fluoxetop
+Fluoxone
+Fontex
+glucophage
+Omega 3
+Omega-3
+Omega-3-vetzuren
+Prosimed
+softenon
+Anti-psychoticum
+Antipsychotica
+AstraZeneca-coronavaccin
+azitromycine
+Diprivan
+endrine
+ephedronguent
+Neuroleptica
+Oxford-vaccin
+Oxford/AstraZeneca-vaccin
+Psycholeptica
+ritalin
+Russische coronavaccin Spoetnik
+Russische Spoetnik-V-vaccin
+Russische Spoetnikvaccin
+Russische vaccin
+Spoetnik V
+Spoetnik-vaccin
+Sputnik-vaccin
+vaccin van Oxford/AstraZeneca
+Xylocaïne
+Xylocaine visqueuse
+adrenocorticotroof hormoon
+Afrodisiac
+Afrodisiaca
+diuretica
+diuretisch
+Liefdesmiddel
+MgSO4
+plaspil
+plastablet
+Xanax
+AlCl3
+aluminiumtrichloride
+Bijnierschorshormoon
+Corticoid
+Corticoïd
+Corticosteroïd
+temesta
+Inderm
+actief kool
+actief koolstoffilter
+actieve koolstof
+anticoagulantia
+antistolling
+antistollingsmiddel
+bloedverdunner
+capsaïne
+cokeskool
+groene vitriool
+koolfilter
+koolfiltratie
+naprovite
+psychostimulantia
+psychostimulantium
+stimulantium
+stimulerend middel
+stollingsremmer
+beta blokker
+beta-blokker
+bèta-blokker
+betablokker
+Castorolie
+GSH
+Hallucinogene
+Hallucinogene middelen
+prostaglandine
+Psychedelica
+Psychodyslepticum
+Ricinusolie
+thyreotroop hormoon
+thyroïdstimulerend hormoon
+thyrotroof hormoon
+tryptizol
+β-blokker
+doorslaapmiddel
+inslaapmiddel
+NaNO2
+slaappil
+slaappillen
+Bleekpoeder
+burundanga
+NaClO
+NaOCl
+scopolamin
+selectieve serotonineheropnameremmer
+selective serotinine reuptake inhibitor
+serotonineheropnameremmers
+Tamiflu
+Berlijns blauw
+CH3COONa
+NaAc
+Pruissisch blauw
+Rivotril
+spiraaltje
+Anabole steroide
+Antiviraal middel
+HCTZ
+HCZ
+Hexamethyleentetramine
+HPV-vaccinatie
+MgCl2
+Tegretol
+fluimucil
+antacida
+Anti-histaminica
+Antihistaminica
+Bisoltussin
+BMR
+BMR-inenting
+cefaloridine
+cephalosporine
+Dampo Bij Droge Hoest
+Darolan
+Darolan Hoestprikkeldempend
+Daromefan
+desinfecteren
+desinfecterend middel
+DXM
+gentamycine
+Largactil
+laxantia
+laxerend
+Lyrica
+methothrexaat
+purgeermiddel
+Siquil
+zuurafbrekend middel
+2-benzhydrylsulfinylethanamide
+C2HBrClF3
+CF3-CHClBr
+depakine
+Modiodal
+Movicox
+pentriet
+Provigil
+Trijoodmethaan
+ZnCl2
+Belivon
+Bèta-caroteen
+Betacaroteen
+choriongonadotrofine
+Cipramil
+diphenylhydantoine
+fenytoine
+HCG-hormoon
+humaan choriongonadotropine
+Lactobacil
+pregnyl
+Rispen
+Risperdal
+vitamine A1
+Antipyretica
+Baccatine
+Beta-lactam-antibiotica
+Beta-lactam-antibioticum
+Cis platin
+Cis platina
+Cisplatina
+Cisplatinum
+Duoplavin
+Febrifugum
+Glucosamine hydrochloride
+Glucosamine sulfaat
+Glucosaminehcl
+Glucosaminehydrochloride
+Glucosaminesulfaat
+indomethacine
+Plavix
+Tavanic
+Β-lactam-antibioticum
+2-di-ethylamino-ethyl 4-aminobenzoaat
+ACE remmer
+ACE-blokker
+Aceremmer
+C2HCl3
+Chinaklei
+Janssen-vaccin
+Janssenvaccin
+Johnson & Johnson vaccin
+kaliumlosartan
+Leids vaccin
+Nederlands coronavaccin
+Novocaïne
+Phenergan
+porceleinaarde
+tamoxifeen
+TCE
+trichloorethyleen
+ubichinon
+ubiquinon
+Vamysin
+Zantac
+alpuric
+docallopu
+Hexitol
+indiaans vacin
+Selokeen
+Selokomb
+Sipralexa
+zyloric
+Antabus
+Anti-epileptica
+anti-schimmel
+Antiepileptica
+Antiepilepticum
+antimycotica
+Anxiolytica
+Anxiolytisch
+chloralhydraat
+Refusal
+schildklierhormoon
+urine analyse
+urine onderzoek
+urineonderzoek
+AntiCD20
+Bisoprololfumaraat
+Bloeddrukverlager
+Emcor
+Furabid
+Furadantine
+IDEC-C2B8
+Mounjaro
+Natrium dodecyl sulfaat
+Natriumlaurylsulfaat
+Novatec
+Zestril
+alginezuur
+Alkeenoxide
+CaCN2
+CH3COOK
+Cialis
+Efexor
+seroxat
+Vleeslijm
+Daktozin
+Gyno-daktarin
+hexachloorcyclohexaan
+hydraterende creme
+Isoptin
+miconazolnitraat
+mineralocorticoïde
+permetrine
+Vochtinbrengende crèmes
+Zimycan
+adriamycine
+adriblastina
+Anti-inflammatoir
+Antiflogistica
+Azelainezuur
+babymelk
+Calciumblokker
+doxorubin
+immunosuppressiva
+immunosuppressivum
+immuunsuppressiva
+Ontstekingsremmend
+Salazopyrine
+Seresta
+Strattera
+Tranquo
+urethanen
+Antihelminthica
+Antihelminthicum
+cotrimoxazol
+dextroamfetamine
+Dixarit
+enzymremmer
+Esopral
+Gastrocure
+IgG
+inhibitie van enzymen
+monokaliumtartraat
+Motilium
+Nexium
+Tildiem
+wijnkristal
+wijnsteen
+5-aminosalicylzuur
+Asacol
+Chinees Coronavirusvaccin
+Chinees vaccin
+Chinese Sinopharm-vaccin
+Chinese vaccin
+Isopto-carpine
+kaliumbicarbonaat
+Locaal anestheticum
+Lokaal anaestheticum
+Lokaal anesthetica
+Lokale anaesthetica
+Lokale anesthetica
+Normoglaucon
+Pentasa
+Pilo
+retinolzuur
+Salagen
+Salofalk
+Sinopharm-vaccin
+Sinovac-vaccin
+tretinoine
+tretinoingel
+vaccin van Sinovac
+biofarmaceutisch
+clomifeencitraat
+dihydrotesteron
+guarpitmeel
+Imigran
+Imitrex
+Levitra
+MAO-remmer
+monoamine oxidase-remmer
+monoamine oxidaseremmer
+monoamine-oxidase-remmer
+monoamine-oxydase-remmer
+monoamineoxidaseremmer
+monoamino oxidaseremmer
+monoamino-oxidaseremmer
+monoamino-oxydase-remmer
+monoaminooxidaseremmer
+monoaminoöxidaseremmer
+Normison
+oestron
+paraceetaldehyde
+pergotime
+akineton
+antisera
+immuunserum
+nasa rhinathiol
+nasa-rhinatiol
+nasarhinatiol
+nuso-san
+otrivine
+otrivine anti-rhinitis
+polyetheenoxide
+polyethyleenoxide
+serumtherapie
+valdoxan
+Angiotensine II Antagonst
+Angiotensine receptor blocker
+antitussiva
+antitussivum
+DPT-inenting
+driebasisch natriumfosfaat
+endocriene disruptie
+Fyllochinon
+fyto-oestrogeen
+Fytomenadion
+hoestonderdrukker
+hormoonverstoorder
+Januvia
+LDX
+methicilline
+Ofloxaxine
+Vitamine K1
+Dalmadorm
+Etopophos
+Hypnomidate
+Invega
+Sotacor
+Sotalex
+Uromaline
+Anavar
+Anti-emetica
+Ceeox
+Ceoxx
+di-ethyl-stilboestrol
+diëthylstilbestrol
+FNF
+gamoleninezuur
+H2-antagonist
+L-cetirizine
+Mercurochroom
+nasacort
+sulfapreparaten
+tetracyclinen
+Vioxx
+Alfa-1 antitrypsine
+Antitrypsine
+chloorazepam
+clorazepaat
+exendin-4
+nortrilen
+Rilutek
+Tranxène
+Tranxilium
+WAY-GAR-936
+Buscopan
+DBP
+Dettol
+Disease-modifying antirheumatic drugs
+Flammazine
+Floroglucine
+Nesivine
+podophyllotoxine
+psychofarmacologie
+psychofarmacon
+psychofarmacum
+Rhino humex
+Tabex
+Triclabendazol
+Vicks sinex
+weesmedicijn
+Merckprareduct
+Natriumperoxoboraat
+Prareduct
+Pravasine
+Selektine
+spierrelaxans
+thiabendazol
+thiobendazol
+anti-aggregantia
+antiaggregantia
+Casodex
+Dexpanthenol
+entacapon
+Geinactiveerd vaccin
+Lantus
+Pantothenol
+plaatjesaggregatieremmer
+Retinoide
+Tea Tree Olie
+tea-tree
+chromoniclinezuur
+Lescol
+Nalcrom
+Sprycel
+Ultracain
+CellCept
+Elidel
+MMF
+Mustargen
+Mycofenolaatmofetil
+Dimethylpolysiloxaan
+glycyrrhizine
+glycyrrizine
+halamid
+multivitaminepreparaat
+tosylchloramidenatrium
+Truxal
+Cholstat
+Gabitril
+Indische psyllum
+Lipobay
+Lisdiuretica
+Psylliumvezel
+Tracleer
+vlozaad
+Acomplia
+adenosylcobalamine
+antihaemorragicum
+antihemorrhagicum
+coagulans
+Coagulantia
+gluthethimide
+haemostatica
+haemostaticum
+hemostatica
+Levemir
+quarternair ammoniumzout
+1alpha-OH D3
+Alfacalcidolum
+Alsiodol
+Ionoforen
+Myozyme
+Selectieve oestrogeen-receptor modulator
+Sparteine
+stikstofmosterdverbinding
+sympathicolytica
+vector vaccin
+Avonex
+Menopur
+olmifon
+Rebif
+Trichloorfon
+behandeling met intraveneus immunoglobuline
+Bergamot olie
+carbaglu
+CureVac-coronavaccin
+CureVac-vaccin
+Cyress
+hormoonremmer
+Nestosyl
+Angiogeneseonderdrukker
+calciumdinatrium EDTA
+Dampvormig anestheticum
+difenadion
+dipiperon
+Elaprase
+Emetica
+Inhalatie-anesthesie
+Inhalatie-anesthetica
+mizollen
+Prikpil
+Dexa Rhinospray
+Dexarhinospray
+Modalim
+Rhinospray
+tiludronaat
+TNF blockers
+insuline-analogon
+insuline-analoog
+insulineanaloog
+alfacetylmethadol
+nieuwe orale anticoagulantia
+Triethyleenglycoldiglycidylether
+acetylcholinereceptor-antagonist
+anticholinergicum
+PHMB
+plantengroeiregulator
+chrystal meth
+desoxyefedrine
+methylamfetamine
+neomycine B
+pervetine
+anabole
+anabool
+Marker vaccin
+omgekeerd vaccin
+Oral Turinabol
+cypro-teron/ethinylestradiol
+cyproteronacetaat/ethinylestradiol
+Diane
+Diane 35
+Diane35
+Deprenyl
+Eldepryl
+L-Deprenyl
+maagtablet
+mioticum

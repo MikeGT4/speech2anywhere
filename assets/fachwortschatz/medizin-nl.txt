@@ -1,0 +1,3000 @@
+geneeskunde
+COVID-19
+hersenen
+malaria
+abortus
+tuberculose
+diabetes mellitus
+cholera
+hondsdolheid
+obesitas
+longontsteking
+verkoudheid
+doofheid
+mazelen
+zenuwstelsel
+ziekte van Alzheimer
+hoofdpijn
+beroerte
+epilepsie
+menselijk lichaam
+hartinfarct
+seksueel overdraagbare aandoening
+alcoholisme
+diarree
+immuunsysteem
+psychische aandoening
+hart en vaatstelsel
+schedel
+blindheid
+menselijk spijsverteringsstelsel
+poliomyelitis
+autisme
+schouder
+allergie
+dunne darm
+teelbal
+chromosoom
+syfilis
+baarmoeder
+chirurgie
+malnutritie
+voorhoofd
+alvleesklier
+borstkas
+schizofrenie
+tandheelkunde
+weefsel
+ontlasting
+psychiatrie
+depressie
+dikke darm
+elleboog
+ademhalingsstelsel
+anticonceptie
+circumcisie
+waterpokken
+hypertensie
+clitoris
+endocrien systeem
+wenkbrauw
+bloedvat
+gebarentaal
+slokdarm
+tatoeage
+verdriet
+zenuwcel
+bezorgdheid
+rode bloedcel
+ziekte van Parkinson
+inenting
+borstkanker
+mitochondrion
+pathologie
+bloedarmoede
+vogelpest
+voortplantingssysteem
+hersenvliesontsteking
+ruggenmerg
+COPD
+farmacologie
+hygiëne
+infectie
+slagader
+dementie
+euthanasie
+longkanker
+celkern
+ingewanden
+kinkhoest
+leukemie
+urineblaas
+vrouwenbesnijdenis
+buikgriep
+buiktyfus
+galblaas
+speeksel
+eierstok
+schurft
+varkensgriep
+cardiologie
+difterie
+strottenhoofd
+syndroom van Down
+witte bloedcel
+eerste hulp bij ongevallen
+gonorroe
+depressieve stoornis
+hemoglobine
+hepatitis B
+ontsteking
+slapeloosheid
+gewricht
+hepatitis A
+infectieziekte
+lichaam
+placenta
+schildklier
+stoffelijk overschot
+tetanus
+zintuigstelsel
+dysenterie
+homeopathie
+kraakbeen
+migraine
+geelzucht
+hallucinatie
+miltvuur
+neurologie
+bipolaire stoornis
+gynaecologie
+hypnose
+obsessieve-compulsieve stoornis
+ribosoom
+beenmerg
+bijziendheid
+luchtpijp
+oogheelkunde
+scrotum
+cataract
+centraal zenuwstelsel
+oncologie
+scheurbuik
+ayurveda
+bloeddruk
+bronchitis
+cirrose
+magnetic resonance imaging
+stamcel
+artritis
+dyslexie
+epidemiologie
+gele koorts
+glaucoom
+immunologie
+leverontsteking
+menselijke penis
+prostaat
+anesthesie
+bladgroenkorrel
+blindedarmontsteking
+dermatologie
+diergeneeskunde
+geeuwreflex
+hypofyse
+menselijk skelet
+winderigheid
+ADHD
+constipatie
+cytoplasma
+middenrif
+bindvliesontsteking
+chemotherapie
+hartfalen
+menselijke foetus
+narcisme
+organel
+urinebuis
+vlektyfus
+bloeding
+bloedplaatje
+celmembraan
+gangreen
+geslachtsorgaan
+osteoporose
+psychose
+rodehond
+wijsvinger
+anorexia nervosa
+bloedplasma
+kleurenblindheid
+Syndroom van Asperger
+urologie
+albinisme
+hematologie
+keizersnede
+kleine hersenen
+lymfevatenstelsel
+niersteen
+pediatrie
+sleutelbeen
+adamsappel
+baarmoederhalskanker
+endeldarm
+hypothalamus
+middelvinger
+posttraumatische stressstoornis
+prostaatkanker
+schouderblad
+therapie
+transplantatie
+vitiligo
+bijnier
+botbreuk
+capillair
+karnemelk
+zaadcel
+amyotrofe laterale sclerose
+brandwond
+endoplasmatisch reticulum
+geheugenverlies
+hepatitis C
+multiple sclerose
+netvlies
+polsslag
+psoriasis
+tandvlees
+computertomografie
+illusie
+melancholie
+roodvonk
+slaapziekte
+ziekte van Lyme
+coeliakie
+endocrinologie
+herpes simplex
+mandibula
+paranoia
+radiologie
+schildkliervergroting
+tonsillitis
+toxicologie
+verhemelte
+volksgezondheid
+dijbeen
+duizeligheid
+epitheel
+Golgi-apparaat
+hemofilie
+vacuole
+bloedtransfusie
+darmkanker
+eierdooier
+eileider
+gastritis
+HPV
+humaan papillomavirus
+leishmaniasis
+Severe Acute Respiratory Syndrome
+speekselklier
+systemische lupus erythematodes
+urinewegstelsel
+anafylaxie
+bindweefsel
+borstbeen
+fatigue
+gastro-enterologie
+gordelroos
+hart- en vaatziekte
+huidkanker
+massage
+moedermelk
+navelstreng
+neurose
+plastische chirurgie
+schistosomiasis
+tinnitus
+ziekte van Weil
+botulisme
+celwand
+hartritmestoornis
+hordeolum
+lysosoom
+maagzweer
+melanoom
+onvruchtbaarheid
+radiotherapie
+schaamhaar
+apathie
+artrose
+autopsie
+benauwdheid
+bijholteontsteking
+borderline-persoonlijkheidsstoornis
+castratie
+dwerggroei
+hersenontsteking
+hoornvlies
+miskraam
+misselijkheid
+placebo
+rachitis
+twaalfvingerige darm
+acromegalie
+agorafobie
+angina pectoris
+Bodymassindex
+déjà vu
+integumentair systeem
+nefrologie
+nucleolus
+orthopedie
+ringvinger
+scheelzien
+scheenbeen
+Sproet
+verlamming
+vrouwelijk voortplantingssysteem
+astigmatisme
+dronkenschap
+endometriose
+grote hersenen
+hartstilstand
+hysterie
+luchtpijpvertakking
+lymfeklier
+maagkanker
+reanimatie
+stotteren
+syndroom
+volksgeneeskunde
+Ziekte van Chagas
+ziekte van Crohn
+brucellose
+hersentumor
+keelamandel
+pulmonologie
+syncope
+verstandelijke beperking
+wormvormig aanhangsel
+alopecia
+aneurysma
+biopsie
+dehydratie
+heiligbeen
+hypothermie
+verziendheid
+voorhuid
+alvleesklierkanker
+angststoornis
+bijschildklier
+ligament
+lymfocyt
+menselijk oog
+nierfalen
+pijnappelklier
+reumatoïde artritis
+reumatologie
+scoliose
+ANS
+auto-immuunziekte
+autonoom zenuwstelsel
+builenpest
+chikungunya-virus
+chlamydiasis
+endoscopie
+maligne lymfoom
+mond-en-klauwzeer
+perifeer zenuwstelsel
+plastide
+taaislijmziekte
+urineleider
+VNS
+Beriberi
+bovenkaakbeen
+cytoskelet
+drugsverslaving
+inwendige geneeskunde
+ischemische hartklachten
+menselijke hersenen
+sikkelcelanemie
+colostrum
+Gille de la Tourette
+hartspierweefsel
+hoektand
+hypoxie
+oorsmeer
+opperarmbeen
+otorinolaryngologie
+persoonlijkheidsstoornis
+remote sensing
+slaapverlamming
+slaapwandelen
+syndroom de la Tourette
+verwonding
+zoönose
+ascariasis
+atheromatose
+boulimie
+erectiestoornis
+hypothyreoïdie
+mannelijk voortplantingssysteem
+myasthenia gravis
+netelroos
+neurochirurgie
+ovariumcarcinoom
+pancreatitis
+piercing
+pre-eclampsie
+slijmvlies
+steenpuist
+T-cel
+uitzaaiing
+urineweginfectie
+ziekte van Huntington
+autismespectrumstoornis
+elektro-encefalografie
+epidermis
+fibromyalgie
+handhygiëne
+hersenzenuw
+keratine
+leverkanker
+narcolepsie
+onchocerciasis
+onthoofding
+snurken
+spierstelsel
+syndroom van Guillain-Barré
+syndroom van Turner
+trachoom
+zenuwweefsel
+centriool
+collageen
+dissociatieve identiteitsstoornis
+draagmoederschap
+hersenverlamming
+in-vitrofertilisatie
+Kefir
+melkklier
+nachtblindheid
+onderarm
+paniekaanval
+stemband
+Ziekte van Addison
+bevriezing
+buitenbaarmoederlijke zwangerschap
+cysticercose
+Galsteen
+hypoglykemie
+litteken
+longblaasje
+masochisme
+orgaansysteem
+rinitis
+sociale fobie
+synesthesie
+thalassemie
+trommelvlies
+ziekte van Creutzfeldt-Jakob
+blindedarm
+Bloedneus
+claustrofobie
+dermatitis
+dysmenorroe
+elektrocardiogram
+geriatrie
+hersenvocht
+hippocampus
+jukbeen
+monocyt
+peroxisoom
+prikkelbaredarmsyndroom
+seksueel fetisjisme
+tachycardie
+verstikking
+voedselvergiftiging
+zikakoorts
+antisociale persoonlijkheidsstoornis
+baarmoederhals
+boviene spongiforme encefalopathie
+chronischevermoeidheidssyndroom
+fenylketonurie
+gastro-oesofageale reflux
+macrofaag
+medulla oblongata
+minderwaardigheidscomplex
+ringworm
+sarcoïdose
+Syndroom van Marfan
+Tai chi
+thalamus
+toxoplasmose
+verdrinking
+Y-chromosoom
+zonnesteek
+zweepstaartje
+buikvliesontsteking
+chromatine
+dendriet
+diabetes type 2
+echografie
+Hand- voet- en mondziekte
+HVMZ
+hypochondrie
+knieschijf
+lactose-intolerantie
+longembolie
+lumbago
+multipel myeloom
+neusbeen
+oesofagale reflux
+perineum
+röntgenfoto
+spatader
+syndroom van Sjögren
+tandvleesontsteking
+traditionele Chinese geneeskunde
+verstandskies
+ziekte van Graves
+ziekte van Hodgkin
+bloedglucosespiegel
+bloedonderzoek
+erfelijke aandoening
+fimosis
+gezinsplanning
+gliacel
+hersenstam
+hoogtevrees
+klierkoorts
+kronkeldarm
+musculus biceps brachii
+necrose
+ooglens
+pericard
+polycysteus-ovariumsyndroom
+reisziekte
+spaakbeen
+Syndroom van Klinefelter
+voyeurisme
+zaadleider
+amblyopie
+arteriosclerose
+bacteriële vaginose
+bloedcel
+bloeduitstorting
+buikpijn
+buikvlies
+hersenschors
+ischemie
+kuitbeen
+maag-darmstelsel
+narcistische persoonlijkheidsstoornis
+nervus opticus
+parodontitis
+progeria
+snijtand
+tongbeen
+trombose
+vetweefsel
+voorhoofdsbeen
+zenuwknoop
+anesthesiologie
+carcinoom
+echinokokkose
+eetstoornis
+emfyseem
+gezichtsuitdrukking
+hooikoorts
+hydrocefalus
+ischias
+mammogram
+neutrofiele granulocyt
+Nuchtere darm
+pleuritis
+slaapapneu
+Syndroom van Cushing
+venusheuvel
+wondroos
+ziekte van Bechterew
+achterhoofdsbeen
+antimicrobiële resistentie
+antroposofie
+B-cel
+boezemfibrilleren
+bradycardie
+colitis ulcerosa
+colonoscopie
+dracunculiasis
+endocriene klier
+hoogteziekte
+hyperthyreoïdie
+keelontsteking
+kunstmatige inseminatie
+logopedie
+porfyrie
+psychotrauma
+salmonellose
+skeletspier
+slaapbeen
+slangenbeet
+stralingsziekte
+wandbeen
+Ziekte van Wilson
+zonnebrand
+arachnofobie
+ascites
+dyspepsie
+Eilandjes van Langerhans
+ellepijp
+fagocyt
+genomica
+gramkleuring
+gynecomastie
+hyperglykemie
+infarct
+kleptomanie
+kraamvrouwenkoorts
+mesencephalon
+nystagmus
+obstetrie
+pneumothorax
+post-partumdepressie
+ribbenkast
+siamese tweeling
+streptokokkenfaryngitis
+telomeer
+traumatologie
+vaginale afscheiding
+wiggenbeen
+aromatherapie
+autosoom
+cholecystitis
+COVID-19-diagnostiek
+cytosol
+dialyse
+elektrische schok
+genderdysforie
+gentherapie
+glad spierweefsel
+glioblastoma multiforme
+hersenvliezen
+hyperthermie
+injectie
+kiespijn
+mastitis
+myocarditis
+Pellagra
+premenstrueel syndroom
+slokdarmkanker
+tularemie
+zwangerschapsdiabetes
+achondroplasie
+acuut reuma
+amenorroe
+automutilatie
+burn-out
+candidiasis
+cellulitis
+cognitieve gedragstherapie
+cowperse klier
+delirium tremens
+diabetes insipidus
+eosinofiele granulocyt
+glazuur
+hersendood
+hypotensie
+loodvergiftiging
+maagzuur
+microtubulus
+middenoorontsteking
+natuurgeneeswijze
+neoplasie
+orthosympatisch zenuwstelsel
+visuele handicap
+zaadblaas
+aangeboren afwijking
+basofiele granulocyt
+Buruli ulcus
+centrosoom
+chronische ziekte
+constitutioneel eczeem
+coprofagie
+decubitus
+embolie
+genitale wrat
+hersenschudding
+heterochromie
+hypersexualiteit
+kernmembraan
+koolstofmonoxidevergiftiging
+ledemaat
+lip- en gehemeltespleten
+longoedeem
+mutisme
+paniekstoornis
+pericarditis
+ploegschaarbeen
+protoplasma
+sclerodermie
+substantiemisbruik
+syndroom van Ehlers-Danlos
+talgklier
+vasectomie
+ziekte van Hashimoto
+Aangezichtsverlamming van Bell
+amygdala
+amyloïdose
+andrologie
+angiografie
+antropometrie
+atrofie
+buikholte
+carpaletunnelsyndroom
+centromeer
+cyanose
+dentine
+ergotherapie
+kaalheid
+karteldarm
+laryngitis
+legionellose
+limbisch systeem
+longslagader
+musculus deltoideus
+Nervus vagus
+neusgat
+neusholte
+nucleaire geneeskunde
+parasympatisch zenuwstelsel
+plantaardige cel
+thyreoïdstimulerend hormoon
+traanbeen
+urine-incontinentie
+verhemeltebeen
+visuele waarneming
+zeefbeen
+Ziekte van Menière
+benigne prostaathyperplasie
+bewegingsapparaat
+bloedspuwing
+Chorda dorsalis
+doodgeboorte
+exocrien systeem
+foetor ex ore
+gecombineerde malon- en methylmalonacidurie
+geslachtschromosoom
+handwortelbeen
+hartchirurgie
+hartziekte
+kegeltje
+klier van Bartholin
+lumbaalpunctie
+nervus trigeminus
+neusamandel
+nucleosoom
+Riftdalkoorts
+slakkenhuis
+trilhaar
+vermagering
+X-chromosoom
+Ziekte van Kawasaki
+zwemmerseczeem
+aambeeld
+acute myeloïde leukemie
+adenoom
+anosmie
+arteria carotis
+congenital heart defect
+endotheel
+Enuresis nocturna
+giardiasis
+hematurie
+hemolyse
+megalomanie
+palliatieve zorg
+Priapisme
+Prognose
+prostatitis
+pyromanie
+rosacea
+sarcoom
+schildklierkanker
+schizoïde persoonlijkheidsstoornis
+tandsteen
+verstuiking
+voetwortelbeen
+voetzool
+Achillespees
+angiologie
+bloed-hersenbarrière
+chronische nierziekte
+coitus interruptus
+convulsie
+deficiëntieziekte
+dendritische cel
+diencephalon
+eclampsia
+extracorporale membraanoxygenatie
+Fenomeen van Raynaud
+harttransplantatie
+Heimlichmanoeuvre
+heupbeen
+intracerebraal hematoom
+luxatie
+Mediterranean diet
+mestcel
+middenoor
+middenvoetsbeen
+nefrotisch syndroom
+Nervus oculomotorius
+onderbeen
+orthodontie
+spiercel
+spoedeisende geneeskunde
+sprongbeen
+staafje
+stoornis van de lichaamsbeleving
+Strotklepje
+syndroom van Williams
+telemetrie
+trichomoniasis
+uithongering
+vaginitis
+vasculitis
+waterwrat
+wiegendood
+ziekte van Duchenne
+acidose
+agnosie
+asthenie
+binnenoor
+blaaskanker
+caissonziekte
+chromatide
+diabetes type 1
+elektroconvulsietherapie
+hernia nuclei pulposi
+huiduitslag
+krentenbaard
+leerstoornis
+lichaamslengte
+long covid
+middenhandsbeen
+musculus triceps brachii
+nervus olfactorius
+ouderdomsverziendheid
+platvoeten
+polydactylie
+restless-legssyndroom
+sadisme
+savantsyndroom
+schedeltrepanatie
+seborroïsch eczeem
+slechthorendheid
+slikken
+spierkramp
+spinal nerve
+stijgbeugel
+syndroom van Reye
+trichinose
+vaatvlies
+vaginisme
+virale hemorragische koorts
+vliegangst
+voortijdige zaadlozing
+alopecia areata
+bronchiëctasieën
+Buis van Eustachius
+cardiomyopathie
+cytogenetica
+forensische geneeskunde
+gigantisme
+glasachtig lichaam
+glasvochttroebeling
+halswervel
+hepatitis E
+huidskleur
+hyperhidrose
+hypertrofie
+IJzergebreksanemie
+Japanse encefalitis
+listeriose
+mediastinum
+melkgebit
+motion capture
+musculaire dystrofie
+muziektherapie
+NK-cel
+occipitale kwab
+Ontwijkende persoonlijkheidsstoornis
+open rug
+parenchym
+pathologisch gokken
+pijn op de borst
+prosopagnosie
+psychophysics
+psychosomatiek
+rhabdomyolyse
+schaambeen
+tandimplantaat
+tandplak
+theatrale persoonlijkheidsstoornis
+TPS
+trichotillomanie
+verwardheid
+vleesboom
+vroeggeboorte
+watertherapie
+aderlaten
+amoebiasis
+Angio-oedeem
+anorexie
+baarmoederkanker
+beeldvormend medisch onderzoek
+bindvlies
+dysthyme stoornis
+echocardiografie
+ectoderm
+elefantiasis
+endocarditis
+frontale kwab
+grijze stof
+hielbeen
+karoshi
+keratoconjunctivitis sicca
+laparoscopie
+lijkstijfheid
+maculadegeneratie
+menselijk chromosoom 1
+moedersterfte
+musculus rectus abdominis
+musculus trapezius
+necrotiserende fasciitis
+Nervus facialis
+Nipah-virusinfectie
+oorschelp
+overdosis
+Silicose
+somatisch zenuwstelsel
+Syndroom van Edwards
+Syndroom van Rett
+tandpulpa
+teratoom
+tomografie
+trigeminusneuralgie
+virale ziekte
+arteriole
+astrocyt
+blastocyste
+cachexie
+chromosomale afwijking
+cystitis
+diverticulitis
+fibroblast
+foetaal alcohol spectrumstoornis
+framboesia
+granulocyt
+hartklep
+hartslag
+hepatologie
+hyponatriëmie
+hysterectomie
+kransslagader
+kwashiorkor
+leverpoortader
+longfibrose
+microcefalie
+Minamataziekte
+münchhausensyndroom
+Nervus abducens
+nervus trochlearis
+osteogenesis imperfecta
+polyploïdie
+preventieve geneeskunde
+pyelonefritis
+rasterelektronenmicroscoop
+schwanncel
+seksuele disfunctie
+slijmbeursontsteking
+tussenwervelschijf
+uitstrijkje
+varicocele
+ventrikel
+achalasie
+anhedonie
+Apgar-score
+blastula
+chromosoom 2
+cupping
+Eierstokcyste
+endemie
+filariasis
+gehoorbeentje
+gezichtsvermogen
+hematocriet
+immunisatie
+Kaposisarcoom
+klompvoet
+koeltechniek
+leververvetting
+lichamelijk onderzoek
+liesbreuk
+melanocyt
+menselijke mond
+mesoderm
+microfilament
+neuroblastoom
+ontwenningsverschijnselen
+osteomyelitis
+pityriasis versicolor
+pulmonale Arteriële Hypertensie
+respiratoire insufficiëntie
+rugpijn
+sinaasappelhuid
+somatoforme stoornis
+sportgeneeskunde
+stemmingsstoornis
+sterilisatie
+Syndroom van Angelman
+Syndroom van Prader-Willi
+telemedicina
+trichuriasis
+triple X-syndroom
+ventrikelfibrilleren
+vriesdrogen
+West-Nijlziekte
+zesde ziekte
+Ziekte van Tay-Sachs
+acute lymfatische leukemie
+auscultatie
+balanitis
+bijholte
+blefaritis
+bloeddrukregulatie
+corpus callosum
+corpus luteum
+cri-du-chatsyndroom
+diabetische retinopathie
+dyscalculie
+dysfagie
+ganglion
+gegeneraliseerde angststoornis
+ketogeen dieet
+koliekpijn
+liposuctie
+mesenterium
+mesothelioom
+Middle East respiratory syndrome
+myeline
+nervus accessorius
+niertransplantatie
+nucleoplasma
+Ondertongzenuw
+paranoïde persoonlijkheidsstoornis
+pariëtale kwab
+Pelvic inflammatory disease
+proteïnurie
+Q-koorts
+schotwond
+selectief mutisme
+septische shock
+spierpijn
+syndroom van Korsakov
+TIA
+trombocytopenie
+vena cava inferior
+witte stof
+zeldzame ziekte
+acuut coronair syndroom
+adipocyte
+alexithymie
+algehele anesthesie
+aortadissectie
+baarmoederslijmvlies
+basale ganglia
+celcultuur
+cerebrale hemisfeer
+chromosoom 3
+colitis
+differentiële diagnose
+differentiële telling van bloedcellen
+dysgrafie
+extracellulaire matrix
+follikel
+Gebied van Broca
+huidziekte
+hyperplasie
+immunotherapie
+Intermediair filament
+langdurige bewustzijnsstoornis
+lassakoorts
+lichttherapie
+lymfadenopathie
+musculus gluteus maximus
+musculus pectoralis major
+myofibril
+neonatologie
+nervus ischiadicus
+non-hodgkinlymfoom
+Orgaan van Jacobson
+osteopathie
+plexus brachialis
+schizotypische persoonlijkheidsstoornis
+schoudergordel
+suggestie
+toxischeshocksyndroom
+tracheotomie
+voedselallergie
+vruchtwater
+zenuwreceptor
+acute respiratory distress syndrome
+audiologie
+basocellulair carcinoom
+beroepsziekte
+catatonie
+chalazion
+chromatofoor
+diffuse intravasale stolling
+diplopie
+dyspareunie
+Echolalie
+Elektromyografie
+endoderm
+feochromocytoom
+Fibrose
+frigiditeit
+Frühsommer-Meningoenzephalitis
+gastroscopie
+gele vlek
+genitale herpes
+hallux valgus
+HbA1c
+Hondenziekte
+hoofdhuid
+huilbaby
+hypercalciëmie
+hypospadie
+immuundeficiëntie
+kalknagel
+Krim-Congo-hemorragische koorts
+labia minora
+LASIK
+mee-eter
+metabool syndroom
+musculus quadriceps femoris
+neurofibromatose
+onderste neusschelp
+os lunatum
+os scaphoideum
+osteosarcoom
+paddenstoelvergiftiging
+para-urethrale klieren
+premolaar
+protoplast
+rodopsine
+sinusknoop
+slaapstoornis
+Spiegelneuron
+spinale musculaire atrofie
+subarachnoïdale bloeding
+subduraal hematoom
+Syndroom van Treacher Collins
+temporale kwab
+uveïtis
+vruchtwaterpunctie
+xerostomie
+ziekenhuisinfectie
+aboulie
+aortastenose
+borstamputatie
+bronchoscopie
+chronische lymfatische leukemie
+defibrillatie
+Erytrocytbezinkingssnelheid
+fragiele-X-syndroom
+glomerulus
+haarzakje
+hydrocele
+kamervocht
+keratoconus
+kiemblad
+Koortslip
+lichtgevoelige cel
+major histocompatibility complex
+Meconium
+medische fysica
+motorische zenuwcel
+neurasthenie
+opportunistische infectie
+otoliet
+overbruggingsoperatie
+perifere neuropathie
+plasmacel
+prosencephalon
+retinitis pigmentosa
+Serotoninesyndroom
+Sluitspier
+tetralogie van Fallot
+urethritis
+urine-onderzoek
+verzamelzucht
+waterintoxicatie
+winterdepressie
+XYY-syndroom
+zaadbalkanker
+Ziekte van Dupuytren
+zuurstoftherapie
+zwangerschapstest
+acathisie
+algemene chirurgie
+Amandelogen
+angioplastiek
+aortaboog
+arteria subclavia
+aspergillose
+backhand-tenniselleboog
+bijoorspeekselklier
+borstwervel
+bronchiolitis
+chronische myeloïde leukemie
+clusterhoofdpijn
+depersonalisatie
+dysartrie
+endocard
+evidence-based medicine
+fatale familiale insomnie
+Fontanel
+geassisteerde zelfdoding
+goedaardige tumor
+hartklopping
+heesheid
+hemangioom
+hiatushernia
+hirsutisme
+holle ader
+hyperkaliëmie
+hypersomnia
+immunosuppression
+infectiologie
+isolatie
+katalepsie
+medische genetica
+medische informatiekunde
+menorragie
+misofonie
+mondkanker
+musculus sternocleidomastoideus
+mydriasis
+myelodysplasie
+os hamatum
+os pisiforme
+osteomalacie
+overgevoeligheid
+paratyfus
+paresthesie
+perikaryon
+plantaire fasciitis
+pneumoconiose
+Ptosis
+rinoplastie
+runderpest
+slaapdeprivatie
+substantia nigra
+Syndroom van Brugada
+Syndroom van Cotard
+Syndroom van Patau
+traanklier
+translocatie
+waterzaknier
+aangezichtsbeenderen
+adenocarcinoom
+bartholinitis
+beenmergdepressie
+benigne paroxismale positieduizeligheid
+chromosoom 21
+chronische traumatische encefalopathie
+Cirkel van Willis
+clitorishoed
+cyclothyme stoornis
+darmbeen
+dieet volgen
+Dooierzak
+Endometritis
+epileptische aanval
+Ewing-sarcoom
+flebitis
+fotofobie
+galkanaal
+geslachtsaanpassende operatie
+glomerulonefritis
+glottis
+granuloom
+hard hersenvlies
+HeLa
+hepatocellulair carcinoom
+hormoonvervangingstherapie
+hypernatriëmie
+hypertrichose
+hypertrofische cardiomyopathie
+hypokaliëmie
+IJzerstapeling
+Internetverslaving
+intracranieel aneurysma
+kunstmatige voortplanting
+kwikvergiftiging
+labia majora
+lendenwervel
+leukopenie
+leverfalen
+Meniscus
+musculus latissimus dorsi
+nefritis
+netvliesloslating
+neuralgie
+nierziekte
+obsessieve-compulsieve persoonlijkheidsstoornis
+os capitatum
+papegaaienziekte
+paronychie
+peritoneale dialyse
+placenta praevia
+Pleuravocht
+polycythaemia vera
+posturaal orthostatisch tachycardiesyndroom
+POTS
+pseudopodie
+retinoblastoom
+splenomegalie
+Syndroom van Gilbert
+T-helpercel
+thoraxchirurgie
+thylakoïde
+traumatisch hersenletsel
+uitscheidingsstelsel
+ulcus molle
+vaginale candidainfectie
+Velo-cardio-faciaal syndroom
+vena cava superior
+ventrikelstelsel
+virale hepatitis
+Ziekte van Peyronie
+zwangerschapsmisselijkheid
+adenomyose
+anatomical pathology
+aneuploïdie
+apraxie
+arthritis psoriatica
+asbestose
+Babesiosis
+Barrett-oesofagus
+biological membrane
+blauwtong
+borstholte
+bruxisme
+cholangiocarcinoom
+chromosoom 4
+chromosoom 5
+cryptorchisme
+dystonie
+Erotomanie
+fibrodysplasia ossificans progressiva
+hemolytisch-uremisch syndroom
+hepatische encefalopathie
+hepatocyt
+hersenbeschadiging
+hypercholesterolemie
+hypocalciëmie
+inflammatory bowel disease
+ingegroeide nagel
+Insnoering van Ranvier
+keratitis
+kernporie
+lethargie
+lichaamsvocht
+meningeoom
+menselijke schedel
+methemoglobinemie
+mitralisklep
+Mongolenvlek
+nervus glossopharyngeus
+nervus vestibulocochlearis
+neurodegeneratie
+nierkanker
+orthorexia nervosa
+os trapezoideum
+osteoblast
+overgewicht
+Pancreassap
+perifere vaatziekte
+plasmodesma
+prenatale diagnostiek
+ruggenmergkanaal
+smaakpapil
+spanningshoofdpijn
+stiff person syndroom
+Striae
+syndroom van Reiter
+thermografie
+toediening
+tubereuze sclerose complex
+vijfde ziekte
+zacht verhemelte
+African swine fever
+ametropie
+apitherapie
+arteria carotis interna
+azoöspermie
+Cel-celverbinding
+cholecystectomie
+chromosoom 13
+chromosoom 15
+chromosoom 16
+chromosoom 17
+chromosoom 20
+chromosoom 22
+dermatomyositis
+diep-veneuze trombose
+Epidermolysis bullosa
+hepatitis D
+HMSN
+huisartsgeneeskunde
+Hyperventilatie
+ichthyose
+kaakchirurgisch
+kraambedpsychose
+likdoorn
+luchtwegen
+mastoïditis
+mond-op-mondbeademing
+mondheelkunde
+nachtangst
+nefroblastoom
+neurocranium
+neuspeuteren
+nomogram
+os triquetrum
+osteoclast
+peridurale anesthesie
+pernicieuze anemie
+pityriasis rosea
+polyurie
+post-partumbloeding
+prothese
+pulpitis
+Reizigersdiarree
+rhombencephalon
+Sarcomeer
+sesambeen
+smetvrees
+somatische cel
+stenose
+straalvormig lichaam
+Syndroom van Stevens-Johnson
+tropische ziekte
+vaatchirurgie
+vasculaire dementie
+vijandigheid
+xenotransplantatie
+Ziekte van Charcot-Marie-Tooth
+Ziekte van Hirschsprung
+zitbeen
+actinomycose
+Acupressuur
+afhankelijke persoonlijkheidsstoornis
+Alien-handsyndroom
+anuskloofje
+aponeurosis
+appendectomie
+Arnold-Chiari malformation
+artroscopie
+atelectase
+autolyse
+beenvlies
+bovenarmslagader
+brachytherapie
+bronchioli
+caudasyndroom
+chromosoom 11
+chromosoom 12
+chromosoom 14
+chromosoom 19
+chromosoom 6
+chromosoom 7
+chromosoom 8
+chromosoom 9
+comorbiditeit
+developmental coordination disorder
+dysforie
+Epiglottitis
+evenwichtsorgaan
+hematopoëtische stamcel
+idiopathisch
+idiopathische trombocytopenische purpura
+intensieve zorg
+intubatie
+jeugdreuma
+Kataplexie
+keelpijn
+larynxcarcinoom
+longader
+luchtwegaandoening
+maagportier
+Mantouxtest
+megakaryocyt
+miliaria rubra
+mucormycose
+Musculus ciliaris
+musculus coracobrachialis
+musculus pectoralis minor
+onderkaakspeekselklier
+orchitis
+os naviculare
+overdraagbare spongiforme encefalopathie
+palpatie
+peniskanker
+plaveiselcelcarcinoom
+posttraumatische dystrofie
+reincultuur
+schaafwond
+schizoaffectieve stoornis
+Syndroom van Capgras
+Syndroom van Goodpasture
+Syndroom van Wolff-Parkinson-White
+syringomyelie
+truncus brachiocephalicus
+verloskundige gynaecologie
+wervelkanaalstenose
+zaadstreng
+Ziekte van Behçet
+Ziekte van Gaucher
+zoöfobie
+agranulocytose
+alkalose
+allergologie
+aortaklep
+argyrie
+borstvergroting
+bottumor
+chromosoom 10
+chromosoom 18
+desmosoom
+dissociatieve stoornis
+diverticulose
+Dwarslaesie
+encephalitis lethargica
+Episiotomie
+erytheem
+fibroadenoom
+fluoridering
+gastro-intestinale bloeding
+gebied van Wernicke
+glucose-6-fosfaatdehydrogenase-deficiëntie
+hersenbloeding
+hersenoedeem
+iatrogeen
+Interstitium
+kapsel van Bowman
+karbonkel
+koepokken
+koortsstuip
+longpest
+melkvloed
+menselijke huid
+microglia
+microscopie
+mola-zwangerschap
+musculus gastrocnemius
+Musculus masseter
+neuroticisme
+oligodendrocyt
+os trapezium
+polycythemie
+prefrontale cortex
+scrapie
+sociale isolatie
+spinnenwebvlies
+spoelfiguur
+status epilepticus
+stomatitis
+subcutis
+tachypnoe
+takotsubocardiomyopathie
+tolerantie
+torticollis
+trommelstokvingers
+ventrikelseptumdefect
+vitamine B12-tekort
+wortelkanaal
+Xeroderma pigmentosum
+Acrosome
+adrenogenitaal syndroom
+allantois
+anencefalie
+angiogenese
+anorgasmie
+arbeidsgeneeskunde
+arteria femoralis
+arteriitis temporalis
+artralgie
+asystolie
+bacteriëmie
+beeldende therapie
+Blastomeer
+Burkittlymfoom
+Codependentie
+conversiestoornis
+coprolalie
+cryotherapie
+cyanidevergiftiging
+cytologie
+cytotoxische T-cel
+depileren
+Epididymo-orchitis
+ergotisme
+extractie
+fluorose
+folliculitis
+frenulum preputii penis
+galactosemie
+herinneringsvervalsing
+hyperparathyreoïdie
+immunoassay
+Immuunhistochemie
+Insulinepomp
+intramusculair
+keto-acidose
+krachttraining
+kruidengeneeskunde
+Leydigcel
+lymfoedeem
+macrobiotiek
+Metaplasie
+Musculus temporalis
+musculus teres major
+musculus teres minor
+neocortex
+obstructie tijdens de bevalling
+Oorlogsgewonde
+orgaan van Corti
+orthostatische hypotensie
+os cuboideum
+parafimose
+per os
+pleegzorg
+polydipsie
+Purpura van Henoch-Schönlein
+reticulocyt
+retinopathie
+schijnzwangerschap
+slijmbekercel
+spaakbeenslagader
+spliceosoom
+synovial fluid
+Tibetaanse geneeskunde
+tonsilloliet
+tricuspidalisklep
+trisomie
+wortelkanaalbehandeling
+androgeenongevoeligheidssyndroom
+antiserum
+AOS
+atrioventriculaire knoop
+barotrauma
+bibliotherapie
+bijtwond
+bovenarm
+Cement
+cholangitis
+Chronic wasting disease
+dysplasie
+encefalopathie
+endosome
+enterobiasis
+external carotid artery
+foramen magnum
+frontotemporale dementie
+gap junction
+gastroschisis
+genetische screening
+Glomerulaire filtratiesnelheid
+hamstrings
+handpalm
+harlekijnichtyose
+HELLP-syndroom
+hemothorax
+heupdysplasie
+hyperbare zuurstoftherapie
+hyperemesis gravidarum
+hypogonadisme
+hypomanie
+impulsiviteit
+jugular vein
+kattenkrabziekte
+koemelkallergie
+koolhydraatarm dieet
+koude rilling
+levertransplantatie
+lichaamsgewicht
+lichaamstemperatuur
+loopgravenvoeten
+lordose
+mondhygiëne
+Münchhausen by proxy
+musculus biceps femoris
+musculus brachialis
+musculus infraspinatus
+musculus serratus anterior
+musculus supraspinatus
+myiasis
+myxomatose
+nagelbijten
+neuro-ontwikkelingsstoornis
+neutropenie
+ongewenst geneesmiddel-effect
+orale glucosetolerantietest
+osteocyt
+otosclerose
+paraplegie
+parelketting
+plasmaferese
+proctologie
+psychoakoestiek
+pterygium
+purpura
+Sertoli-cel
+sigmoïd
+spirometrie
+stofwisselingsstoornis
+stretching
+syndroom van Alport
+Syndroom van Conn
+Syndroom van Kleine-Levin
+Syndroom van Zollinger-Ellison
+TMS
+torsio testis
+transcraniële magnetische stimulatie
+trombolyse
+tunica serosa
+urogenitaal stelsel
+vaginoplastiek
+vestibulum vaginae
+visuele cortex
+wisselwerking
+zweetziekte
+acute buik
+acute stressstoornis
+adenohypofyse
+adrenoleukodystrofie
+Alice-in-wonderlandsyndroom
+anisocorie
+antifosfolipidensyndroom
+anuskanker
+aorta abdominalis
+arteria axillaris
+arteria vertebralis
+arterioveneuze malformatie
+bewusteloosheid
+blefarospasme
+bloedbraken
+bruin vetweefsel
+bulbus olfactorius
+calculus
+chronische pijn
+contra-indicatie
+corpus cavernosum penis
+corpus striatum
+Darmvlokken
+desintegratiestoornis van de kinderleeftijd
+divertikel
+embryonale stamcel
+encephalon
+enterisch zenuwstelsel
+enteritis
+exoftalmus
+Fanconi-anemie
+fantoomledemaat
+feliene infectieuze peritonitis
+gastrectomie
+gedragstherapie
+granulomatose met polyangiitis
+Hematoxyline-eosinekleuring
+hemolytische anemie
+heupfractuur
+histopathologie
+humaan leukocytenantigeen
+Ishihara-test
+kaakgewricht
+keelkanker
+Klassieke varkenspest
+lange-QT-syndroom
+leukocytose
+lichaamsholte
+marasmus
+mechanoreceptor
+Musculus gluteus medius
+musculus obliquus externus abdominis
+musculus orbicularis oculi
+Neglect
+niet-alcoholische steatohepatitis
+nosologie
+oogziekte
+oppositioneel-opstandige gedragsstoornis
+otitis externa
+Pariëtale cel
+pemphigus
+penisbreuk
+placentaloslating
+premenstrueel dysforie syndroom
+prikkelbaarheid
+progressieve supranucleaire parese
+Proteus-syndroom
+protonentherapie
+protrombinetijd
+scintigrafie
+serumziekte
+shaken-babysyndroom
+Syndroom van Mayer-Rokitansky-Küster
+syndroom van Noonan
+tandenpoetsen
+therapeutische breedte
+tropengeneeskunde
+ziekte van Buerger
+ziekte van Fabry
+Ziekte van Whipple
+zuurstofvergiftiging
+aerofagie
+atriumseptumdefect
+basaal membraan
+bètacel
+bierbuik
+brughoektumor
+Buitenlandsaccent-syndroom
+cauterisatie
+cervicitis
+colposcopie
+cor pulmonale
+cryopreservatie
+cystenieren
+cystoscopie
+Diepe hersenstimulatie
+extracellulaire vloeistof
+filtrum
+formatio reticularis
+galblaaskanker
+gebied van Brodmann
+gedwongen sterilisatie
+gezichtsverlamming
+glossitis
+glycocalyx
+glycogeenstapelingsziekte type II
+haarnestcyste
+hart-minuut-volume
+harttamponnade
+helminthiasis
+heterochromatin
+hidradenitis suppurativa
+histoplasmose
+hoogfunctionerend autisme
+hyaliene membranenziekte
+hyperacusis
+hypofysetumor
+idiopathische longfibrose
+insulinoom
+inversie
+kinetochoor
+laparotomie
+leukoplakie
+leverbotziekte
+lichaamsmodificatie
+longabces
+Lucilia sericata
+mastopathie
+medische microbiologie
+menselijke neus
+meteorisme
+micropenis
+microvillus
+militaire geneeskunde
+musculus anconeus
+Musculus sartorius
+musculus subscapularis
+navelbreuk
+neustussenschot
+parodontium
+percussie
+Philadelphiachromosoom
+portale hypertensie
+Pseudomembraneuze colitis
+sarcopenie
+separatieangst
+sick building syndrome
+situs inversus
+Sleepless Nights
+snelle antigeentest
+spreekstoornis
+stamceltransplantatie
+thanatofobie
+tonsillectomie
+truncus coeliacus
+ultrafiltratie
+vena subclavia
+ventriculaire tachycardie
+verstoting
+waanstoornis
+Ziehl-Neelsen-kleuring
+Ziekte van Osgood-Schlatter
+Ziekte van Takayasu
+aansterken
+acanthosis nigricans
+Acromion
+alopecia androgenetica
+alpha-1-antitrypsine-deficiëntie
+Anaplastisch oligodendroglioom
+antisociale gedragsstoornis
+aorta ascendens
+arteria iliaca communis
+avasculaire necrose
+Bakerse cyste
+bekkenbodem
+blessure
+Chondrocyt
+Ciguatera
+confabulatie
+Confocale microscopie
+dendrimeer
+dermatillomanie
+diastema
+ellepijpslagader
+epidurale bloeding
+epifyse
+euthanasie van dieren
+flowcytometrie
+fovea centralis
+geïnduceerde pluripotente stamcel
+Glabella
+glucosurie
+grote teen
+hantavirus pulmonary syndrome
+heupkom
+hyperalgesie
+Hypercapnie
+hyperurikemie
+hypovolemie
+keratinocyt
+koudvuur
+labyrintitis
+lipoedeem
+madentherapie
+menselijk hart
+menselijk voortplantingssysteem
+metabole acidose
+mitralisinsufficiëntie
+mitralisstenose
+moxibustie
+musculus flexor carpi ulnaris
+musculus levator scapulae
+myotone dystrofie
+neurale buis
+neuropsychiatrie
+nierbekken
+nierslagader
+paleodieet
+paraneoplastisch syndroom
+parodontologie
+Pectus
+peritonsillair abces
+petechiën
+pijnbestrijding
+primair scleroserende cholangitis
+resistentie tegen geneesmiddelen
+shigellose
+sirenomelie
+stridor
+Stuitligging
+tracheïtis
+videocapsule-endoscopie
+vitaal signaal
+vitamine D-tekort
+vulvodynie
+wintertenen
+Ziekte van Paget
+Ziekte van Perthes
+ziekte van Von Hippel-Lindau
+aanpassingsstoornis
+Afakie
+amyloid
+angiosarcoma
+ankylose
+anosognosie
+anterograde amnesie
+antigeen-presenterende cel
+arteria mesenterica superior
+astrocytoom
+Ataxie van Friedreich
+bijnierschorsinsufficiëntie
+botweefsel
+chiasma opticum
+clathrin
+coccidiose
+coloboma
+dentitie
+dieetleer
+doofblindheid
+Elephantiasis
+elleboogzenuw
+endodontologie
+enterocyt
+entropion
+esophagitis
+facelift
+familiaire hypercholesterolemie
+farmacotherapie
+fluoroscopie
+frozen shoulder
+gedesorganiseerde schizofrenie
+graft-versus-hostreactie
+herseninfarct
+Hiv-antistoffen
+hoornvliestransplantatie
+IJshoofdpijn
+Iliopsoas
+Kupffercel
+Langerhanscel
+locked-in-syndroom
+lokale anesthesie
+maligne neuroleptisch syndroom
+Meckels divertikel
+melioidose
+Merkelcel
+Motorische eindplaat
+musculus flexor digitorum superficialis
+Musculus pronator teres
+musculus psoas major
+neuritis optica
+neurohypofyse
+neuromyelitis optica
+nociceptor
+nucleus accumbens
+oftalmoscopie
+oliguria
+ondergewicht
+Oöforectomie
+oogruis
+os cuneiforme
+parasomnie
+passief-agressieve persoonlijkheid
+piramidaal systeem
+Platysma
+pseudotumor cerebri
+pulmonalisklep
+Pylorushypertrofie
+reddingsdood
+regeneratieve geneeskunde
+seksverslaving
+SPECT-scan
+spierdystrofie van Becker
+spierreuma
+stikstofnarcose
+stofwisselingsziekte
+Syndroom van Asherman
+syndroom van De Quervain
+Syndroom van Waardenburg
+toxicomanie
+voorste kruisband
+vulvakanker
+Wechsler Adult Intelligence Scale
+agrafie
+alfacel
+alkaptonurie
+arteria basilaris
+besmettelijke ziekte
+bijnierschors
+biofeedback
+blastomycose
+cervicale intra-epitheliale neoplasie
+complexe posttraumatische stressstoornis
+cryptosporidiosis
+cytokinestorm
+danstherapie
+darmperforatie
+demyeliniserende ziekte
+dierentherapie
+ductus arteriosus
+ductus pancreaticus
+eetbuistoornis
+eosinofiele oesofagitis
+Eosinofilie
+faagtherapie
+familiaire mediterrane koorts
+fecestransplantatie
+flegmone
+Fluorescentie-in-situhybridisatie
+fotodynamische therapie
+gastrula
+gedeelde psychotische stoornis
+Giemsa-kleuring
+hematochezia
+hepatomegalie
+homocystinurie
+Hyperdontie
+internal jugular vein
+interneuron
+invaginatie
+Itai-itai-ziekte
+juxtaglomerulaire apparaat
+Kanaal van Schlemm
+Kernlamina
+kinderchirurgie
+Kussmaul-ademhaling
+lichen planus
+logorroe
+loopneus
+lymphogranuloma venereum
+maligne hyperthermie
+mastocytose
+medische levensbedreigende situatie
+melanosome
+melasma
+meningokokken
+menselijk hoofd
+mesotherapie
+moedervlek
+motorneuronziekte
+musculus digastricus
+Musculus gluteus minimus
+musculus palmaris longus
+musculus semimembranosus
+musculus semitendinosus
+musculus stapedius
+musculus triceps surae
+myelitis transversa
+myxoedeem
+nervus medianus
+neuro-endocriene tumor
+neurogene pijn
+neurologische aandoening
+neuspoliepen
+nicotinevervangingstherapie
+niercelkanker
+Nucleus suprachiasmaticus
+ondertongspeekselklier
+opgewondenheid
+Para-influenzavirussen
+parenterale voeding
+pediculosis
+Peyerse plaat
+Pre-implantatie genetische diagnostiek
+prematurenretinopathie
+Purkinjecel
+Purkinjevezel
+refractiechirurgie
+repetitive strain injury
+revalidatiegeneeskunde
+schadebeperking
+sclerose
+Slaappraten
+slissen
+specifieke fobie
+spinaal ganglion
+splenectomie
+steatorroe
+stoornis in de impulsbeheersing
+subacute scleroserende panencefalitis
+syndactylie
+Syndroom van Churg-Strauss
+Syndroom van Dandy-Walker
+Syndroom van Dravet
+Syndroom van Kallmann
+Syndroom van Moebius
+Syndroom van Wernicke
+tardieve dyskinesie
+tetraplegie
+thoraxfoto
+torsio ovarii
+toxocariasis
+traanapparaat
+troponine
+trypanosomiasis
+Weiproteïnepreparaat
+Zacht hersenvlies
+ziekte van Von Recklinghausen
+zonula occludens
+ademdepressie
+afstoting
+ageusie
+albuminurie
+Anaplasie
+aniridie
+aspiration pneumonia
+autogene training
+autosuggestie
+bundel van His
+compartimentsyndroom
+congenitale hypothyreoïdie
+darmobstructie
+diagnose
+Diogenes-syndroom
+doofstom
+ductus thoracicus
+empyeem
+entomofobie
+Erythema nodosum
+fissura lateralis
+forensische psychiatrie
+galgang
+gastroparese
+groeischijf
+gynefobie
+gyrus cinguli
+Hervoedingssyndroom
+hyalien kraakbeen
+intolerantie
+kaakchirurgie
+keratosis actinica
+kiemcel
+klep van Bauhin
+koningszeer
+lieskanaal
+linkerventrikel
+liposarcoom
+longtransplantatie
+loopgravenkoorts
+luchtembolie
+malabsorptie
+medulloblastoom
+multisysteematrofie
+musculus brachioradialis
+musculus buccinator
+musculus erector spinae
+musculus extensor carpi ulnaris
+musculus flexor digitorum profundus
+musculus nasalis
+musculus obliquus internus abdominis
+musculus piriformis
+musculus popliteus
+Musculus pterygoideus medialis
+musculus supinator
+Musculus tensor fasciae latae
+myeloproliferatieve aandoening
+myositis
+Neurale lijst
+nucleus caudatus
+obsessie
+okselhaar
+Oögonium
+organoïde
+Pacini-lichaampje
+panaritium
+peesschedeontsteking
+percutane coronaire interventie
+pervasieve ontwikkelingsstoornis
+pijpbeen
+Piramidecellen
+plexus choroideus
+polyarteritis nodosa
+polysomnografie
+prolactinoom
+prothetiek
+Reactieve hechtingsstoornis
+Resusantagonisme
+rumineren
+salpingitis
+Scanning probe microscopy
+schapen- en geitenpokken
+schildkraakbeen
+semenanalyse
+sensorische zenuw
+sensorische zenuwcel
+slagvolume
+spinocerebellaire ataxie
+spondylolisthesis
+stressfractuur
+syndroom van Budd-Chiari
+Syndroom van Eisenmenger
+Syndroom van Sheehan
+Syndroom van Usher
+tandkas
+tetanie
+tinea cruris
+torsade de Pointes
+trigger finger
+trimethylaminuria
+vaginakanker
+volwassen gebit
+voorste oogkamer
+zelfzorg
+ziekte van Rendu-Osler-Weber
+zwemmersjeuk
+acrovesiculeus eczeem
+Algemene dagelijkse levensverrichtingen
+arteria cerebri media
+asymptomatisch
+atheroomcyste
+athetose
+atrofische vaginitis
+Bigorexia
+bovenste luchtweginfectie
+cholestase
+chorioamnionitis
+Claustrum
+coarctatio aortae
+coccidioidomycose
+connectoom
+corpus alienum
+craniosynostose
+Cryogene elektronenmicroscopie
+denkstoornis
+depersonalisatiestoornis
+diabetische voet
+diphallia
+dysautonomia
+ectropion
+endoscopische retrograde cholangiopancreaticografie
+essentiële tremor
+Fasecontrastmicroscoop
+fibroom
+fonofobie
+Frégoli-syndroom
+Gezichtstransplantatie
+Glyoxysome
+hamartoom
+hepatosplenomegalie
+hereditair angio-oedeem
+hersenwinding
+histologische kleuring
+Huidtransplantatie
+hypopituïtarisme
+intracytoplasmatische sperma-injectie
+kauwspier
+Kayser-Fleischerring
+Klieren van Meibom
+Klieren van Montgomery
+knieholte
+lactaatacidose
+lagophthalmos
+moyamoya-syndroom
+musculus corrugator supercilii
+musculus flexor carpi radialis
+musculus flexor pollicis longus
+Musculus occipitofrontalis
+Musculus orbicularis oris
+musculus procerus
+musculus pronator quadratus
+Musculus psoas minor
+musculus pterygoideus lateralis
+musculus risorius
+musculus soleus
+Musculus zygomaticus major
+nasofarynxcarcinoom
+Nervus radialis
+neuronale oscillatie
+niet-geregistreerd gebruik
+niet-overdraagbare ziekte
+nycturie
+nymfomanie
+Odontoblast
+osteofyt
+osteoma
+Papule
+paratuberculose
+paroxismale nachtelijke hemoglobinurie
+perinatale sterfte
+periodieke explosieve stoornis
+periplasma
+polymyositis
+polyneuropathie
+prematuur ovarieel falen
+prodroom
+prognathie
+progressieve multifocale leukencefalopathie
+retinale ganglioncel
+schedelbasisfractuur
+Selectieve eetstoornis
+sella turcica
+severe combined immune deficiency
+severe combined immuno deficiency
+shellshock
+Shinrin-yoku
+Sinus coronarius
+Spermatogonium
+splenic artery
+spraakafzien
+stimmen
+subcutaan
+Syndroom van Fanconi
+syndroom van Ganser
+Syndroom van Lambert-Eaton
+Syndroom van Werner
+Syndroom van Wiskott-Aldrich
+toxische epidermale necrolyse
+transfusiegeneeskunde
+trombofilie
+trombotische trombocytopenische purpura
+veneuze insufficiëntie
+vlokkentest
+voetzoolreflex
+vulvitis
+werkstress
+ziekte van Aujeszky
+Ziekte van Krabbe
+Ziekte van Pick
+zintuiglijk orgaan
+Zona pellucida
+a Renal colic
+absence
+achromatopsie
+alfa-gal syndroom
+androfobie
+aquaduct van Sylvius
+arteritis
+aspermie
+autobrouwerijsyndroom
+autoradiografie
+Axoneem
+bacteriuria
+bariatrische operatie
+beenmergonderzoek
+bilspleet
+bloedkweek
+body integrity identity disorder
+bronchospasme
+cheyne-stokesademhaling
+cholesteatoom
+concentratiekampsyndroom
+Delayed sleep phase syndrome
+dextrocardia
+dissociatieve amnesie
+donovanosis
+driftbui
+drugstest
+Ductus hepaticus
+dwangmatig gedrag
+dysostosis cleidocranialis
+Embryoblast
+Epispadie
+erytroblast
+exosome
+foramen ovale
+genitale prolaps
+Gerstmann-Sträussler-Scheinkersyndroom
+glycogeenstapelingsziekte
+groeihormoondeficiëntie
+hart-longmachine
+hemidesmosome
+hemoglobinurie
+hemospermie
+Hereditair non-polyposis colorectaal carcinoom
+herpangina
+hypofosfatemie
+infestatie
+infibulatie
+Kieuwspleet
+klinische chemie
+kogelgewricht
+Langerhanscelhistiocytose
+lichen sclerosus
+lipspleet
+Locus coeruleus
+Luieruitslag
+lymfangitis
+macromastie
+magneto-encefalografie
+mean corpuscular volume
+meningoencephalitis
+meridiaan
+metachromatische leukodystrofie
+mucopolysaccharidosen
+musculus adductor longus
+musculus cremaster
+musculus flexor hallucis longus
+musculus gracilis
+musculus iliacus
+musculus quadratus lumborum
+musculus rhomboideus major
+musculus sphincter pupillae
+musculus sternohyoideus
+musculus subclavius
+musculus tibialis anterior
+myelitis
+myoclonus
+Myometrium
+nabij-infraroodspectroscopie
+Niemann-Pick disease
+nierader
+Nodulaire dermatose
+oncovirus
+ontlastingincontinentie
+Ooglidcorrectie
+Ovula Nabothi
+paranoïde schizofrenie
+Pediculosis capitis
+Pericyt
+Placenta accreta
+podocyt
+Polyhydramnion
+polysoom
+premaxilla
+presbyacusis
+pubertas praecox
+pubertas tarda
+Pupilreflex
+Pustel
+putamen
+rabdomyosarcoom
+Rocky Mountains spotted fever
+rotatorenmanchet
+schaambeenvoeg
+scrubtyfus
+spasticiteit en spasme
+specific language impairment
+spierspoeltjes
+stollingsstoornis
+Symfyse
+Syndroom van Apert
+syndroom van Hunter
+Syndroom van Lennox-Gastaut
+Syndroom van Lesch-Nyhan
+Syndroom van Peutz-Jeghers
+tachyfylaxie
+trofoblast
+vena azygos
+volvulus
+xanthelasma
+zweepslag
+zwelling
+Agranulocyt
+Alexander disease
+anatomische snuifdoos
+anisometropia
+Anoftalmie
+Aorta-insufficiëntie
+area tegmentalis ventralis
+arteria cerebri anterior
+arteria facialis
+arteria iliaca interna
+arteria temporalis superficialis
+atypische pneumonie
+bariatrie
+bloedgasanalyse
+bronchopneumonie
+carpale tunnel
+centraal-veneuze druk
+Choana
+circadianeritmestoornis
+contacteczeem
+continue positieve luchtwegdruk
+Cornelia de Lange syndroom
+Cornelia de Langesyndroom
+cystinose
+Dermografie
+dissociatieve fugue
+Dysbacteriosis
+energiestofwisselingsziekte
+exantheem
+extensor carpi radialis longus
+familiaire adenomateuze polypose
+fatshaming
+foniatrie
+gang van Wolff
+gastro-intestinale ziekte
+harde buik
+hemiplegie
+hepatotoxiciteit
+hersenabces
+huidverzorging
+Hypnagoge schok
+hypokinesie
+ingetrokken tepels
+interventieradiologie
+ketonurie
+kleurentherapie
+korte polsstrekker
+kraakbeenkanker
+lange polsstrekker
+laryngospasme
+levernecrose
+leverslagader
+Lewy-lichaampje
+lichaampje van Malpighi
+linea alba abdominis
+lysosomale stapelingsziekte
+metencephalon
+metrorragie
+Mittelschmerz
+motorische cortex
+motorische zenuw
+musculus abductor pollicis brevis
+musculus adductor magnus
+musculus dilatator pupillae
+musculus extensor digiti minimi
+musculus extensor digitorum
+musculus iliocostalis
+Musculus levator anguli oris
+musculus omohyoideus
+Musculus pectineus
+musculus plantaris
+Musculus rhomboideus minor
+musculus stylohyoideus
+musculus transversus abdominis
+Musculus zygomaticus minor
+myelofibrose
+necrotiserende enterocolitis
+nervus maxillaris
+OAB
+oesofagusvarices
+Oogspier
+oogspierchirurgie
+optische coherentietomografie
+opvlieger
+parkinsonisme
+periostitis
+plantenziekte
+Play therapy
+plexus solaris
+polakysurie
+rechterventrikel
+Retrograde ejaculatie
+ringkraakbeen
+schrikreflex
+sinustrombose
+slijmbeurs
+slokdarmafsluiting
+splinter
+sproeidrogen
+stofgerelateerde stoornis
+Syndroom van Adams-Stokes
+Syndroom van Crouzon
+Syndroom van Lowe
+Syndroom van Morquio
+Syndroom van Sturge-Weber
+thoracic outlet syndrome
+Toegepaste kinesiologie
+traanbuis
+tumorlysesyndroom
+Tussenribspier
+uiterlijk
+Vernix caseosa
+virilisatie
+voorhoofdsholte
+xanthoom
+Ziekte van Ebstein
+Ziekte van Menkes
+Aarskog-Scott syndroom
+acute gedissemineerde encefalomyelitis
+ademhalingsfrequentie
+aferese
+Alfagolven
+anodontia
+arteria maxillaris
+arteria ophthalmica
+balneologie
+beenvliesontsteking
+bekerkraakbeentje
+bijniermerg
+blaaskatheterisatie
+bloemkooloor
+bursa van Fabricius
+carcinoma in situ
+cataractextractie
+chemische brandwond
+Chorea van Sydenham
+chromaffincel
+Colostomie
+congenitale sferocytose
+Couvade
+craniotomie
+cystinurie
+Cytokine release syndroom
+dwarsgestreept spierweefsel
+dyskinesie
+eco-emoties
+efferent
+eiceldonatie
+eiwitcomplex
+elektro-oculografie
+Epicard
+Epidermodysplasia verruciformis
+Gelei van Wharton
+globus pallidus
+glutenvrij dieet
+hydrops fetalis
+hyperkeratose
+hyperlexie
+hypermobiliteitssyndroom
+Hysterosalpingografie
+hysteroscopie
+jojo-effect
+keratosis pilaris
+kernicterus
+kinder- en jeugdpsychiatrie
+kleincellig carcinoom
+leverziekte
+linkerboezem
+lithotripsie
+meervoudige chemische overgevoeligheid
+modderbad
+Monosomie
+Morgellons
+Musculi lumbricales manus
+Musculi scaleni
+musculus adductor brevis
+Musculus depressor septi nasi
+musculus extensor pollicis brevis
+musculus levator ani
+musculus levator labii superioris
+musculus mylohyoideus
+Musculus obturatorius internus
+Musculus opponens pollicis
+Musculus peroneus longus
+musculus tensor tympani
+musculus tibialis posterior
+nadelig effect
+Navelstrengslagader
+normaledrukhydrocefalie
+occlusie
+open been
+opkomende infectieziekte
+optische niesreflex
+orchidectomie
+orthopneu
+osteopetrosis
+ouderdomswrat
+ovaal venster
+patellatendinopathie
+peesontsteking
+perlèche
+plastinatie
+plekjes van Fordyce
+pleurale ruimte
+Poland syndrome
+postcommotioneel syndroom
+processus mastoideus
+proctitis
+rechterboezem
+regulatoire T-cel
+Retinaal pigmentepitheel
+retroperitoneum
+Rubinstein-Taybisyndroom
+schizofreniforme stoornis
+scleritis
+spierhypotonie
+spinnenbeet
+spondylartropathie
+spondylitis
+synaptisch blaasje
+Syndroom van Alagille
+syndroom van Bartter
+Syndroom van Crigler-Najjar
+syndroom van Ramsay Hunt
+Syndroom van Swyer
+taijin kyofusho
+Thenar eminence
+trichiasis
+Tunica intima
+vasovagale syncope
+vierde ventrikel
+wenkbrauwboog
+Whiplash
+wijnvlek
+Zellweger syndrome
+Ziekte van Sanfilippo
+Ziekte van Scheuermann
+ziekte van Von Gierke
+zonula adhaerens
+Zwangerschapsecho
+Afrikaanse paardenpest
+alcoholmisbruik
+amacriene cel
+Antiglobulinetest
+arachnoiditis
+arteria cerebri posterior
+arteria iliaca externa
+arteria mesenterica inferior
+arthrogryposis
+B-geheugencel
+berylliose
+besmettelijke ziekte van coronavirus
+Blauw oog
+capsula interna
+Cat-eyesyndroom
+chronische bronchitis
+chylothorax
+colon ascendens
+colon descendens
+Cyclosporiasis
+dacryocystitis
+Debridement
+derde ventrikel
+diarthrosis
+dikkedruppelpreparaat
+ectrodactylie
+elektronenmicroscopie
+endocriene ziekte
+Entorinale schors
+epigastrium
+etalagebenen
+external jugular vein
+Extrapiramidale symptomen
+extrasystole
+falx cerebri
+fasciculatie
+Femoral vein
+Fibreus kraakbeen
+Galsteenkoliek
+Gang van Müller
+Gumboro
+gyrus angularis
+Gyrus fusiformis
+hartkatheterisatie
+hoornvlieszweer
+Hyperandrogenisme
+hyperpigmentatie
+hypocapnie
+Hypoplastisch linkerhartsyndroom
+interstitiële longziekten
+intertrigo
+kamertussenschot
+lamina propria
+Lebers opticusatrofie
+Leverabces
+ligature
+lissencefalie
+Lunula
+malocclusie
+mantelcellymfoom
+medicijnafhankelijke hoofdpijn
+megacolon
+Minnesota Multiphasic Personality Inventory
+MMPI
+Mucosa-geassocieerd lymfoïde weefsel
+musculi intercostales externi
+musculi intercostales interni
+Musculus abductor hallucis
+musculus abductor pollicis longus
+musculus extensor digitorum longus
+musculus extensor hallucis longus
+musculus extensor indicis
+musculus extensor pollicis longus
+Musculus flexor pollicis brevis
+musculus geniohyoideus
+Musculus levator palpebrae superioris
+Musculus mentalis
+musculus obliquus inferior
+musculus pyramidalis
+Musculus quadratus femoris
+musculus rectus superior
+musculus serratus posterior inferior
+musculus serratus posterior superior
+musculus sternothyreoideus
+musculus thyreohyoideus
+nervus pudendus
+neurofeedback
+oligohydramnion
+Ondines vloek
+orthomoleculaire geneeskunde
+osteochondritis dissecans
+osteochondrose
+osteopenia
+ototoxiciteit
+Papil van Vater
+PDD-NOS
+pedodontologie
+perianaal abces
+periapicaal abces
+perseveratie
+Persistent sexual arousal syndrome
+pleuraal empyeem
+Poollichaampje
+portio-erosie
+Pyoderma gangraenosum
+retrograde amnesie
+Sarcolemma
+schedeldak
+schildwachtklier
+schouderluxatie
+sfincter van Oddi
+sponsachtig bot
+St. Louis encephalitis
+stoombad
+Syndroom van Beckwith-Wiedemann
+Syndroom van Bloom
+Syndroom van Dubin-Johnson
+Syndroom van Klüver-Bucy
+Syndroom van Pfeiffer
+systemische sclerodermie
+tandartsangst
+tanderosie
+teleangiëctasie
+temporomandibulaire disfunctie
+thoracotomie
+ticstoornis
+Vero
+vesico-ureterale reflux
+voorbijgaande globale amnesie
+Waterhouse-Friderichsensyndroom
+X-gebonden agammaglobulinemie
+zijventrikel
+achloorhydrie
+Adventitia
+allotransplantation
+anaalklier
+angioma
+anthracosis
+Anti-NMDA receptor encephalitis
+aorta descendens
+artrodese
+Atoomkrachtmicroscopie
+auriculotherapie
+Baroreceptor
+beroepsletsel
+bewegingsstoornis
+boosterprik
+bronchopulmonale dysplasie
+cardiotocograaf
+cardiotoxine
+carotisstenose
+cerebrale amyloïdangiopathie
+Colles-fractuur
+coronaire trombose
+Corpus geniculatum laterale
+cytopathologie
+dacryoadenitis
+darmpoliep
+Decidua
+dermatitis herpetiformis
+dierenverzamelzucht
+dilatatie en curettage
+Duane-syndroom
+ecchymose
+ectoplasma
+exostose
+focomelie
+folliculair lymfoom
+fornix uteri
+gastric bypass
+geactiveerde partiële tromboplastinetijd
+gelaatsspieren
+genitaal retractiesyndroom
+gescheurde achillespees
+glans clitoridis
+gyrus postcentralis
+Haakworminfectie
+halsslagader
+hemianopsie
+hemofagocytair syndroom
+hemosiderose
+hepatoblastoma
+hersenkneuzing
+heupgewricht
+heupimplantaat
+hielspoor
+holte van Douglas
+hondenbeet
+hoofdletsel
+hyperammoniëmie
+intraossale infusie
+kiemceltumor
+klinische biologie
+LADA
+lathyrisme
+leiomyoom
+leukodystrofie
+leverstellaatcel
+Li-Fraumenisyndroom
+lichte cognitieve stoornis
+lipodystrofie
+longus capitis
+lymfoblast
+macula densa
+menselijke lichaamstemperatuur
+mesotheel
+Microftalmie
+minimaal-invasieve chirurgie
+musculus abductor digiti minimi
+Musculus adductor pollicis
+musculus depressor labii inferioris
+musculus flexor digitorum longus
+musculus genioglossus
+musculus hyoglossus
+musculus longissimus
+musculus obliquus superior
+Musculus obturatorius externus
+musculus opponens digiti minimi
+Musculus rectus femoris
+musculus rectus inferior
+musculus rectus medialis
+musculus sphincter ani externus
+Musculus temporoparietalis
+Musculus tensor veli palatini
+nefrectomie
+nefrotoxiciteit
+Nervus musculocutaneus
+nervus ophthalmicus
+nervus phrenicus
+Oligiomenorree
+Oligozoöspermie
+omentum majus
+oogmelanoom
+Oost-paardenencefalitisvirus
+opisthotonus

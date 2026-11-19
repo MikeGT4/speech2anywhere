@@ -1,6 +1,6 @@
 [project]
 name = "kira"
-version = "0.6.4"
+version = "0.7.0"
 description = "Voice-to-text app for macOS and Windows 11"
 requires-python = ">=3.12"
 dependencies = [
@@ -88,4 +88,5 @@ packages = ["kira"]
 "assets/ui/chevron-down.svg" = "kira/_assets/ui/chevron-down.svg"
 "assets/ui/check.svg" = "kira/_assets/ui/check.svg"
 "assets/sounds" = "kira/_assets/sounds"
+"assets/fachwortschatz" = "kira/_assets/fachwortschatz"
 "prompts" = "kira/_prompts"

@@ -30,9 +30,11 @@ def dialog(qtbot, tmp_path, monkeypatch):
     return dlg
 
 
-def test_tabs_follow_the_seven_pages(dialog, qtbot):
-    assert [t.text() for t in dialog._tabs] == ["Mikrofon", "Politur", "Tasten", "Anzeige", "Sound", "Lernen", "Über"]
-    assert dialog._pages.count() == 7
+def test_tabs_follow_the_eight_pages(dialog, qtbot):
+    assert [t.text() for t in dialog._tabs] == [
+        "Mikrofon", "Politur", "Tasten", "Anzeige", "Sound", "Lernen", "Fachwortschatz", "Über",
+    ]
+    assert dialog._pages.count() == 8
     for index, tab in enumerate(dialog._tabs):
         qtbot.mouseClick(tab, Qt.MouseButton.LeftButton)
         assert dialog._pages.currentIndex() == index
@@ -173,9 +175,67 @@ def test_start_switch_warns_about_loudspeakers(dialog):
     assert "Lautsprecher" in dialog._sound_events["start"].toolTip()
 
 
+def test_specialist_vocabulary_page_sits_between_learning_and_about(dialog):
+    from kira.config import FACHGEBIETE
+    index = dialog._PAGE_TITLES.index("Fachwortschatz")
+    assert dialog._PAGE_TITLES[index - 1:index + 2] == ("Lernen", "Fachwortschatz", "Über")
+    page = dialog._pages.widget(index)
+    assert list(dialog._fachgebiete) == list(FACHGEBIETE)
+    for switch in dialog._fachgebiete.values():
+        assert page.isAncestorOf(switch)
+        assert not switch.isChecked()
+    assert dialog._fachgebiete["technik"].accessibleName() == "Wissenschaft und Technik"
+    assert dialog._fachgebiete["it"].accessibleName() == "IT"
+
+
+def test_chosen_specialist_fields_are_saved_as_a_list_and_ask_for_a_restart(dialog, monkeypatch, tmp_path):
+    from kira.config import load_config
+    _message_after_save(dialog, monkeypatch)
+    dialog._fachgebiete["it"].setChecked(True)
+    dialog._fachgebiete["medizin"].setChecked(True)
+    text = _message_after_save(dialog, monkeypatch)
+    assert "gebiete: [medizin, it]" in _saved_text(tmp_path)
+    assert load_config(tmp_path / "config.yaml").fachwortschatz.gebiete == ["medizin", "it"]
+    assert "Neustart" in text
+
+
+def test_unchanged_specialist_fields_add_nothing(dialog, tmp_path):
+    dialog._save()
+    assert "fachwortschatz" not in _saved_text(tmp_path)
+
+
+def test_specialist_fields_start_from_the_config_and_can_all_be_switched_off(qtbot, tmp_path, monkeypatch):
+    import kira.ui.settings_dialog as sd
+    from kira.config import load_config
+    path = tmp_path / "config.yaml"
+    path.write_text("fachwortschatz:\n  gebiete: [jura, chemie]\n", encoding="utf-8")
+    monkeypatch.setattr(sd, "load_config", lambda: load_config(path))
+    monkeypatch.setattr(sd, "default_config_path", lambda: path)
+    monkeypatch.setattr(sd.SettingsDialog, "_query_input_devices", lambda self: [(3, "USB Microphone")])
+    monkeypatch.setattr(sd, "light_information", lambda *a, **k: None)
+    dlg = sd.SettingsDialog()
+    qtbot.addWidget(dlg)
+    assert [key for key, switch in dlg._fachgebiete.items() if switch.isChecked()] == ["jura", "chemie"]
+    dlg._fachgebiete["jura"].setChecked(False)
+    dlg._fachgebiete["chemie"].setChecked(False)
+    dlg._save()
+    assert "gebiete: []" in path.read_text(encoding="utf-8")
+    assert load_config(path).fachwortschatz.gebiete == []
+
+
+def test_tabs_keep_their_full_width_when_the_dialog_opens(dialog, qtbot):
+    dialog.show()
+    qtbot.waitExposed(dialog)
+    header = dialog._tabs[0].parentWidget()
+    frames = [tab.geometry() for tab in dialog._tabs]
+    assert all(tab.width() >= tab.sizeHint().width() for tab in dialog._tabs)
+    assert all(left.right() < right.left() for left, right in zip(frames, frames[1:]))
+    assert frames[-1].right() < header.width() <= dialog.width()
+
+
 def test_guide_names_the_sound_tab():
     from kira.ui.welcome_dialog import _GUIDE_HTML
-    assert "Anzeige,\nSound, Lernen und Über" in _GUIDE_HTML
+    assert "Anzeige,\nSound, Lernen, Fachwortschatz und Über" in _GUIDE_HTML
 
 
 def test_moment_switches_follow_the_main_switch_but_previews_stay_usable(dialog):

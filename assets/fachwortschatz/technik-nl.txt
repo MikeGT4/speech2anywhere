@@ -1,0 +1,3000 @@
+computer
+internet
+televisie
+energie
+telefoon
+kunstmatige intelligentie
+elektriciteit
+informatica
+chemisch element
+communicatie
+klimaat
+besturingssysteem
+molecuul
+mobiele telefoon
+seconde
+elektron
+oppervlakte
+software
+temperatuur
+fotosynthese
+informatie
+kilogram
+programmeertaal
+algoritme
+natuurlijk getal
+SI-stelsel
+materie
+complex getal
+venster
+thermodynamica
+lichtjaar
+snelheid
+telescoop
+versnelling
+wiskundige vergelijking
+elektrische stroom
+geheel getal
+neutron
+relativiteitstheorie
+atoomnummer
+lichtsnelheid
+optellen
+wiskundige functie
+frequentie
+transistor
+duurzame energie
+lineaire algebra
+telecommunicatie
+kilometer
+vierkante kilometer
+breedtegraad
+condensator
+vermenigvuldigen
+algemene relativiteitstheorie
+magnetisch veld
+draadnagel
+elektromagnetische straling
+hardware
+speciale relativiteitstheorie
+reëel getal
+röntgenstraling
+atoomkern
+computernetwerk
+ultraviolet
+aftrekken
+dichtheid
+elektromagnetisme
+centrale verwerkingseenheid
+CPU
+elektrische lading
+elektrotechniek
+gewicht
+infrarood
+rationaal getal
+rekenmachine
+halfgeleider
+isotoop
+vuurtoren
+weerstand
+lengtegraad
+transformator
+astronomische eenheid
+databank
+mechanica
+verzameling
+batterij
+beweging
+hectare
+kosmologie
+stoommachine
+poollicht
+zonne-energie
+afstand
+computerprogramma
+kernsplijting
+symbool
+thermometer
+vermogen
+graden Celsius
+printer
+astrofysica
+microfoon
+diameter
+elektrische spanning
+elementair deeltje
+cryptografie
+personal computer
+RAM
+random-access memory
+slagschaduw
+Wet van Ohm
+maateenheid
+neutrale oplossing
+PHdd
+elektrisch veld
+systeem
+centimeter
+procent
+werktuigbouwkunde
+cilinder
+computerbeeldscherm
+gloeilamp
+kernfusie
+weegschaal
+inductor
+kernfysica
+machtsverheffen
+straling
+compiler
+keramiek
+smeltpunt
+vierkantswortel
+gammastraling
+golflengte
+kinetische energie
+magnetisme
+elektromotor
+ruimtetijd
+vierkante meter
+atoommassa
+entropie
+deeltjesfysica
+geïntegreerde schakeling
+genetische technologie
+radioactiviteit
+tabletcomputer
+traagheid
+civiele techniek
+kerncentrale
+kookpunt
+luchtdruk
+software engineering
+neutrino
+variabele
+wisselstroom
+biofysica
+Fahrenheit
+luchtvochtigheid
+radiogolf
+robotica
+coulomb
+gravitatiewet van Newton
+virtual reality
+barometer
+cataract
+elektriciteitscentrale
+grootte van de snelheid
+mutatie
+optische vezel
+positron
+potentiële energie
+millimeter
+seismologie
+applicatie
+computerbeveiliging
+fermion
+hyperlink
+lichtbreking
+luidspreker
+Universal Serial Bus
+vectorruimte
+antenne
+calorie
+gelijkstroom
+kosmische straling
+bestand
+elektrolyse
+oplossing
+theoretische natuurkunde
+Wetten van Kepler
+zonnewijzer
+cloud computing
+elektrische weerstand
+nucleon
+radiaal
+roodverschuiving
+wetten van Maxwell
+diffusie
+elektrostatica
+foto-elektrisch effect
+geluidssnelheid
+verkeersbord
+ångström
+candela
+geleider
+nanometer
+oxidatietoestand
+reflectie
+assembleertaal
+cybernetica
+draaitol
+kristallografie
+scanner
+wet van Coulomb
+atoomfysica
+chemische technologie
+constante van Planck
+halveringstijd
+micrometer
+supercomputer
+absolute waarde
+bosbouw
+elektrische generator
+liniaal
+microprocessor
+ritssluiting
+streepjescode
+supergeleiding
+windturbine
+inductie
+kleefstof
+telegrafie
+ultrageluid
+viscositeit
+booggraad
+fluorescentielamp
+fundamentele natuurkracht
+malware
+netvlies
+snaartheorie
+standaardafwijking
+wet van Archimedes
+airconditioning
+alfadeeltje
+Azimut
+computertomografie
+diskette
+elektrolyt
+elektromagnetisch veld
+elektromagnetische interactie
+elektronvolt
+Ethernet
+metalen draad
+zonnemassa
+corioliseffect
+elektrische capaciteit
+elektrochemie
+firewall
+gyroscoop
+radiologie
+straalmotor
+muzieknoot
+virtueel privénetwerk
+VPN
+wet van Gauss
+zonnecel
+astrolabium
+cartesisch coördinatenstelsel
+deeltjesversneller
+determinant
+diffractie
+elektrische energie
+informatietheorie
+kubieke meter
+kwantum
+lijnstuk
+machinetaal
+Wet van Boyle
+zeemijl
+Arduino
+atomaire massa-eenheid
+declinatie
+elektrisch vermogen
+impulsmoment
+KVT
+kwantumveldentheorie
+kwantumverstrengeling
+massagetal
+metrologie
+paardenkracht
+parallax
+read-only memory
+rechte klimming
+ROM
+turbine
+aerosol
+becquerel
+gravitatieconstante
+interferentie
+ioniserende straling
+Liquid crystal display
+melatonine
+molaire massa
+ontsnappingssnelheid
+radiotherapie
+schijnbare magnitude
+Constante van Avogadro
+elektronenbuis
+encryptie
+inwendig product
+ionisatie
+Lorentzkracht
+middelpuntzoekende kracht
+omlooptijd
+oppervlak
+technische informatica
+absolute helderheid
+amplitude
+antideeltje
+behoud van massa
+Bodymassindex
+eerste hoofdwet
+hoeksnelheid
+holografie
+middelpuntvliedende kracht
+sociaal netwerk
+steradiaal
+valversnelling
+wet van energiebehoud
+ampèremeter
+bliksemafleider
+convectie
+druppel
+hypertekst
+kernreactie
+spectrum
+tweede hoofdwet
+warmtecapaciteit
+wiskundige natuurkunde
+zandloper
+atoomstraal
+bètastraling
+Boltzmannconstante
+concentratie
+decimeter
+deeltje
+elektrische potentiaal
+enthalpie
+interval
+natuurkundige constante
+oscilloscoop
+trilling
+wet van Bernoulli
+zelfinductie
+zwarte straler
+3D-printen
+deelverzameling
+Fourierreeks
+Fouriertransformatie
+kathode
+klassieke natuurkunde
+machgetal
+oplosbaarheid
+oplosmiddel
+oppervlaktespanning
+saliniteit
+seismometer
+traagheidsmoment
+tropisch klimaat
+warmtemachine
+wet van Hooke
+algemene gaswet
+brandstofcel
+brekingsindex
+Cartesisch product
+elektrode
+elektrodynamica
+inwendige energie
+mediaan
+polyetheen
+relatieve hoogte
+sextant
+SI-prefix
+Wetten van Kirchhoff
+atoomklok
+decibel
+fluorescentie
+hoofdtelefoon
+hoogte boven zeeniveau
+ionisatiepotentiaal
+kruisproduct
+laplacetransformatie
+mechanische spanning
+metronoom
+radioamateurisme
+radiotelescoop
+randapparaat
+resonantie
+stochastische variabele
+stofhoeveelheid
+thermische geleidbaarheid
+variantie
+voltmeter
+Wet van Avogadro
+aardmagnetisch veld
+adsorptie
+bioluminescentie
+elektromagneet
+galvanometer
+imaginair getal
+magnetische flux
+mechanische energie
+megabyte
+raaklijn
+rekenkundig gemiddelde
+wet van Hubble-Lemaître
+zonlicht
+dauwpunt
+elektromotorische kracht
+Euclidische ruimte
+getal van Avogadro
+GPU
+imaginaire eenheid
+impedantie
+kilobyte
+landklimaat
+levensverwachting
+lichtvervuiling
+mechatronica
+stoomturbine
+verhouding
+zekering
+afvalverwerking
+atmosfeer
+diëlektricum
+dispersie
+ergonomie
+firmware
+Geigerteller
+getal van Reynolds
+gradiënt
+intranet
+lichtkracht
+lichtsterkte
+opmaaktaal
+picometer
+sievert
+wide area network
+auto-industrie
+faseovergang
+flipflop
+gigabyte
+meter per seconde
+microcontroller
+moleculaire massa
+radionuclide
+siemens
+spoorwijdte
+theodoliet
+Wet van Biot-Savart
+glooiingshoek
+hoogtemeter
+lucht- en ruimtevaartkunde
+modulatie
+nachtblindheid
+Pythagorese drietallen
+radio-frequency identification
+radioactief verval
+ruimtetelescoop
+schakelaar
+soortelijke warmte
+databasemanagementsysteem
+kaliber
+kathodestraalbuis
+kwantumgetal
+massamiddelpunt
+rekenliniaal
+signaal
+sterkteleer
+stolling
+verdampingswarmte
+warmtestraling
+windwijzer
+compton-effect
+dampdruk
+evenwijdig
+geboortecijfer
+hydrometer
+incubatieperiode
+joystick
+kilometer per uur
+kwantumelektrodynamica
+loodrecht
+meetkundig gemiddelde
+operationele versterker
+promille
+tropisch jaar
+tweede wet van Newton
+Apple Watch
+capillariteit
+datacenter
+ferromagnetisme
+frequentiemodulatie
+galvanisch element
+gasconstante
+interface
+optical character recognition
+pointer
+poolklimaat
+radioactief afval
+scalair
+staande golf
+tijddilatatie
+tunneleffect
+warmtepomp
+Wet van Ampère
+wet van Pascal
+zenerdiode
+analoog signaal
+deformatie
+equivalentierelatie
+horloge
+kansverdeling
+lithium-ion-accu
+propeller
+röntgenfoto
+satellietnavigatiesysteem
+scharnier
+solderen
+soortelijke weerstand
+valentie-elektron
+vectorveld
+waterpas
+behoudswet
+circadiaan ritme
+contactdoos
+cyclotron
+excentriciteit
+fotodiode
+inductiewet van Faraday
+luminescentie
+meetinstrument
+omgekeerde
+oplaadbare batterij
+regenmeter
+smartwatch
+solenoïde
+Statische elektriciteit
+tsjerenkoveffect
+verwachting
+zaklantaarn
+biomedische technologie
+draadloze communicatie
+gasturbine
+gelijkrichter
+getijdenenergie
+gradenboog
+leeftijd
+magnetisch moment
+magnetische permeabiliteit
+netwerktopologie
+osmotische druk
+piëzo-elektrisch effect
+Poisson-factor
+reactantie
+smeltwarmte
+tokamak
+Wet van Lenz
+windmolenpark
+belichting
+bionica
+brandpuntsafstand
+computergraphics
+elementaire lading
+femtometer
+hoekversnelling
+ITER
+kwantumchromodynamica
+plaatsvector
+schuifmaat
+sommatie
+Wet van Dalton
+wet van Stefan-Boltzmann
+amplitudemodulatie
+annihilatie
+calorimeter
+Chemische energie
+diamagnetisme
+digitale handtekening
+dioptrie
+divergentie
+elektriciteitsnet
+elektriciteitsopwekking
+kernspinresonantie
+koppeling
+kortsluiting
+kwantumgravitatie
+logische conjunctie
+logische disjunctie
+logische negatie
+multimeter
+refractor
+rotatieperiode
+scheepsbouw
+soortelijke geleidbaarheid
+Vrije energie
+wet van Fourier
+zonnebrand
+zonneradius
+activeringsenergie
+arithmetic logic unit
+command-line-interface
+cyberspace
+derde wet van Newton
+fidget spinner
+fotometrie
+fotovoltaïsche cel
+hygrometer
+kosmologische constante
+magnetostatica
+momentmagnitudeschaal
+nuclide
+Rayleighverstrooiing
+thyristor
+transparantie
+uitzending
+vastestoffysica
+waterrad
+wateruurwerk
+back-up
+brandstichting
+chipset
+complex geconjugeerde
+covalente straal
+embedded system
+expertsysteem
+hoortoestel
+inertiaalstelsel
+kansdichtheid
+Near field communication
+paramagnetisme
+Röntgenkristallografie
+spectrometer
+spoorstaaf
+stromingsweerstand
+thermistor
+vlamboog
+cryonisme
+eerste wet van Newton
+fotografische film
+fysische kosmologie
+genetisch algoritme
+JBOD
+Kroneckerdelta
+luchtverkeersleiding
+magnitude
+manometer
+molecuulfysica
+operationeel onderzoek
+plakband
+plancklengte
+schwarzschildradius
+snelheidsmeter
+sterrenwind
+thermokoppel
+wervelstroom
+wet van Hess
+Youngmodulus
+eenheidsmatrix
+eenheidsvector
+eigenbeweging
+elektrische geleidbaarheid
+Faradayconstante
+fosforescentie
+Hall-effect
+harmonisch gemiddelde
+infrageluid
+kamertemperatuur
+kettingreactie
+kilowattuur
+latente warmte
+mens-computerinteractie
+muscoviet
+nevelvat
+partiële druk
+plancktijd
+sedimentatie
+standaardtijd
+systeemsoftware
+terabyte
+USB-C
+vierkante mijl
+Zeemaneffect
+angiografie
+Chandrasekhar-limiet
+client-servermodel
+Curietemperatuur
+industrial engineering
+lichtstroom
+magnetohydrodynamica
+nucleaire geneeskunde
+plasmascherm
+ruimtehoek
+verlichtingssterkte
+versnellingsmeter
+analoog-digitaalomzetter
+botsing
+Einstein-vergelijking
+elektrische flux
+FAQ
+FireWire
+geometrische optica
+hysterese
+katalysator
+kathodestraal
+kegeltje
+kilowattuurmeter
+moderne natuurkunde
+molair volume
+omloopsnelheid
+Reduced instruction set computer
+reologie
+subprogramma
+terravorming
+Toestandsvergelijkingen
+vlampunt
+wet van Titius-Bode
+wireless LAN
+armillarium
+daglicht
+decimale graad
+Diracdelta
+Dynamic random-access memory
+E-learning
+elektromagnetische golf
+elektronenvangst
+elektroscoop
+equivalentieprincipe
+experimentele natuurkunde
+FET
+Gay-Lussac's law
+gegevensoverdracht
+gelijkheid
+informatie-entropie
+longitudinale golf
+magnetometer
+magnetron
+permittiviteit
+polygraaf
+reactiesnelheid
+Réaumur
+relatieve luchtvochtigheid
+synchrotronstraling
+teletekst
+transversale golf
+veldeffecttransistor
+verschuivingswet van Wien
+videoconferentie
+wisselrichter
+absorptie
+automatische piloot
+bipolaire transistor
+CMOS
+elektrische machine
+elektronenaffiniteit
+energieniveau
+geotechniek
+herbebossing
+hersenspoeling
+hodometer
+hoekfrequentie
+hydraulische turbine
+Leidse fles
+logische implicatie
+MOSFET
+muizenval
+Oled
+oxidatie
+radiële snelheid
+registergeheugen
+scherptediepte
+staafje
+tekenreeks
+telemetrie
+toonhoogte
+vermoeiing
+wet van Planck
+zonnestroom
+zuurconstante
+aardmassa
+argument van periapsis
+astronomisch uurwerk
+bellenvat
+blauwverschuiving
+calorimetrie
+coherentie
+Comptonverstrooiing
+dubbele breking
+ecologisch ontwerp
+Elongatie
+Field-programmable gate array
+gegevensdrager
+hoekdiameter
+influentie
+invoerapparaat
+klinknagel
+kromming
+kwantumstip
+lichaamslengte
+Lichtgevoelige weerstand
+metaaldetector
+nucleosynthese
+olympiade
+paarproductie
+potentiometer
+processor
+rioolwaterzuivering
+scalaire natuurkundige grootheid
+Spanningsafhankelijke weerstand
+spectraallijn
+subarctisch klimaat
+synchrotron
+systeemkunde
+toegepaste natuurkunde
+verstrooiing
+voedingswetenschappen
+vreugdevuur
+Aberratie
+absolute temperatuur
+actuator
+ARM-architectuur
+atavisme
+bandbreedte
+bolometer
+Brug van Wheatstone
+circumference
+compressibiliteit
+connector
+dimensieloze hoeveelheid
+dissociatie
+elasticiteitsmodulus
+elektriciteitstransmissie
+elektrische energietechniek
+elektrische stroomdichtheid
+elektrolysewet van Faraday
+fijnstructuurconstante
+fotonica
+galactisch jaar
+groene chemie
+hectometer
+kristal
+landingsgestel
+laplace-operator
+loodaccu
+luminantie
+maatcilinder
+magnetisatie
+meetlint
+membraanpotentiaal
+molaire concentratie
+operand
+petabyte
+quotiënt
+radiobiologie
+röntgen
+skineffect
+telefonie
+thermo-elektrisch effect
+touchpad
+versnellingsmechaniek
+windtunnel
+zonnelichtkracht
+atoomkrachtmicroscoop
+bedekkingsgraad
+chemoluminescentie
+digitaal signaal
+digitaal-analoogomzetter
+fotoperiodiciteit
+Hamiltonian
+installatieautomaat
+interrupt
+lampenkap
+Ledlamp
+Levenshteinafstand
+magnetische susceptibiliteit
+microklimaat
+neonsignaallamp
+nulpuntsenergie
+pakketgeschakeld netwerk
+Pentium
+pitotbuis
+porositeit
+scalair veld
+siderisch jaar
+spanwijdte
+superpositie
+Thermionische emissie
+tomografie
+tribologie
+vanderwaalsvergelijking
+verarmd uranium
+aandrijfas
+baryongetal
+Biometrisch paspoort
+brandbestrijding
+diepgang
+dipoolmoment
+effectieve temperatuur
+elektrodepositie
+fotodetector
+gelijkstroommotor
+geluidsintensiteit
+hartslag
+identiteit
+kilogramkracht
+Meissner-effect
+multitasking
+omwentelingen per minuut
+polymorfisme
+radio-isotoop thermo-elektrische generator
+regeltechniek
+rotatie
+schotelantenne
+spaarlamp
+Stopwatch
+treksterkte
+Tyndall-effect
+verdelingsfunctie
+vierkante matrix
+wet van Raoult
+witte ruis
+zakhorloge
+aandrijfriem
+aangeslagen toestand
+ampère-uur
+bioengineering
+bitrate
+bloeddrukmeter
+Bohrstraal
+charge-coupled device
+elektroluminescentie
+fototropie
+gezichtsvermogen
+homepage
+kwantumoptica
+meet- en regeltechniek
+newtonmeter
+ohmmeter
+omzetter
+parts per million
+polychloorbifenyl
+relative atomic mass
+rustmassa
+schijnkracht
+spiegeltelescoop
+stuwkracht
+system-on-a-chip
+toerenteller
+tweeplaatsige relatie
+ventrikelfibrilleren
+Wet van Henry
+Wet van Lambert-Beer
+Auger-effect
+bindingsenergie
+blinde vlek
+boogminuut
+Brinellhardheidstest
+Brinellschaal
+controlesysteem
+decameter
+digitale signaalprocessor
+dosimeter
+francisturbine
+getransponeerde matrix
+Heaviside-functie
+hoofdwetten van de thermodynamica
+klittenband
+koekoeksklok
+megafoon
+nuclear engineering
+Pascaline
+pleochroïsme
+rookmelder
+tachymeter
+vibrato
+warmte-krachtkoppeling
+wasknijper
+wedstrijdklok
+accommodatie
+arbeidsfactor
+beelden per seconde
+bovenleiding
+bulletin board system
+chronometer
+communicatiekanaal
+compressiemodulus
+cyclus van Meton
+Elastomeer
+energieopslag
+Erasable programmable read-only memory
+exabyte
+fijnstof
+gewone metriek
+gyrokompas
+hoogfrequent
+hydrofoon
+kalibreren
+kennisbank
+lasersnijden
+lichtarmatuur
+lichtmeter
+lichttherapie
+magnetische fluxdichtheid
+moderator
+Pentium 4
+product
+remstraling
+schroefdraad
+Static random-access memory
+statistische natuurkunde
+stijfheid
+Stroboscoop
+symmetrische matrix
+teleprinter
+thermocline
+thermodynamisch proces
+transmutatie
+verspanen
+Virtual LAN
+waterpasinstrument
+windzak
+bioremediatie
+brutoregisterton
+Dolby Digital
+elastiekje
+elektriciteitsdistributie
+elektrische verplaatsing
+elektronengat
+elektronspinresonantie
+furlong
+gele vlek
+gemiddelde anomalie
+geo-engineering
+golffront
+golfgetal
+Invalshoek
+isobaar
+kaplanturbine
+kubieke centimeter
+kwadratisch gemiddelde
+kwartsuurwerk
+lijnintegraal
+meetsysteem
+mm Hg
+multiplexing
+pompcentrale
+PowerPC
+Poynting-vector
+Qualcomm Snapdragon
+Reg. T.
+Schottkydiode
+schuifmodulus
+schuifspanning
+Schwarzschildmetriek
+service-oriëntatie
+stadium
+thermisch-elektrische zonne-energie
+verloren was
+vervoerskunde
+vuurstorm
+zonneconstante
+adaptieve optiek
+agroforestry
+booglengte
+British thermal unit
+chassis
+chemische potentiaal
+continuïteitsvergelijking
+direct memory access
+doteren
+eeuwige vlam
+elektromagnetische absorptie
+Elektromechanica
+fotomultiplicator
+Helmholtzenergie
+ionstraal
+jailbreak
+Jupitermassa
+levitatie
+magnetostrictie
+medische fysica
+megameter
+milliseconde
+normaalkracht
+nucleaire kettingreactie
+parallelle poort
+plancktemperatuur
+Röntgenbuis
+Rydbergconstante
+Sterretje
+verrijkt uranium
+waterbouwkunde
+wet van Joule
+Wormwiel
+admittantie
+aeolipile
+antiferromagnetisme
+bebossing
+behoud van impuls
+buiging
+Celeron
+constante van Stefan-Boltzmann
+coronagraaf
+CPU socket
+desiccator
+divergentiestelling
+Driewegkatalysator
+exclusieve disjunctie
+extinctie
+extrusie
+fall-out
+fotolithografie
+GeForce
+glucosemeter
+kleurendiepte
+koelplaat
+kwiklamp
+maatkolf
+matrixvermenigvuldiging
+mega-annum
+mijl per uur
+Natriumlamp
+NMR-spectroscopie
+numerieke natuurkunde
+optische telescoop
+overbrenging
+Peltonturbine
+pyrometer
+radiometer
+scheepsbouwkunde
+spanningsdeler
+spanningsregelaar
+specifieke energie
+startmotor
+stralingsdruk
+trackball
+tulpstekker
+verzadiging
+waterzuivering
+Yagi-antenne
+aardlekschakelaar
+Analytische machine
+betatron
+biomimetica
+constante van Dirac
+contactor
+deeltjesdetector
+Diodelaser
+Dipoolantenne
+Elektrometer
+ferrimagnetisme
+g-kracht
+geïsoleerd systeem
+gesloten systeem
+goniometer
+halogeenlamp
+Intel Atom
+Intel Core
+Intel Core 2
+internationale eenheid
+lijmtang
+Maltezerkruismechanisme
+maxwell
+meter per seconde kwadraat
+mijnbouwkunde
+mondingssnelheid
+niet-lineaire optica
+NLO
+nucleair isomeer
+patroonherkenning
+PID-regelaar
+planckmassa
+realtimebesturingssysteem
+signaal-ruisverhouding
+supercondensator
+vergulden
+Verschilmotor
+werkzame doorsnede
+Bladvering
+booglamp
+DDR SDRAM
+demping
+diafragmagetal
+dimensie
+draagvermogen
+dynamometer
+elektrische veldconstante
+Faraday effect
+fasemodulatie
+geabsorbeerde dosis
+geluidsdruk
+gitaarelement
+grondtoestand
+helderheid
+isospin
+isotoon
+Itanium
+Juliaans jaar
+kleurtemperatuur
+kweekreactor
+Maagdenburger halve bollen
+mechanische rekenmachine
+niet-vluchtig geheugen
+nulmatrix
+oppervlakte-integraal
+optische as
+peiling
+Pentium II
+Pentium III
+sinteren
+slingeruurwerk
+stappenteller
+Stelling van Stokes
+taaiheid
+toestandsfunctie
+Triac
+tunneldiode
+uittreearbeid
+unitaire matrix
+varicap
+verbrandingskamer
+voortplantingssnelheid
+Weefseltechnologie
+weeghaak
+windschering
+yottabyte
+zichtbaarheid
+zoeklicht
+zonnestraling
+AirPods
+Anodiseren
+barograph
+bevestigingsmiddel
+bogenmatrix
+Bohrmagneton
+boogseconde
+cilinderkop
+Complex geconjugeerde matrix
+computer-aided manufacturing
+draaien
+echolocatie
+energiedichtheid
+gasontladingslamp
+getal van Froude
+gigameter
+harmonische
+hermitische matrix
+magnetomotorische kracht
+Pyranometer
+Refractometer
+software-architectuur
+staalkabel
+Subwoofer
+surface-mount technology
+uurhoek
+veelvouden van bytes
+verzinken
+werklocatie
+Wet van Stokes
+Xeon
+zandstralen
+zettabyte
+16-bit architecture
+alambiek
+Apple M1
+ASIC
+atmosferische fysica
+Autogeen lassen
+BCS-theorie
+beeldsensor
+besturingseenheid
+bodemvervloeiing
+brachytherapie
+Brewsterhoek
+cooperpaar
+CRISPR-gentechnologie
+efficiëntie
+flatscreen
+Gestimuleerde emissie
+Hammingafstand
+hoogspanning
+I2C-bus
+IC-bus
+ijkmaat
+insulated-gate bipolar transistor
+kampvuur
+klystron
+MIMO
+mistboog
+omgekeerde kwadratenwet
+ontbindingstemperatuur
+oppervlakteruwheid
+optocoupler
+orthogonale matrix
+polarisatiefilter
+Pound-force per square inch
+relatieve permittiviteit
+Slinky
+smart grid
+spontane splijting
+synthetische apertuurradar
+troebelheid
+tweevlakshoek
+voltampère
+waterhardheid
+watermeter
+wattmeter
+weerballon
+weerradar
+Wet van Darcy
+Wet van Nernst
+Zwaartekrachtspotentiaal
+8051-microcontroller
+aardopwarmingsvermogen
+biologisch proces
+cirkelzaag
+computerdataverwerking
+cryptografische hashfunctie
+cylinder block
+digitale audio
+dwergvorming
+echolood
+elektrostatische ontlading
+emissiviteit
+exergie
+frequentierespons
+functionaal
+fysische transportverschijnselen
+gloeien
+gravimeter
+ground-penetrating radar
+inclinometer
+kernongeval
+kettingwiel
+kibibyte
+koplamp
+latentie
+levensmiddelenchemie
+lichtschip
+maanmaand
+magnetische weerstand
+microgram
+multikernprocessor
+nanoseconde
+Newtontelescoop
+nikkel-metaalhydrideaccu
+oersted
+packet sniffer
+pentode
+pH-meter
+planeetwielmechanisme
+polarimeter
+polarisatie
+PS/2-interface
+radiotelegrafie
+relatieve zwaartekracht
+rooksignaal
+rooting
+schijfrem
+Servomotor
+signaaltransductie
+spontane symmetriebreking
+stappenmotor
+Stralingswet van Kirchhoff
+structuur
+supergeleider
+Surround sound
+thermiek
+triple product
+weekmaker
+wielbasis
+windsnelheid
+zweving
+64-bit computing
+achteruitkijkspiegel
+additieve kleurmenging
+Atmel AVR
+band gap
+belanghebbende
+belichtingstijd
+bilineaire vorm
+chemische affiniteit
+cilinderinhoud
+Dolby Atmos
+dots per inch
+Earth Overshoot Day
+elektromagnetische interferentie
+email cloisonné
+Exynos
+fabricageproces halfgeleider
+flogopiet
+geofoon
+Getal van Prandtl
+getijmeter
+hellingsgraad
+hogetemperatuursupergeleiding
+hoogspanningsgelijkstroomleiding
+ineenstorten van de golffunctie
+intensiteit
+internettoegang via de satelliet
+Kookpuntsverhoging
+kwantum-hall-effect
+luidheid
+metaalhalidelamp
+microseconde
+neutronenstraling
+Newton
+onderhoud
+Pentium Pro
+reactor
+Shuntweerstand
+slijpen
+social engineering
+spectrogram
+spectrumanalyzer
+tachograaf
+tandheugel
+Taxameter
+technische natuurkunde
+tijdschakelaar
+tonnenmaat
+transferfunctie
+troy ounce
+uitzettingscoëfficiënt
+variatiecoëfficiënt
+vervalenergie
+vrije weglengte
+Wet van Bragg
+Wet van Fick
+achtergrondstraling
+actinometer
+afstandsmeter
+assembler
+astrograaf
+circuitgeschakeld netwerk
+Darlingtontransistor
+Digital Theatre System
+Dissociatieconstante
+Dreidel
+Glomerulaire filtratiesnelheid
+golfgeleider
+integriteit
+Kerreffect
+kilogram per kubieke meter
+kwadrant
+ladingdrager
+Leclanché-element
+levensmiddelentechnologie
+lichaamsgewicht
+lichaamstemperatuur
+magnetische veldconstante
+mebibyte
+metrische tensor
+Michelson-interferometer
+mozaïcisme
+neutrino-oscillatie
+passiveren
+planimeter
+pulse-oxymeter
+rekstrookje
+Schumannresonantie
+Serieel
+slijlager
+spectroscoop
+telematica
+Thin-film transistor
+vierwielaandrijving
+Vreemdheid
+wet van Lambert
+Z-transformatie
+zelfontbranding
+8-bit processorarchitectuur
+aanwijsapparaat
+achterwielaandrijving
+affiene ruimte
+aliasing
+alphabet
+autotransformator
+auxiliary power unit
+bandfilter
+belichtingsmeter
+DDR3 SDRAM
+decoherentie
+econofysica
+eilandgigantisme
+elektronendiffractie
+floating-point unit
+fonautograaf
+golfvorm
+gyromagnetische verhouding
+hakhout
+Haswell
+helioseismologie
+infraroodcamera
+klimaatgevoeligheid
+kwantumfysica
+long ton
+magnetische veldsterkte
+megabit
+nikkel-cadmium-accu
+nonwoven
+Northbridge
+O-ring
+overdracht
+parameter
+polshorloge
+Radeon
+Ratel
+regel van Hund
+Standaard-waterstofelektrode
+stellarator
+stralingsenergie
+telecommunications engineering
+tie-wrap
+Toestel van Kipp
+trekspanning
+UART
+veldlijn
+Viscometer
+vluchtig geheugen
+volgordeschakeling
+voorwielaandrijving
+weerstandsthermometer
+Wet van Hagen-Poiseuille
+AMD Ryzen
+arbeidscyclus
+asteroseismologie
+atmosferische elektriciteit
+basispunt
+bindingslengte
+breukmechanica
+candela per vierkante meter
+Cd-speler
+electric current intensity
+fenotypische plasticiteit
+formant
+fototransistor
+fresnelvergelijkingen
+gibibyte
+golfvector
+grondtoon
+Gunn-diode
+Intel Core i7
+kilobit
+lineaire deelruimte
+lineaire versneller
+lopende-golfbuis
+meetonzekerheid
+meridiaankijker
+niet-oplaadbare batterij
+Nixie
+Oppenheimer-Volkofflimiet
+orderelatie
+Plogging
+Second Messenger-systemen
+soortelijk volume
+Spaghettificatie
+specifieke lichtstroom
+startgewicht
+Stemming van Pythagoras
+stralingshygiëne
+stroomtransformator
+Supercharger
+tebibyte
+Tetrode
+tijdscharing
+toetsenbord
+ton olie-equivalent
+verchromen
+vocoder
+voltammetrie
+VoLTE
+vonkverspanen
+vuursnelheid
+waterslagpomp
+wavelet
+Wet van Moseley
+wet van Rayleigh-Jeans
+active electronically scanned array
+akoestische impedantie
+Apple A4
+astigmatisme
+baryogenese
+BNC connector
+confinement
+coprocessor
+DDR2 SDRAM
+debietmeter
+elektrificatie
+elektrische veldsterkte
+elektrodepotentiaal
+elektromagnetische compatibiliteit
+elektronisch patiëntendossier
+Equipartitiebeginsel
+exbibyte
+fietsverkeer
+fovea centralis
+Galileithermometer
+galvanische scheiding
+Getal van Grashof
+handrem
+harmonische boventoonreeks
+houdbaarheidsduur
+hydromotor
+informatieverwerking
+levenscyclusanalyse
+milligram
+milliliter
+molaliteit
+netwerkbeheerder
+plopper
+polariseerbaarheid
+psychrometer
+pyknometer
+reactiemotor
+redundantie
+remanentie
+roze ruis
+scheepschronometer
+Schmidt telescoop
+SDRAM
+SHA-2
+smoorspoel
+Socket 939
+spanningzoeker
+specific absorption rate
+spectrograaf
+sverdrup
+syntaxis
+technische bedrijfskunde
+triboluminescentie
+trommelrem
+vlakke golf
+vorticiteit
+warmteoverdrachtscoëfficiënt
+windrichting
+wisselstroommotor
+16mm-film
+abscissa
+activiteit
+Afkoelwet van Newton
+afstandssensor
+arithmometer
+array processor
+attoseconde
+beheerbranden
+bioakoestiek
+biomassa
+chronograph
+coërcitifiteit
+compressie
+desjatina
+dieplood
+digitale klok
+distributie
+Edison-schroefdraad
+elektrische susceptibiliteit
+elektronisch spel
+encoder
+Fermi-niveau
+fluoroscopie
+Galileïsche invariantie
+Gamma
+gebiedsoppervlakte
+gezichtsveld
+gigabit
+glastemperatuur
+Heat pipe
+Iconoscoop
+ionisatiekamer
+ionsterkte
+kaalslag
+knoopsgat
+koortsthermometer
+kraftpapier
+Lennard-Jones-potentiaal
+lichtenergie
+lichtseconde
+logische nor
+lustrum
+matrixoptelling
+Nilometer
+nuclear magneton
+ontsteker
+oppervlaktetraagheidsmoment
+Opteron
+Overnaads
+overspanning
+pebibyte
+Pentium M
+periode
+pressostaat
+Pyrheliometer
+Radiometer van Crookes
+regelstaaf
+Rem
+resultante
+retroreflector
+roosterconstante
+short ton
+snijden
+sorption
+Southbridge
+stijghoogte
+stralingsflux
+Superparamagnetisme
+superscalaire processor
+tabel van standaardelektrodepotentialen
+temperatuurvereffeningscoëfficiënt
+Tensor Processing Unit
+Thyratron
+trekfrezen
+VGA connector
+vierkante voet
+vrije kennis
+weerstandscoëfficiënt
+Wet van Curie
+Wet van Graham
+XLR
+35mm-film
+afvalwaterzuivering
+bestralingssterkte
+bewegingsmelder
+blusvliegtuig
+Booleaanse functie
+bovenlicht
+breeuwen
+Buis van Crookes
+chemisch proces
+comparator
+darmperforatie
+DDR4 SDRAM
+decentrale opwekking
+dendriet
+druksterkte
+elektronische bandstructuur
+femtoseconde
+fysieke oceanografie
+gegeneraliseerde coördinaten
+gravitationele tijdsdilatatie
+Hall-sensor
+impulsantwoord
+instrumentation
+jakobsstaf
+ledtelevisie
+lineaire motor
+magnetisch domein
+maritieme werkbouwkunde
+meetflens
+monochroom
+Motorola 6800
+navigatielicht
+optisch pincet
+Parallel
+Peltier-effect
+Phenom
+plancklading
+pneumatische motor
+polygonale lijn
+realtimeklok
+scheidingsschakelaar
+SHA-familie
+splitpen
+stralingsforcering
+susceptantie
+Tegra
+Terrestrial Trunked Radio
+thermische weerstand
+VAX
+vectorpotentiaal
+Vergelijking van Kepler
+vierimpuls
+walvisstranding
+watervoetafdruk
+Weibull-verdeling
+wisselstroomseriemotor
+ablatie
+AirPods Pro
+Alfastraling
+AMD K5
+Apple proceccors
+Apple Processoren
+audiometer
+bosbeheer
+bosecologie
+breedte
+cinematografisch filmmateriaal
+colorimeter
+corpusculaire straling
+DEC Alpha
+detonatiesnelheid
+Doppler radar
+Drag Reduction System
+drukknoop
+dynamisch bereik
+dynamische druk
+elektrochemische dubbellaag
+enterprise-architectuur
+Fabry-Pérot-interferometer
+Fast Ethernet
+fugaciteit
+geluidsdrukmeter
+gloei-ontlading
+headset
+Helmholtzresonator
+High Bandwidth Memory
+hydraulische cilinder
+internal conversion
+jeans-instabiliteit
+JFET
+knock-out
+koolborstel
+koolstofdioxidelaser
+kubieke decimeter
+Kunstmatige fotosynthese
+MacPherson strut
+meetklok
+mierenkolonieoptimalisatie
+molfractie
+Motorola 68K
+nucleaire voortstuwing
+nummerdichtheid
+Nyquist-frequentie
+oppervlaktezwaartekracht
+optisch verschijnsel
+optische communicatie
+parkeerassistent
+productie van staal
+Ram air turbine
+Reed-contact
+regelweerstand
+reine stemming
+Ritchey-Chrétientelescoop
+rolweerstand
+scintillatiemeter
+Sempron
+slagvolume
+spirometer
+SQUID
+stereolithografie
+svedberg-eenheid
+Thermo-elektrische generator
+trekhaak
+Trusted Platform Module
+versteviging
+Video random-access memory
+volt-ampere reactive
+waterjet
+wegenbouwkunde
+antenne-array
+apparaat
+Apple A10 Fusion
+Apple A5
+Apple M2
+beats per minute
+bemonsteringsfrequentie
+boegschroef
+Brix-waarde
+Buchholzbeveiliging
+comptongolflengte
+DECsystem
+Delta-v
+dependency injection
+DGPS
+divergentievrij vectorveld
+Dobsontelescoop
+DSC
+Duron
+eigenfrequentie
+fototaxis
+frequentieband
+frequentiespectrum
+G-Shock
+geluidsgolf
+Geomagnetisme
+Getal van Knudsen
+Gigabit Ethernet
+heliometer
+HPIB
+hypsometer
+interferometer
+kleinbeeld
+kloksnelheid
+koinobori
+kotteren
+kwikthermometer
+MagSafe
+matrixnorm
+Microservice
+Néeltemperatuur
+neutronendiffractie
+numerieke apertuur
+operator
+overspraak
+physical vapor deposition
+picoseconde
+PIN-diode
+plasmafysica
+plasmagolven
+reëel deel
+reliability engineering
+röntgenspectroscopie
+Schuko
+seebeck-effect
+Socket A
+spin quantum number
+stand-by
+thermal design power
+Through-hole-technologie
+transgeen organisme
+Vacuum packing
+Variabele condensator
+watchdog-timer
+waterstofproductie
+whiteboxtest
+Yukawa-potentiaal
+zuignap
+Zuurgetal
+aanjager
+absorbance
+achromatopsie
+AMD K6
+Apple A12 Bionic
+Apple A6
+Apple A7
+Apple A8
+Apple A9
+Apple M3
+APS-C
+argument
+Athlon 64 X2
+atmosferische convectie
+autoradiografie
+Blinkcomparator
+Computer-aided software engineering
+Curta
+D-sub
+debyelengte
+digitaal publiceren
+DIN-connector
+Elektrostatisch vliegasfilter
+fietspedaal
+forceren
+gamepoort
+Getal van Rayleigh
+Getal van Strouhal
+Greek passport
+hoekafstand
+hubbleconstante
+hydrostatische aandrijving
+isomorfisme
+Joule-effect
+kanaalcapaciteit
+kantelfrequentie
+koolmicrofoon
+kromtestraal
+macht van tien
+magnetische opslag
+massafractie
+mean corpuscular volume
+mechanisch planetarium
+PEM FC
+Pentium D
+piëzometer
+planckdichtheid
+planckkracht
+positiehoek
+pseudovector
+Rambus Inline Memory Module
+rollend lager
+scheepssloop
+signaalgenerator
+slimme meter
+sluiting
+Socket AM2
+solid oxyde fuel cell
+sRGB
+stroomtang
+teleconferentie
+terameter
+verificatie
+vertinnen
+voertuigtechniek
+vrijloop
+Williamsbuis
+Wnt-signalering
+zandgieten
+Zonneschijnmeter
+Adreno / Imageon
+astrodeeltjesfysica
+Atar
+audiogram
+autoluwte
+Barkhauseneffect
+boorhouder
+calutron
+Cartesische duiker
+continugieten
+curvimeter
+digitale cinema
+droge batterij
+droge stof
+dwarsscheeps
+elektriciteitsleiding
+europlug
+fietscomputer
+fotopisch zicht
+Fused deposition modeling
+gasmeter
+gasontlading
+Getal van Euler
+gloeidraad
+Ground proximity warning system
+gyrotron
+halfautomatische versnellingsbak
+halfgeleiderrelais
+helium-neonlaser
+hydraulische straal
+imaginair deel
+Intel Core i3
+Intel Core i5
+Intel Pentium Dual-Core
+Ivy Bridge
+kathodische bescherming
+Kikker
+Klok
+leesbaarheid
+lichtbron
+lineair systeem
+luchttemperatuur
+luchtvaart snelheidsmeter
+middelpuntzoekende versnelling
+netwerkbeheer
+nikkel-ijzerbatterij
+optische reflectie
+Orbiting Astronomical Observatory
+ordinaat
+orthonormale basis
+personalisatie
+Principe van lokaliteit
+proportionele teller
+radiografische klok
+röntgendiffractie
+Skylake
+Socket 754
+spatbord
+specifiek oppervlak
+spectrale dichtheid
+temperatuurgradiënt
+transmissie
+uitrusting
+vertaler
+virtuele arbeid
+vormgevingstechniek
+yottameter
+zelfontbrandingstemperatuur
+10 Gigabit Ethernet
+ademhalingsfrequentie
+API-dichtheid
+Apple A11 Bionic
+Apple A13 Bionic
+bioassay
+bits per second
+Canon EF-lensvatting
+chatoyance-effect
+classical electron radius
+Contact
+Convective available potential energy
+DCS
+deltastraling
+deuteron
+diameter op borsthoogte
+distributed control system
+effectieve stralingsdosis
+Einstein-tensor
+elastic energy
+elasticiteitsgrens
+elasticiteitsleer
+elektrolytische condensator
+equivalente dosis
+excimerlaser
+fotocel
+Fujiwara-effect
+gehoordrempel
+Getal van Weber
+Humbucker
+Hydropneumatisch
+Ignitron
+Indicatorbuis
+ISO metric screw thread
+kalomelelektrode
+kathodeluminescentie
+kleurweergave-index
+kubieke meter per seconde
+megabit per seconde
+menselijke fout
+metamerie
+MOX-brandstof
+nefoscoop
+noodstopschakelaar
+Optische tijddomein reflectometer
+optische weglengte
+Orbiting Solar Observatory
+osmolariteit
+parselena
+Pebble
+permeabiliteit
+Phenom II
+pin grid array
+potentiële temperatuur
+pound-force
+prikklok
+productie-engineering
+Purkinje-effect
+rayleighverdeling
+Reissner-Nordströmmetriek
+roosten
+Silicium op isolator
+sjabloonmethodepatroon
+Socket 423
+Socket AM3
+standaard molaire entropie
+superposition theorem
+Teslaturbine
+Thermohydrograaf
+tweeter
+vertanding
+vierkante centimeter
+vitrificatie
+vonkenkamer
+weerhut
+yoctometer
+AdS
+akoestische resonantie
+AMD K6-III
+anti-de Sitter-ruimte
+Apple A14 Bionic
+blackboxtest
+blauwe lucht
+blokkenrem
+botgeleiding
+brandstofmeter
+burotika
+deciliter
+Dekatron
+digitale technologie
+Dodemansknop
+dradenkamer
+effectieve waarde
+elektromagnetische veldtensor
+fietsketting
+fietsrem
+Flashover
+galvaniseren
+gaswasser
+Gate turn-off thyristor
+GDDR
+gedwongen onderhandse verkoop
+gegevensveld
+geluidsabsorptie
+grafische rekenmachine
+Hartree
+hectoliter
+herhaalbaarheid
+hitte-index
+hoornantenne
+Humidex
+Impetus-theorie
+inductieve nabijheidssensor
+inverse matrix
+kubieke kilometer
+lambert
+lawinediode
+Logic analyzer
+lysimeter
+maatbeker
+mean lifetime
+megaton
+microfilm
+Motorola 68000 familie
+Motorola 6809
+Musth
+neutron number
+neutronen gif
+Omroepinstallatie
+opwerking
+ordening
+Planck pressure
+poederlakken
+positief-definiete matrix
+procesindustrie
+radar warning receiver
+radarverklikker
+radiographer
+radiopropagatie
+rayleighgolf
+Reaction control system
+Reduceerventiel
+referentie-elektrode
+RF connector
+Ringlasergyrokompas
+Rookgasontzwavelingsinstallatie
+Ruimtetoilet
+scintillatie
+Sclerometer
+sleepring
+SODAR
+stijgsnelheid
+StrongARM
+synodische periode
+torsiebalans
+Traagheidsstraal
+trekken
+Vacuum fluorescent display
+Vadometer
+vertekening
+Wattbalans
+weerstandsmoment
+wetenschappelijk instrument
+3D-printer
+adaptatie
+additieve identiteit
+AirPods Max
+albedo van Bond
+AMD K6-2
+aneroïdebarometer
+Apple A15 Bionic
+Apple M4
+attometer
+beitsen
+bowdenkabel
+brandstofcelauto
+Broadwell
+Brug van Thomson
+buigmoment
+centiliter
+Chain Home
+Clausius-Mossotti relatie/Lorentz-Lorenz-vergelijking
+DBm
+diffusiecoëfficient
+duikhorloge
+elektrisch apparaat
+F connector
+FinFET
+FLIR
+fluorofoor
+frequentieomvormer
+GDDR5
+geleidingsband
+General Electric LM2500
+geopotentiaal
+Groma
+hyperfocale afstand
+IBM POWER
+inductieve koppeling
+inertial measurement unit
+infraroodtelescoop
+instructie
+isomerische overgang
+Keplerbaan
+kibibit
+kiellegging
+kiloton
+klimaat van Afrika
+koolstofdioxide-equivalent
+kwantumkosmologie
+laagspanning
+Lineair variabele differentiaaltransformator
+luchtsnelheid
+Mach-Zehnder-interferometer
+magneetlager
+Mali
+Marconi-antenne
+mebibit
+model-driven architecture
+muntproductieproces
+negentropie
+Noodstop
+opofferingsmetaal
+Pockelseffect
+polymeerfysica
+Programma 101
+Pythagoreïsche komma
+radiateur
+relativistische kwantummechanica
+Rutherford
+S-box
+Schaalhoogte
+Screw conveyor
+SHA-3
+siderische dag
+Spanningskwaliteit
+spanningstransformator
+spoorwegtechniek
+statcoulomb
+Statisch moment
+Stralingswet van Wien
+SuperH
+syndroom van Boerhaave
+terabit
+Thermisch verzinken
+verticale temperatuurgradiënt
+videotex
+wattuur
+Weegbrug
+Weegcel
+wet van Betz
+XScale
+yottabit
+Zen 2
+zwaartekrachtgolvendetector
+Airy-schijf
+Atmometer
+Bajonetsluiting
+banaanstekker
+bidirectional reflectance distribution function
+biocybernetica
+bodemsanering
+Brug van Maxwell
+CCFL
+Ceilometer
+Combined diesel or gas
+conservatief vectorveld
+coördinatenmeetmachine
+coulometrie
+dieptrekken
+Doorlatendheid
+doorslagspanning
+Dragonball
+drinkend vogeltje
+elektrodeloze lamp
+exameter
+Feddan
+floodlight
+fotokathode
+gebouwgeïntegreerde zonnepanelen
+gedeeltelijke ontlading
+geluidschip
+geometrische fase
+gibibit
+Heptode
+infraroodthermometer
+Intel Arc
+Intel HD Graphics
+Intel i860
+Intel i960
+internetverkeer
+irradiation
+iugerum
+karakteristieke impedantie
+lagetemperatuurfysica
+land grid array
+lichaamsgeur
+luchtgekoelde motor
+magnetische anomalie detector
+meetklem
+mobiliteit
+neuromodulatie
+New Austrian Tunnelling Method
+ooggevoeligheid
+OTH
+perforatie
+petabit
+petameter
+Planck voltage
+PlayStation Camera
+plethron
+processorarchitectuur
+rapidity
+Remopschriften
+reparatie
+retarder
+satellietradio
+scheepsschroef
+seismisch moment
+Small form-factor pluggable transceiver
+SO-DIMM
+Sony Dynamic Digital Sound
+soundbar
+SpeedStep
+spiebaan
+spinthariscope
+Storm glass
+tebibit
+technical atmosphere
+Trinitron
+uitharden
+verwijdering van koolstofdioxide
+verzepingsgetal
+Vis viva
+VistaVision
+vlamionisatiedetector
+warmtestroom
+zeptometer
+zettabit
+alkalinebrandstofcel
+Apple A16 Bionic
+Apple A9X
+astrarium
+astronomisch instrument
+biomechatronica
+brise soleil
+Burgersvector
+centrifugaalkoppeling
+champlevé
+cubic foot
+dieptemeter
+DSG
+elektriciteitsmarkt
+Elektromagnetische debietmeter
+energietechniek
+Erieye
+Extreem grote telescoop
+faseverschuiving
+Fibre optic gyrokompas
+fotosynthetisch actieve straling
+frequentieteller
+Freya
+Gatenzaag
+GeForce 3-serie
+geluidsvermogen
+gilbert
+High-electron-mobility transistor
+Intel Core i9
+Jupiterradius
+kilobit per seconde
+kilowatt
+klimaat van Europa
+kookplaat
+kritische temperatuur
+Kwikdampgelijkrichter
+Landé g-factor
+lekstroom
+lichtschakelaar
+lineaire dichtheid
+LPDDR
+Luchtmassameter
+massa-overschot
+massaconcentratie
+meettransformator
+met opzet laten zinken
+MODIS
+Molex
+MOS Technology 6510
+Nanosensor
+Nikon F-mount
+noodverlichting
+Notch-signalering
+Nyquist plot
+OMAP
+Packet-radio
+passieve veiligheid
+penumbra
+physics processing unit
+Planck current
+planckmomentum
+propagatie
+ROM-hacking
+rotatiegieten
+runway visual range
+Samsung Gear
+sanitaire techniek
+scalaire kromming
+Selective laser sintering
+Socket S1
+Speakon
+System Management Bus
+toerental
+torsieslinger
+tractie
+Triquetrum
+vectorale natuurkundige grootheid
+verkeerskunde
+VU-meter
+Weston-normaalelement
+wet van Buys Ballot
+wet van Gustafson
+Wet van Malus
+Windstoot
+Würzburg
+zettameter
+acre-foot
+adaptieve regeling
+afsluitweerstand
+Alder Lake
+AN/APG-77
+Apple A8X
+Beeldversterker
+blaasvormen
+CHAdeMO
+condensatormicrofoon
+cubic millimetre
+DIP-switch
+droogijsstralen
+Dunnefilminterferentie
+duurzaam bosbeheer
+elektrische klok
+elektro-akoestiek
+elektrocutie
+enkelspoelsopnemer
+Fermi oppervlak
+foto-elektrochemische cel
+Four Thirds
+gasgenerator
+gaslaser
+GDDR3
+gedwongen trilling
+gene drive
+Getal van Stanton
+glaselektrode
+herdruk
+impulsoperator
+In-ear monitor
+Integraliteit
+Intel GMA
+Intel iAPX 432
+Ion-selectieve elektrode
+ISFET
+kernfusiereactor
+Koolmonoxidemelder
+krokodillenklem
+lichtminuut
+magneto-optisch effect
+Maß
+meetlat
+motorrem
+nocturlabium
+Nuvistor
+objectiefbajonet
+opgeloste stof
+oppervlaktemassa
+pebibit
+Piëzo-elektrische motor
+Pixeldichtheid
+planckhoekfrequentie
+plasticiteitsleer
+polsdruk
+Polydispersiteit
+potentiometrie
+rotational energy
+schijf partitioneren
+sneeuwblindheid
+Socket 563
+specifieke rotatie
+spleetpoolmotor
+stampen
+Steilheid
+stelling van Bloch
+stortgewicht
+Super I/O
+system in package
+tandriem
+TI-89 series
+Turn coördinator
+veertiendaagse
+Vershok
+Video Display Controller
+virtuele energiecentrale
+visual approach slope indicator
+vloeipunt
+wet van Chézy
+Woofer
+zonnepark
+78xx-spanningsregelaar
+aandrijflijn
+accelerated processing unit
+aerometer
+AMD Geode
+AN/SPY-1
+analytische balans
+Apple A12X Bionic
+Apple A19
+Apple earbuds
+Apple M5
+ARM Cortex-A9 MPCore
+atmosferische temperatuur
+Attachment Unit Interface
+automatische controle
+BASIC Stamp
+bewegingssensor
+bloemenuurwerk
+Canon EF-S lens mount
+chromaticiteit
+Coldfire
+common-mode rejection ratio
+cyanometer
+dagelijkse gang
+decagram
+didymische komma
+Dolby Pro Logic
+draadtrekken
+drukgradiënt
+Early-effect
+Exbibit
+Faagdisplay
+frequentiemeter
+GDDR4
+GDDR6
+gemiddelde kromming
+giga-annum
+Google Tensor
+hectogram
+Heliotroop
+High Energy Transient Explorer
+inferentiemachine
+Intel MCS-48
+Intel MIC
+Internationaal systeem van hoeveelheden
+IOPS
+ISQ
+kaasmaken
+kanaliseren
+Kopa
+laserfysica
+lastschakelaar
+Mache
+Majorana 1
+medimnos
+Micro Four Thirds system
+Mid-range speaker
+myriameter
+nano-indentatie
+Nanomotor
+netfrequentie
+offshore-boren
+ontstoringscondensator
+PC speaker
+piekvraag
+portaalaandrijving
+PowerPC G4
+PSoC
+pushtechnologie
+radarbaken
+radiolamp
+referentie interval
+Ricoh 2A03
+Romeinse mijl
+schaalverdeling
+studiomonitor
+superfijnen
+swarm robotics
+symmetriebreking
+technisch proces
+tensiometer
+tijdskaars
+torsie van een kromme
+vacuümdiode
+Venturi tube
+verschijning
+verticale windtunnel
+verzadigingsmagnetisatie
+vuurleidingsradar
+werkelektrode
+wet van Geiger-Nuttall
+Wii Balance Board
+World clock
+10BASE-T
+akoestische levitatie
+AN/SPY-6
+Apple A18
+approach lighting system
+ARM Cortex-A7
+ARM Cortex-A8
+Backscatter
+Balansas
+bereik van projectiel
+board foot
+BogoMips
+buitenspiegel
+Charrière
+chronon
+constitutieve vergelijking
+decaliter
+detectielus
+Distant Early Warning Line
+DMFC
+dynamische viscositeit
+E-meter
+eigenvector
+electron capture detector
+elektretmicrofoon
+elektrische geleiding
+equal-loudness contour
+Equatorium
+Eulerschijf
+extinctiecoëfficiënt
+fasehoek
+foto-elektrische sensor
+Fresnel getal
+gasontladingsbuis
+gate array
+Google Pixel Buds
+grondsnelheid
+haak-en-oogsluiting
+Hewlett-Packard 9100A
+Hexode
+homopolaire motor
+Ice Lake
+IJzer-waterstofweerstand
+infraroodsensor
+intensieve grootheid
+intermodulatie
+internationale kaars
+iPod Hi-Fi
+kiloseconde
+Klimov TV3-117
+kruisschakelaar
+kubieke inch
+Larrabee
+M42 lens mount
+MESFET
+Minkowski-metriek
+modding
+Network processor
+niet-lineaire controletheorie
+oppervlakte-energie
+peilglas
+permanente magneet
+Planck-Einstein relation
+POWER5
+preventief onderhoud
+Priktol
+radialen per seconde
+ratiodetector
+Scatterometer
+secret sharing
+signatuur
+slaguurwerk
+Socket F
+spanningsintensiteitsfactor
+square inch
+statische wrijving
+statvolt
+technische materiaalwetenschappen
+thermische schok
+Thermometer van Six-Bellani
+Thermovormen
+tijdsinvariantie
+toetsenbordtechnologie
+torenuurwerk
+transmissienetbeheerder
+verbrandingsmotor
+verlichtingstechniek
+vernikkelen
+verticaleaswindturbine
+videografie
+Vijzelturbine
+vliegtuigindustrie
+vlotter
+weerboei
+Western Design Center 65C02
+wiskundige ingenieurstechniek
+zeptoseconde
+zonnestralingsbeheer
+antisymmetrische tensor
+apostilb
+Apple A6X
+bascule
+bifilair
+bijverkoop
+bol van Ulbricht
+Broadway
+Casemodden
+centrifugaal gieten
+clepsydra
+configureren
+crêpepapier
+cubic yard
+Darcy
+decigram
+delamineren
+deprogrammeur
+diffractielimiet
+downtime
+elektrische isolatie
+elektrodynamische luidspreker
+elektrogravimetrie
+elektrohydrodynamica
+Exmor
+extensieve grootheid
+flight data recorder
+fluence
+Formule 1-motoren
+functie
+gangenbouw
+Gepakte kolom
+geurnoot
+Glasparelstralen
+Golfsolderen
+Groundplane-antenne
+inverse laplacetransformatie
+kleurstof
+kolomvector
+Krait
+krasblok
+Kristaldetector
+kustwaterbouwkunde
+kymograaf
+Lagrangiaan
+langley
+linear energy transfer
+luchtkoker
+magnetic flux quantum
+mechanische assemblage
+megahertz
+MeV
+millibar
+N connector
+nanogram
+NEC V20
+Nieuwe Turkse lira
+Nikon Z-vatting
+Nokkenschakelaar
+nucleaire aandrijving op zee
+OpenRISC
+overdrachtssnelheid
+overdrive
+overgangsweerstand
+Plasmaluidsprekers
+PowerPC G3
+ram pressure
+reactie wiel
+realtime
+Rectenna
+reluctantiemotor
+Restauratie
+Schottkytransistor
+schuifkracht
+sleutel
+SMART-L
+Socket 604
+Socket AM3+
+Solid-state lighting
+Sprietantenne
+stapresponsie
+toestandskromme
+tussenbak
+valsmunterij
+verbindingsloze communicatie
+verkoperen
+Vicat-verwekingspunt
+virtuele temperatuur
+vloeibaarmetaalspiegel
+volumetrische warmtecapaciteit
+vorderingsgraad
+vriespunt
+wet van Mohr-Coulomb
+wiebelsteen
+3 micron
+abampère
+Active Phased Array Radar
+ADAT
+Addiator
+AN/APG-81
+AN/SPS-48
+Androgynous Peripheral Attach System
+Apple A5X
+Apple Watch Ultra
+ARM Cortex-M
+ATI Xenos
+autoindustrie in India
+Bes
+big.LITTLE
+Blitter
+bootbouw
+Braam
+capaciteitsmeter
+centigram
+chromateren
+Comptometer
+conspecificiteit
+Contraroterende schroef
+cos φ-compensatie
+cryoscopische constante
+cubic mile
+data-architectuur
+Deuropener
+Dot-pitch
+dubbelkernprocessor
+EDRAM
+Elektronen microsonde
+Elektronenoptica
+elektronisch apparaat
+encryptie-apparaat
+European Data Relay Satellite
+expansieturbine
+ferrule
+Foveon X3
+gasveer
+GeV
+gigabit per seconde
+gigahertz
+H2S
+halveringsdikte
+hygrostaat
+Immersielithografie
+indicated airspeed
+katalysatorvergiftiging
+Katun
+kiloelektronvolt
+kiloliter
+klimaat van Azië
+klokgieten
+Liahona
+LOCOS
+maanwijzer
+maatlepel
+maken van sneeuw
+megawatt
+měkká robotika
+Montering
+naafmotor
+Netlist
+Nikon DX format
+Nodfyr
+omvormen
+osmolaliteit
+Parasitaire weerstand
+pelorus
+Pentium OverDrive
+Pixel Watch
+POWER4
+Punt van Spieker
+Raptor Lake
+Rayl
+repetitiewerk
+Ricoh 5A22
+Rolex Submariner
+Rolvormen
+Shoaling
+SMA connector
+Socket F+
+Sony E
+spoorbreedte
+Stationaire motor
+Stremma
+stroombalans
+Tantaal-elco
+telefoonstekker
+televisiebeeldbuis
+Thermische beveiliging
+TI-83-reeks
+Transmissometer
+vermogensdichtheid
+Visible light communication
+vloeiveld
+Voltameter
+wetten van Plateau
+yobibit
+zebibit
+Zweedse Fakkel
+Abraham-Lorentz force
+absorptiecoëfficiënt
+Amagat's law
+AN/APG-68
+AN/SPQ-9
+AN/SPS-49
+AN/SPY-3
+anomalie
+Apple S2
+Apple Watch Series 6
+ARM Cortex-A15 MPCore
+ARM7
+balkzoeker
+bandmicrofoon
+Bathythermograph
+Berengeur
+Boniteit
+breuktaaiheid
+Canon FD lens mount
+Canon RF
+communicatietoren
+cryptovirologie
+DIGIC
+drive-by-wire
+Dropsonde
+drukspanning
+Effectpedaal
+electron beam melting
+elektromagnetische energie
+elektrostatische luidspreker
+emissie
+equivalente breedte
+femtogram
+Foot-pound
+fosforzuurbrandstofcel
+Freescale 68HC11
+frequentiefactor
+geluidstechniek
+Geopotentiële hoogte

@@ -434,6 +434,18 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
         except Exception:
             log.exception("Lernschleife konnte nicht starten; Speech2Anywhere läuft ohne")
             learning = None
+    fachwortschatz = None
+    try:
+        from kira.fachwortschatz import Fachwortschatz
+        fachwortschatz = Fachwortschatz.laden(cfg.fachwortschatz.gebiete)
+        if fachwortschatz is not None:
+            threading.Thread(
+                target=fachwortschatz.vorbereiten, args=(cfg.whisper.language,),
+                name="fachwortschatz-index", daemon=True,
+            ).start()
+    except Exception:
+        log.exception("Fachwortschatz konnte nicht laden; Speech2Anywhere läuft ohne")
+        fachwortschatz = None
 
     if sys.platform == "win32":
         from kira.ui.qt_marshal import MainThreadMarshal
@@ -513,7 +525,7 @@ def _run_windows(cfg, recorder, transcriber, styler, injector) -> None:
     app = KiraApp(
         config=cfg, recorder=recorder, transcriber=transcriber,
         styler=styler, injector=injector, on_state_change=handle_state,
-        learning=learning,
+        learning=learning, fachwortschatz=fachwortschatz,
     )
 
     if popup is not None:

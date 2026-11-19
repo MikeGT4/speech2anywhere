@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.0 (19.11.2026)
+
+- Fachwortschatz: Im neuen Reiter „Fachwortschatz“ schaltest du Fachgebiete ein (Medizin, Medikamente, Jura, Wirtschaft, Wissenschaft und Technik, Chemie, IT); die Politur erkennt verhörte Fachbegriffe dann im Zusammenhang, in allen acht Sprachen (in normalem Text, Chat und Mail, nur mit eingeschalteter Politur). Begriffe aus Wikidata, ohne Anspruch auf Vollständigkeit; ohne Auswahl bleibt alles wie bisher
+- Gemessen mit 60 erfundenen Fach-Diktaten auf Deutsch und Englisch (Sprachausgabe): 2 statt 7 von 133 Fachbegriffen falsch, normale Diktate unverändert
+- Sieben neue Anzeige-Stile mit eigenen Tönen: Medizin, Medikamente, Jura, Wirtschaft, Wissenschaft und Technik, Chemie, IT
+- Von 0.5.5 bis 0.6.4 aus lädt das Update in der App nur das Programmpaket
+
 ## 0.6.4 (10.11.2026)
 
 - Einstellungen, Reiter Politur: Das Modell wählst du aus einer Liste der in Ollama installierten Modelle, mit Größe; die geprüften gemma4-Modelle stehen oben, Einbettungs- und Cloud-Modelle stehen nicht in der Liste. Eintippen geht weiter, Speichern lädt ein neues Modell

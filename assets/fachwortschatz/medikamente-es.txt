@@ -1,0 +1,3000 @@
+hormona
+antibiótico
+vitamina
+aminoácido
+cocaína
+glucosa
+ácido acetilsalicílico
+eritrocito
+vitamina C
+paracetamol
+insulina
+heroína
+cafeína
+ácido acético
+ácido clorhídrico
+morfina
+adrenalina
+bicarbonato de sodio
+dopamina
+testosterona
+plaqueta
+vitamina A
+cloruro de sodio
+fructosa
+vacuna contra la COVID-19
+carbonato de calcio
+estrógeno
+ibuprofeno
+narcótico
+sildenafilo
+ácido cítrico
+nitroglicerina
+Vitamina B1
+H. perforatum
+Hypericum perforatum
+vitamina B2
+alcanfor
+glicerol
+glicina
+oxitocina
+ketamina
+melatonina
+analgésico
+peróxido de hidrógeno
+ácido láctico
+amoxicilina
+MDMA
+vitamina E
+antioxidante
+alumbre
+alúmina
+cloruro de amonio
+glucagón
+ácido bórico
+anfetamina
+atropina
+cloroformo
+DDT
+gelatina
+permanganato de potasio
+cortisol
+óxido nitroso
+quinina
+codeína
+éter etílico
+sulfato cuprico
+sulfato de cobre
+Vacuna BCG
+vitaminas del grupo B
+Acetilcolina
+cloruro de potasio
+fentanilo
+noradrenalina
+Triptófano
+ácido salicílico
+biotina
+antidepresivo
+colágeno
+Glutamina
+metadona
+galactosa
+interferón
+aldosterona
+DL-lisina
+nitrato de plata
+progesterona
+sulfato de sodio
+toxina botulínica
+tozinameran
+Adenosina
+cloruro de calcio
+diazepam
+heparina
+óxido de magnesio
+tetraciclina
+andrógeno
+Diclofenaco
+estreptomicina
+pectina
+sertralina
+óxido nítrico
+silicona
+Vacuna contra el sarampión
+ácido graso omega 3
+antídoto
+antiséptico
+doxiciclina
+Fenolftaleína
+fluoxetina
+metformina
+semaglutida
+talidomida
+azitromicina
+Efedrina
+Gam-COVID-Vac
+hidroxicloroquina
+lidocaína
+metilfenidato
+metronidazol
+neuroléptico
+opioide
+Propofol
+psicoactivo
+Vacuna AstraZeneca
+Vacuna Oxford
+afrodisíaco
+alcohol isopropílico
+Alprazolam
+diurético
+flavonoide
+hormona adrenocorticotropa
+sulfato de magnesio
+Vacuna Moderna
+yoduro de potasio
+ácido γ-aminobutírico
+benzodiazepina
+Cannabidiol
+cloranfenicol
+Cloroquina
+cloruro de aluminio
+corticosteroide
+Hormona luteinizante
+lorazepam
+midazolam
+teobromina
+ampicilina
+dexametasona
+eritromicina
+estradiol
+oxicodona
+protector solar
+Sorbitol
+tramadol
+anticoagulante
+Bupropion
+capsaicina
+carbón activado
+estimulante
+hidróxido de aluminio
+ivermectina
+lisozima
+Naproxeno
+omeprazol
+remdesivir
+sulfato ferroso
+Vacuna contra la poliomielitis
+vitriolo verde
+aceite de ricino
+alucinógeno
+amitriptilina
+beta bloqueador
+ciprofloxacino
+estatina
+glutatión
+prostaglandinas
+Tirotropina
+Δ-9-Tetrahidrocannabinol
+Ácido fumárico
+glucocorticoide
+hipnótico
+nitrito de sodio
+salbutamol
+aciclovir
+azul de metileno
+escopolamina
+haloperidol
+hipoclorito de sodio
+ISRS
+Oseltamivir
+piridoxina
+Vacuna contra la gripe
+acetato de sodio
+azul de Prusia
+cetirizina
+clonazepam
+dispositivo intrauterino
+propan-1-ol
+propranolol
+Tripsina
+antiviral
+Bromuro
+carbamazepina
+cloruro de magnesio
+esteroide anabólico
+furosemida
+hexametilentetramina
+hidroclorotiazida
+loratadina
+Vacuna contra el VPH
+Vacuna VPH
+acetilcisteína
+atorvastatina
+carbonato de magnesio
+fenobarbital
+Flunitrazepam
+fluoruro sódico
+gabapentina
+naloxona
+vacuna del cólera
+Warfarina
+zidovudina
+Aminoglucósido
+amlodipina
+antiácido
+antihistamínico
+Carnitina
+cefalosporina
+clindamicina
+Clorpromazina
+Cortisona
+desinfección
+Dextrometorfano
+Digoxina
+Gentamicina
+Hexafluoruro de azufre
+laxante
+Metamizol
+Metotrexato
+Pentobarbital
+Perclorato de potasio
+pregabalina
+quetiapina
+Tiosulfato de sodio
+vacuna triple vírica
+Ácido valproico
+Cefalexina
+cloruro de cinc
+dimetilsulfóxido
+halotano
+hidróxido de magnesio
+Inositol
+Isoniacida
+Lactulosa
+Meloxicam
+Modafinilo
+Pent
+Petidina
+yodoformo
+abacavir
+beta-caroteno
+buprenorfina
+Citalopram
+clorhexidina
+clotrimazol
+colchicina
+fenitoína
+Finasterida
+Fluconazol
+gel sanitizante para manos
+gonadotropina coriónica humana
+hidroquinona
+lactobacillus
+loperamida
+metoclopramida
+Retinol
+risperidona
+Sulfato de zinc
+aceite de soja
+Albendazol
+alcohol bencílico
+anestésico
+antibiótico betalactámico
+antipirético
+Bencilpenicilina
+ceftriaxona
+ciclosporina
+Cisplatino
+Clopidogrel
+Difenhidramina
+enalapril
+fluoresceína
+Glucosamina
+indometacina
+Lamotrigina
+Levodopa
+levofloxacino
+Olanzapina
+ondansetrón
+paclitaxel
+rifampicina
+seudoefedrina
+Ad26.COV2.S
+benzoato de sodio
+ciclofosfamida
+cloroetano
+Cloruro de hierro
+Clozapina
+coenzima Q10
+IECA
+Inhibidor de la ECA
+Mebendazol
+Mercury
+procaína
+Prometazina
+ranitidina
+sulfamida
+Tamoxifeno
+teofilina
+tricloroetileno
+vacuna contra la rabia
+Vancomicina
+Alopurinol
+Amiodarona
+Celecoxib
+escitalopram
+Espironolactona
+hidrocodona
+manitol
+Metoprolol
+minoxidil
+Neomicina
+nicotinamida
+Pantoprazol
+papaverina
+Prednisolona
+Trazodona
+Vacuna contra las paperas
+Vacuna de ARN
+análisis de orina
+ansiolítico
+antiepiléptico
+antifúngico
+artemisina
+captopril
+claritromicina
+Cloruro de mercurio
+Colecalciferol
+Disulfiram
+donepezilo
+Hidrato de cloral
+hormona tiroidea
+IBP
+Mirtazapina
+peróxido de benzoílo
+Resorcinol
+simvastatina
+Vacuna meningocócica
+yodopovidona
+antihipertensivo
+benzocaína
+Bisoprolol
+colecistoquinina
+Dodecilsulfato sódico
+ergocalciferol
+Etambutol
+glucósido cardíaco
+Isotretinoína
+itraconazol
+lisinopril
+Naltrexona
+nitrofurantoína
+Ritonavir
+rituximab
+secretina
+tirzepatida
+Acetato de potasio
+ácido 4-aminobenzoico
+ácido algínico
+Ácido nicotínico
+Aripiprazol
+betametasona
+calcitriol
+cianamida cálcica
+clomipramina
+colirio
+creosota
+depresor
+epóxido
+favipiravir
+gonadotropina
+Ketoconazol
+ketoprofeno
+Levotiroxina
+memantina
+Nandrolona
+Nistatina
+paroxetina
+Piperazina
+tadalafilo
+topiramato
+Trimetoprima
+trombina
+venlafaxina
+Acetazolamida
+Amantadina
+Amikacina
+ceftazidima
+Cefuroxima
+duloxetine
+espermicida
+Hidratante
+Hidroxicina
+Isoflurano
+lamivudina
+Lindano
+Miconazol
+mineralocorticoide
+Permetrina
+piracetam
+Prednisona
+Profármaco
+Verapamilo
+vincristina
+Zolpidem
+Ácido azelaico
+Ácido lipoico
+Anfotericina B
+antiinflamatorio
+antimetabolito
+Atenolol
+Atomoxetina
+azatioprina
+Bloqueantes calcicos
+Bloqueantes cálcicos
+budesonida
+carbamato
+Dapsona
+DEET
+doxorrubicina
+droga psicodélica
+Hidromorfona
+hormona liberadora de tirotropina
+Imatinib
+inmunosupresor
+interleucina
+leche maternizada
+linezolida
+metilprednisolona
+Nifedipina
+orlistat
+Oxazepam
+pirazinamida
+Piroxicam
+reserpina
+sal de litio
+sulfasalazina
+tenofovir disoproxilo
+WHO medicamento esencial
+5-Fluorouracilo
+Aceite de eucalipto
+Acetato de calcio
+antidepresivo tricíclico
+antihelmíntico
+Apomorfina
+Carvedilol
+Ceratonia
+Cimetidina
+clonidina
+Clordiazepóxido
+Cloxacilina
+Cristal violeta
+dextroanfetamina
+Diltiazem
+dimercaprol
+Domperidona
+esomeprazol
+Famotidina
+hidrogenotartrato de potasio
+infliximab
+inhibidor enzimático
+Inmunoglobulina G
+Levetiracetam
+Micronutriente
+mupirocina
+neostigmina
+rosuvastatina
+tacrólimus
+Trastuzumab
+triclosán
+Trimetoprima-sulfametoxazol
+vacuna antitetánica
+aceite de bacalao
+Ácido tranexámico
+anestésico local
+BBIBP-CorV
+bromazepam
+bupivacaína
+Buspirona
+carbonato ácido de potasio
+Carmín de índigo
+Cianocobalamina
+clorfenamina
+CoronaVac
+Etinilestradiol
+ezetimiba
+Fluvoxamina
+fomepizol
+glibenclamida
+Hiosciamina
+Inosina
+levamisol
+levonorgestrel
+mesalazina
+moxifloxacino
+Pilocarpina
+prazicuantel
+quinolona
+Ribavirina
+Rimantadina
+salmeterol
+Terbinafina
+Tretinoína
+Ácido paraaminosalicílico
+antiarrítmico
+antidiabético
+Apósito
+baclofeno
+Bevacizumab
+Carbapenema
+Cefixima
+Cefotaxima
+ciclizina
+Clomifeno
+Clorito de sodio
+desloratadina
+Desmopresina
+Dihidrotestosterona
+ergotamina
+estrona
+flufenazina
+gluconato cálcico
+Goma guar
+hidralazina
+Hidroxicarbamida
+Inhibidores de la monoaminooxidasa
+Lansoprazol
+Malatión
+medicamento biológico
+Montelukast
+niclosamida
+Paraldehído
+paromomicina
+Quimotripsina
+Quinidina
+rivaroxaban
+Sibutramina
+sirólimus
+sumatriptán
+Temazepam
+Timolol
+toxoide
+Tritace
+Vardenafilo
+vortioxetina
+ácido ursodesoxicólico
+Agomelatina
+Alquitrán de Hulla
+Aneura
+Apixaban
+biperideno
+broncodilatador
+Clorambucil
+dimenhidrinato
+Doxilamina
+estanozolol
+Estriol
+Fenacetina
+fenoximetilpenicilina
+fexofenadina
+Ipratropio
+Lactitol
+liraglutida
+Mefloquina
+Misoprostol
+Natamicina
+polietilenglicol
+Rutina
+Sevoflurano
+suero inmunológico
+tobramicina
+vacuna antivariólica
+Vacuna para la difteria
+Vareniclina
+Vinblastina
+Xilometazolina
+anticolinérgico
+antitusígeno
+ARA II
+ARA2
+Aztreonam
+Carboplatino
+Cefazolina
+Cicloserina
+Daunorrubicina
+Doxepina
+Estavudina
+Filoquinona
+Fitoestrógeno
+Flucloxacilina
+flumazenil
+Fosfato trisódico
+fosfomicina
+glimepirida
+imipramina
+Incretina
+interruptor endocrino
+Ketorolaco
+Lincomicina
+lisdexanfetamina
+mercaptopurina
+Meropenem
+Metacualona
+Meticilina
+Metildopa
+Metimazol
+Nebivolol
+Nitrazepam
+Ofloxacino
+Oxitetraciclina
+pirimetamina
+pramipexol
+sitagliptina
+temozolomida
+thiomersal
+Tizanidina
+tocilizumab
+Triazolam
+tuberculina
+Vacuna contra la malaria
+vacuna DPT
+Zopiclona
+Ácido mandélico
+adalimumab
+amina simpaticomimética
+Amobarbital
+Antisuero
+Barbital
+Benzoato de bencilo
+bisacodilo
+Bleomicina
+Candesartán
+Capecitabina
+Cefepima
+Citrato tripotásico
+Clenbuterol
+Colistina
+dacarbacina
+deferoxamina
+Docetaxel
+emtricitabina
+Etanercept
+Etomidato
+Etopósido
+fenazona
+Fenilefrina
+Fentermina
+fisostigmina
+Flurazepam
+Gemcitabina
+griseofulvina
+guaifenesina
+Maprotilina
+Melfalán
+Metoxiflurano
+Mifepristona
+Nimesulida
+palmitato de Paliperidona
+Piperacilina
+Pirantel
+rabeprazol
+Rifabutina
+Rivastigmina
+S-Adenosil metionina
+sotalol
+Succinilcolina
+sulfadiazina
+Sulfametoxazol
+Telmisartán
+vacuna contra la rubéola
+Valaciclovir
+yohimbina
+Zanamivir
+Acarbosa
+Acetato de cinc
+Ácido fusídico
+Ácido gamma-linolénico
+ácido mefenámico
+Actinomicina
+Amilorida
+Aminofilinaaminofilina
+amisulprida
+antagonista H2
+antibiótico tetraciclínico
+antiemético
+Atazanavir
+Betaína
+Bromocriptina
+Cetuximab
+Citarabina
+Clobazam
+colinesterasa
+condroitín sulfato
+Dapagliflozina
+denosumab
+Dicloxacilinas
+Dietilestilbestrol
+digitoxina
+Efavirenz
+factor de coagulación X
+Fenetilina
+fenofibrato
+filgrastim
+Fosfocreatina
+galantamina
+gemfibrozilo
+GIP hormona incretina
+gliclazida
+GLP 1
+hemaglutinina
+ifosfamida
+Irinotecán
+Latanoprost
+levocetirizina
+Lovastatina
+Meldonium
+Merbromina
+Moclobemida
+Nevirapina
+nootrópico
+Octreotida
+Oxacilina
+Oxandrolona
+Pembrolizumab
+penicilamina
+Perindopril
+piridostigmina
+Piridoxal fosfato
+Prostaciclina
+rofecoxib
+Roxitromicina
+sofosbuvir
+sulfanilamida
+Tiazida
+triamcinolona
+Vacuna contra la varicela
+Vacuna Hib
+Ácido cólico
+Alfa 1-antitripsina
+Anastrozol
+azúcar invertido
+Benzonatato
+Bromhexina
+busulfan
+Clofazimina
+Clorazepato
+Clortetraciclina
+Desflurano
+entecavir
+Estreptoquinasa
+Etosuximida
+Everolimus
+exenatida
+Fenilbutazona
+Fenilpropanolamina
+hidroxocobalamina
+Indapamida
+Irbesartán
+IRSN
+Ketotifeno
+Labetalol
+Letrozol
+Lurasidona
+medio de contraste
+Nafazolina
+Nortriptilina
+Olmesartán
+Pimozida
+pioglitazona
+Prazosina
+Primaquina
+Primidona
+procarbazina
+proguanil
+Propafenona
+Propiltiouracilo
+provitamina
+Remifentanilo
+rifamicina
+Rifaximina
+Riluzol
+Saquinavir
+Sulpirida
+Tetracaína
+tigeciclina
+tropicamida
+Vacuna contra el rotavirus
+vacuna de ADN
+Ziprasidona
+19-noretisterona
+6-tioguanina
+Acamprosato
+Ácido nalidíxico
+alemtuzumab
+Ambroxol
+anticonceptivo oral
+Astringente
+Atovacuona
+betahistina
+Bortezomib
+butilescopolamina
+Cariprazina
+ciclobenzaprina
+Citisina
+Cloroxilenol
+daptomicina
+Dihidrocodeína
+Dioctilsulfosuccinato de sodio
+Dobutamina
+dotropan
+Empagliflozina
+Enoxaparina
+Ergometrina
+Etoricoxib
+factor de coagulación VII
+FAME
+Fludarabina
+formoterol
+Foscarnet
+fosinopril
+Ftalato de dibutilo
+Ganciclovir
+guanfacina
+Hidroxiprolina
+IDV
+Indinavir
+Isoproterenol
+levomepromazina
+linagliptina
+medicamento huérfano
+menadiona
+Minociclina
+Mitotano
+Mometasona
+noscapina
+Oxaliplatino
+Oxcarbazepina
+Oximetazolina
+Péptido vasoactivo intestinal
+Perfenazina
+Pindolol
+podofilina
+Procainamida
+Propanoato de sodio
+Raloxifeno
+Rasagilina
+Sulfacetamida
+sulfadiazina de plata
+Suvorexant
+Tamsulosina
+terbutalina
+Tianeptina
+Tiotropio
+topotecán
+Triclabendazol
+vacuna neumococal
+vinorelbina
+Voriconazol
+5-fluorocitosina
+5-Hidroxitriptófano
+8-hidroxiquinoleína
+Ácido alendrónico
+Ácido zoledrónico
+acitretina
+Amodiaquina
+Aprepitant
+Bedaquilina
+benazepril
+Bendamustina
+Benzidamina
+brexpiprazol
+cabergolina
+Carisoprodol
+Cefpodoxima
+Cefprozilo
+Cipermetrina
+ciproheptadina
+Dapoxetina
+Darunavir
+dextropropoxifeno
+dietilcarbamazina
+Dinitrato de isosorbida
+Dipiridamol
+Droperidol
+Eflornitina
+Enflurano
+Ertapenem
+Espectinomicina
+espiramicina
+fluticasona
+Fructosa 1 6-bifosfato
+Fructosa-1 6-bifosfato
+gefitinib
+leflunomida
+leuprorelina
+Metocarbamol
+Mexiletina
+Naftifina
+Norfloxacino
+pentazocina
+Pentoxifilina
+Perborato de sodio
+pravastatina
+Quinapril
+relajante muscular
+ropivacaína
+Rosiglitazona
+Sufentanilo
+Sulfuro de selenio
+Tiabendazol
+tinidazol
+Trimipramina
+vacuna atenuada
+Vacuna contra el cáncer
+Zonisamida
+zuclopentixol
+aceite de melaleuca
+acetato de glatiramer
+Adapaleno
+alfentanilo
+antiagregante plaquetario
+Azelastina
+Betaxolol
+Bicalutamida
+Caspofungina
+Cefaclor
+Cefdinir
+Cilostazol
+citrato de calcio
+Clorotiazida
+Clortalidona
+Codigo ATC C01
+Código ATC C01
+Colestiramina
+desipramina
+Dianabol
+Diazóxido
+Dipropionato de beclometasona
+Entacapona
+Epirrubicina
+Estazolam
+Estreptozocina
+Etionamida
+Factor de von Willebrand
+fenelzina
+fingolimod
+Furoato de diloxanida
+Insulina glargina
+Maraviroc
+mebeverina
+meclizino
+Milnaciprán
+mitoxantrona
+netilmicina
+Nimodipina
+Nusinersen
+Omalizumab
+Oxamniquina
+pantenol
+Penicilina benzatina
+Peróxido de magnesio
+Prilocaína
+Proclorperazina
+Raltegravir
+Repaglinida
+retinoide
+Ropinirol
+Selenito de sodio
+Sorafenib
+Succinimida
+Sulfonilurea
+Tapentadol
+Tolnaftato
+Tropisetrón
+vacuna inactivada
+Valganciclovir
+Acenocumarol
+Ácido aminocaproico
+Ácido aminolevulínico
+Ácido cromoglícico
+Ácido undecilénico
+adderall
+Aliskiren
+amoxapina
+antibiótico monobactámico
+Arteméter
+artesunato
+articaina
+Atracurio
+Benzinidazol
+Brotizolam
+Bumetanida
+Cabazitaxel
+Calcipotriol
+capreomicina
+Carbacol
+Cefalotina
+Cidofovir
+cilazapril
+Cincocaína
+Cisaprida
+Cisteamina
+Codigo ATC N02
+Código ATC N02
+danazol
+Dasatinib
+Deltametrina
+Desvenlafaxina
+Dicumarol
+Dimetilfumarato
+Doxazosina
+Dutasterida
+ebastina
+edoxaban
+Enfuvirtida
+esmolol
+Etizolam
+famciclovir
+Felodipina
+fludrocortisona
+fluvastatina
+Fulvestrant
+glipizida
+Hexaclorofeno
+Idarrubicina
+Imipenem
+Imiquimod
+inhibidor de la Di-Peptidil-Peptidasa-IV
+L-Asparaginasa
+Lactato de calcio
+Lecanemab
+lenalidomida
+Lomustina
+lopinavir/ritonavir
+mirabegrón
+nabilona
+Nadolol
+Naratriptán
+Natalizumab
+Nelfinavir
+Penciclovir
+Pirfenidona
+pitavastatina
+Quassia
+Quinacrina
+Salicilato de fenilo
+Secobarbital
+Secukinumab
+senósido
+thioridazine
+tolterodina
+Trandolapril
+tranilcipromina
+Trietanolamina
+trifluoperazina
+Trihexifenidilo
+uroquinasa
+Acebutolol
+aceite de lavanda
+acetato de ulipristal
+Ácido micofenólico
+Ad5-nCoV
+Afatinib
+Altretamina
+anakinra
+antipalúdico
+baricitinib
+bilastina
+Bromelina
+Butorfanol
+calcifediol
+Carbenicilina
+carmustina
+Cefadroxilo
+ciclopirox
+Clemastina
+Codigo ATC A03
+Código ATC A03
+dantroleno
+descongestivo
+Dietilpropión
+Dinoprostona
+Dolutegravir
+Econazol
+Emetina
+eplerenona
+Erlotinib
+esketamina
+Etodolaco
+exemestano
+Expectorante
+Fenazopiridina
+fenoprofeno
+Fentolamina
+flibanserina
+flurbiprofeno
+Gliflozina
+hidroxipropilmetilcelulosa
+hipolipemiante
+Ivabradina
+loxapina
+Mecloretamina
+medazepan
+Melarsoprol
+milrinona
+Mononitrato de isosorbida
+nabumetona
+Nifurtimox
+Nitazoxanida
+Nivolumab
+Octopamina
+Pimecrolimus
+Piretrina
+Pralidoxima
+Prasugrel
+Ramelteón
+Rizatriptán
+Rojo de fenol
+Seleniato de sodio
+sevelamer
+sucralfato
+Sulindaco
+Suplemento de hierro
+tetrahidrobiopterina
+Ticagrelor
+Torasemida
+Triamtereno
+Trimetazidina
+Tubocurarina
+Zaleplon
+Abatacept
+abciximab
+ácido etacrínico
+Ácido etidrónico
+Ácido ibandrónico
+alfa bloqueador
+antiparasitario
+armodafinilo
+Astemizol
+Belimumab
+Benzatropina
+Bifonazol
+Carteolol
+Cefoperazona
+cefoxitina
+Ceftibuteno
+Cinarizina
+cladribina
+Clofibrato
+Codigo ATC A10
+Código ATC A10
+Codigo ATC A16
+Código ATC A16
+Codigo ATC J01
+Código ATC J01
+Codigo ATC N05
+Código ATC N05
+Dexmedetomidina
+Dicicloverina
+Didanosina
+Dimetiletanolamina
+DIU de cobre
+Emtricitabina/tenofovir
+Fenibut
+Feniramina
+Flecainida
+fosfato de aluminio
+furazolidona
+glicirricina
+Granisetrón
+Indacaterol
+L-carboximetilcisteína
+Lincosamida
+Methylcobalamin
+metilcelulosa
+Nedocromilo
+Niquetamida
+Olaparib
+Orto-fenilfenol
+Oxprenolol
+Palbociclib
+Palonosetron
+Pemetrexed
+Polidimetilsiloxano
+polimixina
+Polimixina B
+Pramlintida
+Probenecid
+protamina
+Protionamida
+ranolazina
+Rifapentina
+Salicilamida
+sunitinib
+suplemento vitamínico
+sustituto sanguíneo
+Teicoplanina
+Tetrabenazina
+tolbutamida
+tranquilizante
+Triprolidina
+Truxal
+Ustekinumab
+zolmitriptán
+abemaciclib
+Ácido desoxicólico
+Alprostadil
+Anagrelida
+Antiandrógeno
+Antralina
+Apremilast
+Avanafilo
+Avermectina
+azacitidina
+basiliximab
+Besifloxacina
+Betanecol
+biguanida
+Bosentán
+Brimonidina
+brinzolamida
+Carbimazol
+Cefamandol
+cefotetan
+Cefradina
+Cerivastatina
+Certolizumab pegol
+Citrato de amonio férrico
+citrato de magnesio
+Clometiazol
+cobicistat
+Codigo ATC A08
+Código ATC A08
+Codigo ATC B01
+Código ATC B01
+Codigo ATC C02
+Código ATC C02
+Codigo ATC C03
+Código ATC C03
+Codigo ATC N04
+Código ATC N04
+Codigo ATC N06
+Código ATC N06
+Daclatasvir
+Deferiprone
+Delamanid
+Delavirdina
+Demeclociclina
+Desogestrel
+dexketoprofeno
+Diatrizoato
+disopiramida
+Diurético de asa
+Dorzolamida
+etonogestrel
+FINLAY-FR-2
+Fluorodesoxiglucosa
+flutamida
+Gardasil
+golimumab
+Goserelina
+Gramicidina
+Guaiazuleno
+Hexetidina
+homatropina
+Insulina aspart
+Insulina lispro
+Ipilimumab
+Iproniazida
+Lacosamida
+Lormetazepam
+Mefobarbital
+Miglitol
+Miltefosina
+Moexipril
+Nafcilina
+Nalbufina
+Nalmefeno
+Nefazodona
+Nicardipina
+Nilotinib
+Nisoldipino
+Nizatidina
+oligoelemento
+Onasemnogene abeparvovec
+Orciprenalina
+ouabaína
+parasimpaticomimético
+Peginterferón alfa-2a
+Pemolina
+pirazolona
+Posaconazol
+Propifenazona
+Proteína morfogénica ósea
+Psyllium
+radiofármaco
+Reboxetina
+Rilpivirina
+Serpina
+sideróforo
+Tacrina
+Tenipósido
+Tenoxicam
+Terazosina
+Teriparatida
+Tetrahidrozolina
+Tiagabina
+Ticarcilina
+ticlopidina
+Tilidina
+Tiotepa
+Tiotixeno
+Trifluridina
+Vacuna contra el VIH
+Vemurafenib
+Vigabatrina
+Vilazodona
+Vildagliptina
+zafirlukast
+17-Hidroxiprogesterona
+Abacavir/lamivudina
+Aceclofenaco
+Acepromazina
+Acetarsona
+Acetónido de fluocinolona
+Ácido oxolínico
+Ácido quenodesoxicólico
+Ácido risedrónico
+alfusozina
+Alitretinoína
+Alosetrón
+antihemorrágico
+antiprotozoario
+asénapine
+Auranofín
+Azlocilina
+Bezafibrato
+Bimatoprost
+Butoconazol
+Canagliflozina
+Carbinoxamina
+Carbonato de lantano
+Catión de amonio cuaternario
+Ceftarolina fosamil
+Ciclopentolato
+Cobamamida
+Codigo ATC A04
+Código ATC A04
+Codigo ATC A09
+Código ATC A09
+Codigo ATC C04
+Código ATC C04
+Codigo ATC C08
+Código ATC C08
+Codigo ATC C09
+Código ATC C09
+Codigo ATC D03
+Código ATC D03
+Codigo ATC D04
+Código ATC D04
+Codigo ATC D09
+Código ATC D09
+Dalteparina sódica
+Dexrazoxano
+Diflunisal
+Docosanol
+Dolasetrón
+Doxapram
+dulaglutida
+Eculizumab
+effortil
+enzalutamida
+Eribulina
+Eszopiclona
+Factor de coagulación XIII
+Fenoterol
+Fenprocumon
+flunarizina
+Fluorometolona
+focalin
+gatifloxacina
+Gemifloxacino
+Gluconato ferroso
+Glutetimida
+Guanetidina
+Hidroxietil-almidón
+Ibrutinib
+Insulina detemir
+Iohexol
+kanamicina
+Ketazolam
+Lapatinib
+Linaza
+mecanismo de acción
+Metazolamida
+Metilergometrina
+Midodrina
+Nelarabina
+nitrofuranos
+Nitrofurazona
+orfenadrina
+Oro coloidal
+Osimertinib
+Oxaprozina
+Procaína bencilpenicilina
+Ranelato de estroncio
+ranibizumab
+Rimonabant
+Riociguat
+Roflumilast
+Rotigotina
+Rupatadina
+Silodosina
+Simeprevir
+sugammadex
+Telitromicina
+Terlipresina
+Tipranavir
+Trietilentetramina
+viloxazina
+Vorinostat
+ziconotide
+Ácido iotróxico
+Ácido niflúmico
+Ácido pamidrónico
+Alfacalcidol
+Alglucosidasa alfa
+Alirocumab
+alprenolol
+anorexígeno
+Antimoniato de meglumina
+Atezolizumab
+Bexaroteno
+Bivalirudina
+Brivaracetam
+Bromfenaco
+Butenafina
+Butobarbital
+canakinumab
+Cefiderocol
+Cetrorelix
+Cevimelina
+Cinolazepam
+Clorpropamida
+Clorzoxazona
+Codigo ATC A12
+Código ATC A12
+Codigo ATC B06
+Código ATC B06
+Codigo ATC D06
+Código ATC D06
+Codigo ATC D07
+Código ATC D07
+Daclizumab
+Darbepoetina alfa
+deferasirox
+Dermatán sulfato
+Desonide
+Dihidroergotamina
+diosmina
+Drospirenona
+Dupilumab
+EpiVacCorona
+Esparfloxacino
+Esparteína
+Evolocumab
+Febuxostat
+felbamato
+Fenfluramina
+Fenoxibenzamina
+fidaxomicina
+Fludiazepam
+Fluoximesterona
+frovatriptán
+Gemtuzumab ozogamicina
+Halazepam
+Icatibant
+inhibidor de aromatasa
+ionóforo
+Isocarboxazida
+Josamicina
+lágrima artificial
+Levosimendán
+Lorcaserina
+Lornoxicam
+mazindol
+Mepivacaína
+Mostazas nitrogenadas
+MSRE
+Mykamine
+Nateglinida
+Nintedanib
+P. senega
+Panitumumab
+Pertuzumab
+Pimavanserina
+polidocanol
+Polygala senega
+Procinético
+Quazepam
+Rasburicasa
+Retapamulina
+Rufinamida
+Ruxolitinib
+S. boulardii
+Saccharomyces boulardii
+Salsalato
+Saptagliptina
+Sarilumab
+Silibinina
+Simpaticolítico
+sucedáneo lácteo
+Tazaroteno
+tedizolid
+Tenecteplasa
+Tetrametrina
+Tolcapona
+Tolvaptan
+Travoprost
+Umifenovir
+vacuna contra el dengue
+Vindesina
+ZMapp
+Acemetacina
+Acetohexamida
+Adrafinil
+agente alquilante antineoplásico
+Ajmalina
+Aloxiprin
+Amorolfina
+Anidulafungina
+Anileridina
+Argatroban
+Aurotiomalato
+Bálsamo del Perú
+Benperidol
+Bromfeniramina
+budesonida formoterol
+Cefapirina
+Cefditoren
+Ciclesonida
+Codigo ATC A05
+Código ATC A05
+Codigo ATC C05
+Código ATC C05
+Codigo ATC C10
+Código ATC C10
+Codigo ATC J02
+Código ATC J02
+Codigo ATC M04
+Código ATC M04
+Colesevelam
+Covivac
+Diclonina
+Dienogest
+Difenoxilato
+Doripenem
+Durvalumab
+Enoxacina
+Epinastina
+Etclorvinol
+Etravirina
+Fenoldopam
+Fosfato sódico
+fremanezumab
+fumarato ferroso
+glucopéptido
+Idarucizumab
+Idoxuridina
+Iloperidona
+Iloprost
+Lentinan
+Levobunolol
+Limeciclina
+Medroxiprogesterona
+Menopur
+Metirapona
+Metrifonato
+Mezlocilina
+Nepafenaco
+Ofatumumab
+Partícula como virus
+Pazopanib
+Pegaspargasa
+perampanel
+regonafenib
+Romidepsina
+Romiplostim
+Secnidazol
+Sulconazol
+Tacalcitol
+Talinolol
+Taxano
+Telaprevir
+Teriflunomida
+Terizidona
+tioconazol
+tiofenicol
+Tiram
+Tirofibán
+Tolazamida
+Toremifeno
+Trastuzumab emtansina
+Valdecoxib
+Vincamina
+Vinpocetina
+zofenopril
+Aceite de bergamota
+Ácido carglúmico
+Ácido meclofenámico
+ácido tolfenámico
+Aflibercept
+agente antiespuma
+alogliptica
+Alvimopán
+Amifampridina
+Bazedoxifeno
+Boceprevir
+Bopindolol
+Ciflutrina
+Clioquinol
+Cloxazolam
+Codigo ATC D11
+Código ATC D11
+Colestipol
+Crizotinib
+Darifenacina
+Decitabina
+Desoximetasona
+Dexlansoprazol
+Diastasa
+dihidroartemisinina
+diurético ahorrador de potasio
+Éter vinílico
+Fenicol
+Fenotrina
+Guselkumab
+Heptaminol
+Hidroxicloruro de Aluminio
+idebenona
+Imiglucerasa
+Inclisiran
+Inmunoestimulador
+Isradipina
+Jarabe de ipecacuana
+lanreótido
+Letermovir
+Lodoxamida
+Lomitapida
+Loprazolam
+Lubiprostona
+Metolazona
+Nalorfina
+Neratinib
+Nicergolina
+nifuroxazida
+Oritavancina
+Oxiconazol
+Oximetolona
+Peginterferón alfa-2b
+Pegvisomante
+Penbutolol
+Pirenzepina
+Pomalidomida
+Pralatrexato
+Protriptilina
+Prucaloprida
+Reteplasa
+sertaconazol
+Solución láctica de Ringer
+Sotrovimab
+Tafluprost
+Tasimelteón
+Tegaserod
+terapia con inmunoglobulina
+Tesamorelin
+Tetrazepam
+Tolmetina
+Trabectedina
+Treprostinil
+Trifaroteno
+Trimebutina
+Trimetadiona
+Tylenol
+vacuna conjugada
+Vacuna contra el zóster
+vacuna de vector viral
+Vacunas de subunidades
+Vidarabina
+Ácido flufenámico
+Acraflavina
+adyuvante inmunológico
+aglutinina
+agonista de la dopamina
+Alclometasona
+Almotriptán
+Alteplasa
+Aniracetam
+antagonista de la aldosterona
+antidepresivo tetracíclico
+antineoplásico
+aprotinina
+Arteméter/lumefantrina
+Axitinib
+Belatacept
+Benorilato
+Bergapten
+bloqueador de pubertad
+Bosutinib
+Bromovalerilurea
+Bromuro de aclidinio
+cabozantinib
+Carfilzomib
+Cefonicida
+Celiprolol
+Cetobemidona
+Cinacalcet
+Ciproterona
+Cloruro de bencetonio
+Codigo ATC A13
+Código ATC A13
+Corbevax
+COVIran Barekat
+Daratumumab
+Dasabuvir
+Delafloxacina
+Dofetilida
+Dostarlimab
+Dronedarona
+Efalizumab
+Estiripentol
+Etofenamato
+fármaco inmunoconjugado
+Fenindiona
+Fexinidazol
+Flavoxato
+Flubendazol
+inhibidor de la proteasa
+Inhibidores de betalactamasas
+interferón beta-1b
+Ivacaftor
+Lenvatinib
+Lercanidipino
+Levobupivacaína
+Linaclotida
+Liotironina sódica
+Loracarbef
+Luliconazol
+Maribavir
+Meclofenoxato
+Megesterol
+Metiprilon
+Metisergida
+mitomicina
+molindone
+monobenzona
+Nialamida
+Nitrendipino
+ocrelizumab
+Palivizumab
+Panobinostat
+Paricalcitol
+Pegfilgrastim
+Pentilenotetrazol
+Pentostatina
+peramivir
+Picosulfato sódico
+Pitolisant
+Pivampicilina
+Ponatinib
+Practolol
+Pramocaine
+Prednicarbato
+Repelente de insectos
+Ribociclib
+Rilonacept
+safinamida
+Sertindol
+Sulfadimetoxina
+Sulfatiazol
+Sulfinpirazona
+Tafamidis
+temsirólimus
+Tirotricina
+tofacitinib
+Triptorelina
+Trovafloxacina
+Vacuna contra la peste
+Valpromida
+zorecimerán
+Abdala
+Abiraterona
+Alcaftadina
+Alectinib
+Alfa-GPC
+Ambrisentan
+Amifostine
+Anestésico inhalatorio
+Antagonista H1
+antiangiogénico
+Antitoxina diftérica
+atosibán
+Bamlanivimab
+bendroflumetiazida
+Blinatumomab
+Brentuximab vedotina
+Cangrelor
+Cefetamet
+Cimarina
+Cinoxacina
+Clevidipina
+Deflazacort
+Degarelix
+Diacereína
+Diclorfenamida
+Difluprednato
+Dipivefrina
+Droxidopa
+Edetato cálcico sódico
+Eltrombopag
+Encorafenib
+Epanolol
+Estibogluconato de sodio
+Etidocaína
+Fenformina
+fluticasona-salmeterol
+Fosamprenavir
+Gemeprost
+gluconato de zinc
+Humulina
+ibritumomab tiuxetán
+Idelalisib
+Idursulfasa
+Insulina glulisina
+Isoconazol
+Lactato de potasio
+Lisurida
+Lixisenatida
+Magaldrato
+Miglustat
+Muromonab-CD3
+Nesiritida
+Neuroesteroide
+Obinutuzumab
+opipramol
+Ornidazol
+Oxibato de sodio
+Oxicodona/paracetamol
+Oxiracetam
+Paraoxón
+Pasireotida
+Patisiran
+Piritinol
+Prociclidina
+ramucirumab
+Reslizumab
+sarciclina
+Selexipag
+Semustina
+sulfaguanidina
+Tenofovir alafenamida
+Terconazol
+Trametinib
+treosulfan
+Vedolizumab
+venetoclax
+Xipamide
+Aceclidina
+Acetilcarnitina
+Andexanet alfa
+anilida
+antidiurético
+antimitótico
+antipruriginoso
+Antitiroideo
+Artesunato/mefloquina
+aurotioglucosa
+Avelumab
+Benralizumab
+Bentazepam
+brodalumab
+Budipina
+Canrenona
+carbenoxolona
+Carbetocina
+Clotiapina
+Dalbavancin
+Depo Provera
+Dextran 70
+Dextromoramida
+Dinutuximab
+drotaverini
+erdosterina
+erenumab
+Etambutol/isoniazida/rifampicina
+etohexadiol
+Fesoterodina
+Fludroxicortida
+Galcanezumab
+Ganirelix
+goma karaya
+Imipenem/cilastatina
+Inhibidor de la integrasa
+Inmunoglobulina antitetánica
+Insulina degludec
+Isavuconazol
+Ixabepilona
+Ixekizumab
+Lamivudina/zidovudina
+Lifitegrass
+Lofexidine
+Mefenesina
+Mepindolol
+Meptazinol
+Metirosina
+midostaurina
+Naldemedina
+Naloxegol
+Narcobarbital
+Nilutamida
+Olodaterol
+Omacetaxina
+Omadaciclina
+Pentagastrina
+Pleconaril
+Policosanol
+QazCovid-in
+quinupristina/dalfopristina
+rabeprazole
+Racetam
+Retigabina
+Rimexolona
+Romosozumab
+Sulbutiamina
+Sulfonato de poliestireno
+Sultoprida
+Teduglutida
+Telavancina
+Tocolítico
+Trifluperidol
+Triflusal
+trioxisaleno
+Umeclidinio
+Verteporfina
+Vinbarbital
+WIBP-CorV
+Aceite de cajeput
+Acipimox
+Afamelanotida
+agente quimioterapéutico
+Agonista beta adrenérgico
+Alcuronio
+Antagonista de la dopamina
+Anti-TNF
+Apraclonidina
+Artesunato/amodiaquina
+ayuda ergogénica
+Balsalazida
+Becaplermina
+Bretilio
+Bromuro de otilonio
+Bupranolol
+Cefmenoxima
+Cervarix
+ciclotiazida
+Cleboprida
+Clopamida
+Conivaptán
+Defibrotide
+Doravirina
+eletriptán
+estramustina
+estreptogramina
+Etinilestradiol/levonorgestrel
+Fenbufeno
+Fensuximida
+Floxuridina
+Flunisolida
+Fosfenitoína
+fotosensibilizador
+Fumagilina
+Hidroflumetiazida
+Ibalizumab
+Inmunoglobulina contra la rabia
+Interferón alfa-2b
+Ixazomib
+Ketanserina
+Laronidasa
+Levodropropizina
+Loxoprofeno
+Macitentan
+Mafenida
+meglitinida
+mepolizumab
+Metilnaltrexona
+Metosuximida
+Mibefradil
+migalastat
+neosporin
+Niraparib
+Olaflur
+olsalazina
+Pandemrix
+Pegaptanib
+Pergolida
+Plecanatida
+Plerixafor
+Plitidepsina
+Prolintano
+Prostaglandina F2α
+Racecadotril
+Raxibacumab
+Ritodrina
+Senolíticos
+Solución de dextrosa intravenosa
+sustancias ergogénicas
+Thebacon
+Theralizumab
+Trastuzumab deruxtecán
+Triclormetiazida
+Vacunas contra el Ébola
+Vick VapoRub
+VSV-EBOV
+abortivo
+Acetildihidrocodeína
+Alclofenaco
+Alcohol nicotínico
+Alefacept
+Alginato de calcio
+alverina
+Amivantamab
+Ansuvimab
+antagonista muscarínico
+antifibrinolítico
+Antiparkinsonianos
+Beraprost
+Betanidina
+bezlotoxumab
+Binimetinib
+Buformina
+Cefatrizina
+Cefminox
+Cenegermin
+Clofarabina
+Cloranolol
+Clorindiona
+Colestilan
+Crisoterapia
+Dextrotiroxina
+Diuréticos osmóticos
+Emicizumab
+Etinilestradiol/noretisterona
+Extracto de efedra
+Fencamfamina
+Fluocortolona
+Fostamatinib
+Givosiran
+Hialuronato de sodio
+Ibutilida
+Inhibidor C1
+Inhibidor de la fosfodiesterasa
+Inhibidor de la recaptación
+Inhibidor de PARP
+Isoniazida/rifampicina
+Kanamicina B
+Lipiodol
+Lorlatinib
+lumasiran
+Lusutrombopag
+Mebutate ingenol
+Mecasermin
+meticlotiazida
+Metoxamina
+Mogamulizumab
+Nafarelina
+naftidrofurilo
+Nomifensina
+Ospemifeno
+Oxolamina
+Palifermin
+pancreatina
+Pramiracetam
+queratolítico
+Ravulizumab
+Rifampicina/isoniazida/pirazinamida
+Ronifibrato
+Rucaparib
+Siltuximab
+Suplemento de calcio
+Tavaborol
+Tertatolol
+Tildrakizumab
+Tiocolchicósido
+Unoprostona
+Vacuna contra el adenovirus
+Vacuna contra el ántrax
+Valbenazina
+Vandetanib
+Veraliprida
+vernakalant
+Vismodegib
+Vorapaxar
+ZyCoV-D
+5-alpha-reductase inhibidor
+Abacavir/lamivudina/zidovudina
+agonista adrenérgico
+antagonista nicotínico
+Antifolato
+antimicobacteriano
+atalureno
+Belinostat
+Caplacizumab
+Carbacefem
+ceftazidime/avibactam
+Cerebrolisina
+Cinitaprida
+Cloperastina
+Clormidazol
+Dacomitinib
+Debrisoquina
+Denileucina diftitox
+deserpidina
+Deshidroemetina
+Dibenzepina
+dihidroergocristina
+Droxicam
+Ecotiofato
+Ertugliflozina
+Etambutol/isoniazida/pirazinamida/rifampicina
+Etoperidona
+glicerofosfato de calcio
+Haloprogina
+Hematina
+Indoprofeno
+Iproclozida
+ledipasvir/sofosbuvir
+Levacetilmetadol
+Linosterol
+Metreleptina
+Mirvetuximab soravtansina
+Moperona
+Ocriplasmina
+Olaratumab
+Opicapona
+Orexígeno
+Ozogamicina inotuzumab
+Pargilina
+Patiromer
+Pixantrona
+politiazida
+Probucol
+Regadenoson
+Retifanlimab
+Satralizumab
+Tivozanib
+Tolciclato
+Velaglucerasa alfa
+Voclosporina
+Acetoxolona
+Acetyldigitoxin
+ácido iotalámico
+Alaproclate
+alfaxalona
+Alipogene tiparvovec
+Almasilato
+Alquilsulfanato
+antagonista adrenérgico
+Apalutamida
+Avatrombopag
+Beractant
+Bexagliflozina
+Bucindolol
+Butriptilina
+Captodiamo
+Cefteram
+Ciclopentiazida
+CoVLP
+Crofelemer
+Dopaminérgico
+dropropizina
+Efavirenz/lamivudina/tenofovir
+Emulsión lipídica
+Erythropoiesis stimulating agent
+fluoroquinolona
+glicoproteína IIb/IIIa
+Idrocilamida
+Interferón alfa
+Lafutidina
+Lanadelumab
+Lesinurad
+megestrol acetate
+Mesoridazina
+metipranolol
+Moléculas gaseosas de señalización
+NDV-HXP-S
+Netarsudil
+Nicofuranosa
+Oprelvekin
+Oxifenbutazona
+Ozanimod
+Papaveretum
+Pegloticasa
+piridinol
+Rescinnamina
+Rolapitant
+Sofosbuvir/velpatasvir
+Spesolimab
+Sputnik Light
+taliglucerasa alfa
+Teclistamab
+Tisotumab vedotina
+Trimazosina
+Trimetobenzamida
+vacuna contra la caries
+Vincamona
+Vutrisiran
+ácido obeticólico
+Anistreplasa
+antagonista de estrógeno
+Artesunato/pyronaridina
+Atazanavir/ritonavir
+Belantamab mafodotina
+Burosumab
+Cadralazina
+Camilofina
+Camsilato de trimetafán
+Carbasalato de calcio
+Casimersén
+Cefbuperazona
+Cefcapene
+Ceritinib
+Cerliponasa alfa
+Cilnidipino
+COVAX-19
+Crisaborola
+deslanoside
+Dexfenfluramina
+Dextran 40
+Dihidroartemisinina/piperaquina
+Diodone
+Enasidenib
+Fasudilo
+Fenilbutirato de sodio
+Floricet
+Galactogoga
+Histrelina
+Inhibidor de la alfa-glucosidasa
+inhibidor del proteasoma
+inmunotoxina
+Lamivudina/nevirapina/stavudina
+Lamivudina/nevirapina/zidovudina
+Lanatoside C
+Lutecio 177
+Mesilato ergoloide
+Metildigoxin
+Mosapramina
+Naxitamab
+Necitumumab
+Oroato de magnesio
+Oxametacina
+Ozenoxacina
+Parametadiona
+parasimpaticolítico
+PHMB
+Proglumetacina
+Quimbolona
+Sonidegib
+surfactante pulmonar
+Tafasitamab
+Tagraxofusp
+Talimogene laherparepvec
+Tebentafusp
+Tetracosactida
+Tiocarluro
+Triumeq
+Uricosúrico
+vacuna hexavalente
+vasodilatadores
+Viminol
+2-heptanamina
+Ambenonio
+antagonista de la serotonina
+Bemiparina
+Benadryl
+Bicarbonato de sodio intravenoso
+carboprost
+Carboxipenicilina
+Cetiedilo
+clobetasol
+efgartigimod alfa
+Efinaconazol
+Endralazina
+Etadiona
+Etambutol/isoniazida
+Etelcalcetida
+Eteplirsen
+exagamglogén autotemcel
+Fármaco Z
+fenoximetilpenicilina-benzatina
+Fipexida
+Glucarpidasa
+Interferón pegilado
+ipidacrina
+Lumacaftor/ivacaftor
+Metoxi-polietilenglicol epoetina beta
+Morniflumato
+Ombitasvir/paritaprevir/ritonavir
+Perhexilina
+Polinoxilina
+Ropeginterferón alfa-2b
+Sacrosidasa
+secretagogo
+Suloctidilo
+Sulprostona
+Talazoparib
+Tebipenem
+Tesirina de loncastuximab
+Vacuna antineumocócica conjugada
+Vacuna contra el chikunguña
+VariZIG
+Vestronidasa alfa
+Aceite de anís
+Acetotartrato de aluminio
+agonista alfa adrenérgico
+agonista muscarínico
+agonista nicotínico
+Alfa 1 bloqueador
+Almagato
+amebicida
+Antagonista opioide
+antimigrañoso
+Catártica
+Clobenzorex
+Cobimetinib
+Copanlisib
+Demulcente
+dexpantenol
+Difenpiramida
+Epcoritamab
+Etisterona
+Luspatercept
+Mepenzolato
+Metantelina
+Mofebutazona
+mucolítico
+Nirsevimab
+Obiltoxaximab
+Oxihidróxido de sucroférrico
+Pegcetacoplan
+peptidomimético
+Peruvoside
+Pirisudanol
+Prasterona
+Proscillaridin
+psicotrópico
+Roxadustat
+Sebelipasa alfa
+Temoporfín
+Triacetato de uridina
+Vacuna nasal
+Vacuna neumocócica de polisacáridos
+Velmanasa alfa
+Viltolarsén
+Albiglutida
+Aminoacridine
+antiasmático
+Autovacuna
+Bucladesina
+Calaspargasa pegol
+cardiotónico
+Delandistrogene moxeparvovec
+ectoparasiticida
+Elbasvir/grazoprevir
+Flosequinan
+glasdegib
+Inhibidores PD-1 y PD-L1
+Luseogliflozina
+Mebutizida
+Medicamento aprobado
+metanfetamina
+Peginterferón beta-1a
+policarbofilo
+Sofosbuvir/velpatasvir/voxilaprevir
+teclozan
+Tobramicina y dexametasona
+Vacuna contra el tifus
+vacuna de síntesis
+vacuna peptídica
+Vacunas comestibles
+Valoctocogén roxaparvovec
+abetimús
+Advil
+agonista de histamina
+alglucerasa
+Aminoácido excitatorio
+anabolizante
+Anacaulasa
+antipsoriático
+Avalglucosidasa alfa
+Citrato bismuto de ranitidina
+Descongestionante tópico
+Gluconato férrico sódico
+H5N1 vaccino
+Loteprednol
+Niacinato de xantinol
+Oral-Turinabol
+Panipenem/betamipron
+Tartrato ferroso
+Tirotropina alfa
+aceite de romero
+ácido fólico
+Alfa 2 bloqueador
+alfa-galactosidasa
+Aminoquinolina
+antagonista hormonal
+Celulosa oxidada
+CimaVax-EGF
+Coccidiostático
+compuesto de azufre
+especialidad farmacéutica
+ethinylestradiol/cyproterone acetate
+fármaco antituberculoso
+histaminérgico
+Inhibidor de la esteroidogénesis
+Lutropina alfa
+Solitromicina
+somatrem
+Tislelizumab
+Vacunas elaboradas con algas
+Adhesivos tisulares
+agente quelante
+agente vasoconstrictor
+analgésico no-opioide
+antagonista prostaglandino
+antiinfeccioso
+coagulante
+Compuestos de mercurio
+convulsivo
+Elranatamab
+Fluzone
+Glicosaminoglicano polisulfatado
+Hidrotalcita
+hormona antidiurética
+IndoVac
+Ipecacuanha
+Mambisa
+medicamento antirretroviral
+medicamento dermatológico
+neuroprotector
+Nitrito de amilo
+Paralen
+RabAvert
+Selegilina
+acción farmacológica
+agente adrenérgico
+agente alquilante
+agente antiviral
+agente cardiovascular
+Altafur
+Anticorticosteroid
+antinematodo
+antiulceroso
+ArVac Cecilia Grierson
+Butantan-DV
+compuestos de calcio
+Evista
+factor inmunológico
+fármacos del aparato respiratorio
+Fenamato
+Gleptoferron
+Glicopirrolato
+NicVAX
+olopatadina
+Onfi
+Propantelina
+Qdenga
+Rocuronio
+Tegretol
+tiazolidinediona
+vacuna bacterial
+vacuna viral
+Valium
+Vecuronio
+Verorab
+A-MethaPred
+Abasaglar
+Abasaglar KwikPen
+Abasaglar Tempo Pen
+Abboticin
+Abboticin Novum
+Abdomin Citrus
+Abdomin Junior Neutral
+Abdomin Neutral
+Abevmy
+Abigerd
+Abilify
+Abilify Maintena
+Abraxane
+ABSIMKY
+Abstral
+Acarizax
+Accofil
+Accord
+Aceinhib
+Aciclodan
+Addyi
+Afinitor
+Alavert
+Aller-Tec D
+Amaryl
+Anafranil
+Aristo
+Ativan
+Azilect
+Brintellix
+Cabometyx
+Carefarm
+Cetiri-D
+Chateal
+Cipralex
+Claritin
+Clear-Atadine
+Cometriq
+Depo-Medrol
+Elmiron
+Fortaz
+Frova
+Glenmark
+Glivec
+Herceptin
+Humalog
+Impulso
+Krka
+Loradamed
+Macure
+Medical Valley
+Medrol
+Microzide
+Monopril
+Mylan
+NeuralCIM
+Norethin
+Noriday
+Norinyl
+Norquen
+Olpha
+Ortho-Novum
+Oxycontin
+Panodil
+Panodil Brus
+Panodil Extra
+Panodil Hot
+Panodil Junior
+Panodil Zapp
+ProAir
+Proventil
+Qilu
+Qlearquil Allergy Relief
+Razadyne
+Rexulti
+Sabervel
+SAD
+Sandoz
+Saxenda
+Serevent
+Sildenafil Teva
+Solu-Medrol
+Stada
+Tavist Non-Sedating
+Tazicef
+Teva
+Transderm Scop
+Tygacil
+Ventolin
+Victoza
+Viread
+Vivanta
+Wainua
+Wal Zyr D
+Wal-itin
+warfarin
+Xadago
+Xarelto
+Zentiva
+Zomig
+Zyprexa Velotab
+antibiotico
+vitaminado
+vitaminico
+vitamínico
+Alcohol etilico
+alcohol etílico
+alkohol
+EtOH
+aminoacido
+Acido acetilsalicilico
+Cardirene
+glóbulo rojo
+Glóbulos rojos
+antiescorbutica
+antiescorbútica
+vitamina antiescorbutica
+vitamina antiescorbútica
+acetaminofen
+acetaminofén
+acetaminofeno
+opiaceos
+opiáceos
+Haľe
+Heroina
+Heroinomano
+Heroinómano
+cafeina
+Acido acetico
+Acido acético
+Ácido acetico
+Acido acetico glacial
+Acido etanoico
+Ácido etanoico
+AcOH
+CH3-COOH
+CH3COOH
+Conservante E 260
+Conservante E-260
+Conservante E260
+Etanoico
+HOAc
+acido clorhidrico
+acido clorhídrico
+ácido clorhidrico
+acido cloridrico
+acido clorídrico
+ácido cloridrico
+ácido clorídrico
+acido hidroclorico
+acido hidroclórico
+ácido hidroclorico
+ácido hidroclórico
+acido muriatico
+acido muriático
+ácido muriatico
+ácido muriático
+agua fuerte
+clorhidrato
+clorhidrico
+clorhídrico
+HCl
+HCl aq
+salfuman
+salfumán
+salfumant
+epinefrina
+Bicarbonato sodico
+Bicarbonato sódico
+Carbonato acido de sodio
+Carbonato ácido de sodio
+CHNaO3
+epitestosterona
+Hidrogeno carbonato de sodio
+Hidrogenocarbonato de sodio
+NaHCO3
+pildora de testerona
+pildoras de testerona
+acido carbolico
+acido carbólico
+ácido carbolico
+ácido carbólico
+acido fenico
+acido fénico
+ácido fenico
+ácido fénico
+hidroxibenceno
+Trombocito
+carbamida
+ClNa
+cloruro sodico
+cloruro sódico
+levulosa
+NaCl
+sal comun
+sal común
+Vacuna contra el coronavirus
+Vacuna COVID-19
+Vacuna para el COVID-19
+calcio carbonato
+carbonato calcico
+carbonato cálcico
+Citrato de sildenafil
+estrogeno
+Ibupirac
+narcotico
+Acido citrico
+Acido cítrico
+Ácido citrico
+Gliceril trinitrato
+cientoenrama
+Corazon de ciervo
+Corazón de ciervo
+corazoncillo
+espantadiablos
+hierba de la sangre
+hierba de las heridas
+hierba de las machacauras
+hierba de San Juan
+hierba del agua
+Hierba militar
+hipérico
+Hiperico comun
+Hiperico común
+Hipérico común
+hipérico horadado
+Hipericon
+hipericón
+Hipericon llamado corazoncillo
+Hipericón llamado corazoncillo
+Hipericon oficinal
+Hipericón oficinal
+Hypericum noeanum
+Hypericum pseudoperforatum
+Lactoflavina
+perforada
+Perforata
+pericón amarillo
+Pericon comun
+Pericon común
+pericón común
+pericón silvestre
+pericote
+periquito
+San Juan
+sanjuanera
+sanjuanes
+sanjuanines
+St John's wort
+Te borde
+té borde
+trescalar
+tresflorina
+yerba de San Juan
+yerbuca de San Juan
+glicerina
+glicocola
+Gly
+Gro
+H2N-CH2-COOH
+pentrioxido sulfurico de gliquenol
+Syntocinon
+N acetil 5 metoxitriptamina
+N acetil 5-metoxitriptamina
+N acetil-5-metoxitriptamina
+N-acetil-5-metoxitriptamina
+agua oxigenada
+analgesia
+analgesica
+analgésica
+analgesico
+Bioxido de dihidrogeno
+Bioxido de dihidrógeno
+Bióxido de dihidrógeno
+Dioxido de dihidrogeno
+Dioxido de dihidrógeno
+Dióxido de dihidrógeno
+Peroxido de Hidrogeno
+Peroxido de Hidrógeno
+Acido 2 hidroxipropanoico
+Ácido 2 hidroxipropanoico
+Acido 2 propanoloico
+Ácido 2 propanoloico
+Acido 2-hidroxipropanoico
+Ácido 2-hidroxipropanoico
+Ácido 2-propanoloico
+Acido lactico
+Acido láctico
+Ácido lactico
+Alfatococerol
+Alfatocoferol
+Amoxidal
+Conservante E 270
+Conservante E-270
+Conservante E270
+cristal
+Emma
+extasis
+éxtasis
+Lactato
+metilendioximetanfetamina
+Zimox
+cloruro amonico
+cloruro amónico
+GCG
+oxido de aluminio
+óxido de aluminio
+sesquioxido de aluminio
+sesquióxido de aluminio
+Acido boracico
+Acido borácico
+Ácido borácico
+ácido boracico
+Acido borico
+Acido bórico
+Acido ortoborico
+Acido ortobórico
+Ácido ortoborico
+Ácido ortobórico
+Anfetaminico
+anfetamínico
+CHCl3
+Conservante E 284
+Conservante E284
+Diclorodifeniltricloroetano
+Freon 20
+Gelatinosa
+Gelatinoso
+Grenetina
+Permanganato potasico
+Permanganato potásico
+Reactivo de Bayer
+TCM
+triclorometano
+Tricloruro de metilo
+anhídrido hiponitroso
+gas de la risa
+gas hilarante
+hidrocortisona
+hidrocortizona
+monóxido de dinitrógeno
+óxido de dinitrógeno
+óxido hiponitroso
+protóxido de nitrógeno
+Cinina
+Kinina
+arena azul
+calcantita.
+caparrosa azul
+Codeina
+Complejo B
+Complejo de vitaminas B
+Dietil eter
+Dietil éter
+Dietileter
+Dietiléter
+Eter dietilico
+Eter dietílico
+Éter dietilico
+Éter dietílico
+Eter etilico
+Eter etílico
+Éter etilico
+Etoxietano
+piedra azul
+sulfato cúprico
+sulfato cuprico anhidro
+sulfato cúprico anhidro
+vacuna Bacillus Calmette Guerin
+vacuna Bacillus Calmette Guérin
+vacuna Bacillus Calmette-Guerin
+vacuna Bacillus Calmette-Guérin
+vacuna contra la tuberculosis
+vacuna tuberculosis
+Vitamina B
+Vitaminas B
+vitriolo azul
+Vitriolo dulce
+vitriolo romano
+cloruro potásico
+fentanil
+KCl
+L triptofano
+L-triptofano
+noradrenergico
+Triptofan
+Triptofano
+Acido salicilico
+Acido salicílico
+Ácido salicilico
+Salicilato
+vitamina B7
+vitamina B8
+vitamina H
+colagena
+colágena
+colageno
+tropocolageno
+tropocolágeno
+Adolfina
+botulina
+sal de Glauber
+sulfato sodico
+sulfato sódico
+toxina botulinica
+Vacuna BioNTech
+Vacuna BioNTech COVID-19
+Vacuna de BioNTech
+Vacuna de Pfizer/BioNTech
+Vacuna Pfizer
+CaCl2
+cloruro cálcico
+Diacepam
+Diacepán
+Diastat
+oxido de magnesio
+Sumycin
+Androgeno
+Androstendiona
+Cataflam
+Hormona masculina
+Hormona sexual masculina
+Viavox
+Voltaren
+Voltarén
+monóxido de nitrógeno
+Vacuna contra el sarampion
+acido graso Omega 3
+acido graso Omega-3
+ácido graso Omega-3
+ácidos grasos omega 3
+Antidoto
+Antiseptica
+Antiséptica
+Antiseptico
+Antiveneno
+Contraveneno
+diabesil
+diabesil AP
+glafornil
+glucophage
+omega 3
+omega 3 trigliceridos
+omega 3 triglicéridos
+omega 3-triglicéridos
+omega-3-triglicéridos
+antipsicótico
+antisicótico
+droga psicoactiva
+droga sicoactiva
+Flagyl
+Flegyl
+Lidocaina
+Metil fenidato
+Metilfenidan
+Metilfenidán
+psicotrópica
+psicotropo
+sicoactivo
+sicotrópico
+sicotropo
+Vitamin R
+Xilocaina
+xilocaína
+Zitromax
+Acuaretico
+Acuarético
+Adrenocorticotrofina
+Adrenocorticotropina
+Afrodisiaca
+Afrodisíaca
+Afrodisiaco
+alcohol isopropilico
+Corticotropina
+Diuretica
+Diurética
+Diuretico
+Hormona adrenocorticotropica
+Hormona adrenocorticotrópica
+ioduro de potasio
+MgSO4
+Xanax
+Acido gama aminobutirico
+Ácido gama aminobutirico
+Ácido gama aminobutírico
+Acido gamma aminobutirico
+Ácido gamma aminobutirico
+Ácido gamma aminobutírico
+Acido gamma-aminobutirico
+Acido gamma-aminobutírico
+Ácido gamma-aminobutirico
+Acido γ aminobutirico
+Acido γ aminobutírico
+Ácido γ aminobutirico
+Ácido γ aminobutírico
+Acido γ-aminobutirico

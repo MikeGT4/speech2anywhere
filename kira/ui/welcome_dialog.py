@@ -51,10 +51,10 @@ def welcomed_before() -> bool:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Politur: Das Modell wählst du jetzt aus der Liste der in Ollama installierten Modelle, mit Größe.</li>
-  <li>Die geprüften gemma4-Modelle stehen oben; ein anderes Modell kannst du weiter eintippen.</li>
-  <li>Seit 0.6.3 dabei: grüne Zacke mit Pfeil am Tray-Symbol bei einer neuen Version, Gelernte Wörter repariert.</li>
-  <li>Seit 0.6.2 dabei: glatte Schrift in allen Fenstern, ohne Farbsaum.</li>
+  <li>Neuer Reiter „Fachwortschatz“: Fachgebiete einschalten, von Medizin über Jura bis IT.</li>
+  <li>Die Politur erkennt verhörte Fachbegriffe dann im Zusammenhang, in allen acht Sprachen.</li>
+  <li>Sieben neue Anzeige-Stile mit eigenen Tönen, einer je Fachgebiet.</li>
+  <li>Mehr dazu in der Anleitung, Abschnitt 10.</li>
 </ul>
 """
 
@@ -145,7 +145,7 @@ Tray-Menü steht „Update auf … installieren…“. Abschaltbar in der Rohcon
 <code>updates.check_interval_hours</code>.</p>
 <p>Manuell: Tray → <b>„Updates suchen..."</b> oder Einstellungen → Reiter „Über“ →
 Update-Button. Hat sich seit deiner Version nur das Programm geändert, lädt
-Speech2Anywhere nur das Programmpaket (knapp 3 MB), prüft dessen Prüfsumme, spielt es
+Speech2Anywhere nur das Programmpaket (rund 5 MB), prüft dessen Prüfsumme, spielt es
 nach einem kurzen Beenden ein und startet von selbst neu. Sonst lädt es das ganze
 Paket (Stub + Splits), verifiziert die SHA256-Hashes und startet den Setup-Wizard.</p>
 <p>Jedes Release ist mit einer bestimmten Ollama-Version und bestimmten Fassungen der
@@ -172,9 +172,20 @@ Weitere Modelle: Knopf <b>„Hugging Face…“</b>.<br>
 Den Namen so eintippen: <code>hf.co/Nutzer/Modell:Q4_K_M</code>, Speichern lädt das Modell.<br>
 Geprüft sind nur die gemma4-Modelle.</p>
 
+<h3>10. Fachwortschatz</h3>
+<p>Im Reiter „Fachwortschatz“ schaltest du Fachgebiete ein: Medizin, Medikamente, Jura, Wirtschaft, Wissenschaft und Technik, Chemie und IT.<br>
+Dann schreibt Speech2Anywhere deren Fachbegriffe öfter richtig, in allen acht Sprachen.<br>
+Die Politur erfährt das Fachgebiet und bekommt je Diktat bis zu fünf Fachbegriffe, die ähnlich klingen wie das Erkannte.<br>
+Aus „Ass Pirin“ wird so bei eingeschaltetem Gebiet „Medikamente“ „Aspirin“.<br>
+Das wirkt in normalem Text, Chat und Mail und nur mit eingeschalteter Politur; Terminal und Code bleiben wörtlich.</p>
+<p>Die Begriffe stammen aus Wikidata, ohne Anspruch auf Vollständigkeit.<br>
+Schalte nur ein, was du brauchst: Je mehr Gebiete, desto eher passt ein fremder Begriff.<br>
+Ohne Auswahl erkennt Speech2Anywhere wie bisher.<br>
+Nach dem Speichern ist ein Neustart nötig.</p>
+
 <h3>Konfiguration</h3>
 <p>Tray → <b>„Einstellungen…“</b>: Reiter Mikrofon, Politur, Tasten, Anzeige,
-Sound, Lernen und Über. Seltene Felder (Ersetzungen, Modi, Initial-Prompt) über
+Sound, Lernen, Fachwortschatz und Über. Seltene Felder (Ersetzungen, Modi, Initial-Prompt) über
 „Rohconfig öffnen…“.</p>
 
 <h3>Logs</h3>
@@ -186,10 +197,10 @@ Bei nativen Crashes: <code>speech2anywhere-faulthandler.log</code> daneben.</p>
 _NEWS_HTML_EN = """
 <h3>New in v{version}</h3>
 <ul>
-  <li>Clean-up: pick the model from the list of models installed in Ollama, with their size.</li>
-  <li>The tested gemma4 models come first; you can still type another model.</li>
-  <li>Since 0.6.3: green burst with an arrow on the tray icon for a new version, Learned Words fixed.</li>
-  <li>Since 0.6.2: smooth text in every window, without colour fringes.</li>
+  <li>New “Specialist vocabulary” tab: switch on fields, from medicine and law to IT.</li>
+  <li>The clean-up then recognises misheard technical terms in context, in all eight languages.</li>
+  <li>Seven new indicator styles with their own sounds, one per field.</li>
+  <li>More in the guide, section 10.</li>
 </ul>
 """
 
@@ -280,7 +291,7 @@ tray menu shows “Install update to …”. You can switch this off in the raw 
 <code>updates.check_interval_hours</code>.</p>
 <p>Manually: Tray → <b>“Check for updates…”</b> or Settings → “About” tab →
 update button. If only the program has changed since your version,
-Speech2Anywhere downloads just the program package (just under 3 MB), verifies its checksum, installs it
+Speech2Anywhere downloads just the program package (about 5 MB), verifies its checksum, installs it
 after closing briefly and restarts by itself. Otherwise it downloads the whole
 package (stub + splits), verifies the SHA256 hashes and starts the setup wizard.</p>
 <p>Every release is measured with a specific Ollama version and specific versions of the
@@ -307,9 +318,20 @@ More models: <b>“Hugging Face…”</b> button.<br>
 Type the name like this: <code>hf.co/user/model:Q4_K_M</code>, saving downloads the model.<br>
 Only the gemma4 models are tested.</p>
 
+<h3>10. Specialist vocabulary</h3>
+<p>On the “Specialist vocabulary” tab you switch on fields: medicine, medications, law, business, science and engineering, chemistry and IT.<br>
+Speech2Anywhere then gets their technical terms right more often, in all eight languages.<br>
+The clean-up is told the field and gets up to five technical terms per dictation that sound like what was recognised.<br>
+With “Medications” switched on, “ass pirin” becomes “aspirin”.<br>
+This works in plain text, chat and mail, and only with the clean-up switched on; terminal and code stay literal.</p>
+<p>The terms come from Wikidata and make no claim to be complete.<br>
+Only switch on what you need: the more fields, the more likely a term from another field fits.<br>
+With nothing selected, Speech2Anywhere recognises speech as before.<br>
+A restart is needed after saving.</p>
+
 <h3>Configuration</h3>
 <p>Tray → <b>“Settings…”</b>: tabs Microphone, Clean-up, Keys, Indicator,
-Sound, Learning and About. Rare fields (replacements, modes, initial prompt) via
+Sound, Learning, Specialist vocabulary and About. Rare fields (replacements, modes, initial prompt) via
 “Open raw config…”.</p>
 
 <h3>Logs</h3>

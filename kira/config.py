@@ -89,8 +89,8 @@ class InjectorConfig(BaseModel):
     restore_clipboard_after_ms: int = 500
 
 
-HUD_STYLES = ("comic", "manga", "halloween", "weihnachten", "phosphor", "gun_barrel", "zielerfassung", "stimmabdruck",
-              "klartext", "klassisch")
+HUD_STYLES = ("comic", "manga", "halloween", "weihnachten", "medizin", "medikamente", "jura", "wirtschaft", "technik",
+              "chemie", "it", "phosphor", "gun_barrel", "zielerfassung", "stimmabdruck", "klartext", "klassisch")
 DEFAULT_HUD_STYLE = "comic"
 SOUND_EVENTS = ("start", "stopp", "fertig", "fehler")
 DEFAULT_SOUND_EVENTS = ("stopp", "fertig", "fehler")
@@ -164,6 +164,21 @@ class LearningConfig(BaseModel):
     sources: list[str] = Field(default_factory=list)
 
 
+FACHGEBIETE = ("medizin", "medikamente", "jura", "wirtschaft", "technik", "chemie", "it")
+
+
+class FachwortschatzConfig(BaseModel):
+    gebiete: list[str] = Field(default_factory=list)
+
+    @field_validator("gebiete", mode="before")
+    @classmethod
+    def _known_gebiete(cls, value: object) -> list[str]:
+        if not isinstance(value, (list, tuple)):
+            return []
+        chosen = {str(item or "").strip().lower() for item in value}
+        return [key for key in FACHGEBIETE if key in chosen]
+
+
 DEFAULT_CONTEXT_MODES_MAC: dict[str, str] = {
     "com.apple.mail": "email",
     "com.microsoft.Outlook": "email",
@@ -231,6 +246,7 @@ class Config(BaseModel):
     ui: UIConfig = Field(default_factory=UIConfig)
     updates: UpdatesConfig = Field(default_factory=UpdatesConfig)
     learning: LearningConfig = Field(default_factory=LearningConfig)
+    fachwortschatz: FachwortschatzConfig = Field(default_factory=FachwortschatzConfig)
     context_modes: dict[str, str] = Field(default_factory=platform_context_modes)
 
 
