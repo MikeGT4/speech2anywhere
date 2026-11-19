@@ -1,8 +1,8 @@
 # Quellen der Töne
 
-Die Töne der Stile Medizin, Medikamente, Jura, Wirtschaft, Wissenschaft und Technik, Chemie und IT sind selbst
-erzeugt: Klangsynthese aus Sinustönen, gefiltertem Rauschen und kurzen Anschlägen. Sie enthalten keine fremden
-Aufnahmen und keine Stimmen, es bestehen keine Rechte Dritter.
+Die Töne der Stile Medizin, Medikamente, Jura, Wirtschaft, Wissenschaft und Technik, Chemie, IT und Siamkatze sind
+selbst erzeugt (Synthese): Klangsynthese aus Sinustönen, Obertonreihen mit Formantfiltern, gefiltertem Rauschen und
+kurzen Anschlägen. Sie enthalten keine fremden Aufnahmen und keine Stimmen, es bestehen keine Rechte Dritter.
 
 Alle Dateien: WAV, 44,1 kHz, mono, 16 bit. Lautheit wie bei den übrigen Stilen: Start und Stopp −32, Fertig −31,
 Fehler −29 LUFS (Momentanwert), Spitze höchstens −9 dBFS.
@@ -39,3 +39,10 @@ Fehler −29 LUFS (Momentanwert), Spitze höchstens −9 dBFS.
 | it | stopp.wav | zwei Rechtecktöne, fallend |
 | it | fertig.wav | vier Rechtecktöne, aufsteigend |
 | it | fehler.wav | zwei tiefe Rechtecktöne, fallend |
+| katze | start.wav | Glöckchen, zwei Schläge |
+| katze | start-2.wav | Glöckchen, drei helle Schläge |
+| katze | stopp.wav | kurzes Miau |
+| katze | fertig.wav | Miau, danach zwei Glöckchenschläge |
+| katze | fertig-2.wav | Schnurren, danach ein Glöckchenschlag |
+| katze | fehler.wav | Fauchen, danach ein tiefes Miau |
+| katze | fehler-2.wav | tiefes, langgezogenes Miau |

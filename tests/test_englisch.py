@@ -356,6 +356,16 @@ if sys.platform == "win32":
         assert "Christmas (Winter Night)" in labels
         assert "Weihnachten (Winternacht)" not in labels
 
+    def test_indicator_styles_carry_their_thumbnails_in_english(settings, qtbot):
+        from kira.ui import hud_preview
+        settings.show()
+        qtbot.waitUntil(lambda: not settings._style_icons_due, timeout=20000)
+        combo = settings._hud_style
+        assert combo.sizeHint().width() <= settings._hud_preview.minimumWidth()
+        for index in range(combo.count()):
+            icon = hud_preview.cached_style_icon(combo.itemData(index))
+            assert icon is not None and combo.itemIcon(index).cacheKey() == icon.cacheKey()
+
     @pytest.mark.parametrize("as_help", [True, False])
     def test_welcome_and_guide_show_no_german_in_english(qtbot, english, as_help):
         import kira.ui.welcome_dialog as welcome

@@ -5,8 +5,8 @@ import subprocess
 import threading
 from pathlib import Path
 
-from PyQt6.QtCore import Qt, QObject, QThread, pyqtSignal
-from PyQt6.QtGui import QIcon
+from PyQt6.QtCore import Qt, QObject, QThread, QTimer, pyqtSignal
+from PyQt6.QtGui import QFont, QIcon
 from PyQt6.QtWidgets import (
     QButtonGroup, QComboBox, QDialog, QDoubleSpinBox, QHBoxLayout, QLabel, QLineEdit, QMessageBox,
     QProgressDialog, QPushButton, QSpinBox, QStackedWidget, QVBoxLayout, QWidget,
@@ -28,7 +28,7 @@ from kira.hotkey_win import SUPPORTED_COMBOS
 from kira.config_writer import update_scalars
 from kira.sounds import SoundPlayer
 from kira.ui.hud import STYLE_LABELS
-from kira.ui.hud_preview import HudPreview
+from kira.ui.hud_preview import THUMB_SIZE, HudPreview, cached_style_icon, empty_style_icon, style_icon
 from kira.release_info import load_installed
 from kira.texte import N_, decimal_mark, tr
 
@@ -785,6 +785,22 @@ class SettingsDialog(QDialog):
 
         return self._page(card, comic.HintBubble([tr("Neue Tasten wirken nach einem kurzen Neustart.")]))
 
+    def _next_style_icon(self) -> None:
+        if self._style_icons_due:
+            index = self._style_icons_due.pop(0)
+            self._hud_style.setItemIcon(index, style_icon(self._hud_style.itemData(index)))
+        if not self._style_icons_due:
+            self._style_icons.stop()
+
+    def showEvent(self, event) -> None:  # noqa: N802
+        super().showEvent(event)
+        if self._style_icons_due:
+            self._style_icons.start()
+
+    def hideEvent(self, event) -> None:  # noqa: N802
+        self._style_icons.stop()
+        super().hideEvent(event)
+
     def _on_edit_toggle(self, checked: bool) -> None:
         self._edit_hotkey.setEnabled(checked)
         if checked and not self._edit_hotkey.text().strip():
@@ -793,10 +809,24 @@ class SettingsDialog(QDialog):
     def _page_anzeige(self) -> QWidget:
         card = self._card(tr("Aufnahme-Anzeige"))
         self._hud_style = comic.style_combo(QComboBox())
+        self._hud_style.setIconSize(THUMB_SIZE)
+        self._style_font = QFont(self._hud_style.font())
+        self._style_font.setWeight(QFont.Weight.Bold)
+        self._hud_style.setFont(self._style_font)
+        self._hud_style.setStyleSheet("QComboBox { font-weight: 700; }")
         for key, label in STYLE_LABELS.items():
-            self._hud_style.addItem(tr(label), userData=key)
+            self._hud_style.addItem(cached_style_icon(key) or empty_style_icon(), tr(label), userData=key)
+            self._hud_style.setItemData(self._hud_style.count() - 1, self._style_font, Qt.ItemDataRole.FontRole)
         index = self._hud_style.findData(self._cfg.ui.hud_style)
         self._hud_style.setCurrentIndex(max(0, index))
+        self._style_icons_due = [i for i in range(self._hud_style.count())
+                                 if cached_style_icon(self._hud_style.itemData(i)) is None]
+        self._style_icons_due.sort(key=lambda i: i != self._hud_style.currentIndex())
+        self._style_icons = QTimer(self)
+        self._style_icons.setInterval(0)
+        self._style_icons.timeout.connect(self._next_style_icon)
+        if self._hud_style.currentIndex() in self._style_icons_due:
+            self._next_style_icon()
         self._hud_style.setToolTip(
             tr(
                 "Wie die Anzeige am Mauszeiger aussieht, solange die Diktat-Taste\n"
@@ -817,8 +847,8 @@ class SettingsDialog(QDialog):
         self._hud_live_words = comic.ToggleSwitch()
         self._hud_live_words.setChecked(self._cfg.ui.hud_live_words)
         self._live_words_tip = tr(
-            "In den Stilen „Comic (Bla-Bla)“, „Manga“, „Halloween“, „Weihnachten“, „Medizin“, „Medikamente“, „Jura“,\n"
-            "„Wirtschaft“, „Wissenschaft und Technik“, „Chemie“ und „IT“ erscheinen beim Sprechen Fetzen der erkannten Wörter.\n"
+            "In den Stilen „Comic (Bla-Bla)“, „Manga“, „Halloween“, „Weihnachten“, „Siamkatze“, „Medizin“, „Medikamente“,\n"
+            "„Jura“, „Wirtschaft“, „Wissenschaft und Technik“, „Chemie“ und „IT“ erscheinen beim Sprechen Fetzen der erkannten Wörter.\n"
             "Sie sind am Bildschirm zu sehen, auch bei einer Bildschirmfreigabe."
         )
         self._hud_live_words.setToolTip(self._live_words_tip)

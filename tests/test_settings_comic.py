@@ -448,6 +448,97 @@ def test_style_choice_and_word_switch_drive_the_preview(dialog):
     assert dialog._hud_preview.driver.live_words is True
 
 
+def _settled_style_icons(dialog, qtbot):
+    dialog.show()
+    qtbot.waitUntil(lambda: not dialog._style_icons_due, timeout=20000)
+    assert not dialog._style_icons.isActive()
+    return dialog._hud_style
+
+
+def test_style_thumbnails_load_only_while_the_dialog_is_shown(dialog, qtbot, monkeypatch):
+    from kira.ui import hud_preview
+    monkeypatch.setattr(hud_preview, "_THUMBS", {})
+    import kira.ui.settings_dialog as sd
+    fresh = sd.SettingsDialog()
+    qtbot.addWidget(fresh)
+    assert len(fresh._style_icons_due) == fresh._hud_style.count() - 1
+    qtbot.wait(50)
+    assert len(fresh._style_icons_due) == fresh._hud_style.count() - 1
+    fresh.show()
+    qtbot.waitUntil(lambda: len(fresh._style_icons_due) < fresh._hud_style.count() - 1, timeout=5000)
+    fresh.hide()
+    assert not fresh._style_icons.isActive()
+
+
+def test_every_style_entry_shows_its_thumbnail_for_100_and_200_percent(dialog, qtbot):
+    from PyQt6.QtGui import QIcon
+    from kira.ui import hud_preview
+    combo = _settled_style_icons(dialog, qtbot)
+    assert combo.iconSize() == hud_preview.THUMB_SIZE
+    empty = hud_preview.empty_style_icon().cacheKey()
+    for index in range(combo.count()):
+        icon = combo.itemIcon(index)
+        assert not icon.isNull() and icon.cacheKey() != empty, combo.itemData(index)
+        assert icon.cacheKey() == hud_preview.cached_style_icon(combo.itemData(index)).cacheKey()
+        for mode in (QIcon.Mode.Normal, QIcon.Mode.Active, QIcon.Mode.Selected):
+            sizes = sorted((size.width(), size.height()) for size in icon.availableSizes(mode))
+            assert sizes == [(30, 30), (60, 60)], (combo.itemData(index), mode)
+
+
+def test_style_thumbnails_are_built_once_and_reused(dialog, qtbot, monkeypatch):
+    from kira.ui import hud_preview
+    import kira.ui.settings_dialog as sd
+    _settled_style_icons(dialog, qtbot)
+    built = []
+    monkeypatch.setattr(hud_preview, "_poster", lambda key: built.append(key))
+    again = sd.SettingsDialog()
+    qtbot.addWidget(again)
+    again.show()
+    assert again._style_icons_due == [] and not again._style_icons.isActive()
+    assert built == []
+
+
+def test_current_style_shows_its_thumbnail_right_away(qtbot, tmp_path, monkeypatch):
+    from kira.ui import hud_preview
+    import kira.ui.settings_dialog as sd
+    cfg = Config()
+    cfg.ui.hud_style = "katze"
+    monkeypatch.setattr(sd, "load_config", lambda: cfg)
+    monkeypatch.setattr(sd, "default_config_path", lambda: tmp_path / "config.yaml")
+    monkeypatch.setattr(sd.SettingsDialog, "_query_input_devices", lambda self: [(3, "USB Microphone")])
+    monkeypatch.setattr(sd, "_ollama_models", lambda: [])
+    monkeypatch.setattr(sd._ModelListLoader, "start", lambda self: None)
+    monkeypatch.setattr(hud_preview, "_THUMBS", {})
+    dlg = sd.SettingsDialog()
+    qtbot.addWidget(dlg)
+    combo = dlg._hud_style
+    assert combo.currentData() == "katze"
+    assert combo.itemIcon(combo.currentIndex()).cacheKey() == hud_preview.cached_style_icon("katze").cacheKey()
+    assert len(hud_preview._THUMBS) == 1
+    _settled_style_icons(dlg, qtbot)
+    assert len(hud_preview._THUMBS) == combo.count()
+
+
+def test_style_thumbnails_show_each_style_sharp_in_both_sizes(qapp):
+    from kira.config import HUD_STYLES
+    from kira.ui import hud_preview
+    seen = set()
+    for key in HUD_STYLES:
+        for dpr, size in ((1.0, (30, 30)), (2.0, (60, 60))):
+            pixmap = hud_preview.style_thumbnail(key, dpr)
+            assert (pixmap.width(), pixmap.height(), pixmap.devicePixelRatio()) == (*size, dpr)
+        image = pixmap.toImage()
+        bits = image.constBits()
+        bits.setsize(image.sizeInBytes())
+        seen.add(bytes(bits))
+    assert len(seen) == len(HUD_STYLES)
+
+
+def test_style_thumbnails_keep_the_settings_window_width(dialog, qtbot):
+    combo = _settled_style_icons(dialog, qtbot)
+    assert combo.sizeHint().width() <= dialog._hud_preview.minimumWidth()
+
+
 def test_word_switch_tooltip_names_exactly_the_styles_with_fragments(dialog):
     from kira.ui.hud import STYLE_LABELS, create_style
     tip = dialog._hud_live_words.toolTip()

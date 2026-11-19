@@ -1,13 +1,15 @@
 # © 2026 Mike Pollow, Digitalroots. Alle Rechte vorbehalten.
 from __future__ import annotations
 
+import functools
 import logging
+import random
 import time
 from collections import deque
 
 import numpy as np
 from PyQt6.QtCore import QPointF, QRectF, QSize, Qt, QTimer
-from PyQt6.QtGui import QColor, QPainter, QPainterPath, QPen, QPolygonF
+from PyQt6.QtGui import QColor, QIcon, QImage, QPainter, QPainterPath, QPen, QPixmap, QPolygonF
 from PyQt6.QtWidgets import QSizePolicy, QWidget
 
 from kira.live_words import fragments
@@ -16,7 +18,7 @@ from kira.ui.hud import create_style
 from kira.ui.hud.base import H, W, Frame, load_fonts
 from kira.ui.hud.signal import SAMPLE_RATE, SignalAnalysis, SignalTap
 from kira.ui.hud_qt import CURSOR_GAP_X, CURSOR_GAP_Y, FRAME_MS, animations_off
-from kira.texte import N_, tr
+from kira.texte import N_, language, tr
 
 log = logging.getLogger(__name__)
 
@@ -188,6 +190,92 @@ class PreviewDriver:
         while self._pushed < due:
             self.tap.push(voice_block(self._pushed * BLOCK, BLOCK, self._rng))
             self._pushed += 1
+
+
+THUMB_SIZE = QSize(30, 30)
+THUMB_CROP = QRectF(2.0, 8.0, 66.0, 66.0)
+THUMB_SCALE = THUMB_SIZE.width() / THUMB_CROP.width()
+THUMB_RADIUS = 6.0
+THUMB_DPRS = (1.0, 2.0)
+THUMB_STEP_S = 0.05
+THUMB_SEED = 7
+POSTER_S = {"manga": 1.6, "phosphor": 1.0, "klassisch": 1.0}
+POSTER_DEFAULT_S = 2.4
+_THUMBS: dict[tuple[str, str], QIcon] = {}
+
+
+def _poster(key: str) -> PreviewDriver | None:
+    driver = PreviewDriver(key, THUMB_SCALE)
+    if driver.failed:
+        return None
+    driver.dpr = max(THUMB_DPRS)
+    if hasattr(driver.style, "_rng"):
+        driver.style._rng = random.Random(THUMB_SEED)
+    driver.restart(0.0)
+    poster = POSTER_S.get(key, POSTER_DEFAULT_S)
+    t = 0.0
+    while t < poster - 1e-9 and not driver.failed:
+        t = min(poster, t + THUMB_STEP_S)
+        driver.advance(t)
+    return None if driver.failed else driver
+
+
+def _thumbnail(key: str, driver: PreviewDriver | None, dpr: float) -> QPixmap:
+    img = QImage(round(THUMB_SIZE.width() * dpr), round(THUMB_SIZE.height() * dpr),
+                 QImage.Format.Format_ARGB32_Premultiplied)
+    img.setDevicePixelRatio(dpr)
+    img.fill(Qt.GlobalColor.transparent)
+    frame = QPainterPath()
+    frame.addRoundedRect(QRectF(0.0, 0.0, THUMB_SIZE.width(), THUMB_SIZE.height()), THUMB_RADIUS, THUMB_RADIUS)
+    p = QPainter(img)
+    try:
+        p.setRenderHint(QPainter.RenderHint.Antialiasing, True)
+        p.setRenderHint(QPainter.RenderHint.TextAntialiasing, True)
+        p.setRenderHint(QPainter.RenderHint.SmoothPixmapTransform, True)
+        if driver is None:
+            p.fillPath(frame, DESK)
+        else:
+            p.save()
+            p.setClipPath(frame)
+            driver.paint(p, -THUMB_CROP.x() * THUMB_SCALE, -THUMB_CROP.y() * THUMB_SCALE)
+            p.restore()
+    except Exception:
+        log.exception("Miniatur für Stil %s fehlgeschlagen", key)
+    finally:
+        p.end()
+    return QPixmap.fromImage(img)
+
+
+def style_thumbnail(key: str, dpr: float) -> QPixmap:
+    load_fonts()
+    return _thumbnail(key, _poster(key), dpr)
+
+
+def cached_style_icon(key: str) -> QIcon | None:
+    return _THUMBS.get((key, language()))
+
+
+def style_icon(key: str) -> QIcon:
+    icon = cached_style_icon(key)
+    if icon is None:
+        load_fonts()
+        driver = _poster(key)
+        icon = _icon([_thumbnail(key, driver, dpr) for dpr in THUMB_DPRS])
+        _THUMBS[(key, language())] = icon
+    return icon
+
+
+def _icon(pixmaps: list[QPixmap]) -> QIcon:
+    icon = QIcon()
+    for pixmap in pixmaps:
+        for mode in (QIcon.Mode.Normal, QIcon.Mode.Active, QIcon.Mode.Selected):
+            icon.addPixmap(pixmap, mode)
+    return icon
+
+
+@functools.lru_cache(maxsize=1)
+def empty_style_icon() -> QIcon:
+    return _icon([_thumbnail("", None, dpr) for dpr in THUMB_DPRS])
 
 
 class HudPreview(QWidget):

@@ -89,8 +89,9 @@ class InjectorConfig(BaseModel):
     restore_clipboard_after_ms: int = 500
 
 
-HUD_STYLES = ("comic", "manga", "halloween", "weihnachten", "medizin", "medikamente", "jura", "wirtschaft", "technik",
-              "chemie", "it", "phosphor", "gun_barrel", "zielerfassung", "stimmabdruck", "klartext", "klassisch")
+HUD_STYLES = ("comic", "manga", "halloween", "weihnachten", "katze", "medizin", "medikamente", "jura", "wirtschaft",
+              "technik", "chemie", "it", "phosphor", "gun_barrel", "zielerfassung", "stimmabdruck", "klartext",
+              "klassisch")
 DEFAULT_HUD_STYLE = "comic"
 SOUND_EVENTS = ("start", "stopp", "fertig", "fehler")
 DEFAULT_SOUND_EVENTS = ("stopp", "fertig", "fehler")

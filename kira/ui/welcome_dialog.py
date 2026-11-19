@@ -51,9 +51,9 @@ def welcomed_before() -> bool:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Fachwortschatz: Alltagswörter lösen in allen acht Sprachen keinen Vorschlag mehr aus, vorher nur im Deutschen.</li>
-  <li>Die Reiterleiste der Einstellungen ist schmaler.</li>
-  <li>Seit 0.7.0 dabei: Reiter „Fachwortschatz“, die Politur erkennt verhörte Fachbegriffe im Zusammenhang; sieben Anzeige-Stile mit Tönen, einer je Fachgebiet.</li>
+  <li>Neuer Anzeige-Stil „Siamkatze“ mit Glöckchen, Katzenbewegungen und eigenen Tönen.</li>
+  <li>Die Stilauswahl zeigt vor jedem Stil ein kleines Vorschaubild.</li>
+  <li>Fachwortschatz: wirkt überall, wo du diktierst, auch im Terminal; rund 300 Fachbegriffe mehr in den Listen.</li>
   <li>Mehr dazu in der Anleitung, Abschnitt 10.</li>
 </ul>
 """
@@ -197,9 +197,9 @@ Bei nativen Crashes: <code>speech2anywhere-faulthandler.log</code> daneben.</p>
 _NEWS_HTML_EN = """
 <h3>New in v{version}</h3>
 <ul>
-  <li>Specialist vocabulary: everyday words no longer trigger a suggestion in any of the eight languages, before only in German.</li>
-  <li>The tab bar in the settings is narrower; the tab is now called “Vocabulary”.</li>
-  <li>Here since 0.7.0: the “Vocabulary” tab, the clean-up recognizes misheard technical terms in context; seven indicator styles with sounds, one per field.</li>
+  <li>New indicator style “Siamese cat” with a bell, cat moves and its own sounds.</li>
+  <li>The style picker shows a small preview in front of each style.</li>
+  <li>Specialist vocabulary: works wherever you dictate, including the terminal; about 300 more technical terms in the lists.</li>
   <li>More in the guide, section 10.</li>
 </ul>
 """

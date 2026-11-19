@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.7.3 (19.11.2026)
+
+- Neuer Anzeige-Stil „Siamkatze“ mit eigenen Tönen: Die Katze mit blauem Halsband und goldenem Glöckchen spricht mit, zuckt mit den Ohren, blinzelt, schwingt den Schwanz und schlägt mit der Pfote nach vorbeifliegenden Wortfetzen; beim Erkennen spielt sie mit Wolle, putzt sich, gähnt, schnurrt oder legt den Kopf schief
+- Einstellungen, Reiter Anzeige: Vor jedem Stil der Auswahl steht ein kleines Vorschaubild der Anzeige, scharf bei 100 und 200 Prozent Bildschirmskalierung
+- Von 0.5.5 bis 0.7.2 aus lädt das Update in der App nur das Programmpaket
+
 ## 0.7.2 (19.11.2026)
 
 - Fachlisten ergänzt: rund 300 gängige Fachbegriffe, die Wikidata nicht oder nur am Rand liefert, stehen jetzt fest in den Listen, etwa Strafgesetzbuch, Bundesgerichtshof, Abschreibung, Bilanz, Tilidin, Anamnese, Firewall
