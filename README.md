@@ -2,9 +2,9 @@
 
 # Speech2Anywhere
 
-**Hold a key, speak, release. Local AI turns it into polished text at the cursor.**
+**You hold a key, you talk and release, and the local AI converts your speech into a beautiful text at the cursor.**
 
-Speech2Anywhere: Your voice into any Windows application. E-Mail, Chat, Word, Browser, Terminal, Code Editor. Just hold a key and talk. Release. Your local language model will turn your speech into clean text, directly at the cursor. Activate specialist vocabulary in 7 areas (medicine, IT...). So you get correct technical terms much more often. Without cloud. No account. No subscription.
+Speech2Anywhere connects your voice to all Windows programs like email, chat, Word, web browser, terminal, code editor. You hold a key and as you speak you keep it pressed. When you release the key, a language model on your PC converts your speech into a clean text at the cursor position. If you're in a specialized area, you can enable vocabulary for medicine, law, IT or one of four other categories. That way, technical terms are also correct much more often. Everything runs without the cloud, without an account, without a subscription.
 
 [![Latest release](https://img.shields.io/github/v/release/MikeGT4/speech2anywhere?label=release)](https://github.com/MikeGT4/speech2anywhere/releases/latest)
 ![Windows 11, NVIDIA GPU or CPU](https://img.shields.io/badge/Windows%2011-NVIDIA%20GPU%20or%20CPU-0078d4)
@@ -18,19 +18,31 @@ Website with all features: [speech2anywhere.de](https://speech2anywhere.de/en/),
 
 ## What it does
 
-+ Use in any application: it'll give you the text if there's a text cursor. No app specific plugin. No copy and paste. Your clipboard content (images, files, formatted text) is restored.
-+ Not just transcription. A local model with Ollama refines the text from Whisper. Punctuation, cut out fillers. It also corrects slip-ups (e.g. "on Tuesday, no, on Friday" -> "on Friday") and adapts to the style of the app. E.g. mail looks like a mail, terminal prompt stays literal.
-+ Specialist vocabulary. You can activate fields in a separate settings tab: medicine, medications, law, business, science and engineering, chemistry, IT. So the cleanup is aware of the field and will find up to 5 similar sounding terms per dictation. If Whisper hears "lefotyruxin", it will become "Levothyroxin". Tested on 60 made-up specialist dictations in German and English: 1 of 133 terms wrong with field activated. 8 without. No change for everyday dictation.
-+ Voice edit. Select text. Then hold F9 and say what should change. E.g. "make it more friendly".
-+ All on your PC. Audio and text will never leave your machine. Speech2Anywhere will only go online for updates and model downloads.
+* Works in all programs: the text lands at the text cursor, no matter which program, with no program plugin and no copy and paste. Everything that was on the clipboard before (images, files, formatted text) is there again afterwards.
 
-+ 8 dictation languages (German, English, French, Italian, Dutch, Polish, Portuguese, Spanish) or auto detect. Cleanup will respond in the language you spoke. Interface in German, English.
-+ Uses an NVIDIA graphics card. Or (if no graphics card) the processor. The first-run wizard will test your PC and give a recommendation.
-+ Press and hold the key. Or press once to start. Once again to stop.
-+ Makes a text file and .srt subtitles from audio/video files.
-+ Learns from your pre-send corrections. (German dictations)
-+ Use any Ollama model for the cleanup. Also GGUF models from Hugging Face.
-+ Live indicator at the cursor. You can choose from eighteen styles. Sounds optional.
+* The local AI does more than just transcription: your speech is converted into text with Whisper and then it's supplemented with punctuation, removal of filler words, slip-of-tongue correction using a local AI model in Ollama. That way, "on Tuesday, no, on Friday" becomes "on Friday". Furthermore, the text is adapted to the program in which you write it. So mail looks like mail. And your prompt in the terminal looks exactly like you said it.
+
+* Specialized vocabulary: on its own settings tab you can activate vocabulary for medicine, medications, law, business, science/engineering, chemistry, IT. Then, the cleanup is aware of the field and has up to five similar-sounding words for each dictation. So a wrongly heard "lefotyruxin" turns into "Levothyroxin". (In a test with 60 invented specialist dictations in German & English, 1 of 133 terms was wrong with an activated field, 8 without. For everyday dictations, nothing changed.)
+
+* Editing texts with your voice: you select text, hold F9 and say what to change (e.g. "make it friendlier") and then the text is edited directly.
+
+* Everything stays on your PC. The audio and text don't leave your computer. Only for updates and downloading models, Speech2Anywhere connects to the internet.
+
+Also included:
+
+* 8 languages (or automatic detection) for dictation (German, English, French, Italian, Dutch, Polish, Portuguese, Spanish). The cleanup answers in the language that was spoken. German and English in the user interface.
+
+* Speech2Anywhere works with an NVIDIA graphics card or, if not available, with the processor. The wizard for the first start will measure your PC and suggest what's better.
+
+* You can either keep the key pressed while speaking or tap it once for start and once for stop.
+
+* It converts audio/video files to a text file with .srt subtitles.
+
+* It learns from your corrections to German dictations before sending.
+
+* Any model from Ollama can be the cleanup model. This includes GGUF models from Hugging Face.
+
+* 18 styles for the live indicator at the cursor, with optional sounds.
 
 ## Two builds, one idea
 
@@ -51,7 +63,7 @@ Website with all features: [speech2anywhere.de](https://speech2anywhere.de/en/),
 
 ## Install (end users)
 
-Download everything from the [latest release](https://github.com/MikeGT4/speech2anywhere/releases/latest) into the same folder: `Kira-Setup-vX.Y.Z.exe`, the `.bin` parts (`-1.bin`, `-2.bin`) and `SHA256SUMS.txt`. The setup is split into parts, so the `.bin` files must sit next to the `.exe`. The file `kira-X.Y.Z-py3-none-any.whl` is the program package for in-app updates; a fresh install does not need it.
+The installer needs all files of the [latest release](https://github.com/MikeGT4/speech2anywhere/releases/latest) in one folder: `Kira-Setup-vX.Y.Z.exe`, the `.bin` parts (`-1.bin`, `-2.bin`) and `SHA256SUMS.txt`. The setup is split into parts, so the `.bin` files must sit next to the `.exe`. The file `kira-X.Y.Z-py3-none-any.whl` is the program package for in-app updates; a fresh install does not need it.
 
 1. Double-click `Kira-Setup-vX.Y.Z.exe`.
 2. If Windows Defender SmartScreen warns: "More info", then "Run anyway". Speech2Anywhere is not code-signed. Verify the download with `certutil -hashfile Kira-Setup-vX.Y.Z.exe SHA256` against `SHA256SUMS.txt` if you want to be sure.
@@ -63,15 +75,15 @@ Later updates run from the tray menu. When a new version is out, the tray icon s
 
 ### Installation (Deutsch)
 
-Alle Dateien der [neuesten Release](https://github.com/MikeGT4/speech2anywhere/releases/latest) in denselben Ordner laden: `Kira-Setup-vX.Y.Z.exe`, die `.bin`-Teile und `SHA256SUMS.txt`. Die `.bin`-Teile müssen neben der `.exe` liegen; die Datei `kira-X.Y.Z-py3-none-any.whl` ist das Programmpaket für Updates aus der App und für eine neue Installation nicht nötig. Doppelklick auf die `.exe`, bei der SmartScreen-Warnung „Weitere Informationen" und „Trotzdem ausführen" (Speech2Anywhere ist nicht signiert). Beim ersten Start misst ein zweiter Assistent deinen Rechner, empfiehlt Grafikkarte oder Prozessor und lädt die Modelle dazu, danach funktioniert das Diktieren ohne Internet. Speech2Anywhere erscheint in der Taskleiste: **F8 halten, sprechen, loslassen.**
+Für die Installation kommen alle Dateien der [neuesten Release](https://github.com/MikeGT4/speech2anywhere/releases/latest) in denselben Ordner: `Kira-Setup-vX.Y.Z.exe`, die `.bin`-Teile und `SHA256SUMS.txt`. Die `.bin`-Teile müssen neben der `.exe` liegen; die Datei `kira-X.Y.Z-py3-none-any.whl` ist das Programmpaket für Updates aus der App und wird für eine neue Installation nicht gebraucht. Danach startest du die `.exe` mit einem Doppelklick. Zeigt SmartScreen eine Warnung, geht es über „Weitere Informationen“ und „Trotzdem ausführen“ weiter, weil Speech2Anywhere nicht signiert ist. Beim ersten Start misst ein zweiter Assistent deinen Rechner, empfiehlt Grafikkarte oder Prozessor und lädt die passenden Modelle, danach funktioniert das Diktieren auch ohne Internet. Speech2Anywhere erscheint dann in der Taskleiste, und zum Diktieren hältst du F8, sprichst und lässt die Taste wieder los.
 
 ## Developers
 
-Install from source, configuration, learning from corrections and troubleshooting: [DEVELOPERS.md](DEVELOPERS.md).
+The guide in [DEVELOPERS.md](DEVELOPERS.md) covers installing from source, the configuration, learning from corrections and troubleshooting.
 
 ## License
 
-Personal use. See [`LICENSE`](LICENSE) (English and German). Commercial use needs written consent.
+Speech2Anywhere is licensed for personal use, and the terms are in [`LICENSE`](LICENSE) in English and German. Commercial use needs written consent.
 
 The word lists `assets/wordlist-*.txt` are derived from [wordfreq](https://github.com/rspeer/wordfreq) data, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
