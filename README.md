@@ -14,6 +14,10 @@ Speech2Anywhere connects your voice to all Windows programs like email, chat, Wo
 
 <p align="center"><a href="https://speech2anywhere.de/en/"><img src="assets/readme-demo.gif" alt="Demo: an email is dictated and lands polished at the cursor, a voice command makes it friendlier, then a prompt is dictated to a coding agent" width="880"></a></p>
 
+The tour below runs for 70 seconds with sound and shows all features in action.
+
+https://github.com/user-attachments/assets/3bf21e94-847d-4ffb-865d-d7b9e58bb14c
+
 Website with all features: [speech2anywhere.de](https://speech2anywhere.de/en/), also in [German](https://speech2anywhere.de/).
 
 ## What it does
