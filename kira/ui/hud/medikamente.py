@@ -142,6 +142,8 @@ class Medikamente(Edel):
     ZACK_WORD = N_("Wirkt!")
     SILENCE = (N_("Kein Signal"), N_("Kein Wirkstoff im Mikrofon."))
     INK_COLOR = QColor("#1F4D44")
+    FIGURE_SCALE = 0.8333
+    FIGURE_SHIFT = (-1.615, 3.125)
     CAPTIONS = {
         "dosieren": (N_("wird dosiert …"), N_("genau dosiert!"), 2.4),
         "etikett": (N_("wird beschriftet …"), N_("beschriftet!"), 2.4),
@@ -155,6 +157,8 @@ class Medikamente(Edel):
 
     def tile(self, p: QPainter, pose: Pose) -> None:
         p.fillRect(TILE, radial_brush(30, 28, 52, ((0.0, LINEN_LIGHT), (1.0, LINEN))))
+
+    def emblem(self, p: QPainter, pose: Pose) -> None:
         bottle = _bottle_path(22.0, 48.0, 30.0, 40.0, BOTTLE_TOP, 40.0, 68.0)
         drop_shadow(p, bottle, 2.0, 2.0, 0.25)
         filled(p, bottle, amber_glass(22.0, 48.0), AMBER_EDGE, 0.8)

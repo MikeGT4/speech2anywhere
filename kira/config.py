@@ -95,6 +95,7 @@ HUD_STYLES = ("comic", "manga", "halloween", "weihnachten", "katze", "medizin", 
 DEFAULT_HUD_STYLE = "comic"
 SOUND_EVENTS = ("start", "stopp", "fertig", "fehler")
 DEFAULT_SOUND_EVENTS = ("stopp", "fertig", "fehler")
+SOUND_STYLE_AUTO = "auto"
 
 
 class UIConfig(BaseModel):
@@ -102,6 +103,7 @@ class UIConfig(BaseModel):
     sound_feedback: bool = False
     sound_events: list[str] = Field(default_factory=lambda: list(DEFAULT_SOUND_EVENTS))
     hud_style: str = DEFAULT_HUD_STYLE
+    sound_style: str = SOUND_STYLE_AUTO
     hud_scale: float = 1.5
     hud_live_words: bool = True
     language: str = "auto"
@@ -129,6 +131,12 @@ class UIConfig(BaseModel):
     def _known_hud_style(cls, value: object) -> str:
         key = str(value or "").strip().lower()
         return key if key in HUD_STYLES else DEFAULT_HUD_STYLE
+
+    @field_validator("sound_style", mode="before")
+    @classmethod
+    def _known_sound_style(cls, value: object) -> str:
+        key = str(value or "").strip().lower()
+        return key if key in HUD_STYLES else SOUND_STYLE_AUTO
 
     @field_validator("hud_scale", mode="before")
     @classmethod

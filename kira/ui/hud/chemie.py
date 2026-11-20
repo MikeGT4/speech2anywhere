@@ -152,6 +152,8 @@ class Chemie(Fachgebiet):
     WORD_FILLS = (QColor(comic.YELLOW_HOVER), MINT, MAGENTA_LIGHT)
     ZACK_WORD = N_("Gelöst!")
     SILENCE = (N_("Kein Signal"), N_("Keine Reaktion im Mikrofon."))
+    FIGURE_SCALE = 0.8739
+    FIGURE_SHIFT = (-0.109, 3.714)
     CAPTIONS = {
         "titration": (N_("titriert …"), N_("Farbumschlag!"), 2.4),
         "molekuel": (N_("Bindung entsteht …"), N_("stabil!"), 2.3),

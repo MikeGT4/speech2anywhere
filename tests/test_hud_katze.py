@@ -418,8 +418,8 @@ def test_frame_time_stays_in_the_range_of_the_other_styles(qapp):
 def test_cat_ships_its_own_sound_variants():
     folder = assets_dir() / "sounds" / KEY
     names = sorted(path.name for path in folder.glob("*.wav"))
-    assert names == ["fehler-2.wav", "fehler.wav", "fertig-2.wav", "fertig.wav", "start-2.wav", "start.wav",
-                     "stopp.wav"]
+    assert names == ["fehler-2.wav", "fehler-3.wav", "fehler.wav", "fertig-2.wav", "fertig-3.wav", "fertig-4.wav",
+                     "fertig.wav", "start-2.wav", "start-3.wav", "start.wav", "stopp-2.wav", "stopp-3.wav", "stopp.wav"]
 
 
 def test_host_passes_spoken_words_to_the_cat(qtbot, tmp_path):

@@ -152,6 +152,9 @@ class Jura(Edel):
     ZACK_WORD = N_("Recht so!")
     SILENCE = (N_("Kein Signal"), N_("Das Mikrofon verweigert die Aussage."))
     INK_COLOR = QColor("#3B2420")
+    FIGURE_SCALE = 0.9907
+    FIGURE_SHIFT = (-0.372, -4.396)
+    HOURGLASS = (14.25, 13.75, 0.8)
     CAPTIONS = {
         "akte": (N_("fertigt aus …"), N_("ausgefertigt!"), 2.4),
         "gesetz": (N_("schlägt nach …"), N_("§ gefunden!"), 2.3),
@@ -165,6 +168,8 @@ class Jura(Edel):
 
     def tile(self, p: QPainter, pose: Pose) -> None:
         _walnut(p, TILE)
+
+    def emblem(self, p: QPainter, pose: Pose) -> None:
         plinth = rounded(18.0, 63.0, 34.0, 7.0, 2.0)
         drop_shadow(p, plinth)
         filled(p, plinth, linear_brush(0, 63, 0, 70, ((0.0, WALNUT_LIGHT), (1.0, WALNUT_DEEP))))

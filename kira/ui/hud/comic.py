@@ -35,6 +35,8 @@ SHADOW = 3.0
 _ROUND = (Qt.PenStyle.SolidLine, Qt.PenCapStyle.RoundCap, Qt.PenJoinStyle.RoundJoin)
 
 TILE = QRectF(2, 8, 66, 66)
+FIGURE_SCALE = 1.0
+FIGURE_SHIFT = (-0.125, -0.625)
 MOUTH = QPointF(64, 50)
 LANES = ((90.0, 56.0, -12.0), (132.0, 30.0, 7.0), (200.0, 54.0, -6.0))
 WORDS = (N_("bla"), N_("bla"), N_("blubb!"))
@@ -86,6 +88,7 @@ class _Word:
     fill: QColor = field(default_factory=lambda: QColor(YELLOW))
 
 
+TILE_SVG = '<rect x="0" y="0" width="512" height="512" rx="102" ry="102" fill="#FFC400"/>'
 _BUBBLE = ("M 256 70 C 382 70 456 146 456 248 C 456 350 382 420 262 420 C 236 420 212 417 190 410 "
            "C 168 428 138 446 108 452 C 96 454 90 444 98 436 C 112 420 122 402 126 384 C 84 350 58 304 58 248 "
            "C 58 146 130 70 256 70 Z")
@@ -135,16 +138,36 @@ def _face(kind: str, level: float) -> str:
             '<ellipse cx="258" cy="376" rx="44" ry="28" fill="#E5484D"/>')
 
 
+def fit_figure(p: QPainter, scale: float, shift: tuple[float, float]) -> None:
+    center = TILE.center()
+    p.translate(center.x() + shift[0], center.y() + shift[1])
+    p.scale(scale, scale)
+    p.translate(-center.x(), -center.y())
+
+
+@functools.lru_cache(maxsize=1)
+def _tile_renderer() -> QSvgRenderer:
+    return QSvgRenderer(('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">' + TILE_SVG + '</svg>')
+                        .encode("utf-8"))
+
+
+def paint_tile(p: QPainter) -> None:
+    _tile_renderer().render(p, TILE)
+
+
 def _render_face(p: QPainter, key: tuple, face) -> None:
     renderer = _RENDERERS.get(key)
     if renderer is None:
         svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">'
-               '<rect x="0" y="0" width="512" height="512" rx="102" ry="102" fill="#FFC400"/>'
                f'<path d="{_BUBBLE}" fill="#FFFFFF" stroke="#111111" stroke-width="18" stroke-linejoin="round"/>'
                f'{face()}</svg>')
         renderer = QSvgRenderer(svg.encode("utf-8"))
         _RENDERERS[key] = renderer
+    paint_tile(p)
+    p.save()
+    fit_figure(p, FIGURE_SCALE, FIGURE_SHIFT)
     renderer.render(p, TILE)
+    p.restore()
 
 
 def _mascot(p: QPainter, kind: str, level: float = 0.0) -> None:
@@ -892,7 +915,10 @@ class Comic(HudStyle):
         else:
             self._ironing(p, f, t - t0, title)
         if self.sweating(t):
+            p.save()
+            fit_figure(p, FIGURE_SCALE, FIGURE_SHIFT)
             _sweat(p, 0.3 if f.reduced else t - self.rel_t - SWEAT_AFTER_S)
+            p.restore()
 
     def _washing(self, p: QPainter, t: float, f: Frame, elapsed: float, title: str) -> None:
         spin = elapsed >= SPIN_AFTER_S

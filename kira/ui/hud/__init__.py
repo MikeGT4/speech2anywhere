@@ -9,7 +9,7 @@ STYLE_LABELS: dict[str, str] = {
     "manga": "Manga (Shōnen)",
     "halloween": N_("Halloween (Hexenhut)"),
     "weihnachten": N_("Weihnachten (Winternacht)"),
-    "katze": N_("Siamkatze"),
+    "katze": N_("Siamkatze Zini"),
     "medizin": N_("Medizin"),
     "medikamente": N_("Medikamente"),
     "jura": N_("Jura"),

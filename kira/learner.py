@@ -226,6 +226,26 @@ def _learn_from(
             )
 
 
+def _learn_early(
+    *, since: datetime, now: datetime, history_dir: Path, messages: list[SentMessage],
+    times: list[datetime], lexicon: Lexicon, words: frozenset[str], result: RunResult,
+) -> None:
+    if not messages:
+        return
+    early = RunResult()
+    for record in read_records(history_dir, since=since):
+        try:
+            if record.time > now:
+                continue
+            _learn_from(
+                record, truncated=False, messages=messages, times=times,
+                lexicon=lexicon, words=words, counter=_new_counter(), result=early,
+            )
+        except Exception:
+            log.exception("Lernen: Diktat vom %s übersprungen", record.ts)
+    result.pairs += early.pairs
+
+
 def run_once(
     *, now: datetime, history_dir: Path, reader: SourceReader, lexicon: Lexicon,
     words: frozenset[str], state: LearningState,
@@ -256,6 +276,10 @@ def run_once(
             except Exception:
                 log.exception("Lernen: Diktat vom %s übersprungen", record.ts)
         state.processed_until = until.isoformat(timespec="seconds")
+    _learn_early(
+        since=max(since, until), now=now, history_dir=history_dir, messages=messages,
+        times=times, lexicon=lexicon, words=words, result=result,
+    )
     keep_from = datetime.fromisoformat(state.processed_until or until.isoformat()) - WINDOW_BEFORE
     state.buffer = [
         b for b in state.buffer if datetime.fromisoformat(b["time"]) >= keep_from

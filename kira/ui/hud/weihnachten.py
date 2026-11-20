@@ -562,6 +562,8 @@ class Weihnachten(Saison):
     WORD_FILLS = (QColor(comic.YELLOW_HOVER), QColor("#FFFFFF"), QColor("#FFD9A0"))
     ZACK_WORD = N_("Bescherung!")
     SILENCE = (N_("Kein Signal"), N_("Stille Nacht im Mikrofon."))
+    FIGURE_SCALE = 0.7933
+    FIGURE_SHIFT = (-0.099, 3.471)
 
     def svg_under(self, kind: str) -> str:
         return BEARD

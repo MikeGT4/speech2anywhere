@@ -24,7 +24,7 @@ class Clock:
         return self.now
 
 
-def _service(tmp_path, clock, sources=True, words=frozenset({"wir", "auf"}), extra_sources=()):
+def _service(tmp_path, clock, sources=True, words=frozenset({"wir", "auf", "kubernetes"}), extra_sources=()):
     src = tmp_path / "src"
     src.mkdir(exist_ok=True)
     return LearningService(

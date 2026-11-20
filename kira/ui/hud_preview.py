@@ -194,6 +194,7 @@ class PreviewDriver:
 
 THUMB_SIZE = QSize(30, 30)
 THUMB_CROP = QRectF(2.0, 8.0, 66.0, 66.0)
+THUMB_CROPS = {"manga": QRectF(2.1875, 0.8125, 76.0, 76.0)}
 THUMB_SCALE = THUMB_SIZE.width() / THUMB_CROP.width()
 THUMB_RADIUS = 6.0
 THUMB_DPRS = (1.0, 2.0)
@@ -204,8 +205,12 @@ POSTER_DEFAULT_S = 2.4
 _THUMBS: dict[tuple[str, str], QIcon] = {}
 
 
+def thumb_crop(key: str) -> QRectF:
+    return THUMB_CROPS.get(key, THUMB_CROP)
+
+
 def _poster(key: str) -> PreviewDriver | None:
-    driver = PreviewDriver(key, THUMB_SCALE)
+    driver = PreviewDriver(key, THUMB_SIZE.width() / thumb_crop(key).width())
     if driver.failed:
         return None
     driver.dpr = max(THUMB_DPRS)
@@ -235,9 +240,10 @@ def _thumbnail(key: str, driver: PreviewDriver | None, dpr: float) -> QPixmap:
         if driver is None:
             p.fillPath(frame, DESK)
         else:
+            crop = thumb_crop(key)
             p.save()
             p.setClipPath(frame)
-            driver.paint(p, -THUMB_CROP.x() * THUMB_SCALE, -THUMB_CROP.y() * THUMB_SCALE)
+            driver.paint(p, -crop.x() * driver.scale, -crop.y() * driver.scale)
             p.restore()
     except Exception:
         log.exception("Miniatur für Stil %s fehlgeschlagen", key)

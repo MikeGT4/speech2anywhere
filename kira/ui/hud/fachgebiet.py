@@ -195,11 +195,12 @@ def mono_digits(p: QPainter, right: float, cy: float, elapsed: float, fill=EDEL_
     p.drawPath(path)
 
 
-def hourglass(p: QPainter, cx: float, cy: float, age: float, reduced: bool) -> None:
+def hourglass(p: QPainter, cx: float, cy: float, age: float, reduced: bool, size: float = 1.0) -> None:
     turn = 0.0 if reduced else (age / 1.8) % 1.0
     sand = clamp(turn / 0.8, 0.0, 1.0)
     p.save()
     p.translate(cx, cy)
+    p.scale(size, size)
     p.rotate(180.0 * EASE_OUT(clamp((turn - 0.8) / 0.2, 0.0, 1.0)))
     glass = polygon(((-3.0, -4.0), (3.0, -4.0), (0.7, 0.0), (3.0, 4.0), (-3.0, 4.0), (-0.7, 0.0)))
     filled(p, glass, QColor(255, 255, 255, 150), HAIRLINE, 0.6)
@@ -217,11 +218,15 @@ def hourglass(p: QPainter, cx: float, cy: float, age: float, reduced: bool) -> N
 class Edel(Fachgebiet):
     INK_COLOR = QColor("#3B2420")
     WORD_EDGE = 1.5
+    HOURGLASS = (12.5, 16.0, 1.0)
 
     def tile(self, p: QPainter, pose) -> None:
         pass
 
-    def figure(self, p: QPainter, pose) -> None:
+    def emblem(self, p: QPainter, pose) -> None:
+        pass
+
+    def paint_tile(self, p: QPainter, pose) -> None:
         tile = tile_path()
         p.save()
         p.setClipPath(tile)
@@ -230,13 +235,17 @@ class Edel(Fachgebiet):
         p.setBrush(Qt.BrushStyle.NoBrush)
         p.setPen(QPen(QColor(0, 0, 0, 70), 0.8))
         p.drawPath(tile)
+
+    def mascot(self, p: QPainter, pose) -> None:
+        self.emblem(p, pose)
         self.accessory(p, pose)
 
     def think(self, p: QPainter, t: float, f: Frame) -> None:
         key, t0 = self.scene_at(t, f)
         self.paint_scene(p, key, t, f, t - t0, tr("Politur") if f.polishing else tr("Erkennen"))
         if self.sweating(t):
-            hourglass(p, 12.5, 16.0, t - self.rel_t - SWEAT_AFTER_S, f.reduced)
+            x, y, size = self.HOURGLASS
+            hourglass(p, x, y, t - self.rel_t - SWEAT_AFTER_S, f.reduced, size)
 
     def paint_scene(self, p: QPainter, key: str, t: float, f: Frame, elapsed: float, title: str) -> None:
         at = self.payoff(key)

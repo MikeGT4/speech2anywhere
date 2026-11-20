@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.7.4 (20.11.2026)
+
+- Lernen aus Korrekturen: Ist die neue Schreibung eindeutig, etwa ein Name oder Fachbegriff, der fast gleich klingt, greift sie schon ab dem nächsten Diktat; Korrekturen werden alle drei Minuten ausgewertet, sobald die gesendete Nachricht da ist
+- Reiter Sound: Den Klang wählst du in einer eigenen Auswahl, unabhängig vom Stil der Anzeige; die Schalter heißen „Beim Start“ und „Beim Ende“ und passen damit auch zum Umschalt-Modus
+- Die Siamkatze heißt jetzt Zini und klingt echt: 13 Aufnahmen (Miauen, Schnurren, Knurren, Glöckchen), die sich zufällig abwechseln
+- Alle Maskottchen sitzen samt Hut, Brille, Lampe, Helm und Pipette mit gleichem Abstand in ihrer Kachel, in der Anzeige wie in den Vorschaubildern
+- Sprechen statt Tippen spart in unserer Messung 68,8 Prozent der Zeit
+- Von 0.5.5 bis 0.7.3 aus lädt das Update in der App nur das Programmpaket
+
 ## 0.7.3 (19.11.2026)
 
 - Neuer Anzeige-Stil „Siamkatze“ mit eigenen Tönen: Die Katze mit blauem Halsband und goldenem Glöckchen spricht mit, zuckt mit den Ohren, blinzelt, schwingt den Schwanz und schlägt mit der Pfote nach vorbeifliegenden Wortfetzen; beim Erkennen spielt sie mit Wolle, putzt sich, gähnt, schnurrt oder legt den Kopf schief

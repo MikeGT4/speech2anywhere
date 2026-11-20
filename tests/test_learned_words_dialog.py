@@ -24,7 +24,7 @@ class FakeService:
 
 def _lexicon(tmp_path):
     lex = Lexicon(tmp_path / "learned.json")
-    lex.observe("kuh bernetes", "Kubernetes", kind="replacement", vocab=True,
+    lex.observe("kuh bernetes", "Kubernetes", kind="replacement", vocab=False,
                 example="auf kuh bernetes", when=T0)
     for day in (1, 2):
         lex.observe("doku", "Docker", kind="replacement", vocab=True,
@@ -113,7 +113,7 @@ def test_fits_1080p_at_125_percent(qtbot, tmp_path):
 def _many(tmp_path, pending=3):
     lex = Lexicon(tmp_path / "learned.json")
     for i in range(pending):
-        lex.observe(f"wort{i}", f"Wort{i}", kind="glossary", vocab=True,
+        lex.observe(f"wort{i}", f"Wort{i}", kind="glossary", vocab=False,
                     example=f"mit wort{i}", when=T0 + timedelta(minutes=i))
     return lex
 

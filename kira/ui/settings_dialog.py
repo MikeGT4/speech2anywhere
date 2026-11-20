@@ -22,11 +22,13 @@ from kira.ui._dialog_style import (
 from kira.ui._progress_view import ProgressView
 
 from kira import __version__, UPDATE_REPO, ollama_pull, progress as prog
-from kira.config import FACHGEBIETE, LANGUAGE_NAMES, SOUND_EVENTS, default_config_path, effective_hotkey, load_config
+from kira.config import (
+    FACHGEBIETE, LANGUAGE_NAMES, SOUND_EVENTS, SOUND_STYLE_AUTO, default_config_path, effective_hotkey, load_config,
+)
 from kira.hardware import CPU_WHISPER_REPO, cpu_whisper_dir
 from kira.hotkey_win import SUPPORTED_COMBOS
 from kira.config_writer import update_scalars
-from kira.sounds import SoundPlayer
+from kira.sounds import SoundPlayer, sound_style
 from kira.ui.hud import STYLE_LABELS
 from kira.ui.hud_preview import THUMB_SIZE, HudPreview, cached_style_icon, empty_style_icon, style_icon
 from kira.release_info import load_installed
@@ -56,8 +58,8 @@ _LANGUAGES = (("auto", N_("Automatisch erkennen")), *LANGUAGE_NAMES.items())
 _GAIN_SLIDER_MAX = 50
 
 _SOUND_ROWS = (
-    ("start", N_("Beim Drücken"), N_("Die Aufnahme beginnt.")),
-    ("stopp", N_("Beim Loslassen"), N_("Die Aufnahme endet.")),
+    ("start", N_("Beim Start"), N_("Die Aufnahme beginnt.")),
+    ("stopp", N_("Beim Ende"), N_("Die Aufnahme endet.")),
     ("fertig", N_("Text ist da"), N_("Der Text ist eingefügt.")),
     ("fehler", N_("Bei Fehlern"), N_("Etwas ging schief.")),
 )
@@ -788,7 +790,10 @@ class SettingsDialog(QDialog):
     def _next_style_icon(self) -> None:
         if self._style_icons_due:
             index = self._style_icons_due.pop(0)
-            self._hud_style.setItemIcon(index, style_icon(self._hud_style.itemData(index)))
+            icon = style_icon(self._hud_style.itemData(index))
+            self._hud_style.setItemIcon(index, icon)
+            if hasattr(self, "_sound_style"):
+                self._sound_style.setItemIcon(index + 1, icon)
         if not self._style_icons_due:
             self._style_icons.stop()
 
@@ -847,7 +852,7 @@ class SettingsDialog(QDialog):
         self._hud_live_words = comic.ToggleSwitch()
         self._hud_live_words.setChecked(self._cfg.ui.hud_live_words)
         self._live_words_tip = tr(
-            "In den Stilen „Comic (Bla-Bla)“, „Manga“, „Halloween“, „Weihnachten“, „Siamkatze“, „Medizin“, „Medikamente“,\n"
+            "In den Stilen „Comic (Bla-Bla)“, „Manga“, „Halloween“, „Weihnachten“, „Siamkatze Zini“, „Medizin“, „Medikamente“,\n"
             "„Jura“, „Wirtschaft“, „Wissenschaft und Technik“, „Chemie“ und „IT“ erscheinen beim Sprechen Fetzen der erkannten Wörter.\n"
             "Sie sind am Bildschirm zu sehen, auch bei einer Bildschirmfreigabe."
         )
@@ -870,7 +875,19 @@ class SettingsDialog(QDialog):
                 "Darunter wählst du, bei welchen Momenten ein Ton kommt."
             )
         )
-        card.add_row(tr("Töne"), tr("Kurze Töne passend zum Stil."), self._sound_feedback)
+        card.add_row(tr("Töne"), tr("Kurze Töne beim Diktat."), self._sound_feedback)
+        self._sound_style = comic.style_combo(QComboBox())
+        self._sound_style.setIconSize(THUMB_SIZE)
+        self._sound_style.setFont(self._style_font)
+        self._sound_style.setStyleSheet("QComboBox { font-weight: 700; }")
+        self._sound_style.addItem(empty_style_icon(), tr("Wie die Anzeige"), userData=SOUND_STYLE_AUTO)
+        self._sound_style.setItemData(0, self._style_font, Qt.ItemDataRole.FontRole)
+        for key, label in STYLE_LABELS.items():
+            self._sound_style.addItem(cached_style_icon(key) or empty_style_icon(), tr(label), userData=key)
+            self._sound_style.setItemData(self._sound_style.count() - 1, self._style_font, Qt.ItemDataRole.FontRole)
+        self._sound_style.setCurrentIndex(max(0, self._sound_style.findData(self._cfg.ui.sound_style)))
+        self._sound_style.setToolTip(tr("Welche Töne du hörst, unabhängig vom Stil der Anzeige."))
+        card.add_row(tr("Klang"), tr("Töne aus einem Stil deiner Wahl."), self._sound_style)
         self._sound_events: dict[str, comic.ToggleSwitch] = {}
         self._sound_previews: dict[str, QPushButton] = {}
         for event, label, description in _SOUND_ROWS:
@@ -879,9 +896,9 @@ class SettingsDialog(QDialog):
             if event == "start":
                 switch.setToolTip(tr("Über Lautsprecher kann dieser Ton mit aufgenommen werden, mit Kopfhörer nicht."))
             preview = QPushButton(tr("Anhören"))
-            preview.setToolTip(tr("Spielt diesen Ton im Stil aus dem Reiter Anzeige."))
+            preview.setToolTip(tr("Spielt diesen Ton im gewählten Klang."))
             preview.clicked.connect(
-                lambda _checked=False, moment=event: self._sound_player.play(self._hud_style.currentData(), moment)
+                lambda _checked=False, moment=event: self._sound_player.play(self._chosen_sound_style(), moment)
             )
             row = QHBoxLayout()
             row.setSpacing(12)
@@ -894,11 +911,15 @@ class SettingsDialog(QDialog):
         self._sound_feedback.toggled.connect(self._enable_sound_events)
         self._enable_sound_events(self._sound_feedback.isChecked())
         hint = comic.HintBubble([
-            tr("Der Klang passt zum Stil im Reiter Anzeige und wirkt schon beim nächsten Diktat."),
+            tr("Wirkt schon beim nächsten Diktat."),
         ])
         return self._page(card, hint)
 
+    def _chosen_sound_style(self) -> str:
+        return sound_style(self._sound_style.currentData(), self._hud_style.currentData())
+
     def _enable_sound_events(self, enabled: bool) -> None:
+        self._sound_style.setEnabled(enabled)
         for switch in self._sound_events.values():
             switch.setEnabled(enabled)
 
@@ -1197,6 +1218,7 @@ class SettingsDialog(QDialog):
             "ui.hud_style": self._hud_style.currentData(),
             "ui.hud_live_words": self._hud_live_words.isChecked(),
             "ui.sound_feedback": self._sound_feedback.isChecked(),
+            "ui.sound_style": self._sound_style.currentData(),
             "ui.sound_events": [event for event in SOUND_EVENTS if self._sound_events[event].isChecked()],
         }
 

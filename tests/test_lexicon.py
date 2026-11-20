@@ -20,8 +20,27 @@ def _observe(lex, wrong, right, when, kind=KIND_REPLACEMENT, vocab=True):
 
 def test_first_occurrence_is_pending(tmp_path):
     lex = Lexicon(tmp_path / "learned.json")
-    e = _observe(lex, "kuh bernetes", "Kubernetes", T1)
+    e = _observe(lex, "kuh bernetes", "Kubernetes", T1, vocab=False)
     assert (e.status, e.count) == (STATUS_PENDING, 1)
+
+
+def test_unambiguous_spelling_activates_on_first_occurrence(tmp_path):
+    lex = Lexicon(tmp_path / "learned.json")
+    e = _observe(lex, "Speech-to-Anywhere", "Speech2Anywhere", T1)
+    assert (e.status, e.count) == (STATUS_ACTIVE, 1)
+
+
+def test_unambiguous_needs_a_close_sound(tmp_path):
+    lex = Lexicon(tmp_path / "learned.json")
+    e = _observe(lex, "Tisch", "Fisch", T1)
+    assert e.status == STATUS_PENDING
+
+
+def test_unambiguous_waits_on_conflict(tmp_path):
+    lex = Lexicon(tmp_path / "learned.json")
+    _observe(lex, "kuh bernetes", "Kubernetes", T1)
+    _observe(lex, "kuh bernetes", "Kubernetis", T2)
+    assert {e.status for e in lex.entries()} == {STATUS_PENDING}
 
 
 def test_second_dictation_activates(tmp_path):

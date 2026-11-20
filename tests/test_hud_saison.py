@@ -187,13 +187,20 @@ def test_advent_wreath_lights_one_more_candle_every_quarter_minute():
     assert lit(60.3, True) == 1
 
 
+def _on_figure(box: tuple[float, float, float, float], style) -> tuple[float, float, float, float]:
+    x, y, w, h = box
+    center = cm.TILE.center()
+    s, (dx, dy) = style.FIGURE_SCALE, style.FIGURE_SHIFT
+    return (center.x() + (x - center.x()) * s + dx, center.y() + (y - center.y()) * s + dy, w * s, h * s)
+
+
 @pytest.mark.parametrize("kind", STATES)
 def test_pumpkin_stands_behind_the_mascot_and_the_tile_stays_yellow(qapp, kind):
     d = _reach("halloween", kind)
     img = d.render()
     assert _count_color(img, JACK_BOX, ORANGE, d.f.px) > 60
     assert _count_color(img, (3.5, 24, 5, 30), YELLOW, d.f.px) > 300
-    assert _count_color(img, (4, 24, 50, 44), ORANGE, d.f.px) == 0
+    assert _count_color(img, _on_figure((4, 24, 50, 44), d.style), ORANGE, d.f.px) == 0
 
 
 def test_pumpkin_dims_without_signal_and_goes_dark_on_error(qapp):

@@ -113,6 +113,8 @@ class Wirtschaft(Fachgebiet):
     WORD_FILLS = (QColor(comic.YELLOW_HOVER), MONEY_LIGHT, GOLD_LIGHT)
     ZACK_WORD = N_("Gebongt!")
     SILENCE = (N_("Kein Signal"), N_("Flaute im Mikrofon."))
+    FIGURE_SCALE = 0.9052
+    FIGURE_SHIFT = (-0.113, -4.017)
     CAPTIONS = {
         "kurs": (N_("Kurs steigt …"), N_("Allzeithoch!"), 2.3),
         "kasse": (N_("wird gebucht …"), N_("verbucht!"), 2.4),

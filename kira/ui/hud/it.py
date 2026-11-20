@@ -134,6 +134,8 @@ class IT(Fachgebiet):
     WORD_FILLS = (QColor(comic.YELLOW_HOVER), QColor("#A8E6FF"), QColor("#B6F2A7"))
     ZACK_WORD = N_("Läuft!")
     SILENCE = (N_("Kein Signal"), N_("404: Ton nicht gefunden."))
+    FIGURE_SCALE = 0.86
+    FIGURE_SHIFT = (0.0, 0.484)
     CAPTIONS = {
         "build": (N_("kompiliert …"), N_("Build grün!"), 2.3),
         "bug": (N_("Bug-Jagd …"), N_("gefixt!"), 2.4),

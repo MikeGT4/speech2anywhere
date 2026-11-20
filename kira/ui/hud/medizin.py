@@ -139,6 +139,8 @@ class Medizin(Fachgebiet):
     WORD_FILLS = (QColor(comic.YELLOW_HOVER), QColor("#FFFFFF"), BLUSH)
     ZACK_WORD = N_("Kerngesund!")
     SILENCE = (N_("Kein Signal"), N_("Das Mikrofon hält die Luft an."))
+    FIGURE_SCALE = 0.8464
+    FIGURE_SHIFT = (-0.106, 4.444)
     CAPTIONS = {
         "rezept": (N_("kritzelt …"), N_("lesbar!"), 2.45),
         "roentgen": (N_("durchleuchtet …"), N_("alles heil!"), 2.5),

@@ -338,11 +338,21 @@ def _prop(p: QPainter, name: str, x: float, y: float, angle: float, alpha: float
     p.restore()
 
 
-def draw_cat(p: QPainter, cat: Cat) -> None:
-    p.save()
+def _tile_space(p: QPainter) -> None:
     p.translate(TILE.x(), TILE.y())
     p.scale(TILE.width() / 512.0, TILE.height() / 512.0)
+
+
+def draw_tile(p: QPainter) -> None:
+    p.save()
+    _tile_space(p)
     _part("tile").render(p, VIEW)
+    p.restore()
+
+
+def draw_cat(p: QPainter, cat: Cat) -> None:
+    p.save()
+    _tile_space(p)
     _place(p, _part("tail"), cat.tail, TAIL_PIVOT)
     p.save()
     p.translate(0.0, cat.lift)
@@ -428,6 +438,8 @@ class Katze(Fachgebiet):
     WORD_FILLS = (FUR_COLOR, SKY_COLOR, GOLD_COLOR)
     ZACK_WORD = N_("Miau!")
     SILENCE = (N_("Kein Signal"), N_("Mucksmäuschenstill im Mikrofon."))
+    FIGURE_SCALE = 0.73
+    FIGURE_SHIFT = (-1.871, 0.867)
     CAPTIONS = {
         "wolle": (N_("rollt Wolle …"), N_("Faden gefunden!"), 2.4),
         "putzen": (N_("Katzenwäsche …"), N_("blitzblank!"), 2.4),
@@ -492,9 +504,16 @@ class Katze(Fachgebiet):
             return replace(THINKING, look=pose.look)
         return Cat()
 
-    def figure(self, p: QPainter, pose: Pose) -> None:
-        draw_cat(p, self.cat(pose))
+    def paint_tile(self, p: QPainter, pose: Pose) -> None:
+        draw_tile(p)
+
+    def figure(self, p: QPainter, pose: Pose, cat: Cat | None = None) -> None:
+        self.paint_tile(p, pose)
+        p.save()
+        cm.fit_figure(p, self.FIGURE_SCALE, self.FIGURE_SHIFT)
+        draw_cat(p, self.cat(pose) if cat is None else cat)
         self.accessory(p, pose)
+        p.restore()
 
     def paint_clock(self, p: QPainter, elapsed: float, reduced: bool) -> None:
         _cat_clock(p, elapsed, reduced)
@@ -502,8 +521,8 @@ class Katze(Fachgebiet):
     def paint_scene(self, p: QPainter, key: str, t: float, f: Frame, elapsed: float, title: str) -> None:
         at = self.payoff(key)
         e = at + 0.6 if f.reduced else elapsed
-        draw_cat(p, SCENE_MOTIONS[key](THINKING, STILL_AT[key] if f.reduced else elapsed))
-        self.accessory(p, self.pose("look", t, f, look=THINKING.look))
+        self.figure(p, self.pose("look", t, f, look=THINKING.look),
+                    SCENE_MOTIONS[key](THINKING, STILL_AT[key] if f.reduced else elapsed))
         self.cloud(p)
         p.save()
         getattr(self, "scene_" + key)(p, e, f.reduced)

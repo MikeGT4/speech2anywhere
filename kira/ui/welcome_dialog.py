@@ -51,10 +51,10 @@ def welcomed_before() -> bool:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Neuer Anzeige-Stil „Siamkatze“ mit Glöckchen, Katzenbewegungen und eigenen Tönen.</li>
-  <li>Die Stilauswahl zeigt vor jedem Stil ein kleines Vorschaubild.</li>
-  <li>Fachwortschatz: wirkt überall, wo du diktierst, auch im Terminal; rund 300 Fachbegriffe mehr in den Listen.</li>
-  <li>Mehr dazu in der Anleitung, Abschnitt 10.</li>
+  <li>Korrekturen wirken schneller: Eine eindeutige Schreibung greift schon ab dem nächsten Diktat.</li>
+  <li>Reiter „Sound“: Den Klang wählst du jetzt unabhängig vom Stil der Anzeige.</li>
+  <li>Die Siamkatze heißt jetzt Zini und miaut, schnurrt und knurrt mit echten Aufnahmen.</li>
+  <li>Alle Maskottchen sitzen samt Hut und Zubehör sauber in ihrer Kachel.</li>
 </ul>
 """
 
@@ -122,8 +122,9 @@ whisper:
 
 <h3>5. Aus Korrekturen lernen</h3>
 <p>Korrigierst du ein falsch erkanntes Wort, bevor du den Text abschickst,
-merkt sich Speech2Anywhere das Paar. Taucht es in zwei Diktaten auf, greift es von
-selbst; Einzelfälle warten unter Tray → <b>„Gelernte Wörter…“</b> auf dein
+merkt sich Speech2Anywhere das Paar. Ist die neue Schreibung eindeutig, etwa ein Name oder
+Fachbegriff, der fast gleich klingt, greift sie schon ab dem nächsten Diktat; sonst greift das Paar,
+sobald es in zwei Diktaten auftaucht. Einzelfälle warten unter Tray → <b>„Gelernte Wörter…“</b> auf dein
 Häkchen. Was du dort verwirfst, lernt Speech2Anywhere nicht wieder. Die Nachrichten
 stammen aus Chat-Verläufen, deren Ordner in der Rohconfig unter
 <code>learning.sources</code> stehen. Alles bleibt lokal. Gelernt wird aus deutschen Diktaten.</p>
@@ -197,10 +198,10 @@ Bei nativen Crashes: <code>speech2anywhere-faulthandler.log</code> daneben.</p>
 _NEWS_HTML_EN = """
 <h3>New in v{version}</h3>
 <ul>
-  <li>New indicator style “Siamese cat” with a bell, cat moves and its own sounds.</li>
-  <li>The style picker shows a small preview in front of each style.</li>
-  <li>Specialist vocabulary: works wherever you dictate, including the terminal; about 300 more technical terms in the lists.</li>
-  <li>More in the guide, section 10.</li>
+  <li>Corrections apply sooner: an unambiguous spelling works from your next dictation.</li>
+  <li>Sound tab: you now pick the sound set independently of the indicator style.</li>
+  <li>The Siamese cat is now called Zini and meows, purrs and growls with real recordings.</li>
+  <li>All mascots sit neatly inside their tile, hats and accessories included.</li>
 </ul>
 """
 
@@ -268,8 +269,9 @@ whisper:
 
 <h3>5. Learning from corrections</h3>
 <p>If you correct a misrecognized word before you send the text,
-Speech2Anywhere remembers the pair. If it shows up in two dictations, it applies by
-itself; single cases wait under Tray → <b>“Learned Words…”</b> for your
+Speech2Anywhere remembers the pair. If the new spelling is unambiguous, such as a name or
+technical term that sounds almost the same, it applies from your next dictation; otherwise the pair
+applies once it shows up in two dictations. Single cases wait under Tray → <b>“Learned Words…”</b> for your
 approval. What you discard there, Speech2Anywhere doesn’t learn again. The messages
 come from chat histories whose folders are listed in the raw config under
 <code>learning.sources</code>. Everything stays local. Learning works for German dictations.</p>

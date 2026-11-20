@@ -10,6 +10,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Callable, Iterable
 
+from kira.phonetics import sound_similarity
+
 log = logging.getLogger(__name__)
 
 KIND_REPLACEMENT = "replacement"
@@ -18,6 +20,7 @@ STATUS_PENDING = "pending"
 STATUS_ACTIVE = "active"
 STATUS_REJECTED = "rejected"
 AUTO_ACTIVATE_COUNT = 2
+INSTANT_MIN_SOUND = 0.85
 SAME_DICTATION_S = 2
 EXAMPLE_MAX_CHARS = 120
 PROMPT_TOKEN_BUDGET = 223
@@ -69,6 +72,10 @@ def _entry_from_json(raw) -> Entry:
     if bad:
         raise ValueError("ungültiges Feld: " + ", ".join(bad))
     return entry
+
+
+def _unambiguous(entry: Entry) -> bool:
+    return entry.vocab and sound_similarity(entry.wrong, entry.right) >= INSTANT_MIN_SOUND
 
 
 def _already_counted(seen: tuple[str, ...], when: datetime) -> bool:
@@ -172,7 +179,7 @@ class Lexicon:
         for e in siblings:
             if e.confirmed:
                 continue
-            if not conflict and e.count >= AUTO_ACTIVATE_COUNT:
+            if not conflict and (e.count >= AUTO_ACTIVATE_COUNT or _unambiguous(e)):
                 status = STATUS_ACTIVE
             else:
                 status = STATUS_PENDING

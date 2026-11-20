@@ -143,6 +143,8 @@ class Technik(Fachgebiet):
     WORD_FILLS = (QColor(comic.YELLOW_HOVER), QColor("#BFE3FF"), QColor("#FFC98A"))
     ZACK_WORD = N_("Heureka!")
     SILENCE = (N_("Kein Signal"), N_("Funkstille im Mikrofon."))
+    FIGURE_SCALE = 0.8365
+    FIGURE_SHIFT = (-0.105, 4.705)
     CAPTIONS = {
         "rakete": (N_("Countdown …"), N_("abgehoben!"), 2.3),
         "bauplan": (N_("zeichnet …"), N_("maßgenau!"), 2.4),

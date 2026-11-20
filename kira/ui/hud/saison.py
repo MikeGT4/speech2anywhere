@@ -40,7 +40,6 @@ SWEAT_SHIFT = 7.5
 ZACK_PX = 21
 ZACK_MIN_PX = 9
 ZACK_TEXT_W = 98.0
-TILE_SVG = '<rect x="0" y="0" width="512" height="512" rx="102" ry="102" fill="#FFC400"/>'
 BUBBLE_SVG = (f'<path d="{cm._BUBBLE}" fill="#FFFFFF" stroke="#111111" stroke-width="18" '
               'stroke-linejoin="round"/>')
 _RENDERERS: dict[tuple, QSvgRenderer] = {}
@@ -151,6 +150,8 @@ class Saison(HudStyle):
     WORD_FILLS = cm.WORD_COLORS
     ZACK_WORD = N_("Zack!")
     SILENCE = (N_("Kein Signal"), N_("Das Mikrofon liefert Stille."))
+    FIGURE_SCALE = 1.0
+    FIGURE_SHIFT = (0.0, 0.0)
 
     def __init__(self) -> None:
         super().__init__()
@@ -225,17 +226,27 @@ class Saison(HudStyle):
     def accessory(self, p: QPainter, pose: Pose) -> None:
         pass
 
-    def figure(self, p: QPainter, pose: Pose) -> None:
+    def paint_tile(self, p: QPainter, pose: Pose) -> None:
+        cm.paint_tile(p)
+
+    def mascot(self, p: QPainter, pose: Pose) -> None:
         key = _face_key(pose)
         full = (self.key,) + key
         renderer = _RENDERERS.get(full)
         if renderer is None:
-            svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">' + TILE_SVG + BUBBLE_SVG
+            svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">' + BUBBLE_SVG
                    + self.svg_under(pose.kind) + _face_svg(key) + self.svg_over(pose.kind) + '</svg>')
             renderer = QSvgRenderer(svg.encode("utf-8"))
             _RENDERERS[full] = renderer
         renderer.render(p, TILE)
         self.accessory(p, pose)
+
+    def figure(self, p: QPainter, pose: Pose) -> None:
+        self.paint_tile(p, pose)
+        p.save()
+        cm.fit_figure(p, self.FIGURE_SCALE, self.FIGURE_SHIFT)
+        self.mascot(p, pose)
+        p.restore()
 
     def backdrop(self, p: QPainter, t: float, f: Frame, an) -> None:
         pass
@@ -307,6 +318,7 @@ class Saison(HudStyle):
         self.paint_scene(p, key, t, f, t - t0, tr("Politur") if f.polishing else tr("Erkennen"))
         if self.sweating(t):
             p.save()
+            cm.fit_figure(p, self.FIGURE_SCALE, self.FIGURE_SHIFT)
             p.translate(SWEAT_SHIFT, 0.0)
             cm._sweat(p, 0.3 if f.reduced else t - self.rel_t - SWEAT_AFTER_S)
             p.restore()

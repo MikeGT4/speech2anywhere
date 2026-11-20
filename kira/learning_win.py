@@ -20,7 +20,7 @@ from kira.wordlist import default_wordlist
 
 log = logging.getLogger(__name__)
 FIRST_RUN_DELAY_S = 120
-RUN_INTERVAL_S = 30 * 60
+RUN_INTERVAL_S = 3 * 60
 GLOSSARY_SLOW_MS = 20.0
 
 

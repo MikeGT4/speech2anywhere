@@ -196,3 +196,20 @@ def test_windows_playback_is_asynchronous_without_fallback_beep(monkeypatch, tmp
     monkeypatch.setitem(sys.modules, "winsound", fake)
     sounds._winsound_play(tmp_path / "fertig.wav")
     assert calls == [(str(tmp_path / "fertig.wav"), 0x20000 | 0x1 | 0x2)]
+
+
+def test_chosen_sound_style_overrides_the_indicator(tmp_path):
+    player, played, _ = _player(tmp_path, "ui:\n  hud_style: medizin\n  sound_feedback: true\n  sound_style: katze\n")
+    player.on_state(State.INJECTING)
+    assert [p.parent.name for p in played] == ["katze"]
+
+
+def test_sound_style_auto_follows_the_indicator(tmp_path):
+    player, played, _ = _player(tmp_path, "ui:\n  hud_style: jura\n  sound_feedback: true\n  sound_style: auto\n")
+    player.on_state(State.INJECTING)
+    assert [p.parent.name for p in played] == ["jura"]
+
+
+def test_unknown_sound_style_falls_back_to_auto():
+    from kira.config import UIConfig
+    assert UIConfig(sound_style="nichts").sound_style == "auto"

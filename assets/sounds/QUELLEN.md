@@ -1,6 +1,6 @@
 # Quellen der Töne
 
-Die Töne der Stile Medizin, Medikamente, Jura, Wirtschaft, Wissenschaft und Technik, Chemie, IT und Siamkatze sind
+Die Töne der Stile Medizin, Medikamente, Jura, Wirtschaft, Wissenschaft und Technik, Chemie und IT sind
 selbst erzeugt (Synthese): Klangsynthese aus Sinustönen, Obertonreihen mit Formantfiltern, gefiltertem Rauschen und
 kurzen Anschlägen. Sie enthalten keine fremden Aufnahmen und keine Stimmen, es bestehen keine Rechte Dritter.
 
@@ -39,10 +39,18 @@ Fehler −29 LUFS (Momentanwert), Spitze höchstens −9 dBFS.
 | it | stopp.wav | zwei Rechtecktöne, fallend |
 | it | fertig.wav | vier Rechtecktöne, aufsteigend |
 | it | fehler.wav | zwei tiefe Rechtecktöne, fallend |
-| katze | start.wav | Glöckchen, zwei Schläge |
-| katze | start-2.wav | Glöckchen, drei helle Schläge |
-| katze | stopp.wav | kurzes Miau |
-| katze | fertig.wav | Miau, danach zwei Glöckchenschläge |
-| katze | fertig-2.wav | Schnurren, danach ein Glöckchenschlag |
-| katze | fehler.wav | Fauchen, danach ein tiefes Miau |
-| katze | fehler-2.wav | tiefes, langgezogenes Miau |
+| katze | start.wav | Glöckchen hell |
+| katze | start-2.wav | Glöckchen zart |
+| katze | start-3.wav | Kleines Miau |
+| katze | stopp.wav | Kurzes Miau |
+| katze | stopp-2.wav | Kleines Miau |
+| katze | stopp-3.wav | Fragendes Miau |
+| katze | fertig.wav | Miau mit Schnurren |
+| katze | fertig-2.wav | Miau dann Glöckchen |
+| katze | fertig-3.wav | Zufriedenes Miau |
+| katze | fertig-4.wav | Schnurren |
+| katze | fehler.wav | Knurren |
+| katze | fehler-2.wav | Beschwerde |
+| katze | fehler-3.wav | Langes tiefes Miau |
+
+Siamkatze Zini (seit 20.11.2026): echte Aufnahmen unter CC0, geschnitten auf höchstens 1,4 s, Spitze −8 dBFS. BigSoundBank (bigsoundbank.com, CC0): Meow cat #2, #7, #9, #11 (1890, 1895, 1897, 1899), Little meow of a cat (0494, 1472), Cat Purr (0436), Growling cat #3 (1887), Cat complaining (0658), Small bell #1 und #2 (0292, 0293). OpenGameArt, „Cat Purr & Meow“ von Kerzoven (CC0): cat_mewpurr.

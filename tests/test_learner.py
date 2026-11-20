@@ -150,7 +150,7 @@ from kira.learner import (
 )
 from kira.lexicon import STATUS_ACTIVE, Lexicon
 
-WORDS = frozenset({"wir", "deployen", "heute", "auf", "und", "morgen", "wieder"})
+WORDS = frozenset({"wir", "deployen", "heute", "auf", "und", "morgen", "wieder", "kubernetes"})
 
 
 def _history(directory, when, text, mode="terminal"):
@@ -195,14 +195,25 @@ def test_run_once_learns_and_activates_on_second_dictation(tmp_path):
     assert (tmp_path / "learned.json").exists()
 
 
-def test_dictation_waits_until_its_window_is_closed(tmp_path):
+def test_dictation_learns_as_soon_as_the_message_exists(tmp_path):
     hist, src, lex, state = _setup(tmp_path)
     _history(hist, T0, "wir deployen heute auf kuh bernetes")
-    assert _run(T0 + timedelta(minutes=5), hist, src, lex, state).processed == 0
+    assert _run(T0 + timedelta(minutes=5), hist, src, lex, state).pairs == 0
     _sent(src, T0 + timedelta(minutes=10), "Wir deployen heute auf Kubernetes")
-    assert _run(T0 + timedelta(minutes=12), hist, src, lex, state).processed == 0
+    r = _run(T0 + timedelta(minutes=12), hist, src, lex, state)
+    assert (r.processed, r.pairs) == (0, 1)
+    assert lex.pending()[0].right == "Kubernetes"
     r = _run(T0 + timedelta(minutes=40), hist, src, lex, state)
-    assert (r.processed, r.matched, r.pairs) == (1, 1, 1)
+    assert (r.processed, r.matched, r.pairs) == (1, 1, 0)
+    assert lex.entries()[0].count == 1
+
+
+def test_unambiguous_correction_is_active_from_the_first_dictation(tmp_path):
+    hist, src, lex, state = _setup(tmp_path)
+    _history(hist, T0, "wir deployen heute auf Speech-to-Anywhere")
+    _sent(src, T0 + timedelta(minutes=1), "Wir deployen heute auf Speech2Anywhere")
+    _run(T0 + timedelta(minutes=4), hist, src, lex, state)
+    assert lex.active_replacements() == {"Speech-to-Anywhere": "Speech2Anywhere"}
 
 
 def test_metrics_report_corrected_of_matched(tmp_path):

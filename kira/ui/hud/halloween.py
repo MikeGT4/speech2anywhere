@@ -531,6 +531,8 @@ class Halloween(Saison):
     WORD_FILLS = (QColor(comic.YELLOW_HOVER), QColor("#FFB020"), QColor("#FF9A3D"))
     ZACK_WORD = N_("Hokuspokus!")
     SILENCE = (N_("Kein Signal"), N_("Totenstille im Mikrofon."))
+    FIGURE_SCALE = 0.8301
+    FIGURE_SHIFT = (-0.104, 4.877)
 
     def accessory(self, p: QPainter, pose: Pose) -> None:
         dx = dy = fx = fy = 0.0

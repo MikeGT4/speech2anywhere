@@ -8,7 +8,8 @@ from typing import Callable
 
 from kira._resources import assets_dir
 from kira.config import (
-    DEFAULT_HUD_STYLE, DEFAULT_SOUND_EVENTS, HUD_STYLES, SOUND_EVENTS, default_config_path, load_config,
+    DEFAULT_HUD_STYLE, DEFAULT_SOUND_EVENTS, HUD_STYLES, SOUND_EVENTS, SOUND_STYLE_AUTO, default_config_path,
+    load_config,
 )
 
 log = logging.getLogger(__name__)
@@ -21,6 +22,10 @@ def _winsound_play(path: Path) -> None:
     import winsound
 
     winsound.PlaySound(str(path), winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_NODEFAULT)
+
+
+def sound_style(chosen: str, hud_style: str) -> str:
+    return hud_style if chosen == SOUND_STYLE_AUTO else chosen
 
 
 class SoundPlayer:
@@ -93,4 +98,4 @@ class SoundPlayer:
         self._cfg_mtime = mtime
         self._enabled = ui.sound_feedback
         self._events = tuple(ui.sound_events)
-        self._style = ui.hud_style
+        self._style = sound_style(ui.sound_style, ui.hud_style)
