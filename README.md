@@ -6,6 +6,8 @@
 
 Speech2Anywhere connects your voice to all Windows programs like email, chat, Word, web browser, terminal, code editor. You hold a key and as you speak you keep it pressed. When you release the key, a language model on your PC converts your speech into a clean text at the cursor position. If you're in a specialized area, you can enable vocabulary for medicine, law, IT or one of four other categories. That way, technical terms are also correct much more often. Everything runs without the cloud, without an account, without a subscription.
 
+**Speaking takes 68.8 percent less time than typing.** We measured this across 3,246 dictations against a typing speed of 52 words per minute, the average found by Dhakal and colleagues (CHI 2018). Your thoughts stay on what you want to say instead of on the keys, and with your hands free you can run several terminals or coding agents at once while keeping an eye on everything else on your desk.
+
 [![Latest release](https://img.shields.io/github/v/release/MikeGT4/speech2anywhere?label=release)](https://github.com/MikeGT4/speech2anywhere/releases/latest)
 ![Windows 11, NVIDIA GPU or CPU](https://img.shields.io/badge/Windows%2011-NVIDIA%20GPU%20or%20CPU-0078d4)
 ![macOS Apple Silicon](https://img.shields.io/badge/macOS-Apple%20Silicon-black)
