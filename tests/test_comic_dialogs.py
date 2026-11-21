@@ -384,7 +384,7 @@ def test_version_is_the_same_in_both_places():
     from pathlib import Path
     from kira import __version__
     text = (Path(__file__).resolve().parent.parent / "pyproject.toml").read_text(encoding="utf-8")
-    assert re.search(r'^version = "([^"]+)"', text, re.M).group(1) == __version__ == "0.7.4"
+    assert re.search(r'^version = "([^"]+)"', text, re.M).group(1) == __version__ == "0.7.5"
 
 
 def test_about_shows_the_models_of_the_processor_mode(qtbot, monkeypatch):

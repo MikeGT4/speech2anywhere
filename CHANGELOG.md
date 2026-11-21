@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.7.5 (21.11.2026)
+
+- Siamkatze Zini: Die hellen Fellflecken bleiben im Kopf, über dem Kopf steht kein heller Rand mehr, und die Kopflinie ist durchgehend kräftig
+- Von 0.5.5 bis 0.7.4 aus lädt das Update in der App nur das Programmpaket
+
 ## 0.7.4 (20.11.2026)
 
 - Lernen aus Korrekturen: Ist die neue Schreibung eindeutig, etwa ein Name oder Fachbegriff, der fast gleich klingt, greift sie schon ab dem nächsten Diktat; Korrekturen werden alle drei Minuten ausgewertet, sobald die gesendete Nachricht da ist

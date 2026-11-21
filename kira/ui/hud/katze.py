@@ -32,6 +32,7 @@ BELL_SHINE = "#FFF2B0"
 INK = QColor(LINE)
 FUR_COLOR = QColor(FUR)
 MASK_COLOR = QColor(MASK)
+MASK_LIGHT_COLOR = QColor(MASK_LIGHT)
 IRIS_COLOR = QColor(IRIS)
 GOLD_COLOR = QColor(GOLD)
 YARN_COLOR = QColor(YARN)
@@ -88,10 +89,8 @@ PARTS = {
              'stroke-width="10"/><path d="M -30 -10 Q 0 -40 30 -10 M -34 10 Q 0 -20 34 10 M -20 28 Q 0 0 20 28" '
              f'fill="none" stroke="{YARN_DARK}" stroke-width="6"/></g>'),
 }
-HEAD = ('<defs><clipPath id="kopf"><path d="' + cm._BUBBLE + '"/></clipPath></defs>'
-        f'<path d="{cm._BUBBLE}" fill="{FUR}" stroke="{LINE}" stroke-width="18" stroke-linejoin="round"/>'
-        f'<g clip-path="url(#kopf)"><ellipse cx="258" cy="292" rx="122" ry="96" fill="{MASK}" opacity="0.9"/>'
-        f'<ellipse cx="258" cy="96" rx="70" ry="40" fill="{MASK_LIGHT}" opacity="0.5"/></g>')
+HEAD = f'<path d="{cm._BUBBLE}" fill="{FUR}"/>'
+HEAD_LINE = f'<path d="{cm._BUBBLE}" fill="none" stroke="{LINE}" stroke-width="18" stroke-linejoin="round"/>'
 NOSE_SVG = (f'<path d="M 240 232 L 276 232 L 258 254 Z" fill="{NOSE}" stroke="{LINE}" stroke-width="6" '
             'stroke-linejoin="round"/>')
 CAT_MOUTH = (f'<path d="M 222 286 Q 240 306 258 286 Q 276 306 294 286" fill="none" stroke="{LINE}" '
@@ -108,6 +107,52 @@ def _svg(body: str) -> QSvgRenderer:
 @functools.lru_cache(maxsize=None)
 def _part(name: str) -> QSvgRenderer:
     return _svg(PARTS[name])
+
+
+@functools.lru_cache(maxsize=1)
+def _bubble() -> QPainterPath:
+    path = QPainterPath()
+    werte = cm._BUBBLE.split()
+    i = 0
+    while i < len(werte):
+        befehl = werte[i]
+        if befehl == "M":
+            path.moveTo(float(werte[i + 1]), float(werte[i + 2]))
+            i += 3
+        elif befehl == "C":
+            z = [float(w) for w in werte[i + 1:i + 7]]
+            path.cubicTo(z[0], z[1], z[2], z[3], z[4], z[5])
+            i += 7
+        elif befehl == "Z":
+            path.closeSubpath()
+            i += 1
+        else:
+            raise ValueError(befehl)
+    return path
+
+
+def _head(p: QPainter) -> None:
+    _svg_head().render(p, VIEW)
+    p.save()
+    p.setRenderHint(QPainter.RenderHint.Antialiasing)
+    p.setClipPath(_bubble(), Qt.ClipOperation.IntersectClip)
+    p.setPen(Qt.PenStyle.NoPen)
+    p.setBrush(faded(MASK_COLOR, 0.9))
+    p.drawEllipse(QPointF(258, 292), 122, 96)
+    p.setBrush(faded(MASK_LIGHT_COLOR, 0.5))
+    p.drawEllipse(QPointF(258, 96), 70, 40)
+    p.restore()
+    _svg_head_line().render(p, VIEW)
+
+
+@functools.lru_cache(maxsize=1)
+def _svg_head() -> QSvgRenderer:
+    return _svg(HEAD)
+
+
+@functools.lru_cache(maxsize=1)
+def _svg_head_line() -> QSvgRenderer:
+    return _svg(HEAD_LINE)
 
 
 def _eye(cx: int, state: str, look: tuple[int, int], opening: float) -> str:
@@ -175,7 +220,7 @@ def _whiskers(twitch: float) -> str:
 def _face_svg(key: tuple) -> str:
     eye_l, eye_r, opening, look, mouth, level, twitch = key
     k = opening / OPEN_STEPS
-    return (HEAD + _eye(200, eye_l, look, k) + _eye(312, eye_r, look, k) + NOSE_SVG
+    return (_eye(200, eye_l, look, k) + _eye(312, eye_r, look, k) + NOSE_SVG
             + _mouth(mouth, level / LEVEL_STEPS) + _whiskers(twitch / TWITCH_STEPS) + COLLAR_SVG)
 
 
@@ -359,6 +404,7 @@ def draw_cat(p: QPainter, cat: Cat) -> None:
     _turn(p, cat.tilt, HEAD_PIVOT)
     _place(p, _part("ear_l"), cat.ear_l, EAR_PIVOTS[0])
     _place(p, _part("ear_r"), cat.ear_r, EAR_PIVOTS[1])
+    _head(p)
     _face(face_key(cat)).render(p, VIEW)
     _place(p, _part("bell"), cat.bell, BELL_PIVOT)
     p.restore()
