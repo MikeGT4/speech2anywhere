@@ -144,7 +144,7 @@ class _Lernen:
     def __init__(self, begriffe):
         self.begriffe = begriffe
 
-    def glossary_for(self, text):
+    def glossary_for(self, text, uncertain=None):
         return self.begriffe
 
     def after_inject(self, **kwargs):
@@ -166,7 +166,7 @@ class _Fach:
     def __init__(self, begriffe, fehler=False):
         self.begriffe, self.fehler, self.aufrufe = begriffe, fehler, []
 
-    def glossar(self, text, sprache, grenze):
+    def glossar(self, text, sprache, grenze, unsicher=None):
         self.aufrufe.append((text, sprache, grenze))
         if self.fehler:
             raise RuntimeError("kaputt")
@@ -224,7 +224,7 @@ def test_app_reicht_kontext_nur_mit_fachwortschatz_weiter(monkeypatch):
         kontext = ["der Medizin"]
 
     monkeypatch.setattr("kira.app.detect_mode", lambda cfg: "plain")
-    for fach, erwartet in ((None, None), (Fach([]), ["der Medizin"])):
+    for fach, erwartet in ((None, None), (Fach([]), None), (Fach(["Hypothyreose"]), ["der Medizin"])):
         politur = Politur()
         app = KiraApp(config=Config(), recorder=Recorder(), transcriber=_StubTranscriber(),
                       styler=politur, injector=_StubInjector(), fachwortschatz=fach)
@@ -287,6 +287,8 @@ def test_glossar_laesst_richtige_begriffe_mit_bindestrich_weg(tmp_path):
     fw = Fachwortschatz.laden(["medizin"], tmp_path)
     assert fw.glossar("Der Patient hat ein Klinefelter-Syndrom.", "de", 5) == []
     assert fw.glossar("Verdacht auf Hypo Thyreose.", "de", 5) == ["Hypothyreose"]
+    assert fw.glossar("Verdacht auf Hypo Thyreose.", "de", 5, unsicher=[]) == []
+    assert fw.glossar("Verdacht auf Hypo Thyreose.", "de", 5, unsicher=["Thyreose"]) == ["Hypothyreose"]
 
 
 def test_vorbereiten_baut_den_index(verzeichnis):
@@ -296,7 +298,8 @@ def test_vorbereiten_baut_den_index(verzeichnis):
 
 
 @pytest.mark.parametrize("modus, begriffe, erwartet", [
-    ("terminal", [], False), ("code", [], False), ("terminal", ["Kubernetes"], True), ("plain", [], True),
+    ("terminal", [], False), ("code", [], False), ("terminal", ["Kubernetes"], True), ("plain", [], False),
+    ("plain", ["Kubernetes"], True),
 ])
 def test_befehle_ohne_treffer_bleiben_ohne_fachkontext(monkeypatch, modus, begriffe, erwartet):
     class Politur:

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.7.6 (23.11.2026)
+
+- Die Politur ändert nur noch Wörter, bei denen die Erkennung unsicher war; sicher erkannte Wörter setzt eine Gegenprüfung zurück, Füllwörter und Versprecher entfernt sie weiter
+- Neuer Schalter „Wortgetreu“ im Reiter Politur: Die Politur setzt dann nur Satzzeichen und Großschreibung
+- Gelernte Korrekturen greifen erst, wenn sie in zwei Diktaten vorkommen, und Paare, die nur nach Umformulieren aussehen, werden nicht mehr gelernt
+- Gelernte Begriffe gehen über `whisper.learned_terms_in_prompt` in die Erkennung, voreingestellt aus
+- Von 0.5.5 bis 0.7.5 aus lädt das Update in der App nur das Programmpaket
+
 ## 0.7.5 (21.11.2026)
 
 - Siamkatze Zini: Die hellen Fellflecken bleiben im Kopf, über dem Kopf steht kein heller Rand mehr, und die Kopflinie ist durchgehend kräftig

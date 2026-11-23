@@ -5,10 +5,11 @@ import logging
 import re
 from collections import defaultdict
 from pathlib import Path
-from typing import Iterable
+from typing import Collection, Iterable
 
 from kira._resources import assets_dir
 from kira.config import LANGUAGE_NAMES
+from kira.glossary import touches, uncertain_tokens
 from kira.phonetics import phonetic_code
 from kira.wordlist import default_wordlist, is_common
 
@@ -150,10 +151,15 @@ class Fachwortschatz:
             self._index[sprache] = self._index.pop(sprache)
         return index
 
-    def glossar(self, text: str, sprache: str | None, grenze: int) -> list[str]:
+    def glossar(
+        self, text: str, sprache: str | None, grenze: int, unsicher: Collection[str] | None = None,
+    ) -> list[str]:
         if not text or grenze <= 0:
             return []
         gramme = _gramme(text)
+        if unsicher is not None:
+            tokens = uncertain_tokens(unsicher)
+            gramme = [g for g in gramme if touches(g.casefold(), tokens)]
         vorhanden = {g.casefold() for g in gramme}
         vorhanden.update(t.casefold() for t in _VERBUNDEN_RE.findall(text))
         beste: dict[str, tuple[float, str]] = {}

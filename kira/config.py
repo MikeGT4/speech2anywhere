@@ -49,6 +49,7 @@ class WhisperConfig(BaseModel):
     vad_threshold: float = 0.35
     condition_on_previous_text: bool = False
     initial_prompt: str | None = None
+    learned_terms_in_prompt: bool = False
     replacements: dict[str, str] = Field(default_factory=dict)
     device: str = "gpu"
     cpu_model: str = "small"
@@ -81,6 +82,7 @@ class StylerConfig(BaseModel):
     fast_mode: bool = False
     fast_model: str = "gemma4:e4b"
     enabled: bool = True
+    wortgetreu: bool = False
     modes: dict[str, ModeConfig] = Field(default_factory=dict)
 
 

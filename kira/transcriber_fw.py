@@ -45,6 +45,7 @@ class TranscriptionResult:
     avg_logprob: float | None = None
     segments: list[tuple[float, float, str]] | None = None
     language_probability: float | None = None
+    uncertain_words: tuple[str, ...] = ()
 
 
 _MLX_PREFIX = "mlx-community/whisper-"
@@ -87,6 +88,7 @@ _NORMALIZED_HALLUCINATIONS = frozenset(_normalized(entry) for entry in _KNOWN_HA
 SILENCE_PEAK = 0.05
 CONFIDENT_SPEECH_NO_SPEECH_PROB = 0.1
 PARTIAL_NO_SPEECH_PROB = 0.5
+UNCERTAIN_WORD_PROBABILITY = 0.5
 
 _PARTIAL = threading.local()
 
@@ -97,6 +99,16 @@ class _QuietPartial(logging.Filter):
 
 
 logging.getLogger("faster_whisper").addFilter(_QuietPartial())
+
+
+def _uncertain_words(segments) -> tuple[str, ...]:
+    found: list[str] = []
+    for segment in segments:
+        for word in getattr(segment, "words", None) or ():
+            token = word.word.strip()
+            if token and word.probability < UNCERTAIN_WORD_PROBABILITY:
+                found.append(token)
+    return tuple(found)
 
 
 def _is_hallucination(text: str, peak: float = 0.0, no_speech: float = 1.0) -> bool:
@@ -185,7 +197,7 @@ class Transcriber:
     def _initial_prompt(self, model) -> str | None:
         base = self._config.whisper.initial_prompt
         lexicon = self._lexicon
-        if lexicon is None:
+        if lexicon is None or not self._config.whisper.learned_terms_in_prompt:
             return base
         try:
             version = lexicon.version
@@ -245,6 +257,7 @@ class Transcriber:
                 no_speech_threshold=0.9,
                 compression_ratio_threshold=2.0,
                 temperature=0.0,
+                word_timestamps=True,
             )
             seg_list = list(segments)
             if seg_list:
@@ -283,10 +296,14 @@ class Transcriber:
                         len(mapping), len(text), len(fixed),
                     )
                     text = fixed
+            uncertain = _uncertain_words(seg_list)
+            if uncertain:
+                log.info("Whisper unsicher bei: %s", ", ".join(uncertain))
             return TranscriptionResult(
                 text=text, language=info.language,
                 raw_text=raw_text, avg_logprob=min_logprob,
                 language_probability=getattr(info, "language_probability", None),
+                uncertain_words=uncertain,
             )
         except Exception as exc:
             log.exception("faster-whisper transcription failed: %s", exc)

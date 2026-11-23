@@ -9,6 +9,7 @@ from typing import Callable
 import numpy as np
 from kira.config import Config
 from kira.glossary import GLOSSARY_MAX_TERMS
+from kira.wortschutz import protect
 from kira.recorder import Recorder, DeviceUnavailable, SAMPLE_RATE
 from kira.texte import tr
 
@@ -48,7 +49,8 @@ def _language_is_certain(transcription) -> bool:
     probability = getattr(transcription, "language_probability", None)
     return probability is not None and probability >= LANGUAGE_HINT_MIN_PROBABILITY
 
-WOERTLICHE_MODES = frozenset({"terminal", "code"})
+GUARDED_MODES = frozenset({"plain", "chat", "clean"})
+WORTGETREU_MODES = frozenset({"plain", "chat", "clean"})
 
 
 class KiraApp:
@@ -240,17 +242,25 @@ class KiraApp:
                 )
             else:
                 mode = detect_mode(self._config)
-                fach = self._fachwortschatz if self._fach_gilt(mode) else None
-                glossary = self._glossary_for(transcription.text, self._fach_sprache(transcription), fach)
+                wortgetreu = self._config.styler.wortgetreu and mode in WORTGETREU_MODES
+                uncertain = getattr(transcription, "uncertain_words", ())
+                fach = self._fachwortschatz if self._fach_gilt(mode) and not wortgetreu else None
+                glossary = None if wortgetreu else self._glossary_for(
+                    transcription.text, self._fach_sprache(transcription), fach, uncertain,
+                )
                 extra = {"glossary": glossary} if glossary else {}
                 if _language_is_certain(transcription):
                     extra["language"] = transcription.language
-                if fach is not None and fach.kontext and (glossary or mode not in WOERTLICHE_MODES):
+                if fach is not None and fach.kontext and glossary:
                     extra["fachgebiete"] = fach.kontext
                 if self._config.styler.enabled:
                     polished = await self._styler.polish(
-                        transcription.text, mode=mode, **extra,
+                        transcription.text, mode="wortgetreu" if wortgetreu else mode, **extra,
                     )
+                    if mode in GUARDED_MODES:
+                        polished = self._protect_words(
+                            transcription.text, polished, () if wortgetreu else uncertain, glossary,
+                        )
                 else:
                     polished = transcription.text
                 log.info(
@@ -283,6 +293,16 @@ class KiraApp:
             else:
                 self._set_state(State.IDLE)
 
+    def _protect_words(self, source: str, polished: str, uncertain, glossary) -> str:
+        try:
+            protected, reverted = protect(source, polished, uncertain, glossary or ())
+        except Exception:
+            log.exception("Wortschutz fehlgeschlagen, Politur bleibt unverändert")
+            return polished
+        for before, after in reverted:
+            log.info("Wortschutz: %r -> %r", before, after)
+        return protected
+
     def _fach_gilt(self, mode: str) -> bool:
         return self._fachwortschatz is not None and self._config.styler.enabled
 
@@ -293,11 +313,13 @@ class KiraApp:
             return language
         return self._config.whisper.language
 
-    def _glossary_for(self, text: str, language: str | None = None, fach=None) -> list[str] | None:
+    def _glossary_for(
+        self, text: str, language: str | None = None, fach=None, uncertain=(),
+    ) -> list[str] | None:
         terms: list[str] = []
         if self._learning is not None:
             try:
-                terms = list(self._learning.glossary_for(text) or [])
+                terms = list(self._learning.glossary_for(text, uncertain) or [])
             except Exception:
                 log.exception("Lernen: Glossar-Auswahl fehlgeschlagen, Diktat läuft ohne")
         if fach is not None and len(terms) < GLOSSARY_MAX_TERMS:
@@ -305,7 +327,7 @@ class KiraApp:
                 start = time.perf_counter()
                 known = {t.casefold() for t in terms}
                 extra = [
-                    t for t in fach.glossar(text, language, GLOSSARY_MAX_TERMS)
+                    t for t in fach.glossar(text, language, GLOSSARY_MAX_TERMS, uncertain)
                     if t.casefold() not in known
                 ]
                 terms.extend(extra[:GLOSSARY_MAX_TERMS - len(terms)])

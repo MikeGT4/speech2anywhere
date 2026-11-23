@@ -441,16 +441,45 @@ def test_learned_terms_extend_initial_prompt(monkeypatch, fake_config):
     seen: dict = {}
     monkeypatch.setattr("kira.transcriber_fw.WhisperModel", _model_capturing(seen))
     fake_config.whisper.initial_prompt = "Linux Kira Ollama"
+    fake_config.whisper.learned_terms_in_prompt = True
     t = Transcriber(fake_config)
     t.set_lexicon(_FakeLexicon(["Zettelkasten"], {}))
     t.transcribe(np.ones(1600, dtype=np.float32))
     assert seen["initial_prompt"] == "Linux Kira Ollama, Zettelkasten."
 
 
+def test_learned_terms_stay_out_of_the_prompt_by_default(monkeypatch, fake_config):
+    from kira.transcriber_fw import Transcriber
+    seen: dict = {}
+    monkeypatch.setattr("kira.transcriber_fw.WhisperModel", _model_capturing(seen))
+    fake_config.whisper.initial_prompt = "Linux Kira Ollama"
+    lexicon = _FakeLexicon(["Zettelkasten"], {})
+    t = Transcriber(fake_config)
+    t.set_lexicon(lexicon)
+    t.transcribe(np.ones(1600, dtype=np.float32))
+    assert seen["initial_prompt"] == "Linux Kira Ollama"
+    assert lexicon.term_calls == 0
+
+
+def test_uncertain_words_are_reported(monkeypatch, fake_config):
+    from types import SimpleNamespace
+    from kira.transcriber_fw import Transcriber
+    words = [SimpleNamespace(word=" Dollar", probability=0.31), SimpleNamespace(word=" ist", probability=0.97),
+             SimpleNamespace(word=" drin.", probability=0.92)]
+    segment = SimpleNamespace(text="Dollar ist drin.", avg_logprob=-0.3, no_speech_prob=0.01, words=words)
+    seen: dict = {}
+    monkeypatch.setattr("kira.transcriber_fw.WhisperModel", _model_capturing(seen, [segment]))
+    t = Transcriber(fake_config)
+    result = t.transcribe(np.full(16000, 0.3, dtype=np.float32))
+    assert seen["word_timestamps"] is True
+    assert result.uncertain_words == ("Dollar",)
+
+
 def test_prompt_is_rebuilt_only_when_lexicon_changes(monkeypatch, fake_config):
     from kira.transcriber_fw import Transcriber
     monkeypatch.setattr("kira.transcriber_fw.WhisperModel", _model_capturing({}))
     lexicon = _FakeLexicon(["Zettelkasten"], {})
+    fake_config.whisper.learned_terms_in_prompt = True
     t = Transcriber(fake_config)
     t.set_lexicon(lexicon)
     t.transcribe(np.ones(1600, dtype=np.float32))
@@ -528,6 +557,7 @@ def test_broken_lexicon_falls_back_to_config(monkeypatch, fake_config, caplog):
     )
     fake_config.whisper.initial_prompt = "Kira Ollama"
     fake_config.whisper.replacements = {"kuh bernetes": "Kubernetes"}
+    fake_config.whisper.learned_terms_in_prompt = True
     t = Transcriber(fake_config)
     t.set_lexicon(_BrokenLexicon())
     with caplog.at_level(logging.WARNING, logger="kira.transcriber_fw"):

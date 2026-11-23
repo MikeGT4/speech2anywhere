@@ -4,13 +4,13 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 import threading
 from dataclasses import asdict, dataclass, replace
 from datetime import datetime
 from pathlib import Path
 from typing import Callable, Iterable
 
-from kira.phonetics import sound_similarity
 
 log = logging.getLogger(__name__)
 
@@ -20,7 +20,8 @@ STATUS_PENDING = "pending"
 STATUS_ACTIVE = "active"
 STATUS_REJECTED = "rejected"
 AUTO_ACTIVATE_COUNT = 2
-INSTANT_MIN_SOUND = 0.85
+MIN_LETTERS = 3
+MAX_SUFFIX_DIFF = 2
 SAME_DICTATION_S = 2
 EXAMPLE_MAX_CHARS = 120
 PROMPT_TOKEN_BUDGET = 223
@@ -74,8 +75,53 @@ def _entry_from_json(raw) -> Entry:
     return entry
 
 
-def _unambiguous(entry: Entry) -> bool:
-    return entry.vocab and sound_similarity(entry.wrong, entry.right) >= INSTANT_MIN_SOUND
+_FUNCTION_WORDS = frozenset(
+    "der die das den dem des ein eine einen einem einer eines er sie es ich du wir ihr man "
+    "und oder aber doch denn weil dass wenn als wie so ja nein nicht noch schon auch nur mal "
+    "hat hatte habe haben hast ist sind war waren bin bist wird werden kann können muss "
+    "mir dir mich dich ihm ihn uns euch sich mein dein sein ihr unser "
+    "in im an am auf aus bei mit nach von vom zu zum zur für über unter vor hinter "
+    "the a an and or but is are was be to of in on at for with it this that".split()
+)
+_CAMEL_RE = re.compile(r"(\w*?[a-zäöüß])([A-ZÄÖÜ][a-zäöüß]+)")
+GLUED_TAIL_MIN = 6
+_LETTERS_RE = re.compile(r"[^\W\d_]")
+
+
+def _letters(text: str) -> str:
+    return "".join(_LETTERS_RE.findall(text.casefold()))
+
+
+def plausible_correction(wrong: str, right: str) -> bool:
+    a, b = _letters(wrong), _letters(right)
+    if len(a) < MIN_LETTERS or len(b) < MIN_LETTERS:
+        return False
+    if a == b:
+        return _symbols(wrong) != _symbols(right)
+    if wrong.casefold().strip() in _FUNCTION_WORDS or right.casefold().strip() in _FUNCTION_WORDS:
+        return False
+    words = {w for w in re.findall(r"\w+", f"{wrong} {right}".casefold())}
+    if words and words <= _FUNCTION_WORDS:
+        return False
+    short, long_ = sorted((a, b), key=len)
+    if long_.startswith(short) and len(long_) - len(short) <= MAX_SUFFIX_DIFF:
+        return False
+    if _glued(right) and not _glued(wrong):
+        return False
+    return True
+
+
+def _symbols(text: str) -> str:
+    return "".join(ch for ch in text if not ch.isalnum() and ch not in " -")
+
+
+def _glued(text: str) -> bool:
+    for head, tail in _CAMEL_RE.findall(text):
+        if head.casefold() in _FUNCTION_WORDS or tail.casefold() in _FUNCTION_WORDS:
+            return True
+        if head[:1].islower() and len(tail) >= GLUED_TAIL_MIN:
+            return True
+    return False
 
 
 def _already_counted(seen: tuple[str, ...], when: datetime) -> bool:
@@ -153,6 +199,9 @@ class Lexicon:
                 current.status == STATUS_REJECTED or _already_counted(current.seen, when)
             ):
                 return None
+            if current is None and not plausible_correction(wrong, right):
+                log.info("Lernen: verworfen %r -> %r (unplausibel)", wrong, right)
+                return None
             if current is None:
                 entry = Entry(
                     wrong=wrong, right=right, kind=kind, status=STATUS_PENDING,
@@ -179,7 +228,7 @@ class Lexicon:
         for e in siblings:
             if e.confirmed:
                 continue
-            if not conflict and (e.count >= AUTO_ACTIVATE_COUNT or _unambiguous(e)):
+            if not conflict and e.count >= AUTO_ACTIVATE_COUNT:
                 status = STATUS_ACTIVE
             else:
                 status = STATUS_PENDING

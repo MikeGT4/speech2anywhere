@@ -80,6 +80,8 @@ def test_glossary_for_offers_active_glossary_terms(tmp_path):
         svc.lexicon.observe("lahn", "LAN", kind="glossary", vocab=True, example="",
                             when=T0 + timedelta(days=day))
     assert svc.glossary_for("das Kabel steckt im lahn") == ["LAN"]
+    assert svc.glossary_for("das Kabel steckt im lähn", uncertain=[]) == []
+    assert svc.glossary_for("das Kabel steckt im lähn", uncertain=["lähn"]) == ["LAN"]
 
 
 def test_run_without_sources_only_prunes(tmp_path):

@@ -113,7 +113,7 @@ def test_fits_1080p_at_125_percent(qtbot, tmp_path):
 def _many(tmp_path, pending=3):
     lex = Lexicon(tmp_path / "learned.json")
     for i in range(pending):
-        lex.observe(f"wort{i}", f"Wort{i}", kind="glossary", vocab=False,
+        lex.observe(f"wort{i}", f"Begriff{i}", kind="glossary", vocab=False,
                     example=f"mit wort{i}", when=T0 + timedelta(minutes=i))
     return lex
 
@@ -151,7 +151,7 @@ def test_accept_click_works_without_picking_a_row_first(qtbot, tmp_path, shown):
     assert _selected(dlg.pending_table) == [0]
     qtbot.mouseClick(dlg.accept_button, Qt.MouseButton.LeftButton)
     assert dlg.pending_table.rowCount() == 2
-    assert [dlg.active_table.item(row, 1).text() for row in range(dlg.active_table.rowCount())] == ["Wort0"]
+    assert [dlg.active_table.item(row, 1).text() for row in range(dlg.active_table.rowCount())] == ["Begriff0"]
 
 
 def test_next_entry_is_selected_after_a_decision(qtbot, tmp_path, shown):
@@ -159,10 +159,10 @@ def test_next_entry_is_selected_after_a_decision(qtbot, tmp_path, shown):
     _click_row(qtbot, dlg.pending_table, 1)
     qtbot.mouseClick(dlg.reject_button, Qt.MouseButton.LeftButton)
     assert _selected(dlg.pending_table) == [1]
-    assert dlg.pending_table.item(1, 1).text() == "Wort2"
+    assert dlg.pending_table.item(1, 1).text() == "Begriff2"
     qtbot.mouseClick(dlg.accept_button, Qt.MouseButton.LeftButton)
     assert _selected(dlg.pending_table) == [0]
-    assert dlg.pending_table.item(0, 1).text() == "Wort0"
+    assert dlg.pending_table.item(0, 1).text() == "Begriff0"
 
 
 def test_accepting_the_last_entry_disables_the_buttons(qtbot, tmp_path, shown):

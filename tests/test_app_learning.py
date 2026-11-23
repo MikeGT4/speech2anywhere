@@ -14,7 +14,7 @@ class FakeLearning:
         self.records = []
         self.glossary_calls = []
 
-    def glossary_for(self, text):
+    def glossary_for(self, text, uncertain=None):
         self.glossary_calls.append(text)
         if self.fail:
             raise RuntimeError("kaputt")

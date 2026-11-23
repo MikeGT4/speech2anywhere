@@ -575,6 +575,19 @@ class SettingsDialog(QDialog):
         )
         card.add_row(tr("Politur"), tr("Aus: der erkannte Text kommt unverändert an."), self._polish_enabled)
 
+        self._wortgetreu = comic.ToggleSwitch()
+        self._wortgetreu.setChecked(self._cfg.styler.wortgetreu)
+        self._wortgetreu.setToolTip(
+            tr(
+                "An: Die Politur setzt nur Satzzeichen und Großschreibung.\n"
+                "Sie streicht und ersetzt kein Wort, auch keine Fachbegriffe.\n"
+                "Mails und Übersetzungen werden weiter ganz poliert."
+            )
+        )
+        card.add_row(
+            tr("Wortgetreu"), tr("An: Es bleibt jedes Wort so stehen, wie du es gesagt hast."), self._wortgetreu,
+        )
+
         model_row = QVBoxLayout()
         model_row.setSpacing(8)
         model_buttons = QHBoxLayout()
@@ -1233,6 +1246,8 @@ class SettingsDialog(QDialog):
             updates["whisper.cpu_model"] = cpu_model
         if polish_on != self._cfg.styler.enabled:
             updates["styler.enabled"] = polish_on
+        if self._wortgetreu.isChecked() != self._cfg.styler.wortgetreu:
+            updates["styler.wortgetreu"] = self._wortgetreu.isChecked()
         gebiete = [key for key in FACHGEBIETE if self._fachgebiete[key].isChecked()]
         if gebiete != self._cfg.fachwortschatz.gebiete:
             updates["fachwortschatz.gebiete"] = gebiete

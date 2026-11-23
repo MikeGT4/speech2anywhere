@@ -51,10 +51,9 @@ def welcomed_before() -> bool:
 _NEWS_HTML = """
 <h3>Neu in v{version}</h3>
 <ul>
-  <li>Korrekturen wirken schneller: Eine eindeutige Schreibung greift schon ab dem nächsten Diktat.</li>
-  <li>Reiter „Sound“: Den Klang wählst du jetzt unabhängig vom Stil der Anzeige.</li>
-  <li>Die Siamkatze heißt jetzt Zini und miaut, schnurrt und knurrt mit echten Aufnahmen.</li>
-  <li>Alle Maskottchen sitzen samt Hut und Zubehör sauber in ihrer Kachel.</li>
+  <li>Die Politur ändert nur noch Wörter, bei denen die Erkennung unsicher war.<br>Was du deutlich gesagt hast, bleibt stehen.</li>
+  <li>Neuer Schalter „Wortgetreu“ im Reiter Politur.<br>Dann setzt die Politur nur Satzzeichen und Großschreibung.</li>
+  <li>Gelernte Korrekturen greifen erst, wenn sie zweimal vorkommen.<br>Paare, die nur nach Umformulieren aussehen, lernt Speech2Anywhere nicht mehr.</li>
 </ul>
 """
 
@@ -122,9 +121,8 @@ whisper:
 
 <h3>5. Aus Korrekturen lernen</h3>
 <p>Korrigierst du ein falsch erkanntes Wort, bevor du den Text abschickst,
-merkt sich Speech2Anywhere das Paar. Ist die neue Schreibung eindeutig, etwa ein Name oder
-Fachbegriff, der fast gleich klingt, greift sie schon ab dem nächsten Diktat; sonst greift das Paar,
-sobald es in zwei Diktaten auftaucht. Einzelfälle warten unter Tray → <b>„Gelernte Wörter…“</b> auf dein
+merkt sich Speech2Anywhere das Paar. Es greift, sobald es in zwei Diktaten auftaucht.
+Paare, die nur nach Umformulieren aussehen, lernt Speech2Anywhere nicht. Einzelfälle warten unter Tray → <b>„Gelernte Wörter…“</b> auf dein
 Häkchen. Was du dort verwirfst, lernt Speech2Anywhere nicht wieder. Die Nachrichten
 stammen aus Chat-Verläufen, deren Ordner in der Rohconfig unter
 <code>learning.sources</code> stehen. Alles bleibt lokal. Gelernt wird aus deutschen Diktaten.</p>
@@ -198,10 +196,9 @@ Bei nativen Crashes: <code>speech2anywhere-faulthandler.log</code> daneben.</p>
 _NEWS_HTML_EN = """
 <h3>New in v{version}</h3>
 <ul>
-  <li>Corrections apply sooner: an unambiguous spelling works from your next dictation.</li>
-  <li>Sound tab: you now pick the sound set independently of the indicator style.</li>
-  <li>The Siamese cat is now called Zini and meows, purrs and growls with real recordings.</li>
-  <li>All mascots sit neatly inside their tile, hats and accessories included.</li>
+  <li>Clean-up now only changes words the recognition was unsure about.<br>What you said clearly stays as it is.</li>
+  <li>New “Verbatim” switch in the Clean-up tab.<br>Clean-up then only adds punctuation and capitalization.</li>
+  <li>Learned corrections apply once they show up twice.<br>Pairs that only look like rewording are no longer learned.</li>
 </ul>
 """
 
@@ -269,9 +266,8 @@ whisper:
 
 <h3>5. Learning from corrections</h3>
 <p>If you correct a misrecognized word before you send the text,
-Speech2Anywhere remembers the pair. If the new spelling is unambiguous, such as a name or
-technical term that sounds almost the same, it applies from your next dictation; otherwise the pair
-applies once it shows up in two dictations. Single cases wait under Tray → <b>“Learned Words…”</b> for your
+Speech2Anywhere remembers the pair. It applies once it shows up in two dictations.
+Pairs that only look like rewording are not learned. Single cases wait under Tray → <b>“Learned Words…”</b> for your
 approval. What you discard there, Speech2Anywhere doesn’t learn again. The messages
 come from chat histories whose folders are listed in the raw config under
 <code>learning.sources</code>. Everything stays local. Learning works for German dictations.</p>

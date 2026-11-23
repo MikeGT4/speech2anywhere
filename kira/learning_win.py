@@ -7,7 +7,7 @@ import threading
 import time
 from datetime import datetime
 from pathlib import Path
-from typing import Callable
+from typing import Callable, Collection
 
 from kira import LOG_NAME
 from kira.config import Config
@@ -86,9 +86,9 @@ class LearningService:
             active_app=active_exe,
         )
 
-    def glossary_for(self, text: str) -> list[str]:
+    def glossary_for(self, text: str, uncertain: Collection[str] | None = None) -> list[str]:
         start = time.perf_counter()
-        terms = select_glossary(text, self.lexicon.glossary_entries())
+        terms = select_glossary(text, self.lexicon.glossary_entries(), uncertain=uncertain)
         elapsed_ms = (time.perf_counter() - start) * 1000
         if elapsed_ms > GLOSSARY_SLOW_MS:
             log.warning("Lernen: Glossar-Auswahl dauerte %.1f ms", elapsed_ms)

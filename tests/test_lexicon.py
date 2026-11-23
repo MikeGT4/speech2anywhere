@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 import pytest
 from kira.lexicon import (
     KIND_GLOSSARY, KIND_REPLACEMENT, STATUS_ACTIVE, STATUS_PENDING,
-    STATUS_REJECTED, Lexicon, build_initial_prompt,
+    STATUS_REJECTED, Lexicon, build_initial_prompt, plausible_correction,
 )
 
 T1 = datetime(2026, 9, 1, 10, 0, tzinfo=timezone.utc)
@@ -24,10 +24,10 @@ def test_first_occurrence_is_pending(tmp_path):
     assert (e.status, e.count) == (STATUS_PENDING, 1)
 
 
-def test_unambiguous_spelling_activates_on_first_occurrence(tmp_path):
+def test_single_correction_stays_pending_even_when_it_sounds_alike(tmp_path):
     lex = Lexicon(tmp_path / "learned.json")
     e = _observe(lex, "Speech-to-Anywhere", "Speech2Anywhere", T1)
-    assert (e.status, e.count) == (STATUS_ACTIVE, 1)
+    assert (e.status, e.count) == (STATUS_PENDING, 1)
 
 
 def test_unambiguous_needs_a_close_sound(tmp_path):
@@ -110,10 +110,10 @@ def test_vocabulary_orders_by_count_then_recency(tmp_path):
 def test_save_and_load_round_trip_with_umlauts(tmp_path):
     path = tmp_path / "learned.json"
     lex = Lexicon(path)
-    _observe(lex, "grüne", "Grüner", T1)
+    _observe(lex, "grüne Weste", "Grünewelt", T1)
     lex.save()
     again = Lexicon.load(path)
-    assert [(e.wrong, e.right) for e in again.entries()] == [("grüne", "Grüner")]
+    assert [(e.wrong, e.right) for e in again.entries()] == [("grüne Weste", "Grünewelt")]
     assert "grüne" in path.read_text(encoding="utf-8")
 
 
@@ -271,3 +271,23 @@ def test_deeply_nested_file_is_set_aside(tmp_path):
     path.write_text("[" * 200000 + "]" * 200000, encoding="utf-8")
     assert Lexicon.load(path).entries() == []
     assert (tmp_path / "learned.json.bak").exists()
+
+
+@pytest.mark.parametrize("wrong, right", [
+    ("der", "ner"), ("dir", "die"), ("hatte", "hat"), ("eigentlich", "eigentlic"),
+    ("Die Sicherheitsnetze", "SicherheitsnetzeUnd"), ("Den Hinweis verwenden", "Absatz wegVerwenden"),
+    ("AMD", "MD"), ("Code Reviews", "Code-Reviews"), ("Vorgaben", "Vorgabe"),
+])
+def test_implausible_corrections_are_not_learned(tmp_path, wrong, right):
+    lex = Lexicon(tmp_path / "learned.json")
+    assert _observe(lex, wrong, right, T1) is None
+    assert lex.entries() == []
+
+
+@pytest.mark.parametrize("wrong, right", [
+    ("lahn", "LAN"), ("HeadSnap", "Hetzner"), ("Zero-Docs-Daten", "ZeroDox-Daten"),
+    ("ZipGuard", "SipGuard"), ("Endings", "nginx"), ("Agentry", "Agentree"),
+    ("kontakt.example.de", "kontakt@example.de"),
+])
+def test_plausible_corrections_are_kept(wrong, right):
+    assert plausible_correction(wrong, right)

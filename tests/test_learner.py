@@ -208,12 +208,13 @@ def test_dictation_learns_as_soon_as_the_message_exists(tmp_path):
     assert lex.entries()[0].count == 1
 
 
-def test_unambiguous_correction_is_active_from_the_first_dictation(tmp_path):
+def test_single_correction_waits_for_a_second_dictation(tmp_path):
     hist, src, lex, state = _setup(tmp_path)
     _history(hist, T0, "wir deployen heute auf Speech-to-Anywhere")
     _sent(src, T0 + timedelta(minutes=1), "Wir deployen heute auf Speech2Anywhere")
     _run(T0 + timedelta(minutes=4), hist, src, lex, state)
-    assert lex.active_replacements() == {"Speech-to-Anywhere": "Speech2Anywhere"}
+    assert lex.active_replacements() == {}
+    assert [e.right for e in lex.pending()] == ["Speech2Anywhere"]
 
 
 def test_metrics_report_corrected_of_matched(tmp_path):
